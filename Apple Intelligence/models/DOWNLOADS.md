@@ -1,5 +1,16 @@
 # Acquisition des poids téléchargés séparément
 
+## Piste LoRA/Core ML vérifiée
+
+Les [essais du 26 octobre](../analysis/LORA-COREML.md) confirment la conversion
+d'un modèle PyTorch/PEFT déjà accessible, sa fusion et le partage de poids
+entre fonctions. Ces outils n'acquièrent aucun poids AFM manquant. Le toolkit
+Foundation Models Adapter est bien un téléchargement Apple séparé ; sa dernière
+version 26.0.0 ne couvre pas les OS 27+. Le catalogue Developer public a redirigé
+vers la connexion Apple ; aucune session ou archive toolkit n'était disponible.
+Les actifs du toolkit, lorsqu'ils seront acquis, devront rester distingués des
+références de modèles iOS 27.2 et des modèles de diffusion.
+
 ## Nouveau fait : Archive.zip et Core AI Linux
 
 Les [trois DMG fournis par Daniel](../analysis/DEVELOPER-TOOLS.md) ont été

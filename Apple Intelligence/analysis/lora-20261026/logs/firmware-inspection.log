@@ -1,0 +1,115 @@
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLCPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLGPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLNeuralEngineComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLComputePlanProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelAssetProxy: No module named 'coremltools.libcoremlpython'
+When both 'convert_to' and 'minimum_deployment_target' not specified, 'convert_to' is set to "mlprogram" and 'minimum_deployment_target' is set to ct.target.iOS15 (which is same as ct.target.macOS12). Note: the model will not run on systems older than iOS15/macOS12/watchOS8/tvOS15. In order to make your model run on older system, please set the 'minimum_deployment_target' to iOS14/iOS13. Details please see the link: https://apple.github.io/coremltools/docs-guides/source/target-conversion-formats.html
+{
+  "files": 3923,
+  "adapter_files_verified": 6,
+  "decoded_interface": {
+    "functions": [
+      {
+        "name": "main_ctx_77",
+        "input": [
+          {
+            "name": "spatial",
+            "type": {
+              "multiArrayType": {
+                "shape": [
+                  "1",
+                  "77",
+                  "768"
+                ],
+                "dataType": "FLOAT32"
+              }
+            }
+          },
+          {
+            "name": "eos_pos",
+            "type": {
+              "multiArrayType": {
+                "shape": [
+                  "1"
+                ],
+                "dataType": "INT32"
+              }
+            }
+          }
+        ],
+        "output": [
+          {
+            "name": "output",
+            "type": {
+              "multiArrayType": {
+                "shape": [
+                  "1",
+                  "512"
+                ],
+                "dataType": "FLOAT16"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "main_ctx_512",
+        "input": [
+          {
+            "name": "spatial",
+            "type": {
+              "multiArrayType": {
+                "shape": [
+                  "1",
+                  "512",
+                  "768"
+                ],
+                "dataType": "FLOAT32"
+              }
+            }
+          },
+          {
+            "name": "eos_pos",
+            "type": {
+              "multiArrayType": {
+                "shape": [
+                  "1"
+                ],
+                "dataType": "INT32"
+              }
+            }
+          }
+        ],
+        "output": [
+          {
+            "name": "output",
+            "type": {
+              "multiArrayType": {
+                "shape": [
+                  "1",
+                  "512"
+                ],
+                "dataType": "FLOAT16"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "defaultFunctionName": "main_ctx_512",
+    "metadata": {
+      "userDefined": {
+        "mldb_token": "mldb-4blgx74ype"
+      }
+    }
+  },
+  "conversion_rejections": {
+    "compiled_safari_adapter": {
+      "type": "TypeError",
+      "message": "Model must either be a TorchScript object (or .pt or .pth file) or an ExportedProgram object (if using torch.export based API), received: <class 'str'>"
+    }
+  }
+}

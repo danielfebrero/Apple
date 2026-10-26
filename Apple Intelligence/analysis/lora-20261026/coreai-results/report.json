@@ -1,0 +1,38 @@
+{
+  "platform": "Linux-6.1.0-53-amd64-x86_64-with-glibc2.36",
+  "python": "3.11.2 (main, Oct  7 2026, 12:35:07) [GCC 12.2.0]",
+  "versions": {
+    "coreai-core": "1.0.0b3",
+    "numpy": "2.4.6"
+  },
+  "scope": "synthetic trained LoRA arrays, hand-authored Core AI graph, ordinary dynamic tensor inputs",
+  "heldout_inputs": 12,
+  "native_vs_independent_numpy64_max_abs": {
+    "base": 1.2507754987289843e-07,
+    "adapter_1": 1.282759638926434e-07,
+    "adapter_2": 1.526332125134644e-07
+  },
+  "weights_embedded": "controlled base only",
+  "adapter_matrix_orientation": "transposed from PEFT",
+  "asset_files": [
+    {
+      "path": "main.hash",
+      "size": 32,
+      "sha256": "5f887e2619d6e1bc077d8a8dec8b70b8ba4b17508f93f514042adff7547b9783"
+    },
+    {
+      "path": "main.mlirb",
+      "size": 17482,
+      "sha256": "073634a2198079aaecc3fdae6f8d50e2bc2cb104030d367a0449e6f0eb8e8c1d"
+    },
+    {
+      "path": "metadata.json",
+      "size": 105,
+      "sha256": "1ebe10b0b32254034652dc4d088e23ba88a59e9402df77da2ba16a194cf0c5a5"
+    }
+  ],
+  "apple_coreai_native_inference": true,
+  "apple_coreml_inference": false,
+  "AFM_inference": false,
+  "pretrained_apple_weights": false
+}

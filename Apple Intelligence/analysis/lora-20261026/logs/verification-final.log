@@ -1,0 +1,47 @@
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLCPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLGPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLNeuralEngineComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLComputePlanProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelAssetProxy: No module named 'coremltools.libcoremlpython'
+{
+  "status": "PASS",
+  "hashes_verified": 35,
+  "numerical_comparisons": 19,
+  "errors_vs_independent_float64": {
+    "adapter_1.mlpackage/main": 7.532298151868844e-08,
+    "adapter_2.mlpackage/main": 1.2118961789653326e-07,
+    "base.mlpackage/main": 6.830258239554077e-08,
+    "merged_1.mlpackage/main": 1.0769440539348807e-07,
+    "merged_1_ios15.mlpackage/main": 1.0769440539348807e-07,
+    "merged_2.mlpackage/main": 7.548143157731779e-08,
+    "multifunction_adapter.mlpackage/adapter_1": 7.532298151868844e-08,
+    "multifunction_adapter.mlpackage/adapter_2": 1.2118961789653326e-07,
+    "multifunction_merged.mlpackage/adapter_1": 1.0769440539348807e-07,
+    "multifunction_merged.mlpackage/adapter_2": 7.548143157731779e-08,
+    "saved_torch/base": 1.330156266243776e-07,
+    "saved_torch/adapter_1": 1.3497531792250328e-07,
+    "saved_torch/merged_1": 1.7240857852485192e-07,
+    "saved_torch/adapter_2": 2.0007695472612497e-07,
+    "saved_torch/merged_2": 1.866757751711745e-07,
+    "native_coreai/base": 1.2507754981738728e-07,
+    "native_coreai/adapter_1": 1.2827596392039897e-07,
+    "native_coreai/adapter_2": 1.526332126244867e-07,
+    "native_coreai/verified_cli": 4.1558911242911556e-08
+  },
+  "max_abs_error": 2.0007695472612497e-07,
+  "tolerance_max_abs": 3e-05,
+  "shared_blob_names_same_offsets": [
+    "base_model_model_linear1_base_layer_bias",
+    "base_model_model_linear1_base_layer_weight",
+    "base_model_model_linear2_base_layer_bias",
+    "base_model_model_linear2_base_layer_weight",
+    "linear_2_bias_0",
+    "linear_5_bias_0"
+  ],
+  "reference": "Float64 fused matrices with einsum; independent from PyTorch and the experiment's unfused reference",
+  "Core_ML_Linux_inference": false,
+  "AFM_inference": false
+}

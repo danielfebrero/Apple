@@ -1,0 +1,97 @@
+{
+  "backend": "coreai-cpu",
+  "runtime_version": "1.0.0b3",
+  "function": "main",
+  "functions": [
+    "main"
+  ],
+  "prediction_performed": true,
+  "input_schema": {
+    "x": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        64
+      ]
+    },
+    "a1": {
+      "dtype": "float32",
+      "shape": [
+        64,
+        4
+      ]
+    },
+    "b1": {
+      "dtype": "float32",
+      "shape": [
+        4,
+        48
+      ]
+    },
+    "a2": {
+      "dtype": "float32",
+      "shape": [
+        48,
+        4
+      ]
+    },
+    "b2": {
+      "dtype": "float32",
+      "shape": [
+        4,
+        16
+      ]
+    }
+  },
+  "output_schema": {
+    "y": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        16
+      ]
+    }
+  },
+  "compatibility": "Apple Core AI local Linux runtime; no claim of AFM or Core ML compatibility",
+  "outputs": {
+    "y": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        16
+      ],
+      "data": [
+        [
+          -0.11659947782754898,
+          0.1405150294303894,
+          -0.16926023364067078,
+          -0.04673575982451439,
+          0.28783491253852844,
+          0.13635729253292084,
+          -0.09569351375102997,
+          -0.026273228228092194,
+          -0.15425308048725128,
+          -0.2383902668952942,
+          0.09248723089694977,
+          -0.11770568042993546,
+          -0.12393210083246231,
+          -0.22031009197235107,
+          0.020421698689460754,
+          0.15692590177059174
+        ]
+      ]
+    }
+  },
+  "model_id": "controlled-dynamic-lora",
+  "manifest_fingerprint": "b40fdfbc1549d49a028972b9ad8922e62bb37d59e862c8071a0d1a4e00856914",
+  "artifact_identity": "selected catalogue asset",
+  "scope": "demonstration",
+  "integrity": {
+    "verified": true,
+    "model_id": "controlled-dynamic-lora",
+    "files": 3,
+    "size_bytes": 17619,
+    "manifest_fingerprint": "b40fdfbc1549d49a028972b9ad8922e62bb37d59e862c8071a0d1a4e00856914",
+    "root": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/lora/coreai-store/bundles/controlled-dynamic-lora/model.aimodel"
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "checked_utc": "2026-10-26T18:22:42.770903+00:00",
+  "local_source_root": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/lora",
+  "sources": [
+    {
+      "file": "apple-adapter.html",
+      "url": "https://developer.apple.com/apple-intelligence/foundation-models-adapter/",
+      "final_url": "https://developer.apple.com/apple-intelligence/foundation-models-adapter/",
+      "status": 200,
+      "bytes": 125588,
+      "sha256": "7e487d45cbe86c757f30f873e452463bb953fdd9513f311435a593084b551cd9"
+    },
+    {
+      "file": "coreml-multifunction.html",
+      "url": "https://apple.github.io/coremltools/docs-guides/source/multifunction-models.html",
+      "final_url": "https://apple.github.io/coremltools/docs-guides/source/multifunction-models.html",
+      "status": 200,
+      "bytes": 46454,
+      "sha256": "e61aa3cac0feaf9b1b69be190b63ee79e02cbe7c2e881c906714ed0eb88f2732"
+    },
+    {
+      "file": "coreml-prediction.html",
+      "url": "https://apple.github.io/coremltools/docs-guides/source/model-prediction.html",
+      "final_url": "https://apple.github.io/coremltools/docs-guides/source/model-prediction.html",
+      "status": 200,
+      "bytes": 67798,
+      "sha256": "1cc108a6fb402b0392212e5bfd9aa440c474acbe4e9d2c762f53e70c1ba5d1a1"
+    },
+    {
+      "file": "coremltools-pypi.json",
+      "url": "https://pypi.org/pypi/coremltools/json",
+      "final_url": "https://pypi.org/pypi/coremltools/json",
+      "status": 200,
+      "bytes": 748674,
+      "sha256": "3faf5fc13455ff66a930751d718b1a7a6d4bcbcf2f2e961dfb8f106f074202da"
+    },
+    {
+      "file": "peft-pypi.json",
+      "url": "https://pypi.org/pypi/peft/json",
+      "final_url": "https://pypi.org/pypi/peft/json",
+      "status": 200,
+      "bytes": 76746,
+      "sha256": "f45f3c5ac09ce8fc1b1605db7db44bc20b28dc8e060db97b62c52cbaccec2046"
+    },
+    {
+      "file": "coremltools-latest.json",
+      "url": "https://api.github.com/repos/apple/coremltools/releases/latest",
+      "final_url": "https://api.github.com/repos/apple/coremltools/releases/latest",
+      "status": 200,
+      "bytes": 36406,
+      "sha256": "c157582eca29a3b29deccd95f5d7dcdcd3973c81e6b494328d41e31a27372464"
+    },
+    {
+      "file": "coremltools-8.json",
+      "url": "https://api.github.com/repos/apple/coremltools/releases/tags/8.0",
+      "final_url": "https://api.github.com/repos/apple/coremltools/releases/tags/8.0",
+      "status": 200,
+      "bytes": 26730,
+      "sha256": "2c7cd0b10e480ec44ee5f92d1f646c016bda541dfebc55252aeb1bf7d7c7ec25"
+    },
+    {
+      "file": "apple-language-model.json",
+      "url": "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel.json",
+      "status": 200,
+      "bytes": 34751,
+      "sha256": "288a6a7e8b3da416a83a4b50e77daa3a16750941ca2065ebfbb207236ac56ac2"
+    },
+    {
+      "file": "peft-lora-v0171.py",
+      "url": "https://raw.githubusercontent.com/huggingface/peft/v0.17.1/src/peft/tuners/lora/layer.py",
+      "status": 200,
+      "bytes": 97115,
+      "sha256": "39e2f6908c9f3faf4d2de2b6ecfdf44c96d2cae67b8155ed1b51bc67fb25b734"
+    },
+    {
+      "url": "https://developer.apple.com/tutorials/data/documentation/foundationmodels/loading-and-using-a-custom-adapter-with-foundation-models.json",
+      "status": 404,
+      "observation": "URL from linked legacy API docs; failure is not evidence that no toolkit exists"
+    },
+    {
+      "url": "https://developer.apple.com/tutorials/data/documentation/foundationmodels/systemlanguagemodel/adapter.json",
+      "status": 404,
+      "observation": "URL from linked legacy API docs; failure is not evidence that no toolkit exists"
+    },
+    {
+      "file": "torch-pypi.json",
+      "url": "https://pypi.org/pypi/torch/json",
+      "final_url": "https://pypi.org/pypi/torch/json",
+      "status": 200,
+      "bytes": 870628,
+      "sha256": "cad63dc8aa6714ea2133a44b64985d87b3e4ebea217657f1e02e35481fa33b61"
+    },
+    {
+      "file": "apple-downloads.html",
+      "url": "https://developer.apple.com/download/all/?q=Foundation%20Models",
+      "final_url": "https://idmsa.apple.com/IDMSWebAuth/signin.html?path=%2Fdownload%2Fall%2F%3Fq%3DFoundation%2520Models&appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&rv=0",
+      "status": 200,
+      "bytes": 7557,
+      "sha256": "479c5ae054f98b07134890713b35f1487c8d50da47b3bce8d069da6bb7fe28a4"
+    },
+    {
+      "file": "apple-wwdc25-foundation-models.html",
+      "url": "https://developer.apple.com/videos/play/wwdc2025/286/",
+      "final_url": "https://developer.apple.com/videos/play/wwdc2025/286/",
+      "status": 200,
+      "bytes": 191223,
+      "sha256": "da243e185487ad1667e4a628acf8b5315028361ffa5b1154f0f8a3d09863216a"
+    }
+  ],
+  "coremltools_main_commit": "a207b1a3452eafe02f2d870f486287834af2c82d",
+  "coremltools_main_commit_date": "2026-09-30T09:18:32-07:00",
+  "source_code": [
+    {
+      "path": "coremltools/models/utils.py",
+      "sha256": "bded5d2188ba742ae768072d29c3d85643073d77568cdd429aaf52e74c82ebfd",
+      "url": "https://github.com/apple/coremltools/blob/a207b1a3452eafe02f2d870f486287834af2c82d/coremltools/models/utils.py",
+      "key_lines": [
+        {
+          "line": 1412,
+          "text": "class MultiFunctionDescriptor:"
+        },
+        {
+          "line": 1554,
+          "text": "def save_multifunction("
+        }
+      ]
+    },
+    {
+      "path": "coremltools/models/model.py",
+      "sha256": "cf85a5f264092afe9253316f074b9bf2cf0427adc4baded0e2b866c062f6a3ed",
+      "url": "https://github.com/apple/coremltools/blob/a207b1a3452eafe02f2d870f486287834af2c82d/coremltools/models/model.py",
+      "key_lines": [
+        {
+          "line": 884,
+          "text": "\"Model prediction is only supported on macOS version 10.13 or later.\""
+        }
+      ]
+    },
+    {
+      "path": "coremltools/converters/mil/frontend/torch/test/test_torch_conversion_api.py",
+      "sha256": "f53eeeb7b43026b6ee815a21e572d21cc1078ae194b1faacd6e6c0c32bf651b4",
+      "url": "https://github.com/apple/coremltools/blob/a207b1a3452eafe02f2d870f486287834af2c82d/coremltools/converters/mil/frontend/torch/test/test_torch_conversion_api.py",
+      "key_lines": [
+        {
+          "line": 690,
+          "text": "reason=\"rdar://131396853 Lora Adapted Model Dies as ct.models.MLModel but Passes coremltest\","
+        },
+        {
+          "line": 691,
+          "text": "run=False,"
+        }
+      ]
+    },
+    {
+      "path": "coremltools/converters/mil/mil/passes/defs/cleanup/const_deduplication.py",
+      "sha256": "fd8bfafe3bb778a4b60882a3a95af8b97a757818b578cfc52faffd7116a4bd27",
+      "url": "https://github.com/apple/coremltools/blob/a207b1a3452eafe02f2d870f486287834af2c82d/coremltools/converters/mil/mil/passes/defs/cleanup/const_deduplication.py",
+      "key_lines": [
+        {
+          "line": 79,
+          "text": "def _deduplicate_const_across_functions(self, prog: Program) -> None:"
+        }
+      ]
+    },
+    {
+      "path": "coremltools/_deps/__init__.py",
+      "sha256": "5858a4f50cc5aa2f74899b72ca809873d001a1a0f2acae18800813a83da9e994",
+      "url": "https://github.com/apple/coremltools/blob/a207b1a3452eafe02f2d870f486287834af2c82d/coremltools/_deps/__init__.py",
+      "key_lines": [
+        {
+          "line": 166,
+          "text": "_TORCH_MAX_VERSION = \"2.8.0\""
+        }
+      ]
+    },
+    {
+      "path": "docs-guides/source/multifunction-models.md",
+      "sha256": "042cd18be98bbf02af2b20bd742248eaced337272c50e5709d5f34be9093b89f",
+      "url": "https://github.com/apple/coremltools/blob/a207b1a3452eafe02f2d870f486287834af2c82d/docs-guides/source/multifunction-models.md",
+      "key_lines": []
+    }
+  ],
+  "latest_pypi_versions_observed": {
+    "coremltools": "9.0",
+    "peft": "0.21.2",
+    "torch": "2.14.1"
+  },
+  "installed_packages_with_download_hashes": {
+    "torch": [
+      {
+        "name": "torch",
+        "version": "2.7.0+cpu",
+        "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.7.0%2Bcpu-cp311-cp311-manylinux_2_28_x86_64.whl",
+        "hashes": {
+          "sha256": "6b7edcbf8bb0b9ac2e6c001434797c5ec3f25394f91eb0ed7aeeeeed9ad4500f"
+        }
+      },
+      {
+        "name": "sympy",
+        "version": "1.14.0",
+        "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+        "hashes": {
+          "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5"
+        }
+      },
+      {
+        "name": "mpmath",
+        "version": "1.3.0",
+        "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+        "hashes": {
+          "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+        }
+      },
+      {
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "hashes": {
+          "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+        }
+      },
+      {
+        "name": "filelock",
+        "version": "4.2.4",
+        "url": "https://files.pythonhosted.org/packages/e0/1b/5e74289a1878e666bb4b65fe5805a04cafcac2aa5f519ef1ead67ef91c56/filelock-4.2.4-py3-none-any.whl",
+        "hashes": {
+          "sha256": "301241438c57936ef93f4243a94f2559022268bfcf9b375a9a72eb0f8db8358e"
+        }
+      },
+      {
+        "name": "fsspec",
+        "version": "2026.9.0",
+        "url": "https://files.pythonhosted.org/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl",
+        "hashes": {
+          "sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f"
+        }
+      },
+      {
+        "name": "Jinja2",
+        "version": "3.1.6",
+        "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
+        "hashes": {
+          "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67"
+        }
+      },
+      {
+        "name": "MarkupSafe",
+        "version": "3.0.4",
+        "url": "https://files.pythonhosted.org/packages/81/a5/a513b76c139a3915b43404324e55c0b7979ae4f0d39eb6f075b0282e90a8/markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "hashes": {
+          "sha256": "6da83a088f8ef93b2d483a8232a4dbf4d69d3d8496b568a03c56becac43e1808"
+        }
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1",
+        "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+        "hashes": {
+          "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762"
+        }
+      }
+    ],
+    "deps": [
+      {
+        "name": "coremltools",
+        "version": "9.0",
+        "url": "https://files.pythonhosted.org/packages/54/fe/58fc966635ebe3b92b100fbec875d173addab62454c4438457fa3f427d1c/coremltools-9.0-cp311-none-manylinux1_x86_64.whl",
+        "hashes": {
+          "sha256": "e9080254a4b9d286e168f3b1bc8616edd5d48ab664c17870b85e496629a00e81"
+        }
+      },
+      {
+        "name": "peft",
+        "version": "0.17.1",
+        "url": "https://files.pythonhosted.org/packages/49/fe/a2da1627aa9cb6310b6034598363bd26ac301c4a99d21f415b1b2855891e/peft-0.17.1-py3-none-any.whl",
+        "hashes": {
+          "sha256": "3d129d64def3d74779c32a080d2567e5f7b674e77d546e3585138216d903f99e"
+        }
+      },
+      {
+        "name": "transformers",
+        "version": "4.55.4",
+        "url": "https://files.pythonhosted.org/packages/fa/0a/8791a6ee0529c45f669566969e99b75e2ab20eb0bfee8794ce295c18bdad/transformers-4.55.4-py3-none-any.whl",
+        "hashes": {
+          "sha256": "df28f3849665faba4af5106f0db4510323277c4bb595055340544f7e59d06458"
+        }
+      },
+      {
+        "name": "numpy",
+        "version": "2.2.6",
+        "url": "https://files.pythonhosted.org/packages/b3/dd/2238b898e51bd6d389b7389ffb20d7f4c10066d80351187ec8e303a5a475/numpy-2.2.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "hashes": {
+          "sha256": "ba10f8411898fc418a521833e014a77d3ca01c15b0c6cdcce6a0d2897e6dbbdf"
+        }
+      },
+      {
+        "name": "huggingface_hub",
+        "version": "0.36.2",
+        "url": "https://files.pythonhosted.org/packages/a8/af/48ac8483240de756d2438c380746e7130d1c6f75802ef22f3c6d49982787/huggingface_hub-0.36.2-py3-none-any.whl",
+        "hashes": {
+          "sha256": "48f0c8eac16145dfce371e9d2d7772854a4f591bcb56c9cf548accf531d54270"
+        }
+      },
+      {
+        "name": "hf-xet",
+        "version": "1.7.0",
+        "url": "https://files.pythonhosted.org/packages/a3/4c/2bf3b66c215d409655f28de1622393dde04c9461280d48c7924bb3b2decd/hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "hashes": {
+          "sha256": "2814a6e999d13464c4d679b788cc5d784eb5a4edfc638a31f10e9a11ab531ef8"
+        }
+      },
+      {
+        "name": "tokenizers",
+        "version": "0.21.4",
+        "url": "https://files.pythonhosted.org/packages/f2/90/273b6c7ec78af547694eddeea9e05de771278bd20476525ab930cecaf7d8/tokenizers-0.21.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "hashes": {
+          "sha256": "51b7eabb104f46c1c50b486520555715457ae833d5aee9ff6ae853d1130506ff"
+        }
+      },
+      {
+        "name": "accelerate",
+        "version": "1.15.0",
+        "url": "https://files.pythonhosted.org/packages/8a/4c/34f0450479d01195027260da68d8a3880683f1640c3ca5adf64acb3185f1/accelerate-1.15.0-py3-none-any.whl",
+        "hashes": {
+          "sha256": "97eacca0b73e45cb867dbf8c5d5d4dc32219544300e0c8992c7334dc2ef33cec"
+        }
+      },
+      {
+        "name": "attrs",
+        "version": "26.1.0",
+        "url": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+        "hashes": {
+          "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+        }
+      },
+      {
+        "name": "packaging",
+        "version": "26.3",
+        "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+        "hashes": {
+          "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+        }
+      },
+      {
+        "name": "protobuf",
+        "version": "7.36.2",
+        "url": "https://files.pythonhosted.org/packages/db/f3/3996583dd2906297a637af12114deddf7658af6e683fedb83be061983fb5/protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl",
+        "hashes": {
+          "sha256": "89f23aa53c24553a2416fd4fd1ec06f74fa42b14b546d8883128813f775bbfd2"
+        }
+      },
+      {
+        "name": "PyYAML",
+        "version": "6.0.3",
+        "url": "https://files.pythonhosted.org/packages/71/60/917329f640924b18ff085ab889a11c763e0b573da888e8404ff486657602/pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "hashes": {
+          "sha256": "b8bb0864c5a28024fac8a632c443c87c5aa6f215c0b126c449ae1a150412f31d"
+        }
+      },
+      {
+        "name": "regex",
+        "version": "2026.9.29",
+        "url": "https://files.pythonhosted.org/packages/8a/70/aa08d1d2b294894b365e5f8ba5380fe3f8546acdb81f10639dfd74209c37/regex-2026.9.29-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "hashes": {
+          "sha256": "612b709381c0355b70d89cdb51b7f670591ed5cbbc0e3b5337488019dc667b65"
+        }
+      },
+      {
+        "name": "safetensors",
+        "version": "0.8.0",
+        "url": "https://files.pythonhosted.org/packages/28/50/f203ff3a3ddfe19308efc83c5a3a29ed02bf786732ec35e68bf9162f3365/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "hashes": {
+          "sha256": "fd6f3f93c9a0a7cc2788ee63fb763353d4bd2e89b0751bc78fcf7dda00bea774"
+        }
+      },
+      {
+        "name": "tqdm",
+        "version": "4.70.1",
+        "url": "https://files.pythonhosted.org/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl",
+        "hashes": {
+          "sha256": "c293e525e6fef9c20e8728fd4612df02a0aa31bb5fe91ecd93e123b1b7bffa73"
+        }
+      },
+      {
+        "name": "cattrs",
+        "version": "26.2.1",
+        "url": "https://files.pythonhosted.org/packages/e8/cf/22794a399d99480486120e26e879ef008e21f5e85274c2ed591d568bb326/cattrs-26.2.1-py3-none-any.whl",
+        "hashes": {
+          "sha256": "a12aaa3453dc8f633a815293179f08b7421ed18d2575c459c3c736f840beac24"
+        }
+      },
+      {
+        "name": "psutil",
+        "version": "7.2.2",
+        "url": "https://files.pythonhosted.org/packages/b5/70/5d8df3b09e25bce090399cf48e452d25c935ab72dad19406c77f4e828045/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl",
+        "hashes": {
+          "sha256": "076a2d2f923fd4821644f5ba89f059523da90dc9014e85f8e45a5774ca5bc6f9"
+        }
+      },
+      {
+        "name": "pyaml",
+        "version": "26.7.0",
+        "url": "https://files.pythonhosted.org/packages/a6/26/3f05f9e3692853dff663913d5d62fb8df3f5640c8d70b06588c0b51ed953/pyaml-26.7.0-py3-none-any.whl",
+        "hashes": {
+          "sha256": "cfa382780c43ae660669b87d394d550a41856ef175f5749f51f753e12d7077ac"
+        }
+      },
+      {
+        "name": "requests",
+        "version": "2.34.2",
+        "url": "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl",
+        "hashes": {
+          "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0"
+        }
+      },
+      {
+        "name": "charset-normalizer",
+        "version": "3.5.2",
+        "url": "https://files.pythonhosted.org/packages/e4/ed/cf505d3011ffceb12c2067a7a5d3cfe92b875d4d44bb0ff0d69375e2c184/charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "hashes": {
+          "sha256": "211d5a3eb6af8f513b8d4ca19a8c1b7accab1b5f0d3175f9826b03c1a920dc1f"
+        }
+      },
+      {
+        "name": "idna",
+        "version": "3.20",
+        "url": "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl",
+        "hashes": {
+          "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c"
+        }
+      },
+      {
+        "name": "urllib3",
+        "version": "2.8.0",
+        "url": "https://files.pythonhosted.org/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl",
+        "hashes": {
+          "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3"
+        }
+      },
+      {
+        "name": "certifi",
+        "version": "2026.10.23",
+        "url": "https://files.pythonhosted.org/packages/32/d1/a3652fe2c19134d0d15922177821d863cbd7e842d53a21bbe7e8e3a1b5ac/certifi-2026.10.23-py3-none-any.whl",
+        "hashes": {
+          "sha256": "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1"
+        }
+      }
+    ]
+  },
+  "scope": "Public primary sources and installed distribution identities; no Apple Developer session or license supplied",
+  "screenshots": [
+    {
+      "path": "/workspace/incoming/c4ad2990/photo_AQADQhVrGyP4AVN-.jpg",
+      "bytes": 53308,
+      "sha256": "03a9d74ce48f27303e45b11be70228ef019d23a6b3a67ce2dfb9bc5330c299f8"
+    },
+    {
+      "path": "/workspace/incoming/c4ad2990/photo_AQADQxVrGyP4AVN-.jpg",
+      "bytes": 53714,
+      "sha256": "99c046928acb296a48f706fa4a3425144574cba8f82c2e590a17d5b5e6778496"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+ˆ
+
+x
+*
+@ €R
+y
+*
+ €¢â¢+
+$com.github.apple.coremltools.version9.0¢7
+#com.github.apple.coremltools.sourcetorch==2.7.0+cpu¢:
+,com.github.apple.coremltools.conversion_date
+2026-10-26¢:
++com.github.apple.coremltools.source_dialectTorchScript²×	æ
+mainÝ
+
+x
+
+
+@CoreML5¸
+CoreML5¬y„
+const
+linear1_bias
+
+
+0*"
+name
+
+"
+linear1_bias*9
+val2
+
+
+0*"
+@model_path/weights/weight.bin@•
+const$
+linear1_weight
+
+0
+@*$
+name
+
+"
+linear1_weight*@
+val9
+
+0
+@*#
+@model_path/weights/weight.binÀ…
+const
+linear2_bias
+
+
+*"
+name
+
+"
+linear2_bias*:
+val3
+
+
+*#
+@model_path/weights/weight.bin€c•
+const$
+linear2_weight
+
+
+0*$
+name
+
+"
+linear2_weight*@
+val9
+
+
+0*#
+@model_path/weights/weight.bin€d‰
+linear
+weight
+
+linear1_weight
+
+x
+
+x
+bias
+
+linear1_bias
+var_6
+
+
+0*
+name
+
+"
+
+linear_0P
+relu
+x	
+
+var_6
+input
+
+
+0*
+name
+
+	"
+input‰
+linear
+weight
+
+linear2_weight
+x	
+
+input
+bias
+
+linear2_bias
+y
+
+
+*
+name
+
+"
+
+linear_1"é
+	buildInfoÛ"
+
+
+È"Å
+6
+!
+
+"
+coremltools-version
+	
+"
+9.0
+D
+)
+!
+"
+coremltools-component-torch
+
+"
+	2.7.0+cpu
+E
+(
+ 
+"
+coremltools-source-dialect
+
+"
+TorchScript

@@ -1,0 +1,153 @@
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLCPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLGPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLNeuralEngineComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLComputePlanProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelAssetProxy: No module named 'coremltools.libcoremlpython'
+
+Converting PyTorch Frontend ==> MIL Ops:   0%|          | 0/3 [00:00<?, ? ops/s]
+Converting PyTorch Frontend ==> MIL Ops:  67%|██████▋   | 2/3 [00:00<00:00, 4818.27 ops/s]
+
+Running MIL frontend_pytorch pipeline:   0%|          | 0/5 [00:00<?, ? passes/s]
+Running MIL frontend_pytorch pipeline: 100%|██████████| 5/5 [00:00<00:00, 15207.77 passes/s]
+
+Running MIL default pipeline:   0%|          | 0/92 [00:00<?, ? passes/s]
+Running MIL default pipeline: 100%|██████████| 92/92 [00:00<00:00, 12715.88 passes/s]
+
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]
+Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 21883.33 passes/s]
+
+Converting PyTorch Frontend ==> MIL Ops:   0%|          | 0/19 [00:00<?, ? ops/s]
+Converting PyTorch Frontend ==> MIL Ops:  95%|█████████▍| 18/19 [00:00<00:00, 9778.20 ops/s]
+
+Running MIL frontend_pytorch pipeline:   0%|          | 0/5 [00:00<?, ? passes/s]
+Running MIL frontend_pytorch pipeline: 100%|██████████| 5/5 [00:00<00:00, 7397.36 passes/s]
+
+Running MIL default pipeline:   0%|          | 0/92 [00:00<?, ? passes/s]
+Running MIL default pipeline: 100%|██████████| 92/92 [00:00<00:00, 6058.94 passes/s]
+
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]
+Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 8776.22 passes/s]
+
+Converting PyTorch Frontend ==> MIL Ops:   0%|          | 0/3 [00:00<?, ? ops/s]
+Converting PyTorch Frontend ==> MIL Ops:  67%|██████▋   | 2/3 [00:00<00:00, 6938.47 ops/s]
+
+Running MIL frontend_pytorch pipeline:   0%|          | 0/5 [00:00<?, ? passes/s]
+Running MIL frontend_pytorch pipeline: 100%|██████████| 5/5 [00:00<00:00, 23121.85 passes/s]
+
+Running MIL default pipeline:   0%|          | 0/92 [00:00<?, ? passes/s]
+Running MIL default pipeline: 100%|██████████| 92/92 [00:00<00:00, 13525.74 passes/s]
+
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]
+Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 23056.18 passes/s]
+
+Converting PyTorch Frontend ==> MIL Ops:   0%|          | 0/19 [00:00<?, ? ops/s]
+Converting PyTorch Frontend ==> MIL Ops:  95%|█████████▍| 18/19 [00:00<00:00, 10588.71 ops/s]
+
+Running MIL frontend_pytorch pipeline:   0%|          | 0/5 [00:00<?, ? passes/s]
+Running MIL frontend_pytorch pipeline: 100%|██████████| 5/5 [00:00<00:00, 7681.88 passes/s]
+
+Running MIL default pipeline:   0%|          | 0/92 [00:00<?, ? passes/s]
+Running MIL default pipeline: 100%|██████████| 92/92 [00:00<00:00, 6152.26 passes/s]
+
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]
+Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 8759.42 passes/s]
+
+Converting PyTorch Frontend ==> MIL Ops:   0%|          | 0/3 [00:00<?, ? ops/s]
+Converting PyTorch Frontend ==> MIL Ops:  67%|██████▋   | 2/3 [00:00<00:00, 6864.65 ops/s]
+
+Running MIL frontend_pytorch pipeline:   0%|          | 0/5 [00:00<?, ? passes/s]
+Running MIL frontend_pytorch pipeline: 100%|██████████| 5/5 [00:00<00:00, 22192.08 passes/s]
+
+Running MIL default pipeline:   0%|          | 0/92 [00:00<?, ? passes/s]
+Running MIL default pipeline: 100%|██████████| 92/92 [00:00<00:00, 13298.73 passes/s]
+
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]
+Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 22815.80 passes/s]
+
+Converting PyTorch Frontend ==> MIL Ops:   0%|          | 0/3 [00:00<?, ? ops/s]
+Converting PyTorch Frontend ==> MIL Ops:  67%|██████▋   | 2/3 [00:00<00:00, 6927.01 ops/s]
+
+Running MIL frontend_pytorch pipeline:   0%|          | 0/5 [00:00<?, ? passes/s]
+Running MIL frontend_pytorch pipeline: 100%|██████████| 5/5 [00:00<00:00, 23172.95 passes/s]
+
+Running MIL default pipeline:   0%|          | 0/92 [00:00<?, ? passes/s]
+Running MIL default pipeline: 100%|██████████| 92/92 [00:00<00:00, 13583.36 passes/s]
+
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]
+Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 23215.70 passes/s]
+
+Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]
+Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]
+
+Running MIL default pipeline:   0%|          | 0/92 [00:00<?, ? passes/s]
+Running MIL default pipeline: 100%|██████████| 92/92 [00:00<00:00, 7720.14 passes/s]
+
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]
+Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 7611.02 passes/s]
+
+Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]
+Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]
+
+Running MIL default pipeline:   0%|          | 0/92 [00:00<?, ? passes/s]
+Running MIL default pipeline: 100%|██████████| 92/92 [00:00<00:00, 26478.83 passes/s]
+
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]
+Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 25216.26 passes/s]
+{
+  "status": "PASS",
+  "comparisons": {
+    "base": {
+      "torch_vs_numpy64_max_abs": 1.330156266243776e-07,
+      "saved_mil_numpy_vs_numpy64_max_abs": 6.830258242329634e-08
+    },
+    "adapter_1": {
+      "torch_vs_numpy64_max_abs": 1.3497531803352558e-07,
+      "saved_mil_numpy_vs_numpy64_max_abs": 7.532298157419959e-08
+    },
+    "merged_1": {
+      "torch_vs_numpy64_max_abs": 1.7240857830280731e-07,
+      "saved_mil_numpy_vs_numpy64_max_abs": 1.0769440539348807e-07
+    },
+    "adapter_2": {
+      "torch_vs_numpy64_max_abs": 2.000769544485692e-07,
+      "saved_mil_numpy_vs_numpy64_max_abs": 1.2118961767448866e-07
+    },
+    "merged_2": {
+      "torch_vs_numpy64_max_abs": 1.866757750601522e-07,
+      "saved_mil_numpy_vs_numpy64_max_abs": 7.548143152874554e-08
+    },
+    "merged_1_ios15": {
+      "saved_mil_numpy_vs_numpy64_max_abs": 1.0769440539348807e-07
+    },
+    "multifunction_adapter/adapter_1": {
+      "saved_mil_numpy_vs_numpy64_max_abs": 7.532298157419959e-08
+    },
+    "multifunction_adapter/adapter_2": {
+      "saved_mil_numpy_vs_numpy64_max_abs": 1.2118961767448866e-07
+    },
+    "multifunction_merged/adapter_1": {
+      "saved_mil_numpy_vs_numpy64_max_abs": 1.0769440539348807e-07
+    },
+    "multifunction_merged/adapter_2": {
+      "saved_mil_numpy_vs_numpy64_max_abs": 7.548143152874554e-08
+    }
+  },
+  "package_bytes": {
+    "merged_1_ios15.mlpackage": 18065,
+    "adapter_2.mlpackage": 24571,
+    "merged_1.mlpackage": 18065,
+    "multifunction_merged.mlpackage": 34172,
+    "merged_2.mlpackage": 18065,
+    "base.mlpackage": 18065,
+    "adapter_1.mlpackage": 24571,
+    "multifunction_adapter.mlpackage": 31313
+  },
+  "apple_coreml_predict": {
+    "status": "unavailable",
+    "exception_type": "Exception",
+    "message": "Model prediction is only supported on macOS version 10.13 or later."
+  }
+}

@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/workspace/Apple/Apple Intelligence/analysis/lora-20261026/run_coreai.py", line 101, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/Apple/Apple Intelligence/analysis/lora-20261026/run_coreai.py", line 36, in main
+    with module:
+  File "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/lib/python3.11/site-packages/coreai/authoring/module.py", line 99, in __exit__
+    self._block_tmp.__exit__(exc_type, exc_val, exc_tb)
+  File "/usr/lib/python3.11/contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/lib/python3.11/site-packages/coreai/authoring/module.py", line 111, in _insertion
+    run_pre_compilation_rewrite(module=self._mlir_module)
+RuntimeError: Failed to run the pre-compilation rewrite pipeline: at #debuginfo.location<loc("run_coreai.py":37:0) in @main>: 'coreai.add' op all non-scalar operands/results must have the same shape and base type
+at #debuginfo.location<loc("run_coreai.py":37:0) in @main>: see current operation: %6 = "coreai.add"(%5, %4) : (tensor<1x48xf32>, tensor<48xf32>) -> tensor<1x48xf32>

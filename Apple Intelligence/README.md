@@ -34,6 +34,12 @@ et d'exécuter un `.aimodel` de démonstration. Les
 les principaux poids génératifs encore absents. Aucune génération AFM de texte
 ou d'image n'est revendiquée.
 
+La [vérification de la piste LoRA/Core ML](analysis/LORA-COREML.md) distingue
+PEFT, fusion, fonctions partageant leurs poids et toolkit Foundation Models.
+Des essais contrôlés reproduisent ces étapes sous Debian et exécutent un
+réseau à corrections LoRA dynamiques avec Core AI Linux. Ils ne fournissent
+aucun poids AFM ; le véritable adapter Safari compilé a seulement été inspecté.
+
 Un [client public Foundation Models](runtime/foundationmodels/README.md) est
 aussi fourni pour un Mac éligible. Il utilise le modèle installé par l'OS ;
 son identité ne doit pas être assimilée aux poids d'une référence iOS 24B115.

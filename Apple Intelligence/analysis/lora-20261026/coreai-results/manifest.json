@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "id": "controlled-dynamic-lora",
+      "label": "Controlled synthetic dynamic LoRA",
+      "scope": "demonstration",
+      "format": "coreai_asset",
+      "availability": "local_generated",
+      "source_layout": "directory",
+      "source_path": "controlled-dynamic-lora.aimodel",
+      "entrypoint": "main",
+      "files": [
+        {
+          "path": "main.hash",
+          "size": 32,
+          "sha256": "5f887e2619d6e1bc077d8a8dec8b70b8ba4b17508f93f514042adff7547b9783"
+        },
+        {
+          "path": "main.mlirb",
+          "size": 17482,
+          "sha256": "073634a2198079aaecc3fdae6f8d50e2bc2cb104030d367a0449e6f0eb8e8c1d"
+        },
+        {
+          "path": "metadata.json",
+          "size": 105,
+          "sha256": "1ebe10b0b32254034652dc4d088e23ba88a59e9402df77da2ba16a194cf0c5a5"
+        }
+      ]
+    }
+  ]
+}

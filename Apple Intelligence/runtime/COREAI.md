@@ -9,6 +9,18 @@ Ce format est distinct de Core ML (`.mlmodel`, `.mlmodelc`, `.mlpackage`). Le
 backend n’importe pas ces derniers comme s’ils étaient des assets Core AI. Il
 ne fournit aucun poids AFM ni modèle Apple Intelligence entraîné.
 
+## Complément : réseau pondéré avec corrections LoRA
+
+Les [essais LoRA](../analysis/LORA-COREML.md) exécutent désormais une base
+contrôlée `64→48→16` avec quatre matrices LoRA fournies comme entrées à chaque
+appel. Le graphe Core AI est écrit explicitement à partir des tableaux de test ;
+aucun convertisseur Core ML, asset `.fmadapter` ou poids AFM n'intervient.
+Les 36 inférences natives et l'exécution du même asset par le catalogue/store/CLI
+sont comparées à une référence NumPy Float64. Les [commandes](../analysis/lora-20261026/REPRODUCE.md)
+et [preuves](../analysis/lora-20261026/coreai-results/report.json) sont livrées.
+Le transport actuel couvre déjà ces tenseurs : pas de nouvelle compatibilité
+avec les formats de modèles compilés du firmware revendiquée.
+
 ## Installation et démonstration
 
 Depuis `runtime/`, dans un environnement Python 3.11+ dédié :

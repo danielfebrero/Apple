@@ -1,0 +1,281 @@
+{
+  "scope": "existing inventoried files only; names cannot classify all opaque payloads",
+  "manifest_sha256": "36796cbac7124884cac6427e1c5747a919a3582e72ef82c728798129b6530840",
+  "inventoried_files": 3923,
+  "inventoried_bytes": 2739917787,
+  "formats": {
+    "coreml_runtime_data": 1118,
+    "json_or_plist_metadata": 538,
+    "espresso_graph": 418,
+    "espresso_shapes": 426,
+    "espresso_weights": 291,
+    "coreml_mil": 220,
+    "opaque_weights": 195,
+    "opaque_resource": 53,
+    "zip_coreml_compiled": 1,
+    "coreml_protobuf": 25,
+    "opaque_coreml_compiled_file": 1,
+    "opaque_coreml_data": 82,
+    "apple_e5_metadata": 98,
+    "opaque_neural_network": 16,
+    "apple_ane_hwx": 196,
+    "opaque_model_resource": 16,
+    "tokenizer_resource": 50,
+    "checksum_text": 99,
+    "opaque_model_data": 27,
+    "vocabulary_resource": 32,
+    "apple_bnns_ir": 9,
+    "numpy_npy": 12
+  },
+  "named_adapter_files": [
+    "/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/analytics/coremldata.bin",
+    "/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/coremldata.bin",
+    "/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/model.specialization.bundle/H18.bundle/H18.e5",
+    "/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/model.specialization.bundle/H18.bundle/ane_compile/multiprocedure/model.hwx",
+    "/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_512/main_ctx_512_bnns/bnns_program.bnnsir",
+    "/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_77/main_ctx_77_bnns/bnns_program.bnnsir"
+  ],
+  "standard_peft_or_fmadapter_paths": [],
+  "real_compiled_adapter": {
+    "id": "m-7b9fdc2970fc78c9d2ff",
+    "files_verified": [
+      {
+        "path": "models/cache/rootfs/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/analytics/coremldata.bin",
+        "size": 243,
+        "sha256": "511b21cec487399fff7179a082a8a355bc92a295eda7e417f1140fbda02289f6",
+        "format": "coreml_runtime_data"
+      },
+      {
+        "path": "models/cache/rootfs/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/coremldata.bin",
+        "size": 339,
+        "sha256": "47e011e35309791ef958ac5d378d154cc3a4026106b9fd340a66039d3bcc9f56",
+        "format": "coreml_runtime_data"
+      },
+      {
+        "path": "models/cache/rootfs/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/model.specialization.bundle/H18.bundle/H18.e5",
+        "size": 7032,
+        "sha256": "e1657177f88fac656c05f67cb1922d53252afb9e80a35a0d8f45afcddbc354a2",
+        "format": "apple_e5_metadata"
+      },
+      {
+        "path": "models/cache/rootfs/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/model.specialization.bundle/H18.bundle/ane_compile/multiprocedure/model.hwx",
+        "size": 9535488,
+        "sha256": "18b918da6e36e74cc5c5f983f6ab0c0e23e130c7bb6378685b76c42bdf5a1674",
+        "format": "apple_ane_hwx"
+      },
+      {
+        "path": "models/cache/rootfs/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_512/main_ctx_512_bnns/bnns_program.bnnsir",
+        "size": 819200,
+        "sha256": "06a80e9495c8109bd61108290e80fe694657aa203bdd1d2fe34db4a520b60bb2",
+        "format": "apple_bnns_ir"
+      },
+      {
+        "path": "models/cache/rootfs/System/Library/PrivateFrameworks/EmbeddingCore.framework/SystemSearch/v8.0.0/md8-safari-adapter.mlmodelc/model.specialization.bundle/H18.bundle/main_ctx_77/main_ctx_77_bnns/bnns_program.bnnsir",
+        "size": 819200,
+        "sha256": "18bb85fd5b56f56234d5a2c8c4c694c29f66b0c30151530d1626c246ec430125",
+        "format": "apple_bnns_ir"
+      }
+    ],
+    "description_offset": 83,
+    "description_length": 224,
+    "description": {
+      "functions": [
+        {
+          "name": "main_ctx_77",
+          "input": [
+            {
+              "name": "spatial",
+              "type": {
+                "multiArrayType": {
+                  "shape": [
+                    "1",
+                    "77",
+                    "768"
+                  ],
+                  "dataType": "FLOAT32"
+                }
+              }
+            },
+            {
+              "name": "eos_pos",
+              "type": {
+                "multiArrayType": {
+                  "shape": [
+                    "1"
+                  ],
+                  "dataType": "INT32"
+                }
+              }
+            }
+          ],
+          "output": [
+            {
+              "name": "output",
+              "type": {
+                "multiArrayType": {
+                  "shape": [
+                    "1",
+                    "512"
+                  ],
+                  "dataType": "FLOAT16"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "main_ctx_512",
+          "input": [
+            {
+              "name": "spatial",
+              "type": {
+                "multiArrayType": {
+                  "shape": [
+                    "1",
+                    "512",
+                    "768"
+                  ],
+                  "dataType": "FLOAT32"
+                }
+              }
+            },
+            {
+              "name": "eos_pos",
+              "type": {
+                "multiArrayType": {
+                  "shape": [
+                    "1"
+                  ],
+                  "dataType": "INT32"
+                }
+              }
+            }
+          ],
+          "output": [
+            {
+              "name": "output",
+              "type": {
+                "multiArrayType": {
+                  "shape": [
+                    "1",
+                    "512"
+                  ],
+                  "dataType": "FLOAT16"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "defaultFunctionName": "main_ctx_512",
+      "metadata": {
+        "userDefined": {
+          "mldb_token": "mldb-4blgx74ype"
+        }
+      }
+    },
+    "missing_from_inventoried_bundle": [
+      "source model.mil",
+      "source .mlmodel protobuf",
+      "PEFT matrices/configuration"
+    ],
+    "not_established": [
+      "LoRA rank and tensor keys",
+      "base model identity",
+      "AFM compatibility",
+      "Linux inference"
+    ]
+  },
+  "asset_catalogue_sources": [
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/AssetSets/com.apple.modelcatalog.plist",
+      "sha256": "fbd703cfc378263a215199c0491868fc6859cddab74b10b93e70f25486b8ef92",
+      "decoded_path": "decoded/rootfs/System/Library/UnifiedAssetFramework/AssetSets/com.apple.modelcatalog.plist.json",
+      "decoded_sha256": "d6819205fe478a9f56f9fc143b31c96d8c85d9b37babcc134bab6a7e0fc1673e"
+    },
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/AssetSets/com.apple.MobileAsset.UAF.FM.Visual.plist",
+      "sha256": "3f22c9feaae28c8b2dd8d1de87f0f6adbbca2a6b30aa966ed129740302d29a87",
+      "decoded_path": "decoded/rootfs/System/Library/UnifiedAssetFramework/AssetSets/com.apple.MobileAsset.UAF.FM.Visual.plist.json",
+      "decoded_sha256": "83fc1a67518d6509d61419516cf12d80fb7aa3cea096db1b6ac875f8062a4a54"
+    }
+  ],
+  "asset_reference_counts": {
+    "language": 366,
+    "visual": 18
+  },
+  "instruct_3b_reference_count": 239,
+  "instruct_300m_reference_count": 35,
+  "adapter_named_references": [
+    "com.apple.fm.language.instruct_300m.voice_control_ai_v2.image_tokenizer_adapter.generic",
+    "com.apple.fm.language.instruct_3b.car_key_data_extract.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.car_key_data_extract.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.fm_api_content_tagger.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.fm_api_content_tagger.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.holdassistwaittime.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.holdassistwaittime.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.homekit_summary_notifications.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.homekit_summary_notifications.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.photos_memories_title.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.photos_memories_title.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.reminders_grocery_list.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.reminders_grocery_list.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.safari_magic_extensions_app_store_search_terms.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.safari_magic_extensions_app_store_search_terms.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.safari_notify_me_when_suggestions.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.safari_notify_me_when_suggestions.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.safari_tab_group_topic.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.safari_tab_group_topic.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.shortcuts_ask_afm_action_3b.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.shortcuts_ask_afm_action_3b.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.siri_user_experience_analysis.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.siri_user_experience_analysis.adapter_metadata_override.generic_sparse",
+    "com.apple.fm.language.instruct_3b.wallet_receipt_linking.adapter_metadata_override.generic",
+    "com.apple.fm.language.instruct_3b.wallet_receipt_linking.adapter_metadata_override.generic_sparse"
+  ],
+  "base_named_language_references": [
+    "com.apple.fm.distilled.messages_action.base.generic",
+    "com.apple.fm.language.code_safety_guardrail.base.generic",
+    "com.apple.fm.language.instruct_300m.base.generic",
+    "com.apple.fm.language.instruct_3b.base.draft.generic",
+    "com.apple.fm.language.instruct_3b.base.draft.generic_sparse",
+    "com.apple.fm.language.instruct_3b.base.generic",
+    "com.apple.fm.language.instruct_3b.base.generic_sparse",
+    "com.apple.fm.language.instruct_85m.base.generic",
+    "com.apple.fm.language.instruct_9m.text_event_extraction_classifier.base.generic",
+    "com.apple.fm.language.pqa_verification.base.generic",
+    "com.apple.gm.server.instruct_server_v1.base.generic",
+    "com.apple.gm.server.photos_memories_creation.base.generic",
+    "com.apple.gm.server.summarization.summarizer_ajax.base.generic"
+  ],
+  "visual_references": [
+    "com.apple.fm.visual.image_diffusion_v1.base.generic",
+    "com.apple.fm.visual.image_diffusion_v1.base.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.emoji.generic",
+    "com.apple.fm.visual.image_diffusion_v1.emoji.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic",
+    "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic",
+    "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic",
+    "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic_alternate",
+    "com.apple.fm.visual.imageplayground.curatedprompts.generic",
+    "com.apple.fm.visual.imagescaler.upscaler.generic",
+    "com.apple.fm.visual.uaf.metadata",
+    "com.apple.fm.visual.understanding.conditioning.generic",
+    "com.apple.fm.visual.understanding.conditioning.generic_alternate",
+    "com.apple.gm.image_generation_services.debiasing.metadata.generic",
+    "com.apple.gm.prompt_allow_list.input.delta_lexicon.generic",
+    "com.apple.gm.safety_deny.input.visual_generation.safety.generic"
+  ],
+  "conversion_rejections": {
+    "compiled_safari_adapter": {
+      "type": "TypeError",
+      "message": "Model must either be a TorchScript object (or .pt or .pth file) or an ExportedProgram object (if using torch.export based API), received: <class 'str'>"
+    }
+  },
+  "AFM_base_or_adapter_payload_acquired": false,
+  "inference": "coremltools cannot reconstruct unavailable source weights or a PEFT state_dict from these names"
+}

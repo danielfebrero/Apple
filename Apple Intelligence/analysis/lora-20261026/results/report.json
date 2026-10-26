@@ -1,0 +1,994 @@
+{
+  "purpose": "synthetic LoRA/PEFT conversion; not AFM execution",
+  "platform": "Linux-6.1.0-53-amd64-x86_64-with-glibc2.36",
+  "python": "3.11.2 (main, Oct  7 2026, 12:35:07) [GCC 12.2.0]",
+  "versions": {
+    "torch": "2.7.0+cpu",
+    "peft": "0.17.1",
+    "coremltools": "9.0",
+    "numpy": "2.2.6",
+    "transformers": "4.55.4",
+    "protobuf": "7.36.2",
+    "safetensors": "0.8.0"
+  },
+  "seed": 20261026,
+  "base_shapes": {
+    "linear1.weight": [
+      48,
+      64
+    ],
+    "linear1.bias": [
+      48
+    ],
+    "linear2.weight": [
+      16,
+      48
+    ],
+    "linear2.bias": [
+      16
+    ]
+  },
+  "training": {
+    "adapter_1": {
+      "initial_delta_from_base": 0.0,
+      "mse_before": 0.009471080265939236,
+      "mse_after": 4.812144652532879e-06,
+      "steps": 180,
+      "test_delta_from_base": 0.28085029125213623,
+      "frozen_base_unchanged": true,
+      "rank": 4,
+      "alpha": 8,
+      "scale": 2.0,
+      "parameter_shapes": {
+        "a1": [
+          4,
+          64
+        ],
+        "b1": [
+          48,
+          4
+        ],
+        "a2": [
+          4,
+          48
+        ],
+        "b2": [
+          16,
+          4
+        ]
+      }
+    },
+    "adapter_2": {
+      "initial_delta_from_base": 0.0,
+      "mse_before": 0.006612945348024368,
+      "mse_after": 2.7825183224194916e-06,
+      "steps": 180,
+      "test_delta_from_base": 0.29054826498031616,
+      "frozen_base_unchanged": true,
+      "rank": 4,
+      "alpha": 8,
+      "scale": 2.0,
+      "parameter_shapes": {
+        "a1": [
+          4,
+          64
+        ],
+        "b1": [
+          48,
+          4
+        ],
+        "a2": [
+          4,
+          48
+        ],
+        "b2": [
+          16,
+          4
+        ]
+      }
+    }
+  },
+  "comparisons": {
+    "base": {
+      "torch_vs_numpy64_max_abs": 1.330156266243776e-07,
+      "saved_mil_numpy_vs_numpy64_max_abs": 6.830258242329634e-08
+    },
+    "adapter_1": {
+      "torch_vs_numpy64_max_abs": 1.3497531803352558e-07,
+      "saved_mil_numpy_vs_numpy64_max_abs": 7.532298157419959e-08
+    },
+    "merged_1": {
+      "torch_vs_numpy64_max_abs": 1.7240857830280731e-07,
+      "saved_mil_numpy_vs_numpy64_max_abs": 1.0769440539348807e-07
+    },
+    "adapter_2": {
+      "torch_vs_numpy64_max_abs": 2.000769544485692e-07,
+      "saved_mil_numpy_vs_numpy64_max_abs": 1.2118961767448866e-07
+    },
+    "merged_2": {
+      "torch_vs_numpy64_max_abs": 1.866757750601522e-07,
+      "saved_mil_numpy_vs_numpy64_max_abs": 7.548143152874554e-08
+    },
+    "merged_1_ios15": {
+      "saved_mil_numpy_vs_numpy64_max_abs": 1.0769440539348807e-07
+    },
+    "multifunction_adapter/adapter_1": {
+      "saved_mil_numpy_vs_numpy64_max_abs": 7.532298157419959e-08
+    },
+    "multifunction_adapter/adapter_2": {
+      "saved_mil_numpy_vs_numpy64_max_abs": 1.2118961767448866e-07
+    },
+    "multifunction_merged/adapter_1": {
+      "saved_mil_numpy_vs_numpy64_max_abs": 1.0769440539348807e-07
+    },
+    "multifunction_merged/adapter_2": {
+      "saved_mil_numpy_vs_numpy64_max_abs": 7.548143152874554e-08
+    }
+  },
+  "packages": {
+    "base": {
+      "specification_version": 9,
+      "functions": [
+        "main"
+      ],
+      "default_function": "",
+      "op_counts": {
+        "const": 4,
+        "linear": 2,
+        "relu": 1
+      },
+      "blobs": [
+        {
+          "name": "linear1_bias",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "eed849eb03531890b48d8af2ec2ee67549ac5c8b2e72c20f2becbc3adc5de13b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 64
+        },
+        {
+          "name": "linear1_weight",
+          "shape": [
+            48,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "f5721afdae8a21fdc8a3edde5b08e7c8c2711e6f225c244c449e0691f4bda098",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 320
+        },
+        {
+          "name": "linear2_bias",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "9c806141ae782ffd01628c82af66683339054c149389b6d54d1d17dfeabd85a4",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12672
+        },
+        {
+          "name": "linear2_weight",
+          "shape": [
+            16,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "6f0ecf8c8f1152d290e4b2cebc2a97a4158d9a4851459fecdcf1d3d8297b5aac",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12800
+        }
+      ]
+    },
+    "adapter_1": {
+      "specification_version": 9,
+      "functions": [
+        "main"
+      ],
+      "default_function": "",
+      "op_counts": {
+        "add": 2,
+        "const": 14,
+        "linear": 6,
+        "mul": 2,
+        "relu": 1
+      },
+      "blobs": [
+        {
+          "name": "base_model_model_linear1_base_layer_bias",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "eed849eb03531890b48d8af2ec2ee67549ac5c8b2e72c20f2becbc3adc5de13b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 64
+        },
+        {
+          "name": "base_model_model_linear1_base_layer_weight",
+          "shape": [
+            48,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "f5721afdae8a21fdc8a3edde5b08e7c8c2711e6f225c244c449e0691f4bda098",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 320
+        },
+        {
+          "name": "base_model_model_linear1_lora_A_default_weight",
+          "shape": [
+            4,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "5d90991c53521b5e998d78f174390ab387a452b6b078f96fd76fb2b54c10b55e",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12672
+        },
+        {
+          "name": "base_model_model_linear1_lora_B_default_weight",
+          "shape": [
+            48,
+            4
+          ],
+          "dtype": "float32",
+          "data_sha256": "3235b2d8f6d96781777c2023eb640b5637a048db6593172a1c477f1e5b4d7741",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 13760
+        },
+        {
+          "name": "base_model_model_linear2_base_layer_bias",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "9c806141ae782ffd01628c82af66683339054c149389b6d54d1d17dfeabd85a4",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 14592
+        },
+        {
+          "name": "base_model_model_linear2_base_layer_weight",
+          "shape": [
+            16,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "6f0ecf8c8f1152d290e4b2cebc2a97a4158d9a4851459fecdcf1d3d8297b5aac",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 14720
+        },
+        {
+          "name": "base_model_model_linear2_lora_A_default_weight",
+          "shape": [
+            4,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "2744c9a9d49415ee824389019be0bf8cdc569a31049d153a5d04e6cefff7391b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 17856
+        },
+        {
+          "name": "base_model_model_linear2_lora_B_default_weight",
+          "shape": [
+            16,
+            4
+          ],
+          "dtype": "float32",
+          "data_sha256": "457f72052d57c47239e370de170acdfe750ea4af38f74ed3664da5e72ef85b86",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 18688
+        },
+        {
+          "name": "linear_2_bias_0",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "5d89f056865052bcb89c910d2d62872e029fb273c3db03f8968a52a41593c1b5",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 19008
+        },
+        {
+          "name": "linear_5_bias_0",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 19264
+        }
+      ]
+    },
+    "merged_1": {
+      "specification_version": 9,
+      "functions": [
+        "main"
+      ],
+      "default_function": "",
+      "op_counts": {
+        "const": 4,
+        "linear": 2,
+        "relu": 1
+      },
+      "blobs": [
+        {
+          "name": "linear1_bias",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "eed849eb03531890b48d8af2ec2ee67549ac5c8b2e72c20f2becbc3adc5de13b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 64
+        },
+        {
+          "name": "linear1_weight",
+          "shape": [
+            48,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "c50d01c6f94152f7c4742a1e68ed6130db4ba95e1e06c903ffd486439652e70b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 320
+        },
+        {
+          "name": "linear2_bias",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "9c806141ae782ffd01628c82af66683339054c149389b6d54d1d17dfeabd85a4",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12672
+        },
+        {
+          "name": "linear2_weight",
+          "shape": [
+            16,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "89b74ebd2d15f1b3d462316d8bc8033cc57fc7ea8d1c6a2e6ede589753b11063",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12800
+        }
+      ]
+    },
+    "adapter_2": {
+      "specification_version": 9,
+      "functions": [
+        "main"
+      ],
+      "default_function": "",
+      "op_counts": {
+        "add": 2,
+        "const": 14,
+        "linear": 6,
+        "mul": 2,
+        "relu": 1
+      },
+      "blobs": [
+        {
+          "name": "base_model_model_linear1_base_layer_bias",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "eed849eb03531890b48d8af2ec2ee67549ac5c8b2e72c20f2becbc3adc5de13b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 64
+        },
+        {
+          "name": "base_model_model_linear1_base_layer_weight",
+          "shape": [
+            48,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "f5721afdae8a21fdc8a3edde5b08e7c8c2711e6f225c244c449e0691f4bda098",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 320
+        },
+        {
+          "name": "base_model_model_linear1_lora_A_default_weight",
+          "shape": [
+            4,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "06d8f1fbeed93b61a27b028fde863b16b3e664bdf404d597f9e864e57fd0f14d",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12672
+        },
+        {
+          "name": "base_model_model_linear1_lora_B_default_weight",
+          "shape": [
+            48,
+            4
+          ],
+          "dtype": "float32",
+          "data_sha256": "6abd1f5c0fa6cacc81e850f343e6cd5427e838f16865bfb3c8217c9202aef4ef",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 13760
+        },
+        {
+          "name": "base_model_model_linear2_base_layer_bias",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "9c806141ae782ffd01628c82af66683339054c149389b6d54d1d17dfeabd85a4",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 14592
+        },
+        {
+          "name": "base_model_model_linear2_base_layer_weight",
+          "shape": [
+            16,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "6f0ecf8c8f1152d290e4b2cebc2a97a4158d9a4851459fecdcf1d3d8297b5aac",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 14720
+        },
+        {
+          "name": "base_model_model_linear2_lora_A_default_weight",
+          "shape": [
+            4,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "08f47cf11c27ccdc8bacfd22da7bf8180b753c1593fbc47160ac918212a34a37",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 17856
+        },
+        {
+          "name": "base_model_model_linear2_lora_B_default_weight",
+          "shape": [
+            16,
+            4
+          ],
+          "dtype": "float32",
+          "data_sha256": "6387582364bd0391d6ed3912c218330f0f7e168f5c8b362356e35b44cb62c5f0",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 18688
+        },
+        {
+          "name": "linear_2_bias_0",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "5d89f056865052bcb89c910d2d62872e029fb273c3db03f8968a52a41593c1b5",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 19008
+        },
+        {
+          "name": "linear_5_bias_0",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 19264
+        }
+      ]
+    },
+    "merged_2": {
+      "specification_version": 9,
+      "functions": [
+        "main"
+      ],
+      "default_function": "",
+      "op_counts": {
+        "const": 4,
+        "linear": 2,
+        "relu": 1
+      },
+      "blobs": [
+        {
+          "name": "linear1_bias",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "eed849eb03531890b48d8af2ec2ee67549ac5c8b2e72c20f2becbc3adc5de13b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 64
+        },
+        {
+          "name": "linear1_weight",
+          "shape": [
+            48,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "1a48b5e99472625e78a264e3a04ecb91a964f455b58b79fc2af64b1a877102ba",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 320
+        },
+        {
+          "name": "linear2_bias",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "9c806141ae782ffd01628c82af66683339054c149389b6d54d1d17dfeabd85a4",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12672
+        },
+        {
+          "name": "linear2_weight",
+          "shape": [
+            16,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "138dca1c153b153525b211516a80143bc5c7c92329bdacd79ffe74dfbed28775",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12800
+        }
+      ]
+    },
+    "merged_1_ios15": {
+      "specification_version": 6,
+      "functions": [
+        "main"
+      ],
+      "default_function": "",
+      "op_counts": {
+        "const": 4,
+        "linear": 2,
+        "relu": 1
+      },
+      "blobs": [
+        {
+          "name": "linear1_bias",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "eed849eb03531890b48d8af2ec2ee67549ac5c8b2e72c20f2becbc3adc5de13b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 64
+        },
+        {
+          "name": "linear1_weight",
+          "shape": [
+            48,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "c50d01c6f94152f7c4742a1e68ed6130db4ba95e1e06c903ffd486439652e70b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 320
+        },
+        {
+          "name": "linear2_bias",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "9c806141ae782ffd01628c82af66683339054c149389b6d54d1d17dfeabd85a4",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12672
+        },
+        {
+          "name": "linear2_weight",
+          "shape": [
+            16,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "89b74ebd2d15f1b3d462316d8bc8033cc57fc7ea8d1c6a2e6ede589753b11063",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12800
+        }
+      ]
+    },
+    "multifunction_adapter/adapter_1": {
+      "specification_version": 9,
+      "functions": [
+        "adapter_1",
+        "adapter_2"
+      ],
+      "default_function": "adapter_1",
+      "op_counts": {
+        "add": 2,
+        "const": 14,
+        "linear": 6,
+        "mul": 2,
+        "relu": 1
+      },
+      "blobs": [
+        {
+          "name": "base_model_model_linear1_base_layer_bias",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "eed849eb03531890b48d8af2ec2ee67549ac5c8b2e72c20f2becbc3adc5de13b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 64
+        },
+        {
+          "name": "base_model_model_linear1_base_layer_weight",
+          "shape": [
+            48,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "f5721afdae8a21fdc8a3edde5b08e7c8c2711e6f225c244c449e0691f4bda098",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 320
+        },
+        {
+          "name": "base_model_model_linear1_lora_A_default_weight",
+          "shape": [
+            4,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "5d90991c53521b5e998d78f174390ab387a452b6b078f96fd76fb2b54c10b55e",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12672
+        },
+        {
+          "name": "base_model_model_linear1_lora_B_default_weight",
+          "shape": [
+            48,
+            4
+          ],
+          "dtype": "float32",
+          "data_sha256": "3235b2d8f6d96781777c2023eb640b5637a048db6593172a1c477f1e5b4d7741",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 13760
+        },
+        {
+          "name": "base_model_model_linear2_base_layer_bias",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "9c806141ae782ffd01628c82af66683339054c149389b6d54d1d17dfeabd85a4",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 14592
+        },
+        {
+          "name": "base_model_model_linear2_base_layer_weight",
+          "shape": [
+            16,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "6f0ecf8c8f1152d290e4b2cebc2a97a4158d9a4851459fecdcf1d3d8297b5aac",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 14720
+        },
+        {
+          "name": "base_model_model_linear2_lora_A_default_weight",
+          "shape": [
+            4,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "2744c9a9d49415ee824389019be0bf8cdc569a31049d153a5d04e6cefff7391b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 17856
+        },
+        {
+          "name": "base_model_model_linear2_lora_B_default_weight",
+          "shape": [
+            16,
+            4
+          ],
+          "dtype": "float32",
+          "data_sha256": "457f72052d57c47239e370de170acdfe750ea4af38f74ed3664da5e72ef85b86",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 18688
+        },
+        {
+          "name": "linear_2_bias_0",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "5d89f056865052bcb89c910d2d62872e029fb273c3db03f8968a52a41593c1b5",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 19008
+        },
+        {
+          "name": "linear_5_bias_0",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 19264
+        }
+      ]
+    },
+    "multifunction_adapter/adapter_2": {
+      "specification_version": 9,
+      "functions": [
+        "adapter_1",
+        "adapter_2"
+      ],
+      "default_function": "adapter_1",
+      "op_counts": {
+        "add": 2,
+        "const": 14,
+        "linear": 6,
+        "mul": 2,
+        "relu": 1
+      },
+      "blobs": [
+        {
+          "name": "base_model_model_linear1_base_layer_bias",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "eed849eb03531890b48d8af2ec2ee67549ac5c8b2e72c20f2becbc3adc5de13b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 64
+        },
+        {
+          "name": "base_model_model_linear1_base_layer_weight",
+          "shape": [
+            48,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "f5721afdae8a21fdc8a3edde5b08e7c8c2711e6f225c244c449e0691f4bda098",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 320
+        },
+        {
+          "name": "base_model_model_linear1_lora_A_default_weight",
+          "shape": [
+            4,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "06d8f1fbeed93b61a27b028fde863b16b3e664bdf404d597f9e864e57fd0f14d",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 19392
+        },
+        {
+          "name": "base_model_model_linear1_lora_B_default_weight",
+          "shape": [
+            48,
+            4
+          ],
+          "dtype": "float32",
+          "data_sha256": "6abd1f5c0fa6cacc81e850f343e6cd5427e838f16865bfb3c8217c9202aef4ef",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 20480
+        },
+        {
+          "name": "base_model_model_linear2_base_layer_bias",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "9c806141ae782ffd01628c82af66683339054c149389b6d54d1d17dfeabd85a4",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 14592
+        },
+        {
+          "name": "base_model_model_linear2_base_layer_weight",
+          "shape": [
+            16,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "6f0ecf8c8f1152d290e4b2cebc2a97a4158d9a4851459fecdcf1d3d8297b5aac",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 14720
+        },
+        {
+          "name": "base_model_model_linear2_lora_A_default_weight",
+          "shape": [
+            4,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "08f47cf11c27ccdc8bacfd22da7bf8180b753c1593fbc47160ac918212a34a37",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 21312
+        },
+        {
+          "name": "base_model_model_linear2_lora_B_default_weight",
+          "shape": [
+            16,
+            4
+          ],
+          "dtype": "float32",
+          "data_sha256": "6387582364bd0391d6ed3912c218330f0f7e168f5c8b362356e35b44cb62c5f0",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 22144
+        },
+        {
+          "name": "linear_2_bias_0",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "5d89f056865052bcb89c910d2d62872e029fb273c3db03f8968a52a41593c1b5",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 19008
+        },
+        {
+          "name": "linear_5_bias_0",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 19264
+        }
+      ]
+    },
+    "multifunction_merged/adapter_1": {
+      "specification_version": 9,
+      "functions": [
+        "adapter_1",
+        "adapter_2"
+      ],
+      "default_function": "adapter_1",
+      "op_counts": {
+        "const": 4,
+        "linear": 2,
+        "relu": 1
+      },
+      "blobs": [
+        {
+          "name": "linear1_bias",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "eed849eb03531890b48d8af2ec2ee67549ac5c8b2e72c20f2becbc3adc5de13b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 64
+        },
+        {
+          "name": "linear1_weight",
+          "shape": [
+            48,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "c50d01c6f94152f7c4742a1e68ed6130db4ba95e1e06c903ffd486439652e70b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 320
+        },
+        {
+          "name": "linear2_bias",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "9c806141ae782ffd01628c82af66683339054c149389b6d54d1d17dfeabd85a4",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12672
+        },
+        {
+          "name": "linear2_weight",
+          "shape": [
+            16,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "89b74ebd2d15f1b3d462316d8bc8033cc57fc7ea8d1c6a2e6ede589753b11063",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12800
+        }
+      ]
+    },
+    "multifunction_merged/adapter_2": {
+      "specification_version": 9,
+      "functions": [
+        "adapter_1",
+        "adapter_2"
+      ],
+      "default_function": "adapter_1",
+      "op_counts": {
+        "const": 4,
+        "linear": 2,
+        "relu": 1
+      },
+      "blobs": [
+        {
+          "name": "linear1_bias",
+          "shape": [
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "eed849eb03531890b48d8af2ec2ee67549ac5c8b2e72c20f2becbc3adc5de13b",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 64
+        },
+        {
+          "name": "linear1_weight",
+          "shape": [
+            48,
+            64
+          ],
+          "dtype": "float32",
+          "data_sha256": "1a48b5e99472625e78a264e3a04ecb91a964f455b58b79fc2af64b1a877102ba",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 15936
+        },
+        {
+          "name": "linear2_bias",
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "data_sha256": "9c806141ae782ffd01628c82af66683339054c149389b6d54d1d17dfeabd85a4",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 12672
+        },
+        {
+          "name": "linear2_weight",
+          "shape": [
+            16,
+            48
+          ],
+          "dtype": "float32",
+          "data_sha256": "138dca1c153b153525b211516a80143bc5c7c92329bdacd79ffe74dfbed28775",
+          "file": "@model_path/weights/weight.bin",
+          "offset": 28288
+        }
+      ]
+    }
+  },
+  "package_bytes": {
+    "merged_1_ios15.mlpackage": 18065,
+    "adapter_2.mlpackage": 24571,
+    "merged_1.mlpackage": 18065,
+    "multifunction_merged.mlpackage": 34172,
+    "merged_2.mlpackage": 18065,
+    "base.mlpackage": 18065,
+    "adapter_1.mlpackage": 24571,
+    "multifunction_adapter.mlpackage": 31313
+  },
+  "weight_blob_bytes": {
+    "merged_1_ios15.mlpackage": 15936,
+    "adapter_2.mlpackage": 19392,
+    "merged_1.mlpackage": 15936,
+    "multifunction_merged.mlpackage": 31424,
+    "merged_2.mlpackage": 15936,
+    "base.mlpackage": 15936,
+    "adapter_1.mlpackage": 19392,
+    "multifunction_adapter.mlpackage": 22464
+  },
+  "wrong_base_output_delta_max_abs": 1.447440068142089,
+  "apple_coreml_predict": {
+    "status": "unavailable",
+    "exception_type": "Exception",
+    "message": "Model prediction is only supported on macOS version 10.13 or later."
+  },
+  "peft_switching": {
+    "adapter_2_vs_reference_max_abs": 2.000769544485692e-07,
+    "disabled_vs_base_max_abs": 1.330156266243776e-07,
+    "trace_remains_adapter_1_max_abs": 1.3497531803352558e-07,
+    "trace_vs_active_adapter_2_max_abs": 0.5446921586990356
+  },
+  "apple_runtime_parity_verified": false,
+  "afm_weights_acquired": false,
+  "coreml_inference_on_linux": false,
+  "heldout_inputs": 12
+}
