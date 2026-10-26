@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "baseline_commit": "fb0cabba",
+  "baseline_assets": 3923,
+  "baseline_model_groups": 1267,
+  "baseline_assets_missing": [],
+  "baseline_assets_changed": [],
+  "new_files": 828,
+  "new_bytes": 1014415320,
+  "final_files": 4751,
+  "final_groups": 2016,
+  "final_bytes": 3754333107,
+  "inventory_kinds": {
+    "auxiliary_resource": 868,
+    "model_or_program": 923,
+    "weight_resource": 225
+  },
+  "image_count": 7,
+  "inventory_entries": 540662,
+  "volumes": [
+    {
+      "volume_id": "rootfs",
+      "volume": "RaveB24B115.V57OS",
+      "entries": 523859,
+      "failed_inodes": 0,
+      "selected_files": 4444,
+      "bytes": 2996617783,
+      "extraction_errors": 0,
+      "image_sha256": "3aece1d45bba734e8dfa90c5e1d320b8fa2348a3b023075e7c48df5142839e1d",
+      "image_relative_path": "rootfs-dec/141-08876-212.dmg",
+      "downloaded_fm_asset_paths": []
+    },
+    {
+      "volume_id": "cryptex",
+      "volume": "RaveB24B115.V57SystemCryptex",
+      "entries": 3150,
+      "failed_inodes": 0,
+      "selected_files": 12,
+      "bytes": 1124252,
+      "extraction_errors": 0,
+      "image_sha256": "7bb6bf2d5c568790ed7f08f364683e8889615800bf6da7aa6df1437472788ce7",
+      "image_relative_path": "cryptex-dec/141-09724-222.dmg",
+      "downloaded_fm_asset_paths": []
+    },
+    {
+      "volume_id": "ipsw_141_08824_240",
+      "volume": "AppCryptex",
+      "entries": 1308,
+      "failed_inodes": 0,
+      "selected_files": 0,
+      "bytes": 0,
+      "extraction_errors": 0,
+      "image_sha256": "553c27b43d2272eea516e7a935af42a468e4dca5128ba77d8d9a65aec3fdb13f",
+      "image_relative_path": "model-audit/141-08824-240.dmg",
+      "downloaded_fm_asset_paths": []
+    },
+    {
+      "volume_id": "ipsw_141_08904_234",
+      "volume": "RaveB24B115.V57ExclaveOS",
+      "entries": 2484,
+      "failed_inodes": 0,
+      "selected_files": 239,
+      "bytes": 754790813,
+      "extraction_errors": 0,
+      "image_sha256": "62b2bf87b485e69ba7fd2cdbe7679b5b334a0d32a954e2909658a0bb2a9583a7",
+      "image_relative_path": "model-audit/141-08904-234-dec/141-08904-234.dmg",
+      "downloaded_fm_asset_paths": []
+    },
+    {
+      "volume_id": "ipsw_141_09491_238",
+      "volume": "ramdisk",
+      "entries": 2412,
+      "failed_inodes": 0,
+      "selected_files": 2,
+      "bytes": 1376,
+      "extraction_errors": 0,
+      "image_sha256": "aabe0efec42611bab8661b262c7468f316768490611ef8555b7c624ea998c8c1",
+      "image_relative_path": "model-audit/141-09491-238-im4p/141-09491-238.dmg",
+      "downloaded_fm_asset_paths": []
+    },
+    {
+      "volume_id": "ipsw_141_09644_236",
+      "volume": "RaveB24B115.V57RecoveryOS",
+      "entries": 5424,
+      "failed_inodes": 0,
+      "selected_files": 52,
+      "bytes": 1797507,
+      "extraction_errors": 0,
+      "image_sha256": "dfbf436d4cc5bd13495775ec105f8e53ee1e6bb00f10dd954008bf85a1df6689",
+      "image_relative_path": "model-audit/141-09644-236-dec/141-09644-236.dmg",
+      "downloaded_fm_asset_paths": []
+    },
+    {
+      "volume_id": "ipsw_141_10399_236",
+      "volume": "ramdisk",
+      "entries": 2025,
+      "failed_inodes": 0,
+      "selected_files": 2,
+      "bytes": 1376,
+      "extraction_errors": 0,
+      "image_sha256": "5f3ba8a0695204d33a198d395a08ae21bdefb58fb9a3e3ceb3c278bc91214b2b",
+      "image_relative_path": "model-audit/141-10399-236-im4p/141-10399-236.dmg",
+      "downloaded_fm_asset_paths": []
+    }
+  ],
+  "acquire_statuses": {
+    "reused_verified": 4751
+  },
+  "metadata_sha256": {
+    "manifest.json": "9706e3320bdbe3dc76da0c32108a9b5fe06629b6108d7bb60289ecc80c834b23",
+    "assets.jsonl": "ecae7c083870f71e08cb4b7070ff980c2a317f0671c200c823c97917db5999e7",
+    "summary.json": "739b7b296d2838fc17f0c12cb8d26fbfd95c133338507f1ee78afd9cefb6ffad",
+    "resources.jsonl": "c56b2e1d1980c74869a6b62c0a0ebdffddf2c92886234ac0e6ea3e26e0990b1c",
+    "references.jsonl": "3264f47693111c3fd4fce9ab2cb361f1cbc8f551ac83757b4415f95c3707b667"
+  },
+  "uaf_payload_coordinates_found": 0,
+  "uaf_urls_found": 0,
+  "all_images_hashed_by_scanner": true,
+  "limitations": [
+    "Exhaustive for published selectors, not a universal classifier of every opaque firmware blob.",
+    "Catalogue groups include metadata, weights, programs and classical statistical resources; not a count of trained networks.",
+    "Image SHA-256/ZIP CRC do not establish Apple signature-chain validation.",
+    "No device Data partition or PCC models were acquired."
+  ]
+}

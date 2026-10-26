@@ -1,4 +1,11 @@
-# Modèles et ressources réellement présents — iOS 27.2 RC / 24B115
+# Inventaire initial des modèles — iOS 27.2 RC / 24B115
+
+**Mise à jour :** le [rapport courant](../analysis/ACQUISITION-GENERATION.md)
+porte la couverture à sept images, **2 016 groupes, 4 751 fichiers et
+3 754 333 107 octets**. Les comptes ci-dessous décrivent le lot initial aux
+règles v3 ; ils sont conservés comme historique. Les manifestes JSON voisins
+décrivent le lot courant aux règles v4. Les 3 923 fichiers initiaux et leurs
+identifiants sont tous conservés, avec les mêmes tailles et SHA-256.
 
 Ce dossier inventorie les **octets présents dans les deux volumes locaux**, et
 sépare les références UAF des fichiers de modèles. Les 1 267 groupes du catalogue

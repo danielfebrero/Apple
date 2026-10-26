@@ -145,10 +145,13 @@ def load_plan(manifest_path, assets_path, summary_path, selected, all_models, fi
         vid = volume.get("volume_id")
         if not isinstance(vid, str) or not re.fullmatch(r"[A-Za-z0-9_-]+", vid) or vid in volumes:
             raise AcquisitionError("invalid_metadata", "Invalid or duplicate volume ID")
-        # Published image_path includes the old host prefix. Only its final
-        # directory and basename locate the same image under --firmware-root.
+        # New manifests preserve arbitrary nesting relative to firmware_root.
+        # The historical two-volume manifests used the final directory/name.
         old = PurePosixPath(volume.get("image_path", ""))
-        local_image = relative_path(f"{old.parent.name}/{old.name}", f"{vid}.image_path")
+        local_image = relative_path(volume.get("image_relative_path", f"{old.parent.name}/{old.name}"),
+                                    f"{vid}.image_relative_path")
+        if PurePosixPath(local_image).name != old.name:
+            raise AcquisitionError("invalid_metadata", f"{vid}: relative image basename differs from provenance")
         expected_size = unsigned(volume.get("image_size_bytes"), f"{vid}.image_size_bytes")
         expected_hash = sha256(volume.get("image_sha256"), f"{vid}.image_sha256")
         volumes[vid] = {"volume_id": vid, "volume": volume.get("volume"), "relative_path": local_image,

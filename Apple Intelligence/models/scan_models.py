@@ -22,8 +22,8 @@ import sys
 BASE = pathlib.Path(__file__).resolve().parents[1]
 LAB = pathlib.Path('/workspace/recherche/apple-sec/ios272rc')
 ARTIFACT = LAB / 'artifacts/apple-intelligence'
-BUNDLE = re.compile(r'(?i)(?:\.mlmodelc(?:\.bundle)?|\.mlpackage|\.espresso\.bundle|\.snmodelc|\.slidernetmodel|\.gecmodel|\.suggestionsmodelassets|\.vimodels|\.mdl|\.model)(?=/|$)')
-ESPRESSO = re.compile(r'(?i)\.espresso\.(?:net(?:-e)?|shape|weights|hwx|precompilation_info|md5)(?:\.config)?$')
+BUNDLE = re.compile(r'(?i)(?:\.mlmodelc(?:\.bundle)?|\.mlpackage|\.espresso\.bundle|\.snmodelc|\.slidernetmodel|\.gecmodel|\.suggestionsmodelassets|\.vimodels|\.mdl|\.model|\.mpsgraphpackage|\.aimodelx?)(?=/|$)')
+ESPRESSO = re.compile(r'(?i)\.espresso\.(?:net(?:-e)?|bin|shape|weights|hwx|precompilation_info|md5)(?:\.config)?$')
 STANDALONE = re.compile(r'(?i)(?:\.mlmodel|\.model|\.lstm|\.mlmodelc|\.mlmodelc\.zip|\.espresso\.(?:net(?:-e)?|shape|weights|hwx|precompilation_info|md5)(?:\.config)?|\.hwx|\.e5|\.mil(?:\.weights)?|\.bnnsir|\.npy|\.npz|\.onnx|\.gguf|\.safetensors|\.tflite|\.nnet(?:\.bin)?|\.weight\.bin)$')
 REFERENCE = re.compile(r'(?:com\.apple\.(?:fm|gm|safety(?:_nsfw)?)\.[A-Za-z0-9_.-]+(?:\?variant=[A-Za-z0-9_.-]+)?|com\.apple\.if\.planner\.nlrouter\.tokenizer(?:\.[A-Za-z0-9_.-]+)?|com\.apple\.mediaanalysis\.aem\.md[0-9]+\.tokenizer(?:\.[A-Za-z0-9_.-]+)?|request-resources-key-apple-diffusion-models)')
 
@@ -89,6 +89,18 @@ def select(rows: list[dict]) -> list[tuple[dict, str]]:
             selected.append((row, recognized_root))
         elif STANDALONE.search(p):
             selected.append((row, ''))
+        elif re.search(r'(?i)\.(?:weights|nlembedding|maxent|rcmodel|mpsgraph|espresso\.bin)$|(?:weights?\.bin|weights?description\.json)$', p):
+            selected.append((row, ''))
+        elif re.search(r'(?i)/(?:[^/]+\.(?:lm|rnnlm|cpml))/|/weights/[^/]+\.bin$|/LinguisticData/[^/]+/AssetData/embedding\.dat$', p):
+            # Keep existing IDs/layouts for the already published standalone
+            # neural models; add every sidecar instead of regrouping them.
+            selected.append((row, ''))
+        elif re.search(r'/CoreHandwriting\.framework/diffusion_[^/]+\.(?:json|codemap)$', p):
+            selected.append((row, ''))
+        elif '/AWD/Metadata/' not in p and re.search(r'(?i)/(?:[^/]*(?:model|classifier|embedding|neural|prediction)[^/]*\.(?:bin|dat|adb|pb)|default_factors_[^/]*\.(?:bin|pb))$', p):
+            # Named opaque candidates are retained without claiming a neural
+            # architecture. AWD event schemas are explicitly not ML payloads.
+            selected.append((row, ''))
         elif re.search(r'(?i)/weights/(?:weight|weights)[.]bin$|/RawSFD/[^/]*weight[.]bin$|/(?:th[.]rnnlm|Japanese[.]lm)/model[.]bin$', p):
             selected.append((row, ''))
         elif re.search(r'(?i)/(?:usr/share/(?:morphun/)?tokenizer/|[^/]*[.]rnnlm/sp[.]model$)|(?:tokenizer[^/]*|[^/]*tokenizer-vocab)[.](?:txt|json|model|index|dat)$', p):
@@ -113,6 +125,12 @@ def classify(path: str) -> tuple[str, str]:
         return 'zip_coreml_compiled', 'archive'
     if p.endswith('.weights') or p.endswith('.weight.bin') or '/weights/' in p and p.endswith('.bin') or '/rawsfd/' in p and 'weight.bin' in p:
         return 'espresso_weights' if '.espresso.' in p else 'opaque_weights', 'weights'
+    if re.search(r'(?i)weights?\.bin$|\.espresso\.bin$', p):
+        return 'espresso_weights' if '.espresso.' in p else 'opaque_weights', 'weights'
+    if p.endswith(('.nlembedding', '.maxent', '.rcmodel')):
+        return 'opaque_model_resource', 'model'
+    if p.endswith('.mpsgraph'):
+        return 'apple_mpsgraph', 'graph'
     if p.endswith('.hwx'):
         return 'apple_ane_hwx', 'compiled_program'
     if p.endswith('.bnnsir'):
@@ -165,6 +183,12 @@ def model_format(files: list[dict], firmware_path: str, kind: str) -> str:
         return 'coreml_compiled'
     if kind == 'directory' and firmware_path.endswith('.snmodelc'):
         return 'soundanalysis_compiled'
+    if kind == 'directory' and firmware_path.endswith('.mpsgraphpackage'):
+        return 'apple_mpsgraph_package'
+    if kind == 'directory' and firmware_path.endswith('.aimodel'):
+        return 'coreai_asset'
+    if kind == 'directory' and firmware_path.endswith('.aimodelx'):
+        return 'coreai_specialized_asset'
     if kind == 'directory' and any(r['format'] == 'coreml_protobuf' for r in files):
         return 'coreml_package'
     if 'coreml_protobuf' in formats:
@@ -314,6 +338,8 @@ def main() -> int:
     p.add_argument('--reextract', action='store_true', help='force fresh APFS extraction for every selected file, implies --extract')
     p.add_argument('--hash-images', action='store_true', help='hash full source DMGs (additional I/O)')
     p.add_argument('--workers', type=int, default=4)
+    p.add_argument('--extra-volumes', type=pathlib.Path,
+                   help='JSON list of additional local APFS volumes: id, volume, inventory_path, image_path')
     args = p.parse_args()
     args.extract = args.extract or args.reextract
     args.out = args.out.resolve()
@@ -333,6 +359,22 @@ def main() -> int:
         {'id': 'rootfs', 'volume': 'RaveB24B115.V57OS', 'inventory_path': args.artifact / 'inventory/rootfs-all.jsonl', 'image_path': args.firmware_root / 'rootfs-dec/141-08876-212.dmg'},
         {'id': 'cryptex', 'volume': 'RaveB24B115.V57SystemCryptex', 'inventory_path': BASE / 'inventory/cryptex-all.jsonl', 'image_path': args.firmware_root / 'cryptex-dec/141-09724-222.dmg'},
     ]
+    if args.extra_volumes:
+        extra = json.loads(args.extra_volumes.read_text())
+        if not isinstance(extra, list):
+            p.error('--extra-volumes must contain a JSON list')
+        seen = {v['id'] for v in volumes}
+        for v in extra:
+            if not isinstance(v, dict) or not isinstance(v.get('id'), str) or not re.fullmatch(r'[A-Za-z0-9_-]+', v['id']) or v['id'] in seen:
+                p.error('invalid or duplicate extra volume ID')
+            if not isinstance(v.get('volume'), str) or not v['volume']:
+                p.error('extra volume requires the observed APFS volume name')
+            for key in ('inventory_path', 'image_path'):
+                if not isinstance(v.get(key), str) or not pathlib.Path(v[key]).is_file():
+                    p.error(f'extra volume requires a local {key}')
+                v[key] = pathlib.Path(v[key])
+            seen.add(v['id'])
+            volumes.append(v)
     assets, coverage = [], []
     for volume in volumes:
         inv = volume['inventory_path']
@@ -347,6 +389,11 @@ def main() -> int:
         assets.extend(results)
         coverage.append({'volume_id': volume['id'], 'volume': volume['volume'], 'inventory_path': str(inv.resolve()), 'inventory_sha256': digest(inv), 'inventory_entries': len(rows), 'regular_files': sum(r['kind'] == 8 for r in rows), 'selected_files': len(selected), 'selected_expected_bytes': total, 'local_files': sum(r['availability'] == 'local_extracted' for r in results), 'extraction_errors': sum('extraction_error' in r for r in results), 'image_path': str(volume['image_path'].resolve()), 'image_size_bytes': volume['image_path'].stat().st_size if volume['image_path'].is_file() else None, 'image_sha256': digest(volume['image_path']) if args.hash_images and volume['image_path'].is_file() else None, 'assets_v2_entries': sum('/System/Library/AssetsV2/' in r['path'] for r in rows)})
     assets.sort(key=lambda r: (r['source']['volume_id'], r['firmware_path']))
+    for v, item in zip(volumes, coverage):
+        try:
+            item['image_relative_path'] = str(v['image_path'].resolve().relative_to(args.firmware_root.resolve()))
+        except ValueError:
+            p.error('all image paths must be under --firmware-root for portable reacquisition')
     grouped = collections.defaultdict(list)
     for row in assets:
         grouped[row['model_id']].append(row)
@@ -370,7 +417,7 @@ def main() -> int:
     write_jsonl(args.out / 'references.jsonl', refs)
     manifest = {'schema_version': 1, 'build': '24B115', 'device': 'iPhone18,3', 'models': models}
     write_json(args.out / 'manifest.json', manifest)
-    summary = {'schema_version': 1, 'build': '24B115', 'device': 'iPhone18,3', 'volumes': coverage, 'asset_count': len(assets), 'local_asset_count': sum(r['availability'] == 'local_extracted' for r in assets), 'local_bytes': sum(r['size_bytes'] or 0 for r in assets), 'model_groups': len(models), 'inventory_kinds': dict(sorted(collections.Counter(r['inventory_kind'] for r in models).items())), 'formats': dict(sorted(collections.Counter(r['format'] for r in models).items())), 'scopes': dict(sorted(collections.Counter(r['scope'] for r in models).items())), 'reference_resources': len(resources), 'unique_reference_identifiers': len(refs), 'reference_occurrences': sum(len(r['evidence']) for r in refs), 'selection_rule_version': 3, 'weights_in_git': False, 'limitations': ['Selection is exhaustive for the explicit rules in scan_models.py, not a proof that every opaque firmware blob is or is not ML.', 'Complete model bundles include resources and runtime data; group counts are packaging units, not independently validated trained networks.', 'intelligence_adjacent is path-based context, not evidence of Apple Intelligence activation.', 'UAF names are references only; no matching downloaded AFM base weights were observed.', 'Only OS and SystemOS cryptex inventories are covered; data partition downloads and PCC server models are absent.', 'No on-device execution or Apple signature-chain validation.']}
+    summary = {'schema_version': 1, 'build': '24B115', 'device': 'iPhone18,3', 'volumes': coverage, 'asset_count': len(assets), 'local_asset_count': sum(r['availability'] == 'local_extracted' for r in assets), 'local_bytes': sum(r['size_bytes'] or 0 for r in assets), 'model_groups': len(models), 'inventory_kinds': dict(sorted(collections.Counter(r['inventory_kind'] for r in models).items())), 'formats': dict(sorted(collections.Counter(r['format'] for r in models).items())), 'scopes': dict(sorted(collections.Counter(r['scope'] for r in models).items())), 'reference_resources': len(resources), 'unique_reference_identifiers': len(refs), 'reference_occurrences': sum(len(r['evidence']) for r in refs), 'selection_rule_version': 4, 'weights_in_git': False, 'limitations': ['Selection is exhaustive for the explicit rules in scan_models.py, not a proof that every opaque firmware blob is or is not ML.', 'Complete model bundles include resources and runtime data; group counts are packaging units, not independently validated trained networks.', 'intelligence_adjacent is path-based context, not evidence of Apple Intelligence activation.', 'UAF names are references only; no matching downloaded AFM base weights were observed.', 'Only the listed local APFS inventories are covered; data partition downloads and PCC server models are absent.', 'No on-device execution or Apple signature-chain validation.']}
     write_json(args.out / 'summary.json', summary)
     print(json.dumps({k: summary[k] for k in ('asset_count', 'local_asset_count', 'local_bytes', 'model_groups', 'formats', 'unique_reference_identifiers')}, indent=2))
     return int(any(r.get('extraction_errors') for r in coverage))

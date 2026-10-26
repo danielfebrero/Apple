@@ -11,6 +11,13 @@ publié le 19 octobre 2026). Extraction locale réalisée le 26 octobre 2026.
 
 ## Poids et exécution des modèles
 
+Le [lot complet IPSW et génération du 26 octobre](analysis/ACQUISITION-GENERATION.md)
+couvre désormais les **sept images** : **2 016 groupes, 4 751 fichiers et
+3 754 333 107 octets** vérifiés. Un petit **UniLM Apple du firmware génère du
+texte sous Linux**, avec ses vrais poids et une reconstruction FP32 documentée.
+Ce résultat est distinct d'AFM. La génération d'images reste bloquée : aucun
+payload Image Playground complet n'a été identifié dans les images acquises.
+
 Le complément [`models/inventory.md`](models/inventory.md) inventorie les
 bundles de modèles et leurs ressources au-delà du corpus de textes initial,
 avec provenance, tailles et SHA-256. Il distingue les poids extraits, les

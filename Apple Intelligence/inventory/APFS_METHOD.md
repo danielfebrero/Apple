@@ -1,5 +1,9 @@
 # Acquisition APFS sans montage
 
+Le [complément IPSW complet](../analysis/ACQUISITION-GENERATION.md) applique
+ce même lecteur aux sept images et conserve leurs inventaires et hashes.
+Les comptes ci-dessous décrivent l'extraction initiale des ressources AI.
+
 Lecteur dérivé de `/workspace/opt/build/dscextract.cpp`, lié à l'archive existante `/workspace/opt/build/obj/libapfsall.a` (ApfsLib du projet apfs-fuse). Aucun montage ni appel FUSE. Ouvrir un conteneur avec `ApfsContainer::Init(1000000)` et le volume numéro 0; le checkpoint explicite évite l'incohérence « latest » déjà constatée dans cet environnement.
 
 ## Inventaires

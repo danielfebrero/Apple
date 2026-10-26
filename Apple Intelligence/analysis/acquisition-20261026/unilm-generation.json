@@ -1,0 +1,3835 @@
+{
+  "status": "executed",
+  "model": "English firmware UniLM / LOCALHOST-2023-05-01-CPU-quant",
+  "build": "24B115",
+  "artifact_kind": "real_pretrained_firmware_language_model",
+  "afm": false,
+  "apple_runtime_parity_verified": false,
+  "backend": "independent PyTorch FP32 reconstruction of dequantized learned weights",
+  "limitations": [
+    "Dynamic int8 activation quantization is bypassed; not bit parity with Espresso.",
+    "Activation mode 22 interpreted as tanh-approximate GELU.",
+    "ASCII unigram Viterbi from mmap tables; custom2 normalizer/trie unported.",
+    "Explicit BOS=1, segment=0; firmware calling convention not dynamically observed."
+  ],
+  "torch_version": "2.7.0+cpu",
+  "numpy_version": "2.2.6",
+  "sources": [
+    {
+      "id": "a-24598423267ad6c58f1a",
+      "model_id": "m-14db7ccca1f746302f17",
+      "firmware_path": "/System/Library/LinguisticData/RequiredAssets_en.bundle/AssetData/en.lm/unilm.bundle/unilm_joint_cpu.espresso.net",
+      "size_bytes": 110273,
+      "sha256": "527c97bf33b926572b1119ecad9f9290881e4f5a66145c9eb81586ecf4284562",
+      "source": {
+        "bsd_flags": 32,
+        "expected_size": 110273,
+        "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/rootfs-dec/141-08876-212.dmg",
+        "inode": 1152921500312119657,
+        "private_id": 1152921500312119657,
+        "stored_size": 110273,
+        "volume": "RaveB24B115.V57OS",
+        "volume_id": "rootfs"
+      }
+    },
+    {
+      "id": "a-101e5bce79885e899a3e",
+      "model_id": "m-14db7ccca1f746302f17",
+      "firmware_path": "/System/Library/LinguisticData/RequiredAssets_en.bundle/AssetData/en.lm/unilm.bundle/unilm_joint_cpu.espresso.shape",
+      "size_bytes": 43211,
+      "sha256": "9853f7594ddec054ca50f18d81ae31089f20b47653adab684f025d2b87cca825",
+      "source": {
+        "bsd_flags": 32,
+        "expected_size": 43211,
+        "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/rootfs-dec/141-08876-212.dmg",
+        "inode": 1152921500312119659,
+        "private_id": 1152921500312119659,
+        "stored_size": 43211,
+        "volume": "RaveB24B115.V57OS",
+        "volume_id": "rootfs"
+      }
+    },
+    {
+      "id": "a-9c0e900c59e39518b9c0",
+      "model_id": "m-fd9ea87781da8b0caf32",
+      "firmware_path": "/System/Library/LinguisticData/RequiredAssets_en.bundle/AssetData/en.lm/unilm.bundle/unilm_joint.espresso.weights",
+      "size_bytes": 31841856,
+      "sha256": "0344ead6c77552cd42aeaea89b8cdb2cd4ca50d14019961529bf97ccc6e8561a",
+      "source": {
+        "bsd_flags": 32,
+        "expected_size": 31841856,
+        "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/rootfs-dec/141-08876-212.dmg",
+        "inode": 1152921500312119651,
+        "private_id": 1152921500312119651,
+        "stored_size": 31841856,
+        "volume": "RaveB24B115.V57OS",
+        "volume_id": "rootfs"
+      }
+    },
+    {
+      "id": "a-24b0c9739a8df7e472d6",
+      "model_id": "m-24b0c9739a8df7e472d6",
+      "firmware_path": "/System/Library/LinguisticData/RequiredAssets_en.bundle/AssetData/en.lm/unilm.bundle/sp.dat",
+      "size_bytes": 646024,
+      "sha256": "ef4940adb2a09c158399dee3f6544e0891c4104fc26e45a16945f83b66ac9ceb",
+      "source": {
+        "bsd_flags": 32,
+        "expected_size": 646024,
+        "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/rootfs-dec/141-08876-212.dmg",
+        "inode": 1152921500312119649,
+        "private_id": 1152921500312119649,
+        "stored_size": 646024,
+        "volume": "RaveB24B115.V57OS",
+        "volume_id": "rootfs"
+      }
+    },
+    {
+      "id": "a-06de91fe1387ca75ea8b",
+      "model_id": "m-06de91fe1387ca75ea8b",
+      "firmware_path": "/System/Library/LinguisticData/RequiredAssets_en.bundle/AssetData/en.lm/unilm.bundle/modelInfo.plist",
+      "size_bytes": 847,
+      "sha256": "908e50a0d368094b50bf79b965941e82a1d026695c306a7d45eca646fcce1cb5",
+      "source": {
+        "bsd_flags": 32,
+        "expected_size": 847,
+        "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/rootfs-dec/141-08876-212.dmg",
+        "inode": 1152921500312119648,
+        "private_id": 1152921500312119648,
+        "stored_size": 847,
+        "volume": "RaveB24B115.V57OS",
+        "volume_id": "rootfs"
+      }
+    }
+  ],
+  "weight_sections": 922,
+  "tensor_bindings": [
+    {
+      "section": 5,
+      "dtype": "i1",
+      "shape": [
+        15000,
+        512
+      ],
+      "sha256": "2c224e5c87d4858681e017525af209fea6a9e59f1f58d4495a3710b6f02b157b"
+    },
+    {
+      "section": 3,
+      "dtype": "<f4",
+      "shape": [
+        15000
+      ],
+      "sha256": "f2b9a2dceede0bd2f46f76ea9f9886e6d0c5c3853be7b820ba828e061e67785b"
+    },
+    {
+      "section": 9,
+      "dtype": "i1",
+      "shape": [
+        256,
+        512
+      ],
+      "sha256": "f9ea0954c5f47c0545f05593e4f975cdae0424a7a8bf33de21cddcdb25583792"
+    },
+    {
+      "section": 7,
+      "dtype": "<f4",
+      "shape": [
+        256
+      ],
+      "sha256": "d4d25c65557e4c34fac027a7feff039d1b4f1d531bcba0fb23cc9364dd1e49fe"
+    },
+    {
+      "section": 13,
+      "dtype": "i1",
+      "shape": [
+        2,
+        512
+      ],
+      "sha256": "5bf83c8dd1eb8ace003ad7a52714c9df3243c221d8cd91063381509d31cdda6d"
+    },
+    {
+      "section": 11,
+      "dtype": "<f4",
+      "shape": [
+        2
+      ],
+      "sha256": "cf1201fdf19e6dbdba3908701cc52fa0ba9822f4833653653ccd982dc103a100"
+    },
+    {
+      "section": 17,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "ca80f81094b64e46b0085ddc749166b9a1a47190048ead97fb14371a9bfe382e"
+    },
+    {
+      "section": 15,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "2e2d0d662d287bbefdee2d970165820750fbb47af535e2c61c5337b9d4f06450"
+    },
+    {
+      "section": 19,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "e1ed823050d15b1cee0d6811a051c422968b386e97f4ae4e8702f54d4e0897c4"
+    },
+    {
+      "section": 23,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "bbdd44939f1388b441fc46d5de31d51443bea0b7881868ffa991081cde644a81"
+    },
+    {
+      "section": 21,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "55af27c527e215c971c865442bb2bcd0be611a5847ee6a218a8c4ee0c61b815c"
+    },
+    {
+      "section": 25,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "8d9e75a6d67b2b293ff7909bc5976489ecaf76ec9995e53a5878ac6f5d1a3214"
+    },
+    {
+      "section": 29,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "12d22734c93974ef0aff376caadccec5f9f10ad2e755eb59ffd4356e26ffa334"
+    },
+    {
+      "section": 27,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "17b875b74d174d7780ec239bf12af6189845b92f899fcf399dac1659158a9307"
+    },
+    {
+      "section": 31,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "3adb84eac10041bf34496d975e5532e930b3834dea32081127fbee38bec33e2a"
+    },
+    {
+      "section": 35,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "f594dcb325a602991be5e4beb34df24733af12ef93e724911f55c272cf4a12cd"
+    },
+    {
+      "section": 33,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "ed1d2832569c7e4f820bce975e4ee327f34b15dd980081f53d0ab915044b8ce1"
+    },
+    {
+      "section": 37,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "43bf0875126aadbc977e60a3f60806769cf48e430f92e7acfee229b5e9c022c0"
+    },
+    {
+      "section": 41,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "5f51dce11891649dff3cc2432e509a05508aa95395d3f808e3580b6ff044fe58"
+    },
+    {
+      "section": 39,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "30641ad67e9710c8d4eef9c1724d51410bdd38fc94c4f79dd10e19c68ad89368"
+    },
+    {
+      "section": 45,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "f3a28f0b06d2d7a2ca09554b5d839b8f73633e9b7dc280eea6d8720e0bb2df1f"
+    },
+    {
+      "section": 43,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "b494765bb1b1538a2c204580b40aa04bba8e489955e23ffde2b1d76280e7f3e0"
+    },
+    {
+      "section": 47,
+      "dtype": "i1",
+      "shape": [
+        2048,
+        512
+      ],
+      "sha256": "d64714939b18a7d762a3e8188ebc7cf0b4459864ebee994d073d9372eb44a2a6"
+    },
+    {
+      "section": 51,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "04ce2d1bad1cdd807f31487973aae787d41c0fa5ea6b364daaab7cd72d918696"
+    },
+    {
+      "section": 49,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "afae3a7d29791c4c50158a7168b000c77efa053ac0eab2ce8cdb1b04b1793ff2"
+    },
+    {
+      "section": 53,
+      "dtype": "i1",
+      "shape": [
+        512,
+        2048
+      ],
+      "sha256": "cf2acc43c9fc816c66bc9ea7132a08188201e2b2d38d6c76b4442f45ac9cfb40"
+    },
+    {
+      "section": 57,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "073bbad7fbe7cfc8d9d66bcda794745ba4fa2ba521b5e04a19a0d042025c3d92"
+    },
+    {
+      "section": 55,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "45016e6b7d6f19fca18acc9142121031ab3cceb0445ce5bc212257a3a366bd0d"
+    },
+    {
+      "section": 61,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "7be72b8edff6008592918d1e3122886141ad61ded4fbaf4b73f56bf795e9a367"
+    },
+    {
+      "section": 59,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "6d3cdb9208f946016cd7c67947ec136c1c376e5c6336a36384ab2e1a0a8c9a89"
+    },
+    {
+      "section": 63,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "f25c555ec563ce7e6d410525820cd5d1b0e89a895c1865bdbe2b11a52c56311f"
+    },
+    {
+      "section": 67,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "801288999df51941f810a63a4ec354fb65adf7962aa169383f9555a7680436bf"
+    },
+    {
+      "section": 65,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "90747d8121a08c7568f9f82976e17ac2ee71b169e319eee25e59f861a3aa3ccd"
+    },
+    {
+      "section": 69,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "8a4ad928aa1141b6e3dc25d08af1a345e0845e13eda929ab008d3c38920cb4d4"
+    },
+    {
+      "section": 73,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "fd07b573bcbb41a4f1958df299026af4a0774d5fcfe86184c1a192e55a31135a"
+    },
+    {
+      "section": 71,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "451feb5f46d92d8b429a9b50c8b94490daa3b672f455d84fa8b4718c15b443be"
+    },
+    {
+      "section": 75,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "b07b788810f4aef782ae598ab4ce7b512fa86088d84880087659a2a613006cf7"
+    },
+    {
+      "section": 79,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "189aa7e805786ee61864d05657bf66205876aba7f83954c09420cf006d4988c8"
+    },
+    {
+      "section": 77,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "28bb7a3dd7f7b486e288603763fa588e06f4f9eca5b1f8cce603013dc04cffd8"
+    },
+    {
+      "section": 81,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "325d11f739919094219ff057c918e0240216a519bd42614e4bfbb2a2f5a449fa"
+    },
+    {
+      "section": 85,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "b33f97a94d39b8c5bf972f5857672cb725140f6c3b90794ee9cd61a4dd37bfc6"
+    },
+    {
+      "section": 83,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "a0840191c9718aedf4fe7b6a1fa088cc0f5e244c7dbadf4bc20e33e07b097ca8"
+    },
+    {
+      "section": 89,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "2676e4ebedf277f0443c01523a68ab4f55a5ecc0b6423733506de3105ecfb0fc"
+    },
+    {
+      "section": 87,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "fa0118f3e8090c4e3f7b2fedf956bb5839671e9cf4b469e9494a42bdba58f94e"
+    },
+    {
+      "section": 91,
+      "dtype": "i1",
+      "shape": [
+        2048,
+        512
+      ],
+      "sha256": "42e79a9f6a9a87193946c249ac922219c76fd3489e18bf99e979a9eb1801d5f7"
+    },
+    {
+      "section": 95,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "4ab3502eab1cd30411ffa8883917ce9d50ee58a662bbf31636dc879d7c95b8ac"
+    },
+    {
+      "section": 93,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "c37eef5cc5dbc36ab2b44e6e60e499bcc88017471bee0b81f85d27afd3b6fe5e"
+    },
+    {
+      "section": 97,
+      "dtype": "i1",
+      "shape": [
+        512,
+        2048
+      ],
+      "sha256": "68fc41be061439f3d7184a4e79e6fa54284338c2a5c2b0b18321ab1eba4aa81a"
+    },
+    {
+      "section": 101,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "856b13286892b2c4a4d5d7e3aab7bf2e986335990a86289cf588fbcb06a28075"
+    },
+    {
+      "section": 99,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "02a64c1ac014e98600628d6d6c0babd83e30f62c7610b45b841ab6d4f0bae9fe"
+    },
+    {
+      "section": 105,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "110e608559de1ddc5bce4f7d4ce34bc4531fa831dda1d072000144d84fcf87b1"
+    },
+    {
+      "section": 103,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "81decee10e1d7e12baf148ee2ab29b2182b78657b8cbd14849e979a8d72bd9b7"
+    },
+    {
+      "section": 107,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "f812dd725d9fabfd1c411825bce3a5095306019173d8a4d2fe0a130c7b9d3ec0"
+    },
+    {
+      "section": 111,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "9a768e2770f8c07a0af76ea66bb58df1579689007c2e92cd60823748a0fe70f4"
+    },
+    {
+      "section": 109,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "304f1bb037f10aae8f2b12d9233fb805d1498ff932a04367ca4eb3fb6bae051e"
+    },
+    {
+      "section": 113,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "8a4a27e0513a07314b64c349c923b2d82784448889acc33b416a20c7d4c63e2d"
+    },
+    {
+      "section": 117,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "e875027ab75154a182caab31aee38c906660cae75ed125b228a716ab34995f79"
+    },
+    {
+      "section": 115,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "bdbd722677ba064063e904d1bd5536e8d9edc3d9eb4d95c205e36425b2b0545e"
+    },
+    {
+      "section": 119,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "7d9cbac3c06a0f6893266c84e17a09846cb36917c1e2263ec762a3ad933c6d39"
+    },
+    {
+      "section": 123,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "4da0ba5bfe1fd9e1d9acf006f6c1ab148e5b3deaee3f214b262f12951429cc29"
+    },
+    {
+      "section": 121,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "fea962958d642b11fb94b48877d40283f5c237a3a1a281a0f6cf34bf8aa7ee72"
+    },
+    {
+      "section": 125,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "95764fabf8e1bbdc6cdf9aed86fc778a00dcbe1c97146ccdfacca4e5181e6a35"
+    },
+    {
+      "section": 129,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "2a669cb2793225624ad6505861805bb9f9ac5ed59f08518987e774950e83a43f"
+    },
+    {
+      "section": 127,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "be0b7ec1fe92f57083c3ae165069f2283ee59c9503b6493c5f988a00a2262093"
+    },
+    {
+      "section": 133,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "3935ecce2a2b33d7c74778c7216fa085b0a00392d8e8605121e061363e38f0c4"
+    },
+    {
+      "section": 131,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "f1d7ef7ab0f9be7c9ed65055d56714cb5482bfbd43803dea77d634028bcf9138"
+    },
+    {
+      "section": 135,
+      "dtype": "i1",
+      "shape": [
+        2048,
+        512
+      ],
+      "sha256": "0b9e7714c5fca89a8e1d6e45418e21cbc22f595431c451f45bd50c1e0ee76669"
+    },
+    {
+      "section": 139,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "a21818db265f1af05fb5a1daf38b82849fcef6063d3b88ce3fb0cf855e48c139"
+    },
+    {
+      "section": 137,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "2bb22ecbd9d2585a75e38b7d2c8284f5b027bbbdc79a9d846715a2edbcbcd6ee"
+    },
+    {
+      "section": 141,
+      "dtype": "i1",
+      "shape": [
+        512,
+        2048
+      ],
+      "sha256": "c710eaae76e6de7f8903f69269b8d300dc919c81f0d0c289ced4cedd88ed288a"
+    },
+    {
+      "section": 145,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "5ab8ba984ff04f47c07c2d94880d1767ec773e3b4335019fe4983738b770138f"
+    },
+    {
+      "section": 143,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "1d38d56f65aca50907cf83bae9385c4cfcdb5f00c574a662025085f438aa7598"
+    },
+    {
+      "section": 149,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "34f902a2a5c88924b2f99736e1068dada856519e0f79e120345b972ebef71103"
+    },
+    {
+      "section": 147,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "d8d462ed9c4b3909998040c3386df0cc7d70d9602c1c7ff51915fe3859c05fc5"
+    },
+    {
+      "section": 151,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "5552bf15cbffbc2da7929a66d1c365dd8f6f62fffa1f587e2244593725ad3a94"
+    },
+    {
+      "section": 155,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "89e1cb898373c838d16617074e2520ef42dc31ae9be75c616ec1fd74dae00d65"
+    },
+    {
+      "section": 153,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "4fee4c7e3a1f1160611479eb5b5cf2d0dde40b17cab21048ade3334b03f5aef4"
+    },
+    {
+      "section": 157,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "197f8ed23e80ed3bdfff57efb8afbde342df04bea5b2a901a6e58c31dd54559d"
+    },
+    {
+      "section": 161,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "fdb7dbdf8127702b401f3373390d74e461024fe8f8ac7a2394f4b66956b2add4"
+    },
+    {
+      "section": 159,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "b29188a249c843704d041bee26ac35287690953122d00d04cd59fa9f7af725e0"
+    },
+    {
+      "section": 163,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "b4049552d68b9efb3385075fa78b8570fef0a44138fb95d7de0f87b278429228"
+    },
+    {
+      "section": 167,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "021cde172f4d8579339b26c08376c0cd2b9ba9c4b30f09bbed1c805a951324b1"
+    },
+    {
+      "section": 165,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "f74631dd42226a2558464885893f73d7258a7f20fd9ffdaebdbcca3dd8fd6c12"
+    },
+    {
+      "section": 169,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "421a30d3f9b7a7b91251927190eda5d4c638fea312f0c390379ac5b746760174"
+    },
+    {
+      "section": 173,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "b5ff7f3e45036709008bebcc03b9dac7ec9679b84770ebbda14b2055029d7111"
+    },
+    {
+      "section": 171,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "4981822fd731b0be9eb0162d1b65374dd9ee8f5ebba52b3080b59808ba8b2080"
+    },
+    {
+      "section": 177,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "a9c3ceb77521d843ea306fa0edad9b140b48c67edafa110329fda5436ceed8ba"
+    },
+    {
+      "section": 175,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "2f9a5d4d5c8d8d34ab2622dfb74326c519dfd749cfe54cf627ca4e2042913bdd"
+    },
+    {
+      "section": 179,
+      "dtype": "i1",
+      "shape": [
+        2048,
+        512
+      ],
+      "sha256": "5020ebd620a81e171b0419b835cd91ab4826dce81a2410d38907fec4fe9d3716"
+    },
+    {
+      "section": 183,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "80554af1606d94c45920c1275b2c11b3aa0b809bf1ee301ae47a43f327d7fa4d"
+    },
+    {
+      "section": 181,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "f51bfef30657c507a48243076b6327ced4e2bf5224320db932ab9a1a196c32ac"
+    },
+    {
+      "section": 185,
+      "dtype": "i1",
+      "shape": [
+        512,
+        2048
+      ],
+      "sha256": "de3d2898603795b6a38d15b87e1256d65815fec2965e01dcf1a62242737d804a"
+    },
+    {
+      "section": 189,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "d79954a4fccfcdf8665ec1de80a2d6f67151816fdcb9ca5c3acf948b48bfb3a1"
+    },
+    {
+      "section": 187,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "dbabd0002ba3852736f13fb1932228a3e789387d70a286036e5e7d083d7a16a3"
+    },
+    {
+      "section": 193,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "cc706d0ba903cc16e585fadcf147ddc4e07aeaf69330081aa38c4c18ad94f24f"
+    },
+    {
+      "section": 191,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "6520a8ff671005a12ff89e79a50debfc0020ba41c2167bb6c30e0f07ea5037c5"
+    },
+    {
+      "section": 195,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "7f55e6c7c8faf9abed2018941698b6e4167efd8a35b0621555fb064bb4fb9e90"
+    },
+    {
+      "section": 199,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "b707122bece84cd8d5d2d72a9d945c882d4a0bb7595bba729d85d342e7aeab43"
+    },
+    {
+      "section": 197,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "dc28d12db0ea6479de328fc93157ba1ba277c9f3fd0b8ea88d13ededc0fbe5f3"
+    },
+    {
+      "section": 201,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "a936de478865adb640f2f40bcbfb8f11688997e4af7d69b9837586a01ff28512"
+    },
+    {
+      "section": 205,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "d0507fca02c9e4e69708862b6c552f377747656e562dd4fb0dbcba22cbf5645c"
+    },
+    {
+      "section": 203,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "ef0b195214e4e28daea67acee5805ade31147d28b689b840ae93f9f8443b00d5"
+    },
+    {
+      "section": 207,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "12775ec16bce110e600f22d1ba840fd61942796ba18770886f05135f01a1d28b"
+    },
+    {
+      "section": 211,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "0d55241645f7a14657fcd66e2d31b8040c4fee2b09e343b44fe5a27499934f2a"
+    },
+    {
+      "section": 209,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "f37d5af01edc1dbd896aa4d61314fd29fc0beeae2c2a6908be9ca66b41227fa2"
+    },
+    {
+      "section": 213,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "807cdd9a8d06074fc4ea05f44cab07d0d308903e16d37f162d0e5c38a6e5f1db"
+    },
+    {
+      "section": 217,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "e5c4bca434a16c3a9aed55baf70914517f48736c8e5660d4e02b282a5e47ffa1"
+    },
+    {
+      "section": 215,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "5b2b162a98127d8237c61408e21fed17b4984597177517296323bd92e86fdecc"
+    },
+    {
+      "section": 221,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "fa10f6cd69bcffd95796fbd41e6a028615960e8755addca50232728793a923ac"
+    },
+    {
+      "section": 219,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "d92bcf0c35624fce30db4a29504d5288ee7fec94394619731ed235bc7868fff0"
+    },
+    {
+      "section": 223,
+      "dtype": "i1",
+      "shape": [
+        2048,
+        512
+      ],
+      "sha256": "51e3dc603ce1821e1602d66b6dcbd012033dd23d33b3fed6133ea05bc32dcd24"
+    },
+    {
+      "section": 227,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "b06aa55e71e45c584d70d9a738acf271e04aa6750539cf18c2d825382d3797d5"
+    },
+    {
+      "section": 225,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "e67fc9bfce0cc6bb286b15b3339864465b89a735593c650a8d2830a16a107831"
+    },
+    {
+      "section": 229,
+      "dtype": "i1",
+      "shape": [
+        512,
+        2048
+      ],
+      "sha256": "b91dc8564d485bcbb42e0934a072fb123505e5cf41bf59f814daaab5dfdd472e"
+    },
+    {
+      "section": 233,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "3f5140a9ba8bc7224bc8f80693292939e79ae1dee551b91636b021200104449e"
+    },
+    {
+      "section": 231,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "457ccf28f47a984f36e85710de172e3b8fca8552a61758335e4f7fca5cc4f5b6"
+    },
+    {
+      "section": 237,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "077d617cad791e6dc30dc9236682d968f54f59263a8974fc8b1a533fbd88e7f8"
+    },
+    {
+      "section": 235,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "0a00653732014e0d95e1c178109f1b5155fb7003d775f0dbded88dbca5ab759e"
+    },
+    {
+      "section": 239,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "323ff75826edeb044e0f9663a3d717b7cb0304124b613aa351d137e6cdecf898"
+    },
+    {
+      "section": 243,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "7b6f981d868096d148568b7e9eb09617c9fb58f14e9d4277c4e2b15f60f41978"
+    },
+    {
+      "section": 241,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "ddcca61f023a50305975a0c11dbf253b55023f204de125dbe138647e7d39ed11"
+    },
+    {
+      "section": 245,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "c76f18e6c8f15760cab7cce79f78f19921bccf9b9419977599a790441f7da1e9"
+    },
+    {
+      "section": 249,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "39e6fe9e004177233df03cdb184c475aa38a001469bda4414b85045f26f8931a"
+    },
+    {
+      "section": 247,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "83de33179f847caf19ee130ac5adaab8d904e38d6a71d60c551d61be50addbc8"
+    },
+    {
+      "section": 251,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "36aa99720c8e112c6182e5450a51acedac1ec50b8ac445e8453b4ce40b9bc19e"
+    },
+    {
+      "section": 255,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "abe51ae1386ab6a34de4c800a82be312e0377f06294d37a4fcaa459bb12878f1"
+    },
+    {
+      "section": 253,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "65118654b69714a55e6fd6d05596633428f49aa89c4e08952ead9b54a8530c1a"
+    },
+    {
+      "section": 257,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "f8211c3008fbb0b64755a75a5333f2c46061cbc355ea19c6b02ada354357d7f2"
+    },
+    {
+      "section": 261,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "916b2f49871effb986c3df18f9e7d97b15eea7b53c5c61bae16ea45170c49579"
+    },
+    {
+      "section": 259,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "2f01afd8d2887cff801ea30b60c6e5492eef25287d265cf7129b6714e5b2c451"
+    },
+    {
+      "section": 265,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "d6c459140c7d4eb88ef3cdafa83232a3bf7d8f95b37bd80236c7a5e164b738e0"
+    },
+    {
+      "section": 263,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "d58932aea4205110a54e075925adfdb2084ecf7892ad84e1489a57c79745009c"
+    },
+    {
+      "section": 267,
+      "dtype": "i1",
+      "shape": [
+        2048,
+        512
+      ],
+      "sha256": "6916d9fd9f10371051e79fc119941c507e616f27a0389dfca094d3069f87b57a"
+    },
+    {
+      "section": 271,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "11de651880fd525162e92dbb1d0796bd548bad1a7f0627abdb6c3934b3c4a47c"
+    },
+    {
+      "section": 269,
+      "dtype": "<f4",
+      "shape": [
+        2048
+      ],
+      "sha256": "13f5106ae8c28d587715f0309ba64aa2d711a3547e1b1851763bf2c1566358ab"
+    },
+    {
+      "section": 273,
+      "dtype": "i1",
+      "shape": [
+        512,
+        2048
+      ],
+      "sha256": "466f4b56d55d353f5139b88aa8b85452690d99ab2594a5775bdce105b603bb4a"
+    },
+    {
+      "section": 277,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "ac497608cf3e0b89cd8f44e936735a2bc7ac0f434d6021e0d40b7ba488b29b3b"
+    },
+    {
+      "section": 275,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "73b119032aa743f3ac8a9074ef06f2343ef0d3526ba917a2856f151c74f99dc5"
+    },
+    {
+      "section": 281,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "71709c6bb81df9fc7b26a2fb1c1c588facf89c7f2910e069dbc60f34f222d1da"
+    },
+    {
+      "section": 279,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "5064ac92ec0aa2945988514171b6ab9431f7ab7b0cabfc4082b82998382388c2"
+    },
+    {
+      "section": 283,
+      "dtype": "i1",
+      "shape": [
+        512,
+        512
+      ],
+      "sha256": "3fdf716aa392dd560afdde535fdde35e73b7fcc221212f1b82ffbd46c29df0da"
+    },
+    {
+      "section": 287,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "7e77e57f5d58e9491e2ffa64c88ba54fae0641fb248d43c02256df867292bd10"
+    },
+    {
+      "section": 285,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "9b87c83f18f55efb903d2faaa21d8e1ac89ad15cacb0f60cfcc31fd7f56c26b4"
+    },
+    {
+      "section": 291,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "736a568013f17a1566594eedea61ba5c117835774c878d555a25601996cc99b5"
+    },
+    {
+      "section": 289,
+      "dtype": "<f4",
+      "shape": [
+        512
+      ],
+      "sha256": "d8c238ef179edc3f85171b5b6cb3b05df8c4304bce9b1d2e05346a1c7a89ffb9"
+    },
+    {
+      "section": 5,
+      "dtype": "i1",
+      "shape": [
+        15000,
+        512
+      ],
+      "sha256": "2c224e5c87d4858681e017525af209fea6a9e59f1f58d4495a3710b6f02b157b"
+    },
+    {
+      "section": 3,
+      "dtype": "<f4",
+      "shape": [
+        15000
+      ],
+      "sha256": "f2b9a2dceede0bd2f46f76ea9f9886e6d0c5c3853be7b820ba828e061e67785b"
+    }
+  ],
+  "architecture": {
+    "blocks": 6,
+    "width": 512,
+    "heads": 8,
+    "head_dim": 64,
+    "ffn_width": 2048,
+    "vocabulary": 15000,
+    "position_count": 256,
+    "weight_tying": true
+  },
+  "runs": [
+    {
+      "prompt": "the weather is ",
+      "prompt_token_ids": [
+        1,
+        286,
+        2593,
+        294
+      ],
+      "generated_token_ids": [
+        336,
+        1023,
+        710,
+        285,
+        300,
+        495,
+        438,
+        288,
+        419,
+        288,
+        286,
+        4427,
+        290,
+        368,
+        361,
+        743,
+        285,
+        300,
+        328,
+        308,
+        552,
+        292,
+        344,
+        5826
+      ],
+      "generated_text": "so nice today . I am going to go to the beach and get some food . I will be home in about twenty ",
+      "trace": [
+        {
+          "token_id": 336,
+          "piece": "so▁",
+          "logits_sha256": "49a6ead00b8acda9a5e883218c365825d670e09aa41769a231d5369b0a5a3c72",
+          "probability": 0.09943173080682755,
+          "top5": [
+            {
+              "id": 336,
+              "piece": "so▁",
+              "p": 0.09943173080682755
+            },
+            {
+              "id": 2093,
+              "piece": "beautiful▁",
+              "p": 0.043682027608156204
+            },
+            {
+              "id": 314,
+              "piece": "not▁",
+              "p": 0.03776267543435097
+            },
+            {
+              "id": 2222,
+              "piece": "supposed▁",
+              "p": 0.03553413972258568
+            },
+            {
+              "id": 438,
+              "piece": "going▁",
+              "p": 0.033775173127651215
+            }
+          ]
+        },
+        {
+          "token_id": 1023,
+          "piece": "nice▁",
+          "logits_sha256": "47421604ef194648af08b9f8c47306b48e43f4502973c16e4a9900bc82436030",
+          "probability": 0.1560688614845276,
+          "top5": [
+            {
+              "id": 1023,
+              "piece": "nice▁",
+              "p": 0.1560688614845276
+            },
+            {
+              "id": 622,
+              "piece": "bad▁",
+              "p": 0.13728861510753632
+            },
+            {
+              "id": 2093,
+              "piece": "beautiful▁",
+              "p": 0.08971524983644485
+            },
+            {
+              "id": 399,
+              "piece": "good▁",
+              "p": 0.06570139527320862
+            },
+            {
+              "id": 2116,
+              "piece": "cold▁",
+              "p": 0.04629769176244736
+            }
+          ]
+        },
+        {
+          "token_id": 710,
+          "piece": "today▁",
+          "logits_sha256": "1a0cf37060063396ce1dee54d8a04b8b28f2511d1d79ada55d69cc29ae901fca",
+          "probability": 0.11067043989896774,
+          "top5": [
+            {
+              "id": 710,
+              "piece": "today▁",
+              "p": 0.11067043989896774
+            },
+            {
+              "id": 290,
+              "piece": "and▁",
+              "p": 0.08387834578752518
+            },
+            {
+              "id": 300,
+              "piece": "I▁",
+              "p": 0.06477420777082443
+            },
+            {
+              "id": 446,
+              "piece": "here▁",
+              "p": 0.04843943938612938
+            },
+            {
+              "id": 448,
+              "piece": "right▁",
+              "p": 0.042237624526023865
+            }
+          ]
+        },
+        {
+          "token_id": 285,
+          "piece": ".▁",
+          "logits_sha256": "06b746fae857878225f73b3e62daa041ca35348d2a60e026675c1e45e9ea62e7",
+          "probability": 0.12488221377134323,
+          "top5": [
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.12488221377134323
+            },
+            {
+              "id": 300,
+              "piece": "I▁",
+              "p": 0.10169713199138641
+            },
+            {
+              "id": 290,
+              "piece": "and▁",
+              "p": 0.08811617642641068
+            },
+            {
+              "id": 377,
+              "piece": "!▁",
+              "p": 0.06168195977807045
+            },
+            {
+              "id": 287,
+              "piece": ",▁",
+              "p": 0.054090116173028946
+            }
+          ]
+        },
+        {
+          "token_id": 300,
+          "piece": "I▁",
+          "logits_sha256": "703a9c0394127c3592686f27b10a233bbdbfd53ce718a1203160e19212740963",
+          "probability": 0.20880760252475739,
+          "top5": [
+            {
+              "id": 300,
+              "piece": "I▁",
+              "p": 0.20880760252475739
+            },
+            {
+              "id": 331,
+              "piece": "we▁",
+              "p": 0.047768484801054
+            },
+            {
+              "id": 80,
+              "piece": "it's▁",
+              "p": 0.042125601321458817
+            },
+            {
+              "id": 53,
+              "piece": "I'm▁",
+              "p": 0.03917542099952698
+            },
+            {
+              "id": 299,
+              "piece": "it▁",
+              "p": 0.03457650914788246
+            }
+          ]
+        },
+        {
+          "token_id": 495,
+          "piece": "am▁",
+          "logits_sha256": "1082ae5c55404a0956ca905d1c6249db9e8d99906d2fb9f37df3c0a7cd4c158a",
+          "probability": 0.0850522518157959,
+          "top5": [
+            {
+              "id": 495,
+              "piece": "am▁",
+              "p": 0.0850522518157959
+            },
+            {
+              "id": 690,
+              "piece": "hope▁",
+              "p": 0.07943755388259888
+            },
+            {
+              "id": 402,
+              "piece": "think▁",
+              "p": 0.07098490744829178
+            },
+            {
+              "id": 310,
+              "piece": "have▁",
+              "p": 0.06045948341488838
+            },
+            {
+              "id": 55,
+              "piece": "don't▁",
+              "p": 0.04768642410635948
+            }
+          ]
+        },
+        {
+          "token_id": 438,
+          "piece": "going▁",
+          "logits_sha256": "653a41ccd9ff55c859239c3326650408f9cc8d1d23b89e37e10fe8b6102f4a55",
+          "probability": 0.09742682427167892,
+          "top5": [
+            {
+              "id": 438,
+              "piece": "going▁",
+              "p": 0.09742682427167892
+            },
+            {
+              "id": 336,
+              "piece": "so▁",
+              "p": 0.090180903673172
+            },
+            {
+              "id": 292,
+              "piece": "in▁",
+              "p": 0.039190489798784256
+            },
+            {
+              "id": 314,
+              "piece": "not▁",
+              "p": 0.032681021839380264
+            },
+            {
+              "id": 405,
+              "piece": "very▁",
+              "p": 0.021995490416884422
+            }
+          ]
+        },
+        {
+          "token_id": 288,
+          "piece": "to▁",
+          "logits_sha256": "45345bbaf01f5a9344557660311cf33ab417e672662696ab4b8faa7fde1b2f00",
+          "probability": 0.8516753911972046,
+          "top5": [
+            {
+              "id": 288,
+              "piece": "to▁",
+              "p": 0.8516753911972046
+            },
+            {
+              "id": 352,
+              "piece": "out▁",
+              "p": 0.03213867172598839
+            },
+            {
+              "id": 292,
+              "piece": "in▁",
+              "p": 0.011199664324522018
+            },
+            {
+              "id": 421,
+              "piece": "back▁",
+              "p": 0.009488158859312534
+            },
+            {
+              "id": 298,
+              "piece": "for▁",
+              "p": 0.008539932779967785
+            }
+          ]
+        },
+        {
+          "token_id": 419,
+          "piece": "go▁",
+          "logits_sha256": "51573a378bdbb261f2f23ca4dcf3bca10a9836ec7f4ab059f38786cae4d92ea8",
+          "probability": 0.0927596315741539,
+          "top5": [
+            {
+              "id": 419,
+              "piece": "go▁",
+              "p": 0.0927596315741539
+            },
+            {
+              "id": 308,
+              "piece": "be▁",
+              "p": 0.0864606574177742
+            },
+            {
+              "id": 548,
+              "piece": "try▁",
+              "p": 0.05039128661155701
+            },
+            {
+              "id": 310,
+              "piece": "have▁",
+              "p": 0.04796146973967552
+            },
+            {
+              "id": 368,
+              "piece": "get▁",
+              "p": 0.04469319432973862
+            }
+          ]
+        },
+        {
+          "token_id": 288,
+          "piece": "to▁",
+          "logits_sha256": "fe96df35325b4179c977c98e7d7872d9ce00dbb55c7ae07624afa1e10454d1bb",
+          "probability": 0.26389485597610474,
+          "top5": [
+            {
+              "id": 288,
+              "piece": "to▁",
+              "p": 0.26389485597610474
+            },
+            {
+              "id": 352,
+              "piece": "out▁",
+              "p": 0.12384838610887527
+            },
+            {
+              "id": 368,
+              "piece": "get▁",
+              "p": 0.03996245190501213
+            },
+            {
+              "id": 298,
+              "piece": "for▁",
+              "p": 0.0333440862596035
+            },
+            {
+              "id": 290,
+              "piece": "and▁",
+              "p": 0.032260335981845856
+            }
+          ]
+        },
+        {
+          "token_id": 286,
+          "piece": "the▁",
+          "logits_sha256": "c9cc0e9afaa3a21a619ece54837614e8dfa1dfdb644bf76ab42327c4bd3e8de7",
+          "probability": 0.32544106245040894,
+          "top5": [
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.32544106245040894
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.14190442860126495
+            },
+            {
+              "id": 2130,
+              "piece": "bed▁",
+              "p": 0.06906036287546158
+            },
+            {
+              "id": 132,
+              "piece": "_U_NT08▁",
+              "p": 0.06402266770601273
+            },
+            {
+              "id": 289,
+              "piece": "a▁",
+              "p": 0.05905986577272415
+            }
+          ]
+        },
+        {
+          "token_id": 4427,
+          "piece": "beach▁",
+          "logits_sha256": "77ee2c2e432b2f78e7920ba2b830e4cba221ec33fa8dcd2be6dee121110c1bdf",
+          "probability": 0.15242040157318115,
+          "top5": [
+            {
+              "id": 4427,
+              "piece": "beach▁",
+              "p": 0.15242040157318115
+            },
+            {
+              "id": 5535,
+              "piece": "gym▁",
+              "p": 0.07278560847043991
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.05719614773988724
+            },
+            {
+              "id": 1489,
+              "piece": "store▁",
+              "p": 0.04399791359901428
+            },
+            {
+              "id": 8791,
+              "piece": "grocery▁",
+              "p": 0.04338685795664787
+            }
+          ]
+        },
+        {
+          "token_id": 290,
+          "piece": "and▁",
+          "logits_sha256": "c3b811962694034b2a031d2965b9210cbf895fa1bc13404bdbee6914b9e426ff",
+          "probability": 0.17594334483146667,
+          "top5": [
+            {
+              "id": 290,
+              "piece": "and▁",
+              "p": 0.17594334483146667
+            },
+            {
+              "id": 304,
+              "piece": "with▁",
+              "p": 0.09089494496583939
+            },
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.08156797289848328
+            },
+            {
+              "id": 298,
+              "piece": "for▁",
+              "p": 0.06191903352737427
+            },
+            {
+              "id": 3567,
+              "piece": "tomorrow▁",
+              "p": 0.06111297383904457
+            }
+          ]
+        },
+        {
+          "token_id": 368,
+          "piece": "get▁",
+          "logits_sha256": "606fb2a4aea7f80a42d04a92f9a05329baa9b9b30d1c4f3fa20dc87b949d7144",
+          "probability": 0.07120278477668762,
+          "top5": [
+            {
+              "id": 368,
+              "piece": "get▁",
+              "p": 0.07120278477668762
+            },
+            {
+              "id": 416,
+              "piece": "see▁",
+              "p": 0.04535166546702385
+            },
+            {
+              "id": 300,
+              "piece": "I▁",
+              "p": 0.04057646915316582
+            },
+            {
+              "id": 392,
+              "piece": "then▁",
+              "p": 0.03839578479528427
+            },
+            {
+              "id": 419,
+              "piece": "go▁",
+              "p": 0.038226112723350525
+            }
+          ]
+        },
+        {
+          "token_id": 361,
+          "piece": "some▁",
+          "logits_sha256": "ccdc4862ecb393fa2dfeb5e7e57c3b0731fff97adcd3110574ab7107564dbe9a",
+          "probability": 0.20425452291965485,
+          "top5": [
+            {
+              "id": 361,
+              "piece": "some▁",
+              "p": 0.20425452291965485
+            },
+            {
+              "id": 340,
+              "piece": "my▁",
+              "p": 0.1772339642047882
+            },
+            {
+              "id": 289,
+              "piece": "a▁",
+              "p": 0.1283876746892929
+            },
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.050660260021686554
+            },
+            {
+              "id": 1408,
+              "piece": "ready▁",
+              "p": 0.031526606529951096
+            }
+          ]
+        },
+        {
+          "token_id": 743,
+          "piece": "food▁",
+          "logits_sha256": "ac4888a882be1b4f4a66b1408cc48468151a6b7f5aae62cd7bc4ed25e54d7d81",
+          "probability": 0.04070626199245453,
+          "top5": [
+            {
+              "id": 743,
+              "piece": "food▁",
+              "p": 0.04070626199245453
+            },
+            {
+              "id": 682,
+              "piece": "water▁",
+              "p": 0.03311242535710335
+            },
+            {
+              "id": 2112,
+              "piece": "fresh▁",
+              "p": 0.030314363539218903
+            },
+            {
+              "id": 1779,
+              "piece": "ice▁",
+              "p": 0.02683829702436924
+            },
+            {
+              "id": 7893,
+              "piece": "flowers▁",
+              "p": 0.02570006437599659
+            }
+          ]
+        },
+        {
+          "token_id": 285,
+          "piece": ".▁",
+          "logits_sha256": "b2a49b72519184de619e00561bd2cb524ef6574eb0ab993c78c2dddbfeaca288",
+          "probability": 0.21923811733722687,
+          "top5": [
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.21923811733722687
+            },
+            {
+              "id": 290,
+              "piece": "and▁",
+              "p": 0.21129857003688812
+            },
+            {
+              "id": 298,
+              "piece": "for▁",
+              "p": 0.12914355099201202
+            },
+            {
+              "id": 288,
+              "piece": "to▁",
+              "p": 0.04363911971449852
+            },
+            {
+              "id": 316,
+              "piece": "from▁",
+              "p": 0.029493961483240128
+            }
+          ]
+        },
+        {
+          "token_id": 300,
+          "piece": "I▁",
+          "logits_sha256": "cec9e620dd4dc3db98a25393f8201023ef2741176a4bbaaa75d56af27d2c9ae1",
+          "probability": 0.23668156564235687,
+          "top5": [
+            {
+              "id": 300,
+              "piece": "I▁",
+              "p": 0.23668156564235687
+            },
+            {
+              "id": 290,
+              "piece": "and▁",
+              "p": 0.038025133311748505
+            },
+            {
+              "id": 53,
+              "piece": "I'm▁",
+              "p": 0.03349995240569115
+            },
+            {
+              "id": 325,
+              "piece": "if▁",
+              "p": 0.02900761179625988
+            },
+            {
+              "id": 336,
+              "piece": "so▁",
+              "p": 0.026806378737092018
+            }
+          ]
+        },
+        {
+          "token_id": 328,
+          "piece": "will▁",
+          "logits_sha256": "49301ce8dad25339d2dea2bc20ac3242b85c3ca4df37e96c650d1f2dccc8ecf4",
+          "probability": 0.1373976469039917,
+          "top5": [
+            {
+              "id": 328,
+              "piece": "will▁",
+              "p": 0.1373976469039917
+            },
+            {
+              "id": 495,
+              "piece": "am▁",
+              "p": 0.10450688004493713
+            },
+            {
+              "id": 310,
+              "piece": "have▁",
+              "p": 0.0704374760389328
+            },
+            {
+              "id": 575,
+              "piece": "love▁",
+              "p": 0.06328611820936203
+            },
+            {
+              "id": 55,
+              "piece": "don't▁",
+              "p": 0.05808784440159798
+            }
+          ]
+        },
+        {
+          "token_id": 308,
+          "piece": "be▁",
+          "logits_sha256": "a8dacf49895f704813e1f05ba33e5f8e5b6f42e2b11e6d20fea179cf90f40fb3",
+          "probability": 0.12788213789463043,
+          "top5": [
+            {
+              "id": 308,
+              "piece": "be▁",
+              "p": 0.12788213789463043
+            },
+            {
+              "id": 628,
+              "piece": "let▁",
+              "p": 0.06356978416442871
+            },
+            {
+              "id": 787,
+              "piece": "call▁",
+              "p": 0.052762605249881744
+            },
+            {
+              "id": 1828,
+              "piece": "text▁",
+              "p": 0.03943751007318497
+            },
+            {
+              "id": 416,
+              "piece": "see▁",
+              "p": 0.038348179310560226
+            }
+          ]
+        },
+        {
+          "token_id": 552,
+          "piece": "home▁",
+          "logits_sha256": "d325ee32c27547ec3324226085138a45ccc8bfcb39521eac6dbc6a820c45c9ed",
+          "probability": 0.12083978205919266,
+          "top5": [
+            {
+              "id": 552,
+              "piece": "home▁",
+              "p": 0.12083978205919266
+            },
+            {
+              "id": 292,
+              "piece": "in▁",
+              "p": 0.08098012208938599
+            },
+            {
+              "id": 350,
+              "piece": "there▁",
+              "p": 0.06708822399377823
+            },
+            {
+              "id": 421,
+              "piece": "back▁",
+              "p": 0.044937752187252045
+            },
+            {
+              "id": 313,
+              "piece": "at▁",
+              "p": 0.039785921573638916
+            }
+          ]
+        },
+        {
+          "token_id": 292,
+          "piece": "in▁",
+          "logits_sha256": "75796d338896855e83ef69c224a9ca270ed885b7d9b1cd0e1b02c446cadc25d5",
+          "probability": 0.12394357472658157,
+          "top5": [
+            {
+              "id": 292,
+              "piece": "in▁",
+              "p": 0.12394357472658157
+            },
+            {
+              "id": 320,
+              "piece": "by▁",
+              "p": 0.07021094858646393
+            },
+            {
+              "id": 1060,
+              "piece": "soon▁",
+              "p": 0.059593454003334045
+            },
+            {
+              "id": 298,
+              "piece": "for▁",
+              "p": 0.058515314012765884
+            },
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.04400637373328209
+            }
+          ]
+        },
+        {
+          "token_id": 344,
+          "piece": "about▁",
+          "logits_sha256": "d1c7b1e8fcd00f9bafe55ef9de7e78de1adc9593f5641123a08a731758319235",
+          "probability": 0.319485604763031,
+          "top5": [
+            {
+              "id": 344,
+              "piece": "about▁",
+              "p": 0.319485604763031
+            },
+            {
+              "id": 289,
+              "piece": "a▁",
+              "p": 0.2176760733127594
+            },
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.0656871423125267
+            },
+            {
+              "id": 389,
+              "piece": "two▁",
+              "p": 0.048973262310028076
+            },
+            {
+              "id": 364,
+              "piece": "time▁",
+              "p": 0.04779365286231041
+            }
+          ]
+        },
+        {
+          "token_id": 5826,
+          "piece": "twenty▁",
+          "logits_sha256": "98960bacb52a4b85667d838cb0d1b48923b2c3e7c179217e5df815d43c3363c8",
+          "probability": 0.13660289347171783,
+          "top5": [
+            {
+              "id": 5826,
+              "piece": "twenty▁",
+              "p": 0.13660289347171783
+            },
+            {
+              "id": 321,
+              "piece": "an▁",
+              "p": 0.1266254335641861
+            },
+            {
+              "id": 8765,
+              "piece": "thirty▁",
+              "p": 0.11727244406938553
+            },
+            {
+              "id": 667,
+              "piece": "five▁",
+              "p": 0.11641808599233627
+            },
+            {
+              "id": 1933,
+              "piece": "ten▁",
+              "p": 0.10693368315696716
+            }
+          ]
+        }
+      ],
+      "decoding": "greedy argmax; no logits masking, penalties, sampling or text substitution"
+    },
+    {
+      "prompt": "I would like to ",
+      "prompt_token_ids": [
+        1,
+        300,
+        343,
+        347,
+        288
+      ],
+      "generated_token_ids": [
+        416,
+        289,
+        103,
+        7470,
+        103,
+        1595,
+        528,
+        285,
+        103,
+        286,
+        103,
+        7470,
+        103,
+        1595,
+        528,
+        294,
+        289,
+        103,
+        7470,
+        103,
+        1595,
+        528,
+        285,
+        103
+      ],
+      "generated_text": "see a _U_CAP_tesla _U_CAP_model S . _U_CAP_the _U_CAP_tesla _U_CAP_model S is a _U_CAP_tesla _U_CAP_model S . _U_CAP_",
+      "trace": [
+        {
+          "token_id": 416,
+          "piece": "see▁",
+          "logits_sha256": "12ca512acf6e2208ee82e776128f4b4d2ce3e5b99184453ac16cc9cd2b71d029",
+          "probability": 0.09185811877250671,
+          "top5": [
+            {
+              "id": 416,
+              "piece": "see▁",
+              "p": 0.09185811877250671
+            },
+            {
+              "id": 407,
+              "piece": "know▁",
+              "p": 0.07942905277013779
+            },
+            {
+              "id": 1284,
+              "piece": "thank▁",
+              "p": 0.040702320635318756
+            },
+            {
+              "id": 368,
+              "piece": "get▁",
+              "p": 0.03819354251027107
+            },
+            {
+              "id": 308,
+              "piece": "be▁",
+              "p": 0.036530204117298126
+            }
+          ]
+        },
+        {
+          "token_id": 289,
+          "piece": "a▁",
+          "logits_sha256": "eefaf986de3bcf192fab094790419dcd27390520ce975b15ff46357a41fb8a3a",
+          "probability": 0.11854303628206253,
+          "top5": [
+            {
+              "id": 289,
+              "piece": "a▁",
+              "p": 0.11854303628206253
+            },
+            {
+              "id": 301,
+              "piece": "you▁",
+              "p": 0.10637342929840088
+            },
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.09497208893299103
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.08207657933235168
+            },
+            {
+              "id": 341,
+              "piece": "more▁",
+              "p": 0.052664440125226974
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "e74142b77d8dce4f1a25a611e7752fab4f1ad03a71877f3a67b586d67e925afa",
+          "probability": 0.053147200495004654,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.053147200495004654
+            },
+            {
+              "id": 1603,
+              "piece": "picture▁",
+              "p": 0.05270180478692055
+            },
+            {
+              "id": 830,
+              "piece": "video▁",
+              "p": 0.04367019236087799
+            },
+            {
+              "id": 383,
+              "piece": "new▁",
+              "p": 0.024679353460669518
+            },
+            {
+              "id": 1895,
+              "piece": "photo▁",
+              "p": 0.017331542447209358
+            }
+          ]
+        },
+        {
+          "token_id": 7470,
+          "piece": "tesla▁",
+          "logits_sha256": "c74dde1699c07ad1f8ee58bce3cc1e29b4b0efc8b259680b8973db0bc911eb3b",
+          "probability": 0.00856637954711914,
+          "top5": [
+            {
+              "id": 7470,
+              "piece": "tesla▁",
+              "p": 0.00856637954711914
+            },
+            {
+              "id": 1824,
+              "piece": "republican▁",
+              "p": 0.008320492692291737
+            },
+            {
+              "id": 1692,
+              "piece": "twitter▁",
+              "p": 0.008027175441384315
+            },
+            {
+              "id": 371,
+              "piece": "re",
+              "p": 0.0063254339620471
+            },
+            {
+              "id": 363,
+              "piece": "s",
+              "p": 0.006156483665108681
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "64a0556ea84d9e2298af9f3e1d0b401eb52a732d9ba8ae2dfde6d90e89dad699",
+          "probability": 0.12332640588283539,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.12332640588283539
+            },
+            {
+              "id": 1595,
+              "piece": "model▁",
+              "p": 0.041200701147317886
+            },
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.03590228781104088
+            },
+            {
+              "id": 1293,
+              "piece": "version▁",
+              "p": 0.025535929948091507
+            },
+            {
+              "id": 292,
+              "piece": "in▁",
+              "p": 0.02136312797665596
+            }
+          ]
+        },
+        {
+          "token_id": 1595,
+          "piece": "model▁",
+          "logits_sha256": "76fdf8d9d60eae85e8fd43de1da68debb491fd41252f4238c0c49a55fba846b9",
+          "probability": 0.41050058603286743,
+          "top5": [
+            {
+              "id": 1595,
+              "piece": "model▁",
+              "p": 0.41050058603286743
+            },
+            {
+              "id": 7470,
+              "piece": "tesla▁",
+              "p": 0.02110418491065502
+            },
+            {
+              "id": 8769,
+              "piece": "road",
+              "p": 0.013823379762470722
+            },
+            {
+              "id": 12356,
+              "piece": "charger▁",
+              "p": 0.009887060150504112
+            },
+            {
+              "id": 1456,
+              "piece": "stock▁",
+              "p": 0.007368504535406828
+            }
+          ]
+        },
+        {
+          "token_id": 528,
+          "piece": "S▁",
+          "logits_sha256": "0440dd003000504cbe0e843580275cb0acc8ecb2b134fc5f078502bb55cdd33e",
+          "probability": 0.30003276467323303,
+          "top5": [
+            {
+              "id": 528,
+              "piece": "S▁",
+              "p": 0.30003276467323303
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.12328219413757324
+            },
+            {
+              "id": 326,
+              "piece": "3",
+              "p": 0.09567206352949142
+            },
+            {
+              "id": 303,
+              "piece": "1",
+              "p": 0.04572918266057968
+            },
+            {
+              "id": 327,
+              "piece": "5",
+              "p": 0.04401852935552597
+            }
+          ]
+        },
+        {
+          "token_id": 285,
+          "piece": ".▁",
+          "logits_sha256": "798500db32fa52753e4be5fa4b60c2392f6bcb5a769696b22f01ad0a2e1be665",
+          "probability": 0.17702390253543854,
+          "top5": [
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.17702390253543854
+            },
+            {
+              "id": 287,
+              "piece": ",▁",
+              "p": 0.04831710457801819
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.04696368798613548
+            },
+            {
+              "id": 292,
+              "piece": "in▁",
+              "p": 0.04276879504323006
+            },
+            {
+              "id": 304,
+              "piece": "with▁",
+              "p": 0.039239369332790375
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "31ebbdaa439b6d5c8a9a0fca561cc21145c744b6012697c25a83fad991cf225c",
+          "probability": 0.6485176682472229,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.6485176682472229
+            },
+            {
+              "id": 300,
+              "piece": "I▁",
+              "p": 0.08765740692615509
+            },
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.030015332624316216
+            },
+            {
+              "id": 391,
+              "piece": "A▁",
+              "p": 0.024727877229452133
+            },
+            {
+              "id": 3,
+              "piece": "<unk>",
+              "p": 0.022845789790153503
+            }
+          ]
+        },
+        {
+          "token_id": 286,
+          "piece": "the▁",
+          "logits_sha256": "c072dbe231d77e0be1d948640ad111624489a2bfa3c1dee0800f37e130cd068e",
+          "probability": 0.05225451663136482,
+          "top5": [
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.05225451663136482
+            },
+            {
+              "id": 299,
+              "piece": "it▁",
+              "p": 0.03772993013262749
+            },
+            {
+              "id": 325,
+              "piece": "if▁",
+              "p": 0.028442561626434326
+            },
+            {
+              "id": 354,
+              "piece": "what▁",
+              "p": 0.026910994201898575
+            },
+            {
+              "id": 80,
+              "piece": "it's▁",
+              "p": 0.023883773013949394
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "cb81b866c265936a9485dc77661190561e96e851fa2ec22d4055c7d17e752186",
+          "probability": 0.29196590185165405,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.29196590185165405
+            },
+            {
+              "id": 382,
+              "piece": "only▁",
+              "p": 0.020431742072105408
+            },
+            {
+              "id": 876,
+              "piece": "car▁",
+              "p": 0.019263308495283127
+            },
+            {
+              "id": 1595,
+              "piece": "model▁",
+              "p": 0.015945229679346085
+            },
+            {
+              "id": 384,
+              "piece": "first▁",
+              "p": 0.014859795570373535
+            }
+          ]
+        },
+        {
+          "token_id": 7470,
+          "piece": "tesla▁",
+          "logits_sha256": "44ce637fd25c9f8ff84a6c3221e6b96e78f15e6546993c14e893c5d464dd88af",
+          "probability": 0.2062397301197052,
+          "top5": [
+            {
+              "id": 7470,
+              "piece": "tesla▁",
+              "p": 0.2062397301197052
+            },
+            {
+              "id": 1595,
+              "piece": "model▁",
+              "p": 0.0682407021522522
+            },
+            {
+              "id": 540,
+              "piece": "m",
+              "p": 0.011222693137824535
+            },
+            {
+              "id": 2611,
+              "piece": "ford▁",
+              "p": 0.008539574220776558
+            },
+            {
+              "id": 13483,
+              "piece": "falcon▁",
+              "p": 0.007780859712511301
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "2934d913513abfaf9a2c901f3e7370ee9d08934ed9f36292cb832ef933994b3b",
+          "probability": 0.30967870354652405,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.30967870354652405
+            },
+            {
+              "id": 1595,
+              "piece": "model▁",
+              "p": 0.11330056190490723
+            },
+            {
+              "id": 294,
+              "piece": "is▁",
+              "p": 0.05845331773161888
+            },
+            {
+              "id": 1293,
+              "piece": "version▁",
+              "p": 0.03213246539235115
+            },
+            {
+              "id": 24,
+              "piece": "'s▁",
+              "p": 0.015928059816360474
+            }
+          ]
+        },
+        {
+          "token_id": 1595,
+          "piece": "model▁",
+          "logits_sha256": "6b730dbf1aa7d1970f93203014ca021aae5778b13946eb978d0f0f5ff089a870",
+          "probability": 0.7651742696762085,
+          "top5": [
+            {
+              "id": 1595,
+              "piece": "model▁",
+              "p": 0.7651742696762085
+            },
+            {
+              "id": 9561,
+              "piece": "motors▁",
+              "p": 0.008366366848349571
+            },
+            {
+              "id": 3295,
+              "piece": "models▁",
+              "p": 0.008356674574315548
+            },
+            {
+              "id": 876,
+              "piece": "car▁",
+              "p": 0.0059477537870407104
+            },
+            {
+              "id": 1293,
+              "piece": "version▁",
+              "p": 0.005689720157533884
+            }
+          ]
+        },
+        {
+          "token_id": 528,
+          "piece": "S▁",
+          "logits_sha256": "fb7478cbdef3c12446e1e3c1690d3a45de10aa3c77659bedbb41a1f5309792fa",
+          "probability": 0.8262777328491211,
+          "top5": [
+            {
+              "id": 528,
+              "piece": "S▁",
+              "p": 0.8262777328491211
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.04106688126921654
+            },
+            {
+              "id": 999,
+              "piece": "T▁",
+              "p": 0.019963672384619713
+            },
+            {
+              "id": 1906,
+              "piece": "Y▁",
+              "p": 0.010233513079583645
+            },
+            {
+              "id": 1044,
+              "piece": "B▁",
+              "p": 0.010018997825682163
+            }
+          ]
+        },
+        {
+          "token_id": 294,
+          "piece": "is▁",
+          "logits_sha256": "c06de14c0d71d339f4d2c34e2cebb0923ad55a110626277a32f4d44f6f51bf93",
+          "probability": 0.3077293336391449,
+          "top5": [
+            {
+              "id": 294,
+              "piece": "is▁",
+              "p": 0.3077293336391449
+            },
+            {
+              "id": 330,
+              "piece": "has▁",
+              "p": 0.0778796598315239
+            },
+            {
+              "id": 328,
+              "piece": "will▁",
+              "p": 0.07212547212839127
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.04667152091860771
+            },
+            {
+              "id": 309,
+              "piece": "was▁",
+              "p": 0.0387912355363369
+            }
+          ]
+        },
+        {
+          "token_id": 289,
+          "piece": "a▁",
+          "logits_sha256": "a8a9810d29eafbc35ef901fade089b6ad061ee2c9037b1d3adef2b0d864d4941",
+          "probability": 0.119266577064991,
+          "top5": [
+            {
+              "id": 289,
+              "piece": "a▁",
+              "p": 0.119266577064991
+            },
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.04982958734035492
+            },
+            {
+              "id": 314,
+              "piece": "not▁",
+              "p": 0.04935799911618233
+            },
+            {
+              "id": 321,
+              "piece": "an▁",
+              "p": 0.02135140635073185
+            },
+            {
+              "id": 1962,
+              "piece": "designed▁",
+              "p": 0.020457454025745392
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "ac568a472572ec3cd962c340d27caaeb6fb1af8a05b6e252c6294dff858ebdcf",
+          "probability": 0.12051291763782501,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.12051291763782501
+            },
+            {
+              "id": 8420,
+              "piece": "hybrid▁",
+              "p": 0.032152045518159866
+            },
+            {
+              "id": 405,
+              "piece": "very▁",
+              "p": 0.030741345137357712
+            },
+            {
+              "id": 502,
+              "piece": "great▁",
+              "p": 0.02426883764564991
+            },
+            {
+              "id": 481,
+              "piece": "lot▁",
+              "p": 0.018105974420905113
+            }
+          ]
+        },
+        {
+          "token_id": 7470,
+          "piece": "tesla▁",
+          "logits_sha256": "3fbd336fcc20e1a721a285277065ad8083c7252406cbd03a8bd9b32a2d6b4cee",
+          "probability": 0.31491032242774963,
+          "top5": [
+            {
+              "id": 7470,
+              "piece": "tesla▁",
+              "p": 0.31491032242774963
+            },
+            {
+              "id": 1595,
+              "piece": "model▁",
+              "p": 0.045622508972883224
+            },
+            {
+              "id": 8797,
+              "piece": "toyota▁",
+              "p": 0.03905903920531273
+            },
+            {
+              "id": 9372,
+              "piece": "honda▁",
+              "p": 0.01576319895684719
+            },
+            {
+              "id": 9747,
+              "piece": "ferrari▁",
+              "p": 0.014390645548701286
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "fe0b4ef2050824fcfebe023ae164af183e84a1b6d27cb5e6c5cc4b7b8601995f",
+          "probability": 0.2720543146133423,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.2720543146133423
+            },
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.05604363605380058
+            },
+            {
+              "id": 1595,
+              "piece": "model▁",
+              "p": 0.04894465580582619
+            },
+            {
+              "id": 295,
+              "piece": "that▁",
+              "p": 0.03453623875975609
+            },
+            {
+              "id": 287,
+              "piece": ",▁",
+              "p": 0.02828606776893139
+            }
+          ]
+        },
+        {
+          "token_id": 1595,
+          "piece": "model▁",
+          "logits_sha256": "184e5c2db1bd0a39907f7036f2a684f72b942d9c8e82f0d625457e5c4090a295",
+          "probability": 0.6033770442008972,
+          "top5": [
+            {
+              "id": 1595,
+              "piece": "model▁",
+              "p": 0.6033770442008972
+            },
+            {
+              "id": 876,
+              "piece": "car▁",
+              "p": 0.01451498456299305
+            },
+            {
+              "id": 8420,
+              "piece": "hybrid▁",
+              "p": 0.00813867524266243
+            },
+            {
+              "id": 2402,
+              "piece": "vehicle▁",
+              "p": 0.0077409627847373486
+            },
+            {
+              "id": 8769,
+              "piece": "road",
+              "p": 0.0065632108598947525
+            }
+          ]
+        },
+        {
+          "token_id": 528,
+          "piece": "S▁",
+          "logits_sha256": "d177cc4f58b9926d165b4a97d3e73b78d5570358e286ed79f156e5819504115c",
+          "probability": 0.6867766976356506,
+          "top5": [
+            {
+              "id": 528,
+              "piece": "S▁",
+              "p": 0.6867766976356506
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.0597185418009758
+            },
+            {
+              "id": 1044,
+              "piece": "B▁",
+              "p": 0.028681239113211632
+            },
+            {
+              "id": 1906,
+              "piece": "Y▁",
+              "p": 0.02388681471347809
+            },
+            {
+              "id": 999,
+              "piece": "T▁",
+              "p": 0.023740852251648903
+            }
+          ]
+        },
+        {
+          "token_id": 285,
+          "piece": ".▁",
+          "logits_sha256": "d296bcc06ec1a565890473fdd6b2cca7e6603228c095e00bfc11ac048d525da8",
+          "probability": 0.2998431622982025,
+          "top5": [
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.2998431622982025
+            },
+            {
+              "id": 287,
+              "piece": ",▁",
+              "p": 0.11335798352956772
+            },
+            {
+              "id": 295,
+              "piece": "that▁",
+              "p": 0.08159942179918289
+            },
+            {
+              "id": 290,
+              "piece": "and▁",
+              "p": 0.07297732681035995
+            },
+            {
+              "id": 304,
+              "piece": "with▁",
+              "p": 0.0545332133769989
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "fb72f75cf17cd21e92e882421f3e5aefb3dd6157ddb40de78efef438fee26985",
+          "probability": 0.785702109336853,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.785702109336853
+            },
+            {
+              "id": 300,
+              "piece": "I▁",
+              "p": 0.10146667808294296
+            },
+            {
+              "id": 391,
+              "piece": "A▁",
+              "p": 0.012248225510120392
+            },
+            {
+              "id": 53,
+              "piece": "I'm▁",
+              "p": 0.011752084828913212
+            },
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.005918851122260094
+            }
+          ]
+        }
+      ],
+      "decoding": "greedy argmax; no logits masking, penalties, sampling or text substitution"
+    },
+    {
+      "prompt": "the capital of France is ",
+      "prompt_token_ids": [
+        1,
+        286,
+        1115,
+        291,
+        891,
+        588,
+        2651,
+        294
+      ],
+      "generated_token_ids": [
+        286,
+        103,
+        568,
+        103,
+        556,
+        285,
+        103,
+        286,
+        103,
+        568,
+        103,
+        556,
+        294,
+        286,
+        382,
+        512,
+        292,
+        286,
+        426,
+        295,
+        330,
+        289,
+        103,
+        501
+      ],
+      "generated_text": "the _U_CAP_united _U_CAP_states . _U_CAP_the _U_CAP_united _U_CAP_states is the only country in the world that has a _U_CAP_president ",
+      "trace": [
+        {
+          "token_id": 286,
+          "piece": "the▁",
+          "logits_sha256": "74dbaad2250634bb9d2571ef100922647144f9a68ede3a3a00e4875700b6b8ce",
+          "probability": 0.08096281439065933,
+          "top5": [
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.08096281439065933
+            },
+            {
+              "id": 289,
+              "piece": "a▁",
+              "p": 0.07475228607654572
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.04982811212539673
+            },
+            {
+              "id": 292,
+              "piece": "in▁",
+              "p": 0.044328901916742325
+            },
+            {
+              "id": 314,
+              "piece": "not▁",
+              "p": 0.026734285056591034
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "3609d15332c298c17aa5baff27d3fc979a7e81b6e82ccf00f38350c4943b328e",
+          "probability": 0.13448205590248108,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.13448205590248108
+            },
+            {
+              "id": 1115,
+              "piece": "capital▁",
+              "p": 0.05102890729904175
+            },
+            {
+              "id": 396,
+              "piece": "most▁",
+              "p": 0.024480748921632767
+            },
+            {
+              "id": 335,
+              "piece": "one▁",
+              "p": 0.018692532554268837
+            },
+            {
+              "id": 382,
+              "piece": "only▁",
+              "p": 0.01868297904729843
+            }
+          ]
+        },
+        {
+          "token_id": 568,
+          "piece": "united▁",
+          "logits_sha256": "87802a57a4845f0deefabcf7d64b362d38592b0bc9f82b6f92c1ed61957f2237",
+          "probability": 0.02189168520271778,
+          "top5": [
+            {
+              "id": 568,
+              "piece": "united▁",
+              "p": 0.02189168520271778
+            },
+            {
+              "id": 1066,
+              "piece": "west▁",
+              "p": 0.010139583609998226
+            },
+            {
+              "id": 383,
+              "piece": "new▁",
+              "p": 0.0096126114949584
+            },
+            {
+              "id": 780,
+              "piece": "north▁",
+              "p": 0.00798970740288496
+            },
+            {
+              "id": 3330,
+              "piece": "lord▁",
+              "p": 0.007878594100475311
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "984bb35a3db72ffd6760bce2687a1c2ed41b4e858b697daa2539ccbdbd5d1e00",
+          "probability": 0.9787585735321045,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.9787585735321045
+            },
+            {
+              "id": 556,
+              "piece": "states▁",
+              "p": 0.005254633259028196
+            },
+            {
+              "id": 4632,
+              "piece": "kingdom▁",
+              "p": 0.0018863229779526591
+            },
+            {
+              "id": 479,
+              "piece": "state▁",
+              "p": 0.0012007460463792086
+            },
+            {
+              "id": 175,
+              "piece": "_U_NT51▁",
+              "p": 0.000586559297516942
+            }
+          ]
+        },
+        {
+          "token_id": 556,
+          "piece": "states▁",
+          "logits_sha256": "4cd551790df28cc6390feb3e6cb2246583341e1d1bf2cc27efde501dd9ab79af",
+          "probability": 0.8847329616546631,
+          "top5": [
+            {
+              "id": 556,
+              "piece": "states▁",
+              "p": 0.8847329616546631
+            },
+            {
+              "id": 4632,
+              "piece": "kingdom▁",
+              "p": 0.06725557148456573
+            },
+            {
+              "id": 1280,
+              "piece": "nations▁",
+              "p": 0.027027655392885208
+            },
+            {
+              "id": 2817,
+              "piece": "arab▁",
+              "p": 0.0038815424777567387
+            },
+            {
+              "id": 479,
+              "piece": "state▁",
+              "p": 0.0014696972211822867
+            }
+          ]
+        },
+        {
+          "token_id": 285,
+          "piece": ".▁",
+          "logits_sha256": "4029826a001beb08347e6a87b04757f3978c20a3ca178f86f23f59969e02fc6e",
+          "probability": 0.27040261030197144,
+          "top5": [
+            {
+              "id": 285,
+              "piece": ".▁",
+              "p": 0.27040261030197144
+            },
+            {
+              "id": 287,
+              "piece": ",▁",
+              "p": 0.12046626210212708
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.10819173604249954
+            },
+            {
+              "id": 290,
+              "piece": "and▁",
+              "p": 0.05712629482150078
+            },
+            {
+              "id": 291,
+              "piece": "of▁",
+              "p": 0.03360554948449135
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "ef84ca683b07d6fcdbc3e1be8fc8716a37d639fceb4c32bd226abe9a92b4b8a6",
+          "probability": 0.2117159515619278,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.2117159515619278
+            },
+            {
+              "id": 300,
+              "piece": "I▁",
+              "p": 0.064231738448143
+            },
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.06115148589015007
+            },
+            {
+              "id": 299,
+              "piece": "it▁",
+              "p": 0.044942401349544525
+            },
+            {
+              "id": 331,
+              "piece": "we▁",
+              "p": 0.029950344935059547
+            }
+          ]
+        },
+        {
+          "token_id": 286,
+          "piece": "the▁",
+          "logits_sha256": "4ed4c5567f8ebb98634ba32d9ee250060a0f47a0c346969127ff8090caf811e1",
+          "probability": 0.09283457696437836,
+          "top5": [
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.09283457696437836
+            },
+            {
+              "id": 299,
+              "piece": "it▁",
+              "p": 0.05607401952147484
+            },
+            {
+              "id": 331,
+              "piece": "we▁",
+              "p": 0.03317798674106598
+            },
+            {
+              "id": 311,
+              "piece": "this▁",
+              "p": 0.025429178029298782
+            },
+            {
+              "id": 80,
+              "piece": "it's▁",
+              "p": 0.025049909949302673
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "2fd16036b01aa51732665fdc1b48f6cbcb10a8c593a443e1752e05595cfd3c8a",
+          "probability": 0.2577441930770874,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.2577441930770874
+            },
+            {
+              "id": 432,
+              "piece": "US▁",
+              "p": 0.016502974554896355
+            },
+            {
+              "id": 1115,
+              "piece": "capital▁",
+              "p": 0.015646765008568764
+            },
+            {
+              "id": 554,
+              "piece": "city▁",
+              "p": 0.013896964490413666
+            },
+            {
+              "id": 382,
+              "piece": "only▁",
+              "p": 0.012477472424507141
+            }
+          ]
+        },
+        {
+          "token_id": 568,
+          "piece": "united▁",
+          "logits_sha256": "0b44e20b2bea8ef4b6bbfda0930b977f6c326d0a5bf8e221081353ee156ce61c",
+          "probability": 0.2156185805797577,
+          "top5": [
+            {
+              "id": 568,
+              "piece": "united▁",
+              "p": 0.2156185805797577
+            },
+            {
+              "id": 750,
+              "piece": "american▁",
+              "p": 0.024313705042004585
+            },
+            {
+              "id": 501,
+              "piece": "president▁",
+              "p": 0.01686442643404007
+            },
+            {
+              "id": 479,
+              "piece": "state▁",
+              "p": 0.015945415943861008
+            },
+            {
+              "id": 1237,
+              "piece": "federal▁",
+              "p": 0.014328276738524437
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "9553487f7b07981558ca5c934767bf7bc9ad5cc58b7b741ecbc7611107896dd6",
+          "probability": 0.9829822182655334,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.9829822182655334
+            },
+            {
+              "id": 556,
+              "piece": "states▁",
+              "p": 0.005165207199752331
+            },
+            {
+              "id": 1280,
+              "piece": "nations▁",
+              "p": 0.0005932851927354932
+            },
+            {
+              "id": 175,
+              "piece": "_U_NT51▁",
+              "p": 0.0005292065325193107
+            },
+            {
+              "id": 294,
+              "piece": "is▁",
+              "p": 0.0004869568510912359
+            }
+          ]
+        },
+        {
+          "token_id": 556,
+          "piece": "states▁",
+          "logits_sha256": "253f4c6b6b1482a2cc0cb4b908b5a77e649c6c75ab20c189def7fe782c388b55",
+          "probability": 0.9034695029258728,
+          "top5": [
+            {
+              "id": 556,
+              "piece": "states▁",
+              "p": 0.9034695029258728
+            },
+            {
+              "id": 1280,
+              "piece": "nations▁",
+              "p": 0.04539744555950165
+            },
+            {
+              "id": 4632,
+              "piece": "kingdom▁",
+              "p": 0.034874942153692245
+            },
+            {
+              "id": 2817,
+              "piece": "arab▁",
+              "p": 0.001981808803975582
+            },
+            {
+              "id": 479,
+              "piece": "state▁",
+              "p": 0.001761040766723454
+            }
+          ]
+        },
+        {
+          "token_id": 294,
+          "piece": "is▁",
+          "logits_sha256": "72174779871afa6f63c49a9a0d4acbe78a2e65f20fdd1e89d9630c6fd921c9d8",
+          "probability": 0.254951149225235,
+          "top5": [
+            {
+              "id": 294,
+              "piece": "is▁",
+              "p": 0.254951149225235
+            },
+            {
+              "id": 330,
+              "piece": "has▁",
+              "p": 0.16636773943901062
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.08970049023628235
+            },
+            {
+              "id": 287,
+              "piece": ",▁",
+              "p": 0.03617912903428078
+            },
+            {
+              "id": 290,
+              "piece": "and▁",
+              "p": 0.03345724195241928
+            }
+          ]
+        },
+        {
+          "token_id": 286,
+          "piece": "the▁",
+          "logits_sha256": "341866b2b26c599bc075ed4683a56b1c3a2dd1f4d42a8de8054b350c2324ca85",
+          "probability": 0.19292397797107697,
+          "top5": [
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.19292397797107697
+            },
+            {
+              "id": 289,
+              "piece": "a▁",
+              "p": 0.1201983243227005
+            },
+            {
+              "id": 314,
+              "piece": "not▁",
+              "p": 0.06035841256380081
+            },
+            {
+              "id": 335,
+              "piece": "one▁",
+              "p": 0.038262806832790375
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.027257166802883148
+            }
+          ]
+        },
+        {
+          "token_id": 382,
+          "piece": "only▁",
+          "logits_sha256": "b6a4444a526ea89585ca9b98dce4e0a545e3fb185b772480d29d8e8783915d59",
+          "probability": 0.12034722417593002,
+          "top5": [
+            {
+              "id": 382,
+              "piece": "only▁",
+              "p": 0.12034722417593002
+            },
+            {
+              "id": 396,
+              "piece": "most▁",
+              "p": 0.08974409103393555
+            },
+            {
+              "id": 426,
+              "piece": "world▁",
+              "p": 0.07722057402133942
+            },
+            {
+              "id": 1636,
+              "piece": "largest▁",
+              "p": 0.06627924740314484
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.0558609701693058
+            }
+          ]
+        },
+        {
+          "token_id": 512,
+          "piece": "country▁",
+          "logits_sha256": "3e6c28a320f78a525dbc503f94b5e8b474b127f5ad81f8762098e0b626696a09",
+          "probability": 0.49839791655540466,
+          "top5": [
+            {
+              "id": 512,
+              "piece": "country▁",
+              "p": 0.49839791655540466
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.0740809440612793
+            },
+            {
+              "id": 1089,
+              "piece": "nation▁",
+              "p": 0.06213410571217537
+            },
+            {
+              "id": 479,
+              "piece": "state▁",
+              "p": 0.046256788074970245
+            },
+            {
+              "id": 335,
+              "piece": "one▁",
+              "p": 0.0365847684442997
+            }
+          ]
+        },
+        {
+          "token_id": 292,
+          "piece": "in▁",
+          "logits_sha256": "b322643dd7c1dc13aab5b9bffaae9f26a71b780228b779243989c5efdc24f840",
+          "probability": 0.30186131596565247,
+          "top5": [
+            {
+              "id": 292,
+              "piece": "in▁",
+              "p": 0.30186131596565247
+            },
+            {
+              "id": 295,
+              "piece": "that▁",
+              "p": 0.20049205422401428
+            },
+            {
+              "id": 304,
+              "piece": "with▁",
+              "p": 0.12435426563024521
+            },
+            {
+              "id": 288,
+              "piece": "to▁",
+              "p": 0.07337678968906403
+            },
+            {
+              "id": 423,
+              "piece": "where▁",
+              "p": 0.05198778957128525
+            }
+          ]
+        },
+        {
+          "token_id": 286,
+          "piece": "the▁",
+          "logits_sha256": "344ad0edb22a2995a7d88fd73a9d382189b2f78f4d270b91e5f23e69ef533540",
+          "probability": 0.7239375710487366,
+          "top5": [
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.7239375710487366
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.19584967195987701
+            },
+            {
+              "id": 353,
+              "piece": "which▁",
+              "p": 0.019266542047262192
+            },
+            {
+              "id": 916,
+              "piece": "history▁",
+              "p": 0.007354031316936016
+            },
+            {
+              "id": 311,
+              "piece": "this▁",
+              "p": 0.0072278897278010845
+            }
+          ]
+        },
+        {
+          "token_id": 426,
+          "piece": "world▁",
+          "logits_sha256": "b9cd437c889db984a338ce076d08cf04acc9e560028829e4121a1a354355342f",
+          "probability": 0.7371628284454346,
+          "top5": [
+            {
+              "id": 426,
+              "piece": "world▁",
+              "p": 0.7371628284454346
+            },
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.1456601768732071
+            },
+            {
+              "id": 512,
+              "piece": "country▁",
+              "p": 0.012834247201681137
+            },
+            {
+              "id": 1163,
+              "piece": "region▁",
+              "p": 0.012662870809435844
+            },
+            {
+              "id": 432,
+              "piece": "US▁",
+              "p": 0.011012420989573002
+            }
+          ]
+        },
+        {
+          "token_id": 295,
+          "piece": "that▁",
+          "logits_sha256": "f408c64cb294d360f015a8b1cb55b46d849d474aacdaa0c5a9941ee10f1c23e6",
+          "probability": 0.35795947909355164,
+          "top5": [
+            {
+              "id": 295,
+              "piece": "that▁",
+              "p": 0.35795947909355164
+            },
+            {
+              "id": 423,
+              "piece": "where▁",
+              "p": 0.18209055066108704
+            },
+            {
+              "id": 304,
+              "piece": "with▁",
+              "p": 0.14079537987709045
+            },
+            {
+              "id": 288,
+              "piece": "to▁",
+              "p": 0.1293790340423584
+            },
+            {
+              "id": 353,
+              "piece": "which▁",
+              "p": 0.025293465703725815
+            }
+          ]
+        },
+        {
+          "token_id": 330,
+          "piece": "has▁",
+          "logits_sha256": "b9419cb69cb6f6bc96ad92d1197014c45a28d14227a9f518e67c3a35c523fcba",
+          "probability": 0.27946722507476807,
+          "top5": [
+            {
+              "id": 330,
+              "piece": "has▁",
+              "p": 0.27946722507476807
+            },
+            {
+              "id": 294,
+              "piece": "is▁",
+              "p": 0.08325152844190598
+            },
+            {
+              "id": 332,
+              "piece": "can▁",
+              "p": 0.055990222841501236
+            },
+            {
+              "id": 494,
+              "piece": "does▁",
+              "p": 0.054039157927036285
+            },
+            {
+              "id": 2050,
+              "piece": "allows▁",
+              "p": 0.05071060359477997
+            }
+          ]
+        },
+        {
+          "token_id": 289,
+          "piece": "a▁",
+          "logits_sha256": "c706a6ea85f8d2c9edd3b728899d3935f23ebf9b4eac236e1b64980a34ca6699",
+          "probability": 0.20235675573349,
+          "top5": [
+            {
+              "id": 289,
+              "piece": "a▁",
+              "p": 0.20235675573349
+            },
+            {
+              "id": 286,
+              "piece": "the▁",
+              "p": 0.0724545493721962
+            },
+            {
+              "id": 321,
+              "piece": "an▁",
+              "p": 0.03763212636113167
+            },
+            {
+              "id": 314,
+              "piece": "not▁",
+              "p": 0.03618502616882324
+            },
+            {
+              "id": 365,
+              "piece": "been▁",
+              "p": 0.03509591892361641
+            }
+          ]
+        },
+        {
+          "token_id": 103,
+          "piece": "_U_CAP_",
+          "logits_sha256": "bff38fb98b6d01a9861a4afa1629dc6bb307d4cb87420923d12381a0a02eb780",
+          "probability": 0.051417216658592224,
+          "top5": [
+            {
+              "id": 103,
+              "piece": "_U_CAP_",
+              "p": 0.051417216658592224
+            },
+            {
+              "id": 501,
+              "piece": "president▁",
+              "p": 0.035731710493564606
+            },
+            {
+              "id": 1508,
+              "piece": "population▁",
+              "p": 0.03472509607672691
+            },
+            {
+              "id": 679,
+              "piece": "military▁",
+              "p": 0.026645878329873085
+            },
+            {
+              "id": 643,
+              "piece": "national▁",
+              "p": 0.02230243757367134
+            }
+          ]
+        },
+        {
+          "token_id": 501,
+          "piece": "president▁",
+          "logits_sha256": "0b0c106f6c5e8fbdde1f012eaac6f32b0236813b788704146f5450e9c35e4a2e",
+          "probability": 0.13159434497356415,
+          "top5": [
+            {
+              "id": 501,
+              "piece": "president▁",
+              "p": 0.13159434497356415
+            },
+            {
+              "id": 1369,
+              "piece": "democratic▁",
+              "p": 0.051650479435920715
+            },
+            {
+              "id": 568,
+              "piece": "united▁",
+              "p": 0.050036780536174774
+            },
+            {
+              "id": 2911,
+              "piece": "supreme▁",
+              "p": 0.024840475991368294
+            },
+            {
+              "id": 1824,
+              "piece": "republican▁",
+              "p": 0.02284197136759758
+            }
+          ]
+        }
+      ],
+      "decoding": "greedy argmax; no logits masking, penalties, sampling or text substitution"
+    }
+  ],
+  "elapsed_seconds": 0.48132174904458225
+}

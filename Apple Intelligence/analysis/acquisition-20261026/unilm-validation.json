@@ -1,0 +1,266 @@
+{
+  "status": "passed",
+  "comparison": "NumPy Float64 causal full-context vs PyTorch FP32 KV cache",
+  "apple_runtime_parity_verified": false,
+  "comparisons": 29,
+  "checks": [
+    {
+      "prompt": "the weather is ",
+      "position": 0,
+      "max_abs_logits_error": 6.025011305865746e-06,
+      "torch_top1": 103,
+      "numpy_top1": 103,
+      "finite": true
+    },
+    {
+      "prompt": "the weather is ",
+      "position": 1,
+      "max_abs_logits_error": 4.82557529579708e-06,
+      "torch_top1": 404,
+      "numpy_top1": 404,
+      "finite": true
+    },
+    {
+      "prompt": "the weather is ",
+      "position": 2,
+      "max_abs_logits_error": 6.973283927180773e-06,
+      "torch_top1": 294,
+      "numpy_top1": 294,
+      "finite": true
+    },
+    {
+      "prompt": "the weather is ",
+      "position": 3,
+      "max_abs_logits_error": 6.133695478638401e-06,
+      "torch_top1": 336,
+      "numpy_top1": 336,
+      "finite": true
+    },
+    {
+      "prompt": "the weather is ",
+      "position": 4,
+      "max_abs_logits_error": 9.688613236136234e-06,
+      "torch_top1": 1023,
+      "numpy_top1": 1023,
+      "finite": true
+    },
+    {
+      "prompt": "the weather is ",
+      "position": 5,
+      "max_abs_logits_error": 6.350394155418826e-06,
+      "torch_top1": 710,
+      "numpy_top1": 710,
+      "finite": true
+    },
+    {
+      "prompt": "the weather is ",
+      "position": 6,
+      "max_abs_logits_error": 6.151821768440868e-06,
+      "torch_top1": 285,
+      "numpy_top1": 285,
+      "finite": true
+    },
+    {
+      "prompt": "the weather is ",
+      "position": 7,
+      "max_abs_logits_error": 5.778025587765967e-06,
+      "torch_top1": 300,
+      "numpy_top1": 300,
+      "finite": true
+    },
+    {
+      "prompt": "I would like to ",
+      "position": 0,
+      "max_abs_logits_error": 6.025011305865746e-06,
+      "torch_top1": 103,
+      "numpy_top1": 103,
+      "finite": true
+    },
+    {
+      "prompt": "I would like to ",
+      "position": 1,
+      "max_abs_logits_error": 4.340023153304173e-06,
+      "torch_top1": 55,
+      "numpy_top1": 55,
+      "finite": true
+    },
+    {
+      "prompt": "I would like to ",
+      "position": 2,
+      "max_abs_logits_error": 6.026362549427233e-06,
+      "torch_top1": 347,
+      "numpy_top1": 347,
+      "finite": true
+    },
+    {
+      "prompt": "I would like to ",
+      "position": 3,
+      "max_abs_logits_error": 6.193494822781531e-06,
+      "torch_top1": 288,
+      "numpy_top1": 288,
+      "finite": true
+    },
+    {
+      "prompt": "I would like to ",
+      "position": 4,
+      "max_abs_logits_error": 6.3076100182968275e-06,
+      "torch_top1": 416,
+      "numpy_top1": 416,
+      "finite": true
+    },
+    {
+      "prompt": "I would like to ",
+      "position": 5,
+      "max_abs_logits_error": 5.644005518945505e-06,
+      "torch_top1": 289,
+      "numpy_top1": 289,
+      "finite": true
+    },
+    {
+      "prompt": "I would like to ",
+      "position": 6,
+      "max_abs_logits_error": 5.675203631483328e-06,
+      "torch_top1": 103,
+      "numpy_top1": 103,
+      "finite": true
+    },
+    {
+      "prompt": "I would like to ",
+      "position": 7,
+      "max_abs_logits_error": 7.372063178578969e-06,
+      "torch_top1": 7470,
+      "numpy_top1": 7470,
+      "finite": true
+    },
+    {
+      "prompt": "I would like to ",
+      "position": 8,
+      "max_abs_logits_error": 8.12288984697318e-06,
+      "torch_top1": 103,
+      "numpy_top1": 103,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 0,
+      "max_abs_logits_error": 6.025011305865746e-06,
+      "torch_top1": 103,
+      "numpy_top1": 103,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 1,
+      "max_abs_logits_error": 4.82557529579708e-06,
+      "torch_top1": 404,
+      "numpy_top1": 404,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 2,
+      "max_abs_logits_error": 6.481981478678733e-06,
+      "torch_top1": 291,
+      "numpy_top1": 291,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 3,
+      "max_abs_logits_error": 9.82383273440135e-06,
+      "torch_top1": 103,
+      "numpy_top1": 103,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 4,
+      "max_abs_logits_error": 8.944469017446721e-06,
+      "torch_top1": 4080,
+      "numpy_top1": 4080,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 5,
+      "max_abs_logits_error": 1.0276103541428938e-05,
+      "torch_top1": 3,
+      "numpy_top1": 3,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 6,
+      "max_abs_logits_error": 4.133438038955717e-06,
+      "torch_top1": 103,
+      "numpy_top1": 103,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 7,
+      "max_abs_logits_error": 7.560678233708984e-06,
+      "torch_top1": 286,
+      "numpy_top1": 286,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 8,
+      "max_abs_logits_error": 4.873696989093901e-06,
+      "torch_top1": 103,
+      "numpy_top1": 103,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 9,
+      "max_abs_logits_error": 7.764436185553336e-06,
+      "torch_top1": 568,
+      "numpy_top1": 568,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 10,
+      "max_abs_logits_error": 9.25670087958963e-06,
+      "torch_top1": 103,
+      "numpy_top1": 103,
+      "finite": true
+    },
+    {
+      "prompt": "the capital of France is ",
+      "position": 11,
+      "max_abs_logits_error": 7.286648092019732e-06,
+      "torch_top1": 556,
+      "numpy_top1": 556,
+      "finite": true
+    }
+  ],
+  "max_abs_logits_error": 1.0276103541428938e-05,
+  "generation_replays": 3,
+  "all_recorded_logits_hashes_match": true,
+  "negative_tests": [
+    {
+      "test": "truncated_weights",
+      "rejected": true,
+      "diagnostic": "Invalid section extent"
+    },
+    {
+      "test": "out_of_range_position",
+      "rejected": true,
+      "diagnostic": "Decoder index out of range"
+    },
+    {
+      "test": "out_of_range_token",
+      "rejected": true,
+      "diagnostic": "Decoder index out of range"
+    },
+    {
+      "test": "unported_normalizer_prompt",
+      "rejected": true,
+      "diagnostic": "Probe supports nonempty ASCII prompts with ordinary spaces only"
+    }
+  ],
+  "all_15000_logits_checked_per_comparison": true
+}

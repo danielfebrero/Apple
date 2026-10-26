@@ -1,5 +1,14 @@
 # Acquisition des poids téléchargés séparément
 
+## Lot IPSW complet et génération UniLM
+
+Le [nouveau rapport](../analysis/ACQUISITION-GENERATION.md) couvre les sept
+images de l'IPSW local, avec 828 fichiers ajoutés au catalogue initial et
+`acquire.py --all` vérifié sur les 4 751 fichiers finaux. Il démontre une
+génération de texte du petit UniLM du firmware sous Linux. **AFM et les poids
+Image Playground restent non acquis** ; les références UAF ne les remplacent
+pas. Les paragraphes suivants conservent les étapes et observations antérieures.
+
 ## Piste LoRA/Core ML vérifiée
 
 Les [essais du 26 octobre](../analysis/LORA-COREML.md) confirment la conversion

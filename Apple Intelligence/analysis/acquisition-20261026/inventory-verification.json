@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "asset_files_verified": 4751,
+  "inventory_groups_verified": 2016,
+  "reference_resources_verified": 1850,
+  "reference_locators_verified": 118611,
+  "metadata_evidence_links_verified": 763,
+  "bytes_hashed_including_uaf": 3768760327,
+  "cache_tracked_files": 0,
+  "source_checks": [
+    {
+      "volume_id": "rootfs",
+      "inventory_sha256_verified": true,
+      "image_sha256_verified": false
+    },
+    {
+      "volume_id": "cryptex",
+      "inventory_sha256_verified": true,
+      "image_sha256_verified": false
+    },
+    {
+      "volume_id": "ipsw_141_08824_240",
+      "inventory_sha256_verified": true,
+      "image_sha256_verified": false
+    },
+    {
+      "volume_id": "ipsw_141_08904_234",
+      "inventory_sha256_verified": true,
+      "image_sha256_verified": false
+    },
+    {
+      "volume_id": "ipsw_141_09491_238",
+      "inventory_sha256_verified": true,
+      "image_sha256_verified": false
+    },
+    {
+      "volume_id": "ipsw_141_09644_236",
+      "inventory_sha256_verified": true,
+      "image_sha256_verified": false
+    },
+    {
+      "volume_id": "ipsw_141_10399_236",
+      "inventory_sha256_verified": true,
+      "image_sha256_verified": false
+    }
+  ]
+}

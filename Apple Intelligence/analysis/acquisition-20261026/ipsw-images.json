@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "ipsw": "/workspace/recherche/apple-sec/ios272rc/_ipsw/iPhone18,3_27.2_24B115_Restore.ipsw",
+  "ipsw_size": 13069939368,
+  "ipsw_sha256": "bae0253397ab2176227a24ed7b91c77e42902e094269b38d45879aa62f053776",
+  "images": [
+    {
+      "member": "141-08824-240.dmg",
+      "zip_size": 16777216,
+      "zip_crc32": "37650b27",
+      "components": [
+        "Cryptex1,AppOS"
+      ],
+      "member_sha256": "553c27b43d2272eea516e7a935af42a468e4dca5128ba77d8d9a65aec3fdb13f",
+      "source_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-08824-240.dmg",
+      "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-08824-240.dmg",
+      "image_size": 16777216,
+      "image_sha256": "553c27b43d2272eea516e7a935af42a468e4dca5128ba77d8d9a65aec3fdb13f",
+      "magic_hex": "539de23eeb29a66e01000000000000000f000000000000000100008000000000",
+      "inventory_exit_code": 0,
+      "inventory_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-08824-240.dmg-inventory.jsonl",
+      "inventory_sha256": "c5a7f41c348259d08574a024853130e2ef2ed9dc81c3dd04e9dcdb0bdb1d0dd5",
+      "diagnostic": "volume=AppCryptex sealed=1 req_xid=1000000\n",
+      "status": "inventoried",
+      "volume": "AppCryptex",
+      "entries": 1308,
+      "regular_files": 1155
+    },
+    {
+      "member": "141-08876-212.dmg.aea",
+      "zip_size": 9126805504,
+      "zip_crc32": "8314e6e2",
+      "components": [
+        "OS"
+      ],
+      "status": "previously_acquired",
+      "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/rootfs-dec/141-08876-212.dmg",
+      "image_size": 10565451776,
+      "image_sha256": "3aece1d45bba734e8dfa90c5e1d320b8fa2348a3b023075e7c48df5142839e1d"
+    },
+    {
+      "member": "141-08904-234.dmg.aea",
+      "zip_size": 536870912,
+      "zip_crc32": "e08ec9bb",
+      "components": [
+        "Ap,ExclaveOS"
+      ],
+      "member_sha256": "f24fda0d3daf962ac9f48ba9d88aa697cf03e3f41b3720898d11ae0e9cf59f0a",
+      "source_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-08904-234.dmg.aea",
+      "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-08904-234-dec/141-08904-234.dmg",
+      "image_size": 631242752,
+      "image_sha256": "62b2bf87b485e69ba7fd2cdbe7679b5b334a0d32a954e2909658a0bb2a9583a7",
+      "magic_hex": "b4b8d8474dd990bf01000000000000000c000000000000000100008000000000",
+      "inventory_exit_code": 0,
+      "inventory_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-08904-234.dmg-inventory.jsonl",
+      "inventory_sha256": "3067356ed139acd08f31436c99310a2361290fd88b95bbe899971f347bcba506",
+      "diagnostic": "volume=RaveB24B115.V57ExclaveOS sealed=1 req_xid=1000000\n",
+      "status": "inventoried",
+      "volume": "RaveB24B115.V57ExclaveOS",
+      "entries": 2484,
+      "regular_files": 1713
+    },
+    {
+      "member": "141-09491-238.dmg",
+      "zip_size": 247463963,
+      "zip_crc32": "a0ad51a6",
+      "components": [
+        "RestoreRamDisk"
+      ],
+      "member_sha256": "b48a558685424a9e357540a5538ea8fef27b2734a7ef3fc0e037b48e8d9d940a",
+      "source_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-09491-238.dmg",
+      "im4p_exit_code": 0,
+      "container": "IM4P; unencrypted APFS payload extracted by ipsw",
+      "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-09491-238-im4p/141-09491-238.dmg",
+      "image_size": 247463936,
+      "image_sha256": "aabe0efec42611bab8661b262c7468f316768490611ef8555b7c624ea998c8c1",
+      "magic_hex": "35abf59f25ba0bad01000000000000000a000000000000000100008000000000",
+      "inventory_exit_code": 0,
+      "inventory_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-09491-238.dmg-inventory.jsonl",
+      "inventory_sha256": "e4e4b22e636fa76db7b4e723c42fb8bbb24e45353d449c4ef9b5026f6d60f0fc",
+      "diagnostic": "volume=ramdisk sealed=0 req_xid=1000000\n",
+      "status": "inventoried",
+      "volume": "ramdisk",
+      "entries": 2412,
+      "regular_files": 1519
+    },
+    {
+      "member": "141-09644-236.dmg.aea",
+      "zip_size": 260046848,
+      "zip_crc32": "4533359c",
+      "components": [
+        "OS"
+      ],
+      "member_sha256": "e747380c7003bffce4612727c36c4721bc54d2ad411f76db3d18bbe3d755e5db",
+      "source_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-09644-236.dmg.aea",
+      "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-09644-236-dec/141-09644-236.dmg",
+      "image_size": 257354260,
+      "image_sha256": "dfbf436d4cc5bd13495775ec105f8e53ee1e6bb00f10dd954008bf85a1df6689",
+      "magic_hex": "6276783200001000080b709000b60830a5ce6c58d8fe1300b500000037147003",
+      "inventory_exit_code": 0,
+      "inventory_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-09644-236.dmg-inventory.jsonl",
+      "inventory_sha256": "21e5fa29c5e3242a70766e18e3fded7f6cf7fdc9b6a0699474cdebddee8d6456",
+      "diagnostic": "volume=RaveB24B115.V57RecoveryOS sealed=0 req_xid=1000000\n",
+      "status": "inventoried",
+      "volume": "RaveB24B115.V57RecoveryOS",
+      "entries": 5424,
+      "regular_files": 4125
+    },
+    {
+      "member": "141-09724-222.dmg.aea",
+      "zip_size": 2415919104,
+      "zip_crc32": "f0193499",
+      "components": [
+        "Cryptex1,SystemOS"
+      ],
+      "status": "previously_acquired",
+      "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/cryptex-dec/141-09724-222.dmg",
+      "image_size": 6325010432,
+      "image_sha256": "7bb6bf2d5c568790ed7f08f364683e8889615800bf6da7aa6df1437472788ce7"
+    },
+    {
+      "member": "141-10399-236.dmg",
+      "zip_size": 245366811,
+      "zip_crc32": "f2d27d00",
+      "components": [
+        "RestoreRamDisk"
+      ],
+      "member_sha256": "404df4eda90fa84b49b4beeadf755a3b5514ef4343c44afaa70afe678f4b2dcf",
+      "source_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-10399-236.dmg",
+      "im4p_exit_code": 0,
+      "container": "IM4P; unencrypted APFS payload extracted by ipsw",
+      "image_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-10399-236-im4p/141-10399-236.dmg",
+      "image_size": 245366784,
+      "image_sha256": "5f3ba8a0695204d33a198d395a08ae21bdefb58fb9a3e3ceb3c278bc91214b2b",
+      "magic_hex": "cabb34b041b73837010000000000000009000000000000000100008000000000",
+      "inventory_exit_code": 0,
+      "inventory_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/model-audit/141-10399-236.dmg-inventory.jsonl",
+      "inventory_sha256": "fdb5338a64f32f798e1f1a8431f4bd81aad80c4daa074466c2c3d5e00cfb9369",
+      "diagnostic": "volume=ramdisk sealed=0 req_xid=1000000\n",
+      "status": "inventoried",
+      "volume": "ramdisk",
+      "entries": 2025,
+      "regular_files": 1260
+    }
+  ],
+  "signature_chain_verified": false,
+  "note": "ZIP CRC and SHA-256 establish local identity, not Apple signature validation.",
+  "build_manifest_sha256": "abba3b0916614585b2213b723cd4e1a34c9939ed3ba839f3fd3fe155179ddc96",
+  "build": "24B115",
+  "product_version": "27.2",
+  "zip_member_count": 168
+}

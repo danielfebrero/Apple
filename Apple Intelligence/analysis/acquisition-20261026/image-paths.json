@@ -1,0 +1,1034 @@
+{
+  "status": "blocked_missing_identified_apple_image_generation_payload",
+  "image_generation_proven": false,
+  "generation_attempted": false,
+  "reason": "No complete identified Image Playground / image_diffusion_v1 trained payload in the seven inventoried images.",
+  "reference_only_image_diffusion_identifiers": [
+    {
+      "id": "ref-14a5c6ab69e3be10717e",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.base",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/0/Expansions/0/AutoAssetSpecifierTemplate",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-f3e0f7cdb8584fb1cc03",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.base.generic",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/0/AssetName",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-9cf59e9b91bc1ce76dc2",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.base.generic_alternate",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/1/AssetName",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-01252917761a798ca887",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.emoji",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/2/Expansions/0/AutoAssetSpecifierTemplate",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-33b349844d896bcd26fb",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.emoji.generic",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/2/AssetName",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-f6b388d990d8b8bd5085",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.emoji.generic_alternate",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/3/AssetName",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-648954831fe3dcf94bdb",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/4/Expansions/0/AutoAssetSpecifierTemplate",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-66227d4dd12f5888c457",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/4/AssetName",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-2d1360bba4bbdb21534f",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic_alternate",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/5/AssetName",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-338f1f58f1ecd81fbe11",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.personalized_emoji",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/6/Expansions/0/AutoAssetSpecifierTemplate",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-be0aaab8c85617cc5255",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/6/AssetName",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-2f531bcc4b3958f90ffe",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic_alternate",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/7/AssetName",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-20d92ac2363d9ca78101",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.style_scribble",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/8/Expansions/0/AutoAssetSpecifierTemplate",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-ae11bac4dc66b35db231",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/8/AssetName",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    },
+    {
+      "id": "ref-182dd6fc43cbc95fe40c",
+      "identifier": "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic_alternate",
+      "weights_proven": false,
+      "first_evidence": {
+        "json_pointer": "/Assets/9/AssetName",
+        "location": "value",
+        "resource_id": "r-76ac9805b806519d7e02"
+      }
+    }
+  ],
+  "metalfx_packages": [
+    {
+      "model_id": "m-1b59bef8e369a04cfb7e",
+      "firmware_path": "/System/Library/Frameworks/MetalFX.framework/dbf_ane.mtlpackage/library.mpsgraphpackage",
+      "files": [
+        {
+          "path": "manifest.plist",
+          "size": 2792,
+          "sha256": "56688a6decaf0ba81eb46cd943acf0cec8488344f56bdb3cd8f83be3bdca9ddb"
+        },
+        {
+          "path": "model_0.mpsgraph",
+          "size": 3730,
+          "sha256": "89a8ae22edfc1e95e01e58ae5aa3aa0db420ec7c2204f056c00218456030e961",
+          "coreai_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/dbf_ane.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' is unknown. If this is intended, please call allowUnregisteredDialects() on the MLIRContext, or use -allow-unregistered-dialect with the MLIR tool used.\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": false,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          },
+          "coreai_permissive_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/dbf_ane.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' does not implement the bytecode interface, but found a version entry\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": true,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          }
+        },
+        {
+          "path": "reflection.fb",
+          "size": 212,
+          "sha256": "e064324568ab3ea5fda7fc88b7087e6572589e7ed25a34447f589b726a583516"
+        },
+        {
+          "path": "resources.bin",
+          "size": 399086,
+          "sha256": "5ca84191e8c085054b5f51c63b42a015a7f0fa05b525ca2ca818fc5e63722b34"
+        }
+      ],
+      "role": "MetalFX image processing candidate; no identification as Apple image diffusion"
+    },
+    {
+      "model_id": "m-3c9e982550967873a50e",
+      "firmware_path": "/System/Library/Frameworks/MetalFX.framework/brnet_ane.mtlpackage/library.mpsgraphpackage",
+      "files": [
+        {
+          "path": "manifest.plist",
+          "size": 8966,
+          "sha256": "1515dbf10c3925d559afd3e76425239d943d9d2a477de8bf81fa2e560359bfe6"
+        },
+        {
+          "path": "model_0.mpsgraph",
+          "size": 7648,
+          "sha256": "dd750691c0219a895326c0667939ee29b3c6ffb7b6270594a8d7b1d24f00c5bd",
+          "coreai_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/brnet_ane.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' is unknown. If this is intended, please call allowUnregisteredDialects() on the MLIRContext, or use -allow-unregistered-dialect with the MLIR tool used.\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": false,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          },
+          "coreai_permissive_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/brnet_ane.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' does not implement the bytecode interface, but found a version entry\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'std::bad_cast'\n  what():  std::bad_cast\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": true,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          }
+        },
+        {
+          "path": "model_1.mpsgraph",
+          "size": 9907,
+          "sha256": "869e4aa8e2b6bed9a81a7c5a33558af09b1432dc124cd1f144535b7421c2c33c",
+          "coreai_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/brnet_ane.mtlpackage/library.mpsgraphpackage/model_1.mpsgraph\":0:0): error: dialect 'mps' is unknown. If this is intended, please call allowUnregisteredDialects() on the MLIRContext, or use -allow-unregistered-dialect with the MLIR tool used.\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": false,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          },
+          "coreai_permissive_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/brnet_ane.mtlpackage/library.mpsgraphpackage/model_1.mpsgraph\":0:0): error: dialect 'mps' does not implement the bytecode interface, but found a version entry\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": true,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          }
+        },
+        {
+          "path": "reflection.fb",
+          "size": 212,
+          "sha256": "3f42ad3ad507991411410b18687648e597d5917d0dc1dfffbd7bed3ffd457aea"
+        },
+        {
+          "path": "resources.bin",
+          "size": 334272,
+          "sha256": "073dbb17d61d91ed1aa830f33ce13a0262f349c2088b64f89cdd68f8a920fd40"
+        }
+      ],
+      "role": "MetalFX image processing candidate; no identification as Apple image diffusion"
+    },
+    {
+      "model_id": "m-411d0fa08c4d83dc15c9",
+      "firmware_path": "/System/Library/Frameworks/MetalFX.framework/brnet.mtlpackage/library.mpsgraphpackage",
+      "files": [
+        {
+          "path": "manifest.plist",
+          "size": 8483,
+          "sha256": "58a22b621afb745b97b8265b62df4acc1c8cd03c5ff7761994d5927998318879"
+        },
+        {
+          "path": "model_0.mpsgraph",
+          "size": 7116,
+          "sha256": "fd80588ae54efa4391833d0f3fb24076b1a298b2134b3c5b390b1ffc9c1a5ac8",
+          "coreai_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/brnet.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' is unknown. If this is intended, please call allowUnregisteredDialects() on the MLIRContext, or use -allow-unregistered-dialect with the MLIR tool used.\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": false,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          },
+          "coreai_permissive_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/brnet.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' does not implement the bytecode interface, but found a version entry\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": true,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          }
+        },
+        {
+          "path": "model_1.mpsgraph",
+          "size": 7689,
+          "sha256": "7216f636bd0013e07160473d7b335ad3d314161a78bcf4ae363b7c2954ea9645",
+          "coreai_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/brnet.mtlpackage/library.mpsgraphpackage/model_1.mpsgraph\":0:0): error: dialect 'mps' is unknown. If this is intended, please call allowUnregisteredDialects() on the MLIRContext, or use -allow-unregistered-dialect with the MLIR tool used.\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": false,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          },
+          "coreai_permissive_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/brnet.mtlpackage/library.mpsgraphpackage/model_1.mpsgraph\":0:0): error: dialect 'mps' does not implement the bytecode interface, but found a version entry\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'std::bad_cast'\n  what():  std::bad_cast\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": true,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          }
+        },
+        {
+          "path": "reflection.fb",
+          "size": 212,
+          "sha256": "79a57d73b5a34e0d5288464aaeb788a35f61aef825f359863b7cd9b36b6e5b8c"
+        },
+        {
+          "path": "resources.bin",
+          "size": 494960,
+          "sha256": "f30d9f9ad32740da5cb84d805330d7acca8c38276ac6add1ecbdbc43e713f23f"
+        }
+      ],
+      "role": "MetalFX image processing candidate; no identification as Apple image diffusion"
+    },
+    {
+      "model_id": "m-a996f1578187ff2ef678",
+      "firmware_path": "/System/Library/Frameworks/MetalFX.framework/ubf_ane.mtlpackage/library.mpsgraphpackage",
+      "files": [
+        {
+          "path": "manifest.plist",
+          "size": 2524,
+          "sha256": "cf6da8c54d50b1643e2db2da52d156712aceec0580e710e17231d5c46df30923"
+        },
+        {
+          "path": "model_0.mpsgraph",
+          "size": 4154,
+          "sha256": "485d4b34f4d45f280bb1226174cb547abdf2c7bc59612e87a5c80c825ead5195",
+          "coreai_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/ubf_ane.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' is unknown. If this is intended, please call allowUnregisteredDialects() on the MLIRContext, or use -allow-unregistered-dialect with the MLIR tool used.\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": false,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          },
+          "coreai_permissive_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/ubf_ane.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' does not implement the bytecode interface, but found a version entry\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'std::bad_cast'\n  what():  std::bad_cast\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": true,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          }
+        },
+        {
+          "path": "model_1.mpsgraph",
+          "size": 5320,
+          "sha256": "c804924d6dc1b6492ea3912378836a25a8181ea95e8649d68061cc42d187977d",
+          "coreai_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/ubf_ane.mtlpackage/library.mpsgraphpackage/model_1.mpsgraph\":0:0): error: dialect 'mps' is unknown. If this is intended, please call allowUnregisteredDialects() on the MLIRContext, or use -allow-unregistered-dialect with the MLIR tool used.\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": false,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          },
+          "coreai_permissive_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/ubf_ane.mtlpackage/library.mpsgraphpackage/model_1.mpsgraph\":0:0): error: dialect 'mps' does not implement the bytecode interface, but found a version entry\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": true,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          }
+        },
+        {
+          "path": "reflection.fb",
+          "size": 212,
+          "sha256": "e2da96e786251e2f5c4ddb6fbf160a1ccdf3c76a426f06ea4586221af010ef4a"
+        },
+        {
+          "path": "resources.bin",
+          "size": 304860,
+          "sha256": "892d06105957f395c414a99ed3b017f5a327f8a1c87bb31cb5b1b30cdd8130e0"
+        }
+      ],
+      "role": "MetalFX image processing candidate; no identification as Apple image diffusion"
+    },
+    {
+      "model_id": "m-ce920d4c5b4ed499fe70",
+      "firmware_path": "/System/Library/Frameworks/MetalFX.framework/sacneh.mtlpackage/library.mpsgraphpackage",
+      "files": [
+        {
+          "path": "manifest.plist",
+          "size": 978,
+          "sha256": "071a7a8294a62456e45f62f6aa6dbc507406ac052cbe2d7a5e5ce2a442594ad5"
+        },
+        {
+          "path": "model_0.mpsgraph",
+          "size": 1127,
+          "sha256": "e3ed0c3124522fd701d3a1b9cf6c3e844c27704bbc434dbef2976e1f764e6621",
+          "coreai_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/sacneh.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' is unknown. If this is intended, please call allowUnregisteredDialects() on the MLIRContext, or use -allow-unregistered-dialect with the MLIR tool used.\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": false,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          },
+          "coreai_permissive_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/sacneh.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' does not implement the bytecode interface, but found a version entry\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": true,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          }
+        },
+        {
+          "path": "reflection.fb",
+          "size": 228,
+          "sha256": "8b2fad1bee8ea3a420b72d53a20101ac3432fa64f41a70c1b80ee0e6dcc65f20"
+        },
+        {
+          "path": "resources.bin",
+          "size": 78,
+          "sha256": "cf29c2830a53e90f858cf623f92cf173dd365a67d7ced7a41b212ce43dfe7c12"
+        }
+      ],
+      "role": "MetalFX image processing candidate; no identification as Apple image diffusion"
+    },
+    {
+      "model_id": "m-daf83e47c5543c5c183e",
+      "firmware_path": "/System/Library/Frameworks/MetalFX.framework/ubf.mtlpackage/library.mpsgraphpackage",
+      "files": [
+        {
+          "path": "manifest.plist",
+          "size": 2524,
+          "sha256": "cf6da8c54d50b1643e2db2da52d156712aceec0580e710e17231d5c46df30923"
+        },
+        {
+          "path": "model_0.mpsgraph",
+          "size": 4154,
+          "sha256": "485d4b34f4d45f280bb1226174cb547abdf2c7bc59612e87a5c80c825ead5195",
+          "coreai_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/ubf.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' is unknown. If this is intended, please call allowUnregisteredDialects() on the MLIRContext, or use -allow-unregistered-dialect with the MLIR tool used.\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": false,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          },
+          "coreai_permissive_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/ubf.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' does not implement the bytecode interface, but found a version entry\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": true,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          }
+        },
+        {
+          "path": "reflection.fb",
+          "size": 212,
+          "sha256": "e2da96e786251e2f5c4ddb6fbf160a1ccdf3c76a426f06ea4586221af010ef4a"
+        },
+        {
+          "path": "resources.bin",
+          "size": 304860,
+          "sha256": "892d06105957f395c414a99ed3b017f5a327f8a1c87bb31cb5b1b30cdd8130e0"
+        }
+      ],
+      "role": "MetalFX image processing candidate; no identification as Apple image diffusion"
+    },
+    {
+      "model_id": "m-e80fce3660b6d8c1f856",
+      "firmware_path": "/System/Library/Frameworks/MetalFX.framework/dbf.mtlpackage/library.mpsgraphpackage",
+      "files": [
+        {
+          "path": "manifest.plist",
+          "size": 2792,
+          "sha256": "56688a6decaf0ba81eb46cd943acf0cec8488344f56bdb3cd8f83be3bdca9ddb"
+        },
+        {
+          "path": "model_0.mpsgraph",
+          "size": 3730,
+          "sha256": "89a8ae22edfc1e95e01e58ae5aa3aa0db420ec7c2204f056c00218456030e961",
+          "coreai_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/dbf.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' is unknown. If this is intended, please call allowUnregisteredDialects() on the MLIRContext, or use -allow-unregistered-dialect with the MLIR tool used.\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": false,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          },
+          "coreai_permissive_bytecode_probe": {
+            "exit_code": -6,
+            "stdout": "",
+            "stderr": "loc(\"/workspace/Apple/Apple Intelligence/models/cache/rootfs/System/Library/Frameworks/MetalFX.framework/dbf.mtlpackage/library.mpsgraphpackage/model_0.mpsgraph\":0:0): error: dialect 'mps' does not implement the bytecode interface, but found a version entry\nerror: failed to parse bytecode\nterminate called after throwing an instance of 'nanobind::python_error'\n  what():  SystemError: <built-in function __import__> returned a result with an exception set\n",
+            "prediction_performed": false,
+            "allow_unregistered_dialects": true,
+            "api": "AIProgram._load_bytecode; internal API probe only; child process with core dumps disabled"
+          }
+        },
+        {
+          "path": "reflection.fb",
+          "size": 212,
+          "sha256": "e064324568ab3ea5fda7fc88b7087e6572589e7ed25a34447f589b726a583516"
+        },
+        {
+          "path": "resources.bin",
+          "size": 399086,
+          "sha256": "5ca84191e8c085054b5f51c63b42a015a7f0fa05b525ca2ca818fc5e63722b34"
+        }
+      ],
+      "role": "MetalFX image processing candidate; no identification as Apple image diffusion"
+    }
+  ],
+  "diffusion_named_trackers": [
+    {
+      "model_id": "m-1c6deeb5a08168d10b71",
+      "path": "/System/Library/Frameworks/CreateMLComponents.framework/diffusionTrackerLargeWeightsDescription.json",
+      "sha256": "8737f1c3f46b04178b96ec5ab176e6ae6e9c375132aacc114ebddb074c01a00c",
+      "tensor_descriptions": 222,
+      "heads": [
+        {
+          "name": "heads.DiffusionKeyPoints3D.l0.0.weight",
+          "shape": [
+            256,
+            128,
+            4,
+            4
+          ],
+          "index": 194
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.l0.0.bias",
+          "shape": [
+            256
+          ],
+          "index": 195
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_c.weight",
+          "shape": [
+            256,
+            256
+          ],
+          "index": 196
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_c.bias",
+          "shape": [
+            256
+          ],
+          "index": 197
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_x1.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 198
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_x1.bias",
+          "shape": [
+            128
+          ],
+          "index": 199
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_x2.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 200
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_x2.bias",
+          "shape": [
+            128
+          ],
+          "index": 201
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_skip.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 202
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_skip.bias",
+          "shape": [
+            128
+          ],
+          "index": 203
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_c.weight",
+          "shape": [
+            256,
+            128
+          ],
+          "index": 204
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_c.bias",
+          "shape": [
+            256
+          ],
+          "index": 205
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_x1.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 206
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_x1.bias",
+          "shape": [
+            128
+          ],
+          "index": 207
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_x2.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 208
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_x2.bias",
+          "shape": [
+            128
+          ],
+          "index": 209
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_skip.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 210
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_skip.bias",
+          "shape": [
+            128
+          ],
+          "index": 211
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.dense.weight",
+          "shape": [
+            24,
+            128
+          ],
+          "index": 212
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.dense.bias",
+          "shape": [
+            24
+          ],
+          "index": 213
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.pos_embed_t.mlp.weight",
+          "shape": [
+            128,
+            1
+          ],
+          "index": 214
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.pos_embed_t.mlp.bias",
+          "shape": [
+            128
+          ],
+          "index": 215
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.pos_embed_rt.mlp.weight",
+          "shape": [
+            128,
+            24
+          ],
+          "index": 216
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.pos_embed_rt.mlp.bias",
+          "shape": [
+            128
+          ],
+          "index": 217
+        },
+        {
+          "name": "heads.Classification.confidence.2.weight",
+          "shape": [
+            1,
+            128
+          ],
+          "index": 218
+        },
+        {
+          "name": "heads.Classification.confidence.2.bias",
+          "shape": [
+            1
+          ],
+          "index": 219
+        },
+        {
+          "name": "heads.ConfidenceScore.confidence_score_reg.0.weight",
+          "shape": [
+            1,
+            128,
+            4,
+            4
+          ],
+          "index": 220
+        },
+        {
+          "name": "heads.ConfidenceScore.confidence_score_reg.0.bias",
+          "shape": [
+            1
+          ],
+          "index": 221
+        }
+      ],
+      "observation": "Declared DiffusionKeyPoints3D dense output has 24 components; tracking/confidence heads.",
+      "image_generation_proven": false
+    },
+    {
+      "model_id": "m-a8a28bc4f39f837423fe",
+      "path": "/System/Library/Frameworks/CreateMLComponents.framework/diffusionTrackerWeightsDescription.json",
+      "sha256": "c0986526d020464700fc0cd6cadc3317f3d9736d49eb33ce2d94e8023da6af2f",
+      "tensor_descriptions": 222,
+      "heads": [
+        {
+          "name": "heads.DiffusionKeyPoints3D.l0.0.weight",
+          "shape": [
+            256,
+            128,
+            4,
+            4
+          ],
+          "index": 194
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.l0.0.bias",
+          "shape": [
+            256
+          ],
+          "index": 195
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_c.weight",
+          "shape": [
+            256,
+            256
+          ],
+          "index": 196
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_c.bias",
+          "shape": [
+            256
+          ],
+          "index": 197
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_x1.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 198
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_x1.bias",
+          "shape": [
+            128
+          ],
+          "index": 199
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_x2.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 200
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_x2.bias",
+          "shape": [
+            128
+          ],
+          "index": 201
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_skip.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 202
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_1.dense_skip.bias",
+          "shape": [
+            128
+          ],
+          "index": 203
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_c.weight",
+          "shape": [
+            256,
+            128
+          ],
+          "index": 204
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_c.bias",
+          "shape": [
+            256
+          ],
+          "index": 205
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_x1.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 206
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_x1.bias",
+          "shape": [
+            128
+          ],
+          "index": 207
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_x2.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 208
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_x2.bias",
+          "shape": [
+            128
+          ],
+          "index": 209
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_skip.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "index": 210
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.FourierMlpBlock_2.dense_skip.bias",
+          "shape": [
+            128
+          ],
+          "index": 211
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.dense.weight",
+          "shape": [
+            24,
+            128
+          ],
+          "index": 212
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.dense.bias",
+          "shape": [
+            24
+          ],
+          "index": 213
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.pos_embed_t.mlp.weight",
+          "shape": [
+            128,
+            1
+          ],
+          "index": 214
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.pos_embed_t.mlp.bias",
+          "shape": [
+            128
+          ],
+          "index": 215
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.pos_embed_rt.mlp.weight",
+          "shape": [
+            128,
+            24
+          ],
+          "index": 216
+        },
+        {
+          "name": "heads.DiffusionKeyPoints3D.pos_embed_rt.mlp.bias",
+          "shape": [
+            128
+          ],
+          "index": 217
+        },
+        {
+          "name": "heads.Classification.confidence.2.weight",
+          "shape": [
+            1,
+            128
+          ],
+          "index": 218
+        },
+        {
+          "name": "heads.Classification.confidence.2.bias",
+          "shape": [
+            1
+          ],
+          "index": 219
+        },
+        {
+          "name": "heads.ConfidenceScore.confidence_score_reg.0.weight",
+          "shape": [
+            1,
+            128,
+            4,
+            4
+          ],
+          "index": 220
+        },
+        {
+          "name": "heads.ConfidenceScore.confidence_score_reg.0.bias",
+          "shape": [
+            1
+          ],
+          "index": 221
+        }
+      ],
+      "observation": "Declared DiffusionKeyPoints3D dense output has 24 components; tracking/confidence heads.",
+      "image_generation_proven": false
+    }
+  ],
+  "handwriting_metadata": [
+    {
+      "model_id": "m-125cb4e7ea2d70b11ee3",
+      "path": "/System/Library/PrivateFrameworks/CoreHandwriting.framework/diffusion_ko_denoiser.codemap",
+      "format": "opaque_resource",
+      "bytes": 956
+    },
+    {
+      "model_id": "m-21745406eefc88e624b0",
+      "path": "/System/Library/PrivateFrameworks/CoreHandwriting.framework/diffusion_latn_ppc_lookup.json",
+      "format": "json_or_plist_metadata",
+      "bytes": 2915
+    },
+    {
+      "model_id": "m-5c6c29f73bdf69882309",
+      "path": "/System/Library/PrivateFrameworks/CoreHandwriting.framework/diffusion_latn_legacy.codemap",
+      "format": "opaque_resource",
+      "bytes": 924
+    },
+    {
+      "model_id": "m-61841eda97bf803dff75",
+      "path": "/System/Library/PrivateFrameworks/CoreHandwriting.framework/diffusion_latn.codemap",
+      "format": "opaque_resource",
+      "bytes": 1348
+    },
+    {
+      "model_id": "m-73b9c28020d92edb89c6",
+      "path": "/System/Library/PrivateFrameworks/CoreHandwriting.framework/diffusion_ko_style_encoder.codemap",
+      "format": "opaque_resource",
+      "bytes": 956
+    },
+    {
+      "model_id": "m-796494f5a425d1dd01aa",
+      "path": "/System/Library/PrivateFrameworks/CoreHandwriting.framework/diffusion_latn_ppc_lookup_legacy.json",
+      "format": "json_or_plist_metadata",
+      "bytes": 2412
+    },
+    {
+      "model_id": "m-86e345775f30681c0283",
+      "path": "/System/Library/PrivateFrameworks/CoreHandwriting.framework/diffusion_zhja_ids_decomposition.json",
+      "format": "json_or_plist_metadata",
+      "bytes": 2097846
+    },
+    {
+      "model_id": "m-87229f0b03eecc394e6f",
+      "path": "/System/Library/PrivateFrameworks/CoreHandwriting.framework/diffusion_zhja.codemap",
+      "format": "opaque_resource",
+      "bytes": 86864
+    }
+  ],
+  "next_step": {
+    "asset_family": "com.apple.MobileAsset.UAF.FM.Visual",
+    "required": "Acquire an actual catalogue with payload BaseURL/RelativePath and expected identity, or complete downloaded device bundles including manifests, trained denoiser/decoder and conditioning resources.",
+    "available_local_downloader": "python3 models/download_asset.py catalogue CATALOGUE; then fetch with actual URL/size/SHA-256",
+    "runtime_after_acquisition": "Identify true container and graph; port its learned operators and scheduler to Linux and save prompt/seed/image/hash. Current Core AI backend handles .aimodel, not arbitrary .mpsgraph or .mlmodelc."
+  },
+  "limits": [
+    "Name-based candidates and explicit selectors do not identify every opaque firmware blob.",
+    "A failed bytecode load establishes this tested loader boundary, not impossibility of another port."
+  ]
+}

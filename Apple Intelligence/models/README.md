@@ -1,5 +1,11 @@
 # Modèles et ressources inventoriés
 
+État courant : **2 016 groupes / 4 751 fichiers / 3 754 333 107 octets**,
+sur les sept images de l'IPSW. Le [rapport complet](../analysis/ACQUISITION-GENERATION.md)
+conserve le delta par rapport au premier inventaire et la preuve de génération
+du petit UniLM du firmware. Les groupes restent des unités de stockage et de
+ressources, pas un décompte de réseaux entraînés indépendants.
+
 - [`inventory.md`](inventory.md) : portée, catégories, identifiants, provenance,
   schéma des manifestes et limites.
 - [`ACQUIRE.md`](ACQUIRE.md) : reconstruire le cache depuis les images locales

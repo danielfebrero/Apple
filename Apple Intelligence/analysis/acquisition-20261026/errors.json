@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "observations": [
+    {
+      "stage": "initial raw ramdisk APFS inventories",
+      "members": [
+        "141-09491-238.dmg",
+        "141-10399-236.dmg"
+      ],
+      "diagnostic": "This doesn't seem to be an apfs volume (invalid superblock).",
+      "resolution": "Observed DER IM4P rdsk wrapper; extracted its APFS payload with ipsw img4 im4p extract, then successfully inventoried both. Final identities are in ipsw-images.json."
+    },
+    {
+      "stage": "first expanded acquire --all",
+      "log": "acquire-expanded-first-attempt.stderr",
+      "error": "missing_file",
+      "cause": "Legacy acquire.py retained only the final directory and basename of a nested additional image.",
+      "resolution": "Publish and validate image_relative_path; 4751 files successfully reacquired/verified in acquire-all-expanded.json."
+    },
+    {
+      "stage": "MPSGraph Core AI bytecode probes",
+      "report": "image-paths.json",
+      "default_context": "mps dialect unknown",
+      "permissive_context": "mps dialect does not implement bytecode interface but a version entry was found",
+      "exit_signal": "SIGABRT (-6 in subprocess; 134 through shell)",
+      "resolution": "Process isolation; no generation result; block documented. Probe code disables core dumps."
+    }
+  ]
+}

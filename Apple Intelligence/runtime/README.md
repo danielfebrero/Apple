@@ -1,5 +1,11 @@
 # Exécuter les modèles réellement disponibles
 
+La [preuve UniLM sous Linux](../analysis/ACQUISITION-GENERATION.md) ajoute une
+génération autorégressive réelle avec un petit modèle de langue du firmware.
+Son script de recherche vérifie les sources du catalogue puis reconstruit le
+calcul FP32 avec PyTorch. Il ne constitue ni un backend général Espresso,
+ni une exécution d'AFM, ni une preuve de génération d'images.
+
 **Complément Debian :** [16 modèles auxiliaires du firmware exécutés](DEBIAN.md),
 dont trois nouveaux modèles LSTM/CNN à poids quantifiés après analyse
 d'Archive.zip. Six nouvelles entrées/sorties complètent les 24 démonstrations

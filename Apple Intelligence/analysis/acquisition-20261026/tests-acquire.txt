@@ -1,0 +1,14 @@
+test_dry_run_neither_extracts_nor_claims_verification (test_acquire.AcquirePreflightTests.test_dry_run_neither_extracts_nor_claims_verification) ... ok
+test_manifest_asset_hash_disagreement_rejected (test_acquire.AcquirePreflightTests.test_manifest_asset_hash_disagreement_rejected) ... ok
+test_manifest_destination_must_match_asset_firmware_path (test_acquire.AcquirePreflightTests.test_manifest_destination_must_match_asset_firmware_path) ... ok
+test_nested_image_relative_path_preserved (test_acquire.AcquirePreflightTests.test_nested_image_relative_path_preserved) ... ok
+test_path_traversal_in_manifest_rejected_before_writes (test_acquire.AcquirePreflightTests.test_path_traversal_in_manifest_rejected_before_writes) ... ok
+test_relative_image_traversal_rejected (test_acquire.AcquirePreflightTests.test_relative_image_traversal_rejected) ... ok
+test_symlink_cache_ancestor_rejected (test_acquire.AcquirePreflightTests.test_symlink_cache_ancestor_rejected) ... ok
+test_zero_byte_stub_image_rejected_before_reader_and_cache_write (test_acquire.AcquirePreflightTests.test_zero_byte_stub_image_rejected_before_reader_and_cache_write) ... Hashing rootfs image before extraction: /tmp/tmp0cy69djv/not-present-firmware/rootfs-dec/141-08876-212.dmg
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.256s
+
+OK

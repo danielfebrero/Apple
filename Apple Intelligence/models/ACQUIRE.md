@@ -22,6 +22,20 @@ mes-images/
   cryptex-dec/141-09724-222.dmg
 ```
 
+Ces deux chemins décrivent le premier lot. Le catalogue courant couvre aussi
+AppCryptex, ExclaveOS, RecoveryOS et deux ramdisks de restauration. Le champ
+`volumes[].image_relative_path` de `summary.json` conserve désormais le chemin
+complet sous `--firmware-root`, y compris ses sous-dossiers. L'ancien calcul
+sur les deux derniers composants reste disponible pour les anciens manifestes.
+Le contrôle de sécurité refuse toujours les chemins absolus et les traversées.
+
+Pour préparer **les sept images de ce même IPSW local**, puis réutiliser le
+catalogue publié et tous les caches existants, suivre
+[`REPRODUCE.md`](../analysis/acquisition-20261026/REPRODUCE.md).
+Cette préparation extrait les payloads IM4P et déchiffre les conteneurs AEA
+supplémentaires avec l'outil `ipsw` existant. `acquire.py` conserve son rôle
+sans réseau : lire les images locales et vérifier les fichiers du catalogue.
+
 Les SHA-256 des images **déjà déchiffrées** sont publiés dans
 [`summary.json`](summary.json). Ils diffèrent de ceux de l'IPSW et des
 conteneurs AEA chiffrés. Avant toute extraction, le programme lit et hache

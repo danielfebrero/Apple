@@ -70,6 +70,27 @@ class AcquirePreflightTests(unittest.TestCase):
             acquire.acquire(self.args)
         self.assertEqual(caught.exception.code, "invalid_metadata")
 
+    def test_nested_image_relative_path_preserved(self):
+        summary = json.loads((BASE / 'models/summary.json').read_text())
+        v = next(x for x in summary['volumes'] if x['volume_id'] == 'rootfs')
+        v['image_relative_path'] = 'audit/nested/rootfs-dec/141-08876-212.dmg'
+        custom = self.root / 'summary.json'
+        custom.write_text(json.dumps(summary))
+        self.args.summary = custom
+        result = acquire.acquire(self.args)
+        self.assertEqual(result['images'][0]['path'],
+                         str(self.args.firmware_root / v['image_relative_path']))
+
+    def test_relative_image_traversal_rejected(self):
+        summary = json.loads((BASE / 'models/summary.json').read_text())
+        summary['volumes'][0]['image_relative_path'] = '../rootfs-dec/141-08876-212.dmg'
+        custom = self.root / 'summary.json'
+        custom.write_text(json.dumps(summary))
+        self.args.summary = custom
+        with self.assertRaises(acquire.AcquisitionError) as caught:
+            acquire.acquire(self.args)
+        self.assertEqual(caught.exception.code, 'unsafe_path')
+
     def test_symlink_cache_ancestor_rejected(self):
         (self.root / "elsewhere").mkdir()
         (self.root / "out").symlink_to(self.root / "elsewhere", target_is_directory=True)
