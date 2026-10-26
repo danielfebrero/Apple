@@ -1,6 +1,6 @@
 import pathlib,json,hashlib,plistlib,collections
 BETA=pathlib.Path('/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g')
-RC=pathlib.Path('/workspace/Apple')
+RC=pathlib.Path(__file__).resolve().parents[2]
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 files=sorted(p for p in (BETA/'fs_root').rglob('*') if p.is_file())
 rows=[]
