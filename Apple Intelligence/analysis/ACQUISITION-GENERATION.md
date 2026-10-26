@@ -1,6 +1,13 @@
 # Acquisition IPSW complète et génération Linux — 26 octobre 2026
 
-**Résultat :** toutes les entrées du catalogue élargi ont été acquises et
+**Suivi Visual :** la mission suivante a obtenu le catalogue Pallas réel et
+24 archives Visual vérifiées (2,45 Go). Leur enveloppe AEA est ouverte, mais
+DSME protège encore les poids et les cryptex ; le bundle complet en clair et
+la génération d'images restent bloqués. Voir le
+[rapport MobileAsset Visual](VISUAL-MOBILEASSET-ACQUISITION.md) et ses preuves.
+Les résultats IPSW/UniLM décrits ci-dessous restent distincts et conservés.
+
+**Résultat de ce lot IPSW :** toutes les entrées du catalogue élargi ont été acquises et
 vérifiées. Un petit modèle de langue Apple du firmware produit réellement du
 texte sous Debian. La génération d'images Image Playground reste bloquée par
 l'absence d'un payload complet identifié. Aucun poids synthétique ou modèle

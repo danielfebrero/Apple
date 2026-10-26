@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-26T20:28:46.497395+00:00",
+  "endpoint": "https://gdmf.apple.com/v2/assets",
+  "request": {
+    "ClientVersion": 2,
+    "AssetType": "com.apple.MobileAsset.UAF.FM.Visual",
+    "AssetAudience": "0c88076f-c292-4dad-95e7-304db9d29d34",
+    "DeviceName": "iPhone",
+    "TrainName": "Luck"
+  },
+  "authentication": "none",
+  "tls_verification_enabled": true,
+  "tls_verified": false,
+  "payload_acquired": false,
+  "root_ca": null,
+  "status": "transport_error",
+  "error": "URLError",
+  "diagnostic": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:992)>"
+}

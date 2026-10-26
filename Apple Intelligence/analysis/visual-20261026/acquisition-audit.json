@@ -1,0 +1,1355 @@
+{
+  "at": "2026-10-26T20:36:07.712626+00:00",
+  "status": "encrypted_payloads_acquired_plaintext_bundle_blocked",
+  "catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+  "assets": [
+    {
+      "at": "2026-10-26T20:27:55.547557+00:00",
+      "status": "reused_verified",
+      "asset_specifier": "com.apple.fm.visual.understanding.conditioning",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16969/2C89B50E-E4D2-48AA-B021-CB55C95C4170/com_apple_MobileAsset_UAF_FM_Visual/3820CB2C-5F92-44CC-A018-C2D2F5165DB6.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/3820CB2C-5F92-44CC-A018-C2D2F5165DB6.aea",
+      "size": 65011712,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "c5f118c8d695d77f641070378043b715c87a0478",
+      "catalogue_measurement_verified": true,
+      "sha256": "04ebb5af9783f0851aa1acc4301ddabe423c246600ade2961b594e655692e7c3",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 0,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-conditioning",
+      "files": 13,
+      "extracted_bytes": 64571937,
+      "aa_sha256_verified_files": 13,
+      "protected_files": 11,
+      "protected_paths": [
+        "AssetData/face_encoder.mlmodelc/analytics/coremldata.bin",
+        "AssetData/face_encoder.mlmodelc/coremldata.bin",
+        "AssetData/face_encoder.mlmodelc/metadata.json",
+        "AssetData/face_encoder.mlmodelc/model.mil",
+        "AssetData/face_encoder.mlmodelc/weights/weight.bin",
+        "AssetData/metadata.json",
+        "AssetData/personalized_conditioning_producer.mlmodelc/analytics/coremldata.bin",
+        "AssetData/personalized_conditioning_producer.mlmodelc/coremldata.bin",
+        "AssetData/personalized_conditioning_producer.mlmodelc/metadata.json",
+        "AssetData/personalized_conditioning_producer.mlmodelc/model.mil",
+        "AssetData/personalized_conditioning_producer.mlmodelc/weights/weight.bin"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-000/Info.plist",
+          "sha256": "107c960ead8a77120658c3a43bb8656431c8bede89611086617c2887dbb01744"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-000/ContentProtection.plist",
+          "sha256": "7472af4ca1605bf05e7a58a91f9e4dda0ba059abbc4371972f4ce2b96b98eb28"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/personalized_conditioning_producer.mlmodelc/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/personalized_conditioning_producer.mlmodelc/model.mil",
+          "readable": false
+        },
+        {
+          "path": "AssetData/face_encoder.mlmodelc/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/face_encoder.mlmodelc/model.mil",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:27:56.373999+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.personalized_illustration",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16981/AF726F2C-FCCF-440A-B5C7-36C474FD01CD/com_apple_MobileAsset_UAF_FM_Visual/4EB9BC11-003F-45ED-9651-538738719767.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/4EB9BC11-003F-45ED-9651-538738719767.aea",
+      "size": 26214400,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "52a0e91f909b65b98da71e821a8b980f452af57c",
+      "catalogue_measurement_verified": true,
+      "sha256": "487aa72dd259a9622a0e54750ebd034fea2e0a0dbbcaae156a2ce1a0802f2688",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 1,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-001",
+      "files": 5,
+      "extracted_bytes": 25802868,
+      "aa_sha256_verified_files": 5,
+      "protected_files": 3,
+      "protected_paths": [
+        "AssetData/metadata.json",
+        "AssetData/noise_predictor.mladapters/lora/personalized_illustration.bin",
+        "AssetData/noise_predictor.mladapters/lora/personalized_illustration.meta.json"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-001/Info.plist",
+          "sha256": "46022d9d6e90a821761c07b2628ca280f33bdb4d98b034b260331c15e366aa0a"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-001/ContentProtection.plist",
+          "sha256": "5d6398ab4aa00d2c2ff8ccc4c93c6d6677a698fed1148889b3fc1a19602614f3"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/personalized_illustration.meta.json",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:27:57.360284+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.personalized_animation",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16973/D804D152-75D1-4A9D-94BF-76A240F4915A/com_apple_MobileAsset_UAF_FM_Visual/C41586A1-57AC-46C9-94FB-5FEE8C1F245D.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/C41586A1-57AC-46C9-94FB-5FEE8C1F245D.aea",
+      "size": 81788928,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "cd29fafb9653bfb65f4a849c8c67359065d49930",
+      "catalogue_measurement_verified": true,
+      "sha256": "311ebaeb49ceefe2ef9ec046059c37323efefbec47ebd2350f86923a18e95c88",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 2,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-002",
+      "files": 10,
+      "extracted_bytes": 80344411,
+      "aa_sha256_verified_files": 10,
+      "protected_files": 8,
+      "protected_paths": [
+        "AssetData/metadata.json",
+        "AssetData/noise_predictor.mladapters/lora/personalized_animation.bin",
+        "AssetData/noise_predictor.mladapters/lora/personalized_animation.meta.json",
+        "AssetData/personalized_animation_conditioning_producer.mlmodelc/analytics/coremldata.bin",
+        "AssetData/personalized_animation_conditioning_producer.mlmodelc/coremldata.bin",
+        "AssetData/personalized_animation_conditioning_producer.mlmodelc/metadata.json",
+        "AssetData/personalized_animation_conditioning_producer.mlmodelc/model.mil",
+        "AssetData/personalized_animation_conditioning_producer.mlmodelc/weights/weight.bin"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-002/Info.plist",
+          "sha256": "43a014b2ecf15751df5c0e6d6d591c0553e5fb0a437fe8975f6bf5d97939ad11"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-002/ContentProtection.plist",
+          "sha256": "b26b70d088d661d6ef5c8553cb70d4246e112132ae7ce6241432f3fbd5915bb6"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/personalized_animation.meta.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/personalized_animation_conditioning_producer.mlmodelc/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/personalized_animation_conditioning_producer.mlmodelc/model.mil",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:27:55.767176+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.uaf.metadata",
+      "asset_version": "4.48.3.13.101751,0",
+      "url": "https://updates.cdn-apple.com/2026/Iris/mobileassets/053-50395/DB1F9D0F-579B-44BF-827E-6513E4D6F9C0/com_apple_MobileAsset_UAF_FM_Visual/292F7678-2AB1-4F81-9556-61F22626B497.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/292F7678-2AB1-4F81-9556-61F22626B497.aea",
+      "size": 21504,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "bf87d6427acf260bf112a0d481f212357438318f",
+      "catalogue_measurement_verified": true,
+      "sha256": "45e56cd1e8ee8bb981dbcf9e1213aec81bc9cda2e1436d0f03e64242662cea92",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": null,
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 3,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-003",
+      "files": 2,
+      "extracted_bytes": 1919,
+      "aa_sha256_verified_files": 2,
+      "protected_files": 0,
+      "protected_paths": [],
+      "aea_decrypted": true,
+      "readable_metadata": {
+        "FileType": "AssetSetMetadata",
+        "FileVersion": "1.0.0",
+        "MaxOSVersion": "27.2.9999",
+        "MinOSVersion": "27.2"
+      },
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-003/Info.plist",
+          "sha256": "339103df8afbe40c84c6688f7c67e0f672e003655f0cc4b82d475d4ed0ac8056"
+        },
+        {
+          "source_relative_path": "AssetData/metadata.plist",
+          "evidence": "manifests/rave-003/AssetData/metadata.plist",
+          "sha256": "cd8223a4de972e7d41b1124b98c0ffba04e7b553770e737edef4dc4338f78451"
+        }
+      ],
+      "small_graph_metadata_parse_checks": []
+    },
+    {
+      "at": "2026-10-26T20:23:04.612953+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.base",
+      "asset_version": "10.5000.81616.13.204122,0",
+      "url": "https://updates.cdn-apple.com/2026/Iris/mobileassets/053-50352/C44D0336-0D99-49BE-8D99-B748564BFE32/com_apple_MobileAsset_UAF_FM_Visual/FB2E6837-4014-4C69-A6CE-AAE8D1345FAD.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/FB2E6837-4014-4C69-A6CE-AAE8D1345FAD.aea",
+      "size": 973078528,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "7a5398f24f3bf39e79e8dd8c61505e650dde421d",
+      "catalogue_measurement_verified": true,
+      "sha256": "3ceb12d869897a4a22c7818112d2f2d4e9a82e6955f4afe6c23431454a647c5f",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME_COMPRESSED",
+      "requires_personalization": true,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 4,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-base-81616",
+      "files": 10,
+      "extracted_bytes": 1405513324,
+      "aa_sha256_verified_files": 10,
+      "protected_files": 8,
+      "protected_paths": [
+        "AssetData/Restore/BuildManifest.plist",
+        "AssetData/Restore/Firmware/Manifests/restore/cryptex1/UAF.FM.Visual:fm.visual.image_diffusion_v1.base-H16p/apticket.mobileassetx86macosap.im4m",
+        "AssetData/Restore/Firmware/UC_FM_VISUAL_IMAGE_DIFFUSION_V1_BASE_GENERIC_H16P_Cryptex.dmg.cryptex_info",
+        "AssetData/Restore/Firmware/UC_FM_VISUAL_IMAGE_DIFFUSION_V1_BASE_GENERIC_H16P_Cryptex.dmg.integrity_catalog",
+        "AssetData/Restore/Firmware/UC_FM_VISUAL_IMAGE_DIFFUSION_V1_BASE_GENERIC_H16P_Cryptex.dmg.root_hash",
+        "AssetData/Restore/Firmware/UC_FM_VISUAL_IMAGE_DIFFUSION_V1_BASE_GENERIC_H16P_Cryptex.dmg.trustcache",
+        "AssetData/Restore/Restore.plist",
+        "AssetData/Restore/UC_FM_VISUAL_IMAGE_DIFFUSION_V1_BASE_GENERIC_H16P_Cryptex.dmg"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-004/Info.plist",
+          "sha256": "8b48dd4de2023e2a2d3e24c0fb9a38852f3a07b4d80410cb29d9a742bf37f29b"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-004/ContentProtection.plist",
+          "sha256": "b9770693a13b6b084f7a9bf6095cece54363ccb88201f2347cd285b47ab5f8ef"
+        }
+      ],
+      "small_graph_metadata_parse_checks": []
+    },
+    {
+      "at": "2026-10-26T20:27:56.417820+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.uaf.metadata",
+      "asset_version": "4.48.4.13.101751,0",
+      "url": "https://updates.cdn-apple.com/2026/Iris/mobileassets/053-50390/9E66A206-757F-4288-BABA-92E40BC30453/com_apple_MobileAsset_UAF_FM_Visual/63706E0F-F9B1-4E19-B464-DD85056749E8.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/63706E0F-F9B1-4E19-B464-DD85056749E8.aea",
+      "size": 21504,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "6fa9e0c95850755edfe286f1c95420fd90e0b6c9",
+      "catalogue_measurement_verified": true,
+      "sha256": "62b928c22426b7c09196e7d5354fb4290986592855f5b03df4f0d4711ed87914",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": null,
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 6,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-006",
+      "files": 2,
+      "extracted_bytes": 1919,
+      "aa_sha256_verified_files": 2,
+      "protected_files": 0,
+      "protected_paths": [],
+      "aea_decrypted": true,
+      "readable_metadata": {
+        "FileType": "AssetSetMetadata",
+        "FileVersion": "1.0.0",
+        "MaxOSVersion": "27.2.9999",
+        "MinOSVersion": "27.2"
+      },
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-006/Info.plist",
+          "sha256": "1c3de6dec39b0f67d0516e57190e32202979797e87c9a809ccec9c101da813aa"
+        },
+        {
+          "source_relative_path": "AssetData/metadata.plist",
+          "evidence": "manifests/rave-006/AssetData/metadata.plist",
+          "sha256": "cd8223a4de972e7d41b1124b98c0ffba04e7b553770e737edef4dc4338f78451"
+        }
+      ],
+      "small_graph_metadata_parse_checks": []
+    },
+    {
+      "at": "2026-10-26T20:28:03.287813+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16965/C67EB8B0-4E9B-45D6-8D64-A241445A576B/com_apple_MobileAsset_UAF_FM_Visual/A7104C4B-6B6B-4394-8FBC-393E497AC169.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/A7104C4B-6B6B-4394-8FBC-393E497AC169.aea",
+      "size": 26738688,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "b1bd35ca143a9cf6eda53c43e160f09d108239e8",
+      "catalogue_measurement_verified": true,
+      "sha256": "f18ec1757478db678e9b233e4ff64294833ae783faaa04b634d1431cb6e62f39",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 9,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-009",
+      "files": 8,
+      "extracted_bytes": 26476614,
+      "aa_sha256_verified_files": 8,
+      "protected_files": 6,
+      "protected_paths": [
+        "AssetData/metadata.json",
+        "AssetData/noise_predictor.mladapters/lora/bottom_and_side_layout.png",
+        "AssetData/noise_predictor.mladapters/lora/bottom_right_layout.png",
+        "AssetData/noise_predictor.mladapters/lora/empty_layout.png",
+        "AssetData/noise_predictor.mladapters/lora/messages_backgrounds.bin",
+        "AssetData/noise_predictor.mladapters/lora/messages_backgrounds.meta.json"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-009/Info.plist",
+          "sha256": "c820e83c58e9f82499ed4151650e49194adc48ed677230850c47aa356cfb3def"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-009/ContentProtection.plist",
+          "sha256": "e1ca31b24282f39da16e84397b09172b48cad9a25f71bdf69cd5a0e47e8aba64"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/messages_backgrounds.meta.json",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:27:56.967259+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.imagescaler.upscaler",
+      "asset_version": "1.3.1.13.101896,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/049-79979/F73EC53A-8BEC-4B7D-A4DF-4ACF7954F7EB/com_apple_MobileAsset_UAF_FM_Visual/D7E1CE98-74C5-418D-A943-2917E5734269.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/D7E1CE98-74C5-418D-A943-2917E5734269.aea",
+      "size": 14680064,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "faa9b390409751567bf008320392b8445d32690a",
+      "catalogue_measurement_verified": true,
+      "sha256": "60b78bc9499e7429ab30d292b55a0e49a6a6aa5d099dcc97abea7b1649dfef83",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 10,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-010",
+      "files": 12,
+      "extracted_bytes": 14375618,
+      "aa_sha256_verified_files": 12,
+      "protected_files": 10,
+      "protected_paths": [
+        "AssetData/cnn_gp_mlscaler.mlmodelc/analytics/coremldata.bin",
+        "AssetData/cnn_gp_mlscaler.mlmodelc/coremldata.bin",
+        "AssetData/cnn_gp_mlscaler.mlmodelc/metadata.json",
+        "AssetData/cnn_gp_mlscaler.mlmodelc/model.mil",
+        "AssetData/cnn_gp_mlscaler.mlmodelc/weights/weight.bin",
+        "AssetData/cnn_gp_mlscaler4x.mlmodelc/analytics/coremldata.bin",
+        "AssetData/cnn_gp_mlscaler4x.mlmodelc/coremldata.bin",
+        "AssetData/cnn_gp_mlscaler4x.mlmodelc/metadata.json",
+        "AssetData/cnn_gp_mlscaler4x.mlmodelc/model.mil",
+        "AssetData/cnn_gp_mlscaler4x.mlmodelc/weights/weight.bin"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-010/Info.plist",
+          "sha256": "31ae20d36c667ef981198d46ab20df12ae79156f14099901e71b30d6a4469dbb"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-010/ContentProtection.plist",
+          "sha256": "c33ec82ae3a60878602288557572106c56b709730d16af8d79eec59d81221d30"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/cnn_gp_mlscaler.mlmodelc/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/cnn_gp_mlscaler.mlmodelc/model.mil",
+          "readable": false
+        },
+        {
+          "path": "AssetData/cnn_gp_mlscaler4x.mlmodelc/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/cnn_gp_mlscaler4x.mlmodelc/model.mil",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:27:57.360380+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.imageplayground.curatedprompts",
+      "asset_version": "1.0.4.13.101896,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/049-80024/310290B9-8B08-4F03-8E14-353079AE9C96/com_apple_MobileAsset_UAF_FM_Visual/F0FEB4D4-A142-4416-AC95-1A7C129B0FAE.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/F0FEB4D4-A142-4416-AC95-1A7C129B0FAE.aea",
+      "size": 3145728,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "9f045692c2d0c69bf80273883ee422f1d1707c60",
+      "catalogue_measurement_verified": true,
+      "sha256": "8aad5dc6810f837f8c8d68585bf184b139df0ca3f11f00410e56681ff0d393fe",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 11,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-011",
+      "files": 5,
+      "extracted_bytes": 3106867,
+      "aa_sha256_verified_files": 5,
+      "protected_files": 3,
+      "protected_paths": [
+        "AssetData/CuratedPrompts.bundle/Assets.car",
+        "AssetData/CuratedPrompts.bundle/Info.plist",
+        "AssetData/CuratedPrompts.bundle/en.lproj/curated_prompts.plist"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-011/Info.plist",
+          "sha256": "414fe4909c1310382aab428fb8b42155c3111ad94d6ae4da5430d1591cf6716c"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-011/ContentProtection.plist",
+          "sha256": "49397868012211347454e8837fb212be21eeb3b9431f3940715aeeed5ad672d5"
+        }
+      ],
+      "small_graph_metadata_parse_checks": []
+    },
+    {
+      "at": "2026-10-26T20:27:57.383586+00:00",
+      "status": "reused_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.emoji",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16994/458145DE-23DA-4349-8BCD-13AD99E2D249/com_apple_MobileAsset_UAF_FM_Visual/0DBA243B-87F4-4D42-BB7A-49E043896AC2.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/0DBA243B-87F4-4D42-BB7A-49E043896AC2.aea",
+      "size": 26214400,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "30fad4814a9fd1f97d9ffd6bc129a4779e4d7524",
+      "catalogue_measurement_verified": true,
+      "sha256": "51d8ae32cc8306e252ca4d626e845133ca8e38fa7c12ed2e6659f316ca8e6f52",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 13,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-emoji",
+      "files": 5,
+      "extracted_bytes": 25803044,
+      "aa_sha256_verified_files": 5,
+      "protected_files": 3,
+      "protected_paths": [
+        "AssetData/metadata.json",
+        "AssetData/noise_predictor.mladapters/lora/emoji.bin",
+        "AssetData/noise_predictor.mladapters/lora/emoji.meta.json"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-013/Info.plist",
+          "sha256": "2ed5ff136a0108f0e390f6ed039368e7ca2b083149b32120c583942536de59ba"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-013/ContentProtection.plist",
+          "sha256": "db9b1f326f021a715bf1fe830ec0adaa5e964a402e66d94cfcf161a471fc66c6"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/emoji.meta.json",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:27:58.044082+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.personalized_emoji",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16978/412CBA5F-8EFA-4080-B474-FA53A492FC64/com_apple_MobileAsset_UAF_FM_Visual/05663654-E609-4EAB-AB19-6D19BF5224CC.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/05663654-E609-4EAB-AB19-6D19BF5224CC.aea",
+      "size": 26214400,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "c9d6e4f7ed2515126feb72ccfc881b91e9a54ab4",
+      "catalogue_measurement_verified": true,
+      "sha256": "a3ec306f981ff95f113acf80222f2441d49669462c120932e70466df7658cdd9",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 16,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-016",
+      "files": 5,
+      "extracted_bytes": 25803017,
+      "aa_sha256_verified_files": 5,
+      "protected_files": 3,
+      "protected_paths": [
+        "AssetData/metadata.json",
+        "AssetData/noise_predictor.mladapters/lora/personalized_emoji.bin",
+        "AssetData/noise_predictor.mladapters/lora/personalized_emoji.meta.json"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-016/Info.plist",
+          "sha256": "36468bbf145db29c6a06a6a5167a4eb25d77bfb11e4501ac034b1111e2cbac67"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-016/ContentProtection.plist",
+          "sha256": "433777a008cfaf1b5b8a496c15f884df6349815bd44218df6d13e62d13517b4a"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/personalized_emoji.meta.json",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:27:58.261424+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.style_scribble",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16972/7371D367-3ECA-47B5-A057-C675BB8D7183/com_apple_MobileAsset_UAF_FM_Visual/B0DFC536-BF11-4BBE-98CC-79D4700A79E0.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/B0DFC536-BF11-4BBE-98CC-79D4700A79E0.aea",
+      "size": 26214400,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "b1d1e6d04a0d6d4a671f3bf596c488c1185e02dd",
+      "catalogue_measurement_verified": true,
+      "sha256": "42084afa626ab32dd0aa375e4389d86831a5267f849c7bf9b79be541e13a2195",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 21,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-021",
+      "files": 5,
+      "extracted_bytes": 25802938,
+      "aa_sha256_verified_files": 5,
+      "protected_files": 3,
+      "protected_paths": [
+        "AssetData/metadata.json",
+        "AssetData/noise_predictor.mladapters/lora/style_scribble.bin",
+        "AssetData/noise_predictor.mladapters/lora/style_scribble.meta.json"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-021/Info.plist",
+          "sha256": "667daa16a55095aa55893787a0a27220530ec934f219898372707cbda6404812"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-021/ContentProtection.plist",
+          "sha256": "af08c68586a1a40541f41cb45709061bb8ad1843a78ae936dc4f111bfdece731"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/style_scribble.meta.json",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:27:58.503155+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.uaf.metadata",
+      "asset_version": "4.48.2.13.101751,0",
+      "url": "https://updates.cdn-apple.com/2026/Iris/mobileassets/053-50377/357CCE6F-DCAA-45F1-888F-DE0FC65936DF/com_apple_MobileAsset_UAF_FM_Visual/5AE052C7-DACF-4E9A-A617-7984E7124F71.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/5AE052C7-DACF-4E9A-A617-7984E7124F71.aea",
+      "size": 21504,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "cf541d6987e4c180101b03418b37336378446a34",
+      "catalogue_measurement_verified": true,
+      "sha256": "e8b297e32aeb41ee8d1a9bf04fd501964248b0880cf218489b955519b83b311a",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": null,
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 22,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-022",
+      "files": 2,
+      "extracted_bytes": 1919,
+      "aa_sha256_verified_files": 2,
+      "protected_files": 0,
+      "protected_paths": [],
+      "aea_decrypted": true,
+      "readable_metadata": {
+        "FileType": "AssetSetMetadata",
+        "FileVersion": "1.0.0",
+        "MaxOSVersion": "27.2.9999",
+        "MinOSVersion": "27.2"
+      },
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-022/Info.plist",
+          "sha256": "bb9290bb02af380380228d9eeecc4820ba36442c287fe63a83ff37daf4160c87"
+        },
+        {
+          "source_relative_path": "AssetData/metadata.plist",
+          "evidence": "manifests/rave-022/AssetData/metadata.plist",
+          "sha256": "cd8223a4de972e7d41b1124b98c0ffba04e7b553770e737edef4dc4338f78451"
+        }
+      ],
+      "small_graph_metadata_parse_checks": []
+    },
+    {
+      "at": "2026-10-26T20:27:58.547320+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.gm.prompt_allow_list.input.delta_lexicon.generic",
+      "asset_version": "0.0.1.13.102304,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-28175/1555B1AF-55BC-4E94-ADEF-8B8CAAC1EB11/com_apple_MobileAsset_UAF_FM_Visual/3495DC8A-7C43-4E88-BFB3-C528D78EDD76.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/3495DC8A-7C43-4E88-BFB3-C528D78EDD76.aea",
+      "size": 200704,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "fbb34fd09e688104c5cc70b79cc84edd18a9b4ec",
+      "catalogue_measurement_verified": true,
+      "sha256": "ca9d80649155fb232d87017ff2fbf2df937a8e377fc3a97c6f9f265d11ad3179",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 31,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-031",
+      "files": 24,
+      "extracted_bytes": 178015,
+      "aa_sha256_verified_files": 24,
+      "protected_files": 22,
+      "protected_paths": [
+        "AssetData/unigrams/Unigrams-da.dat",
+        "AssetData/unigrams/Unigrams-da.idx",
+        "AssetData/unigrams/Unigrams-de.dat",
+        "AssetData/unigrams/Unigrams-de.idx",
+        "AssetData/unigrams/Unigrams-en.dat",
+        "AssetData/unigrams/Unigrams-en.idx",
+        "AssetData/unigrams/Unigrams-es.dat",
+        "AssetData/unigrams/Unigrams-es.idx",
+        "AssetData/unigrams/Unigrams-fr.dat",
+        "AssetData/unigrams/Unigrams-fr.idx",
+        "AssetData/unigrams/Unigrams-it.dat",
+        "AssetData/unigrams/Unigrams-it.idx",
+        "AssetData/unigrams/Unigrams-nb.dat",
+        "AssetData/unigrams/Unigrams-nb.idx",
+        "AssetData/unigrams/Unigrams-nl.dat",
+        "AssetData/unigrams/Unigrams-nl.idx",
+        "AssetData/unigrams/Unigrams-pt.dat",
+        "AssetData/unigrams/Unigrams-pt.idx",
+        "AssetData/unigrams/Unigrams-sv.dat",
+        "AssetData/unigrams/Unigrams-sv.idx",
+        "AssetData/unigrams/Unigrams-vi.dat",
+        "AssetData/unigrams/Unigrams-vi.idx"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-031/Info.plist",
+          "sha256": "a1b082d086b77ad153963962114f5a7359e7368f3e5e4f508b3d35de051be987"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-031/ContentProtection.plist",
+          "sha256": "baeb7a46b0fda90f4b43a05ebe9e107854946d6283a7c06d0ac15200ec242464"
+        }
+      ],
+      "small_graph_metadata_parse_checks": []
+    },
+    {
+      "at": "2026-10-26T20:29:39.324630+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.base",
+      "asset_version": "10.5000.81503.13.204122,0",
+      "url": "https://updates.cdn-apple.com/2026/Iris/mobileassets/053-50378/EED3D63F-22F5-4913-A1FD-7A00CDA25F38/com_apple_MobileAsset_UAF_FM_Visual/102EA8DF-47DA-4A4C-9A37-05E26EFD3CAB.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/102EA8DF-47DA-4A4C-9A37-05E26EFD3CAB.aea",
+      "size": 922746880,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "7b68620a4654fa17c7f45f94da3649b7084f7413",
+      "catalogue_measurement_verified": true,
+      "sha256": "1996d8752d18803f7e37bb0c3071bc99161d838cb9e0a30bd142e320e6f7c5e8",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME_COMPRESSED",
+      "requires_personalization": true,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 32,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-032",
+      "files": 10,
+      "extracted_bytes": 1327911636,
+      "aa_sha256_verified_files": 10,
+      "protected_files": 8,
+      "protected_paths": [
+        "AssetData/Restore/BuildManifest.plist",
+        "AssetData/Restore/Firmware/Manifests/restore/cryptex1/UAF.FM.Visual:fm.visual.image_diffusion_v1.base-H15c/apticket.mobileassetx86macosap.im4m",
+        "AssetData/Restore/Firmware/UC_FM_VISUAL_IMAGE_DIFFUSION_V1_BASE_GENERIC_H15C_Cryptex.dmg.cryptex_info",
+        "AssetData/Restore/Firmware/UC_FM_VISUAL_IMAGE_DIFFUSION_V1_BASE_GENERIC_H15C_Cryptex.dmg.integrity_catalog",
+        "AssetData/Restore/Firmware/UC_FM_VISUAL_IMAGE_DIFFUSION_V1_BASE_GENERIC_H15C_Cryptex.dmg.root_hash",
+        "AssetData/Restore/Firmware/UC_FM_VISUAL_IMAGE_DIFFUSION_V1_BASE_GENERIC_H15C_Cryptex.dmg.trustcache",
+        "AssetData/Restore/Restore.plist",
+        "AssetData/Restore/UC_FM_VISUAL_IMAGE_DIFFUSION_V1_BASE_GENERIC_H15C_Cryptex.dmg"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-032/Info.plist",
+          "sha256": "3b03d9e0fa90b15009c312ea6ab6f93571917b63875f9ab2ebb01d9ea2bbd6f4"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-032/ContentProtection.plist",
+          "sha256": "fc169a401740a54d35bc7608f065625cf3a4918d63e8bd13d3a4473e7961683f"
+        }
+      ],
+      "small_graph_metadata_parse_checks": []
+    },
+    {
+      "at": "2026-10-26T20:28:00.579709+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.personalized_sketch",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16967/50D64768-E882-4749-A1F3-44415F909E09/com_apple_MobileAsset_UAF_FM_Visual/4E9F7C17-ED4A-4E07-A4FF-E69319EC390F.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/4E9F7C17-ED4A-4E07-A4FF-E69319EC390F.aea",
+      "size": 81788928,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "0a5a083b47797d183460e503fb4ea06711949b49",
+      "catalogue_measurement_verified": true,
+      "sha256": "d9a1d6e3bbc54d7bba2027f8763e9c7b2bbd72c03cac0aa30e46ea07340b6a2b",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 33,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-033",
+      "files": 10,
+      "extracted_bytes": 80344396,
+      "aa_sha256_verified_files": 10,
+      "protected_files": 8,
+      "protected_paths": [
+        "AssetData/metadata.json",
+        "AssetData/noise_predictor.mladapters/lora/personalized_sketch.bin",
+        "AssetData/noise_predictor.mladapters/lora/personalized_sketch.meta.json",
+        "AssetData/personalized_sketch_conditioning_producer.mlmodelc/analytics/coremldata.bin",
+        "AssetData/personalized_sketch_conditioning_producer.mlmodelc/coremldata.bin",
+        "AssetData/personalized_sketch_conditioning_producer.mlmodelc/metadata.json",
+        "AssetData/personalized_sketch_conditioning_producer.mlmodelc/model.mil",
+        "AssetData/personalized_sketch_conditioning_producer.mlmodelc/weights/weight.bin"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-033/Info.plist",
+          "sha256": "740684b0c8650eec8fffc7a662a6f42d7a5d52d7f154f9b74a3019a185072df2"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-033/ContentProtection.plist",
+          "sha256": "377db465e0a12ed4618a0fb601891d51c828d8343ce3ed605ee289427ad5fc60"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/personalized_sketch.meta.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/personalized_sketch_conditioning_producer.mlmodelc/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/personalized_sketch_conditioning_producer.mlmodelc/model.mil",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:28:01.168613+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.gm.safety_deny.input.visual_generation.safety.generic",
+      "asset_version": "0.0.21.13.103357,0",
+      "url": "https://updates.cdn-apple.com/iris-cicd/634f8d88-0a90-4036-8948-463441cfd356/com_apple_MobileAsset_UAF_FM_Visual/DC2133A0-E48F-4A12-879C-1F18960FD2AF.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/DC2133A0-E48F-4A12-879C-1F18960FD2AF.aea",
+      "size": 18350080,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "9eac7a908a1f666ecf687d26230c5262da9755c4",
+      "catalogue_measurement_verified": true,
+      "sha256": "94d45620cc4ab5897ea0891925ec2f3cd147d79fd0f1a46ef83f969e7d12130b",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME_COMPRESSED",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 42,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-042",
+      "files": 64,
+      "extracted_bytes": 18325992,
+      "aa_sha256_verified_files": 64,
+      "protected_files": 62,
+      "protected_paths": [
+        "AssetData/blocklists/apple_products/apple_products.gaze",
+        "AssetData/blocklists/blocklists_config.json",
+        "AssetData/blocklists/desecration_verbs/desecration_verbs.gaze",
+        "AssetData/blocklists/drugs/drugs.gaze",
+        "AssetData/blocklists/full_disallow/full_disallow.gaze",
+        "AssetData/blocklists/full_sensitive_for_personalization/full_sensitive_for_personalization.gaze",
+        "AssetData/blocklists/minor_sensitive_tokens/minor_sensitive_tokens.gaze",
+        "AssetData/blocklists/sacred_items/sacred_items.gaze",
+        "AssetData/blocklists/sensitive_for_personalization/sensitive_for_personalization.gaze",
+        "AssetData/blocklists/sensitive_tokens/sensitive_tokens.gaze",
+        "AssetData/blocklists/sensitive_tokens/sensitive_tokens.nb.gaze",
+        "AssetData/entities/copyrighted/copyrighted.da.gaze",
+        "AssetData/entities/copyrighted/copyrighted.de.gaze",
+        "AssetData/entities/copyrighted/copyrighted.en.gaze",
+        "AssetData/entities/copyrighted/copyrighted.es.gaze",
+        "AssetData/entities/copyrighted/copyrighted.fr.gaze",
+        "AssetData/entities/copyrighted/copyrighted.gaze",
+        "AssetData/entities/copyrighted/copyrighted.it.gaze",
+        "AssetData/entities/copyrighted/copyrighted.ja.gaze",
+        "AssetData/entities/copyrighted/copyrighted.ko.gaze",
+        "AssetData/entities/copyrighted/copyrighted.nb.gaze",
+        "AssetData/entities/copyrighted/copyrighted.nl.gaze",
+        "AssetData/entities/copyrighted/copyrighted.pt.gaze",
+        "AssetData/entities/copyrighted/copyrighted.sv.gaze",
+        "AssetData/entities/copyrighted/copyrighted.tr.gaze",
+        "AssetData/entities/copyrighted/copyrighted.vi.gaze",
+        "AssetData/entities/copyrighted/copyrighted.zh-Hans.gaze",
+        "AssetData/entities/copyrighted/copyrighted.zh-Hant.gaze",
+        "AssetData/entities/fictional_character/fictional_character.da.gaze",
+        "AssetData/entities/fictional_character/fictional_character.de.gaze",
+        "AssetData/entities/fictional_character/fictional_character.en.gaze",
+        "AssetData/entities/fictional_character/fictional_character.es.gaze",
+        "AssetData/entities/fictional_character/fictional_character.fr.gaze",
+        "AssetData/entities/fictional_character/fictional_character.gaze",
+        "AssetData/entities/fictional_character/fictional_character.it.gaze",
+        "AssetData/entities/fictional_character/fictional_character.ja.gaze",
+        "AssetData/entities/fictional_character/fictional_character.ko.gaze",
+        "AssetData/entities/fictional_character/fictional_character.nb.gaze",
+        "AssetData/entities/fictional_character/fictional_character.nl.gaze",
+        "AssetData/entities/fictional_character/fictional_character.pt.gaze",
+        "AssetData/entities/fictional_character/fictional_character.sv.gaze",
+        "AssetData/entities/fictional_character/fictional_character.tr.gaze",
+        "AssetData/entities/fictional_character/fictional_character.vi.gaze",
+        "AssetData/entities/fictional_character/fictional_character.zh-Hans.gaze",
+        "AssetData/entities/fictional_character/fictional_character.zh-Hant.gaze",
+        "AssetData/entities/public_figure/public_figure.da.gaze",
+        "AssetData/entities/public_figure/public_figure.de.gaze",
+        "AssetData/entities/public_figure/public_figure.en.gaze",
+        "AssetData/entities/public_figure/public_figure.es.gaze",
+        "AssetData/entities/public_figure/public_figure.fr.gaze",
+        "AssetData/entities/public_figure/public_figure.gaze",
+        "AssetData/entities/public_figure/public_figure.it.gaze",
+        "AssetData/entities/public_figure/public_figure.ja.gaze",
+        "AssetData/entities/public_figure/public_figure.ko.gaze",
+        "AssetData/entities/public_figure/public_figure.nb.gaze",
+        "AssetData/entities/public_figure/public_figure.nl.gaze",
+        "AssetData/entities/public_figure/public_figure.pt.gaze",
+        "AssetData/entities/public_figure/public_figure.sv.gaze",
+        "AssetData/entities/public_figure/public_figure.tr.gaze",
+        "AssetData/entities/public_figure/public_figure.vi.gaze",
+        "AssetData/entities/public_figure/public_figure.zh-Hans.gaze",
+        "AssetData/entities/public_figure/public_figure.zh-Hant.gaze"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-042/Info.plist",
+          "sha256": "586fdd3cbe3cd6de3e5a8bd1c17dd79992d354a9dda975b61f112f4bbf662325"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-042/ContentProtection.plist",
+          "sha256": "11e21ef30fa4a70cbe0c821fbd33a410d586162d4eb6af24d85851bf7b51353d"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/blocklists/blocklists_config.json",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:28:01.788247+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.animation",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16989/F46742E5-B520-4A92-A8A4-71FDA3118B63/com_apple_MobileAsset_UAF_FM_Visual/46D95CAF-3E55-4C3D-9B7C-8F920DAD42CE.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/46D95CAF-3E55-4C3D-9B7C-8F920DAD42CE.aea",
+      "size": 26214400,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "056955dcf63ea71f901f57cde4f7967c06fb57da",
+      "catalogue_measurement_verified": true,
+      "sha256": "dc9f64fbb8895336604273b4aef48bc46a795254d6a0dc9a5f567eb9478b725f",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 44,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-044",
+      "files": 5,
+      "extracted_bytes": 25802603,
+      "aa_sha256_verified_files": 5,
+      "protected_files": 3,
+      "protected_paths": [
+        "AssetData/metadata.json",
+        "AssetData/noise_predictor.mladapters/lora/animation.bin",
+        "AssetData/noise_predictor.mladapters/lora/animation.meta.json"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-044/Info.plist",
+          "sha256": "36646e6836058709c6491e8dc791e58debbd4bb143c019bca07afc5138c8d621"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-044/ContentProtection.plist",
+          "sha256": "db9e887bcb7834d46c50ce49bb4b3ca17f05af6891f1d67e1da7d98ecf87fbd3"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/animation.meta.json",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:28:02.042068+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.uaf.metadata",
+      "asset_version": "4.48.8.13.101751,0",
+      "url": "https://updates.cdn-apple.com/2026/Iris/mobileassets/053-50364/1E774155-A41F-46BE-9831-D172015B621E/com_apple_MobileAsset_UAF_FM_Visual/44BDFB4C-266B-45A6-B02B-1FF356AA986B.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/44BDFB4C-266B-45A6-B02B-1FF356AA986B.aea",
+      "size": 21504,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "89dd0dc5456e7b7c4c641d10a9f4ca158d20c478",
+      "catalogue_measurement_verified": true,
+      "sha256": "07b7171cd39cfe00db1abe67ded903df467bf520958438ae1ac5757e47224d63",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": null,
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 46,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-046",
+      "files": 2,
+      "extracted_bytes": 1919,
+      "aa_sha256_verified_files": 2,
+      "protected_files": 0,
+      "protected_paths": [],
+      "aea_decrypted": true,
+      "readable_metadata": {
+        "FileType": "AssetSetMetadata",
+        "FileVersion": "1.0.0",
+        "MaxOSVersion": "27.2.9999",
+        "MinOSVersion": "27.2"
+      },
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-046/Info.plist",
+          "sha256": "295cc01c45d949004cb438eea081a0b2a751ff332d00d8f61d8dc11166e3729b"
+        },
+        {
+          "source_relative_path": "AssetData/metadata.plist",
+          "evidence": "manifests/rave-046/AssetData/metadata.plist",
+          "sha256": "cd8223a4de972e7d41b1124b98c0ffba04e7b553770e737edef4dc4338f78451"
+        }
+      ],
+      "small_graph_metadata_parse_checks": []
+    },
+    {
+      "at": "2026-10-26T20:28:02.175018+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.uaf.metadata",
+      "asset_version": "4.48.1.13.101751,0",
+      "url": "https://updates.cdn-apple.com/2026/Iris/mobileassets/053-50376/847FDE5A-1586-40B0-B41F-6E5CD51397E8/com_apple_MobileAsset_UAF_FM_Visual/9F1B0009-5F6B-4298-97CD-8EDDB06346B4.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/9F1B0009-5F6B-4298-97CD-8EDDB06346B4.aea",
+      "size": 21504,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "ec07b0499db9a9ae00a19b683020389cbfb54f27",
+      "catalogue_measurement_verified": true,
+      "sha256": "d16d9d47e3e540690195c6a42179315cbd2a1fe4ae50297ddaa836d35ba40d78",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": null,
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 47,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-047",
+      "files": 2,
+      "extracted_bytes": 1919,
+      "aa_sha256_verified_files": 2,
+      "protected_files": 0,
+      "protected_paths": [],
+      "aea_decrypted": true,
+      "readable_metadata": {
+        "FileType": "AssetSetMetadata",
+        "FileVersion": "1.0.0",
+        "MaxOSVersion": "27.2.9999",
+        "MinOSVersion": "27.2"
+      },
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-047/Info.plist",
+          "sha256": "e0cfb0608dd38fbf301c67846b0c0e0a219ab2dba5e48c30286de5ba89706326"
+        },
+        {
+          "source_relative_path": "AssetData/metadata.plist",
+          "evidence": "manifests/rave-047/AssetData/metadata.plist",
+          "sha256": "cd8223a4de972e7d41b1124b98c0ffba04e7b553770e737edef4dc4338f78451"
+        }
+      ],
+      "small_graph_metadata_parse_checks": []
+    },
+    {
+      "at": "2026-10-26T20:28:06.288179+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.skintone_emoji",
+      "asset_version": "3.0.0.13.101896,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/049-80018/ABFD5D0B-17B9-4B19-9029-074CF300C06D/com_apple_MobileAsset_UAF_FM_Visual/568816F6-5872-4AA3-BB2F-5591BE4C6260.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/568816F6-5872-4AA3-BB2F-5591BE4C6260.aea",
+      "size": 75497472,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "aaf7258517da7739fdbc17a2a7d0c6b4591b5e59",
+      "catalogue_measurement_verified": true,
+      "sha256": "9fb65ece24b316e0ec3ab3b272fb23df8f02ef07a7d0cb74c37a2e2d83be55b5",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 49,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-049",
+      "files": 4,
+      "extracted_bytes": 74478289,
+      "aa_sha256_verified_files": 4,
+      "protected_files": 2,
+      "protected_paths": [
+        "AssetData/noise_predictor.mladapters/lora/skintone_emoji.bin",
+        "AssetData/noise_predictor.mladapters/lora/skintone_emoji.meta.json"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-049/Info.plist",
+          "sha256": "8ac5121f051a03f2e845342785062ed717697d7e366f860a7d7ca4a6716fe15c"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-049/ContentProtection.plist",
+          "sha256": "9a35332c8819116a3ee1ca3b8c1a715093eb995af003da3340367192931623bf"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/skintone_emoji.meta.json",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:28:03.955703+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.illustration",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16990/CC9D306F-09B2-437F-BCCC-581047D9619F/com_apple_MobileAsset_UAF_FM_Visual/5D15C608-B316-455E-853E-6839BA89DC79.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/5D15C608-B316-455E-853E-6839BA89DC79.aea",
+      "size": 26214400,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "980bbdb1228a068704ca8ccf812bc2093eb7dfc2",
+      "catalogue_measurement_verified": true,
+      "sha256": "f7e1963c49a92803a53321006495a22bcb992eb467135b78f7877480c33119d9",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 50,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-050",
+      "files": 5,
+      "extracted_bytes": 25802544,
+      "aa_sha256_verified_files": 5,
+      "protected_files": 3,
+      "protected_paths": [
+        "AssetData/metadata.json",
+        "AssetData/noise_predictor.mladapters/lora/illustration.bin",
+        "AssetData/noise_predictor.mladapters/lora/illustration.meta.json"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-050/Info.plist",
+          "sha256": "286b57202a821f3dd2602a0ed3e12548bfeea68df0b3189e5df8e0f46c6469ab"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-050/ContentProtection.plist",
+          "sha256": "2f325b60abc4ca0a13a8295ddd623d4aa9236fe2e44e0a2cd5de1e3c707254fd"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/illustration.meta.json",
+          "readable": false
+        }
+      ]
+    },
+    {
+      "at": "2026-10-26T20:22:33.209004+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.uaf.metadata",
+      "asset_version": "4.50.1.13.101766,0",
+      "url": "https://updates.cdn-apple.com/iris-cicd/1940a5a7-a2b9-4fe3-a73b-12b5bf58bfcb/com_apple_MobileAsset_UAF_FM_Visual/C702C708-C900-4F16-A355-5E000177533D.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/C702C708-C900-4F16-A355-5E000177533D.aea",
+      "size": 21504,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "f5f030635317c4f67d80d2812a9f0ef0a0202844",
+      "catalogue_measurement_verified": true,
+      "sha256": "5c3f41a75153e4a132acdad7ccb7e928c28f71d6981c7b3f0f6f96dfe6aa3ea2",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": null,
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 63,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-metadata-4501",
+      "files": 2,
+      "extracted_bytes": 1919,
+      "aa_sha256_verified_files": 0,
+      "protected_files": 0,
+      "protected_paths": [],
+      "aea_decrypted": true,
+      "readable_metadata": {
+        "FileType": "AssetSetMetadata",
+        "FileVersion": "1.0.0",
+        "MaxOSVersion": "27.4.9999",
+        "MinOSVersion": "27.4"
+      },
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-063/Info.plist",
+          "sha256": "ce9228336f02a81c4549d3a968e6c879cdd50d044152785a7b16fe2a5627e13a"
+        },
+        {
+          "source_relative_path": "AssetData/metadata.plist",
+          "evidence": "manifests/rave-063/AssetData/metadata.plist",
+          "sha256": "a6e32eb07587c8101f4180f5a2891f4e93ab42a28ad10ebf95cbddfad879ed8e"
+        }
+      ],
+      "small_graph_metadata_parse_checks": []
+    },
+    {
+      "at": "2026-10-26T20:28:04.499369+00:00",
+      "status": "downloaded_verified",
+      "asset_specifier": "com.apple.fm.visual.image_diffusion_v1.sketch",
+      "asset_version": "10.5000.0.13.102206,0",
+      "url": "https://updates.cdn-apple.com/2025/Iris/mobileassets/053-16992/F6D4BB2F-2BB0-41C6-BE6A-A26CF5B87CF1/com_apple_MobileAsset_UAF_FM_Visual/2A1AFC7E-839F-461A-9B40-F3F302C66571.aea",
+      "path": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/archives/2A1AFC7E-839F-461A-9B40-F3F302C66571.aea",
+      "size": 26214400,
+      "catalogue_measurement_algorithm": "SHA-1",
+      "catalogue_measurement_hex": "4726f49d2a54974be76e2199fd60a67b8cc3486e",
+      "catalogue_measurement_verified": true,
+      "sha256": "2c880d02877c977be00bea32c808681106a2d1a4653c2838df5ae489420c3030",
+      "asset_format": "AppleEncryptedArchive",
+      "content_encryption": "DSME",
+      "requires_personalization": false,
+      "plaintext_weights_verified": false,
+      "image_inference_performed": false,
+      "catalogue_index": 71,
+      "source_catalogue_sha256": "d0506afaf3b8ef90eb99d0357075f7e5207388e37c9510bdbba99cb62d1ea936",
+      "extracted_directory": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/extracted/rave-asset-071",
+      "files": 5,
+      "extracted_bytes": 25802574,
+      "aa_sha256_verified_files": 5,
+      "protected_files": 3,
+      "protected_paths": [
+        "AssetData/metadata.json",
+        "AssetData/noise_predictor.mladapters/lora/sketch.bin",
+        "AssetData/noise_predictor.mladapters/lora/sketch.meta.json"
+      ],
+      "aea_decrypted": true,
+      "manifest_evidence": [
+        {
+          "source_relative_path": "Info.plist",
+          "evidence": "manifests/rave-071/Info.plist",
+          "sha256": "6bcaea5d87406771bbf64927ca101dfb3ba85e0398cfbeb97fc7577ace30711f"
+        },
+        {
+          "source_relative_path": "ContentProtection.plist",
+          "evidence": "manifests/rave-071/ContentProtection.plist",
+          "sha256": "8f15578d8adc5c5fa22b09bf6426765b995710a21a3445810c16450c5dc2719e"
+        }
+      ],
+      "small_graph_metadata_parse_checks": [
+        {
+          "path": "AssetData/metadata.json",
+          "readable": false
+        },
+        {
+          "path": "AssetData/noise_predictor.mladapters/lora/sketch.meta.json",
+          "readable": false
+        }
+      ]
+    }
+  ],
+  "catalogue_signature_and_chain_verified": true,
+  "certificate_validation_unix_time": 1793046504,
+  "archive_count": 24,
+  "download_bytes": 2446657536,
+  "extracted_files": 217,
+  "extracted_bytes": 3276258201,
+  "protected_files": 169,
+  "complete_plaintext_bundle": false,
+  "hardware_variant_resolved": false,
+  "image_inference_performed": false,
+  "generated_images": 0
+}

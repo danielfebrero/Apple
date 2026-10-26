@@ -1,0 +1,459 @@
+{
+  "uaf_file": "/workspace/Apple/Apple Intelligence/extracted/rootfs/System/Library/UnifiedAssetFramework/AssetSets/com.apple.MobileAsset.UAF.FM.Visual.plist",
+  "uaf_sha256": "3f22c9feaae28c8b2dd8d1de87f0f6adbbca2a6b30aa966ed129740302d29a87",
+  "logical_assets": 18,
+  "usage_types": 17,
+  "distinct_diffusion_names_and_templates": [
+    "com.apple.fm.visual.image_diffusion_v1.base",
+    "com.apple.fm.visual.image_diffusion_v1.base.generic",
+    "com.apple.fm.visual.image_diffusion_v1.base.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.emoji",
+    "com.apple.fm.visual.image_diffusion_v1.emoji.generic",
+    "com.apple.fm.visual.image_diffusion_v1.emoji.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds",
+    "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic",
+    "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.personalized_emoji",
+    "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic",
+    "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.style_scribble",
+    "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic",
+    "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic_alternate"
+  ],
+  "diffusion_logical_assets": 10,
+  "coverage": [
+    {
+      "logical_asset": "com.apple.fm.visual.image_diffusion_v1.base.generic",
+      "templates": [
+        "com.apple.fm.visual.image_diffusion_v1.base"
+      ],
+      "catalogue_indices": [
+        4,
+        5,
+        12,
+        15,
+        17,
+        20,
+        25,
+        26,
+        27,
+        29,
+        32,
+        35,
+        37,
+        40,
+        41,
+        51,
+        53,
+        55,
+        57,
+        58,
+        59,
+        60,
+        61,
+        64,
+        66,
+        67,
+        72
+      ],
+      "acquired_indices": [
+        4,
+        32
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.image_diffusion_v1.base.generic_alternate",
+      "templates": [
+        "com.apple.fm.visual.image_diffusion_v1.base.generic_alternate"
+      ],
+      "catalogue_indices": [],
+      "acquired_indices": [],
+      "resolution": "not_returned_by_this_query",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.image_diffusion_v1.emoji.generic",
+      "templates": [
+        "com.apple.fm.visual.image_diffusion_v1.emoji"
+      ],
+      "catalogue_indices": [
+        13
+      ],
+      "acquired_indices": [
+        13
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.image_diffusion_v1.emoji.generic_alternate",
+      "templates": [
+        "com.apple.fm.visual.image_diffusion_v1.emoji.generic_alternate"
+      ],
+      "catalogue_indices": [],
+      "acquired_indices": [],
+      "resolution": "not_returned_by_this_query",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic",
+      "templates": [
+        "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds"
+      ],
+      "catalogue_indices": [
+        9,
+        52
+      ],
+      "acquired_indices": [
+        9
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic_alternate",
+      "templates": [
+        "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic_alternate"
+      ],
+      "catalogue_indices": [],
+      "acquired_indices": [],
+      "resolution": "not_returned_by_this_query",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic",
+      "templates": [
+        "com.apple.fm.visual.image_diffusion_v1.personalized_emoji"
+      ],
+      "catalogue_indices": [
+        16
+      ],
+      "acquired_indices": [
+        16
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic_alternate",
+      "templates": [
+        "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic_alternate"
+      ],
+      "catalogue_indices": [],
+      "acquired_indices": [],
+      "resolution": "not_returned_by_this_query",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic",
+      "templates": [
+        "com.apple.fm.visual.image_diffusion_v1.style_scribble"
+      ],
+      "catalogue_indices": [
+        21,
+        62
+      ],
+      "acquired_indices": [
+        21
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic_alternate",
+      "templates": [
+        "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic_alternate"
+      ],
+      "catalogue_indices": [],
+      "acquired_indices": [],
+      "resolution": "not_returned_by_this_query",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.imageplayground.curatedprompts.generic",
+      "templates": [
+        "com.apple.fm.visual.imageplayground.curatedprompts"
+      ],
+      "catalogue_indices": [
+        11,
+        56
+      ],
+      "acquired_indices": [
+        11
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.imagescaler.upscaler.generic",
+      "templates": [
+        "com.apple.fm.visual.imagescaler.upscaler"
+      ],
+      "catalogue_indices": [
+        10,
+        14
+      ],
+      "acquired_indices": [
+        10
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.understanding.conditioning.generic",
+      "templates": [
+        "com.apple.fm.visual.understanding.conditioning"
+      ],
+      "catalogue_indices": [
+        0,
+        8
+      ],
+      "acquired_indices": [
+        0
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.understanding.conditioning.generic_alternate",
+      "templates": [
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate"
+      ],
+      "catalogue_indices": [],
+      "acquired_indices": [],
+      "resolution": "not_returned_by_this_query",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.gm.image_generation_services.debiasing.metadata.generic",
+      "templates": [
+        "com.apple.gm.image_generation_services.debiasing.metadata.generic"
+      ],
+      "catalogue_indices": [],
+      "acquired_indices": [],
+      "resolution": "not_returned_by_this_query",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.gm.prompt_allow_list.input.delta_lexicon.generic",
+      "templates": [
+        "com.apple.gm.prompt_allow_list.input.delta_lexicon.generic"
+      ],
+      "catalogue_indices": [
+        31,
+        65
+      ],
+      "acquired_indices": [
+        31
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.gm.safety_deny.input.visual_generation.safety.generic",
+      "templates": [
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic"
+      ],
+      "catalogue_indices": [
+        18,
+        42,
+        54,
+        68
+      ],
+      "acquired_indices": [
+        42
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    },
+    {
+      "logical_asset": "com.apple.fm.visual.uaf.metadata",
+      "templates": [
+        "com.apple.fm.visual.uaf.metadata"
+      ],
+      "catalogue_indices": [
+        3,
+        6,
+        7,
+        19,
+        22,
+        23,
+        24,
+        28,
+        30,
+        34,
+        36,
+        38,
+        39,
+        43,
+        45,
+        46,
+        47,
+        48,
+        63,
+        69
+      ],
+      "acquired_indices": [
+        3,
+        6,
+        22,
+        46,
+        47,
+        63
+      ],
+      "resolution": "template_present",
+      "plaintext_component_verified": false
+    }
+  ],
+  "unreturned_templates_are_not_proven_nonexistent": true,
+  "hardware": {
+    "source": "/workspace/Apple/Apple Intelligence/review/BuildManifest.plist",
+    "source_sha256": "abba3b0916614585b2213b723cd4e1a34c9939ed3ba839f3fd3fe155179ddc96",
+    "product_types": [
+      "iPhone18,3"
+    ],
+    "chip_id": "0x8150",
+    "board_id": "0x08",
+    "device_class": "v57ap",
+    "build_train": "RaveB",
+    "build": "24B115",
+    "catalogue_hardware_mapping_established": false
+  },
+  "firmware_literals": [
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x63cfeff",
+      "literal": "https://gdmf.apple.com/v2/assets"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x63cff20",
+      "literal": "https://gdmf-auth.apple.com/v2/assets"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x63cff46",
+      "literal": "https://gdmf-ados.apple.com/v2/assets"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x63d014d",
+      "literal": "0c88076f-c292-4dad-95e7-304db9d29d34"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x63d8a7e",
+      "literal": "IOService:/IOResources/AppleKeyStore"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x63d8afc",
+      "literal": "aks_get_dsme_key"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x63d97e7",
+      "literal": "DSME_COMPRESSED"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x63d9864",
+      "literal": "ContentProtection.plist"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x63d98df",
+      "literal": "failed to verify GCM tag"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x6434cf6",
+      "literal": "Successfully fetched dsme key"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x6434d2d",
+      "literal": "Fetching of dsme key not supported here"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "cache_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "file_offset": "0x6434fba",
+      "literal": "Successfully decrypted all files under %@"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "cache_sha256": "900cc4d004f14b2df137b4ac4ca46719444556c5a90ad5381d2a499a3385cb27",
+      "file_offset": "0xe0c170",
+      "literal": "noise_predictorChunk1"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "cache_sha256": "900cc4d004f14b2df137b4ac4ca46719444556c5a90ad5381d2a499a3385cb27",
+      "file_offset": "0xe0c150",
+      "literal": "noise_predictorChunk2"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "cache_sha256": "900cc4d004f14b2df137b4ac4ca46719444556c5a90ad5381d2a499a3385cb27",
+      "file_offset": "0xe0c186",
+      "literal": "noise_predictor"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "cache_sha256": "900cc4d004f14b2df137b4ac4ca46719444556c5a90ad5381d2a499a3385cb27",
+      "file_offset": "0xe0c136",
+      "literal": "clip_encoder"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "cache_sha256": "900cc4d004f14b2df137b4ac4ca46719444556c5a90ad5381d2a499a3385cb27",
+      "file_offset": "0xe0bfa0",
+      "literal": "decoder_alpha_emoji"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "cache_sha256": "900cc4d004f14b2df137b4ac4ca46719444556c5a90ad5381d2a499a3385cb27",
+      "file_offset": "0xe0c0c0",
+      "literal": "local_conditioning_producer.mlmodelc"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "cache_sha256": "900cc4d004f14b2df137b4ac4ca46719444556c5a90ad5381d2a499a3385cb27",
+      "file_offset": "0xe0a380",
+      "literal": "face_encoder.mlmodelc"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "cache_sha256": "900cc4d004f14b2df137b4ac4ca46719444556c5a90ad5381d2a499a3385cb27",
+      "file_offset": "0xe257d0",
+      "literal": "dpmSolverMultistepScheduler"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "cache_sha256": "900cc4d004f14b2df137b4ac4ca46719444556c5a90ad5381d2a499a3385cb27",
+      "file_offset": "0xe257ec",
+      "literal": "lcmScheduler"
+    },
+    {
+      "cache": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "cache_sha256": "900cc4d004f14b2df137b4ac4ca46719444556c5a90ad5381d2a499a3385cb27",
+      "file_offset": "0xe25811",
+      "literal": "flowScheduler"
+    }
+  ],
+  "scope_note": "Exact strings and offsets establish firmware evidence, not a reconstructed call graph, extracted DSME key, or successful inference."
+}

@@ -1,0 +1,88 @@
+{
+  "source": "/workspace/Apple/Apple Intelligence/models/cache/mobileasset-visual/decrypted/4E9F7C17-ED4A-4E07-A4FF-E69319EC390F",
+  "source_sha256": "bdb1d6a5629e80c12989c4e429bca27a52a3d685b500249d3f55c0ec418fcfa5",
+  "files": [
+    {
+      "path": "AssetData/metadata.json",
+      "size": 39,
+      "sha256": "d0d85f41bc3cadbc711636172e1b59ca381a825cb1f60c20401606e94b1255bc",
+      "archive_sha256_verified": true,
+      "yec_verified": false,
+      "depth": 1
+    },
+    {
+      "path": "AssetData/noise_predictor.mladapters/lora/personalized_sketch.bin",
+      "size": 25798464,
+      "sha256": "cefc60edf417443174c7a69d99eed04264ed0bd19c99aa13d323f786035faa85",
+      "archive_sha256_verified": true,
+      "yec_verified": false,
+      "depth": 1
+    },
+    {
+      "path": "AssetData/noise_predictor.mladapters/lora/personalized_sketch.meta.json",
+      "size": 2033,
+      "sha256": "e5bce7c0d2b99129a092a2e245d529943af684a649ef5b2d96648854f7b410e0",
+      "archive_sha256_verified": true,
+      "yec_verified": false,
+      "depth": 1
+    },
+    {
+      "path": "AssetData/personalized_sketch_conditioning_producer.mlmodelc/analytics/coremldata.bin",
+      "size": 243,
+      "sha256": "01ad57af9e7d21ccf13f787fb5f2d2350e782907a03465bfd2db4ca74ab7bad3",
+      "archive_sha256_verified": true,
+      "yec_verified": false,
+      "depth": 1
+    },
+    {
+      "path": "AssetData/personalized_sketch_conditioning_producer.mlmodelc/coremldata.bin",
+      "size": 425,
+      "sha256": "9e0868cac986866a2504ac04d2b80398a5c84e1bb90b32ae0f7f2e87ae89630b",
+      "archive_sha256_verified": true,
+      "yec_verified": false,
+      "depth": 1
+    },
+    {
+      "path": "AssetData/personalized_sketch_conditioning_producer.mlmodelc/metadata.json",
+      "size": 2980,
+      "sha256": "b58729644eb146bf386aad5bf4c9e2586ca60a4aff05f32416f05787d53d0849",
+      "archive_sha256_verified": true,
+      "yec_verified": false,
+      "depth": 1
+    },
+    {
+      "path": "AssetData/personalized_sketch_conditioning_producer.mlmodelc/model.mil",
+      "size": 22842,
+      "sha256": "51c52d122b8d0758618c9aa9b9913de04ba5846308e178485e124b324b0c27d6",
+      "archive_sha256_verified": true,
+      "yec_verified": false,
+      "depth": 1
+    },
+    {
+      "path": "AssetData/personalized_sketch_conditioning_producer.mlmodelc/weights/weight.bin",
+      "size": 54513856,
+      "sha256": "fac8d11b8b746b137fc4ff9a9a44ba034301ec981d2df84da3df4174a080ad5c",
+      "archive_sha256_verified": true,
+      "yec_verified": false,
+      "depth": 1
+    },
+    {
+      "path": "ContentProtection.plist",
+      "size": 1898,
+      "sha256": "377db465e0a12ed4618a0fb601891d51c828d8343ce3ed605ee289427ad5fc60",
+      "archive_sha256_verified": true,
+      "yec_verified": false,
+      "depth": 1
+    },
+    {
+      "path": "Info.plist",
+      "size": 1616,
+      "sha256": "740684b0c8650eec8fffc7a662a6f42d7a5d52d7f154f9b74a3019a185072df2",
+      "archive_sha256_verified": true,
+      "yec_verified": false,
+      "depth": 1
+    }
+  ],
+  "plaintext_weights_verified": false,
+  "image_inference_performed": false
+}

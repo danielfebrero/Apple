@@ -1,0 +1,8 @@
+{
+  "catalogue": "visual-rave",
+  "index": 63,
+  "command": "ipsw fw aea --key-val [catalogue ArchiveDecryptionKey] --output cache/decrypted-metadata archive.aea",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "   \u2022 Using pure Go implementation for AEA decryption\n   \u2022 Extracted AEA to Apple Intelligence/models/cache/mobileasset-visual/decrypted-metadata/C702C708-C900-4F16-A355-5E000177533D\n"
+}
