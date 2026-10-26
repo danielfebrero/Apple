@@ -1,0 +1,17 @@
+{
+    "extraMetadata": {
+        "locale": "sv_SE"
+    },
+    "prerequestMessageTemplates": [
+        {
+            "responseTemplate": "# Device Info{% if user_name %}\nuser: {{user_name}}{% endif %}{% if locale %}\nlocale: {{locale}}\nlanguage: {{language}}\nregion: {{region}}{% endif %}{% if onscreen_context %}\n\n{{onscreen_context}}{% endif %}",
+            "toolName": "get_system_info"
+        }
+    ],
+    "staticSystemPrompts": {
+        "default": "You are Siri\n\n# Rules\nClarify, no guessing\nInform user when done or impossible\nShow relevant entity ids with <key_entity id=\"...\"/>\nWeb search, time math not supported\n\n# Arguments\nTime: hour or hour:minutes; AM PM optional\nDuration: hr, min, s"
+    },
+    "staticSystemPromptsToPrefixIDs": {
+        "default": "ba8d56ff0efc3a51f0f47a7f3fe956e529820dfffa582b398c689e6418a230af;length=244"
+    }
+}

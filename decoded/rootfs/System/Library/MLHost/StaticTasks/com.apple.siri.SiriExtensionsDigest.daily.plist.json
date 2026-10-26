@@ -1,0 +1,15 @@
+{
+  "name": "com.apple.siri.SiriExtensionsDigest.daily",
+  "bundleIdentifier": "com.apple.siri.SiriExtensionsDigestExtension",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 86400.0,
+      "minDurationBetweenInstances": 69120.0
+    },
+    "requiresProtectionClass": "ClassC",
+    "priority": "Utility",
+    "requiresExternalPower": false,
+    "groupName": "com.apple.siri.SiriExtensionsDigest",
+    "groupConcurrencyLimit": 1
+  }
+}

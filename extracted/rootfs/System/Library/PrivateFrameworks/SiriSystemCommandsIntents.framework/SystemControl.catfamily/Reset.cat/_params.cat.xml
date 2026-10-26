@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:4.0" id="SystemControl#Reset">
+  <meta name="description" value="Explain how the user can reset their device."/>
+  <meta name="category" value="Handled"/>
+  <meta name="readyForLoc" value="true"/>
+
+  <parameters>
+    <parameter name="deviceState" type="sirikit.DeviceState" description="The device state."/>
+  </parameters>
+</cat>

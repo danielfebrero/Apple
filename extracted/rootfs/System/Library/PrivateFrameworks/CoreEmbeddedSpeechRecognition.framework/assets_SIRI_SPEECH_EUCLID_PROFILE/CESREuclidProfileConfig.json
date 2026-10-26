@@ -1,0 +1,54 @@
+{
+    "version": 1,
+    "overallAppEntityLimit": 10000,
+    "enableCalendarLocationSanitization": true,
+    "disabledLMETemplates": ["\\NT-sampletemplate"],
+    "disabledAppBundleIds": ["com.apple.sample.bundleId"],
+    "disabledItemTypes": ["Media"],
+    "specialCharactersToRemove": ["$", "%", "@", "#", "^", "&", "*", "=", "+", "~", "<", ">", "/", ":", ".", ",", ";", "(", ")", "[", "]", "{", "}", "|", "\\", "\"", "`", "_"],
+    "fieldFiltering": {
+        "enableFiltering": true,
+        "allowedFieldTypes": {
+            "47347": {
+                "fieldName": "displayRepresentation.title",
+                "description": "Primary user-facing display text containing song titles, playlist names, contact names, and other content"
+            },
+            "39426": {
+                "fieldName": "ASRRankedEntityTermContent.entityTerm",
+                "description": "Ranked entity term from ASR entity allocation (contacts, notes, playlists, calendar events, etc.)"
+            },
+            "54388": {
+                "fieldName": "CalendarEventContent.title",
+                "description": "Calendar event title (e.g. 'Good Friday', meeting names)"
+            },
+            "27126": {
+                "fieldName": "FindMyDeviceContent.name",
+                "description": "FindMy device display name (e.g. 'Marlies's AirPods Pro')"
+            },
+            "27131": {
+                "fieldName": "FindMyDeviceContent.firstName",
+                "description": "FindMy device owner first name"
+            },
+            "27132": {
+                "fieldName": "FindMyDeviceContent.lastName",
+                "description": "FindMy device owner last name"
+            },
+            "12013": {
+                "fieldName": "AppShortcutPhraseContent.title",
+                "description": "App shortcut phrase title (e.g. 'Scan Document')"
+            },
+            "36439": {
+                "fieldName": "InstalledAppContent.displayName",
+                "description": "Installed app display name (e.g. 'News', 'Stocks')"
+            },
+            "19679": {
+                "fieldName": "ContactContent.firstName",
+                "description": "Contact first name"
+            },
+            "19681": {
+                "fieldName": "ContactContent.lastName",
+                "description": "Contact last name"
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "ShowHighDataModeSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "6.0.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "apn": "media.ng",
+          "type-mask": 32823
+        },
+        {
+          "tech-type-mask": 131072,
+          "apn": "ims",
+          "SupportSwitchOver": true,
+          "type-mask": 131072,
+          "AllowedProtocolMask": 2
+        },
+        {
+          "tech-type-mask": 262144,
+          "apn": "sos",
+          "type-mask": 262144,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "tech-type-mask": 1048582,
+          "apn": "xcap",
+          "type-mask": 1048576,
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 25
+    }
+  ]
+}

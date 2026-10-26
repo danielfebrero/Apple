@@ -1,0 +1,56 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Hva er adressen til Lena?",
+            "Hva er telefonnummeret til Tuva Jensen?",
+            "Når har kona mi bursdag?",
+            "Vis den private e-postadressen til Tale",
+            "Hva er jobbadressen til broren min?"
+          ]
+        }
+      ],
+      "SectionName": "Spørre om kontakter"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Vis Sindre",
+            "Vis alle som heter Hansen"
+          ]
+        }
+      ],
+      "SectionName": "Finne kontakter"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Søsteren min heter Eli",
+            "Per er faren min"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ring broren min på jobb"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Ring pappa med FaceTime på jobb"
+          ]
+        }
+      ],
+      "SectionName": "Relasjoner"
+    }
+  ]
+}

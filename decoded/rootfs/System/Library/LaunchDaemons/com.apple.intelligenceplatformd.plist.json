@@ -1,0 +1,172 @@
+{
+  "Label": "com.apple.intelligenceplatformd",
+  "EnvironmentVariables": {},
+  "ProcessType": "Adaptive",
+  "AppIntents": {
+    "MetadataAbsolutePaths": [
+      "/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework"
+    ]
+  },
+  "MachServices": {
+    "com.apple.intelligenceplatform.KGSimulation": true,
+    "com.apple.intelligenceplatform.Sysdiagnose": true,
+    "com.apple.intelligenceplatform.Knosis": true,
+    "com.apple.intelligenceplatform.Lighthouse": true,
+    "com.apple.intelligenceplatform.Internal": true,
+    "com.apple.intelligenceplatform.EventLog": true,
+    "com.apple.intelligenceplatform.AssetRegistry": true,
+    "com.apple.intelligenceplatform.Feedback": true,
+    "com.apple.intelligenceplatform.EntityResolution": true,
+    "com.apple.private.appintents.delegate.com.apple.intelligenceplatformd": true,
+    "com.apple.intelligenceplatform.InferenceSupport": true
+  },
+  "EnableTransactions": true,
+  "UserName": "mobile",
+  "LaunchEvents": {
+    "com.apple.biome.compute.publisher": {
+      "com.apple.intelligenceplatformd.walletTransactionOrder": {
+        "graph": {
+          "name": "streamPublisher",
+          "streamIdentifier": "WalletPaymentsCommerce.FoundIn.Transaction",
+          "version": 1
+        },
+        "client": "com.apple.intelligenceplatformd",
+        "identifier": "com.apple.intelligenceplatformd.walletTransactionOrder"
+      },
+      "com.apple.intelligenceplatformd.walletEmailOrder": {
+        "graph": {
+          "name": "streamPublisher",
+          "streamIdentifier": "WalletPaymentsCommerce.FoundIn.OrderEmail",
+          "version": 1
+        },
+        "client": "com.apple.intelligenceplatformd",
+        "identifier": "com.apple.intelligenceplatformd.walletEmailOrder"
+      },
+      "com.apple.intelligenceplatformd.MotionSegment": {
+        "graph": {
+          "streamIdentifier": "Motion.TripSegment",
+          "name": "streamPublisher",
+          "streamType": "2",
+          "version": 1
+        },
+        "client": "com.apple.intelligenceplatformd",
+        "identifier": "com.apple.intelligenceplatformd.MotionSegment"
+      },
+      "com.apple.intelligenceplatformd.NowPlaying": {
+        "graph": {
+          "version": 1,
+          "value": "com.apple.Music",
+          "name": "filter",
+          "upstream": {
+            "name": "streamPublisher",
+            "streamIdentifier": "NowPlaying",
+            "version": 1
+          },
+          "keyPath": "eventBody.bundleID"
+        },
+        "client": "com.apple.intelligenceplatformd",
+        "identifier": "com.apple.intelligenceplatformd.NowPlaying"
+      },
+      "com.apple.intelligenceplatformd.walletClassicOrder": {
+        "graph": {
+          "name": "streamPublisher",
+          "streamIdentifier": "WalletPaymentsCommerce.FoundIn.ClassicOrder",
+          "version": 1
+        },
+        "client": "com.apple.intelligenceplatformd",
+        "identifier": "com.apple.intelligenceplatformd.walletClassicOrder"
+      }
+    },
+    "com.apple.xpc.activity": {
+      "com.apple.intelligenceplatform.IntelligencePlatformCore.GlobalKnowledgeTwoHourPrune": {
+        "ActivityGroupName": "com.apple.intelligenceplatform.IntelligencePlatformCore",
+        "Priority": "Maintenance",
+        "AllowBattery": true,
+        "Repeating": true,
+        "Interval": 7200,
+        "CPUIntensive": false,
+        "MaxConcurrencyLimit": 1,
+        "PowerNap": true
+      },
+      "com.apple.intelligenceplatform.IntelligencePlatformCore.EventStreamsDataCollection": {
+        "ActivityGroupName": "com.apple.intelligenceplatform.IntelligencePlatformCore",
+        "Priority": "Maintenance",
+        "AllowBattery": false,
+        "Repeating": true,
+        "Interval": 86400,
+        "CPUIntensive": true,
+        "MaxConcurrencyLimit": 1,
+        "PowerNap": true
+      },
+      "com.apple.intelligenceplatform.IntelligencePlatformCore.AssetRegistryOverrideStoreWeeklyCleanup": {
+        "ActivityGroupName": "com.apple.intelligenceplatform.IntelligencePlatformCore",
+        "Priority": "Maintenance",
+        "AllowBattery": false,
+        "Repeating": true,
+        "Interval": 604800,
+        "CPUIntensive": true,
+        "MaxConcurrencyLimit": 1,
+        "PowerNap": true
+      },
+      "com.apple.intelligenceplatform.IntelligencePlatformCore.LongitudinalDataCollection": {
+        "ActivityGroupName": "com.apple.intelligenceplatform.IntelligencePlatformCore",
+        "Priority": "Maintenance",
+        "AllowBattery": false,
+        "Repeating": true,
+        "Interval": 86400,
+        "CPUIntensive": true,
+        "MaxConcurrencyLimit": 1,
+        "PowerNap": true
+      },
+      "com.apple.intelligenceplatform.IntelligencePlatformCore.AutonamingMetricsLogging": {
+        "ActivityGroupName": "com.apple.intelligenceplatform.IntelligencePlatformCore",
+        "Priority": "Maintenance",
+        "AllowBattery": false,
+        "Repeating": true,
+        "Interval": 86400,
+        "CPUIntensive": true,
+        "MaxConcurrencyLimit": 1,
+        "PowerNap": true
+      },
+      "com.apple.intelligenceplatform.IntelligencePlatformCore.EventAndFeedbackDailyProcessing": {
+        "ActivityGroupName": "com.apple.intelligenceplatform.IntelligencePlatformCore",
+        "Priority": "Maintenance",
+        "AllowBattery": false,
+        "Repeating": true,
+        "Interval": 86400,
+        "CPUIntensive": false,
+        "MaxConcurrencyLimit": 1,
+        "PowerNap": true
+      }
+    },
+    "com.apple.distnoted.matching": {
+      "ABAddressBookMeCardChangeDistributedNotification": {
+        "Name": "ABAddressBookMeCardChangeDistributedNotification"
+      }
+    },
+    "com.apple.notifyd.matching": {
+      "com.apple.intelligenceplatform.StorageSystem.Recovered": {
+        "Notification": "com.apple.intelligenceplatform.StorageSystem.Recovered"
+      },
+      "__ABDataBaseChangedByOtherProcessNotification": {
+        "Notification": "__ABDataBaseChangedByOtherProcessNotification"
+      },
+      "com.apple.duetexpertd.sportsTeamsChanged": {
+        "Notification": "com.apple.duetexpertd.sportsTeamsChanged"
+      },
+      "com.apple.photos.DidUpdateAutonamingUserFeedback": {
+        "Notification": "com.apple.photos.DidUpdateAutonamingUserFeedback"
+      },
+      "RTLocationsOfInterestDidChangeNotification": {
+        "Notification": "RTLocationsOfInterestDidChangeNotification"
+      },
+      "com.apple.siri.uaf.com.apple.siri.understanding": {
+        "Notification": "com.apple.siri.uaf.com.apple.siri.understanding"
+      }
+    }
+  },
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/intelligenceplatformd"
+  ],
+  "EnablePressuredExit": true
+}

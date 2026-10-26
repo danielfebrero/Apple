@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Alışveriş listeme enginar ekle",
+            "Yarın annemi aramamı anımsat",
+            "Ölmeden önce görülmesi gereken yerler listeme Meksika’yı ekle",
+            "Şemsiye almayı anımsa",
+            "Yarın sabah 6’da ilaçlarımı almayı bana hatırlat",
+            "Ödevimi saat 6’ya kadar bitirmem gerektiğini anımsat",
+            "Yapılacak işler listemi oku"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Üçüncü öğeyi tamamlandı olarak işaretle",
+            "Alışveriş adlı yeni bir liste yarat"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Eve geldiğimde annemi FaceTime ile aramamı bana anımsat",
+            "Yarın bana bu e-postayı hatırlat",
+            "Eve vardığımda annemi FaceTime ile aramayı hatırlat",
+            "Arabaya bindiğimde babamı aramamı hatırlat",
+            "Bu web sitesini hatırlat",
+            "Ayrıldığımda Bülent’i FaceTime ile aramamı hatırlat"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Buradan ayrıldığımda çiçekleri almamı bana hatırlat"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

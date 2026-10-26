@@ -1,0 +1,67 @@
+{
+  "DerPriFileVersion": "6.1.161",
+  "ShowVoNRSwitch": true,
+  "AllowSAOnWiFiAssociation": true,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "Signaling": {
+      "ResetSocketWhenNetworkChange": false
+    }
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "password": "",
+      "username": "",
+      "AllowedProtocolMaskInRoaming": 3,
+      "apn": "internet.emt.ee",
+      "type-mask": 32817,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 1048576,
+      "password": "",
+      "tech-type-mask": 1048576,
+      "AllowedProtocolMaskInRoaming": 3,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "hos",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 4,
+      "password": "",
+      "tech-type-mask": 4,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "mms.emt.ee",
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Enable5GStandaloneByDefault": true
+}

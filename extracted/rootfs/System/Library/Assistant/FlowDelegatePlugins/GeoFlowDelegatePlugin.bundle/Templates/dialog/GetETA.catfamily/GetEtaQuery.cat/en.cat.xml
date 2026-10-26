@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="GetETA#GetEtaQuery" locale="en" xmlns="urn:apple:names:siri:cat:1.0">
+    <conditions>
+        <condition name="isWalking">
+          <expression name="transportationType" op="eq" value="'walking'"/>
+        </condition>
+        <condition name="isDriving">
+          <expression name="transportationType" op="eq" value="'driving'"/>
+        </condition>
+        <condition name="isTransit">
+          <expression name="transportationType" op="eq" value="'transit'"/>
+        </condition>
+        <condition name="isCycling">
+          <expression name="transportationType" op="eq" value="'cycling'"/>
+        </condition>
+        <condition name="isTransportationUnspecified">
+          <expression name="transportationType" op="empty" />
+        </condition>
+        
+        <condition name="isOriginSpecified">
+          <expression name="origin" op="nonempty" />
+        </condition>
+        <condition name="isFromHere">
+          <expression name="origin" op="empty" />
+        </condition>
+        
+        <condition name="walking">
+          <and>
+            <sub-condition name="isWalking"/>
+            <sub-condition name="isOriginSpecified"/>
+          </and>
+        </condition>
+        
+        <condition name="driving">
+          <and>
+            <sub-condition name="isDriving"/>
+            <sub-condition name="isOriginSpecified"/>
+          </and>
+        </condition>
+        
+        <condition name="transit">
+          <and>
+            <sub-condition name="isTransit"/>
+            <sub-condition name="isOriginSpecified"/>
+          </and>
+        </condition>
+        
+        <condition name="cycling">
+          <and>
+            <sub-condition name="isCycling"/>
+            <sub-condition name="isOriginSpecified"/>
+          </and>
+        </condition>
+        
+        <condition name="unspecifiedTransportation">
+          <and>
+            <sub-condition name="isTransportationUnspecified"/>
+            <sub-condition name="isOriginSpecified"/>
+          </and>
+        </condition>
+        
+        <condition name="walkingFromHere">
+          <and>
+            <sub-condition name="isWalking"/>
+            <sub-condition name="isFromHere"/>
+          </and>
+        </condition>
+        
+        <condition name="drivingFromHere">
+          <and>
+            <sub-condition name="isDriving"/>
+            <sub-condition name="isFromHere"/>
+          </and>
+        </condition>
+        
+        <condition name="transitFromHere">
+          <and>
+            <sub-condition name="isTransit"/>
+            <sub-condition name="isFromHere"/>
+          </and>
+        </condition>
+        
+        <condition name="cyclingFromHere">
+          <and>
+            <sub-condition name="isCycling"/>
+            <sub-condition name="isFromHere"/>
+          </and>
+        </condition>
+        
+        <condition name="fromHere">
+          <and>
+            <sub-condition name="isTransportationUnspecified"/>
+            <sub-condition name="isFromHere"/>
+          </and>
+        </condition>
+      </conditions>
+    
+    <first>
+        <dialog condition="walking">How long does it take to get from <var name="origin"/> to <var name="destination"/> via walking?</dialog>
+        <dialog condition="driving">How long does it take to get from <var name="origin"/> to <var name="destination"/> via driving?</dialog>
+        <dialog condition="transit">How long does it take to get from <var name="origin"/> to <var name="destination"/> via transit?</dialog>
+        <dialog condition="cycling">How long does it take to get from <var name="origin"/> to <var name="destination"/> via cycling?</dialog>
+        <dialog condition="unspecifiedTransportation">How long does it take to get from <var name="origin"/> to <var name="destination"/>?</dialog>
+        
+        <dialog condition="walkingFromHere">How long does it take to get from here to <var name="destination"/> via walking?</dialog>
+        <dialog condition="drivingFromHere">How long does it take to get from here to <var name="destination"/> via driving?</dialog>
+        <dialog condition="transitFromHere">How long does it take to get from here to <var name="destination"/> via transit?</dialog>
+        <dialog condition="cyclingFromHere">How long does it take to get from here to <var name="destination"/> via cycling?</dialog>
+        <dialog condition="fromHere">How long does it take to get from here to <var name="destination"/>?</dialog>
+    </first>
+</cat>

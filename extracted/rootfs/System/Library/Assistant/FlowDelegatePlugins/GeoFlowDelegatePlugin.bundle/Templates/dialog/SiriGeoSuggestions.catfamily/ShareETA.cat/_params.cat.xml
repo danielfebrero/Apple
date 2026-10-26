@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="SiriGeoSuggestions#ShareETA" xmlns="urn:apple:names:siri:cat:1.0">
+    <meta name="category" value="UsedForSnippet"/>
+    <meta name="description" value="ShareETA VOX Suggestion"/>
+    <meta name="readyForLoc" value="true"/>
+    <parameters>
+        <parameter name="contactName" type="dialog.String" description="Name of the contact the user is navigating to" /> 
+    </parameters>
+</cat>
+

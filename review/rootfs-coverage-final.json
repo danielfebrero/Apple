@@ -1,0 +1,72 @@
+{
+  "inventory_sha256": "a46baed2752cbdf2a40a84dbb61f9ca34b5e6554d3b155b216a6ba29ae4af523",
+  "entries": 523859,
+  "kind_counts": {
+    "4": 260279,
+    "8": 260824,
+    "10": 2756
+  },
+  "duplicate_paths": 0,
+  "queries": {
+    "AssetsV2": [],
+    "UAF_FM_payload_paths": [],
+    "MobileAsset_top_families": [
+      "/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_SoundScapesPickerAssets/76ac0db885bfc20859eb82059482f5b2c1c439a9.asset",
+      "/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_Vision_AgeEstimation/7ccbc07878eb47fa32952057a95ee787cf2ff64d.asset",
+      "/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/47ea4afd1e062c03ee705351eebb3278c2095420.asset",
+      "/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/3429bf14deee81ef662912a49714bf9fdddfd757.asset",
+      "/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CoreAS/1d2111630fc9db4987eac0118a22245c6b478a00.asset",
+      "/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_Vision_FaceLiveliness/ff37c55a46e9128172f2e0e963b9eac7fdf379a3.asset",
+      "/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_CarExperienceAssets/aad5c00964b87c9a7ee1aacfdc805f29e839094e.asset"
+    ],
+    "Preinstalled_top_families": [
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_VoiceServices_CustomVoice",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_SpeechEndpointAssets",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_VoiceServices_VoiceResources",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_MobileTimer",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_MXLongFormVideoAppsV2",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_ContextKit",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_SharingDeviceAssets",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_CoreLocationConfig",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_SafetyAlertsConfig",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_GameController_DB1",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_VoiceTriggerAssets",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_MobileBluetoothAssets",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_SpeakerRecognitionAssets"
+    ],
+    "modelcatalog": [
+      "/usr/bin/modelcatalogdump",
+      "/System/Library/DeviceConfiguration/Specs/com.apple.modelcatalog.plist",
+      "/System/Library/Trial/NamespaceDescriptors/NamespaceDescriptor.UAF_AB_MODELCATALOG.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/request-resources-key-use-case-disablement.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/explicit-request-resource-com.apple.fm.language.code_safety_guardrail.tokenizer.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/request-resources-key-generative-experiences.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/explicit-request-resource-com.apple.fm.language.instruct_3b.shared_experts_cost_placeholder_2b.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/explicit-request-resource-com.apple.gm.safety_deny.output.code_intelligence.base.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/explicit-request-resource-com.apple.gm.safety_deny.input.code_intelligence.base.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/explicit-request-resource-com.apple.fm.language.instruct_3b.shared_experts_cost_placeholder_1b.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/request-resources-key-handwriting-synthesis.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/explicit-request-resource-com.apple.fm.language.instruct_3b.shared_experts_cost_placeholder_3b.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/request-resources-key-apple-diffusion-models.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/explicit-request-resource-com.apple.fm.photos.genedit.magiccleanup.plist",
+      "/System/Library/UnifiedAssetFramework/UsageAliases/com.apple.modelcatalog.migration.18.2/explicit-request-resource-com.apple.fm.language.code_safety_guardrail.base.plist",
+      "/System/Library/UnifiedAssetFramework/AssetSets/com.apple.modelcatalog.plist",
+      "/System/Library/LaunchDaemons/com.apple.modelcatalogd.plist",
+      "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework",
+      "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/_CodeSignature",
+      "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/_CodeSignature/CodeResources",
+      "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/Info.plist",
+      "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/modelcatalogd",
+      "/System/Library/PrivateFrameworks/ModelCatalog.framework",
+      "/System/Library/PrivateFrameworks/ModelCatalog.framework/_CodeSignature",
+      "/System/Library/PrivateFrameworks/ModelCatalog.framework/_CodeSignature/CodeResources",
+      "/System/Library/PrivateFrameworks/ModelCatalog.framework/Info.plist",
+      "/System/Library/FeatureFlags/Domain/ModelCatalog.plist"
+    ],
+    "grammar_paths": [
+      "/System/Library/PrivateFrameworks/CoreHandwriting.framework/latex_grammar.txt"
+    ]
+  }
+}

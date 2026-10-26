@@ -1,0 +1,65 @@
+{
+  "PTTActivation": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSDurationAttribute",
+            "StartPolicy": "RBSDurationStartPolicyFixed",
+            "WarningDuration": 5,
+            "InvalidationDuration": 30,
+            "EndPolicy": "RBSDurationEndPolicyInvalidate"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractiveNonFocal"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 30
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSGPUAccessGrant",
+            "Role": "RBSGPURoleBackground"
+          },
+          {
+            "Class": "RBSResistTerminationGrant",
+            "Resistance": "RBSTerminationResistanceInteractive"
+          },
+          {
+            "Class": "RBSPreventIdleSleepGrant"
+          },
+          {
+            "Class": "RBSInvalidateUnderConditionAttribute",
+            "Condition": "therm",
+            "MinValue": 860
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20428
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "CompoundAny",
+      "Restrictions": [
+        {
+          "Class": "OriginatorEntitlement",
+          "Entitlement": "com.apple.private.xpc.launchd.app-server"
+        },
+        {
+          "Class": "OriginatorEntitlement",
+          "Entitlement": "com.apple.assertiond.system-shell"
+        },
+        {
+          "Class": "OriginatorEntitlement",
+          "Entitlement": "com.apple.runningboard.launchprocess"
+        }
+      ]
+    }
+  }
+}

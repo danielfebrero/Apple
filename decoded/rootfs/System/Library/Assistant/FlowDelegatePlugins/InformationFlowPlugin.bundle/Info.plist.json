@@ -1,0 +1,140 @@
+{
+  "CFBundleName": "InformationFlowPlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedPegasusComponents": [
+    "com.apple.siri.InformationFlowPlugin",
+    "com.apple.siri.pegasus.generic",
+    "pegasus"
+  ],
+  "DTSDKBuild": "24B105",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "InformationFlowPlugin.InformationFlowPlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "InformationFlowPlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.InformationFlowPlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedTopics": [
+    {
+      "entity": "common_Recipe",
+      "verb": "unrequest",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Recipe",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_RecipeStep",
+      "verb": "stop",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Recipe",
+      "verb": "stop",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_RecipeStep",
+      "verb": "start",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Recipe",
+      "verb": "start",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_RecipeStep",
+      "verb": "skipForward",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_RecipeStep",
+      "verb": "skipBackward",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_RecipeStep",
+      "verb": "seekTo",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_RecipeStep",
+      "verb": "resume",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Recipe",
+      "verb": "resume",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_RecipeStep",
+      "verb": "request",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Recipe",
+      "verb": "request",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_RecipeStep",
+      "verb": "pause",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Recipe",
+      "verb": "pause",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_LocalBusiness",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "24B105",
+  "SupportedInvocations": [
+    "com.apple.siri.DirectInvocation.SiriInformation.NavigateToShim",
+    "com.apple.siri.DirectInvocation.SiriInformation.TapEngagement",
+    "com.apple.siri.DirectInvocation.SiriInformation.ListItemAction",
+    "com.apple.siri.DirectInvocation.SiriInformation.DemoResultSet",
+    "com.apple.siri.DirectInvocation.SiriInformation.WebSearchHandoff",
+    "com.apple.siri.DirectInvocation.SiriInformation.KnowledgeConfirmation",
+    "com.apple.siri.DirectInvocation.SiriInformation.WebSearchPunchout"
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "AssetSetName": "com.apple.MobileAsset.UAF.FM.CodeLM",
+  "Assets": [
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v1.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v1.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v1.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v1.base.draft.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v1.base.draft",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v1.base.draft.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v1.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v1.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v1.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v2.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v2.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v2.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v2.base.draft.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v2.base.draft",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v2.base.draft.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v2.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v2.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v2.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v3.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v3.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v3.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v3.base.draft.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v3.base.draft",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v3.base.draft.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v3.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v3.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v3.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v4.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v4.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v4.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v4.base.draft.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v4.base.draft",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v4.base.draft.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v4.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v4.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v4.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v5.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v5.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v5.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v5.base.draft.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v5.base.draft",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v5.base.draft.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_large_v5.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_large_v5.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_large_v5.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_safety_guardrail.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_safety_guardrail.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_safety_guardrail.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_safety_guardrail.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_safety_guardrail.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_safety_guardrail.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v1.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v1.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v1.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v1.base.draft.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v1.base.draft",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v1.base.draft.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v1.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v1.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v1.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v2.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v2.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v2.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v2.base.draft.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v2.base.draft",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v2.base.draft.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v2.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v2.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v2.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v3.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v3.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v3.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v3.base.draft.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v3.base.draft",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v3.base.draft.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v3.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v3.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v3.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v4.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v4.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v4.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v4.base.draft.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v4.base.draft",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v4.base.draft.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v4.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v4.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v4.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v5.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v5.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v5.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v5.base.draft.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v5.base.draft",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v5.base.draft.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.code.generate_small_v5.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.code.generate_small_v5.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.fm.code.generate_small_v5.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.codelm.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.codelm.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.FM.CodeLM",
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.fm.codelm.uaf.metadata",
+  "UsageTypes": [
+    "com.apple.fm.code.generate_large_v1.base.draft.generic",
+    "com.apple.fm.code.generate_large_v1.base.generic",
+    "com.apple.fm.code.generate_large_v1.tokenizer.generic",
+    "com.apple.fm.code.generate_large_v2.base.draft.generic",
+    "com.apple.fm.code.generate_large_v2.base.generic",
+    "com.apple.fm.code.generate_large_v2.tokenizer.generic",
+    "com.apple.fm.code.generate_large_v3.base.draft.generic",
+    "com.apple.fm.code.generate_large_v3.base.generic",
+    "com.apple.fm.code.generate_large_v3.tokenizer.generic",
+    "com.apple.fm.code.generate_large_v4.base.draft.generic",
+    "com.apple.fm.code.generate_large_v4.base.generic",
+    "com.apple.fm.code.generate_large_v4.tokenizer.generic",
+    "com.apple.fm.code.generate_large_v5.base.draft.generic",
+    "com.apple.fm.code.generate_large_v5.base.generic",
+    "com.apple.fm.code.generate_large_v5.tokenizer.generic",
+    "com.apple.fm.code.generate_safety_guardrail.base.generic",
+    "com.apple.fm.code.generate_safety_guardrail.tokenizer.generic",
+    "com.apple.fm.code.generate_small_v1.base.draft.generic",
+    "com.apple.fm.code.generate_small_v1.base.generic",
+    "com.apple.fm.code.generate_small_v1.tokenizer.generic",
+    "com.apple.fm.code.generate_small_v2.base.draft.generic",
+    "com.apple.fm.code.generate_small_v2.base.generic",
+    "com.apple.fm.code.generate_small_v2.tokenizer.generic",
+    "com.apple.fm.code.generate_small_v3.base.draft.generic",
+    "com.apple.fm.code.generate_small_v3.base.generic",
+    "com.apple.fm.code.generate_small_v3.tokenizer.generic",
+    "com.apple.fm.code.generate_small_v4.base.draft.generic",
+    "com.apple.fm.code.generate_small_v4.base.generic",
+    "com.apple.fm.code.generate_small_v4.tokenizer.generic",
+    "com.apple.fm.code.generate_small_v5.base.draft.generic",
+    "com.apple.fm.code.generate_small_v5.base.generic",
+    "com.apple.fm.code.generate_small_v5.tokenizer.generic"
+  ]
+}

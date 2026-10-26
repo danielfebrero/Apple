@@ -1,0 +1,66 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "type=timeSensitive task=q73h4zbynu checkpoint=105771 exp=23b-e3 quant=w8",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 2)",
+        "shortDescription": "",
+        "shape": "[1, 2]",
+        "name": "linear_0",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "20250922",
+    "modelParameters": [],
+    "specificationVersion": 7,
+    "storagePrecision": "Mixed (Float16, Int8)",
+    "mlProgramOperationTypeHistogram": {
+      "Ios16.cast": 2,
+      "Ios16.linear": 1,
+      "Ios16.relu": 3,
+      "Ios16.constexprAffineDequantize": 3,
+      "Ios16.maxPool": 2,
+      "Ios16.reshape": 1,
+      "Squeeze": 1,
+      "Ios16.conv": 3
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "13.0",
+      "tvOS": "16.0",
+      "visionOS": "1.0",
+      "watchOS": "9.0",
+      "iOS": "16.0",
+      "macCatalyst": "16.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 512 × 1 × 256)",
+        "shortDescription": "",
+        "shape": "[1, 512, 1, 256]",
+        "name": "inp",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.source_dialect": "TorchScript",
+      "com.github.apple.coremltools.source": "torch==2.1.2",
+      "com.github.apple.coremltools.version": "7.1.4",
+      "mldb_token": "mldb-rdg2nkxg5z"
+    },
+    "generatedClassName": "TimeSensitivityModelHead",
+    "method": "predict"
+  }
+]

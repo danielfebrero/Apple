@@ -1,0 +1,89 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "id": "ASK_SIRI_GROUP_ID",
+      "label": "ASK_SIRI"
+    },
+    {
+      "cell": "PSSwitchCell",
+      "get": "voiceTriggerEnabled",
+      "id": "HEY_SIRI_SWITCH_ID",
+      "label": "VOICE_ACTIVATION",
+      "set": "setVoiceTriggerEnabled:"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "AssistantBridgeTriggerPhrasesController",
+      "get": "triggerPhrase",
+      "id": "VOICE_TRIGGER_ID",
+      "label": "LISTEN_FOR"
+    },
+    {
+      "cell": "PSSwitchCell",
+      "get": "raiseToSpeakEnabled",
+      "id": "RAISE_TO_SPEAK_SWITCH_ID",
+      "label": "RAISE_TO_SPEAK",
+      "set": "setRaiseToSpeakEnabled:"
+    },
+    {
+      "cell": "PSSwitchCell",
+      "get": "digitalCrownEnabled",
+      "id": "DIGITAL_CROWN_SWITCH_ID",
+      "label": "DIGITAL_CROWN",
+      "set": "setDigitalCrownEnabled:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "AUTOMATICALLY_SEND_MESSAGES_FOOTER",
+      "id": "AUTOMATICALLY_SEND_MESSAGES_GROUP_ID"
+    },
+    {
+      "cell": "PSSwitchCell",
+      "get": "messageWithoutConfirmationEnabled",
+      "id": "AUTOMATICALLY_SEND_MESSAGES_SWITCH_ID",
+      "label": "AUTOMATICALLY_SEND_MESSAGES",
+      "set": "setMessageWithoutConfirmationEnabled:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "SIRI_RESPONSES_FOOTER",
+      "id": "SIRI_RESPONSES_GROUP_ID"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "AssistantBridgeSiriResponsesController",
+      "id": "SIRI_RESPONSES_ID",
+      "label": "SIRI_RESPONSES"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "VOICE_FEEDBACK_GROUP_ID"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "AssistantVoiceFeedbackController",
+      "get": "voiceFeedbackMode",
+      "id": "VOICE_FEEDBACK_ID",
+      "label": "VOICE_FEEDBACK"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "VOICE_VOLUME_FOOTER",
+      "id": "VOICE_VOLUME_GROUP_ID",
+      "label": "VOICE_VOLUME"
+    },
+    {
+      "cell": "PSSliderCell",
+      "get": "voiceVolume",
+      "id": "VOICE_VOLUME_SLIDER_ID",
+      "set": "setVoiceVolume:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "ASSISTANT_SUGGESTIONS_GROUP_ID",
+      "label": "ASSISTANT_SUGGESTIONS"
+    }
+  ],
+  "title": "SIRI_TITLE"
+}

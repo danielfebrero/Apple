@@ -1,0 +1,94 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "EnableVoNRByDefault": true,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "EnableWiFiN1ModeOnlyWhenSAEnabled": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4209841,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "AuthenticateTrustFlag",
+      "TransferSIMService"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true,
+    "SupportCrossPlatformSIMTransfer": true
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "AllowSAOnWiFiAssociation": true,
+  "ShowVoNRWarningUnsupportedCarrier": true,
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://mconnect-es2-006.oberthur.net",
+    "RequiresPasscodeForCrossPlatformTransfer": true
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "apns": [
+    {
+      "type-mask": 131072,
+      "password": "",
+      "tech-type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 32775,
+      "password": "",
+      "UseNetworkMTU": true,
+      "AllowedProtocolMaskInRoaming": 1,
+      "username": "",
+      "apn": "sp.telus.com",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "password": "",
+      "username": "",
+      "AllowedProtocolMaskInRoaming": 1,
+      "apn": "isp.telus.com",
+      "type-mask": 48,
+      "AllowedProtocolMask": 1
+    },
+    {
+      "type-mask": 262144,
+      "password": "",
+      "tech-type-mask": 262144,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "sos",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 1048576,
+      "password": "",
+      "tech-type-mask": 1048582,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "services.telus.com",
+      "AllowedProtocolMask": 2
+    }
+  ],
+  "SupportsVoNR": true
+}

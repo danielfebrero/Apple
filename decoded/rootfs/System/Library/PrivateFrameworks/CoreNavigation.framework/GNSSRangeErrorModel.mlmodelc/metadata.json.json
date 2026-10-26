@@ -1,0 +1,64 @@
+[
+  {
+    "shortDescription": "GNSS Multi-Target Prediction Model",
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 4 × 3)",
+        "shortDescription": "12-element array: target-major layout with 3 heads per target",
+        "shape": "[1, 4, 3]",
+        "name": "predicted_range_error",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "1.0",
+    "modelParameters": [],
+    "author": "com.apple.GNSSLocationService",
+    "specificationVersion": 6,
+    "storagePrecision": "Float16",
+    "mlProgramOperationTypeHistogram": {
+      "Relu": 1,
+      "Cast": 2,
+      "LeakyRelu": 2,
+      "Linear": 3,
+      "Reshape": 1
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "12.0",
+      "tvOS": "15.0",
+      "visionOS": "1.0",
+      "watchOS": "8.0",
+      "iOS": "15.0",
+      "macCatalyst": "15.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 45)",
+        "shortDescription": "Preprocessed GNSS measurement features",
+        "shape": "[1, 45]",
+        "name": "input_features",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-r4yn3x2am9",
+      "com.github.apple.coremltools.source": "torch==2.4.1",
+      "com.github.apple.coremltools.version": "8.3.2",
+      "com.github.apple.coremltools.source_dialect": "TorchScript"
+    },
+    "generatedClassName": "GNSSRangeErrorModel",
+    "method": "predict"
+  }
+]

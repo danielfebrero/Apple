@@ -1,0 +1,120 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "id": "SIRI_SETTINGS_TYPE_TO_SIRI_GROUP",
+      "isRadioGroup": true,
+      "label": "SIRI_SETTINGS_TYPE_TO_SIRI_GROUP"
+    },
+    {
+      "cell": "PSListItemCell",
+      "groupKey": "SIRI_SETTINGS_TYPE_TO_SIRI_GROUP",
+      "id": "SIRI_SETTINGS_TYPE_TO_SIRI_VOICE_ID",
+      "label": "SIRI_SETTINGS_TYPE_TO_SIRI_VOICE_LABEL"
+    },
+    {
+      "cell": "PSListItemCell",
+      "groupKey": "SIRI_SETTINGS_TYPE_TO_SIRI_GROUP",
+      "id": "SIRI_SETTINGS_TYPE_TO_SIRI",
+      "label": "SIRI_SETTINGS_TYPE_TO_SIRI"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "ENDPOINTER",
+      "isRadioGroup": true,
+      "label": "ENDPOINTER"
+    },
+    {
+      "cell": "PSListItemCell",
+      "groupKey": "ENDPOINTER",
+      "id": "ENDPOINTER_DEFAULT",
+      "label": "ENDPOINTER_DEFAULT"
+    },
+    {
+      "cell": "PSListItemCell",
+      "groupKey": "ENDPOINTER",
+      "id": "ENDPOINTER_EXTENDED",
+      "label": "ENDPOINTER_EXTENDED"
+    },
+    {
+      "cell": "PSListItemCell",
+      "groupKey": "ENDPOINTER",
+      "id": "ENDPOINTER_MAXIMUM",
+      "label": "ENDPOINTER_MAXIMUM"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "SPEECH_RATE",
+      "label": "SPEECH_RATE_HEADER"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "VOICE_FEEDBACK_GROUP_ID",
+      "isRadioGroup": true,
+      "label": "VOICE_FEEDBACK"
+    },
+    {
+      "cell": "PSListItemCell",
+      "groupKey": "VOICE_FEEDBACK",
+      "id": "VOICE_FEEDBACK_NEVER_ID",
+      "label": "VOICE_FEEDBACK_TITLE_NEVER"
+    },
+    {
+      "cell": "PSListItemCell",
+      "groupKey": "VOICE_FEEDBACK",
+      "id": "VOICE_FEEDBACK_AUTOMATIC_ID",
+      "label": "VOICE_FEEDBACK_TITLE_AUTOMATIC"
+    },
+    {
+      "cell": "PSListItemCell",
+      "groupKey": "VOICE_FEEDBACK",
+      "id": "VOICE_FEEDBACK_WITH_SWITCH_ID"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "SIRI_SETTINGS_VOICE_ACTIVATION_GROUP_ID",
+      "isRadioGroup": false
+    },
+    {
+      "cell": "PSSwitchCell",
+      "default": false,
+      "get": "isAlwaysAllowVoiceActivationEnabled:",
+      "id": "SIRI_SETTINGS_VOICE_ACTIVATION_ALWAYS_ALLOW",
+      "label": "SIRI_SETTINGS_VOICE_ACTIVATION_ALWAYS_ALLOW",
+      "set": "setAlwaysAllowVoiceActivationEnabled:specifier:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "SIRI_SHOW_APPS_FOOTER",
+      "id": "SIRI_SHOW_APPS_FOOTER"
+    },
+    {
+      "cell": "PSSwitchCell",
+      "default": false,
+      "get": "showApps:",
+      "id": "SIRI_SHOW_APPS",
+      "label": "SIRI_SHOW_APPS",
+      "set": "setShowApps:specifier:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "ANNOUNCE_NOTIFICATIONS_BUILT_IN_SPEAKER_FOOTER",
+      "id": "ANNOUNCE_NOTIFICATIONS_BUILT_IN_SPEAKER_GROUP"
+    },
+    {
+      "cell": "PSSwitchCell",
+      "default": false,
+      "get": "announceNotificationsOnBuiltInSpeaker:",
+      "id": "ANNOUNCE_NOTIFICATIONS_BUILT_IN_SPEAKER_ID",
+      "label": "ANNOUNCE_NOTIFICATIONS_BUILT_IN_SPEAKER",
+      "set": "setAnnounceNotificationsOnBuiltInSpeaker:specifier:"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "NCSpokenNotificationsDetailListController",
+      "id": "ANNOUNCE_NOTIFICATIONS_SETTINGS_ID",
+      "label": "ANNOUNCE_NOTIFICATIONS_SETTINGS_LABEL"
+    }
+  ],
+  "title": "SIRI_SETTINGS_TITLE"
+}

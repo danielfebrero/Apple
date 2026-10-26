@@ -1,0 +1,38 @@
+{
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleVersion": "1.0",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "CNAssistantSnippetFactory",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "SiriDisambiguationDomains": [
+    "com.apple.ace.system#Person",
+    "com.apple.ace.system#Email",
+    "com.apple.ace.system#RelatedName",
+    "com.apple.ace.system#Location",
+    "com.apple.ace.system#Phone",
+    "com.apple.ace.system#PersonAttribute"
+  ],
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "AddressBook",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "SiriDomains": [
+    "com.apple.ace.contact"
+  ],
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.addressbook.assistant.uiplugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "CFBundleSignature": "????",
+  "DTPlatformBuild": ""
+}

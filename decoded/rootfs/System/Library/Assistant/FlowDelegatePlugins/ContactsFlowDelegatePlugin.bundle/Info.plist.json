@@ -1,0 +1,116 @@
+{
+  "CFBundleName": "ContactsFlowDelegatePlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedIntents": [
+    "GetContactIntent",
+    "GetContactAttributeIntent",
+    "ModifyContactAttributeIntent",
+    "LearnPronunciationIntent"
+  ],
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "ContactsFlowDelegatePlugin.ContactsFlowDelegatePlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "ContactsFlowDelegatePlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.ContactsFlowDelegatePlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "contact"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "common_Person",
+      "verb": "read",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "delete",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "create",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "request",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "checkExistence",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "update",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_PersonRelationship",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_PersonRelationship",
+      "verb": "update",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MicroGeographicArea",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Communication",
+      "verb": "update",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.contacts.GetContact",
+    "com.apple.siri.contacts.Confirm",
+    "com.apple.siri.contacts.Deny"
+  ]
+}

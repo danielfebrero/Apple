@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en">
+    <first>
+        <dialog condition="device.isPad">I can use <var name="contentProviderName"/> to answer that. You can enable <var name="contentProviderName"/> on your iPad.</dialog>
+        <dialog condition="device.isMac">I can use <var name="contentProviderName"/> to answer that. You can enable <var name="contentProviderName"/> on your Mac.</dialog>
+        <dialog>I can use <var name="contentProviderName"/> to answer that. You can enable <var name="contentProviderName"/> on your iPhone.</dialog>
+    </first>
+</cat>
+

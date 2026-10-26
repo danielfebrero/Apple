@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "E-mel Julie tentang percutian",
+            "E-mel Nora tentang perubahan rancangan",
+            "E-mel baru kepada Amira Abdullah",
+            "Mel Ayah mengenai semakan sewa",
+            "E-mel Dr. Anu dan sebut saya telah terima borang, terima kasih",
+            "Mel Julie dan Kamales tentang parti dan sebut ia menyeronokkan"
+          ]
+        }
+      ],
+      "SectionName": "menghantar e-mel"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Semak e-mel",
+            "Ada e-mel baru daripada Kamales hari ini?",
+            "Tunjukkan e-mel baru tentang sewa",
+            "Tunjukkan e-mel daripada Julie semalam"
+          ]
+        }
+      ],
+      "SectionName": "Semak e-mel"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Balas Amira, maafkan saya tentang pembayaran lambat"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Panggilnya di tempat kerja"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime dia di tempat kerja"
+          ]
+        }
+      ],
+      "SectionName": "membalas e-mel"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lisää ostoslistaan porkkanoita",
+            "Lisää toivomuslistaan benjihyppy",
+            "Muistuta soittaa äidille",
+            "Muistuta ottamaan sateenvarjo",
+            "Muistuta, että otan lääkkeen huomenaamulla kello 6",
+            "Muistuta, että raportin pitää olla valmis 6:een mennesä",
+            "Lue tehtävälista"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Muistuta soittamaan äidille, kun tulen kotiin",
+            "Muistuta, että soitan Pekalle, kun lähden"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Muistuta soittamaan FaceTimella äidille, kun saavun kotiin",
+            "Muistuta soittamaan FaceTime-puhelu Pekalle, kun lähden"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Muistuta, kun lähden täältä, että ostan kukkia"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

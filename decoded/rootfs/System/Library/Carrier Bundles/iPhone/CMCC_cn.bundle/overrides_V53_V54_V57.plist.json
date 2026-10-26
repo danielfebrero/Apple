@@ -1,0 +1,79 @@
+{
+  "DerPriFileVersion": "6.0.166",
+  "ShowVoNRSwitch": false,
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true,
+  "Enable5GStandaloneByDefault": true,
+  "EnableBackupOnCellular": false,
+  "PDNBackoffTimeout": 100,
+  "SupportsVoNR": true,
+  "IMSConfig": {
+    "Media": {
+      "InactivityTimerRTPSeconds": 20
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRCA",
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "cmnet",
+          "type-mask": 1081395,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "cmwap",
+          "type-mask": 4,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "WaitForBringUpComplete": true,
+          "apn": "IMS",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "cmnet",
+          "type-mask": 1081394,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "SOS",
+          "type-mask": 262144,
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "ShowHighDataModeSwitch": true,
+  "ShowVoNRWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": false,
+  "ShowVolteSwitch": false,
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "Enable5GAutoAfterUpgrade": true
+}

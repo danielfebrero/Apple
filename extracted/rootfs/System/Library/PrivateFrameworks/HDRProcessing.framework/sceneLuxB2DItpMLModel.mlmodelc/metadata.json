@@ -1,0 +1,66 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Mixed (Float16, Float32)",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 3)",
+        "shortDescription" : "",
+        "shape" : "[1, 3]",
+        "name" : "anchor_points",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 6,
+    "mlProgramOperationTypeHistogram" : {
+      "Squeeze" : 2,
+      "Relu" : 2,
+      "Cast" : 4,
+      "Linear" : 3,
+      "ExpandDims" : 2,
+      "BatchNorm" : 2
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "7.1.2",
+      "com.github.apple.coremltools.source" : "torch==2.0.1",
+      "mldb_token" : "mldb-wrxg5qmgo8",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 4)",
+        "shortDescription" : "",
+        "shape" : "[1, 4]",
+        "name" : "feature_vector",
+        "type" : "MultiArray"
+      }
+    ],
+    "generatedClassName" : "sceneLuxB2DItpMLModel",
+    "method" : "predict"
+  }
+]

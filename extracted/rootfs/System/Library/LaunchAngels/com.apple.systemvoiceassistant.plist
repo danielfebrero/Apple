@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.assistant.domain.system.settings.service</key>
+		<dict>
+			<key>_ExperimentalNonLaunching</key>
+			<true/>
+		</dict>
+		<key>com.apple.assistant.domain.system.service</key>
+		<dict>
+			<key>_ExperimentalNonLaunching</key>
+			<true/>
+		</dict>
+		<key>com.apple.assistant.domain.application.service</key>
+		<dict>
+			<key>_ExperimentalNonLaunching</key>
+			<true/>
+		</dict>
+		<key>com.apple.assistant.domain.status.service</key>
+		<dict>
+			<key>_ExperimentalNonLaunching</key>
+			<true/>
+		</dict>
+		<key>com.apple.assistant.domain.validation.service</key>
+		<dict>
+			<key>_ExperimentalNonLaunching</key>
+			<true/>
+		</dict>
+		<key>com.apple.assistant.domain.audio.level.service</key>
+		<dict>
+			<key>_ExperimentalNonLaunching</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Applications/SystemVoiceAssistant.app/SystemVoiceAssistant</string>
+	</array>
+	<key>Label</key>
+	<string>com.apple.systemvoiceassistant</string>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>KeepAlive</key>
+	<false/>
+	<key>EnableTransactions</key>
+	<false/>
+	<key>EnablePressuredExit</key>
+	<false/>
+	<key>ProcessType</key>
+	<string>App</string>
+	<key>_AdditionalProperties</key>
+	<dict>
+		<key>RunningBoard</key>
+		<dict>
+			<key>Managed</key>
+			<true/>
+			<key>Reported</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

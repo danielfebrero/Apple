@@ -1,0 +1,398 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "App Predictor, scores apps to recommend in Spotlight. This is a direct translation of the Chapman et al. model to CoreML.",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "score",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreTimeSuppression",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScorePartOfWeekSuppression",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreLocationSuppression",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreTimeBoost",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScorePartOfWeekBoost",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreLocationBoost",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreCoarseContextualBoost",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreLaunchPopularity",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreTrending",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreSpotlightLaunchPopularity",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreLaunchTimePopularity",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreCoarseTimeOfDayPopularity",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreLaunchSequencePopularity",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreLocationPopularity",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreSSID",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreDayOfWeek",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreSBFolder",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreSBPage",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreLaunch",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreSpotlight",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreLinearFeedback",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreLogFeedback",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreFeedbackConfirms",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreFeedbackRejects",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreFeedbackCorrection",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreSBDock",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreNeverLaunchedPenalty",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreInstall",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreDayZeroBoost",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "feedback",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "0.0.1",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 6,
+    "storagePrecision" : "Float16",
+    "mlProgramOperationTypeHistogram" : {
+      "Range1d" : 1,
+      "Fill" : 5,
+      "Squeeze" : 3,
+      "Sub" : 29,
+      "FloorDiv" : 2,
+      "Gather" : 2,
+      "Cast" : 64,
+      "LogicalOr" : 19,
+      "Split" : 1,
+      "Select" : 6,
+      "Concat" : 7,
+      "Add" : 60,
+      "GreaterEqual" : 43,
+      "Tile" : 4,
+      "Less" : 1,
+      "RealDiv" : 17,
+      "Pow" : 4,
+      "Shape" : 9,
+      "ExpandDims" : 3,
+      "Relu" : 1,
+      "GatherNd" : 3,
+      "NotEqual" : 1,
+      "Linear" : 1,
+      "LogicalAnd" : 34,
+      "SliceByIndex" : 68,
+      "Stack" : 3,
+      "Greater" : 2,
+      "Log" : 3,
+      "Clip" : 27,
+      "LessEqual" : 19,
+      "Mul" : 73,
+      "ReduceSum" : 6
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...512 × 83",
+        "shapeRange" : "[[1, 512], [83, 83]]",
+        "formattedType" : "MultiArray (Float32 1 × 83)",
+        "type" : "MultiArray",
+        "shape" : "[1, 83]",
+        "name" : "input_feature_vector",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "feature_names" : "AppLaunchesInTimeBucket0ForApp,AppLaunchesInTimeBucket1ForApp,AppLaunchesInTimeBucket2ForApp,AppLaunchesInTimeBucket3ForApp,AppLaunchesInTimeBucket4ForApp,AppLaunchesInTimeBucket5ForApp,AppLaunchesInTimeBucket6ForApp,AppLaunchesInTimeBucket7ForApp,AppLaunchesInTimeBucket8ForApp,AppLaunchesInTimeBucket9ForApp,AppLaunchesInTimeBucket10ForApp,AppLaunchesInTimeBucket11ForApp,AppLaunchesInTimeBucket12ForApp,AppLaunchesInTimeBucket13ForApp,AppLaunchesInTimeBucket14ForApp,AppLaunchesInTimeBucket15ForApp,AppLaunchesInTimeBucket16ForApp,AppLaunchesInTimeBucket17ForApp,AppLaunchesInTimeBucket18ForApp,AppLaunchesInTimeBucket19ForApp,AppLaunchesInTimeBucket20ForApp,AppLaunchesInTimeBucket21ForApp,AppLaunchesInTimeBucket22ForApp,AppLaunchesInTimeBucket23ForApp,AppLaunchesInTimeBucket24ForApp,AppLaunchesOnDayOfWeekSaturdayForApp,AppLaunchesOnDayOfWeekSundayForApp,AppLaunchesOnDayOfWeekMondayForApp,AppLaunchesOnDayOfWeekTuesdayForApp,AppLaunchesOnDayOfWeekWednesdayForApp,AppLaunchesOnDayOfWeekThursdayForApp,AppLaunchesOnDayOfWeekFridayForApp,AppLaunchesAtCoarseGeoHash0ForApp,AppLaunchesAtCoarseGeoHash1ForApp,AppLaunchesAtCoarseGeoHash2ForApp,AppLaunchesAtCoarseGeoHash3ForApp,AppLaunchesAtCoarseGeoHash4ForApp,AppLaunchesAtCoarseGeoHash5ForApp,AppLaunchesAtCoarseGeoHash6ForApp,AppLaunchesAtCoarseGeoHash7ForApp,AppLaunchesAtCoarseGeoHash8ForApp,AppLaunchesAtCoarseGeoHash9ForApp,Feedback,FeedbackConfirms,FeedbackRejects,HomeScreenAppConfirmsAtCoarseTimePOWLocationForApp,AppConfirmsCoarseTimePowLocationForApp,AppDirectoryConfirmsAtCoarseTimePOWLocationForApp,HomeScreenAppRejectsAtCoarseTimePOWLocationForApp,AppRejectsCoarseTimePowLocationForApp,AppDirectoryRejectsAtCoarseTimePOWLocationForApp,HomeScreenAppConfirmsForAllAppsAndContextsDecayedAtCoarseContextRate,AppConfirmsCoarseTimePowLocationForAllAppsAndContexts,AppDirectoryConfirmsForAllAppsAndContextsDecayedAtCoarseContextRate,HomeScreenAppRejectsForAllAppsAndContextsDecayedAtCoarseContextRate,AppRejectsCoarseTimePowLocationForAllAppsAndContexts,AppDirectoryRejectsForAllAppsAndContextsDecayedAtCoarseContextRate,LaunchPopularity,TrendingPopularity,SpotlightLaunchPopularity,TimeOfDayPopularity,CoarseTimeOfDayPopularity,LaunchSequencePopularity,LaunchLocationPopularity,SSIDPopularity,DayOfWeekPopularity,CurrentTimeBucketFromZeroToTwentyFour,LastLaunchAge,LastSpotlightLaunchAge,InstallAge,IsDateInWeekendOnDevice,AppLaunchesAtCoarseGeoHashForApp,AppLaunchesAtCoarseGeoHashForAppInContext,AppLaunchesAtSpecificGeoHashForAppInContext,IsLocationServicesDisabled,AppLaunchesCoarseTimePowLocationForAppInContext,AppLaunchesCoarseTimePowLocationInContext,AppLaunchesCoarseTimePowLocationForApp,OnSpringBoardDock,DayZeroPoints,AppInFolder,SpringBoardPage,IsRemoteApp",
+      "mldb_token" : "mldb-8mbymokg7x",
+      "intermediate_values" : "SubScoreTimeSuppression,SubScorePartOfWeekSuppression,SubScoreLocationSuppression,SubScoreTimeBoost,SubScorePartOfWeekBoost,SubScoreLocationBoost,SubScoreCoarseContextualBoost,SubScoreLaunchPopularity,SubScoreTrending,SubScoreSpotlightLaunchPopularity,SubScoreLaunchTimePopularity,SubScoreCoarseTimeOfDayPopularity,SubScoreLaunchSequencePopularity,SubScoreLocationPopularity,SubScoreSSID,SubScoreDayOfWeek,SubScoreSBFolder,SubScoreSBPage,SubScoreLaunch,SubScoreSpotlight,SubScoreLinearFeedback,SubScoreLogFeedback,SubScoreFeedbackConfirms,SubScoreFeedbackRejects,SubScoreFeedbackCorrection,SubScoreSBDock,SubScoreNeverLaunchedPenalty,SubScoreInstall,SubScoreDayZeroBoost,feedback",
+      "com.github.apple.coremltools.source" : "torch==2.5.0",
+      "com.github.apple.coremltools.version" : "8.2",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "generatedClassName" : "ATXAppPredictionMLModel",
+    "method" : "predict"
+  }
+]

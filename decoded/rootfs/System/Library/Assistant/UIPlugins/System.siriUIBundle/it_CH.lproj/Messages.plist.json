@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Scrivi a Carla che sto arrivando",
+            "Invia un messaggio a Fabrizio Ciani",
+            "Invia un messaggio a Simonetta e chiedile qual è il programma per domani",
+            "Di' a Francesca che lo spettacolo è stato fantastico",
+            "Invia un messaggio al cellulare di Sara e dille che sono in ritardo",
+            "Invia un messaggio al 330 555 12 12",
+            "Scrivi a Federico e Simonetta e chiedi loro dove sono"
+          ]
+        }
+      ],
+      "SectionName": "INVIARE MESSAGGI"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Leggi i nuovi messaggi",
+            "Rileggilo"
+          ]
+        }
+      ],
+      "SectionName": "LEGGERE I MESSAGGI"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Rispondi: è una bella notizia",
+            "Digli che arriverò tra 10 minuti"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Chiamala"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Chiamala con FaceTime"
+          ]
+        }
+      ],
+      "SectionName": "RISPONDERE AI MESSAGGI"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Leggi l'ultimo messaggio di Edoardo"
+          ]
+        }
+      ],
+      "SectionName": "CERCARE MESSAGGI"
+    }
+  ]
+}

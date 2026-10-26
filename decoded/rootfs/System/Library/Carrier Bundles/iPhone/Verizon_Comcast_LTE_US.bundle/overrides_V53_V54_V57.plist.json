@@ -1,0 +1,348 @@
+{
+  "ForceWPSCallsOverCS": false,
+  "PcoOptions": {
+    "PcoMnc": 480,
+    "RequestMSISDN": true,
+    "PcoMcc": 311,
+    "ContainerIds": [
+      65280,
+      65283
+    ]
+  },
+  "DerPriFileVersion": "5.3.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "MTU": [
+    {
+      "technology-mask": 28,
+      "size": 1428
+    },
+    {
+      "technology-mask": 2,
+      "size": 1472
+    }
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "IMSConfigSecondaryOverlay": {
+    "SetCountryWithCampedPANI": true
+  },
+  "Show5GSwitch": true,
+  "SMSSettings": {
+    "MessageFormat": {
+      "SignalingFormat": 1,
+      "PacketFormat": 1
+    }
+  },
+  "ShowHighDataModeSwitch": true,
+  "EFSFiles": [
+    {
+      "carrier.ims": "/shared/qpconfig.xml"
+    }
+  ],
+  "NRSlicing": {
+    "OsId": [
+      67,
+      1,
+      210,
+      17,
+      151,
+      217,
+      66,
+      201,
+      177,
+      194,
+      246,
+      117,
+      131,
+      192,
+      249,
+      32
+    ],
+    "EntitlementsGenres": true,
+    "SupportsLLPHS": true
+  },
+  "IMSConfig": {
+    "Signaling": {
+      "AlwaysAddSipInstanceToSubscribeRequest": true,
+      "EPSFallbackTimerSeconds": 6,
+      "HonorSimAccessClassBeforeBarring": true,
+      "SupportPEarlyMediaHeader": true,
+      "CSFBOnAccessBarred": false,
+      "RequireRegistrationOnEPSFallback": true,
+      "SkipEmergRegUnderSameTransport": true,
+      "EarlyMediaNeedsHeader": true,
+      "IPSecSegmentOffset": 210,
+      "ResetDisabledModeOnEvents": "SimInserted,AirplaneModeToggled,ServingNetworkChanged",
+      "NeedToSuppressRegistrationEventWhenRegTerminationReasonNoLegacyFallback": true,
+      "AlwaysSendSessionProgress": true,
+      "ResponseCodesBlockedForSilentRedialNRSANonEm": "403,404,480",
+      "FastEmergencyLocationEnabled": true,
+      "ResetSocketWhenNetworkChange": false,
+      "TIMSEstablishmentTimeoutSeconds": 120,
+      "EnableBrandedCalling": true,
+      "AdditionalFeatureTags": {
+        "sms": {
+          "+cdmaless": ""
+        },
+        "voice": {
+          "+cdmaless": "",
+          "+g.gsma.rcs.telephony": "\"cs,volte\""
+        }
+      },
+      "NoFallbackVoiceService": true,
+      "ReRegisterOnCellularHandover": true,
+      "TPLMNBarringTimeoutSeconds": 60,
+      "UseIPSec": true,
+      "T3396PdpBackOffSeconds": 300
+    },
+    "AllowIMSUnprovisioned": true,
+    "ProvisionWiFiCallingWithSetEntitlement": false,
+    "SMS": {
+      "SupportedDomains": {
+        "EHRPD": false,
+        "NR": true
+      }
+    },
+    "Media": {
+      "AudioCodecs": {
+        "115": {
+          "ch-aw-recv": "3"
+        }
+      },
+      "OrderEVSCodecsByCodecID": false
+    },
+    "Emergency": {
+      "T911EMFEnabled": true
+    },
+    "Voice": {
+      "BlockCallsOverCS": true,
+      "EnableVoNRByDefault": true,
+      "BlockSilentRedialOverCS": true
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4205977,
+    "ExtraEndPoints": [
+      {
+        "PvDDefinition": {
+          "Server": "pvd.comcast.net",
+          "service-name": [
+            "enhanced-throughput"
+          ]
+        },
+        "BlindToken": {
+          "NumTokens": 20,
+          "SupportedServices": [
+            {
+              "DeviceType": "iPhone",
+              "ServiceNames": 1
+            }
+          ]
+        },
+        "TLSTrustedCACertificates": [
+          "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\n"
+        ],
+        "SupportedEntitlements": 2097168,
+        "Authentication": {
+          "Type": 1,
+          "Username": "0$IMSI@wlan.mnc$MNC.mcc$MCC.3gppnetwork.org"
+        },
+        "ServerAddress": "https://es.xm.comcast.com/entitlement/",
+        "SupportedActions": [
+          "getAnonymousCredentials"
+        ],
+        "AllowedConnectivityOnly": "Internet"
+      },
+      {
+        "AllowedConnectivityOnly": "Internet",
+        "ServerAddress": "https://es.xm.comcast.com/entitlement/",
+        "Authentication": {
+          "Type": 5
+        },
+        "SupportedActions": [
+          "enableEnhancedThroughput"
+        ],
+        "TLSTrustedCACertificates": [
+          "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\n"
+        ],
+        "BindingInterface": "en0"
+      },
+      {
+        "AllowedConnectivityOnly": "Internet",
+        "PushSettingsOverlay": {
+          "Topic": "com.comcast.xm.es.cbrs",
+          "geofence-data": "com.comcast.xm.es.geofence"
+        },
+        "Authentication": {
+          "Type": 1,
+          "Username": "0$IMSI@wlan.mnc$MNC.mcc$MCC.3gppnetwork.org"
+        },
+        "ServerAddress": "https://es.xm.comcast.com/entitlement",
+        "SupportedActions": [
+          "private-net-provisioning",
+          "getGeoFenceData"
+        ],
+        "SupportedEntitlements": 262160
+      }
+    ],
+    "SupportCrossPlatformSIMTransfer": true,
+    "EnableVolteWhileEntitlementStatusIsUnknown": true
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "NoDafPopupTemporaryErrors": "1110,2509",
+  "AllowSAOnWiFiAssociation": true,
+  "AttachAPN": {
+    "3GPP": [
+      {
+        "AllowedProtocolMask": 3,
+        "password": "",
+        "PcscfAddressRequired": false,
+        "APNClass": 1,
+        "username": "",
+        "apn": "vzwinternet",
+        "AllowedProtocolMaskInRoamingLTE": 3
+      },
+      {
+        "AllowedProtocolMask": 3,
+        "password": "",
+        "PcscfAddressRequired": true,
+        "APNClass": 3,
+        "username": "",
+        "apn": "ims",
+        "AllowedProtocolMaskInRoamingLTE": 2
+      }
+    ]
+  },
+  "PhoneAccountTransfer": {
+    "RequiresPasscodeForCrossPlatformTransfer": true
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Enable5GAutoByDefault": true,
+  "fallback-apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 4194867,
+          "password": "",
+          "APNSwitchCauseCodes": [
+            33,
+            27,
+            523
+          ],
+          "username": "",
+          "OrigApn": "vzwinternet",
+          "apn": "COMCAST.RSLR.VZWENTP",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "ShowVoNRSwitch": true,
+  "VoiceTextMedia": {
+    "EnableHoldForRTT": true
+  },
+  "SupportsNRNSAInboundRoaming": true,
+  "TechSettings": {
+    "SuppressSAInOverCellHandover": true,
+    "EPDGTimeout": 45
+  },
+  "apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 4194867,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "AlwaysOnPDU": true,
+          "username": "",
+          "apn": "vzwinternet",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "tech-type-mask": 16390,
+          "username": "",
+          "apn": "vzwapp",
+          "type-mask": 49156,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "AlwaysOnPDU": true,
+          "Support5GSaHandOver": true,
+          "password": "",
+          "tech-type-mask": 131072,
+          "NoCellularReconnectCauseCodes": [
+            {
+              "CauseCodes": [
+                24
+              ],
+              "RecoversOnAirplaneMode": true,
+              "NumTriesAllowed": 3,
+              "Type": "Non3GPP"
+            },
+            {
+              "CauseCodes": [
+                8
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                27
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                29
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                32
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                33
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            }
+          ],
+          "AllowedProtocolMaskInRoaming": 2,
+          "SupportSwitchOver": true,
+          "type-mask": 131072,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "vzwadmin",
+          "type-mask": 0,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "vzwemergency",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "SupportsVoNR": true
+}

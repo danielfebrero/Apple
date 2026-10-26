@@ -1,0 +1,117 @@
+[
+  {
+    "shortDescription": "--",
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "LSTM Ouput",
+        "shape": "[]",
+        "name": "lstm_output",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "LSTM Hidden output",
+        "shape": "[]",
+        "name": "hn",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "Sequence tag logits",
+        "shape": "[]",
+        "name": "sequence_tags",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Int32",
+        "formattedType": "MultiArray (Int32)",
+        "shortDescription": "Predicted class labels",
+        "shape": "[]",
+        "name": "reduce_argmax_0",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "Predicted class confidence",
+        "shape": "[]",
+        "name": "reduce_max_0",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "--",
+    "modelParameters": [],
+    "author": "--",
+    "specificationVersion": 6,
+    "storagePrecision": "Mixed (Float16, Float32)",
+    "license": "--",
+    "mlProgramOperationTypeHistogram": {
+      "Concat": 2,
+      "Lstm": 3,
+      "Linear": 2,
+      "SliceByIndex": 1,
+      "Transpose": 2,
+      "Stack": 3,
+      "ReduceMax": 1,
+      "Relu": 1,
+      "Softmax": 2,
+      "Cast": 9,
+      "Tile": 1,
+      "Mul": 1,
+      "ExpandDims": 1,
+      "ReduceArgmax": 1,
+      "Gather": 1,
+      "Split": 3
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "12.0",
+      "tvOS": "15.0",
+      "visionOS": "1.0",
+      "watchOS": "8.0",
+      "iOS": "15.0",
+      "macCatalyst": "15.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Int32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 1...64",
+        "shapeRange": "[[1, 1], [1, 64]]",
+        "formattedType": "MultiArray (Int32 1 × 1)",
+        "type": "MultiArray",
+        "shape": "[1, 1]",
+        "name": "token_ids",
+        "shortDescription": "--"
+      }
+    ],
+    "userDefinedMetadata": {
+      "maxLength": "64",
+      "mldb_token": "mldb-jvakw8rano",
+      "boltTask": "e9mmpdat5k"
+    },
+    "generatedClassName": "MentionGenerationModel",
+    "method": "predict"
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "userDefinedMetadata" : {
+      "features" : "RotationX, RotationY, RotationZ, AccelerationX, AccelerationY, AccelerationZ",
+      "bolt_id" : "HDS-4act5000",
+      "com.github.apple.coremltools.source" : "torch==1.13.1+cu117",
+      "mldb_token" : "mldb-2lxyvpjyn7",
+      "com.github.apple.coremltools.version" : "6.3.0"
+    },
+    "classLabels" : [
+      "Background",
+      "Yes",
+      "No"
+    ],
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "10...60",
+        "shapeRange" : "[[10, 60]]",
+        "formattedType" : "MultiArray (Float32 30)",
+        "type" : "MultiArray",
+        "shape" : "[30]",
+        "name" : "RotationX",
+        "shortDescription" : "--"
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "10...60",
+        "shapeRange" : "[[10, 60]]",
+        "formattedType" : "MultiArray (Float32 30)",
+        "type" : "MultiArray",
+        "shape" : "[30]",
+        "name" : "RotationY",
+        "shortDescription" : "--"
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "10...60",
+        "shapeRange" : "[[10, 60]]",
+        "formattedType" : "MultiArray (Float32 30)",
+        "type" : "MultiArray",
+        "shape" : "[30]",
+        "name" : "RotationZ",
+        "shortDescription" : "--"
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "10...60",
+        "shapeRange" : "[[10, 60]]",
+        "formattedType" : "MultiArray (Float32 30)",
+        "type" : "MultiArray",
+        "shape" : "[30]",
+        "name" : "AccelerationX",
+        "shortDescription" : "--"
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "10...60",
+        "shapeRange" : "[[10, 60]]",
+        "formattedType" : "MultiArray (Float32 30)",
+        "type" : "MultiArray",
+        "shape" : "[30]",
+        "name" : "AccelerationY",
+        "shortDescription" : "--"
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "10...60",
+        "shapeRange" : "[[10, 60]]",
+        "formattedType" : "MultiArray (Float32 30)",
+        "type" : "MultiArray",
+        "shape" : "[30]",
+        "name" : "AccelerationZ",
+        "shortDescription" : "--"
+      }
+    ],
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "labelProbability",
+        "shortDescription" : "--"
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "classLabel",
+        "shortDescription" : "--"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "storagePrecision" : "Mixed (Float16, Float32)",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Transpose" : 26,
+      "Convolution" : 1,
+      "ConcatND" : 1,
+      "Squeeze" : 1,
+      "SubtractBroadcastable" : 12,
+      "ReduceMean" : 13,
+      "Gather" : 1,
+      "ActivationReLU" : 2,
+      "AddBroadcastable" : 12,
+      "InnerProduct" : 25,
+      "Multiply" : 6,
+      "Cos" : 1,
+      "Add" : 25,
+      "UnaryPower" : 12,
+      "GetShape" : 1,
+      "SplitND" : 6,
+      "Unary" : 12,
+      "LoadConstantND" : 50,
+      "ExpandDims" : 3,
+      "BatchedMatmul" : 12,
+      "ReshapeStatic" : 24,
+      "RangeDynamic" : 1,
+      "Sin" : 1,
+      "SoftmaxND" : 7,
+      "Stack" : 1,
+      "DivideBroadcastable" : 24,
+      "MultiplyBroadcastable" : 13,
+      "ReduceSum" : 12,
+      "ActivationLinear" : 1,
+      "Gelu" : 6
+    },
+    "method" : "predict",
+    "version" : "HDS-4act5000",
+    "isUpdatable" : "0",
+    "specificationVersion" : 4,
+    "stateSchema" : [
+
+    ],
+    "computePrecision" : "Float16",
+    "shortDescription" : "HeadGestures ML Model",
+    "license" : "--",
+    "generatedClassName" : "MotionTransformer",
+    "author" : "--",
+    "modelType" : {
+      "name" : "MLModelType_neuralNetworkClassifier"
+    }
+  }
+]

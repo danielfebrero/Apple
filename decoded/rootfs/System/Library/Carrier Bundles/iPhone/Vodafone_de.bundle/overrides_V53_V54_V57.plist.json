@@ -1,0 +1,68 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "AllowSAOnWiFiAssociation": true,
+  "ShowVoNRSwitch": true,
+  "TechSettings": {
+    "EmergencyRemoteIdRequired": true,
+    "TechPolicies": [
+      {
+        "policy": "TRUE",
+        "serviceMask": 131072
+      },
+      {
+        "policy": "TRUE",
+        "serviceMask": 262144
+      }
+    ]
+  },
+  "Show5GSwitch": true,
+  "Enable5GStandaloneByDefault": true,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "password": "",
+      "username": "",
+      "apn": "web.vodafone.de",
+      "type-mask": 1081395,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 262144,
+      "password": "",
+      "tech-type-mask": 262144,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "sos",
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GStandaloneSwitchOnlyWhenEntitled": true
+}

@@ -1,0 +1,103 @@
+{
+  "DerPriFileVersion": "6.0.163",
+  "ShowVoNRSwitch": true,
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "PushSettings": {
+    "CellularPlanTransferTopic": "br.com.vivo.ent.iphone-transfer"
+  },
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "Signaling": {
+      "ResetSocketWhenNetworkChange": false
+    }
+  },
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://vbr.prod.ondemandconnectivity.com",
+    "TransferErrorCodes": {
+      "BillingErrors": [
+        "6102",
+        "6108"
+      ],
+      "IneligibleAccountErrors": [
+        "6107",
+        "5101",
+        "6101",
+        "6104",
+        "6105"
+      ],
+      "MaintenanceErrors": [
+        "6103",
+        "6109"
+      ],
+      "BlockedAccountErrors": [
+        "6110",
+        "6111"
+      ]
+    }
+  },
+  "EnableLTEAfterUpgrade": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "IPv6SupportedDataModeMask": 110623,
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4203537,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "TransferSIMService"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "apns": [
+    {
+      "type-mask": 32817,
+      "password": "vivo",
+      "AllowedProtocolMaskInDomesticRoaming": 3,
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "vivo",
+      "apn": "zap.vivo.com.br",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "password": "vivo",
+      "username": "vivo",
+      "apn": "mms.vivo.com.br",
+      "type-mask": 4
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 1048576,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 1048576,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "xcap.ims",
+      "AllowedProtocolMask": 1
+    }
+  ],
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Show5GStandaloneSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsVoNR": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Enable5GAutoByDefault": true
+}

@@ -1,0 +1,51 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Voeg aardappels toe aan mijn boodschappenlijst",
+            "Voeg parachutespringen toe aan mijn bucket list",
+            "Vergeet niet een paraplu mee te nemen",
+            "Herinner me eraan dat ik morgen om zes uur mijn pil moet innemen",
+            "Herinner me eraan dat het rapport om zes uur klaar moet zijn",
+            "Lees mijn takenlijst voor",
+            "Markeer de derde als voltooid",
+            "Maak een nieuwe lijst met de naam Boodschappen",
+            "Herinner me morgen aan deze e-mail",
+            "Onthoud deze website"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Herinner me eraan dat ik Bram moet bellen wanneer ik vertrek",
+            "Herinner me eraan dat ik papa bel wanneer ik in de auto stap"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Herinner me eraan dat ik mama FaceTime wanneer ik thuis ben",
+            "Herinner me eraan dat ik Bram FaceTime wanneer ik vertrek"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Herinner me eraan dat ik bloemen moet kopen wanneer ik hier vertrek"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.siri.assistant.assistantengine.language",
+  "UsageAliasValues": {
+    "vi-VN": {
+      "com.apple.if.planner": {
+        "ae.language": "vi",
+        "nlrouter.language": "vi",
+        "rg.language": "vi_VN"
+      },
+      "com.apple.if.planner.overrides": {
+        "ae.language": "vi",
+        "if.language": "vi_VN",
+        "nlrouter.locale": "vi_VN",
+        "rg.language": "vi_VN",
+        "rg.region": "VN"
+      },
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "vi_VN"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "vi_VN",
+        "attention.language": "vi_VN",
+        "nl.assistant": "enabled",
+        "nl.language": "vi_VN"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "vi_VN"
+      }
+    }
+  }
+}

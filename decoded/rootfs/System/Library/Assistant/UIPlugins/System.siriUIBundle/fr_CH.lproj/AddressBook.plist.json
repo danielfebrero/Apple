@@ -1,0 +1,66 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Où habite Alexandre?",
+            "Quel est le numéro d’Alex?",
+            "C’est quand l’anniversaire de ma sœur?",
+            "Affiche l’adresse e-mail professionnelle de Stéphanie",
+            "Où travaille mon frère?"
+          ]
+        }
+      ],
+      "SectionName": "QUESTIONS SUR LES CONTACTS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Affiche Alexandre Lacroix",
+            "Trouve mes contacts avec le nom Lacroix"
+          ]
+        }
+      ],
+      "SectionName": "RECHERCHE DE CONTACTS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Florence Rousseau est ma mère",
+            "Thomas Rousseau est mon frère"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Appelle mon frère à son bureau"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": []
+        }
+      ],
+      "SectionName": "RELATIONS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Apprends à prononcer mon nom",
+            "Apprends à prononcer le nom de ma mère",
+            "Apprends à prononcer le nom Keunebroek"
+          ]
+        }
+      ],
+      "SectionName": "PRONONCIATION D’UN CONTACT"
+    }
+  ]
+}

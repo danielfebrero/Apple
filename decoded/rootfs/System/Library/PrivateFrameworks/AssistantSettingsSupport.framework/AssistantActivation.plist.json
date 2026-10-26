@@ -1,0 +1,55 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "id": "ACTIVATION_PHRASE_GROUP_ID",
+      "isRadioGroup": true
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "ACTIVATION_PHRASE_COMPACT_ID",
+      "label": "ACTIVATION_PHRASE_COMPACT_TITLE"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "ACTIVATION_PHRASE_HS_ID",
+      "label": "ACTIVATION_PHRASE_HS_TITLE"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "ACTIVATION_PHRASE_OFF_ID",
+      "label": "ACTIVATION_PHRASE_OFF_TITLE"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "ACTIVATION_LONG_PRESS_GROUP_ID",
+      "label": ""
+    },
+    {
+      "cell": "PSSwitchCell",
+      "confirmation": {
+        "cancelTitle": "ASSISTANT_ENABLE_CANCEL",
+        "okTitle": "ASSISTANT_ENABLE_OK",
+        "prompt": "ASSISTANT_ENABLE_WARNING",
+        "title": "ASSISTANT_ENABLE_TITLE"
+      },
+      "get": "hardwareButtonTrigger:",
+      "id": "ACTIVATION_LONG_PRESS_ID",
+      "label": "ACTIVATION_LONG_PRESS_TITLE",
+      "set": "setHardwareButtonTrigger:forSpecifier:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "ACTIVATION_DOUBLE_TAP_GROUP_ID",
+      "label": ""
+    },
+    {
+      "cell": "PSSwitchCell",
+      "get": "typeToSiriTrigger:",
+      "id": "ACTIVATION_DOUBLE_TAP_ID",
+      "label": "ACTIVATION_DOUBLE_TAP_TITLE",
+      "set": "setTypeToSiriTrigger:forSpecifier:"
+    }
+  ],
+  "title": "ACTIVATION_COMPACT_TITLE"
+}

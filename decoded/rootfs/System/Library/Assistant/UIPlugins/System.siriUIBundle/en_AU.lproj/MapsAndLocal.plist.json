@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Give me directions home",
+            "Get me directions to Ulladulla",
+            "Directions to my dad’s work",
+            "Get me directions from Sydney to Canberra",
+            "Give me walking directions to Emily’s"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "What’s my next turn?",
+            "Are we there yet?",
+            "What’s my ETA?",
+            "Find a petrol station"
+          ]
+        }
+      ],
+      "SectionName": "Navigation"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Show me the Sydney Opera House",
+            "Show me a map of 367 George Street in Sydney"
+          ]
+        }
+      ],
+      "SectionName": "Maps"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Find coffee near me",
+            "Find the best nail studio",
+            "Where is the nearest Apple Store?"
+          ]
+        }
+      ],
+      "SectionName": "Local businesses"
+    }
+  ]
+}

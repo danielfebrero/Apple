@@ -1,0 +1,71 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "Model to estimate the rotation of an image.",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double 4)",
+        "shortDescription": "out angle",
+        "shape": "[4]",
+        "name": "angle",
+        "type": "MultiArray"
+      }
+    ],
+    "storagePrecision": "Float16",
+    "modelParameters": [],
+    "author": "Sai Charan Kilari",
+    "specificationVersion": 2,
+    "license": "Apple, Inc.",
+    "computePrecision": "Float16",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "10.13.2",
+      "tvOS": "11.2",
+      "visionOS": "1.0",
+      "watchOS": "4.2",
+      "iOS": "11.2",
+      "macCatalyst": "11.2"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "height": "224",
+        "colorspace": "BGR",
+        "isOptional": "0",
+        "width": "224",
+        "isColor": "1",
+        "formattedType": "Image (Color 224 × 224)",
+        "hasSizeFlexibility": "0",
+        "type": "Image",
+        "shortDescription": "The input image",
+        "name": "inputImage"
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "4.0",
+      "com.github.apple.coremltools.source": "keras==2.2.4",
+      "mldb_token": "mldb-34ye6elab9",
+      "coremltoolsVersion": "3.4"
+    },
+    "generatedClassName": "MonzaV4_1",
+    "neuralNetworkLayerTypeHistogram": {
+      "ActivationSigmoid": 1,
+      "ActivationLinear": 70,
+      "ActivationReLU": 35,
+      "UnaryThreshold": 35,
+      "Add": 10,
+      "PoolingAverage": 1,
+      "BatchNorm": 52,
+      "Convolution": 53,
+      "PaddingConstant": 5,
+      "Reshape": 2
+    },
+    "method": "predict"
+  }
+]

@@ -1,0 +1,125 @@
+{
+  "MVNOOverrides": {
+    "Configuration_1": {
+      "OverrideConfiguration": {
+        "MTU": [
+          {
+            "technology-mask": 25,
+            "size": 1450
+          }
+        ],
+        "Enable5GStandaloneByDefault": false,
+        "AttachAPN": {
+          "3GPP": [
+            {
+              "apn": "plus.acs.jp.V6",
+              "password": "lm",
+              "AllowedProtocolMask": 3,
+              "PcscfAddressRequired": false,
+              "username": "lm",
+              "AllowedProtocolMaskInRoamingUMTS": 3,
+              "auth_type": "CHAP",
+              "AllowedProtocolMaskInRoamingLTE": 3
+            },
+            {
+              "password": "",
+              "PcscfAddressRequired": true,
+              "username": "",
+              "apn": "ims",
+              "AllowedProtocolMaskInRoamingLTE": 2,
+              "AllowedProtocolMask": 2
+            }
+          ]
+        },
+        "SupportsVoNR": false,
+        "ShowVoNRSwitch": false,
+        "Show5GStandaloneSwitch": false,
+        "IMSConfig": {
+          "Voice": {
+            "EnableVoNRByDefault": false
+          }
+        }
+      }
+    }
+  },
+  "DerPriFileVersion": "6.0.164",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "MTU": [
+    {
+      "technology-mask": 25,
+      "size": 1358
+    }
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "SMSSettings": {
+    "MessageFormat": {
+      "SignalingFormat": 1,
+      "PacketFormat": 1
+    },
+    "TransportFallbackForSTKSMS": true,
+    "TransportFallback": true
+  },
+  "SatelliteSystemTransitionTimeToAllowed": 30,
+  "ShowSatelliteSwitch": true,
+  "IMSConfig": {
+    "Emergency": {
+      "RestrictedDomainMode": true
+    },
+    "Satellite": {
+      "IMSServiceMask": 2
+    },
+    "Signaling": {
+      "FatalSmsErrors": "400,404,408,488,500,501,502,503"
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      },
+      "UseRpOriginatingAddressAsSender": true
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4762649
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "SupportsSatellite": true,
+  "EnableSatelliteByDefault": true,
+  "AttachAPN": {
+    "3GPP": [
+      {
+        "apn": "jpspirdi",
+        "password": "titbopt",
+        "AllowedProtocolMask": 3,
+        "PcscfAddressRequired": false,
+        "username": "sdittbsb",
+        "AllowedProtocolMaskInRoamingUMTS": 3,
+        "auth_type": "PAP",
+        "AllowedProtocolMaskInRoamingLTE": 3
+      },
+      {
+        "password": "",
+        "PcscfAddressRequired": true,
+        "username": "",
+        "apn": "ims",
+        "AllowedProtocolMaskInRoamingLTE": 2,
+        "AllowedProtocolMask": 2
+      }
+    ]
+  },
+  "ShowVoNRWarningUnsupportedCarrier": false,
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "SatelliteApps": [
+    "jp.co.softbank.OfficialApp"
+  ],
+  "SupportsVoNR": true
+}

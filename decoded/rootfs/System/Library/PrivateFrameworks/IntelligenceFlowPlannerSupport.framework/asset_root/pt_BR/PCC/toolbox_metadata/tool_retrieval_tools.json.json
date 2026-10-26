@@ -1,0 +1,840 @@
+{
+  "extraMetadata": {
+    "locale": "pt_BR"
+  },
+  "swiftToolNameToMetadata": {
+    "MapsDeleteParkedCar": {
+      "embeddingDescription": "delete parking location forget remove clear parked car",
+      "promptToolName": "delete_parking_locations"
+    },
+    "MapsStopShareETA": {
+      "embeddingDescription": "stop share eta arrival time estimated notify contact person",
+      "promptToolName": "stop_share_eta"
+    },
+    "add_assets_to_album": {
+      "embeddingDescription": "Add photos, pictures, or images to existing photo albums. Organize and put multiple assets into albums for better photo management and collection organization. Works with vacation photos, family pictures, screenshots, and any type of image assets.",
+      "promptToolName": "add_assets_to_album"
+    },
+    "add_audio_to_library": {
+      "embeddingDescription": "Adds songs, albums, playlists, or artists to user's personal music library collection. Used when user explicitly wants to save or add music items to their library, subscribe or follow news / podcasts. Not for queuing music, favoriting/liking, or adding to specific playlists.",
+      "promptToolName": "add_audio_to_library"
+    },
+    "add_audio_to_playlist": {
+      "embeddingDescription": "Adds songs to playlist, put song in playlist, add track to playlist, include music in playlist, add this to my workout playlist, put in my favorites playlist, add to exercise playlist, save to playlist, insert into playlist",
+      "promptToolName": "add_audio_to_playlist"
+    },
+    "add_navigation_waypoints": {
+      "embeddingDescription": "update modify change navigation waypoints stops route add remove",
+      "promptToolName": "add_navigation_waypoints"
+    },
+    "answer_call": {
+      "embeddingDescription": "answer call, pick up phone, pick up, accept call, take call, answer incoming call, get phone, grab phone, answer that, take that call, accept incoming, pick it up, answer phone call, receive call, get call, answer ringing phone, take incoming call, pickup phone, pickup call, pick up the phone",
+      "promptToolName": "answer_call"
+    },
+    "archive_emails": {
+      "embeddingDescription": "move email to the archive folder",
+      "promptToolName": "archive_emails"
+    },
+    "ask_3p_provider": {
+      "promptToolName": "ask_3p_provider"
+    },
+    "ask_user": {
+      "embeddingDescription": "Interactive dialog tool that asks users clarifying questions, requests additional information, or helps users make decisions through conversational prompts. Handles user input collection, preference gathering, and option selection scenarios.",
+      "promptToolName": "ask_user"
+    },
+    "ask_user_to_pick": {
+      "embeddingDescription": "Helps users choose between multiple similar options when their request matches several entities. Used for disambiguation when there are multiple contacts with the same name, multiple apps with similar names, multiple locations, or multiple media items that match the user's criteria. Presents the available options to the user for selection when the system cannot determine which specific item the user intended.",
+      "promptToolName": "ask_user_to_pick"
+    },
+    "calculate_duration": {
+      "embeddingDescription": "Calculate time duration and differences between two timepoints for timer setting, countdown creation, and time measurement. Computes exact time differences in seconds, minutes, hours, days, weeks, months, and years. Perfect for 'time until' calculations, setting timers to absolute times, measuring elapsed time, calculating days between dates, and duration analysis. Supports dates, datetimes, times, and relative references like 'now' and 'today'.",
+      "promptToolName": "calculate_duration"
+    },
+    "callback": {
+      "embeddingDescription": "Callback the most recent call. Initiates a new call to a previously called contact/number from the recent phone calls (aka Recents).",
+      "promptToolName": "callback"
+    },
+    "camera_flip_camera": {
+      "embeddingDescription": "Flip or switch between front and back camera positions. Toggle camera view from selfie camera to rear camera or vice versa. Change active camera direction and switch between available camera lenses on the device.",
+      "promptToolName": "camera_flip_camera"
+    },
+    "camera_start_capture": {
+      "embeddingDescription": "camera capture, take photo, take picture, snap photo, shoot video, record video, start recording, capture image, take selfie, take pic, front camera, back camera, portrait mode, video mode, photo mode, timer, graba foto, graba video, toma foto, shoot pic, start camera",
+      "promptToolName": "camera_start_capture"
+    },
+    "cancel_alarms": {
+      "embeddingDescription": "Cancel, dismiss, stop, or turn off currently ringing alarms without permanently deleting them. Stops active alarm notifications, silences firing alarms, dismisses sounding alarms, and handles alarm dismissal for morning wake-ups, reminders, and notifications that are currently going off or alerting.",
+      "promptToolName": "cancel_alarms"
+    },
+    "cancel_timer": {
+      "embeddingDescription": "Permanently cancels, stops and deletes timers from device. Removes single or multiple timers by ID. Used for stopping unwanted timers, clearing finished countdowns, cleaning up timer lists, and eliminating expired or unnecessary timers. Irreversible deletion - timers cannot be recovered once canceled.",
+      "promptToolName": "cancel_timers"
+    },
+    "car_accessory_control": {
+      "embeddingDescription": "Controls car accessories and vehicle features including headlights, turn signals, car alarm, fog lights, etc.",
+      "promptToolName": "car_accessory_control"
+    },
+    "car_carplay_control": {
+      "embeddingDescription": "Controls Apple CarPlay functionality including setup, connection establishment, launching the interface, and managing the integration between iPhone and car entertainment systems. Handles CarPlay activation, troubleshooting, and display management.",
+      "promptToolName": "car_carplay_control"
+    },
+    "car_climate_control": {
+      "embeddingDescription": "Vehicle climate control (HVAC): Adjust car cabin/driver/passenger/second row/third row temperature; Car seat heaters; Car seat ventilation; Car seat cooler; Steering wheel heater; Car defroster; Car AC; Car fan speed; Car air circulation modes; Car climate sync; Car vent modes.",
+      "promptToolName": "car_climate_control"
+    },
+    "car_engine_control": {
+      "embeddingDescription": "Controls vehicle engine operations including starting, stopping, and powering on/off car engines. Handles remote engine control and preconditioning commands for vehicles. Supports engine start/stop functionality, vehicle power management, and preconditioning.",
+      "promptToolName": "car_engine_control"
+    },
+    "car_get_vehicle_status": {
+      "embeddingDescription": "Retrieves real-time vehicle status information including battery charge level, fuel level, driving range, door lock status, tire pressure, and other vehicle states. Handles queries about electric car batteries, gas tank levels, door locks, tire pressure, etc.",
+      "promptToolName": "car_get_vehicle_status"
+    },
+    "car_lock_unlock": {
+      "embeddingDescription": "Controls car door locking and unlocking. Handles commands to lock, unlock, secure, open, or close vehicle doors for the vehicle.",
+      "promptToolName": "car_lock_unlock"
+    },
+    "car_media_control": {
+      "embeddingDescription": "Car volume control. Handles muting, unmuting, and volume adjustment for media volume, speech volume, navigation volume, phone conversation volume, phone ringer volume",
+      "promptToolName": "car_media_control"
+    },
+    "car_open_close_compartment": {
+      "embeddingDescription": "Controls car compartment access including opening, closing, locking, and unlocking vehicle storage areas such as trunk, boot, frunk, tailgate, cargo area, rear hatch, and storage compartments.",
+      "promptToolName": "car_open_close_compartment"
+    },
+    "car_radio_control": {
+      "embeddingDescription": "Tunes car radio to FM, AM, DAB, DAB+, or SiriusXM stations and presets through the built-in vehicle tuner. Handles broadcast radio frequencies, station names, and channel numbers for in-car radio listening.",
+      "promptToolName": "car_radio_control"
+    },
+    "car_signal_attention": {
+      "embeddingDescription": "Activates car attention visual/audible signals including flashing lights, honking horn, car alarm, or combinations to help locate vehicle or get attention. Handles commands to flash headlights, sound horn, trigger alarm, or activate multiple signals simultaneously.",
+      "promptToolName": "car_signal_attention"
+    },
+    "cleanup_photo": {
+      "embeddingDescription": "Opens the photo in cleanup mode so that the user can remove distracting objects from the photo. Does not apply any automatic cleanups or enhancements to the photo.",
+      "promptToolName": "cleanup_photo"
+    },
+    "close": {
+      "embeddingDescription": "Close, quit, or exit applications or scenes by their id.",
+      "promptToolName": "close"
+    },
+    "compose_writing_assistant": {
+      "embeddingDescription": "Writing Tools: Compose, write, draft, or generate text content. Write an email, draft a reply, compose a message, write a note, draft a letter, write a thank you note, compose a story, write a poem, write a speech, write a bio, write meeting notes, write an out-of-office message.",
+      "promptToolName": "compose_writing_assistant"
+    },
+    "control_intercom_playback": {
+      "embeddingDescription": "stop intercom, play announcement, play the announcement, play intercom message, replay announcement, stop broadcast, control intercom playback, play back announcement, playback intercom",
+      "promptToolName": "control_intercom_playback"
+    },
+    "create_alarm": {
+      "embeddingDescription": "Creates and sets alarms on device with specified times, labels, and scheduling options. Handles wake-up alarms, reminders, recurring schedules, one-time alerts, daily routines, and custom alarm labels. Supports various time formats (12-hour AM/PM, 24-hour), specific days of week, and repeat patterns for weekly recurring alarms or one-time events.",
+      "promptToolName": "create_alarm"
+    },
+    "create_album": {
+      "embeddingDescription": "Creates new photo albums and collections with specified names. Used for organizing photos, making new albums, creating photo collections for collaboration.",
+      "promptToolName": "create_album"
+    },
+    "create_and_start_timer": {
+      "embeddingDescription": "Creates and starts countdown timers with customizable duration and labels. Supports regular timers for activities like cooking, workouts, breaks, and study sessions. Also creates sleep timers that automatically stop media playback (music, TV, movies) after the specified time. Accepts durations in seconds, minutes, and hours. Can add custom labels to identify specific timer purposes.",
+      "promptToolName": "create_and_start_timer"
+    },
+    "create_calendar_event": {
+      "embeddingDescription": "Creates calendar events and appointments with comprehensive scheduling options. Supports setting event titles, dates, times, locations, attendees, reminders, and notes. Handles all-day events, recurring schedules (daily, weekly, monthly patterns), and meeting invitations with multiple participants. Can schedule meetings, appointments, reminders, deadlines, social events, and work-related activities across different calendars with timezone support.",
+      "promptToolName": "create_calendar_event"
+    },
+    "create_contact": {
+      "embeddingDescription": "Creates and adds new contacts to contact list including people and organizations. Handles personal contacts with names, nicknames, phone numbers, email addresses, postal addresses, birthdays, relationships, and job details. Supports business contacts with organization names, departments, and job titles. Sets up contact information fields with labels (home, work, mobile), URL addresses, and social profiles. Marks contacts as favorites or self contact. Creates both person contacts and company/organization contacts with comprehensive contact data.",
+      "promptToolName": "create_contact"
+    },
+    "create_image": {
+      "embeddingDescription": "Generate, create, or produce images and visual content from text descriptions and prompts. Handles requests for pictures, drawings, artwork, scenes, objects, people, animals, landscapes, and abstract concepts.",
+      "promptToolName": "create_image"
+    },
+    "create_incoming_geofence": {
+      "embeddingDescription": "Create a geofence notification to alert the user when someone arrives at or leaves a specific location. Get notified when family or friends get to places like home, work, or school.",
+      "promptToolName": "create_incoming_geofence"
+    },
+    "create_outgoing_geofence": {
+      "embeddingDescription": "Create a geofence notification to alert someone when the user arrives at or leaves a specific location. Let family or friends know when the user gets to places like home, work, or school.",
+      "promptToolName": "create_outgoing_geofence"
+    },
+    "create_photo_from_file_path": {
+      "embeddingDescription": "Save downloaded image to camera roll, import image from downloads, add downloaded picture to photos, save file to photo library, import from downloads folder, create photo from saved file, add image from device storage, save downloaded pic, import picture file, move download to camera roll",
+      "promptToolName": "create_photo_from_file_path"
+    },
+    "create_photo_memory": {
+      "embeddingDescription": "Creates and organizes photo memories or albums from the user's photo collection. Can compile photos into themed memory collections based on specific topics, events, people, or time periods. Supports creating both named memories with specific themes and general photo memory albums. Also used to show or view memories.",
+      "promptToolName": "create_photo_memory"
+    },
+    "create_playlist": {
+      "embeddingDescription": "Creates playlist with these songs, create a new playlist, make a playlist",
+      "promptToolName": "create_playlist"
+    },
+    "create_reminder": {
+      "embeddingDescription": "create reminder, add reminder, make reminder, set reminder, remind me to, remind me, new reminder, schedule reminder, add to-do, create to-do, make to-do, add task, create task, new task, add to my list, put on my list, add to to-do list, put on to-do list, add to list, put on list, reminder for",
+      "promptToolName": "create_reminder"
+    },
+    "create_reminder_list": {
+      "embeddingDescription": "Creates a new reminder list for organizing tasks and reminders. Supports custom list names and different list types (standard, smart, shared). Used for task management, to-do lists, and organizing various types of reminders and activities.",
+      "promptToolName": "create_reminder_list"
+    },
+    "create_reminder_section": {
+      "embeddingDescription": "Creates and adds a new organizational section within an existing Apple Reminders list to help categorize, group, and subdivide reminder items. Requires specifying the target reminder list and desired section title to organize tasks into logical categories or themes.",
+      "promptToolName": "create_reminder_section"
+    },
+    "create_station": {
+      "embeddingDescription": "Creates a personalized music station from the currently playing song, continuing with more songs like that specific track. Handles \"play more songs like this\", \"more songs like this one\", \"play similar songs\", and \"keep playing songs like this\".",
+      "promptToolName": "create_station"
+    },
+    "crop_media_intent": {
+      "embeddingDescription": "Crops and trims photos by removing unwanted areas, edges, or background portions. Applies cropping transformations to resize images, improve composition, fit specific dimensions, or focus on subjects. Works with photo assets by ID to cut, trim, or resize pictures for social media, printing, or profile use.",
+      "promptToolName": "crop_photo"
+    },
+    "delete_alarm": {
+      "embeddingDescription": "Permanently delete, remove, or eliminate alarms from device. Handles removal of specific alarms by ID, including morning alarms, weekend alarms, recurring alarms, old alarms, duplicate alarms, work alarms, medication reminders, and any unwanted wake-up times. Completely removes alarms from alarm lists and clears alarm schedules. Irreversible deletion operation for alarm management and cleanup.",
+      "promptToolName": "delete_alarms"
+    },
+    "delete_albums": {
+      "embeddingDescription": "Deletes photo albums and collections from the device. Removes single or multiple albums permanently by their identifiers. Used for photo library cleanup, organization, privacy management, and freeing up storage space by eliminating unwanted photo collections.",
+      "promptToolName": "delete_albums"
+    },
+    "delete_calendar_event": {
+      "embeddingDescription": "delete calendar event, cancel appointment, remove meeting, cancel meeting, delete appointment, remove calendar entry, cancel event, delete meeting, ditch meeting, cancel my meeting, delete my appointment, ditch my 3 o'clock, cancel today's meeting, remove appointment, ditch appointment",
+      "promptToolName": "delete_calendar_event"
+    },
+    "delete_email_draft_or_thread": {
+      "embeddingDescription": "Delete, trash or remove emails, email drafts, and email threads from the mail database. Handles deletion of individual messages, unsent draft emails, and entire conversation threads permanently.",
+      "promptToolName": "delete_email_draft_or_thread"
+    },
+    "delete_reminders": {
+      "embeddingDescription": "Delete and remove reminders from the user's reminder list. Handles deletion of single or multiple reminders by their unique identifiers. Supports removing reminders based on content, timing, completion status, categories, or other criteria. Permanently removes specified reminder entries from the system.",
+      "promptToolName": "delete_reminders"
+    },
+    "edit_last_message_sent": {
+      "embeddingDescription": "Edit the last message sent by modifying its content",
+      "promptToolName": "edit_last_message_sent"
+    },
+    "edit_photo": {
+      "embeddingDescription": "Opens a photo in edit mode for modification, allowing users to edit, modify, crop, filter, adjust, enhance, retouch, or apply effects to images and pictures",
+      "promptToolName": "edit_photo"
+    },
+    "edit_warmth": {
+      "embeddingDescription": "Edit and adjust photo warmth and color temperature with flexible control options. Increase, decrease, or set specific warmth values to make images warmer (more orange/yellow) or cooler (more blue). Supports both percentage-based and absolute value adjustments for precise color temperature control in photo editing.",
+      "promptToolName": "edit_warmth"
+    },
+    "edutainment_fei_hua_ling_game": {
+      "embeddingDescription": "飞花令, 玩飞花令, 古诗词游戏, 对诗, Chinese poetry game, Fei Hua Ling",
+      "promptToolName": "edutainment_fei_hua_ling_game"
+    },
+    "edutainment_guess_the_animal_game": {
+      "embeddingDescription": "猜动物, 我想玩猜动物, 动物游戏, play guess the animal, 20 questions game",
+      "promptToolName": "edutainment_guess_the_animal_game"
+    },
+    "edutainment_idiom_chain_game": {
+      "embeddingDescription": "成语接龙, 我要玩成语接龙，idiom chain game, play idiom chain game",
+      "promptToolName": "edutainment_idiom_chain_game"
+    },
+    "edutainment_trivia_game": {
+      "embeddingDescription": "知识问答, 你问我答, 快问快答, 开始快问快答游戏, 玩知识问答, play trivia game",
+      "promptToolName": "edutainment_trivia_game"
+    },
+    "edutainment_word_chain_game": {
+      "embeddingDescription": "しりとりやりたい, 私と一緒にしりとりして, しりとりしない",
+      "promptToolName": "edutainment_word_chain_game"
+    },
+    "end_call": {
+      "embeddingDescription": "End, terminate, hang up, or disconnect an active phone call, or decline/reject an incoming ringing phone call. Use this tool when the user wants to stop a phone conversation, hang up on someone, disconnect from an ongoing call, or reject an incoming call.",
+      "promptToolName": "decline_or_end_call"
+    },
+    "enhance_photo": {
+      "embeddingDescription": "Enable or disable photo enhancement and image quality improvements. Enhances photos by improving brightness, colors, sharpness and overall visual quality. Can turn enhancement on/off for specific photo assets by ID. Useful for improving image appearance, applying filters, or reverting photos to original state.",
+      "promptToolName": "enhance_photo"
+    },
+    "environment_open_close": {
+      "embeddingDescription": "Controls opening and closing visionOS environments. Handles commands to open, close, go to, take a user to, or navigate to system-provided environments.",
+      "promptToolName": "environment_open_close"
+    },
+    "fetch_conversation": {
+      "embeddingDescription": "retrieve conversation thread show again repeat back display",
+      "promptToolName": "fetch_conversation"
+    },
+    "fictional_characters_contact": {
+      "embeddingDescription": "call text message fictional character santa claus batman harry potter easter bunny contact phone",
+      "promptToolName": "fictional_characters_contact"
+    },
+    "find": {
+      "embeddingDescription": "Search tool that finds answers for general web knowledge questions (weather, linguistics, news, stocks, sports, flight info, date resolution, world information and help/diagnostic information about any hardware/software/services/applications etc.). It can also solve user's personal questions involving personal data on device (emails, messages, contacts, photos, alarms, calendar events, etc.).",
+      "promptToolName": "find"
+    },
+    "find_item_location": {
+      "embeddingDescription": "Locate items tracked by Find My, where is my iPhone iPad Mac Apple Watch AirPods AirTag, find my wallet cartera keys backpack bag purse, lost misplaced item device, encuentra mi billetera llaves, third-party Find My accessories, last known location of things belongings",
+      "promptToolName": "find_item_location"
+    },
+    "find_my_create_person_location_alert": {
+      "embeddingDescription": "notify me, location alert, arrival, departure, geofence, friend, family member, arrives, leaves, gets to, goes from, home, work, school, shared location, Find My Friends, arrival alert, departure alert, notify me when, person arrives, person leaves, location-based reminder, enter area, exit area",
+      "promptToolName": "find_my_create_person_location_alert"
+    },
+    "find_my_get_owner_info": {
+      "embeddingDescription": "lost device owner information name device name who owns this device whose phone is this",
+      "promptToolName": "find_my_get_owner_info"
+    },
+    "find_my_locate_person_device_item": {
+      "embeddingDescription": "find my iPhone, find my device, find my phone, locate my iPhone, where is my iPhone, where's my device, locate my watch, find my AirPods, track my phone, find my keys, where's my wallet, locate my backpack, where is person at, show person location, track family member, find lost phone",
+      "promptToolName": "find_my_locate_person_device_item"
+    },
+    "find_my_manage_location_sharing": {
+      "embeddingDescription": "Controls FindMy location sharing settings - turn on, turn off, start, stop location sharing",
+      "promptToolName": "find_my_manage_location_sharing"
+    },
+    "find_my_ping_device_play_sound": {
+      "embeddingDescription": "Locate nearby Apple devices by triggering audible alerts and sounds. Helps find misplaced iPhones, iPads, AirPods, and other devices by making them ring, beep, or play alert sounds.",
+      "promptToolName": "find_my_ping_device_play_sound"
+    },
+    "find_person_location": {
+      "embeddingDescription": "Find person location, where is person, locate someone, person nearby, is someone close by, person close, nearby person, track friend location, find family location, person whereabouts, sharing location, Find My person, someone near me, close by, is person nearby, locate shared contact",
+      "promptToolName": "find_person_location"
+    },
+    "find_tv_remote": {
+      "embeddingDescription": "find Apple TV remote, locate TV remote, where is remote, lost remote, can't find remote, misplaced remote, remote missing, play sound on remote, ping remote, make remote beep, TV clicker, Apple remote finder, remote locator, help find my remote, where'd remote go, looking for remote",
+      "promptToolName": "find_tv_remote"
+    },
+    "fitness_end_workout": {
+      "embeddingDescription": "Stops, ends, cancels, or completes active workout tracking sessions. Handles requests to finish current fitness activities including running, walking, cycling, swimming, and other exercise sessions. Responds to commands like 'end workout', 'stop my run', 'cancel exercise', or 'I'm done working out'. Works with third-party apps including Strava, Nike Run Club, MapMyRun, and others.",
+      "promptToolName": "fitness_end_workout"
+    },
+    "fitness_pause_workout": {
+      "embeddingDescription": "Pauses or stops the currently active workout tracking session in the Fitness app. Handles requests to pause, stop, or take a break from ongoing exercise activities including running, cycling, swimming, walking, yoga, gym sessions, and other fitness workouts. Works with third-party apps including Strava, Nike Run Club, MapMyRun, and others.",
+      "promptToolName": "fitness_pause_workout"
+    },
+    "fitness_resume_workout": {
+      "embeddingDescription": "Resume or continue a previously paused workout tracking session in Fitness app. Handles requests to unpause, restart, or continue any type of exercise including walking, running, cycling, yoga, hiking, strength training, and cardio workouts. Works with third-party apps including Strava, Nike Run Club, MapMyRun, and others.",
+      "promptToolName": "fitness_resume_workout"
+    },
+    "fitness_set_goal": {
+      "embeddingDescription": "Set and update fitness goals and health targets including daily calorie burn, exercise minutes, standing hours, movement time, wheelchair roll hours, and activity goals measured in calories, kilojoules, or time duration",
+      "promptToolName": "fitness_set_goal"
+    },
+    "fitness_start_workout": {
+      "embeddingDescription": "Starts and tracks fitness workouts and exercise sessions including running, walking, cycling, strength training, yoga, swimming, and other physical activities. Handles workout initiation commands and begins activity recording for various indoor and outdoor exercises. Supports third-party fitness apps including Strava, Nike Run Club, MapMyRun, and others.",
+      "promptToolName": "fitness_start_workout"
+    },
+    "games_of_chance": {
+      "embeddingDescription": "flip coin roll dice draw card rock paper scissors random chance game",
+      "promptToolName": "games_of_chance"
+    },
+    "get_crisis_resources": {
+      "embeddingDescription": "Crisis support hotlines and websites for people in distress or danger: suicide, self harm; sexual assault, rape; domestic violence, abuse; stalking, personal safety; mental health, emotional crisis; addiction; eating disorders; overdose, poisoning, toxic ingestion; human trafficking; bullying; elder abuse; LGBTQ; racial hate; scams, fraud, identity theft; food, housing, utilities, basic needs. Also child abuse and child sexual abuse material CSAM: victims, people with urges toward children, and reporting it.",
+      "promptToolName": "get_crisis_resources"
+    },
+    "get_current_location": {
+      "embeddingDescription": "Get the current location and return the type of location and a descriptor of the current place. Directions navigate from here. Also used to answer zip/postal code or any address components of current location",
+      "promptToolName": "get_current_location"
+    },
+    "get_device_owner": {
+      "embeddingDescription": "Get the owner of the current device. Returns the contact information of the person who owns the device based on Find My registration. Useful for identifying who owns a lost or found device.",
+      "promptToolName": "get_device_owner"
+    },
+    "get_elevation": {
+      "embeddingDescription": "Get the current elevation of the user",
+      "promptToolName": "get_elevation"
+    },
+    "get_entity_details": {
+      "embeddingDescription": "what's that thing, what is that thing, that thing right there, this thing here, tell me about that thing, info on that thing, details about that thing, what thing is that, which thing is this, more about that thing, show that thing, describe that thing, what am I looking at, what's this item",
+      "promptToolName": "get_entity_details"
+    },
+    "get_eta": {
+      "embeddingDescription": "How far is the airport from my house. Is the gym near downtown. Is my office close to the train station. Is the cafe far from here. How long does it take to drive to the airport. What is the ETA to the office. What is the travel time to the beach. What is the distance from home to work. How long to walk to the park. Driving directions with travel time. Check traffic on the route.",
+      "promptToolName": "navigation_eta"
+    },
+    "get_tools": {
+      "promptToolName": "get_tools"
+    },
+    "health_log_data": {
+      "embeddingDescription": "Records and logs health data into HealthKit including vital signs (blood pressure, heart rate, temperature), body measurements (weight, height), symptoms and pain, menstrual cycle tracking, blood sugar and cholesterol levels, mood, emotion, state of mind, anxiety level, menstrual cycle, period start/end date, period span, menstrual flow, ovulation test result, and other health metrics. Handles natural language health logging requests.",
+      "promptToolName": "health_log_data"
+    },
+    "home_automation_climate_control": {
+      "embeddingDescription": "turn on fan, turn off fan, start fan, stop fan, stuffy in here, stuffy room, air circulation, ventilation, airflow, climate control, thermostat, temperature, heat, heating, cooling, AC, air conditioner, heater, furnace, ceiling fan, standing fan, oscillate, humidity, humidifier, dehumidifier",
+      "promptToolName": "home_automation_climate_control"
+    },
+    "home_automation_manage_automations": {
+      "embeddingDescription": "home automation rule, when I arrive home, when I leave home, when everyone leaves, at specific time, at sunrise, at sunset, when lights turn on, when door opens, when motion detected, when smoke detected, when sensor triggers, trigger-based home control, conditional smart home, turn on when, turn off when",
+      "promptToolName": "home_automation_manage_automations"
+    },
+    "home_device_control": {
+      "embeddingDescription": "Control smart home devices immediately: lights, thermostat, AC, fan, humidifier, vacuum, smart plug, sprinkler, irrigation, pool valve, garden hose, shower, faucet, lock front door, unlock door, lock back door, secure doors, open garage door, close garage, open curtains, close blinds, raise shades",
+      "promptToolName": "home_device_control"
+    },
+    "home_get_device_status": {
+      "embeddingDescription": "HomeKit accessory and sensor status. Thermostat temperature, AC mode, air purifier, humidifier, smart lock state, motion detector, entry sensor, gas leak sensor, device battery level, hose or water timer, lights on or off. Is the front door locked. Is the kitchen light on. What is the thermostat set to. Is the garage door open.",
+      "promptToolName": "home_get_device_status"
+    },
+    "home_media_control": {
+      "embeddingDescription": "Controls multi-room audio streaming for smart home speakers and displays. Manages speaker groups by adding, removing, or moving music playback across rooms. Handles commands to extend music to additional rooms, remove speakers from playback, or transfer music between locations.",
+      "promptToolName": "home_media_control"
+    },
+    "home_scene_control": {
+      "embeddingDescription": "Handles Home Automation scene activation and scheduling with short utterances referring to some default scenes including good morning, good night, evening, movie night, I'm home, reading, or other user-configured smart home scenes.",
+      "promptToolName": "home_scene_control"
+    },
+    "home_security_control": {
+      "embeddingDescription": "Home security camera view, check camera, look at camera, show camera feed, view camera, watch camera, see camera, backyard cam, front door cam, garage cam, driveway cam, who's at door, camera livestream, security cam footage, pull up camera, open camera feed, arm alarm, disarm alarm, security mode",
+      "promptToolName": "home_security_control"
+    },
+    "inform_user": {
+      "embeddingDescription": "Communicates information to users through spoken or visual dialog, handles social conversations like greetings and thanks, presents facts and data, displays entities and content on screen, provides status updates and confirmations without requiring user response",
+      "promptToolName": "inform_user"
+    },
+    "insert_text": {
+      "embeddingDescription": "insert text, type text, paste text, enter text, input text, add text, write text, put text, text into message, text into field, type into app, paste into textbox, enter into input, insert into notes, type in safari, paste message, input field, text field, typing text, entering text, inserting text",
+      "promptToolName": "insert_text"
+    },
+    "intercom_broadcast_message": {
+      "embeddingDescription": "Make announcements to the house. Examples: 'Announce to the kids Im boarding the flight see you tonight', 'Intercom everyone that dinner is ready', 'Tell the whole house we are leaving now', 'Broadcast a message that it is time to wake up', 'tell everyone', 'intercom', 'announcement', 'make an announcement', 'everyone', 'everybody', 'tell everyone', 'notify everyone', 'announce to everyone', 'broadcast'.",
+      "promptToolName": "intercom_broadcast_message"
+    },
+    "intercom_reply_to_message": {
+      "embeddingDescription": "reply to intercom, respond to announcement, answer broadcast",
+      "promptToolName": "intercom_reply_to_message"
+    },
+    "jokes_humor_request": {
+      "embeddingDescription": "tell joke jokes humor funny comedy knock knock dad jokes animal math kids christmas request joke",
+      "promptToolName": "jokes_humor_request"
+    },
+    "lap_stopwatch": {
+      "embeddingDescription": "Records lap times and split times on running stopwatches. Tracks intermediate times, checkpoints, and intervals during workouts, races, training sessions, and timed activities. Marks segment times while keeping the stopwatch running for continuous timing.",
+      "promptToolName": "lap_stopwatch"
+    },
+    "make_call": {
+      "embeddingDescription": "make call facetime phone dial ring contact number google voice, whatsapp, facebook messenger, line, video audio conference group multiple people, including emergency and crisis support services",
+      "promptToolName": "make_call"
+    },
+    "make_datetime": {
+      "embeddingDescription": "Produce a datetime by resolving, adjusting, converting, or describing a base date/time. Handles date info, date arithmetic, date resolution (next/prev/nth weekday, week, weekend, month, year), and timezone conversion between cities and timezone abbreviations. Use for queries like: what day is today, what date is next Friday, what date is two weeks after Christmas, what is the third Thursday of November, when is this weekend, what time is it in Tokyo, convert time between timezones, time difference to CST.",
+      "promptToolName": "make_datetime"
+    },
+    "manage_battery_settings": {
+      "embeddingDescription": "check battery status, battery level, charge level, manage low power mode, power saving mode",
+      "promptToolName": "manage_battery_settings"
+    },
+    "manage_calendar_event": {
+      "embeddingDescription": "create calendar event, add event, schedule event, new event, add to calendar, schedule meeting, schedule appointment, recurring event, daily/weekly/monthly event, standup, check-in, update calendar event, change event, edit event, reschedule event, move event, delete calendar event, remove event, cancel event.",
+      "promptToolName": "manage_calendar_event"
+    },
+    "manage_email_draft": {
+      "embeddingDescription": "Email someone, write an email, draft an email, reply to this email, forward this email, change the subject, add CC, edit the body, send this email, send it off, fire it off, save this draft, delete this draft, trash this email, deliver email.",
+      "promptToolName": "manage_email_draft"
+    },
+    "manage_location_services": {
+      "embeddingDescription": "control device location services",
+      "promptToolName": "manage_location_services"
+    },
+    "manage_message_draft": {
+      "embeddingDescription": "Text someone, message someone, send a text, draft a message, edit my message, change what I wrote, update the draft, send this message, send it, texting, messaging, instant message communications, editing message drafts, sending drafted messages.",
+      "promptToolName": "manage_message_draft"
+    },
+    "manage_note": {
+      "embeddingDescription": "create note, take note, jot down, note to self, update note, rename note, pin note, append to note, move note to folder, delete note.",
+      "promptToolName": "manage_note"
+    },
+    "manage_reminder": {
+      "embeddingDescription": "create reminder, add reminder, make reminder, set reminder, remind me to, remind me, new reminder, schedule reminder, update reminder, change reminder, edit reminder, complete reminder, mark reminder done, cross off reminder, delete reminder, remove reminder, snooze reminder, push reminder later, add to list, put on list, to-do, task.",
+      "promptToolName": "manage_reminder"
+    },
+    "manage_standby_mode": {
+      "embeddingDescription": "control standby mode, check or change current standby setting",
+      "promptToolName": "manage_standby_mode"
+    },
+    "manage_timer": {
+      "embeddingDescription": "set a timer, start a timer, create timer, countdown, count down, time me, sleep timer, cooking timer, egg timer, laundry timer, timer for N minutes, let me know when the time is up, tell me when N minutes have passed, ping me in N minutes, nudge me in N minutes, remind me in N minutes, timer until a time, update timer, change timer, add time to timer, extend timer, rename timer, pause timer, hold timer, stop timer temporarily, resume timer, restart timer, continue timer, reset timer, start timer over, cancel timer, delete timer, clear timer, turn off timer.",
+      "promptToolName": "manage_timer"
+    },
+    "manage_watchlist": {
+      "embeddingDescription": "Manage video watchlist add remove movies TV shows sports events bookmark save watch later add to my list up next queue for later viewing",
+      "promptToolName": "manage_watchlist"
+    },
+    "math_calculation": {
+      "embeddingDescription": "Evaluate a mathematical expression and return the result. Handles arithmetic, algebra, trigonometry, percentages, and unit conversions.",
+      "promptToolName": "math_calculation"
+    },
+    "media_playback_manage_audio_language": {
+      "embeddingDescription": "Change media audio language track.",
+      "promptToolName": "media_playback_manage_audio_language"
+    },
+    "mitigate": {
+      "embeddingDescription": "Suppress user followup queries that are not directed to the assistant",
+      "promptToolName": "mitigate"
+    },
+    "modify_call_controls_in_active_call": {
+      "embeddingDescription": "mute the microphone unmute the microphone turn the mic off turn the mic on turn the speaker off turn the speaker on turn the camera on turn the camera off upgrade to facetime turn the video on turn the video off",
+      "promptToolName": "modify_call_controls_in_active_call"
+    },
+    "modify_email_status": {
+      "embeddingDescription": "Update and modify email message properties including marking emails as read or unread, flagging or unflagging messages, starring or unstarring emails, and moving messages between mailboxes. Handles bulk operations on multiple emails simultaneously for efficient email management and organization.",
+      "promptToolName": "modify_email_status"
+    },
+    "notes_append_text": {
+      "embeddingDescription": "Append text content to the end of existing notes, adding new information while preserving original content. Handles text addition, content extension, note updates, and information appending tasks for note management and content expansion.",
+      "promptToolName": "notes_append_text"
+    },
+    "notes_create_note": {
+      "embeddingDescription": "create note, make note, new note, add note, write note, take note, jot down, jot this down, jot down this idea, note this, remember this, write this down, save this thought, create new note, make new note, quick note, capture this, record this idea, save note, start note, begin note, note it down",
+      "promptToolName": "notes_create_note"
+    },
+    "notes_update_note": {
+      "embeddingDescription": "Update and modify existing notes by changing titles, moving between folders, managing attachments, pinning/unpinning, and organizing note properties. Handles note editing, folder organization, metadata management, and note restructuring tasks.",
+      "promptToolName": "notes_update_note"
+    },
+    "open": {
+      "embeddingDescription": "Generic open tool for opening any entity by ID. Opens photos, albums, audio content, books, reading list items, applications, and other entities. Use this when users want to open, launch, view, or access any type of entity on the device.",
+      "promptToolName": "open"
+    },
+    "open_photos_destination": {
+      "embeddingDescription": "Open and display a specific view or section within the Photos app, such as the library, albums, favorites, videos etc",
+      "promptToolName": "open_photos_destination"
+    },
+    "open_website": {
+      "embeddingDescription": "Open load url website in new tab safari",
+      "promptToolName": "open_website"
+    },
+    "pause_fitness_activity_goal": {
+      "embeddingDescription": "Pauses, stops, or temporarily disables all fitness goals and activity rings without deleting them. Use when users want to take a break from fitness tracking, stop their workout goals temporarily, or turn off activity rings while preserving their fitness targets for future use.",
+      "promptToolName": "fitness_pause_goals"
+    },
+    "pause_timer": {
+      "embeddingDescription": "Pauses or temporarily stops active timers without deleting them, allowing users to suspend timer countdown and resume later. Handles requests to pause, hold, or temporarily stop specific timers by ID while preserving timer state.",
+      "promptToolName": "pause_timers"
+    },
+    "payment_request_money": {
+      "embeddingDescription": "Request money from contacts using Apple Pay or Apple Cash. Handles peer-to-peer payment requests to ask friends, family, or other contacts to send you money for shared expenses, repayments, or any amount owed. Supports requesting specific dollar amounts from named contacts through Apple's payment services.",
+      "promptToolName": "payment_request_money"
+    },
+    "payment_send_money": {
+      "embeddingDescription": "Send money and make peer-to-peer payments to contacts using Apple Pay, Cash App, Zelle, or Venmo. Handles money transfers, payments to friends and family, and person-to-person financial transactions.",
+      "promptToolName": "payment_send_money"
+    },
+    "payment_transfer_money": {
+      "embeddingDescription": "Internal money transfer tool for moving funds between user's own accounts. Handles transfers from checking to savings, emergency funds, vacation accounts, business accounts, and other personal accounts. Processes requests to move, transfer, or shift money internally within user's banking portfolio.",
+      "promptToolName": "payment_transfer_money"
+    },
+    "personal_struggles_support": {
+      "embeddingDescription": "support users expressing general personal struggles",
+      "promptToolName": "personal_struggles_support"
+    },
+    "play": {
+      "embeddingDescription": "Plays media including songs, albums, playlists, artists, radio stations, podcasts, radio shows, movies, TV shows, games, audiobooks and apps. Handles requests like \"play that album\", \"listen to my workout playlist\", \"watch the latest episode\", \"shuffle this artist\", \"play this playlist on repeat\", \"loop the album\", \"play next\", \"play later\", \"add to queue\".",
+      "promptToolName": "play"
+    },
+    "play_item_sound": {
+      "embeddingDescription": "Play a sound on an item to help locate it. Works with Apple devices (iPhone, iPad, Mac, Apple Watch, AirPods), AirTags, and third-party Find My accessories. Useful when the item is nearby but cannot be visually located.",
+      "promptToolName": "play_item_sound"
+    },
+    "playback_control": {
+      "embeddingDescription": "Controls currently-playing media (music, TV, podcasts, videos, audiobooks). Handles requests like \"pause\", \"resume\", \"stop\", \"skip to next track\", \"previous song\", \"restart this episode\", \"start over\", \"turn on repeat\", \"stop looping\", \"shuffle this\", \"turn off shuffle\".",
+      "promptToolName": "playback_control"
+    },
+    "playback_seek": {
+      "embeddingDescription": "Media playback seeking tool that jumps forward or backward by specific time durations. Handles rewind, fast forward, skip ahead, skip back, and jump commands with temporal specifications in seconds or minutes for currently playing media content.",
+      "promptToolName": "playback_seek"
+    },
+    "playback_set_speed": {
+      "embeddingDescription": "Controls media playback speed for audiobooks, podcasts, and audio content. Adjusts playback rate faster, slower, or to specific multipliers (1x, 1.25x, 1.5x, 2x, etc.). Handles speed changes, tempo adjustments, and playback rate modifications for audio media.",
+      "promptToolName": "playback_set_speed"
+    },
+    "playback_set_subtitles": {
+      "embeddingDescription": "Controls video playback subtitles, closed captions, and audio language settings. Handles enabling/disabling captions, switching subtitle languages, and changing audio tracks during video playback.",
+      "promptToolName": "playback_set_subtitles"
+    },
+    "prepare_call_history_reading_list": {
+      "promptToolName": "prepare_call_history_reading_list"
+    },
+    "prepare_call_message_reading_list": {
+      "promptToolName": "prepare_call_message_reading_list"
+    },
+    "prepare_entities": {
+      "promptToolName": "prepare_entities"
+    },
+    "prepare_notes_reading_list": {
+      "promptToolName": "prepare_notes_reading_list"
+    },
+    "prepare_notifications": {
+      "embeddingDescription": "notifications, alerts, lock screen, catch me up, show notifications, new alerts, what notifications",
+      "promptToolName": "prepare_notifications"
+    },
+    "prepare_read_calendar_events_list": {
+      "promptToolName": "prepare_calendar_reading_list"
+    },
+    "prepare_read_conversation": {
+      "promptToolName": "prepare_read_conversation"
+    },
+    "prepare_read_mail_list": {
+      "embeddingDescription": "Prepare readable email messages for reading.",
+      "promptToolName": "prepare_read_mail_list"
+    },
+    "prepare_read_messages_list": {
+      "promptToolName": "prepare_read_messages_list"
+    },
+    "prepare_read_reminders_list": {
+      "promptToolName": "prepare_reminders_reading_list"
+    },
+    "process_content_safely": {
+      "embeddingDescription": "Safety tool to process only user queries that match policy",
+      "promptToolName": "process_content_safely"
+    },
+    "proofread_text": {
+      "embeddingDescription": "Writing Tools: Proofreads text and corrects grammar, spelling, and punctuation errors",
+      "promptToolName": "proofread_text"
+    },
+    "read_aloud": {
+      "embeddingDescription": "read this, read this aloud, read this to me, read this out loud, listen to this, read this article, read this article aloud, read this page aloud, read this safari tab aloud, read this web page aloud, listen to this article, listen to this safari page, listen to this tab, narrate this article, narrate this safari page, hear this article, read the article in this safari tab, read the page in safari, read me this article, read it to me, read the page to me, listen to page, listen to article, read this image, read this picture aloud, read this photo to me, read this screenshot out loud, listen to this image, narrate this picture, speak the text in this photo, hear what's in the screenshot",
+      "promptToolName": "read_aloud"
+    },
+    "recognize_audio": {
+      "embeddingDescription": "Identify and recognize songs or music playing nearby or on iPhone using Shazam. Determines song title, artist, album information from audio. Can save recognized songs to Shazam library and handle cases where music cannot be identified.",
+      "promptToolName": "recognize_audio"
+    },
+    "redial": {
+      "embeddingDescription": "Redial the given call record or fallback to default redial which dials the most recent outgoing call.",
+      "promptToolName": "redial"
+    },
+    "relationship_romantic_conversations": {
+      "embeddingDescription": "romance relationship married crush kiss girlfriend boyfriend love valentine intimate",
+      "promptToolName": "relationship_romantic_conversations"
+    },
+    "remove_assets_from_album": {
+      "embeddingDescription": "Take photos or videos out of a specific photo album by detaching them from that album. Operates only on album membership, given an album identifier and a list of asset IDs. Does not delete the assets from the photo library.",
+      "promptToolName": "remove_assets_from_album"
+    },
+    "report_incident": {
+      "embeddingDescription": "report incident traffic accident hazard road closure construction police",
+      "promptToolName": "report_incident"
+    },
+    "reset_stopwatch": {
+      "embeddingDescription": "Reset and clear stopwatch timer back to zero, removing all elapsed time and lap data. Used for sports timing, workouts, cooking, gaming, and any timing activity where you need to start fresh with a clean stopwatch.",
+      "promptToolName": "reset_stopwatch"
+    },
+    "reset_timers": {
+      "embeddingDescription": "Reset or restart a timer back to its original duration without deleting it. Use for restarting countdowns, cooking timers, workout timers, study sessions, or any timer that needs to start over from its initial time setting. Timer will be stopped and restored to original duration - perfect for reusing timers multiple times.",
+      "promptToolName": "reset_timers"
+    },
+    "resume_fitness_activity_goal_intent": {
+      "embeddingDescription": "Resume, unpause, reactivate, or restart paused fitness goals, activity rings, and fitness tracking to continue monitoring physical activity progress",
+      "promptToolName": "fitness_unpause_goals"
+    },
+    "resume_timer": {
+      "embeddingDescription": "Resume, continue, or restart a paused timer to keep counting down. Use for cooking timers, workout timers, study sessions, breaks, meditation, or any countdown that was temporarily stopped. Unpauses timers that were previously paused and continues from where they left off.",
+      "promptToolName": "resume_timers"
+    },
+    "rewrite_text": {
+      "embeddingDescription": "Writing Tools: Rewrites, rephrases, or transforms text to improve clarity, readability, tone, or style",
+      "promptToolName": "rewrite_text"
+    },
+    "safari_page_control": {
+      "embeddingDescription": "theater mode safari, exit theater mode safari, enter theater mode safari, toggle theater mode safari, cinema mode safari, make this full screen safari, exit full screen safari",
+      "promptToolName": "safari_page_control"
+    },
+    "safari_recipe_control": {
+      "embeddingDescription": "cooking mode, now cooking, cooking recipe steps, next cooking step, next, what's next, next up, previous cooking step, go back, go to step, show cooking ingredients, hide cooking ingredients, start cooking, exit cooking mode, resume cooking, stop cooking, keep going, ingredient list, list the ingredients, stop the cooking, exit cooking",
+      "promptToolName": "safari_recipe_control"
+    },
+    "save_draft": {
+      "embeddingDescription": "save candidate draft email to drafts folder",
+      "promptToolName": "save_draft_email"
+    },
+    "save_parking_location": {
+      "embeddingDescription": "save update parking spot parked car location current location with optional notes",
+      "promptToolName": "save_parking_location"
+    },
+    "scan_document": {
+      "embeddingDescription": "Scan and digitize physical documents using device camera. Captures papers, receipts, forms, contracts, handwritten notes, and printed materials. Converts physical documents to digital PDF files with automatic edge detection, perspective correction, and image enhancement. Supports single and multi-page scanning. Creates high-quality digital copies for archiving, sharing, and storage in Files app.",
+      "promptToolName": "scan_document"
+    },
+    "search_in_app": {
+      "promptToolName": "search_in_app"
+    },
+    "send_draft_mail": {
+      "embeddingDescription": "Send draft, send this email, send message, deliver email, transmit message, email looks good send it off, looks good send off, that email looks good send it off, that looks good send it, send it off, ship it off, fire it off, approve and send, confirm and send, ready to send, go ahead send, send it",
+      "promptToolName": "send_email"
+    },
+    "send_draft_message": {
+      "embeddingDescription": "Create, draft, update, modify, and send text messages, SMS, and instant messages through messaging apps like iMessage, WhatsApp, Telegram, and SMS. Use this for texting, messaging, instant message communications, editing message drafts, and sending drafted messages. Do NOT use for emails.",
+      "promptToolName": "send_draft_message"
+    },
+    "send_message_reaction": {
+      "embeddingDescription": "React apply emoji reaction to text messages, SMS, and instant messages through messaging apps like iMessage, WhatsApp, Telegram, and SMS. heart thumbs up thumbs down question mark exclamation point laugh cry pray",
+      "promptToolName": "send_message_reaction"
+    },
+    "set_filter": {
+      "embeddingDescription": "Apply and modify photo filters and effects. Enhances images with various filter types including vivid (warm/cool), dramatic (warm/cool), monochrome, silvertone, noir, or removes filters entirely. Supports filter application, removal, and switching between different visual effects for photo enhancement and styling.",
+      "promptToolName": "set_filter"
+    },
+    "set_share_location_setting": {
+      "embeddingDescription": "Enable or disable the user's location sharing with contacts. Controls whether the user shares their location with friends and family members.",
+      "promptToolName": "set_share_location_setting"
+    },
+    "settings_control_flashlight": {
+      "embeddingDescription": "Control flashlight. turn on flashlight, flashlight off, lumos, nox, torch on",
+      "promptToolName": "settings_control_flashlight"
+    },
+    "settings_manage_connectivity": {
+      "embeddingDescription": "Manages device connectivity settings including Wi-Fi, Bluetooth, cellular data, VPN, and personal hotspot. Handles turning on/off, enabling/disabling, connecting/disconnecting wireless and network connections through device settings.",
+      "promptToolName": "settings_manage_connectivity"
+    },
+    "settings_manage_mode": {
+      "embeddingDescription": "Manages device system modes and focus settings including Do Not Disturb, Airplane Mode, Focus modes (Driving, Sleep, Work, Study, Personal Time, Gaming, Reading, Exercising). Handles activation, deactivation, enabling, disabling, switching on/off.",
+      "promptToolName": "settings_manage_mode"
+    },
+    "settings_open_settings_page": {
+      "embeddingDescription": "Open or navigate to the main settings page or particular settings page, including accessibility settings (Announce Notifications, spoken message, Assistive Touch, Switch Control, Voice Control, Voice Over, Auto Answer, Motion Cues, Reduce White Point), display settings (Appearance, Appearance Dark, Appearance Light, Auto Brightness, Bold Text, Button Shapes, Grayscale, Increase Contrast, Invert Colors, Night Shift, Classic Invert Colors, Brightness/Display Brightness, Text Size), connectivity settings (Bluetooth, Cellular Data, Personal Hotspot, Personal Hotspot Discoverability, WiFi), mode and focus settings (Airplane Mode, Do Not Disturb, Working Mode, Personal Time Mode, Sleeping Mode, Driving Mode, Exercising Mode, Gaming Mode, Reading Mode), noise cancellation settings (Personalized Volume, Noise Cancellation, Audio Transparency, Automatic Noise Cancellation, Reduce Transparency, Conversation Awareness), power and battery settings, audio settings (Volume, Voice, Mute/Unmute, Background Sounds), and other system settings (Siri, Privacy, ChatGPT, Zoom, Stand By Mode, etc.).",
+      "promptToolName": "settings_open_settings_page"
+    },
+    "settings_set_brightness": {
+      "embeddingDescription": "Manage display settings. Appearance, Appearance Dark, Appearance Light, Auto Brightness, Bold Text, Button Shapes, Grayscale, Increase Contrast, Invert Colors, Night Shift, Classic Invert Colors, Display Brightness, Text Size, Display Modes, Wallpaper, etc.",
+      "promptToolName": "manage_display_settings"
+    },
+    "settings_set_system_volume": {
+      "embeddingDescription": "Controls system audio and volume settings. Adjust volume up, volume down, volume to specific percentage levels (e.g. 50%, 75%), or mute/silence device or notification sound. Handles volume control, audio level adjustment, sound management, background sounds, and other system audio settings.",
+      "promptToolName": "manage_audio_settings"
+    },
+    "share_eta": {
+      "embeddingDescription": "share eta arrival time estimated notify contact person",
+      "promptToolName": "share_eta"
+    },
+    "show_more_web_search_results": {
+      "embeddingDescription": "Show more web passages from a previous search without re-searching. Retrieves the next batch of passages from cached search results.",
+      "promptToolName": "show_more_web_search_results"
+    },
+    "show_nearby_friends": {
+      "embeddingDescription": "Open the Find My app to show nearby people. Shows the People tab with friends and family sharing their location with the user. Used for general queries like \"who is nearby\" or \"who is around me\" when no specific person is named.",
+      "promptToolName": "show_nearby_friends"
+    },
+    "skip_message": {
+      "embeddingDescription": "skip message, next message, skip reading, do not read, move on, skip this one",
+      "promptToolName": "skip_message"
+    },
+    "snooze_alarm": {
+      "embeddingDescription": "Snooze or temporarily delay a currently ringing alarm for a specified number of minutes. Allows users to postpone alarms, get more sleep time, or briefly silence firing alarms with custom or standard snooze durations. Works with morning alarms, reminders, and any actively ringing alarm that supports snoozing.",
+      "promptToolName": "snooze_alarms"
+    },
+    "speak_message": {
+      "embeddingDescription": "read messages aloud text messages check messages new messages what they said",
+      "promptToolName": "speak_message"
+    },
+    "speak_next_entity": {
+      "embeddingDescription": "Read a notification, message, reminder, or voicemail to the user.",
+      "promptToolName": "speak_next_entity"
+    },
+    "start_emergency_siren": {
+      "embeddingDescription": "start activate play turn on emergency siren alarm intruder alert threat deterrence danger warning police siren safety",
+      "promptToolName": "start_emergency_siren"
+    },
+    "start_guest_user_mode": {
+      "embeddingDescription": "start guest mode, enable guest user mode, share device with guest, share my Vision Pro, let someone else use my headset",
+      "promptToolName": "start_guest_user_mode"
+    },
+    "start_navigation": {
+      "embeddingDescription": "navigate directions route start navigation to place or parking location drive walk transit cycle turn by turn guidance maps take me to my car navigate to parked car directions to my parked car start navigation to my car",
+      "promptToolName": "start_navigation"
+    },
+    "start_stopwatch": {
+      "embeddingDescription": "start stopwatch, begin stopwatch, stopwatch start, time my run, time this workout, time me, start timing, begin timing, measure time, track my time, time activity, time event, stopwatch on, activate stopwatch, chronometer start, start measuring, begin measuring, time session, start chrono",
+      "promptToolName": "start_stopwatch"
+    },
+    "stop_emergency_siren": {
+      "embeddingDescription": "stop deactivate turn off cancel silence quiet emergency siren alarm",
+      "promptToolName": "stop_emergency_siren"
+    },
+    "stop_navigation": {
+      "embeddingDescription": "stop navigation end route cancel directions finish arrival reached destination",
+      "promptToolName": "stop_navigation"
+    },
+    "stop_stopwatch": {
+      "embeddingDescription": "Stops a running stopwatch and returns the final elapsed time. Used to end timing for activities like workouts, cooking, races, meetings, study sessions, or any timed task. Preserves the total duration after stopping. Works with sports timers, exercise tracking, cooking timers, work task timing, and general time measurement activities.",
+      "promptToolName": "stop_stopwatch"
+    },
+    "summarize_text": {
+      "embeddingDescription": "Summarizes, shortens or abbreviates the input text.",
+      "promptToolName": "summarize_text"
+    },
+    "switch_news_provider": {
+      "embeddingDescription": "Switch or change the default news source provider for podcasts. Allows users to set a new main news provider by specifying the desired news source or provider name.",
+      "promptToolName": "switch_news_provider"
+    },
+    "switch_profile": {
+      "embeddingDescription": "Switch the active user profile on the device — change who is currently using the Apple TV. Covers switching to a specific named person's profile (for example \"switch to Bob's profile\", \"change to Sarah's profile\", \"use Mom's profile\") and switching to the speaker's own profile (for example \"switch to my profile\", \"switch to mine\", \"go to my profile\", \"show me my profile\", \"view my profile\"), as well as general requests to change the profile or user (\"switch profile\", \"change profile\", \"change user\", \"switch account\", \"who is watching\").",
+      "promptToolName": "switch_profile"
+    },
+    "system_capture_screen": {
+      "embeddingDescription": "Captures screenshots, take a snapshot of the current screen.",
+      "promptToolName": "system_capture_screen"
+    },
+    "system_lock_device": {
+      "embeddingDescription": "Locks the device screen requiring authentication to unlock. Handles requests to lock phone, iPhone, iPad, or device screen for security and privacy protection.",
+      "promptToolName": "system_lock_device"
+    },
+    "system_power_control": {
+      "embeddingDescription": "shutdown, restart, reboot, and power off devices.",
+      "promptToolName": "system_power_control"
+    },
+    "system_settings_manage_noise_control": {
+      "embeddingDescription": "Manage noise cancellation and transparency settings. Personalized Volume, Active Noise Cancellation, Audio Transparency, Reduce Transparency, Conversation Awareness, AirPods, Beats, ANC, Ambient Sound, Passthrough, normal, headphones, enable, disable, turn on, turn off, switch",
+      "promptToolName": "system_settings_manage_noise_control"
+    },
+    "system_settings_manage_notification_and_accessibility": {
+      "embeddingDescription": "Manage accessibility settings, Voice Over, Voice Control, Magnifier, Announce Notifications, Spoken Message, Assistive Touch, Switch Control, Auto Answer, Motion Cues, Reduce White Point, Zoom, Audio Description, Live Speech, Assistive Access, Vision Aid",
+      "promptToolName": "manage_accessibility_settings"
+    },
+    "system_update_system": {
+      "embeddingDescription": "Get current system version, system software version, iOS/macOS/watchOS/tvOS version.",
+      "promptToolName": "get_device_os_version"
+    },
+    "transform_text": {
+      "embeddingDescription": "Writing Tools: Transforms text structure into key points, bulleted lists, or tables",
+      "promptToolName": "transform_text"
+    },
+    "translate_supported_languages": {
+      "embeddingDescription": "supported translation languages, translation language list, can you translate, do you translate German, can you handle Arabic to English, translation capability, language pair support, how many languages can you translate",
+      "promptToolName": "translate_supported_languages"
+    },
+    "translate_text": {
+      "embeddingDescription": "Translate words or phrases between languages. Handles translation like 'how do you say X in Y', 'what is X in Y language', 'translate X to Y', and 'convert X into Y language'.",
+      "promptToolName": "translate_text"
+    },
+    "unsend_last_message_sent": {
+      "embeddingDescription": "Unsend, recall, or retract the most recent text message sent by the user.",
+      "promptToolName": "unsend_last_message_sent"
+    },
+    "update_alarm": {
+      "embeddingDescription": "update alarm, modify alarm, change alarm, edit alarm, adjust alarm, reschedule alarm, move alarm, shift alarm time, change alarm time, alarm settings, alarm volume, alarm sound, alarm tone, make alarm louder, turn up alarm, increase alarm volume, alarm volume up, turn on alarm, enable alarm, activate alarm, turn off alarm, disable alarm",
+      "promptToolName": "update_alarms"
+    },
+    "update_album": {
+      "embeddingDescription": "Updates and renames photo albums by changing the album title to a new specified name. Used for organizing photo collections, correcting album names, and managing photo library organization.",
+      "promptToolName": "update_album"
+    },
+    "update_audio_affinity": {
+      "embeddingDescription": "Sets music preferences and affinity states (like, dislike, unset) for songs, albums, artists, and playlists. Used when users express positive or negative opinions about music items, want to favorite/unfavorite content, or provide feedback for music recommendations. Handles requests to like, dislike, love, hate, favorite, or remove preferences for music content to improve future recommendations.",
+      "promptToolName": "update_audio_affinity"
+    },
+    "update_calendar_event": {
+      "embeddingDescription": "Updates and modifies existing calendar events including adding or removing attendees, changing title, time, date, location, notes, recurrence patterns, and calendar assignment. Use this to remove attendees from events, change event details, or modify any aspect of an existing event. Handles both single events and recurring event series with options to update individual instances or entire series. Supports converting between regular and all-day events, managing attendee lists, setting reminders, and moving events between calendars.",
+      "promptToolName": "update_calendar_event"
+    },
+    "update_contact": {
+      "embeddingDescription": "update contact, modify contact, change contact info, edit contact, add birthday to contact, save number to contact, update phone number, change email address, edit contact details, modify contact information, update address, change contact name, edit phone number, add to existing contact",
+      "promptToolName": "update_contact"
+    },
+    "update_reminder": {
+      "embeddingDescription": "update reminder, modify reminder, change reminder, edit reminder, complete reminder, mark reminder done, finish reminder, reminder complete, done with reminder, cross off reminder, check reminder off, reminder finished, complete the reminder, mark as complete, set reminder done, finish my reminder",
+      "promptToolName": "update_reminder"
+    },
+    "update_timer": {
+      "embeddingDescription": "update timer, modify timer, change timer, edit timer, extend timer, add time to timer, reduce timer, timer status, check timer, timer remaining, time left on timer, how much time left, timer progress",
+      "promptToolName": "update_timers"
+    },
+    "writing_qa": {
+      "embeddingDescription": "Writing Tools: Answers questions about text quality, tone, style, or content",
+      "promptToolName": "writing_qa"
+    }
+  }
+}

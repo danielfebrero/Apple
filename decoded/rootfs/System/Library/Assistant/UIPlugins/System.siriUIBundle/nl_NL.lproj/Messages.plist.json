@@ -1,0 +1,66 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Vertel Suus: Ik ben onderweg",
+            "Stuur een bericht aan Bram de Vries",
+            "Stuur Evelien een bericht: Wat vind je van morgen?",
+            "Zeg tegen Lisa: Briljante show!",
+            "Stuur een bericht naar de mobiel van Suzanne: Ik kom wat later",
+            "Stuur een bericht naar 0612345678",
+            "Sms Bram en Evelien: Waar zijn jullie?"
+          ]
+        }
+      ],
+      "SectionName": "Berichten versturen"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lees mijn nieuwe berichten voor",
+            "Lees het opnieuw voor"
+          ]
+        }
+      ],
+      "SectionName": "Berichtmeldingen lezen"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Antwoord: Fantastisch nieuws",
+            "Zeg hem: Ik ben er over 10 minuten",
+            "Bel haar",
+            "FaceTime haar"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": []
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": []
+        }
+      ],
+      "SectionName": "Berichten beantwoorden"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lees mijn laatste bericht van Evelien voor"
+          ]
+        }
+      ],
+      "SectionName": "Berichten zoeken"
+    }
+  ]
+}

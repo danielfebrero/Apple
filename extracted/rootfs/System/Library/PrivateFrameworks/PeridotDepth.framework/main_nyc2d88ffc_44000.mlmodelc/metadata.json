@@ -1,0 +1,126 @@
+[
+  {
+    "shortDescription" : "--",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Int32",
+        "formattedType" : "MultiArray (Int32 1 × 1 × 14 × 8)",
+        "shortDescription" : "--",
+        "shape" : "[1, 1, 14, 8]",
+        "name" : "out_argmax_x8",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 14 × 8)",
+        "shortDescription" : "--",
+        "shape" : "[1, 1, 14, 8]",
+        "name" : "out_prob_class_0",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 14 × 8)",
+        "shortDescription" : "--",
+        "shape" : "[1, 1, 14, 8]",
+        "name" : "out_prob_class_1",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 14 × 8)",
+        "shortDescription" : "--",
+        "shape" : "[1, 1, 14, 8]",
+        "name" : "out_prob_class_2",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Int32",
+        "formattedType" : "MultiArray (Int32 1 × 1 × 14 × 8)",
+        "shortDescription" : "--",
+        "shape" : "[1, 1, 14, 8]",
+        "name" : "out_spatial_only",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "--",
+    "modelParameters" : [
+
+    ],
+    "author" : "--",
+    "specificationVersion" : 6,
+    "storagePrecision" : "Float16",
+    "license" : "--",
+    "mlProgramOperationTypeHistogram" : {
+      "Squeeze" : 1,
+      "Sigmoid" : 3,
+      "Reshape" : 5,
+      "Cast" : 8,
+      "Softmax" : 1,
+      "Concat" : 3,
+      "Add" : 3,
+      "Tile" : 1,
+      "Less" : 1,
+      "Shape" : 1,
+      "ExpandDims" : 9,
+      "Scatter" : 4,
+      "Relu" : 30,
+      "Conv" : 41,
+      "ScatterNd" : 1,
+      "Equal" : 1,
+      "Greater" : 4,
+      "SliceByIndex" : 7,
+      "LogicalAnd" : 3,
+      "ReduceSum" : 1,
+      "Mul" : 3,
+      "NonZero" : 1,
+      "ReduceArgmax" : 1
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 10 × 14 × 8)",
+        "shortDescription" : "--",
+        "shape" : "[1, 1, 10, 14, 8]",
+        "name" : "jasper",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "7.0",
+      "com.github.apple.coremltools.source" : "torch==2.1.2",
+      "mldb_token" : "mldb-loabjeoynk"
+    },
+    "generatedClassName" : "main_nyc2d88ffc_44000",
+    "method" : "predict"
+  }
+]

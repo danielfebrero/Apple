@@ -1,0 +1,30 @@
+{
+  "inventory_sha256": "4d728bd467f8dd609e0cf980b4ccdcb0dd89a945fa0f078dada6411390b8e2b7",
+  "entry_count": 3150,
+  "kind_counts": {
+    "4": 895,
+    "8": 2253,
+    "10": 2
+  },
+  "inode_errors": [],
+  "duplicate_paths": 0,
+  "log": "volume=RaveB24B115.V57SystemCryptex sealed=1 req_xid=1000000\n",
+  "path_queries": {
+    "^/System/Library/AssetsV2(?:/|$)": [],
+    "ModelCatalog": [],
+    "FoundationModels": [],
+    "GenerativeModels": [],
+    "GenerativeFunctions": [],
+    "ModelManager": [],
+    "Writing.?Tools": [],
+    "Genmoji": [],
+    "Image.?Playground": [],
+    "(?i)prompt|instruction|grammar|safety|override|Siri|Intelligence": [
+      "/System/Library/PrivateFrameworks/DesignLibrary.framework/SiriWaveArchive.metallib",
+      "/System/Library/PrivateFrameworks/SafariShared.framework/InspectorExtensionPromptPage.html",
+      "/System/Library/PrivateFrameworks/SafariShared.framework/safariIntelligenceUtil.plist",
+      "/System/Library/PrivateFrameworks/SafariShared.framework/InspectorPermissionsPrompt.html",
+      "/System/Library/PrivateFrameworks/SafariSharedUI.framework/MagicExtensionDocumentation/browser-url-overrides.md"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+Exact text that “[reference]” represents, or "" if nothing is referenced. Do not translate the content reference.
+Special cases:
+- Calendar → the topic of the event (no extra details)
+- Reminder → Title (no details); date first, then time if available
+- Note → “[Title] \n[FULL response from previous query]”  # ALWAYS add a short title, followed by the FULL content of the response
+- Directions → address if available; else place name; else brief topic
+- Phone call → name or number only
+- Music -> Include the song and artist name
+- All other cases → full cited text

@@ -1,0 +1,58 @@
+
+
+**Operators:**
+- .greaterThan: Greater than (>)
+- .lessThan: Less than (<)
+- .equals: Equal to (==)
+- .greaterThanOrEqual: Greater than or equal (>=)
+- .lessThanOrEqual: Less than or equal (<=)
+- .notEqual: Not equal (!=)
+
+**Value Types:**
+- .int(Int): Integer values (file size, pixel dimensions, page counts)
+- .double(Double): Floating point values (duration, bit rates)
+- .date(String): ISO 8601 date strings
+- .string(String): String values
+
+**Common Interpretations:**
+
+**Size Thresholds:**
+- "tiny" → < 100KB (102400 bytes)
+- "small" → < 1MB (1048576 bytes)
+- "medium" → 1MB - 100MB
+- "large" → > 100MB (104857600 bytes)
+- "huge" → > 1GB (1073741824 bytes)
+- "massive" → > 10GB (10737418240 bytes)
+
+**Resolution Thresholds (images):**
+- "low resolution" → width < 640px
+- "medium resolution" → width 640-1920px
+- "high resolution" / "HD" → width > 1920px
+- "Full HD" / "1080p" → width >= 1920px
+- "4K" / "UHD" → width >= 3840px
+- "8K" → width >= 7680px
+
+**Duration Thresholds:**
+- "short video" → < 60 seconds
+- "medium video" → 60-600 seconds (1-10 minutes)
+- "long video" → > 600 seconds (> 10 minutes)
+- "feature length" → > 3600 seconds (> 1 hour)
+
+**Bit Rate Thresholds:**
+- "low quality audio" → < 128 kbps (128000 bps)
+- "standard audio" → 128-320 kbps
+- "high quality audio" / "lossless" → > 320 kbps (320000 bps)
+- "low quality video" → < 1 Mbps (1000000 bps)
+- "HD video" → > 5 Mbps (5000000 bps)
+- "4K video" → > 25 Mbps (25000000 bps)
+
+**Time References:**
+- "recent" → last 7 days from now
+- "today" → created/modified >= today's midnight
+- "this week" → last 7 days
+- "this month" → last 30 days
+- "this year" → created/modified >= January 1 of current year
+
+**Calendar Event Constraints:**
+Use your world knowledge to interpret meeting characteristics:
+- Attendee count (

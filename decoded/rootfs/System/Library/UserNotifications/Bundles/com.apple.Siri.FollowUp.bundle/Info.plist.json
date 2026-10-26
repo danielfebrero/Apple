@@ -1,0 +1,48 @@
+{
+  "CFBundleName": "com.apple.Siri.FollowUp",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "NSHumanReadableCopyright": "Copyright © 2025 Apple Inc. All rights reserved.",
+  "DTSDKBuild": "24B107",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "2027.1.3",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "UIApplicationSupportsIndirectInputEvents": true,
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "com.apple.Siri.FollowUp",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.Siri.FollowUp",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "LSRequiresIPhoneOS": true,
+  "CFBundleDisplayName": "Siri",
+  "DTPlatformBuild": "24B107",
+  "UNUserNotificationCenter": {
+    "UNDaemonShouldReceiveBackgroundResponses": true,
+    "UNNotificationIcons": {
+      "UNNotificationIconUTI": "com.apple.application-icon.siri-gen2"
+    },
+    "UNDefaultSettings": {
+      "UNSettingBadges": true,
+      "UNSettingAlerts": true,
+      "UNSettingNotificationCenter": true,
+      "UNSettingCarPlay": false,
+      "UNSettingSounds": true,
+      "UNSettingLockScreen": true
+    },
+    "UNHideSettings": true,
+    "UNSuppressUserAuthorizationPrompt": true,
+    "UNSettingAlwaysShowPreviews": true
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "CFBundleName": "CAMRootFlowPlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B107",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "CAMRootFlowPlugin.CAMRootFlowPlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "CAMRootFlowPlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.CAMRootFlowPlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "CFBundleDisplayName": "CAMRootFlowPlugin",
+  "SupportedTopics": [
+    {
+      "entity": "uso_NoEntity",
+      "verb": "repeat",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "skipBackward",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Interjection",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "*",
+      "verb": "*",
+      "type": "NLv4",
+      "identifier": "UserWantedToRepeat",
+      "version": "USOv3"
+    },
+    {
+      "entity": "*",
+      "verb": "*",
+      "type": "NLv4",
+      "identifier": "UserCancelled",
+      "version": "USOv3"
+    },
+    {
+      "entity": "*",
+      "verb": "*",
+      "type": "NLv4",
+      "identifier": "UserRejected",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "24B107",
+  "SupportedInvocations": [
+    "com.apple.CAM.fallback",
+    "com.apple.CAM.askToRepeat",
+    "com.apple.CAM.giveUpRepeat",
+    "com.apple.CAM.disambiguateTopTwo",
+    "com.apple.CAM.platformError.companionBuildUnsupportedForPersonalRequests",
+    "com.apple.CAM.platformError.companionHardwareTooOldForPersonalRequests",
+    "com.apple.CAM.platformError.userDataNotSynced",
+    "com.apple.CAM.activeSessionUserNotRecognized"
+  ]
+}

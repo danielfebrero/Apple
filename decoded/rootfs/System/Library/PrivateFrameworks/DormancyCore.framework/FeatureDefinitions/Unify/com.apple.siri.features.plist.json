@@ -1,0 +1,51 @@
+{
+  "bundleID": "com.apple.siri.features",
+  "features": {
+    "raiseToSpeakEnabled": {
+      "associatedUserDefaultsValue": {
+        "defaultValue": false,
+        "disableValue": false,
+        "domain": "com.apple.raisetospeak",
+        "key": "RTSEnabled"
+      },
+      "balancePolicy": {
+        "baseline": 30,
+        "maximum": 30,
+        "minimum": 0
+      },
+      "consent": "informed",
+      "displayInfo": {
+        "detail": "SIRI_RTS_DETAIL",
+        "settingsURL": "prefs:root=SIRI_ID",
+        "title": "SIRI_RTS_TITLE"
+      },
+      "events": [
+        {
+          "bundleID": "com.apple.siri.features",
+          "countingStrategy": {
+            "count": 1
+          },
+          "eventID": "RaiseToSpeak.SDSD.NotMitigated",
+          "increment": 30
+        },
+        {
+          "bundleID": "com.apple.siri.features",
+          "countingStrategy": {
+            "count": 1
+          },
+          "eventID": "com.apple.dormancy.interaction.settings",
+          "increment": 30
+        },
+        {
+          "bundleID": "com.apple.siri.features",
+          "countingStrategy": {
+            "count": 1
+          },
+          "eventID": "dormancy.device.unlocked.feature.NotUsed",
+          "increment": -1
+        }
+      ],
+      "relativeBatteryImpact": 500
+    }
+  }
+}

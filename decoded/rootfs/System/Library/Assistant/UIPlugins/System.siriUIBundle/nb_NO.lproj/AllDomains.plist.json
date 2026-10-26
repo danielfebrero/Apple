@@ -1,0 +1,144 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Telefon",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Ring til Oliver",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime Trym",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Apper",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Åpne Bilder",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Meldinger",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Skriv til Tuva at jeg er på vei",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Kalender",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Opprett et møte klokka ni",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Bilder",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Vis bildene jeg tok i går",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Kart",
+      "DomainAlternateDisplayName": "Kart",
+      "TagPhrase": "Vis meg veien hjem",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Tweet hvor jeg er nå …",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Publiser på Weibo …",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Skriv på Facebook …",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Musikk",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Spill Ida Maria",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Påminnelser",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Minn meg på å ringe mamma",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "E-post",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Send e-post til Sturla om turen",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Været",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Hvordan blir været i dag?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Aksjer",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Hvor mye er Apple-aksjen verdt?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Klokke",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Vekk meg i morgen klokka 7",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Kontakter",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Hva er adressen til Lena?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Notater",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Noter at jeg må kjøpe egg",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Innstillinger",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Slå på Flymodus",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Nettsøk",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Søk på nettet etter isbjørner",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Spørsmål og svar",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "Hvem var Ole Bull?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "Podkaster",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Spill av podkaster",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

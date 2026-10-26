@@ -1,0 +1,102 @@
+{
+  "source": "extracted/rootfs/System/Library/ExtensionKit/Extensions/GenerativeExperiencesSafetyInferenceProvider.appex/GenerativeExperiencesSafetyInferenceProvider",
+  "sha256": "68e8549527390ea0755ced08942f547b79d5ec258b522e1e7baa7af55d9a8c6b",
+  "hits": [
+    {
+      "file_offset": "0xa48",
+      "text": "/System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices"
+    },
+    {
+      "file_offset": "0x10d0",
+      "text": "GenerativeExperiencesSafetyInferenceProvider"
+    },
+    {
+      "file_offset": "0x1100",
+      "text": "GenerativeExperiencesSafetyInferenceProviderService"
+    },
+    {
+      "file_offset": "0x11d0",
+      "text": "_TtC44GenerativeExperiencesSafetyInferenceProviderP33_F34589A7890DDC02A9860BBDDD2479B251GenerativeExperiencesSafetyInferenceProviderService"
+    },
+    {
+      "file_offset": "0xc0e8",
+      "text": "_$s20ModelManagerServices26InferenceProviderExtensionCACyxGycfc"
+    },
+    {
+      "file_offset": "0xc128",
+      "text": "_$s20ModelManagerServices26InferenceProviderExtensionCfd"
+    },
+    {
+      "file_offset": "0xc1f0",
+      "text": "_$s20ModelManagerServices26InferenceProviderExtensionCyxG0F10Foundation03AppF0AAMc"
+    },
+    {
+      "file_offset": "0xc243",
+      "text": "_$s20ModelManagerServices26InferenceProviderExtensionCMn"
+    },
+    {
+      "file_offset": "0xc27c",
+      "text": "_$s28GenerativeExperiencesRuntime0aB23SafetyInferenceProviderCMn"
+    },
+    {
+      "file_offset": "0xc2bd",
+      "text": "_$s20ModelManagerServices26InferenceProviderExtensionCACyxGycfCTq"
+    },
+    {
+      "file_offset": "0xc8cc",
+      "text": "com.apple.GenerativeFunctions.GenerativeExperiencesSafetyInferenceProvider"
+    },
+    {
+      "file_offset": "0xcbab",
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n\t<key>application-identifier</key>\n\t<string>com.apple.generativemodelsexperiences.safetyinferenceprovider</string>\n\t<key>com.apple.modelcatalog.full-access</key>\n\t<true/>\n\t<key>com.apple.private.assets.accessible-asset-types</key>\n\t<array>\n\t\t<string>com.apple.MobileAsset.UAF.FM.GenerativeModels</string>\n\t\t<string>com.apple.MobileAsset.UAF.FM.Overrides</string>\n\t</array>\n\t<key>com.apple.private.biome.read-write</key>\n\t<array>\n\t\t<string>AppleIntelligence.Reporting.SafetyOverrides</string>\n\t</array>\n\t<key>com.apple.private.intelligenceplatform.client-identifier</key>\n\t<string>com.apple.generativemodelsexperiences.safetyinferenceprovider</string>\n\t<key>com.apple.private.security.storage.MobileAssetGenerativeModels</key>\n\t<true/>\n\t<key>com.apple.security.exception.files.absolute-path.read-only</key>\n\t<array>\n\t\t<string>/private/var/MobileAsset/AssetsV2/locks/com.apple.UnifiedAssetFramework/</string>\n\t\t<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_GenerativeModels/purpose_auto/</string>\n\t\t<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_Overrides/purpose_auto/</string>\n\t\t<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/</string>\n\t\t<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_Overrides/</string>\n\t\t<string>/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/</string>\n\t\t<string>/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_Overrides/</string>\n\t\t<string>/private/var/mobile/Library/com.apple.modelcatalog/sideload/</string>\n\t\t<string>/private/var/db/assetsubscriptiond/</string>\n\t\t<string>/private/var/db/com.apple.countryd/</string>\n\t\t<string>/private/var/db/os_eligibility/eligibility.plist</string>\n\t</array>\n\t<key>com.apple.security.exception.mach-lookup.global-name</key>\n\t<array>\n\t\t<string>com.apple.modelcatalog.catalog</string>\n\t\t<string>com.apple.siri.uaf.service</string>\n\t\t<string>com.apple.siri.uaf.subscription.service</string>\n\t\t<string>com.apple.mobileasset.autoasset</string>\n\t\t<string>com.apple.mobileassetd.v2</string>\n\t\t<string>com.apple.biome.access.user</string>\n\t\t<string>com.apple.biome.access.system</string>\n\t\t<string>com.apple.biome.compute.source</string>\n\t\t<string>com.apple.biome.compute.source.user</string>\n\t\t<string>com.apple.mediaanalysisd.service.public</string>\n\t</array>\n\t<key>com.apple.security.exception.shared-preference.read-only</key>\n\t<array>\n\t\t<string>com.apple.UnifiedAssetFramework</string>\n\t\t<string>com.apple.modelcatalog.ajax</string>\n\t\t<string>com.apple.GenerativeFunctions.GenerativeFunctionsInstrumentation</string>\n\t\t<string>kCFPreferencesAnyApplication</string>\n\t</array>\n</dict>\n</plist>\n"
+    },
+    {
+      "file_offset": "0xd76e",
+      "text": "=com.apple.generativemodelsexperiences.safetyinferenceprovider0'"
+    },
+    {
+      "file_offset": "0xd7af",
+      "text": "\"com.apple.modelcatalog.full-access"
+    },
+    {
+      "file_offset": "0xd80c",
+      "text": "-com.apple.MobileAsset.UAF.FM.GenerativeModels"
+    },
+    {
+      "file_offset": "0xd88b",
+      "text": "+AppleIntelligence.Reporting.SafetyOverrides0y"
+    },
+    {
+      "file_offset": "0xd8f4",
+      "text": "=com.apple.generativemodelsexperiences.safetyinferenceprovider0C"
+    },
+    {
+      "file_offset": "0xd935",
+      "text": ">com.apple.private.security.storage.MobileAssetGenerativeModels"
+    },
+    {
+      "file_offset": "0xda06",
+      "text": "]/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_GenerativeModels/purpose_auto/"
+    },
+    {
+      "file_offset": "0xdabd",
+      "text": "j/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/"
+    },
+    {
+      "file_offset": "0xdb8e",
+      "text": "`/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/"
+    },
+    {
+      "file_offset": "0xdc4b",
+      "text": "</private/var/mobile/Library/com.apple.modelcatalog/sideload/"
+    },
+    {
+      "file_offset": "0xdd44",
+      "text": "com.apple.modelcatalog.catalog"
+    },
+    {
+      "file_offset": "0xdef0",
+      "text": "com.apple.modelcatalog.ajax"
+    }
+  ]
+}

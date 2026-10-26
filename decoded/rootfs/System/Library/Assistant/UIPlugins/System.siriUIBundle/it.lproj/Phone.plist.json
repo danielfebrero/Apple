@@ -1,0 +1,48 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Chiama Fabrizio",
+            "Chiama Simonetta al cellulare",
+            "Chiama Carla in ufficio",
+            "Chiama il numero 011 555 12 12",
+            "Chiama a casa",
+            "Chiama il 112",
+            "Chiama i vigili del fuoco",
+            "Ottieni la cronologia delle chiamate",
+            "Ci sono chiamate perse?",
+            "Richiama l'ultimo numero"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Chiamata FaceTime con Fabrizio"
+          ]
+        }
+      ],
+      "SectionName": "CHIAMATE"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ci sono nuovi messaggi in segreteria?",
+            "Voglio ascoltare il messaggio di Carla"
+          ]
+        }
+      ],
+      "SectionName": "SEGRETERIA"
+    }
+  ]
+}

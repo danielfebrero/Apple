@@ -1,0 +1,632 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.siri.dialog",
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Siri.DialogAssets",
+  "Assets": [
+    {
+      "AssetName": "com.apple.siri.dialog.alarmflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.alarmflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.assistantservices",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.assistantservices"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.camrootflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.camrootflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.dailybriefingflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.dailybriefingflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.generativeassistanttools.generativeassistantextension",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.generativeassistanttools.generativeassistantextension"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.geoflowdelegateplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.geoflowdelegateplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.healthflowdelegateplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.healthflowdelegateplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.homeautomationinternal",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.homeautomationinternal"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.homecommunicationflowdelegateplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.homecommunicationflowdelegateplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.ifflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.ifflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.notebookflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.notebookflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.phonecallflowdelegateplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.phonecallflowdelegateplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.requestdispatcherbridges",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.requestdispatcherbridges"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.siriapplaunchintents",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.siriapplaunchintents"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.siricontactsintents",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.siricontactsintents"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.siriidentityinternal",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.siriidentityinternal"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirikitflow",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirikitflow"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirilinkflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirilinkflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirinotificationsintents",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirinotificationsintents"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.siriplaybackcontrolintents",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.siriplaybackcontrolintents"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirisettingsintents",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirisettingsintents"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirivideointents",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirivideointents"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.timerflowdelegateplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.timerflowdelegateplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.audio.audioflowdelegateplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.audio.audioflowdelegateplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.findmy.sirifindmy",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.findmy.sirifindmy"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirikit.messagesflowdelegateplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirikit.messagesflowdelegateplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.dialogengine",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.dialogengine"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.de",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.de"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.en",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.en"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.es",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.es"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.fr",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.fr"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.ja",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.ja"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.zh",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.zh"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.clockflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.clockflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.carcommandsflowdelegateplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.carcommandsflowdelegateplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.emergencyflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.emergencyflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.siricalendarintents",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.siricalendarintents"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirisuggestionsflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirisuggestionsflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.ar",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.ar"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.da",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.da"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.fi",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.fi"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.he",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.he"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.it",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.it"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.ko",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.ko"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.ms",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.ms"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.nb",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.nb"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.nl",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.nl"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.pt",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.pt"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.ru",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.ru"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.sv",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.sv"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.th",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.th"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.tr",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.tr"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.yue",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.yue"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.siriinferenceflow",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.siriinferenceflow"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.notebook.sirinotebook",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.notebook.sirinotebook"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.informationflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.informationflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirisystemcommands",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirisystemcommands"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.siritranslationintents",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.siritranslationintents"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.audiosuggestionsplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.audiosuggestionsplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.wellnessflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.wellnessflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.workoutannouncements",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.workoutannouncements"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirikitruntime",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirikitruntime"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirimailinternal",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirimailinternal"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirinaturallanguagegeneration",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirinaturallanguagegeneration"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirireader",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirireader"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.siripaymentsintents",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.siripaymentsintents"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin.hi",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin.hi"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.messages.sirimessagesflow",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.messages.sirimessagesflow"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.safetysessionflowplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.safetysessionflowplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.deviceexpert.deviceexpertintents",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.deviceexpert.deviceexpertintents"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.siriexpanseinternal",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.siriexpanseinternal"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirisuggestions",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirisuggestions"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirisuggestionsbasemodel",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirisuggestionsbasemodel"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.socialconversationflowdelegateplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.socialconversationflowdelegateplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.omnisearch.omnisearch",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.omnisearch.omnisearch"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.siriautocomplete",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.siriautocomplete"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.sirihearablesinteractionsdelegateplugin",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.sirihearablesinteractionsdelegateplugin"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.dialog.responsecatalog",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.dialog.responsecatalog"
+        }
+      ]
+    }
+  ]
+}

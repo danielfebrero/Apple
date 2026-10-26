@@ -1,0 +1,45 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Ricordami di chiamare mamma",
+            "Aggiungi il paracadutismo alla lista di cose da fare prima di morire",
+            "Aggiungi i carciofi alla lista della spesa",
+            "Ricordami di prendere l'ombrello",
+            "Ricordami di leggere questa mail domani",
+            "Ricordami di prendere le medicine domani alle 6:00",
+            "Ricordami di finire la relazione entro le 18:00",
+            "Ricorda questo sito Internet",
+            "Ricordami di chiamare mia sorella con FaceTime quando arrivo a casa",
+            "Ricordami di chiamare Manuela quando salgo in macchina",
+            "Leggimi l’elenco delle cose da fare al lavoro"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Ricordami di chiamare mamma quando arrivo a casa",
+            "Ricordami di fare una chiamata FaceTime con Luca quando arrivo al lavoro",
+            "Ricordami di chiamare Fabrizio con FaceTime quando vado via da qui"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Ricordami di telefonare a mia mamma con FaceTime quando arrivo a casa",
+            "Ricordami di comprare dei fiori quando vado via da qui"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

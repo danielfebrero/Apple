@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en">
+  <conditions>
+    <condition name="isSunset">
+      <expression name="solarEvent" op="eq" value="'sunset'"/>
+    </condition>
+  </conditions>
+  <phrases>
+    <first phrase="suggestionUtterance">
+      <text condition="isSunset">What time is sunset?</text>
+      <text>What time is sunrise?</text>
+    </first>
+  </phrases>
+  <all>
+    <dialog id="exampleUtterance"><phrase name="suggestionUtterance"/></dialog>
+  </all>
+</cat>

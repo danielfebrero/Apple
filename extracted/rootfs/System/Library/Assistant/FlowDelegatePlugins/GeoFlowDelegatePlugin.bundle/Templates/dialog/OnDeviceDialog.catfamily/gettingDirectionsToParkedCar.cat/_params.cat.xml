@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="OnDeviceDialog#gettingDirectionsToParkedCar"  xmlns="urn:apple:names:siri:cat:1.0">
+	<meta name="category" value="Handled"/>
+	<parameters>
+		<parameter description="information user asked for displayed. " name="parkingNote" type="dialog.String"/>
+		<parameter description="mode of transportation for directions" name="transportationMode" sampleValue="['walking', 'driving']" type="dialog.String"/>
+	</parameters>
+    <meta name="readyForLoc" value="true"/>
+</cat>

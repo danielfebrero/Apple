@@ -1,0 +1,36 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "entityRelevanceContextualFeatures": {
+        "currentContextViews": [
+          "currentSpecificGeoHashContext",
+          "currentCoarseTimeOfDayContext"
+        ],
+        "entityInteractionHistogramView": "personEntityHistograms"
+      }
+    }
+  },
+  "name": "personEntityRelevanceSpecificGeoHashAndCoarseTimeOfDayFeatures",
+  "type": "signal",
+  "update": {
+    "group": "personEntityRelevance",
+    "viewListeners": [
+      {
+        "name": "personEntityHistograms",
+        "schedule": "daily"
+      },
+      {
+        "name": "currentSpecificGeoHashContext",
+        "schedule": "live"
+      },
+      {
+        "name": "currentCoarseTimeOfDayContext",
+        "schedule": "live"
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "MD_ID",
+          "INTEGER"
+        ],
+        [
+          "alias",
+          "TEXT"
+        ],
+        [
+          "entity_type",
+          "TEXT"
+        ],
+        [
+          "signal_type",
+          "TEXT"
+        ],
+        [
+          "confirmation_confidence",
+          "REAL"
+        ]
+      ],
+      "ftsColumns": [
+        "alias"
+      ],
+      "prefixIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "primaryKeyColumns": [
+        "MD_ID",
+        "alias",
+        "signal_type"
+      ],
+      "subjectIdentifierColumn": "MD_ID",
+      "tableName": "entity_alias_ecr"
+    },
+    "path": "ecr/views.db",
+    "type": "customRow"
+  },
+  "featureFlag": "NERD",
+  "name": "entityAliasECR",
+  "sql": {
+    "delete": "nerd/delete",
+    "update": "customSQL/entity_alias_clone"
+  },
+  "type": "customSQL",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "computeIfPastSLA": true,
+        "filters": [
+          {
+            "predicates": [
+              "nm_entityAliasRelationship"
+            ]
+          }
+        ],
+        "schedule": "live",
+        "source": "PHPerson",
+        "stores": [
+          "stableGraph",
+          "eventGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "entityAlias",
+        "schedule": "none"
+      },
+      {
+        "name": "peopleSubgraph",
+        "schedule": "none"
+      }
+    ]
+  }
+}

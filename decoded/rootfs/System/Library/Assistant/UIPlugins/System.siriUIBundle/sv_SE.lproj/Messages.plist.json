@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Skriv till Susanna att jag kommer snart",
+            "Skicka meddelande till Björn Persson",
+            "Skicka ett meddelande till Elin med texten går det bra imorgon",
+            "Skriv till Larsson föreställningen var bra",
+            "Skriv meddelande till Susannas mobil och säg jag blir sen",
+            "Skicka ett textmeddelande till 123-456 78 90",
+            "Text till Björn och Elin var är ni?"
+          ]
+        }
+      ],
+      "SectionName": "Skicka meddelanden"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Läs mina nya meddelanden",
+            "Läs det igen"
+          ]
+        }
+      ],
+      "SectionName": "Läsa meddelanden"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Svara det är goda nyheter",
+            "Säg till honom jag kommer om 10 minuter"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ring henne"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime till henne"
+          ]
+        }
+      ],
+      "SectionName": "Svara på meddelanden"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Läs mitt senaste meddelande från Elin"
+          ]
+        }
+      ],
+      "SectionName": "Söka efter meddelanden"
+    }
+  ]
+}

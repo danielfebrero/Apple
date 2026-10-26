@@ -1,0 +1,131 @@
+{
+  "name": "SiriIntelligenceFlow_CustomInterval_PlannerInferenceToExecuteRequest",
+  "contextual_telemetry": "YES",
+  "diagnostics": [
+    {
+      "trigger_threshold_duration_single": 0.1,
+      "option_tailspin_includes_oslogs": true,
+      "gather_tailspin": true
+    }
+  ],
+  "signposts": [
+    {
+      "subsystem": "com.apple.intelligenceflow",
+      "category": "TurnManagerService",
+      "name": "TurnInterval",
+      "network_bound": "indeterminate",
+      "incident_uuid_field_name": "ifUserTurnId",
+      "early_allowance": 30
+    },
+    {
+      "subsystem": "com.apple.intelligenceflow",
+      "category": "WorkflowResponsiveness",
+      "name": "GMSPlannerService.modelInference",
+      "start": true
+    },
+    {
+      "subsystem": "com.apple.modelmanager",
+      "category": "Signposter.Siri.AgenticPlanner",
+      "name": "Execute Request",
+      "end": true,
+      "end_is_signpost_interval_begin": true
+    }
+  ],
+  "option_filter_tailspin_logs_to_subsystem_categories": {
+    "com.apple.app_launch_measurement": [
+      "*"
+    ],
+    "com.apple.appintents": [
+      "*"
+    ],
+    "com.apple.CoreSceneUnderstanding": [
+      "*"
+    ],
+    "com.apple.corespeech": [
+      "*"
+    ],
+    "com.apple.corespotlight": [
+      "*"
+    ],
+    "com.apple.Foundation": [
+      "NSProcessInfoInteractionTracking"
+    ],
+    "com.apple.GenerativeModels": [
+      "*"
+    ],
+    "com.apple.intelligenceflow": [
+      "*"
+    ],
+    "com.apple.modelmanager": [
+      "*"
+    ],
+    "com.apple.omnisearch": [
+      "*"
+    ],
+    "com.apple.osanalytics.ReportCrash": [
+      "performance"
+    ],
+    "com.apple.pommes": [
+      "*"
+    ],
+    "com.apple.privatecloudcompute": [
+      "*"
+    ],
+    "com.apple.privatemlclient": [
+      "*"
+    ],
+    "com.apple.privatemlclientInferenceProvider": [
+      "*"
+    ],
+    "com.apple.shortcuts": [
+      "*"
+    ],
+    "com.apple.siri": [
+      "Client",
+      "Daemon",
+      "Performance"
+    ],
+    "com.apple.siri.analytics": [
+      "Performance"
+    ],
+    "com.apple.siri.cdm": [
+      "*"
+    ],
+    "com.apple.siri.identity": [
+      "*"
+    ],
+    "com.apple.siri.marrs.mrr": [
+      "*"
+    ],
+    "com.apple.siri.request_dispatcher": [
+      "*"
+    ],
+    "com.apple.siri.sirikit": [
+      "*"
+    ],
+    "com.apple.siri.tts": [
+      "*"
+    ],
+    "com.apple.sirinaturallanguageparsing": [
+      "*"
+    ],
+    "com.apple.sirireferenceresolution": [
+      "*"
+    ],
+    "com.apple.speech.localspeechrecognition": [
+      "*"
+    ],
+    "com.apple.spotlight": [
+      "*"
+    ],
+    "com.apple.SpotlightServices": [
+      "*"
+    ],
+    "com.apple.tokengenerationinference": [
+      "*"
+    ],
+    "com.apple.UnifiedAssetFramework": [
+      "*"
+    ]
+  }
+}

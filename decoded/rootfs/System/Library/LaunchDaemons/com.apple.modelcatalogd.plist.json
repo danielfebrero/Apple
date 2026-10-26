@@ -1,0 +1,116 @@
+{
+  "Label": "com.apple.modelcatalogd",
+  "EnvironmentVariables": {},
+  "ProcessType": "Adaptive",
+  "MachServices": {
+    "com.apple.modelcatalog.catalog": true,
+    "com.apple.modelcatalog.subscriptions": true
+  },
+  "EnableTransactions": true,
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/modelcatalogd"
+  ],
+  "LaunchEvents": {
+    "com.apple.bg.system.task": {
+      "com.apple.modelcatalog.subscriptionevaluation.postboot": {
+        "Priority": "Maintenance",
+        "RequiresExternalPower": false,
+        "RequiresNetworkConnectivity": false,
+        "RequiresProtectionClass": "C",
+        "NonRepeatingTask": {
+          "TrySchedulingBefore": 0,
+          "ScheduleAfter": 0
+        }
+      },
+      "com.apple.modelcatalog.subscriptionevaluation.nightly": {
+        "Priority": "Maintenance",
+        "RequiresExternalPower": false,
+        "RequiresNetworkConnectivity": false,
+        "RequiresProtectionClass": "C",
+        "RepeatingTask": {
+          "Interval": 86400
+        }
+      },
+      "com.apple.modelcatalog.strictavailability.classcunlock": {
+        "Priority": "Utility",
+        "RequiresExternalPower": false,
+        "RequiresNetworkConnectivity": false,
+        "RequiresProtectionClass": "C",
+        "NonRepeatingTask": {
+          "TrySchedulingBefore": 300,
+          "ScheduleAfter": 0
+        }
+      }
+    },
+    "com.apple.biome.compute.publisher": {
+      "com.apple.modelcatalog.availabilitysubscriptionevaluationtrigger": {
+        "graph": {
+          "name": "streamPublisher",
+          "version": 1,
+          "streamIdentifier": "AppleIntelligence.Availability"
+        },
+        "client": "com.apple.modelcatalogd",
+        "identifier": "com.apple.modelcatalog.availabilitysubscriptionevaluationtrigger"
+      },
+      "com.apple.modelcatalog.subscriptionstreamchangelistener": {
+        "graph": {
+          "name": "streamPublisher",
+          "version": 1,
+          "streamIdentifier": "ModelCatalog.Subscriptions.Decisions"
+        },
+        "client": "com.apple.modelcatalogd",
+        "identifier": "com.apple.modelcatalog.subscriptionstreamchangelistener"
+      }
+    },
+    "com.apple.cascade.xpc_event.setChange": {
+      "com.apple.modelcatalog.requestedusecasesetchangelistener": {}
+    },
+    "com.apple.xpc.activity": {},
+    "com.apple.notifyd.matching": {
+      "com.apple.spatialphotosrelive.enablement.changed": {
+        "Notification": "com.apple.spatialphotosrelive.enablement.changed"
+      },
+      "com.apple.ModelCatalog.SpotlightKnowledge.AEMModelVersionChanged": {
+        "Notification": "com.apple.ModelCatalog.SpotlightKnowledge.AEMModelVersionChanged"
+      },
+      "com.apple.siri.uaf.com.apple.MobileAsset.UAF.FM.Overrides": {
+        "Notification": "com.apple.siri.uaf.com.apple.MobileAsset.UAF.FM.Overrides"
+      },
+      "com.apple.siri.uaf.com.apple.MobileAsset.UAF.FM.Visual": {
+        "Notification": "com.apple.siri.uaf.com.apple.MobileAsset.UAF.FM.Visual"
+      },
+      "com.apple.MobileSMS.CKNanoCannedRepliesArray.changed": {
+        "Notification": "com.apple.MobileSMS.CKNanoCannedRepliesArray.changed"
+      },
+      "com.apple.MobileAsset.AutoAssetNotification^com.apple.MobileAsset.MAAutoAsset^STARTUP_ACTIVATED": {
+        "Notification": "com.apple.MobileAsset.AutoAssetNotification^com.apple.MobileAsset.MAAutoAsset^STARTUP_ACTIVATED"
+      },
+      "com.apple.siri.uaf.com.apple.modelcatalog": {
+        "Notification": "com.apple.siri.uaf.com.apple.modelcatalog"
+      },
+      "com.apple.purplebuddy.setupdone": {
+        "Notification": "com.apple.purplebuddy.setupdone"
+      },
+      "com.apple.os-eligibility-domain.change.copernicium": {
+        "Notification": "com.apple.os-eligibility-domain.change.copernicium"
+      },
+      "com.apple.mobile.keybagd.first_unlock": {
+        "Notification": "com.apple.mobile.keybagd.first_unlock"
+      },
+      "com.apple.MobileAsset.AutoAssetAtomicNotification^RELINQUISH_RESUMING": {
+        "Notification": "com.apple.MobileAsset.AutoAssetAtomicNotification^RELINQUISH_RESUMING"
+      },
+      "com.apple.siri.uaf.com.apple.modelcatalog.root": {
+        "Notification": "com.apple.siri.uaf.com.apple.modelcatalog.root"
+      },
+      "com.apple.siri.uaf.com.apple.MobileAsset.UAF.FM.Overrides.root": {
+        "Notification": "com.apple.siri.uaf.com.apple.MobileAsset.UAF.FM.Overrides.root"
+      },
+      "com.apple.UnifiedAssetFramework.AssetDeliveryReady": {
+        "Notification": "com.apple.UnifiedAssetFramework.AssetDeliveryReady"
+      }
+    }
+  },
+  "UserName": "mobile",
+  "EnablePressuredExit": true
+}

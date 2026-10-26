@@ -1,0 +1,1893 @@
+{
+  "converted_patterns": [
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{hej} {siri} (kan du|vil du|gider du at|kunne du) (sætte|skabe|indstille|stille|lave|planlægge|oprette) (alarmen|{en} alarm) til {klokken} (time:time)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:kan\\s+du|vil\\s+du|gider\\s+du\\s+at|kunne\\s+du)\\s+(?:sætte|skabe|indstille|stille|lave|planlægge|oprette)(?:\\s+alarmen|\\s+(?:en\\s+)?alarm)\\s+til(?:\\s+klokken)?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokken)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>morgen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>aften|eftermiddag|nat|om aftenen|om eftermiddagen|om natten))))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "23c0d0af-4333-5dad-8ebc-520fb5a083a3"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{hej} {siri} (kan du|vil du|gider du at|kunne du) vække mig {om eftermiddagen|om morgenen} {klokken} (time:time)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:kan\\s+du|vil\\s+du|gider\\s+du\\s+at|kunne\\s+du)\\s+vække\\s+mig(?:\\s+(?:om\\s+eftermiddagen|om\\s+morgenen))?(?:\\s+klokken)?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokken)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>morgen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>aften|eftermiddag|nat|om aftenen|om eftermiddagen|om natten))))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "8b4d2ab8-f149-5ec5-a7b3-fd429dd0d4fe"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{hej} {siri} (sæt|skab|indstil|stil|lav|planlæg|opret) (alarmen til|{en} alarm {til} om eftermiddagen) {klokken} (time:time)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:sæt|skab|indstil|stil|lav|planlæg|opret)(?:\\s+alarmen\\s+til|\\s+(?:en\\s+)?alarm\\s+(?:til\\s+)?om\\s+eftermiddagen)(?:\\s+klokken)?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokken)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>morgen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>aften|eftermiddag|nat|om aftenen|om eftermiddagen|om natten))))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "12e5a3ca-1502-5b43-9f3d-ef6c78f2a7fd"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{hej} {siri} (sæt|skab|indstil|stil|lav|planlæg|opret) (en alarm|alarm|et vækkeur|vækkeur) {til} {klokken} (time:time)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:sæt|skab|indstil|stil|lav|planlæg|opret)\\s+(?:en\\s+alarm|alarm|et\\s+vækkeur|vækkeur)(?:\\s+til)?(?:\\s+klokken)?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokken)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>morgen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>aften|eftermiddag|nat|om aftenen|om eftermiddagen|om natten))))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "58d21a7e-7114-5e30-b02f-b5a6885804db"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{hej} {siri} (sæt|skab|indstil|stil|lav|planlæg|opret) min alarm til {klokken} (time:time)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:sæt|skab|indstil|stil|lav|planlæg|opret)\\s+min\\s+alarm\\s+til(?:\\s+klokken)?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokken)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>morgen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>aften|eftermiddag|nat|om aftenen|om eftermiddagen|om natten))))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "c153ba2e-a24d-5f9e-874d-b5e04504fcd9"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{hej} {siri} (sæt|skab|indstil|stil|lav|planlæg|opret) {en} alarm {til} {klokken} (time:time)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:sæt|skab|indstil|stil|lav|planlæg|opret)\\s+(?:en\\s+)?alarm(?:\\s+til)?(?:\\s+klokken)?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokken)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>morgen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>aften|eftermiddag|nat|om aftenen|om eftermiddagen|om natten))))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "10fc4a24-bcc5-5009-8c6b-8a0fc953307e"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{hej} {siri} væk mig om (duration:duration)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?væk\\s+mig\\s+om(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>klokken|t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minut|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "453bc927-c5c7-5f8d-a3ab-6c89af99079f"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{hej} {siri} væk mig {klokken} (time:time)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?væk\\s+mig(?:\\s+klokken)?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokken)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>morgen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>aften|eftermiddag|nat|om aftenen|om eftermiddagen|om natten))))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "e671ecc0-80d4-59f4-98f8-bced63538d36"
+    },
+    {
+      "action": "stop_alarms(plurality='plural')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {(kan|gider) du} {venligst} (slå alle alarmer{ne} fra|slå fra alle {mine} alarmer{ne})",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:kan|gider)\\s+du\\s+)?(?:venligst\\s+)?(?:slå\\s+alle\\s+alarmer(?:ne)?\\s+fra|slå\\s+fra\\s+alle\\s+(?:mine\\s+)?alarmer(?:ne)?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "2754a643-1fb1-506c-81a1-a4a7562b9e85"
+    },
+    {
+      "action": "stop_alarms(plurality='single')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {(kan|gider) du} {venligst} {slå {min}} alarm{en} fra {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:kan|gider)\\s+du\\s+)?(?:venligst\\s+)?(?:slå\\s+(?:min\\s+)?)?alarm(?:en)?\\s+fra(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "9d1719b0-aff7-55d0-8f6e-98a540377d46"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "minute": "int",
+        "minute__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{hej} {siri} {en|min} alarm {på|til} (time:time){ }(minute:int)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:en|min)\\s+)?alarm(?:\\s+(?:på|til))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokken)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>morgen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>aften|eftermiddag|nat|om aftenen|om eftermiddagen|om natten))))?)(?:\\s+)?(?P<minute>(?P<minute__int>\\d+))$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "b69382fc-87a9-5f06-8ecb-9686f8fff406"
+    },
+    {
+      "action": "stop_alarms(plurality='plural')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {venligst} (sluk|stop) alle {mine} alarmer",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:sluk|stop)\\s+alle\\s+(?:mine\\s+)?alarmer$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "be71db88-cdf5-559f-8e22-2f1f1f74975b"
+    },
+    {
+      "action": "stop_alarms(plurality='single')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {venligst} (stop|sluk) (alarm{en}|min alarm) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:stop|sluk)(?:\\s+alarm(?:en)?|\\s+min\\s+alarm)(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "0e0be33d-c795-5187-a3de-7418dfefb78a"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*3}"
+      },
+      "pattern": "{hej} {siri} (contact:*{1,3}) (kan du ringe til|ring til|ring op til|ring)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+(?:kan\\s+du\\s+ringe\\s+til|ring\\s+til|ring\\s+op\\s+til|ring)$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "251c7c4d-c731-558c-a70c-b26aa957168d"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices"
+      },
+      "pattern": "{hej} {siri} (jeg har brug for|få fat i) (contact:emergencyServices) {kan du ringe {til dem}}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:jeg\\s+har\\s+brug\\s+for|få\\s+fat\\s+i)\\s+(?P<contact>(?P<contact__emergencyServices>akuttelefonen|ambulance|ambulancetjenester|behandling af forgiftning|behandling efter forgiftning|beredskabstjenesten|brandmand|brandmænd|brandstation|brandvæsen|giftbehandling|giftlinjen|giftpleje|giftskadestue|hjælp|hospitalet|lægetjenester|medicinske tjenester|myndigheder|nummer til nødhjælpstjenester|nødhjælp|nødhjælpstjenester|nødsituation|paramedicinere|paramedicinske tjenester|pleje efter forgiftning|politibetjente|politiet|polititjenester|retshåndhævende tjenester|sygehuset))(?:\\s+kan\\s+du\\s+ringe(?:\\s+til\\s+dem)?)?$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "c1337424-1c99-5c4f-8f65-49420b0455e4"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices",
+        "situation": "situation",
+        "situation__situation": "situation"
+      },
+      "pattern": "{hej} {siri} (kan du ringe|jeg har brug for at du ringer|ring) (til|efter) (contact:emergencyServices) {(situation:situation)}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:kan\\s+du\\s+ringe|jeg\\s+har\\s+brug\\s+for\\s+at\\s+du\\s+ringer|ring)\\s+(?:til|efter)\\s+(?P<contact>(?P<contact__emergencyServices>akuttelefonen|ambulance|ambulancetjenester|behandling af forgiftning|behandling efter forgiftning|beredskabstjenesten|brandmand|brandmænd|brandstation|brandvæsen|giftbehandling|giftlinjen|giftpleje|giftskadestue|hjælp|hospitalet|lægetjenester|medicinske tjenester|myndigheder|nummer til nødhjælpstjenester|nødhjælp|nødhjælpstjenester|nødsituation|paramedicinere|paramedicinske tjenester|pleje efter forgiftning|politibetjente|politiet|polititjenester|retshåndhævende tjenester|sygehuset))(?:\\s+(?P<situation>(?P<situation__situation>der er en slåskamp i gang|fer er behov for øjeblikkelig lægehjælp|hjæl hjælp hjælp|hjælp mig med at hjælpe mig|jeg blev skudt|jeg bløder|jeg dør|jeg er lige blevet overfaldet|jeg er ude for en ulykke|jeg får et hjerteanfald|jeg føler mig svag|jeg har brækket min arm|jeg har et anfald|jeg har fået en overdosis|jeg har lige været ude for en ulykke|jeg har problemer med at trække vejret|jeg har stærke smerter|jeg kan ikke vække min datter|jeg tror ​​jeg er blevet forgiftet|jeg tror ​​jeg har brug for lægehjælp|jeg var i en bilulykke|jeg var ude for en bilulykke|min bil brød i brand|min far har svært ved at trække vejret|min hund blev angrebet|min kone blev skudt|min mor besvimede|mit hus brænder|nogen er bevidstløs på gaden|nogen jagter mig|nogen trak en pistol mod mig|to fyre slås|åh min gud han er kørt over nogen)))?$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "f7b165a7-7102-5cc4-992a-6debdb83f15a"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "{hej} {siri} (ring til|ring op|kan du ringe til|ring) (contact:*{1,5})",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:ring\\s+til|ring\\s+op|kan\\s+du\\s+ringe\\s+til|ring)\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "69379548-6a9a-5013-9523-3d33ead7b95e"
+    },
+    {
+      "action": "answer_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} ja",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?ja$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "2ac22162-c66f-5539-b9bd-7e315ea58dac"
+    },
+    {
+      "action": "answer_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} svar på (den|opkaldet)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?svar\\s+på\\s+(?:den|opkaldet)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "14e47802-d181-52c0-baf1-a8c9e95ee878"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices",
+        "situation": "situation",
+        "situation__situation": "situation"
+      },
+      "pattern": "{hej} {siri} {(situation:situation)} (kan du ringe|jeg har brug for at du ringer|ring) (til|efter) (contact:emergencyServices) {{jeg har brug for} hjælp}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?P<situation>(?P<situation__situation>der er en slåskamp i gang|fer er behov for øjeblikkelig lægehjælp|hjæl hjælp hjælp|hjælp mig med at hjælpe mig|jeg blev skudt|jeg bløder|jeg dør|jeg er lige blevet overfaldet|jeg er ude for en ulykke|jeg får et hjerteanfald|jeg føler mig svag|jeg har brækket min arm|jeg har et anfald|jeg har fået en overdosis|jeg har lige været ude for en ulykke|jeg har problemer med at trække vejret|jeg har stærke smerter|jeg kan ikke vække min datter|jeg tror ​​jeg er blevet forgiftet|jeg tror ​​jeg har brug for lægehjælp|jeg var i en bilulykke|jeg var ude for en bilulykke|min bil brød i brand|min far har svært ved at trække vejret|min hund blev angrebet|min kone blev skudt|min mor besvimede|mit hus brænder|nogen er bevidstløs på gaden|nogen jagter mig|nogen trak en pistol mod mig|to fyre slås|åh min gud han er kørt over nogen))\\s+)?(?:kan\\s+du\\s+ringe|jeg\\s+har\\s+brug\\s+for\\s+at\\s+du\\s+ringer|ring)\\s+(?:til|efter)\\s+(?P<contact>(?P<contact__emergencyServices>akuttelefonen|ambulance|ambulancetjenester|behandling af forgiftning|behandling efter forgiftning|beredskabstjenesten|brandmand|brandmænd|brandstation|brandvæsen|giftbehandling|giftlinjen|giftpleje|giftskadestue|hjælp|hospitalet|lægetjenester|medicinske tjenester|myndigheder|nummer til nødhjælpstjenester|nødhjælp|nødhjælpstjenester|nødsituation|paramedicinere|paramedicinske tjenester|pleje efter forgiftning|politibetjente|politiet|polititjenester|retshåndhævende tjenester|sygehuset))(?:\\s+(?:jeg\\s+har\\s+brug\\s+for\\s+)?hjælp)?$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "2b54d0c2-0c8f-55ab-aa37-0d3176d59e8a"
+    },
+    {
+      "action": "answer_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {venligst} tag {lige} (telefonen|telefonopkaldet|opkaldet) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?tag\\s+(?:lige\\s+)?(?:telefonen|telefonopkaldet|opkaldet)(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "0e84aef7-223f-5ffd-8b06-75f6f26f9351"
+    },
+    {
+      "action": "answer_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {venligst} {be}svar {lige} {min mobil|mit opkald|telefon|opkald|telefonen|telefonopkaldet|opkaldet} {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:be)?svar(?:\\s+lige)?(?:\\s+(?:min\\s+mobil|mit\\s+opkald|telefon|opkald|telefonen|telefonopkaldet|opkaldet))?(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "8e759c34-7e51-5950-83f8-0015fd892928"
+    },
+    {
+      "action": "end_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hey} {siri} (nej|læg på|(afslut|stop) (opkaldet|mit opkald))",
+      "priority": 50,
+      "regex": "^(?:hey\\s+)?(?:siri\\s+)?(?:nej|læg\\s+på|(?:afslut|stop)\\s+(?:opkaldet|mit\\s+opkald))$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "590fe7e4-346c-5e58-8b6c-ac34b79d822b"
+    },
+    {
+      "action": "end_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hey} {siri} (nej|stop|afslut|læg på)",
+      "priority": 50,
+      "regex": "^(?:hey\\s+)?(?:siri\\s+)?(?:nej|stop|afslut|læg\\s+på)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "09382414-a5af-57f9-8290-8565a84d922b"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergency_contact_parser",
+        "contact__emergency_contact_parser": "emergency_contact_parser"
+      },
+      "pattern": "{hej} {siri} (ring|ring op) {min|vores|den} (contact:emergency_contact_parser)",
+      "priority": 35,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:ring|ring\\s+op)\\s+(?:(?:min|vores|den)\\s+)?(?P<contact>(?P<contact__emergency_contact_parser>nødkontakt))$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "5c1b05fe-d519-54c5-ac2a-50b5cf87c53c"
+    },
+    {
+      "action": "make_call_on_speaker",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergency_contact_parser",
+        "contact__emergency_contact_parser": "emergency_contact_parser"
+      },
+      "pattern": "{hej} {siri} (ring|ring op|ring til|kan du ringe til) {min|vores|den} (contact:emergency_contact_parser) på (højtaler|medhør)",
+      "priority": 35,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:ring|ring\\s+op|ring\\s+til|kan\\s+du\\s+ringe\\s+til)\\s+(?:(?:min|vores|den)\\s+)?(?P<contact>(?P<contact__emergency_contact_parser>nødkontakt))\\s+på\\s+(?:højtaler|medhør)$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "5128a279-9beb-59da-adaa-bd2973e220a7"
+    },
+    {
+      "action": "get_current_time",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} hvad (er klokken|tid er det) {{lige} nu|i øjeblikket} {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?hvad\\s+(?:er\\s+klokken|tid\\s+er\\s+det)(?:(?:\\s+(?:lige\\s+)?nu|\\s+i\\s+øjeblikket))?(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "86cab1ae-e74d-5986-828b-07727edd3ead"
+    },
+    {
+      "action": "call_911",
+      "context_free": false,
+      "metadata": {
+        "emergency_number": "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser": "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser": "locale_emergency_number_parser",
+        "number": "emergency_number_parser"
+      },
+      "pattern": "{hej} {siri} (kan|gider) du {venligst} {ringe til|ringe op {til}} (number:emergency_number_parser) {tak}",
+      "priority": 10,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:kan|gider)\\s+du\\s+(?:venligst\\s+)?(?:(?:ringe\\s+til|ringe\\s+op(?:\\s+til)?)\\s+)?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>112))))(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid": "e6cb3439-8507-563f-ad1b-b18cdabacc12"
+    },
+    {
+      "action": "call_911",
+      "context_free": false,
+      "metadata": {
+        "emergency_number": "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser": "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser": "locale_emergency_number_parser",
+        "number": "emergency_number_parser"
+      },
+      "pattern": "{hej} {siri} {hurtigt} der skal ringes {{op} til} (number:emergency_number_parser) {nu} {tak}",
+      "priority": 10,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:hurtigt\\s+)?der\\s+skal\\s+ringes\\s+(?:(?:op\\s+)?til\\s+)?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>112))))(?:\\s+nu)?(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid": "c8c13016-a444-5e1f-a4f6-cdd4410362df"
+    },
+    {
+      "action": "call_911",
+      "context_free": true,
+      "metadata": {
+        "emergency_number": "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser": "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser": "locale_emergency_number_parser",
+        "number": "emergency_number_parser"
+      },
+      "pattern": "{hej} {siri} {venligst} {ring til|ring op|ring} (number:emergency_number_parser) {tak}",
+      "priority": 10,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:(?:ring\\s+til|ring\\s+op|ring)\\s+)?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>112))))(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid": "bd44acd4-78d0-5399-9430-43548f236018"
+    },
+    {
+      "action": "facetime_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "{hej} {siri} start facetime {med} (contact:*{1,5})",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?start\\s+facetime\\s+(?:med\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "693756c5-7976-5a93-bae0-dac2fd0222ba"
+    },
+    {
+      "action": "facetime_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "{hej} {siri} {venligst} facetime (contact:*{1,5})",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?facetime\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "5db751d7-6772-5e90-9491-8974fae07bad"
+    },
+    {
+      "action": "facetime_audio_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "{hej} {siri} {venligst} facetime (contact:*{1,5}) på {telefonens} (højtaler|lyd) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?facetime\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+på\\s+(?:telefonens\\s+)?(?:højtaler|lyd)(?:\\s+tak)?$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "ebc37464-3e3d-5250-a61f-d10b38fe96af"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='home_device_control')",
+      "context_free": false,
+      "metadata": {
+        "homeAutomation": "wildcard{1..*5}"
+      },
+      "pattern": "{hej} {siri} (homeAutomation:*{1,5})",
+      "priority": 55,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?P<homeAutomation>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels": {
+        "homeAutomation": [
+          "homeAutomationScene"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "59c84fbd-f34d-5b96-904c-cc95d8eed606"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "place": "wildcard{1..*3}"
+      },
+      "pattern": "{hej} {siri} (hvordan er vejret|kommer der regn) i {place:*{1,3}} {i dag|i morgen|denne uge|næste uge}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:hvordan\\s+er\\s+vejret|kommer\\s+der\\s+regn)\\s+i(?:\\s+(?P<place>[^\\s]+(?:\\s+[^\\s]+){0,2}))?(?:\\s+(?:i\\s+dag|i\\s+morgen|denne\\s+uge|næste\\s+uge))?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "9e018e0d-6d60-5b41-9b29-fff5fb70d38b"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "team": "wildcard{1..*5}"
+      },
+      "pattern": "{hej} {siri} hvad er scoren (for|mellem) (team:*{1,5}) {i dag|i morgen}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?hvad\\s+er\\s+scoren\\s+(?:for|mellem)\\s+(?P<team>[^\\s]+(?:\\s+[^\\s]+){0,4})(?:\\s+(?:i\\s+dag|i\\s+morgen))?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "c4514d62-c2b6-56e3-bb47-94e176ddb1fd"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "unit": "wildcard{1..*3}",
+        "unit2": "wildcard{1..*3}"
+      },
+      "pattern": "{hej} {siri} hvor mange (unit:*{1,3}) er (unit2:*{1,3})",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?hvor\\s+mange\\s+(?P<unit>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+er\\s+(?P<unit2>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "37cdc331-3ed2-553d-9106-9440bcd00d75"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "word": "wildcard{1..*1}"
+      },
+      "pattern": "{hej} {siri} hvordan staver man til (word:*{1,1})",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?hvordan\\s+staver\\s+man\\s+til\\s+(?P<word>[^\\s]+)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "f1af27a5-3f4f-5dbb-829e-9e2ac310e752"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "place": "wildcard{1..*3}"
+      },
+      "pattern": "{hej} {siri} hvornår (lukker|åbner) (place:*{1,3})",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?hvornår\\s+(?:lukker|åbner)\\s+(?P<place>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "4897c0a2-32c6-5622-a4b2-8f4eff47d0df"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "team": "wildcard{1..*5}"
+      },
+      "pattern": "{hej} {siri} hvornår er (team:*{1,5}) kampen {i dag|i morgen}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?hvornår\\s+er\\s+(?P<team>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+kampen(?:\\s+(?:i\\s+dag|i\\s+morgen))?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "17178125-1d71-5961-9731-a0c03b4b4c88"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "thing": "wildcard{1..*10}"
+      },
+      "pattern": "{hej} {siri} må (hunde|katte|fisk|dyr|slanger|aber) spise (thing:*{1,10})",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?må\\s+(?:hunde|katte|fisk|dyr|slanger|aber)\\s+spise\\s+(?P<thing>[^\\s]+(?:\\s+[^\\s]+){0,9})$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "2814eb88-cb16-538f-9fec-4dd450e0fed6"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} (pause|stop) (afspilning{en}|musik{ken})",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:pause|stop)(?:\\s+afspilning(?:en)?|\\s+musik(?:ken)?)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "d82794b6-2994-5be5-bce7-6c64ed7d5dd7"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} forrige sang",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?forrige\\s+sang$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "b0e6545e-dd79-5291-9088-cf2a89b874c8"
+    },
+    {
+      "action": "play_media",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} genoptag",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?genoptag$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "56009738-d15c-58b3-9d36-05be8433169a"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} næste sang",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?næste\\s+sang$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "f77affa1-7d1d-5851-b7ba-9f693e4f0296"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} pause",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?pause$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "cc764e85-9cc0-513f-b7b6-571f26b0882f"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} spring over",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?spring\\s+over$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "89f4ecf3-3070-504a-9e4c-2291dcc83ff8"
+    },
+    {
+      "action": "play_media",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} start {af}spilning{en}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?start\\s+(?:af)?spilning(?:en)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "d6885bcf-bec0-5545-ab7f-c490b160759d"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} stop",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?stop$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "ec757fd9-eb22-5eb1-bb1f-25fcb43e616d"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} sæt {venligst} (afspilning{en}|musik{ken}) på pause {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?sæt(?:\\s+venligst)?(?:\\s+afspilning(?:en)?|\\s+musik(?:ken)?)\\s+på\\s+pause(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "31bb62b5-8331-5bd1-85e6-7295d63e8b72"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {(gider|kan) du} {venligst} {{af}spil{le}|(skift{e}|ændr{e}|hop{pe}|gå) til} ({den} næste sang|{det} næste (spor|nummer)) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:gider|kan)\\s+du\\s+)?(?:venligst\\s+)?(?:(?:(?:af)?spil(?:le)?\\s+|(?:skift(?:e)?\\s+|ændr(?:e)?\\s+|hop(?:pe)?\\s+|gå\\s+)til\\s+))?(?:(?:den\\s+)?næste\\s+sang|(?:det\\s+)?næste\\s+(?:spor|nummer))(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "8b387655-a5b4-533f-8355-df9a7c47063a"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {kan du} {venligst} pause (sangen|nummeret|sporet|denne sang|dette (nummer|spor)) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:kan\\s+du\\s+)?(?:venligst\\s+)?pause\\s+(?:sangen|nummeret|sporet|denne\\s+sang|dette\\s+(?:nummer|spor))(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "b2dcac0f-cf41-5716-9b50-fc3f284aa21b"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {venligst} (gå|hop|spring|skift) (tilbage (en sang|et nummer|til (den forrige sang|det forrige nummer))|(en sang|et nummer) tilbage) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:gå|hop|spring|skift)\\s+(?:tilbage\\s+(?:en\\s+sang|et\\s+nummer|til\\s+(?:den\\s+forrige\\s+sang|det\\s+forrige\\s+nummer))|(?:en\\s+sang|et\\s+nummer)\\s+tilbage)(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "d5a0cd80-d2c3-5f35-802b-79c957d476a3"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {venligst} (skift|ændr{e}) (sang|spor|nummer) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:skift|ændr(?:e)?)\\s+(?:sang|spor|nummer)(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "89cf0438-e43f-5f57-a1f1-7c871132c1b7"
+    },
+    {
+      "action": "play_media",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {venligst} afspil musik{ken} {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?afspil\\s+musik(?:ken)?(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "20cbcf14-f738-5bab-8385-3d34afa53ff3"
+    },
+    {
+      "action": "play_media",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {venligst} genoptag afspilning{en} {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?genoptag\\s+afspilning(?:en)?(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "bb4998e0-fc5a-5aa9-8111-522d544ea82e"
+    },
+    {
+      "action": "play_media",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {venligst} {tryk {på}} {af}spil {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:tryk\\s+(?:på\\s+)?)?(?:af)?spil(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "7f45e363-23e6-533e-a026-8c8787a4dbde"
+    },
+    {
+      "action": "search_and_read(query='messages', entity_types='MessageEntity')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hey} {siri} {vis|vis mig} {mine} beskeder",
+      "priority": 50,
+      "regex": "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:vis|vis\\s+mig)\\s+)?(?:mine\\s+)?beskeder$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "d66b61df-a47b-5af8-9c56-d0d0d07424a4"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free": false,
+      "metadata": {
+        "s": "connection_settings",
+        "s__connection_settings": "connection_settings"
+      },
+      "pattern": "{hej} {siri} (aktiver|tænd for|tænd|start) (s:connection_settings) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:aktiver|tænd\\s+for|tænd|start)\\s+(?P<s>(?P<s__connection_settings>Bluetooth|Wi-Fi|internetdeling|mobildata|netværk))(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "c347df4e-50ef-54eb-9da6-0b948d2c08f4"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {
+        "could": "could",
+        "could__could": "could",
+        "s": "flashlight_settings",
+        "s__flashlight_settings": "flashlight_settings"
+      },
+      "pattern": "{hej} {siri} (could:could) du {venligst} (tænde {for}|aktivere {for}|slå til) (s:flashlight_settings) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?P<could>(?P<could__could>gider|kan|kunne|vil|ville))\\s+du(?:\\s+venligst)?(?:\\s+tænde(?:\\s+for)?|\\s+aktivere(?:\\s+for)?|\\s+slå\\s+til)\\s+(?P<s>(?P<s__flashlight_settings>flashlight|lommelygte|lommelygten|lygte))(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "0aa2b872-5a67-58da-831a-6238177ac866"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free": false,
+      "metadata": {
+        "of": "on_off",
+        "of__on_off": "on_off",
+        "s": "settings",
+        "s__settings": "settings"
+      },
+      "pattern": "{hej} {siri} (of:on_off) (s:settings)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?P<of>(?P<of__on_off>sluk|tænd))\\s+(?P<s>(?P<s__settings>bluetooth|data|flytilstand|forstyr ikke|lommelygte|mobildata|strømbesparende tilstand|trådløs|wifi))$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "08d0b083-ca83-5df8-b43b-615c6bd6c4bf"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free": false,
+      "metadata": {
+        "s": "connection_settings",
+        "s__connection_settings": "connection_settings"
+      },
+      "pattern": "{hej} {siri} (s:connection_settings) {til} {nu} {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?P<s>(?P<s__connection_settings>Bluetooth|Wi-Fi|internetdeling|mobildata|netværk))(?:\\s+til)?(?:\\s+nu)?(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "a027ae26-3d28-5072-aa79-bae4279b3543"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free": false,
+      "metadata": {
+        "s": "mode_settings",
+        "s__mode_settings": "mode_settings"
+      },
+      "pattern": "{hej} {siri} (s:mode_settings) {til} {nu} {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?P<s>(?P<s__mode_settings>Ikke forstyr|energibesparende funktion|flytilstand|mørk tilstand|night shift))(?:\\s+til)?(?:\\s+nu)?(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "2cb6d4e8-c3f5-51be-85dc-87b2f9d58a34"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {
+        "s": "volume_settings",
+        "s__volume_settings": "volume_settings"
+      },
+      "pattern": "{hej} {siri} (s:volume_settings) op",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?P<s>(?P<s__volume_settings>lyd|lydstyrke|stemmekontrol|støjreduktion|volumen))\\s+op$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "56ea05be-b009-541b-80fe-b0230ec20742"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free": false,
+      "metadata": {
+        "s": "connection_settings",
+        "s__connection_settings": "connection_settings"
+      },
+      "pattern": "{hej} {siri} (stop|deaktiver|sluk for|sluk|{af}slut) (s:connection_settings) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:stop|deaktiver|sluk\\s+for|sluk|(?:af)?slut)\\s+(?P<s>(?P<s__connection_settings>Bluetooth|Wi-Fi|internetdeling|mobildata|netværk))(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "33341408-4cfd-534d-a275-064059056971"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free": false,
+      "metadata": {
+        "s": "connection_settings",
+        "s__connection_settings": "connection_settings"
+      },
+      "pattern": "{hej} {siri} (sæt|slå) (s:connection_settings) til {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:sæt|slå)\\s+(?P<s>(?P<s__connection_settings>Bluetooth|Wi-Fi|internetdeling|mobildata|netværk))\\s+til(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "5cf5f7ec-dc2a-5bfb-87a3-dfe93a3d2887"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free": false,
+      "metadata": {
+        "s": "mode_settings",
+        "s__mode_settings": "mode_settings"
+      },
+      "pattern": "{hej} {siri} (sæt|slå) (s:mode_settings) til {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:sæt|slå)\\s+(?P<s>(?P<s__mode_settings>Ikke forstyr|energibesparende funktion|flytilstand|mørk tilstand|night shift))\\s+til(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "6ff41f5f-0fc4-5a68-837b-b280f0c96057"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} lumos",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?lumos$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "583642eb-855c-5020-a394-fbb200f8ef4e"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} nox",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?nox$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "47f2cd42-8d3c-5ff2-a396-0566843a7aef"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} skru (op|ned) for (lyden|lydstyrken|volumen)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?skru\\s+(?:op|ned)\\s+for\\s+(?:lyden|lydstyrken|volumen)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "23eb516c-adb3-5fd9-912a-ada2910ee052"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} sluk {for} lommelygte",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?sluk\\s+(?:for\\s+)?lommelygte$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "6186746a-b6ce-5664-bfba-5f91d36717f9"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} tænd {for} lommelygte",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?tænd\\s+(?:for\\s+)?lommelygte$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "b91d919b-767e-541d-9ac2-eafa80c1b13b"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {
+        "s": "volume_settings",
+        "s__volume_settings": "volume_settings"
+      },
+      "pattern": "{hej} {siri} {(kan|vil|gider|kunne) du|jeg vil} (sætte|skru{e}|forøg{e}) {højere|mere} op for (s:volume_settings)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:(?:kan|vil|gider|kunne)\\s+du|jeg\\s+vil)\\s+)?(?:sætte|skru(?:e)?|forøg(?:e)?)\\s+(?:(?:højere|mere)\\s+)?op\\s+for\\s+(?P<s>(?P<s__volume_settings>lyd|lydstyrke|stemmekontrol|støjreduktion|volumen))$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "53311b2f-c33f-5c3b-96f5-9ddd3acace83"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {
+        "quieter": "quieter",
+        "quieter__quieter": "quieter",
+        "volume": "volume",
+        "volume__volume": "volume"
+      },
+      "pattern": "{hej} {siri} {(kan|vil|gider|kunne) du} (quieter:quieter) (volume:volume)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:kan|vil|gider|kunne)\\s+du\\s+)?(?P<quieter>(?P<quieter__quieter>snak|snakke|tal|tale))\\s+(?P<volume>(?P<volume__volume>blidere|mere blidt|mere roligt|mere stille|mindre højt|mindre larmende|roligere))$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "25d890e2-6040-55fa-9bba-1eff50ee8695"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {
+        "quieter": "quieter_1",
+        "quieter__quieter_1": "quieter_1",
+        "s": "volume_settings",
+        "s__volume_settings": "volume_settings"
+      },
+      "pattern": "{hej} {siri} {(kan|vil|gider|kunne) du} {skru{e}|gør{e}|sæt{te}} (s:volume_settings) (quieter:quieter_1)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:kan|vil|gider|kunne)\\s+du\\s+)?(?:(?:skru(?:e)?\\s+|gør(?:e)?\\s+|sæt(?:te)?\\s+))?(?P<s>(?P<s__volume_settings>lyd|lydstyrke|stemmekontrol|støjreduktion|volumen))\\s+(?P<quieter>(?P<quieter__quieter_1>lavere|mere lavt|mere stille|ned|stille))$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "dcb1279f-b765-520e-b3c5-61ad80ada1f2"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {
+        "s": "volume_settings",
+        "s__volume_settings": "volume_settings"
+      },
+      "pattern": "{hej} {siri} {gør (min skærm|skærmen|mit display|displayet)} (s:volume_settings) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:gør\\s+(?:min\\s+skærm|skærmen|mit\\s+display|displayet)\\s+)?(?P<s>(?P<s__volume_settings>lyd|lydstyrke|stemmekontrol|støjreduktion|volumen))(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "8979fead-5f00-5896-9fc6-957d626f22a2"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free": false,
+      "metadata": {
+        "s": "connection_settings",
+        "s__connection_settings": "connection_settings"
+      },
+      "pattern": "{hej} {siri} {sæt|slå} (s:connection_settings) fra {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:sæt|slå)\\s+)?(?P<s>(?P<s__connection_settings>Bluetooth|Wi-Fi|internetdeling|mobildata|netværk))\\s+fra(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "bf9f16e8-6e22-5d1c-9ee7-b853e9c6dc48"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free": false,
+      "metadata": {
+        "s": "mode_settings",
+        "s__mode_settings": "mode_settings"
+      },
+      "pattern": "{hej} {siri} {sæt|slå} (s:mode_settings) fra {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:sæt|slå)\\s+)?(?P<s>(?P<s__mode_settings>Ikke forstyr|energibesparende funktion|flytilstand|mørk tilstand|night shift))\\s+fra(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "b14b2ca3-120b-5409-a57f-2186e5d62056"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {
+        "s": "flashlight_settings",
+        "s__flashlight_settings": "flashlight_settings"
+      },
+      "pattern": "{hej} {siri} {venligst} (deaktiver|sluk {for}|afslut|stop {for}) (s:flashlight_settings) {indstilling{en}} {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:deaktiver|sluk(?:\\s+for)?|afslut|stop(?:\\s+for)?)\\s+(?P<s>(?P<s__flashlight_settings>flashlight|lommelygte|lommelygten|lygte))(?:\\s+indstilling(?:en)?)?(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "8e516ca9-7d6a-53c9-95a3-3e98e254339f"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {
+        "s": "flashlight_settings",
+        "s__flashlight_settings": "flashlight_settings"
+      },
+      "pattern": "{hej} {siri} {venligst} (slå|sæt) (s:flashlight_settings) fra",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:slå|sæt)\\s+(?P<s>(?P<s__flashlight_settings>flashlight|lommelygte|lommelygten|lygte))\\s+fra$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "8d4a8179-42d7-5b43-91da-26c27976ae41"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {
+        "s": "flashlight_settings",
+        "s__flashlight_settings": "flashlight_settings"
+      },
+      "pattern": "{hej} {siri} {venligst} {tænd {for}|slå {til}|aktiver {for}} (s:flashlight_settings) {nu} {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:(?:tænd\\s+(?:for\\s+)?|slå\\s+(?:til\\s+)?|aktiver\\s+(?:for\\s+)?))?(?P<s>(?P<s__flashlight_settings>flashlight|lommelygte|lommelygten|lygte))(?:\\s+nu)?(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "009a7ec6-4c20-5472-ac5c-eacb1c9cf3bb"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_power_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} (genstart|sluk {ned}|luk {ned})",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:genstart|sluk(?:\\s+ned)?|luk(?:\\s+ned)?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "0fdaa942-a1a2-5a94-9ddf-d39ac68f6cb2"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} screenshot {(dette|det her) billede}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?screenshot(?:\\s+(?:dette|det\\s+her)\\s+billede)?$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "827730b1-7d14-5e22-b83e-cb94e548e085"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} skærmbillede",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?skærmbillede$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "2c64c96c-59cc-5a7d-a747-847ba3147397"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} tag {et} (screenshot|skærmbillede) {af det her}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?tag\\s+(?:et\\s+)?(?:screenshot|skærmbillede)(?:\\s+af\\s+det\\s+her)?$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "ddf72a2a-1662-5f12-8cbe-88cf806421a5"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_power_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{hej} {siri} {siri} (slå {helt} fra|deaktiver)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:siri\\s+)?(?:slå\\s+(?:helt\\s+)?fra|deaktiver)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "96c7744b-0c38-53d7-ba3d-76962c97a749"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "create": "create",
+        "create__create": "create",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "set": "set",
+        "set__set": "set",
+        "the_timer": "the_timer",
+        "the_timer__the_timer": "the_timer",
+        "time": "time"
+      },
+      "pattern": "{hej} {siri} ((create:create)|(set:set)) (the_timer:the_timer) (til|på) (time:time)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?P<create>(?P<create__create>lav|opret|tilføj))|(?P<set>(?P<set__set>indstil|stil|sæt)))\\s+(?P<the_timer>(?P<the_timer__the_timer>nedtællingen|tidtagningen|timeren|uret))\\s+(?:til|på)(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokken)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>morgen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>aften|eftermiddag|nat|om aftenen|om eftermiddagen|om natten))))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "845b6318-6648-5013-a7a2-4f31512320f8"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "create": "create",
+        "create__create": "create",
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "set": "set",
+        "set__set": "set",
+        "the_timer": "the_timer",
+        "the_timer__the_timer": "the_timer",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{hej} {siri} ((create:create)|(set:set)) (the_timer:the_timer) {på|til} (duration:duration)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?P<create>(?P<create__create>lav|opret|tilføj))|(?P<set>(?P<set__set>indstil|stil|sæt)))\\s+(?P<the_timer>(?P<the_timer__the_timer>nedtællingen|tidtagningen|timeren|uret))(?:\\s+(?:på|til))?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>klokken|t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minut|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "9303886c-a672-530f-8b6b-535cb498a061"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "create": "create",
+        "create__create": "create",
+        "duration": "duration|duration_genitive",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_hg": "int|basic_number",
+        "n_hg__basic_number": "basic_number",
+        "n_hg__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_mg": "int|basic_number",
+        "n_mg__basic_number": "basic_number",
+        "n_mg__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "n_sg": "int|basic_number",
+        "n_sg__basic_number": "basic_number",
+        "n_sg__int": "int",
+        "set": "set",
+        "set__set": "set",
+        "timer": "timer",
+        "timer__timer": "timer",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_hg": "hour_parser_genitive",
+        "unit_hg__hour_parser_genitive": "hour_parser_genitive",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_mg": "minute_parser_genitive",
+        "unit_mg__minute_parser_genitive": "minute_parser_genitive",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser",
+        "unit_sg": "second_parser_genitive",
+        "unit_sg__second_parser_genitive": "second_parser_genitive"
+      },
+      "pattern": "{hej} {siri} ((create:create)|(set:set)) {en|min} (duration:duration|duration_genitive) (timer:timer) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?P<create>(?P<create__create>lav|opret|tilføj))|(?P<set>(?P<set__set>indstil|stil|sæt)))(?:\\s+(?:en|min))?(?P<duration>(?:(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>klokken|t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minut|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?|(?:\\s+(?P<n_hg>(?:(?P<n_hg__int>\\d+)|(?P<n_hg__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_hg>(?P<unit_hg__hour_parser_genitive>klokkens|times|timers)))?(?:\\s+og)?(?:\\s+(?P<n_mg>(?:(?P<n_mg__int>\\d+)|(?P<n_mg__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_mg>(?P<unit_mg__minute_parser_genitive>minuts|minutters|minuttes)))?(?:\\s+og)?(?:\\s+(?P<n_sg>(?:(?P<n_sg__int>\\d+)|(?P<n_sg__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_sg>(?P<unit_sg__second_parser_genitive>sekunders|sekunds)))?))\\s+(?P<timer>(?P<timer__timer>nedtælling|tidtagning|timer|ur))(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "91cc92ee-5b54-5acd-9269-473a596a979a"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "create": "create",
+        "create__create": "create",
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "set": "set",
+        "set__set": "set",
+        "timer": "timer",
+        "timer__timer": "timer",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{hej} {siri} ((create:create)|(set:set)) {en|min} (timer:timer) {på|til} (duration:duration)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?P<create>(?P<create__create>lav|opret|tilføj))|(?P<set>(?P<set__set>indstil|stil|sæt)))\\s+(?:(?:en|min)\\s+)?(?P<timer>(?P<timer__timer>nedtælling|tidtagning|timer|ur))(?:\\s+(?:på|til))?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>klokken|t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minut|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "2ee4a254-21ba-54af-96bf-d9fc8c8257ce"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "create": "create",
+        "create__create": "create",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "set": "set",
+        "set__set": "set",
+        "time": "time",
+        "timer": "timer",
+        "timer__timer": "timer"
+      },
+      "pattern": "{hej} {siri} ((create:create)|(set:set)) {en|min} (timer:timer) {på|til} (time:time)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?P<create>(?P<create__create>lav|opret|tilføj))|(?P<set>(?P<set__set>indstil|stil|sæt)))\\s+(?:(?:en|min)\\s+)?(?P<timer>(?P<timer__timer>nedtælling|tidtagning|timer|ur))(?:\\s+(?:på|til))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokken)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>morgen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>aften|eftermiddag|nat|om aftenen|om eftermiddagen|om natten))))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "775e9110-0c10-591a-aad9-ba2be0e69cff"
+    },
+    {
+      "action": "stop_timers(plurality='plural')",
+      "context_free": false,
+      "metadata": {
+        "cancel_inf": "cancel_inf",
+        "cancel_inf__cancel_inf": "cancel_inf",
+        "could": "could",
+        "could__could": "could",
+        "stop_inf": "stop_inf",
+        "stop_inf__stop_inf": "stop_inf",
+        "the_timers": "the_timers",
+        "the_timers__the_timers": "the_timers"
+      },
+      "pattern": "{hej} {siri} (could:could) du {lige} {venligst} ((stop_inf:stop_inf)|(cancel_inf:cancel_inf)) (alle|samtlige af) (the_timers:the_timers)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?P<could>(?P<could__could>gider|kan|kunne|vil|ville))\\s+du\\s+(?:lige\\s+)?(?:venligst\\s+)?(?:(?P<stop_inf>(?P<stop_inf__stop_inf>afbryde|standse|stoppe))|(?P<cancel_inf>(?P<cancel_inf__cancel_inf>aflyse|annullere|fortryde)))\\s+(?:alle|samtlige\\s+af)\\s+(?P<the_timers>(?P<the_timers__the_timers>nedtællingerne|tidtagningerne|timerne|urene))$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "83daa69f-d2f7-5dba-b99b-541366a37de2"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "duration_non_empty": "duration_non_empty",
+        "n": "int|basic_number",
+        "n__basic_number": "basic_number",
+        "n__int": "int",
+        "n_1": "int|basic_number",
+        "n_1__basic_number": "basic_number",
+        "n_1__int": "int",
+        "n_2": "int|basic_number",
+        "n_2__basic_number": "basic_number",
+        "n_2__int": "int",
+        "unit": "hour_parser|minute_parser|second_parser",
+        "unit__hour_parser": "hour_parser",
+        "unit__minute_parser": "minute_parser",
+        "unit__second_parser": "second_parser",
+        "unit_1": "hour_parser|minute_parser|second_parser",
+        "unit_1__hour_parser": "hour_parser",
+        "unit_1__minute_parser": "minute_parser",
+        "unit_1__second_parser": "second_parser",
+        "unit_2": "hour_parser|minute_parser|second_parser",
+        "unit_2__hour_parser": "hour_parser",
+        "unit_2__minute_parser": "minute_parser",
+        "unit_2__second_parser": "second_parser"
+      },
+      "pattern": "{hej} {siri} (duration_non_empty:duration_non_empty)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?P<duration_non_empty>(?P<n>(?:(?P<n__int>\\d+)|(?P<n__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit>(?:(?P<unit__hour_parser>klokken|t|time|timer)|(?P<unit__minute_parser>m|min|minut|minutter)|(?P<unit__second_parser>s|sek|sekund|sekunder)))(?:\\s+og)?(?:\\s+(?P<n_1>(?:(?P<n_1__int>\\d+)|(?P<n_1__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_1>(?:(?P<unit_1__hour_parser>klokken|t|time|timer)|(?P<unit_1__minute_parser>m|min|minut|minutter)|(?P<unit_1__second_parser>s|sek|sekund|sekunder))))?(?:\\s+og)?(?:\\s+(?P<n_2>(?:(?P<n_2__int>\\d+)|(?P<n_2__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_2>(?:(?P<unit_2__hour_parser>klokken|t|time|timer)|(?P<unit_2__minute_parser>m|min|minut|minutter)|(?P<unit_2__second_parser>s|sek|sekund|sekunder))))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "b1e3a577-d252-5c2e-a12a-8c590dd8fd17"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "n": "int|basic_number",
+        "n__basic_number": "basic_number",
+        "n__int": "int",
+        "timer": "timer",
+        "timer__timer": "timer"
+      },
+      "pattern": "{hej} {siri} (n:int|basic_number) (minutters|times) (timer:timer)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?P<n>(?:(?P<n__int>\\d+)|(?P<n__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?:minutters|times)\\s+(?P<timer>(?P<timer__timer>nedtælling|tidtagning|timer|ur))$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "40e32f8f-c33b-5efe-afae-d0c7a2aa1e68"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration|duration_genitive",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_hg": "int|basic_number",
+        "n_hg__basic_number": "basic_number",
+        "n_hg__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_mg": "int|basic_number",
+        "n_mg__basic_number": "basic_number",
+        "n_mg__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "n_sg": "int|basic_number",
+        "n_sg__basic_number": "basic_number",
+        "n_sg__int": "int",
+        "timer": "timer",
+        "timer__timer": "timer",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_hg": "hour_parser_genitive",
+        "unit_hg__hour_parser_genitive": "hour_parser_genitive",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_mg": "minute_parser_genitive",
+        "unit_mg__minute_parser_genitive": "minute_parser_genitive",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser",
+        "unit_sg": "second_parser_genitive",
+        "unit_sg__second_parser_genitive": "second_parser_genitive"
+      },
+      "pattern": "{hej} {siri} {en|min} (duration:duration|duration_genitive) (timer:timer)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:en|min)\\s+)?(?P<duration>(?:(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>klokken|t|time|timer))\\s+)?(?:og\\s+)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minut|minutter))\\s+)?(?:og\\s+)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder))\\s+)?|(?:(?P<n_hg>(?:(?P<n_hg__int>\\d+)|(?P<n_hg__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_hg>(?P<unit_hg__hour_parser_genitive>klokkens|times|timers))\\s+)?(?:og\\s+)?(?:(?P<n_mg>(?:(?P<n_mg__int>\\d+)|(?P<n_mg__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_mg>(?P<unit_mg__minute_parser_genitive>minuts|minutters|minuttes))\\s+)?(?:og\\s+)?(?:(?P<n_sg>(?:(?P<n_sg__int>\\d+)|(?P<n_sg__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_sg>(?P<unit_sg__second_parser_genitive>sekunders|sekunds))\\s+)?))(?P<timer>(?P<timer__timer>nedtælling|tidtagning|timer|ur))$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "89e2d709-b86e-5f87-bc6a-64ace4fe2e91"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "timer": "timer",
+        "timer__timer": "timer",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{hej} {siri} {en|min} (timer:timer) {på|til} (duration:duration)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:(?:en|min)\\s+)?(?P<timer>(?P<timer__timer>nedtælling|tidtagning|timer|ur))(?:\\s+(?:på|til))?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>klokken|t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minut|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "37164000-54c0-5276-bb7f-10239aee07d1"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "timer": "timer",
+        "timer__timer": "timer",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{hej} {siri} start {en} (timer:timer) {på} (duration:duration)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?start\\s+(?:en\\s+)?(?P<timer>(?P<timer__timer>nedtælling|tidtagning|timer|ur))(?:\\s+på)?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>klokken|t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minut|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|nul|otte|seks|syv|ti|to|tre)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "f0f2e528-0e4a-55ec-bede-961dc65972ca"
+    },
+    {
+      "action": "stop_timers(plurality='plural')",
+      "context_free": false,
+      "metadata": {
+        "timers": "timers",
+        "timers__timers": "timers"
+      },
+      "pattern": "{hej} {siri} stop alle {mine} (timers:timers)",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?stop\\s+alle\\s+(?:mine\\s+)?(?P<timers>(?P<timers__timers>nedtællinger|tidtagninger|timere|ure))$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "d36723e1-7a0e-516c-bb28-c67948c2efbf"
+    },
+    {
+      "action": "stop_timers(plurality='single')",
+      "context_free": false,
+      "metadata": {
+        "cancel": "cancel",
+        "cancel__cancel": "cancel",
+        "stop": "stop",
+        "stop__stop": "stop",
+        "timer": "timer",
+        "timer__timer": "timer"
+      },
+      "pattern": "{hej} {siri} {venligst} ((stop:stop)|(cancel:cancel)) {min} (timer:timer) {tak}",
+      "priority": 50,
+      "regex": "^(?:hej\\s+)?(?:siri\\s+)?(?:venligst\\s+)?(?:(?P<stop>(?P<stop__stop>afbryd|stands|stop))|(?P<cancel>(?P<cancel__cancel>aflys|annuller|fortryd)))\\s+(?:min\\s+)?(?P<timer>(?P<timer__timer>nedtælling|tidtagning|timer|ur))(?:\\s+tak)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "4fae1c65-b067-5b42-9076-cf346c8b2f3b"
+    }
+  ],
+  "version": "5500000.22501.0"
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FileType</key>
+	<string>AssetSetConfiguration</string>
+	<key>FileVersion</key>
+	<string>1.0.0</string>
+	<key>AutoAssetType</key>
+	<string>com.apple.MobileAsset.UAF.AONSenseConfiguration</string>
+	<key>AssetSetName</key>
+	<string>com.apple.aonsense</string>
+	<key>MetadataAsset</key>
+	<string>com.apple.aonsense.uaf.metadata</string>
+	<key>UsageTypes</key>
+	<array>
+		<string>crashDetection.countryCode</string>
+	</array>
+	<key>Assets</key>
+	<array>
+		<dict>
+			<key>AssetName</key>
+			<string>com.apple.aonsense.safety.generic</string>
+			<key>Expansions</key>
+			<array>
+				<dict>
+					<key>AutoAssetSpecifierTemplate</key>
+					<string>com.apple.aonsense.safety.generic</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>AssetName</key>
+			<string>com.apple.aonsense.safety.country</string>
+			<key>Expansions</key>
+			<array>
+				<dict>
+					<key>RequiredUsageTypes</key>
+					<array>
+					<string>crashDetection.countryCode</string>
+					</array>
+					<key>AutoAssetSpecifierTemplate</key>
+					<string>com.apple.aonsense.safety.{crashDetection.countryCode}</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>AssetName</key>
+			<string>com.apple.aonsense.uaf.metadata</string>
+			<key>IgnoreOSCompatibility</key>
+			<true/>
+			<key>Expansions</key>
+			<array>
+				<dict>
+					<key>AutoAssetSpecifierTemplate</key>
+					<string>com.apple.aonsense.uaf.metadata</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

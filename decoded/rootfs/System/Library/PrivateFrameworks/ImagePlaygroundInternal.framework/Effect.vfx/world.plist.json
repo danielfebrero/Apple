@@ -1,0 +1,1983 @@
+{
+  "$version": 100000,
+  "$archiver": "VFXKeyedArchiver",
+  "$top": {
+    "root": "UID(1)"
+  },
+  "$objects": [
+    "$null",
+    {
+      "rootNode": "UID(271)",
+      "screenSpaceAmbientOcclusionRadius": 1.0,
+      "screenSpaceReflectionObjectThickness": 0.25,
+      "$class": "UID(423)",
+      "fogDensityExponent": 1.0,
+      "screenSpaceAmbientOcclusionIntensity": 1.0,
+      "background": "UID(412)",
+      "preferredConfiguration": "UID(269)",
+      "fogColor": "UID(418)",
+      "fogStartDistance": 0.0,
+      "endTime": 0.0,
+      "version": 1,
+      "fogCategoryBitMask": -1,
+      "screenSpaceAmbientOcclusionEnableMultiBounceApproximation": false,
+      "wantsScreenSpaceReflection": false,
+      "frameRate": 60.0,
+      "screenSpaceReflectionQuality": 0,
+      "assetRegistry": "UID(2)",
+      "screenSpaceAmbientOcclusionEnableBentNormal": false,
+      "screenSpaceReflectionThicknessMode": 0,
+      "shaderCacheConfigurations": "UID(0)",
+      "wantsScreenSpaceAmbientOcclusion": false,
+      "environment": "UID(413)",
+      "stateManager": "UID(414)",
+      "screenSpaceAmbientOcclusionQuality": 1,
+      "triggerManager": "UID(420)",
+      "entityID": "UID(422)",
+      "startTime": 0.0,
+      "fogEndDistance": 0.0
+    },
+    {
+      "root": "UID(3)",
+      "$class": "UID(268)"
+    },
+    {
+      "childNodes": "UID(5)",
+      "$class": "UID(16)",
+      "name": "UID(0)",
+      "identifier": "UID(4)",
+      "isGroup": true
+    },
+    "10D41440-40F6-43EA-8D20-CEC271CE3CBD",
+    {
+      "NS.objects": [
+        "UID(6)",
+        "UID(17)",
+        "UID(127)",
+        "UID(171)",
+        "UID(200)",
+        "UID(207)",
+        "UID(214)",
+        "UID(221)",
+        "UID(245)",
+        "UID(247)",
+        "UID(254)",
+        "UID(261)"
+      ],
+      "$class": "UID(199)"
+    },
+    {
+      "asset": "UID(8)",
+      "$class": "UID(16)",
+      "identifier": "UID(7)"
+    },
+    "76BBAF04-ED3D-4ABF-A2A0-A82E3E0C1320",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(9)",
+      "name": "UID(14)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(10)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(11)",
+      "$class": "UID(12)"
+    },
+    "E84FEE58-1513-4AB6-B1BD-0C7A43B0879F",
+    {
+      "$classname": "VFXCoreEntityHandle",
+      "$classes": [
+        "VFXCoreEntityHandle",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "VFXBehaviorGraph",
+      "$classes": [
+        "VFXBehaviorGraph",
+        "NSObject"
+      ]
+    },
+    "Curve",
+    {
+      "$classname": "VFXCoreAsset",
+      "$classes": [
+        "VFXCoreAsset",
+        "VFXBaseAsset",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "VFXAssetNode",
+      "$classes": [
+        "VFXAssetNode",
+        "NSObject"
+      ]
+    },
+    {
+      "asset": "UID(19)",
+      "$class": "UID(16)",
+      "identifier": "UID(18)"
+    },
+    "6A144952-FEC9-4B27-84BC-9F667B184571",
+    {
+      "transparent": "UID(114)",
+      "behaviorGraph": "UID(122)",
+      "avoidsOverLighting": false,
+      "doubleSided": true,
+      "readsFromDepthBuffer": false,
+      "$class": "UID(126)",
+      "fillMode": 2,
+      "shininess": 1.0,
+      "writesToDepthBuffer": false,
+      "colorBufferWriteMask": 15,
+      "selfIlluminationOcclusion": 0.0,
+      "cullMode": 0,
+      "name": "UID(115)",
+      "shadingModel": 2,
+      "fresnelExponent": 0.0,
+      "entityID": "UID(125)",
+      "transparencyMode": 0,
+      "diffuse": "UID(108)",
+      "blendMode": 1,
+      "shadableHelper": "UID(116)",
+      "valuesForUndefinedKeys": "UID(20)",
+      "litPerPixel": true,
+      "indexOfRefraction": 1.0
+    },
+    {
+      "NS.keys": [
+        "UID(21)",
+        "UID(22)",
+        "UID(23)",
+        "UID(24)",
+        "UID(25)",
+        "UID(26)",
+        "UID(27)",
+        "UID(28)",
+        "UID(29)",
+        "UID(30)",
+        "UID(31)",
+        "UID(32)",
+        "UID(33)",
+        "UID(34)",
+        "UID(35)",
+        "UID(36)",
+        "UID(37)",
+        "UID(38)",
+        "UID(39)",
+        "UID(40)",
+        "UID(41)",
+        "UID(42)",
+        "UID(43)",
+        "UID(44)",
+        "UID(45)",
+        "UID(46)",
+        "UID(47)",
+        "UID(48)",
+        "UID(49)",
+        "UID(50)",
+        "UID(51)",
+        "UID(52)",
+        "UID(53)",
+        "UID(54)",
+        "UID(55)",
+        "UID(56)",
+        "UID(57)",
+        "UID(58)"
+      ],
+      "NS.objects": [
+        "UID(59)",
+        "UID(60)",
+        "UID(61)",
+        "UID(59)",
+        "UID(59)",
+        "UID(59)",
+        "UID(59)",
+        "UID(59)",
+        "UID(64)",
+        "UID(65)",
+        "UID(59)",
+        "UID(59)",
+        "UID(67)",
+        "UID(69)",
+        "UID(71)",
+        "UID(59)",
+        "UID(59)",
+        "UID(59)",
+        "UID(72)",
+        "UID(81)",
+        "UID(83)",
+        "UID(59)",
+        "UID(85)",
+        "UID(92)",
+        "UID(98)",
+        "UID(99)",
+        "UID(59)",
+        "UID(100)",
+        "UID(59)",
+        "UID(59)",
+        "UID(101)",
+        "UID(59)",
+        "UID(59)",
+        "UID(59)",
+        "UID(103)",
+        "UID(105)",
+        "UID(64)",
+        "UID(106)"
+      ],
+      "$class": "UID(107)"
+    },
+    "transitionToRoundedRectangle",
+    "imageRatio",
+    "attractor1",
+    "transitionToPicture",
+    "transitionToRectangleProcessing",
+    "transitionToShape",
+    "opacity",
+    "latencyIntro",
+    "transitionToFinalPicture",
+    "attractor6",
+    "transitionToBlob",
+    "imageScale",
+    "rectangleSize",
+    "attractor4",
+    "showSpiral",
+    "wandMode",
+    "latencyTime",
+    "intertiaRotation",
+    "image",
+    "position",
+    "attractor2",
+    "genmojiMode",
+    "colorLUT",
+    "colorLUTBottom",
+    "rectangleRadius",
+    "genmojiRampSize",
+    "latencyIntensity",
+    "blobAnimationSpeed",
+    "showImage",
+    "lightMode",
+    "attractor5",
+    "HDRMode",
+    "transitionToRectangle",
+    "transitionToError",
+    "attractor3",
+    "scale",
+    "progressCenterDimIntensity",
+    "processing_image",
+    0.0,
+    2.0,
+    {
+      "NS.rectval": "UID(62)",
+      "$class": "UID(63)",
+      "NS.special": 3
+    },
+    "{{-0.45927339792251587, 0.65502721071243286}, {1, 0}}",
+    {
+      "$classname": "NSValue",
+      "$classes": [
+        "NSValue",
+        "NSObject"
+      ]
+    },
+    1.0,
+    {
+      "NS.rectval": "UID(66)",
+      "$class": "UID(63)",
+      "NS.special": 3
+    },
+    "{{-0.020314587280154228, -0.79973745346069336}, {1, 0}}",
+    {
+      "NS.pointval": "UID(68)",
+      "$class": "UID(63)",
+      "NS.special": 1
+    },
+    "{0.23505085706710815, 0.41818180680274963}",
+    {
+      "NS.rectval": "UID(70)",
+      "$class": "UID(63)",
+      "NS.special": 3
+    },
+    "{{-0.30958405137062073, 0.73766547441482544}, {1, 0}}",
+    0.23100000619888306,
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 2,
+      "parent": "UID(19)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(39)",
+      "asset": "UID(73)",
+      "$class": "UID(80)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "filename": "UID(74)",
+      "behaviorGraph": "UID(75)",
+      "name": "UID(78)",
+      "isTextureSource": true,
+      "$class": "UID(79)"
+    },
+    "uv_mapper.jpeg",
+    {
+      "coreHandle": "UID(76)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(77)",
+      "$class": "UID(12)"
+    },
+    "2C29F878-0F9A-4A02-AFD6-E5F69F017CD4",
+    "uv_mapper",
+    {
+      "$classname": "VFXTextureFileAsset",
+      "$classes": [
+        "VFXTextureFileAsset",
+        "VFXFileAsset",
+        "VFXBaseAsset",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "VFXMaterialProperty",
+      "$classes": [
+        "VFXMaterialProperty",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.pointval": "UID(82)",
+      "$class": "UID(63)",
+      "NS.special": 1
+    },
+    "{-0, 0}",
+    {
+      "NS.rectval": "UID(84)",
+      "$class": "UID(63)",
+      "NS.special": 3
+    },
+    "{{-0.77634787559509277, -0.19307152926921844}, {1, 0}}",
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 2,
+      "parent": "UID(19)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(43)",
+      "asset": "UID(86)",
+      "$class": "UID(80)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(87)",
+      "name": "UID(90)",
+      "$class": "UID(91)"
+    },
+    {
+      "coreHandle": "UID(88)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(89)",
+      "$class": "UID(12)"
+    },
+    "9A3BDB31-BBC9-408A-B88D-3ECD34D564B4",
+    "Glass RampTop",
+    {
+      "$classname": "VFXBaseAsset",
+      "$classes": [
+        "VFXBaseAsset",
+        "NSObject"
+      ]
+    },
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 2,
+      "parent": "UID(19)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(44)",
+      "asset": "UID(93)",
+      "$class": "UID(80)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(94)",
+      "name": "UID(97)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(95)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(96)",
+      "$class": "UID(12)"
+    },
+    "87D364FD-F7C0-4316-8564-6C524C61EA46",
+    "Glass RampBottom",
+    0.06319744884967804,
+    0.20000000298023224,
+    0.699999988079071,
+    {
+      "NS.rectval": "UID(102)",
+      "$class": "UID(63)",
+      "NS.special": 3
+    },
+    "{{-0.03704172745347023, 0.7991374135017395}, {1, 0}}",
+    {
+      "NS.rectval": "UID(104)",
+      "$class": "UID(63)",
+      "NS.special": 3
+    },
+    "{{0.7983165979385376, 0.051799964159727097}, {1, 0}}",
+    11.0,
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(19)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(58)",
+      "$class": "UID(80)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "$classname": "NSMutableDictionary",
+      "$classes": [
+        "NSMutableDictionary",
+        "NSDictionary",
+        "NSObject"
+      ]
+    },
+    {
+      "minificationFilter": 2,
+      "propertyType": 2,
+      "mipFilter": 2,
+      "parent": "UID(19)",
+      "isCommonProfileProperty": 1,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "color": "UID(109)",
+      "mappingChannel": 0,
+      "$class": "UID(80)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "$class": "UID(113)",
+      "NSComponents": {
+        "$bytes_utf8": "0.7353569865 0.7353569865 0.7353569865 1"
+      },
+      "NSRGB": {
+        "$bytes_utf8": "0.6803949475 0.6803949475 0.6803949475\u0000"
+      },
+      "NSColorSpace": 1,
+      "NSCustomColorSpace": "UID(110)",
+      "NSLinearExposure": {
+        "$bytes_utf8": "1"
+      }
+    },
+    {
+      "NSICC": "UID(111)",
+      "$class": "UID(112)",
+      "NSSpaceID": 14
+    },
+    {
+      "$bytes_base64": "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"
+    },
+    {
+      "$classname": "NSColorSpace",
+      "$classes": [
+        "NSColorSpace",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "NSColor",
+      "$classes": [
+        "NSColor",
+        "NSObject"
+      ]
+    },
+    {
+      "minificationFilter": 2,
+      "propertyType": 5,
+      "mipFilter": 2,
+      "parent": "UID(19)",
+      "isCommonProfileProperty": 1,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "float": 1.0,
+      "mappingChannel": 0,
+      "$class": "UID(80)",
+      "wrapS": 1,
+      "isColorManaged": false,
+      "intensity": 1.0
+    },
+    "material Blob",
+    {
+      "owner": "UID(19)",
+      "$class": "UID(121)",
+      "shaderModifiers": "UID(117)"
+    },
+    {
+      "NS.keys": [
+        "UID(118)"
+      ],
+      "NS.objects": [
+        "UID(119)"
+      ],
+      "$class": "UID(120)"
+    },
+    "VFXShaderModifierEntryPointFragment",
+    "\n//------------------------------------------------------\n// Blob\n//------------------------------------------------------\n#pragma declaration\n\ninline float2x2 rotate(float v) {\n    float a = cos(v);\n    float b = sin(v);\n    return float2x2(a,-b,b,a);\n}\n\nfloat smin(float a, float b, float k)\n{\n    float h = max(k-abs(a-b), 0.0)/k;\n    return min(a, b) - h*h*k*(1.0/4.0);\n}\nhalf smin(half a, half b, half k)\n{\n    half h = max(k-abs(a-b), 0.h)/k;\n    return min(a, b) - h*h*k*(1.h/4.h);\n}\nfloat smax(float a, float b, float k)\n{\n    return -smin(-a, -b, k);\n}\nhalf smax(half a, half b, half k)\n{\n    return -smin(-a, -b, k);\n}\n\nfloat box(float3 p, float3 b, float r)\n{\n    float3 q = abs(p) - b + r;\n    return length(max(q,0.0)) + min(max(q.x,max(q.y,q.z)),0.0) - r;\n}\nhalf box(half3 p, half3 b, half r)\n{\n    half3 q = abs(p) - b + r;\n    return length(max(q, 0.h)) + min(max3(q.x,q.y,q.z), 0.h) - r;\n}\n\nfloat box2d(float2 p, float2 b, float r)\n{\n    float2 q = abs(p) - b + r;\n    return length(max(q, 0.0)) + min(max(q.x, q.y), 0.0) - r;\n}\n\nhalf box2d(half2 p, half2 b, half r)\n{\n    half2 q = abs(p) - b + r;\n    return length(max(q, 0.h)) + min(max(q.x, q.y), 0.h) - r;\n}\n\nhalf squircle(half2 p, half2 b, half r)\n{\n    const float continuous_factor = 1.3;\n    r *= continuous_factor;\n    half2 hs = b - r;\n    \n    p = abs(p); \n    \n    if(p.x < hs.x || p.y < hs.y ){\n        return box2d(p, b, 0.);\n    }\n    \n    p-= hs;\n    p /= r;\n    \n    if( p.y>p.x ) {\n        p=p.yx;\n    };\n        \n    half n = 2.75;\n    half w = pow(p.x,n) + pow(p.y,n);\n\n    return (pow(w,1.0h/n) - 1.) * (r);\n\n}\n\n\n\nstruct Blob {\n    const float metaSmooth = 0.12;\n    const float metaSize = 0.37;\n    const float metaOffset = 0.18;\n    const float offsetSpeed = 1.3;\n    float4 rectangleData;\n    float2 shapeData;\n    \n\n    // Precomputed value before raymarch loop\n    float time10;\n    float2x2 rot;\n    float4 metaPosSize[4];\n    float attractorsFade;\n    \n    void init(float time, float inertiaRotation, float showAttractors, float4 rectangle, float2 shape) {\n        time10 = time*10.;\n        rot = rotate(time*0.4*M_PI_2_F + inertiaRotation);\n        \n        // precalc metaball pos & size\n        float ct = cos(time * offsetSpeed) * metaSize * metaOffset;\n        float st = sin(time * offsetSpeed) * metaSize * metaOffset;\n        metaPosSize[0] = float4( st*1.1, st,  0.0, metaSize * 1.);\n        metaPosSize[1] = float4(-st*1.2, st,  0.21, metaSize * 1.0);\n        metaPosSize[2] = float4( st * 1.4, ct * 1.3, -0.2,        metaSize * 1.0);\n        metaPosSize[3] = float4( st * 1.2, -ct * 1.2,  0.1,        metaSize  );\n        \n        attractorsFade = 0.15 * showAttractors;\n        rectangleData = rectangle;\n        shapeData = shape;\n    }\n    \n    \n    half map(half3 p) {\n        half d = 0.0, r = 0.0;\n        half4 rect = half4(rectangleData);\n        half2 shp = half2(shapeData.xy);\n        \n        if (rect.w < 1.0) {\n            // Metaballs\n            half3 pp = half3(half2x2(rot) * p.xy, p.z);\n            half d0 = length(pp - half3(metaPosSize[0].xyz)) - half(metaPosSize[0].w);\n            half d1 = length(pp - half3(metaPosSize[1].xyz)) - half(metaPosSize[1].w);\n            half d2 = length(pp - half3(metaPosSize[2].xyz)) - half(metaPosSize[2].w);\n            half d3 = length(pp - half3(metaPosSize[3].xyz)) - half(metaPosSize[3].w);\n            \n            half ms = metaSmooth;\n            d = smin(d0, d1, ms);\n            d = smin(d,d2, ms);\n            d = smin(d,d3, ms);\n        }\n        if (rect.w > 0.0) {\n            r = box(p, half3(rect.xy, 0.4h), rect.z);\n        }\n        d = mix(d, r, rect.w);\n        //d = mix(d, shp.x, shp.y);\n        return d;\n    }\n    \n    float map(float3 p) {\n        float d = 0.0, r = 0.0;\n        float4 rect = float4(rectangleData);\n        float2 shp = float2(shapeData.xy);\n        \n        if (rect.w < 1.0) {\n            // Metaballs\n            float3 pp = float3(float2x2(rot) * p.xy, p.z);\n            float d0 = length(pp - float3(metaPosSize[0].xyz)) - float(metaPosSize[0].w);\n            float d1 = length(pp - float3(metaPosSize[1].xyz)) - float(metaPosSize[1].w);\n            float d2 = length(pp - float3(metaPosSize[2].xyz)) - float(metaPosSize[2].w);\n            float d3 = length(pp - float3(metaPosSize[3].xyz)) - float(metaPosSize[3].w);\n            \n            float ms = metaSmooth;\n            d = smin(d0, d1, ms);\n            d = smin(d,d2, ms);\n            d = smin(d,d3, ms);\n        }\n        if (rect.w > 0.0) {\n            r = box(p, float3(rect.xy, 0.4), rect.z);\n        }\n        d = mix(d, r, rect.w);\n        return d;\n    }\n    \n    half map2d(half2 p) {\n        half d = 0.0, r = 0.0;\n        half4 rect = half4(rectangleData);\n        half2 shp = half2(shapeData.xy);\n\n        if (rect.w < 1.0) {\n            half2 pp = half2x2(rot) * p;\n            half d0 = length(pp - half2(metaPosSize[0].xy)) - half(metaPosSize[0].w);\n            half d1 = length(pp - half2(metaPosSize[1].xy)) - half(metaPosSize[1].w);\n            half d2 = length(pp - half2(metaPosSize[2].xy)) - half(metaPosSize[2].w);\n            half d3 = length(pp - half2(metaPosSize[3].xy)) - half(metaPosSize[3].w);\n            \n            half ms = metaSmooth;\n            d = smin(d0, d1, ms);\n            d = smin(d,d2, ms);\n            d = smin(d,d3, ms);\n        }\n        if (rect.w > 0.0)\n        {\n            //r = box2d(p.xy, rect.xy, rect.z);\n            r = squircle(p.xy, rect.xy, rect.z);\n        }\n        d = mix(d, r, rect.w);\n        //d = mix(d, shp.x, shp.y);\n        return d;\n    }\n    \n    \nfloat trace(float3 ro_i, float3 rd_i) {\n    \n    half3 ro = half3(ro_i);\n    half3 rd = half3(rd_i);\n    float t = 0.;\n    for(int i=0; i<15; i++) {\n        half d = map(rd*t + ro);\n        t += d;\n        if (d < 0.005)\n            return t;\n    }\n    return t;\n}\n    \n    float3 normal(float3 p_i, float d) {\n        half2 eps = half2(.02h, 0.h);\n        half3 n;\n        half3 p = half3(p_i);\n        n.x = d - map(p-eps.xyy);\n        n.y = d - map(p-eps.yxy);\n        n.z = d - map(p-eps.yyx);\n        return float3(normalize(n));\n    }\n};\n\n//------------------------------------------------------\n// Bindings\n//------------------------------------------------------\n#pragma arguments\ntexture2d image;\n//texture2d shapeSDF;\ntexture1d colorLUT;\ntexture1d colorLUTBottom;\nfloat2 position;\nfloat intertiaRotation;\nfloat scale;\nfloat opacity;\nfloat transitionToBlob;\nfloat transitionToPicture;\nfloat transitionToFinalPicture;\nfloat transitionToRectangle;\nfloat transitionToRectangleProcessing;\nfloat transitionToError;\nfloat transitionToShape;\nfloat showImage;\nfloat3 imageRatio_screenRatio;\nfloat lightMode; //no bool or int in custom properties\nfloat genmojiMode; //no bool or int in custom properties\n//float wandMode;\nfloat2 rectangleSize;\nfloat rectangleRadius;\nfloat imageScale;\nfloat3 latency;\nfloat blobAnimationSpeed;\nfloat2 progress_intensity;\nfloat2 image_size;\nfloat progressCenterDimIntensity;\nfloat glassClearRadius;\nfloat maxInteriorDepth;\n\n\n//------------------------------------------------------\n// Entry point\n//------------------------------------------------------\n#pragma body\nconstexpr sampler smp_lin = sampler(filter::linear, address::repeat);\nconstexpr sampler smp_img = sampler(filter::linear, address::clamp_to_edge, mip_filter::linear, filter::linear ,mag_filter::linear, min_filter::linear);\n\nfloat time = vfx_frame.time;\n\nfloat latencyTime = latency.x;\nfloat latencyIntensity = latency.y;\nfloat latencyIntro = latency.z;\n\nfloat imageRatio = imageRatio_screenRatio.x;\nfloat2 screenRation = imageRatio_screenRatio.yz;\n\n// Camera origin & direction\nfloat2 uv = in.fragmentPosition.xy * vfx_frame.inverseResolution;\nfloat3 ro = vfx_frame.inverseViewTransform.columns[3].xyz;\n\nfloat2 texture_size = {(float)image.get_width(), (float)image.get_height()};\nfloat2 image_scale = image_size / texture_size;\n\nfloat2 effectPosition = position;\nuv = (uv + effectPosition);\n\n//for the wand\nfloat2 shapeUV = uv;\nuv += position;\nhalf c = 0;\n\nfloat2 ndc = float2(uv.x*2.-1., (1.-uv.y)*2.-1.) / scale;\nfloat aspect = vfx_frame.projectionTransform.columns[1].y / vfx_frame.projectionTransform.columns[0].x;\nfloat tanHalfFovY = 1.0f / vfx_frame.projectionTransform[1][1];\nfloat3 rd = normalize( (ndc.x * vfx_frame.inverseViewTransform.columns[0].xyz * tanHalfFovY * aspect) + (ndc.y * vfx_frame.inverseViewTransform.columns[1].xyz * tanHalfFovY) - vfx_frame.inverseViewTransform.columns[2].xyz);\n\n// Scene setup\nBlob blob;\nfloat rectangleCorner = min(rectangleSize.x, rectangleSize.y);\nblob.init(vfx_frame.time * blobAnimationSpeed, intertiaRotation, 1. - transitionToPicture, float4(rectangleSize.xy,rectangleCorner, 0.0), float2(c,transitionToShape));\n\n// Intersection with plane z = 0\nhalf planeT = -half(ro.z)/half(rd.z);\n\nhalf3 planeP = half3(ro) + half3(rd) * planeT;\nplaneP = select(planeP, half3(0.00001, 0.0, 0.0), dot(planeP, planeP) == 0.0); // avoid 0 to avoid NaN\n\nhalf planeD = blob.map2d(planeP.xy);\nhalf2 planeDir = normalize(half2(planeP.xy));\n\nfloat genMult = 1;\nif (genmojiMode > 0.5)\n    genMult = 1.5;\nfloat bgRadius = 1.1 * genMult;\n\nif (planeD * bgRadius > 1.h) discard_fragment();\n\nhalf4 col = half4(0.);\n\n\n// Lights direction\nfloat lightZ = mix(0.4, 3.5, pow(transitionToShape, 2));\n\nfloat3 dirl1 = normalize(float3( 0.4, 0.7, lightZ * 0.2));\nfloat3 dirl2 = normalize(float3( 0.4,-0.7, lightZ));\nfloat3 dirl3 = normalize(float3(  -0.7, 0.4, lightZ));\n\nfloat2 uvImg = float2(planeP.xy);\n\n// Shade\nfloat planeDThreshold = 0.005;\nif (planeD < planeDThreshold) {\n    // Trace\n    float t = blob.trace(ro,rd);\n\n    float3 p = ro + rd * t;\n    float d = blob.map(half3(p));\n    float3 n = blob.normal(p, d);\n\n\n    // Fresnel\n    float fre = saturate(1.+dot(rd,n));\n\n    // ======= GLASS LIGHTING MODEL =======\n\n    // === Clear zone: tunable transparent center ===\n    float normalizedDepth = saturate(-float(planeD) / max(maxInteriorDepth, 0.001));\n    float linearRamp = saturate(normalizedDepth / max(glassClearRadius, 0.001));\n\n    // --- BEGIN OPTION 2: NORMAL-DRIVEN DEPTH VARIATION ---\n    // Perturbs linearRamp based on how oblique the surface normal is relative to view.\n    // Areas where normal faces camera = clearer; glancing normals = frostier.\n    // TUNE: opt2_strength (0.0-0.4) = how much variation. 0 = disabled.\n    //       Higher = more contrast between clear/frosted patches as blob deforms.\n    float opt2_strength = 0.15;\n    float normalViewAlignment = saturate(dot(n, -rd));\n    linearRamp = saturate(linearRamp + (1.0 - normalViewAlignment) * opt2_strength - opt2_strength * 0.5);\n    // --- END OPTION 2 ---\n\n    half clearFade = half(pow(1.0 - linearRamp, 3.0));\n\n    // --- BEGIN OPTION 1: ANGULAR SINE MODULATION ---\n    // Modulates clearFade with animated sine waves around the blob's angular position.\n    // Creates non-uniform frost thickness — some wedges thicker, some thinner.\n    // TUNE: opt1_strength (0.0-0.5) = depth of modulation. 0 = disabled.\n    //       opt1_speed (0.5-3.0) = animation speed. Lower = slow drift, higher = lively.\n    //       opt1_octaves: comment out lines for fewer/simpler waves.\n    float opt1_strength = 0.2;\n    float opt1_speed = 1.0;\n    float opt1_angle = atan2(float(planeP.y), float(planeP.x));\n    float opt1_wave = 0.0;\n    opt1_wave += 0.5 * sin(opt1_angle * 3.0 + time * opt1_speed * 0.8);   // broad 3-lobe\n    opt1_wave += 0.3 * sin(opt1_angle * 5.0 - time * opt1_speed * 1.1);   // medium 5-lobe\n    opt1_wave += 0.2 * sin(opt1_angle * 7.0 + time * opt1_speed * 1.5);   // fine 7-lobe\n    clearFade *= 1.0h + half(opt1_wave * opt1_strength);\n    clearFade = saturate(clearFade);\n    // --- END OPTION 1 ---\n\n    // Blinn-Phong specular (tight highlights for glass)\n    float3 halfVec1 = normalize(dirl1 - rd);\n    float3 halfVec2 = normalize(dirl2 - rd);\n    float3 halfVec3 = normalize(dirl3 - rd);\n    float l1_spec = pow(max(0., dot(n, halfVec1)), 64.);\n    float l2_spec = pow(max(0., dot(n, halfVec2)), 64.);\n    float l3_spec = pow(max(0., dot(n, halfVec3)), 64.);\n\n    // Glass fresnel: purely angle-driven\n    half bodyFresnel = half(pow(fre, 1.8));\n\n    // --- Body: fake environment reflection ---\n    float reflectAngle = atan2(n.y, n.x) / (M_PI_F * 2.0);\n    half3 envReflect = (half3)colorLUT.sample(smp_lin, reflectAngle + time * 0.03).rgb;\n    half3 envBase = half3(0.78h, 0.83h, 0.92h);\n    envReflect = mix(envBase, envReflect, 0.4h);\n\n    col.rgb = envReflect * bodyFresnel * 0.35h * clearFade;\n    col.a = bodyFresnel * 0.25h * clearFade;\n\n    // --- Primary specular: concentrated glass highlights ---\n    half3 specColor = half3(0.97h, 0.98h, 1.0h);\n    half specTotal = half(l1_spec * 0.6 + l2_spec * 0.5 + l3_spec * 0.55);\n    col.rgb += specColor * specTotal * 1.8h * clearFade;\n    col.a = saturate(col.a + specTotal * 0.8h * clearFade);\n\n    // --- Secondary specular: wider, softer (internal light concentration) ---\n    float3 halfVecInternal = normalize((dirl1 + dirl3) * 0.5 - rd);\n    half internalSpec = half(pow(max(0., dot(n, halfVecInternal)), 8.)) * 0.2h;\n    col.rgb += specColor * internalSpec * clearFade;\n\n    // --- Fresnel rim: crisp with subtle edge dispersion ---\n    half3 rimColor = mix(half3(1.0h, 0.95h, 0.9h), half3(0.85h, 0.92h, 1.0h), half(pow(fre, 0.5)));\n    half rimIntensity = half(pow(fre, 3.0)) * 0.8h;\n    col.rgb += rimColor * rimIntensity * clearFade;\n    col.a = saturate(col.a + rimIntensity * 0.5h * clearFade);\n\n    // --- BEGIN OPTION 4: CAUSTIC PATTERN ---\n    // Animated bright concentration lines from virtual light dirs dotted with surface normal.\n    // Simulates light focusing through curved glass. Moves organically with blob deformation.\n    // TUNE: opt4_power1/2 (8-32) = line thinness. Higher = thinner sharper lines.\n    //       opt4_intensity (0.1-0.5) = overall brightness of caustic lines.\n    //       z components (0.3-0.8) in causticDir = how \"overhead\" the virtual lights are.\n    //         Lower z = more side-lit = lines appear across more of the surface.\n    //         Higher z = more top-down = lines concentrate near the rim.\n    float opt4_intensity = 0.25;\n    float opt4_power1 = 20.;\n    float opt4_power2 = 14.;\n    float3 causticDir1 = normalize(float3(sin(time * 0.4), cos(time * 0.3), 0.5));\n    float3 causticDir2 = normalize(float3(cos(time * 0.5), sin(time * 0.7), 0.4));\n    half caustic1 = half(pow(max(0., dot(n, causticDir1)), opt4_power1));\n    half caustic2 = half(pow(max(0., dot(n, causticDir2)), opt4_power2));\n    half causticPattern = (caustic1 + caustic2 * 0.7h) * clearFade;\n    col.rgb += half3(0.9h, 0.95h, 1.0h) * causticPattern * half(opt4_intensity);\n    col.a = saturate(col.a + causticPattern * half(opt4_intensity * 0.6));\n    // --- END OPTION 4 ---\n\n    // ======= END GLASS LIGHTING MODEL =======\n\n    // Gamma: tighter for glass contrast (less washout)\n    col = pow(col, mix(0.85h, 0.75h, half(transitionToPicture)));\n\n    float2 uvImg = float2(planeP.xy);\n    float rampUV = atan2(uvImg.y, uvImg.x) - atan2(rectangleSize.y, rectangleSize.x);\n    rampUV = fract(rampUV / (M_PI_F * 2.)) - 0.5;\n\n    // Latency effect\n    float offsetLatency = latencyTime * M_PI_F * 2. - 1.;\n    float2 latencyUV = 0.09 * float2(cos(offsetLatency), sin(-offsetLatency));\n    half4 latencyCol = (half4)colorLUT.sample(smp_lin, rampUV + 0.45  + latencyTime) * (1 + latencyIntro);\n    half latencyLum = dot(latencyCol.rgb, half3(0.299h, 0.587h, 0.114h));\n    latencyCol.rgb = mix(half3(latencyLum), latencyCol.rgb, 0.25h);\n    latencyCol = pow(latencyCol, 0.5);\n    float latencyBoxDist = box2d(latencyUV - uvImg, 0.75 * rectangleSize.xy, 0.75 * rectangleCorner) * transitionToFinalPicture;\n    float latencyInt = 0.5 * pow(smoothstep(-0.25, 0.2, latencyBoxDist), 3.);\n    latencyCol *= saturate(latencyInt * (latencyIntensity - 0.5 * latencyIntro));\n    latencyCol.a *= 0.5h * 0.65h;\n\n    col = (1. - latencyCol.a) * col + latencyCol;\n\n    col *= transitionToFinalPicture * (pow(transitionToShape, 5) * 1.5h + 1.0h);\n\n    // Processing effect: frosted glass appearance\n    half4 process_img = 0;\n    float fre2 = saturate(1.+dot(normalize(rd + float3(-0.2,0.6,0)),n));\n    process_img += half4(0.35h, 0.38h, 0.42h, 1.0h) * 0.4h;\n    process_img.rgb *= 0.3;\n\n    process_img = pow(process_img * 0.25, 0.6);\n    process_img.a = 0.55h * mix(0.15h, 1.0h, clearFade);\n\n    process_img *= 0.5;\n    process_img = mix(process_img, 0.5, transitionToError);\n\n    float show_image_val = mix(showImage, 1., transitionToError);\n\n    // Final image\n    half4 img = 0.;\n    if (genmojiMode < 0.5)\n    {\n        float imageScaleUnzoom = imageScale * 0.9;\n        imageScaleUnzoom *= imageRatio;\n\n\n        float w = vfx_frame.inverseResolution.y / imageRatio;\n        float r = w / vfx_frame.inverseResolution.x;\n        float off = 0.5 * (1.0 - r);\n\n        float2 imageUV = float2(uv.x * r, uv.y);\n        imageUV.x += off;\n\n        imageUV = imageUV * imageScaleUnzoom + 0.5 * (1-imageScaleUnzoom);\n\n        if (imageRatio<1)\n            imageUV.y -= 0.15 * imageRatio;\n        float2 imageUVcentered = imageUV * 2. - 1.;\n\n        // --- BEGIN TEMPORAL AA JITTER ---\n        // Sub-pixel time-based UV offset + LOD bias for anti-aliasing fine details.\n        // Jitter moves the whole image together (temporal, not spatial) — invisible to eye.\n        // LOD bias is the primary AA tool: pushes mipmap selection higher = softer details.\n        // TUNE: aa_jitter_amp (0.0005-0.002). Sub-pixel motion for temporal averaging.\n        //       aa_lod_bias (0.0-1.5). Higher = softer fine detail, less aliasing.\n        //                              0.3-0.5 = mild, 0.7-0.8 = strong, 1.0+ = noticeably soft.\n        //       Set both to 0 to disable.\n        float aa_jitter_amp = 0.001;\n        float aa_lod_bias = 0.5;\n        float2 uvOffset = float2(cos(time * 2.2 + 0.3), sin(time * 1.6)) * aa_jitter_amp;\n        // --- END TEMPORAL AA JITTER ---\n\n        {\n            float refractionMask = 1.0 - saturate(normalizedDepth * 2.0);\n            imageUV.xy -= blob.normal(p, d).xy * float2(-1, 1) * pow(fre, 1) * 0.1 * refractionMask;\n\n            float2 uvColorOffset = -0.06 * imageUVcentered * smoothstep(-0.3, 0.3, float(planeD));\n            // --- BEGIN CHROMATIC ABERRATION STRENGTH ---\n            // Multiplier on the chromatic aberration UV split. Original uses 1.0.\n            // Causes colored halos around high-contrast features (text, etc).\n            // TUNE: ca_strength (0.0-1.0). 0 = disabled (no halos, no chromatic effect).\n            //       0.3 = subtle, 0.5 = moderate, 1.0 = original strength.\n            float ca_strength = 0.3;\n            uvColorOffset *= ca_strength;\n            // --- END CHROMATIC ABERRATION STRENGTH ---\n            uvOffset += -0.1 * imageUVcentered * max(0., length(imageUVcentered - uvOffset) - 0.75);\n\n\n            imageUV.x *= image_scale.x;\n            uvOffset.x *= image_scale.x;\n\n\n            float4 sample1 = image.sample(smp_img, imageUV + uvOffset + uvColorOffset, bias(aa_lod_bias));\n            float4 sample2 = image.sample(smp_img, imageUV + uvOffset + 0.5 * uvColorOffset, bias(aa_lod_bias));\n            float4 sample3 = image.sample(smp_img, imageUV + uvOffset, bias(aa_lod_bias));\n            float4 sample4 = image.sample(smp_img, imageUV + uvOffset - 0.5 * uvColorOffset, bias(aa_lod_bias));\n            float4 sample5 = image.sample(smp_img, imageUV + uvOffset - uvColorOffset, bias(aa_lod_bias));\n\n            // --- BEGIN SCREEN-SPACE SUPERSAMPLING ---\n            // Use screen-space derivatives to find how big one screen pixel is in UV space.\n            // Then sample at offsets matching that scale — proper manual AA.\n            // This emulates what mipmaps would do, for textures without mipmaps.\n            // TUNE: aa_ss_strength (0.0-2.0). 0 = disabled.\n            //       0.5 = mild softening, 1.0 = matches one screen pixel (proper AA),\n            //       2.0 = aggressive blur (very soft).\n            //       aa_ss_blend (0.0-1.0). How much supersampled vs chromatic aberration.\n            //       0 = full CA, no AA. 1 = full AA, no CA. Trade one for the other.\n            //       0.5-0.8 = balanced.\n            //       aa_ss_min_radius (0.0-0.005). Minimum UV-space AA offset, applied\n            //       even when close to the camera. Prevents magnification aliasing\n            //       (visible texel grid edges when texture is upscaled).\n            //       0.001 = subtle floor, 0.003 = ensures soft text at any distance.\n            float aa_ss_strength = 1.0;\n            half aa_ss_blend = 0.8h;\n            float aa_ss_min_radius = 0.0016;\n            float2 uvDx = dfdx(imageUV + uvOffset);\n            float2 uvDy = dfdy(imageUV + uvOffset);\n            float2 dxAbs = abs(uvDx);\n            float2 dyAbs = abs(uvDy);\n            uvDx = sign(uvDx + 1e-8) * max(dxAbs, float2(aa_ss_min_radius));\n            uvDy = sign(uvDy + 1e-8) * max(dyAbs, float2(aa_ss_min_radius));\n            float2 ssOff1 = (uvDx * 0.5 + uvDy * 0.25) * aa_ss_strength;\n            float2 ssOff2 = (-uvDx * 0.25 + uvDy * 0.5) * aa_ss_strength;\n            float2 ssOff3 = (-uvDx * 0.5 - uvDy * 0.25) * aa_ss_strength;\n            float2 ssOff4 = (uvDx * 0.25 - uvDy * 0.5) * aa_ss_strength;\n            half4 ss1 = (half4)image.sample(smp_img, imageUV + uvOffset + ssOff1);\n            half4 ss2 = (half4)image.sample(smp_img, imageUV + uvOffset + ssOff2);\n            half4 ss3 = (half4)image.sample(smp_img, imageUV + uvOffset + ssOff3);\n            half4 ss4 = (half4)image.sample(smp_img, imageUV + uvOffset + ssOff4);\n            half4 ssAvg = (ss1 + ss2 + ss3 + ss4) * 0.25h;\n            // --- END SCREEN-SPACE SUPERSAMPLING ---\n\n            // Compose chromatic aberration result first\n            half4 caImg;\n            caImg.r = sample1.r * 0.3333 + sample2.r * 0.6666;\n            caImg.g = sample3.g * 0.5 + sample2.g * 0.25 + sample4.g * 0.25;\n            caImg.b = sample4.b * 0.6666 + sample5.b * 0.3333;\n            caImg.a = 0.11111 * sample1.a + 0.22222 * sample2.a + 0.33333 * sample3.a + 0.22222 * sample4.a + 0.11111 * sample5.a;\n            // Blend chromatic aberration against full supersampled average\n            img = mix(caImg, ssAvg, aa_ss_blend);\n        }\n        img *= (0.1 + 0.9 * smoothstep(1.8, 0.55, length(imageUVcentered)));//vignette\n        img *= smoothstep(1.05, 0.9, length(imageUVcentered));//outside vignette\n\n        img = mix(process_img, img, transitionToPicture * (1-transitionToRectangleProcessing));\n        img *= saturate(show_image_val + 0.8);\n    }\n\n    col = (1.h-col.a) * img + col;\n    half4 processBlended = mix(process_img * show_image_val, col, col.a);\n    half processSuppression = half(saturate(normalizedDepth * 1.5));\n    processSuppression = max(processSuppression, (1.0h - img.a) * half(transitionToPicture));\n    col = mix(processBlended, col, processSuppression * half(transitionToPicture));\n\n    // Rim glow: soft bright band at glass boundary, blends inward\n    half rimGlowBand = smoothstep(0.015h, 0.0h, planeD) * smoothstep(-0.05h, -0.005h, planeD);\n    col.rgb += half3(0.85h, 0.9h, 1.0h) * rimGlowBand * 0.3h * clearFade;\n    col.a = saturate(col.a + rimGlowBand * 0.25h * clearFade);\n\n    // Edge fade\n    col *= smoothstep(0.006, -0.004, float(planeD));\n}\n\n// Background: subtle rippling glow for glass\nhalf4 background = half4(0);\n\n{\n    float2 ve = float2(planeDir);\n    float angle  = atan2(ve.y, ve.x)  / (M_PI_F * 2);\n\n    float bgRadius = 1.1;\n    float s = -0.005;\n\n    // Base glow falloff\n    float glowFalloff = saturate(pow(planeD <= s ? 0. : 1. - planeD * bgRadius , 5.)) * smoothstep(0.0, 1.0, transitionToBlob);\n\n    // Ripple: animated wobble on the glow edge\n    float rippleAngle = angle * M_PI_F * 2.0;\n    float ripple = 0.0;\n    ripple += 0.35 * sin(rippleAngle * 3.0 + time * 1.2);\n    ripple += 0.25 * sin(rippleAngle * 5.0 - time * 0.8);\n    ripple += 0.15 * sin(rippleAngle * 7.0 + time * 1.7);\n    float rippleMask = saturate(glowFalloff * (1.0 + ripple * 0.4));\n\n    half3 glowColor = half3(0.65h, 0.72h, 0.85h);\n    half3 glowMask;\n    glowMask.r = dot(planeDir, half2(dirl1.xy));\n    glowMask.g = dot(planeDir, half2(dirl2.xy)) + 0.3h;\n    glowMask.b = dot(planeDir, half2(dirl3.xy));\n    glowMask = smoothstep(0.02h, 1.0h, pow(max(glowMask + 0.3h, 0.0h), 2.0h));\n    half3 lut1 = (half3)colorLUT.sample(smp_lin, 0.75h + (time*0.3h) * 0.5h + 0.5h).rgb;\n    half3 lut2 = (half3)colorLUT.sample(smp_lin, 0.75h + (time*0.8h) * 0.5h).rgb;\n    half3 lut3 = (half3)colorLUTBottom.sample(smp_lin, 0.75h + (time*1.1h*0.5h)).rgb;\n    half3 tintedGlow = mix(glowColor, lut1, 0.3h) * glowMask.r\n                     + mix(glowColor, lut2, 0.3h) * glowMask.b\n                     + mix(glowColor * half3(1.0h, 0.97h, 0.93h), lut3, 0.3h) * glowMask.g;\n    tintedGlow /= max(glowMask.r + glowMask.g + glowMask.b, 0.000001h);\n\n    background.rgb = tintedGlow;\n    background.a = half(rippleMask) * 0.25h * 0.5h;\n\n    background.rgb = pow(background.rgb, 0.85h);\n    background.rgb *= background.a;\n}\n\n\n// Composite\ncol = background * (1.0h-col.a) * transitionToFinalPicture + col;\ncol = half4(col) * opacity;\n\n// Error mode\nhalf3 errorCol = mix(half3(0.26,0.14,0.01), half3(0.85,0.34,0.0), lightMode);\ncol.rgb = mix(col.rgb, errorCol * col.a, transitionToError);\n\n_output.color = (float4)col;\n",
+    {
+      "$classname": "NSDictionary",
+      "$classes": [
+        "NSDictionary",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "VFXShadableHelper",
+      "$classes": [
+        "VFXShadableHelper",
+        "NSObject"
+      ]
+    },
+    {
+      "coreHandle": "UID(123)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(124)",
+      "$class": "UID(12)"
+    },
+    "45CB1C12-ACE4-48DF-9E73-964B84A1883B",
+    "63CD93B5-D36E-4E5C-A1D4-ED1E4D10F409",
+    {
+      "$classname": "VFXMaterial",
+      "$classes": [
+        "VFXMaterial",
+        "NSObject"
+      ]
+    },
+    {
+      "asset": "UID(129)",
+      "$class": "UID(16)",
+      "identifier": "UID(128)"
+    },
+    "8B54545B-1EAA-4D1E-A6CE-F8D2C641B93F",
+    {
+      "behaviorGraph": "UID(167)",
+      "avoidsOverLighting": false,
+      "doubleSided": false,
+      "readsFromDepthBuffer": true,
+      "$class": "UID(126)",
+      "fillMode": 2,
+      "shininess": 1.0,
+      "writesToDepthBuffer": true,
+      "colorBufferWriteMask": 15,
+      "selfIlluminationOcclusion": 0.0,
+      "cullMode": 0,
+      "name": "UID(162)",
+      "shadingModel": 2,
+      "fresnelExponent": 0.0,
+      "entityID": "UID(170)",
+      "transparencyMode": 0,
+      "diffuse": "UID(160)",
+      "blendMode": 0,
+      "shadableHelper": "UID(163)",
+      "valuesForUndefinedKeys": "UID(130)",
+      "litPerPixel": true,
+      "indexOfRefraction": 1.0
+    },
+    {
+      "NS.keys": [
+        "UID(131)",
+        "UID(31)",
+        "UID(132)",
+        "UID(50)",
+        "UID(133)",
+        "UID(134)",
+        "UID(135)",
+        "UID(136)",
+        "UID(137)",
+        "UID(138)",
+        "UID(139)"
+      ],
+      "NS.objects": [
+        "UID(140)",
+        "UID(59)",
+        "UID(146)",
+        "UID(59)",
+        "UID(59)",
+        "UID(147)",
+        "UID(149)",
+        "UID(151)",
+        "UID(152)",
+        "UID(153)",
+        "UID(154)"
+      ],
+      "$class": "UID(107)"
+    },
+    "inRamp",
+    "radius",
+    "isHDR",
+    "blobPosition",
+    "screenRatio",
+    "blobDimensions",
+    "applePosition",
+    "appleScale",
+    "inSDF",
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(129)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(131)",
+      "asset": "UID(141)",
+      "$class": "UID(80)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(142)",
+      "name": "UID(145)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(143)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(144)",
+      "$class": "UID(12)"
+    },
+    "353E699F-BA13-4305-8ABA-979FEFE57DB8",
+    "Color Ramp Apple dark",
+    0.006000000052154064,
+    {
+      "NS.pointval": "UID(148)",
+      "$class": "UID(63)",
+      "NS.special": 1
+    },
+    "{0, 0}",
+    {
+      "NS.pointval": "UID(150)",
+      "$class": "UID(63)",
+      "NS.special": 1
+    },
+    "{1, 2}",
+    0.4000000059604645,
+    {
+      "NS.pointval": "UID(148)",
+      "$class": "UID(63)",
+      "NS.special": 1
+    },
+    0.4000000059604645,
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(129)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(139)",
+      "asset": "UID(155)",
+      "$class": "UID(80)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(156)",
+      "name": "UID(159)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(157)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(158)",
+      "$class": "UID(12)"
+    },
+    "D827BB44-9AFE-4E1D-A272-F4BB13E36E79",
+    "SDF Texture circle",
+    {
+      "minificationFilter": 2,
+      "propertyType": 2,
+      "mipFilter": 2,
+      "parent": "UID(129)",
+      "isCommonProfileProperty": 1,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "color": "UID(161)",
+      "mappingChannel": 0,
+      "$class": "UID(80)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "$class": "UID(113)",
+      "NSComponents": {
+        "$bytes_utf8": "0.7353569865 0.7353569865 0.7353569865 1"
+      },
+      "NSRGB": {
+        "$bytes_utf8": "0.6803949475 0.6803949475 0.6803949475\u0000"
+      },
+      "NSColorSpace": 1,
+      "NSCustomColorSpace": "UID(110)",
+      "NSLinearExposure": {
+        "$bytes_utf8": "1"
+      }
+    },
+    "Material Circle",
+    {
+      "owner": "UID(129)",
+      "$class": "UID(121)",
+      "shaderModifiers": "UID(164)"
+    },
+    {
+      "NS.keys": [
+        "UID(165)"
+      ],
+      "NS.objects": [
+        "UID(166)"
+      ],
+      "$class": "UID(120)"
+    },
+    "VFXShaderModifierEntryPointFragment",
+    "#pragma declaration\n\ninline float2x2 rotate(float v) {\n    float a = cos(v);\n    float b = sin(v);\n    return float2x2(a,-b,b,a);\n}\n\n//------------------------------------------------------\n// Blob\n//------------------------------------------------------\nstruct Blob {\n    const float metaSmooth = 0.12;\n    const float metaSize = 0.37;\n    const float metaOffset = 0.18;\n    const float offsetSpeed = 1.3;\n    \n    float smin(float a, float b, float k)\n    {\n        float h = max(k-abs(a-b), 0.0)/k;\n        return min(a, b) - h*h*k*(1.0/4.0);\n    }\n\n    // Precomputed value before raymarch loop\n    float2x2 rot;\n    float4 metaPosSize[4];\n    \n    void init(float time) {\n        rot = rotate(time*0.4*M_PI_2_F);\n        \n        // precalc metaball pos & size\n        float ct = cos(time * offsetSpeed) * metaSize * metaOffset;\n        float st = sin(time * offsetSpeed) * metaSize * metaOffset;\n        metaPosSize[0] = float4( st*1.1, st,  0.0, metaSize * 1.15);\n        metaPosSize[1] = float4(-st*1.1, st,  0.2, metaSize * 1.15);\n        metaPosSize[2] = float4(     st, ct,-0.24,        metaSize);\n        metaPosSize[3] = float4(     st,-ct,  0.1,        metaSize);\n    }\n    \n    \n    float map(float2 p) {\n        float2 pp = rot * p;\n        float d0 = length(pp - metaPosSize[0].xy) - metaPosSize[0].w;\n        float d1 = length(pp - metaPosSize[1].xy) - metaPosSize[1].w;\n        float d2 = length(pp - metaPosSize[2].xy) - metaPosSize[2].w;\n        float d3 = length(pp - metaPosSize[3].xy) - metaPosSize[3].w;\n\n        float d = smin(d0, d1, metaSmooth);\n        d = smin(d,d2, metaSmooth);\n        d = smin(d,d3, metaSmooth);\n        \n        return d;\n    }\n    \n    float3 normal(float2 p, float d) {\n        float2 eps = float2(.01, 0.);\n        float3 n;\n        n.x = d - map(p-eps.xy);\n        n.y = d - map(p-eps.yx);\n        return n /= eps.x*2.;\n    }\n};\n\n\n\n#pragma arguments\nfloat lightMode,\nfloat radius,\nfloat2 screenRatio,\nfloat2 applePosition,\nfloat transitionToBlob,\nfloat2 blobPosition,\nfloat blobDimensions,\nfloat blobAnimationSpeed,\nfloat appleScale,\nfloat isHDR,\ntexture2d inSDF,\ntexture1d inRamp\n\n#pragma body\nconstexpr sampler smp_repeat(filter::linear, address::repeat);\nconstexpr sampler smp_border_white(filter::linear, address::clamp_to_edge, border_color::opaque_white);\nfloat time = vfx_frame.time;\n\nfloat2 uv = _surface.diffuseTexcoord;\nfloat2 effectPosition = mix(applePosition, blobPosition, transitionToBlob);\neffectPosition.x *= -1.;\nfloat2 appleScale2 = mix(appleScale, blobDimensions, transitionToBlob);\nfloat2 UVapple = (uv - 0.5) + effectPosition ;\nUVapple *= screenRatio;\nUVapple /= appleScale2;\nUVapple += 0.5;\n\nhalf c = inSDF.sample(smp_border_white, float2(UVapple.x, UVapple.y)).x;\n\n//gradient\nconst float texWidth = inSDF.get_width();\nconst float kStep = 8./texWidth;\nconst float2 eps = float2(kStep, 0.);\nfloat2 grad =  float2(inSDF.sample(smp_border_white, UVapple + eps.xy).x - inSDF.sample(smp_border_white, UVapple - eps.xy).x,\n                      inSDF.sample(smp_border_white, UVapple + eps.yx).x - inSDF.sample(smp_border_white, UVapple - eps.yx).x);\ngrad /= (2.*kStep); // normalize\n\n// blob\nif (transitionToBlob > 0.0001)\n{\n    float2 uvBlob = (float2(uv.x, uv.y) - 0.5) + float2(effectPosition.x, effectPosition.y);\n    uvBlob.y = -uvBlob.y;\n    uvBlob *= screenRatio;\n    uvBlob /= blobDimensions;\n \n    Blob blob;\n    blob.init(time * blobAnimationSpeed);\n    float blobD = blob.map(uvBlob);\n    \n    c = mix(c, half(blobD), half(transitionToBlob));\n    grad = mix(grad, blob.normal(uvBlob, blob.map(uvBlob)).xy, transitionToBlob);\n}\n\n// ramp\nfloat rampUV = atan2(grad.x, grad.y);\nrampUV = (rampUV + M_PI_F) / (M_PI_F * 2);\nrampUV += fract(time * 0.13);\nfloat4 rampColor = inRamp.sample(smp_repeat, rampUV);\nfloat colorMult = mix(1.1,1.1,lightMode);\n//if (isHDR>0.5)\n//    colorMult = mix(1.1,1.1,lightMode); //HDR\nrampColor.rgb = pow(rampColor.rgb * colorMult, mix(0.6,0.7,lightMode));\n\n\n// outline\nhalf outlineWidth = radius;\nhalf smooth = 20 / texWidth;\nfloat outline = smoothstep(outlineWidth+0.h, outlineWidth-smooth, abs(c));\n\n//trying to add the lighter border colors\noutlineWidth *= 0.95;\nfloat outline2 = 0.0 * smoothstep(outlineWidth + 0.001h, outlineWidth - 0.001h, abs(c)) * pow(smoothstep(outlineWidth - 0.05h, outlineWidth + 0.000h, abs(c)), 5.h);\n\nfloat outline3 = 1 * smoothstep(outlineWidth + 0.001h, outlineWidth - 0.004h, abs(c)) * pow(smoothstep(outlineWidth - 0.14h, outlineWidth + 0.000h, abs(c)), 5.h);\noutline3 = pow(outline3, 1.3);\n\noutline2 += outline3;\nfloat insideMult = mix(0.1, 0.3,lightMode);\n\n//\noutlineWidth *= 0.5;\nif (lightMode < 0.5)\n{\n    rampColor.rgb *=  1 + 0.5 * outline2; \n    \n    //outside ramp\n    outline += pow(smoothstep(outlineWidth + 0.26h, outlineWidth - 0.01h, abs(c)), 3.9h) * 0.7; \n}\nelse\n{\n    rampColor.rgb *=  1 + 0.4 * outline2; \n    \n    //outside ramp\n    outline += pow(smoothstep(outlineWidth + 0.18h, outlineWidth - 0.01h, abs(c)), 3.5h) * 0.7; \n}\n\n\nfloat4 out_color = float4(rampColor) *  saturate(outline);\n_output.color = float4(out_color * pow(1-transitionToBlob, 2));",
+    {
+      "coreHandle": "UID(168)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(169)",
+      "$class": "UID(12)"
+    },
+    "48314739-3A4A-4ABC-8FD5-1F41CD792A8D",
+    "E9E757EC-23D8-469C-B7E7-74E3B75DD0C9",
+    {
+      "childNodes": "UID(174)",
+      "$class": "UID(16)",
+      "name": "UID(173)",
+      "identifier": "UID(172)",
+      "isGroup": true
+    },
+    "E81EBE89-0800-4111-A0E5-A90B6C8C559E",
+    "textures",
+    {
+      "NS.objects": [
+        "UID(175)",
+        "UID(183)",
+        "UID(191)"
+      ],
+      "$class": "UID(199)"
+    },
+    {
+      "asset": "UID(177)",
+      "$class": "UID(16)",
+      "identifier": "UID(176)"
+    },
+    "9DBF4B1E-9FD0-4600-B803-7788C31AB4BC",
+    {
+      "filename": "UID(178)",
+      "behaviorGraph": "UID(179)",
+      "name": "UID(182)",
+      "isTextureSource": true,
+      "$class": "UID(79)"
+    },
+    "attractorFlare.png",
+    {
+      "coreHandle": "UID(180)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(181)",
+      "$class": "UID(12)"
+    },
+    "5E1670CC-EE49-43AE-BE98-6E81E72A0A70",
+    "attractorFlare",
+    {
+      "asset": "UID(185)",
+      "$class": "UID(16)",
+      "identifier": "UID(184)"
+    },
+    "B8FBE9A8-780A-41DA-BDE1-147FCC49BBAA",
+    {
+      "filename": "UID(186)",
+      "behaviorGraph": "UID(187)",
+      "name": "UID(190)",
+      "isTextureSource": true,
+      "$class": "UID(79)"
+    },
+    "circle.png",
+    {
+      "coreHandle": "UID(188)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(189)",
+      "$class": "UID(12)"
+    },
+    "1D9A351A-AC74-4888-B651-7645B225C3A7",
+    "circle",
+    {
+      "asset": "UID(193)",
+      "$class": "UID(16)",
+      "identifier": "UID(192)"
+    },
+    "FC9280E5-AC91-4E5F-A32D-501E1802D8F8",
+    {
+      "filename": "UID(194)",
+      "behaviorGraph": "UID(195)",
+      "name": "UID(198)",
+      "isTextureSource": true,
+      "$class": "UID(79)"
+    },
+    "perlinNoise.png",
+    {
+      "coreHandle": "UID(196)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(197)",
+      "$class": "UID(12)"
+    },
+    "A3E4E5B9-5F06-4B6F-A07A-CB8DEB373669",
+    "perlinNoise",
+    {
+      "$classname": "NSMutableArray",
+      "$classes": [
+        "NSMutableArray",
+        "NSArray",
+        "NSObject"
+      ]
+    },
+    {
+      "asset": "UID(202)",
+      "$class": "UID(16)",
+      "identifier": "UID(201)"
+    },
+    "DEC12777-84ED-42C5-925A-24962B6FCD3B",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(203)",
+      "name": "UID(206)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(204)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(205)",
+      "$class": "UID(12)"
+    },
+    "69851B14-1315-44C8-9822-34C4D461B808",
+    "CurvePulses",
+    {
+      "asset": "UID(209)",
+      "$class": "UID(16)",
+      "identifier": "UID(208)"
+    },
+    "0836D86E-14C0-4215-ABD7-0A03E861EEEF",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(210)",
+      "name": "UID(213)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(211)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(212)",
+      "$class": "UID(12)"
+    },
+    "6C5FC9D8-1907-47DA-BE08-7AA63E6B8737",
+    "CurveLensBlurLight",
+    {
+      "asset": "UID(216)",
+      "$class": "UID(16)",
+      "identifier": "UID(215)"
+    },
+    "8037A4D5-1B4F-46D2-8E7D-EA4FF31801A6",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(217)",
+      "name": "UID(220)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(218)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(219)",
+      "$class": "UID(12)"
+    },
+    "37258664-347A-4398-9025-AFD482895413",
+    "CurveBloomToBlob",
+    {
+      "childNodes": "UID(224)",
+      "$class": "UID(16)",
+      "name": "UID(223)",
+      "identifier": "UID(222)",
+      "isGroup": true
+    },
+    "F6F3A6CE-8D95-4CF8-B1C5-659B88075F9F",
+    "ramps",
+    {
+      "NS.objects": [
+        "UID(225)",
+        "UID(227)",
+        "UID(234)",
+        "UID(241)",
+        "UID(243)"
+      ],
+      "$class": "UID(199)"
+    },
+    {
+      "asset": "UID(141)",
+      "$class": "UID(16)",
+      "identifier": "UID(226)"
+    },
+    "62BC574F-D70C-4BF7-9B39-0DC4A000D1B0",
+    {
+      "asset": "UID(229)",
+      "$class": "UID(16)",
+      "identifier": "UID(228)"
+    },
+    "8F3A2122-F615-4D92-B0BE-D19A81CA76E7",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(230)",
+      "name": "UID(233)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(231)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(232)",
+      "$class": "UID(12)"
+    },
+    "2BE4742A-5C99-4F9A-9909-E90C6C44AB49",
+    "Color RampTop",
+    {
+      "asset": "UID(236)",
+      "$class": "UID(16)",
+      "identifier": "UID(235)"
+    },
+    "B02F9010-85BA-4AAC-ACDA-24EAE1A0E3C9",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(237)",
+      "name": "UID(240)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(238)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(239)",
+      "$class": "UID(12)"
+    },
+    "13ED1654-171B-445A-AE7F-431832F92585",
+    "Color RampBottom",
+    {
+      "asset": "UID(86)",
+      "$class": "UID(16)",
+      "identifier": "UID(242)"
+    },
+    "576A79AE-CBF7-49E6-B405-2B252A36E1D2",
+    {
+      "asset": "UID(93)",
+      "$class": "UID(16)",
+      "identifier": "UID(244)"
+    },
+    "3F55E552-F923-4A47-B16B-C9537883EC3F",
+    {
+      "asset": "UID(155)",
+      "$class": "UID(16)",
+      "identifier": "UID(246)"
+    },
+    "0D209442-0731-4347-9B5A-DC5A1ED13A18",
+    {
+      "asset": "UID(249)",
+      "$class": "UID(16)",
+      "identifier": "UID(248)"
+    },
+    "5B64D070-02C7-4B8B-97C7-4562774F1251",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(250)",
+      "name": "UID(253)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(251)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(252)",
+      "$class": "UID(12)"
+    },
+    "57ED1943-B75C-4C9B-84FF-B7DE0A26CB99",
+    "Procedural Texture",
+    {
+      "asset": "UID(256)",
+      "$class": "UID(16)",
+      "identifier": "UID(255)"
+    },
+    "E62DB0A9-A9FA-4E30-BD59-2D4E707A33EA",
+    {
+      "isTextureSource": false,
+      "behaviorGraph": "UID(257)",
+      "name": "UID(260)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(258)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(259)",
+      "$class": "UID(12)"
+    },
+    "6108DA79-1ABD-4AF4-9961-4451AD75128A",
+    "Ptcl Mtl flare",
+    {
+      "asset": "UID(263)",
+      "$class": "UID(16)",
+      "identifier": "UID(262)"
+    },
+    "EC8BDBCA-89F5-4531-8DCE-22B5734D91A0",
+    {
+      "isTextureSource": false,
+      "behaviorGraph": "UID(264)",
+      "name": "UID(267)",
+      "$class": "UID(15)"
+    },
+    {
+      "coreHandle": "UID(265)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(266)",
+      "$class": "UID(12)"
+    },
+    "F240B186-A4F5-4B50-B6B0-AD2916075D96",
+    "shader flare",
+    {
+      "$classname": "VFXAssetLibrary",
+      "$classes": [
+        "VFXAssetLibrary",
+        "NSObject"
+      ]
+    },
+    {
+      "$class": "UID(270)",
+      "hdr": false,
+      "pixelFormat": 0,
+      "colorSpaceName": "UID(0)",
+      "additiveAlpha": false
+    },
+    {
+      "$classname": "VFXViewConfiguration",
+      "$classes": [
+        "VFXViewConfiguration",
+        "NSObject"
+      ]
+    },
+    {
+      "paused": false,
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "childNodes": "UID(274)",
+      "position": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "deformers": "UID(272)",
+      "categoryBitMask": 1,
+      "$class": "UID(290)",
+      "castsShadow": true,
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "entityID": "UID(411)",
+      "scale": {
+        "$bytes_base64": "AACAPwAAgD8AAIA/"
+      }
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(273)"
+    },
+    {
+      "$classname": "NSArray",
+      "$classes": [
+        "NSArray",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.objects": [
+        "UID(275)",
+        "UID(291)",
+        "UID(302)",
+        "UID(373)",
+        "UID(404)"
+      ],
+      "$class": "UID(199)"
+    },
+    {
+      "paused": false,
+      "name": "UID(277)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "position": {
+        "$bytes_base64": "aJG0wfYoHL8AAKBA"
+      },
+      "scale": {
+        "$bytes_base64": "AACAPwAAgD8AAIA/"
+      },
+      "$class": "UID(290)",
+      "deformers": "UID(272)",
+      "castsShadow": true,
+      "camera": "UID(276)",
+      "entityID": "UID(289)",
+      "categoryBitMask": 1,
+      "childNodes": "UID(288)",
+      "behaviorGraph": "UID(285)"
+    },
+    {
+      "usesOrthographicProjection": 1,
+      "orthographicScale": 1.0,
+      "automaticallyAdjustsZRange": 0,
+      "zNear": 0.10000000149011612,
+      "chromaticTransform": "UID(282)",
+      "fill": 2,
+      "zFar": 10000.0,
+      "HDR": false,
+      "sensorSize": 24.0,
+      "bloom": "UID(278)",
+      "focusDistance": 2.5,
+      "$class": "UID(284)",
+      "fov": 26.991466522216797,
+      "lensBlur": "UID(280)",
+      "categoryBitMask": 0,
+      "name": "UID(277)"
+    },
+    "Camera",
+    {
+      "$class": "UID(279)",
+      "enabled": true,
+      "iterationCount": 5,
+      "colorFilter": {
+        "$bytes_base64": "i/+AP0PCdj/qXj4/"
+      },
+      "intensity": 0.8003999590873718,
+      "thresholdSmoothness": 5.0,
+      "contrast": 1.0,
+      "useHighQuality": false,
+      "saturation": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "$classname": "VFXCameraEffectBloom",
+      "$classes": [
+        "VFXCameraEffectBloom",
+        "VFXCameraEffect",
+        "NSObject"
+      ]
+    },
+    {
+      "$class": "UID(281)",
+      "enabled": true,
+      "filterQuality": 0.0,
+      "radius": 0.0
+    },
+    {
+      "$classname": "VFXCameraEffectLensBlur",
+      "$classes": [
+        "VFXCameraEffectLensBlur",
+        "VFXCameraEffect",
+        "NSObject"
+      ]
+    },
+    {
+      "intensity": 0.0,
+      "maskRadius": 0.6160000562667847,
+      "fromAngle": 30.0,
+      "unMultBlending": 0.0,
+      "toAngle": -30.0,
+      "sampleCount": 12.0,
+      "toZ": 0.8333333134651184,
+      "toShift": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "maskEnabled": true,
+      "$class": "UID(283)",
+      "maskCenter": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "color3": {
+        "$bytes_base64": "AAAAAAAAAAAAAIA/"
+      },
+      "enabled": true,
+      "fromShift": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "center": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "color2": {
+        "$bytes_base64": "AAAAAAAAgD8AAAAA"
+      },
+      "fromZ": 1.0,
+      "color1": {
+        "$bytes_base64": "AACAPwAAAAAAAAAA"
+      }
+    },
+    {
+      "$classname": "VFXCameraEffectChromaticTransform",
+      "$classes": [
+        "VFXCameraEffectChromaticTransform",
+        "VFXCameraEffect",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "VFXCamera",
+      "$classes": [
+        "VFXCamera",
+        "NSObject"
+      ]
+    },
+    {
+      "coreHandle": "UID(286)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(287)",
+      "$class": "UID(12)"
+    },
+    "0AE16118-5B0E-49EA-8F02-20FE9FA64347",
+    {
+      "NS.objects": [],
+      "$class": "UID(199)"
+    },
+    "46DB0A05-3907-408A-97F3-A2FF131BA04A",
+    {
+      "$classname": "VFXNode",
+      "$classes": [
+        "VFXNode",
+        "NSObject"
+      ]
+    },
+    {
+      "paused": false,
+      "name": "UID(300)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "position": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "scale": {
+        "$bytes_base64": "AAAAQAAAgEAAAAAA"
+      },
+      "$class": "UID(290)",
+      "deformers": "UID(272)",
+      "castsShadow": true,
+      "entityID": "UID(301)",
+      "categoryBitMask": 1,
+      "hidden": true,
+      "model": "UID(292)",
+      "childNodes": "UID(299)",
+      "behaviorGraph": "UID(296)"
+    },
+    {
+      "parametricType": 2,
+      "pipeRadius": 0.10000000149011612,
+      "radius": 1.0,
+      "tessellator": "UID(0)",
+      "chamferRadius": 0.0,
+      "materials": "UID(293)",
+      "segmentCount": 48,
+      "capSegmentCount": 0,
+      "radialSpan": 1.0,
+      "hemispheric": false,
+      "$class": "UID(295)",
+      "chamferSegmentCount": 10,
+      "widthSegmentCount": 1,
+      "pipeSegmentCount": 48,
+      "entityID": "UID(294)",
+      "geodesic": false,
+      "primitiveType": 0,
+      "innerRadius": 0.25,
+      "length": 1.0,
+      "topRadius": 0.0,
+      "radialSegmentCount": 48,
+      "height": 1.0,
+      "width": 1.0,
+      "lengthSegmentCount": 1,
+      "cornerSegmentCount": 10,
+      "wantsAdaptiveSubdivision": true,
+      "subdivisionLevel": 0,
+      "subdivisionSettings": {
+        "$bytes_utf8": "\u0001\u0001\u0005\u0001"
+      },
+      "heightSegmentCount": 1
+    },
+    {
+      "NS.objects": [
+        "UID(19)"
+      ],
+      "$class": "UID(199)"
+    },
+    "FF4475FE-8FDA-4B3A-B9E0-5F77F1E8CA04",
+    {
+      "$classname": "VFXParametricModel",
+      "$classes": [
+        "VFXParametricModel",
+        "VFXModel",
+        "NSObject"
+      ]
+    },
+    {
+      "coreHandle": "UID(297)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(298)",
+      "$class": "UID(12)"
+    },
+    "9DF20B0A-8300-43FB-BBB4-B12484F2C70D",
+    {
+      "NS.objects": [],
+      "$class": "UID(199)"
+    },
+    "PlaneBlob",
+    "824CF3C8-E9AE-4385-868E-3DCAFB014149",
+    {
+      "paused": false,
+      "name": "UID(371)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "position": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "scale": {
+        "$bytes_base64": "AACAPwAAgD8AAIA/"
+      },
+      "$class": "UID(290)",
+      "deformers": "UID(272)",
+      "castsShadow": true,
+      "entityID": "UID(372)",
+      "categoryBitMask": 1,
+      "childNodes": "UID(370)",
+      "behaviorGraph": "UID(303)"
+    },
+    {
+      "coreHandle": "UID(304)",
+      "valueForKeys": "UID(354)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(305)",
+      "$class": "UID(12)",
+      "bindings": "UID(306)"
+    },
+    "0BD6B408-EF7A-4AB9-BCBD-7F01C1682D06",
+    {
+      "NS.objects": [
+        "UID(307)",
+        "UID(308)",
+        "UID(22)",
+        "UID(308)",
+        "UID(309)",
+        "UID(308)",
+        "UID(310)",
+        "UID(308)",
+        "UID(311)",
+        "UID(308)",
+        "UID(312)",
+        "UID(313)",
+        "UID(314)",
+        "UID(308)",
+        "UID(315)",
+        "UID(308)",
+        "UID(316)",
+        "UID(308)",
+        "UID(317)",
+        "UID(308)",
+        "UID(318)",
+        "UID(308)",
+        "UID(319)",
+        "UID(308)",
+        "UID(320)",
+        "UID(308)",
+        "UID(321)",
+        "UID(308)",
+        "UID(322)",
+        "UID(308)",
+        "UID(323)",
+        "UID(313)",
+        "UID(324)",
+        "UID(308)",
+        "UID(325)",
+        "UID(308)",
+        "UID(326)",
+        "UID(308)",
+        "UID(327)",
+        "UID(308)",
+        "UID(328)",
+        "UID(308)",
+        "UID(329)",
+        "UID(308)",
+        "UID(330)",
+        "UID(308)",
+        "UID(331)",
+        "UID(308)",
+        "UID(133)",
+        "UID(332)",
+        "UID(333)",
+        "UID(308)",
+        "UID(334)",
+        "UID(308)",
+        "UID(335)",
+        "UID(308)",
+        "UID(336)",
+        "UID(308)",
+        "UID(337)",
+        "UID(308)",
+        "UID(338)",
+        "UID(308)",
+        "UID(339)",
+        "UID(308)",
+        "UID(340)",
+        "UID(308)",
+        "UID(341)",
+        "UID(308)",
+        "UID(342)",
+        "UID(313)",
+        "UID(343)",
+        "UID(308)",
+        "UID(49)",
+        "UID(308)",
+        "UID(344)",
+        "UID(332)",
+        "UID(345)",
+        "UID(332)",
+        "UID(346)",
+        "UID(313)",
+        "UID(50)",
+        "UID(332)",
+        "UID(347)",
+        "UID(308)",
+        "UID(348)",
+        "UID(308)",
+        "UID(349)",
+        "UID(332)",
+        "UID(350)",
+        "UID(313)",
+        "UID(351)",
+        "UID(308)",
+        "UID(352)",
+        "UID(308)",
+        "UID(353)",
+        "UID(308)"
+      ],
+      "$class": "UID(199)"
+    },
+    "chroma_multiplier",
+    12,
+    "transition_blobToRectangle_processing",
+    "chroma_z",
+    "bloom_blob_preview_intensity",
+    "blob_rectangleSize",
+    13,
+    "blob_rectangle_radius",
+    "progress_intensity",
+    "blob_scale",
+    "bubbleGlow_size",
+    "transition_appleToBlob",
+    "apple_scale",
+    "blob_animationSpeed",
+    "bokeh_blur_radius",
+    "transition_finalPicture",
+    "image_size",
+    "glassClearRadius",
+    "inertiaTimer",
+    "genmoji_rampSize",
+    "transition_blobToPicture",
+    "progress",
+    "inertia",
+    "latency_intro",
+    "glass_maxInteriorDepth",
+    1,
+    "pulse2",
+    "latencyStartTime",
+    "initialInertia",
+    "chroma_rectangle_multiplier",
+    "transition_to_square_interpolation_speed",
+    "bloom_blob_processing_intensity",
+    "pulse1",
+    "transition_to_error",
+    "transition_shapeToBlob",
+    "blob_position",
+    "pulse_latency",
+    "latency_start",
+    "blob_genmoji",
+    "screen_ratio",
+    "bloom_intensity",
+    "current_transition_to_square",
+    "isWandEffect",
+    "apple_position",
+    "transition_blobToRectangle",
+    "progressCenterDimIntensity",
+    "chroma_angle",
+    {
+      "NS.keys": [
+        "UID(355)",
+        "UID(356)",
+        "UID(357)",
+        "UID(358)",
+        "UID(50)",
+        "UID(133)",
+        "UID(328)",
+        "UID(359)",
+        "UID(49)",
+        "UID(360)",
+        "UID(361)",
+        "UID(362)",
+        "UID(363)",
+        "UID(339)",
+        "UID(340)",
+        "UID(341)",
+        "UID(364)"
+      ],
+      "NS.objects": [
+        "UID(365)",
+        "UID(59)",
+        "UID(366)",
+        "UID(59)",
+        "UID(367)",
+        "UID(368)",
+        "UID(59)",
+        "UID(59)",
+        "UID(59)",
+        "UID(59)",
+        "UID(59)",
+        "UID(369)",
+        "UID(64)",
+        "UID(59)",
+        "UID(59)",
+        "UID(64)",
+        "UID(64)"
+      ],
+      "$class": "UID(107)"
+    },
+    "glassClearRadius",
+    "progressCenterDimIntensity",
+    "blob_rectangle_radius",
+    "transition_finalPicture",
+    "progress_intensity",
+    "transition_blobToPicture",
+    "transition_blobToRectangle",
+    "glass_maxInteriorDepth",
+    "transition_appleToBlob",
+    "blob_scale",
+    0.699999988079071,
+    0.10000000149011612,
+    false,
+    true,
+    0.30000001192092896,
+    {
+      "NS.objects": [],
+      "$class": "UID(199)"
+    },
+    "bindingsNode",
+    "49E4ECE4-DCB8-4562-A0D3-B8C8EA872339",
+    {
+      "paused": false,
+      "behaviorGraph": "UID(398)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAA/f9/Pw=="
+      },
+      "position": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "scale": {
+        "$bytes_base64": "AAAAQAAAgEAAAAAA"
+      },
+      "opacity": 0.0,
+      "deformers": "UID(272)",
+      "castsShadow": true,
+      "$class": "UID(290)",
+      "entityID": "UID(403)",
+      "categoryBitMask": 1,
+      "hidden": true,
+      "model": "UID(374)",
+      "childNodes": "UID(401)",
+      "name": "UID(402)"
+    },
+    {
+      "heightSegmentCount": 1,
+      "parametricType": 2,
+      "radius": 1.0,
+      "tessellator": "UID(0)",
+      "chamferRadius": 0.0,
+      "materials": "UID(396)",
+      "segmentCount": 48,
+      "capSegmentCount": 0,
+      "radialSpan": 1.0,
+      "hemispheric": false,
+      "$class": "UID(295)",
+      "chamferSegmentCount": 10,
+      "widthSegmentCount": 1,
+      "pipeSegmentCount": 48,
+      "entityID": "UID(397)",
+      "geodesic": false,
+      "primitiveType": 0,
+      "innerRadius": 0.25,
+      "length": 1.0,
+      "topRadius": 0.0,
+      "radialSegmentCount": 48,
+      "height": 1.0,
+      "width": 1.0,
+      "lengthSegmentCount": 1,
+      "cornerSegmentCount": 10,
+      "wantsAdaptiveSubdivision": true,
+      "subdivisionLevel": 0,
+      "mesh": "UID(375)",
+      "subdivisionSettings": {
+        "$bytes_utf8": "\u0001\u0001\u0005\u0001"
+      },
+      "pipeRadius": 0.10000000149011612
+    },
+    {
+      "kGeometrySourceSemanticColor": "UID(272)",
+      "elements": "UID(389)",
+      "$class": "UID(395)",
+      "kGeometrySourceSemanticTexcoord": "UID(385)",
+      "kGeometrySourceSemanticPosition": "UID(376)",
+      "kGeometrySourceSemanticTangent": "UID(272)",
+      "kGeometrySourceSemanticNormal": "UID(381)",
+      "name": "UID(393)",
+      "entityID": "UID(394)"
+    },
+    {
+      "NS.objects": [
+        "UID(377)"
+      ],
+      "$class": "UID(199)"
+    },
+    {
+      "dataStride": 12,
+      "bytesPerComponent": 4,
+      "componentsPerVector": 3,
+      "data": "UID(378)",
+      "floatComponents": true,
+      "dataOffset": 0,
+      "vectorCount": 4,
+      "semantic": "UID(379)",
+      "$class": "UID(380)",
+      "mkSemantic": 0
+    },
+    {
+      "$bytes_base64": "AAAAvwAAAL8AAAAAAAAAPwAAAL8AAAAAAAAAvwAAAD8AAAAAAAAAPwAAAD8AAAAA"
+    },
+    "kGeometrySourceSemanticPosition",
+    {
+      "$classname": "VFXMeshSource",
+      "$classes": [
+        "VFXMeshSource",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.objects": [
+        "UID(382)"
+      ],
+      "$class": "UID(199)"
+    },
+    {
+      "dataStride": 12,
+      "bytesPerComponent": 4,
+      "componentsPerVector": 3,
+      "data": "UID(383)",
+      "floatComponents": true,
+      "dataOffset": 0,
+      "vectorCount": 4,
+      "semantic": "UID(384)",
+      "$class": "UID(380)",
+      "mkSemantic": 0
+    },
+    {
+      "$bytes_base64": "AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/"
+    },
+    "kGeometrySourceSemanticNormal",
+    {
+      "NS.objects": [
+        "UID(386)"
+      ],
+      "$class": "UID(199)"
+    },
+    {
+      "dataStride": 8,
+      "bytesPerComponent": 4,
+      "componentsPerVector": 2,
+      "data": "UID(387)",
+      "floatComponents": true,
+      "dataOffset": 0,
+      "vectorCount": 4,
+      "semantic": "UID(388)",
+      "$class": "UID(380)",
+      "mkSemantic": 0
+    },
+    {
+      "$bytes_base64": "AAAAAAAAgD8AAIA/AACAPwAAAAAAAAAAAACAPwAAAAA="
+    },
+    "kGeometrySourceSemanticTexcoord",
+    {
+      "NS.objects": [
+        "UID(390)"
+      ],
+      "$class": "UID(199)"
+    },
+    {
+      "interleavedIndicesChannels": false,
+      "ptSize": 1.0,
+      "bytesPerIndex": 2,
+      "primitiveCount": 2,
+      "elementData": "UID(391)",
+      "minimumPointScreenSpaceRadius": 1.0,
+      "$class": "UID(392)",
+      "primitiveType": 0,
+      "indicesChannelCount": 1,
+      "maximumPointScreenSpaceRadius": 1.0
+    },
+    {
+      "$bytes_utf8": "\u0000\u0000\u0001\u0000\u0003\u0000\u0000\u0000\u0003\u0000\u0002\u0000"
+    },
+    {
+      "$classname": "VFXMeshElement",
+      "$classes": [
+        "VFXMeshElement",
+        "NSObject"
+      ]
+    },
+    "Plane",
+    "CC3BDA81-9B6A-45A6-8010-FF1249E8AD32",
+    {
+      "$classname": "VFXMesh",
+      "$classes": [
+        "VFXMesh",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.objects": [
+        "UID(129)"
+      ],
+      "$class": "UID(199)"
+    },
+    "1E67F066-C996-42C9-81FC-56EAF0771E69",
+    {
+      "coreHandle": "UID(399)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(400)",
+      "$class": "UID(12)"
+    },
+    "ED2BF2C1-F708-45E1-8B2F-4476E59235C5",
+    {
+      "NS.objects": [],
+      "$class": "UID(199)"
+    },
+    "PlaneCircle",
+    "0E9235A9-F8A4-441D-8672-4F854A74C6B5",
+    {
+      "paused": false,
+      "name": "UID(409)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "position": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "scale": {
+        "$bytes_base64": "AACAPwAAgD8AAIA/"
+      },
+      "$class": "UID(290)",
+      "deformers": "UID(272)",
+      "castsShadow": true,
+      "entityID": "UID(410)",
+      "categoryBitMask": 1,
+      "childNodes": "UID(408)",
+      "behaviorGraph": "UID(405)"
+    },
+    {
+      "coreHandle": "UID(406)",
+      "$class": "UID(13)"
+    },
+    {
+      "tag": "UID(407)",
+      "$class": "UID(12)"
+    },
+    "C1DBF725-E65C-40BA-A973-F80E8EDC5A3A",
+    {
+      "NS.objects": [],
+      "$class": "UID(199)"
+    },
+    "VisibileGraph",
+    "0BEB4A32-9BBB-4CE2-B54A-71223E8B8338",
+    "ACECFAB7-AA94-4BF9-BBE4-5D690740BDFE",
+    {
+      "parent": "UID(1)",
+      "propertyType": 15,
+      "wrapS": 1,
+      "magnificationFilter": 2,
+      "isCommonProfileProperty": 0,
+      "$class": "UID(80)",
+      "minificationFilter": 2,
+      "mipFilter": 2,
+      "wrapT": 1,
+      "intensity": 1.0,
+      "mappingChannel": 0
+    },
+    {
+      "parent": "UID(1)",
+      "propertyType": 13,
+      "wrapS": 1,
+      "magnificationFilter": 2,
+      "isCommonProfileProperty": 0,
+      "$class": "UID(80)",
+      "minificationFilter": 2,
+      "mipFilter": 2,
+      "wrapT": 1,
+      "intensity": 1.0,
+      "mappingChannel": 0
+    },
+    {
+      "$class": "UID(417)",
+      "transitions": "UID(416)",
+      "states": "UID(415)"
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(199)"
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(199)"
+    },
+    {
+      "$classname": "VFXStateManager",
+      "$classes": [
+        "VFXStateManager",
+        "NSObject"
+      ]
+    },
+    {
+      "$class": "UID(419)",
+      "NS.bytes": {
+        "$bytes_base64": "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"
+      }
+    },
+    {
+      "$classname": "NSMutableData",
+      "$classes": [
+        "NSMutableData",
+        "NSData",
+        "NSObject"
+      ]
+    },
+    {
+      "isHandTrackingEnabled": false,
+      "$class": "UID(421)"
+    },
+    {
+      "$classname": "VFXTriggerManager",
+      "$classes": [
+        "VFXTriggerManager",
+        "NSObject"
+      ]
+    },
+    "530D7C82-6F4C-4197-AA0E-0EB2264C075E",
+    {
+      "$classname": "VFXWorld",
+      "$classes": [
+        "VFXWorld",
+        "NSObject"
+      ]
+    }
+  ]
+}

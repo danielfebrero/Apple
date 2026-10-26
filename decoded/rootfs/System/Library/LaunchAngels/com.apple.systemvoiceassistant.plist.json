@@ -1,0 +1,38 @@
+{
+  "UserName": "mobile",
+  "MachServices": {
+    "com.apple.assistant.domain.system.settings.service": {
+      "_ExperimentalNonLaunching": true
+    },
+    "com.apple.assistant.domain.system.service": {
+      "_ExperimentalNonLaunching": true
+    },
+    "com.apple.assistant.domain.application.service": {
+      "_ExperimentalNonLaunching": true
+    },
+    "com.apple.assistant.domain.status.service": {
+      "_ExperimentalNonLaunching": true
+    },
+    "com.apple.assistant.domain.validation.service": {
+      "_ExperimentalNonLaunching": true
+    },
+    "com.apple.assistant.domain.audio.level.service": {
+      "_ExperimentalNonLaunching": true
+    }
+  },
+  "ProgramArguments": [
+    "/Applications/SystemVoiceAssistant.app/SystemVoiceAssistant"
+  ],
+  "Label": "com.apple.systemvoiceassistant",
+  "RunAtLoad": false,
+  "KeepAlive": false,
+  "EnableTransactions": false,
+  "EnablePressuredExit": false,
+  "ProcessType": "App",
+  "_AdditionalProperties": {
+    "RunningBoard": {
+      "Managed": true,
+      "Reported": true
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Diga à Susana que chego logo",
+            "Enviar uma mensagem para o Bruno Pereira",
+            "Manda uma mensagem para a Emília que diz ‘vamos fazer algo amanhã’",
+            "Fala para a Luana que o show foi ótimo",
+            "Envia uma mensagem para o celular da Susana falando que eu vou me atrasar",
+            "Enviar uma mensagem para (11) 5555 1212",
+            "Mensagem de texto para Bruno e Emília ‘onde vocês estão?’"
+          ]
+        }
+      ],
+      "SectionName": "Enviar mensagens"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Leia as minhas mensagens novas",
+            "Ler outra vez"
+          ]
+        }
+      ],
+      "SectionName": "Ler alertas de mensagens"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Responder que notícia boa",
+            "Diga a ele que eu chego em 10 minutos"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ligar para ela"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime com ela"
+          ]
+        }
+      ],
+      "SectionName": "Responder a mensagens"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lê a última mensagem da Emília"
+          ]
+        }
+      ],
+      "SectionName": "Buscar mensagens"
+    }
+  ]
+}

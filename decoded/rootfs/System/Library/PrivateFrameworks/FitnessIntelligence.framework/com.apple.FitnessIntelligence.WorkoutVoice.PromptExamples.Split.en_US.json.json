@@ -1,0 +1,474 @@
+{
+  "elliptical": {
+    "sessions": [
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 230 Calories. Average heart rate in the last 10 minutes: 134 beats per minute.}\\n- I am currently listening to Project Hail Mary by Andy Weir.",
+          "output": "You're making it happen! You're already 10 minutes into this elliptical workout, and your average heart rate during that time has been 134 beats per minute. So far, you've burned 230 calories. And you're listening to Project Hail Mary."
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Elapsed time since workout start: 20 minutes. Energy burned since workout start: 285 Calories. Average heart rate in the last 10 minutes: 142 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to God's Plan by Drake which is of genre Hip-Hop, this is one of my favorites.",
+          "output": "20 minutes in, and 285 calories torched! Over the last 10 minutes, your average heart rate came in at 142 beats per minute. That's trending up from earlier. Keep it coming!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 210 Calories. Average heart rate in the last 10 minutes: 132 beats per minute.}\\n- I am currently listening to Educated by Tara Westover.",
+          "output": "Great start! You're 10 minutes into your workout, your average heart rate during that time was 132 beats per minute, and you've burned 210 calories. Hopefully Educated by Tara Westover is helping you find your pace. Keep it up!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Elapsed time since workout start: 20 minutes. Energy burned since workout start: 310 Calories. Average heart rate in the last 10 minutes: 140 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to Levitating by Dua Lipa which is of genre Pop, this is one of my favorites.",
+          "output": "Here's a quick workout update. You're 20 minutes in and have torched 310 calories. Over the last 10 minutes, your average heart rate was 140 beats per minute...... which is up from the first 10 minutes. Hopefully Levitating by Dua Lipa is helping you keep your pace."
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 200 Calories. Average heart rate in the last 10 minutes: 134 beats per minute.}\\n- I am currently listening to God's Plan by Drake which is of genre Hip-Hop, this is one of my favorites.",
+          "output": "You're 10 minutes into your workout, your average heart rate during that time was 134 beats per minute and you've burned 200 calories. And you're getting in the zone with God's Plan by Drake. Keep up the good work!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Elapsed time since workout start: 20 minutes. Energy burned since workout start: 300 Calories. Average heart rate in the last 10 minutes: 142 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to The Great Divide by Noah Kahan which is of genre Country.",
+          "output": "You're 20 minutes in. Your average heart rate for the last 10 minutes was 142 beats per minute, which is higher than the 10 minutes before that. You've burned 300 calories so far. And Noah Kahan is helping you stay motivated. Keep going!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 105 Calories. Average heart rate in the last 10 minutes: 131 beats per minute.}",
+          "output": "Great start! You're 10 minutes in, have burned 105 calories, and your average heart rate in the last 10 minutes was 131 beats per minute. You got this!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Elapsed time since workout start: 20 minutes.\\nEnergy burned since workout start: 210 Calories.\\nAverage heart rate in the last 10 minutes: 136 beats per minute.\\nMy average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to The Great Divide by Noah Kahan which is of genre Country.",
+          "output": "Okay, you're 20 minutes in now. Over the last 10 minutes, your average heart rate was 136 beats per minute...... which is higher than before. You're moving to The Great Divide by Noah Kahan."
+        }
+      ]
+    ]
+  },
+  "hiking": {
+    "sessions": [
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 24 minutes, 6 seconds.\\nDistance covered in the current progress update: 1 mile.\\nTotal distance since workout start: 1 mile.\\nPace for the last 1 mile: 24 minutes, 5 seconds per mile.\\nAverage heart rate in the last 1 mile: 120 beats per minute.}\\n- I am currently listening to Interview with Brené Brown by Armchair Expert with Dax Shepard.",
+          "output": "You're 1 mile into your hike. Your pace in that last mile was 24 minutes and 5 seconds per mile, and your average heart rate was 120 beats per minute. Dax Shepard's podcast is playing."
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 24 minutes, 54 seconds. Elapsed time since workout start: 49 minutes. Distance covered in the current progress update: 1 mile. Total distance since workout start: 2 miles. Pace for the last 1 mile: 24 minutes, 54 seconds per mile. Energy burned since workout start: 460 Calories. Average heart rate in the last 1 mile: 126 beats per minute.}",
+          "output": "You're still going! You've now reached 2 miles of hiking. During the last mile, your pace was 24 minutes and 54 seconds per mile and your heart rate averaged 126 beats per minute in the last mile."
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 17 minutes.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 1 kilometer.\\nPace for the last 1 kilometer: 17 minutes per kilometer.\\nAverage heart rate in the last 1 kilometer: 125 beats per minute.}\\n- I am currently listening to Deep Focus Stream, this is one of my favorites.",
+          "output": "You're 1 kilometer into your hike and you covered it at a pace of 17 minutes per kilometer, with an average heart rate of 125 beats per minute. Deep Focus Stream is playing."
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 18 minutes.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 2 kilometers.\\nPace for the last 1 kilometer: 18 minutes per kilometer.\\nAverage heart rate in the last 1 kilometer: 130 beats per minute.}\\n- I am currently listening to Deep Focus Stream, this is one of my favorites.",
+          "output": "You just passed kilometer 2 of your hike. In that last kilometer, your pace was 18 minutes per kilometer, and your average heart rate was 130 beats per minute. Way to show up today!"
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Duration covered in the current progress update: 18 minutes, 30 seconds.\\nElapsed time since workout start: 54 minutes.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 3 kilometers.\\nPace for the last 1 kilometer: 18 minutes, 30 seconds per kilometer.\\nEnergy burned since workout start: 500 Calories.\\nAverage heart rate in the last 1 kilometer: 133 beats per minute.}\\n- I am currently listening to Believer by Imagine Dragons which is of genre Rock, this is one of my favorites.",
+          "output": "Alright, you just passed 3 kilometers. In that last kilometer, your pace was 18 minutes and 30 seconds per kilometer, and your average heart rate was 133 beats per minute. Believer by Imagine Dragons is helping you rock this hike."
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 18 minutes.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 1 kilometer.\\nPace for the last 1 kilometer: 18 minutes per kilometer.\\nAverage heart rate in the last 1 kilometer: 120 beats per minute.}\\n- I am currently listening to The Great Divide by Noah Kahan which is of genre Country.",
+          "output": "That's 1 kilometer down. In that last kilometer, your pace was 18 minutes per kilometer, and your average heart rate was 120 beats per minute. You're listening to the country sounds of Noah Kahan."
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 18 minutes, 30 seconds.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 2 kilometers.\\nPace for the last 1 kilometer: 18 minutes, 30 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 124 beats per minute.}\\n- I am currently listening to Where the Crawdads Sing by Delia Owens.",
+          "output": "2 kilometers in! In that last kilometer, your pace was 18 minutes and 30 seconds per kilometer, and your average heart rate was 124 beats per minute. Way to bring the energy!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 20 minutes.\\nDistance covered in the current progress update: 1 mile.\\nTotal distance since workout start: 1 mile.\\nPace for the last 1 mile: 19 minutes, 59 seconds per mile.\\nAverage heart rate in the last 1 mile: 119 beats per minute.}\\n- I am currently listening to The Science of Sleep by Huberman Lab.",
+          "output": "You're a mile into your hike, averaging 19 minutes and 59 seconds per mile with an average heart rate of 119 beats per minute in the last mile. The Science of Sleep by Huberman Lab is helping you keep pace. Let's keep going!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 18 minutes. Distance covered in the current progress update: 1 mile. Total distance since workout start: 2 miles. Pace for the last 1 mile: 18 minutes per mile. I'm picking up the pace. I was faster in the last 1 mile compared to the 1 mile before. Average heart rate in the last 1 mile: 126 beats per minute.}\\n- I am currently listening to God's Plan by Drake which is of genre Hip-Hop, this is one of my favorites.",
+          "output": "Okay, now you're 2 miles in. Your pace for the last mile was 18 minutes per mile...... faster than your previous mile. Your average heart rate for that split was 126 beats per minute. And you're listening to one of your favorite tracks...... let's keep pushing!"
+        }
+      ]
+    ]
+  },
+  "indoorcycling": {
+    "sessions": [
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 255 Calories. Average heart rate in the last 10 minutes: 135 beats per minute.}\\n- I am currently listening to God's Plan by Drake which is of genre Hip-Hop, this is one of my favorites.",
+          "output": "That's 10 minutes in the books and 255 calories burned, with an average heart rate of 135 beats per minute during that time. Drake is bringing some hip-hop to your ride."
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Elapsed time since workout start: 20 minutes. Energy burned since workout start: 380 Calories. Average heart rate in the last 10 minutes: 145 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to The Great Divide by Noah Kahan which is of genre Country.",
+          "output": "OK, you've been riding now for 20 minutes and have burned 380 calories. Your average heart rate during the last 10 minutes was 145 beats per minute. That's higher than the 10 minutes before it."
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 230 Calories. Average heart rate in the last 10 minutes: 140 beats per minute.}\\n- I am currently listening to The Science of Sleep by Huberman Lab.",
+          "output": "Great start! You're 10 minutes into your workout and have burned 230 calories. Your average heart rate is 140 beats per minute during that time. You're listening to The Science of Sleep by Huberman Lab. Stay after it!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Elapsed time since workout start: 20 minutes. Energy burned since workout start: 348 Calories. Average heart rate in the last 10 minutes: 146 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to Titanium by David Guetta feat. Sia which is of genre Electronic, this is one of my favorites.",
+          "output": "Okay, you're 20 minutes in, with 348 calories burned. Over the last 10 minutes, your average heart rate was 146 beats per minute, higher than the 10 minutes before. Titanium by David Guetta is keeping you on pace."
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Elapsed time since workout start: 30 minutes. Energy burned since workout start: 460 Calories. Average heart rate in the last 10 minutes: 150 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to Man Made a Bar by Morgan Wallen which is of genre Country.",
+          "output": "Now you're 30 minutes into your workout, with 460 calories burned. Your average heart rate over the last 10 minutes was 150 beats per minute...... which is higher than the 10 minutes before. Man Made a Bar by Morgan Wallen is keeping you company."
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 230 Calories. Average heart rate in the last 10 minutes: 138 beats per minute.}\\n- I am currently listening to Project Hail Mary by Andy Weir.",
+          "output": "You're 10 minutes in, with 230 calories burned. Your average heart rate over those 10 minutes was 138 beats per minute. Keep going with Project Hail Mary by Andy Weir."
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Elapsed time since workout start: 20 minutes. Energy burned since workout start: 355 Calories. Average heart rate in the last 10 minutes: 146 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to God's Plan by Drake which is of genre Hip-Hop, this is one of my favorites.",
+          "output": "OK, you're 20 minutes into your workout, with 355 calories burned and an average heart rate of 146 over the last 10 minutes. That's higher than the first 10 minutes. And Drake is bringing the beats."
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Elapsed time since workout start: 30 minutes. Energy burned since workout start: 460 Calories. Average heart rate in the last 10 minutes: 150 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to The Great Divide by Noah Kahan which is of genre Country.",
+          "output": "Checking in at 30 minutes and 460 calories burned...... your average heart rate in the last 10 minutes was 150 beats per minute, up from the 10 minutes before. Way to go!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 180 Calories. Average heart rate in the last 10 minutes: 135 beats per minute.}\\n- I am currently listening to Man Made a Bar by Morgan Wallen which is of genre Country.",
+          "output": "Great start! You're 10 minutes in, you've burned 180 calories, and your average heart rate in that time was 135 beats per minute. Man Made a Bar by Morgan Wallen is helping you keep pace. Keep up the good work!"
+        }
+      ]
+    ]
+  },
+  "indoorrunning": {
+    "sessions": [
+      [
+        {
+          "input": "- I wrapped my 1st split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 18 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 1 mile. Pace for the last 1 mile: 9 minutes, 17 seconds per mile. Average heart rate in the last 1 mile: 146 beats per minute.}\\n- I am currently listening to HUMBLE. by Kendrick Lamar which is of genre Hip-Hop, this is one of my favorites.",
+          "output": "You just finished your first mile with a pace of 9 minutes and 17 seconds per mile, and an average heart rate of 146 beats per minute. HUMBLE by Kendrick Lamar is one of your favorites and should help you keep up the pace. You got this!"
+        },
+        {
+          "input": "- I wrapped my 2nd split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 30 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 2 miles. Pace for the last 1 mile: 9 minutes, 30 seconds per mile. Average heart rate in the last 1 mile: 150 beats per minute.}\\n- I am currently listening to Levitating by Dua Lipa which is of genre Pop, this is one of my favorites.",
+          "output": "Mile 2 is in the books. Your pace for that last mile was 9 minutes and 30 seconds per mile and your average heart rate was 150 beats per minute. You're listening to one of your favorites by Dua Lipa to keep you in the zone. Keep going!"
+        },
+        {
+          "input": "- I wrapped my 3rd split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 42 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 3 miles. Pace for the last 1 mile: 9 minutes, 42 seconds per mile. Average heart rate in the last 1 mile: 154 beats per minute.}\\n- I am currently listening to Mr. Brightside by The Killers which is of genre Rock, this is one of my favorites.",
+          "output": "You just passed Mile 3. Your pace for that last mile was 9 minutes and 42 seconds per mile, with an average heart rate of 154. Keep going with Mr. Brightside by The Killers."
+        }
+      ],
+      [
+        {
+          "input": "- I wrapped my 1st split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes. Distance covered in the current split: 1 mile. Total distance since workout start: 1 mile. Pace for the last 1 mile: 9 minutes per mile. Average heart rate in the last 1 mile: 148 beats per minute.}\\n- This split was my fastest split for Running workouts so far this year.\\n- This split was my fastest split for Running workouts in the last 4 weeks. - This split was my fastest split for Running workouts in the last 3 months. - This split was my fastest split for Running workouts so far this year. - I am currently listening to The Science of Sleep by Huberman Lab.",
+          "output": "What a start! You just finished your first mile at a pace of 9 minutes per mile. Over the last mile,  your average heart rate was 148 beats per minute. That was your fastest split for a running workout so far this year. Keep it up!"
+        },
+        {
+          "input": "- I wrapped my 2nd split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 12 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 2 miles. Pace for the last 1 mile: 9 minutes, 12 seconds per mile. Average heart rate in the last 1 mile: 152 beats per minute.}\\n- This split was my 2nd fastest split for Running workouts so far this year.\\n- This split was my fastest split for Running workouts in the last 4 weeks. - This split was my fastest split for Running workouts in the last 3 months. - This split was my fastest split for Running workouts so far this year. - I am currently listening to God's Plan by Drake which is of genre Hip-Hop, this is one of my favorites.",
+          "output": "Okay, you're 2 miles into your run. Your pace in that last mile was 9 minutes and 12 seconds per mile, with an average heart rate of 152. That's your 2nd fastest split for a running workout this year. You're a machine!"
+        },
+        {
+          "input": "- I wrapped my 3rd split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 18 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 3 miles. Pace for the last 1 mile: 9 minutes, 17 seconds per mile. Average heart rate in the last 1 mile: 155 beats per minute.}\\n- This split was my fastest split for Running workouts in the last 4 weeks. - This split was my fastest split for Running workouts in the last 3 months. - This split was my fastest split for Running workouts so far this year. - I am currently listening to Medicine by Megan Moroney which is of genre Country.",
+          "output": "Now you're 3 miles in and you covered your last mile at a pace of 9 minutes and 17 seconds per mile, and an average heart rate of 155. That was your new fastest split for a running workout this year!"
+        }
+      ],
+      [
+        {
+          "input": "- I wrapped my 1st split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 18 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 1 mile. Pace for the last 1 mile: 9 minutes, 17 seconds per mile. Average heart rate in the last 1 mile: 149 beats per minute.}\\n- This split was my 3rd fastest split for Running workouts in the last 4 weeks. - This split was my 3rd fastest split for Running workouts in the last 3 months. - This split was my 3rd fastest split for Running workouts so far this year. - I am currently listening to Atomic Habits by James Clear.",
+          "output": "OK, that's your first split done. You're 1 mile in. In that mile, your pace was 9 minutes and 17 seconds per mile and average heart rate was 149 beats per minute. Another thing to celebrate...... that was your third fastest split of the year."
+        },
+        {
+          "input": "- I wrapped my 2nd split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 30 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 2 miles. Pace for the last 1 mile: 9 minutes, 30 seconds per mile. Average heart rate in the last 1 mile: 153 beats per minute.}\\n- I am currently listening to Believer by Imagine Dragons which is of genre Rock, this is one of my favorites.",
+          "output": "Second split is in. So that makes 2 miles so far. Your pace in the last mile was 9 minutes and 30 seconds per mile. And your heart rate averaged 153 beats per minute in the last mile. Imagine Dragons is up now on your playlist."
+        },
+        {
+          "input": "- I wrapped my 3rd split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 42 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 3 miles. Pace for the last 1 mile: 9 minutes, 42 seconds per mile. Average heart rate in the last 1 mile: 157 beats per minute.}\\n- I am currently listening to The Psychology of Money by The Tim Ferriss Show.",
+          "output": "This is your third split, and you've gone 3 miles so far. Your pace in the last mile was 9 minutes and 42 seconds per mile. And your average heart rate for that same mile was 157 beats per minute."
+        }
+      ],
+      [
+        {
+          "input": "- I wrapped my 1st split this workout. Here are some details about my split: {Duration covered in the current split: 8 minutes, 54 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 1 mile. Pace for the last 1 mile: 8 minutes, 53 seconds per mile. Average heart rate in the last 1 mile: 150 beats per minute.}\\n- This split was my fastest split for Running workouts so far this year.\\n- This split was my fastest split for Running workouts in the last 4 weeks. - This split was my fastest split for Running workouts in the last 3 months. - This split was my fastest split for Running workouts so far this year. - I am currently listening to Atomic Habits by James Clear.",
+          "output": "You're 1 mile in. Your pace for that last mile was 8 minutes and 53 seconds per mile...... your fastest running split this year! Your average heart rate in that mile was 150 beats per minute."
+        },
+        {
+          "input": "- I wrapped my 2nd split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes. Distance covered in the current split: 1 mile. Total distance since workout start: 2 miles. Pace for the last 1 mile: 9 minutes per mile. Average heart rate in the last 1 mile: 154 beats per minute.}\\n- This split was my 3rd fastest split for Running workouts so far this year.\\n- This split was my fastest split for Running workouts in the last 4 weeks. - This split was my fastest split for Running workouts in the last 3 months. - This split was my fastest split for Running workouts so far this year. - I am currently listening to Interview with Brené Brown by Armchair Expert with Dax Shepard.",
+          "output": "And that's mile 2 complete. Your pace for the last mile was 9 minutes per mile...... your 3rd fastest so far this year. And your average heart rate in the last mile was 154 beats per minute."
+        },
+        {
+          "input": "- I wrapped my 3rd split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 12 seconds.\\nDistance covered in the current split: 1 mile.\\nTotal distance since workout start: 3 miles.\\nPace for the last 1 mile: 9 minutes, 12 seconds per mile.\\nAverage heart rate in the last 1 mile: 157 beats per minute.}",
+          "output": "You just passed the 3-mile mark. Nice work! Your pace for that last mile was 9 minutes and 12 seconds per mile, with an average heart rate of 157 beats per minute."
+        }
+      ]
+    ]
+  },
+  "indoorwalking": {
+    "sessions": [
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 16 minutes, 6 seconds. Distance covered in the current progress update: 1 mile. Total distance since workout start: 1 mile. Pace for the last 1 mile: 16 minutes, 6 seconds per mile. Average heart rate in the last 1 mile: 99 beats per minute.}\\n- I am currently listening to Where the Crawdads Sing by Delia Owens.",
+          "output": "That's your first mile down. Over the last mile, your pace was 16 minutes and 6 seconds per mile and your average heart rate was 99 beats per minute. Let's keep going!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 18 minutes. Distance covered in the current progress update: 1 mile. Total distance since workout start: 1 mile. Pace for the last 1 mile: 18 minutes per mile. Average heart rate in the last 1 mile: 97 beats per minute.}\\n- This split was my 3rd fastest split for Walking workouts so far this year.\\n- This split was my 2nd fastest split for Walking workouts in the last 4 weeks.\\n- This split was my 3rd fastest split for Walking workouts in the last 3 months. - This split was my 3rd fastest split for Walking workouts so far this year. - I am currently listening to Man Made a Bar by Morgan Wallen which is of genre Country.",
+          "output": "You knocked out your first mile with a pace of 18 minutes per mile. In that mile,  your average heart rate was 97 beats per minute. This was your third fastest split for a Walking workout so far this year. Keep it up!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 21 minutes, 42 seconds. Distance covered in the current progress update: 1 mile. Total distance since workout start: 1 mile. Pace for the last 1 mile: 21 minutes, 42 seconds per mile. Average heart rate in the last 1 mile: 94 beats per minute.}\\n- I am currently listening to Where the Crawdads Sing by Delia Owens.",
+          "output": "1 mile down! In that last mile, your pace was 21 minutes and 42 seconds per mile and your average heart rate was 94 beats per minute. You're tuned into Where the Crawdads Sing by Delia Owens."
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 8 minutes.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 1 kilometer.\\nPace for the last 1 kilometer: 8 minutes per kilometer.\\nAverage heart rate in the last 1 kilometer: 103 beats per minute.}\\n- I am currently listening to Believer by Imagine Dragons which is of genre Rock, this is one of my favorites.",
+          "output": "You've just finished your first kilometer with a pace of 8 minutes flat per kilometer and an average heart rate of 103 beats per minute. One of your favorite songs is playing now, so let's keep the momentum going!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 7 minutes, 48 seconds.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 2 kilometers.\\nPace for the last 1 kilometer: 7 minutes, 48 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 103 beats per minute.}\\n- I am currently listening to Deep Focus Stream, this is one of my favorites.",
+          "output": "Your second kilometer is in the books, and your pace was 7 minutes and 48 seconds per kilometer with an average heart rate of 103 beats per minute for that last kilometer. You're crushing it today!"
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Duration covered in the current progress update: 7 minutes, 54 seconds.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 3 kilometers.\\nPace for the last 1 kilometer: 7 minutes, 53 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 107 beats per minute.}\\n- I am currently listening to The Great Divide by Noah Kahan which is of genre Country.",
+          "output": "You just passed the 3-kilometer mark. In that last kilometer, your pace was 7 minutes and 53 seconds per kilometer and your average heart rate was 107 beats per minute. Keep it up!"
+        }
+      ]
+    ]
+  },
+  "outdoorwalking": {
+    "sessions": [
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 17 minutes, 42 seconds. Distance covered in the current progress update: 1 mile. Total distance since workout start: 1 mile. Pace for the last 1 mile: 17 minutes, 42 seconds per mile. Average heart rate in the last 1 mile: 102 beats per minute.}\\n- I am currently listening to The Psychology of Money by The Tim Ferriss Show.",
+          "output": "You're 1 mile into your workout. In that last mile, your pace was 17 minutes and 42 seconds per mile and your average heart rate was 102 beats per minute. Great start!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 18 minutes, 12 seconds. Distance covered in the current progress update: 1 mile. Total distance since workout start: 2 miles. Pace for the last 1 mile: 18 minutes, 12 seconds per mile. Average heart rate in the last 1 mile: 106 beats per minute.}\\n- I am currently listening to Atomic Habits by James Clear.",
+          "output": "You just finished mile 2 at a pace of 18 minutes and 12 seconds per mile and an average heart rate of 106 beats per minute. You're staying in the zone with Atomic Habits by James Clear. Keep up the good work!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 11 minutes, 30 seconds.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 1 kilometer.\\nPace for the last 1 kilometer: 11 minutes, 30 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 102 beats per minute.}\\n- I am currently listening to Believer by Imagine Dragons which is of genre Rock, this is one of my favorites.",
+          "output": "That's 1 kilometer down. In that last kilometer, your pace was 11 minutes and 30 seconds per kilometer and your average heart rate was 102 beats per minute. You're rocking to the Imagine Dragons."
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 12 minutes. Distance covered in the current progress update: 1 kilometer. Total distance since workout start: 2 kilometers. Pace for the last 1 kilometer: 12 minutes per kilometer. Average heart rate in the last 1 kilometer: 105 beats per minute.}",
+          "output": "You're now 2 kilometers into your walk. In that last kilometer, your pace was 12 minutes per kilometer and your average heart rate was 105 beats per minute. Way to bring the energy!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 10 minutes.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 1 kilometer.\\nPace for the last 1 kilometer: 10 minutes per kilometer.\\nAverage heart rate in the last 1 kilometer: 107 beats per minute.}\\n- This split was my 2nd fastest split for Walking workouts so far this year.",
+          "output": "That's 1K down. In that last kilometer, your pace was 10 minutes per kilometer...... your 2nd fastest split for a walking workout this year...... and your average heart rate was 107 beats per minute. Nicely done!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 10 minutes, 18 seconds.\nDistance covered in the current progress update: 1 kilometer.\nTotal distance since workout start: 2 kilometers.\nPace for the last 1 kilometer: 10 minutes, 18 seconds per kilometer.\nAverage heart rate in the last 1 kilometer: 110 beats per minute.}\n- I am currently listening to Levitating by Dua Lipa which is of genre Pop, this is one of my favorites.",
+          "output": "2 kilometers in the books. In that last kilometer, your pace was 10 minutes and 18 seconds per kilometer and your average heart rate was 110 beats per minute. Keep it up!"
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Duration covered in the current progress update: 10 minutes, 30 seconds.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 3 kilometers.\\nPace for the last 1 kilometer: 10 minutes, 30 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 112 beats per minute.}\\n- I am currently listening to Deep Focus Stream, this is one of my favorites.",
+          "output": "You just hit the 3K mark, and your pace during your last kilometer was 10 minutes and 30 seconds per kilometer. Your average heart rate in that last kilometer was 112 beats per minute."
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 10 minutes.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 1 kilometer.\\nPace for the last 1 kilometer: 10 minutes per kilometer.\\nAverage heart rate in the last 1 kilometer: 108 beats per minute.}\\n- This split was my 3rd fastest split for Walking workouts so far this year.",
+          "output": "That's the wrap on your first kilometer. You covered it at a pace of 10 minutes per kilometer...... your 3rd fastest split for a walking workout this year. Your average heart rate over that kilometer was 108 beats per minute. Great start!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 10 minutes, 12 seconds.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 2 kilometers.\\nPace for the last 1 kilometer: 10 minutes, 12 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 112 beats per minute.}\\n- I am currently listening to Risk It All by Bruno Mars which is of genre Pop.",
+          "output": "You're two kilometers in. The last kilometer came in at a pace of 10 minutes and 12 seconds per kilometer...... Bruno Mars is helping you keep the pace. Your average heart rate over that kilometer was 112 beats per minute. Keep it up!"
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Duration covered in the current progress update: 10 minutes, 30 seconds.\\nDistance covered in the current progress update: 1 kilometer.\\nTotal distance since workout start: 3 kilometers.\\nPace for the last 1 kilometer: 10 minutes, 30 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 114 beats per minute.}",
+          "output": "Three kilometers down. Over the last kilometer, your pace was 10 minutes and 30 seconds per kilometer and your average heart rate was 114 beats per minute. You're in the zone."
+        },
+        {
+          "input": "- Here is my 4th progress update this workout: {Duration covered in the current progress update: 10 minutes, 48 seconds. Elapsed time since workout start: 42 minutes. Distance covered in the current progress update: 1 kilometer. Total distance since workout start: 4 kilometers. Pace for the last 1 kilometer: 10 minutes, 48 seconds per kilometer. Energy burned since workout start: 270 Calories. Average heart rate in the last 1 kilometer: 116 beats per minute.}",
+          "output": "Okay, you're 4 kilometers in now. Your pace for the last kilometer was 10 minutes and 48 seconds per kilometer, and your average heart rate was 116 beats per minute. Keep up the great work!"
+        }
+      ]
+    ]
+  },
+  "stairstepper": {
+    "sessions": [
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 230 Calories. Average heart rate in the last 10 minutes: 140 beats per minute.}\\n- I am currently listening to Educated by Tara Westover.",
+          "output": "10 minutes in, with 230 calories torched! Your average heart rate over those 10 minutes was 140 beats per minute. Keep going with Educated by Tara Westover."
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Elapsed time since workout start: 20 minutes. Energy burned since workout start: 280 Calories. Average heart rate in the last 10 minutes: 148 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to Levitating by Dua Lipa which is of genre Pop, this is one of my favorites.",
+          "output": "You just passed 20 minutes on the stair stepper, and you're still going! Your average heart rate for the last 10 minutes was 148 beats per minute, which is higher than the 10 minutes before it. Plus, you've burned 280 calories. Keep moving to Dua Lipa!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 215 Calories. Average heart rate in the last 10 minutes: 138 beats per minute.}\\n- I am currently listening to Titanium by David Guetta feat. Sia which is of genre Electronic, this is one of my favorites.",
+          "output": "You're 10 minutes into your Stair Stepper workout with 215 calories burned. In that time, your heart rate averaged 138 beats per minute. One of your favorite songs, Titanium by David Guetta featuring Sia, is playing...... keep it up!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Elapsed time since workout start: 20 minutes. Energy burned since workout start: 260 Calories. Average heart rate in the last 10 minutes: 148 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to Man Made a Bar by Morgan Wallen which is of genre Country.",
+          "output": "That's 20 minutes on the stair stepper with an average heart rate of 148 beats per minute during the last 10 minutes. And you've burned 260 calories so far. You're listening to Man Made a Bar by Morgan Wallen. Way to go!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 210 Calories. Average heart rate in the last 10 minutes: 136 beats per minute.}\\n- I am currently listening to The Great Divide by Noah Kahan which is of genre Country.",
+          "output": "That's 10 minutes in and 210 calories burned. Your average heart rate in the last 10 minutes was 136 beats per minute. You're listening to The Great Divide by Noah Kahan. Keep stepping!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Elapsed time since workout start: 10 minutes. Energy burned since workout start: 215 Calories. Average heart rate in the last 10 minutes: 144 beats per minute.}\\n- I am currently listening to Save My Love by Kygo, Khalid &amp; Gryffin which is of genre Pop.",
+          "output": "You've been working out on the stair stepper for 10 minutes now with an average heart rate of 144 beats per minute in the last 10 minutes. And you've burned 215 calories. You've got pop beats from Kygo, Khalid, and Gryffin keeping you going."
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Elapsed time since workout start: 20 minutes. Energy burned since workout start: 320 Calories. Average heart rate in the last 10 minutes: 152 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to The Science of Sleep by Huberman Lab.",
+          "output": "Okay, that's 20 minutes complete and 320 calories burned. Your average heart rate in the last 10 minutes was 152 beats per minute, up from the first 10 minutes. You're listening to The Science of Sleep by Huberman Lab."
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Elapsed time since workout start: 30 minutes. Energy burned since workout start: 360 Calories. Average heart rate in the last 10 minutes: 155 beats per minute. My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before.}\\n- I am currently listening to Titanium by David Guetta feat. Sia which is of genre Electronic, this is one of my favorites.",
+          "output": "You're 30 minutes into your Stair Stepper workout with 360 calories burned so far. Your average heart rate in the last 10 minutes was 155 beats per minute, which is higher than the previous 10 minutes. You've got Titanium by David Guetta featuring Sia playing."
+        }
+      ]
+    ]
+  },
+  "outdoorcycling": {
+    "sessions": [
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 20 minutes, 6 seconds.\\nDistance covered in the current progress update: 5 miles.\\nTotal distance since workout start: 5 miles.\\nAverage speed in the last 5 miles: 14.9 miles per hour.\\nAverage power in the last 5 miles: 170 watts.\\nAverage heart rate in the last 5 miles: 124 beats per minute.}\\n- I am currently listening to Espresso by Sabrina Carpenter which is of genre Pop, this is one of my favorites.",
+          "output": "Your first 5 miles are behind you. Over those 5 miles, you averaged 14.9 miles per hour, 170 watts of power, and an average heart rate of 124 beats per minute. Right now you're listening to Sabrina Carpenter...... one of your favorites. You got this!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 19 minutes, 36 seconds.\\nDistance covered in the current progress update: 5 miles.\\nTotal distance since workout start: 10 miles.\\nAverage speed in the last 5 miles: 15.3 miles per hour.\\nAverage power in the last 5 miles: 175 watts.\\nAverage heart rate in the last 5 miles: 130 beats per minute.}\\n- I am currently listening to Risk It All by Bruno Mars which is of genre Pop.",
+          "output": "You just crossed the 10 mile mark. Over the last 5 miles, you averaged 15.3 miles per hour, 175 watts of power, and an average heart rate of 130 beats per minute. Way to dig deep!"
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Duration covered in the current progress update: 19 minutes, 18 seconds.\\nElapsed time since workout start: 59 minutes.\\nDistance covered in the current progress update: 5 miles.\\nTotal distance since workout start: 15 miles.\\nAverage speed in the last 5 miles: 15.5 miles per hour.\\nAverage power in the last 5 miles: 180 watts.\\nAverage heart rate in the last 5 miles: 135 beats per minute.}\\n- I am currently listening to Levitating by Dua Lipa which is of genre Pop, this is one of my favorites.",
+          "output": "You just hit 15 miles. Over the last 5 miles, you averaged 15.5 miles per hour, 180 watts of power, and an average heart rate of 135 beats per minute. Way to power through!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 17 minutes, 42 seconds.\\nDistance covered in the current progress update: 5 miles.\\nTotal distance since workout start: 5 miles.\\nAverage speed in the last 5 miles: 16.9 miles per hour.\\nAverage power in the last 5 miles: 172 watts.\\nAverage heart rate in the last 5 miles: 129 beats per minute.}\\n- This split was my 3rd fastest split for Cycling workouts so far this year.\\n- I am currently listening to The Great Divide by Noah Kahan which is of genre Country.",
+          "output": "You just passed the 5 mile mark...... your third fastest Cycling split so far this year! Over those 5 miles, your average speed was 16.9 miles per hour, your average power was 172 watts, and your average heart rate was 129 beats per minute. What a start!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 17 minutes, 24 seconds.\\nDistance covered in the current progress update: 5 miles.\\nTotal distance since workout start: 10 miles.\\nAverage speed in the last 5 miles: 17.2 miles per hour.\\nAverage power in the last 5 miles: 178 watts.\\nAverage heart rate in the last 5 miles: 134 beats per minute.}\\n- This split was my fastest split for Cycling workouts so far this year.\\n- I am currently listening to Where the Crawdads Sing by Delia Owens.",
+          "output": "You're 10 miles into your ride. That last 5 miles was your fastest Cycling split so far this year! Over those 5 miles, your average speed was 17.2 miles per hour, your average power was 178 watts, and your average heart rate was 134 beats per minute. Epic!"
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Duration covered in the current progress update: 18 minutes.\\nElapsed time since workout start: 53 minutes.\\nDistance covered in the current progress update: 5 miles.\\nTotal distance since workout start: 15 miles.\\nAverage speed in the last 5 miles: 16.6 miles per hour.\\nAverage power in the last 5 miles: 182 watts.\\nAverage heart rate in the last 5 miles: 139 beats per minute.}\\n- I am currently listening to Espresso by Sabrina Carpenter which is of genre Pop, this is one of my favorites.",
+          "output": "You just clicked off 15 miles. Over those 5 miles, your average speed was 16.6 miles per hour, your average power was 182 watts, and your average heart rate was 139 beats per minute. Way to ride!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 14 minutes, 42 seconds.\\nDistance covered in the current progress update: 5 miles.\\nTotal distance since workout start: 5 miles.\\nAverage speed in the last 5 miles: 20.4 miles per hour.\\nAverage power in the last 5 miles: 182 watts.\\nAverage heart rate in the last 5 miles: 132 beats per minute.}\\n- This split was my fastest split for Cycling workouts so far this year.\\n- I am currently listening to Espresso by Sabrina Carpenter which is of genre Pop, this is one of my favorites.",
+          "output": "You just hit the 5 mile mark...... your fastest Cycling split so far this year! Over those 5 miles, your average speed was 20.4 miles per hour, your average power was 182 watts, and your average heart rate was 132 beats per minute. What a start to your ride!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 14 minutes, 24 seconds.\\nDistance covered in the current progress update: 5 miles.\\nTotal distance since workout start: 10 miles.\\nAverage speed in the last 5 miles: 20.8 miles per hour.\\nAverage power in the last 5 miles: 188 watts.\\nAverage heart rate in the last 5 miles: 137 beats per minute.}\\n- This split was my fastest split for Cycling workouts in the last 3 months.\\n- I am currently listening to Interview with Brené Brown by Armchair Expert with Dax Shepard.",
+          "output": "You're 10 miles in now. That last 5 miles was your fastest Cycling split in the last 3 months. Over those 5 miles, your average speed was 20.8 miles per hour, with 188 watts of power and a heart rate of 137. You're locked in today!"
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Duration covered in the current progress update: 13 minutes, 54 seconds.\\nElapsed time since workout start: 43 minutes.\\nDistance covered in the current progress update: 5 miles.\\nTotal distance since workout start: 15 miles.\\nAverage speed in the last 5 miles: 21.5 miles per hour.\\nAverage power in the last 5 miles: 195 watts.\\nAverage heart rate in the last 5 miles: 142 beats per minute.}\\n- This split was my fastest split for Cycling workouts in the last 4 weeks.",
+          "output": "You've put 15 miles behind you! You covered the last 5 miles at a speed of 21.5 miles per hour...... your fastest Cycling split in the last 4 weeks. Over that split, your average power was 195 watts and your average heart rate was 142. Keep at it!"
+        },
+        {
+          "input": "- Here is my 4th progress update this workout: {Duration covered in the current progress update: 14 minutes.\\nDistance covered in the current progress update: 5 miles.\\nTotal distance since workout start: 20 miles.\\nAverage speed in the last 5 miles: 21.4 miles per hour.\\nAverage power in the last 5 miles: 190 watts.\\nAverage heart rate in the last 5 miles: 140 beats per minute.}\\n- This split was my 2nd fastest split for Cycling workouts so far this year.\\n- This split was my fastest split for Cycling workouts in the last 4 weeks. - This split was my fastest split for Cycling workouts in the last 3 months. - This split was my fastest split for Cycling workouts so far this year. - I am currently listening to Running Form and Technique by The Rich Roll Podcast.",
+          "output": "You just crossed the 20-mile mark. That last 5 miles was your fastest Cycling split in the last 3 months. Over those 5 miles, your average speed was 21.4 miles per hour and your average power was 190 watts. You're a machine!"
+        }
+      ],
+      [
+        {
+          "input": "- Here is my 1st progress update this workout: {Duration covered in the current progress update: 11 minutes, 24 seconds.\\nDistance covered in the current progress update: 5 kilometers.\\nTotal distance since workout start: 5 kilometers.\\nAverage speed in the last 5 kilometers: 26.3 kilometers per hour.\\nAverage power in the last 5 kilometers: 170 watts.\\nAverage heart rate in the last 5 kilometers: 135 beats per minute.}\\n- This split was my 2nd fastest split for Cycling workouts so far this year.\\n- I am currently listening to One More Time by Daft Punk which is of genre Electronic, this is one of my favorites.",
+          "output": "You're 5 kilometers into your workout. In that last 5 kilometers, you averaged 26.3 kilometers per hour, 170 watts of power, and a heart rate of 135 beats per minute...... that was your second fastest cycling split so far this year! What a start!"
+        },
+        {
+          "input": "- Here is my 2nd progress update this workout: {Duration covered in the current progress update: 11 minutes, 30 seconds.\\nDistance covered in the current progress update: 5 kilometers.\\nTotal distance since workout start: 10 kilometers.\\nAverage speed in the last 5 kilometers: 26 kilometers per hour.\\nAverage power in the last 5 kilometers: 174 watts.\\nAverage heart rate in the last 5 kilometers: 139 beats per minute.}\\n- I am currently listening to Running Form and Technique by The Rich Roll Podcast.",
+          "output": "You're 10 kilometers in now. Over that last 5 kilometers, you averaged 26 kilometers per hour, 174 watts of power, and a heart rate of 139 beats per minute. Way to spin those pedals!"
+        },
+        {
+          "input": "- Here is my 3rd progress update this workout: {Duration covered in the current progress update: 11 minutes, 18 seconds.\\nDistance covered in the current progress update: 5 kilometers.\\nTotal distance since workout start: 15 kilometers.\\nAverage speed in the last 5 kilometers: 26.5 kilometers per hour.\\nAverage power in the last 5 kilometers: 177 watts.\\nAverage heart rate in the last 5 kilometers: 142 beats per minute.}\\n- This split was my fastest split for Cycling workouts in the last 3 months.\\n- This split was my 2nd fastest split for Cycling workouts in the last 4 weeks.\\n- I am currently listening to Risk It All by Bruno Mars which is of genre Pop.",
+          "output": "Okay, you're 15 kilometers into your ride, and your last split is your fastest in the last 3 months! In that last 5 kilometers, you averaged 26.5 kilometers per hour, 177 watts of power, and a heart rate of 142 beats per minute. You're crushing it today!"
+        },
+        {
+          "input": "- Here is my 4th progress update this workout: {Duration covered in the current progress update: 11 minutes, 24 seconds.\\nElapsed time since workout start: 46 minutes.\\nDistance covered in the current progress update: 5 kilometers.\\nTotal distance since workout start: 20 kilometers.\\nAverage speed in the last 5 kilometers: 26.3 kilometers per hour.\\nAverage power in the last 5 kilometers: 180 watts.\\nAverage heart rate in the last 5 kilometers: 145 beats per minute.}\\n- I am currently listening to God's Plan by Drake which is of genre Hip-Hop, this is one of my favorites.",
+          "output": "You've been riding for 46 minutes and just crossed the 20 kilometer mark. In that last 5 kilometers, your average speed was 26.3 kilometers per hour, with 180 watts of power and a heart rate of 145 beats per minute. What a ride!"
+        }
+      ]
+    ]
+  },
+  "outdoorrunning": {
+    "sessions": [
+      [
+        {
+          "input": "- I wrapped my 1st split this workout. Here are some details about my split: {Duration covered in the current split: 10 minutes, 6 seconds.\\nDistance covered in the current split: 1 mile.\\nTotal distance since workout start: 1 mile.\\nPace for the last 1 mile: 10 minutes, 6 seconds per mile.\\nAverage heart rate in the last 1 mile: 150 beats per minute.}\\n- This split was my fastest split for Running workouts so far this year.\\n- I am currently listening to Where the Crawdads Sing by Delia Owens.",
+          "output": "You just finished your first mile at a pace of 10 minutes and 6 seconds per mile...... your fastest 1-mile running split this year! Over the last mile, your average heart rate was 150 beats per minute. Great start!"
+        },
+        {
+          "input": "- I wrapped my 2nd split this workout. Here are some details about my split: {Duration covered in the current split: 10 minutes, 30 seconds.\\nDistance covered in the current split: 1 mile.\\nTotal distance since workout start: 2 miles.\\nPace for the last 1 mile: 10 minutes, 30 seconds per mile.\\nAverage heart rate in the last 1 mile: 154 beats per minute.}\\n- This split was my 2nd fastest split for Running workouts so far this year.\\n- I am currently listening to Believer by Imagine Dragons which is of genre Rock, this is one of my favorites.",
+          "output": "You're 2 miles in. Your pace in that last mile was 10 minutes and 30 seconds per mile, with an average heart rate of 154. That last mile was your 2nd fastest split this year! You're on a roll!"
+        },
+        {
+          "input": "- I wrapped my 3rd split this workout. Here are some details about my split: {Duration covered in the current split: 10 minutes, 36 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 3 miles. Pace for the last 1 mile: 10 minutes, 36 seconds per mile. Average heart rate in the last 1 mile: 158 beats per minute.}\\n- This split was my 2nd fastest split for Running workouts in the last 4 weeks. - This split was my 2nd fastest split for Running workouts in the last 3 months. - This split was my 2nd fastest split for Running workouts so far this year. - I am currently listening to The Great Divide by Noah Kahan which is of genre Country.",
+          "output": "That's 3 miles down, and in that last mile, you averaged a pace of 10 minutes and 36 seconds per mile...... your second fastest so far this year...... with an average heart rate of 158 beats per minute. And Noah Kahan is bringing the country tunes."
+        }
+      ],
+      [
+        {
+          "input": "- I wrapped my 1st split this workout. Here are some details about my split: {Duration covered in the current split: 5 minutes, 54 seconds.\\nDistance covered in the current split: 1 kilometer.\\nTotal distance since workout start: 1 kilometer.\\nPace for the last 1 kilometer: 5 minutes, 53 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 150 beats per minute.}\\n- I am currently listening to The Science of Sleep by Huberman Lab.",
+          "output": "You just finished your first kilometer. In that last kilometer, your pace was 5 minutes and 53 seconds per kilometer and your average heart rate was 150 beats per minute. You're off to a great start!"
+        },
+        {
+          "input": "- I wrapped my 2nd split this workout. Here are some details about my split: {Duration covered in the current split: 6 minutes.\\nDistance covered in the current split: 1 kilometer.\\nTotal distance since workout start: 2 kilometers.\\nPace for the last 1 kilometer: 6 minutes per kilometer.\\nAverage heart rate in the last 1 kilometer: 151 beats per minute.}\\n- I am currently listening to Project Hail Mary by Andy Weir.",
+          "output": "Your second kilometer is in the books. You ran the last kilometer at a pace of 6 minutes per kilometer, with an average heart rate of 151 beats per minute. Keep it up!"
+        },
+        {
+          "input": "- I wrapped my 3rd split this workout. Here are some details about my split: {Duration covered in the current split: 5 minutes, 42 seconds.\\nDistance covered in the current split: 1 kilometer.\\nTotal distance since workout start: 3 kilometers.\\nPace for the last 1 kilometer: 5 minutes, 41 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 154 beats per minute.}\\n- This split was my fastest split for Running workouts so far this year.\\n- I am currently listening to HUMBLE. by Kendrick Lamar which is of genre Hip-Hop, this is one of my favorites.",
+          "output": "Kilometer 3 is behind you. In that last kilometer, your pace was 5 minutes and 41 seconds per kilometer...... your fastest split for a running workout so far this year! And your average heart rate was 154 beats per minute. You got this!"
+        },
+        {
+          "input": "- I wrapped my 4th split this workout. Here are some details about my split: {Duration covered in the current split: 5 minutes, 48 seconds.\\nDistance covered in the current split: 1 kilometer.\\nTotal distance since workout start: 4 kilometers.\\nPace for the last 1 kilometer: 5 minutes, 48 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 155 beats per minute.}\\n- This split was my 2nd fastest split for Running workouts in the last 3 months.\\n- I am currently listening to Levitating by Dua Lipa which is of genre Pop, this is one of my favorites.",
+          "output": "You just put kilometer 4 behind you. Over the last kilometer, you averaged 5 minutes and 48 seconds per kilometer...... your 2nd fastest split for a running workout in the last 3 months. Way to keep it up!"
+        },
+        {
+          "input": "- I wrapped my 5th split this workout. Here are some details about my split: {Duration covered in the current split: 5 minutes, 54 seconds.\\nDistance covered in the current split: 1 kilometer.\\nTotal distance since workout start: 5 kilometers.\\nPace for the last 1 kilometer: 5 minutes, 53 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 157 beats per minute.}\\n- I am currently listening to Levitating by Dua Lipa which is of genre Pop, this is one of my favorites.",
+          "output": "You just passed 5 kilometers in your run. Your pace in that last kilometer was 5 minutes and 53 seconds per kilometer. Dua Lipa is bringing some pop beats."
+        },
+        {
+          "input": "- I wrapped my 6th split this workout. Here are some details about my split: {Duration covered in the current split: 5 minutes, 42 seconds.\\nDistance covered in the current split: 1 kilometer.\\nTotal distance since workout start: 6 kilometers.\\nPace for the last 1 kilometer: 5 minutes, 41 seconds per kilometer.\\nAverage heart rate in the last 1 kilometer: 159 beats per minute.}\\n- This split was my 2nd fastest split for Running workouts so far this year.\\n- I am currently listening to Where the Crawdads Sing by Delia Owens.",
+          "output": "That's 6K down. In that last kilometer, your pace was 5 minutes and 41 seconds per kilometer and your average heart rate was 159 beats per minute...... your 2nd fastest split for a running workout so far this year. Amazing!"
+        }
+      ],
+      [
+        {
+          "input": "- I wrapped my 1st split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 30 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 1 mile. Pace for the last 1 mile: 9 minutes, 30 seconds per mile. Average heart rate in the last 1 mile: 134 beats per minute.}\\n- I am currently listening to One More Time by Daft Punk which is of genre Electronic, this is one of my favorites.",
+          "output": "You just finished your first mile at a pace of 9 minutes and 30 seconds per mile. Over the last mile,  your average heart rate was 134 beats per minute. You're listening to one of your favorites...... One More Time by Daft Punk. You're off to a great start!"
+        },
+        {
+          "input": "- I wrapped my 2nd split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes. Distance covered in the current split: 1 mile. Total distance since workout start: 2 miles. Pace for the last 1 mile: 9 minutes per mile. I'm picking up the pace. I was faster in the last 1 mile compared to the 1 mile before. Average heart rate in the last 1 mile: 141 beats per minute.}\\n- I am currently listening to Where the Crawdads Sing by Delia Owens.",
+          "output": "You just finished mile 2. You picked up the pace on that one, averaging 9 minutes per mile, and your average heart rate was 141 beats per minute in the last mile. Way to go!"
+        }
+      ],
+      [
+        {
+          "input": "- I wrapped my 1st split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes, 30 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 1 mile. Pace for the last 1 mile: 9 minutes, 30 seconds per mile. Average heart rate in the last 1 mile: 132 beats per minute.}\\n- I am currently listening to The Psychology of Money by The Tim Ferriss Show.",
+          "output": "Your first mile is in the books. In that last mile, your pace was 9 minutes and 30 seconds per mile and your average heart rate was 132 beats per minute. Great start!"
+        },
+        {
+          "input": "- I wrapped my 2nd split this workout. Here are some details about my split: {Duration covered in the current split: 9 minutes.\\nDistance covered in the current split: 1 mile.\\nTotal distance since workout start: 2 miles.\\nPace for the last 1 mile: 9 minutes per mile.\\nI'm picking up the pace. I was faster in the last 1 mile compared to the 1 mile before.\\nAverage heart rate in the last 1 mile: 137 beats per minute.}\\n- I am currently listening to Medicine by Megan Moroney which is of genre Country.",
+          "output": "You're 2 miles in and picking up the pace! In that last mile, your pace was 9 minutes per mile and your average heart rate was 137 beats per minute. Way to get after it!"
+        },
+        {
+          "input": "- I wrapped my 3rd split this workout. Here are some details about my split: {Duration covered in the current split: 8 minutes, 30 seconds. Distance covered in the current split: 1 mile. Total distance since workout start: 3 miles. Pace for the last 1 mile: 8 minutes, 30 seconds per mile. I'm picking up the pace. I was faster in the last 1 mile compared to the 1 mile before. Average heart rate in the last 1 mile: 139 beats per minute.}\\n- This split was my fastest split for Running workouts so far this year.\\n- I am currently listening to Educated by Tara Westover.",
+          "output": "You just finished your third mile and you picked up the pace on that one! Your pace was 8 minutes and 30 seconds per mile and your average heart rate was 139 beats per minute for that split. Way to keep up the intensity!"
+        }
+      ]
+    ]
+  }
+}

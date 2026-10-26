@@ -1,0 +1,17 @@
+{
+  "SampleClass": "SNSpeechEmotionResult",
+  "AuthorizationStoreCohort": "corespeechd",
+  "AuthService": "kTCCServiceSensorKitSpeechMetrics",
+  "RoundingIntervalSecs": 900,
+  "Name": "com.apple.SensorKit.speechEmotion.siri",
+  "SupportedPlatforms": {
+    "Watch": {
+      "Enabled": false
+    },
+    "Phone": {
+      "Enabled": false
+    }
+  },
+  "AuthorizationVersion": 160000.0,
+  "SRInfoPlistAuthCategory": "SRSensorUsageSpeechMetrics"
+}

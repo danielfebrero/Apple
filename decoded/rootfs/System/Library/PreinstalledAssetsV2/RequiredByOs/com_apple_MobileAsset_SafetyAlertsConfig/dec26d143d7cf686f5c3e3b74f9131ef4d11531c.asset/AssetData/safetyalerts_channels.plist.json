@@ -1,0 +1,520 @@
+{
+  "USA": {
+    "SAEWConfig": {
+      "weaTexts": [
+        "Detected! Drop, Cover, Hold On. Protect Yourself. -USGS ShakeAlert",
+        "Terremoto detectado! Agachese, cubrase, sujetese. Protejase. -USGS ShakeAlert"
+      ],
+      "ProductionKey": [
+        "C03869AF-71E2-47B7-88A6-4285CA380272"
+      ],
+      "ThresholdTimeBetweenAlertsSec": 60.0,
+      "IgnoreAlertSec": 3600.0,
+      "PhoneChannelSubHysteresisSeconds": 3600.0,
+      "WatchChannelSubHysteresisSeconds": 3600.0,
+      "FollowUpMessageValidTime": 21600.0,
+      "displayTemplates": {
+        "action": {
+          "en-US": {
+            "withLocationText": "Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated __ED__ away.::- __ATTR__",
+            "withoutLocationText": "Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated.::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "es-US": {
+            "withLocationText": "Se espera un fuerte temblor.::Agáchate, cúbrete, sujétate.::M__MAG__ calculado __ED__ de distancia.::- __ATTR__",
+            "withoutLocationText": "Se espera un fuerte temblor.::Agáchate, cúbrete, sujétate.::M__MAG__ calculado.::- __ATTR__",
+            "toneFile": "action_default.caf"
+          }
+        },
+        "awareness": {
+          "en-US": {
+            "withLocationText": "If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated __ED__ away::- __ATTR__",
+            "withoutLocationText": "If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated::- __ATTR__",
+            "toneFile": ""
+          },
+          "es-US": {
+            "withLocationText": "Si el temblor se intensifica: Agáchate, cúbrete, sujétate::M__MAG__ calculado __ED__ de distancia::- __ATTR__",
+            "withoutLocationText": "Si el temblor se intensifica: Agáchate, cúbrete, sujétate::M__MAG__ calculado::- __ATTR__",
+            "toneFile": ""
+          }
+        },
+        "livability_action": {
+          "en-US": {
+            "withLocationText": "APPLE LIVABILITY TEST: Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated __ED__ away.::- __ATTR__",
+            "withoutLocationText": "APPLE LIVABILITY TEST: Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated.::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "es-US": {
+            "withLocationText": "APPLE LIVABILITY TEST: Se espera un fuerte temblor.::Agáchate, cúbrete, sujétate.::M__MAG__ calculado __ED__ de distancia.::- __ATTR__",
+            "withoutLocationText": "APPLE LIVABILITY TEST: Se espera un fuerte temblor.::Agáchate, cúbrete, sujétate.::M__MAG__ calculado.::- __ATTR__",
+            "toneFile": "action_default.caf"
+          }
+        },
+        "livability_awareness": {
+          "en-US": {
+            "withLocationText": "APPLE LIVABILITY TEST: If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated __ED__ away::- __ATTR__",
+            "withoutLocationText": "APPLE LIVABILITY TEST: If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated::- __ATTR__",
+            "toneFile": ""
+          },
+          "es-US": {
+            "withLocationText": "APPLE LIVABILITY TEST: Si el temblor se intensifica: Agáchate, cúbrete, sujétate::M__MAG__ calculado __ED__ de distancia::- __ATTR__",
+            "withoutLocationText": "APPLE LIVABILITY TEST: Si el temblor se intensifica: Agáchate, cúbrete, sujétate::M__MAG__ calculado::- __ATTR__",
+            "toneFile": ""
+          }
+        }
+      },
+      "sourceConfig": {
+        "USGS": {
+          "senderId": 3,
+          "defaultLanguage": "en-US",
+          "attribution": {
+            "en-US": "USGS ShakeAlert",
+            "es-US": "USGS ShakeAlert"
+          },
+          "mmiBandsConfig": [
+            {
+              "minMagnitude": 4.5,
+              "maxMagnitude": 5.5,
+              "minIntensity": 3.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.5,
+              "maxMagnitude": 100.0,
+              "minIntensity": 3.0,
+              "maxIntensity": 5.0,
+              "displayTemplate": "awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.5,
+              "maxMagnitude": 100.0,
+              "minIntensity": 5.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "action",
+              "level": "action"
+            }
+          ]
+        },
+        "USGSLivability": {
+          "senderId": 64512,
+          "defaultLanguage": "en-US",
+          "attribution": {
+            "en-US": "Apple livability test",
+            "es-US": "Prueba de habitabilidad de Apple"
+          },
+          "mmiBandsConfig": [
+            {
+              "minMagnitude": 4.5,
+              "maxMagnitude": 5.5,
+              "minIntensity": 3.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "livability_awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.5,
+              "maxMagnitude": 100.0,
+              "minIntensity": 3.0,
+              "maxIntensity": 5.0,
+              "displayTemplate": "livability_awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.5,
+              "maxMagnitude": 100.0,
+              "minIntensity": 5.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "livability_action",
+              "level": "action"
+            }
+          ]
+        }
+      }
+    },
+    "config": {
+      "supportedFeatures": [
+        "richHI",
+        "igneous"
+      ],
+      "security": {
+        "codebookFileName": "codebook.json",
+        "codebookDownloadPeriodSeconds": 86400
+      },
+      "countrySupport": "allowed",
+      "mapConfig": {
+        "cacheIntervalSeconds": 86400,
+        "cacheHistorySeconds": 259200.0,
+        "cacheRadiiKm": [
+          100,
+          200,
+          400,
+          500
+        ]
+      },
+      "edcfu": {
+        "uptakeCoefficient": 0.0
+      },
+      "metrics": {
+        "efficacyManifestFileName": "efficacy_manifest_v4.txt",
+        "efficacyParticipationPercentage": 95,
+        "pullpc": 1,
+        "appc": 5,
+        "rmEnable": true,
+        "rmPeriodInSeconds": 86400.0,
+        "rmFixedDelayInSeconds": 28800.0,
+        "rmRandomDelayInSeconds": 14400.0
+      },
+      "apns": {
+        "wowControls": 1
+      },
+      "pull": {
+        "server": "https://safety-alert.apple.com/v1/alert/"
+      },
+      "livability": {
+        "weaEnrichmentChannel": "SlVOMDZfaENQdC1kZlNGQw=="
+      }
+    },
+    "bbox": [
+      -187.27875,
+      17.482763,
+      -63.84649,
+      73.028149
+    ],
+    "features": [
+      {
+        "bbox": [
+          -180.0,
+          17.482763,
+          -63.84649,
+          73.028149
+        ],
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                [
+                  -125.91464,
+                  39.117064
+                ],
+                [
+                  -118.0242,
+                  30.339299
+                ],
+                [
+                  -103.705,
+                  26.241426
+                ],
+                [
+                  -93.25166,
+                  25.315093
+                ],
+                [
+                  -79.718128,
+                  24.413675
+                ],
+                [
+                  -74.702064,
+                  29.120678
+                ],
+                [
+                  -72.5199,
+                  36.403689
+                ],
+                [
+                  -63.84649,
+                  45.129239
+                ],
+                [
+                  -68.308757,
+                  48.799175
+                ],
+                [
+                  -80.089269,
+                  44.973849
+                ],
+                [
+                  -84.728615,
+                  49.154806
+                ],
+                [
+                  -128.21967,
+                  49.456632
+                ],
+                [
+                  -125.91464,
+                  39.117064
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -175.4655,
+                  50.146797
+                ],
+                [
+                  -165.29097,
+                  52.146747
+                ],
+                [
+                  -131.11636,
+                  52.519119
+                ],
+                [
+                  -128.57951,
+                  54.544428
+                ],
+                [
+                  -131.70736,
+                  59.006849
+                ],
+                [
+                  -137.61016,
+                  60.395333
+                ],
+                [
+                  -132.6267,
+                  66.080472
+                ],
+                [
+                  -132.63663,
+                  70.817779
+                ],
+                [
+                  -152.2889,
+                  73.028149
+                ],
+                [
+                  -167.36442,
+                  70.855537
+                ],
+                [
+                  -168.88119,
+                  66.523762
+                ],
+                [
+                  -169.64794,
+                  63.452002
+                ],
+                [
+                  -167.4695,
+                  59.770905
+                ],
+                [
+                  -161.08788,
+                  57.497714
+                ],
+                [
+                  -165.34056,
+                  55.840965
+                ],
+                [
+                  -180.0,
+                  55.840965
+                ],
+                [
+                  -180.0,
+                  50.146797
+                ],
+                [
+                  -175.4655,
+                  50.146797
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -160.9143,
+                  21.541938
+                ],
+                [
+                  -155.33276,
+                  17.944995
+                ],
+                [
+                  -153.68633,
+                  19.814783
+                ],
+                [
+                  -159.48631,
+                  23.173749
+                ],
+                [
+                  -160.9143,
+                  21.541938
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -67.429249,
+                  17.70315
+                ],
+                [
+                  -64.744004,
+                  17.482763
+                ],
+                [
+                  -64.221524,
+                  17.94012
+                ],
+                [
+                  -65.182583,
+                  18.601351
+                ],
+                [
+                  -67.3644,
+                  18.738301
+                ],
+                [
+                  -67.429249,
+                  17.70315
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -170.94436,
+                  -14.453833
+                ],
+                [
+                  -169.32365,
+                  -14.45514
+                ],
+                [
+                  -169.34515,
+                  -13.997286
+                ],
+                [
+                  -170.96858,
+                  -13.988558
+                ],
+                [
+                  -170.94436,
+                  -14.453833
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  143.7344,
+                  16.21058
+                ],
+                [
+                  143.68114,
+                  12.97848
+                ],
+                [
+                  148.24349,
+                  12.94862
+                ],
+                [
+                  147.87243,
+                  16.0302
+                ],
+                [
+                  143.7344,
+                  16.21058
+                ]
+              ]
+            ]
+          ],
+          "type": "MultiPolygon"
+        },
+        "id": "US",
+        "properties": {
+          "channel": "TUFZMDRARk9OVi1Fd2t2VQ==",
+          "region": "US",
+          "ch_config": {
+            "mp_channel": "SkFOMTdfYkRIbi1yT2NDTA=="
+          }
+        },
+        "type": "Feature"
+      },
+      {
+        "bbox": [
+          172.72125,
+          50.146797,
+          180.0,
+          55.840965
+        ],
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                180.0,
+                55.840965
+              ],
+              [
+                180.0,
+                50.146797
+              ],
+              [
+                172.72125,
+                50.976078
+              ],
+              [
+                180.0,
+                55.840965
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "id": "US_Alaska_East",
+        "properties": {
+          "channel": "TUFZMDRARk9OVi1Fd2t2VQ==",
+          "region": "US_Alaska_East",
+          "ch_config": {
+            "mp_channel": "SkFOMTdfYkRIbi1yT2NDTA=="
+          }
+        },
+        "type": "Feature"
+      }
+    ],
+    "type": "FeatureCollection",
+    "SafetyAlertCoverageDetails_v1": [
+      {
+        "Region": "USA",
+        "CountryOfRelevance": "USA",
+        "LivabilityChannelPrefix": "liv2",
+        "StartingSWLat": -90.0,
+        "StartingSWLon": -180.0,
+        "SWLat": 30.0,
+        "SWLon": -126.8,
+        "NELat": 50.0,
+        "NELon": -113.2,
+        "GridSizeInDegree": 0.2,
+        "gridLatOffset": 0.1,
+        "gridLonOffset": 0.1,
+        "GridZoom": 10.0,
+        "RefreshRate": 72000.0,
+        "ChannelTopic": "com.apple.aps.mantis.safetyalert",
+        "SafetyAlertSupportedChannelsForRegion": [
+          {
+            "ChannelType": 0,
+            "ParticipationPercentage": 100.0,
+            "ChannelName": [
+              "ewus"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "default": {
+    "config": {
+      "metrics": {
+        "rmEnable": true,
+        "rmPeriodInSeconds": 86400.0
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+",
+    operator: .greaterThan,
+    value: .int(320000),
+    reasoning: "High quality audio typically >320 kbps (320000 bps)",
+    confidence: 0.85
+  )
+
+**Important Notes:**
+- Always use friendly attribute names in your output
+- For dates, use ISO 8601 format with UTC timezone (Z suffix)
+- Current date is 2024-12-15 (use for relative date calculations)
+- File sizes are in bytes (not KB/MB/GB)
+- Duration is in seconds (not minutes/hours)
+- Bit rates are in bits per second (not kbps/Mbps)
+- Choose the most appropriate attribute for the constraint
+
+**Confidence Score:**
+
+You must provide a confidence score (0.0-1.0) indicating how well this clause fits the attribute domain.
+
+Ask yourself: "Is this expression clearly about a FILE/ITEM ATTRIBUTE (size, author, dimensions, duration), or could it be something else?"
+
+**High confidence (0.8-1.0):**
+- Clear attribute constraints: "larger than 10MB", "created by John", "width > 1920px"
+- Explicit metadata: "size", "author", "title", "width", "height", "duration"
+- Numeric comparisons: "more than 5 pages", "longer than 30 minutes"
+- Explicit thresholds: "4K resolution", "high bit rate", "small file"
+
+**Medium confidence (0.5-0.7):**
+- Qualitative terms: "large", "small", "important", "high quality"
+- Vague attributes: "related to", "similar to"
+- Implicit thresholds: "long video" (what's long?), "big file" (how big?)
+- Ambiguous constraints: "recent" (could be temporal or attribute)
+
+**Low confidence (0.0-0.4):**
+- Content type terms: "PDF", "email", "document", "image" (types, not attributes)
+- Temporal terms: "yesterday", "recent", "last week" (temporal, not attributes)
+- Keywords only: "roses bloom", "meeting" (text search, not attribute constraints)
+- Pure text search: "contains the word roses" (keyword, not attribute)
+- Location phrases: "in Documents", "Paris" (location, not attribute)
+
+**Key Insight:** Attribute expressions describe PROPERTIES of items (size, author, dimensions, dates). If the expression describes WHAT (content type) or WHEN (temporal), confidence should be low.
+
+Confidence < 0.7 signals that this clause should be routed to a different agent or the Ambiguity Handler.
+
+**Output:** ResolvedAttribute with attribute (friendly name), operator, value, reasoning, and confidence

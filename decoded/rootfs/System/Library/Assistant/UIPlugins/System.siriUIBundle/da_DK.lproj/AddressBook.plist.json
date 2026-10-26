@@ -1,0 +1,56 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Hvad er Emilies adresse?",
+            "Hvad er Susanne Pedersens telefonnummer?",
+            "Hvornår har min kone fødselsdag?",
+            "Vis Lindas private e-mailadresse",
+            "Hvad er adressen på min brors arbejde?"
+          ]
+        }
+      ],
+      "SectionName": "Spørge om kontakter"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Vis Jesper Andersen",
+            "Find personer med navnet Pedersen"
+          ]
+        }
+      ],
+      "SectionName": "Søge efter kontakter"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Min mor er Susanne Pedersen",
+            "Peter Sørensen er min bror"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ring til min bror på arbejdet"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime min bror på arbejdet"
+          ]
+        }
+      ],
+      "SectionName": "Forhold"
+    }
+  ]
+}

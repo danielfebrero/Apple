@@ -1,0 +1,42 @@
+{
+  "CFBundleName": "Podcasts",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "AssistantDomains": {
+    "com.apple.ace.media": {
+      "PlayPodcasts": "POPlayPodcasts",
+      "PlayPodcastCollection": "POPlayPodcastCollection",
+      "PlayPodcastEpisode": "POPlayPodcastEpisode",
+      "PlayPodcastStation": "POPlayPodcastStation",
+      "BasicPodcastAppSearch": "POBasicPodcastAppSearch",
+      "SubscribeToPodcastCollection": "POSubscribeToPodcastCollection",
+      "BasicPodcastAppSearchCompleted": "POBasicPodcastAppSearchCompleted"
+    }
+  },
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleVersion": "50.8",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "Podcasts",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.Podcasts",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "CFBundleSignature": "????",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "",
+  "AssistantSyncAnchorKeys": {
+    "com.apple.media.podcasts": "POPodcastSyncHandler"
+  }
+}

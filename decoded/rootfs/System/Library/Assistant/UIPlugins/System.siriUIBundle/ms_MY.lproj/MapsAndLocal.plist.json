@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Tunjukkan saya arah ke rumah",
+            "Dapatkan saya arah ke Yosemite",
+            "Arah ke tempat kerja ayah saya",
+            "Dapatkan saya arah dari San Francisco ke Santa Barbara",
+            "Tunjukkan saya arah berjalan ke rumah Julie"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "Apakah pusingan saya yang seterusnya?",
+            "Adakah kita telah sampai?",
+            "Apakah anggaran masa ketibaan saya?",
+            "Cari stesen minyak"
+          ]
+        }
+      ],
+      "SectionName": "NAVIGAsi"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Tunjukkan saya Jambatan Pulau Pinang",
+            "Tunjukkan saya peta Kuala Lumpur City Center"
+          ]
+        }
+      ],
+      "SectionName": "peta"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Cari kedai kopi berdekatan saya",
+            "Cari kedai gunting rambut terbaik",
+            "Di manakah Apple Store terdekat?"
+          ]
+        }
+      ],
+      "SectionName": "perniagaan tempatan"
+    }
+  ]
+}

@@ -1,0 +1,2193 @@
+{
+  "$version": 100000,
+  "$archiver": "VFXKeyedArchiver",
+  "$top": {
+    "root": "UID(1)"
+  },
+  "$objects": [
+    "$null",
+    {
+      "rootNode": "UID(273)",
+      "screenSpaceAmbientOcclusionRadius": 1.0,
+      "screenSpaceReflectionObjectThickness": 0.25,
+      "$class": "UID(429)",
+      "fogDensityExponent": 1.0,
+      "screenSpaceAmbientOcclusionIntensity": 1.0,
+      "background": "UID(406)",
+      "preferredConfiguration": "UID(271)",
+      "fogColor": "UID(424)",
+      "fogStartDistance": 0.0,
+      "endTime": 0.0,
+      "version": 1,
+      "wantsScreenSpaceReflection": false,
+      "screenSpaceReflectionQuality": 0,
+      "screenSpaceReflectionThicknessMode": 0,
+      "frameRate": 60.0,
+      "shaderCacheConfigurations": "UID(0)",
+      "assetRegistry": "UID(2)",
+      "screenSpaceAmbientOcclusionEnableBentNormal": false,
+      "triggerManager": "UID(426)",
+      "entityID": "UID(428)",
+      "wantsScreenSpaceAmbientOcclusion": false,
+      "screenSpaceAmbientOcclusionQuality": 1,
+      "environment": "UID(407)",
+      "stateManager": "UID(408)",
+      "startTime": 0.0,
+      "fogEndDistance": 0.0
+    },
+    {
+      "root": "UID(3)",
+      "$class": "UID(270)"
+    },
+    {
+      "childNodes": "UID(5)",
+      "$class": "UID(18)",
+      "name": "UID(0)",
+      "identifier": "UID(4)",
+      "isGroup": true
+    },
+    "7307BA21-2029-4577-95FD-7E36FB9AF172",
+    {
+      "NS.objects": [
+        "UID(6)",
+        "UID(19)",
+        "UID(27)",
+        "UID(36)",
+        "UID(46)",
+        "UID(55)",
+        "UID(132)",
+        "UID(216)",
+        "UID(224)",
+        "UID(232)",
+        "UID(234)",
+        "UID(236)",
+        "UID(238)",
+        "UID(240)",
+        "UID(249)",
+        "UID(257)"
+      ],
+      "$class": "UID(13)"
+    },
+    {
+      "asset": "UID(8)",
+      "$class": "UID(18)",
+      "identifier": "UID(7)"
+    },
+    "10D62C19-4839-4FCC-9587-AE5828254E15",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(9)",
+      "name": "UID(16)",
+      "$class": "UID(17)"
+    },
+    {
+      "coreHandle": "UID(10)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(11)",
+      "$class": "UID(14)",
+      "bindings": "UID(12)"
+    },
+    "C81A9ACD-7636-4D5D-A883-C64BC382E9ED",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    {
+      "$classname": "NSMutableArray",
+      "$classes": [
+        "NSMutableArray",
+        "NSArray",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "VFXCoreEntityHandle",
+      "$classes": [
+        "VFXCoreEntityHandle",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "VFXBehaviorGraph",
+      "$classes": [
+        "VFXBehaviorGraph",
+        "NSObject"
+      ]
+    },
+    "SDF Texture",
+    {
+      "$classname": "VFXCoreAsset",
+      "$classes": [
+        "VFXCoreAsset",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "VFXAssetNode",
+      "$classes": [
+        "VFXAssetNode",
+        "NSObject"
+      ]
+    },
+    {
+      "asset": "UID(21)",
+      "$class": "UID(18)",
+      "identifier": "UID(20)"
+    },
+    "612B4F4C-BA80-4657-8280-268907C3CE40",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(22)",
+      "name": "UID(26)",
+      "$class": "UID(17)"
+    },
+    {
+      "coreHandle": "UID(23)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(24)",
+      "$class": "UID(14)",
+      "bindings": "UID(25)"
+    },
+    "7895BA94-9F71-4FD1-B578-3271FCF46DFA",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "Color Ramp wand",
+    {
+      "asset": "UID(29)",
+      "$class": "UID(18)",
+      "identifier": "UID(28)"
+    },
+    "5D37FFB8-12B7-43F6-8BF1-DD46589BDCB6",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(30)",
+      "name": "UID(34)",
+      "$class": "UID(35)"
+    },
+    {
+      "coreHandle": "UID(31)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(32)",
+      "$class": "UID(14)",
+      "bindings": "UID(33)"
+    },
+    "B826FB28-26D5-4D36-9733-D70733C7A511",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "Client Texture mask",
+    {
+      "$classname": "VFXClientTextureAsset",
+      "$classes": [
+        "VFXClientTextureAsset",
+        "VFXCoreAsset",
+        "NSObject"
+      ]
+    },
+    {
+      "asset": "UID(38)",
+      "$class": "UID(18)",
+      "identifier": "UID(37)"
+    },
+    "39D16D23-90BF-4640-A3C9-8F62AAEB2468",
+    {
+      "filename": "UID(39)",
+      "behaviorGraph": "UID(40)",
+      "name": "UID(44)",
+      "isTextureSource": true,
+      "$class": "UID(45)"
+    },
+    "wand_particle.png",
+    {
+      "coreHandle": "UID(41)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(42)",
+      "$class": "UID(14)",
+      "bindings": "UID(43)"
+    },
+    "1FCA7656-14AF-4AAE-B372-E06127BBD7B3",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "wand_particle",
+    {
+      "$classname": "VFXTextureAsset",
+      "$classes": [
+        "VFXTextureAsset",
+        "VFXFileAsset",
+        "VFXCoreAsset",
+        "NSObject"
+      ]
+    },
+    {
+      "asset": "UID(48)",
+      "$class": "UID(18)",
+      "identifier": "UID(47)"
+    },
+    "6CB18E68-A4B4-48F5-A640-F906BF440096",
+    {
+      "filename": "UID(49)",
+      "behaviorGraph": "UID(50)",
+      "name": "UID(54)",
+      "isTextureSource": true,
+      "$class": "UID(45)"
+    },
+    "BackGlow_3.png",
+    {
+      "coreHandle": "UID(51)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(52)",
+      "$class": "UID(14)",
+      "bindings": "UID(53)"
+    },
+    "F0A7168B-30C7-40A9-9766-C15B0A8BBF3C",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "BackGlow_3",
+    {
+      "asset": "UID(57)",
+      "$class": "UID(18)",
+      "identifier": "UID(56)"
+    },
+    "FEC430E1-282F-4CB7-BC52-E9336A447A6F",
+    {
+      "behaviorGraph": "UID(126)",
+      "avoidsOverLighting": false,
+      "doubleSided": false,
+      "readsFromDepthBuffer": true,
+      "$class": "UID(131)",
+      "fillMode": 2,
+      "shininess": 1.0,
+      "writesToDepthBuffer": true,
+      "colorBufferWriteMask": 15,
+      "selfIlluminationOcclusion": 0.0,
+      "cullMode": 0,
+      "name": "UID(119)",
+      "shadingModel": 2,
+      "fresnelExponent": 0.0,
+      "entityID": "UID(130)",
+      "transparencyMode": 0,
+      "diffuse": "UID(113)",
+      "blendMode": 0,
+      "shadableHelper": "UID(120)",
+      "valuesForUndefinedKeys": "UID(58)",
+      "litPerPixel": true,
+      "indexOfRefraction": 1.0
+    },
+    {
+      "NS.keys": [
+        "UID(59)",
+        "UID(60)",
+        "UID(61)",
+        "UID(62)",
+        "UID(63)",
+        "UID(64)",
+        "UID(65)",
+        "UID(66)",
+        "UID(67)",
+        "UID(68)",
+        "UID(69)",
+        "UID(70)",
+        "UID(71)",
+        "UID(72)",
+        "UID(73)",
+        "UID(74)",
+        "UID(75)",
+        "UID(76)",
+        "UID(77)",
+        "UID(78)"
+      ],
+      "NS.objects": [
+        "UID(79)",
+        "UID(80)",
+        "UID(81)",
+        "UID(89)",
+        "UID(92)",
+        "UID(94)",
+        "UID(95)",
+        "UID(96)",
+        "UID(97)",
+        "UID(98)",
+        "UID(100)",
+        "UID(102)",
+        "UID(79)",
+        "UID(103)",
+        "UID(110)",
+        "UID(111)",
+        "UID(79)",
+        "UID(79)",
+        "UID(79)",
+        "UID(79)"
+      ],
+      "$class": "UID(112)"
+    },
+    "isHDR",
+    "radius",
+    "inSDF",
+    "shapeCenter",
+    "rectangleSize",
+    "applePosition",
+    "appleScale",
+    "rectangleRadius",
+    "inSDFShape",
+    "shapeDimensions",
+    "screenRatio",
+    "blobPosition",
+    "lightMode",
+    "inRamp",
+    "blobAnimationSpeed",
+    "blobDimensions",
+    "intertiaRotation",
+    "transitionToCircle",
+    "transitionToBlob",
+    "transitionToRectangle",
+    0.0,
+    0.06700006872415543,
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(57)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(61)",
+      "asset": "UID(82)",
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(83)",
+      "name": "UID(87)",
+      "$class": "UID(17)"
+    },
+    {
+      "coreHandle": "UID(84)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(85)",
+      "$class": "UID(14)",
+      "bindings": "UID(86)"
+    },
+    "0F91380D-E528-4F1C-BCA2-8031D63B6688",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "SDF Texture circle",
+    {
+      "$classname": "VFXMaterialProperty",
+      "$classes": [
+        "VFXMaterialProperty",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.pointval": "UID(90)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    "{0, 0}",
+    {
+      "$classname": "NSValue",
+      "$classes": [
+        "NSValue",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.pointval": "UID(93)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    "{0.5, 0.5}",
+    {
+      "NS.pointval": "UID(90)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    0.5897499322891235,
+    0.12300000339746475,
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(57)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(67)",
+      "asset": "UID(8)",
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "NS.pointval": "UID(99)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    "{0.5, 0.5}",
+    {
+      "NS.pointval": "UID(101)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    "{1, 1}",
+    {
+      "NS.pointval": "UID(90)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(57)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(72)",
+      "asset": "UID(104)",
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(105)",
+      "name": "UID(109)",
+      "$class": "UID(17)"
+    },
+    {
+      "coreHandle": "UID(106)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(107)",
+      "$class": "UID(14)",
+      "bindings": "UID(108)"
+    },
+    "A9DAFD72-910B-4566-BC9E-11C7ECF047F5",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "Color Ramp Apple dark",
+    0.699999988079071,
+    0.20000000298023224,
+    {
+      "$classname": "NSMutableDictionary",
+      "$classes": [
+        "NSMutableDictionary",
+        "NSDictionary",
+        "NSObject"
+      ]
+    },
+    {
+      "minificationFilter": 2,
+      "propertyType": 2,
+      "mipFilter": 2,
+      "parent": "UID(57)",
+      "isCommonProfileProperty": 1,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "color": "UID(114)",
+      "mappingChannel": 0,
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "$class": "UID(118)",
+      "NSComponents": {
+        "$bytes_utf8": "0.7353569865 0.7353569865 0.7353569865 1"
+      },
+      "NSRGB": {
+        "$bytes_utf8": "0.6803949475 0.6803949475 0.6803949475\u0000"
+      },
+      "NSColorSpace": 1,
+      "NSCustomColorSpace": "UID(115)",
+      "NSLinearExposure": {
+        "$bytes_utf8": "1"
+      }
+    },
+    {
+      "NSICC": "UID(116)",
+      "$class": "UID(117)",
+      "NSSpaceID": 14
+    },
+    {
+      "$bytes_base64": "AAAMSExpbm8CEAAAbW50clJHQiBYWVogB84AAgAJAAYAMQAAYWNzcE1TRlQAAAAASUVDIHNSR0IAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1IUCAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARY3BydAAAAVAAAAAzZGVzYwAAAYQAAABsd3RwdAAAAfAAAAAUYmtwdAAAAgQAAAAUclhZWgAAAhgAAAAUZ1hZWgAAAiwAAAAUYlhZWgAAAkAAAAAUZG1uZAAAAlQAAABwZG1kZAAAAsQAAACIdnVlZAAAA0wAAACGdmlldwAAA9QAAAAkbHVtaQAAA/gAAAAUbWVhcwAABAwAAAAkdGVjaAAABDAAAAAMclRSQwAABDwAAAgMZ1RSQwAABDwAAAgMYlRSQwAABDwAAAgMdGV4dAAAAABDb3B5cmlnaHQgKGMpIDE5OTggSGV3bGV0dC1QYWNrYXJkIENvbXBhbnkAAGRlc2MAAAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAADzUQABAAAAARbMWFlaIAAAAAAAAAAAAAAAAAAAAABYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9kZXNjAAAAAAAAABZJRUMgaHR0cDovL3d3dy5pZWMuY2gAAAAAAAAAAAAAABZJRUMgaHR0cDovL3d3dy5pZWMuY2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGVzYwAAAAAAAAAuSUVDIDYxOTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIgc3BhY2UgLSBzUkdCAAAAAAAAAAAAAAAuSUVDIDYxOTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIgc3BhY2UgLSBzUkdCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRlc2MAAAAAAAAALFJlZmVyZW5jZSBWaWV3aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25kaXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB2aWV3AAAAAAATpP4AFF8uABDPFAAD7cwABBMLAANcngAAAAFYWVogAAAAAABMCVYAUAAAAFcf521lYXMAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAKPAAAAAnNpZyAAAAAAQ1JUIGN1cnYAAAAAAAAEAAAAAAUACgAPABQAGQAeACMAKAAtADIANwA7AEAARQBKAE8AVABZAF4AYwBoAG0AcgB3AHwAgQCGAIsAkACVAJoAnwCkAKkArgCyALcAvADBAMYAywDQANUA2wDgAOUA6wDwAPYA+wEBAQcBDQETARkBHwElASsBMgE4AT4BRQFMAVIBWQFgAWcBbgF1AXwBgwGLAZIBmgGhAakBsQG5AcEByQHRAdkB4QHpAfIB+gIDAgwCFAIdAiYCLwI4AkECSwJUAl0CZwJxAnoChAKOApgCogKsArYCwQLLAtUC4ALrAvUDAAMLAxYDIQMtAzgDQwNPA1oDZgNyA34DigOWA6IDrgO6A8cD0wPgA+wD+QQGBBMEIAQtBDsESARVBGMEcQR+BIwEmgSoBLYExATTBOEE8AT+BQ0FHAUrBToFSQVYBWcFdwWGBZYFpgW1BcUF1QXlBfYGBgYWBicGNwZIBlkGagZ7BowGnQavBsAG0QbjBvUHBwcZBysHPQdPB2EHdAeGB5kHrAe/B9IH5Qf4CAsIHwgyCEYIWghuCIIIlgiqCL4I0gjnCPsJEAklCToJTwlkCXkJjwmkCboJzwnlCfsKEQonCj0KVApqCoEKmAquCsUK3ArzCwsLIgs5C1ELaQuAC5gLsAvIC+EL+QwSDCoMQwxcDHUMjgynDMAM2QzzDQ0NJg1ADVoNdA2ODakNww3eDfgOEw4uDkkOZA5/DpsOtg7SDu4PCQ8lD0EPXg96D5YPsw/PD+wQCRAmEEMQYRB+EJsQuRDXEPURExExEU8RbRGMEaoRyRHoEgcSJhJFEmQShBKjEsMS4xMDEyMTQxNjE4MTpBPFE+UUBhQnFEkUahSLFK0UzhTwFRIVNBVWFXgVmxW9FeAWAxYmFkkWbBaPFrIW1hb6Fx0XQRdlF4kXrhfSF/cYGxhAGGUYihivGNUY+hkgGUUZaxmRGbcZ3RoEGioaURp3Gp4axRrsGxQbOxtjG4obshvaHAIcKhxSHHscoxzMHPUdHh1HHXAdmR3DHeweFh5AHmoelB6+HukfEx8+H2kflB+/H+ogFSBBIGwgmCDEIPAhHCFIIXUhoSHOIfsiJyJVIoIiryLdIwojOCNmI5QjwiPwJB8kTSR8JKsk2iUJJTglaCWXJccl9yYnJlcmhya3JugnGCdJJ3onqyfcKA0oPyhxKKIo1CkGKTgpaymdKdAqAio1KmgqmyrPKwIrNitpK50r0SwFLDksbiyiLNctDC1BLXYtqy3hLhYuTC6CLrcu7i8kL1ovkS/HL/4wNTBsMKQw2zESMUoxgjG6MfIyKjJjMpsy1DMNM0YzfzO4M/E0KzRlNJ402DUTNU01hzXCNf02NzZyNq426TckN2A3nDfXOBQ4UDiMOMg5BTlCOX85vDn5OjY6dDqyOu87LTtrO6o76DwnPGU8pDzjPSI9YT2hPeA+ID5gPqA+4D8hP2E/oj/iQCNAZECmQOdBKUFqQaxB7kIwQnJCtUL3QzpDfUPARANER0SKRM5FEkVVRZpF3kYiRmdGq0bwRzVHe0fASAVIS0iRSNdJHUljSalJ8Eo3Sn1KxEsMS1NLmkviTCpMcky6TQJNSk2TTdxOJU5uTrdPAE9JT5NP3VAnUHFQu1EGUVBRm1HmUjFSfFLHUxNTX1OqU/ZUQlSPVNtVKFV1VcJWD1ZcVqlW91dEV5JX4FgvWH1Yy1kaWWlZuFoHWlZaplr1W0VblVvlXDVchlzWXSddeF3JXhpebF69Xw9fYV+zYAVgV2CqYPxhT2GiYfViSWKcYvBjQ2OXY+tkQGSUZOllPWWSZedmPWaSZuhnPWeTZ+loP2iWaOxpQ2maafFqSGqfavdrT2una/9sV2yvbQhtYG25bhJua27Ebx5veG/RcCtwhnDgcTpxlXHwcktypnMBc11zuHQUdHB0zHUodYV14XY+dpt2+HdWd7N4EXhueMx5KnmJeed6RnqlewR7Y3vCfCF8gXzhfUF9oX4BfmJ+wn8jf4R/5YBHgKiBCoFrgc2CMIKSgvSDV4O6hB2EgITjhUeFq4YOhnKG14c7h5+IBIhpiM6JM4mZif6KZIrKizCLlov8jGOMyo0xjZiN/45mjs6PNo+ekAaQbpDWkT+RqJIRknqS45NNk7aUIJSKlPSVX5XJljSWn5cKl3WX4JhMmLiZJJmQmfyaaJrVm0Kbr5wcnImc951kndKeQJ6unx2fi5/6oGmg2KFHobaiJqKWowajdqPmpFakx6U4pammGqaLpv2nbqfgqFKoxKk3qamqHKqPqwKrdavprFys0K1ErbiuLa6hrxavi7AAsHWw6rFgsdayS7LCszizrrQltJy1E7WKtgG2ebbwt2i34LhZuNG5SrnCuju6tbsuu6e8IbybvRW9j74KvoS+/796v/XAcMDswWfB48JfwtvDWMPUxFHEzsVLxcjGRsbDx0HHv8g9yLzJOsm5yjjKt8s2y7bMNcy1zTXNtc42zrbPN8+40DnQutE80b7SP9LB00TTxtRJ1MvVTtXR1lXW2Ndc1+DYZNjo2WzZ8dp22vvbgNwF3IrdEN2W3hzeot8p36/gNuC94UThzOJT4tvjY+Pr5HPk/OWE5g3mlucf56noMui86Ubp0Opb6uXrcOv77IbtEe2c7ijutO9A78zwWPDl8XLx//KM8xnzp/Q09ML1UPXe9m32+/eK+Bn4qPk4+cf6V/rn+3f8B/yY/Sn9uv5L/tz/bf//"
+    },
+    {
+      "$classname": "NSColorSpace",
+      "$classes": [
+        "NSColorSpace",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "NSColor",
+      "$classes": [
+        "NSColor",
+        "NSObject"
+      ]
+    },
+    "Material circle",
+    {
+      "owner": "UID(57)",
+      "$class": "UID(125)",
+      "shaderModifiers": "UID(121)"
+    },
+    {
+      "NS.keys": [
+        "UID(122)"
+      ],
+      "NS.objects": [
+        "UID(123)"
+      ],
+      "$class": "UID(124)"
+    },
+    "VFXShaderModifierEntryPointFragment",
+    "#pragma declaration\n#define WANDEFFECT\n\ninline float2x2 rotate(float v) {\n    float a = cos(v);\n    float b = sin(v);\n    return float2x2(a,-b,b,a);\n}\n\nhalf box2d(half2 p, half2 b, half r)\n{\n    half2 q = abs(p) - b + r;\n    return length(max(q, 0.h)) + min(max(q.x, q.y), 0.h) - r;\n}\n\n//------------------------------------------------------\n// Blob\n//------------------------------------------------------\nstruct Blob {\n    const float metaSmooth = 0.12;\n    const float metaSize = 0.37;\n    const float metaOffset = 0.18;\n    const float offsetSpeed = 1.3;\n    \n    float smin(float a, float b, float k)\n    {\n        float h = max(k-abs(a-b), 0.0)/k;\n        return min(a, b) - h*h*k*(1.0/4.0);\n    }\n\n\n    // Precomputed value before raymarch loop\n    float2x2 rot;\n    float4 metaPosSize[4];\n    \n    void init(float time, float inertiaRotation) {\n        rot = rotate(time*0.4*M_PI_2_F + inertiaRotation);\n        \n        // precalc metaball pos & size\n        float ct = cos(time * offsetSpeed) * metaSize * metaOffset;\n        float st = sin(time * offsetSpeed) * metaSize * metaOffset;\n        metaPosSize[0] = float4( st*1.1, st,  0.0, metaSize * 1.);\n        metaPosSize[1] = float4(-st*1.2, st,  0.21, metaSize * 1.0);\n        metaPosSize[2] = float4( st * 1.4, ct * 1.3, -0.2,        metaSize * 1.0);\n        metaPosSize[3] = float4( st,-ct,  0.1,        metaSize  );\n    }\n    \n    \n    float map(float2 p) {\n        float2 pp = rot * p;\n        float d0 = length(pp - metaPosSize[0].xy) - metaPosSize[0].w;\n        float d1 = length(pp - metaPosSize[1].xy) - metaPosSize[1].w;\n        float d2 = length(pp - metaPosSize[2].xy) - metaPosSize[2].w;\n        float d3 = length(pp - metaPosSize[3].xy) - metaPosSize[3].w;\n\n        float d = smin(d0, d1, metaSmooth);\n        d = smin(d,d2, metaSmooth);\n        d = smin(d,d3, metaSmooth);\n        \n        return d;\n    }\n    \n    float3 normal(float2 p, float d) {\n        float2 eps = float2(.01, 0.);\n        float3 n;\n        n.x = d - map(p-eps.xy);\n        n.y = d - map(p-eps.yx);\n        return n /= eps.x*2.;\n    }\n};\n\n\n\n#pragma arguments\nfloat lightMode,\nfloat radius,\nfloat2 screenRatio,\nfloat2 applePosition,\nfloat transitionToBlob,\nfloat transitionToCircle,\nfloat transitionToRectangle,\nfloat2 blobPosition,\nfloat blobDimensions,\nfloat blobAnimationSpeed,\nfloat appleScale,\nfloat isHDR,\nfloat intertiaRotation,\nfloat2 shapeCenter,\nfloat2 shapeDimensions,\ntexture2d inSDF,\ntexture2d inSDFShape,\ntexture1d inRamp,\nfloat2 rectangleSize;\nfloat rectangleRadius;\n\n#pragma body\nconstexpr sampler smp_repeat(filter::linear, address::repeat);\nconstexpr sampler smp_border_white(filter::linear, address::clamp_to_edge, border_color::opaque_white);\nfloat time = vfx_frame.time;\n\nhalf st = (1- transitionToCircle);\nst = smoothstep(0.0h,0.5h,st);\n\nfloat2 uv = _surface.diffuseTexcoord;\nfloat2 effectPosition = mix(applePosition, blobPosition, transitionToBlob);\neffectPosition.x *= -1.;\nfloat2 appleScale2 = mix(appleScale, blobDimensions, transitionToBlob);\nfloat ss = max(shapeDimensions.x, shapeDimensions.y) * 3;\nappleScale2 = mix(appleScale2, ss, st);\nfloat2 UVapple = (uv - 0.5) + effectPosition ;\nUVapple *= screenRatio;\nUVapple /= appleScale2;\nUVapple += 0.5;\n\nhalf c = inSDF.sample(smp_border_white, float2(UVapple.x, UVapple.y)).x;\n\nfloat2 shapeUV = uv;\n#ifdef WANDEFFECT\nhalf shape = inSDFShape.sample(smp_border_white, float2(shapeUV.x, shapeUV.y)).x;\nc = mix(c, shape, st);\n\n#endif\n\n\n//gradient\nshapeUV += effectPosition;\nconst float texWidth = inSDF.get_width();\nconst float kStep = 8./texWidth;\nconst float2 eps = float2(kStep, 0.);\nfloat2 grad =  float2(inSDF.sample(smp_border_white, shapeUV + eps.xy).x - inSDF.sample(smp_border_white, shapeUV - eps.xy).x,\n                      inSDF.sample(smp_border_white, shapeUV + eps.yx).x - inSDF.sample(smp_border_white, shapeUV - eps.yx).x);\ngrad /= (2.*kStep); // normalize\n\n// blob\nif (transitionToBlob > 0.0001)\n{\n    float2 uvBlob = (float2(uv.x, uv.y) - 0.5) + float2(effectPosition.x, effectPosition.y);\n    uvBlob.y = -uvBlob.y;\n    uvBlob *= screenRatio;\n    uvBlob /= blobDimensions;\n \n    Blob blob;\n    blob.init(time * blobAnimationSpeed, intertiaRotation);\n    float blobD = blob.map(uvBlob);\n    \n    c = mix(c, half(blobD), half(transitionToBlob));\n    \n    uv = (uv + effectPosition);\n    float3 ro = vfx_frame.inverseViewTransform.columns[3].xyz;\n    float2 ndc = float2(uv.x*2.-1., (1.-uv.y)*2.-1.) / 10;\n    float aspect = vfx_frame.projectionTransform.columns[1].y / vfx_frame.projectionTransform.columns[0].x;\n    float tanHalfFovY = 1.0f / vfx_frame.projectionTransform[1][1];\n    float3 rd = normalize( (ndc.x * vfx_frame.inverseViewTransform.columns[0].xyz * tanHalfFovY * aspect) + (ndc.y * vfx_frame.inverseViewTransform.columns[1].xyz * tanHalfFovY) - vfx_frame.inverseViewTransform.columns[2].xyz);\n    half planeT = -half(ro.z)/half(rd.z);\n    half3 planeP = half3(ro) + half3(rd) * planeT;\n    \n    if (transitionToRectangle > 0.5)\n    {\n        half shapeBox = box2d(half2(planeP.x, planeP.y), half2(rectangleSize), mix(0.4, rectangleRadius, pow(transitionToBlob, 0.5)));\n        c = mix(c, shapeBox, pow(half(transitionToBlob), 0.7h));\n    }\n    \n    grad = mix(grad, blob.normal(uvBlob, blob.map(uvBlob)).xy, transitionToBlob);\n}\n\n// ramp\nfloat rampUV = atan2(grad.x, grad.y);\nrampUV = (rampUV + M_PI_F) / (M_PI_F * 2);\nrampUV += fract(time * 0.13);\nfloat4 rampColor = inRamp.sample(smp_repeat, rampUV);\nfloat colorMult = mix(1.1,1.1,lightMode);\nif (isHDR>0.5)\n    colorMult = mix(1.1,1.1,lightMode); //HDR\nrampColor.rgb = pow(rampColor.rgb * colorMult, mix(0.6,0.7,lightMode));\n\nrampColor = mix(1, rampColor, min(transitionToCircle * 2 + 0.3, 1.0)); //WAND\n\n// outline\nhalf outlineWidth = radius;\noutlineWidth *= mix(appleScale, 1.0, pow(transitionToCircle, 4));\noutlineWidth *= transitionToCircle; //WAND\n\nhalf smooth = mix(0, 20, transitionToCircle) / texWidth;\nfloat outline = smoothstep(outlineWidth+0.h, outlineWidth-smooth, abs(c));\n\n//trying to add the lighter border colors\noutlineWidth *= 0.95;\nfloat outline2 = 0.0 * smoothstep(outlineWidth + 0.001h, outlineWidth - 0.001h, abs(c)) * pow(smoothstep(outlineWidth - 0.05h, outlineWidth + 0.000h, abs(c)), 5.h);\n\nfloat outline3 = 1 * smoothstep(outlineWidth + 0.001h, outlineWidth - 0.004h, abs(c)) * pow(smoothstep(outlineWidth - 0.14h, outlineWidth + 0.000h, abs(c)), 5.h);\noutline3 = pow(outline3, 1.3);\n\noutline2 += outline3;\nfloat insideMult = mix(0.1, 0.3,lightMode);\n\n//\noutlineWidth *= 0.5;\nhalf ttc = (half)transitionToCircle+ 0.00001h;\nhalf rampSize = mix(appleScale,1,transitionToCircle);\nif (lightMode < 0.5)\n{\n    rampColor.rgb *=  1 + 0.5 * outline2; \n    \n    //outside ramp\n    outline += pow(smoothstep((outlineWidth + (0.26h * rampSize)) * ttc, (outlineWidth - 0.01h) * ttc, abs(c)), 3.9h) * 0.7; \n}\nelse\n{\n    rampColor.rgb *=  1 + 0.4 * outline2; \n    \n    //outside ramp\n    outline += pow(smoothstep((outlineWidth + (0.18h * rampSize)) * ttc, (outlineWidth - 0.01h) * ttc, abs(c)), 3.5h) * 0.7; \n}\n\n\nfloat4 out_color = float4(rampColor) *  saturate(outline);\n_output.color = float4(out_color * pow(1-transitionToBlob, 1.5)) * pow(transitionToCircle, 0.1);\n",
+    {
+      "$classname": "NSDictionary",
+      "$classes": [
+        "NSDictionary",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "VFXShadableHelper",
+      "$classes": [
+        "VFXShadableHelper",
+        "NSObject"
+      ]
+    },
+    {
+      "coreHandle": "UID(127)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(128)",
+      "$class": "UID(14)",
+      "bindings": "UID(129)"
+    },
+    "833AAAB2-3BE9-4142-8E48-E157E382667D",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "82B6EA45-2FE2-4D97-9AAB-CDACEE2013A2",
+    {
+      "$classname": "VFXMaterial",
+      "$classes": [
+        "VFXMaterial",
+        "NSObject"
+      ]
+    },
+    {
+      "asset": "UID(134)",
+      "$class": "UID(18)",
+      "identifier": "UID(133)"
+    },
+    "B6E0EE69-304A-4F42-AA17-7B9F3FD6A89B",
+    {
+      "transparent": "UID(205)",
+      "behaviorGraph": "UID(211)",
+      "avoidsOverLighting": false,
+      "doubleSided": true,
+      "readsFromDepthBuffer": true,
+      "$class": "UID(131)",
+      "fillMode": 2,
+      "shininess": 1.0,
+      "writesToDepthBuffer": false,
+      "colorBufferWriteMask": 15,
+      "selfIlluminationOcclusion": 0.0,
+      "cullMode": 0,
+      "name": "UID(206)",
+      "shadingModel": 2,
+      "fresnelExponent": 0.0,
+      "entityID": "UID(215)",
+      "transparencyMode": 0,
+      "diffuse": "UID(201)",
+      "blendMode": 1,
+      "shadableHelper": "UID(207)",
+      "valuesForUndefinedKeys": "UID(135)",
+      "litPerPixel": true,
+      "indexOfRefraction": 1.0
+    },
+    {
+      "NS.keys": [
+        "UID(136)",
+        "UID(137)",
+        "UID(138)",
+        "UID(139)",
+        "UID(140)",
+        "UID(141)",
+        "UID(142)",
+        "UID(143)",
+        "UID(144)",
+        "UID(145)",
+        "UID(146)",
+        "UID(147)",
+        "UID(148)",
+        "UID(149)",
+        "UID(66)",
+        "UID(63)",
+        "UID(150)",
+        "UID(151)",
+        "UID(152)",
+        "UID(71)",
+        "UID(153)",
+        "UID(154)",
+        "UID(73)",
+        "UID(155)",
+        "UID(156)",
+        "UID(157)",
+        "UID(158)",
+        "UID(159)",
+        "UID(160)",
+        "UID(77)",
+        "UID(161)",
+        "UID(162)"
+      ],
+      "NS.objects": [
+        "UID(163)",
+        "UID(164)",
+        "UID(79)",
+        "UID(165)",
+        "UID(79)",
+        "UID(167)",
+        "UID(168)",
+        "UID(79)",
+        "UID(169)",
+        "UID(79)",
+        "UID(79)",
+        "UID(176)",
+        "UID(184)",
+        "UID(185)",
+        "UID(186)",
+        "UID(187)",
+        "UID(189)",
+        "UID(190)",
+        "UID(79)",
+        "UID(79)",
+        "UID(168)",
+        "UID(79)",
+        "UID(197)",
+        "UID(168)",
+        "UID(198)",
+        "UID(168)",
+        "UID(79)",
+        "UID(199)",
+        "UID(79)",
+        "UID(168)",
+        "UID(168)",
+        "UID(200)"
+      ],
+      "$class": "UID(112)"
+    },
+    "attractor3",
+    "attractor2",
+    "transitionToRectangle",
+    "position",
+    "transitionCircleToRectangle",
+    "transitionToShape",
+    "rectangleInnerRampMult",
+    "transitionToError",
+    "colorLUT",
+    "genmojiMode",
+    "imageScale",
+    "image",
+    "showSpiral",
+    "shapeSDF",
+    "attractor4",
+    "colorLUTBottom",
+    "transitionToRoundedRectangle",
+    "transitionToPicture",
+    "distanceFromBorder",
+    "transitionToFinalPicture",
+    "scale",
+    "opacity",
+    "intertiaRotation",
+    "processing_image",
+    "showImage",
+    "wandMode",
+    "attractor1",
+    {
+      "NS.pointval": "UID(90)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    {
+      "NS.pointval": "UID(90)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    {
+      "NS.pointval": "UID(166)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    "{-0, 0}",
+    0.9599999785423279,
+    1.0,
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(134)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(144)",
+      "asset": "UID(170)",
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(171)",
+      "name": "UID(175)",
+      "$class": "UID(17)"
+    },
+    {
+      "coreHandle": "UID(172)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(173)",
+      "$class": "UID(14)",
+      "bindings": "UID(174)"
+    },
+    "832EAF20-AC35-4CB2-88E0-9A856C95E9D6",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "Color RampTop",
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(134)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(147)",
+      "asset": "UID(177)",
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "filename": "UID(178)",
+      "behaviorGraph": "UID(179)",
+      "name": "UID(183)",
+      "isTextureSource": true,
+      "$class": "UID(45)"
+    },
+    "Screenshot 2024-03-18 at 11.51.34.png",
+    {
+      "coreHandle": "UID(180)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(181)",
+      "$class": "UID(14)",
+      "bindings": "UID(182)"
+    },
+    "DE01B533-013C-4C69-8C3C-3F252077996C",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "Screenshot 2024-03-18 at 11.51.34",
+    0.23100000619888306,
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(134)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(149)",
+      "asset": "UID(8)",
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    0.12300000339746475,
+    {
+      "NS.pointval": "UID(188)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    "{0.41818180680274963, 0.41818180680274963}",
+    {
+      "NS.pointval": "UID(90)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(134)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(151)",
+      "asset": "UID(191)",
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(192)",
+      "name": "UID(196)",
+      "$class": "UID(17)"
+    },
+    {
+      "coreHandle": "UID(193)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(194)",
+      "$class": "UID(14)",
+      "bindings": "UID(195)"
+    },
+    "4F49A5EE-731C-4C52-A761-E4E2C81B02B6",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "Color RampBottom",
+    0.699999988079071,
+    11.0,
+    {
+      "minificationFilter": 2,
+      "propertyType": 16,
+      "mipFilter": 0,
+      "parent": "UID(134)",
+      "isCommonProfileProperty": 0,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "customMaterialPropertyName": "UID(159)",
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "NS.pointval": "UID(90)",
+      "$class": "UID(91)",
+      "NS.special": 1
+    },
+    {
+      "minificationFilter": 2,
+      "propertyType": 2,
+      "mipFilter": 2,
+      "parent": "UID(134)",
+      "isCommonProfileProperty": 1,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "color": "UID(202)",
+      "mappingChannel": 0,
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "$class": "UID(118)",
+      "NSComponents": {
+        "$bytes_utf8": "0.9900990099 1 1 1"
+      },
+      "NSRGB": {
+        "$bytes_utf8": "0.9850794077 1 1\u0000"
+      },
+      "NSColorSpace": 1,
+      "NSCustomColorSpace": "UID(203)",
+      "NSLinearExposure": {
+        "$bytes_utf8": "1"
+      }
+    },
+    {
+      "NSICC": "UID(204)",
+      "$class": "UID(117)",
+      "NSSpaceID": 12
+    },
+    {
+      "$bytes_base64": "AAACGGFwcGwEAAAAbW50clJHQiBYWVogB+YAAQABAAAAAAAAYWNzcEFQUEwAAAAAQVBQTAAAAAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBs7P2jjjiFR8NttL1PetoYLwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKZGVzYwAAAPwAAAAwY3BydAAAASwAAABQd3RwdAAAAXwAAAAUclhZWgAAAZAAAAAUZ1hZWgAAAaQAAAAUYlhZWgAAAbgAAAAUclRSQwAAAcwAAAAgY2hhZAAAAewAAAAsYlRSQwAAAcwAAAAgZ1RSQwAAAcwAAAAgbWx1YwAAAAAAAAABAAAADGVuVVMAAAAUAAAAHABEAGkAcwBwAGwAYQB5ACAAUAAzbWx1YwAAAAAAAAABAAAADGVuVVMAAAA0AAAAHABDAG8AcAB5AHIAaQBnAGgAdAAgAEEAcABwAGwAZQAgAEkAbgBjAC4ALAAgADIAMAAyADJYWVogAAAAAAAA9tUAAQAAAADTLFhZWiAAAAAAAACD3wAAPb////+7WFlaIAAAAAAAAEq/AACxNwAACrlYWVogAAAAAAAAKDgAABELAADIuXBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbc2YzMgAAAAAAAQxCAAAF3v//8yYAAAeTAAD9kP//+6L///2jAAAD3AAAwG4="
+    },
+    {
+      "minificationFilter": 2,
+      "propertyType": 5,
+      "mipFilter": 2,
+      "parent": "UID(134)",
+      "isCommonProfileProperty": 1,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "float": 1.0,
+      "mappingChannel": 0,
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": false,
+      "intensity": 1.0
+    },
+    "material Blob",
+    {
+      "owner": "UID(134)",
+      "$class": "UID(125)",
+      "shaderModifiers": "UID(208)"
+    },
+    {
+      "NS.keys": [
+        "UID(209)"
+      ],
+      "NS.objects": [
+        "UID(210)"
+      ],
+      "$class": "UID(124)"
+    },
+    "VFXShaderModifierEntryPointFragment",
+    "\n//------------------------------------------------------\n// Blob\n//------------------------------------------------------\n#pragma declaration\n\ninline float2x2 rotate(float v) {\n    float a = cos(v);\n    float b = sin(v);\n    return float2x2(a,-b,b,a);\n}\n\nfloat smin(float a, float b, float k)\n{\n    float h = max(k-abs(a-b), 0.0)/k;\n    return min(a, b) - h*h*k*(1.0/4.0);\n}\nhalf smin(half a, half b, half k)\n{\n    half h = max(k-abs(a-b), 0.h)/k;\n    return min(a, b) - h*h*k*(1.h/4.h);\n}\nfloat smax(float a, float b, float k)\n{\n    return -smin(-a, -b, k);\n}\nhalf smax(half a, half b, half k)\n{\n    return -smin(-a, -b, k);\n}\n\nstruct Blob {\n    const float metaSmooth = 0.12;\n    const float metaSize = 0.37;\n    const float metaOffset = 0.18;\n    const float offsetSpeed = 1.3;\n    float3 attractorPos1;\n    float3 attractorPos2;\n    float3 attractorPos3;\n    float3 attractorPos4;\n    float4 rectangleData;\n    float2 shapeData;\n    \n    half box(half3 p, half3 b, half r)\n    {\n        half3 q = abs(p) - b + r;\n        return length(max(q, 0.h)) + min(max3(q.x,q.y,q.z), 0.h) - r;\n    }\n    \n    float box(float3 p, float3 b, float r)\n    {\n        float3 q = abs(p) - b + r;\n        return length(max(q,0.0)) + min(max(q.x,max(q.y,q.z)),0.0) - r;\n    }\n    \n    half box2d(half2 p, half2 b, half r)\n    {\n        half2 q = abs(p) - b + r;\n        return length(max(q, 0.h)) + min(max(q.x, q.y), 0.h) - r;\n    }\n    \n    half squircle(half2 p, half2 b, half r)\n    {\n        //return box2d(p, b, r);\n        //const float continuous_factor = 1.8;\n        const float continuous_factor = 1.3;\n        r *= continuous_factor;\n        half2 hs = b - r;\n        \n        p = abs(p); \n        \n        if(p.x < hs.x || p.y < hs.y ){\n            return box2d(p, b, 0.);\n        }\n        \n        p-= hs;\n        p /= r;//\n        \n        if( p.y>p.x ) {\n            p=p.yx;\n        };\n            \n        half n = 2.75;\n        half w = pow(p.x,n) + pow(p.y,n);\n\n        // implicit\n        //return 1000.;\n        return (pow(w,1.0h/n) - 1.) * (r);\n    }\n    \n\n    // Precomputed value before raymarch loop\n    float2x2 rot;\n    float4 metaPosSize[4];\n    \n    void init(float time, float inertiaRotation, float showAttractors, float4 rectangle, float2 shape) {\n        rot = rotate(time*0.4*M_PI_2_F + inertiaRotation);\n        \n        // precalc metaball pos & size\n        float ct = cos(time * offsetSpeed) * metaSize * metaOffset;\n        float st = sin(time * offsetSpeed) * metaSize * metaOffset;\n        metaPosSize[0] = float4( st*1.1, st,  0.0, metaSize * 1.);\n        metaPosSize[1] = float4(-st*1.2, st,  0.21, metaSize * 1.0);\n        metaPosSize[2] = float4( st * 1.4, ct * 1.3, -0.2,        metaSize * 1.0);\n        metaPosSize[3] = float4( st,-ct,  0.1,        metaSize  );\n        \n        rectangleData = rectangle;\n        rectangleData.w = pow(rectangleData.w, 0.6f);\n        shapeData = shape;\n    }\n    \n    half map(half3 p) {\n        half d = 0.0, r = 0.0;\n        half4 rect = half4(rectangleData);\n        half2 shp = half2(shapeData.xy);\n        \n        if (rect.w < 1.0 && shp.y < 1.0) {\n            // Metaballs\n            half3 pp = half3(half2x2(rot) * p.xy, p.z);\n            half d0 = length(pp - half3(metaPosSize[0].xyz)) - half(metaPosSize[0].w);\n            half d1 = length(pp - half3(metaPosSize[1].xyz)) - half(metaPosSize[1].w);\n            half d2 = length(pp - half3(metaPosSize[2].xyz)) - half(metaPosSize[2].w);\n            half d3 = length(pp - half3(metaPosSize[3].xyz)) - half(metaPosSize[3].w);\n            \n            half ms = metaSmooth;\n            d = smin(d0, d1, ms);\n            d = smin(d,d2, ms);\n            d = smin(d,d3, ms);\n        }\n        if (rect.w > 0.0) {\n            //r = box(p, half3(rect.xy, 0.4h), rect.z);\n            r = squircle(p.xy, rect.xy, rect.z);\n        }\n        d = mix(d, r, rect.w);\n        d = mix(d, shp.x, shp.y);\n        return d;\n    }\n    \n    float map(float3 p) {\n        float d = 0.0, r = 0.0;\n        float4 rect = float4(rectangleData);\n        float2 shp = float2(shapeData.xy);\n        \n        if (rect.w < 1.0 && shp.y < 1.0) {\n            // Metaballs\n            float3 pp = float3(float2x2(rot) * p.xy, p.z);\n            float d0 = length(pp - float3(metaPosSize[0].xyz)) - float(metaPosSize[0].w);\n            float d1 = length(pp - float3(metaPosSize[1].xyz)) - float(metaPosSize[1].w);\n            float d2 = length(pp - float3(metaPosSize[2].xyz)) - float(metaPosSize[2].w);\n            float d3 = length(pp - float3(metaPosSize[3].xyz)) - float(metaPosSize[3].w);\n            \n            float ms = metaSmooth;\n            d = smin(d0, d1, ms);\n            d = smin(d,d2, ms);\n            d = smin(d,d3, ms);\n        }\n        if (rect.w > 0.0) {\n            //r = box(p, float3(rect.xy, 0.4), rect.z);\n            r = squircle((half2)p.xy, (half2)rect.xy, rect.z);\n        }\n        d = mix(d, r, rect.w);\n        d = mix(d, shp.x, shp.y);\n        return d;\n    }\n    \n    float map2d(float2 p) {\n        float d = 0.0, r = 0.0;\n        float4 rect = float4(rectangleData);\n        float2 shp = float2(shapeData.xy);\n        \n        if (rect.w < 1.0 && shp.y < 1.0) {\n            float2 pp = rot * p;\n            float d0 = length(pp - metaPosSize[0].xy) - metaPosSize[0].w;\n            float d1 = length(pp - metaPosSize[1].xy) - metaPosSize[1].w;\n            float d2 = length(pp - metaPosSize[2].xy) - metaPosSize[2].w;\n            float d3 = length(pp - metaPosSize[3].xy) - metaPosSize[3].w;\n\n            d = smin(d0, d1, metaSmooth);\n            d = smin(d,d2, metaSmooth);\n            d = smin(d,d3, metaSmooth);\n        }\n        if (rect.w > 0.0)\n        {\n            //r = box(float3(p.x, p.y, 0.), float3(rectangleData.xy,1), rectangleData.z);\n            r = squircle((half2)p.xy, (half2)rect.xy, rect.z);\n        }\n        d = mix(d, r, rectangleData.w);\n        d = mix(d, shapeData.x, shapeData.y);\n        return d;\n    }\n    \n    float trace(float3 ro_i, float3 rd_i) {\n        \n        half3 ro = half3(ro_i);\n        half3 rd = half3(rd_i);\n        float t = 0.;\n        for(int i=0; i<15; i++) {\n            half d = map(rd*t + ro);\n            t += d;\n            if (d < 0.005)\n                return t;\n        }\n        return t;\n    }\n    \n    float3 normal(float3 p, float d) {\n        float2 eps = float2(.01, 0.);\n        float3 n;\n        n.x = d - map(p-eps.xyy);\n        n.y = d - map(p-eps.yxy);\n        n.z = d - map(p-eps.yyx);\n        return normalize(n);\n    }\n};\n\n//------------------------------------------------------\n// Bindings\n//------------------------------------------------------\n#pragma arguments\ntexture2d image;\ntexture2d shapeSDF;\ntexture1d colorLUT;\ntexture1d colorLUTBottom;\nfloat showImage;\nfloat imageScale;\nfloat2 position;\nfloat intertiaRotation;\nfloat scale;\nfloat opacity;\nfloat transitionToBlob;\nfloat transitionToPicture;\nfloat transitionToFinalPicture;\nfloat transitionToRectangle;\nfloat transitionToRectangleProcessing;\nfloat transitionToError;\nfloat transitionToShape;\nfloat transitionCircleToRectangle;\nfloat rectangleInnerRampMult;\nfloat lightMode; //no bool or int in custom properties\nfloat genmojiMode; //no bool or int in custom properties\nfloat distanceFromBorder;\nfloat2 rectangleSize;\nfloat rectangleRadius;\nfloat blobAnimationSpeed;\n\n\n//------------------------------------------------------\n// Entry point\n//------------------------------------------------------\n#pragma body\n\nconstexpr sampler smp_lin = sampler(filter::linear, address::repeat);\nconstexpr sampler smp_img = sampler(filter::linear, address::clamp_to_edge, mip_filter::linear, filter::linear ,mag_filter::linear, min_filter::linear);\n\nfloat time = vfx_frame.time;\n\n// Camera origin & direction\nfloat2 uv = in.fragmentPosition.xy * vfx_frame.inverseResolution;\nfloat2 shapeUV = uv;\nfloat3 ro = vfx_frame.inverseViewTransform.columns[3].xyz;\n\nfloat2 effectPosition = position;\nuv = (uv + effectPosition);\n\n//for the wand\nhalf c = shapeSDF.sample(smp_lin, shapeUV).x;\n\nfloat2 ndc = float2(uv.x*2.-1., (1.-uv.y)*2.-1.) / scale;\nfloat aspect = vfx_frame.projectionTransform.columns[1].y / vfx_frame.projectionTransform.columns[0].x;\nfloat tanHalfFovY = 1.0f / vfx_frame.projectionTransform[1][1];\nfloat3 rd = normalize( (ndc.x * vfx_frame.inverseViewTransform.columns[0].xyz * tanHalfFovY * aspect) + (ndc.y * vfx_frame.inverseViewTransform.columns[1].xyz * tanHalfFovY) - vfx_frame.inverseViewTransform.columns[2].xyz);\n\nBlob blob;\nfloat rectangleCorner = mix(min(rectangleSize.x, rectangleSize.y),rectangleRadius, pow(transitionToRectangle, 0.6));\nblob.init(vfx_frame.time * blobAnimationSpeed, intertiaRotation, 1. - transitionToPicture, float4(rectangleSize.xy,rectangleCorner, transitionToRectangle), float2(c,transitionToShape));\n\n\n// Intersection with plane z = 0\nfloat planeT = -(ro.z)/rd.z;\nfloat3 planeP = ro + rd * planeT;\n// Mix raytraced position on plane with basic 2d uv to avoid FOV deformation when going to the rectangle\nfloat planeD = blob.map2d(planeP.xy);\n\nfloat genMult = 1;\nif (genmojiMode > 0.5)\n    genMult = 1.5;\nfloat bgRadius = mix(1.1 * genMult, 7. ,transitionToRectangle);\nbgRadius *= distanceFromBorder;\nfloat2 q = in.fragmentPosition.xy * vfx_frame.inverseResolution;\nfloat radiusMask = smoothstep(0.1,0.0, pow((1.-q.x) * q.x  *(1.-q.y) * q.y,.5));\nbgRadius *= exp(radiusMask * 1.5);\nif (planeD * bgRadius > 1.h) discard_fragment();\n\nfloat2 dir = normalize(planeP.xy);\nfloat angle  = atan2(dir.y, dir.x)  / (M_PI_F * 2);\n\nfloat move_attr = 0.55 + 0.0253 * sin(time * 3. + abs(angle));\n\nfloat4 col = float4(0.);\n\nangle -= time * 0.2;\nfloat4 angle_color = mix(colorLUT.sample(smp_lin, angle * 1), float4(1.), 0.1);\n\n// Lights direction\nfloat lightZ = mix(0.4, 3.5, pow(transitionToShape, 2));\nfloat3 dirl1 = normalize(float3( 0.4, 0.7, lightZ * 0.2));\nfloat3 dirl2 = normalize(float3( 0.4,-0.7, lightZ));\nfloat3 dirl3 = normalize(float3(  -0.7, 0.4, lightZ));\n\n// Shade\nfloat planeDThreshold = mix(0.01, 0.0025, transitionToRectangle);\nif (planeD < planeDThreshold) {\n    // Trace\n    float t = blob.trace(ro,rd);\n    float3 p = ro + rd * t;\n    float d = blob.map(p);\n    float3 n = blob.normal(p, d);\n    \n    // Fake fresnel\n    float fre = saturate(1.+dot(rd,n));\n    \n    float l1 = pow(max(0., dot(n, dirl1)), 2.);\n    float l2 = pow(max(0., dot(n, dirl2)), 2.);\n    float l3 = pow(max(0., dot(n, dirl3)), 2.);\n    \n    // Lightmasks\n    float3 lightmask;\n    lightmask.r = smoothstep(0.02,1.,pow(fre,0.5)*l1);\n    lightmask.g = smoothstep(0.02,1.,fre*l3);\n    lightmask.b = smoothstep(0.02,1.,fre*l2);\n    lightmask -= pow(max(0., -n.z), 2.)*.25;\n    lightmask = saturate(lightmask);\n    \n    // Lightmasks to color LUT\n    //attractors light dots\n    float attractorIntensity = 1;\n    float la = (1. - transitionToPicture) * 0.9;\n    \n    float tile = 0.4;\n    float4 lightcol = 0;\n\n    lightcol = lightmask.r * colorLUT.sample(smp_lin, -fre * tile + (time*0.3) * 0.5 + 0.5);\n    col = (1.0-lightcol.a) * col + lightcol;\n    \n    lightcol = lightmask.g * colorLUT.sample(smp_lin, -fre * tile + (time*0.8) * 0.5);\n    col = (1.0-lightcol.a) * col + lightcol;\n    \n    lightcol = lightmask.b * colorLUTBottom.sample(smp_lin, -fre * tile + (time*1.1*0.5));\n    col = (1.0-lightcol.a) * col + lightcol;\n\n    lightcol = la * mix(angle_color, float4(1.), 0.2 * lightMode) * (1. - genmojiMode);\n    col = (1.0-lightcol.a) * col + lightcol;\n    col = pow(col, mix(0.55, 0.45, transitionToPicture)); //wrong gamma from color ramps\n\n    //rectangle ramp\n    float borderRectangle = smoothstep(-(0.05 * rectangleInnerRampMult + (1.-pow(transitionToRectangle, 0.5))*.5), 0., planeD);\n    \n    float2 uvImg = planeP.xy;\n    float rampUV = atan2(uvImg.y, uvImg.x);\n    rampUV = (rampUV ) / (M_PI_F * 2);\n    rampUV += borderRectangle * 0.3;\n    rampUV += fmod(time * -0.35, 1.0);\n    lightcol = colorLUTBottom.sample(smp_lin, rampUV);\n    lightcol *= borderRectangle*.6;\n    col *= borderRectangle;\n    col = mix(col , lightcol, transitionToRectangle);\n    col *= transitionToFinalPicture * (pow(transitionToShape, 5) * 3 + 1);\n    col *= pow(1-transitionToShape, 0.2);\n    \n    \n    // Final image\n    float4 img = 0.;\n    if (genmojiMode < 0.5) //commented for now, waiting for specs\n    {\n    }\n    if (lightMode > 0.5)\n    {\n        img = mix(1 -transitionToShape,img,transitionToRectangle);\n        img *= saturate(1.24-transitionToError);\n    }\n    \n    \n    col = (1.-col.a) * img + col;\n    \n    // Sharp exterior fade\n    col *=  mix(smoothstep(0.01, -0.005, planeD), smoothstep(0, -0.0025, planeD), transitionToRectangle);\n}\n\n// Background: outside ramp\nfloat4 background = float4(0);\nif (genmojiMode < 0.5 && (lightMode < .5))\n{\n    half bgRadius = 4;\n    background.a = 0.75 * saturate(pow(planeD <= -0.01 ? 0. : 1. - planeD * bgRadius, 5.));\n    background.a *= (1-transitionToRectangle) * 0.5;\n}\n\n\n//outside ramp\n{\n    float2 ve = normalize(uv * 0.5 - 0.5);\n    float angle  = atan2(ve.y, ve.x)  / (M_PI_F * 2);\n    angle += time*0.2;\n    \n    float s = mix(-0.005, -0.002, transitionToRectangle);\n        \n    background.a += 0.8 * saturate(pow(planeD <= s ? 0. : 1. - planeD * bgRadius, 5.)) * smoothstep(0.0, 1.0, transitionToBlob);\n    \n    //compute masks for glow colors, similar to blob lighting to get matching colors\n    half3 glowMask;\n    glowMask.r = dot(dir, (dirl1.xy));\n    glowMask.g = dot(dir, (dirl2.xy)) + 0.3h;\n    glowMask.b = dot(dir, (dirl3.xy));\n    glowMask = smoothstep(0.02, 1., pow(max(glowMask + 0.3, 0.), 2.));\n    background.rgb = colorLUT.sample(smp_lin, .75h + (time*0.3h) * 0.5h + 0.5h).rgb * glowMask.r; //top right\n    background.rgb += colorLUT.sample(smp_lin, .75h + (time*0.8h) * 0.5h ).rgb * glowMask.b; //top left\n    background.rgb += colorLUTBottom.sample(smp_lin, .75h + (time*1.1h*0.5h)).rgb * glowMask.g; //bottom right   \n    background.rgb /= max(glowMask.r + glowMask.g + glowMask.b, 0.000001h);\n    background.rgb = pow(background.rgb, 0.8h);\n\n    if (lightMode < 0.5)\n    {\n        background.a *= mix(mix(0.5, 0.4, transitionToPicture), 0.45, transitionToRectangle);\n    }\n    else\n    {\n        background.a *= mix(0.45, 0.35, transitionToRectangle);\n    }\n    \n    background *= 1-transitionToShape;\n    background.rgb *= background.a;\n}\n\n\n\n// Attractors orbs\ncol = background* (1.0-col.a) + col;\ncol = float4(col) * opacity;\n\n//error mode\nfloat3 errorCol = mix(float3(0.55,0.2,0.01), float3(0.95,0.4,0.02), lightMode); \ncol.rgb = mix(col.rgb, errorCol * col.a, transitionToError); \n\n_output.color = col;",
+    {
+      "coreHandle": "UID(212)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(213)",
+      "$class": "UID(14)",
+      "bindings": "UID(214)"
+    },
+    "DC822B8E-860C-4CE6-B660-88A258692353",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "1DBCD880-A16A-4989-8FEC-3FE2BC81C0C4",
+    {
+      "asset": "UID(218)",
+      "$class": "UID(18)",
+      "identifier": "UID(217)"
+    },
+    "08B1C4E0-E0E1-415E-9D75-7258E0DE60A7",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(219)",
+      "name": "UID(223)",
+      "$class": "UID(17)"
+    },
+    {
+      "coreHandle": "UID(220)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(221)",
+      "$class": "UID(14)",
+      "bindings": "UID(222)"
+    },
+    "721CF5AC-F651-4F18-9211-3F15B1818A66",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "Color Ramp blob",
+    {
+      "asset": "UID(226)",
+      "$class": "UID(18)",
+      "identifier": "UID(225)"
+    },
+    "5B3F4B01-D99D-4092-BDA7-82522F9EF38F",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(227)",
+      "name": "UID(231)",
+      "$class": "UID(17)"
+    },
+    {
+      "coreHandle": "UID(228)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(229)",
+      "$class": "UID(14)",
+      "bindings": "UID(230)"
+    },
+    "A195C86E-818A-4D27-81C9-27C8286AECEF",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "Color Ramp fade",
+    {
+      "asset": "UID(170)",
+      "$class": "UID(18)",
+      "identifier": "UID(233)"
+    },
+    "F083AF6C-ED24-4F02-9B06-A16F888B2ADA",
+    {
+      "asset": "UID(191)",
+      "$class": "UID(18)",
+      "identifier": "UID(235)"
+    },
+    "4A30945C-A44A-49B9-B44F-EF706BC50751",
+    {
+      "asset": "UID(104)",
+      "$class": "UID(18)",
+      "identifier": "UID(237)"
+    },
+    "6CA697F1-1F0E-4F81-83B6-F9344844F4CD",
+    {
+      "asset": "UID(82)",
+      "$class": "UID(18)",
+      "identifier": "UID(239)"
+    },
+    "EF04D4CE-E8A1-41E5-8358-9ECFC176BE8A",
+    {
+      "asset": "UID(242)",
+      "$class": "UID(18)",
+      "identifier": "UID(241)"
+    },
+    "1184B660-C175-46D6-A983-DC2E6DA05A47",
+    {
+      "filename": "UID(243)",
+      "behaviorGraph": "UID(244)",
+      "name": "UID(248)",
+      "isTextureSource": true,
+      "$class": "UID(45)"
+    },
+    "circle.png",
+    {
+      "coreHandle": "UID(245)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(246)",
+      "$class": "UID(14)",
+      "bindings": "UID(247)"
+    },
+    "66983B45-6280-404E-97EA-06081CDD2A68",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "circle",
+    {
+      "asset": "UID(251)",
+      "$class": "UID(18)",
+      "identifier": "UID(250)"
+    },
+    "B4774A9C-89D4-477B-8E39-FC705A14B030",
+    {
+      "isTextureSource": true,
+      "behaviorGraph": "UID(252)",
+      "name": "UID(256)",
+      "$class": "UID(17)"
+    },
+    {
+      "coreHandle": "UID(253)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(254)",
+      "$class": "UID(14)",
+      "bindings": "UID(255)"
+    },
+    "EB49441B-9CF2-4DDE-8502-860E3DED4E8A",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "CurvePulses",
+    {
+      "asset": "UID(259)",
+      "$class": "UID(18)",
+      "identifier": "UID(258)"
+    },
+    "C3C0DAC3-4FB5-492F-983F-6FE3D53DE62B",
+    {
+      "shadingModel": 2,
+      "blendMode": 0,
+      "colorBufferWriteMask": 15,
+      "diffuse": "UID(260)",
+      "fresnelExponent": 0.0,
+      "shininess": 1.0,
+      "indexOfRefraction": 1.0,
+      "writesToDepthBuffer": true,
+      "readsFromDepthBuffer": true,
+      "doubleSided": true,
+      "selfIlluminationOcclusion": 0.0,
+      "transparencyMode": 0,
+      "$class": "UID(131)",
+      "entityID": "UID(269)",
+      "cullMode": 0,
+      "litPerPixel": true,
+      "fillMode": 2,
+      "avoidsOverLighting": false,
+      "name": "UID(268)"
+    },
+    {
+      "minificationFilter": 2,
+      "propertyType": 2,
+      "mipFilter": 2,
+      "parent": "UID(259)",
+      "isCommonProfileProperty": 1,
+      "magnificationFilter": 2,
+      "wrapT": 1,
+      "mappingChannel": 0,
+      "asset": "UID(261)",
+      "$class": "UID(88)",
+      "wrapS": 1,
+      "isColorManaged": true,
+      "intensity": 1.0
+    },
+    {
+      "filename": "UID(262)",
+      "behaviorGraph": "UID(263)",
+      "name": "UID(267)",
+      "isTextureSource": true,
+      "$class": "UID(45)"
+    },
+    "pexels-photo-1450360.jpeg",
+    {
+      "coreHandle": "UID(264)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(265)",
+      "$class": "UID(14)",
+      "bindings": "UID(266)"
+    },
+    "CDC08C74-B538-4B4E-B033-3D060F384542",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "pexels-photo-1450360",
+    "plane-material",
+    "0E668897-5132-4F7A-9400-355820CD743A",
+    {
+      "$classname": "VFXAssetRegistry",
+      "$classes": [
+        "VFXAssetRegistry",
+        "NSObject"
+      ]
+    },
+    {
+      "$class": "UID(272)",
+      "hdr": false,
+      "pixelFormat": 0,
+      "colorSpaceName": "UID(0)",
+      "additiveAlpha": false
+    },
+    {
+      "$classname": "VFXViewConfiguration",
+      "$classes": [
+        "VFXViewConfiguration",
+        "NSObject"
+      ]
+    },
+    {
+      "paused": false,
+      "scale": {
+        "$bytes_base64": "AACAPwAAgD8AAIA/"
+      },
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "position": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "isHandTrackingRoot": false,
+      "isEyesightFrame": false,
+      "opacity": 1.0,
+      "deformers": "UID(274)",
+      "castsShadow": true,
+      "depthPrePass": false,
+      "entityID": "UID(405)",
+      "$class": "UID(293)",
+      "categoryBitMask": 1,
+      "hidden": false,
+      "childNodes": "UID(276)",
+      "renderingOrder": 0
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(275)"
+    },
+    {
+      "$classname": "NSArray",
+      "$classes": [
+        "NSArray",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.objects": [
+        "UID(277)",
+        "UID(294)",
+        "UID(325)",
+        "UID(334)",
+        "UID(343)",
+        "UID(355)",
+        "UID(366)",
+        "UID(398)"
+      ],
+      "$class": "UID(13)"
+    },
+    {
+      "behaviorGraph": "UID(287)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "position": {
+        "$bytes_base64": "AAAAAAAAAAAAAKBA"
+      },
+      "paused": false,
+      "hidden": false,
+      "renderingOrder": 0,
+      "$class": "UID(293)",
+      "isHandTrackingRoot": false,
+      "isEyesightFrame": false,
+      "entityID": "UID(292)",
+      "name": "UID(279)",
+      "castsShadow": true,
+      "depthPrePass": false,
+      "childNodes": "UID(291)",
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAA/f9/Pw=="
+      },
+      "deformers": "UID(274)",
+      "opacity": 1.0,
+      "scale": {
+        "$bytes_base64": "AACAP///fz8AAIA/"
+      },
+      "camera": "UID(278)",
+      "categoryBitMask": 1
+    },
+    {
+      "usesOrthographicProjection": 1,
+      "orthographicScale": 1.0,
+      "automaticallyAdjustsZRange": 0,
+      "zNear": 0.10000000149011612,
+      "chromaticTransform": "UID(284)",
+      "fill": 2,
+      "zFar": 10000.0,
+      "HDR": false,
+      "sensorSize": 24.0,
+      "bloom": "UID(280)",
+      "focusDistance": 2.5,
+      "$class": "UID(286)",
+      "fov": 26.991466522216797,
+      "lensBlur": "UID(282)",
+      "categoryBitMask": 0,
+      "name": "UID(279)"
+    },
+    "Camera",
+    {
+      "$class": "UID(281)",
+      "enabled": true,
+      "iterationCount": 5,
+      "colorFilter": {
+        "$bytes_base64": "JQaBP7TIdj/Jdj4/"
+      },
+      "intensity": 0.0,
+      "thresholdSmoothness": 5.0,
+      "contrast": 1.0,
+      "useHighQuality": false,
+      "saturation": 1.0,
+      "threshold": 1.0
+    },
+    {
+      "$classname": "VFXCameraEffectBloom",
+      "$classes": [
+        "VFXCameraEffectBloom",
+        "VFXCameraEffect",
+        "NSObject"
+      ]
+    },
+    {
+      "$class": "UID(283)",
+      "enabled": true,
+      "filterQuality": 0.0,
+      "radius": 0.0
+    },
+    {
+      "$classname": "VFXCameraEffectLensBlur",
+      "$classes": [
+        "VFXCameraEffectLensBlur",
+        "VFXCameraEffect",
+        "NSObject"
+      ]
+    },
+    {
+      "intensity": 0.0,
+      "maskRadius": 1.0,
+      "fromAngle": 0.0,
+      "unMultBlending": 0.0,
+      "toAngle": 0.0,
+      "sampleCount": 32.0,
+      "toZ": 1.0,
+      "toShift": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "maskEnabled": true,
+      "$class": "UID(285)",
+      "maskCenter": {
+        "$bytes_base64": "uo78PYMNOL0="
+      },
+      "color3": {
+        "$bytes_base64": "mpmZPgAAAAAAAIA/"
+      },
+      "enabled": true,
+      "fromShift": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "center": {
+        "$bytes_base64": "uo58PYMNuDw="
+      },
+      "color2": {
+        "$bytes_base64": "AAAAAAAAgD+amZk+"
+      },
+      "fromZ": 1.0,
+      "color1": {
+        "$bytes_base64": "AACAPwAAAAAAAAAA"
+      }
+    },
+    {
+      "$classname": "VFXCameraEffectChromaticTransform",
+      "$classes": [
+        "VFXCameraEffectChromaticTransform",
+        "VFXCameraEffect",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "VFXCamera",
+      "$classes": [
+        "VFXCamera",
+        "NSObject"
+      ]
+    },
+    {
+      "coreHandle": "UID(288)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(289)",
+      "$class": "UID(14)",
+      "bindings": "UID(290)"
+    },
+    "53BAF929-F2B1-4FB4-B08E-0FFCB727CBAE",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "7875FC3A-6D1C-4895-85C6-A7327E79F292",
+    {
+      "$classname": "VFXNode",
+      "$classes": [
+        "VFXNode",
+        "NSObject"
+      ]
+    },
+    {
+      "behaviorGraph": "UID(295)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "position": {
+        "$bytes_base64": "MzMzPwAAAAAK1yM8"
+      },
+      "paused": false,
+      "hidden": false,
+      "renderingOrder": 0,
+      "$class": "UID(293)",
+      "isHandTrackingRoot": false,
+      "isEyesightFrame": false,
+      "entityID": "UID(324)",
+      "name": "UID(323)",
+      "castsShadow": true,
+      "depthPrePass": false,
+      "childNodes": "UID(322)",
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "deformers": "UID(274)",
+      "opacity": 1.0,
+      "scale": {
+        "$bytes_base64": "AACAP///fz///38/"
+      },
+      "emitter": "UID(320)",
+      "categoryBitMask": 1
+    },
+    {
+      "coreHandle": "UID(296)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(297)",
+      "$class": "UID(14)",
+      "bindings": "UID(298)"
+    },
+    "9FD4DE5C-654A-45BA-BE8D-602C1B53DB57",
+    {
+      "NS.objects": [
+        "UID(299)",
+        "UID(300)",
+        "UID(301)",
+        "UID(300)",
+        "UID(302)",
+        "UID(300)",
+        "UID(303)",
+        "UID(304)",
+        "UID(305)",
+        "UID(300)",
+        "UID(306)",
+        "UID(304)",
+        "UID(307)",
+        "UID(300)",
+        "UID(308)",
+        "UID(300)",
+        "UID(309)",
+        "UID(310)",
+        "UID(311)",
+        "UID(304)",
+        "UID(312)",
+        "UID(300)",
+        "UID(313)",
+        "UID(300)",
+        "UID(314)",
+        "UID(304)",
+        "UID(315)",
+        "UID(300)",
+        "UID(316)",
+        "UID(300)",
+        "UID(60)",
+        "UID(300)",
+        "UID(317)",
+        "UID(318)",
+        "UID(319)",
+        "UID(304)"
+      ],
+      "$class": "UID(13)"
+    },
+    "fingerIntensity",
+    12,
+    "saturation",
+    "wandWhite",
+    "transitionToBubble",
+    1,
+    "particlesLife",
+    "isWandClick",
+    "transitionTimer",
+    "randomStart",
+    "spawnCounter",
+    6,
+    "testMove",
+    "fingerTaper",
+    "scrollingSpeed",
+    "isFinger",
+    "fingerSize",
+    "drawingSpeed",
+    "wand_position",
+    13,
+    "oldWandClick",
+    {
+      "coreHandle": "UID(296)",
+      "$class": "UID(321)"
+    },
+    {
+      "$classname": "VFXParticleEmitter",
+      "$classes": [
+        "VFXParticleEmitter",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "EmitterWand",
+    "D8DAE8DC-0E52-4F94-8045-75E8A94C04FF",
+    {
+      "behaviorGraph": "UID(326)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "position": {
+        "$bytes_base64": "AAAAAAAAAAAK1yM8"
+      },
+      "paused": false,
+      "hidden": false,
+      "renderingOrder": 0,
+      "$class": "UID(293)",
+      "isHandTrackingRoot": false,
+      "isEyesightFrame": false,
+      "entityID": "UID(333)",
+      "name": "UID(332)",
+      "castsShadow": true,
+      "depthPrePass": false,
+      "childNodes": "UID(331)",
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "deformers": "UID(274)",
+      "opacity": 1.0,
+      "scale": {
+        "$bytes_base64": "AACAPwAAgD8AAIA/"
+      },
+      "emitter": "UID(330)",
+      "categoryBitMask": 1
+    },
+    {
+      "coreHandle": "UID(327)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(328)",
+      "$class": "UID(14)",
+      "bindings": "UID(329)"
+    },
+    "167A0104-8612-4305-8009-A220BAC9FEAC",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    {
+      "coreHandle": "UID(327)",
+      "$class": "UID(321)"
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "EmitterWandChildGlow",
+    "03200CB4-E432-4C89-A658-CA36B56B63A7",
+    {
+      "behaviorGraph": "UID(335)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "position": {
+        "$bytes_base64": "MzMzPwAAAAAK1yM8"
+      },
+      "paused": false,
+      "hidden": false,
+      "renderingOrder": 0,
+      "$class": "UID(293)",
+      "isHandTrackingRoot": false,
+      "isEyesightFrame": false,
+      "entityID": "UID(342)",
+      "name": "UID(341)",
+      "castsShadow": true,
+      "depthPrePass": false,
+      "childNodes": "UID(340)",
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "deformers": "UID(274)",
+      "opacity": 1.0,
+      "scale": {
+        "$bytes_base64": "AACAPwAAgD8AAIA/"
+      },
+      "emitter": "UID(339)",
+      "categoryBitMask": 1
+    },
+    {
+      "coreHandle": "UID(336)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(337)",
+      "$class": "UID(14)",
+      "bindings": "UID(338)"
+    },
+    "53552067-F882-432B-BF0F-331B8A44B625",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    {
+      "coreHandle": "UID(336)",
+      "$class": "UID(321)"
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "EmitterFingerBloom",
+    "15928ED6-EAFA-4D8C-ABD1-5B9B5A42AEA8",
+    {
+      "behaviorGraph": "UID(348)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "position": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "paused": false,
+      "hidden": false,
+      "renderingOrder": 0,
+      "$class": "UID(293)",
+      "isHandTrackingRoot": false,
+      "isEyesightFrame": false,
+      "entityID": "UID(354)",
+      "name": "UID(353)",
+      "castsShadow": true,
+      "depthPrePass": false,
+      "childNodes": "UID(352)",
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "deformers": "UID(274)",
+      "opacity": 1.0,
+      "scale": {
+        "$bytes_utf8": "\u0000\u0000\u0000@\u0000\u0000\u0000@\u0000\u0000\u0000\u0000"
+      },
+      "categoryBitMask": 1,
+      "model": "UID(344)"
+    },
+    {
+      "parametricType": 2,
+      "pipeRadius": 0.10000000149011612,
+      "radius": 1.0,
+      "tessellator": "UID(0)",
+      "chamferRadius": 0.0,
+      "materials": "UID(345)",
+      "segmentCount": 48,
+      "capSegmentCount": 0,
+      "radialSpan": 1.0,
+      "hemispheric": false,
+      "$class": "UID(347)",
+      "chamferSegmentCount": 10,
+      "widthSegmentCount": 1,
+      "pipeSegmentCount": 48,
+      "entityID": "UID(346)",
+      "geodesic": false,
+      "primitiveType": 0,
+      "innerRadius": 0.25,
+      "length": 1.0,
+      "topRadius": 0.0,
+      "radialSegmentCount": 48,
+      "height": 1.0,
+      "width": 1.0,
+      "lengthSegmentCount": 1,
+      "cornerSegmentCount": 10,
+      "wantsAdaptiveSubdivision": true,
+      "subdivisionLevel": 0,
+      "subdivisionSettings": {
+        "$bytes_utf8": "\u0001\u0001\u0005\u0001"
+      },
+      "heightSegmentCount": 1
+    },
+    {
+      "NS.objects": [
+        "UID(134)"
+      ],
+      "$class": "UID(13)"
+    },
+    "312DF60E-8CBF-4E5C-94A9-BC4852150AC7",
+    {
+      "$classname": "VFXParametricModel",
+      "$classes": [
+        "VFXParametricModel",
+        "VFXModel",
+        "NSObject"
+      ]
+    },
+    {
+      "coreHandle": "UID(349)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(350)",
+      "$class": "UID(14)",
+      "bindings": "UID(351)"
+    },
+    "985D856E-8B38-446A-A272-33B4A682A94E",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "PlaneBlob",
+    "2F226268-050D-43FC-B7ED-6AE4B211355D",
+    {
+      "behaviorGraph": "UID(359)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "position": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "paused": false,
+      "hidden": true,
+      "renderingOrder": 0,
+      "$class": "UID(293)",
+      "isHandTrackingRoot": false,
+      "isEyesightFrame": false,
+      "entityID": "UID(365)",
+      "name": "UID(364)",
+      "castsShadow": true,
+      "depthPrePass": false,
+      "childNodes": "UID(363)",
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAA/f9/Pw=="
+      },
+      "deformers": "UID(274)",
+      "opacity": 1.0,
+      "scale": {
+        "$bytes_utf8": "\u0000\u0000\u0000@\u0000\u0000\u0000@\u0000\u0000\u0000\u0000"
+      },
+      "categoryBitMask": 1,
+      "model": "UID(356)"
+    },
+    {
+      "parametricType": 2,
+      "pipeRadius": 0.10000000149011612,
+      "radius": 1.0,
+      "tessellator": "UID(0)",
+      "chamferRadius": 0.0,
+      "materials": "UID(357)",
+      "segmentCount": 48,
+      "capSegmentCount": 0,
+      "radialSpan": 1.0,
+      "hemispheric": false,
+      "$class": "UID(347)",
+      "chamferSegmentCount": 10,
+      "widthSegmentCount": 1,
+      "pipeSegmentCount": 48,
+      "entityID": "UID(358)",
+      "geodesic": false,
+      "primitiveType": 0,
+      "innerRadius": 0.25,
+      "length": 1.0,
+      "topRadius": 0.0,
+      "radialSegmentCount": 48,
+      "height": 1.0,
+      "width": 1.0,
+      "lengthSegmentCount": 1,
+      "cornerSegmentCount": 10,
+      "wantsAdaptiveSubdivision": true,
+      "subdivisionLevel": 0,
+      "subdivisionSettings": {
+        "$bytes_utf8": "\u0001\u0001\u0005\u0001"
+      },
+      "heightSegmentCount": 1
+    },
+    {
+      "NS.objects": [
+        "UID(57)"
+      ],
+      "$class": "UID(13)"
+    },
+    "08D10D0B-EE0A-430A-BFE9-71AC71CC4A76",
+    {
+      "coreHandle": "UID(360)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(361)",
+      "$class": "UID(14)",
+      "bindings": "UID(362)"
+    },
+    "04E71688-8DE3-4A81-8311-E92AF96412E4",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "PlaneCircle",
+    "92935506-623F-4DE9-9EC7-AF46847556AF",
+    {
+      "paused": false,
+      "name": "UID(396)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "behaviorGraph": "UID(367)",
+      "position": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "scale": {
+        "$bytes_base64": "AACAPwAAgD8AAIA/"
+      },
+      "isEyesightFrame": false,
+      "isHandTrackingRoot": false,
+      "opacity": 1.0,
+      "deformers": "UID(274)",
+      "castsShadow": true,
+      "depthPrePass": false,
+      "entityID": "UID(397)",
+      "$class": "UID(293)",
+      "categoryBitMask": 1,
+      "hidden": false,
+      "childNodes": "UID(395)",
+      "renderingOrder": 0
+    },
+    {
+      "coreHandle": "UID(368)",
+      "$class": "UID(15)"
+    },
+    {
+      "tag": "UID(369)",
+      "$class": "UID(14)",
+      "bindings": "UID(370)"
+    },
+    "D9BCDF6B-6A88-418F-B74F-571793B7DF2C",
+    {
+      "NS.objects": [
+        "UID(371)",
+        "UID(318)",
+        "UID(372)",
+        "UID(300)",
+        "UID(71)",
+        "UID(304)",
+        "UID(373)",
+        "UID(300)",
+        "UID(374)",
+        "UID(300)",
+        "UID(375)",
+        "UID(300)",
+        "UID(376)",
+        "UID(300)",
+        "UID(377)",
+        "UID(318)",
+        "UID(160)",
+        "UID(300)",
+        "UID(378)",
+        "UID(318)",
+        "UID(379)",
+        "UID(300)",
+        "UID(380)",
+        "UID(310)",
+        "UID(381)",
+        "UID(300)",
+        "UID(382)",
+        "UID(300)",
+        "UID(383)",
+        "UID(300)",
+        "UID(384)",
+        "UID(300)",
+        "UID(385)",
+        "UID(300)",
+        "UID(386)",
+        "UID(300)",
+        "UID(387)",
+        "UID(318)",
+        "UID(388)",
+        "UID(300)",
+        "UID(389)",
+        "UID(300)",
+        "UID(390)",
+        "UID(318)",
+        "UID(391)",
+        "UID(300)",
+        "UID(392)",
+        "UID(300)",
+        "UID(393)",
+        "UID(300)",
+        "UID(394)",
+        "UID(300)"
+      ],
+      "$class": "UID(13)"
+    },
+    "shape_position",
+    "blob_rectangle_radius",
+    "blobAnimationSpeed",
+    "pulse2",
+    "transition_blobToRectangle",
+    "transition_circleToBlob",
+    "rectangle_dimensions",
+    "screen_ratio",
+    "blob_scale",
+    "rampTiling",
+    "transition_circleToRectangle",
+    "pulse1",
+    "inertia",
+    "intertiaTimer",
+    "rectangleInnerRampMult",
+    "apple_scale",
+    "shape_dimensions",
+    "initialInertia",
+    "blob_opacity",
+    "blob_position",
+    "transition_empty_to_circle",
+    "transition_shapeToBlob",
+    "transition_to_error",
+    "distanceFromBorder",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "node bindings",
+    "B0C9471D-8718-4AC7-BE81-571544760AA1",
+    {
+      "paused": false,
+      "name": "UID(403)",
+      "rotation": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "orientation": {
+        "$bytes_base64": "AAAAAAAAAAAAAAAAAACAPw=="
+      },
+      "position": {
+        "$bytes_utf8": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+      },
+      "scale": {
+        "$bytes_base64": "rkcBQDMz0z8AAIA/"
+      },
+      "isEyesightFrame": false,
+      "isHandTrackingRoot": false,
+      "opacity": 1.0,
+      "deformers": "UID(274)",
+      "castsShadow": true,
+      "depthPrePass": false,
+      "entityID": "UID(404)",
+      "$class": "UID(293)",
+      "categoryBitMask": 1,
+      "hidden": true,
+      "model": "UID(399)",
+      "childNodes": "UID(402)",
+      "renderingOrder": 0
+    },
+    {
+      "parametricType": 2,
+      "pipeRadius": 0.10000000149011612,
+      "radius": 1.0,
+      "tessellator": "UID(0)",
+      "chamferRadius": 0.0,
+      "materials": "UID(400)",
+      "segmentCount": 48,
+      "capSegmentCount": 0,
+      "radialSpan": 1.0,
+      "hemispheric": false,
+      "$class": "UID(347)",
+      "chamferSegmentCount": 10,
+      "widthSegmentCount": 1,
+      "pipeSegmentCount": 48,
+      "entityID": "UID(401)",
+      "geodesic": false,
+      "primitiveType": 0,
+      "innerRadius": 0.25,
+      "length": 1.0,
+      "topRadius": 0.0,
+      "radialSegmentCount": 48,
+      "height": 1.0,
+      "width": 1.0,
+      "lengthSegmentCount": 1,
+      "cornerSegmentCount": 10,
+      "wantsAdaptiveSubdivision": true,
+      "subdivisionLevel": 0,
+      "subdivisionSettings": {
+        "$bytes_utf8": "\u0001\u0001\u0005\u0001"
+      },
+      "heightSegmentCount": 1
+    },
+    {
+      "NS.objects": [
+        "UID(259)"
+      ],
+      "$class": "UID(13)"
+    },
+    "18282A3E-646E-4043-A448-510119232DEE",
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    "PlaneBG_test-to_HIDE",
+    "BC4753B9-9EA3-47C3-ABB0-48C87F7B3E2F",
+    "8FFD7007-7128-483C-91F6-4DAEE1D58D34",
+    {
+      "parent": "UID(1)",
+      "propertyType": 15,
+      "wrapS": 1,
+      "magnificationFilter": 2,
+      "isCommonProfileProperty": 0,
+      "$class": "UID(88)",
+      "minificationFilter": 2,
+      "mipFilter": 2,
+      "wrapT": 1,
+      "intensity": 1.0,
+      "mappingChannel": 0
+    },
+    {
+      "parent": "UID(1)",
+      "propertyType": 13,
+      "wrapS": 1,
+      "magnificationFilter": 2,
+      "isCommonProfileProperty": 0,
+      "$class": "UID(88)",
+      "minificationFilter": 2,
+      "mipFilter": 2,
+      "wrapT": 1,
+      "intensity": 1.0,
+      "mappingChannel": 0
+    },
+    {
+      "$class": "UID(423)",
+      "transitions": "UID(422)",
+      "states": "UID(409)"
+    },
+    {
+      "NS.objects": [
+        "UID(410)"
+      ],
+      "$class": "UID(13)"
+    },
+    {
+      "$class": "UID(421)",
+      "name": "UID(419)",
+      "stateItems": "UID(411)",
+      "identifier": "UID(420)"
+    },
+    {
+      "NS.objects": [
+        "UID(412)",
+        "UID(416)"
+      ],
+      "$class": "UID(13)"
+    },
+    {
+      "$class": "UID(415)",
+      "value": "UID(414)",
+      "keyPath": "UID(413)",
+      "target": "UID(367)",
+      "action": 0
+    },
+    "transition_circleToBlob",
+    {
+      "$bytes_base64": "AQAAgD8="
+    },
+    {
+      "$classname": "VFXStateItem",
+      "$classes": [
+        "VFXStateItem",
+        "NSObject"
+      ]
+    },
+    {
+      "$class": "UID(415)",
+      "value": "UID(418)",
+      "keyPath": "UID(417)",
+      "target": "UID(367)",
+      "action": 0
+    },
+    "transition_blobToRectangle",
+    {
+      "$bytes_base64": "AQAAgD8="
+    },
+    "State 1",
+    "E70314F5-F3DD-4A30-81C7-90C483E2D71C",
+    {
+      "$classname": "VFXState",
+      "$classes": [
+        "VFXState",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.objects": [],
+      "$class": "UID(13)"
+    },
+    {
+      "$classname": "VFXStateManager",
+      "$classes": [
+        "VFXStateManager",
+        "NSObject"
+      ]
+    },
+    {
+      "$class": "UID(425)",
+      "NS.bytes": {
+        "$bytes_base64": "YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGmCwwZHyAnVSRudWxs1g0ODxAREhMUFRYXGFYkY2xhc3NcTlNDb21wb25lbnRzVU5TUkdCXE5TQ29sb3JTcGFjZV8QEk5TQ3VzdG9tQ29sb3JTcGFjZV8QEE5TTGluZWFyRXhwb3N1cmWABUcxIDEgMSAxRjEgMSAxABABgAJBMdMaDRscHR5VTlNJQ0NZTlNTcGFjZUlEgAOABBAOTxEMSAAADEhMaW5vAhAAAG1udHJSR0IgWFlaIAfOAAIACQAGADEAAGFjc3BNU0ZUAAAAAElFQyBzUkdCAAAAAAAAAAAAAAAAAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEWNwcnQAAAFQAAAAM2Rlc2MAAAGEAAAAbHd0cHQAAAHwAAAAFGJrcHQAAAIEAAAAFHJYWVoAAAIYAAAAFGdYWVoAAAIsAAAAFGJYWVoAAAJAAAAAFGRtbmQAAAJUAAAAcGRtZGQAAALEAAAAiHZ1ZWQAAANMAAAAhnZpZXcAAAPUAAAAJGx1bWkAAAP4AAAAFG1lYXMAAAQMAAAAJHRlY2gAAAQwAAAADHJUUkMAAAQ8AAAIDGdUUkMAAAQ8AAAIDGJUUkMAAAQ8AAAIDHRleHQAAAAAQ29weXJpZ2h0IChjKSAxOTk4IEhld2xldHQtUGFja2FyZCBDb21wYW55AABkZXNjAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYWVogAAAAAAAA81EAAQAAAAEWzFhZWiAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAAAG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZWiAAAAAAAAAkoAAAD4QAALbPZGVzYwAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRlc2MAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25kaXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdmlldwAAAAAAE6T+ABRfLgAQzxQAA+3MAAQTCwADXJ4AAAABWFlaIAAAAAAATAlWAFAAAABXH+dtZWFzAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACjwAAAAJzaWcgAAAAAENSVCBjdXJ2AAAAAAAABAAAAAAFAAoADwAUABkAHgAjACgALQAyADcAOwBAAEUASgBPAFQAWQBeAGMAaABtAHIAdwB8AIEAhgCLAJAAlQCaAJ8ApACpAK4AsgC3ALwAwQDGAMsA0ADVANsA4ADlAOsA8AD2APsBAQEHAQ0BEwEZAR8BJQErATIBOAE+AUUBTAFSAVkBYAFnAW4BdQF8AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZAeEB6QHyAfoCAwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6AoQCjgKYAqICrAK2AsECywLVAuAC6wL1AwADCwMWAyEDLQM4A0MDTwNaA2YDcgN+A4oDlgOiA64DugPHA9MD4APsA/kEBgQTBCAELQQ7BEgEVQRjBHEEfgSMBJoEqAS2BMQE0wThBPAE/gUNBRwFKwU6BUkFWAVnBXcFhgWWBaYFtQXFBdUF5QX2BgYGFgYnBjcGSAZZBmoGewaMBp0GrwbABtEG4wb1BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH+AgLCB8IMghGCFoIbgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6Cc8J5Qn7ChEKJwo9ClQKagqBCpgKrgrFCtwK8wsLCyILOQtRC2kLgAuYC7ALyAvhC/kMEgwqDEMMXAx1DI4MpwzADNkM8w0NDSYNQA1aDXQNjg2pDcMN3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+WD7MPzw/sEAkQJhBDEGEQfhCbELkQ1xD1ERMRMRFPEW0RjBGqEckR6BIHEiYSRRJkEoQSoxLDEuMTAxMjE0MTYxODE6QTxRPlFAYUJxRJFGoUixStFM4U8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW+hcdF0EXZReJF64X0hf3GBsYQBhlGIoYrxjVGPoZIBlFGWsZkRm3Gd0aBBoqGlEadxqeGsUa7BsUGzsbYxuKG7Ib2hwCHCocUhx7HKMczBz1HR4dRx1wHZkdwx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx/qIBUgQSBsIJggxCDwIRwhSCF1IaEhziH7IiciVSKCIq8i3SMKIzgjZiOUI8Ij8CQfJE0kfCSrJNolCSU4JWgllyXHJfcmJyZXJocmtyboJxgnSSd6J6sn3CgNKD8ocSiiKNQpBik4KWspnSnQKgIqNSpoKpsqzysCKzYraSudK9EsBSw5LG4soizXLQwtQS12Last4S4WLkwugi63Lu4vJC9aL5Evxy/+MDUwbDCkMNsxEjFKMYIxujHyMioyYzKbMtQzDTNGM38zuDPxNCs0ZTSeNNg1EzVNNYc1wjX9Njc2cjauNuk3JDdgN5w31zgUOFA4jDjIOQU5Qjl/Obw5+To2OnQ6sjrvOy07azuqO+g8JzxlPKQ84z0iPWE9oT3gPiA+YD6gPuA/IT9hP6I/4kAjQGRApkDnQSlBakGsQe5CMEJyQrVC90M6Q31DwEQDREdEikTORRJFVUWaRd5GIkZnRqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtTS5pL4kwqTHJMuk0CTUpNk03cTiVObk63TwBPSU+TT91QJ1BxULtRBlFQUZtR5lIxUnxSx1MTU19TqlP2VEJUj1TbVShVdVXCVg9WXFapVvdXRFeSV+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb5Vw1XIZc1l0nXXhdyV4aXmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLwY0Njl2PrZEBklGTpZT1lkmXnZj1mkmboZz1nk2fpaD9olmjsaUNpmmnxakhqn2r3a09rp2v/bFdsr20IbWBtuW4SbmtuxG8eb3hv0XArcIZw4HE6cZVx8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3VnezeBF4bnjMeSp5iXnnekZ6pXsEe2N7wnwhfIF84X1BfaF+AX5ifsJ/I3+Ef+WAR4CogQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauGDoZyhteHO4efiASIaYjOiTOJmYn+imSKyoswi5aL/IxjjMqNMY2Yjf+OZo7OjzaPnpAGkG6Q1pE/kaiSEZJ6kuOTTZO2lCCUipT0lV+VyZY0lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3SnkCerp8dn4uf+qBpoNihR6G2oiailqMGo3aj5qRWpMelOKWpphqmi6b9p26n4KhSqMSpN6mpqhyqj6sCq3Wr6axcrNCtRK24ri2uoa8Wr4uwALB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLfKd+v4DbgveFE4cziU+Lb42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG6dDqW+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy8f/yjPMZ86f0NPTC9VD13vZt9vv3ivgZ+Kj5OPnH+lf65/t3/Af8mP0p/br+S/7c/23//9IhIiMkWiRjbGFzc25hbWVYJGNsYXNzZXNcTlNDb2xvclNwYWNloiUmXE5TQ29sb3JTcGFjZVhOU09iamVjdNIhIigpV05TQ29sb3KiKCYACAARABoAJAApADIANwBJAEwAUQBTAFoAYABtAHQAgQCHAJQAqQC8AL4AxgDNAM8A0QDTANoA4ADqAOwA7gDwDTwNQQ1MDVUNYg1lDXINew2ADYgAAAAAAAACAQAAAAAAAAAqAAAAAAAAAAAAAAAAAAANiw=="
+      }
+    },
+    {
+      "$classname": "NSMutableData",
+      "$classes": [
+        "NSMutableData",
+        "NSData",
+        "NSObject"
+      ]
+    },
+    {
+      "$class": "UID(427)"
+    },
+    {
+      "$classname": "VFXTriggerManager",
+      "$classes": [
+        "VFXTriggerManager",
+        "NSObject"
+      ]
+    },
+    "B3AC9481-83E4-4B64-A65C-82693A1618FD",
+    {
+      "$classname": "VFXWorld",
+      "$classes": [
+        "VFXWorld",
+        "NSObject"
+      ]
+    }
+  ]
+}

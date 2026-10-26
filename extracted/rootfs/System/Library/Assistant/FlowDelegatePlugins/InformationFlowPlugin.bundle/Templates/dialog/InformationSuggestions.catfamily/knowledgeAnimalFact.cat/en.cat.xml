@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en">
+  <phrases>
+    <random phrase="suggestionUtterance">
+      <text>How long do turtles live?</text>
+      <text>What is the lifespan of a rabbit?</text>
+      <text>Can dogs eat watermelon?</text>
+    </random>
+  </phrases>
+
+  <all>
+    <dialog id="exampleUtterance"><phrase name="suggestionUtterance"/></dialog>
+  </all>
+</cat>

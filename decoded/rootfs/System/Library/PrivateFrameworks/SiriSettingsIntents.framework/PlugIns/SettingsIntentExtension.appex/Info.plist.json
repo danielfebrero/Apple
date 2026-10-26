@@ -1,0 +1,48 @@
+{
+  "CFBundleName": "SettingsIntentExtension",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "XPC!",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "SettingsIntentExtension",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.SiriSettingsIntents.SettingsIntentExtension",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "CFBundleDisplayName": "SettingsIntentExtension",
+  "DTPlatformBuild": "",
+  "EXAppExtensionAttributes": {
+    "SettingsExtensionAttributes": {
+      "allowsXAppleSystemPreferencesURLScheme": true
+    }
+  },
+  "NSExtension": {
+    "NSExtensionAttributes": {
+      "IntentsRestrictedWhileLocked": [],
+      "IntentsSupported": [
+        "INSetBinarySettingIntent",
+        "INSetNumericSettingIntent",
+        "INSetTemporalSettingIntent",
+        "INSetLabeledSettingIntent",
+        "INOpenSettingIntent",
+        "INGetSettingIntent"
+      ]
+    },
+    "NSExtensionPointIdentifier": "com.apple.intents-service",
+    "NSExtensionPrincipalClass": "SettingsIntentExtension.IntentHandler"
+  }
+}

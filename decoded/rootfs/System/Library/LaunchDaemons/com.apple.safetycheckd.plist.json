@@ -1,0 +1,14 @@
+{
+  "Label": "com.apple.safetycheckd",
+  "EnableTransactions": true,
+  "EnablePressuredExit": true,
+  "POSIXSpawnType": "Adaptive",
+  "MachServices": {
+    "com.apple.safetycheckd": true
+  },
+  "UserName": "mobile",
+  "Program": "/usr/libexec/safetycheckd",
+  "ProgramArguments": [
+    "/usr/libexec/safetycheckd"
+  ]
+}

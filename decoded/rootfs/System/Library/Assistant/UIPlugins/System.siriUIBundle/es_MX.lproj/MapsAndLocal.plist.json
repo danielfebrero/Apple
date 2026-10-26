@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Indícame cómo llegar a la casa",
+            "Indicaciones para llegar a Acapulco",
+            "Muéstrame el trayecto para ir a la oficina de mi papá",
+            "Muéstrame la ruta para ir de Hermosillo a Culiacán",
+            "Indicaciones para ir a casa de María"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "¿Cuál es la siguiente indicación?",
+            "¿Cuánto falta para llegar?",
+            "Busca una gasolinera",
+            "¿Cuándo llegaré?"
+          ]
+        }
+      ],
+      "SectionName": "NAVEGACIÓN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Muéstrame Central Park",
+            "Ver en la Torre Eiffel en el mapa"
+          ]
+        }
+      ],
+      "SectionName": "MAPAS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Quiero comer tacos",
+            "Busca la mejor peluquería",
+            "¿Dónde está la panadería más cercana?"
+          ]
+        }
+      ],
+      "SectionName": "NEGOCIOS LOCALES"
+    }
+  ]
+}

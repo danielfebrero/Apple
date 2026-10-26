@@ -1,0 +1,144 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Telefon",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Ahmet’i ara",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "Güler’i FaceTime ile ara",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Uygulamalar",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Fotoğraflar’ı başlat",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Mesajlar",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Sinem’e mesaj at: Şov harikaydı",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Takvim",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Saat 9’a toplantı ayarla",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Fotoğraflar",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Dün çektiğim fotoğrafları göster",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Harita",
+      "DomainAlternateDisplayName": "Harita",
+      "TagPhrase": "Eve yol tarifini göster",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Konumum ile birlikte …",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Weibo’da yayımla …",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Facebook’ta yayımla…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Müzik",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Barış Manço çal",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Anımsatıcılar",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Yarın annemi aramamı anımsat",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "Mail",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Emine’ye e-posta gönder",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Hava Durumu",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Bugün hava nasıl?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Borsa",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Apple'ın hisse senedi fiyatı ne?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Saat",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Beni yarın sabah 7’de uyandır",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Kişiler",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Banu'nun adresi nedir?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Notlar",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Not al: Öğle yemeği 12 lira",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Ayarlar",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Uçak Modu’nu aç",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Web Araması",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Web’de kaplanları ara",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Soru Cevap",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "Kaşıkçı Elması nedir?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "Podcast’ler",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Podcast’leri çal",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

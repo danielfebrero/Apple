@@ -1,0 +1,120 @@
+{
+  "id": "com.apple.preferences.display",
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "id": "ASSISTANT_PLACARD_GROUP"
+    },
+    {
+      "cell": "PSTitleValueCell",
+      "cellClass": "AssistantSettingsSupport.AssistantPlacardCell",
+      "id": "ASSISTANT_PLACARD"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "IMAGE_CREATION"
+    },
+    {
+      "cell": "PSSwitchCell",
+      "get": "useAppleIntelligenceForSiri:",
+      "id": "ASSISTANT_USE_APPLE_INTELLIGENCE_ID",
+      "label": "ASSISTANT_USE_APPLE_INTELLIGENCE",
+      "set": "setUseAppleIntelligenceForSiri:forSpecifier:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerCellClass": "AssistantPseudoHeaderHyperlinkView",
+      "footerText": "SIRI_REQUESTS_ABOUT_LINK_TEXT",
+      "id": "SIRI_REQUESTS_GROUP",
+      "label": "SIRI_REQUESTS"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "AssistantLanguageController",
+      "get": "assistantLanguage:",
+      "id": "LANGUAGE_ID",
+      "label": "LANGUAGE",
+      "set": "setAssistantLanguage:forSpecifier:"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "AssistantActivationController",
+      "get": "voiceActivationSelection:",
+      "id": "ACTIVATION_COMPACT_ID",
+      "label": "ACTIVATION_COMPACT",
+      "loadAction": "showAssistantVoiceActivationController:"
+    },
+    {
+      "cell": "PSSwitchCell",
+      "confirmation": {
+        "cancelTitle": "ASSISTANT_ENABLE_CANCEL",
+        "okTitle": "ASSISTANT_ENABLE_OK",
+        "prompt": "ASSISTANT_ENABLE_WARNING",
+        "title": "ASSISTANT_ENABLE_TITLE"
+      },
+      "get": "voiceTrigger:",
+      "id": "ACTIVATION",
+      "set": "setVoiceTrigger:forSpecifier:"
+    },
+    {
+      "cell": "PSSwitchCell",
+      "get": "accessibleFromLockScreen:",
+      "id": "ASSISTANT_LOCK_SCREEN_ACCESS",
+      "set": "setAccessibleFromLockScreen:forSpecifier:"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "AssistantVoiceController",
+      "get": "assistantVoice:",
+      "id": "VOICE_ID",
+      "label": "VOICE"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "AssistantAudioFeedbackController",
+      "id": "VOICE_FEEDBACK_ID",
+      "label": "VOICE_FEEDBACK"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "AssistantSiriInCallController",
+      "get": "siriInCallEnabled:",
+      "id": "SIRI_IN_CALL_ID",
+      "label": "SIRI_IN_CALL"
+    },
+    {
+      "bundle": "ICSSettingsBundle",
+      "cell": "PSLinkListCell",
+      "detail": "ICSCallAnnouncementSettingsController",
+      "id": "ANNOUNCE_CALLS",
+      "isController": true,
+      "label": "ANNOUNCE_CALLS_TITLE",
+      "overridePrincipalClass": true
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "NCSpokenNotificationsDetailListController",
+      "id": "ANNOUNCE_MESSAGES",
+      "label": "ANNOUNCE_MESSAGES_TITLE"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "MessagingWithSiriController",
+      "id": "MESSAGE_WITHOUT_CONFIRMATION",
+      "label": "MESSAGE_TITLE"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "id": "HISTORY",
+      "label": "ASSISTANT_HISTORY_LABEL",
+      "loadAction": "showAssistantHistoryViewController:"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "get": "meCard:",
+      "id": "MY_INFO",
+      "label": "MyInfo",
+      "loadAction": "showMeCardPicker:"
+    }
+  ]
+}

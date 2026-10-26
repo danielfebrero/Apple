@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Manda un'e-mail a Simonetta",
+            "Manda un'e-mail sul cambiamento di programma a Francesca",
+            "Nuova e-mail a Carla Molari",
+            "Invia un'e-mail a papà a proposito del nuovo lavoro",
+            "Scrivi un'e-mail al Sig. Bartolini: Oggi ho ricevuto i moduli, grazie",
+            "Invia un'e-mail a Simonetta e Fabrizio: Grazie, è stata una festa molto divertente"
+          ]
+        }
+      ],
+      "SectionName": "INVIARE UN'E-MAIL"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Controlla le e-mail",
+            "Ci sono nuove e-mail di Giovanni oggi?",
+            "Mostra le nuove mail sull'affitto",
+            "Mostra l'e-mail di Simonetta di ieri"
+          ]
+        }
+      ],
+      "SectionName": "CONTROLLARE LE E-MAIL"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Rispondi: 'Cara Carla, scusa per il ritardo nel pagamento'"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Rispondi all'e-mail: 'Ci vediamo per pranzo'"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Rispondi all'e-mail di Giovanni: 'A dopo'"
+          ]
+        }
+      ],
+      "SectionName": "RISPONDERE A UN'E-MAIL"
+    }
+  ]
+}

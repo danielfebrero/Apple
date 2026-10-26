@@ -1,0 +1,16 @@
+{
+  "name": "com.apple.siri.analytics.SAMaintenance.bid",
+  "bundleIdentifier": "com.apple.siri.analytics.SAMaintenance",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 44550.0,
+      "minDurationBetweenInstances": 41850.0
+    },
+    "requiresExternalPower": false,
+    "requiresUserInactivity": true,
+    "requiresProtectionClass": "ClassC",
+    "priority": "Utility",
+    "groupName": "com.apple.siri.analytics.SAMaintenance",
+    "groupConcurrencyLimit": 1
+  }
+}

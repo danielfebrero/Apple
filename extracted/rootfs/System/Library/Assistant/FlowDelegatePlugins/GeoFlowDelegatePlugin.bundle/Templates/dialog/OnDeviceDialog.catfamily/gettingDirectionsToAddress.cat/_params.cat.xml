@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="OnDeviceDialog#gettingDirectionsToAddress" xmlns="urn:apple:names:siri:cat:2.0">
+	<meta name="category" value="Handled"/>
+	<parameters>
+        <parameter name="addressToPrint" type="dialog.LocationAddress" deprecated="true"/>		
+        <parameter name="addressToSpeak" type="dialog.LocationAddress" deprecated="true"/>
+        <parameter name="locationToPrint" type="dialog.Location"/>
+        <parameter name="locationToSpeak" type="dialog.Location"/>
+        <parameter name="thirdPartyAppBundleId" type="dialog.String" optional="yes"/>
+        <parameter name="transportationMode" type="dialog.String" optional="yes"/>
+        <parameter name="sourcePOIName" type="dialog.String"/>
+        <parameter name="isSourceAddress" type="dialog.Boolean"/>
+        <parameter name="sourceAddressToSpeak" type="dialog.Location"/>
+        <parameter name="sourceAddressToPrint" type="dialog.Location"/>
+        <parameter name="isAvoidHighways" type="dialog.Boolean"/>
+        <parameter name="isAvoidTolls" type="dialog.Boolean"/>
+        <parameter name="isPostCodeSearch" type="dialog.Boolean"/>
+    </parameters>
+
+    <meta name="description" value="This is the dialog returned to user after user asks siri to start navigation to a address"/>
+    <meta name="readyForLoc" value="true"/>
+    <meta name="top21FeatureFlag" value="geoi18n1"/>
+</cat>

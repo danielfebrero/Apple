@@ -1,0 +1,100 @@
+{
+  "artifact": {
+    "path": "internal/views.db",
+    "type": "unstructured",
+    "unstructured": {
+      "columns": [
+        [
+          "requestId",
+          "TEXT"
+        ],
+        [
+          "startTime",
+          "DOUBLE"
+        ],
+        [
+          "endTime",
+          "DOUBLE"
+        ],
+        [
+          "distance",
+          "DOUBLE"
+        ],
+        [
+          "elevationGain",
+          "DOUBLE"
+        ],
+        [
+          "score",
+          "DOUBLE"
+        ],
+        [
+          "duration",
+          "DOUBLE"
+        ],
+        [
+          "isCity",
+          "BOOL"
+        ],
+        [
+          "isHighway",
+          "BOOL"
+        ],
+        [
+          "ktsContext",
+          "BLOB"
+        ],
+        [
+          "ktsData",
+          "BLOB"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "startTime"
+      ],
+      "tableName": "cadence_monthly"
+    }
+  },
+  "customViewClass": "KTSCadenceView",
+  "featureFlag": "KTS",
+  "ktsCadence": {
+    "cadence": "monthly",
+    "dependencies": [
+      "ktsSegmentTable"
+    ]
+  },
+  "name": "ktsCadenceMonthly",
+  "type": "custom",
+  "update": {
+    "alwaysUpdateListeners": [
+      {
+        "schedule": "every2Hours"
+      }
+    ],
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB65",
+            "entityTypeIncludeDescendants": true,
+            "sources": [
+              "lifeEvent",
+              "motionSegment"
+            ]
+          }
+        ],
+        "schedule": "none",
+        "stores": [
+          "stableGraph",
+          "eventGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "ktsSegmentTable",
+        "schedule": "none"
+      }
+    ]
+  }
+}

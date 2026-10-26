@@ -1,0 +1,78 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "score",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "WhereBroadcastable" : 1,
+      "LoadConstantND" : 3,
+      "LogicalNot" : 1,
+      "ActivationSigmoid" : 1,
+      "GreaterThan" : 2,
+      "LogicalOr" : 1
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "5.0b1",
+      "com.github.apple.coremltools.source" : "milinternal"
+    },
+    "generatedClassName" : "top_k_model",
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "highlightDateSecondsBeforeNow",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "countEngagedInInterval:720.0",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "countEngagedMatchingDomainFromSender",
+        "type" : "MultiArray"
+      }
+    ],
+    "method" : "predict"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Mixed (Float16, Float32)",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 3)",
+        "shortDescription" : "",
+        "shape" : "[1, 1, 3]",
+        "name" : "health_state_estimation",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "6x3ctmncbi",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 6,
+    "mlProgramOperationTypeHistogram" : {
+      "Transpose" : 4,
+      "Range1d" : 4,
+      "Squeeze" : 2,
+      "Sub" : 2,
+      "Sigmoid" : 6,
+      "Reshape" : 1,
+      "Matmul" : 4,
+      "MakeList" : 6,
+      "Cast" : 29,
+      "Split" : 2,
+      "Select" : 6,
+      "Add" : 9,
+      "Tanh" : 4,
+      "Less" : 2,
+      "Concat" : 1,
+      "Shape" : 4,
+      "ListRead" : 4,
+      "ExpandDims" : 4,
+      "WhileLoop" : 2,
+      "ListGather" : 2,
+      "NotEqual" : 2,
+      "Linear" : 3,
+      "ListScatter" : 4,
+      "ListWrite" : 2,
+      "SliceByIndex" : 8,
+      "Relu" : 2,
+      "ReduceSum" : 2,
+      "Mul" : 13
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1 × 1 × 3",
+        "shapeRange" : "[[1, 1], [1, 1], [3, 3]]",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 3)",
+        "type" : "MultiArray",
+        "shape" : "[1, 1, 3]",
+        "name" : "daily_history_input",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1 × 1...5000 × 5",
+        "shapeRange" : "[[1, 1], [1, 5000], [5, 5]]",
+        "formattedType" : "MultiArray (Float32 1 × 5000 × 5)",
+        "type" : "MultiArray",
+        "shape" : "[1, 5000, 5]",
+        "name" : "usage_history_input",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "mldb_token" : "mldb-7nwypjwy9o",
+      "com.github.apple.coremltools.source" : "tensorflow==2.11.0",
+      "com.github.apple.coremltools.version" : "7.2"
+    },
+    "generatedClassName" : "state_estimation_model",
+    "method" : "predict"
+  }
+]

@@ -1,0 +1,1164 @@
+{
+  "categories": [
+    {
+      "_LOCALIZABLE_": {
+        "localizedDisplayName": "થીમ"
+      },
+      "allowsMultipleSelection": true,
+      "displayName": "Themes",
+      "id": 1,
+      "needsPersonalizationUI": false,
+      "shouldUsePersonDescriptionDirective": false,
+      "subjectPriorityIndex": 4
+    },
+    {
+      "_LOCALIZABLE_": {
+        "localizedDisplayName": "પદાવલિઓ"
+      },
+      "allowsMultipleSelection": false,
+      "displayName": "Expressions",
+      "id": 2,
+      "needsPersonalizationUI": true,
+      "shouldUsePersonDescriptionDirective": true,
+      "subjectPriorityIndex": 5
+    },
+    {
+      "_LOCALIZABLE_": {
+        "localizedDisplayName": "કૉસ્ટ્યૂમ"
+      },
+      "allowsMultipleSelection": true,
+      "displayName": "Costumes",
+      "id": 3,
+      "needsPersonalizationUI": true,
+      "shouldUsePersonDescriptionDirective": false,
+      "subjectPriorityIndex": 1
+    },
+    {
+      "_LOCALIZABLE_": {
+        "localizedDisplayName": "ઍક્સેસરી"
+      },
+      "allowsMultipleSelection": true,
+      "displayName": "Accessories",
+      "id": 4,
+      "needsPersonalizationUI": true,
+      "shouldUsePersonDescriptionDirective": false,
+      "subjectPriorityIndex": 2
+    },
+    {
+      "_LOCALIZABLE_": {
+        "localizedDisplayName": "સ્થળ"
+      },
+      "allowsMultipleSelection": true,
+      "displayName": "Places",
+      "id": 5,
+      "needsPersonalizationUI": false,
+      "shouldUsePersonDescriptionDirective": false,
+      "subjectPriorityIndex": 3
+    }
+  ],
+  "prompts": [
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "in front of an orange tent on lush green grass, framed by a tall pine tree",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "an orange tent on lush green grass, framed by a tall pine tree",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ઍડવેંચર",
+        "nonSubjectDescription": "in a survival camping scene in the jungle, snowy mountain, and safari grasslands",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "survival camping in the jungle, snowy mountain, and safari grasslands"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "🏕️",
+      "forcesPersonalization": false,
+      "iconFilename": "Adventure",
+      "id": 1000,
+      "unlocalizedName": "Adventure"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "celebrating with an elegant white cake decorated with strawberries and topped with three glowing candles",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "an elegant white cake decorated with strawberries and topped with three glowing candles",
+        "isDisplayed": "1",
+        "localizedDisplayName": "જન્મદિવસ",
+        "nonSubjectDescription": "at a birthday celebration with decorations and party backdrop",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a birthday celebration with decorations and party backdrop"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "🎂",
+      "forcesPersonalization": false,
+      "iconFilename": "Birthday",
+      "id": 1001,
+      "unlocalizedName": "Birthday"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "in a disco scene with a silver mirror ball",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "silver mirror ball",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ડિસ્કો",
+        "nonSubjectDescription": "in a disco scene with a large reflective disco ball disco festivity",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a disco floor with a large reflective disco ball disco festivity"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "🪩",
+      "forcesPersonalization": false,
+      "iconFilename": "Disco",
+      "id": 1002,
+      "unlocalizedName": "Disco"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "in front of a european castle",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "european castle",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ફૅન્ટસી",
+        "nonSubjectDescription": "in a fantasy theme forest with enchanted plants magical fantasy structures and castles with sparkles",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a jewel-toned fantasy forest with enchanted plants magical fantasy structures and castles with sparkles"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "🏰",
+      "forcesPersonalization": false,
+      "iconFilename": "Fantasy",
+      "id": 1003,
+      "unlocalizedName": "Fantasy"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "in a scene with pink and magenta firework burst with a bright white center, against a dark night sky background",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "pink and magenta firework burst with a bright white center, against a dark night sky background",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ફટાકડા",
+        "nonSubjectDescription": "In a scene celebrating with different colors of fireworks",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a scene celebrating with different colors of fireworks brocade fireworks chrysanthemum fireworks sparkle"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Fireworks",
+      "id": 1004,
+      "unlocalizedName": "Fireworks"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "",
+        "isDisplayed": "0",
+        "localizedDisplayName": "હૅલોવીન",
+        "nonSubjectDescription": "all hallows eve festivities with mystical plants spooky creatures creepy structures spirits",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "all hallows eve with mystical plants spooky creatures creepy structures spirits"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "🎃",
+      "forcesPersonalization": false,
+      "iconFilename": "Halloween",
+      "id": 1005,
+      "unlocalizedName": "Halloween"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "red heart",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "red heart",
+        "isDisplayed": "1",
+        "localizedDisplayName": "દિલ",
+        "nonSubjectDescription": "in a scene with a backdrop of love elements and romantic decorations",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a backdrop of love elements and romantic decorations"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "❤️",
+      "forcesPersonalization": false,
+      "iconFilename": "Love",
+      "id": 1006,
+      "unlocalizedName": "Love"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "a deep blue starry night sky with a dense band of glowing stars and a dark mountain silhouette below",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a deep blue starry night sky with a dense band of glowing stars and a dark mountain silhouette below",
+        "isDisplayed": "1",
+        "localizedDisplayName": "તારા મઢી રાત",
+        "nonSubjectDescription": "in a night sky view of twinkling stars at midnight",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a sky view backdrop of twinkling stars at midnight"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Starry Night",
+      "id": 1008,
+      "unlocalizedName": "Starry Night"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "a colorful umbrella on a beach with a blue ocean",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a colorful umbrella on a beach with a blue ocean",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ઉનાળો",
+        "nonSubjectDescription": "in a spring summer setting and summer clear skies",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a spring summer setting and summer clear skies"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "🏖️",
+      "forcesPersonalization": false,
+      "iconFilename": "Summer",
+      "id": 1009,
+      "unlocalizedName": "Summer"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "party popper",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "party popper",
+        "isDisplayed": "1",
+        "localizedDisplayName": "પાર્ટી",
+        "nonSubjectDescription": "in a setting with decorations and party details",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a Party backdrop celebration decorations and party details"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "🎉",
+      "forcesPersonalization": false,
+      "iconFilename": "Party",
+      "id": 1010,
+      "unlocalizedName": "Party"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "cherry blossom",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "cherry blossom",
+        "isDisplayed": "1",
+        "localizedDisplayName": "વસંત",
+        "nonSubjectDescription": "in a spring time background with cherry blossoms",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a springtime background with cherry blossoms"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "🌸",
+      "forcesPersonalization": false,
+      "iconFilename": "Spring",
+      "id": 1011,
+      "unlocalizedName": "Spring"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "",
+        "isDisplayed": "0",
+        "localizedDisplayName": "શિયાળાની રજાઓ",
+        "nonSubjectDescription": "a winter wonderland with snowman frosty",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a winter wonderland with snowman frosty"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "☃️",
+      "forcesPersonalization": false,
+      "iconFilename": "Winter Holidays",
+      "id": 1012,
+      "unlocalizedName": "Winter Holidays"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "in a science fiction scene with elements from outer space and ufos and aliens, space age, futurism",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "UFO",
+        "isDisplayed": "1",
+        "localizedDisplayName": "સાઇ-ફાઇ",
+        "nonSubjectDescription": "in a science fiction scene with elements from outer space and ufos and aliens, space age, futurism",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a science fiction landscape with elements from outer space and ufos"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "🛸",
+      "forcesPersonalization": false,
+      "iconFilename": "Sci-Fi",
+      "id": 1013,
+      "unlocalizedName": "Sci-fi"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "sunset over water, featuring a bright sun on the horizon with radiating sunbeams and soft clouds",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "sunset over water, featuring a bright sun on the horizon with radiating sunbeams and soft clouds",
+        "isDisplayed": "1",
+        "localizedDisplayName": "સૂર્યાસ્ત",
+        "nonSubjectDescription": "in a gorgeous setting with a stunning sunset",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a gorgeous setting with a stunning sunset"
+      },
+      "categoryID": 1,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Sunset",
+      "id": 1014,
+      "unlocalizedName": "Sunset"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "",
+        "isDisplayed": "1",
+        "localizedDisplayName": "કલાકાર",
+        "nonSubjectDescription": "wearing paint smock with paint brushes paint palette wearing paint smock",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "an easel with a palette and brushes"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "🧑‍🎨",
+      "forcesPersonalization": true,
+      "iconFilename": "Artist",
+      "id": 2001,
+      "unlocalizedName": "Artist"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "",
+        "isDisplayed": "1",
+        "localizedDisplayName": "અંતરીક્ષયાત્રી",
+        "nonSubjectDescription": "wearing an astronaut spacesuit with helmet",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "an astronaut spacesuit with helmet"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "🧑‍🚀",
+      "forcesPersonalization": true,
+      "iconFilename": "Astronaut",
+      "id": 2002,
+      "unlocalizedName": "Astronaut"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "",
+        "isDisplayed": "1",
+        "localizedDisplayName": "શેફ",
+        "nonSubjectDescription": "dressed in a white cook's jacket and wearing a chef hat",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a kitchen scene with pots, knife, and cutting board"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "🧑‍🍳",
+      "forcesPersonalization": true,
+      "iconFilename": "Chef",
+      "id": 2003,
+      "unlocalizedName": "Chef"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ખેડૂત",
+        "nonSubjectDescription": "dressed in overalls, flannel shirt, feed cap, farming",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a farming landscape with tractor"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "🧑‍🌾",
+      "forcesPersonalization": true,
+      "iconFilename": "Farmer",
+      "id": 2004,
+      "unlocalizedName": "Farmer"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a large backpack and hiking pole, walking on a mountain path with grey mountains and green trees",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "1",
+        "genmojiSubjectDescription": "a hiker with a large backpack and hiking pole, walking on a mountain path with grey mountains and green trees",
+        "isDisplayed": "1",
+        "localizedDisplayName": "હાઇકર",
+        "nonSubjectDescription": "with hiking gear and backpacking, day trekking",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "hiking gear"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "",
+      "forcesPersonalization": true,
+      "iconFilename": "Hiker",
+      "id": 2007,
+      "unlocalizedName": "Hiker"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "a white racing helmet with red stripes and a black visor",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "1",
+        "genmojiSubjectDescription": "a white racing helmet with red stripes and a black visor",
+        "isDisplayed": "1",
+        "localizedDisplayName": "રેસ કાર ડ્રાઇવર",
+        "nonSubjectDescription": "wearing a padded grand prix car racing suit",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a car racing helmet"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "",
+      "forcesPersonalization": true,
+      "iconFilename": "Racecar Driver",
+      "id": 2010,
+      "unlocalizedName": "Race Car Driver"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "with bionic steampunk robotic facepieces dressed like terminator",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "robot face",
+        "isDisplayed": "1",
+        "localizedDisplayName": "રોબૉટ",
+        "nonSubjectDescription": "with bionic steampunk robotic facepieces dressed like terminator",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a friendly steampunk terminator robot"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "🤖",
+      "forcesPersonalization": false,
+      "iconFilename": "Robot",
+      "id": 2012,
+      "unlocalizedName": "Robot"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a crown",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "crown",
+        "isDisplayed": "1",
+        "localizedDisplayName": "રૉયલ્ટી",
+        "nonSubjectDescription": "dressed as royalty, wearing crown, ruffles, pearl necklaces, big gemstones, gold",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a royal crown, pearl necklaces, royal jewels, lots of gold"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "👑",
+      "forcesPersonalization": true,
+      "iconFilename": "Royalty",
+      "id": 2013,
+      "unlocalizedName": "Royalty"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "",
+        "isDisplayed": "1",
+        "localizedDisplayName": "વૈજ્ઞાનિક",
+        "nonSubjectDescription": "wearing a white science lab coat and safety goggles",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a science lab with beakers and test tubes"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "🧑‍🔬",
+      "forcesPersonalization": true,
+      "iconFilename": "Scientist",
+      "id": 2014,
+      "unlocalizedName": "Scientist"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "",
+        "isDisplayed": "1",
+        "localizedDisplayName": "સુપર હીરો",
+        "nonSubjectDescription": "dressed very heroic, wearing super spandex, with a cape and superpowers",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "the super mask of a marvelous hero lying flat on the sidewalk super inclusive design"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "🦸",
+      "forcesPersonalization": true,
+      "iconFilename": "Superhero",
+      "id": 2015,
+      "unlocalizedName": "Superhero"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "",
+        "isDisplayed": "1",
+        "localizedDisplayName": "જાદુગર",
+        "nonSubjectDescription": "as a mage with magical robes and hat and sparkles",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "the hat of a mage and enchanted staff with sparkles and fantasy backdrop"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "🧙",
+      "forcesPersonalization": true,
+      "iconFilename": "Mage",
+      "id": 2019,
+      "unlocalizedName": "Mage"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "",
+        "isDisplayed": "1",
+        "localizedDisplayName": "વેમપાયર",
+        "nonSubjectDescription": "dressed as vamp in a black and red collared cape with fangs and bats",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a black coffin, creepy bats and fantasy vamp elements, medieval"
+      },
+      "categoryID": 3,
+      "emojiRepresentation": "🧛",
+      "forcesPersonalization": true,
+      "iconFilename": "Vampire",
+      "id": 2020,
+      "unlocalizedName": "Vampire"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a blue baseball cap",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "blue baseball cap",
+        "isDisplayed": "1",
+        "localizedDisplayName": "બેસબૉલ કૅપ",
+        "nonSubjectDescription": "wearing a baseball cap with random logo and team colors",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a baseball cap with random logo and team colors"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "🧢",
+      "forcesPersonalization": false,
+      "iconFilename": "Baseball Cap",
+      "id": 3011,
+      "unlocalizedName": "Baseball Cap"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing an orange beanie hat",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "an orange beanie hat",
+        "isDisplayed": "1",
+        "localizedDisplayName": "બીની",
+        "nonSubjectDescription": "wearing a small close fitted knit hat in random color and pattern",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a small close fitted knit hat in random color and style lying flat"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Beanie",
+      "id": 3012,
+      "unlocalizedName": "Beanie"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a red color beret",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "red color beret",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ટોપી",
+        "nonSubjectDescription": "wearing a beret in an appropriate color",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a beret in a common color lying flat"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Beret",
+      "id": 3013,
+      "unlocalizedName": "Beret"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a purple bowtie",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a purple bowtie",
+        "isDisplayed": "1",
+        "localizedDisplayName": "બૉટાઇ",
+        "nonSubjectDescription": "wearing a stylish bowtie for an event",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a stylish bowtie for an event sat ready"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Bowtie",
+      "id": 3014,
+      "unlocalizedName": "Bowtie"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a flower tiara made from a variety of flower types in various colors sat flat",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a flower tiara made from a variety of flower types in various colors sat flat",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ફૂલનો તાજ",
+        "nonSubjectDescription": "wearing  a variety of flowers types in various colors as a fabulous floral tiara",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a flower tiara made from a variety of flower types in various colors sat flat"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Flower Crown",
+      "id": 3015,
+      "unlocalizedName": "Flower Crown"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a yellow color construction helmet facing slightly right",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "yellow color construction helmet facing slightly right",
+        "isDisplayed": "1",
+        "localizedDisplayName": "હાર્ડ હૅટ",
+        "nonSubjectDescription": "wearing a construction hard hat cap-style in a random color",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a construction hard hat cap-style from construction site"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Hard Hat",
+      "id": 3016,
+      "unlocalizedName": "Hard Hat"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a party hat and a party horn, surrounded by colorful confetti",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "smiley emoji with a party hat and a party horn, surrounded by colorful confetti",
+        "isDisplayed": "1",
+        "localizedDisplayName": "પાર્ટીની ટોપી",
+        "nonSubjectDescription": "wearing a party hat with fancy embellishments and fun patterns on the hat",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a party hat surrounded by elements of celebration"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "🥳",
+      "forcesPersonalization": false,
+      "iconFilename": "Party Hat",
+      "id": 3017,
+      "unlocalizedName": "Party Hat"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "potted plant inside a terracotta pot",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "potted plant inside a terracotta pot",
+        "isDisplayed": "1",
+        "localizedDisplayName": "કૂંડામાં ઉગાડેલી વનસ્પતિ",
+        "nonSubjectDescription": "having a potted Luscious and healthy Fiddle leaf Snake-Plant Ivy spider-plant monstera vines money-plant",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "luscious and healthy Fiddle leaf Snake-Plant Ivy spider-plant monstera vines money-plant"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "🪴",
+      "forcesPersonalization": false,
+      "iconFilename": "Potted Plant",
+      "id": 3018,
+      "unlocalizedName": "Potted Plant"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a sunglasses",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "sunglasses",
+        "isDisplayed": "1",
+        "localizedDisplayName": "સનગ્લાસિસ",
+        "nonSubjectDescription": "wearing a stylish pair of sunglasses with polarized opaque black lenses",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a pair of stylish sunglasses with dark lenses and frames"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "🕶️",
+      "forcesPersonalization": false,
+      "iconFilename": "Sunglasses",
+      "id": 3019,
+      "unlocalizedName": "Sunglasses"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a random knitted scarf",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "red scarf",
+        "isDisplayed": "1",
+        "localizedDisplayName": "સ્કાર્ફ",
+        "nonSubjectDescription": "wearing a random knitted scarf",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a multicolored knitted scarf"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "🧣",
+      "forcesPersonalization": false,
+      "iconFilename": "Scarf",
+      "id": 3020,
+      "unlocalizedName": "Scarf"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing an orange and white stripe sweatband with blue sweat droplet",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a grinning emoji wearing an orange and white stripe sweatband with blue sweat droplet",
+        "isDisplayed": "1",
+        "localizedDisplayName": "સ્વેટબૅન્ડ",
+        "nonSubjectDescription": "wearing a colorful athletic sweatband sports sweatband headband",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a colorful athletic sweatband  sports sweatband for product photography"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Sweatband",
+      "id": 3021,
+      "unlocalizedName": "Sweatband"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "wearing a top hat",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "top hat",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ટૉપ હૅટ",
+        "nonSubjectDescription": "wearing a top hat of any style or from any era",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a formal top hat for a fancy event set for product photography with various ribbons, confetti poppers, and accents"
+      },
+      "categoryID": 4,
+      "emojiRepresentation": "🎩",
+      "forcesPersonalization": false,
+      "iconFilename": "Top Hat",
+      "id": 3022,
+      "unlocalizedName": "Top Hat"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "a city block with a tall golden skyscraper and many other tall buildings on a green base",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a city block with a tall golden skyscraper and many other tall buildings on a green base",
+        "isDisplayed": "1",
+        "localizedDisplayName": "શહેર",
+        "nonSubjectDescription": "against the backdrop of a city street landscape skyline skyscrapers scene day night city buildings",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a contemporary urban scape dominated by towering skyscrapers and high rise structures"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "City",
+      "id": 4007,
+      "unlocalizedName": "City"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "a desert landscape with light brown sand dunes and a green cactus",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a desert landscape with light brown sand dunes and a green cactus",
+        "isDisplayed": "1",
+        "localizedDisplayName": "રણ",
+        "nonSubjectDescription": "in a desert landscape",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a desert landscape with various Sahara structures sand dunes cracked land Acacia in random times of day or night"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Desert",
+      "id": 4008,
+      "unlocalizedName": "Desert"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "in a park scene with a large green leafy tree, two smaller trees, and a wooden bench on grass",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a forest scene with three green pine trees on a patch of grass",
+        "isDisplayed": "1",
+        "localizedDisplayName": "જંગલ",
+        "nonSubjectDescription": "against a forest background with deciduous trees and broadleaf trees coniferous trees evergreen",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a lush forest teeming with diverse species of verdant trees"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Forest",
+      "id": 4009,
+      "unlocalizedName": "Forest"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "in front of a red and white striped lighthouse with a glowing blue light in the lantern",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a red and white striped lighthouse with a glowing blue light in the lantern",
+        "isDisplayed": "1",
+        "localizedDisplayName": "લાઇટહાઉસ",
+        "nonSubjectDescription": "at a fantastical lighthouse in a variety of settings",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "an fantasy lighthouse in a costal settings with random scenes in various colors and structure, weather"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Lighthouse",
+      "id": 4010,
+      "unlocalizedName": "Lighthouse"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "mountains",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "mountains",
+        "isDisplayed": "1",
+        "localizedDisplayName": "પર્વતો",
+        "nonSubjectDescription": "in a mountainous setting at various times midday bright morning noon twilight night alps",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a mountain range with various plants and formations and random time of day or night, alpine"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "🏔️",
+      "forcesPersonalization": false,
+      "iconFilename": "Mountains",
+      "id": 4011,
+      "unlocalizedName": "Mountains"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "in a park scene with a large green leafy tree, two smaller trees, and a wooden bench on grass",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a park scene with a large green leafy tree, two smaller trees, and a wooden bench on grass",
+        "isDisplayed": "1",
+        "localizedDisplayName": "પાર્ક",
+        "nonSubjectDescription": "with a serene park backdrop in various settings with park flora and structures",
+        "nonSubjectPersonalizationDescription": "0x1F304",
+        "subjectDescription": "a serene park settings with park flora"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Park",
+      "id": 4012,
+      "unlocalizedName": "Park"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "an outer space setting with a ringed planet resembling Saturn with a beige and yellow surface",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a ringed planet resembling Saturn with a beige and yellow surface",
+        "isDisplayed": "1",
+        "localizedDisplayName": "સ્પેસ",
+        "nonSubjectDescription": "an outer space setting",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a galaxy view of outer space with stars, comets, planets and moons"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "🪐",
+      "forcesPersonalization": false,
+      "iconFilename": "Space",
+      "id": 4013,
+      "unlocalizedName": "Space"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "a circular stadium with a gray exterior, red seating, a green field, and a scoreboard",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a circular stadium with a gray exterior, red seating, a green field, and a scoreboard",
+        "isDisplayed": "1",
+        "localizedDisplayName": "સ્ટેડિયમ",
+        "nonSubjectDescription": "in a stadium",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a sports stadium"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "🏟️",
+      "forcesPersonalization": false,
+      "iconFilename": "Stadium",
+      "id": 4014,
+      "unlocalizedName": "Stadium"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "microphone",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "microphone",
+        "isDisplayed": "1",
+        "localizedDisplayName": "સ્ટેજ",
+        "nonSubjectDescription": "with the backdrop of a performance stage various structures and lighting ",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a stage with random rigging and various lighting for different events"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "🎤",
+      "forcesPersonalization": false,
+      "iconFilename": "Stage",
+      "id": 4015,
+      "unlocalizedName": "Stage"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "in an island setting with background of volcano erupting with white smoke and orange lava",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "volcano erupting with white smoke and orange lava",
+        "isDisplayed": "1",
+        "localizedDisplayName": "જ્વાળામુખી",
+        "nonSubjectDescription": "a volcano background in various settings and random eruption",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a volcano background settings with random structures and eruptions"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "🌋",
+      "forcesPersonalization": false,
+      "iconFilename": "Volcano",
+      "id": 4017,
+      "unlocalizedName": "Volcano"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "in an open grasslands or savanna with various grasses herbs and other prairie flora",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "a rainforest scene featuring a toucan perched on a branch amid lush green foliage",
+        "isDisplayed": "1",
+        "localizedDisplayName": "વર્ષાવન",
+        "nonSubjectDescription": "in the tropical rainforest with various tropical flora and wildlife",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "a tropical rainforest with various tropical flora"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Rainforest",
+      "id": 4018,
+      "unlocalizedName": "Rainforest"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "with background of a prairie land with yellow sandy dunes and green bushes",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "isometric view of a prairie land with yellow sandy dunes and green bushes",
+        "isDisplayed": "1",
+        "localizedDisplayName": "પ્રેરી",
+        "nonSubjectDescription": "in an open grasslands or savanna with various grasses herbs and other prairie flora",
+        "nonSubjectPersonalizationDescription": "",
+        "subjectDescription": "an open grasslands or savanna with various grasses herbs and other prairie flora"
+      },
+      "categoryID": 5,
+      "emojiRepresentation": "",
+      "forcesPersonalization": false,
+      "iconFilename": "Prairie",
+      "id": 4019,
+      "unlocalizedName": "Prairie"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "with tears of joy",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "smiley with tears of joy",
+        "isDisplayed": "1",
+        "localizedDisplayName": "હાસ્ય",
+        "nonSubjectDescription": "with laughing expression",
+        "nonSubjectPersonalizationDescription": "with laughing expression",
+        "subjectDescription": "with laughing expression"
+      },
+      "categoryID": 2,
+      "emojiRepresentation": "😂",
+      "forcesPersonalization": true,
+      "iconFilename": "Laugh",
+      "id": 5000,
+      "unlocalizedName": "Laugh"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "smiling with smiling eyes",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "smiling smiley with smiling eyes",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ખુશ",
+        "nonSubjectDescription": "with a smiling expression",
+        "nonSubjectPersonalizationDescription": "with a smiling expression",
+        "subjectDescription": "with a smiling expression"
+      },
+      "categoryID": 2,
+      "emojiRepresentation": "😊",
+      "forcesPersonalization": true,
+      "iconFilename": "Happy",
+      "id": 5001,
+      "unlocalizedName": "Happy"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "red angry face",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "red angry smiley",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ગુસ્સો",
+        "nonSubjectDescription": "with angry expression",
+        "nonSubjectPersonalizationDescription": "with angry expression",
+        "subjectDescription": "with angry expression"
+      },
+      "categoryID": 2,
+      "emojiRepresentation": "😡",
+      "forcesPersonalization": true,
+      "iconFilename": "Angry",
+      "id": 5002,
+      "unlocalizedName": "Angry"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "crying face",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "crying smiley",
+        "isDisplayed": "1",
+        "localizedDisplayName": "ઉદાસ",
+        "nonSubjectDescription": "with sad expression",
+        "nonSubjectPersonalizationDescription": "with sad expression",
+        "subjectDescription": "with sad expression"
+      },
+      "categoryID": 2,
+      "emojiRepresentation": "😢",
+      "forcesPersonalization": true,
+      "iconFilename": "Sad",
+      "id": 5003,
+      "unlocalizedName": "Sad"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "astonished face",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "astonished smiley",
+        "isDisplayed": "1",
+        "localizedDisplayName": "આશ્ચર્યચકિત",
+        "nonSubjectDescription": "with a shocked expression",
+        "nonSubjectPersonalizationDescription": "with a shocked expression",
+        "subjectDescription": "with a shocked expression"
+      },
+      "categoryID": 2,
+      "emojiRepresentation": "😲",
+      "forcesPersonalization": true,
+      "iconFilename": "Shocked",
+      "id": 5005,
+      "unlocalizedName": "Shocked"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "દિલવાળી આંખો સાથે",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "smiley with hearts on eyes",
+        "isDisplayed": "1",
+        "localizedDisplayName": "દિલ",
+        "nonSubjectDescription": "with heart shaped sunglasses and dark lenses",
+        "nonSubjectPersonalizationDescription": "હૃદય આકારના ચશ્મા અને ડાર્ક લેંસ સાથે",
+        "subjectDescription": "with heart shaped sunglasses and dark lenses"
+      },
+      "categoryID": 2,
+      "emojiRepresentation": "😍",
+      "forcesPersonalization": true,
+      "iconFilename": "LoveExpression",
+      "id": 5006,
+      "unlocalizedName": "Love"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "વિચાર કરતો ચહેરો",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "thinking smiley",
+        "isDisplayed": "1",
+        "localizedDisplayName": "વિચારશીલ",
+        "nonSubjectDescription": "એક હાથ દાઢી પર રાખીને કંઈક વિચારવું",
+        "nonSubjectPersonalizationDescription": "એક હાથ દાઢી પર રાખીને કંઈક વિચારવું",
+        "subjectDescription": "એક હાથ દાઢી પર રાખીને કંઈક વિચારવું"
+      },
+      "categoryID": 2,
+      "emojiRepresentation": "🤔",
+      "forcesPersonalization": true,
+      "iconFilename": "Thinking",
+      "id": 5007,
+      "unlocalizedName": "Thinking"
+    },
+    {
+      "_LOCALIZABLE_": {
+        "genmojiNonSubjectDescription": "થમ્બ્સ અપ",
+        "genmojiNonSubjectPersonalizationDescription": "",
+        "genmojiShouldAutomatchPersonalization": "",
+        "genmojiSubjectDescription": "થંબ્સ અપ",
+        "isDisplayed": "1",
+        "localizedDisplayName": "થમ્બ્સ અપ",
+        "nonSubjectDescription": "તેમના થમ્બ્સ અપ સાથે",
+        "nonSubjectPersonalizationDescription": "તેમના થમ્બ્સ અપ સાથે",
+        "subjectDescription": "તેમના થમ્બ્સ અપ સાથે"
+      },
+      "categoryID": 2,
+      "emojiRepresentation": "👍",
+      "forcesPersonalization": true,
+      "iconFilename": "Thumbs Up",
+      "id": 5010,
+      "unlocalizedName": "Thumbs Up"
+    }
+  ],
+  "version": "202509120917"
+}

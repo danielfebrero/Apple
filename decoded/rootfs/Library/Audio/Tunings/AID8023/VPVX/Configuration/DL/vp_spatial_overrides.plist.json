@@ -1,0 +1,41 @@
+{
+  "Downlink": {
+    "Nodes": {
+      "Voice_Mix": {
+        "spatial-stereo-speaker": {
+          "DSPGraphPropertyStripFilePath": "DSP/DL/downlink_voice_mix_stereo_speaker.propstrip",
+          "DSPGraphFilePath": "DSP/DL/downlink_voice_mix_stereo.dspg",
+          "DSPGraphOutputChannelCounts": {
+            "voice": 2
+          },
+          "DSPGraphAUStripFilePath": "DSP/DL/downlink_voice_mix_stereo_speaker.austrip"
+        },
+        "spatial-stereo-headphones-headtracking": {
+          "DSPGraphPropertyStripFilePath": "DSP/DL/downlink_voice_mix_stereo_headphones.propstrip",
+          "DSPGraphFilePath": "DSP/DL/downlink_voice_mix_stereo.dspg",
+          "DSPGraphOutputChannelCounts": {
+            "voice": 2
+          },
+          "DSPGraphAUStripFilePath": "DSP/DL/downlink_voice_mix_stereo_headphones.austrip",
+          "DSPGraphPropertyStripOverrideFilePath": "DSP/DL/downlink_voice_mix_stereo_headphones_headtracking_overrides.propstrip"
+        },
+        "spatial-mono": {
+          "DSPGraphPropertyStripFilePath": "downlink_voice_mix_mono.propstrip",
+          "DSPGraphFilePath": "downlink_voice_mix_mono.dspg",
+          "DSPGraphOutputChannelCounts": {
+            "voice": 1
+          },
+          "DSPGraphAUStripFilePath": "downlink_voice_mix_mono.austrip"
+        },
+        "spatial-stereo-headphones": {
+          "DSPGraphPropertyStripFilePath": "DSP/DL/downlink_voice_mix_stereo_headphones.propstrip",
+          "DSPGraphFilePath": "DSP/DL/downlink_voice_mix_stereo.dspg",
+          "DSPGraphOutputChannelCounts": {
+            "voice": 2
+          },
+          "DSPGraphAUStripFilePath": "DSP/DL/downlink_voice_mix_stereo_headphones.austrip"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.TKModelMessages",
+  "UsageTypes": [
+    "tk.orderextraction",
+    "tk.messages"
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.TKModelMessages",
+  "EnableCellular": true,
+  "MetadataAsset": "com.apple.TKModelMessages.uaf.metadata",
+  "Assets": [
+    {
+      "AssetName": "com.apple.TKModelMessages.uaf.metadata",
+      "IgnoreOSCompatibility": true,
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.TKModelMessages.uaf.metadata"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.trustkit.tkmodelmessages",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "tk.messages"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.trustkit.tkmodelmessages.all"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.trustkit.tkorderextraction",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "tk.orderextraction"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.trustkit.tkorderextraction.all"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "tableName": "kv",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "personEntityTagging": {
+        "loiContextView": "currentLOIContext",
+        "personEntityHistogramsView": "bidirectionalPersonEntityHistograms"
+      }
+    }
+  },
+  "name": "personEntityTagging",
+  "type": "signal",
+  "update": {
+    "alwaysUpdateListeners": [
+      {
+        "computeIfPastSLA": false,
+        "schedule": "daily"
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "handleMap",
+        "requiredSource": true,
+        "schedule": "none"
+      },
+      {
+        "name": "bidirectionalPersonEntityHistograms",
+        "schedule": "none"
+      },
+      {
+        "name": "visualIdentifier",
+        "schedule": "none"
+      },
+      {
+        "name": "currentLOIContext",
+        "schedule": "none"
+      }
+    ]
+  }
+}

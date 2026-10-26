@@ -1,0 +1,6 @@
+
+
+CRITICAL: Do NOT generate a query without ALL of the above predicates.
+If you see this message, it means your previous query was incomplete.
+
+Build a query that includes ALL predicates using .operation(logic: .all, children: [...])

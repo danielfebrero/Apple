@@ -1,0 +1,88 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "period",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "periodicity",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "ConcatND" : 7,
+      "Convolution" : 27,
+      "Multiply" : 5,
+      "InnerProduct" : 9,
+      "AddBroadcastable" : 10,
+      "ArgMax" : 1,
+      "RankPreservingReshape" : 3,
+      "ActivationReLU" : 20,
+      "Squeeze" : 4,
+      "SubtractBroadcastable" : 1,
+      "Transpose" : 25,
+      "Add" : 9,
+      "SplitND" : 8,
+      "BatchedMatmul" : 3,
+      "LoadConstantND" : 10,
+      "ExpandDims" : 3,
+      "Scale" : 2,
+      "ReshapeStatic" : 11,
+      "BatchNorm" : 20,
+      "Mvn" : 2,
+      "SoftmaxND" : 1,
+      "Clip" : 1,
+      "ReduceSum" : 1
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.0.2",
+      "com.github.apple.coremltools.source" : "torch==1.6.0",
+      "mldb_token": "mldb-lqgwezng9p"
+    },
+    "generatedClassName" : "RepetitionCounter",
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 90 × 3 × 18)",
+        "shortDescription" : "",
+        "shape" : "[90, 3, 18]",
+        "name" : "poses",
+        "type" : "MultiArray"
+      }
+    ],
+    "method" : "predict"
+  }
+]

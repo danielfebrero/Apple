@@ -1,0 +1,62 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float16",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "drop_rate",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 6,
+    "mlProgramOperationTypeHistogram" : {
+      "Relu" : 1,
+      "Cast" : 2,
+      "Sigmoid" : 1,
+      "Linear" : 2,
+      "Mul" : 1
+    },
+    "computePrecision" : "Mixed (Float16, Float32)",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.source_dialect" : "TorchScript",
+      "com.github.apple.coremltools.source" : "torch==2.0.0",
+      "com.github.apple.coremltools.version" : "7.2",
+      "mldb_token" : "mldb-rxg5jl2ao8"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 2)",
+        "shortDescription" : "",
+        "shape" : "[2]",
+        "name" : "w2c_c2w_handovers",
+        "type" : "MultiArray"
+      }
+    ],
+    "generatedClassName" : "drop_rate",
+    "method" : "predict"
+  }
+]

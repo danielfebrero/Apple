@@ -1,0 +1,166 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "טלפון",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "תתקשרי לאביה",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "תתקשר לנביל ב-FaceTime",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "יישומים",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "תפתחי את ׳תמונות׳",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "הודעות",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "תכתוב לעפר שתכף אגיע",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "לוח שנה",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "תקבעי פגישה ל-9:00",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "תמונות",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "תראה את התמונות שלי מאתמול",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "מפות",
+      "DomainAlternateDisplayName": "מפות",
+      "TagPhrase": "תתני לי הנחיות איך להגיע הביתה",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "טוויטר",
+      "TagPhrase": "תעלה ציוץ של המיקום שלי…",
+      "IconResourceName": "Twitter",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Weibo",
+      "TagPhrase": "תפרסמי ב-Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "TagPhrase": "תפרסם ב-Facebook …",
+      "IconResourceName": "facebook",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "מוסיקה",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "תשמיעי לי את ׳איפה הילד׳",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "משימות",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "תזכירי לי להתקשר לאמא",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "דואר",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "תשלח לטל מייל על הטיול",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "מזג אוויר",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "מה מזג האוויר היום?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "מניות",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "מה מחיר המניה של Apple?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "שעון",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "תעירי אותי מחר בשבע בבוקר",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "אנשי קשר",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "מה הכתובת של טל?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "מצא את החברים שלי",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "איפה אביה?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "פתקים",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "תכתוב פתק שהוצאתי 40 ש״ח על צהריים",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "הגדרות",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "תפעילי מצב טיסה",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "חיפוש ברשת",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "תחפש ברשת דובי קוטב",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "שאלות ותשובות",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "כמה כוסות יש בליטר?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "iTunes",
+      "IconDisplayIdentifier": "com.apple.MobileStore",
+      "TagPhrase": "תורידי מ-iTunes את ׳סרט לגו׳",
+      "DomainName": "iTunes"
+    },
+    {
+      "DomainDisplayName": "ספרים",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "תוריד את הספר The Art of War",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "פודקאסטים",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "תנגן פודקאסטים",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

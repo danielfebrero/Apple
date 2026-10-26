@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "發郵件給薏婷說明天開會",
+            "寄信給健行跟他說會議延後了",
+            "新增一封電子郵件給陳裕嘉",
+            "發電子郵件給哥哥說房租收到了",
+            "寫信給王醫生說明天一定要準時到，標題為重要事項",
+            "發郵件給健行跟裕嘉，標題是晚餐，內容是謝謝招待"
+          ]
+        }
+      ],
+      "SectionName": "傳送電子郵件"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "查看電子郵件",
+            "查看我媽寄給我的郵件",
+            "尋找關於打球的信件",
+            "搜尋上星期來自周嘉璧的郵件"
+          ]
+        }
+      ],
+      "SectionName": "查看電子郵件"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "回信說不好意思薏婷，我還有事，就不去了"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "打到他的公司電話"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime到他的公司電話"
+          ]
+        }
+      ],
+      "SectionName": "回覆電子郵件"
+    }
+  ]
+}

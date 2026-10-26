@@ -1,0 +1,93 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "Enable5GStandaloneByDefault": true,
+  "EnableWiFiN1ModeOnlyWhenSAEnabled": true,
+  "Show5GSwitch": true,
+  "EnableVoNRByDefault": true,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "Signaling": {
+      "ResetSocketWhenInSameCellularRat": false
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4205777,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true,
+    "SupportCrossPlatformSIMTransfer": true
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "AllowSAOnWiFiAssociation": true,
+  "AttachAPN": {
+    "3GPP": {
+      "AllowedProtocolMaskInRoamingLTE": 1,
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoamingUMTS": 1,
+      "AllowedProtocolMask": 2
+    }
+  },
+  "ShowVoNRWarningUnsupportedCarrier": true,
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://bmc.prod.ondemandconnectivity.com",
+    "RequiresPasscodeForCrossPlatformTransfer": true
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "PushSettings": {
+    "CellularPlanTransferTopic": "ca.bell.iphone-plan-transfer"
+  },
+  "apns": [
+    {
+      "type-mask": 1081399,
+      "password": "",
+      "UseNetworkMTU": true,
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 1,
+      "username": "",
+      "apn": "pda2.bell.ca",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "password": "",
+      "tech-type-mask": 1048582,
+      "AllowedProtocolMaskInRoaming": 1,
+      "apn": "apps.bell.ca",
+      "username": "",
+      "AllowedProtocolMask": 1
+    },
+    {
+      "type-mask": 131072,
+      "password": "",
+      "tech-type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "AllowedProtocolMaskInRoaming": 2,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 262144,
+      "password": "",
+      "tech-type-mask": 262144,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "sos",
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "SupportsVoNR": true
+}

@@ -1,0 +1,38 @@
+{
+  "CFBundleName": "SiriInferenceRuntimeDiagnostics",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTXcode": "2700",
+  "DELocalizedConsentFilename": "legal.txt",
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "XPC!",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "DELocalizedDataCollectedSummaryText": "Information regarding the use of Siri Entity Resolution use cases.",
+  "DELocalizedDataCollectedExplanationFilename": "description.txt",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "SiriInferenceRuntimeDiagnostics",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.inference.SiriInference.SiriInferenceRuntimeDiagnostics",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "",
+  "NSExtension": {
+    "NSExtensionAttributes": {
+      "DEAttachmentsName": "SiriInferenceRuntimeDiagnostics logs",
+      "DEAttachmentsLoggingEnabled": true
+    },
+    "NSExtensionPointIdentifier": "com.apple.diagnosticextensions-service",
+    "NSExtensionPrincipalClass": "SiriInferenceRuntimeDiagnostics.Diagnostics"
+  }
+}

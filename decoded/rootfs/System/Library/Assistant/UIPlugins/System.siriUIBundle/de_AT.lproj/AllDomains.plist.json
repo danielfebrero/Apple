@@ -1,0 +1,183 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Telefon",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Rufe Tobias an",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime-Anruf mit Tobias",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Apps",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Öffne Fotos",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Nachrichten",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Sage Diana ich bin gleich da",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Kalender",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Erstelle Termin um 14 Uhr",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Sport",
+      "IconResourceName": "Sports",
+      "TagPhrase": "Hat Österreich gewonnen?",
+      "DomainName": "Sports"
+    },
+    {
+      "DomainDisplayName": "Fotos",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Zeig mir meine Fotos von gestern",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Karten",
+      "DomainAlternateDisplayName": "Karten",
+      "TagPhrase": "Wie komme ich nach Hause?",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Poste auf Twitter",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Poste auf Weibo",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Neuer Facebook-Status",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Restaurants",
+      "IconResourceName": "Restaurants",
+      "TagPhrase": "Finde eine gute Pizzeria",
+      "DomainName": "Restaurants"
+    },
+    {
+      "DomainDisplayName": "Filme",
+      "IconResourceName": "Movies",
+      "TagPhrase": "Zeige mir witzige Filme",
+      "DomainName": "Movies"
+    },
+    {
+      "DomainDisplayName": "Musik",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Spiele Norah Jones",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Erinnerungen",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Erinnere mich Mama anrufen",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "E-Mail",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Emaile Georg wegen der Reise",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Wetter",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Wie wird das Wetter heute?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Aktien",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Aktienkurs von Apple",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Uhr",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Wecke mich um 7 Uhr",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Kontakte",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Was ist Sabines Adresse?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Freunde suchen",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "Wo ist Tobias?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "Notizen",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Notiere 12 Euro für Pizza",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Einstellungen",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Schalte den Flugmodus ein",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Websuche",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Suche im Internet nach Prater",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Fragen & Antworten",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "Wie hoch ist der Mount Everest",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "iTunes",
+      "IconDisplayIdentifier": "com.apple.MobileStore",
+      "TagPhrase": "Finde den Lego-Movie in iTunes",
+      "DomainName": "iTunes"
+    },
+    {
+      "DomainDisplayName": "Books",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "Suche in iBooks nach In eisige Höhen",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "Podcasts",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Spiele Podcasts",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

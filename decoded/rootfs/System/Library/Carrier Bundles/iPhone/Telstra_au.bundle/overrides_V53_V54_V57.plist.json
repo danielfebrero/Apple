@@ -1,0 +1,107 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "SatelliteSystemTransitionTimeToAllowed": 30,
+  "ShowSatelliteSwitch": true,
+  "Show4GSwitch": true,
+  "IMSConfig": {
+    "Emergency": {
+      "AlwaysEnableVoNRForEmergency": true
+    },
+    "Media": {
+      "AudioCodecs": {
+        "127": {
+          "bw": "nb-swb"
+        }
+      },
+      "PreferredAMRWBMode": 8,
+      "EVSHardBwLimit": "nb-swb"
+    },
+    "Satellite": {
+      "IMSServiceMask": 2
+    },
+    "Signaling": {
+      "AlwaysSendSessionProgress": true
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    }
+  },
+  "SupportsSatellite": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "AllowSAOnWiFiAssociation": true,
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "MMS": {
+    "MaxMessageSizeOverSatellite": 3000
+  },
+  "SupportsNRNSAInboundRoaming": true,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 262144,
+          "password": "",
+          "AllowNoDNS": 1,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "Support5GSaHandOver": true,
+          "AllowedProtocolMaskInRoaming": 3,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 32771,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "enableXLAT464": true,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "telstra.wap",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 52,
+          "password": "",
+          "tech-type-mask": 4,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "telstra.internet",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "tech-type-mask": 1048576,
+          "AllowedProtocolMaskInRoaming": 1,
+          "apn": "hos",
+          "username": "",
+          "type-mask": 1048576
+        }
+      ],
+      "technology-mask": 9
+    }
+  ],
+  "SupportsVoNR": true
+}

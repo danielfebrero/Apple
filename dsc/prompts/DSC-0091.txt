@@ -1,0 +1,12 @@
+
+
+**Your Task:**
+Analyze the user's request and decide if custom ranking would help.
+
+Use the tools to check attribute coverage, then return your decision.
+
+Remember:
+- Use check_attribute_coverage to verify data exists
+- Only rank if coverage >80%
+- When in doubt, skip ranking
+- Explain your reasoning

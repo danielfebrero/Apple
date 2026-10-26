@@ -1,0 +1,75 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Mixed (Float16, Palettized (11 bits), Palettized (9 bits), UInt4)",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16 1 × 512)",
+        "shortDescription": "",
+        "shape": "[1, 512]",
+        "name": "embedding",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 9,
+    "mlProgramOperationTypeHistogram": {
+      "Ios18.constexprLutToDense": 74,
+      "Ios18.batchNorm": 25,
+      "Ios18.conv": 73,
+      "Ios18.expandDims": 62,
+      "Ios18.linear": 1,
+      "Ios18.gelu": 12,
+      "Ios18.concat": 12,
+      "Ios18.add": 25,
+      "Ios16.einsum": 144,
+      "Ios18.realDiv": 1,
+      "Ios16.reduceMean": 1,
+      "Ios18.softmax": 72,
+      "Ios18.layerNorm": 25,
+      "Ios18.transpose": 72,
+      "Ios16.reduceL2Norm": 1,
+      "Ios18.squeeze": 61,
+      "Ios18.reshape": 1,
+      "Split": 36,
+      "Ios18.mul": 72
+    },
+    "computePrecision": "Mixed (Float16, Int32)",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "15.0",
+      "tvOS": "18.0",
+      "visionOS": "2.0",
+      "watchOS": "11.0",
+      "iOS": "18.0",
+      "macCatalyst": "18.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-27marq7y6j",
+      "com.github.apple.coremltools.source": "torch==2.1.0",
+      "com.github.apple.coremltools.version": "8.1",
+      "com.github.apple.coremltools.source_dialect": "TorchScript"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16 1 × 197 × 64)",
+        "shortDescription": "",
+        "shape": "[1, 197, 64]",
+        "name": "specgram",
+        "type": "MultiArray"
+      }
+    ],
+    "generatedClassName": "SNLanguageAlignedAudioEncoder",
+    "method": "predict"
+  }
+]

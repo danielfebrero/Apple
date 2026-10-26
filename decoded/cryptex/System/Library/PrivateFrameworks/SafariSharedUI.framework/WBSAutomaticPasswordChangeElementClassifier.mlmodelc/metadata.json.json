@@ -1,0 +1,77 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Int8",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "keyType": "String",
+        "formattedType": "Dictionary (String → Double)",
+        "type": "Dictionary",
+        "name": "probabilities",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "String",
+        "type": "String",
+        "name": "classLabel",
+        "shortDescription": ""
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 4,
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.15",
+      "tvOS": "13.0",
+      "visionOS": "1.0",
+      "watchOS": "6.0",
+      "iOS": "13.0",
+      "macCatalyst": "13.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetworkClassifier"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 26657)",
+        "shortDescription": "",
+        "shape": "[1, 26657]",
+        "name": "features",
+        "type": "MultiArray"
+      }
+    ],
+    "classLabels": [
+      "alternate_auth",
+      "current_password",
+      "decline_or_skip",
+      "email_reset_link",
+      "forgot_password",
+      "new_password",
+      "one_time_code",
+      "other",
+      "password_change_navigation",
+      "send_one_time_code",
+      "submit_or_advance",
+      "username_or_email"
+    ],
+    "generatedClassName": "WBSAutomaticPasswordChangeElementClassifier",
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.source_dialect": "TorchScript",
+      "com.github.apple.coremltools.source": "torch==2.8.0",
+      "com.github.apple.coremltools.version": "8.3.2",
+      "mldb_token": "mldb-rdg24exa5z"
+    },
+    "neuralNetworkLayerTypeHistogram": {
+      "InnerProduct": 1,
+      "SoftmaxND": 1
+    },
+    "method": "predict"
+  }
+]

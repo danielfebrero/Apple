@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en">
+  <conditions>
+    <condition name="isSiriHelp">
+       <expression name="deliveryVehicle" op="eq" value="'siriHelp'"/>
+    </condition>
+  </conditions>
+  <phrases>
+    <random phrase="siriHelpSuggestionUtterance">
+      <text>What is the weather tomorrow in San Francisco?</text>
+      <text>How windy is it?</text>
+      <text>Is it going to rain today?</text>
+    </random>
+    <first phrase="locationPhrase" note="Use 'near' when we only have the name --> 'near Space Needle'. Use 'in' when we have locality --> 'in Seattle' instead of 'in Seattle, WA'">
+        <text>near <var name="location.values[0].address.name"/></text>
+        <text>in <var name="location.values[0].address.locality"/></text>
+    </first>
+    <first phrase="suggestionUtterance">
+        <text>What is the weather <phrase name="locationPhrase"/>?</text>
+    </first>
+  </phrases>
+  <first>
+    <dialog id="exampleUtterance" condition="isSiriHelp"><phrase name="siriHelpSuggestionUtterance"/></dialog>
+    <dialog id="exampleUtterance"><phrase name="suggestionUtterance"/></dialog>
+  </first>
+</cat>

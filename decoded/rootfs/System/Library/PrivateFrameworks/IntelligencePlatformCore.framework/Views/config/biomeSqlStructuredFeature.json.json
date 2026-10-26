@@ -1,0 +1,22 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "biomeSql": {
+        "featureNames": [
+          "shareCount"
+        ],
+        "sqlQueries": [
+          "SELECT \"shareCount\" AS featureName, COUNT(*) AS featureValue FROM \"Photos.Share\""
+        ]
+      }
+    }
+  },
+  "featureFlag": "LivableSources",
+  "name": "biomeSqlStructuredFeature",
+  "type": "signal",
+  "update": {}
+}

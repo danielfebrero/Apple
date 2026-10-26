@@ -1,0 +1,139 @@
+{
+  "artifact": {
+    "diffType": "updatedObject",
+    "path": "siri/remembers/view.db",
+    "type": "siriRemembers",
+    "updatedObject": {
+      "diffTableMaxAge": 172800,
+      "identifierColumn": "interactionIdentifier",
+      "tableName": "diff",
+      "updatedTimestampColumn": "updatedTimestamp"
+    }
+  },
+  "clearOnError": false,
+  "customViewClass": "SiriRemembers",
+  "name": "siriRemembers",
+  "supportsClientObservedErrorRecovery": true,
+  "type": "custom",
+  "update": {
+    "alwaysUpdateListeners": [
+      {
+        "computeIfPastSLA": false,
+        "schedule": "weekly"
+      }
+    ],
+    "biomeListeners": [
+      {
+        "highPriority": true,
+        "rebuildOnPrune": false,
+        "schedule": "live",
+        "stream": "Siri.Remembers.InteractionHistory"
+      },
+      {
+        "highPriority": true,
+        "rebuildOnPrune": false,
+        "schedule": "live",
+        "stream": "Siri.Remembers.MessageHistory"
+      },
+      {
+        "highPriority": true,
+        "rebuildOnPrune": false,
+        "schedule": "live",
+        "stream": "Siri.Remembers.CallHistory"
+      },
+      {
+        "highPriority": true,
+        "rebuildOnPrune": false,
+        "schedule": "live",
+        "stream": "Siri.Remembers.AssistantSuggestions"
+      },
+      {
+        "highPriority": true,
+        "rebuildOnPrune": false,
+        "schedule": "live",
+        "stream": "Siri.Remembers.AudioHistory"
+      },
+      {
+        "computeIfPastSLA": false,
+        "excludeLocal": true,
+        "rebuildOnPrune": false,
+        "schedule": "every7Minutes",
+        "stream": "Siri.Remembers.InteractionHistory",
+        "syncedDeviceTypes": [
+          "platformiPad",
+          "platformiPhone",
+          "platformMacDesktop",
+          "platformMacPortable",
+          "platformWatch",
+          "platformHomePod",
+          "platformVision"
+        ]
+      },
+      {
+        "computeIfPastSLA": false,
+        "excludeLocal": true,
+        "rebuildOnPrune": false,
+        "schedule": "every7Minutes",
+        "stream": "Siri.Remembers.MessageHistory",
+        "syncedDeviceTypes": [
+          "platformiPad",
+          "platformiPhone",
+          "platformMacDesktop",
+          "platformMacPortable",
+          "platformWatch",
+          "platformHomePod",
+          "platformVision"
+        ]
+      },
+      {
+        "computeIfPastSLA": false,
+        "excludeLocal": true,
+        "rebuildOnPrune": false,
+        "schedule": "every7Minutes",
+        "stream": "Siri.Remembers.CallHistory",
+        "syncedDeviceTypes": [
+          "platformiPad",
+          "platformiPhone",
+          "platformMacDesktop",
+          "platformMacPortable",
+          "platformWatch",
+          "platformHomePod",
+          "platformVision"
+        ]
+      },
+      {
+        "computeIfPastSLA": false,
+        "excludeLocal": true,
+        "rebuildOnPrune": false,
+        "schedule": "every7Minutes",
+        "stream": "Siri.Remembers.AssistantSuggestions",
+        "syncedDeviceTypes": [
+          "platformiPad",
+          "platformiPhone",
+          "platformMacDesktop",
+          "platformMacPortable",
+          "platformWatch",
+          "platformHomePod",
+          "platformVision"
+        ]
+      },
+      {
+        "computeIfPastSLA": false,
+        "excludeLocal": true,
+        "rebuildOnPrune": false,
+        "schedule": "every7Minutes",
+        "stream": "Siri.Remembers.AudioHistory",
+        "syncedDeviceTypes": [
+          "platformiPad",
+          "platformiPhone",
+          "platformMacDesktop",
+          "platformMacPortable",
+          "platformWatch",
+          "platformHomePod",
+          "platformVision"
+        ]
+      }
+    ]
+  },
+  "writeToStream": true
+}

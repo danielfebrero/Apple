@@ -1,0 +1,64 @@
+[
+  {
+    "shortDescription" : "HomePod image classifier. Operates on SmartCam descriptors (version 1.0).",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 1)",
+        "shortDescription" : "1 if HomePod detected, 0 otherwise",
+        "shape" : "[1]",
+        "name" : "HomePodDetected",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "1.0",
+    "modelParameters" : [
+
+    ],
+    "author" : "Alex Nelson",
+    "specificationVersion" : 1,
+    "storagePrecision" : "Float32",
+    "license" : "Apple Internal",
+    "computePrecision" : "Float16",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "visionOS" : "1.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 128)",
+        "shortDescription" : "Representation of Vision smartCam or sceneClassifier models at next to last layer.",
+        "shape" : "[128]",
+        "name" : "imageDescriptors",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "mldb_token" : "mldb-voyqlm3abj"
+    },
+    "generatedClassName" : "HPdetector_SmartCam_B238",
+    "neuralNetworkLayerTypeHistogram" : {
+      "ActivationSigmoid" : 1,
+      "InnerProduct" : 3,
+      "ActivationReLU" : 2
+    },
+    "method" : "predict"
+  }
+]

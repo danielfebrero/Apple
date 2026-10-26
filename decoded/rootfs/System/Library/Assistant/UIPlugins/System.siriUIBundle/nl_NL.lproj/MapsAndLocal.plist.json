@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Geef me een routebeschrijving naar huis",
+            "Geef me een routebeschrijving naar Zandvoort",
+            "Hoe kom ik naar het kantoor van mijn vader?",
+            "Ik wil een routebeschrijving van Den Haag naar Utrecht",
+            "Hoe loop ik van hier naar Evelien?"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "Wat is mijn volgende afslag?",
+            "Zijn we er bijna?",
+            "Wat is mijn aankomsttijd?",
+            "Zoek een benzinestation"
+          ]
+        }
+      ],
+      "SectionName": "Navigatie"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Laat de kaart zien van Leidseplein 25 in Amsterdam"
+          ]
+        }
+      ],
+      "SectionName": "Kaarten"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Zoek een koffiezaak in de buurt",
+            "Zoek een restaurant",
+            "Zoek de beste nagelstudio",
+            "Waar is de dichtstbijzijnde Apple Store?"
+          ]
+        }
+      ],
+      "SectionName": "Plaatselijke bedrijven"
+    }
+  ]
+}

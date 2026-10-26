@@ -1,0 +1,30 @@
+{
+  "BuildMachineOSBuild": "23A344017",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleExecutable": "GenerativeExperiencesSafetyInferenceProvider",
+  "CFBundleIdentifier": "com.apple.GenerativeFunctions.GenerativeExperiencesSafetyInferenceProvider",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleName": "GenerativeExperiencesSafetyInferenceProvider",
+  "CFBundlePackageType": "XPC!",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleVersion": "297.12.4",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "DTPlatformBuild": "24B107",
+  "DTPlatformName": "iphoneos",
+  "DTPlatformVersion": "27.2",
+  "DTSDKBuild": "24B107",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTXcode": "2700",
+  "DTXcodeBuild": "27A225b",
+  "EXAppExtensionAttributes": {
+    "EXExtensionPointIdentifier": "com.apple.modelmanager.inferenceprovider",
+    "InferenceProviderIdentifier": "generative-experiences-safety-inference-provider"
+  },
+  "MinimumOSVersion": "27.2",
+  "UIDeviceFamily": [
+    1,
+    2
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Zeynep’e mesaj gönder: Oraya geliyorum",
+            "Ahmet Can’a mesaj at",
+            "Kemal’e mesaj gönder: Yarın olur mu?",
+            "Sinem’e mesaj at: Şov harikaydı",
+            "Mehmet’e mesaj gönder: Gecikeceğim",
+            "0 212 123 45 67’ye mesaj gönder",
+            "Deniz ve Ali’ye mesaj yaz: Neredesiniz?"
+          ]
+        }
+      ],
+      "SectionName": "Mesaj Gönderme"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Yeni mesajlarımı oku",
+            "Tekrar oku"
+          ]
+        }
+      ],
+      "SectionName": "Mesaj Uyarılarını Okuma"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Yanıtla: Bu harika bir haber",
+            "Ona 10 dakika sonra orada olacağımı söyle"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Onu ara"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Onu FaceTime ile ara"
+          ]
+        }
+      ],
+      "SectionName": "Mesajları Yanıtlama"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Elif’ten gelen en son mesajımı oku"
+          ]
+        }
+      ],
+      "SectionName": "Mesajlarda Arama Yapma"
+    }
+  ]
+}

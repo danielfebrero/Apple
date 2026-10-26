@@ -1,0 +1,37 @@
+{
+  "CFBundleName": "DiagnosticExtension",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTXcode": "2700",
+  "DELocalizedConsentFilename": "consent.txt",
+  "DTSDKBuild": "24B104",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "DELocalizedDataCollectedExplanationFilename": "explanation.txt",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "DiagnosticExtension",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.intelligenceplatform.IntelligencePlatform.DiagnosticExtension",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "CFBundleDisplayName": "DiagnosticExtension",
+  "DTPlatformBuild": "",
+  "DEAttachmentsAllowUserSelection": true,
+  "NSExtension": {
+    "NSExtensionAttributes": {
+      "DEAttachmentsName": "IntelligencePlatformDiagnosticExtension logs",
+      "DEAttachmentsLoggingEnabled": true
+    },
+    "NSExtensionPointIdentifier": "com.apple.diagnosticextensions-service",
+    "NSExtensionPrincipalClass": "GDIntelligencePlatformDiagnosticExtension"
+  }
+}

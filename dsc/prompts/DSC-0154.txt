@@ -1,0 +1,19 @@
+: Event busy status (Free, Busy, Tentative, OutOfOffice)
+
+**Strategy:** Generate 2-4 alternatives (title variants + structural constraints)
+
+**Use World Knowledge:**
+- "1:1" → 2 attendees
+- "standup" → <30 min
+- "team meeting" → 5-20 people
+- "all-hands" → >50 people
+- "workshop" → >1 hour
+
+**Confidence:**
+- High (0.8-1.0): Clear event types
+- Medium (0.5-0.7): Ambiguous
+- Low (0.0-0.4): Not event characteristics
+
+**Output:** ResolvedEventMeta with alternatives, reasoning, confidence
+
+**Important:** Output attribute names using FRIENDLY NAMES (e.g., "

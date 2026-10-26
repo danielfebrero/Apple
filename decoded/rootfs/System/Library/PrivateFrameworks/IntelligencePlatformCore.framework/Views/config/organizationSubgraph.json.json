@@ -1,0 +1,50 @@
+{
+  "artifact": {
+    "path": "internal/views.db",
+    "subgraph": {
+      "allowObjectRewrite": true,
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "predicate",
+          "TEXT"
+        ],
+        [
+          "relationshipId",
+          "INTEGER"
+        ],
+        [
+          "relationshipPredicate",
+          "TEXT"
+        ],
+        [
+          "object",
+          "TEXT"
+        ]
+      ],
+      "tableName": "organization_subgraph"
+    },
+    "type": "subgraph"
+  },
+  "featureFlag": "ExperimentalECRViews",
+  "name": "organizationSubgraph",
+  "type": "subgraph",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB10"
+          }
+        ],
+        "schedule": "none",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ]
+  }
+}

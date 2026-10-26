@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>HeySiriToVoiceUILaunch</string>
+    <key>maximum_duration</key>
+    <real>5.0</real>
+    <key>signposts</key>
+    <array>
+        <!-- Single dict: workflow start = voiceUILaunch begin, workflow end = voiceUILaunch end -->
+        <dict>
+            <key>name</key>
+            <string>voiceUILaunch</string>
+            <key>subsystem</key>
+            <string>com.apple.AgentCanvasKit</string>
+            <key>category</key>
+            <string>SiriChat</string>
+            <key>start</key>
+            <true/>
+            <key>end</key>
+            <true/>
+        </dict>
+    </array>
+    <key>diagnostics</key>
+    <array>
+        <dict>
+            <key>trigger_threshold_duration_single</key>
+            <real>1.0</real>
+            <key>gather_tailspin</key>
+            <true/>
+        </dict>
+    </array>
+</dict>
+</plist>

@@ -1,0 +1,56 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "coreMLModelScore",
+        "shortDescription" : ""
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "author" : "Mounira Hadjoudj",
+    "specificationVersion" : 1,
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "visionOS" : "1.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_pipelineRegressor",
+      "structure" : [
+        {
+          "name" : "MLModelType_featureVectorizer"
+        },
+        {
+          "name" : "MLModelType_glmRegressor"
+        }
+      ]
+    },
+    "userDefinedMetadata" : {
+      "com.apple.createml.version" : "13.5.0",
+      "com.apple.createml.app.tag" : "115.3",
+      "com.apple.coreml.model.preview.type" : "tabularRegressor",
+      "com.apple.createml.app.version" : "5.0 Beta"
+    },
+    "inputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "timeSinceOutgoingInteractionNumber10",
+        "shortDescription" : ""
+      }
+    ],
+    "generatedClassName" : "psSuggestionsRankingModel",
+    "method" : "predict"
+  }
+]

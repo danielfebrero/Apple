@@ -1,0 +1,63 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "أرسل إلى سارة إنني قادم",
+            "أرسل رسالة إلى إيهاب عقل",
+            "أرسل رسالة إلى فاطمة: ماذا عن الغد",
+            "أخبر دينا: العرض كان رائعًا",
+            "أرسل رسالة إلى رقم ٤٥٦٧٨٩٠ ١٢٣"
+          ]
+        }
+      ],
+      "SectionName": "إرسال الرسائل"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "اقرأ الرسائل الجديدة"
+          ]
+        }
+      ],
+      "SectionName": "قراءة تنبيهات الرسائل"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "أرسل ردًا: هذه أخبار رائعة",
+            "أخبره أنني سأصل هناك في خلال ١٠ دقائق"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "اتصل به"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": []
+        }
+      ],
+      "SectionName": "الرد على الرسائل"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "اقرأ آخر رسالة من سالم"
+          ]
+        }
+      ],
+      "SectionName": "البحث عن الرسائل"
+    }
+  ]
+}

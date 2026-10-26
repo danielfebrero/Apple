@@ -1,0 +1,395 @@
+{
+  "$version": 100000,
+  "$archiver": "NSKeyedArchiver",
+  "$top": {
+    "root": "UID(1)"
+  },
+  "$objects": [
+    "$null",
+    {
+      "NSEntities": "UID(2)",
+      "CDMCompilerToolVersion": 25216.0,
+      "CDMCompilerXcodeVersion": 270000,
+      "NSFetchRequestTemplates": "UID(0)",
+      "NSVersionIdentifiers": "UID(55)",
+      "$class": "UID(58)"
+    },
+    {
+      "NS.keys": [
+        "UID(3)"
+      ],
+      "NS.objects": [
+        "UID(4)"
+      ],
+      "$class": "UID(6)"
+    },
+    "ParseOverride",
+    {
+      "NSUniqueTuples": "UID(38)",
+      "NSProperties": "UID(7)",
+      "NSUserInfo": "UID(36)",
+      "NSManagedObjectModel": "UID(1)",
+      "NSClassNameForEntity": "UID(3)",
+      "$class": "UID(54)",
+      "NSVersionHashModifier": "UID(0)",
+      "NSFetchIndexDescriptions": "UID(41)",
+      "NSCompoundIndexes": "UID(52)",
+      "NSEntityName": "UID(3)",
+      "NSSubentities": "UID(5)",
+      "NSSuperentity": "UID(0)",
+      "NSRenamingIdentifier": "UID(3)"
+    },
+    {
+      "NS.keys": [],
+      "NS.objects": [],
+      "$class": "UID(6)"
+    },
+    {
+      "$classname": "NSMutableDictionary",
+      "$classes": [
+        "NSMutableDictionary",
+        "NSDictionary",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.keys": [
+        "UID(8)",
+        "UID(9)",
+        "UID(10)",
+        "UID(11)",
+        "UID(12)",
+        "UID(13)",
+        "UID(14)",
+        "UID(15)",
+        "UID(16)",
+        "UID(17)",
+        "UID(18)"
+      ],
+      "NS.objects": [
+        "UID(19)",
+        "UID(22)",
+        "UID(25)",
+        "UID(26)",
+        "UID(27)",
+        "UID(28)",
+        "UID(30)",
+        "UID(31)",
+        "UID(33)",
+        "UID(34)",
+        "UID(35)"
+      ],
+      "$class": "UID(6)"
+    },
+    "locale",
+    "source",
+    "enabled",
+    "id",
+    "inputText",
+    "archivedNluRequestRule",
+    "namespace",
+    "creation",
+    "userParse",
+    "utteranceComparisonType",
+    "overrideId",
+    {
+      "$class": "UID(21)",
+      "NSDefaultValue": "UID(0)",
+      "_P": 241,
+      "NSAttributeType": 700,
+      "NSAttributeValueClassName": "UID(20)",
+      "NSEntity": "UID(4)",
+      "NSValueTransformerName": "UID(0)",
+      "NSPropertyName": "UID(8)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(8)"
+    },
+    "NSString",
+    {
+      "$classname": "NSAttributeDescription",
+      "$classes": [
+        "NSAttributeDescription",
+        "NSPropertyDescription",
+        "NSObject"
+      ]
+    },
+    {
+      "$class": "UID(21)",
+      "NSDefaultValue": "UID(24)",
+      "_P": 241,
+      "NSAttributeType": 200,
+      "NSAttributeValueClassName": "UID(23)",
+      "NSEntity": "UID(4)",
+      "NSValueTransformerName": "UID(0)",
+      "NSPropertyName": "UID(9)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(9)"
+    },
+    "NSNumber",
+    0,
+    {
+      "$class": "UID(21)",
+      "_P": 243,
+      "NSAttributeValueClassName": "UID(23)",
+      "NSAttributeType": 800,
+      "NSIsOptional": true,
+      "NSEntity": "UID(4)",
+      "NSDefaultValue": "UID(0)",
+      "NSPropertyName": "UID(10)",
+      "NSValueTransformerName": "UID(0)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(10)"
+    },
+    {
+      "$class": "UID(21)",
+      "NSDefaultValue": "UID(0)",
+      "_P": 241,
+      "NSAttributeType": 700,
+      "NSAttributeValueClassName": "UID(20)",
+      "NSEntity": "UID(4)",
+      "NSValueTransformerName": "UID(0)",
+      "NSPropertyName": "UID(11)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(11)"
+    },
+    {
+      "$class": "UID(21)",
+      "NSDefaultValue": "UID(0)",
+      "_P": 241,
+      "NSAttributeType": 700,
+      "NSAttributeValueClassName": "UID(20)",
+      "NSEntity": "UID(4)",
+      "NSValueTransformerName": "UID(0)",
+      "NSPropertyName": "UID(12)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(12)"
+    },
+    {
+      "$class": "UID(21)",
+      "_P": 243,
+      "NSAttributeValueClassName": "UID(29)",
+      "NSAttributeType": 1000,
+      "NSIsOptional": true,
+      "NSEntity": "UID(4)",
+      "NSDefaultValue": "UID(0)",
+      "NSPropertyName": "UID(13)",
+      "NSValueTransformerName": "UID(0)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(13)"
+    },
+    "NSData",
+    {
+      "$class": "UID(21)",
+      "NSDefaultValue": "UID(24)",
+      "_P": 241,
+      "NSAttributeType": 200,
+      "NSAttributeValueClassName": "UID(23)",
+      "NSEntity": "UID(4)",
+      "NSValueTransformerName": "UID(0)",
+      "NSPropertyName": "UID(14)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(14)"
+    },
+    {
+      "$class": "UID(21)",
+      "_P": 243,
+      "NSAttributeValueClassName": "UID(32)",
+      "NSAttributeType": 900,
+      "NSIsOptional": true,
+      "NSEntity": "UID(4)",
+      "NSDefaultValue": "UID(0)",
+      "NSPropertyName": "UID(15)",
+      "NSValueTransformerName": "UID(0)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(15)"
+    },
+    "NSDate",
+    {
+      "$class": "UID(21)",
+      "_P": 243,
+      "NSAttributeValueClassName": "UID(29)",
+      "NSAttributeType": 1000,
+      "NSIsOptional": true,
+      "NSEntity": "UID(4)",
+      "NSDefaultValue": "UID(0)",
+      "NSPropertyName": "UID(16)",
+      "NSValueTransformerName": "UID(0)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(16)"
+    },
+    {
+      "$class": "UID(21)",
+      "_P": 243,
+      "NSAttributeValueClassName": "UID(23)",
+      "NSAttributeType": 200,
+      "NSIsOptional": true,
+      "NSEntity": "UID(4)",
+      "NSDefaultValue": "UID(24)",
+      "NSPropertyName": "UID(17)",
+      "NSValueTransformerName": "UID(0)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(17)"
+    },
+    {
+      "$class": "UID(21)",
+      "_P": 243,
+      "NSAttributeValueClassName": "UID(20)",
+      "NSAttributeType": 700,
+      "NSIsOptional": true,
+      "NSEntity": "UID(4)",
+      "NSDefaultValue": "UID(0)",
+      "NSPropertyName": "UID(18)",
+      "NSValueTransformerName": "UID(0)",
+      "NSFlagsKey": 0,
+      "NSRenamingIdentifier": "UID(18)"
+    },
+    {
+      "NS.keys": [],
+      "NS.objects": [],
+      "$class": "UID(37)"
+    },
+    {
+      "$classname": "NSDictionary",
+      "$classes": [
+        "NSDictionary",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.objects": [
+        "UID(39)"
+      ],
+      "$class": "UID(40)"
+    },
+    {
+      "NS.objects": [
+        "UID(18)",
+        "UID(11)"
+      ],
+      "$class": "UID(40)"
+    },
+    {
+      "$classname": "NSMutableArray",
+      "$classes": [
+        "NSMutableArray",
+        "NSArray",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.objects": [
+        "UID(42)"
+      ],
+      "$class": "UID(40)"
+    },
+    {
+      "NSIndexName": "UID(43)",
+      "NSPartialIndexPredicate": "UID(0)",
+      "NSIndexElements": "UID(44)",
+      "NSEntity": "UID(4)",
+      "$class": "UID(51)"
+    },
+    "byLocaleAndInputText",
+    {
+      "NS.objects": [
+        "UID(45)",
+        "UID(47)",
+        "UID(48)",
+        "UID(49)"
+      ],
+      "$class": "UID(50)"
+    },
+    {
+      "$class": "UID(46)",
+      "NSPropertyName": "UID(8)",
+      "NSFetchIndexElementType": 0,
+      "NSFetchIndexDescription": "UID(42)",
+      "NSAscending": true
+    },
+    {
+      "$classname": "NSFetchIndexElementDescription",
+      "$classes": [
+        "NSFetchIndexElementDescription",
+        "NSObject"
+      ]
+    },
+    {
+      "$class": "UID(46)",
+      "NSPropertyName": "UID(14)",
+      "NSFetchIndexElementType": 0,
+      "NSFetchIndexDescription": "UID(42)",
+      "NSAscending": true
+    },
+    {
+      "$class": "UID(46)",
+      "NSPropertyName": "UID(17)",
+      "NSFetchIndexElementType": 0,
+      "NSFetchIndexDescription": "UID(42)",
+      "NSAscending": true
+    },
+    {
+      "$class": "UID(46)",
+      "NSPropertyName": "UID(12)",
+      "NSFetchIndexElementType": 0,
+      "NSFetchIndexDescription": "UID(42)",
+      "NSAscending": true
+    },
+    {
+      "$classname": "NSArray",
+      "$classes": [
+        "NSArray",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "NSFetchIndexDescription",
+      "$classes": [
+        "NSFetchIndexDescription",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.objects": [
+        "UID(53)"
+      ],
+      "$class": "UID(40)"
+    },
+    {
+      "NS.objects": [
+        "UID(8)",
+        "UID(14)",
+        "UID(17)",
+        "UID(12)"
+      ],
+      "$class": "UID(40)"
+    },
+    {
+      "$classname": "NSEntityDescription",
+      "$classes": [
+        "NSEntityDescription",
+        "NSObject"
+      ]
+    },
+    {
+      "NS.objects": [
+        "UID(56)"
+      ],
+      "$class": "UID(57)"
+    },
+    "",
+    {
+      "$classname": "NSSet",
+      "$classes": [
+        "NSSet",
+        "NSObject"
+      ]
+    },
+    {
+      "$classname": "NSManagedObjectModel",
+      "$classes": [
+        "NSManagedObjectModel",
+        "NSObject"
+      ]
+    }
+  ]
+}

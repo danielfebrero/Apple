@@ -1,0 +1,67 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Tell Claire I’ll be right there",
+            "Send a message to James Ashford",
+            "Send a message to Kate saying how about tomorrow?",
+            "Tell Rob the show was great",
+            "Send a message to Emily on her mobile saying I’ll be late",
+            "Send a message to 0408 555 121",
+            "Text James and Kate where are you?"
+          ]
+        }
+      ],
+      "SectionName": "Sending messages"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Read my new messages",
+            "Read it again"
+          ]
+        }
+      ],
+      "SectionName": "Reading message alerts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Reply that’s great news",
+            "Tell him I’ll be there in 10 minutes"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Call her",
+            "FaceTime her"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": []
+        }
+      ],
+      "SectionName": "Responding to messages"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Read my last message from Emily"
+          ]
+        }
+      ],
+      "SectionName": "Searching for messages"
+    }
+  ]
+}

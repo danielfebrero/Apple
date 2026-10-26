@@ -1,0 +1,26 @@
+{
+  "version": "36050000.22501.0",
+  "is_custom_install": false,
+  "overrides": [
+    {
+      "overrideId": "embeddedOverrideSmokeTest",
+      "predicates": {
+        "and": [
+          {
+            "field": "dialogToolID",
+            "operator": "EXACT_MATCH",
+            "value": "streaming"
+          },
+          {
+            "field": "dialogToolResponse",
+            "operator": "CONTAINS",
+            "value": "3345B0C3-AC4F-4532-8771-CE14E9F528C0"
+          }
+        ]
+      },
+      "response": {
+        "dialogId": "override.sorryCantHelp"
+      }
+    }
+  ]
+}

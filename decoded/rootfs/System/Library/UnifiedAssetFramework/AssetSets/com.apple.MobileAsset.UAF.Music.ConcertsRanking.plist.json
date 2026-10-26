@@ -1,0 +1,32 @@
+{
+  "AssetSetName": "com.apple.MobileAsset.UAF.Music.ConcertsRanking",
+  "Assets": [
+    {
+      "AssetName": "com.apple.music.concertsranking.model.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.music.concertsranking.model.generic",
+          "RequiredUsageTypes": [
+            "com.apple.music.concertsranking.model.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.music.concertsranking.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.music.concertsranking.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Music.ConcertsRanking",
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.music.concertsranking.uaf.metadata",
+  "UsageTypes": [
+    "com.apple.music.concertsranking.model.generic"
+  ]
+}

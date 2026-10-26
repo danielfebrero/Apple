@@ -1,0 +1,16 @@
+{
+  "name": "com.apple.siri.ODDI.scorecard.hourly",
+  "bundleIdentifier": "com.apple.siri.ODDIMetricsExtension",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 3600.0,
+      "minDurationBetweenInstances": 900
+    },
+    "requiresProtectionClass": "ClassC",
+    "priority": "Maintenance",
+    "requiresUserInactivity": true,
+    "requiresExternalPower": true,
+    "groupName": "com.apple.siri.ODDI",
+    "groupConcurrencyLimit": 1
+  }
+}

@@ -1,0 +1,9 @@
+[header]
+language = enu
+type = initialism
+charset = utf-8
+
+[data]
+
+# replace all letter x with x_
+/([a-zA-Z])/   -->   "$1_"

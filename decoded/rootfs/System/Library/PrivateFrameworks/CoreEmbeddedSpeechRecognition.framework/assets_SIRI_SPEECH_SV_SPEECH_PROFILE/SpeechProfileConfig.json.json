@@ -1,0 +1,3037 @@
+{
+  "version": 1,
+  "appEntities": {
+    "enableEntityExtraction": true,
+    "skipAppEntityEnrollment": false,
+    "interactionOnlyRanking": false,
+    "limitAllocation": {
+      "allocationStrategy": "ranked",
+      "proportionTransformationFunction": "exponent",
+      "proportionTransformationAlpha": 0.5
+    },
+    "deniedApps": [],
+    "entityLimits": {
+      "overallAppEntityLimit": 6000,
+      "incrementalAppEntityLimit": 200,
+      "overallEntityExtractionLimit": 600,
+      "entityExtractionCategoryLimit": 200,
+      "entityExtractionExecutionTimeoutSec": 240.0,
+      "perAppEntityMinimum": 50,
+      "perAppIncrementalLimit": 15,
+      "fillEnumerationThreshold": 50000,
+      "maxInteractionsPerCandidate": 1000,
+      "maxRankedCandidatesPerApp": 500
+    },
+    "entityFiltering": {
+      "enableEntityFiltering": true,
+      "disabledRules": [],
+      "maxTokenLimit": 3,
+      "maxCharLimit": 80,
+      "default": {
+        "maxCharLimit": 80,
+        "tokenCountMode": "whitespace",
+        "maxTokens": 3,
+        "minContentTokens": 0,
+        "whitespaceTokenPreGate": 0,
+        "specialCharRatio": 0.4,
+        "enableCaseShapeRules": true,
+        "stopWordThreshold": 0
+      },
+      "scriptProfiles": {
+        "latin": {
+          "maxCharLimit": 80,
+          "tokenCountMode": "content",
+          "maxTokens": 3,
+          "minContentTokens": 1,
+          "whitespaceTokenPreGate": 12,
+          "specialCharRatio": 0.4,
+          "enableCaseShapeRules": true,
+          "stopWordThreshold": 0
+        },
+        "han": {
+          "maxCharLimit": 16,
+          "tokenCountMode": "raw",
+          "maxTokens": 6,
+          "specialCharRatio": 0.7,
+          "enableCaseShapeRules": false,
+          "stopWordThreshold": 0
+        },
+        "hanKana": {
+          "maxCharLimit": 24,
+          "tokenCountMode": "raw",
+          "maxTokens": 8,
+          "specialCharRatio": 0.7,
+          "enableCaseShapeRules": false,
+          "stopWordThreshold": 0
+        },
+        "hangul": {
+          "maxCharLimit": 28,
+          "tokenCountMode": "raw",
+          "maxTokens": 6,
+          "specialCharRatio": 0.7,
+          "enableCaseShapeRules": false,
+          "stopWordThreshold": 0
+        },
+        "thai": {
+          "maxCharLimit": 40,
+          "tokenCountMode": "raw",
+          "maxTokens": 6,
+          "specialCharRatio": 0.7,
+          "enableCaseShapeRules": false,
+          "stopWordThreshold": 0
+        },
+        "hebrew": {
+          "maxCharLimit": 50,
+          "tokenCountMode": "raw",
+          "maxTokens": 6,
+          "specialCharRatio": 0.5,
+          "enableCaseShapeRules": false,
+          "stopWordThreshold": 0
+        },
+        "arabic": {
+          "maxCharLimit": 60,
+          "tokenCountMode": "raw",
+          "maxTokens": 6,
+          "specialCharRatio": 0.5,
+          "enableCaseShapeRules": false,
+          "stopWordThreshold": 0
+        },
+        "devanagari": {
+          "maxCharLimit": 50,
+          "tokenCountMode": "raw",
+          "maxTokens": 5,
+          "specialCharRatio": 0.5,
+          "enableCaseShapeRules": false,
+          "stopWordThreshold": 0
+        }
+      },
+      "languageMaxTokens": {
+        "es": 5,
+        "fr": 5,
+        "pt": 5,
+        "tr": 5,
+        "vi": 9,
+        "pl": 5,
+        "nb": 5,
+        "nn": 5,
+        "no": 5,
+        "fi": 5,
+        "ms": 5,
+        "id": 5
+      }
+    },
+    "entityMappings": {
+      "books": {
+        "book": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "seriesTitle": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "author": {
+            "primaryLme": {
+              "templateName": "\\NT-artist",
+              "tagName": "\\appentity-artist-first"
+            }
+          }
+        },
+        "audiobook": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "author": {
+            "primaryLme": {
+              "templateName": "\\NT-artist",
+              "tagName": "\\appentity-artist-first"
+            }
+          }
+        }
+      },
+      "journal": {
+        "entry": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "message": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "mediaItems": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "location": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "whiteboard": {
+        "board": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "item": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "label": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "mail": {
+        "account": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-payaccount",
+              "tagName": "\\appentity-payaccount-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-payaccount",
+              "tagName": "\\appentity-payaccount-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "emailAddress": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        },
+        "mailbox": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "draft": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "to": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "cc": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "bcc": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "subject": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "attachments": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "account": {
+            "primaryLme": {
+              "templateName": "\\NT-payaccount",
+              "tagName": "\\appentity-payaccount-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "message": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "to": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "cc": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "bcc": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "subject": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "attachments": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "sender": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "account": {
+            "primaryLme": {
+              "templateName": "\\NT-payaccount",
+              "tagName": "\\appentity-payaccount-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "mailbox": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "thread": {
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "description": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "photos": {
+        "album": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-photoalbum",
+              "tagName": "\\appentity-photoalbum-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-photoalbum",
+              "tagName": "\\appentity-photoalbum-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "recognizedPerson": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        }
+      },
+      "wordProcessor": {
+        "document": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "template": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appvocab",
+              "tagName": "\\appentity-appvocab-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-appvocab",
+              "tagName": "\\appentity-appvocab-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "presentation": {
+        "slide": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "document": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "template": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appvocab",
+              "tagName": "\\appentity-appvocab-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-appvocab",
+              "tagName": "\\appentity-appvocab-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "reader": {
+        "document": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "spreadsheet": {
+        "sheet": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "document": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "template": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appvocab",
+              "tagName": "\\appentity-appvocab-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-appvocab",
+              "tagName": "\\appentity-appvocab-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "browser": {
+        "bookmark": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "tab": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "readingListItem": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "calendar": {
+        "attendee": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "person": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        },
+        "calendar": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-calevent",
+              "tagName": "\\appentity-calevent-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-calevent",
+              "tagName": "\\appentity-calevent-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "event": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-calevent",
+              "tagName": "\\appentity-calevent-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-calevent",
+              "tagName": "\\appentity-calevent-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "organizers": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "attendees": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        }
+      },
+      "voiceMemos": {
+        "recording": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "video": {
+        "movie": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "castNames": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            }
+          }
+        },
+        "tvEpisode": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "tvSeason": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "tvShow": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "freeformVideo": {
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "creator": {
+            "primaryLme": {
+              "templateName": "\\NT-artist",
+              "tagName": "\\appentity-artist-first"
+            }
+          },
+          "description": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "collaborators": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            }
+          }
+        },
+        "person": {
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-artist",
+              "tagName": "\\appentity-artist-first"
+            }
+          }
+        }
+      },
+      "findMy": {
+        "geofence": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "location": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "item": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-device",
+              "tagName": "\\appentity-device-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "customName": {
+            "primaryLme": {
+              "templateName": "\\NT-device",
+              "tagName": "\\appentity-device-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "productName": {
+            "primaryLme": {
+              "templateName": "\\NT-device",
+              "tagName": "\\appentity-device-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "owner": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        }
+      },
+      "clock": {
+        "timer": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "label": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "contacts": {
+        "contact": {
+          "organizationName": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "personName": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "departmentName": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "contactRelations": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "notes": {
+        "note": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "attachments": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "tag": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-phototag",
+              "tagName": "\\appentity-phototag-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-phototag",
+              "tagName": "\\appentity-phototag-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "attachment": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "checklistItem": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "text": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "audio": {
+        "album": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "artistName": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "algorithmicRadioStation": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "artist": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-artist",
+              "tagName": "\\appentity-artist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-artist",
+              "tagName": "\\appentity-artist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "audiobook": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "seriesTitle": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "classicalMusicRecording": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "artistName": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "composerName": {
+            "primaryLme": {
+              "templateName": "\\NT-artist",
+              "tagName": "\\appentity-artist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "liveRadioStation": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "providerName": {
+            "primaryLme": {
+              "templateName": "\\NT-artist",
+              "tagName": "\\appentity-artist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "newsBrief": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "providerName": {
+            "primaryLme": {
+              "templateName": "\\NT-artist",
+              "tagName": "\\appentity-artist-first"
+            }
+          }
+        },
+        "playlist": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "owner": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "podcastCollection": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "podcastEpisode": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "showName": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "podcastShow": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "radioShow": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "radioShowEpisode": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "showName": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "song": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "artistName": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            }
+          },
+          "composerName": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "albumTitle": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "songCollection": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "maps": {
+        "parkingLocationData": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "place": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "place": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "place": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "placeList": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "intercom": {
+        "announcement": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "announcer": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        },
+        "destination": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-room",
+              "tagName": "\\appentity-room-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-room",
+              "tagName": "\\appentity-room-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "home": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-house",
+              "tagName": "\\appentity-house-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-house",
+              "tagName": "\\appentity-house-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "appStore": {
+        "marketplaceApplication": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appname",
+              "tagName": "\\appentity-appname-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-appname",
+              "tagName": "\\appentity-appname-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "home": {
+        "device": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-device",
+              "tagName": "\\appentity-device-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-device",
+              "tagName": "\\appentity-device-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "group": {
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-zone",
+              "tagName": "\\appentity-zone-first"
+            }
+          }
+        },
+        "home": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-house",
+              "tagName": "\\appentity-house-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-house",
+              "tagName": "\\appentity-house-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "location": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "room": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-room",
+              "tagName": "\\appentity-room-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-room",
+              "tagName": "\\appentity-room-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "scene": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-scene",
+              "tagName": "\\appentity-scene-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-scene",
+              "tagName": "\\appentity-scene-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "targetLocation": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-room",
+              "tagName": "\\appentity-room-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-room",
+              "tagName": "\\appentity-room-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "zone": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-zone",
+              "tagName": "\\appentity-zone-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-zone",
+              "tagName": "\\appentity-zone-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "car": {
+        "car": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-device",
+              "tagName": "\\appentity-device-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-device",
+              "tagName": "\\appentity-device-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "radioStation": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "stationName": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "shortName": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "socialEvents": {
+        "attendee": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "person": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        },
+        "event": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-calevent",
+              "tagName": "\\appentity-calevent-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-calevent",
+              "tagName": "\\appentity-calevent-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "location": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "locationName": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "organizers": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "attendees": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        }
+      },
+      "health": {
+        "emergencyContact": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "contact": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        },
+        "medication": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-unknown",
+              "tagName": "\\appentity-unknown-first"
+            }
+          },
+          "preferredName": {
+            "primaryLme": {
+              "templateName": "\\NT-unknown",
+              "tagName": "\\appentity-unknown-first"
+            }
+          },
+          "brandName": {
+            "primaryLme": {
+              "templateName": "\\NT-unknown",
+              "tagName": "\\appentity-unknown-first"
+            }
+          },
+          "genericName": {
+            "primaryLme": {
+              "templateName": "\\NT-unknown",
+              "tagName": "\\appentity-unknown-first"
+            }
+          }
+        }
+      },
+      "wallet": {
+        "pass": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-payaccount",
+              "tagName": "\\appentity-payaccount-first"
+            }
+          }
+        },
+        "paymentAccount": {
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-payaccount",
+              "tagName": "\\appentity-payaccount-first"
+            }
+          }
+        },
+        "paymentRecord": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "payee": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "payer": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        }
+      },
+      "playbackControls": {
+        "mediaControllableDevice": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-device",
+              "tagName": "\\appentity-device-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "deviceName": {
+            "primaryLme": {
+              "templateName": "\\NT-device",
+              "tagName": "\\appentity-device-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "roomName": {
+            "primaryLme": {
+              "templateName": "\\NT-room",
+              "tagName": "\\appentity-room-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "zoneName": {
+            "primaryLme": {
+              "templateName": "\\NT-zone",
+              "tagName": "\\appentity-zone-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "homeName": {
+            "primaryLme": {
+              "templateName": "\\NT-house",
+              "tagName": "\\appentity-house-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "playingState": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "nowPlayingTitle": {
+            "primaryLme": {
+              "templateName": "\\NT-playlist",
+              "tagName": "\\appentity-playlist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "nowPlayingArtist": {
+            "primaryLme": {
+              "templateName": "\\NT-artist",
+              "tagName": "\\appentity-artist-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "phone": {
+        "group": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "participants": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "displayName": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        },
+        "phonePerson": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "person": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        }
+      },
+      "reminders": {
+        "group": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "list": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "reminder": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "title": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "tags": {
+            "primaryLme": {
+              "templateName": "\\NT-phototag",
+              "tagName": "\\appentity-phototag-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "section": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "name": {
+            "primaryLme": {
+              "templateName": "\\NT-notefolder",
+              "tagName": "\\appentity-notefolder-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        }
+      },
+      "messages": {
+        "conversation": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "recipients": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "displayName": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "customAttachment": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "sourceName": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "message": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "author": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "subject": {
+            "primaryLme": {
+              "templateName": "\\NT-notetitle",
+              "tagName": "\\appentity-notetitle-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "attachments": {
+            "primaryLme": {
+              "templateName": "\\NT-appunknown",
+              "tagName": "\\appentity-appunknown-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          },
+          "locations": {
+            "primaryLme": {
+              "templateName": "\\NT-location",
+              "tagName": "\\appentity-location-first"
+            },
+            "extractedLme": {
+              "PersonalName": {
+                "templateName": "\\NT-appcontact",
+                "tagName": "\\appentity-appcontact-first-extracted"
+              }
+            }
+          }
+        },
+        "messagePerson": {
+          "displayRepresentation": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          },
+          "person": {
+            "primaryLme": {
+              "templateName": "\\NT-appcontact",
+              "tagName": "\\appentity-appcontact-first"
+            }
+          }
+        }
+      }
+    }
+  },
+  "contextualEntityRetrieval": {
+    "enablement": {
+      "shouldRetrieve": true,
+      "shouldEnroll": true
+    },
+    "retrieval": {
+      "maxNumEnrolled": 100,
+      "overallTimeout": 0.4,
+      "retrievalTimeout": 0.15,
+      "processingTimeout": 0.2,
+      "maxEntityChars": 50,
+      "maxEntityWords": 4,
+      "rejectedTypes": {
+        "scrapedText": {
+          "com.apple.sample.bundleId": []
+        },
+        "appEntity": {
+          "com.apple.sample.bundleId": [
+            "MyRejectedAppEntityType"
+          ],
+          "com.apple.sample.bundleId2": []
+        }
+      },
+      "enabledTasks": [
+        "SearchOrMessaging"
+      ],
+      "enabledItemKinds": [
+        "onScreenText",
+        "onScreenAppEntity"
+      ],
+      "taggerType": "asrTagger"
+    }
+  },
+  "entityCleanup": {
+    "enableDatatypeCleanupFromNonAppEntities": true,
+    "enableEntityCleanup": true,
+    "enableEmojiCleanupFromAppEntities": true,
+    "enableEmojiCleanupFromNonAppEntities": true,
+    "entitiesExcludedFromEmojiCleanup": {
+      "com.apple.sample.bundleId": [
+        "MyEntityToBeExcludedFromEmojiCleanup"
+      ]
+    },
+    "enableSpecialCharacterCleanupFromAppEntities": true,
+    "enableSpecialCharacterCleanupFromNonAppEntities": true,
+    "specialCharactersToRemove": [
+      "$",
+      "%",
+      "@",
+      "#",
+      "^",
+      "&",
+      "*",
+      "=",
+      "+",
+      "~",
+      "<",
+      ">",
+      "/",
+      ":",
+      ".",
+      ",",
+      ";",
+      "(",
+      ")",
+      "[",
+      "]",
+      "{",
+      "}",
+      "|",
+      "\\",
+      "\"",
+      "`",
+      "_"
+    ],
+    "entitiesExcludedFromSpecialCharacterCleanup": {
+      "com.apple.sample.bundleId": [
+        "MyEntityToBeExcludedFromSpecialCharacterCleanup"
+      ]
+    },
+    "applyRegex": {
+      "com.apple.sample.bundleId": {
+        "MyMailSubjectEntity": "^Message from .*? about\\s*",
+        "MyDraftSubjectEntity": "^Draft Message about\\s*"
+      }
+    }
+  }
+}

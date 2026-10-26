@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Skicka e-post till Elin om resan",
+            "Skicka e-post till Larsson om ändringarna i planeringen",
+            "Nytt e-brev till Susanna Karlsson",
+            "Mejla pappa om hyresavin",
+            "E-posta till Patrik Boman och säg jag fick blanketterna, tack",
+            "Mejla Elin och Björn om festen och säg jag hade väldigt kul"
+          ]
+        }
+      ],
+      "SectionName": "Skicka e-post"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Kolla min e-post",
+            "Någon ny e-post från Alexander idag?",
+            "Visa ny e-post om hyreskontraktet",
+            "Visa Elins e-brev från igår"
+          ]
+        }
+      ],
+      "SectionName": "Läsa e-post"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Svara hej Susanna ber om ursäkt för den försenade betalningen"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ring honom på jobbnumret"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Ring FaceTime-samtal till honom på arbetet"
+          ]
+        }
+      ],
+      "SectionName": "Svara på e-post"
+    }
+  ]
+}

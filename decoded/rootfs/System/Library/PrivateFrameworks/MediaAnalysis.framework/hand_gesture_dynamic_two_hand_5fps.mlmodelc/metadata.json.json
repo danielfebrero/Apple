@@ -1,0 +1,120 @@
+[
+  {
+    "shortDescription": "Recognize a static or dynamic hand gesture from a single or a series of hand poses. S3 path s3://gesture_recognition/gesture_models/msg3d_ws_5_si_6_2023-04-28-08:04:26",
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "String",
+        "type": "String",
+        "name": "classLabel",
+        "shortDescription": "Most likely hand gesture category."
+      },
+      {
+        "isOptional": "0",
+        "keyType": "String",
+        "formattedType": "Dictionary (String → Double)",
+        "type": "Dictionary",
+        "name": "classLabel_probs",
+        "shortDescription": ""
+      }
+    ],
+    "version": "1.0",
+    "modelParameters": [],
+    "author": "Create ML",
+    "specificationVersion": 6,
+    "storagePrecision": "Float16",
+    "license": "MIT",
+    "mlProgramOperationTypeHistogram": {
+      "Concat": 9,
+      "Linear": 1,
+      "Transpose": 12,
+      "Matmul": 6,
+      "ReduceMean": 5,
+      "Relu": 42,
+      "Cast": 2,
+      "MaxPool": 9,
+      "Add": 12,
+      "BatchNorm": 10,
+      "ExpandDims": 2,
+      "Reshape": 29,
+      "Conv": 68,
+      "Softmax": 1
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "12.0",
+      "tvOS": "15.0",
+      "watchOS": "8.0",
+      "iOS": "15.0",
+      "macCatalyst": "15.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 5 × 3 × 42)",
+        "shortDescription": "Input hand poses to be classified.",
+        "shape": "[5, 3, 42]",
+        "name": "poses",
+        "type": "MultiArray"
+      }
+    ],
+    "classLabels": [
+      "left_other",
+      "left_one",
+      "left_victory (two)",
+      "left_three",
+      "left_four",
+      "left_five",
+      "left_shaka",
+      "left_rock",
+      "left_ok",
+      "left_thumbs-up",
+      "left_fist",
+      "left_thumbs-down",
+      "left_punch",
+      "left_clapping",
+      "left_waving",
+      "left_heart (two-hand)",
+      "left_heart (single-hand)",
+      "left_thanks",
+      "left_fingers crossed",
+      "left_shrug",
+      "left_live long prosper",
+      "right_other",
+      "right_one",
+      "right_victory (two)",
+      "right_three",
+      "right_four",
+      "right_five",
+      "right_shaka",
+      "right_rock",
+      "right_ok",
+      "right_thumbs-up",
+      "right_fist",
+      "right_thumbs-down",
+      "right_punch",
+      "right_clapping",
+      "right_waving",
+      "right_heart (two-hand)",
+      "right_heart (single-hand)",
+      "right_thanks",
+      "right_fingers crossed",
+      "right_shrug",
+      "right_live long prosper"
+    ],
+    "generatedClassName": "model",
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "6.0",
+      "com.github.apple.coremltools.source": "torch==1.13.0+cu117",
+      "mldb_token": "mldb-wrxg5jzao8"
+    },
+    "method": "predict"
+  }
+]

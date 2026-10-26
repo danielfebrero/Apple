@@ -1,0 +1,94 @@
+{
+    "cases": [
+        {
+            "bundleType":"activity",
+            "templates" :[
+                {
+                    "conditions":["holiday_name=Halloween"],
+                    "labels":["Halloween Trick-or-Treating"],
+                },
+                {
+                    "_comment_": "/* Cases with app name */",
+                    
+                    "conditions":["workout_app_name", "confidence=medium"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action} near {place}|TitleCap"],
+                },
+                {
+                    "conditions":["workout_app_name"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action}, {place}|TitleCap"],
+                },
+                {
+                    "conditions":["workout_app_name"],
+                    "capitalizations":["time"],
+                    "labels":["{workout_app_name} Workout — {time} {action}|TitleCap"],
+                },
+                {
+                    "conditions":["workout_app_name"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action}|TitleCap"],
+                },
+                {
+                    "conditions":["workout_app_name"],
+                    "labels":["{workout_app_name} Workout"],
+                },
+                {
+                    "_comment_": "/* Cases with no app name, prioritize place over media */",
+                    
+                    "conditions":["confidence=medium"],
+                    "labels":["{time} {action} near {place}|TitleCap"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["{time} {action}, {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* Cases with no app name, and media with no place */",
+                    
+                    "conditions":["media_type=0"],
+                    "extends":["media_name:media_title,media_album,media_artist,media_genre,media_app"],
+                    "labels":["{time} {action} while listening to {media_name}"],
+                },
+                {
+                    "conditions":["media_type=1"],
+                    "extends":["media_name:media_title,media_album,media_artist,media_genre,media_app"],
+                    "labels":["{time} {action} while watching {media_name}"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["{time} {action}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* Cases with no app name or time, prioritize place over media */",
+                    
+                    "conditions":["confidence=medium"],
+                    "labels":["{action} near {place}|TitleCap"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["{action}, {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* Cases with no app name or time, and media with no place */",
+                    
+                    "conditions":["media_type=0"],
+                    "extends":["media_name:media_title,media_album,media_artist,media_genre,media_app"],
+                    "labels":["{action} while listening to {media_name}"],
+                },
+                {
+                    "conditions":["media_type=1"],
+                    "extends":["media_name:media_title,media_album,media_artist,media_genre,media_app"],
+                    "labels":["{action} while watching {media_name}"],
+                },
+                {
+                    "_comment_": "/* Case with no app name or time or media or place */",
+                    
+                    "conditions":[],
+                    "labels":["{action}|TitleCap"],
+                }
+            ]
+        }
+    ]
+}
+

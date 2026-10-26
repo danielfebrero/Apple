@@ -1,0 +1,180 @@
+[
+  {
+    "shortDescription": "--",
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Target Quality Factor",
+        "shortDescription": ""
+      }
+    ],
+    "version": "5",
+    "modelParameters": [],
+    "author": "Apple Inc",
+    "specificationVersion": 1,
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_pipelineRegressor",
+      "structure": [
+        {
+          "name": "MLModelType_featureVectorizer"
+        },
+        {
+          "name": "MLModelType_treeEnsembleRegressor"
+        }
+      ]
+    },
+    "inputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Input File Size",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Input Height",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Input Entropy",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Aspect Ratio",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Target File Size",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "Target Max Dimension_4032",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "Target Max Dimension_3000",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "Target Max Dimension_2048",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "Target Max Dimension_1600",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "Target Max Dimension_1280",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "Target Max Dimension_1024",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "Target Max Dimension_800",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Compression Ratio",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Input H x W (NumOfPixels)",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Target Height",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Target Width",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Input log(NumOfPixels)",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Ratio of NumOfPixels",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Exponential Entropy",
+        "shortDescription": ""
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.apple.createml.version": "14.1.0"
+    },
+    "generatedClassName": "Image_Estimator_HEIF",
+    "method": "predict"
+  }
+]

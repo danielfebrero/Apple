@@ -1,0 +1,48 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Tambahkan kentang pada senarai runcit saya",
+            "Tambahkan terjun bungee pada senarai hajat saya",
+            "Ingatkan saya untuk menghubungi ibu",
+            "Ingatkan untuk membawa payung",
+            "Ingatkan saya untuk makan ubat pada 6 pagi esok",
+            "Ingatkan saya untuk melengkapkan laporan sebelum 6",
+            "Baca senarai tugasan saya"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Ingatkan saya untuk menghubungi ibu saya apabila pulang",
+            "Ingatkan saya semasa bertolak untuk menghubungi Kamales"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Ingatkan saya untuk FaceTime ibu apabila saya pulang",
+            "Ingatkan saya semasa bertolak untuk FaceTime Kamales"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Ingatkan saya untuk membeli bunga apabila bertolak dari sini"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

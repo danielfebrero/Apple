@@ -1,0 +1,34 @@
+{
+  "CFBundleName": "MomentsDiagnosticsExtensionFeedbackAssistant",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DERequiresClassBDataClass": true,
+  "DTSDKBuild": "24B107",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundleShortVersionString": "1",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "DELocalizedDataCollectedSummaryText": "Logs journaling suggestions states for seed feedback",
+  "CFBundleExecutable": "MomentsDiagnosticsExtensionFeedbackAssistant",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.MomentsUIService.MomentsDiagnosticsExtensionForFeedbackAssistant",
+  "UIDeviceFamily": [
+    1
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "24B107",
+  "DEAttachmentsAllowUserSelection": true,
+  "NSExtension": {
+    "NSExtensionAttributes": {
+      "DEAttachmentsName": "Moments logs (Feedback Assistant)",
+      "DEAttachmentsLoggingEnabled": true
+    },
+    "NSExtensionPointIdentifier": "com.apple.diagnosticextensions-service",
+    "NSExtensionPrincipalClass": "MODiagnosticsExtensionForFeedbackAssistant"
+  }
+}

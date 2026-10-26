@@ -1,0 +1,176 @@
+{
+  "artifact": {
+    "path": "internal/views.db",
+    "type": "unstructured",
+    "unstructured": {
+      "columns": [
+        [
+          "messageId",
+          "DOUBLE"
+        ],
+        [
+          "bundleId",
+          "TEXT"
+        ],
+        [
+          "domain",
+          "TEXT"
+        ],
+        [
+          "spotlightIdentifier",
+          "TEXT"
+        ],
+        [
+          "sender",
+          "TEXT"
+        ],
+        [
+          "recipient",
+          "TEXT"
+        ],
+        [
+          "token",
+          "TEXT"
+        ],
+        [
+          "count",
+          "INTEGER"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "messageId",
+        "recipient",
+        "token"
+      ],
+      "tableName": "message_terms_stream"
+    }
+  },
+  "biome": {
+    "biome": {
+      "biomeStream": "IntelligencePlatform.MessageTerms",
+      "ops": {
+        "bundleId": [
+          {
+            "filterClass": {
+              "className": "BMIntelligencePlatformMessageTerms"
+            }
+          },
+          {
+            "mapToKeypath": {
+              "keyPath": "bundleID"
+            }
+          }
+        ],
+        "domain": [
+          {
+            "filterClass": {
+              "className": "BMIntelligencePlatformMessageTerms"
+            }
+          },
+          {
+            "mapToKeypath": {
+              "keyPath": "domain"
+            }
+          }
+        ],
+        "messageId": [
+          {
+            "filterClass": {
+              "className": "BMIntelligencePlatformMessageTerms"
+            }
+          },
+          {
+            "mapToKeypath": {
+              "keyPath": "raw_timestamp"
+            }
+          }
+        ],
+        "recipients": [
+          {
+            "filterClass": {
+              "className": "BMIntelligencePlatformMessageTerms"
+            }
+          },
+          {
+            "mapToKeypath": {
+              "keyPath": "recipients"
+            }
+          }
+        ],
+        "sender": [
+          {
+            "filterClass": {
+              "className": "BMIntelligencePlatformMessageTerms"
+            }
+          },
+          {
+            "mapToKeypath": {
+              "keyPath": "sender"
+            }
+          }
+        ],
+        "spotlightIdentifier": [
+          {
+            "filterClass": {
+              "className": "BMIntelligencePlatformMessageTerms"
+            }
+          },
+          {
+            "mapToKeypath": {
+              "keyPath": "spotlightIdentifier"
+            }
+          }
+        ],
+        "termCount": [
+          {
+            "filterClass": {
+              "className": "BMIntelligencePlatformMessageTerms"
+            }
+          },
+          {
+            "mapToKeypath": {
+              "keyPath": "termCount"
+            }
+          }
+        ]
+      }
+    },
+    "postProcessOps": [
+      {
+        "extract": {
+          "recipients": [
+            {
+              "target": "recipient"
+            }
+          ],
+          "termCount": [
+            {
+              "name": "term.termString",
+              "target": "token"
+            },
+            {
+              "name": "termCount",
+              "target": "count"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "featureFlag": "ExperimentalECRViews",
+  "name": "messageTermsStream",
+  "type": "biome",
+  "update": {
+    "alwaysUpdateListeners": [
+      {
+        "schedule": "daily"
+      }
+    ],
+    "biomeListeners": [
+      {
+        "schedule": "live",
+        "stream": "IntelligencePlatform.MessageTerms"
+      }
+    ]
+  }
+}

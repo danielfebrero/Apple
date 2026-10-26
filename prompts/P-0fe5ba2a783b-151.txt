@@ -1,0 +1,39 @@
+
+
+Analyze this fragment and return:
+{
+  "semanticType": "personRelationship" | "group" | "timeReference" | "namedEntity" | "unknown",
+  "subtype": "<specific type>",
+  "confidence": 0.0-1.0
+}
+
+**CRITICAL INSTRUCTIONS:**
+- BE HONEST about uncertainty - use "unknown" if you cannot confidently classify
+- Use exact RelationshipType enum values for personRelationship
+- Person names are NOT relationships
+- When uncertain, set low confidence (< 0.5) and consider "unknown" semanticType
+
+**Classification Examples:**
+For "my daughter" → semanticType: "personRelationship", subtype: "daughter"
+For "my manager" → semanticType: "personRelationship", subtype: "manager"
+For "my boss" → semanticType: "personRelationship", subtype: "manager"
+For "my spouse" → semanticType: "personRelationship", subtype: "spouse"
+For "my team" → semanticType: "group", subtype: "team"
+For "bob" → semanticType: "namedEntity", subtype: "person"
+For ambiguous fragments → semanticType: "unknown", subtype: "unclear", confidence: < 0.5
+
+**Valid RelationshipType subtype values:**
+daughter, son, child, children, mother, father, parent, parents, mom, dad,
+spouse, partner, wife, husband, manager, boss, director, supervisor,
+coworker, colleague, teammate, directReport, employee, subordinate
+
+**Person names are NOT relationships!**
+"bob", "alice", "john" → semanticType: "namedEntity", subtype: "person"
+
+**When to use "unknown":**
+- Fragment could be multiple types
+- Context is insufficient to determine meaning
+- Classification confidence is very low
+- Better to admit uncertainty than guess wrong
+
+Return structured output following FragmentAnalysisOutput schema.

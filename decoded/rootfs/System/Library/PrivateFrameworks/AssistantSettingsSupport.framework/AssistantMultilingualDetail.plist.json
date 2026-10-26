@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "id": "MULTILINGUAL_DETAIL_HEADER_GROUP_ID",
+      "isRadioGroup": false
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "MULTILINGUAL_DETAIL_GROUP_ID",
+      "isRadioGroup": true,
+      "label": "MULTILINGUAL_DETAIL_GROUP_TITLE"
+    },
+    {
+      "cell": "PSListItemCell",
+      "footerText": "MULTILINGUAL_DETAIL_FOOTER_MIXED",
+      "id": "MULTILINGUAL_DETAIL_OPTION_MIXED_ID",
+      "label": "MULTILINGUAL_DETAIL_OPTION_MIXED"
+    },
+    {
+      "cell": "PSListItemCell",
+      "footerText": "MULTILINGUAL_DETAIL_FOOTER_ENGLISH_ONLY",
+      "id": "MULTILINGUAL_DETAIL_OPTION_ENGLISH_ONLY_ID",
+      "label": "MULTILINGUAL_DETAIL_OPTION_ENGLISH_ONLY"
+    }
+  ],
+  "title": ""
+}

@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "傳簡訊給我媽媽",
+            "傳簡訊跟張薏婷說快到了",
+            "用簡訊問梁健行明天要不要吃飯",
+            "告訴陳裕嘉說今天的表演好精彩",
+            "發簡訊到媽媽的手機跟他說我會晚點到",
+            "發送簡訊到0900-123-456",
+            "傳簡訊問健行跟裕嘉你們在哪？"
+          ]
+        }
+      ],
+      "SectionName": "傳送訊息"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "朗讀新的簡訊",
+            "再讀一次"
+          ]
+        }
+      ],
+      "SectionName": "朗讀訊息提示"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "回覆他說太好了",
+            "回覆短訊跟他說十分鐘到"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "打到他的公司電話"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime到他的公司電話"
+          ]
+        }
+      ],
+      "SectionName": "回覆訊息"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "尋找來自姊姊的簡訊"
+          ]
+        }
+      ],
+      "SectionName": "搜尋訊息"
+    }
+  ]
+}

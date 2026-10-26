@@ -1,0 +1,88 @@
+[
+  {
+    "shortDescription" : "--",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "--",
+        "shape" : "[]",
+        "name" : "reduce_max_0",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "--",
+        "shape" : "[]",
+        "name" : "neighborhood_score",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "--",
+        "shape" : "[]",
+        "name" : "var_40",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "--",
+    "modelParameters" : [
+
+    ],
+    "author" : "--",
+    "specificationVersion" : 6,
+    "license" : "--",
+    "mlProgramOperationTypeHistogram" : {
+      "Concat" : 1,
+      "Linear" : 2,
+      "Cast" : 4,
+      "SliceByIndex" : 2,
+      "Mul" : 1,
+      "ReduceMax" : 1,
+      "Squeeze" : 1
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 13)",
+        "shortDescription" : "--",
+        "shape" : "[1, 13]",
+        "name" : "input_scores",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "mldb_token" : "mldb-rxg5jd7ao8",
+      "numFeatures" : "13"
+    },
+    "generatedClassName" : "EntityRerankerModel",
+    "method" : "predict"
+  }
+]

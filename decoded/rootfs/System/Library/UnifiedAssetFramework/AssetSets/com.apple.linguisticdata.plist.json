@@ -1,0 +1,82 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.linguisticdata",
+  "UsageTypes": [
+    "ld.language",
+    "ld.device",
+    "ld.country",
+    "ld.province",
+    "ld.city"
+  ],
+  "UsageValues": {
+    "ld.device": [
+      "device",
+      "simulator"
+    ]
+  },
+  "AutoAssetType": "com.apple.MobileAsset.UAF.LinguisticData",
+  "MetadataAsset": "com.apple.linguisticdata.uaf.metadata",
+  "Assets": [
+    {
+      "AssetName": "com.apple.linguisticdata.uaf.metadata",
+      "IgnoreOSCompatibility": true,
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.linguisticdata.uaf.metadata"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.linguisticdata.precompiled",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "ld.language",
+            "ld.device"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.linguisticdata.precompiled.{ld.language}-{ld.device}"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.linguisticdata.optional",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "ld.language",
+            "ld.device"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.linguisticdata.optional.{ld.language}-{ld.device}"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.linguisticdata.delta",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "ld.language",
+            "ld.device"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.linguisticdata.delta.{ld.language}-{ld.device}"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.linguisticdata.regional",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "ld.language",
+            "ld.device",
+            "ld.country",
+            "ld.province",
+            "ld.city"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.linguisticdata.regional.{ld.language}-{ld.country}-{ld.province}-{ld.city}-{ld.device}"
+        }
+      ]
+    }
+  ]
+}

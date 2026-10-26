@@ -1,0 +1,81 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "ShowVoNRSwitch": true,
+  "AllowSAOnWiFiAssociation": true,
+  "Enable5GStandaloneByDefault": true,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "LTE": true,
+        "GSM": false,
+        "UMTS": false,
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "type-mask": 1081393,
+      "password": "",
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 1,
+      "username": "",
+      "apn": "internet",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 4,
+      "password": "",
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 1,
+      "username": "",
+      "apn": "mms",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "AlwaysOnPDU": true,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "NoCellularReconnectCauseCodes": [
+        {
+          "CauseCodes": [
+            33
+          ],
+          "RecoversOnAirplaneMode": true,
+          "NumTriesAllowed": 2,
+          "Type": "3GPP",
+          "Timeout": 86400
+        }
+      ],
+      "AllowedProtocolMaskInRoaming": 2,
+      "SupportSwitchOver": true,
+      "type-mask": 131072,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "password": "",
+      "tech-type-mask": 1048580,
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 1,
+      "username": "",
+      "apn": "hos",
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

@@ -1,0 +1,65 @@
+{
+  "artifact": {
+    "path": "k2t/",
+    "type": "vectordb",
+    "vectordb": {
+      "embeddingColumn": "textualization",
+      "embeddingProviderConfig": {
+        "embeddingModel": "nlContextualEmbedding"
+      },
+      "filterableStringAttributes": [
+        "starttime",
+        "endtime",
+        "entities"
+      ],
+      "includePayload": false,
+      "keyColumns": [
+        [
+          "subject",
+          "INTEGER"
+        ]
+      ],
+      "subjectIdentifierColumn": "subject",
+      "useEncoder": true
+    }
+  },
+  "featureFlag": "ExperimentalK2TViews",
+  "name": "k2tSemanticSearchVectorDBView",
+  "type": "vectordb",
+  "update": {
+    "alwaysUpdateListeners": [
+      {
+        "schedule": "every2Hours"
+      }
+    ],
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB104"
+          },
+          {
+            "entityType": "SB152"
+          },
+          {
+            "entityType": "SB764"
+          },
+          {
+            "entityType": "SB472"
+          }
+        ],
+        "schedule": "none",
+        "stores": [
+          "stableGraph",
+          "eventGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "k2tSemanticEntitySearch",
+        "schedule": "none"
+      }
+    ]
+  }
+}

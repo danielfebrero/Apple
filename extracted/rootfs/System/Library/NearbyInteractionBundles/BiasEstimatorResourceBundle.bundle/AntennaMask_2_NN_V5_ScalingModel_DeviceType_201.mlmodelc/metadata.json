@@ -1,0 +1,50 @@
+[
+  {
+    "specificationVersion" : 1,
+    "method" : "predict",
+    "generatedClassName" : "dataTransformationModel_AntennaMask_2_noMagField_allDataV1",
+    "isUpdatable" : "0",
+    "modelParameters" : [
+
+    ],
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_scaler"
+    },
+    "metadataOutputVersion" : "3.0",
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "5.2.0",
+      "com.github.apple.coremltools.source" : "scikit-learn==0.19.2"
+    },
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 13)",
+        "shortDescription" : "",
+        "shape" : "[13]",
+        "name" : "transformed_features",
+        "type" : "MultiArray"
+      }
+    ],
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 13)",
+        "shortDescription" : "",
+        "shape" : "[13]",
+        "name" : "input",
+        "type" : "MultiArray"
+      }
+    ]
+  }
+]

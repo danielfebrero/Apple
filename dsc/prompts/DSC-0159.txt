@@ -1,0 +1,1 @@
+  → {id:"byYear", kind:groupBy(from:"q", attribute:contentCreationDateYear)} → {id:"yearCounts", output:agent, kind:valueCount(from:"byYear", bindVariable:"peakYear")}

@@ -1,0 +1,57 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "starttime",
+          "DOUBLE"
+        ],
+        [
+          "endtime",
+          "DOUBLE"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "subject"
+      ],
+      "subjectIdentifierColumn": "subject",
+      "tableName": "lifeEvent_map"
+    },
+    "path": "lifeEvent/lifeEventView.db",
+    "type": "customRow"
+  },
+  "customViewClass": "LifeEventView",
+  "featureFlag": "LifeEventSource",
+  "name": "lifeEventMap",
+  "type": "custom",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB513",
+            "entityTypeIncludeDescendants": true,
+            "sources": [
+              "lifeEvent",
+              "motionSegment"
+            ]
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "eventGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "lifeEventSubgraph",
+        "schedule": "none"
+      }
+    ]
+  }
+}

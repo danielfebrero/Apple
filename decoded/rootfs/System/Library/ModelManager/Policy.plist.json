@@ -1,0 +1,87 @@
+{
+  "Policies": {
+    "ThermalLevelHigh": {
+      "assetPolicy": "standard",
+      "cancelPriority": "background"
+    },
+    "AudioRecording": {
+      "assetPolicy": "unloadCached",
+      "cancelPriority": "background"
+    },
+    "CriticalMemoryPressure": {
+      "assetPolicy": "unloadCached",
+      "cancelPriority": "background"
+    },
+    "ThermalLevelCritical": {
+      "assetPolicy": "standard",
+      "cancelPriority": "foreground"
+    },
+    "SpatialCapture": {
+      "assetPolicy": "unloadCached",
+      "cancelPriority": "userInitiated"
+    },
+    "HealthHumanCamera": {
+      "assetPolicy": "standard",
+      "cancelPriority": "background"
+    },
+    "MemoryMaintenance": {
+      "assetPolicy": "unloadCached",
+      "cancelPriority": "foreground"
+    },
+    "Camera": {
+      "assetPolicy": "unloadCached",
+      "cancelPriority": "userInitiated"
+    },
+    "StandardGameMode": {
+      "assetPolicy": "standard",
+      "cancelPriority": "userInitiated"
+    },
+    "XcodePlaygrounds": {
+      "cancelPriority": "none",
+      "unentitledBackgroundInferenceCap": 60000000,
+      "assetPolicy": "standard",
+      "unentitledBackgroundInferenceWindow": 3600
+    },
+    "AAAGameMode": {
+      "assetPolicy": "unloadCached",
+      "cancelPriority": "userInitiated"
+    },
+    "VisualGeneration": {
+      "assetPolicy": "standard",
+      "cancelPriority": "background"
+    },
+    "CarPlayNavigation": {
+      "cancelPriority": "none",
+      "assetTransitionDelay": 1,
+      "assetPolicy": "standard",
+      "inactiveAssetTimeout": 1
+    },
+    "IntensiveSiri": {
+      "assetPolicy": "standard",
+      "cancelPriority": "background"
+    }
+  },
+  "AllowList": [
+    "com.apple.audiomxd",
+    "com.apple.gamepolicyd",
+    "com.apple.cameracaptured",
+    "com.apple.deferredmediad",
+    "com.apple.memory-maintenance",
+    "com.apple.audio.coreaudiod",
+    "com.apple.userexperiencemanagerd",
+    "com.apple.StickerKit.StickerPickerService",
+    "com.apple.CharacterPaletteIM",
+    "com.apple.CharacterPicker.RemoteGenerationViewService",
+    "com.apple.GenerativePlaygroundApp",
+    "com.apple.GenerativePlaygroundApp.remoteUIExtension",
+    "com.apple.GenerativePlaygroundApp.MessagesExtension",
+    "com.apple.mobilenotes",
+    "com.apple.Notes",
+    "com.apple.CarPlayApp",
+    "com.apple.ImagePlayground.NonUIExtension",
+    "com.apple.intelligenceflowd",
+    "com.apple.cmio.uvcassistantextension",
+    "com.apple.cmio.ContinuityCaptureAgent",
+    "com.apple.Health"
+  ]
+}

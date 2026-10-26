@@ -1,0 +1,582 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "homeKit.DocumentationSearch",
+  "UsageAliasValues": {
+    "language_ar": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_da": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_de": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_en": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_es": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_fi": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_fr": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_he": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_hi": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_id": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_it": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_ja": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_ko": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_ms": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_nb": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_nl": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_pl": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_pt": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_sv": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_th": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_tr": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_vi": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_zh": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_zh_HK": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    },
+    "language_zh_TW": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    }
+  }
+}

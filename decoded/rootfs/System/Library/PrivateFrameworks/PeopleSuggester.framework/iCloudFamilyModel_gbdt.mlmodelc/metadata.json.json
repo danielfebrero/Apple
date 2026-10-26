@@ -1,0 +1,488 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "labelFinal",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "keyType": "Int64",
+        "formattedType": "Dictionary (Int64 → Double)",
+        "type": "Dictionary",
+        "name": "classProbability",
+        "shortDescription": ""
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 1,
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_pipelineClassifier",
+      "structure": [
+        {
+          "name": "MLModelType_featureVectorizer"
+        },
+        {
+          "name": "MLModelType_treeEnsembleClassifier"
+        }
+      ]
+    },
+    "inputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactInHome",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgDayRatio",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactInAirDropAtHome",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgMorningSun",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgEveFri",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactParent",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactInFMFSharingWithMe",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactInFMFFollowingMe",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactInFMFFavorite",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgNoonWeekday",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callMorningWeekday",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callMorningSun",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callNoonFri",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callLongEveWeekday",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callOutgoingRatio",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactEmergencyFamily",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callTwelveWeeks",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgTwoWeeks",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callDayRatio",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgEveSat",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callEveFri",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callNoonWeekday",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgOutgoingRatio",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callEveWeekday",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callMorningFri",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callNoonSat",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callTotal",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callMorningSat",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callNoonSun",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callEveSat",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactFamilyRelation",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callTwoWeeks",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgSixWeeks",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgNoonSun",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callEveSun",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgMorningFri",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactFamilyName",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "callSixWeeks",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgTotal",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgMorningWeekday",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgNoonSat",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactEmergency",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgEveSun",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgEveWeekday",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgNoonFri",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactInAirDrop",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "firstPartyMsgMorningSat",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactFavorite",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "contactInPhotos",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgMorningFri",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgNoonSun",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgMorningWeekday",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgNoonWeekday",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgDayRatio",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgTotal",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgTwoWeeks",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgNoonFri",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgEveSun",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgNoonSat",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgEveFri",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgEveSat",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thirdPartyMsgEveWeekday",
+        "shortDescription": ""
+      }
+    ],
+    "classLabels": [
+      0,
+      1
+    ],
+    "generatedClassName": "iCloudFamilyModel_gbdt",
+    "userDefinedMetadata": {},
+    "method": "predict"
+  }
+]

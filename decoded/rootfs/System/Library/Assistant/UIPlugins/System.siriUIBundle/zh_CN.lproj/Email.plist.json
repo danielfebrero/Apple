@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "给秦葳发封电子邮件",
+            "把关于这次旅行的邮件发给小喻",
+            "发电子邮件给白潇说计划有变",
+            "发电子邮件给我妈妈告诉她怎么办理签证",
+            "发电子邮件给沈教授说谢谢，我已经收到了表格",
+            "发邮件给吴菲和乔宇告诉他们我们玩得很开心"
+          ]
+        }
+      ],
+      "SectionName": "发送电子邮件"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "查看电子邮件",
+            "找出今天立仁发给我的新邮件",
+            "找找有关租房合同的新邮件",
+            "显示昨天张晨发来的电子邮件"
+          ]
+        }
+      ],
+      "SectionName": "查看电子邮件"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "回复就说小凤抱歉下班晚了点"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "拨打他的工作电话"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime他的工作电话号码"
+          ]
+        }
+      ],
+      "SectionName": "回复电子邮件"
+    }
+  ]
+}

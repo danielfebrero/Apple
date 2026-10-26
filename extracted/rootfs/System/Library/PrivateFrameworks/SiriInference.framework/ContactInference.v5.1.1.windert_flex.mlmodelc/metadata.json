@@ -1,0 +1,133 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "v5.1.1.windert_flex",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "scores",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "showToUser",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "topMatchIsConfident",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float32",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 5,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "11.0",
+      "tvOS" : "14.0",
+      "visionOS" : "1.0",
+      "watchOS" : "7.0",
+      "iOS" : "14.0",
+      "macCatalyst" : "14.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Double",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1... × 1...",
+        "shapeRange" : "[[1, -1], [1, -1]]",
+        "formattedType" : "MultiArray (Double 1 × 1)",
+        "type" : "MultiArray",
+        "shape" : "[1, 1]",
+        "name" : "inputs",
+        "shortDescription" : ""
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "is_linwood",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.conversion_date" : "2025-11-12",
+      "com.github.apple.coremltools.version" : "9.0",
+      "mldb_token" : "mldb-94yznbpyol",
+      "com.github.apple.coremltools.source" : "torch==2.2.0",
+      "tag" : "mldb-94yznbpyol",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "generatedClassName" : "ContactInference_v5_1_1_windert_flex",
+    "neuralNetworkLayerTypeHistogram" : {
+      "BatchedMatmul" : 3,
+      "UnaryLog" : 4,
+      "LessThan" : 4,
+      "LoadConstantND" : 33,
+      "Multiply" : 21,
+      "ReduceMax" : 6,
+      "ConcatND" : 2,
+      "InnerProduct" : 2,
+      "ReshapeDynamic" : 2,
+      "ReduceMean" : 4,
+      "ArgSort" : 1,
+      "Slice" : 1,
+      "Gather" : 4,
+      "SliceStatic" : 24,
+      "Squeeze" : 7,
+      "Equal" : 2,
+      "Unary" : 1,
+      "AddBroadcastable" : 3,
+      "UnaryAbs" : 1,
+      "MultiplyBroadcastable" : 4,
+      "UnaryPower" : 5,
+      "UnaryExp" : 3,
+      "ExpandDims" : 13,
+      "Scatter" : 1,
+      "CumSum" : 1,
+      "PowBroadcastable" : 2,
+      "ReduceSum" : 12,
+      "ReshapeStatic" : 2,
+      "DivideBroadcastable" : 5,
+      "ReduceProd" : 1,
+      "GetShape" : 1,
+      "GreaterThan" : 33,
+      "Transpose" : 3,
+      "GatherAlongAxis" : 1,
+      "Add" : 41,
+      "SubtractBroadcastable" : 9,
+      "RangeDynamic" : 1,
+      "ActivationLinear" : 50
+    },
+    "method" : "predict"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.unilog",
+  "UsageTypes": [
+    "unilog.platform"
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Unilog",
+  "MetadataAsset": "com.apple.unilog.uaf.metadata",
+  "Assets": [
+    {
+      "AssetName": "com.apple.unilog.uaf.metadata",
+      "IgnoreOSCompatibility": true,
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.unilog.uaf.metadata"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.unilog.config.platform",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "unilog.platform"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.unilog.config.platform"
+        }
+      ]
+    }
+  ]
+}

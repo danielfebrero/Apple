@@ -1,0 +1,57 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "label",
+        "shortDescription" : "Text label"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "author" : "WDA",
+    "specificationVersion" : 8,
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "14.0",
+      "tvOS" : "17.0",
+      "visionOS" : "1.0",
+      "watchOS" : "10.0",
+      "iOS" : "17.0",
+      "macCatalyst" : "17.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_textClassifier"
+    },
+    "inputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "text",
+        "shortDescription" : "Input text"
+      }
+    ],
+    "classLabels" : [
+      "yes",
+      "no"
+    ],
+    "generatedClassName" : "ReturnToCallClassifierCJ",
+    "userDefinedMetadata" : {
+      "com.apple.createml.training.finished" : "2025-11-19T02:31:45Z",
+      "com.apple.createml.app.tag" : "178.1",
+      "com.apple.createml.model.created" : "2025-11-19T02:31:45Z",
+      "com.apple.createml.app.version" : "6.2",
+      "com.apple.coreml.model.preview.type" : "textClassifier",
+      "com.apple.createml.training.started" : "2025-11-19T02:10:24Z"
+    },
+    "method" : "predict"
+  }
+]

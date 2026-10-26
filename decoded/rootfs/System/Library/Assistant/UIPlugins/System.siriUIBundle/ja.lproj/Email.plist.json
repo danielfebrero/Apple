@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "真由美に旅行についてメール",
+            "愛ちゃんに予定変更とメールして",
+            "田中さんにメールを送って",
+            "お父さんに仕送りの件でメール",
+            "高橋先生にお祝いありがとうございましたとメール",
+            "太郎と花子に昨日のパーティというメールを送る"
+          ]
+        }
+      ],
+      "SectionName": "メールを送信する"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "メールをチェック",
+            "今日佐藤さんからメール来た?",
+            "賃貸契約に関する新着メールを表示",
+            "田中から昨日来たメールを見せて"
+          ]
+        }
+      ],
+      "SectionName": "メールを確認する"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "鈴木さんに支払いが遅れて申し訳ありませんと返信"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "この人に電話"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "この人にFaceTime"
+          ]
+        }
+      ],
+      "SectionName": "メールに返信する"
+    }
+  ]
+}

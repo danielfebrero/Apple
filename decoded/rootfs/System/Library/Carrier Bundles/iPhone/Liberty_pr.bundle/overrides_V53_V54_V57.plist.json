@@ -1,0 +1,104 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "ShowVoNRSwitch": true,
+  "Enable5GStandaloneByDefault": true,
+  "PushSettings": {
+    "CellularPlanTransferTopic": "com.libertypr.ent.plan-transfer-to-eSIM"
+  },
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://sm-v4-099-a-gtm.pr.go-esim.com",
+    "MinCompatibleOS": "26.2",
+    "TransferErrorCodes": {
+      "MaintenanceErrors": [
+        "5003"
+      ],
+      "IneligibleAccountErrors": [
+        "5011"
+      ],
+      "BlockedAccountErrors": [
+        "5009"
+      ]
+    }
+  },
+  "ShowHighDataModeSwitch": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "SupportsVoNR": true,
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 11673,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "TransferSIMService"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "apns": [
+    {
+      "password": "",
+      "tech-type-mask": 3,
+      "username": "",
+      "apn": "internet",
+      "type-mask": 32771,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "password": "",
+      "tech-type-mask": 4,
+      "username": "",
+      "apn": "mms",
+      "type-mask": 4
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "UseNetworkMTU": true,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 1048576,
+      "password": "",
+      "tech-type-mask": 1048576,
+      "SupportSwitchOver": false,
+      "username": "",
+      "apn": "hos",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 262144,
+      "password": "",
+      "tech-type-mask": 262144,
+      "AllowNoDNS": 1,
+      "username": "",
+      "apn": "sos",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "password": "",
+      "username": "",
+      "apn": "hotspot",
+      "type-mask": 16,
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Show5GStandaloneSwitch": true,
+  "Show3GSwitchWithVolte": false,
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

@@ -1,0 +1,158 @@
+{
+  "DerPriFileVersion": "0.1.162",
+  "MTU": [
+    {
+      "technology-mask": 25,
+      "size": 1428
+    }
+  ],
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "AllowIMSUnprovisioned": true,
+    "Signaling": {
+      "T3396PdpBackOffSeconds": 300,
+      "AdditionalFeatureTags": {
+        "voice": {
+          "+g.gsma.rcs.telephony": "\"cs,volte\""
+        }
+      }
+    }
+  },
+  "PcoOptions": {
+    "PcoMcc": 311,
+    "ContainerIds": [
+      65283
+    ],
+    "PcoMnc": 480
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRUWB",
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "apn": "vzwinternet",
+          "type-mask": 4194323
+        },
+        {
+          "password": "",
+          "tech-type-mask": 16390,
+          "username": "",
+          "apn": "vzwapp",
+          "type-mask": 49156
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "vzwemergency",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "AllowedProtocolMaskInRoaming": 2,
+          "SupportSwitchOver": false,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        }
+      ],
+      "technology-mask": 1
+    },
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "apn": "vzwinternet",
+          "type-mask": 4194323,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "tech-type-mask": 16390,
+          "username": "",
+          "apn": "vzwapp",
+          "type-mask": 49156,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "vzwemergency",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "NoCellularReconnectCauseCodes": [
+            {
+              "CauseCodes": [
+                8
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                27
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                29
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                32
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                33
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            }
+          ],
+          "AllowedProtocolMaskInRoaming": 2,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "vzwadmin",
+          "type-mask": 512,
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 24
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true,
+  "SupportsNRNSAInboundRoaming": true
+}

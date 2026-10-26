@@ -1,0 +1,85 @@
+{
+  "artifact": {
+    "entityRelevanceRanking": {
+      "entityClass": "place",
+      "tableName": "loi_entity_relevance"
+    },
+    "path": "entityRelevance/entityRelevanceInferences.db",
+    "type": "entityRelevanceRanking"
+  },
+  "customViewClass": "EntityRelevanceInferenceView",
+  "entityRelevance": {
+    "featureViewNames": [
+      "loiEntityRelevanceWiFiFeatures",
+      "loiEntityRelevanceSpecificGeoHashFeatures",
+      "loiEntityRelevanceSpecificGeoHashAndCoarseTimeOfDayFeatures",
+      "loiEntityRelevanceNonContextualFeatures",
+      "loiEntityRelevanceDayOfWeekFeatures",
+      "loiEntityRelevanceCoarseTimeOfDayFeatures",
+      "loiEntityRelevanceCoarseGeoHashFeatures",
+      "loiEntityRelevanceCoarseGeoHashAndCoarseTimeOfDayFeatures",
+      "loiEntityRelevanceWiFiAndCoarseTimeOfDayFeatures",
+      "loiEntityRelevanceWiFiAndDayOfWeekFeatures",
+      "loiEntityRelevanceCoarseTimeOfDayAndDayOfWeekFeatures",
+      "loiEntityRelevanceLOIFeatures"
+    ]
+  },
+  "featureFlag": "EntityRelevanceBiomeSources",
+  "name": "loiEntityRelevanceRanking",
+  "type": "custom",
+  "update": {
+    "filters": [],
+    "group": "loiEntityRelevance",
+    "viewListeners": [
+      {
+        "name": "loiEntityRelevanceWiFiFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceSpecificGeoHashFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceSpecificGeoHashAndCoarseTimeOfDayFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceNonContextualFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceDayOfWeekFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceCoarseTimeOfDayFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceCoarseGeoHashFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceCoarseGeoHashAndCoarseTimeOfDayFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceWiFiAndCoarseTimeOfDayFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceWiFiAndDayOfWeekFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceCoarseTimeOfDayAndDayOfWeekFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "loiEntityRelevanceLOIFeatures",
+        "schedule": "live"
+      }
+    ]
+  },
+  "writeToStream": true
+}

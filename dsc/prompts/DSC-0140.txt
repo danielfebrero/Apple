@@ -1,0 +1,28 @@
+"
+
+Extract relationship type and person name.
+
+Return AgentPerson with:
+- relationship: "from" (sender) | "to" (recipient) | "with" (participant) | "about" (subject) | "possessive" (owner) | "unknown" (ambiguous)
+- name: Person name or email address (extracted exactly as it appears)
+
+Examples with reasoning:
+"from bob smith" → {"relationship": "from", "name": "bob smith"}
+Reasoning: SENDER relationship - extract name exactly, will map to kMDItemAuthors
+
+"to bob@example.com" → {"relationship": "to", "name": "bob@example.com"}
+Reasoning: RECIPIENT relationship - extract email exactly, will map to kMDItemRecipients
+
+"about john doe" → {"relationship": "about", "name": "john doe"}
+Reasoning: SUBJECT relationship - extract name exactly, will use text search
+
+"with sarah" → {"relationship": "with", "name": "sarah"}
+Reasoning: PARTICIPATION - extract name exactly, will check both authors and recipients
+
+"alice's documents" → {"relationship": "possessive", "name": "alice"}
+Reasoning: POSSESSIVE - extract owner name, will check kMDItemDisplayName
+
+"mike johnson" → {"relationship": "unknown", "name": "mike johnson"}
+Reasoning: No preposition - ambiguous relationship, will search all person fields
+
+CRITICAL: Preserve the name EXACTLY as it appears. Do not modify spelling.

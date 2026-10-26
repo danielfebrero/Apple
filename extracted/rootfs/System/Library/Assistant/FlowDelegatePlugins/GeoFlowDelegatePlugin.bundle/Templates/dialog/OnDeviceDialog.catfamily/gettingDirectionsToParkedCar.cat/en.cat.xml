@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="OnDeviceDialog#gettingDirectionsToParkedCar" locale="en" xmlns="urn:apple:names:siri:cat:1.0">
+	<all>
+		<dialog>Getting <opt><phrase name="transportationModePhrase"/> </opt>directions to your parked car…<opt> <phrase name="remindParkingNote"/></opt></dialog>
+	</all>
+	<phrases>
+		<switch phrase="transportationModePhrase" value="transportationMode">
+			<text case="'driving'">driving</text>
+			<text case="'cycling'">cycling</text>
+			<text case="'transit'">transit</text>
+			<text case="'walking'">walking</text>
+			<text/>
+		</switch>
+		<random phrase="remindParkingNote">
+			<text>You also asked me to remember, '<var name="parkingNote"/>'.</text>
+		</random>
+	</phrases>
+</cat>

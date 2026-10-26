@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="Suggestions#Restart" locale="en">
+    <phrases>
+        <random phrase="suggestion">
+            <text>Restart my <var name="device.deviceName"/></text>
+        </random>
+    </phrases>
+    <all>
+        <dialog id="suggestion"><phrase name="suggestion"/></dialog>
+        <dialog id="description">Restarts your <var name="device.deviceName"/>.</dialog>
+    </all>
+</cat>

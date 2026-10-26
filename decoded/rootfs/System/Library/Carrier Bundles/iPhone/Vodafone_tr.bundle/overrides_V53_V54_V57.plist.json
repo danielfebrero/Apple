@@ -1,0 +1,48 @@
+{
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "DerPriFileVersion": "6.0.161",
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "Enable5GStandaloneByDefault": true,
+  "Show5GStandaloneSwitchOnlyWhenEntitled": true,
+  "ShowVoNRSwitch": true,
+  "SupportsVoNR": true,
+  "AllowSAOnWiFiAssociation": true,
+  "apns": [
+    {
+      "type-mask": 32817,
+      "password": "",
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 1,
+      "username": "",
+      "apn": "internet",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "password": "vodafone",
+      "username": "vodafone",
+      "apn": "mms",
+      "type-mask": 4
+    },
+    {
+      "type-mask": 131072,
+      "password": "",
+      "tech-type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowNoDNS": 1
+    }
+  ],
+  "Show5GStandaloneSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  }
+}

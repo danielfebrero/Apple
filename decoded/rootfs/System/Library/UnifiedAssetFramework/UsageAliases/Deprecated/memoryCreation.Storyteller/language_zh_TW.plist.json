@@ -1,0 +1,33 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "memoryCreation.Storyteller",
+  "UsageAliasValues": {
+    "language_zh_TW": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.overrides.model_config.all.generic": "ENABLED",
+        "com.apple.gm.safety.disabledusecases.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.photos_memories.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.photos_memories.story_title.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.photos_memories.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.photos_memories.sensitive.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.photos_memories.song_id.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.photos_memories.story_title.generic": "ENABLED",
+        "com.apple.gm.safety_embedding_deny.all.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.photos_memories_storyteller_v2.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

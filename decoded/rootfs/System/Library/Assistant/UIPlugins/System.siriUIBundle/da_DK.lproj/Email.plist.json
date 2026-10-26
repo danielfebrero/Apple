@@ -1,0 +1,57 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Send e-mail til Emilie om turen",
+            "Send e-mail til Linda om ændringen i planerne",
+            "Ny e-mail til Susanne Christensen",
+            "Send e-mail til far om huslejen",
+            "Send e-mail til Emilie og Jesper om festen og sig tak for sidst"
+          ]
+        }
+      ],
+      "SectionName": "Sende e-mail"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Tjek e-mail",
+            "Er der en ny e-mail fra Søren i dag?",
+            "Vis ny e-mail om kontrakten",
+            "Vis e-mailen fra Emilie i går"
+          ]
+        }
+      ],
+      "SectionName": "Tjekke e-mail"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Svar e-mail kære Susanne beklager den sene betaling"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ring til ham på arbejdet"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime ham på arbejdet"
+          ]
+        }
+      ],
+      "SectionName": "Svare på e-mail"
+    }
+  ]
+}

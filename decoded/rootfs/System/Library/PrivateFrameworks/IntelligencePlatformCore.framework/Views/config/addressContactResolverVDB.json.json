@@ -1,0 +1,69 @@
+{
+  "artifact": {
+    "path": "addressResolution/addressStore/",
+    "type": "vectordb",
+    "vectordb": {
+      "embeddingColumn": "address",
+      "embeddingProviderConfig": {
+        "embeddingModel": "addressEmbedding"
+      },
+      "includePayload": true,
+      "keyColumns": [
+        [
+          "mdId",
+          "INTEGER"
+        ]
+      ],
+      "subjectIdentifierColumn": "mdId",
+      "useEncoder": true
+    }
+  },
+  "featureFlag": "AddressContactResolution",
+  "name": "addressContactResolverVDB",
+  "type": "vectordb",
+  "update": {
+    "alwaysUpdateListeners": [
+      {
+        "fullRebuildOnChange": true,
+        "schedule": "daily"
+      }
+    ],
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB152",
+            "predicates": [
+              "PS730",
+              "PS570",
+              "PS316",
+              "PS569",
+              "PS453",
+              "PS568",
+              "PS455",
+              "PS731",
+              "PS315",
+              "PS450",
+              "PS454",
+              "PS317",
+              "PS225",
+              "PS225/CS29/PS107",
+              "PS225/CS29/PS733"
+            ]
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "stableGraph",
+          "eventGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "addressContactResolver",
+        "schedule": "live"
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "EnablePressuredExit": true,
+  "EnableTransactions": true,
+  "Label": "com.apple.siriknowledged",
+  "LaunchEvents": {
+    "com.apple.cascade.xpc_event.setChange": {
+      "com.apple.siri.inference.EntityMatcher": {}
+    },
+    "com.apple.distnoted.matching": {
+      "com.apple.LaunchServices.applicationRegistered": {
+        "Name": "com.apple.LaunchServices.applicationRegistered"
+      },
+      "com.apple.LaunchServices.applicationUnregistered": {
+        "Name": "com.apple.LaunchServices.applicationUnregistered"
+      }
+    },
+    "com.apple.coreduetcontext.client_event_stream": {
+      "notification": {
+        "client-identifier": "com.apple.siriknowledge"
+      }
+    },
+    "com.apple.notifyd.matching": {
+      "com.apple.CascadeSets.DonateNow": {
+        "Notification": "com.apple.CascadeSets.DonateNow"
+      },
+      "com.apple.icloud.fmip.siri_data_changed": {
+        "Notification": "com.apple.icloud.fmip.siri_data_changed"
+      },
+      "com.apple.proactive.PersonalizationPortrait.namedEntitiesInvalidated": {
+        "Notification": "com.apple.proactive.PersonalizationPortrait.namedEntitiesInvalidated"
+      },
+      "com.apple.sysdiagnose.sysdiagnoseStarted": {
+        "Notification": "com.apple.sysdiagnose.sysdiagnoseStarted"
+      },
+      "com.apple.homekit.sync-data-cache-updated": {
+        "Notification": "com.apple.homekit.sync-data-cache-updated"
+      },
+      "INVoocabularyChangedNotification": {
+        "Notification": "INVoocabularyChangedNotification"
+      },
+      "__ABDataBaseChangedByOtherProcessNotification": {
+        "Notification": "__ABDataBaseChangedByOtherProcessNotification"
+      },
+      "com.apple.assistant.siri_settings_did_change": {
+        "Notification": "com.apple.assistant.siri_settings_did_change"
+      },
+      "kAFPreferencesDidChangeDarwinNotification": {
+        "Notification": "kAFPreferencesDidChangeDarwinNotification"
+      },
+      "com.apple.siri.orchestration.capabilities.didChange": {
+        "Notification": "com.apple.siri.orchestration.capabilities.didChange"
+      },
+      "AFLanguageCodeDidChangeDarwinNotification": {
+        "Notification": "AFLanguageCodeDidChangeDarwinNotification"
+      },
+      "com.apple.language.changed": {
+        "Notification": "com.apple.language.changed"
+      },
+      "com.apple.MobileAsset.AutoAssetAtomicNotification^ATOMIC_INSTANCE_DOWNLOADED": {
+        "Notification": "com.apple.MobileAsset.AutoAssetAtomicNotification^ATOMIC_INSTANCE_DOWNLOADED"
+      },
+      "com.apple.MobileAsset.AutoAssetAtomicNotification^ATOMIC_INSTANCE_NO_ENTRIES": {
+        "Notification": "com.apple.MobileAsset.AutoAssetAtomicNotification^ATOMIC_INSTANCE_NO_ENTRIES"
+      },
+      "com.apple.MobileAsset.AutoAssetAtomicNotification^ATOMIC_INSTANCE_ELIMINATED": {
+        "Notification": "com.apple.MobileAsset.AutoAssetAtomicNotification^ATOMIC_INSTANCE_ELIMINATED"
+      },
+      "com.apple.gms.availability.notification": {
+        "Notification": "com.apple.gms.availability.notification"
+      }
+    },
+    "com.apple.xpc.activity": {
+      "com.apple.siri.xpc_activity.uaf-subscription-maintenance": {
+        "Interval": 86400,
+        "GracePeriod": 14400,
+        "Priority": "Maintenance",
+        "AllowBattery": false,
+        "Repeating": true,
+        "RequiresClassC": true
+      },
+      "com.apple.siri.xpc_activity.uaf-post-upgrade": {
+        "GracePeriod": 300,
+        "Priority": "Utility",
+        "AllowBattery": true,
+        "Repeating": false,
+        "RequiresClassC": true,
+        "PostInstall": true
+      }
+    },
+    "com.apple.uservault.events": {
+      "config": {
+        "bundleID": "com.apple.siriknowledged",
+        "resources": {
+          "com.apple.siri.entity-matcher": {}
+        }
+      }
+    }
+  },
+  "MachServices": {
+    "com.apple.siri.inference.EntityMatcher.admin": true,
+    "com.apple.siri.reference_resolution_module": true,
+    "com.apple.siri.conversation_context_module": true,
+    "com.apple.siriknowledged.koa.donate": true,
+    "com.apple.siriknowledged.vocabulary.admin": true,
+    "com.apple.siriknowledged": true,
+    "com.apple.siriknowledged.aps": true,
+    "com.apple.siri.uaf.service": true
+  },
+  "ProcessType": "Adaptive",
+  "Program": "/usr/libexec/siriknowledged",
+  "ProgramArguments": [
+    "/usr/libexec/siriknowledged"
+  ],
+  "RunAtLoad": false,
+  "UserName": "mobile"
+}

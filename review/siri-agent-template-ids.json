@@ -1,0 +1,142 @@
+[
+  {
+    "family": "CATALOG",
+    "id": "platform_base",
+    "has_template": true,
+    "length_chars": 2502,
+    "sha256_utf8": "a52be876e7065aa90bce5f69a7046042626a188aefab7dd9833d6d0149f67b91",
+    "placeholders": [
+      "carplay_ultra_tools",
+      "grounding_name",
+      "section.title",
+      "section.tools"
+    ]
+  },
+  {
+    "family": "CATALOG",
+    "id": "span_match",
+    "has_template": true,
+    "length_chars": 3259,
+    "sha256_utf8": "304b47c53f54037bf0175e71446225ba16b967271646a903f19c6defb9fb5a05",
+    "placeholders": [
+      "entity.id",
+      "entity.name",
+      "entity.type_name",
+      "rel.name",
+      "rel.names",
+      "rel.relationship",
+      "span",
+      "structured_span_matching.ambiguous_contact_spans_substring"
+    ]
+  },
+  {
+    "family": "PCC",
+    "id": "default",
+    "has_template": false,
+    "length_chars": 0,
+    "sha256_utf8": null,
+    "placeholders": []
+  },
+  {
+    "family": "PCC",
+    "id": "knowledge_restriction",
+    "has_template": true,
+    "length_chars": 3865,
+    "sha256_utf8": "e6c0881b76fa2b82b0eae1fd7dc2572eef65d46bda21f1264837703d0b66010b",
+    "placeholders": []
+  },
+  {
+    "family": "PCC",
+    "id": "math_restriction",
+    "has_template": true,
+    "length_chars": 1450,
+    "sha256_utf8": "fd5e34c27c6dbd94914087f97b4651973b4870f79483bf94ba6f2c86d9395b45",
+    "placeholders": []
+  },
+  {
+    "family": "PCC",
+    "id": "platform_base",
+    "has_template": true,
+    "length_chars": 2502,
+    "sha256_utf8": "a52be876e7065aa90bce5f69a7046042626a188aefab7dd9833d6d0149f67b91",
+    "placeholders": [
+      "carplay_ultra_tools",
+      "grounding_name",
+      "section.title",
+      "section.tools"
+    ]
+  },
+  {
+    "family": "PCC",
+    "id": "process_content_safely",
+    "has_template": true,
+    "length_chars": 1841,
+    "sha256_utf8": "70e62fcd05f5fc8c682f7865e13a32930528302af8e7b7283f42c1eb598750f2",
+    "placeholders": []
+  },
+  {
+    "family": "PCC",
+    "id": "span_match",
+    "has_template": true,
+    "length_chars": 3259,
+    "sha256_utf8": "304b47c53f54037bf0175e71446225ba16b967271646a903f19c6defb9fb5a05",
+    "placeholders": [
+      "entity.id",
+      "entity.name",
+      "entity.type_name",
+      "rel.name",
+      "rel.names",
+      "rel.relationship",
+      "span",
+      "structured_span_matching.ambiguous_contact_spans_substring"
+    ]
+  },
+  {
+    "family": "PCC",
+    "id": "u18_model_guidelines_base",
+    "has_template": true,
+    "length_chars": 3666,
+    "sha256_utf8": "e0f2ff98df7684347c100b5d211e120e0cd7cd7d3dcf54547a2054e56380e0fe",
+    "placeholders": []
+  },
+  {
+    "family": "PCC",
+    "id": "u18_model_guidelines_restricted",
+    "has_template": true,
+    "length_chars": 3784,
+    "sha256_utf8": "e8288f737ec77bdf055df80ea6d05e08c72246e9a229282d5cb9e0bcf5292cca",
+    "placeholders": []
+  },
+  {
+    "family": "PCC",
+    "id": "u18_model_guidelines_restricted_mdm",
+    "has_template": true,
+    "length_chars": 3767,
+    "sha256_utf8": "ab2bf348a804ac6f813927bf0a841ab19b650d3938c2137f2e000c87c0d6ccb9",
+    "placeholders": []
+  },
+  {
+    "family": "PCC",
+    "id": "writing_personalization",
+    "has_template": false,
+    "length_chars": 0,
+    "sha256_utf8": null,
+    "placeholders": []
+  },
+  {
+    "family": "PCC",
+    "id": "writing_restriction",
+    "has_template": true,
+    "length_chars": 2375,
+    "sha256_utf8": "db0ad3ad1195d04aeec569131d7a30af185d3609f5ed42513cad9d9358626cbe",
+    "placeholders": []
+  },
+  {
+    "family": "PCC",
+    "id": "writing_tools",
+    "has_template": true,
+    "length_chars": 9762,
+    "sha256_utf8": "32dbf92b49816aa970b7c900856b672455d50a90463c00dcf6a1ae26c551382e",
+    "placeholders": []
+  }
+]

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>XPCService</key>
+	<dict>
+		<key>TTL</key>
+		<dict>
+			<key>Default</key>
+			<integer>7</integer>
+			<key>Info</key>
+			<integer>0</integer>
+			<key>Debug</key>
+			<integer>0</integer>
+		</dict>
+		<key>Level</key>
+		<dict>
+			<key>Persist</key>
+			<string>Inherit</string>
+			<key>Enable</key>
+			<string>Inherit</string>
+		</dict>
+	</dict>
+	<key>Subscription</key>
+	<dict>
+		<key>TTL</key>
+		<dict>
+			<key>Default</key>
+			<integer>7</integer>
+			<key>Info</key>
+			<integer>0</integer>
+			<key>Debug</key>
+			<integer>0</integer>
+		</dict>
+		<key>Level</key>
+		<dict>
+			<key>Persist</key>
+			<string>Inherit</string>
+			<key>Enable</key>
+			<string>Inherit</string>
+		</dict>
+	</dict>
+	<key>Client</key>
+	<dict>
+		<key>TTL</key>
+		<dict>
+			<key>Default</key>
+			<integer>7</integer>
+			<key>Info</key>
+			<integer>0</integer>
+			<key>Debug</key>
+			<integer>0</integer>
+		</dict>
+		<key>Level</key>
+		<dict>
+			<key>Persist</key>
+			<string>Inherit</string>
+			<key>Enable</key>
+			<string>Inherit</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

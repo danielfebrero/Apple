@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="LocationServices#Disabled" xmlns="urn:apple:names:siri:cat:2.0">
+    <meta name="category" value="Can't Do"/>
+    <meta name="subcategory" value="Resource Configuration"/>
+    <parameters>
+        <parameter description="if user denied location services to Siri only" name="isSiriLocationSharingDenied" type="dialog.Boolean"/>
+    </parameters>
+    <meta name="description" value="Siri instructs user to turn on Location Services for Siri"/>
+    <meta name="readyForLoc" value="true"/>
+</cat>

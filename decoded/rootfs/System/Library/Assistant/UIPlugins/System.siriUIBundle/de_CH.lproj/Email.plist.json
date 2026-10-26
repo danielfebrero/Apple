@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Emaile Georg wegen der Reise",
+            "Sende eine E-Mail an Susanne wegen Planänderung",
+            "Neue E-Mail an Diana Kappel",
+            "Sende eine E-Mail an Vater wegen der Überweisung",
+            "Sende eine E-Mail an Dr. Grimm mit dem Inhalt danke ich habe die Formulare erhalten",
+            "Eine E-Mail an Sabine und Tobias senden mit Betreff ich hatte heute viel Spass"
+          ]
+        }
+      ],
+      "SectionName": "E-MAIL SENDEN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Rufe E-Mails ab",
+            "Gibt es heute neue E-Mails von Christian?",
+            "Zeige neue E-Mails zum Mietvertrag",
+            "Zeige die E-Mail von Sabine von gestern"
+          ]
+        }
+      ],
+      "SectionName": "E-MAIL ABRUFEN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Antworte Diana bitte entschuldige die späte Zahlung"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Rufe ihn im Geschäft an"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime-Anruf mit ihm auf der Arbeit"
+          ]
+        }
+      ],
+      "SectionName": "AUF E-MAIL ANTWORTEN"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Add artichokes to my grocery list",
+            "Add skydiving to my bucket list",
+            "Remember to take an umbrella",
+            "Remind me to take my medicine at 6am tomorrow",
+            "Remind me to finish the report by 6",
+            "Read my work to-do list",
+            "Mark the third one complete",
+            "Create a new list called Groceries",
+            "Remind me about this email tomorrow",
+            "Remember this website",
+            "Remind me to FaceTime mum when I get home"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Remind me when I leave to call Brian",
+            "Remind me to call my dad when I’m in the car"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Remind me when I leave to FaceTime Brian"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Remind me to pick up flowers when I leave here"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

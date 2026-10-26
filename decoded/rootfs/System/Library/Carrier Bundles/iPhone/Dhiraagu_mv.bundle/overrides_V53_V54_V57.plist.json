@@ -1,0 +1,19 @@
+{
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 9217,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "transferSIMService"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "ShowHighDataModeSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "0.1.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "ShowVolteSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

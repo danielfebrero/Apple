@@ -1,0 +1,154 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "الهاتف",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "اتصل بأحمد",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "اتصل بهلا عبر FaceTime",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "التطبيقات",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "ابدأ تشغيل الصور",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "الرسائل",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "أخبر سارة أنني سأحضر حالاً",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "التقويم",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "قم بإعداد اجتماع الساعة ٩",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "الصور",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "أظهر صوري من الأمس",
+      "DomainName": "Photos"
+    },
+    {
+      "DomainDisplayName": "الخرائط",
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainName": "MapsAndLocal",
+      "TagPhrase": "أظهر لي المنزل على الخريطة",
+      "DomainAlternateDisplayName": "الخرائط"
+    },
+    {
+      "DomainDisplayName": "تويتر",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "غرّد مع عرض موقعي…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Weibo",
+      "TagPhrase": "انشر على Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "فيس بوك",
+      "IconResourceName": "facebook",
+      "TagPhrase": "انشر في فيس بوك…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "الموسيقى",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "شغل 'سعد لمجرد'",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "التذكيرات",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "ذكرني بالاتصال بأمي",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "البريد",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "أرسل بريدًا إلكترونيًا لحسين حول الرحلة",
+      "DomainName": "Email"
+    },
+    {
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "IconNeedsProcessing": true,
+      "DomainDisplayName": "الطقس",
+      "TagPhrase": "ما حالة الطقس اليوم؟",
+      "DomainName": "Weather"
+    },
+    {
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "IconNeedsProcessing": true,
+      "DomainDisplayName": "الأسهم",
+      "TagPhrase": "ما هو سعر سهم Apple؟",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "الساعة",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "أوقظني غدّا الساعة ٧ صباحًا",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "جهات الاتصال",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "ما هو عنوان سعيد؟",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "العثور على أصدقائي",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "أين عامر؟",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "الملاحظات",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "دوّن ملاحظة بأنني أنفقت ٦٠٠ ريالاً اليوم",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "الإعدادات",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "شغّل نمط الطيران",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "بحث الويب",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "ابحث في الويب عن الصقور",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "سؤال وجواب",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "ما هو عدد الدول العربية؟",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "البودكاست",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "شغل مقاطع بودكاست",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

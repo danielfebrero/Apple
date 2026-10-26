@@ -1,0 +1,84 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Mixed (Float16, Float32)",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1)",
+        "shortDescription" : "",
+        "shape" : "[1, 1]",
+        "name" : "tt80_prediction_in_hrs",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "x9vhjqrid5",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 6,
+    "mlProgramOperationTypeHistogram" : {
+      "Transpose" : 3,
+      "Range1d" : 3,
+      "Sub" : 1,
+      "Sigmoid" : 6,
+      "Matmul" : 4,
+      "MakeList" : 4,
+      "Cast" : 16,
+      "Split" : 2,
+      "Add" : 8,
+      "Tanh" : 4,
+      "Less" : 2,
+      "Shape" : 2,
+      "ListRead" : 2,
+      "ListGather" : 2,
+      "WhileLoop" : 2,
+      "ListLength" : 1,
+      "Linear" : 2,
+      "Relu" : 1,
+      "ListScatter" : 2,
+      "ListWrite" : 2,
+      "SliceByIndex" : 5,
+      "Mul" : 7
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1 × 1...512 × 5",
+        "shapeRange" : "[[1, 1], [1, 512], [5, 5]]",
+        "formattedType" : "MultiArray (Float32 1 × 512 × 5)",
+        "type" : "MultiArray",
+        "shape" : "[1, 512, 5]",
+        "name" : "sbc_in",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "7.1.2",
+      "com.github.apple.coremltools.source" : "tensorflow==2.11.0",
+      "mldb_token" : "mldb-7nwypjwy9o"
+    },
+    "generatedClassName" : "tt80_lstm_regression",
+    "method" : "predict"
+  }
+]

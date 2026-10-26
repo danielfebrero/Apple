@@ -1,0 +1,252 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "is_ideal",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "keyType": "Int64",
+        "formattedType": "Dictionary (Int64 → Double)",
+        "type": "Dictionary",
+        "name": "classProbability",
+        "shortDescription": ""
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 1,
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_treeEnsembleClassifier"
+    },
+    "inputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "duration",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "created_start_difference",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "participant_count",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "is_work",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "num_events_day",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sum_duration_day",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "num_events_week",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sum_duration_week",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "start_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "prev_duration",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "next_duration",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "time_after_prev",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "time_before_next",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "free_block_overlap",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Sunday_earliest_start_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Sunday_latest_end_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Monday_earliest_start_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Monday_latest_end_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Tuesday_earliest_start_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Tuesday_latest_end_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Wednesday_earliest_start_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Wednesday_latest_end_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Thursday_earliest_start_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Thursday_latest_end_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Friday_earliest_start_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Friday_latest_end_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Saturday_earliest_start_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "Saturday_latest_end_minutes_from_midnight",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "weekday",
+        "shortDescription": ""
+      }
+    ],
+    "classLabels": [
+      0,
+      1
+    ],
+    "generatedClassName": "TimeClassifier",
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "8.1",
+      "com.github.apple.coremltools.source": "xgboost==1.4.2"
+    },
+    "method": "predict"
+  }
+]

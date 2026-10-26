@@ -1,0 +1,65 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "pTTR",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 4,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1... × 1",
+        "shapeRange" : "[[1, -1], [1, 1]]",
+        "formattedType" : "MultiArray (Float32 1 × 1)",
+        "type" : "MultiArray",
+        "shape" : "[1, 1]",
+        "name" : "OnlinePTTR",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.0.4",
+      "com.github.apple.coremltools.source" : "tensorflow==2.2.0"
+    },
+    "generatedClassName" : "gibraltar_identity_d8f9a11",
+    "neuralNetworkLayerTypeHistogram" : {
+      "LessEqual" : 1,
+      "WhereBroadcastable" : 1,
+      "GetShape" : 1,
+      "RandomUniformDynamic" : 1,
+      "LogicalAnd" : 1,
+      "LogicalNot" : 1,
+      "GreaterEqual" : 1
+    },
+    "method" : "predict"
+  }
+]

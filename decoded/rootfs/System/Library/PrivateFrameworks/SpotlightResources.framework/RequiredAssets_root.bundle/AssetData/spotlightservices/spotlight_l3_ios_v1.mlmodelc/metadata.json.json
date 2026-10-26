@@ -1,0 +1,87 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Float16",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "y",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Int32",
+        "formattedType": "MultiArray (Int32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "id_features",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 6,
+    "mlProgramOperationTypeHistogram": {
+      "Concat": 2,
+      "Gather": 2,
+      "Cast": 2,
+      "Linear": 6,
+      "Relu": 5,
+      "Sigmoid": 1,
+      "Split": 1,
+      "Reshape": 1,
+      "Squeeze": 2
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "12.0",
+      "tvOS": "15.0",
+      "visionOS": "1.0",
+      "watchOS": "8.0",
+      "iOS": "15.0",
+      "macCatalyst": "15.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.source_dialect": "TorchScript",
+      "com.github.apple.coremltools.source": "torch==2.0.0",
+      "com.github.apple.coremltools.version": "7.1"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Int32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1...128 × 2",
+        "shapeRange": "[[1, 128], [2, 2]]",
+        "formattedType": "MultiArray (Int32 16 × 2)",
+        "type": "MultiArray",
+        "shape": "[16, 2]",
+        "name": "id_features",
+        "shortDescription": ""
+      },
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1...128 × 63",
+        "shapeRange": "[[1, 128], [63, 63]]",
+        "formattedType": "MultiArray (Float32 16 × 63)",
+        "type": "MultiArray",
+        "shape": "[16, 63]",
+        "name": "dense_features",
+        "shortDescription": ""
+      }
+    ],
+    "generatedClassName": "spotlight_l3_ios_v1",
+    "method": "predict"
+  }
+]

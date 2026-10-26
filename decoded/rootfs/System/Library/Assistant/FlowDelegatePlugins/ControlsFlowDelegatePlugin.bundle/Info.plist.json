@@ -1,0 +1,321 @@
+{
+  "BuildMachineOSBuild": "23A344017",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleExecutable": "ControlsFlowDelegatePlugin",
+  "CFBundleIdentifier": "com.apple.siri.video.ControlsFlowDelegatePlugin",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleName": "ControlsFlowDelegatePlugin",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleVersion": "1",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "DTPlatformBuild": "",
+  "DTPlatformName": "iphoneos",
+  "DTPlatformVersion": "27.2",
+  "DTSDKBuild": "24B104",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTXcode": "2700",
+  "DTXcodeBuild": "27A225b",
+  "InputAffinityScorer": {
+    "children": [
+      {
+        "children": [
+          {
+            "input": "namespace:mediaViewOption"
+          }
+        ],
+        "operator": "*",
+        "score": 99,
+        "type": "compare"
+      },
+      {
+        "children": [
+          {
+            "input": "namespace:mediaLanguage"
+          }
+        ],
+        "operator": "*",
+        "score": 99,
+        "type": "compare"
+      },
+      {
+        "children": [
+          {
+            "input": "namespace:mediaPlayerAttributes"
+          }
+        ],
+        "operator": "*",
+        "score": 99,
+        "type": "compare"
+      },
+      {
+        "children": [
+          {
+            "input": "namespace:mediaSettingName"
+          }
+        ],
+        "operator": "*",
+        "score": 99,
+        "type": "compare"
+      },
+      {
+        "children": [
+          {
+            "input": "namespace:mediaPlaybackSpeedDelta"
+          }
+        ],
+        "operator": "*",
+        "score": 99,
+        "type": "compare"
+      },
+      0
+    ],
+    "type": "first"
+  },
+  "MinimumOSVersion": "27.2",
+  "NSPrincipalClass": "ControlsFlowDelegatePlugin.ControlsFlowDelegatePlugin",
+  "SupportedInvocations": [
+    "com.apple.siri.DirectInvocation.PlaybackControls.QuickStop",
+    "com.apple.siri.DirectInvocation.PlaybackControls.ButtonPress",
+    "com.apple.siri.DirectInvocation.PlaybackControls.StopMedia",
+    "com.apple.siri.DirectInvocation.PlaybackControls.disambiguation.language",
+    "com.apple.siri.DirectInvocation.PlaybackControls.disambiguation.device"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "uso_NoEntity",
+      "type": "NLv4",
+      "verb": "restart",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "type": "NLv4",
+      "verb": "repeat",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "type": "NLv4",
+      "verb": "shuffle",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "type": "NLv4",
+      "verb": "resume",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "type": "NLv4",
+      "verb": "stop",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "type": "NLv4",
+      "verb": "pause",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "type": "NLv4",
+      "verb": "skipForward",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "type": "NLv4",
+      "verb": "skipBackward",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "type": "NLv4",
+      "verb": "play",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "type": "NLv4",
+      "verb": "increaseBy",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "type": "NLv4",
+      "verb": "decreaseBy",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "type": "NLv4",
+      "verb": "disable",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "type": "NLv4",
+      "verb": "enable",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "type": "NLv4",
+      "verb": "set",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "type": "NLv4",
+      "verb": "setNumber",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "type": "NLv4",
+      "verb": "noVerb",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "enableSetting",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "disableSetting",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "restart",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "repeat",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "seekTo",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "seekBackward",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "seekForward",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "stop",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "resume",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "pause",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "noVerb",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "skipForward",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "skipBackward",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "play",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "repeatAudio",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "transfer",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "update",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "request",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "summarise",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "hide",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "type": "NLv4",
+      "verb": "unrequest",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_RadioStation",
+      "type": "NLv4",
+      "verb": "disable",
+      "version": "USOv3"
+    }
+  ],
+  "UIDeviceFamily": [
+    1,
+    2
+  ]
+}

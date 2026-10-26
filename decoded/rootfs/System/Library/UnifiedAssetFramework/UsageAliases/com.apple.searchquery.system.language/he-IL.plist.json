@@ -1,0 +1,17 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.searchquery.system.language",
+  "UsageAliasValues": {
+    "he-IL": {
+      "com.apple.search.queryparser": {
+        "sqp.language": "he",
+        "sqp.parser": "he",
+        "sqp.safety": "he"
+      },
+      "com.apple.search.queryparser.overrides": {
+        "sqp.language": "he"
+      }
+    }
+  }
+}

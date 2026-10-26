@@ -1,0 +1,25 @@
+{
+    "cases": [
+        {
+            "bundleType":"timeContext",
+            "templates" :[
+                {
+                    "conditions":["summary_type = transit_summary, destination_format = YES"],
+                    "labels":["{time} {action} to {place_1}"],
+                },
+                {
+                    "conditions":["summary_type = transit_summary, destination_format = YES"],
+                    "labels":["{action} to {place_1}|TitleCap"],
+                },
+                {
+                    "conditions":["summary_type = transit_summary"],
+                    "labels":["{time} {action}, {place_1}|TitleCap"],
+                },
+                {
+                    "conditions":["summary_type = transit_summary"],
+                    "labels":["{action}, {place_1}|TitleCap"],
+                }
+            ]
+        }
+    ]
+}

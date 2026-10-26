@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "id": "VOICE_FEEDBACK_GROUP_ID",
+      "isRadioGroup": true,
+      "label": "VOICE_FEEDBACK_GROUP_TITLE"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "VOICE_FEEDBACK_PREFER_SILENT_RESPONSES_ID",
+      "label": "VOICE_FEEDBACK_TITLE_PREFER_SILENT_RESPONSES"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "VOICE_FEEDBACK_AUTOMATIC_ID",
+      "label": "VOICE_FEEDBACK_TITLE_AUTOMATIC"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "VOICE_FEEDBACK_PREFER_SPOKEN_RESPONSES_ID",
+      "label": "VOICE_FEEDBACK_TITLE_PREFER_SPOKEN_RESPONSES"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "ALWAYS_PRINT_RESPONSE_FOOTER_TEXT",
+      "id": "ALWAYS_PRINT_RESPONSE_GROUP_ID",
+      "isRadioGroup": false
+    },
+    {
+      "cell": "PSSwitchCell",
+      "get": "isAlwaysPrintSiriResponseEnabled:",
+      "id": "ALWAYS_PRINT_RESPONSE_ID",
+      "label": "ALWAYS_PRINT_RESPONSE",
+      "set": "setAlwaysPrintSiriResponseEnabled:forSpecifier:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "ALWAYS_SHOW_RECOGNIZED_SPEECH_FOOTER_TEXT",
+      "id": "ALWAYS_SHOW_RECOGNIZED_SPEECH_GROUP_ID",
+      "isRadioGroup": false
+    },
+    {
+      "cell": "PSSwitchCell",
+      "get": "alwaysShowRecognizedSpeech",
+      "id": "ALWAYS_SHOW_RECOGNIZED_SPEECH_ID",
+      "label": "ALWAYS_SHOW_RECOGNIZED_SPEECH",
+      "set": "setAlwaysShowRecognizedSpeech:forSpecifier:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "PREFERRED_AUDIO_GROUP_ID",
+      "isRadioGroup": true,
+      "label": "PREFERRED_AUDIO_ROUTE_TITLE"
+    },
+    {
+      "cell": "PSListItemCell",
+      "footerText": "PREFERRED_AUDIO_ROUTE_CAR_RADIO_FOOTER_TEXT",
+      "id": "PREFERRED_AUDIO_ROUTE_CAR_RADIO_ID",
+      "label": "PREFERRED_AUDIO_ROUTE_CAR_RADIO"
+    },
+    {
+      "cell": "PSListItemCell",
+      "footerText": "PREFFERED_AUDIO_ROUTE_BLUETOOTH_AUDIO_FOOTER_TEXT",
+      "id": "PREFFERED_AUDIO_ROUTE_BLUETOOTH_AUDIO_ID",
+      "label": "PREFFERED_AUDIO_ROUTE_BLUETOOTH_AUDIO"
+    },
+    {
+      "cell": "PSListItemCell",
+      "footerText": "PREFERRED_AUDIO_ROUTE_PHONE_SPEAKER_FOOTER_TEXT",
+      "id": "PREFERRED_AUDIO_ROUTE_PHONE_SPEAKER_ID",
+      "label": "PREFERRED_AUDIO_ROUTE_PHONE_SPEAKER"
+    }
+  ],
+  "title": "VOICE_FEEDBACK"
+}

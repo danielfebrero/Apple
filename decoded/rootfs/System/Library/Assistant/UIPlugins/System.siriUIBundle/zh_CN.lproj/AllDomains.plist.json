@@ -1,0 +1,186 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "电话",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "打电话给俊涵",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime小凤",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "应用",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "打开照片",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "信息",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "告诉张晨我马上到",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "日历",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "安排9点钟开会",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "体育",
+      "IconResourceName": "Sports",
+      "TagPhrase": "巨人队打赢了吗？",
+      "DomainName": "Sports"
+    },
+    {
+      "DomainDisplayName": "照片",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "查找昨天的照片",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "地图",
+      "DomainAlternateDisplayName": "地图",
+      "TagPhrase": "告诉我回家的路线",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "发推文并包括位置信息…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "新浪微博",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Weibo",
+      "TagPhrase": "发微博…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "发布到Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "餐馆",
+      "IconResourceName": "Restaurants",
+      "TagPhrase": "查找北京市的上海餐馆",
+      "DomainName": "Restaurants"
+    },
+    {
+      "DomainDisplayName": "音乐",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "播放李健的歌曲",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "提醒事项",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "提醒我打电话给妈妈",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "电子邮件",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "给秦葳发封电子邮件",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "天气",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "今天天气好吗？",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "股票",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "苹果公司的股票价格？",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "时钟",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "明天早晨7点叫醒我",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "通讯录",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "秦葳的地址？",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "查找朋友",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "俊涵在哪里？",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "备忘录",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "记下我午餐花了12块钱",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "设置",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "打开飞行模式",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "网络搜索",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "上网查找北极熊",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "问与答",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "一公斤等于多少磅？",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "问与答",
+      "IconNeedsProcessing": true,
+      "TagPhrase": "一公斤等于多少磅？",
+      "IconResourceName": "QandA",
+      "DomainName": "QAGB18030"
+    },
+    {
+      "DomainDisplayName": "问与答",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "一公斤等于多少磅？",
+      "DomainName": "QAGB18030"
+    },
+    {
+      "DomainDisplayName": "图书",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "在iBooks里查找西游记",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "播客",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "播放播客",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

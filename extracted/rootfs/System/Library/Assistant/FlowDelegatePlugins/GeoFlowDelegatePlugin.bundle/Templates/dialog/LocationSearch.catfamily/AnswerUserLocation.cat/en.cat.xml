@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="LocationSearch#AnswerUserLocation" locale="en" xmlns="urn:apple:names:siri:cat:2.0">
+    <first>
+        <dialog>
+            <print>You're at <var name="addressToPrint.fullThoroughfare"/><opt>, <var name="addressToPrint.locality"/></opt><opt>, <var name="addressToPrint.administrativeArea"/></opt>.</print>
+            <speak>You're at <say-as interpret-as="address"><var name="addressToSpeak.fullThoroughfare"/><opt>, <var name="addressToSpeak.locality"/></opt><opt>, <var name="addressToSpeak.administrativeArea"/></opt></say-as>.</speak>
+        </dialog>
+        <dialog>
+            <print>You're in <var name="addressToPrint.locality"/>, <var name="addressToPrint.administrativeArea"/>.</print>
+            <speak>You're in <say-as interpret-as="address"><var name="addressToSpeak.locality"/>, <var name="addressToSpeak.administrativeArea"/></say-as>.</speak>
+        </dialog>
+        <dialog>
+            <print>You're in <var name="addressToPrint.locality"/>.</print>
+            <speak>You're in <say-as interpret-as="address"><var name="addressToSpeak.locality"/></say-as>.</speak>
+        </dialog>
+        <dialog>
+            <print>You're in <var name="addressToPrint.administrativeArea"/>.</print>
+            <speak>You're in <say-as interpret-as="address"><var name="addressToSpeak.administrativeArea"/></say-as>.</speak>
+        </dialog>
+        <dialog>Here’s your current location.</dialog>
+    </first>
+</cat>

@@ -1,0 +1,36 @@
+{
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 8193,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "TransferSIMService"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "ShowHighDataModeSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "0.1.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true,
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://tme.prod.ondemandconnectivity.com",
+    "MinCompatibleOS": "26.4",
+    "TransferErrorCodes": {
+      "MaintenanceErrors": [
+        "5021"
+      ],
+      "BillingErrors": [
+        "5011"
+      ],
+      "CarrierDefaultErrors": [
+        "5003"
+      ]
+    }
+  },
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ]
+}

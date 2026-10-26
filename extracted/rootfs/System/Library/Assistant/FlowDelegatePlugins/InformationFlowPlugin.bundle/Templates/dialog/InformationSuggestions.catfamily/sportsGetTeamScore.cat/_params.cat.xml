@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="InformationSuggestions#sportsGetTeamScore">
+    <meta name="description" value="Suggests asking what the sports scores are"/>
+    <meta name="category" value="UsedForSnippet"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="deliveryVehicle" type="dialog.String"/>
+        <parameter description="Name of the first sports team in our dialog using semantic concept" name="firstTeamVocName" type="dialog.String" semanticConcept="teamName" redacted="false"/>
+        <parameter description="Location of the first sports team in our dialog using semantic concept" name="firstTeamVocLocation" type="dialog.String" semanticConcept="teamLocation" redacted="false"/>
+        <parameter description="Name of the second sports team in our dialog using semantic concept" name="secondTeamVocName" type="dialog.String" semanticConcept="teamName" redacted="false"/>
+        <parameter description="Location of the second sports team in our dialog using semantic concept" name="secondTeamVocLocation" type="dialog.String" semanticConcept="teamLocation" redacted="false"/>
+        <parameter description="Fallback full team name string for the first team in our dialog" name="firstTeamFullName" type="dialog.String"/>
+        <parameter description="Fallback full team name string for the second team in our dialog" name="secondTeamFullName" type="dialog.String"/>
+    </parameters>
+</cat>

@@ -1,0 +1,103 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "AllowSAOnWiFiAssociation": true,
+  "ShowVoNRSwitch": true,
+  "TechSettings": {
+    "SuppressSAInOverCellHandover": false
+  },
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "Show5GSwitch": true,
+  "MTU": [
+    {
+      "technology-mask": 25,
+      "size": 1440
+    },
+    {
+      "technology-mask": 32,
+      "size": 1436
+    }
+  ],
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "ShowHighDataModeSwitch": true,
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "IPv6SupportedDataModeMask": 106527,
+  "DataIndicatorOverrideForNRMmwave": "NRUC",
+  "apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 1081351,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "enableXLAT464": true,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "internet.cb",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "AlwaysOnPDU": true,
+          "Support5GSaHandOver": true,
+          "AllowedProtocolMaskInDomesticRoaming": 3,
+          "password": "",
+          "tech-type-mask": 131072,
+          "AllowedProtocolMaskInRoaming": 3,
+          "SupportSwitchOver": true,
+          "type-mask": 131072,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "tech-type-mask": 1048582,
+          "enableXLAT464": true,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "service",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "type-mask": 16,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "enableXLAT464": true,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "hotspot",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "AlwaysOnPDU": true,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 3,
+          "tech-type-mask": 262144,
+          "type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 2
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "Show5GStandaloneSwitch": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "Enable5GStandaloneByDefault": true,
+  "SupportsNRNSAInboundRoaming": true
+}

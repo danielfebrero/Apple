@@ -1,0 +1,175 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "is_inactive",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 30)",
+        "shortDescription" : "",
+        "shape" : "[30]",
+        "name" : "mov_scores",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "dyn_thresh",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 9,
+    "mlProgramOperationTypeHistogram" : {
+      "Ios18.expandDims" : 5,
+      "Ios18.mul" : 13,
+      "Ios18.realDiv" : 1,
+      "Ios18.greater" : 1,
+      "Ios18.readState" : 9,
+      "Ios16.reduceMax" : 2,
+      "Ios18.add" : 8,
+      "Ios16.reduceSum" : 1,
+      "Ios18.writeState" : 6,
+      "Ios16.fillLike" : 1,
+      "Ios18.sliceUpdate" : 6,
+      "Ios18.reshape" : 3,
+      "Ios18.clip" : 1,
+      "Ios18.cast" : 10,
+      "Ios18.less" : 2,
+      "Ios18.sub" : 4,
+      "Ios18.logicalAnd" : 1,
+      "Ios18.abs" : 1,
+      "Ios18.lessEqual" : 1,
+      "Ios18.sliceByIndex" : 10,
+      "Ios16.reduceL2Norm" : 1
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+      {
+        "dataType" : "Float16",
+        "isOptional" : "0",
+        "formattedType" : "State (Float16 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "movement_ema",
+        "type" : "State"
+      },
+      {
+        "dataType" : "Float16",
+        "isOptional" : "0",
+        "formattedType" : "State (Float16 1 × 28 × 3)",
+        "shortDescription" : "",
+        "shape" : "[1, 28, 3]",
+        "name" : "prev_pose",
+        "type" : "State"
+      },
+      {
+        "dataType" : "Float16",
+        "isOptional" : "0",
+        "formattedType" : "State (Float16 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "ema_mean",
+        "type" : "State"
+      },
+      {
+        "dataType" : "Float16",
+        "isOptional" : "0",
+        "formattedType" : "State (Float16 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "ema_std",
+        "type" : "State"
+      }
+    ],
+    "availability" : {
+      "macOS" : "15.0",
+      "tvOS" : "18.0",
+      "visionOS" : "2.0",
+      "watchOS" : "11.0",
+      "iOS" : "18.0",
+      "macCatalyst" : "18.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata" : {
+      "mldb_token" : "mldb-6lvy3jxado",
+      "com.github.apple.coremltools.source" : "torch==2.4.0",
+      "com.github.apple.coremltools.version" : "8.2",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 28 × 3)",
+        "shortDescription" : "",
+        "shape" : "[1, 28, 3]",
+        "name" : "pose",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 28 × 3)",
+        "shortDescription" : "",
+        "shape" : "[1, 28, 3]",
+        "name" : "pose_std",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 30)",
+        "shortDescription" : "",
+        "shape" : "[30]",
+        "name" : "movement_scores",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "movement_threshold",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "use_occlusion_detection",
+        "type" : "MultiArray"
+      }
+    ],
+    "generatedClassName" : "ProperStatefulPoseInactivity",
+    "method" : "predict"
+  }
+]

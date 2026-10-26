@@ -1,0 +1,122 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "Show5GWarningUnsupportedCarrier": false,
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "MTU": [
+    {
+      "technology-mask": 28,
+      "size": 1420
+    },
+    {
+      "technology-mask": 2,
+      "size": 1420
+    }
+  ],
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "SatelliteSystemTransitionTimeToAllowed": 30,
+  "ShowSatelliteSwitch": true,
+  "HomeSatelliteSystemName": "SpaceX UQ mobile",
+  "IMSConfig": {
+    "Satellite": {
+      "IMSServiceMask": 2
+    },
+    "Signaling": {
+      "InviteErrorResponsesToTriggerCSFB": "",
+      "MaxUdpMessageSize": 1,
+      "IPSecBringupUseNetworkPath": true,
+      "DropRegistrationOn305ToAllProxies": true
+    }
+  },
+  "Supports5GStandalone": false,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "SupportsSatellite": true,
+  "SatelliteAccessInfo": {
+    "AllowCarrierApp": true,
+    "AppCategories": [
+      "8011",
+      "8012",
+      "8013",
+      "8014",
+      "8010",
+      "8009",
+      "8008",
+      "8007",
+      "8005",
+      "8003",
+      "8002",
+      "8001",
+      "8004",
+      "8006",
+      "8015"
+    ],
+    "Tier": 4
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "MMS": {
+    "MaxMessageSizeOverSatellite": 3000
+  },
+  "SatelliteApps": [
+    "jp.uqmobile.uqmobileportalapp.ios"
+  ],
+  "PushSettings": {
+    "Topic": "com.kddi.Kddientapp"
+  },
+  "SupportedPLMNs": [
+    "44055",
+    "44051"
+  ],
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "uq",
+          "username": "uq@uqmobile.jp",
+          "apn": "uqmobile.jp",
+          "auth_type": "CHAP",
+          "type-mask": 567
+        }
+      ],
+      "technology-mask": 1
+    },
+    {
+      "configuration": [
+        {
+          "password": "uq",
+          "username": "uq@uqmobile.jp",
+          "AllowedProtocolMask": 3,
+          "apn": "uqmobile.jp",
+          "type-mask": 567,
+          "auth_type": "CHAP"
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 2,
+          "apn": "IMS",
+          "type-mask": 131072,
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "xcap",
+          "type-mask": 1048576,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "",
+          "type-mask": 262144,
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 30
+    }
+  ]
+}

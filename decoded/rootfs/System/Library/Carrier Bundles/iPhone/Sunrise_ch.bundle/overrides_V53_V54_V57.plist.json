@@ -1,0 +1,62 @@
+{
+  "SupportsVoNR": true,
+  "DerPriFileVersion": "6.0.162",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "Enable5GStandaloneByDefault": true,
+  "IgnoresDeactivateOnNetworkScanServiceMask": 131072,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "Signaling": {
+      "ResetSocketWhenNetworkChange": false
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 64529
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "Show5GStandaloneSwitchOnlyWhenEntitled": true,
+  "AllowSAOnWiFiAssociation": true,
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "ShowVolteSwitch": false,
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Enable5GAutoAfterUpgrade": true,
+  "apns": [
+    {
+      "password": "",
+      "username": "",
+      "apn": "internet",
+      "type-mask": 32819,
+      "AllowedProtocolMask": 1
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 1
+    },
+    {
+      "password": "",
+      "tech-type-mask": 1048576,
+      "username": "",
+      "apn": "xcap",
+      "type-mask": 1048576,
+      "AllowedProtocolMask": 1
+    }
+  ]
+}

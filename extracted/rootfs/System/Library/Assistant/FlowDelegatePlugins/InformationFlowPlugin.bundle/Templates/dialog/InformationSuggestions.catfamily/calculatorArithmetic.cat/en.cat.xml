@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en">
+  <phrases>
+    <random phrase="suggestionUtterance">
+      <text>What is 6,174 divided by 7?</text>
+      <text>What is 15 percent of 35?</text>
+    </random>
+  </phrases>
+  <all>
+    <dialog id="exampleUtterance"><phrase name="suggestionUtterance"/></dialog>
+  </all>
+</cat>

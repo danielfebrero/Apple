@@ -1,0 +1,45 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Call Brian",
+            "Call Emily’s mobile",
+            "Call Susan on her work phone",
+            "Call 408 555 1212",
+            "Call home",
+            "Call 911",
+            "Call the fire department",
+            "Get my call history",
+            "Do I have any missed calls?",
+            "Redial that last number"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          }
+        }
+      ],
+      "SectionName": "PHONE CALLS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Do I have any new voicemails?",
+            "Play me the voicemail from Emily"
+          ]
+        }
+      ],
+      "SectionName": "VOICEMAIL"
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "approvedActionIdentifiers": [
+    {
+      "actionIdentifier": "OpenNoteLinkAction",
+      "bundleId": "com.apple.mobilenotes"
+    }
+  ],
+  "approvedPhrases": [
+    {
+      "actionIdentifier": "StartCaptureIntent",
+      "bundleId": "com.apple.camera",
+      "parameter": "(Enumeration) photo",
+      "phrase": {
+        "de": "Foto aufnehmen",
+        "en": "Take a Photo",
+        "es": "Hacer Foto",
+        "fr": "Prendre une Photo",
+        "it": "Scatta Foto",
+        "ja": "写真で撮影",
+        "ko": "사진 촬영",
+        "pt-BR": "Tirar uma foto",
+        "pt-PT": "Tirar uma Fotografia",
+        "zh-CN": "拍照片",
+        "zh-XC": "拍照片"
+      }
+    },
+    {
+      "actionIdentifier": "StartCaptureIntent",
+      "bundleId": "com.apple.camera",
+      "parameter": "(Enumeration) video",
+      "phrase": {
+        "de": "Video-Aufnahme starten",
+        "en": "Record a Video",
+        "es": "Grabar Vídeo",
+        "fr": "Enregistrer une Vidéo",
+        "it": "Registra Video",
+        "ja": "ビデオで撮影",
+        "ko": "비디오 촬영",
+        "pt-BR": "Gravar um Vídeo",
+        "pt-PT": "Gravar um Vídeo",
+        "zh-CN": "录视频",
+        "zh-XC": "录视频"
+      }
+    },
+    {
+      "actionIdentifier": "StartCaptureIntent",
+      "bundleId": "com.apple.camera",
+      "parameter": "(Enumeration) selfie",
+      "phrase": {
+        "de": "Selfie aufnehmen",
+        "en": "Take a Selfie",
+        "es": "Hacer Selfie",
+        "fr": "Prendre un Selfie",
+        "it": "Scatta Selfie",
+        "ja": "セルフィーで撮影",
+        "ko": "셀피 촬영",
+        "pt-BR": "Tirar uma Selfie",
+        "pt-PT": "Tirar uma Selfie",
+        "zh-CN": "拍自拍",
+        "zh-XC": "拍自拍"
+      }
+    },
+    {
+      "actionIdentifier": "ScanDocument",
+      "bundleId": "com.apple.DocumentsApp",
+      "phrase": {
+        "de": "Dokument scannen",
+        "en": "Scan document",
+        "es": "Escanear documento",
+        "fr": "Scanner un document",
+        "it": "Scansiona documento",
+        "ja": "書類をスキャン",
+        "ko": "문서 스캔",
+        "pt-BR": "Escanear Documento",
+        "pt-PT": "Digitalizar documento",
+        "zh-CN": "扫描文件",
+        "zh-XC": "扫描文件"
+      }
+    },
+    {
+      "actionIdentifier": "CRLCreateBoardIntent",
+      "bundleId": "com.apple.freeform",
+      "phrase": {
+        "de": "Neues Freeform-Board",
+        "en": "New Freeform board",
+        "es": "Nueva pizarra de Freeform",
+        "fr": "Nouveau tableau Freeform",
+        "ja": "新規ボードを作成",
+        "ko": "Freeform에서 새 캔버스 시작",
+        "zh-CN": "创建无边记文稿",
+        "zh-XC": "创建无边记文稿"
+      }
+    },
+    {
+      "actionIdentifier": "OpenBookIntent",
+      "bundleId": "com.apple.iBooks",
+      "phrase": {
+        "de": "Mein aktuelles Buch öffnen",
+        "en": "Open the book I’m reading",
+        "es": "Ábreme el libro que me estoy leyendo",
+        "fr": "Ouvrir le livre que je lis en ce moment",
+        "it": "Apri il libro che sto leggendo",
+        "ja": "現在読んでいるブックを開く",
+        "ko": "지금 읽고 있는 책 열기",
+        "pt-BR": "Abrir Meu Livro Mais Recente",
+        "pt-PT": "Abrir o meu livro mais recente",
+        "zh-CN": "打开当前图书",
+        "zh-XC": "打开当前图书"
+      }
+    },
+    {
+      "actionIdentifier": "CreateEntryIntent",
+      "bundleId": "com.apple.journal",
+      "phrase": {
+        "en": "Start a new Journal entry"
+      }
+    },
+    {
+      "actionIdentifier": "KNNewDocumentIntent",
+      "bundleId": "com.apple.Keynote",
+      "phrase": {
+        "en": "New Keynote presentation"
+      }
+    },
+    {
+      "actionIdentifier": "DescribeThisIntent",
+      "bundleId": "com.apple.Magnifier",
+      "phrase": {
+        "de": "Lupe verwenden, um dies zu beschreiben",
+        "en": "Describe this",
+        "es": "Describir esto",
+        "fr": "Décrire ceci",
+        "it": "Descrivilo",
+        "ja": "これを説明",
+        "ko": "이거 설명해",
+        "pt-BR": "Descrever isto",
+        "pt-PT": "Descrever isto",
+        "zh-CN": "描述此内容",
+        "zh-XC": "描述此内容"
+      }
+    },
+    {
+      "actionIdentifier": "StartDetectionTypeIntent",
+      "bundleId": "com.apple.Magnifier",
+      "phrase": {
+        "de": "Lupe verwenden, um Türen zu erkennen",
+        "en": "Detect doors",
+        "es": "Detectar puertas",
+        "fr": "Détecter des portes",
+        "it": "Rileva le porte",
+        "ja": "ドアを検出",
+        "ko": "문 감지",
+        "pt-BR": "Detectar portas",
+        "pt-PT": "Detetar portas",
+        "zh-CN": "使用放大器查找门",
+        "zh-XC": "使用放大器查找门"
+      }
+    },
+    {
+      "actionIdentifier": "StartDetectionTypeIntent",
+      "bundleId": "com.apple.Magnifier",
+      "phrase": {
+        "de": "Lupe verwenden, um Einrichtungsgegenstände zu erkennen",
+        "en": "Detect furniture",
+        "es": "Detectar muebles",
+        "fr": "Détecter des meubles",
+        "it": "Rileva i mobili",
+        "ja": "家具を検出",
+        "ko": "가구 감지",
+        "pt-BR": "Detectar móveis",
+        "pt-PT": "Detetar mobília",
+        "zh-CN": "使用放大器查找家具",
+        "zh-XC": "使用放大器查找家具"
+      }
+    },
+    {
+      "actionIdentifier": "StartDetectionTypeIntent",
+      "bundleId": "com.apple.Magnifier",
+      "phrase": {
+        "de": "Lupe verwenden, um Text zu erkennen",
+        "en": "Detect text",
+        "es": "Detectar texto en Lupa",
+        "fr": "Détecter du texte dans Loupe",
+        "it": "Rileva il testo in Lente",
+        "ja": "拡大鏡でテキストを検出",
+        "ko": "확대기 사용해서 텍스트 읽어",
+        "zh-CN": "使用放大器检测文本",
+        "zh-XC": "使用放大器检测文本"
+      }
+    },
+    {
+      "actionIdentifier": "StartDetectionTypeIntent",
+      "bundleId": "com.apple.Magnifier",
+      "phrase": {
+        "de": "Lupe verwenden, um Personen zu erkennen",
+        "en": "Detect people",
+        "es": "Detectar personas",
+        "fr": "Détecter des personnes",
+        "it": "Rileva le persone",
+        "ja": "人を検出",
+        "ko": "사람 감지",
+        "pt-BR": "Detectar pessoas",
+        "pt-PT": "Detetar pessoas",
+        "zh-CN": "使用放大器查找人",
+        "zh-XC": "使用放大器查找人"
+      }
+    },
+    {
+      "actionIdentifier": "CancelTimerIntent",
+      "bundleId": "com.apple.mobiletimer",
+      "phrase": {
+        "de": "Timer abbrechen",
+        "en": "Cancel timer",
+        "es": "Cancelar temporizador",
+        "fr": "Annuler le minuteur",
+        "it": "Annulla timer",
+        "ja": "タイマーをキャンセル",
+        "ko": "타이머 취소해",
+        "pt-BR": "Cancelar o Timer",
+        "pt-PT": "Cancelar temporizador",
+        "zh-CN": "取消计时器",
+        "zh-XC": "取消计时器"
+      }
+    },
+    {
+      "actionIdentifier": "LapStopwatchIntent",
+      "bundleId": "com.apple.mobiletimer",
+      "phrase": {
+        "de": "Runden in Stoppuhr messen",
+        "en": "Lap Stopwatch",
+        "es": "Marcar vuelta",
+        "fr": "Marquer un tour de chronomètre",
+        "it": "Segna giro",
+        "ja": "ラップを記録",
+        "ko": "랩 설정해",
+        "pt-BR": "Marcar Volta",
+        "pt-PT": "Marcar volta",
+        "zh-CN": "分段秒表",
+        "zh-XC": "分段秒表"
+      }
+    },
+    {
+      "actionIdentifier": "PauseTimerIntent",
+      "bundleId": "com.apple.mobiletimer",
+      "phrase": {
+        "de": "Timer pausieren",
+        "en": "Pause timer",
+        "es": "Pausar temporizador",
+        "fr": "Mettre en pause le minuteur",
+        "it": "Metti in pausa timer",
+        "ja": "タイマーを一時停止",
+        "ko": "타이머 일시 정지해",
+        "pt-BR": "Pausar o Timer",
+        "pt-PT": "Pausar temporizador",
+        "zh-CN": "暂停计时器",
+        "zh-XC": "暂停计时器"
+      }
+    },
+    {
+      "actionIdentifier": "ResetStopwatchIntent",
+      "bundleId": "com.apple.mobiletimer",
+      "phrase": {
+        "de": "Stoppuhr zurücksetzen",
+        "en": "Clear Stopwatch",
+        "es": "Reiniciar cronómetro",
+        "fr": "Réinitialiser le chronomètre",
+        "it": "Azzera cronometro",
+        "ja": "ストップウォッチをリセット",
+        "ko": "스톱워치 삭제해",
+        "pt-BR": "Apagar o Cronômetro",
+        "pt-PT": "Apagar cronómetro",
+        "zh-CN": "还原秒表",
+        "zh-XC": "还原秒表"
+      }
+    },
+    {
+      "actionIdentifier": "ResumeTimerIntent",
+      "bundleId": "com.apple.mobiletimer",
+      "phrase": {
+        "de": "Timer fortsetzen",
+        "en": "Resume timer",
+        "es": "Reanudar temporizador",
+        "fr": "Relancer le minuteur",
+        "it": "Riprendi timer",
+        "ja": "タイマーを再開",
+        "ko": "타이머 다시 시작해",
+        "pt-BR": "Retomar o Timer",
+        "pt-PT": "Continuar temporizador",
+        "zh-CN": "继续计时",
+        "zh-XC": "继续计时"
+      }
+    },
+    {
+      "actionIdentifier": "StartStopwatchIntent",
+      "bundleId": "com.apple.mobiletimer",
+      "phrase": {
+        "de": "Stoppuhr starten",
+        "en": "Start Stopwatch",
+        "es": "Comienza cronómetro",
+        "fr": "Démarrer un chronomètre",
+        "it": "Avvia cronometro",
+        "ja": "ストップウォッチを開始",
+        "ko": "스톱워치 시작해",
+        "pt-BR": "Começar Cronômetro",
+        "pt-PT": "Começar cronómetro",
+        "zh-CN": "启动秒表",
+        "zh-XC": "启动秒表"
+      }
+    },
+    {
+      "actionIdentifier": "StopStopwatchIntent",
+      "bundleId": "com.apple.mobiletimer",
+      "phrase": {
+        "de": "Stoppuhr anhalten",
+        "en": "Cancel Stopwatch",
+        "es": "Cancelar cronómetro",
+        "fr": "Arrêter le chronomètre",
+        "it": "Ferma cronometro",
+        "ja": "ストップウォッチを終了",
+        "ko": "스톱워치 취소해",
+        "pt-BR": "Cancelar Cronômetro",
+        "pt-PT": "Cancelar cronómetro",
+        "zh-CN": "取消秒表",
+        "zh-XC": "取消秒表"
+      }
+    },
+    {
+      "actionIdentifier": "OpenCollectionIntent",
+      "bundleId": "com.apple.mobileslideshow",
+      "parameter": "CollectionEntity/092E2015-A7EF-40EB-BFA2-2AF0D94D1B1B",
+      "phrase": {
+        "de": "Fotos von Zuletzt anzeigen",
+        "en": "Show my recent photos",
+        "es": "Ver Recientes en Fotos",
+        "fr": "Afficher Récentes dans Photos",
+        "it": "Mostrami Recenti in Foto",
+        "ja": "写真で最近の項目を表示",
+        "ko": "내 최근 항목 사진",
+        "pt-BR": "Mostrar Recentes no app Fotos",
+        "pt-PT": "Mostrar Recentes com Fotografias",
+        "zh-CN": "照片中的最近项目",
+        "zh-XC": "照片中的最近项目"
+      }
+    },
+    {
+      "actionIdentifier": "OpenCollectionIntent",
+      "bundleId": "com.apple.mobileslideshow",
+      "parameter": "CollectionEntity/D8703294-0897-4718-8AB8-BA22535F06E8",
+      "phrase": {
+        "de": "Favoriten in Fotos öffnen",
+        "en": "Show my favorite photos",
+        "es": "Mostrar Favoritos de Fotos",
+        "fr": "Afficher Favorites dans Photos",
+        "it": "Mostrami Preferiti in Foto",
+        "ja": "お気に入りの写真を表示",
+        "ko": "내 즐겨찾기 사진",
+        "pt-BR": "Mostrar Favoritos no app Fotos",
+        "pt-PT": "Mostrar Favoritos em Fotografias",
+        "zh-CN": "照片中的个人收藏",
+        "zh-XC": "照片中的个人收藏"
+      }
+    },
+    {
+      "actionIdentifier": "OpenCollectionIntent",
+      "bundleId": "com.apple.mobileslideshow",
+      "parameter": "CollectionEntity/41DC75A9-32B7-485D-BA6F-65C6D3990EB2",
+      "phrase": {
+        "de": "Fotos von Vor einem Jahr anzeigen",
+        "en": "Show photos from a year ago",
+        "es": "Ir a Hace un año en Fotos",
+        "fr": "Afficher Photos de Il y a un an",
+        "it": "Mostra la raccolta Foto di Un anno fa",
+        "ja": "1年前の写真を表示",
+        "ko": "1년 전 사진 탐색",
+        "pt-BR": "Mostrar Fotos de Há Um Ano",
+        "pt-PT": "Mostrar Fotografias de Há um ano",
+        "zh-CN": "显示一年前的照片",
+        "zh-XC": "显示一年前的照片"
+      }
+    },
+    {
+      "actionIdentifier": "OpenCollectionIntent",
+      "bundleId": "com.apple.mobileslideshow",
+      "parameter": "CollectionEntity/6CBD7EF5-5BD9-4E24-A126-E3DE4BE8246B",
+      "phrase": {
+        "de": "Meine Orte in Album öffnen",
+        "en": "Show photos from trips",
+        "es": "Abrir mis Lugares en Fotos",
+        "fr": "Afficher Photos de Lieux",
+        "it": "Mostra la raccolta Foto di Luoghi",
+        "ja": "撮影地のアルバムを表示",
+        "ko": "사진에서 장소 열어줘",
+        "pt-BR": "Mostrar Lugares no app Fotos",
+        "pt-PT": "Mostrar Locais com Fotografias",
+        "zh-CN": "显示地点的照片",
+        "zh-XC": "显示地点的照片"
+      }
+    },
+    {
+      "actionIdentifier": "TNNewDocumentIntent",
+      "bundleId": "com.apple.Numbers",
+      "phrase": {
+        "en": "New Numbers spreadsheet"
+      }
+    },
+    {
+      "actionIdentifier": "ConstructTapToRadarURLIntent",
+      "bundleId": "com.apple.TapToRadar",
+      "phrase": {
+        "en": "Construct radar URL"
+      }
+    },
+    {
+      "actionIdentifier": "FileRadarIntent",
+      "bundleId": "com.apple.TapToRadar",
+      "phrase": {
+        "en": "File a Tap-to-Radar"
+      }
+    },
+    {
+      "actionIdentifier": "OpenInTapToRadarIntent",
+      "bundleId": "com.apple.TapToRadar",
+      "phrase": {
+        "en": "Open in radar"
+      }
+    },
+    {
+      "actionIdentifier": "StartSysdiagnoseIntent",
+      "bundleId": "com.apple.TapToRadar",
+      "phrase": {
+        "en": "Start sysdiagnose in radar"
+      }
+    },
+    {
+      "actionIdentifier": "PlaybackVoiceMemoIntent",
+      "bundleId": "com.apple.VoiceMemos",
+      "phrase": {
+        "de": "Mein letztes Sprachmemo wiedergeben",
+        "en": "Play last Voice Memo",
+        "es": "Escuchar la última grabación de Notas de Voz",
+        "fr": "Lire le dernier enregistrement Dictaphone",
+        "it": "Riproduci il memo vocale più recente",
+        "ja": "最新のボイスメモを再生",
+        "ko": "가장 최근 음성 메모 재생해",
+        "pt-BR": "Reproduzir Última Gravação",
+        "pt-PT": "Reproduzir gravação mais recente do Dictafone"
+      }
+    },
+    {
+      "actionIdentifier": "RecordVoiceMemoIntent",
+      "bundleId": "com.apple.VoiceMemos",
+      "phrase": {
+        "de": "Sprachmemo aufnehmen",
+        "en": "Record a Voice Memo",
+        "es": "Crear grabación en Notas de Voz",
+        "fr": "Enregistrer un Mémo vocal",
+        "ja": "ボイスメモを録音",
+        "ko": "음성 메모 시작해",
+        "pt-BR": "Iniciar Gravação no app Gravador",
+        "pt-PT": "Iniciar gravação com Dictafone",
+        "zh-CN": "录制语音备忘录",
+        "zh-XC": "录制语音备忘录"
+      }
+    }
+  ]
+}

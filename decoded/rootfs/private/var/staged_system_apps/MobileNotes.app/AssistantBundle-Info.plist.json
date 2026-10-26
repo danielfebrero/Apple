@@ -1,0 +1,24 @@
+{
+  "AssistantDomains": {
+    "com.apple.ace.note": {
+      "Create": "NotesAssistantNoteCreate",
+      "Search": "NotesAssistantNoteSearch",
+      "Update": "NotesAssistantNoteUpdate"
+    }
+  },
+  "AssistantFirstUnlockRestrictedDomains": {
+    "com.apple.ace.note": [
+      "Update",
+      "Search",
+      "Create"
+    ]
+  },
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleExecutable": "${EXECUTABLE_NAME}",
+  "CFBundleIdentifier": "$(PRODUCT_BUNDLE_IDENTIFIER)",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleName": "${PRODUCT_NAME}",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "$(MARKETING_VERSION)",
+  "CFBundleVersion": "$(CURRENT_PROJECT_VERSION)"
+}

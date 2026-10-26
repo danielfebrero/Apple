@@ -1,0 +1,177 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "電話",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "一郎君に電話",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "一郎とFaceTime",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "App",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "写真を開く",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "メッセージ",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "太郎君にすぐ行きますと伝えて",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "カレンダー",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "9時に会議を設定",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "スポーツ",
+      "IconResourceName": "Sports",
+      "TagPhrase": "ジャイアンツの昨日の結果は?",
+      "DomainName": "Sports"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "マップ",
+      "DomainAlternateDisplayName": "マップ",
+      "TagPhrase": "大阪にはどうやって行けばいいの",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "位置情報付きでつぶやく…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Weiboになにか投稿する",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Facebookに投稿…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "レストラン",
+      "IconResourceName": "Restaurants",
+      "TagPhrase": "新宿で中華のお店を探して",
+      "DomainName": "Restaurants"
+    },
+    {
+      "DomainDisplayName": "映画",
+      "IconResourceName": "Movies",
+      "TagPhrase": "コメディー映画を検索",
+      "DomainName": "Movies"
+    },
+    {
+      "DomainDisplayName": "ミュージック",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "西野カナを流して",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "リマインダー",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "母に電話するのをリマインド",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "メール",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "真由美に旅行についてメール",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "天気",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "今日の天気は?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "株価",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Appleの株価は?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "時計",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "明日朝7時に起こして",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "連絡先",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "佐藤君の住所は?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "友達を探す",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "太郎は今どこにいる?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "メモ",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "今日のランチは980円とメモ",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "設定",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "機内モードをオンにして",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Web検索",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "北極熊をWebで検索",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Q&A",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "日食について教えて",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "iTunes",
+      "IconDisplayIdentifier": "com.apple.MobileStore",
+      "TagPhrase": "iTunesでトイ・ストーリーを探す",
+      "DomainName": "iTunes"
+    },
+    {
+      "DomainDisplayName": "ブック",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "iBooksで走れメロスを見つけて",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "Podcast",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Podcastを再生",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

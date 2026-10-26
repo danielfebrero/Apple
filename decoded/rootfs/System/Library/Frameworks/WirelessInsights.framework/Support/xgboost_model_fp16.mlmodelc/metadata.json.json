@@ -1,0 +1,432 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "WiFi-Cell Walkout Prediction Model",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "target",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "keyType": "Int64",
+        "formattedType": "Dictionary (Int64 → Double)",
+        "type": "Dictionary",
+        "name": "classProbability",
+        "shortDescription": ""
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 1,
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_treeEnsembleClassifier"
+    },
+    "inputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "pedometerfloorsdescended_max",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "pedometerfloorsascended_max",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "num_prev_seen",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "channel_changes",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_std_dev",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_first_diff_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_min",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_max",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "cca_std_dev",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "cca_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "cca_first_diff_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "cca_min",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "cca_max",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locationhorizontalaccuracy_std_dev",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locationhorizontalaccuracy_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locationhorizontalaccuracy_first_diff_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locationhorizontalaccuracy_min",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locationhorizontalaccuracy_max",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locationverticalaccuracy_std_dev",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locationverticalaccuracy_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locationverticalaccuracy_first_diff_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locationverticalaccuracy_min",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locationverticalaccuracy_max",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sensorilluminance_std_dev",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sensorilluminance_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sensorilluminance_first_diff_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sensorilluminance_min",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sensorilluminance_max",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_std_dev",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_first_diff_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_min",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_max",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "pedometeraverageactivepace_std_dev",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "pedometeraverageactivepace_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "pedometeraverageactivepace_first_diff_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "pedometeraverageactivepace_min",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "pedometeraverageactivepace_max",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_first_last_diff",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_first_last_ratio",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_first_value",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_last_value",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_range",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "rssi_coefficient_of_variation",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_first_last_diff",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_first_last_ratio",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_first_value",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_last_value",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_range",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "colortemperature_coefficient_of_variation",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "cca_early_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "cca_late_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "cca_early_late_diff",
+        "shortDescription": ""
+      }
+    ],
+    "classLabels": [
+      0,
+      1
+    ],
+    "generatedClassName": "xgboost_model_fp16",
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "9.0",
+      "timestamp": "20260121_173336",
+      "n_features": "54",
+      "com.github.apple.coremltools.source": "xgboost==3.1.3",
+      "mldb_token": "mldb-lvy3mn4ado",
+      "threshold": "0.886407732963562"
+    },
+    "method": "predict"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Float16",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "Identity",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 7,
+    "mlProgramOperationTypeHistogram": {
+      "Ios16.linear": 1
+    },
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "13.0",
+      "tvOS": "16.0",
+      "watchOS": "9.0",
+      "iOS": "16.0",
+      "macCatalyst": "16.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata": {},
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16 1 × 80)",
+        "shortDescription": "",
+        "shape": "[1, 80]",
+        "name": "input_mel",
+        "type": "MultiArray"
+      }
+    ],
+    "generatedClassName": "mel_linear_model",
+    "method": "predict"
+  }
+]

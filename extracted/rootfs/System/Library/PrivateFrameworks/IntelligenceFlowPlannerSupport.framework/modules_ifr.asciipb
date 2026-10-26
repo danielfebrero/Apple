@@ -1,0 +1,15 @@
+mapping {
+  module_name: "ToolKit"
+  proto_file_path: "toolkit.proto"
+}
+# The IFR versioned wire-message protos are generated into IntelligenceFlowRuntime (internal), but
+# still reference these two protos, whose .pb.swift stays in IntelligenceFlowProto. Map them so the
+# relocated files import the types from IntelligenceFlowProto rather than assuming same-module.
+mapping {
+  module_name: "IntelligenceFlowProto"
+  proto_file_path: "versioned/crossdevice/versioned_transcript_session_resumption_context.proto"
+}
+mapping {
+  module_name: "IntelligenceFlowProto"
+  proto_file_path: "versioned/crossdevice/versioned_transcript_session_status_update.proto"
+}

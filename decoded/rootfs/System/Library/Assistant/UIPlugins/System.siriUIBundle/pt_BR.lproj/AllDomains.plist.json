@@ -1,0 +1,153 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Telefone",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Ligar para o Bruno",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime com a Luísa",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Aplicativos",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Abrir as Fotos",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Mensagens",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Diga à Susana que chego logo",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Calendário",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Marca uma reunião às 9",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Fotos",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Mostra as fotos de ontem",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Mapas",
+      "DomainAlternateDisplayName": "Mapas",
+      "TagPhrase": "Me mostra o caminho de casa",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Tuitar com a minha localização…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Publicar no Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Publicar no Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Música",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Toca Elis Regina",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Lembretes",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Lembre-me de ligar para a mãe",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "E-mail",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "E-mail para Emília sobre viagem",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Tempo",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Como está o tempo hoje?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Bolsa",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Quanto custa a ação da Ambev?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Relógio",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Me acorda amanhã às 7 horas",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Contatos",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Qual é o endereço da Emília?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Buscar Amigos",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "Onde está o Bruno?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "Notas",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Anota que gastei R$30 no jantar",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Ajustes",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Ativar o Modo Avião",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Busca na Web",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Buscar ursos polares na web",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Perguntas e Respostas",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "O que é o 14 bis?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "Podcasts",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Reproduzir podcasts",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

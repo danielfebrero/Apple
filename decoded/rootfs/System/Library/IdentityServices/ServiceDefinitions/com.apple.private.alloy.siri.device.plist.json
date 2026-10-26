@@ -1,0 +1,16 @@
+{
+  "AdHocServiceType": 2,
+  "AllowCloudDelivery": true,
+  "AutoConfigureVettedAddresses": true,
+  "DisplayName": "SiriDevice",
+  "DuetIdentifiers": [
+    "com.apple.assistantd",
+    "com.apple.Siri"
+  ],
+  "Identifier": "com.apple.private.alloy.siri.device",
+  "LaunchMachServiceNotification": "com.apple.private.alloy.siri.device-idswake",
+  "ProtocolName": "com.apple.private.alloy",
+  "PushTopic": "com.apple.private.alloy.siri.device",
+  "ServiceName": "com.apple.private.alloy.siri.device",
+  "iCloudService": true
+}

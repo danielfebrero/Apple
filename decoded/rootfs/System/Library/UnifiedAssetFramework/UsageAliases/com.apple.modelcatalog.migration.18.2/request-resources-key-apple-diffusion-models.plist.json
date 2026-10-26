@@ -1,0 +1,26 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.modelcatalog.migration.18.2",
+  "UsageAliasValues": {
+    "request-resources-key-apple-diffusion-models": {
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.fm.visual.image_diffusion_v1.base.generic": "ENABLED",
+        "com.apple.fm.visual.image_diffusion_v1.base.generic_alternate": "ENABLED",
+        "com.apple.fm.visual.image_diffusion_v1.emoji.generic": "ENABLED",
+        "com.apple.fm.visual.image_diffusion_v1.emoji.generic_alternate": "ENABLED",
+        "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic": "ENABLED",
+        "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic_alternate": "ENABLED",
+        "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic": "ENABLED",
+        "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic_alternate": "ENABLED",
+        "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic": "ENABLED",
+        "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic_alternate": "ENABLED",
+        "com.apple.fm.visual.imageplayground.curatedprompts.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED",
+        "com.apple.gm.image_generation_services.debiasing.metadata.generic": "ENABLED"
+      }
+    }
+  }
+}

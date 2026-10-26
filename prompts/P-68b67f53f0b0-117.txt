@@ -1,0 +1,16 @@
+, identify:
+1. CC pattern (frequently_cced, rarely_cced, never_cced)
+2. Organizer pattern (schedules_for_user, scheduled_by_user, neutral)
+3. Job title indicators from signatures
+4. Confidence score (0.0-1.0) - FAMILY SHOULD BE 0.0 for work signals
+
+FAMILY RELATIONSHIP REQUIREMENTS:
+- Organizational analysis is INAPPROPRIATE for family relationships
+- Work organizational signals = automatic 0.0 confidence for family
+- Family members don't appear in work email hierarchies
+
+Return JSON array (should be EMPTY for family relationship types):
+[]
+
+IMPORTANT: Return ONLY the JSON array, no markdown, no explanation.
+For family relationships, return empty array since organizational signals don't apply.

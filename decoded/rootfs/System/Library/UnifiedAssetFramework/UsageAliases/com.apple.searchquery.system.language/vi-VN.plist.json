@@ -1,0 +1,17 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.searchquery.system.language",
+  "UsageAliasValues": {
+    "vi-VN": {
+      "com.apple.search.queryparser": {
+        "sqp.language": "vi",
+        "sqp.parser": "vi",
+        "sqp.safety": "vi"
+      },
+      "com.apple.search.queryparser.overrides": {
+        "sqp.language": "vi"
+      }
+    }
+  }
+}

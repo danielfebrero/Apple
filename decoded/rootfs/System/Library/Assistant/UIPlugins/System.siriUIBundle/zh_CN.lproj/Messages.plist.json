@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "告诉张晨我马上到",
+            "发短信给秦葳",
+            "叫老公买点鸭脖子回来吃",
+            "发信息给小喻问她明天要干什么",
+            "发信息给小白的手机说晚上7点钟在麦当劳不见不散",
+            "发短信给123-456-7890",
+            "发短信给乔宇和吴菲问你们在哪儿呢?"
+          ]
+        }
+      ],
+      "SectionName": "发送信息"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "朗读新信息",
+            "再读一遍"
+          ]
+        }
+      ],
+      "SectionName": "朗读信息"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "回复那太好了",
+            "告诉他我10分钟以内到"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "打电话给她"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime她"
+          ]
+        }
+      ],
+      "SectionName": "回复信息"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "朗读秦葳发给我的信息"
+          ]
+        }
+      ],
+      "SectionName": "搜索信息"
+    }
+  ]
+}

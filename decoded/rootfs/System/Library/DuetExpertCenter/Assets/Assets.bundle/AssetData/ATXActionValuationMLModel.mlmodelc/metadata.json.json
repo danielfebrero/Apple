@@ -1,0 +1,78 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "Action valuation, scores actions to recommend in Spotlight. This is a Logistic Regression binary classifier",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "score",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "0.0.3.1",
+    "modelParameters": [],
+    "specificationVersion": 5,
+    "storagePrecision": "Float32",
+    "computePrecision": "Float16",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "11.0",
+      "tvOS": "14.0",
+      "visionOS": "1.0",
+      "watchOS": "7.0",
+      "iOS": "14.0",
+      "macCatalyst": "14.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1...512 × 88",
+        "shapeRange": "[[1, 512], [88, 88]]",
+        "formattedType": "MultiArray (Float32 1 × 88)",
+        "type": "MultiArray",
+        "shape": "[1, 88]",
+        "name": "input_feature_vector",
+        "shortDescription": ""
+      }
+    ],
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-8mbymokg7x",
+      "com.github.apple.coremltools.source_dialect": "TorchScript",
+      "com.github.apple.coremltools.source": "torch==2.5.0",
+      "com.github.apple.coremltools.version": "8.2",
+      "feature_names": "ActionCoarseTimeOfDayPopularity,ActionDayAndLocationPopularity,ActionDayOfWeekPopularity,ActionLaunchPopularity,ActionLocationPopularity,ActionPartOfWeekAndLocationPopularity,ActionPartOfWeekAndTimePopularity,ActionPartOfWeekPopularity,ActionTimeAndDayAndLocationPopularity,ActionTimeAndDayPopularity,ActionTimeAndLocationPopularity,ActionTimeOfDayPopularity,ActionTimeOfDayWithEightHourWindowPopularity,ActionTimeOfDayWithHourWindowPopularity,ActionTimeOfDayWithThirtyMinuteWindowPopularity,AmbientLightTypeLaunchPopularity,AmbientLightTypePopularity,AppActionRejectEvents,AppForAllIntentsCoarseTimeOfDayPopularity,AppForAllIntentsCoreMotionPopularity,AppForAllIntentsDayOfWeekPopularity,AppForAllIntentsLaunchDayOfWeekPopularity,AppForAllIntentsLaunchLocationPopularity,AppForAllIntentsLaunchPopularity,AppForAllIntentsSSIDPopularity,AppForAllIntentsTimeOfDayPopularity,AppForAllIntentsTrendingPopularity,AppIntentAmbientLightTypeLaunchPopularity,AppIntentAmbientLightTypePopularity,AppIntentAppLaunchSequencePopularity,AppIntentCoarseTimeOfDayPopularity,AppIntentCoreMotionPopularity,AppIntentDayOfWeekPopularity,AppIntentLaunchDayOfWeekPopularity,AppIntentLaunchLocationPopularity,AppIntentLaunchPartOfWeekPopularity,AppIntentLaunchPopularity,AppIntentLaunchSequencePopularity,AppIntentPartOfWeekPopularity,AppIntentSSIDPopularity,AppIntentTimeOfDayPopularity,AppIntentTrendingPopularity,AppLaunchPopularityAtPOIForAppInContext,AppPopularityGivenTimeAndDayOfWeek,AppPopularityOfTimeAndDayOfWeekGivenApp,AppTimeAndDayOfWeekPopularity,CoarseTimeOfDayPopularity,CoreMotionPopularity,DayOfWeekPopularity,LaunchDayOfWeekPopularity,LaunchLocationPopularity,LaunchPopularity,LaunchSequencePopularity,LaunchTimePopularity,POIPopularityForAppInContext,SSIDPopularity,ScoreInputSlotLocationPopularity,SlotCoarseTimeOfDayPopularity,SlotDayAndLocationPopularity,SlotDayOfWeekPopularity,SlotLaunchCoarseTimePopularity,SlotLaunchDayAndLocationPopularity,SlotLaunchDayOfWeekPopularity,SlotLaunchLocationPopularity,SlotLaunchPartOfWeekAndLocationPopularity,SlotLaunchPartOfWeekAndTimePopularity,SlotLaunchPartOfWeekPopularity,SlotLaunchPopularity,SlotLaunchTimeAndDayAndLocationPopularity,SlotLaunchTimeAndDayPopularity,SlotLaunchTimeAndLocationPopularity,SlotLaunchTimePopularity,SlotPartOfWeekAndLocationPopularity,SlotPartOfWeekAndTimePopularity,SlotPartOfWeekPopularity,SlotTimeAndDayAndLocationPopularity,SlotTimeAndDayPopularity,SlotTimeAndLocationPopularity,SlotTimeOfDayPopularity,SlotTimeOfDayWithEightHourWindowPopularity,SlotTimeOfDayWithHourWindowPopularity,SlotTimeOfDayWithThirtyMinuteWindowPopularity,SpotlightLaunchPopularity,SpotlightLaunchTimePopularity,SpotlightTimeOfDayPopularity,TimeOfDayPopularity,TotalAppActionRejectEvents,TrendingPopularity"
+    },
+    "generatedClassName": "ATXActionValuationMLModel",
+    "neuralNetworkLayerTypeHistogram": {
+      "Floor": 3,
+      "WhereNonZero": 3,
+      "InnerProduct": 1,
+      "ActivationSigmoid": 1,
+      "NotEqual": 2,
+      "LoadConstantND": 3,
+      "Ceil": 3,
+      "GreaterThan": 4,
+      "GetShape": 3,
+      "LogicalAnd": 2,
+      "Tile": 3,
+      "SliceStatic": 3,
+      "Multiply": 1,
+      "ExpandDims": 3,
+      "LessThan": 1,
+      "ScatterND": 3,
+      "WhereBroadcastable": 3
+    },
+    "method": "predict"
+  }
+]

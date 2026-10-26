@@ -1,0 +1,122 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Mixed (Float16, Palettized (8 bits))",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 4096)",
+        "shortDescription": "",
+        "shape": "[1, 4096]",
+        "name": "output_beats",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 4096)",
+        "shortDescription": "",
+        "shape": "[1, 4096]",
+        "name": "output_downbeats",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 4096)",
+        "shortDescription": "",
+        "shape": "[1, 4096]",
+        "name": "output_beats_no_downbeats",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 4096 × 251)",
+        "shortDescription": "",
+        "shape": "[1, 4096, 251]",
+        "name": "output_tempo",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 4096 × 13)",
+        "shortDescription": "",
+        "shape": "[1, 4096, 13]",
+        "name": "output_bpb",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "2025.1",
+    "modelParameters": [],
+    "author": "Apple Inc.",
+    "specificationVersion": 8,
+    "license": "Property of Apple Inc. All rights reserved.",
+    "mlProgramOperationTypeHistogram": {
+      "Ios16.sigmoid": 3,
+      "Ios17.reshape": 6,
+      "Ios17.cast": 6,
+      "Ios17.conv": 78,
+      "Ios17.add": 23,
+      "Ios17.transpose": 6,
+      "Ios16.gelu": 23,
+      "Ios16.constexprLutToDense": 78,
+      "Ios16.maxPool": 3,
+      "Ios17.expandDims": 1
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "14.0",
+      "tvOS": "17.0",
+      "visionOS": "1.0",
+      "watchOS": "10.0",
+      "iOS": "17.0",
+      "macCatalyst": "17.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 4096 × 131)",
+        "shortDescription": "",
+        "shape": "[1, 4096, 131]",
+        "name": "input",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {
+      "params.model_sequence_length": "4096",
+      "params.mel_filter_max_freq": "16000.0",
+      "params.model_tempo_dimension": "251",
+      "com.github.apple.coremltools.version": "8.2",
+      "params.model_version": "xpq9urnxnm/920000",
+      "Copyright": "Copyright © 2021-2025 Apple Inc. All rights reserved.",
+      "params.conditioning_size": "3",
+      "params.sample_rate": "44100",
+      "params.model_bpb_dimension": "13",
+      "params.fft_frames_per_second": "100",
+      "params.fft_length": "1024",
+      "com.github.apple.coremltools.source_dialect": "TorchScript",
+      "com.github.apple.coremltools.source": "torch==2.4.1",
+      "params.mel_filter_min_freq": "27.5",
+      "params.model_feature_dimension": "131",
+      "params.num_mel_bins": "128",
+      "mldb_token": "mldb-voyqlz3abj"
+    },
+    "generatedClassName": "DownbeatTracker",
+    "method": "predict"
+  }
+]

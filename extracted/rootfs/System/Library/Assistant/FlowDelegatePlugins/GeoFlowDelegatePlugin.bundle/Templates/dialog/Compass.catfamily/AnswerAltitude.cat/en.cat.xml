@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:2.0" id="Compass#AnswerAltitude" locale="en">
+    <first>
+        <dialog condition="positive">You're about <var name="altitude"/> above sea level.</dialog>
+        <dialog condition="negative">You're about <var name="altitude"/> below sea level.</dialog>
+        <dialog>You're at sea level.</dialog>
+    </first>
+    <conditions>
+        <condition name="positive">
+            <expression name="altitude.value" op="gt" value="0"/>
+        </condition>
+        <condition name="negative">
+            <expression name="altitude.value" op="lt" value="0"/>
+        </condition>
+    </conditions>
+</cat>

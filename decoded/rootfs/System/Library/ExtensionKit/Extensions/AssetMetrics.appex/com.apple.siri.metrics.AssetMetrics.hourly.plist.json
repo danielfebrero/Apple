@@ -1,0 +1,16 @@
+{
+  "name": "com.apple.siri.metrics.AssetMetrics.hourly",
+  "bundleIdentifier": "com.apple.siri.metrics.AssetMetrics",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 3600,
+      "minDurationBetweenInstances": 900
+    },
+    "requiresProtectionClass": "ClassC",
+    "requiresUserInactivity": true,
+    "requiresExternalPower": true,
+    "priority": "Maintenance",
+    "groupName": "com.apple.siri.metrics.AssetMetrics",
+    "groupConcurrencyLimit": 1
+  }
+}

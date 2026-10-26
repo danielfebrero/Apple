@@ -1,0 +1,184 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "target",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "keyType": "Int64",
+        "formattedType": "Dictionary (Int64 → Double)",
+        "type": "Dictionary",
+        "name": "classProbability",
+        "shortDescription": ""
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 1,
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_treeEnsembleClassifier"
+    },
+    "inputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "mean_daily_longest_charging_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "mean_daily_longest_screen_lock_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "mean_daily_longest_uninterrupted_WiFi_connection_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "mean_daily_total_charging_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "mean_daily_total_screen_lock_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "mean_daily_total_uninterrupted_WiFi_connection_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "mean_daily_uninterrupted_WiFi_connection_stability_ratio_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "median_daily_longest_charging_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "median_daily_longest_screen_lock_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "median_daily_longest_uninterrupted_WiFi_connection_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "median_daily_total_charging_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "median_daily_total_screen_lock_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "median_daily_total_uninterrupted_WiFi_connection_duration_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "percentage_of_days_with_charging_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "percentage_of_days_with_screen_lock_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "percentage_of_days_with_uninterrupted_WiFi_connection_bucketed",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "is_iPhone",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "is_iPad",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "is_Watch",
+        "shortDescription": ""
+      }
+    ],
+    "classLabels": [
+      0,
+      1,
+      2
+    ],
+    "generatedClassName": "RTPlaceTypeClassifierModelMultiClass",
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "4.0.3",
+      "mldb_token": "mldb-ndg4jx4glq",
+      "com.github.apple.coremltools.source": "xgboost==0.90"
+    },
+    "method": "predict"
+  }
+]

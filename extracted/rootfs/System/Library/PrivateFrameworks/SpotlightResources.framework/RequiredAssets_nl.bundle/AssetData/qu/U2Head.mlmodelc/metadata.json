@@ -1,0 +1,139 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Mixed (Float16, Float32)",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Int32",
+        "formattedType" : "MultiArray (Int32 1 × 25 × 28)",
+        "shortDescription" : "",
+        "shape" : "[1, 25, 28]",
+        "name" : "top_arg_ids",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 25 × 27 × 69)",
+        "shortDescription" : "",
+        "shape" : "[1, 25, 27, 69]",
+        "name" : "arg_conf_scores",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 25)",
+        "shortDescription" : "",
+        "shape" : "[1, 25]",
+        "name" : "intent_scores",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 1)",
+        "shortDescription" : "",
+        "shape" : "[1, 1]",
+        "name" : "safety_head_scores",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "5.2.0",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 7,
+    "mlProgramOperationTypeHistogram" : {
+      "Transpose" : 8,
+      "Squeeze" : 2,
+      "Ios16.reduceMean" : 1,
+      "Ios16.softmax" : 2,
+      "Ios16.linear" : 8,
+      "Ios16.add" : 6,
+      "Concat" : 4,
+      "Ios16.reduceMax" : 1,
+      "Ios16.sigmoid" : 2,
+      "Tile" : 1,
+      "Ios16.reduceArgmax" : 1,
+      "ExpandDims" : 5,
+      "Ios16.sub" : 1,
+      "Ios16.gelu" : 1,
+      "Ios16.cast" : 4,
+      "Ios16.conv" : 1,
+      "Ios16.matmul" : 7,
+      "Ios16.layerNorm" : 2,
+      "SliceByIndex" : 2,
+      "Ios16.lstm" : 1,
+      "Ios16.relu" : 4,
+      "Ios16.reshape" : 15,
+      "Ios16.tanh" : 1,
+      "Ios16.mul" : 6
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "13.0",
+      "tvOS" : "16.0",
+      "visionOS" : "1.0",
+      "watchOS" : "9.0",
+      "iOS" : "16.0",
+      "macCatalyst" : "16.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Int32",
+        "formattedType" : "MultiArray (Int32 1 × 28)",
+        "shortDescription" : "",
+        "shape" : "[1, 28]",
+        "name" : "input_mask",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Int32",
+        "formattedType" : "MultiArray (Int32 1 × 28 × 2)",
+        "shortDescription" : "",
+        "shape" : "[1, 28, 2]",
+        "name" : "input_span_features",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 28 × 192)",
+        "shortDescription" : "",
+        "shape" : "[1, 28, 192]",
+        "name" : "sequence_output",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.source" : "tensorflow==1.15.5",
+      "locale" : "nl_NL",
+      "nlx_embeddings_version" : "3300.2000.0",
+      "safety_threshold" : "0.5",
+      "domain" : "combined_domains",
+      "com.github.apple.coremltools.version" : "8.3.2",
+      "bolt_job" : "re2r7jupiy",
+      "mldb_token" : "mldb-jvakw34ano"
+    },
+    "generatedClassName" : "U2Head",
+    "method" : "predict"
+  }
+]

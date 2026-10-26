@@ -1,0 +1,255 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "SearchTool L2 Model",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "label",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "keyType": "Int64",
+        "formattedType": "Dictionary (Int64 → Double)",
+        "type": "Dictionary",
+        "name": "prob",
+        "shortDescription": ""
+      }
+    ],
+    "version": "20260225",
+    "modelParameters": [],
+    "specificationVersion": 1,
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_pipelineClassifier",
+      "structure": [
+        {
+          "name": "MLModelType_featureVectorizer"
+        },
+        {
+          "name": "MLModelType_treeEnsembleClassifier"
+        }
+      ]
+    },
+    "inputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sparseL1",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "pommesL2Score",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "denseL1",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locale_0",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locale_1",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locale_2",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locale_3",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "locale_4",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "kMDItemTextContent QUPP_ARG_SEARCH_TERM",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "kMDItemTextContent QUPP_ARG_PERSON",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "kMDItemCardUnderName QUPP_ARG_PERSON",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "kMDItemCardSubType QUPP_ARG_SEARCH_TERM",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "kMDItemCardProvider QUPP_ARG_SEARCH_TERM",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "kMDItemPhotosSceneClassificationLabels QUPP_ARG_SEARCH_TERM",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "kMDItemPhotosSceneClassificationSynonyms QUPP_ARG_SEARCH_TERM",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "kMDItemPhotosLocationKeywords QUPP_ARG_LOCATION",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "kMDItemPhotosLocationKeywords QUPP_ARG_SEARCH_TERM",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "kMDItemPhotosMeanings QUPP_ARG_SEARCH_TERM",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "QUPP_ARG_SEARCH_TERM LEN",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "QUPP_ARG_PERSON LEN",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "QUPP_ARG_LOCATION LEN",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "QUPP_ARG_TIME LEN",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "QUPP_ARG_EVENT_TYPE_CARD LEN",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "QUPP_ARG_SEARCH_TERM",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "QUPP_ARG_PERSON",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "QUPP_ARG_LOCATION",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "QUPP_ARG_TIME",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "QUPP_ARG_EVENT_TYPE_CARD",
+        "shortDescription": ""
+      }
+    ],
+    "classLabels": [
+      0,
+      1
+    ],
+    "generatedClassName": "searchToolL2_mobileslideshow",
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "9.0",
+      "com.github.apple.coremltools.source": "scikit-learn==1.3.2"
+    },
+    "method": "predict"
+  }
+]

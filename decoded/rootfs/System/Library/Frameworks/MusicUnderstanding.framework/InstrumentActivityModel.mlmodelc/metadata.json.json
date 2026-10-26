@@ -1,0 +1,108 @@
+[
+  {
+    "shortDescription": "Provides frame-level activity detection for multiple instrument categories",
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "The time sequence of vocals activity strength for the song",
+        "shape": "[]",
+        "name": "vocals",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "The time sequence of drums activity strength for the song",
+        "shape": "[]",
+        "name": "drums",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "The time sequence of bass activity strength for the song",
+        "shape": "[]",
+        "name": "bass",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "The time sequence of others activity strength for the song",
+        "shape": "[]",
+        "name": "others",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "3.2.4cat.dev",
+    "modelParameters": [],
+    "author": "Apple Inc.",
+    "specificationVersion": 9,
+    "storagePrecision": "Mixed (Float16, Palettized (6 bits), UInt6)",
+    "license": "Property of Apple Inc. All rights reserved.",
+    "mlProgramOperationTypeHistogram": {
+      "Ios18.constexprLutToDense": 28,
+      "Ios18.conv": 30,
+      "Ios18.sub": 1,
+      "Ios18.relu": 1,
+      "Ios18.gelu": 20,
+      "Ios18.add": 10,
+      "Ios18.sliceByIndex": 4,
+      "Ios18.maximum": 1,
+      "Ios18.transpose": 1,
+      "Ios18.cast": 5,
+      "Ios18.squeeze": 1,
+      "Ios18.mul": 1
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "15.0",
+      "tvOS": "18.0",
+      "visionOS": "2.0",
+      "watchOS": "11.0",
+      "iOS": "18.0",
+      "macCatalyst": "18.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 400...6000 × 128 × 1",
+        "shapeRange": "[[1, 1], [400, 6000], [128, 128], [1, 1]]",
+        "formattedType": "MultiArray (Float32 1 × 1024 × 128 × 1)",
+        "type": "MultiArray",
+        "shape": "[1, 1024, 128, 1]",
+        "name": "MelSpectrogram",
+        "shortDescription": "The Mel Spectrogram data for the song"
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.source": "torch==2.4.1",
+      "com.github.apple.coremltools.version": "9.0",
+      "com.github.apple.coremltools.conversion_date": "2026-03-23",
+      "sourceInfo": "{\"hubRunId\": \"0a3e2e7f-119a-42dc-a6dc-8169dda8c077\", \"hubProjectId\": \"mu_activity\"}",
+      "com.github.apple.coremltools.source_dialect": "TorchScript",
+      "configuration": "{\"preprocessingConfiguration\": {\"audioFormat\": {\"sampleRate\": 24000, \"channelCount\": 1}}, \"featureComputationConfiguration\": {\"melSpectrogramConfiguration\": {\"windowLength\": 2048, \"hopLength\": 1200, \"filterCount\": 128, \"minimumFrequency\": 27.5, \"maximumFrequency\": 12000.0}, \"receptiveFieldLength\": 745, \"predictionResolution\": 0.05, \"inputFrameCount\": 6000}, \"activityConfiguration\": {\"targetKinds\": [\"vocals\", \"drums\", \"bass\", \"others\"]}}",
+      "copyright": "Copyright © 2025 Apple Inc. All rights reserved.",
+      "mldb_token": "mldb-lqgweb2g9p"
+    },
+    "generatedClassName": "InstrumentActivityModel",
+    "method": "predict"
+  }
+]

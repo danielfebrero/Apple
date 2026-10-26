@@ -1,0 +1,41 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "VisualGeneration.KeyboardEmojiGenerator",
+  "UsageAliasValues": {
+    "language_en_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized_embedding_preprocessor.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized_embedding_preprocessor.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized_embedding_preprocessor.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

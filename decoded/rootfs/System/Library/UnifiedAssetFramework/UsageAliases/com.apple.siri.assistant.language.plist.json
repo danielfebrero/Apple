@@ -1,0 +1,751 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.siri.assistant.language",
+  "UsageAliasValues": {
+    "ar-SA": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "ar_SA"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "ar_SA",
+        "attention.language": "ar_SA",
+        "nl.assistant": "enabled",
+        "nl.language": "ar_SA"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "ar_SA"
+      }
+    },
+    "da-DK": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "da_DK"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "da_DK",
+        "attention.language": "da_DK",
+        "nl.assistant": "enabled",
+        "nl.language": "da_DK"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "da_DK"
+      }
+    },
+    "de-AT": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "de_AT"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "de_AT",
+        "attention.language": "de_AT",
+        "nl.assistant": "enabled",
+        "nl.language": "de_AT"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "de_AT"
+      }
+    },
+    "de-CH": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "de_CH"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "de_CH",
+        "attention.language": "de_CH",
+        "nl.assistant": "enabled",
+        "nl.language": "de_CH"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "de_CH"
+      }
+    },
+    "de-DE": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "de_DE"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "de_DE",
+        "attention.language": "de_DE",
+        "cam.language": "de_DE",
+        "nl.assistant": "enabled",
+        "nl.language": "de_DE"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "de_DE"
+      }
+    },
+    "en-AU": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "en_AU"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "en_AU",
+        "attention.language": "en_AU",
+        "cam.language": "en_AU",
+        "nl.assistant": "enabled",
+        "nl.language": "en_AU"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "en_AU"
+      }
+    },
+    "en-CA": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "en_CA"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "en_CA",
+        "attention.language": "en_CA",
+        "cam.language": "en_CA",
+        "nl.assistant": "enabled",
+        "nl.language": "en_CA"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "en_CA"
+      }
+    },
+    "en-GB": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "en_GB"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "en_GB",
+        "attention.language": "en_GB",
+        "cam.language": "en_GB",
+        "nl.assistant": "enabled",
+        "nl.language": "en_GB"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "en_GB"
+      }
+    },
+    "en-IE": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "en_IE"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "en_IE",
+        "attention.language": "en_IE",
+        "nl.assistant": "enabled",
+        "nl.language": "en_IE"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "en_IE"
+      }
+    },
+    "en-IN": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "en_IN"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "en_IN",
+        "attention.language": "en_IN",
+        "cam.language": "en_IN",
+        "nl.assistant": "enabled",
+        "nl.language": "en_IN"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "en_IN"
+      }
+    },
+    "en-NZ": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "en_NZ"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "en_NZ",
+        "attention.language": "en_NZ",
+        "nl.assistant": "enabled",
+        "nl.language": "en_NZ"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "en_NZ"
+      }
+    },
+    "en-SG": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "en_SG"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "en_SG",
+        "attention.language": "en_SG",
+        "nl.assistant": "enabled",
+        "nl.language": "en_SG"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "en_SG"
+      }
+    },
+    "en-US": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "en_US"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "en_US",
+        "attention.language": "en_US",
+        "cam.language": "en_US",
+        "nl.assistant": "enabled",
+        "nl.language": "en_US"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "en_US"
+      }
+    },
+    "en-ZA": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "en_ZA"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "en_ZA",
+        "attention.language": "en_ZA",
+        "nl.assistant": "enabled",
+        "nl.language": "en_ZA"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "en_ZA"
+      }
+    },
+    "es-CL": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "es_CL"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "es_CL",
+        "attention.language": "es_CL",
+        "nl.assistant": "enabled",
+        "nl.language": "es_CL"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "es_CL"
+      }
+    },
+    "es-ES": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "es_ES"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "es_ES",
+        "attention.language": "es_ES",
+        "cam.language": "es_ES",
+        "nl.assistant": "enabled",
+        "nl.language": "es_ES"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "es_ES"
+      }
+    },
+    "es-MX": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "es_MX"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "es_MX",
+        "attention.language": "es_MX",
+        "cam.language": "es_MX",
+        "nl.assistant": "enabled",
+        "nl.language": "es_MX"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "es_MX"
+      }
+    },
+    "es-US": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "es_US"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "es_US",
+        "attention.language": "es_US",
+        "cam.language": "es_US",
+        "nl.assistant": "enabled",
+        "nl.language": "es_US"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "es_US"
+      }
+    },
+    "fi-FI": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "fi_FI"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "fi_FI",
+        "attention.language": "fi_FI",
+        "nl.assistant": "enabled",
+        "nl.language": "fi_FI"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "fi_FI"
+      }
+    },
+    "fr-BE": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "fr_BE"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "fr_BE",
+        "attention.language": "fr_BE",
+        "nl.assistant": "enabled",
+        "nl.language": "fr_BE"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "fr_BE"
+      }
+    },
+    "fr-CA": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "fr_CA"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "fr_CA",
+        "attention.language": "fr_CA",
+        "nl.assistant": "enabled",
+        "nl.language": "fr_CA"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "fr_CA"
+      }
+    },
+    "fr-CH": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "fr_CH"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "fr_CH",
+        "attention.language": "fr_CH",
+        "nl.assistant": "enabled",
+        "nl.language": "fr_CH"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "fr_CH"
+      }
+    },
+    "fr-FR": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "fr_FR"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "fr_FR",
+        "attention.language": "fr_FR",
+        "cam.language": "fr_FR",
+        "nl.assistant": "enabled",
+        "nl.language": "fr_FR"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "fr_FR"
+      }
+    },
+    "he-IL": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "he_IL"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "he_IL",
+        "attention.language": "he_IL",
+        "nl.assistant": "enabled",
+        "nl.language": "he_IL"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "he_IL"
+      }
+    },
+    "it-CH": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "it_CH"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "it_CH",
+        "attention.language": "it_CH",
+        "nl.assistant": "enabled",
+        "nl.language": "it_CH"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "it_CH"
+      }
+    },
+    "it-IT": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "it_IT"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "it_IT",
+        "attention.language": "it_IT",
+        "nl.assistant": "enabled",
+        "nl.language": "it_IT"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "it_IT"
+      }
+    },
+    "ja-JP": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "ja_JP"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "ja_JP",
+        "attention.language": "ja_JP",
+        "cam.language": "ja_JP",
+        "nl.assistant": "enabled",
+        "nl.language": "ja_JP"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "ja_JP"
+      }
+    },
+    "ko-KR": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "ko_KR"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "ko_KR",
+        "attention.language": "ko_KR",
+        "nl.assistant": "enabled",
+        "nl.language": "ko_KR"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "ko_KR"
+      }
+    },
+    "ms-MY": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "ms_MY"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "ms_MY",
+        "attention.language": "ms_MY",
+        "nl.assistant": "enabled",
+        "nl.language": "ms_MY"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "ms_MY"
+      }
+    },
+    "nb-NO": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "nb_NO"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "nb_NO",
+        "attention.language": "nb_NO",
+        "nl.assistant": "enabled",
+        "nl.language": "nb_NO"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "nb_NO"
+      }
+    },
+    "nl-BE": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "nl_BE"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "nl_BE",
+        "attention.language": "nl_BE",
+        "nl.assistant": "enabled",
+        "nl.language": "nl_BE"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "nl_BE"
+      }
+    },
+    "nl-NL": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "nl_NL"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "nl_NL",
+        "attention.language": "nl_NL",
+        "nl.assistant": "enabled",
+        "nl.language": "nl_NL"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "nl_NL"
+      }
+    },
+    "pt-BR": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "pt_BR"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "pt_BR",
+        "attention.language": "pt_BR",
+        "nl.assistant": "enabled",
+        "nl.language": "pt_BR"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "pt_BR"
+      }
+    },
+    "pt-PT": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "pt_PT"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "pt_PT",
+        "attention.language": "pt_PT",
+        "nl.assistant": "enabled",
+        "nl.language": "pt_PT"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "pt_PT"
+      }
+    },
+    "ru-RU": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "ru_RU"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "ru_RU",
+        "attention.language": "ru_RU",
+        "nl.assistant": "enabled",
+        "nl.language": "ru_RU"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "ru_RU"
+      }
+    },
+    "sv-SE": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "sv_SE"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "sv_SE",
+        "attention.language": "sv_SE",
+        "nl.assistant": "enabled",
+        "nl.language": "sv_SE"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "sv_SE"
+      }
+    },
+    "th-TH": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "th_TH"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "th_TH",
+        "attention.language": "th_TH",
+        "nl.assistant": "enabled",
+        "nl.language": "th_TH"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "th_TH"
+      }
+    },
+    "tr-TR": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "tr_TR"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "tr_TR",
+        "attention.language": "tr_TR",
+        "nl.assistant": "enabled",
+        "nl.language": "tr_TR"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "tr_TR"
+      }
+    },
+    "vi-VN": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "vi_VN"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "vi_VN",
+        "attention.language": "vi_VN",
+        "nl.assistant": "enabled",
+        "nl.language": "vi_VN"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "vi_VN"
+      }
+    },
+    "yue-CN": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "yue_CN"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "yue_CN",
+        "attention.language": "yue_CN",
+        "nl.assistant": "enabled",
+        "nl.language": "yue_CN"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "yue_CN"
+      }
+    },
+    "zh-CN": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "zh_CN"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "zh_CN",
+        "attention.language": "zh_CN",
+        "cam.language": "zh_CN",
+        "nl.assistant": "enabled",
+        "nl.language": "zh_CN"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "zh_CN"
+      }
+    },
+    "zh-HK": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "zh_HK"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "zh_HK",
+        "attention.language": "zh_HK",
+        "cam.language": "zh_HK",
+        "nl.assistant": "enabled",
+        "nl.language": "zh_HK"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "zh_HK"
+      }
+    },
+    "zh-TW": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "zh_TW"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "zh_TW",
+        "attention.language": "zh_TW",
+        "nl.assistant": "enabled",
+        "nl.language": "zh_TW"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "zh_TW"
+      }
+    }
+  }
+}

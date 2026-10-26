@@ -1,0 +1,73 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "Core ML version of multiscale_interpolated_hierarchical_monotonic_lut_20251017_121103_best_model.pth",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 67)",
+        "shortDescription": "",
+        "shape": "[1, 67]",
+        "name": "sdr_to_hdr_lut",
+        "type": "MultiArray"
+      }
+    ],
+    "storagePrecision": "Float32",
+    "modelParameters": [],
+    "author": "Qing Song",
+    "specificationVersion": 6,
+    "license": "N/A",
+    "mlProgramOperationTypeHistogram": {
+      "Concat": 4,
+      "Scatter": 304,
+      "Linear": 10,
+      "SliceByIndex": 608,
+      "Sub": 4,
+      "Clip": 4,
+      "UpsampleBilinear": 8,
+      "Softplus": 4,
+      "Relu": 6,
+      "Squeeze": 16,
+      "Reshape": 596,
+      "Mul": 6,
+      "Add": 295,
+      "ExpandDims": 20
+    },
+    "computePrecision": "Mixed (Float32, Int32)",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "12.0",
+      "tvOS": "15.0",
+      "visionOS": "1.0",
+      "watchOS": "8.0",
+      "iOS": "15.0",
+      "macCatalyst": "15.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 128)",
+        "shortDescription": "",
+        "shape": "[1, 128]",
+        "name": "cdf",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "8.3.2",
+      "com.github.apple.coremltools.source": "torch==2.7.1",
+      "mldb_token": "mldb-wrxg5qmgo8",
+      "com.github.apple.coremltools.source_dialect": "TorchScript"
+    },
+    "generatedClassName": "sdr_to_hdr_histolut",
+    "method": "predict"
+  }
+]

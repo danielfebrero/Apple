@@ -1,0 +1,29 @@
+{
+  "com.apple.siri.playbackcontrols": "1.0",
+  "SupportedOperatingSystems": [
+    "tvOS",
+    "iOS",
+    "watchOS",
+    "macOS"
+  ],
+  "Platform_tvOS": {
+    "ErrorSignatureDenyList": {
+      "DenyAll": true
+    }
+  },
+  "Platform_iOS": {
+    "ErrorSignatureDenyList": {
+      "DenyAll": true
+    }
+  },
+  "Platform_watchOS": {
+    "ErrorSignatureDenyList": {
+      "DenyAll": true
+    }
+  },
+  "Platform_macOS": {
+    "ErrorSignatureDenyList": {
+      "DenyAll": true
+    }
+  }
+}

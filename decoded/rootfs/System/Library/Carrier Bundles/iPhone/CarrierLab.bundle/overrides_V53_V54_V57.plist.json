@@ -1,0 +1,106 @@
+{
+  "DerPriFileVersion": "5.0.161",
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "SupportsPDNLocalRelease": true,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "Cert": {
+      "AddPreconditionToSupportedHeaderIfEnabled": true,
+      "ResetCallIdOn401WithoutSecurityServer": true,
+      "UseUacAsRefresher": true,
+      "DoNotRefreshSessionIfNoSessionExpiresHeaderFromRemote": true,
+      "UseInviteToRefreshSessionIfRemoteDoesNotAllowUpdate": false,
+      "UseUpdateToRefreshSessionIfRemoteAllows": false,
+      "SendPreconditionsInPrack": true
+    },
+    "Emergency": {
+      "PreferSameDomainAsNormalCall": false
+    },
+    "Media": {
+      "RTCPIntervalSeconds": 5,
+      "IncludeEVSIOModes": true,
+      "EVSHardBrLimit": "5.9-24.4",
+      "AudioCodecs": {
+        "116": {
+          "br": "5.9-24.4",
+          "bw": "nb-swb",
+          "mode-set": "0,1,2"
+        },
+        "96": {
+          "br": "5.9-24.4",
+          "SampleRate": 16000,
+          "mode-set": "0,1,2",
+          "EncodingName": "EVS",
+          "bw": "nb-swb",
+          "max-red": "220"
+        }
+      },
+      "RestrictSessionEVSBandwidth": false,
+      "BandwidthSpecifierRRValue": 100,
+      "EVSHardBwLimit": "nb-swb",
+      "BandwidthSpecifierRSValue": 300
+    },
+    "Signaling": {
+      "AlwaysSendSessionProgress": true,
+      "AlwaysPrack18x": true,
+      "IgnoresIntlDataRoaming": true,
+      "SetSessionTimerRefresherInInitialRequest": false,
+      "SessionExpiresSeconds": 1800,
+      "ResponseCodesBlockedForSilentRedialNRSANonEm": "503,504",
+      "AlwaysSendTryingResponse": true,
+      "RequireQoSBeforeRinging": true,
+      "RequirePreconditionsWhenMandatory": true,
+      "MaxUdpMessageSize": 4096
+    },
+    "Voice": {
+      "BlockSilentRedialOverCS": true,
+      "EnableVoNRByDefault": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "LTE": true,
+        "NR": true
+      }
+    }
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "apns": [
+    {
+      "password": "",
+      "username": "",
+      "apn": "",
+      "type-mask": 49,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "password": "",
+      "username": "",
+      "AllowedProtocolMaskInRoaming": 3,
+      "apn": "IMS",
+      "type-mask": 131072,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "password": "",
+      "username": "",
+      "apn": "xcap",
+      "type-mask": 1048576,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "password": "",
+      "username": "",
+      "AllowedProtocolMaskInRoaming": 3,
+      "apn": "sos",
+      "type-mask": 262144,
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Show5GStandaloneSwitch": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true,
+  "Enable5GStandaloneByDefault": true
+}

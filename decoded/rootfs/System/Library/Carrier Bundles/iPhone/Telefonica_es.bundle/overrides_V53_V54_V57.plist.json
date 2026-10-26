@@ -1,0 +1,57 @@
+{
+  "DerPriFileVersion": "6.0.163",
+  "ShowVoNRSwitch": true,
+  "AllowSAOnWiFiAssociation": true,
+  "Enable5GStandaloneByDefault": true,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "Signaling": {
+      "ResetSocketWhenNetworkChange": false
+    }
+  },
+  "ShowVoNRWarningUnsupportedCarrier": false,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "SupportsVoNR": true,
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "password": "telefonica",
+      "username": "telefonica",
+      "apn": "telefonica.es",
+      "type-mask": 32819,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "UseNetworkMTU": true,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "password": "",
+      "username": "",
+      "apn": "xcap",
+      "type-mask": 1048576,
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

@@ -1,0 +1,46 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ring Andrew",
+            "Call Emily’s mobile",
+            "Ring Susan on her work phone",
+            "Ring 020 7946 1212",
+            "Call home",
+            "Call 999",
+            "Call the fire brigade",
+            "Get my call history",
+            "Do I have any missed calls?",
+            "Redial that last number"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": []
+        }
+      ],
+      "SectionName": "PHONE CALLS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Do I have any new voicemails?",
+            "Play me the voicemail from Emily"
+          ]
+        }
+      ],
+      "SectionName": "VOICEMAIL"
+    }
+  ]
+}

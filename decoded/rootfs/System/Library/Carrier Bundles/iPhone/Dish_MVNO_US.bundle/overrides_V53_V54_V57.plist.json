@@ -1,0 +1,116 @@
+{
+  "DerPriFileVersion": "0.1.161",
+  "TechSettings": {
+    "SuppressSAInOverCellHandover": true
+  },
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "MTU": [
+    {
+      "technology-mask": 25,
+      "size": 1440
+    },
+    {
+      "technology-mask": 32,
+      "size": 1436
+    }
+  ],
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Signaling": {
+      "AdditionalFeatureTags": {
+        "voice": {
+          "+sip.call-info.spam": ""
+        }
+      }
+    }
+  },
+  "ShowHighDataModeSwitch": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "IPv6SupportedDataModeMask": 106527,
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4202905,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "authenticateTrustFlag"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "Show5GStandaloneSwitch": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "MVNOOverrides": {
+    "Configuration_1": {
+      "OverrideConfiguration": {
+        "apns": [
+          {
+            "configuration": [
+              {
+                "type-mask": 32773,
+                "password": "",
+                "AllowedProtocolMaskInDomesticRoaming": 1,
+                "enableXLAT464": true,
+                "AllowedProtocolMaskInRoaming": 1,
+                "username": "",
+                "apn": "wireless.dish.com",
+                "AllowedProtocolMask": 3
+              },
+              {
+                "type-mask": 131072,
+                "password": "",
+                "tech-type-mask": 131072,
+                "AllowedProtocolMaskInDomesticRoaming": 3,
+                "AllowedProtocolMaskInRoaming": 3,
+                "SupportSwitchOver": true,
+                "username": "",
+                "apn": "ims",
+                "AllowedProtocolMask": 3
+              },
+              {
+                "type-mask": 16,
+                "password": "",
+                "AllowedProtocolMaskInDomesticRoaming": 1,
+                "enableXLAT464": true,
+                "AllowedProtocolMaskInRoaming": 1,
+                "username": "",
+                "apn": "tethering.dish.com",
+                "AllowedProtocolMask": 3
+              },
+              {
+                "type-mask": 262144,
+                "password": "",
+                "tech-type-mask": 262144,
+                "AllowedProtocolMaskInDomesticRoaming": 1,
+                "AllowedProtocolMaskInRoaming": 1,
+                "username": "",
+                "apn": "sos",
+                "AllowedProtocolMask": 3
+              },
+              {
+                "type-mask": 1048578,
+                "password": "",
+                "AllowedProtocolMaskInDomesticRoaming": 1,
+                "tech-type-mask": 1048582,
+                "enableXLAT464": true,
+                "AllowedProtocolMaskInRoaming": 1,
+                "username": "",
+                "apn": "service",
+                "AllowedProtocolMask": 3
+              }
+            ],
+            "technology-mask": 25
+          }
+        ]
+      }
+    }
+  },
+  "Enable5GStandaloneByDefault": true,
+  "SupportsNRNSAInboundRoaming": true
+}

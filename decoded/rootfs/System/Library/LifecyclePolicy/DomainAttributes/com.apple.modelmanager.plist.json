@@ -1,0 +1,80 @@
+{
+  "BackgroundInference": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleNonUserInteractive"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 40
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSGPUAccessGrant",
+            "Role": "RBSGPURoleBackground"
+          },
+          {
+            "Class": "RBSResistTerminationGrant",
+            "Resistance": "RBSTerminationResistanceNonInteractive"
+          },
+          {
+            "Class": "RBSDefineRelativeStartTimeGrant"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20606
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.modelmanager"
+    }
+  },
+  "ForegroundInference": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractiveNonFocal"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 80
+          },
+          {
+            "Class": "RBSBaseMemoryGrant",
+            "Strength": "RBSMemoryLimitStrengthSoft",
+            "Category": "Active"
+          },
+          {
+            "Class": "RBSGPUAccessGrant",
+            "Role": "RBSGPURoleUserInteractive"
+          },
+          {
+            "Class": "RBSResistTerminationGrant",
+            "Resistance": "RBSTerminationResistanceInteractive"
+          },
+          {
+            "Class": "RBSDefineRelativeStartTimeGrant"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20606
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.modelmanager"
+    }
+  }
+}

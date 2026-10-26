@@ -1,0 +1,51 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Føj gulerødder til min indkøbsliste",
+            "Føj løbetur til mine påmindelser",
+            "Husk en paraply",
+            "Mind mig om, at jeg skal tage min medicin i morgen kl. 6",
+            "Mind mig om, at jeg skal være færdig med rapporten kl. 18",
+            "Læs min huskeliste til arbejde"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Marker den tredje som udført",
+            "Lav ny liste kaldet indkøb"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Mind mig om denne e-mail i morgen",
+            "Husk denne hjemmeside",
+            "Mind mig om at FaceTime mor, når jeg kommer hjem",
+            "Husk mig på at ringe til Jens, når jeg tager afsted",
+            "Mind mig om at ringe til far, når jeg er i bilen",
+            "Husk, at jeg skal FaceTime Gustav, når jeg går"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Husk mig på, at jeg skal hente blomster, når jeg tager afsted"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

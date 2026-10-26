@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Montre-moi comment rentrer chez moi?",
+            "Comment aller à Saint-Gall?",
+            "Emmène-moi au travail de Thomas",
+            "Quel est l’itinéraire entre Fribourg et Berne?",
+            "Comment aller à pied chez Florence?"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "Quand est le prochain virage?",
+            "On arrive dans combien de temps?",
+            "On arrive à quelle heure?",
+            "Trouve une station d'essence sur mon trajet"
+          ]
+        }
+      ],
+      "SectionName": "NAVIGATION"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Où se trouve le palais des Nations?",
+            "Affiche le plan de Genève"
+          ]
+        }
+      ],
+      "SectionName": "PLANS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Trouve-moi un café à proximité",
+            "Je cherche le meilleur restaurant italien du coin",
+            "Où se trouve l’Apple Store le plus proche?"
+          ]
+        }
+      ],
+      "SectionName": "COMMERCES DE PROXIMITÉ"
+    }
+  ]
+}

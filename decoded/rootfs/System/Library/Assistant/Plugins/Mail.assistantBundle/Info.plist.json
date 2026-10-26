@@ -1,0 +1,44 @@
+{
+  "CFBundleName": "Mail Assistant Plugin",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTXcode": "2700",
+  "AssistantLockRestrictedDomains": {
+    "com.apple.ace.email": [
+      "Search"
+    ]
+  },
+  "AssistantDomains": {
+    "com.apple.ace.email": {
+      "DomainObjectCreate": "MFAssistantEmailCreate",
+      "DomainObjectCommit": "MFAssistantEmailSend",
+      "DomainObjectRetrieve": "MFAssistantEmailRetrieve",
+      "Search": "MFAssistantEmailSearch"
+    }
+  },
+  "DTSDKBuild": "24B107",
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleVersion": "3901.200.71.2.2",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "FMWK",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "Mail",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.mobilemail.assistant.plugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "CFBundleSignature": "????",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "24B107",
+  "AssistantManagedStorageDomains": [
+    "com.apple.ace.email"
+  ]
+}

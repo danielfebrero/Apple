@@ -1,0 +1,7 @@
+"
+
+Return ResolvedLocation with:
+- type (.keyword, .filePath, or .metadata)
+- value (may be transformed for file paths)
+- reasoning (explain your interpretation)
+- confidence: Score (0.0-1.0) indicating how well this expression fits the location domain (0.8-1.0 = clear location, 0.5-0.7 = ambiguous, 0.0-0.4 = not location)

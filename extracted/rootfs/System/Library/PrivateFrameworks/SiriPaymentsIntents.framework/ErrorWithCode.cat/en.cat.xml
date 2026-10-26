@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:2.0" id="PaymentsBase#ErrorWithCode" locale="en">
+    <conditions>
+        <condition name="isRequest">
+            <expression name="intentType" op="eq" value="'request'"/>
+        </condition>
+        <condition name="isNotWatch">
+            <expression name="device.isWatch" op="unset"/>
+        </condition>
+    </conditions>
+    <phrases>
+        <first phrase="fallback">
+            <text condition="device.isCarPlay">Sorry, there was a problem with the app.</text>
+            <text>Sorry, you’ll need to continue in the app.</text>
+        </first>
+        <switch phrase="dialog" value="errorCode">
+            <text case="'CREDENTIALS_UNVERIFIED'">Sorry, you’ll need to verify your credentials in the app.</text>
+
+            <first case="'PAYMENTS_AMOUNT_BELOW_MINIMUM'">
+                <first condition="isRequest">
+                    <text condition="paymentsConcept.app.isDesignedByApple">Sorry, that’s below the minimum amount you can request with Apple Pay.</text>
+                    <text>Sorry, the amount is below the minimum you can request.</text>
+                </first>
+                <first>
+                    <text condition="paymentsConcept.app.isDesignedByApple">Sorry, that’s below the minimum amount you can send with Apple Pay.</text>
+                    <text>Sorry, the amount is below the minimum you can send.</text>
+                </first>
+            </first>
+
+            <first case="'PAYMENTS_AMOUNT_ABOVE_MAXIMUM'">
+                <first condition="isRequest">
+                    <text condition="paymentsConcept.app.isDesignedByApple">Sorry, that’s above the maximum amount you can request with Apple Pay.</text>
+                    <text>Sorry, the amount is above the maximum you can request.</text>
+                </first>
+                <first>
+                    <text condition="paymentsConcept.app.isDesignedByApple">Sorry, that’s above the maximum amount you can send with Apple Pay.</text>
+                    <text>Sorry, the amount is above the maximum you can send.</text>
+                </first>
+            </first>
+
+            <first case="'PAYMENTS_CURRENCY_UNSUPPORTED'">
+                <first condition="isRequest">
+                    <text condition="paymentsConcept.app.isDesignedByApple">Sorry, I can’t request payments in that currency with Apple Pay.</text>
+                    <text>Sorry, the currency is not supported.</text>
+                </first>
+                <first>
+                    <text condition="paymentsConcept.app.isDesignedByApple">Sorry, I can’t send payments in that currency with Apple Pay.</text>
+                    <text>Sorry, the currency is not supported.</text>
+                </first>
+            </first>
+
+            <text case="'INSUFFICIENT_FUNDS'">Sorry, there aren’t sufficient funds to send your payment.</text>
+
+            <first case="'NO_BANK_ACCOUNT'">
+                <first condition="isRequest">
+                    <first condition="paymentsConcept.app.isDesignedByApple">
+                        <text condition="isNotWatch">Sorry, you’ll need to set up an Apple Cash account to request money. You can do that in Settings.</text>
+                        <text>Sorry, you’ll need to set up an Apple Cash account to request money.</text>
+                    </first>
+                    <text>Sorry, no account is set up.</text>
+                </first>
+                <first condition="paymentsConcept.app.isDesignedByApple">
+                    <text condition="isNotWatch">Sorry, you’ll need to set up an Apple Cash account to send money. You can do that in Settings.</text>
+                    <text>Sorry, you’ll need to set up an Apple Cash account to send money.</text>
+                </first>
+                <text>Sorry, no account is set up.</text>
+            </first>
+
+            <first case="'NO_ACCOUNT'">
+                <text condition="isRequest">Sorry, <var name="paymentsConcept.payerName"/> doesn’t have an Apple Cash account to request money from.</text>
+                <text>Sorry, <var name="paymentsConcept.payeeName"/> doesn’t have an Apple Cash account to send money to.</text>
+            </first>
+
+            <first case="'NOT_ELIGIBLE'">
+                <text condition="paymentsConcept.app.isDesignedByApple">Sorry, that feature isn’t available, due to your device settings or region.</text>
+                <text condition="isRequest">Sorry, that feature is not available due to <var name="paymentsConcept.payerName"/>ʼs region or device.</text>
+                <text>Sorry, that feature is not available due to <var name="paymentsConcept.payeeName"/>ʼs region or device.</text>
+            </first>
+
+            <first case="'TERMS_AND_CONDITIONS_ACCEPTANCE_REQUIRED'">
+                <first condition="paymentsConcept.app.isDesignedByApple">
+                    <text condition="device.isWatch">You'll need to set up Apple Cash.</text>
+                    <first>
+                        <text condition="isRequest">Sorry, you’ll need to accept the Apple Cash Terms and Conditions in <var name="paymentsConcept.app"/> to complete this request.</text>
+                        <text>Sorry, you’ll need to accept the Apple Cash Terms and Conditions in <var name="paymentsConcept.app"/> to complete this payment.</text>
+                    </first>
+                </first>
+                <first>
+                    <text condition="isRequest">Sorry, you’ll need to accept the Terms and Conditions in <var name="paymentsConcept.app"/> to complete this request.</text>
+                    <text>Sorry, you’ll need to accept the Terms and Conditions in <var name="paymentsConcept.app"/> to complete this payment.</text>
+                </first>
+            </first>
+
+            <first case="'TIMEOUT'">
+                <text>Sorry, that was taking too long. Please try again in a moment.</text>
+            </first>
+
+            <first case="'PAYMENT_STATUS_UNKNOWN'">
+                <text>I’m not sure if your payment went through. You can check in the <var name="paymentsConcept.app"/> app.</text>
+            </first>
+
+            <text>
+                <phrase name="fallback"/>
+            </text>
+        </switch>
+    </phrases>
+    
+    <first>
+        <dialog><phrase name="dialog"/></dialog>
+    </first>
+    
+</cat>

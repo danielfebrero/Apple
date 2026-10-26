@@ -1,0 +1,16 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "VisualGeneration.SketchCaptioning",
+  "UsageAliasValues": {
+    "default": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.sketch_captioning.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.sketch_captioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

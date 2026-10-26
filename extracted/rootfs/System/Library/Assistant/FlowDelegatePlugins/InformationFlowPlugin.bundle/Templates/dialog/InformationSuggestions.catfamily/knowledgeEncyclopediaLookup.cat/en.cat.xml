@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en">
+  <phrases>
+    <random phrase="suggestionUtterance">
+      <text>What is the 25th amendment?</text>
+      <text>Where is Ecuador?</text>
+      <text>Who is the King of Spain?</text>
+      <text>Who is the governor of Iowa?</text>
+      <text>Who are the senators from California?</text>
+      <text>When was the Vietnam war?</text>
+      <text>Where was World War I?</text>
+      <text>What is California's motto?</text>
+      <text>What causes a rainbow?</text>
+      <text>What languages are spoken in Spain?</text>
+      <text>Is a tomato a fruit or a vegetable?</text>
+    </random>
+  </phrases>
+  <all>
+    <dialog id="exampleUtterance"><phrase name="suggestionUtterance"/></dialog>
+  </all>
+</cat>

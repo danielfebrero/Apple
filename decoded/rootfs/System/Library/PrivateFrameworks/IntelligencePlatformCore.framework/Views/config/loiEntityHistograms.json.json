@@ -1,0 +1,49 @@
+{
+  "artifact": {
+    "entityInteractionHistogram": {
+      "entityInteractionEventsTableName": "loiEntityInteractionEvents",
+      "entityInteractionKeyTableName": "loiEntityHistogramKeys",
+      "query": {
+        "attributeQueries": [
+          {
+            "sessionEvent": {
+              "event": "start"
+            }
+          }
+        ],
+        "entityClasses": [
+          "place"
+        ]
+      },
+      "tableName": "loiEntityHistograms"
+    },
+    "path": "internal/views.db",
+    "type": "entityInteractionHistogram"
+  },
+  "customViewClass": "EntityInteractionHistogramView",
+  "featureFlag": "EntityRelevanceBiomeSources",
+  "name": "loiEntityHistograms",
+  "type": "custom",
+  "update": {
+    "biomeListeners": [
+      {
+        "computeIfPastSLA": false,
+        "schedule": "every21Minutes",
+        "stream": "Location.Semantic"
+      }
+    ],
+    "group": "loiEntityRelevance",
+    "viewListeners": [
+      {
+        "name": "handleMap",
+        "requiredSource": true,
+        "schedule": "none"
+      },
+      {
+        "name": "phPersonIdentifierMap",
+        "requiredSource": true,
+        "schedule": "none"
+      }
+    ]
+  }
+}

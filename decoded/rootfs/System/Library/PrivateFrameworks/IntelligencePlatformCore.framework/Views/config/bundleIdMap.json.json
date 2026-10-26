@@ -1,0 +1,55 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "bundleId",
+          "TEXT"
+        ],
+        [
+          "id",
+          "INTEGER"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "bundleId",
+        "id"
+      ],
+      "subjectIdentifierColumn": "id",
+      "tableName": "bundle_id"
+    },
+    "path": "bundle/bundle.db",
+    "type": "customRow"
+  },
+  "featureFlag": "EntitySimilarity",
+  "name": "bundleIdMap",
+  "sql": {
+    "update": "customSQL/bundle_id_map"
+  },
+  "type": "customSQL",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entity": "SB144",
+            "predicates": [
+              "nm_bundleID",
+              "PS33"
+            ]
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "appSubgraph",
+        "schedule": "none"
+      }
+    ]
+  }
+}

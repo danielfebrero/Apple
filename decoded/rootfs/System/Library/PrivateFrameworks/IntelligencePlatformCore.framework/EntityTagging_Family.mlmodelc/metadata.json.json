@@ -1,0 +1,1062 @@
+[
+  {
+    "shortDescription": "--",
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "output",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "keyType": "Int64",
+        "formattedType": "Dictionary (Int64 → Double)",
+        "type": "Dictionary",
+        "name": "classProbability",
+        "shortDescription": "--"
+      }
+    ],
+    "version": "20230726",
+    "modelParameters": [],
+    "author": "--",
+    "specificationVersion": 1,
+    "license": "--",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_treeEnsembleClassifier"
+    },
+    "inputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "isVIP",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sharesWorkAddress",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "hasSamePrivateEmailDomain",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "hasBirthday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "hasSameEmailDomains",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sameLastName",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "hasSamePublicEmailDomain",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonAge",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "isFavorite",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "hasSameEduEmailDomain",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "hasSameWorkEmailDomain",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "hasNickname",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "allowListedNameMatch",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "ageDifferenceCategory",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "nameContainsEmoji",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "nicknameContainsEmoji",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sharesHomeAddress",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "allowListedNicknameMatch",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosAgeDifferenceCategory",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "iCloudFamilyMember",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personOverallPopularity",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personLongTermPopularity",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenMonday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenTuesday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenWednesday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenThursday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenFriday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenSaturday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenSunday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "mondayPopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "tuesdayPopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "wednesdayPopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thursdayPopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "fridayPopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "saturdayPopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sundayPopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPosteriorProbabilityGivenMonday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPosteriorProbabilityGivenTuesday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPosteriorProbabilityGivenWednesday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPosteriorProbabilityGivenThursday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPosteriorProbabilityGivenFriday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPosteriorProbabilityGivenSaturday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPosteriorProbabilityGivenSunday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenHome",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenWork",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "homePopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "workPopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPosteriorProbabilityGivenHome",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPosteriorProbabilityGivenWork",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenWeekday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "personPopularityGivenWeekend",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "weekdayPopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "weekendPopularityGivenPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "top1PersonInteractionMechanism",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "top2PersonInteractionMechanism",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "top3PersonInteractionMechanism",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonOverallPopularity",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonLongTermPopularity",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenMonday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "mondayPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenMonday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenTuesday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "tuesdayPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenTuesday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenWednesday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "wednesdayPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWednesday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenThursday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "thursdayPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenThursday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenFriday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "fridayPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenFriday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenSaturday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "saturdayPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenSaturday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenSunday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "sundayPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenSunday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "morningPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "afternoonPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "eveningPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "nightPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenMondayMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenMondayAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenMondayEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenMondayNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenTuesdayMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenTuesdayAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenTuesdayEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenTuesdayNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWednesdayMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWednesdayAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWednesdayEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWednesdayNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenThursdayMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenThursdayAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenThursdayEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenThursdayNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenFridayMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenFridayAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenFridayEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenFridayNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenSaturdayMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenSaturdayAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenSaturdayEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenSaturdayNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenSundayMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenSundayAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenSundayEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenSundayNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenHome",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "homePopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenHome",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenWork",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "workPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWork",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenWeekday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "weekdayPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWeekday",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPopularityGivenWeekend",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "weekendPopularityGivenPhotosPerson",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWeekend",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWeekdayMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWeekdayAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWeekdayEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWeekdayNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWeekendMorning",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWeekendAfternoon",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWeekendEvening",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "photosPersonPosteriorProbabilityGivenWeekendNight",
+        "shortDescription": "--"
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "hasWeekendWeekdayPhotosFeatures",
+        "shortDescription": "--"
+      }
+    ],
+    "classLabels": [
+      0,
+      1
+    ],
+    "generatedClassName": "EntityTagging_Family",
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-lxyvzxnan7",
+      "com.github.apple.coremltools.source": "xgboost==1.7.5",
+      "com.github.apple.coremltools.version": "6.3.0"
+    },
+    "method": "predict"
+  }
+]

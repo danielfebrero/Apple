@@ -1,0 +1,167 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "Widget prediction model",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "engaged",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "classLabel",
+        "shortDescription" : ""
+      }
+    ],
+    "neuralNetworkLayerTypeHistogram" : {
+      "Softmax" : 1,
+      "InnerProduct" : 2,
+      "ActivationSigmoid" : 1,
+      "Concat" : 1,
+      "Embedding" : 1,
+      "Reshape" : 1
+    },
+    "modelParameters" : [
+
+    ],
+    "author" : "Apple Inc.",
+    "specificationVersion" : 4,
+    "storagePrecision" : "Float32",
+    "updateParameters" : [
+      {
+        "defaultValue" : "10",
+        "allowedSet" : "[10]",
+        "scope" : "",
+        "name" : "epochs",
+        "dataType" : "Int64",
+        "shortDescription" : "Default number of iterations during training"
+      },
+      {
+        "defaultValue" : "true",
+        "scope" : "",
+        "name" : "shuffle",
+        "dataType" : "Bool",
+        "shortDescription" : "Controls whether data is shuffled on each epoch"
+      },
+      {
+        "defaultValue" : "0.010000",
+        "scope" : "",
+        "allowedRange" : "[0.000000, 1.000000]",
+        "name" : "learningRate",
+        "dataType" : "Double",
+        "shortDescription" : "Controls learning step size. Adjustable in progress"
+      },
+      {
+        "defaultValue" : "10",
+        "allowedSet" : "[10]",
+        "scope" : "",
+        "name" : "miniBatchSize",
+        "dataType" : "Int64",
+        "shortDescription" : "Number of examples used to compute single gradient step"
+      },
+      {
+        "defaultValue" : "0.900000",
+        "scope" : "",
+        "allowedRange" : "[0.000000, 1.000000]",
+        "name" : "beta1",
+        "dataType" : "Double",
+        "shortDescription" : "Controls the exponential decay rate for the first moment estimates"
+      },
+      {
+        "defaultValue" : "0.999000",
+        "scope" : "",
+        "allowedRange" : "[0.000000, 1.000000]",
+        "name" : "beta2",
+        "dataType" : "Double",
+        "shortDescription" : "Controls the exponential decay rate for the second moment estimates"
+      },
+      {
+        "defaultValue" : "0.000000",
+        "scope" : "",
+        "allowedRange" : "[0.000000, 1.000000]",
+        "name" : "eps",
+        "dataType" : "Double",
+        "shortDescription" : "A very small number to prevent any division by zero in the implementation"
+      }
+    ],
+    "isUpdatable" : "1",
+    "computePrecision" : "Float16",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetworkClassifier"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "input_widget_family",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "input_unique_score_count",
+        "type" : "MultiArray"
+      }
+    ],
+    "classLabels" : [
+      "Not Engaged",
+      "Engaged"
+    ],
+    "generatedClassName" : "ATXWidgetPredictionMLModel",
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.1",
+      "com.github.apple.coremltools.source" : "keras==2.3.1"
+    },
+    "trainingInputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "Size of the widget (small, medium or large)",
+        "shape" : "[1]",
+        "name" : "input_widget_family",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "Count of unique timeline relevance scores sent by the widget",
+        "shape" : "[1]",
+        "name" : "input_unique_score_count",
+        "type" : "MultiArray"
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "classLabel",
+        "shortDescription" : ""
+      }
+    ],
+    "method" : "predict"
+  }
+]

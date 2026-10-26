@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FileType</key>
+	<string>UsageAliasConfiguration</string>
+	<key>FileVersion</key>
+	<string>1.0.0</string>
+	<key>UsageAliasName</key>
+	<string>com.apple.siri.assistant.hybrid.language</string>
+	<key>UsageAliasValues</key>
+	<dict>
+		<key>fi-FI</key>
+		<dict>
+			<key>com.apple.siri.dialog</key>
+			<dict/>
+			<key>com.apple.siri.findmy</key>
+			<dict/>
+			<key>com.apple.siri.tts</key>
+			<dict/>
+			<key>com.apple.siri.understanding</key>
+			<dict>
+				<key>attention.language</key>
+				<string>fi_FI</string>
+				<key>nl.assistant</key>
+				<string>enabled</string>
+				<key>nl.language</key>
+				<string>fi_FI</string>
+			</dict>
+			<key>com.apple.siri.understanding.nl.overrides</key>
+			<dict>
+				<key>nl.language</key>
+				<string>fi_FI</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

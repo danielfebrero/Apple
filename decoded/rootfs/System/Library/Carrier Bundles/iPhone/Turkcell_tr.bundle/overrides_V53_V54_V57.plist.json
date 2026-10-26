@@ -1,0 +1,51 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "ShowVoNRSwitch": true,
+  "AllowSAOnWiFiAssociation": true,
+  "SupportsSimWithNoMsisdn": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "LTE": true,
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "password": "mms",
+      "username": "mms",
+      "apn": "mms",
+      "type-mask": 4
+    },
+    {
+      "type-mask": 32817,
+      "password": "",
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "internet",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    }
+  ],
+  "Show5GSwitch": true,
+  "Enable5GStandaloneByDefault": true
+}

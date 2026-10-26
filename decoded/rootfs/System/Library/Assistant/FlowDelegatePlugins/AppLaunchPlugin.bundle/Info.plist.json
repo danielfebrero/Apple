@@ -1,0 +1,137 @@
+{
+  "CFBundleName": "AppLaunchPlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedPegasusComponents": [
+    "com.apple.siri.applaunch.AppsClientComponent"
+  ],
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "AppLaunchPlugin.AppLaunchPlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "AppLaunchPlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.AppLaunchPlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "appLaunch"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "common_App",
+      "verb": "open",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "close",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "quit",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "uninstall",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "delete",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "offload",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "close",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_AppAction",
+      "verb": "runCommand",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "open",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "open",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "enable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_JournalEntry",
+      "verb": "*",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_QRCode",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_QRCode",
+      "verb": "scan",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.applaunch.DisambiguationSelection",
+    "com.apple.siri.applaunch.LaunchApp",
+    "com.apple.siri.applaunch.CloseApp"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.siri.tts",
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Siri.TextToSpeech",
+  "UsageTypes": [
+    "tts.language",
+    "tts.name",
+    "tts.technology",
+    "tts.quality",
+    "tts.locale",
+    "tts.id"
+  ],
+  "Assets": [
+    {
+      "AssetName": "com.apple.siri.tts.customvoice.global",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.tts.customvoice.global"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.tts.voice.locale",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "tts.locale"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.siri.tts.voice.{tts.locale}"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.tts.voice.id",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "tts.locale",
+            "tts.id"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.siri.tts.voice.{tts.locale}.{tts.id}"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.tts.voice",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "tts.language",
+            "tts.name",
+            "tts.technology",
+            "tts.quality"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.siri.tts.voice.{tts.language}.{tts.name}.{tts.technology}.{tts.quality}"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.tts.resource",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "tts.language"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.siri.tts.resource.{tts.language}"
+        }
+      ]
+    }
+  ],
+  "ExperimentalAssets": {
+    "TrialProject": "SIRI_TTS",
+    "TrialNamespace": "SIRI_TTS_UAF_AB_DEVICE",
+    "TrialFactor": "ExperimentAssetsDirectory"
+  }
+}

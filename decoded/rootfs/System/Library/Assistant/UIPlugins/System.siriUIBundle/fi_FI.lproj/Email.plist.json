@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lähetä Emmalle sähköposti matkasta",
+            "Sähköposti Liisalle, että suunnitelma on muuttunut",
+            "Uusi sähköposti Anne Virtaselle",
+            "Sähköposti isälle vuokrasta",
+            "Sähköposti terveyskeskukseen 'lomakkeet tulivat, kiitos'",
+            "Sähköposti Emmalle ja Pekalle juhlista: 'oli todella hauskaa'"
+          ]
+        }
+      ],
+      "SectionName": "Sending email"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Tarkista sähköposti",
+            "Onko Jukalta uusia sähköposteja tänään?",
+            "Näytä uusi sähköposti sopimuksesta",
+            "Näytä Emman sähköposti eiliseltä"
+          ]
+        }
+      ],
+      "SectionName": "Checking email"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Vastaa 'Hei Anne, anteeksi että maksu myöhästyi'"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Soita hänelle töihin"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Soita hänelle FaceTimella töihin"
+          ]
+        }
+      ],
+      "SectionName": "Responding to email"
+    }
+  ]
+}

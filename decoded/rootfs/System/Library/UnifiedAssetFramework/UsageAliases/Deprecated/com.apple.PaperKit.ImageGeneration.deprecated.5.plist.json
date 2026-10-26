@@ -1,0 +1,1563 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.PaperKit.ImageGeneration",
+  "UsageAliasValues": {
+    "language_ar": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_ar_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_da": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_da_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_de": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_de_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_en": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized_embedding_preprocessor.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized_embedding_preprocessor.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized_embedding_preprocessor.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_en_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized_embedding_preprocessor.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized_embedding_preprocessor.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized_embedding_preprocessor.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_es": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_es_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_fi": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_fi_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_fr": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_fr_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_he": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_he_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_hi": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_hi_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_id": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_id_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_it": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_it_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_ja": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_ja_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_ko": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_ko_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_ms": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_ms_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_nb": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_nb_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_nl": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_nl_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_pl": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_pl_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_pt": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_pt_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_sv": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_sv_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_th": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_th_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_tr": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_tr_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_vi": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_vi_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_zh": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_zh_HK": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_zh_HK_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_zh_TW": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_zh_TW_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    },
+    "language_zh_useDefault_false": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_generation.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED"
+      },
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.safety_deny.input.visual_generation.safety.generic": "ENABLED",
+        "com.apple.fm.visual.imagescaler.upscaler.generic": "ENABLED",
+        "com.apple.fm.visual.understanding.conditioning.generic_alternate": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.misc_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.mm_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.prepubescent_safety_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.structural_integrity_customized.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.misc_safety.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v2.misc_safety.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

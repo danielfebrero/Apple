@@ -1,0 +1,19 @@
+{
+  "name": "AskSiriInMenuPreparation",
+  "signposts": [
+    {
+      "name": "AskSiriInMenuPreparation",
+      "subsystem": "com.apple.UIKit",
+      "category": "Menu",
+      "start": true,
+      "end": true,
+      "diagnostics": [
+        {
+          "trigger_threshold_duration_single": 0.1,
+          "gather_tailspin": true,
+          "report_spindump_main_thread": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "DEFAULT-OPTIONS": {
+    "Level": {
+      "Enable": "Default",
+      "Persist": "Default"
+    },
+    "Signpost-Scope": "Process",
+    "Signpost-Enabled": false,
+    "Signpost-Persisted": false
+  },
+  "AnalyticsTelemetry": {
+    "Signpost-Enabled": true,
+    "Signpost-Persisted": true
+  },
+  "AnalyticsServiceMaintenance": {
+    "Signpost-Enabled": true,
+    "Signpost-Persisted": true
+  },
+  "TTSMispronunciationPluginTelemetry": {
+    "Signpost-Enabled": true,
+    "Signpost-Persisted": true
+  },
+  "UniversalSuggestionsTelemetry": {
+    "Signpost-Enabled": true,
+    "Signpost-Persisted": true
+  }
+}

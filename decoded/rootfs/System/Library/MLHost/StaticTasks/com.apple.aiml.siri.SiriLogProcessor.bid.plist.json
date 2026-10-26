@@ -1,0 +1,16 @@
+{
+  "bundleIdentifier": "com.apple.aiml.siri.SiriLogProcessor",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 44550.0,
+      "minDurationBetweenInstances": 41850.0
+    },
+    "requiresExternalPower": false,
+    "requiresUserInactivity": true,
+    "requiresProtectionClass": "ClassC",
+    "priority": "Utility",
+    "groupName": "com.apple.aiml.siri.SiriLogProcessor",
+    "groupConcurrencyLimit": 1
+  },
+  "name": "com.apple.aiml.siri.SiriLogProcessor.bid"
+}

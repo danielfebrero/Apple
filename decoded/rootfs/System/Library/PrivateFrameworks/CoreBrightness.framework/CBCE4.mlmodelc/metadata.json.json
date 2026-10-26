@@ -1,0 +1,140 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Float32",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "CBCE4_Q0_output",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "CBCE4_Q1_output",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "CBCE4_Q2_output",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "CBCE4_Q3_output",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "CBCE4_Q4_output",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "strength_output",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "uncertainty",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "3.1",
+    "modelParameters": [],
+    "author": "PPOVX",
+    "specificationVersion": 4,
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.15",
+      "tvOS": "13.0",
+      "visionOS": "1.0",
+      "watchOS": "6.0",
+      "iOS": "13.0",
+      "macCatalyst": "13.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1... × 29",
+        "shapeRange": "[[1, -1], [29, 29]]",
+        "formattedType": "MultiArray (Float32 1 × 29)",
+        "type": "MultiArray",
+        "shape": "[1, 29]",
+        "name": "input",
+        "shortDescription": ""
+      }
+    ],
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-loabjnoynk",
+      "com.github.apple.coremltools.source": "tensorflow==2.2.0",
+      "com.github.apple.coremltools.version": "5.2.3"
+    },
+    "generatedClassName": "CBCE4",
+    "neuralNetworkLayerTypeHistogram": {
+      "Multiply": 4,
+      "ConcatND": 6,
+      "Copy": 1,
+      "InnerProduct": 15,
+      "AddBroadcastable": 10,
+      "ReduceMean": 2,
+      "SubtractBroadcastable": 1,
+      "ActivationReLU": 10,
+      "Add": 1,
+      "GetShape": 2,
+      "MaxBroadcastable": 9,
+      "ActivationSigmoid": 5,
+      "Unary": 1,
+      "LoadConstantND": 30,
+      "MinBroadcastable": 9,
+      "FillDynamic": 2,
+      "Slice": 18,
+      "Stack": 1,
+      "DivideBroadcastable": 1,
+      "MultiplyBroadcastable": 11,
+      "ActivationLinear": 1
+    },
+    "method": "predict"
+  }
+]

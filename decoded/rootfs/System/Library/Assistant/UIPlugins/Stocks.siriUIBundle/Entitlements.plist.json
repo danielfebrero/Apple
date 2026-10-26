@@ -1,0 +1,30 @@
+{
+  "application-identifier": "com.apple.stocks",
+  "com.apple.companionappd.connect.allow": true,
+  "com.apple.coretelephony.CTCarrierSettings.allow": true,
+  "com.apple.coretelephony.Identity.get": true,
+  "com.apple.developer.icloud-container-identifiers": [
+    "com.apple.stocks.private"
+  ],
+  "com.apple.developer.ubiquity-kvstore-identifier": "com.apple.stocks",
+  "com.apple.notificationcenter.widgetcontrollerhascontent": true,
+  "com.apple.private.canGetAppLinkInfo": true,
+  "com.apple.private.canModifyAppLinkPermissions": true,
+  "com.apple.private.cloudkit.serviceNameForContainerMap": {
+    "com.apple.stocks.private": "com.apple.stocks.private"
+  },
+  "com.apple.private.mobileinstall.xpc-services-enabled": true,
+  "com.apple.private.network.socket-delegate": true,
+  "com.apple.private.security.container-required": true,
+  "com.apple.private.security.system-application": true,
+  "com.apple.security.application-groups": [
+    "group.com.apple.stocks"
+  ],
+  "com.apple.security.exception.files.home-relative-path.read-write": [
+    "/Library/DeviceRegistry/",
+    "/Library/Preferences/"
+  ],
+  "com.apple.security.exception.mach-lookup.global-name": [
+    "com.apple.companionappd"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "PushSettings": {
+    "CellularPlanTransferTopic": "com.io3.entitlements.apns.iphoneplantransfer.1global"
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 8411,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "getPreferredRoamingNetworks",
+      "AuthenticateTrustFlag"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "DerPriFileVersion": "0.1.161",
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "Show4GSwitchWith5G": true,
+  "MVNOOverrides": {
+    "Configuration_UK": {
+      "OverrideConfiguration": {
+        "Show4GSwitchWith5G": false,
+        "Show5GSwitch": true,
+        "Enable5GAutoByDefault": true,
+        "Show5GWarningUnsupportedCarrier": false,
+        "ShowHighDataModeSwitch": true
+      },
+      "SupportedSIMs": [
+        "23425_GID1-547275554B3030656E"
+      ]
+    },
+    "Configuration_USA": {
+      "OverrideConfiguration": {
+        "Show5GWarningUnsupportedCarrier": false,
+        "Enable5GAutoByDefault": true,
+        "Show5GSwitch": true,
+        "ShowHighDataModeSwitch": true
+      },
+      "SupportedSIMs": [
+        "310300_GID1-547275554B3030656E"
+      ]
+    }
+  },
+  "PhoneAccountTransfer": {
+    "MaintenanceErrors": [
+      "21"
+    ]
+  }
+}

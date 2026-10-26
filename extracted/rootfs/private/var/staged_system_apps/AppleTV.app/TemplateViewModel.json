@@ -1,0 +1,122 @@
+{
+    "document": {
+        "verticalStackTemplate": {
+            "attributes": {
+                "animationType": "wipe"
+            },
+            "contextDataRef": {
+                "jsonFile": "verticalStackTemplateUpdate1"
+            },
+            "eventDescriptors": {
+                "refreshTTL": 500,
+            },
+            "children": [
+                {
+                    "horizontalCollection": {
+                        "id": "upNext",
+                        "attributes": {
+                            "decorationType": "gradientBackground"
+                        },
+                        "eventDescriptors": {
+                            "refreshTTL": 500,
+                            "playActivity": true,
+                        },
+                        "layout": {
+                            "gridStyle": "a"
+                        },
+                        "header": {
+                            "collectionHeader": {
+                                "children": {
+                                    "title": "Up Next"
+                                }
+                            }
+                        },
+                        "prototype": {
+                            "children": [
+                                {
+                                    "upNextLockup": {
+                                        "id": "proto",
+                                        "children": {
+                                            "img": {
+                                                "isTemplated": true,
+                                                "format": "jpeg",
+                                                "src": "https://is2-ssl.mzstatic.com/image/thumb/6xU5xjTtE3Qf6jiElfzNnw/{w}x{h}.{f}",
+                                                "layout": {
+                                                    "aspectRatio": 1.77
+                                                }
+                                            },
+                                            "title": "Little America",
+                                            "subtitle": "CONTINUE · S1, E2",
+                                            "downloadButton": {
+
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "collectionGroups": [
+                            {
+                                "collectionGroup": {
+                                    "id": "upNext_Group",
+                                    "children": [
+                                        {
+                                            "upNextLockup": {
+                                                "id": "1",
+                                                "attributes": {
+                                                    "supports-context-menu": "true",
+                                                    "type": "upNext",
+                                                    "accessibilityText": "CONTINUE   S1, E2"
+                                                },
+                                                "children": {
+                                                    "img": {
+                                                        "isTemplated": true,
+                                                        "format": "jpeg",
+                                                        "src": "https://is2-ssl.mzstatic.com/image/thumb/6xU5xjTtE3Qf6jiElfzNnw/{w}x{h}.{f}",
+                                                        "layout": {
+                                                            "aspectRatio": 1.77
+                                                        }
+                                                    },
+                                                    "title": "Little America",
+                                                    "subtitle": "CONTINUE · S1, E2",
+                                                    "downloadButton": {
+                                            
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "upNextLockup": {
+                                                "id": "2",
+                                                "attributes": {
+                                                    "supports-context-menu": "true",
+                                                    "type": "upNext",
+                                                    "accessibilityText": "CONTINUE   S1, E2"
+                                                },
+                                                "children": {
+                                                    "img": {
+                                                        "isTemplated": true,
+                                                        "format": "jpeg",
+                                                        "src": "https://is5-ssl.mzstatic.com/image/thumb/Video124/v4/a9/07/7a/a9077a4b-74b2-9636-dbd4-f84226e93ff9/pr_source.lsr/{w}x{h}.{f}",
+                                                        "layout": {
+                                                            "aspectRatio": 1.77
+                                                        }
+                                                    },
+                                                    "title": "Blade Runner 2049",
+                                                    "subtitle": "RECENTLY ADDED",
+                                                    "downloadButton": {
+                                            
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

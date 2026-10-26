@@ -1,0 +1,36 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.siri.assistant.assistantengine.language",
+  "UsageAliasValues": {
+    "yue-CN": {
+      "com.apple.if.planner": {
+        "ae.language": "yue",
+        "nlrouter.language": "yue",
+        "rg.language": "yue_CN"
+      },
+      "com.apple.if.planner.overrides": {
+        "ae.language": "yue",
+        "if.language": "yue_CN",
+        "nlrouter.locale": "yue_CN",
+        "rg.language": "yue_CN",
+        "rg.region": "CN"
+      },
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "yue_CN"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "yue_CN",
+        "attention.language": "yue_CN",
+        "nl.assistant": "enabled",
+        "nl.language": "yue_CN"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "yue_CN"
+      }
+    }
+  }
+}

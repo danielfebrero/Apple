@@ -1,0 +1,15 @@
+{
+  "CFBundleDevelopmentRegion": "$(DEVELOPMENT_LANGUAGE)",
+  "CFBundleDisplayName": "CoreLocationLearnedRouteAuthPromptPlugin",
+  "CFBundleExecutable": "$(EXECUTABLE_NAME)",
+  "CFBundleIdentifier": "$(PRODUCT_BUNDLE_IDENTIFIER)",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleName": "$(PRODUCT_NAME)",
+  "CFBundlePackageType": "XPC!",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleVersion": "2",
+  "NSExtension": {
+    "NSExtensionPointIdentifier": "com.apple.internal.springboard.cfusernotification",
+    "NSExtensionPrincipalClass": "CLLearnedRouteAuthPromptPluginViewController"
+  }
+}

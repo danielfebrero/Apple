@@ -1,0 +1,115 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "facepose and face attribute predictor",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "softmax_expression",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "softmax_smile",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "softmax_pose",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "softmax_eye",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "pred_facepose",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "1.1.1",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "storagePrecision" : "Mixed (Float32, Int8)",
+    "computePrecision" : "Float16",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "128",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "128",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 128 × 128)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image\/Placeholder"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "mldb_token" : "mldb-34ye6qlab9",
+      "com.github.apple.coremltools.source" : "tensorflow==1.14.0",
+      "com.github.apple.coremltools.version" : "4.0"
+    },
+    "generatedClassName" : "PADFacePoseModel",
+    "neuralNetworkLayerTypeHistogram" : {
+      "InnerProduct" : 11,
+      "Convolution" : 135,
+      "Transpose" : 1,
+      "ReshapeStatic" : 1,
+      "LoadConstantND" : 1,
+      "ActivationSigmoid" : 23,
+      "Squeeze" : 1,
+      "SoftmaxND" : 4,
+      "Multiply" : 23,
+      "Add" : 26,
+      "ActivationReLU" : 88,
+      "PoolingAverage" : 23
+    },
+    "method" : "predict"
+  }
+]

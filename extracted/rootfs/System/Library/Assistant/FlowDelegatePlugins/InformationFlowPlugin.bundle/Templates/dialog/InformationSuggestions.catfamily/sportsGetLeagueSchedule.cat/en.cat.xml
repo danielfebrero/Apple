@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en">
+  <phrases>
+    <first phrase="suggestionUtterance">
+        <!-- Try phrase using voc information. If voc information not available, fall back to phrase using the league name string variable -->
+        <text><var name="leagueVocName"/> schedule</text>
+        <text><var name="leagueName"/> schedule</text>
+    </first>
+  </phrases>
+  <first>
+    <dialog id="exampleUtterance"><phrase name="suggestionUtterance"/></dialog>
+  </first>
+</cat>

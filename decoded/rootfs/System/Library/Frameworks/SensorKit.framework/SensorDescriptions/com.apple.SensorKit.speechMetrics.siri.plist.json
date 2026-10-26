@@ -1,0 +1,17 @@
+{
+  "SampleClass": "SRSpeechMetrics",
+  "LegacySampleClass": "SRSpeechRecognitionShim",
+  "AuthorizationStoreCohort": "corespeechd",
+  "AuthorizationVersion": 170000,
+  "PublicEntitlementValue": "speech-metrics-siri",
+  "AuthService": "kTCCServiceSensorKitSpeechMetrics",
+  "RoundingIntervalSecs": 900,
+  "Name": "com.apple.SensorKit.speechMetrics.siri",
+  "LegacySampleClassLinkedBefore": 1114112,
+  "SRInfoPlistAuthCategory": "SRSensorUsageSpeechMetrics",
+  "SupportedPlatforms": {
+    "Phone": {
+      "Enabled": true
+    }
+  }
+}

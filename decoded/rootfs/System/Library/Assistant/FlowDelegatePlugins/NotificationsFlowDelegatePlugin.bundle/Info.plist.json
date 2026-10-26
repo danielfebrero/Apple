@@ -1,0 +1,97 @@
+{
+  "CFBundleName": "NotificationsFlowDelegatePlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "NotificationsFlowDelegatePlugin.NotificationsFlowDelegatePlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "NotificationsFlowDelegatePlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.NotificationsFlowDelegatePlugin",
+  "LSApplicationCategoryType": "",
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "notification"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "common_Notification",
+      "verb": "open",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Notification",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "read",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Notification",
+      "verb": "catchMeUp",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "catchMeUp",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Notification",
+      "verb": "delete",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Notification",
+      "verb": "repeat",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Notification",
+      "verb": "read",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Notification",
+      "verb": "checkExistence",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Notification",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.directInvocation.notifications.announceNotification"
+  ]
+}

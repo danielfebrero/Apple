@@ -1,0 +1,15 @@
+{
+  "AdHocServiceType": 2,
+  "AutoConfigureVettedAddresses": true,
+  "DisplayName": "SiriLocation",
+  "DuetIdentifiers": [
+    "com.apple.assistantd",
+    "com.apple.Siri"
+  ],
+  "Identifier": "com.apple.private.alloy.siri.location",
+  "LaunchMachServiceNotification": "com.apple.private.alloy.siri.location-idswake",
+  "ProtocolName": "com.apple.private.alloy",
+  "PushTopic": "com.apple.private.alloy.siri.location",
+  "ServiceName": "com.apple.private.alloy.siri.location",
+  "iCloudService": true
+}

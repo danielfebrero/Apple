@@ -1,0 +1,16 @@
+{
+  "artifact": {
+    "path": "ApplePay.Security.Features",
+    "type": "external"
+  },
+  "name": "AlarmActivitiesMatView",
+  "type": "biomeIncremental",
+  "update": {
+    "biomeListeners": [
+      {
+        "schedule": "live",
+        "stream": "Clock.Alarm"
+      }
+    ]
+  }
+}

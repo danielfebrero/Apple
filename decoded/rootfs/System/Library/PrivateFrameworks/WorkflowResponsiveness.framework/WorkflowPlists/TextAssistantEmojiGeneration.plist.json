@@ -1,0 +1,17 @@
+{
+  "name": "TextAssistantEmojiGeneration",
+  "contextual_telemetry": "YES",
+  "maximum_duration": 30.0,
+  "signposts": [
+    {
+      "start": true,
+      "end": true,
+      "subsystem": "com.apple.InputAnalytics",
+      "category": "TextAssistant",
+      "name": "EmojiGeneration",
+      "environment_field_names": [
+        "Result"
+      ]
+    }
+  ]
+}

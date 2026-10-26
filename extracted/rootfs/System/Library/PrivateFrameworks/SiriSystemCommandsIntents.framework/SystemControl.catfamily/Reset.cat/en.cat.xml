@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:4.0" id="SystemControl#Reset" locale="en">
+  <first>
+    <all condition="deviceState.isRealityDevice">
+      <dialog id="Item_Vision1">You can do that in Transfer or Reset Apple Vision Pro settings.</dialog>
+      <dialog id="Item_Vision2">To simply restart your Apple Vision Pro, just say ‘Restart my Apple Vision Pro'.</dialog>
+    </all>
+    <all condition="deviceState.isPhone">
+      <dialog id="Item_Phone1">You can do that in Transfer or Reset iPhone settings.</dialog>
+      <dialog id="Item_Phone2">To simply restart your iPhone, just say ‘Restart my iPhone’.</dialog>
+    </all>
+    <all condition="deviceState.isPad">
+      <dialog id="Item_Pad1">You can do that in Transfer or Reset iPad settings.</dialog>
+      <dialog id="Item_Pad2">To simply restart your iPad, just say ‘Restart my iPad’.</dialog>
+    </all>
+    <all condition="deviceState.isMac">
+      <dialog id="Item_Mac1">You can do that in Transfer or Reset settings.</dialog>
+      <dialog id="Item_Mac2">To restart your Mac, choose ‘Restart…’ from the Apple menu.</dialog>
+    </all>
+    <all condition="deviceState.isAppleTV">
+      <dialog id="Item_TV">You can do that in Transfer settings.</dialog>
+    </all>
+    <all condition="deviceState.isWatch">
+      <dialog id="Item_Watch">You can do that in the Watch app on your iPhone.</dialog>
+    </all>
+    <dialog id="Item">I'm sorry, I can't do that for you.</dialog>
+  </first>
+</cat>

@@ -1,0 +1,3026 @@
+{
+  "converted_patterns" : [
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (mach{e}|machst du) alle wecker aus {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:mach(?:e)?|machst\\s+du)\\s+alle\\s+wecker\\s+aus(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "883aa6f0-4daf-53ee-8b86-4f708ac4a1b7"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (mach{e}|machst du) {den|meinen} wecker aus {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:mach(?:e)?|machst\\s+du)\\s+(?:(?:den|meinen)\\s+)?wecker\\s+aus(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "24fd4a49-6326-5577-95e2-6f4c955e8ea5"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (stell{e|st du}|schalt{e|st du}) alle wecker (aus|ab) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:stell(?:(?:e|st\\s+du))?|schalt(?:(?:e|st\\s+du))?)\\s+alle\\s+wecker\\s+(?:aus|ab)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "f68f905a-a400-55c1-b4be-979af024d196"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (stell{e|st du}|schalt{e|st du}) {den|meinen} wecker (aus|ab) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:stell(?:(?:e|st\\s+du))?|schalt(?:(?:e|st\\s+du))?)\\s+(?:(?:den|meinen)\\s+)?wecker\\s+(?:aus|ab)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "010382d8-d032-54eb-ab32-2b1f2befebd8"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (stopp|deaktivier){e|st du} alle wecker",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:stopp|deaktivier)(?:(?:e|st\\s+du))?\\s+alle\\s+wecker$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b17e223d-6595-5192-a5fd-50d399d5a160"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (stopp|deaktivier){e|st du} {den|meinen} wecker",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:stopp|deaktivier)(?:(?:e|st\\s+du))?\\s+(?:(?:den|meinen)\\s+)?wecker$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "664aadd6-ebbe-5b58-aa62-ae65a03736ae"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} (time:time) wecker {{er}stellen}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<time>(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)\\s+wecker(?:\\s+(?:er)?stellen)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "69074978-1bb3-5b3d-a79f-54e47b984b5a"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} stell{e|st du} {mir} {einen|den} {neuen} wecker (für|auf|um) (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?stell(?:(?:e|st\\s+du))?\\s+(?:mir\\s+)?(?:(?:einen|den)\\s+)?(?:neuen\\s+)?wecker\\s+(?:für|auf|um)(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b6d0d178-8d23-511a-9890-472d58e6974b"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} wecker {für|um|auf} (time:time) {{er}stellen}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wecker(?:\\s+(?:für|um|auf))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)(?:\\s+(?:er)?stellen)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "eb266231-83ee-55c0-8662-d1e22655e71a"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} weck{e|st du} mich um (time:time) (morgens|früh|vormittags|in der früh) {auf}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?weck(?:(?:e|st\\s+du))?\\s+mich\\s+um(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)\\s+(?:morgens|früh|vormittags|in\\s+der\\s+früh)(?:\\s+auf)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "9c5b56e7-0ff4-5c88-a97e-4e002198fbcb"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} weck{e|st du} mich um (time:time) {auf}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?weck(?:(?:e|st\\s+du))?\\s+mich\\s+um(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)(?:\\s+auf)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b80305a0-0872-5562-8d02-137d4233969c"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {bitte} (stell|mach){e|st du} {einen|den} wecker (auf|für|um) (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:stell|mach)(?:(?:e|st\\s+du))?\\s+(?:(?:einen|den)\\s+)?wecker\\s+(?:auf|für|um)(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "985f863d-3c58-5e98-a1e5-8a01e40f1ff3"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {bitte} (stell|mach){e|st du} {einen|den} wecker (auf|für|um) (time:time) (morgens|früh|vormittags|in der früh)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:stell|mach)(?:(?:e|st\\s+du))?\\s+(?:(?:einen|den)\\s+)?wecker\\s+(?:auf|für|um)(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)\\s+(?:morgens|früh|vormittags|in\\s+der\\s+früh)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "446e355c-9d13-5b8c-9e12-63ae7b5fda96"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {bitte} (stell|mach){e} {einen|den} wecker (auf|für|um) (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:stell|mach)(?:e)?\\s+(?:(?:einen|den)\\s+)?wecker\\s+(?:auf|für|um)(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "05bd6a40-b8b0-5816-a579-399a683ac2d8"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {bitte} weck{e|st du} mich um (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?weck(?:(?:e|st\\s+du))?\\s+mich\\s+um(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "878ea1ca-d9fd-555f-aca6-b6690db6855b"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {bitte} {kannst du|könntest du|würdest du} mich um (time:time) wecken",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:kannst\\s+du|könntest\\s+du|würdest\\s+du)\\s+)?mich\\s+um(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)\\s+wecken$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "e9c041cc-bb74-588e-9c8c-5c9631ff0733"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {er}stell{e|st du} {mir} {einen} wecker (für|auf|um) (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:er)?stell(?:(?:e|st\\s+du))?\\s+(?:mir\\s+)?(?:einen\\s+)?wecker\\s+(?:für|auf|um)(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "bc6d374e-a728-5cc9-9098-c8d3ef16a875"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {er}stell{e|st du} {mir} {einen} wecker (für|auf|um) (time:time) (morgens|früh|vormittags|in der früh)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:er)?stell(?:(?:e|st\\s+du))?\\s+(?:mir\\s+)?(?:einen\\s+)?wecker\\s+(?:für|auf|um)(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)\\s+(?:morgens|früh|vormittags|in\\s+der\\s+früh)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b9b4e531-66f4-5c12-9211-c44f9d8aefb9"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {kannst du|könntest du|würdest du} alle wecker (ausmachen|(ab|aus)stellen|(ab|aus)schalten|stoppen|deaktivieren) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:kannst\\s+du|könntest\\s+du|würdest\\s+du)\\s+)?alle\\s+wecker\\s+(?:ausmachen|(?:ab|aus)stellen|(?:ab|aus)schalten|stoppen|deaktivieren)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "7f3f262b-d074-5879-b1e4-2e3833586c4c"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {kannst du|könntest du|würdest du} {den|meinen} wecker (ausmachen|(ab|aus)stellen|(ab|aus)schalten|stoppen|deaktivieren) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:kannst\\s+du|könntest\\s+du|würdest\\s+du)\\s+)?(?:(?:den|meinen)\\s+)?wecker\\s+(?:ausmachen|(?:ab|aus)stellen|(?:ab|aus)schalten|stoppen|deaktivieren)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4b50182a-ce19-5faf-bac5-15f404787b1e"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {kannst du|könntest du|würdest du} {einen|den} wecker (für|auf|um) (time:time) stellen",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:kannst\\s+du|könntest\\s+du|würdest\\s+du)\\s+)?(?:(?:einen|den)\\s+)?wecker\\s+(?:für|auf|um)(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)\\s+stellen$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "7d77ef10-c81a-5a66-b393-d00f982c7c8d"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {schalte} {bitte} alle wecker aus",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:schalte\\s+)?(?:bitte\\s+)?alle\\s+wecker\\s+aus$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "9c5b263d-db0d-53d9-a58d-2c5257d5657a"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {stell{e}} {bitte} {den|einen} wecker {auf} (time:time) {uhr} {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:stell(?:e)?\\s+)?(?:bitte\\s+)?(?:(?:den|einen)\\s+)?wecker(?:\\s+auf)?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)(?:\\s+uhr)?(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "f87dfe61-e00e-5e7d-91b7-6a22651aa2fd"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} (contact:emergencyServices) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<contact>(?P<contact__emergencyServices>(?:hot|help)(?:\\s+)?line\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|110|112|114|144|air glacier|ambulanz|den notruf|die feuerwehr|die notrufnummer|die polizei|die rettung|die sanität|ein krankenwagen|eine ambulanz|einen krankenwagen|feuerwehr|gift\\s+(?:hot|help)(?:\\s+)?line|gift\\s+hilf(?:(?:e|s))?(?:\\s+)?telefon|giftinfo|giftnotdienst|giftnotruf|giftnotrufdienst|giftnotruf(?:\\s+)?service|giftnotruf(?:\\s+)?zentrale|giftnottelefon|gift(?:\\s+)?zentrale|hilfetelefon gewalt gegen frauen|hotline\\s+(?:für|gegen)\\s+(?:opfer\\s+)?häuslicher\\s+gewalt|internationale notrufnummer|krankenwagen|notdienst\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|notruf|notrufnummer|opferhilfe\\s+(?:in\\s+der\\s+)?schweiz|polizei|rega|rega rettungsflugwacht|rettungswacht|sanität|schweizerische rettungswacht|sos|telefonseelsorge|tox\\s+info(?:\\s+Suisse)?))(?:\\s+bitte)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d5514749-377a-5e13-9c52-37f3e74ca59d"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} (ruf{e|st du}|klingel{e|st du}|läut{e|st du}) {bitte} {bei} mein{e|en|er|em} (contact:*{1,3}) an",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:ruf(?:(?:e|st\\s+du))?|klingel(?:(?:e|st\\s+du))?|läut(?:(?:e|st\\s+du))?)\\s+(?:bitte\\s+)?(?:bei\\s+)?mein(?:(?:e|en|er|em))?\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+an$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "137c2d6f-bfcd-543b-b6d6-a11fc48dd82f"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{hey} {siri} (situation:situation) ruf{e|st du} {mir} {bitte} {die nummer von dem|die nummer von der|den|die|das} (contact:emergencyServices) {an}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<situation>(?P<situation__situation>eine schlägerei in einer bar ist im gange|er vergewaltigt mich gerade|hilf mir|hilfe hilfe|ich blute|ich brauche sofort medizinische hilfe|ich brauche sofortige medizinische hilfe|ich glaube ich brauche medizinische hilfe|ich glaube ich habe mich vergiftet|ich habe atemprobleme|ich habe eine überdosis|ich habe einen herzinfarkt|ich habe einen krampfanfall|ich habe einen unfall|ich habe mir den arm gebrochen|ich habe starke schmerzen|ich hatte einen autounfall|ich hatte gerade einen unfall|ich kann meine mutter nicht aufwecken|ich kann meine tochter nicht aufwecken|ich kann meinen sohn nicht aufwecken|ich kann meinen vater nicht aufwecken|ich sterbe|ich wurde angeschossen|ich wurde gerade überfallen|ich wurde letzte nacht vergewaltigt|ich wurde vergewaltigt ich brauche hilfe|ich wurde vergewaltigt was kann ich machen|jemand hat eine waffe auf mich gerichtet|jemand ist hinter mir her|jemand liegt bewusstlos auf der straße|jemand\\s+wird\\s+(?:gerade\\s+)?vergewaltigt|mein auto hat feuer gefangen|mein haus brennt|mein hund wurde angegriffen|mein vater hat atemprobleme|meine frau wurde angeschossen|meine mutter ist ohnmächtig geworden|mir ist schwindelig|oh mein gott er hat jemanden überfahren|vergewaltigung|zwei typen streiten sich))\\s+ruf(?:(?:e|st\\s+du))?(?:\\s+mir)?(?:\\s+bitte)?(?:\\s+(?:die\\s+nummer\\s+von\\s+dem|die\\s+nummer\\s+von\\s+der|den|die|das))?(?P<contact>(?P<contact__emergencyServices>\\s+(?:hot|help)(?:\\s+)?line\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+110|\\s+112|\\s+114|\\s+144|\\s+air glacier|\\s+ambulanz|\\s+den notruf|\\s+die feuerwehr|\\s+die notrufnummer|\\s+die polizei|\\s+die rettung|\\s+die sanität|\\s+ein krankenwagen|\\s+eine ambulanz|\\s+einen krankenwagen|\\s+feuerwehr|\\s+gift\\s+(?:hot|help)(?:\\s+)?line|\\s+gift\\s+hilf(?:(?:e|s))?(?:\\s+)?telefon|\\s+giftinfo|\\s+giftnotdienst|\\s+giftnotruf|\\s+giftnotrufdienst|\\s+giftnotruf(?:\\s+)?service|\\s+giftnotruf(?:\\s+)?zentrale|\\s+giftnottelefon|\\s+gift(?:\\s+)?zentrale|\\s+hilfetelefon gewalt gegen frauen|\\s+hotline\\s+(?:für|gegen)\\s+(?:opfer\\s+)?häuslicher\\s+gewalt|\\s+internationale notrufnummer|\\s+krankenwagen|\\s+notdienst\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+notruf|\\s+notrufnummer|\\s+opferhilfe\\s+(?:in\\s+der\\s+)?schweiz|\\s+polizei|\\s+rega|\\s+rega rettungsflugwacht|\\s+rettungswacht|\\s+sanität|\\s+schweizerische rettungswacht|\\s+sos|\\s+telefonseelsorge|\\s+tox\\s+info(?:\\s+Suisse)?))(?:\\s+an)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "095687cb-bcc9-51a9-aced-b6cecf44f904"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{hey} {siri} (situation:situation) {du musst|kannst du|könntest du|würdest du} {bitte} (contact:emergencyServices) anrufen {{ich brauche} hilfe}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<situation>(?P<situation__situation>eine schlägerei in einer bar ist im gange|er vergewaltigt mich gerade|hilf mir|hilfe hilfe|ich blute|ich brauche sofort medizinische hilfe|ich brauche sofortige medizinische hilfe|ich glaube ich brauche medizinische hilfe|ich glaube ich habe mich vergiftet|ich habe atemprobleme|ich habe eine überdosis|ich habe einen herzinfarkt|ich habe einen krampfanfall|ich habe einen unfall|ich habe mir den arm gebrochen|ich habe starke schmerzen|ich hatte einen autounfall|ich hatte gerade einen unfall|ich kann meine mutter nicht aufwecken|ich kann meine tochter nicht aufwecken|ich kann meinen sohn nicht aufwecken|ich kann meinen vater nicht aufwecken|ich sterbe|ich wurde angeschossen|ich wurde gerade überfallen|ich wurde letzte nacht vergewaltigt|ich wurde vergewaltigt ich brauche hilfe|ich wurde vergewaltigt was kann ich machen|jemand hat eine waffe auf mich gerichtet|jemand ist hinter mir her|jemand liegt bewusstlos auf der straße|jemand\\s+wird\\s+(?:gerade\\s+)?vergewaltigt|mein auto hat feuer gefangen|mein haus brennt|mein hund wurde angegriffen|mein vater hat atemprobleme|meine frau wurde angeschossen|meine mutter ist ohnmächtig geworden|mir ist schwindelig|oh mein gott er hat jemanden überfahren|vergewaltigung|zwei typen streiten sich))(?:\\s+(?:du\\s+musst|kannst\\s+du|könntest\\s+du|würdest\\s+du))?(?:\\s+bitte)?(?P<contact>(?P<contact__emergencyServices>\\s+(?:hot|help)(?:\\s+)?line\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+110|\\s+112|\\s+114|\\s+144|\\s+air glacier|\\s+ambulanz|\\s+den notruf|\\s+die feuerwehr|\\s+die notrufnummer|\\s+die polizei|\\s+die rettung|\\s+die sanität|\\s+ein krankenwagen|\\s+eine ambulanz|\\s+einen krankenwagen|\\s+feuerwehr|\\s+gift\\s+(?:hot|help)(?:\\s+)?line|\\s+gift\\s+hilf(?:(?:e|s))?(?:\\s+)?telefon|\\s+giftinfo|\\s+giftnotdienst|\\s+giftnotruf|\\s+giftnotrufdienst|\\s+giftnotruf(?:\\s+)?service|\\s+giftnotruf(?:\\s+)?zentrale|\\s+giftnottelefon|\\s+gift(?:\\s+)?zentrale|\\s+hilfetelefon gewalt gegen frauen|\\s+hotline\\s+(?:für|gegen)\\s+(?:opfer\\s+)?häuslicher\\s+gewalt|\\s+internationale notrufnummer|\\s+krankenwagen|\\s+notdienst\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+notruf|\\s+notrufnummer|\\s+opferhilfe\\s+(?:in\\s+der\\s+)?schweiz|\\s+polizei|\\s+rega|\\s+rega rettungsflugwacht|\\s+rettungswacht|\\s+sanität|\\s+schweizerische rettungswacht|\\s+sos|\\s+telefonseelsorge|\\s+tox\\s+info(?:\\s+Suisse)?))\\s+anrufen(?:\\s+(?:ich\\s+brauche\\s+)?hilfe)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8d978c40-2695-5aee-8071-5662ea4e7f08"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} ich brauche (contact:emergencyServices) ruf{e} {bitte} {dort} an",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?ich\\s+brauche(?P<contact>(?P<contact__emergencyServices>\\s+(?:hot|help)(?:\\s+)?line\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+110|\\s+112|\\s+114|\\s+144|\\s+air glacier|\\s+ambulanz|\\s+den notruf|\\s+die feuerwehr|\\s+die notrufnummer|\\s+die polizei|\\s+die rettung|\\s+die sanität|\\s+ein krankenwagen|\\s+eine ambulanz|\\s+einen krankenwagen|\\s+feuerwehr|\\s+gift\\s+(?:hot|help)(?:\\s+)?line|\\s+gift\\s+hilf(?:(?:e|s))?(?:\\s+)?telefon|\\s+giftinfo|\\s+giftnotdienst|\\s+giftnotruf|\\s+giftnotrufdienst|\\s+giftnotruf(?:\\s+)?service|\\s+giftnotruf(?:\\s+)?zentrale|\\s+giftnottelefon|\\s+gift(?:\\s+)?zentrale|\\s+hilfetelefon gewalt gegen frauen|\\s+hotline\\s+(?:für|gegen)\\s+(?:opfer\\s+)?häuslicher\\s+gewalt|\\s+internationale notrufnummer|\\s+krankenwagen|\\s+notdienst\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+notruf|\\s+notrufnummer|\\s+opferhilfe\\s+(?:in\\s+der\\s+)?schweiz|\\s+polizei|\\s+rega|\\s+rega rettungsflugwacht|\\s+rettungswacht|\\s+sanität|\\s+schweizerische rettungswacht|\\s+sos|\\s+telefonseelsorge|\\s+tox\\s+info(?:\\s+Suisse)?))\\s+ruf(?:e)?\\s+(?:bitte\\s+)?(?:dort\\s+)?an$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "540d473c-3a59-58fb-8321-3445c30457eb"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} ich brauch{e} {die|den|das|ein|einen|eine} (contact:emergencyServices) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?ich\\s+brauch(?:e)?(?:\\s+(?:die|den|das|ein|einen|eine))?(?P<contact>(?P<contact__emergencyServices>\\s+(?:hot|help)(?:\\s+)?line\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+110|\\s+112|\\s+114|\\s+144|\\s+air glacier|\\s+ambulanz|\\s+den notruf|\\s+die feuerwehr|\\s+die notrufnummer|\\s+die polizei|\\s+die rettung|\\s+die sanität|\\s+ein krankenwagen|\\s+eine ambulanz|\\s+einen krankenwagen|\\s+feuerwehr|\\s+gift\\s+(?:hot|help)(?:\\s+)?line|\\s+gift\\s+hilf(?:(?:e|s))?(?:\\s+)?telefon|\\s+giftinfo|\\s+giftnotdienst|\\s+giftnotruf|\\s+giftnotrufdienst|\\s+giftnotruf(?:\\s+)?service|\\s+giftnotruf(?:\\s+)?zentrale|\\s+giftnottelefon|\\s+gift(?:\\s+)?zentrale|\\s+hilfetelefon gewalt gegen frauen|\\s+hotline\\s+(?:für|gegen)\\s+(?:opfer\\s+)?häuslicher\\s+gewalt|\\s+internationale notrufnummer|\\s+krankenwagen|\\s+notdienst\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+notruf|\\s+notrufnummer|\\s+opferhilfe\\s+(?:in\\s+der\\s+)?schweiz|\\s+polizei|\\s+rega|\\s+rega rettungsflugwacht|\\s+rettungswacht|\\s+sanität|\\s+schweizerische rettungswacht|\\s+sos|\\s+telefonseelsorge|\\s+tox\\s+info(?:\\s+Suisse)?))(?:\\s+bitte)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "88012351-f504-5766-af04-429f5b4a30ed"
+    },
+    {
+      "action" : "end_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} nein",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?nein$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b516bafb-54a3-5834-b751-d8e0fe8b967c"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} ruf{e|st du} {mir} {bitte} {die nummer von} {dem|der|den|die} (contact:emergencyServices) {an}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?ruf(?:(?:e|st\\s+du))?(?:\\s+mir)?(?:\\s+bitte)?(?:\\s+die\\s+nummer\\s+von)?(?:\\s+(?:dem|der|den|die))?(?P<contact>(?P<contact__emergencyServices>\\s+(?:hot|help)(?:\\s+)?line\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+110|\\s+112|\\s+114|\\s+144|\\s+air glacier|\\s+ambulanz|\\s+den notruf|\\s+die feuerwehr|\\s+die notrufnummer|\\s+die polizei|\\s+die rettung|\\s+die sanität|\\s+ein krankenwagen|\\s+eine ambulanz|\\s+einen krankenwagen|\\s+feuerwehr|\\s+gift\\s+(?:hot|help)(?:\\s+)?line|\\s+gift\\s+hilf(?:(?:e|s))?(?:\\s+)?telefon|\\s+giftinfo|\\s+giftnotdienst|\\s+giftnotruf|\\s+giftnotrufdienst|\\s+giftnotruf(?:\\s+)?service|\\s+giftnotruf(?:\\s+)?zentrale|\\s+giftnottelefon|\\s+gift(?:\\s+)?zentrale|\\s+hilfetelefon gewalt gegen frauen|\\s+hotline\\s+(?:für|gegen)\\s+(?:opfer\\s+)?häuslicher\\s+gewalt|\\s+internationale notrufnummer|\\s+krankenwagen|\\s+notdienst\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+notruf|\\s+notrufnummer|\\s+opferhilfe\\s+(?:in\\s+der\\s+)?schweiz|\\s+polizei|\\s+rega|\\s+rega rettungsflugwacht|\\s+rettungswacht|\\s+sanität|\\s+schweizerische rettungswacht|\\s+sos|\\s+telefonseelsorge|\\s+tox\\s+info(?:\\s+Suisse)?))(?:\\s+an)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e5c6ec17-b598-5ba3-9bcb-140d9ef15671"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} wähl{e|st du} {mir} {bitte} {die nummer von} {dem|der|den|die} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wähl(?:(?:e|st\\s+du))?(?:\\s+mir)?(?:\\s+bitte)?(?:\\s+die\\s+nummer\\s+von)?(?:\\s+(?:dem|der|den|die))?(?P<contact>(?P<contact__emergencyServices>\\s+(?:hot|help)(?:\\s+)?line\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+110|\\s+112|\\s+114|\\s+144|\\s+air glacier|\\s+ambulanz|\\s+den notruf|\\s+die feuerwehr|\\s+die notrufnummer|\\s+die polizei|\\s+die rettung|\\s+die sanität|\\s+ein krankenwagen|\\s+eine ambulanz|\\s+einen krankenwagen|\\s+feuerwehr|\\s+gift\\s+(?:hot|help)(?:\\s+)?line|\\s+gift\\s+hilf(?:(?:e|s))?(?:\\s+)?telefon|\\s+giftinfo|\\s+giftnotdienst|\\s+giftnotruf|\\s+giftnotrufdienst|\\s+giftnotruf(?:\\s+)?service|\\s+giftnotruf(?:\\s+)?zentrale|\\s+giftnottelefon|\\s+gift(?:\\s+)?zentrale|\\s+hilfetelefon gewalt gegen frauen|\\s+hotline\\s+(?:für|gegen)\\s+(?:opfer\\s+)?häuslicher\\s+gewalt|\\s+internationale notrufnummer|\\s+krankenwagen|\\s+notdienst\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|\\s+notruf|\\s+notrufnummer|\\s+opferhilfe\\s+(?:in\\s+der\\s+)?schweiz|\\s+polizei|\\s+rega|\\s+rega rettungsflugwacht|\\s+rettungswacht|\\s+sanität|\\s+schweizerische rettungswacht|\\s+sos|\\s+telefonseelsorge|\\s+tox\\s+info(?:\\s+Suisse)?))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7c2a978f-2f60-5ce6-8e02-e47a74cfa45d"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}",
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {bitte} (contact:*{1,3}) (anrufen|anklingeln|anläuten)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:bitte\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+(?:anrufen|anklingeln|anläuten)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "571f7c14-7815-5010-a550-a1e2893a7499"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}",
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {bitte} mit (contact:*{1,3}) verbinden",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:bitte\\s+)?mit\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+verbinden$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "77432c35-24bd-5609-9e3f-a6d64f6c906c"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}",
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {bitte} {bei} mein{e|en|er|em} (contact:*{1,3}) an(rufen|klingeln|läuten)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:bitte\\s+)?(?:bei\\s+)?mein(?:(?:e|en|er|em))?\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+an(?:rufen|klingeln|läuten)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ea23f6d1-cb1e-5723-918e-4da8fa00f833"
+    },
+    {
+      "action" : "end_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} (auflegen|anruf ablehnen) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:auflegen|anruf\\s+ablehnen)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "555cb255-d61e-563f-abd5-6a5a00f0858d"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} (nehme|nimm) {das|den|meinen} (anruf|telefonat|gespräch) an",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:nehme|nimm)\\s+(?:(?:das|den|meinen)\\s+)?(?:anruf|telefonat|gespräch)\\s+an$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b2ba9303-2c46-5194-9078-56f8191300c3"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} (rangehen|geh{e} ran)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:rangehen|geh(?:e)?\\s+ran)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "71e3e243-cf60-5c00-aae4-0f1b64670739"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} {bitte} (ruf{e|st du}|klingel{st du}|läute{st du}) (contact:*{1,3}) an",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:ruf(?:(?:e|st\\s+du))?|klingel(?:st\\s+du)?|läute(?:st\\s+du)?)\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+an$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6ad06c62-137d-5509-ae89-6df572c43895"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} anruf ((an|entgegen)nehmen|akzeptieren) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?anruf\\s+(?:(?:an|entgegen)nehmen|akzeptieren)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "672ba224-7972-5df8-93d9-2104dc521451"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} {bitte} ruf (contact:*{1,5}) {an} {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?ruf\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})(?:\\s+an)?(?:\\s+bitte)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "23085ae5-2a79-5507-8cf3-1ea6899b6506"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} {bitte} telefonier{e|en|st du} {mit} (contact:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?telefonier(?:(?:e|en|st\\s+du))?\\s+(?:mit\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d434b6c3-418a-5bb8-845e-d110fc4d6abf"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} {bitte} verbinde{st du} mich mit (contact:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?verbinde(?:st\\s+du)?\\s+mich\\s+mit\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "566fe62d-6c9b-5eae-a9f5-57fd89f61ce0"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} {den|das} (anruf|telefonat|gespräch) (annehmen|akzeptieren|entgegennehmen|beantworten)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:den|das)\\s+)?(?:anruf|telefonat|gespräch)\\s+(?:annehmen|akzeptieren|entgegennehmen|beantworten)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "553f302f-c7c4-5e14-90ed-955d1e3de443"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{hey} {siri} {du musst|kannst du|könntest du|würdest du} (contact:emergencyServices) anrufen (situation:situation) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:du\\s+musst|kannst\\s+du|könntest\\s+du|würdest\\s+du)\\s+)?(?P<contact>(?P<contact__emergencyServices>(?:hot|help)(?:\\s+)?line\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|110|112|114|144|air glacier|ambulanz|den notruf|die feuerwehr|die notrufnummer|die polizei|die rettung|die sanität|ein krankenwagen|eine ambulanz|einen krankenwagen|feuerwehr|gift\\s+(?:hot|help)(?:\\s+)?line|gift\\s+hilf(?:(?:e|s))?(?:\\s+)?telefon|giftinfo|giftnotdienst|giftnotruf|giftnotrufdienst|giftnotruf(?:\\s+)?service|giftnotruf(?:\\s+)?zentrale|giftnottelefon|gift(?:\\s+)?zentrale|hilfetelefon gewalt gegen frauen|hotline\\s+(?:für|gegen)\\s+(?:opfer\\s+)?häuslicher\\s+gewalt|internationale notrufnummer|krankenwagen|notdienst\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|notruf|notrufnummer|opferhilfe\\s+(?:in\\s+der\\s+)?schweiz|polizei|rega|rega rettungsflugwacht|rettungswacht|sanität|schweizerische rettungswacht|sos|telefonseelsorge|tox\\s+info(?:\\s+Suisse)?))\\s+anrufen(?P<situation>(?P<situation__situation>\\s+eine schlägerei in einer bar ist im gange|\\s+er vergewaltigt mich gerade|\\s+hilf mir|\\s+hilfe hilfe|\\s+ich blute|\\s+ich brauche sofort medizinische hilfe|\\s+ich brauche sofortige medizinische hilfe|\\s+ich glaube ich brauche medizinische hilfe|\\s+ich glaube ich habe mich vergiftet|\\s+ich habe atemprobleme|\\s+ich habe eine überdosis|\\s+ich habe einen herzinfarkt|\\s+ich habe einen krampfanfall|\\s+ich habe einen unfall|\\s+ich habe mir den arm gebrochen|\\s+ich habe starke schmerzen|\\s+ich hatte einen autounfall|\\s+ich hatte gerade einen unfall|\\s+ich kann meine mutter nicht aufwecken|\\s+ich kann meine tochter nicht aufwecken|\\s+ich kann meinen sohn nicht aufwecken|\\s+ich kann meinen vater nicht aufwecken|\\s+ich sterbe|\\s+ich wurde angeschossen|\\s+ich wurde gerade überfallen|\\s+ich wurde letzte nacht vergewaltigt|\\s+ich wurde vergewaltigt ich brauche hilfe|\\s+ich wurde vergewaltigt was kann ich machen|\\s+jemand hat eine waffe auf mich gerichtet|\\s+jemand ist hinter mir her|\\s+jemand liegt bewusstlos auf der straße|\\s+jemand\\s+wird\\s+(?:gerade\\s+)?vergewaltigt|\\s+mein auto hat feuer gefangen|\\s+mein haus brennt|\\s+mein hund wurde angegriffen|\\s+mein vater hat atemprobleme|\\s+meine frau wurde angeschossen|\\s+meine mutter ist ohnmächtig geworden|\\s+mir ist schwindelig|\\s+oh mein gott er hat jemanden überfahren|\\s+vergewaltigung|\\s+zwei typen streiten sich))(?:\\s+bitte)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d2526233-4bab-5f80-8dcb-718d829f2a20"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} {ich muss|du musst|kannst du|könntest du|würdest du} {bitte} (contact:emergencyServices) anrufen {{ich brauche} hilfe}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:ich\\s+muss|du\\s+musst|kannst\\s+du|könntest\\s+du|würdest\\s+du)\\s+)?(?:bitte\\s+)?(?P<contact>(?P<contact__emergencyServices>(?:hot|help)(?:\\s+)?line\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|110|112|114|144|air glacier|ambulanz|den notruf|die feuerwehr|die notrufnummer|die polizei|die rettung|die sanität|ein krankenwagen|eine ambulanz|einen krankenwagen|feuerwehr|gift\\s+(?:hot|help)(?:\\s+)?line|gift\\s+hilf(?:(?:e|s))?(?:\\s+)?telefon|giftinfo|giftnotdienst|giftnotruf|giftnotrufdienst|giftnotruf(?:\\s+)?service|giftnotruf(?:\\s+)?zentrale|giftnottelefon|gift(?:\\s+)?zentrale|hilfetelefon gewalt gegen frauen|hotline\\s+(?:für|gegen)\\s+(?:opfer\\s+)?häuslicher\\s+gewalt|internationale notrufnummer|krankenwagen|notdienst\\s+(?:(?:für|gegen|bei)\\s+)?(?:vergiftung|gift|giftiges|giftigem)|notruf|notrufnummer|opferhilfe\\s+(?:in\\s+der\\s+)?schweiz|polizei|rega|rega rettungsflugwacht|rettungswacht|sanität|schweizerische rettungswacht|sos|telefonseelsorge|tox\\s+info(?:\\s+Suisse)?))\\s+anrufen(?:\\s+(?:ich\\s+brauche\\s+)?hilfe)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e98c8582-4df8-54a5-9751-619938fc696e"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser"
+      },
+      "pattern" : "{hey} {siri} {bitte} (ruf|wähle) {mein|unser|den} (contact:emergency_contact_parser) an {bitte}",
+      "priority" : 35,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:ruf|wähle)\\s+(?:(?:mein|unser|den)\\s+)?(?P<contact>(?P<contact__emergency_contact_parser>notfallkontakt))\\s+an(?:\\s+bitte)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c05b08b4-813d-54e3-8e68-dac9f8b14dce"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}",
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {bitte} (contact:*{1,3}) ({via|per|über|mit} (lautsprecher|freisprech(er|en|anlage))|auf laut) an(rufen|klingeln|läuten)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:bitte\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})(?:\\s+(?:(?:via|per|über|mit)\\s+)?(?:lautsprecher|freisprech(?:er|en|anlage))|\\s+auf\\s+laut)\\s+an(?:rufen|klingeln|läuten)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a5de496e-1f4f-50cb-a998-4976b961706b"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}",
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {bitte} (telefon(at|gespräch)|gespräch|anruf) {beginnen|starten|führen|tätigen|machen} {mit} (contact:*{1,3}) ({via|per|über|mit} (lautsprecher|freisprech(er|en|anlage))|auf laut)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:bitte\\s+)?(?:telefon(?:at|gespräch)|gespräch|anruf)\\s+(?:(?:beginnen|starten|führen|tätigen|machen)\\s+)?(?:mit\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})(?:\\s+(?:(?:via|per|über|mit)\\s+)?(?:lautsprecher|freisprech(?:er|en|anlage))|\\s+auf\\s+laut)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "66956669-95dc-5936-848a-42f512de7ff4"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} {bitte} (ruf{e|st du}|klingel{e|st du}|läut{e|est du}) (contact:*{1,3}) ({via|per|über|mit} (lautsprecher|freisprech(er|en|anlage))|auf laut) an",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:ruf(?:(?:e|st\\s+du))?|klingel(?:(?:e|st\\s+du))?|läut(?:(?:e|est\\s+du))?)\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})(?:\\s+(?:(?:via|per|über|mit)\\s+)?(?:lautsprecher|freisprech(?:er|en|anlage))|\\s+auf\\s+laut)\\s+an$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ddabbb31-8a83-54b1-ac0b-9aa24ab2102f"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser"
+      },
+      "pattern" : "{hey} {siri} {bitte} (ruf|wähle) {mein|unser|den} (contact:emergency_contact_parser) über (lautsprecher|freisprecheinrichtung) an {bitte}",
+      "priority" : 35,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:ruf|wähle)\\s+(?:(?:mein|unser|den)\\s+)?(?P<contact>(?P<contact__emergency_contact_parser>notfallkontakt))\\s+über\\s+(?:lautsprecher|freisprecheinrichtung)\\s+an(?:\\s+bitte)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8f08ebc7-97fe-51ef-8d4b-6104c2b8dfa6"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (sag{e|st du}|gib{st du}|geb{e}|verrat{e}) {mir} die uhrzeit {hier} {jetzt}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:sag(?:(?:e|st\\s+du))?|gib(?:st\\s+du)?|geb(?:e)?|verrat(?:e)?)\\s+(?:mir\\s+)?die\\s+uhrzeit(?:\\s+hier)?(?:\\s+jetzt)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6466b7e7-5e18-5b77-8280-16b780312f4c"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (was ist die {aktuelle} uhrzeit|weißt du die {aktuelle} uhrzeit {hier}) {{jetzt} gerade|im moment|im augenblick}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:was\\s+ist\\s+die\\s+(?:aktuelle\\s+)?uhrzeit|weißt\\s+du\\s+die\\s+(?:aktuelle\\s+)?uhrzeit(?:\\s+hier)?)(?:(?:\\s+(?:jetzt\\s+)?gerade|\\s+im\\s+moment|\\s+im\\s+augenblick))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a778190c-5172-5f06-ae83-9ac1cc7ed25e"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (welche uhrzeit haben wir|wie viel uhr {ist es|haben wir}) {{jetzt} gerade|im moment|im augenblick}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:welche\\s+uhrzeit\\s+haben\\s+wir|wie\\s+viel\\s+uhr(?:\\s+(?:ist\\s+es|haben\\s+wir))?)(?:(?:\\s+(?:jetzt\\s+)?gerade|\\s+im\\s+moment|\\s+im\\s+augenblick))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "1c9c4dd7-6705-5f8b-bcf3-7b3f74536eb4"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} wie (spät|viel uhr) ist es {jetzt}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wie\\s+(?:spät|viel\\s+uhr)\\s+ist\\s+es(?:\\s+jetzt)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "1ea0d46e-1223-5561-b549-84db3f4d5620"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} wie spät ist es {{jetzt} gerade|im moment|im augenblick}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wie\\s+spät\\s+ist\\s+es(?:(?:\\s+(?:jetzt\\s+)?gerade|\\s+im\\s+moment|\\s+im\\s+augenblick))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4bdff180-abc6-56c4-a533-3ce779f881ad"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {die} uhrzeit {hier} {jetzt} {{an}sagen|{an}zeigen|{an}geben}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:die\\s+)?uhrzeit(?:\\s+hier)?(?:\\s+jetzt)?(?:(?:\\s+(?:an)?sagen|\\s+(?:an)?zeigen|\\s+(?:an)?geben))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b93f4fbd-b86b-5e09-9741-bf3f74fb67b8"
+    },
+    {
+      "action" : "call_911",
+      "context_free" : false,
+      "metadata" : {
+        "emergency_number" : "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser" : "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser" : "locale_emergency_number_parser",
+        "number" : "emergency_number_parser"
+      },
+      "pattern" : "{hey} {siri} {ruf} (number:emergency_number_parser) {an}",
+      "priority" : 10,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:ruf\\s+)?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>112|117|118|144))))(?:\\s+an)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid" : "d49e8b4b-8a90-5a10-8b84-bd1a88958196"
+    },
+    {
+      "action" : "call_911",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {ruf} ({die} polizei|{den} notruf|{den} krankenwagen|{den} rettungsdienst|{den} rettungswagen|{die} feuerwehr|{die} rettung) {an}",
+      "priority" : 10,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:ruf\\s+)?(?:(?:die\\s+)?polizei|(?:den\\s+)?notruf|(?:den\\s+)?krankenwagen|(?:den\\s+)?rettungsdienst|(?:den\\s+)?rettungswagen|(?:die\\s+)?feuerwehr|(?:die\\s+)?rettung)(?:\\s+an)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid" : "ee96f160-06cd-555f-a3ce-1320f1eca8ea"
+    },
+    {
+      "action" : "facetime_audio_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} {bitte} ruf{e} (contact:*{1,5}) (mit|über) facetime (über lautsprecher|auf laut) {an} {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?ruf(?:e)?\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+(?:mit|über)\\s+facetime\\s+(?:über\\s+lautsprecher|auf\\s+laut)(?:\\s+an)?(?:\\s+bitte)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "86261c95-f21c-5b9c-aeb6-9086157abccb"
+    },
+    {
+      "action" : "facetime_audio_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} {bitte} {mach{e}} facetime {mit} (contact:*{1,5}) (über lautsprecher|auf laut) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:mach(?:e)?\\s+)?facetime\\s+(?:mit\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+(?:über\\s+lautsprecher|auf\\s+laut)(?:\\s+bitte)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a6cd414b-337e-5e05-9ee4-2115cfd49d8f"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} {bitte} {mach{e}} facetime {mit} (contact:*{1,5}) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:mach(?:e)?\\s+)?facetime\\s+(?:mit\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})(?:\\s+bitte)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7bf02dda-12b7-511d-9ca2-a76097ffb125"
+    },
+    {
+      "action" : "infodomain(structured_query='{\"stocks\":[{\"keywords\":[\"AAPL\"]}]}')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (was ist|wie ist) {der} (apple|aapl) aktienkurs {heute}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:was\\s+ist|wie\\s+ist)\\s+(?:der\\s+)?(?:apple|aapl)\\s+aktienkurs(?:\\s+heute)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ea625f40-b107-502f-be51-b1b5fbe0204f"
+    },
+    {
+      "action" : "infodomain(structured_query='{\"stocks\":[{\"keywords\":[\"AAPL\"]}]}')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (was ist|wie ist) {der} heutige (apple|aapl) aktienkurs",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:was\\s+ist|wie\\s+ist)\\s+(?:der\\s+)?heutige\\s+(?:apple|aapl)\\s+aktienkurs$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7d42570e-c60a-5ac5-8c50-c771b2ee269d"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "thing" : "wildcard{1..*10}"
+      },
+      "pattern" : "{hey} {siri} dürfen hunde (thing:*{1,10}) essen",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?dürfen\\s+hunde\\s+(?P<thing>[^\\s]+(?:\\s+[^\\s]+){0,9})\\s+essen$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3d6f1aba-2868-5110-89d8-5ffe9fe73804"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "place" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} wann (schließt|öffnet) (place:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wann\\s+(?:schließt|öffnet)\\s+(?P<place>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9bd333f7-4860-588e-bb43-e9172dc6783a"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "place" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} wann hat (place:*{1,3}) geöffnet",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wann\\s+hat\\s+(?P<place>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+geöffnet$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3a3c4f84-ec8c-5f11-b3bb-14e2a859997b"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "team" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} wann spielt (team:*{1,5}) heute",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wann\\s+spielt\\s+(?P<team>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+heute$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "5275c24d-01f8-5dac-a388-754475c42e75"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "name" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} wie alt ist (name:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wie\\s+alt\\s+ist\\s+(?P<name>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a292c91e-3cab-56f0-87b7-683ef824e359"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "word" : "wildcard{1..*1}"
+      },
+      "pattern" : "{hey} {siri} wie buchstabiert man (word:*{1,1})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wie\\s+buchstabiert\\s+man\\s+(?P<word>[^\\s]+)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "321dbec0-cb25-552a-bed1-fc6b3a7a16ef"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "place" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} wie ist das wetter heute in {place:*{1,3}}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wie\\s+ist\\s+das\\s+wetter\\s+heute\\s+in(?:\\s+(?P<place>[^\\s]+(?:\\s+[^\\s]+){0,2}))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6d396fda-b4d1-54d3-87da-ba6bd2b3ae10"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} wie ist das wetter heute {heute|heute abend|draußen|jetzt|jetzt gerade}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wie\\s+ist\\s+das\\s+wetter\\s+heute(?:\\s+(?:heute|heute\\s+abend|draußen|jetzt|jetzt\\s+gerade))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a444bf47-f04d-56fb-854a-ddefa6c4add9"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "team" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} wie ist der spielstand von (team:*{1,5}) heute",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wie\\s+ist\\s+der\\s+spielstand\\s+von\\s+(?P<team>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+heute$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9fe8c662-92c1-592e-ac2f-e9c47e3af02c"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "unit" : "wildcard{1..*3}",
+        "unit2" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} wie viele (unit:*{1,3}) sind (unit2:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wie\\s+viele\\s+(?P<unit>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+sind\\s+(?P<unit2>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f95343c6-a17b-5cda-816e-36924c0f4491"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "place" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} wird es heute in {place:*{1,3}} regnen",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?wird\\s+es\\s+heute\\s+in\\s+(?:(?P<place>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+)?regnen$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "827063b2-e464-53b2-8588-26ddcdfaba56"
+    },
+    {
+      "action" : "infodomain(structured_query='{\"stocks\":[{\"keywords\":[\"AAPL\"]}]}')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {der} (apple|aapl) aktienkurs {heute}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:der\\s+)?(?:apple|aapl)\\s+aktienkurs(?:\\s+heute)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "faeb55a5-e370-50f3-88e2-0cea02aef500"
+    },
+    {
+      "action" : "infodomain(structured_query='{\"stocks\":[{\"keywords\":[\"AAPL\"]}]}')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {der} aapl kurs {heute}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:der\\s+)?aapl\\s+kurs(?:\\s+heute)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f2b409c7-14ba-5744-8c95-a871372e9538"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (führ{e|st du}|setz{e|t du}) {die} musik (fort|weiter) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:führ(?:(?:e|st\\s+du))?|setz(?:(?:e|t\\s+du))?)\\s+(?:die\\s+)?musik\\s+(?:fort|weiter)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "84306536-28d7-5d46-a259-d0484e713756"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (geh{e|st du}|spring{e|st du}) {ein} lied zurück {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:geh(?:(?:e|st\\s+du))?|spring(?:(?:e|st\\s+du))?)\\s+(?:ein\\s+)?lied\\s+zurück(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "844bc17d-0215-5a7a-9b33-238d2238bcb8"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (nächster (song|track|titel)|nächstes lied|nächste melodie) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:nächster\\s+(?:song|track|titel)|nächstes\\s+lied|nächste\\s+melodie)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "67b46b59-f52a-56cc-a7de-b5b15123f4ec"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (nächstes lied|nächster song) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:nächstes\\s+lied|nächster\\s+song)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f0a02e91-93c5-5f2c-973a-e9a94d461861"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (pausiere|unterbrich) {bitte} die musik{wiedergabe}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:pausiere|unterbrich)\\s+(?:bitte\\s+)?die\\s+musik(?:wiedergabe)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "912b82d0-04ca-59c6-afd2-87f052af2b73"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (vorheriges lied|vorheriger song) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:vorheriges\\s+lied|vorheriger\\s+song)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "0457410a-01cd-5d07-97c0-b6026fe2a22d"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (vorheriges|voriges) lied {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:vorheriges|voriges)\\s+lied(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "99d25bcf-1889-5f3e-b0b8-b2a73e29db19"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} musik (stop{pen}|pausieren|pause)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?musik(?:\\s+stop(?:pen)?|\\s+pausieren|\\s+pause)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4f090cff-1e06-51ac-b33c-a73d6fd636c7"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} spiel{e|st du} {bitte} ab",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?spiel(?:(?:e|st\\s+du))?\\s+(?:bitte\\s+)?ab$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "af77a5b6-6e3f-5c9f-ac2e-760b463a7469"
+    },
+    {
+      "action" : "generic_play",
+      "context_free" : false,
+      "metadata" : {
+        "p" : "generic_play",
+        "p__generic_play" : "generic_play"
+      },
+      "pattern" : "{hey} {siri} spiel{e} {p:generic_play} {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?spiel(?:e)?(?:\\s+(?P<p>(?P<p__generic_play>alle lieder gemischt|christliche musik|classic rock|country musik|das letzte lied|das lied|das nächste lied|das vorherige lied|der letzte song|der nächste song|der song|der vorherige song|die hits von heute|die musik|die nachrichten|dieses lied nochmal|ein lied|einen song|es nochmal|etwas|etwas das ich mag|etwas das mir gefallen würde|etwas das mir gefällt|etwas musik|etwas musik für mich|favoriten|halloween musik|hörbuch|lied|lieder|lobpreismusik|mein buch|mein hörbuch|mein podcast|mein sender|meine favoriten|meine lieblingsmusik|meine lieblingssongs|meine musik|meine musik gemischt|meine musik im zufallsmodus|meine playlist|meine wiedergabeliste|mir etwas musik|musik|musik die ich mag|musik für mich|nochmal|nächster song|nächstes|nächstes lied|podcast|regengeräusche|song|songs|vorheriger song|vorheriges lied|weihnachtsmusik|weiter|weißes rauschen|wieder)))?(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "57ee3cc8-0aff-56ca-88ad-24ab957a3cc6"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {bitte} {die} nächste musik {{ab}spielen} {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:bitte\\s+)?(?:die\\s+)?nächste\\s+musik(?:\\s+(?:ab)?spielen)?(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "884c9497-af24-58cd-bdda-dd871900429e"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} (spiel{en}|schau{en}|play|abspielen)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:spiel(?:en)?|schau(?:en)?|play|abspielen)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "0c42f45b-c2d9-5f94-9d4a-e063ce4f3a77"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} musik {ab}spielen",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?musik\\s+(?:ab)?spielen$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "91085c32-a98c-57b4-b818-5f418f0b396e"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} spiel{e|st du} ({den} vorherigen (song|track|hit|titel)|{das} vorherige (lied|stück)) {ab}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?spiel(?:(?:e|st\\s+du))?(?:\\s+(?:den\\s+)?vorherigen\\s+(?:song|track|hit|titel)|\\s+(?:das\\s+)?vorherige\\s+(?:lied|stück))(?:\\s+ab)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "1bbb9fa2-fc51-56cb-9dc7-407b5df023c2"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} spiel{e|st du} {die} nächste musik {ab}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?spiel(?:(?:e|st\\s+du))?\\s+(?:die\\s+)?nächste\\s+musik(?:\\s+ab)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "aa775868-2032-537e-8607-31381a697622"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {gehe|springe} ({ein} lied|{einen} track|{einen} song|{eine} melodie|{einen} titel) (vorwärts|weiter) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:gehe|springe)\\s+)?(?:(?:ein\\s+)?lied|(?:einen\\s+)?track|(?:einen\\s+)?song|(?:eine\\s+)?melodie|(?:einen\\s+)?titel)\\s+(?:vorwärts|weiter)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a08d9361-4bd5-5d1d-a75e-82a8cb5f9021"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {gehe|springe} {ein{en}|zum letzten} (lied|track|song) zurück",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:gehe|springe)\\s+)?(?:(?:ein(?:en)?\\s+|zum\\s+letzten\\s+))?(?:lied|track|song)\\s+zurück$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "cd0b0e11-6f99-5a67-b36e-97fb16ec0b7c"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {geh{e}|spring{e}} {ein} lied zurück {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:geh(?:e)?\\s+|spring(?:e)?\\s+))?(?:ein\\s+)?lied\\s+zurück(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "87eaca87-46c4-5708-86cd-4e6f754aea6f"
+    },
+    {
+      "action" : "search_and_read(query='messages', entity_types='MessageEntity', structured_query='{\"messages\":[{}]}')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (mitteilungen|kurznachrichten|textnachrichten|sms)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:mitteilungen|kurznachrichten|textnachrichten|sms)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "29fd2e5e-7d53-5da9-9cd9-67cb176c774b"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hey} {siri} (aktivier{e|st du}|starte{st du}) {bitte} (s:mode_settings) {einstellung}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:aktivier(?:(?:e|st\\s+du))?|starte(?:st\\s+du)?)\\s+(?:bitte\\s+)?(?P<s>(?P<s__mode_settings>dunkelmodus|flugmodus|nachtmodus|nicht stören|stromsparmodus))(?:\\s+einstellung)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "01abf44b-7f6a-5e9d-bb12-4718a6b4ff06"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hey} {siri} (aktivier{e|st du}|starte{st du}) {bitte} {den|das|die} (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:aktivier(?:(?:e|st\\s+du))?|starte(?:st\\s+du)?)\\s+(?:bitte\\s+)?(?:(?:den|das|die)\\s+)?(?P<s>(?P<s__connection_settings>bluetooth|hotspot|internet|mobile daten|wlan))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3f487974-6151-521e-b721-c19256b62f52"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hey} {siri} (aktivier{e}|aktivierst du|starte{st du}) {bitte} {die} (s:flashlight_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:aktivier(?:e)?|aktivierst\\s+du|starte(?:st\\s+du)?)\\s+(?:bitte\\s+)?(?:die\\s+)?(?P<s>(?P<s__flashlight_settings>taschenlampe))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b41ee5dc-4e03-5ad4-98e0-17c2a38e37e7"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hey} {siri} (mache|mach|stelle|stell|schalte|schalt|drehe|dreh) {bitte} {den|die} (s:volume_settings) (noch lauter|lauter|nicht so leise)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:mache|mach|stelle|stell|schalte|schalt|drehe|dreh)\\s+(?:bitte\\s+)?(?:(?:den|die)\\s+)?(?P<s>(?P<s__volume_settings>lautstärke|medienlautstärke|sound|sprachsteuerung|ton))\\s+(?:noch\\s+lauter|lauter|nicht\\s+so\\s+leise)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "99f915b3-d36a-53c4-93c9-6db6150fe9f7"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (rede|sprich) {ein stück} (weniger laut|leiser) {bitte|danke}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:rede|sprich)\\s+(?:ein\\s+stück\\s+)?(?:weniger\\s+laut|leiser)(?:\\s+(?:bitte|danke))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "aff78694-9497-59e7-b3b7-d98ee64910d9"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hey} {siri} (reduzier{e|st du}|senk{e|st du}|verringer{e|st du}|verminder{e|st du}) {bitte} {die|den|deine|deinen} (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:reduzier(?:(?:e|st\\s+du))?|senk(?:(?:e|st\\s+du))?|verringer(?:(?:e|st\\s+du))?|verminder(?:(?:e|st\\s+du))?)\\s+(?:bitte\\s+)?(?:(?:die|den|deine|deinen)\\s+)?(?P<s>(?P<s__volume_settings>lautstärke|medienlautstärke|sound|sprachsteuerung|ton))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "5fd4fc17-25a2-58db-bbb1-2c5810d321e9"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hey} {siri} (schalt{e|st du}|stell{e|st du}|mach{e|st du}) (s:mode_settings) {einstellung} (ein|an)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:schalt(?:(?:e|st\\s+du))?|stell(?:(?:e|st\\s+du))?|mach(?:(?:e|st\\s+du))?)\\s+(?P<s>(?P<s__mode_settings>dunkelmodus|flugmodus|nachtmodus|nicht stören|stromsparmodus))\\s+(?:einstellung\\s+)?(?:ein|an)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "15744b56-aa4a-5a18-bf4b-03b03d44de80"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "ud" : "up_down",
+        "ud__up_down" : "up_down"
+      },
+      "pattern" : "{hey} {siri} lautstärke (ud:up_down)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?lautstärke\\s+(?P<ud>(?P<ud__up_down>erhöhen|höher|niedriger|verringern))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "e83a04cb-be67-5a71-a827-e8060c8cee7d"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest",
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} (s:volume_settings) leiser {machen} {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?P<s>(?P<s__volume_settings>lautstärke|medienlautstärke|sound|sprachsteuerung|ton))\\s+leiser(?:\\s+machen)?(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "255f0e7c-b75a-5b3b-bdd5-a2342d5c8d50"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {bitte} (leiser|weniger laut) {mit mir} (reden|sprechen) {danke}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:bitte\\s+)?(?:leiser|weniger\\s+laut)\\s+(?:mit\\s+mir\\s+)?(?:reden|sprechen)(?:\\s+danke)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3d276bdb-53a9-58d9-a60b-71505a04fa3a"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest",
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {bitte} {den} (s:mode_settings) {einstellung} (aktivieren|anschalten|einschalten|anmachen|anstellen|einstellen)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:bitte\\s+)?(?:den\\s+)?(?P<s>(?P<s__mode_settings>dunkelmodus|flugmodus|nachtmodus|nicht stören|stromsparmodus))\\s+(?:einstellung\\s+)?(?:aktivieren|anschalten|einschalten|anmachen|anstellen|einstellen)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f51a3587-6d47-5737-8772-934d9d4fbc63"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {den|das|die} (s:connection_settings) (aktivieren|anschalten|einschalten|anmachen|anstellen|einstellen)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:(?:den|das|die)\\s+)?(?P<s>(?P<s__connection_settings>bluetooth|hotspot|internet|mobile daten|wlan))\\s+(?:aktivieren|anschalten|einschalten|anmachen|anstellen|einstellen)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "37a61cc0-39a0-5706-b77e-1c0c67fe91f5"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest",
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {die|den} (s:volume_settings) {bitte} (reduzieren|senken|verringern|vermindern|runterdrehen)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:(?:die|den)\\s+)?(?P<s>(?P<s__volume_settings>lautstärke|medienlautstärke|sound|sprachsteuerung|ton))\\s+(?:bitte\\s+)?(?:reduzieren|senken|verringern|vermindern|runterdrehen)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b51fa44e-cb83-5512-a4b5-dc14a480f792"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} (erhöhe|steiger{e}) {ein stück} {die|deine} (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:erhöhe|steiger(?:e)?)\\s+(?:ein\\s+stück\\s+)?(?:(?:die|deine)\\s+)?(?P<s>(?P<s__volume_settings>lautstärke|medienlautstärke|sound|sprachsteuerung|ton))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "781cf0e6-61a3-52aa-97ae-3b9c8829bd5d"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "of" : "on_off",
+        "of__on_off" : "on_off",
+        "s" : "settings",
+        "s__settings" : "settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} (s:settings) (of:on_off)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?P<s>(?P<s__settings>bluetooth|drahtlos|energiesparmodus|flugmodus|mobile daten|nicht stören|nicht stören-modus|stromsparmodus|taschenlampe|wifi|wlan))\\s+(?P<of>(?P<of__on_off>aktivieren|an|anmachen|anschalten|aus|ausmachen|ausschalten|deaktivieren|einschalten))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "af591106-3a99-58e7-ae58-4f6f1ba0e2f3"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} deaktivier{e|st du} {das|die|den} (s:connection_settings) {einstellung} {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?deaktivier(?:(?:e|st\\s+du))?\\s+(?:(?:das|die|den)\\s+)?(?P<s>(?P<s__connection_settings>bluetooth|hotspot|internet|mobile daten|wlan))(?:\\s+einstellung)?(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e8dac4ff-65c3-57fd-bcd8-e07a93f320f8"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} deaktivier{e|st du} {den} (s:mode_settings) {einstellung} {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?deaktivier(?:(?:e|st\\s+du))?\\s+(?:den\\s+)?(?P<s>(?P<s__mode_settings>dunkelmodus|flugmodus|nachtmodus|nicht stören|stromsparmodus))(?:\\s+einstellung)?(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "5af713e5-5477-58bc-9e3b-8cc99f5586da"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} {(polite:politeRequest)} {das|die|den} (s:connection_settings) (deaktivieren|ausschalten|ausstellen|ausmachen) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:(?:das|die|den)\\s+)?(?P<s>(?P<s__connection_settings>bluetooth|hotspot|internet|mobile daten|wlan))\\s+(?:deaktivieren|ausschalten|ausstellen|ausmachen)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "68b666bf-2ae2-5181-9ba3-4af5c38f38cb"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest",
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} {(polite:politeRequest)} {den} (s:mode_settings) (deaktivieren|aus(schalten|stellen|machen)) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:den\\s+)?(?P<s>(?P<s__mode_settings>dunkelmodus|flugmodus|nachtmodus|nicht stören|stromsparmodus))\\s+(?:deaktivieren|aus(?:schalten|stellen|machen))(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "02daa9e1-34d6-5563-ab04-d632b9e183c4"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} {mach{e}|machst du|stell{e}|stellst du|schalt{e}|schaltest du} {das|die|den} (s:connection_settings) (aus|ab) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:mach(?:e)?\\s+|machst\\s+du\\s+|stell(?:e)?\\s+|stellst\\s+du\\s+|schalt(?:e)?\\s+|schaltest\\s+du\\s+))?(?:(?:das|die|den)\\s+)?(?P<s>(?P<s__connection_settings>bluetooth|hotspot|internet|mobile daten|wlan))\\s+(?:aus|ab)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a826d7b5-64ec-5165-9b9c-57a2d8f7bb06"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} {mach{e}|machst du|stell{e}|stellst du|schalt{e}|schaltest du} {den} (s:mode_settings) (aus|ab) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:mach(?:e)?\\s+|machst\\s+du\\s+|stell(?:e)?\\s+|stellst\\s+du\\s+|schalt(?:e)?\\s+|schaltest\\s+du\\s+))?(?:den\\s+)?(?P<s>(?P<s__mode_settings>dunkelmodus|flugmodus|nachtmodus|nicht stören|stromsparmodus))\\s+(?:aus|ab)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "12816452-32b6-570a-b14d-0d904e26fe47"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} {mach{e}|machst du|stell{e}|stellst du|schalt{e}|schaltest du} {die} (s:flashlight_settings) (aus|ab) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:mach(?:e)?\\s+|machst\\s+du\\s+|stell(?:e)?\\s+|stellst\\s+du\\s+|schalt(?:e)?\\s+|schaltest\\s+du\\s+))?(?:die\\s+)?(?P<s>(?P<s__flashlight_settings>taschenlampe))\\s+(?:aus|ab)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "98b6be95-a336-53ed-b43b-aa32ccab6d35"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} {schalt{e|st du}|stell{e|st du}|mach{e|st du}} (s:connection_settings) {bitte} (ein|an)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:schalt(?:(?:e|st\\s+du))?\\s+|stell(?:(?:e|st\\s+du))?\\s+|mach(?:(?:e|st\\s+du))?\\s+))?(?P<s>(?P<s__connection_settings>bluetooth|hotspot|internet|mobile daten|wlan))\\s+(?:bitte\\s+)?(?:ein|an)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "83d38a60-0c5c-5fe4-9524-78238e5c3760"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hey} {siri} {bitte} {schalt{e|st du}|stell{e|st du}|mach{e|st du}} {die} (s:flashlight_settings) (ein|an) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:schalt(?:(?:e|st\\s+du))?\\s+|stell(?:(?:e|st\\s+du))?\\s+|mach(?:(?:e|st\\s+du))?\\s+))?(?:die\\s+)?(?P<s>(?P<s__flashlight_settings>taschenlampe))\\s+(?:ein|an)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "99bda6bd-1ddc-5498-a575-8c582efaf59e"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (mache|mach|machst du|erstelle|erstell|erstellst du) {bitte} {ein{en|e}} (screenshot|bildschirm-(foto|aufnahme)|bildschirm(foto|aufnahme)) {von (diesem|dem) bild|davon}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:mache|mach|machst\\s+du|erstelle|erstell|erstellst\\s+du)\\s+(?:bitte\\s+)?(?:ein(?:(?:en|e))?\\s+)?(?:screenshot|bildschirm-(?:foto|aufnahme)|bildschirm(?:foto|aufnahme))(?:\\s+(?:von\\s+(?:diesem|dem)\\s+bild|davon))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "4564a879-fc25-5358-8451-ce8148da931e"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (mache|mach|machst du|erstelle|erstell|erstellst du) {ein{en|e}} (screenshot|bildschirm-(foto|aufnahme)|bildschirm(foto|aufnahme)) {von (diesem|dem) bild|davon} {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:mache|mach|machst\\s+du|erstelle|erstell|erstellst\\s+du)\\s+(?:ein(?:(?:en|e))?\\s+)?(?:screenshot|bildschirm-(?:foto|aufnahme)|bildschirm(?:foto|aufnahme))(?:\\s+(?:von\\s+(?:diesem|dem)\\s+bild|davon))?(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "0e55d884-5053-5711-ade8-d96d8a64679b"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (machst du|mache|mach|schalte|schaltest du|schalt) {bitte} {komplett|ganz} aus",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:machst\\s+du|mache|mach|schalte|schaltest\\s+du|schalt)\\s+(?:bitte\\s+)?(?:(?:komplett|ganz)\\s+)?aus$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "054f46e1-c903-5ca1-8cde-1c41931bee4d"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (screenshot|bildschirm-(foto|aufnahme)|bildschirm(foto|aufnahme))",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:screenshot|bildschirm-(?:foto|aufnahme)|bildschirm(?:foto|aufnahme))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "22198748-1b97-5bb8-940f-85ecd71a8dcb"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {bitte} (neu (starten|booten)|rebooten)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:bitte\\s+)?(?:neu\\s+(?:starten|booten)|rebooten)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "3d283714-4080-5539-bc87-10fca82514d0"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+        "polite" : "politeRequest",
+        "polite__politeRequest" : "politeRequest"
+      },
+      "pattern" : "{hey} {siri} {(polite:politeRequest)} {ein{en|e}} (screenshot|bildschirm-(foto|aufnahme)|bildschirm(foto|aufnahme)) (erstellen|machen) {von (diesem|dem) bild|davon} {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?P<polite>(?P<polite__politeRequest>kannst du|könntest du|möchtest du|würdest du))\\s+)?(?:ein(?:(?:en|e))?\\s+)?(?:screenshot|bildschirm-(?:foto|aufnahme)|bildschirm(?:foto|aufnahme))\\s+(?:erstellen|machen)(?:\\s+(?:von\\s+(?:diesem|dem)\\s+bild|davon))?(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "3b3e6d53-7b99-5528-a5c5-d5849ca86793"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {ach komm dann} geh aus {jetzt}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:ach\\s+komm\\s+dann\\s+)?geh\\s+aus(?:\\s+jetzt)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "30b26fef-5ceb-525e-ab05-c805cc5981ad"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} (neustarten|starte neu)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:neustarten|starte\\s+neu)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "5f539256-993a-5124-bfeb-b4a9a44bcab8"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {kannst du|könntest du|würdest du} {bitte} (aus(schalten|machen)|deaktivieren)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:kannst\\s+du|könntest\\s+du|würdest\\s+du)\\s+)?(?:bitte\\s+)?(?:aus(?:schalten|machen)|deaktivieren)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "df02cf56-ef35-5640-b5e6-c42ccdded61b"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {komplett|ganz} aus {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:komplett|ganz)\\s+)?aus(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "a8b4b3a5-2e35-5f31-80a0-5963171a60fc"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {mach{e} {bitte} einen} screenshot {machen}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:mach(?:e)?\\s+(?:bitte\\s+)?einen\\s+)?screenshot(?:\\s+machen)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "472ce1fc-245f-5612-8729-e077804fc9c0"
+    },
+    {
+      "action" : "do_not_skim",
+      "context_free" : false,
+      "metadata" : {
+        "app" : "wildcard{1..*3}",
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} {bitte} ruf{e} {contact:*{1,3}} (mit|über) {app:*{1,3}} {an} {bitte}",
+      "priority" : 45,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?ruf(?:e)?\\s+(?:(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+)?(?:mit|über)(?:\\s+(?P<app>[^\\s]+(?:\\s+[^\\s]+){0,2}))?(?:\\s+an)?(?:\\s+bitte)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "cdee69d3-4896-5248-808c-2ce70c122733"
+    },
+    {
+      "action" : "do_not_skim",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} ruf{e} {*{1,5}} zurück {bitte}",
+      "priority" : 30,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?ruf(?:e)?\\s+(?:[^\\s]+(?:\\s+[^\\s]+){0,4}\\s+)?zurück(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "1252383b-22c4-5009-9c0e-f72dd262e47d"
+    },
+    {
+      "action" : "stop_timers(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} (stoppe|stop|beende) den (timer|countdown)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:stoppe|stop|beende)\\s+den\\s+(?:timer|countdown)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c98a1d7b-87a8-5a75-b64c-b9991d513f04"
+    },
+    {
+      "action" : "stop_timers(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} (timer|countdown) (stop{p|pen}|aus|beenden|abbrechen)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:timer|countdown)(?:\\s+stop(?:(?:p|pen))?|\\s+aus|\\s+beenden|\\s+abbrechen)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "78924496-f46c-500d-909b-9dd38a4413bc"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} {bitte} ({er}stell{e|st du}) {mir} {einen|den} timer {auf|für} (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:er)?stell(?:(?:e|st\\s+du))?)\\s+(?:mir\\s+)?(?:(?:einen|den)\\s+)?timer(?:\\s+(?:auf|für))?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>stunde|stunden)))?(?:\\s+und)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>minute|minuten)))?(?:\\s+und)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sekunde|sekunden)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "a7e8457e-dd35-5c49-8db6-713279b7551b"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} {bitte} ({er}stell{e|st du}|mach{e}|machst du|setz{e|t du}|richte{st du}) {mir|uns} {ein{en}|den} timer (für|auf) (duration:duration) {ein}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:er)?stell(?:(?:e|st\\s+du))?|mach(?:e)?|machst\\s+du|setz(?:(?:e|t\\s+du))?|richte(?:st\\s+du)?)\\s+(?:(?:mir|uns)\\s+)?(?:(?:ein(?:en)?|den)\\s+)?timer\\s+(?:für|auf)(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>stunde|stunden)))?(?:\\s+und)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>minute|minuten)))?(?:\\s+und)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sekunde|sekunden)))?)(?:\\s+ein)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "62bfe50d-3ead-5468-92fc-17f5e04c0189"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {bitte} ({er}stell{e|st du}|mach{e}|machst du|setz{e|t du}|richte{st du}) {mir|uns} {ein{en}|den} timer (für|auf) (time:time) {ein}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:er)?stell(?:(?:e|st\\s+du))?|mach(?:e)?|machst\\s+du|setz(?:(?:e|t\\s+du))?|richte(?:st\\s+du)?)\\s+(?:(?:mir|uns)\\s+)?(?:(?:ein(?:en)?|den)\\s+)?timer\\s+(?:für|auf)(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)(?:\\s+ein)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "43afc30f-848e-55e1-b642-6cd6e9187d38"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} {bitte} ({er}stell{e|st du}|setz{e|t du}|mach{e}|machst du|richte{st du}) {den|einen} timer (mit|auf) (duration:duration) {ein}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:er)?stell(?:(?:e|st\\s+du))?|setz(?:(?:e|t\\s+du))?|mach(?:e)?|machst\\s+du|richte(?:st\\s+du)?)\\s+(?:(?:den|einen)\\s+)?timer\\s+(?:mit|auf)(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>stunde|stunden)))?(?:\\s+und)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>minute|minuten)))?(?:\\s+und)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sekunde|sekunden)))?)(?:\\s+ein)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "dae8c98a-695c-5e46-935e-dc7d05950cef"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} stop{p|pe} alle (timer|countdown{s})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?stop(?:(?:p|pe))?\\s+alle(?:\\s+timer|\\s+countdown(?:s)?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d7bcae97-7b41-5325-b2ff-8903391884b6"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} {bitte} timer {auf|für} (duration:duration) {stellen}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?timer(?:\\s+(?:auf|für))?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>stunde|stunden)))?(?:\\s+und)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>minute|minuten)))?(?:\\s+und)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sekunde|sekunden)))?)(?:\\s+stellen)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "06b2f909-d936-5f5a-907d-7dcb0803d4d9"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} {bitte} {den|einen} timer (mit|auf) (duration:duration) ({er|ein}stellen|einrichten|setzen|machen)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:den|einen)\\s+)?timer\\s+(?:mit|auf)(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>stunde|stunden)))?(?:\\s+und)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>minute|minuten)))?(?:\\s+und)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sekunde|sekunden)))?)(?:\\s+(?:(?:er|ein))?stellen|\\s+einrichten|\\s+setzen|\\s+machen)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "42479b21-e913-5281-8ccb-4659db2661cb"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {bitte} {mach{e}|machst du|erstelle|erstellst du} {den|einen} timer auf (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:(?:mach(?:e)?\\s+|machst\\s+du\\s+|erstelle\\s+|erstellst\\s+du\\s+))?(?:(?:den|einen)\\s+)?timer\\s+auf(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>uhr)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>am|am morge|früh|in der früh|morgens|vormittags)|(?P<am_pm__time_of_day_parser__pm>abends|am abe|am abig|am namittag|nachmittags|pm))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "a1aefbef-94a9-5ba8-b615-76b73683ee32"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} {mach} alle (timer|countdown{s}) (aus{schalten}|abbrechen|beenden)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:mach\\s+)?alle(?:\\s+timer|\\s+countdown(?:s)?)(?:\\s+aus(?:schalten)?|\\s+abbrechen|\\s+beenden)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "7a3c4c48-4450-567a-8e0e-4117f91f1939"
+    },
+    {
+      "action" : "stop_timers(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bitte} {mach} {den} (timer|countdown) aus",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bitte\\s+)?(?:mach\\s+)?(?:den\\s+)?(?:timer|countdown)\\s+aus$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "989b4d35-26c7-5013-8d8f-fe1bf052ae9a"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} {stell{e}} {bitte} {einen} timer {auf|für} (duration:duration) {bitte}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:stell(?:e)?\\s+)?(?:bitte\\s+)?(?:einen\\s+)?timer(?:\\s+(?:auf|für))?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>stunde|stunden)))?(?:\\s+und)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>minute|minuten)))?(?:\\s+und)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>acht|drei|eins|fünf|neun|null|sechs|sieben|vier|zehn|zwei)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sekunde|sekunden)))?)(?:\\s+bitte)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "50e04159-0589-575f-bb2d-665867736532"
+    }
+  ],
+  "version" : "5500000.22501.0"
+}

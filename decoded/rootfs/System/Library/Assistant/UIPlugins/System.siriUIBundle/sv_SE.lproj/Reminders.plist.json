@@ -1,0 +1,51 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lägg till kronärtskockor till listan Handla",
+            "Lägg till fallskärmshopp till listan Saker att göra innan jag dör",
+            "Kom ihåg att ta med ett paraply",
+            "Påminn mig om att ta min medicin klockan 6 imorgon bitti",
+            "Påminn mig om att göra klart rapporten till klockan 6",
+            "Läs upp min att-göra-lista för jobbet"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Markera den tredje som slutförd",
+            "Skapa en ny lista som heter Handla",
+            "Påminn mig om det här e-brevet imorgon",
+            "Kom ihåg den här webbplatsen"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Påminn mig om att ringa med FaceTime till mamma när jag kommer hem",
+            "Påminn mig om att ringa Björn när jag går härifrån",
+            "Påminn mig om att ringa pappa när jag sitter i bilen",
+            "Påminn mig när jag går härifrån att ringa FaceTime-samtal till Björn"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Påminn mig om att köpa blommor när jag går härifrån"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+
+
+**HYDRATION STAGE:**
+- Use when needing FULL CONTENT (email body, document text)
+- NOT for metadata (sender, date, count)
+- Pattern: query → hydration → prompted/custom stage
+
+**ONLY use custom() stages for truly custom logic.**

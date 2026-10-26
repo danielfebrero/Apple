@@ -1,0 +1,21 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.siri.assistant.hybrid.language",
+  "UsageAliasValues": {
+    "ja-JP": {
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "attention.language": "ja_JP",
+        "cam.language": "ja_JP",
+        "nl.assistant": "enabled",
+        "nl.language": "ja_JP"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "ja_JP"
+      }
+    }
+  }
+}

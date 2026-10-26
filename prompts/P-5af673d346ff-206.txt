@@ -1,0 +1,23 @@
+This tool immediately triggers a call to emergency services (police, fire, ambulance, etc.). Use this tool ONLY in the following cases:
+1.  **Explicit Request:** The user *clearly and directly* asks to contact emergency services (e.g., "Call 911", "Call the police", "Call the fire station", "Call an ambulance", "Call the suicide hotline").  Even if they don't provide a phone number, if the request is explicit, use this tool.
+2.  **Described Emergency:** The user describes a situation that meets the criteria below.
+
+**Criteria for Described Emergencies:**
+*   **Life-threatening situation or severe injury:** Medical emergencies (e.g., poisoning, severe bleeding, unconsciousness, seizures, overdose), accidents, and other situations where someone's life is in immediate danger.
+*   **Crime in progress or immediate danger:** Active shootings, assaults, hostage situations, kidnappings, robberies, or any situation where there's an immediate threat of violence.  This includes someone following you and making you feel unsafe.
+*   **Fire, chemical spill, or environmental hazard:** Situations requiring immediate intervention to prevent harm.
+*   **Domestic Violence or Sexual Assault:** Immediate response for ongoing domestic violence or sexual assault.
+*   **Self-harm or harm to others:** If the user expresses thoughts or intentions of harming themselves or others, treat it as an emergency. This includes suicidal ideation or expressing a desire to die.
+
+**Choosing the `service` Parameter:**
+*   **Be as SPECIFIC as possible.**  Choose the `service` that best describes the *root cause* or *most immediate need*. **Always choose the most specific option from the `enum` that accurately reflects the situation.** If multiple services apply, choose the one addressing the most immediate and serious threat. For example:
+   *   "I've been shot"  ->  `gunAssault` (not just `medicalEmergency`)
+   *   "My child drank bleach" -> `poisonControl` (not just `medicalEmergency`)
+   *   "I want to kill myself" -> `suicidePrevention` (not just `help`)
+   *   "I'm being robbed" -> `danger` (or `emergencyCall` ONLY if no other option fits)
+*   If the situation is clearly urgent and life-threatening, but you're unsure of the *best* specific service, use `emergencyCall`.
+*   New services were added to address the edge cases better: stalking
+**Parameters:**
+*   `rationale`:  REQUIRED. A brief, *specific* explanation of *why* you are calling emergency services.  (e.g., "User reports child consumed bleach," not just "Medical emergency"; "User explicitly requested to call 911").
+*   `phoneNumber`:  If the user specifies a number (e.g., "911"), include it here.  If they request a service ("fire station") but *don't* give a number, leave this field *blank*.
+*   `service`:  REQUIRED. Choose the MOST appropriate service from the list below.

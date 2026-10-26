@@ -1,0 +1,585 @@
+{
+  "zh_TW": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "正在下載在%@上處理語音輸入的支援功能。",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "在%@上處理語音輸入的支援功能會稍後於你連接WLAN時下載。[關於Siri與隱私權⋯](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "需要更多空間才能完成下載Siri支援內容。需要%@。[管理儲存空間](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "在%@上處理語音輸入的支援功能會於連接WLAN時下載。[使用行動數據](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "在%@上處理語音輸入的支援功能會於連接Wi-Fi時下載。[使用行動數據](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "在%@上處理語音輸入的支援功能會稍後於你連接Wi-Fi時下載。[關於Siri與隱私權⋯](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "已完成%@%%⋯"
+  },
+  "ur": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "‏⁨%@⁩ پر صوتی اِنپُٹ کی پروسسنگ کے لیے سپورٹ ڈاؤنلوڈ کیا جارہا ہے۔",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "‏%@ پر صوتی اِنپُٹ کی پروسیسنگ کے لیے سپورٹ بعد میں WLAN سے کنکٹ ہونے پر ڈاؤنلوڈ کیا جائے گا۔ [Siri اور رازداری کا تعارف…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "‏Siri کے لیے سپورٹ کا ڈاؤنلوڈ مکمل کرنے کے لیے مزید جگہ مطلوب ہے۔ ⁨%@⁩ کی ضرورت ہے۔ [اسٹوریج کا نظم کریں](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "‏%@ پر صوتی اِنپُٹ کی پروسیسنگ کے لیے سپورٹ بعد میں WLAN سے کنکٹ ہونے پر ڈاؤنلوڈ کیا جائے گا۔ [موبائل ڈیٹا کا استعمال کریں](siri-asset://about-siri)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "‏%@ پر صوتی اِنپُٹ کی پروسیسنگ کے لیے سپورٹ بعد میں Wi-Fi سے کنکٹ ہونے پر ڈاؤنلوڈ کیا جائے گا۔ [موبائل ڈیٹا کا استعمال کریں](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "‏%@ پر صوتی اِنپُٹ کی پروسیسنگ کے لیے سپورٹ بعد میں Wi-Fi سے کنکٹ ہونے پر ڈاؤنلوڈ کیا جائے گا۔ [Siri اور رازداری کا تعارف…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "‏⁨%@%%⁩ مکمل…"
+  },
+  "lt": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Į „%@“ atsisiunčiama balso duomenų apdorojimo funkcija.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Palaikymo failai, skirti balso įvesčiai apdoroti „%@“ įrenginyje, bus atsisiųsti vėliau, kai prisijungsite prie WLAN. [Apie „Siri“ ir privatumą…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Norint baigti „Siri“ palaikymo failų atsisiuntimą, reikia daugiau vietos (%@). [Tvarkyti saugyklą](siri-asset://manage-storage).",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Palaikymo failai, skirti balso įvesčiai apdoroti „%@“ įrenginyje, bus atsisiųsti, kai prisijungsite prie WLAN. [Mobiliojo ryšio duomenų naudojimas](siri-asset://use-cellular).",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Palaikymo failai, skirti balso įvesčiai apdoroti „%@“ įrenginyje, bus atsisiųsti, kai prisijungsite prie „Wi-Fi“. [Mobiliojo ryšio duomenų naudojimas](siri-asset://use-cellular).",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Palaikymo failai, skirti balso įvesčiai apdoroti „%@“ įrenginyje, bus atsisiųsti vėliau, kai prisijungsite prie „Wi-Fi“. [Apie „Siri“ ir privatumą…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@ %% baigta…"
+  },
+  "id": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Dukungan untuk memproses input suara di %@ sedang diunduh.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Dukungan untuk memproses input suara pada %@ akan diunduh nanti saat terhubung ke WLAN. [Mengenai Siri & Privasi…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Diperlukan lebih banyak ruang untuk menyelesaikan pengunduhan dukungan untuk Siri. %@ diperlukan. [Kelola Penyimpanan](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Dukungan untuk memproses input suara pada %@ akan diunduh saat terhubung ke WLAN. [Gunakan Data Seluler](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Dukungan untuk memproses input suara pada %@ akan diunduh saat terhubung ke Wi-Fi. [Gunakan Data Seluler](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Dukungan untuk memproses input suara pada %@ akan diunduh nanti saat terhubung ke Wi-Fi. [Mengenai Siri & Privasi…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% selesai…"
+  },
+  "ja": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@で音声入力の処理をするために必要なものをダウンロードしています。",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "%@で音声入力の処理をするために必要なものは、あとでWLANに接続されたときにダウンロードされます。[Siriとプライバシーについて…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siriに必要なもののダウンロードを完了するには、空き容量を増やす必要があります。%@が必要です。[ストレージを管理](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "%@で音声入力の処理をするために必要なものは、WLANに接続されたときにダウンロードされます。[モバイルデータ通信を使用](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "%@で音声入力の処理をするために必要なものは、Wi‑Fiに接続されたときにダウンロードされます。[モバイルデータ通信を使用](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "%@で音声入力の処理をするために必要なものは、あとでWi‑Fiに接続されたときにダウンロードされます。[Siriとプライバシーについて…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%%完了…"
+  },
+  "no": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Det lastes ned støtte for å behandle taleinndata på %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Støtte for å behandle taleinndata på %@ lastes ned når du er koblet til WLAN. [Om Siri og personvern…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Det trengs mer lagringsplass for å fullføre nedlastingen av Siri-støtte. %@ nødvendig. [Administrer lagringsplass](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Støtte for å behandle taleinndata på %@ lastes ned når du er koblet til WLAN. [Bruk mobildata](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Støtte for å behandle taleinndata på %@ lastes ned når du er koblet til Wi‑Fi. [Bruk mobildata](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Støtte for å behandle taleinndata på %@ lastes ned når du er koblet til Wi‑Fi. [Om Siri og personvern…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@ %% fullført…"
+  },
+  "mr": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "व्हॉइस इनपुटवर काम करण्यासाठी सपोर्ट %@ वर डाउनलोड केला जात आहे.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "%@ वर व्हॉइस इनपुटवर प्रक्रिया करण्यासाठी सपोर्ट WLAN शी कनेक्ट केल्यानंतर डाउनलोड केला जाईल. [Siri व गोपनीयताबद्दल…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri साठी सपोर्ट डाउनलोड करणे पूर्ण करण्यासाठी अधिक स्पेसची आवश्यकता आहे. %@ ची गरज आहे. [स्टोरेज मॅनेज करा](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "WLAN शी कनेक्ट केल्यावर %@ वर व्हॉइस इनपुट प्रोसेस करण्यासाठी सपोर्ट डाउनलोड केला जाईल. [मोबाइल डेटा वापरा](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "%@ वर व्हॉइस इनपुटवर प्रक्रिया करण्यासाठी सपोर्ट Wi-Fi शी कनेक्ट केल्यावर डाउनलोड केला जाईल. [मोबाइल डेटा वापरा](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "%@ वर व्हॉइस इनपुटवर प्रक्रिया करण्यासाठी सपोर्ट Wi-Fi शी कनेक्ट केल्यानंतर डाउनलोड केला जाईल. [Siri व गोपनीयताबद्दल…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% पूर्ण…"
+  },
+  "es_419": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Se está descargando el soporte para procesar entradas de voz en %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "El contenido necesario para procesar las entradas de voz en tu %@ se descargará más tarde cuando te conectes a una red WLAN. [Acerca de Siri y la privacidad…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Se necesita más espacio para terminar de descargar el contenido necesario para usar Siri. Se requieren %@. [Administrar el almacenamiento](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "El contenido necesario para procesar las entradas de voz en tu %@ se descargará cuando te conectes a una red WLAN. [Usar los datos celulares](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "El contenido necesario para procesar las entradas de voz en tu %@ se descargará cuando te conectes a una red Wi-Fi. [Usar los datos celulares](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "El contenido necesario para procesar las entradas de voz en tu %@ se descargará más tarde cuando te conectes a una red Wi-Fi. [Acerca de Siri y la privacidad…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% completado…"
+  },
+  "en_PH": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Support for processing voice input on %@ is downloading.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Support for processing voice input on %@ will download later when connected to WLAN. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "More space is required to finish downloading support for Siri. %@ needed. [Manage Storage](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Support for processing voice input on %@ will download when connected to WLAN. [Use Mobile Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Support for processing voice input on %@ will download when connected to Wi-Fi. [Use Mobile Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Support for processing voice input on %@ will download later when connected to Wi-Fi. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% complete…"
+  },
+  "ms": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Sokongan untuk memproses input suara pada %@ sedang dimuat turun.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Sokongan untuk memproses input suara pada %@ akan dimuat turun kemudian apabila disambungkan ke WLAN. [Perihal Siri & Privasi…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Lebih banyak ruang diperlukan untuk menyelesaikan muat turun sokongan untuk Siri. %@ diperlukan. [Urus Storan](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Sokongan untuk memproses input suara pada %@ akan dimuat turun apabila disambungkan ke WLAN. [Gunakan Data Selular](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Sokongan untuk memproses input suara pada %@ akan dimuat turun apabila disambungkan ke Wi‑Fi. [Gunakan Data Selular](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Sokongan untuk memproses input suara pada %@ akan dimuat turun kemudian apabila disambungkan ke Wi‑Fi. [Perihal Siri & Privasi…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% lengkap…"
+  },
+  "hi": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@ पर वॉइस इनपुट प्रोसेसिंग के लिए समर्थन डाउनलोड किया जा रहा है।",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "WLAN से कनेक्टेड रहने पर %@ पर वॉइस इनपुट प्रोसेस करने के लिए समर्थन बाद में डाउनलोड किया जाएगा। [Siri और गोपनीयता का परिचय…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri के लिए समर्थन डाउनलोड पूरा करने के लिए ज़्यादा जगह चाहिए। %@ की ज़रूरत है। [स्टोरेज प्रबंधित करें](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "WLAN से कनेक्टेड रहने पर %@ पर वॉइस इनपुट प्रोसेस करने के लिए समर्थन डाउनलोड किया जाएगा। [मोबाइल डेटा का उपयोग करें](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "वाई-फ़ाई से कनेक्टेड रहने पर %@ पर वॉइस इनपुट प्रोसेस करने के लिए समर्थन डाउनलोड किया जाएगा। [मोबाइल डेटा का उपयोग करें](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "वाई-फ़ाई से कनेक्टेड रहने पर %@ पर वॉइस इनपुट प्रोसेस करने के लिए समर्थन बाद में डाउनलोड किया जाएगा। [Siri और गोपनीयता का परिचय…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% पूर्ण…"
+  },
+  "en_CA": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Support for processing voice input on %@ is downloading.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Support for processing voice input on %@ will download later when connected to WLAN. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "More space is required to finish downloading support for Siri. %@ needed. [Manage Storage](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Support for processing voice input on %@ will download when connected to WLAN. [Use Cellular Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Support for processing voice input on %@ will download when connected to Wi-Fi. [Use Cellular Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Support for processing voice input on %@ will download later when connected to Wi-Fi. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% complete…"
+  },
+  "es": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Se está descargando el contenido necesario para procesar entradas de voz en el %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "El contenido necesario para procesar entradas de voz en el %@ se descargará más tarde, cuando te conectes a una red WLAN. [Acerca de Siri y la privacidad…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Se requiere más espacio para terminar de descargar los recursos de Siri, concretamente %@. [Gestionar almacenamiento](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "El contenido necesario para procesar entradas de voz en el %@ se descargará cuando te conectes a una red WLAN. [Usar datos móviles](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "El contenido necesario para procesar entradas de voz en el %@ se descargará cuando te conectes a una red Wi‑Fi. [Usar datos móviles](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "El contenido necesario para procesar entradas de voz en el %@ se descargará más tarde, cuando te conectes a una red Wi‑Fi. [Acerca de Siri y la privacidad…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@ %% completado…"
+  },
+  "pl": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Pobieram pliki obsługi przetwarzania poleceń głosowych na urządzeniu (%@).",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Pliki obsługi przetwarzania poleceń głosowych na „%@” zostaną pobrane później, gdy urządzenie połączy się z siecią WLAN. [Siri i prywatność…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Aby ukończyć pobieranie plików obsługi Siri, zwolnij więcej miejsca. Wymagane jest %@. [Zarządzaj miejscem](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Pliki obsługi przetwarzania poleceń głosowych na urządzeniu „%@” zostaną pobrane, gdy urządzenie połączy się z siecią WLAN. [Użyj danych komórkowych](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Pliki obsługi przetwarzania poleceń głosowych na „%@” zostaną pobrane, gdy urządzenie połączy się z siecią Wi‑Fi. [Użyj danych komórkowych](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Pliki obsługi przetwarzania poleceń głosowych na „%@” zostaną pobrane później, gdy urządzenie połączy się z siecią Wi‑Fi. [Siri i prywatność…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% ukończone…"
+  },
+  "en_IN": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Support for processing voice input on %@ is downloading.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Support for processing voice input on %@ will download later when connected to WLAN. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "More space is required to finish downloading support for Siri. %@ needed. [Manage Storage](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Support for processing voice input on %@ will download when connected to WLAN. [Use Mobile Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Support for processing voice input on %@ will download when connected to Wi-Fi. [Use Mobile Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Support for processing voice input on %@ will download later when connected to Wi-Fi. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% complete…"
+  },
+  "ca": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "S’està descarregant el contingut necessari per processar la veu en aquest %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "El contingut necessari per processar la veu en aquest %@ es descarregarà més tard, quan tinguis connexió a una xarxa WLAN. [Sobre Siri i la privacitat…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Cal més espai per acabar de descarregar els recursos necessaris per utilitzar Siri, concretament %@. [Gestiona l’emmagatzematge…](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "El contingut necessari per processar la veu en aquest %@ es descarregarà més tard, quan tinguis connexió a una xarxa WLAN. [Utilitza les dades mòbils…](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "El contingut necessari per processar la veu en aquest %@ es descarregarà més tard, quan tinguis connexió a una xarxa Wi‑Fi. [Utilitza les dades mòbils…](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "El contingut necessari per processar la veu en aquest %@ es descarregarà més tard, quan tinguis connexió a una xarxa Wi‑Fi. [Sobre Siri i la privacitat…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@ %% completat…"
+  },
+  "ta": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@-இல் குரல் உள்ளீட்டைச் செயலாக்குவதற்கான உதவிக் கோப்புகள் பதிவிறக்கப்படுகின்றன.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "%@-இல் குரல் உள்ளீட்டைச் செயல்படுத்தத் தேவையான உதவிக் கோப்புகள், WLAN உடன் இணைக்கப்பட்ட பிறகு பதிவிறக்கப்படும். [Siri & தனியுரிமை பற்றி…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siriக்கான உதவிக் கோப்புகளைப் பதிவிறக்கி முடிக்க கூடுதல் இடம் தேவை. %@ தேவை. [சேமிப்பகத்தை நிர்வகியுங்கள்](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "%@-இல் குரல் உள்ளீட்டைச் செயல்படுத்தத் தேவையான உதவிக் கோப்புகள், WLAN உடன் இணைக்கப்பட்ட பிறகு பதிவிறக்கப்படும். [மொபைல் டேட்டாவைப் பயன்படுத்து](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "%@-இல் குரல் உள்ளீட்டைச் செயல்படுத்தத் தேவையான உதவிக் கோப்புகள், Wi-Fi உடன் இணைக்கப்பட்ட பிறகு பதிவிறக்கப்படும். [மொபைல் டேட்டாவைப் பயன்படுத்து](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "%@-இல் குரல் உள்ளீட்டைச் செயல்படுத்தத் தேவையான உதவிக் கோப்புகள், Wi-Fi உடன் இணைக்கப்பட்ட பிறகு பதிவிறக்கப்படும். [Siri & தனியுரிமை பற்றி…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% நிறைவடைந்தது…"
+  },
+  "fr_CA": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Le contenu nécessaire au traitement de la saisie vocale sur votre %@ est en cours de téléchargement.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Le contenu nécessaire au traitement de la saisie vocale sera téléchargé plus tard lorsque votre %@ se connectera au WLAN. [Améliorer Siri et confidentialité…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Vous avez besoin de plus d’espace pour terminer de télécharger les ressources nécessaires à Siri (%@ nécessaire). [Gérer l’espace de stockage](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Le contenu nécessaire au traitement de la saisie vocale sera téléchargé lorsque votre %@ se connectera au WLAN. [Utiliser les données cellulaires](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Le contenu nécessaire au traitement de la saisie vocale sera téléchargé lorsque votre %@ se connectera au Wi‑Fi. [Utiliser les données cellulaires](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Le contenu nécessaire au traitement de la saisie vocale sera téléchargé plus tard lorsque votre %@ se connectera au Wi‑Fi. [Améliorer Siri et confidentialité…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "Progression : %@ %%…"
+  },
+  "fr": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Les ressources nécessaires au traitement des saisies vocales sur votre %@ sont en cours de téléchargement.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Les ressources nécessaires au traitement des saisies vocales sur votre %@ seront téléchargées lorsque votre appareil sera connecté à un réseau WLAN. [Siri et confidentialité…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Un espace de stockage plus important (%@) est requis pour terminer le téléchargement des ressources nécessaires à la prise en charge de Siri. [Gérer l’espace de stockage](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Les ressources nécessaires au traitement des saisies vocales sur votre %@ seront téléchargées lorsque votre appareil sera connecté à un réseau WLAN. [Utiliser les données cellulaires](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Les ressources nécessaires au traitement des saisies vocales sur votre %@ seront téléchargées lorsque votre appareil sera connecté à un réseau Wi-Fi. [Utiliser les données cellulaires](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Les ressources nécessaires au traitement des saisies vocales sur votre %@ seront téléchargées lorsque votre appareil sera connecté à un réseau Wi-Fi. [Siri et confidentialité…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "Progression : %@ %%"
+  },
+  "or": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@ ରେ ଭଏସ୍ ଇନ୍‌ପୁଟ୍ ପ୍ରକ୍ରିୟାକରଣ ପାଇଁ ସମର୍ଥନ ଡାଉନ୍‌ଲୋଡ୍ କରାଯାଉଛି।",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "%@ ରେ ଭଏସ୍ ଇନ୍‌ପୁଟ୍ ପ୍ରକ୍ରିୟାନ୍ବିତ କରିବା ପାଇଁ ସମର୍ଥନ, WLAN ସହିତ ସଂଯୁକ୍ତ ହେବା ପରେ ଡାଉନ୍‌ଲୋଡ୍ ହେବ। [Siri ଓ ଗୋପନୀୟତା ବିଷୟରେ…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri ପାଇଁ ସମର୍ଥନ ଡାଉନ୍‌ଲୋଡ୍ କରିବା ସମ୍ପୂର୍ଣ୍ଣ କରିବା ପାଇଁ ଅଧିକ ସ୍ପେସ୍‌ର ଆବଶ୍ୟକତା ରହିଛି। %@ ଆବଶ୍ୟକ। [ଷ୍ଟୋରେଜ୍ ପରିଚାଳନା କରନ୍ତୁ](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "%@ ରେ ଭଏସ୍ ଇନ୍‌ପୁଟ୍ ପ୍ରକ୍ରିୟାନ୍ବିତ କରିବା ପାଇଁ ସମର୍ଥନ, WLAN ସହିତ ସଂଯୁକ୍ତ ହେବା ସମୟରେ ଡାଉନ୍‌ଲୋଡ୍ ହେବ। [ମୋବାଇଲ୍ ଡେଟା ବ୍ୟବହାର କରନ୍ତୁ](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "%@ ରେ ଭଏସ୍ ଇନ୍‌ପୁଟ୍ ପ୍ରକ୍ରିୟାନ୍ବିତ କରିବା ପାଇଁ ସମର୍ଥନ, Wi-Fi ସହିତ ସଂଯୁକ୍ତ ହେବା ସମୟରେ ଡାଉନ୍‌ଲୋଡ୍ ହେବ। [ମୋବାଇଲ୍ ଡେଟା ବ୍ୟବହାର କରନ୍ତୁ](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "%@ ରେ ଭଏସ୍ ଇନ୍‌ପୁଟ୍ ପ୍ରକ୍ରିୟାନ୍ବିତ କରିବା ପାଇଁ ସମର୍ଥନ, Wi-Fi ସହିତ ସଂଯୁକ୍ତ ହେବା ପରେ ଡାଉନ୍‌ଲୋଡ୍ ହେବ। [ Siri ଓ ଗୋପନୀୟତା ବିଷୟରେ…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% ସମ୍ପୂର୍ଣ୍ଣ ହୋଇଛି…"
+  },
+  "da": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Understøttelse til behandling af tale på %@ hentes.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Understøttelse til behandling af tale på %@ hentes senere, når der er forbindelse til WLAN. [Om Siri & anonymitet…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Der kræves mere lagringsplads for at hente understøttelse til Siri. %@ kræves. [Administrer lagringsplads](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Understøttelse til behandling af tale på %@ hentes senere, når der er forbindelse til WLAN. [Brug mobildata](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Understøttelse til behandling af tale på %@ hentes senere, når der er forbindelse til Wi-Fi. [Brug mobildata](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Understøttelse til behandling af tale på %@ hentes senere, når der er forbindelse til Wi-Fi. [Om Siri & anonymitet…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@ %% færdig…"
+  },
+  "bg": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Изтегля се поддръжка за обработване на гласови входни данни на %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Поддръжката за обработка на гласови входни данни на %@ ще се изтегли по-късно, когато се свържете с WLAN. [За Siri и поверителност…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Необходимо е повече пространство, за да завърши изтеглянето на поддръжка за Siri (още %@). [Управлявай пространство](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Поддръжката за обработка на гласови входни данни на %@ ще се изтегли по-късно, когато се свържете с WLAN. [Използвай мобилни данни](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Поддръжката за обработка на гласови входни данни на %@ ще се изтегли по-късно, когато се свържете с Wi-Fi. [Използвай мобилни данни](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Поддръжката за обработка на гласови входни данни на %@ ще се изтегли по-късно, когато се свържете с Wi-Fi. [За Siri и поверителност…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "Завършено: %@%%…"
+  },
+  "te": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@లో వాయిస్ ఇన్‌పుట్‌ను ప్రాసెస్ చేయడం కోసం మద్దతు డౌన్‌లోడ్ చేయబడుతోంది.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "%@లో వాయిస్ ఇన్‌పుట్‌ను ప్రాసెస్ చేయడానికి మద్దతు అనేది తర్వాత WLANకి కనెక్ట్ చేయబడినప్పుడు డౌన్‌లోడ్ చేయబడుతుంది. [Siri & గోప్యత గురించి…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri మద్దతును డౌన్‌లోడ్ చేయడం పూర్తి చేయడానికి మరింత స్పేస్ అవసరం. %@ అవసరం. [స్టోరేజ్‌ను నిర్వహించండి](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "%@లో వాయిస్ ఇన్‌పుట్‌ను ప్రాసెస్ చేయడానికి మద్దతు WLANకి కనెక్ట్ చేయబడినప్పుడు డౌన్‌లోడ్ చేయబడుతుంది. [మొబైల్ డేటాను ఉపయోగించండి](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "%@లో వాయిస్ ఇన్‌పుట్‌ను ప్రాసెస్ చేయడానికి మద్దతు Wi-Fiకి కనెక్ట్ చేయబడినప్పుడు డౌన్‌లోడ్ చేయబడుతుంది. [మొబైల్ డేటాను ఉపయోగించండి](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "%@లో వాయిస్ ఇన్‌పుట్‌ను ప్రాసెస్ చేయడానికి మద్దతు అనేది తర్వాత Wi-Fiకి కనెక్ట్ చేయబడినప్పుడు డౌన్‌లోడ్ చేయబడుతుంది. [Siri & గోప్యత గురించి…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% పూర్తయింది…"
+  },
+  "pt_BR": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Baixando compatibilidade com processamento de dados de voz no %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "A compatibilidade com processamento de dados de voz no %@ será baixada depois, quando o dispositivo estiver conectado a uma rede WLAN. [Sobre a Siri e Privacidade…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "É necessário mais espaço para terminar de baixar os recursos da Siri. São necessários %@. [Gerenciar Armazenamento](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "A compatibilidade com processamento de voz no %@ será baixada quando o dispositivo estiver conectado a uma rede WLAN. [Usar Dados Celulares](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "A compatibilidade com processamento de dados de voz no %@ será baixada quando o dispositivo estiver conectado a uma rede Wi-Fi. [Usar Dados Celulares](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "A compatibilidade com processamento de dados de voz no %@ será baixada depois, quando o dispositivo estiver conectado a uma rede Wi-Fi. [Sobre a Siri e Privacidade…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% concluído…"
+  },
+  "zh_CN": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "正下载在%@上处理语音输入所需的支持内容。",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "在%@上处理语音输入所需的支持内容将在稍后接入无线局域网时下载。[关于Siri与隐私…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "需要更多空间才能完成Siri支持内容下载。需要%@。[管理储存空间](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "在%@上处理语音输入所需的支持内容将在接入无线局域网时下载。[使用蜂窝数据](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "在%@上处理语音输入所需的支持内容将在接入Wi-Fi时下载。[使用蜂窝数据](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "在%@上处理语音输入所需的支持内容将在稍后接入Wi-Fi时下载。[关于Siri与隐私…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "已完成%@%%…"
+  },
+  "gu": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@ પર વૉઇસ ઇનપુટ પ્રોસેસિંગ માટે સપોર્ટ ડાઉનલોડ કરાઈ રહ્યું છે.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "જ્યારે WLAN સાથે કનેક્ટ હોય ત્યારે %@ પર વૉઇસ ઇનપુટ પ્રોસેસ કરવા માટે સપોર્ટ પછીથી ડાઉનલોડ થશે. [Siri અને પ્રાઇવસી વિષે…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri માટે સપોર્ટનું ડાઉનલોડ પૂર્ણ કરવા માટે વધુ જગ્યાની જરૂર છે. %@ જરૂરી છે. [સ્ટોરેજ મૅનેજ કરો](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "જ્યારે WLAN સાથે કનેક્ટ હોય ત્યારે %@ પર વૉઇસ ઇનપુટ પ્રોસેસ કરવા માટે સપોર્ટ ડાઉનલોડ થશે. [મોબાઇલ ડેટાનો ઉપયોગ કરો](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "જ્યારે Wi-Fi સાથે કનેક્ટ હોય ત્યારે %@ પર વૉઇસ ઇનપુટ પ્રોસેસ કરવા માટે સપોર્ટ ડાઉનલોડ થશે. [મોબાઇલ ડેટાનો ઉપયોગ કરો](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "જ્યારે Wi-Fi સાથે કનેક્ટ હોય ત્યારે %@ પર વૉઇસ ઇનપુટ પ્રોસેસ કરવા માટે સપોર્ટ પછીથી ડાઉનલોડ થશે. [Siri અને પ્રાઇવસી વિષે…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% પૂરું થયું…"
+  },
+  "hr": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Preuzima se podrška za obrađivanje glasovnog unosa na uređaju %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Podrška za obradu glasovnog unosa na uređaju %@ preuzet će se kasnije kad se spojite na WLAN. [Više o Siri i privatnosti…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Potrebno je više prostora za dovršetak preuzimanja podrške za Siri. Potrebno je %@. [Upravljaj memorijom](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Podrška za obradu glasovnog unosa na uređaju %@ preuzet će se kad se spojite na WLAN. [Koristi mobilne podatke](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Podrška za obradu glasovnog unosa na uređaju %@ preuzet će se kad se spojite na Wi-Fi. [Koristi mobilne podatke](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Podrška za obradu glasovnog unosa na uređaju %@ preuzet će se kasnije kad se spojite na Wi-Fi. [Više o Siri i privatnosti…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@ %% dovršeno…"
+  },
+  "de": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Unterstützung für die Verarbeitung von Spracheingaben auf %@ wird geladen.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Unterstützung für die Verarbeitung von Spracheingaben auf %@ wird später geladen, wenn eine WLAN-Verbindung besteht. [Über Siri & Datenschutz …](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Um den Download zur Unterstützung für Siri abzuschließen, ist mehr Speicherplatz erforderlich. %@ benötigt. [Speicherplatz verwalten](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Unterstützung für die Verarbeitung von Spracheingaben auf %@ wird geladen, wenn eine WLAN-Verbindung besteht.[Mobile Daten verwenden](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Unterstützung für die Verarbeitung von Spracheingaben auf %@ wird geladen, wenn eine WLAN-Verbindung besteht.[Mobile Daten verwenden](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Unterstützung für die Verarbeitung von Spracheingaben auf %@ wird später geladen, wenn eine WLAN-Verbindung besteht. [Über Siri & Datenschutz …](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@ %% abgeschlossen …"
+  },
+  "th": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "การรองรับการประมวลผลเสียงพูดบน %@ กำลังดาวน์โหลด",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "การรองรับการประมวลผลเสียงพูดบน %@ จะดาวน์โหลดในภายหลังเมื่อเชื่อมต่อกับ WLAN [เกี่ยวกับ Siri และความเป็นส่วนตัว…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "ต้องใช้พื้นที่เพิ่มเติมเพื่อดาวน์โหลดการรองรับสำหรับ Siri ต่อให้เสร็จ ต้องใช้ %@ [จัดการพื้นที่จัดเก็บข้อมูล](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "การรองรับการประมวลผลเสียงพูดบน %@ จะดาวน์โหลดเมื่อเชื่อมต่อกับ WLAN [ใช้ข้อมูลเซลลูลาร์](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "การรองรับการประมวลผลเสียงพูดบน %@ จะดาวน์โหลดเมื่อเชื่อมต่อกับ Wi‑Fi [ใช้ข้อมูลเซลลูลาร์](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "การรองรับการประมวลผลเสียงพูดบน %@ จะดาวน์โหลดในภายหลังเมื่อเชื่อมต่อกับ Wi‑Fi [เกี่ยวกับ Siri และความเป็นส่วนตัว…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "สำเร็จ %@%%…"
+  },
+  "en_GB": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Support for processing voice input on %@ is downloading.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Support for processing voice input on %@ will download later when connected to WLAN. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "More space is required to finish downloading support for Siri. %@ needed. [Manage Storage](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Support for processing voice input on %@ will download when connected to WLAN. [Use Mobile Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Support for processing voice input on %@ will download when connected to Wi-Fi. [Use Mobile Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Support for processing voice input on %@ will download later when connected to Wi-Fi. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% complete…"
+  },
+  "sk": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Sťahujem podporu pre spracovanie hlasového vstupu na zariadení %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Podpora pre spracovanie hlasového vstupu na zariadení %@ bude stiahnutá neskôr, keď sa pripojíte k WLAN. [O Siri a súkromí…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Na dokončenie sťahovania podpory pre Siri sa vyžaduje viac miesta. Potrebujete %@. [Spravovať úložisko](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Podpora pre spracovanie hlasového vstupu na zariadení %@ bude stiahnutá neskôr, keď sa pripojíte k WLAN. [Použiť mobilné dáta](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Podpora pre spracovanie hlasového vstupu na zariadení %@ bude stiahnutá neskôr, keď sa pripojíte k Wi‑Fi. [Použiť mobilné dáta](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Podpora pre spracovanie hlasového vstupu na zariadení %@ bude stiahnutá neskôr, keď sa pripojíte k Wi‑Fi. [O Siri a súkromí…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "Dokončené na %@ %%…"
+  },
+  "zh_HK": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "正在下載於%@上處理語音輸入的支援。",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "在%@上處理語音輸入的支援將會在連接WLAN時下載。[關於Siri和私隱⋯](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "需要更多空間來完成下載Siri支援。需要%@。[管理儲存空間](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "在%@上處理語音輸入的支援將會連接WLAN時下載。使用流動數據。[使用流動數據](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "在%@上處理語音輸入的支援將會連接Wi-Fi時下載。使用流動數據。[使用流動數據](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "在%@上處理語音輸入的支援將會連接Wi-Fi時下載。[關於Siri與私隱⋯](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "已完成%@%%⋯"
+  },
+  "sl": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Podpora za obdelavo glasovnega vnosa v napravi %@ se prenaša.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Podpora pri obdelavi glasovnega vnosa v napravi %@ se bo prenesla pozneje, ko boste povezani z omrežjem WLAN. [Več o Siri in zasebnosti …](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Za dokončanje prenosa podpore za Siri je zahtevanega več prostora. Potrebno: %@. [Upravljaj shrambo](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Podpora pri obdelavi glasovnega vnosa v napravi %@ se bo prenesla, ko boste povezani z omrežjem WLAN. [Uporabi mobilne podatke](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Podpora pri obdelavi glasovnega vnosa v napravi %@ se bo prenesla, ko boste povezani z omrežjem Wi-Fi. [Uporabi mobilne podatke](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Podpora pri obdelavi glasovnega vnosa v napravi %@ se bo prenesla pozneje, ko boste povezani z omrežjem Wi-Fi. [Več o Siri in zasebnosti …](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "Dokončano: %@ %% …"
+  },
+  "ro": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Resursele pentru procesarea enunțurilor vocale pe %@ se descarcă.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Resursele pentru procesarea comenzilor vocale pe %@ vor fi descărcate mai târziu, când veți dispune de conexiune WLAN. [Despre Siri și intimitate…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Pentru a finaliza descărcarea resurselor pentru Siri, este necesar mai mult spațiu (%@). [Gestionați stocarea](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Resursele pentru procesarea comenzilor vocale pe %@ vor fi descărcate mai târziu, când veți dispune de conexiune WLAN. [Utilizați date celulare](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Resursele pentru procesarea comenzilor vocale pe %@ vor fi descărcate mai târziu, când veți dispune de conexiune Wi‑Fi. [Utilizați date celulare](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Resursele pentru procesarea comenzilor vocale pe %@ vor fi descărcate mai târziu, când veți dispune de conexiune Wi‑Fi. [Despre Siri și intimitate…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% finalizat…"
+  },
+  "kk": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@ құрылғысында дауыспен енгізуді өңдеуге қолдау көрсету бумасы жүктеп алынуда.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "%@ құрылғысында дауыспен енгізуді өңдеуге қолдау көрсету бумасы кейінірек WLAN желісіне қосылған кезде жүктеп алынады. [Siri және құпиялылық туралы ақпарат…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri үшін қолдау көрсету бумасын жүктеп алу үшін көбірек бос орын қажет: %@. [Сақтау орнын басқару](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "%@ құрылғысында дауыспен енгізуді өңдеуге қолдау көрсету бумасы WLAN желісіне қосылған кезде жүктеп алынады. [Ұялы деректерді пайдалану](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "%@ құрылғысында дауыспен енгізуді өңдеуге қолдау көрсету бумасы Wi-Fi желісіне қосылған кезде жүктеп алынады. [Ұялы деректерді пайдалану](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "%@ құрылғысында дауыспен енгізуді өңдеуге қолдау көрсету бумасы кейінірек Wi-Fi желісіне қосылған кезде жүктеп алынады. [Siri және құпиялылық туралы ақпарат…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% дайын…"
+  },
+  "hu": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "A beszédhang-bemenet %@ eszközön való feldolgozásához szükséges támogatás letöltése folyamatban van.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "A beszédhang-bemenet %@ eszközön való feldolgozásának támogatása később lesz letöltve, amikor csatlakozik a WLAN-hoz. [Siriről és az adatvédelemről…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Több tárhely szükséges a Siri-támogatás letöltésének befejezéséhez. %@ szükséges. [Tárhely kezelése](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "A beszédhang-bemenet %@ eszközön való feldolgozásának támogatása később lesz letöltve, amikor csatlakozik WLAN-hoz. [Mobiladat-forgalom használata](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "A(z) %@ hangbemenetének feldolgozásához szükséges támogatás akkor lesz letöltve, amikor Wi‑Fi-hez csatlakozik. [Mobiladat-forgalom használata](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "A beszédhang-bemenet %@ eszközön való feldolgozásának támogatása később lesz letöltve, amikor csatlakozik a Wi‑Fi-hez. [Siriről és az adatvédelemről…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% kész…"
+  },
+  "bn": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@-এ ভয়েস ইনপুট প্রক্রিয়া করার জন্য সহায়তা ডাউনলোড হচ্ছে।",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "WLAN-এর সঙ্গে কানেক্ট করলে পরে %@-এ ভয়েস ইনপুট প্রক্রিয়া করার জন্য সাপোর্ট ডাউনলোড হবে। [Siri ও গোপনীয়তা সম্পর্কে…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri-এর জন্য সাপোর্ট ডাউনলোড সম্পূর্ণ করতে স্টোরেজে আরও জায়গা প্রয়োজন। %@ প্রয়োজন। [স্টোরেজ পরিচালনা করুন](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "WLAN-এর সাথে কানেক্ট করা থাকলে %@-এ ভয়েস ইনপুট প্রক্রিয়া করার জন্য সাপোর্ট ডাউনলোড করা হবে। [মোবাইল ডেটা ব্যবহার করুন](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Wi-Fi-এর সঙ্গে কানেক্ট করলে পরে %@-এ ভয়েস ইনপুট প্রক্রিয়া করার জন্য সাপোর্ট ডাউনলোড হবে। [মোবাইল ডেটা ব্যবহার করুন](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Wi-Fi-এর সঙ্গে কানেক্ট করলে পরে %@-এ ভয়েস ইনপুট প্রক্রিয়া করার জন্য সাপোর্ট ডাউনলোড হবে। [Siri ও গোপনীয়তা সম্পর্কে…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% সম্পূর্ণ হয়েছে…"
+  },
+  "ar": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "يجري تنزيل الدعم لمعالجة إدخال الصوت على %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "سيتم تنزيل دعم معالجة إدخال الصوت على %@ لاحقًا عند الاتصال بشبكة WLAN. [حول Siri والخصوصية…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "مطلوب مساحة أكبر لإكمال تنزيل دعم Siri. مطلوب %@. [إدارة التخزين](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "سيتم تنزيل دعم معالجة إدخال الصوت على %@ عند الاتصال بشبكة WLAN. [استخدام البيانات الخلوية](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "سيتم تنزيل دعم معالجة إدخال الصوت على %@ عند الاتصال بشبكة Wi‑Fi. [استخدام البيانات الخلوية](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "سيتم تنزيل دعم معالجة إدخال الصوت على %@ لاحقًا عند الاتصال بشبكة Wi‑Fi. [حول Siri والخصوصية…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "اكتمل %@٪…"
+  },
+  "it": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "È in corso il download degli elementi necessari per supportare l’elaborazione dell’input vocale su %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Gli elementi necessari per supportare l’elaborazione dell’input vocale su %@ verranno scaricati in seguito, quando la connessione alla rete WLAN sarà attiva. [Siri e privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Per completare il download delle risorse per Siri, è necessario liberare %@ di spazio. [Gestisci spazio](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Gli elementi necessari per supportare l’elaborazione dell’input vocale su %@ verranno scaricati in seguito, quando la connessione alla rete WLAN sarà attiva. [Usa dati cellulare](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Gli elementi necessari per supportare l’elaborazione dell’input vocale su %@ verranno scaricati in seguito, quando la connessione alla rete Wi‑Fi sarà attiva. [Usa dati cellulare](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Gli elementi necessari per supportare l’elaborazione dell’input vocale su %@ verranno scaricati in seguito, quando la connessione alla rete Wi‑Fi sarà attiva. [Siri e privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% completato…"
+  },
+  "kn": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@ನಲ್ಲಿ ವಾಯ್ಸ್ ಇನ್‌ಪುಟ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಬೆಂಬಲವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "%@ ಸಾಧನದಲ್ಲಿ ವಾಯ್ಸ್ ಇನ್‌ಪುಟ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವ ಕುರಿತಾದ ಬೆಂಬಲವನ್ನು WLANಗೆ ಕನೆಕ್ಟ್ ಮಾಡಿದ ನಂತರದಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ. [Siri ಮತ್ತು ಗೌಪ್ಯತೆಯ ಕುರಿತು…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siriಗಾಗಿ ಬೆಂಬಲವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡುವುದನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಹೆಚ್ಚಿನ ಸ್ಥಳಾವಕಾಶದ ಅಗತ್ಯವಿದೆ. %@ ಅಗತ್ಯವಿದೆ. [ಸಂಗ್ರಹಣೆಯನ್ನು ನಿರ್ವಹಿಸಿ](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "%@ ಸಾಧನದಲ್ಲಿ ವಾಯ್ಸ್ ಇನ್‌ಪುಟ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವ ಕುರಿತಾದ ಬೆಂಬಲವನ್ನು WLANಗೆ ಕನೆಕ್ಟ್ ಮಾಡಿದ ನಂತರದಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ. [ಮೊಬೈಲ್ ಡೇಟ ಬಳಸಿ](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "%@ ಸಾಧನದಲ್ಲಿ ವಾಯ್ಸ್ ಇನ್‌ಪುಟ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವ ಕುರಿತಾದ ಬೆಂಬಲವನ್ನು Wi-Fiಗೆ ಕನೆಕ್ಟ್ ಮಾಡಿದ ನಂತರದಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ. [ಮೊಬೈಲ್ ಡೇಟ ಬಳಸಿ](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "%@ ಸಾಧನದಲ್ಲಿ ವಾಯ್ಸ್ ಇನ್‌ಪುಟ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವ ಕುರಿತಾದ ಬೆಂಬಲವನ್ನು Wi-Fiಗೆ ಕನೆಕ್ಟ್ ಮಾಡಿದ ನಂತರದಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ. [Siri ಮತ್ತು ಗೌಪ್ಯತೆಯ ಕುರಿತು…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% ಪೂರ್ಣಗೊಂಡಿದೆ…"
+  },
+  "ko": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@에서의 음성 입력 처리 지원을 다운로드하는 중입니다.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "나중에 WLAN에 연결되면 %@에서의 음성 입력 처리 지원을 다운로드합니다. [Siri 및 개인정보 보호에 관하여…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri 지원 다운로드를 완료하려면 추가로 %@의 공간이 필요합니다. [저장 공간 관리](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "WLAN에 연결되면 %@에서의 음성 입력 처리 지원을 다운로드합니다. [셀룰러 데이터 사용](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Wi-Fi에 연결되면 %@에서의 음성 입력 처리 지원을 다운로드합니다. [셀룰러 데이터 사용](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "나중에 Wi-Fi에 연결되면 %@에서의 음성 입력 처리 지원을 다운로드합니다. [Siri 및 개인정보 보호에 관하여…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% 완료…"
+  },
+  "uk": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Викачується компонент обробки даних голосового введення на %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Компонент оброблення даних голосового вводу на %@ буде викачано пізніше після підʼєднання до мережі WLAN. [Про Siri та приватність…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Щоб завершити викачування компонентів для Siri, потрібно більше місця (%@). [Керувати сховищем](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Компонент оброблення даних голосового вводу на %@ буде викачано після підʼєднання до мережі WLAN. [Використання мобільних даних](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Компонент оброблення даних голосового вводу на %@ буде викачано після підʼєднання до мережі Wi‑Fi. [Використання мобільних даних](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Компонент оброблення даних голосового вводу на %@ буде викачано пізніше після підʼєднання до мережі Wi‑Fi. [Про Siri та приватність…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@ %% виконано…"
+  },
+  "pa": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@ ਵਿੱਚ ਵੌਇਸ ਇਨਪੁੱਟ ’ਤੇ ਪ੍ਰਕਿਰਿਆ ਕਰਨ ਲਈ ਸਹਾਇਤਾ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "%@ ਵਿੱਚ ਵੌਇਸ ਇਨਪੁੱਟ ’ਤੇ ਪ੍ਰਕਿਰਿਆ ਕਰਨ ਲਈ ਸਹਾਇਤਾ ਬਾਅਦ ਵਿੱਚ WLAN ਨਾਲ ਕਨੈਕਟ ਹੋਣ ’ਤੇ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾਵੇਗੀ। [Siri ਅਤੇ ਪਰਦੇਦਾਰੀ ਬਾਰੇ…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri ਲਈ ਸਹਾਇਤਾ ਦਾ ਡਾਊਨਲੋਡ ਪੂਰਾ ਕਰਨ ਲਈ ਹੋਰ ਥਾਂ ਚਾਹੀਦੀ ਹੈ। %@ ਦੀ ਲੋੜ ਹੈ। [ਸਟੋਰੇਜ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "%@ ਵਿੱਚ ਵੌਇਸ ਇਨਪੁੱਟ ’ਤੇ ਪ੍ਰਕਿਰਿਆ ਕਰਨ ਲਈ ਸਹਾਇਤਾ WLAN ਨਾਲ ਕਨੈਕਟ ਹੋਣ ‘ਤੇ ਡਾਊਨਲੋਡ ਹੋਵੇਗੀ। [ਮੋਬਾਈਲ ਡੇਟਾ ਦੀ ਵਰਤੋਂ ਕਰੋ](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "%@ ਵਿੱਚ ਵੌਇਸ ਇਨਪੁੱਟ ’ਤੇ ਪ੍ਰਕਿਰਿਆ ਕਰਨ ਲਈ ਸਹਾਇਤਾ Wi-Fi ਨਾਲ ਕਨੈਕਟ ਹੋਣ ’ਤੇ ਡਾਊਨਲੋਡ ਹੋਵੇਗੀ। [ਮੋਬਾਈਲ ਡੇਟਾ ਦੀ ਵਰਤੋਂ ਕਰੋ](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "%@ ਵਿੱਚ ਵੌਇਸ ਇਨਪੁੱਟ ’ਤੇ ਪ੍ਰਕਿਰਿਆ ਕਰਨ ਲਈ ਸਹਾਇਤਾ ਬਾਅਦ ਵਿੱਚ Wi-Fi ਨਾਲ ਕਨੈਕਟ ਹੋਣ ’ਤੇ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾਵੇਗੀ। [Siri ਅਤੇ ਪਰਦੇਦਾਰੀ ਬਾਰੇ…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% ਪੂਰਾ…"
+  },
+  "yue_CN": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "正下载在%@上处理语音输入所需的支持内容。",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "在%@上处理语音输入所需的支持内容将在稍后接入无线局域网时下载。[关于Siri与隐私…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "需要更多空间才能完成Siri支持内容下载。需要%@。[管理储存空间](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "在%@上处理语音输入所需的支持内容将在接入无线局域网时下载。[使用蜂窝数据](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "在%@上处理语音输入所需的支持内容将在接入Wi-Fi时下载。[使用蜂窝数据](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "在%@上处理语音输入所需的支持内容将在稍后接入Wi-Fi时下载。[关于Siri与隐私…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "已完成%@%%…"
+  },
+  "ru": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Загружается поддержка обработки голосовых запросов на %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Поддержка обработки голосовых запросов на %@ будет загружена после подключения к WLAN. [О Siri и конфиденциальности…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Недостаточно места, чтобы загрузить файлы поддержки Siri. Требуется %@. [Управлять хранилищем](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Поддержка обработки голосовых запросов на %@ будет загружена после подключения к WLAN. [Использовать сотовые данные](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Поддержка обработки голосовых запросов на %@ будет загружена после подключения к Wi‑Fi. [Использовать сотовые данные](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Поддержка обработки голосовых запросов на %@ будет загружена после подключения к Wi‑Fi. [О Siri и конфиденциальности…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "Выполнено %@ %%…"
+  },
+  "en_AU": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Support for processing voice input on %@ is downloading.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Support for processing voice input on %@ will download later when connected to WLAN. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "More space is required to finish downloading support for Siri. %@ needed. [Manage Storage](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Support for processing voice input on %@ will download when connected to WLAN. [Use Mobile Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Support for processing voice input on %@ will download when connected to Wi-Fi. [Use Mobile Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Support for processing voice input on %@ will download later when connected to Wi-Fi. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% complete…"
+  },
+  "vi": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Đang tải về phần hỗ trợ xử lý dữ liệu nhập bằng giọng nói trên %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Phần hỗ trợ xử lý dữ liệu nhập bằng giọng nói trên %@ sẽ tải về sau khi được kết nối vào WLAN. [Siri & Quyền riêng tư…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Yêu cầu có thêm dung lượng để hoàn tất tải về phần hỗ trợ cho Siri. Cần có %@. [Quản lý dung lượng](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Phần hỗ trợ xử lý dữ liệu nhập bằng giọng nói trên %@ sẽ tải về khi được kết nối vào WLAN. [Sử dụng dữ liệu di động](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Phần hỗ trợ xử lý dữ liệu nhập bằng giọng nói trên %@ sẽ tải về khi được kết nối vào Wi-Fi. [Sử dụng dữ liệu di động](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Phần hỗ trợ xử lý dữ liệu nhập bằng giọng nói trên %@ sẽ tải về sau khi được kết nối vào Wi-Fi. [Siri & Quyền riêng tư…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "Hoàn thành %@%%…"
+  },
+  "pt_PT": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "A descarregar suporte para o processamento de comandos de voz no %@…",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "A descarga do suporte para o processamento de comandos de voz no %@ será efetuada mais tarde, quando houver ligação a uma rede WLAN. [Acerca de Siri e Privacidade…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "É necessário mais espaço para acabar de descarregar o suporte para Siri. São necessários %@. [Gerir armazenamento](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "A descarga do suporte para o processamento de comandos de voz no %@ será efetuada mais tarde, quando houver ligação a uma rede WLAN. [Usar dados móveis](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "A descarga do suporte para o processamento de comandos de voz no %@ será efetuada mais tarde, quando houver ligação a uma rede Wi‑Fi. [Usar dados móveis](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "A descarga do suporte para o processamento de comandos de voz no %@ será efetuada mais tarde, quando houver ligação a uma rede Wi‑Fi. [Acerca de Siri e Privacidade…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% concluído…"
+  },
+  "ml": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@ എന്നതിൽ ഓഡിയോ ഇൻപുട്ട് പ്രോസസിങ്ങിനുള്ള പിന്തുണ ഡൗൺലോഡ് ചെയ്യുന്നു.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "%@ എന്നതിൽ വോയ്സ് ഇൻപുട്ട് പ്രോസസിങ്ങിനുള്ള പിന്തുണ പിന്നീട് WLAN-ലേക്ക് കണക്റ്റ് ചെയ്യുമ്പോൾ ഡൗൺലോഡ് ചെയ്യും. [Siri-യും സ്വകാര്യതയും…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri-ക്കുള്ള പിന്തുണ ഡൗൺലോഡ് ചെയ്യുന്നത് പൂർത്തിയാക്കാൻ കൂടുതൽ സ്പേസ് ആവശ്യമാണ്. %@ ആവശ്യമാണ്. [സ്റ്റോറേജ് മാനേജ് ചെയ്യൂ](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "%@ എന്നതിൽ വോയ്സ് ഇൻപുട്ട് പ്രോസസിങ്ങിനുള്ള പിന്തുണ WLAN-ലേക്ക് കണക്റ്റ് ചെയ്യുമ്പോൾ ഡൗൺലോഡ് ചെയ്യും. [മൊബൈൽ ഡാറ്റ ഉപയോഗിക്കൂ](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "%@ എന്നതിൽ വോയ്സ് ഇൻപുട്ട് പ്രോസസിങ്ങിനുള്ള പിന്തുണ Wi-Fi-യിലേക്ക് കണക്റ്റ് ചെയ്യുമ്പോൾ ഡൗൺലോഡ് ചെയ്യും. [മൊബൈൽ ഡാറ്റ ഉപയോഗിക്കൂ](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "%@ എന്നതിൽ വോയ്സ് ഇൻപുട്ട് പ്രോസസിങ്ങിനുള്ള പിന്തുണ പിന്നീട് Wi-Fi-യിലേക്ക് കണക്റ്റ് ചെയ്യുമ്പോൾ ഡൗൺലോഡ് ചെയ്യും. [Siri-യും സ്വകാര്യതയും…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% പൂർത്തിയായി…"
+  },
+  "LocProvenance": {
+    "zh_TW": 1,
+    "ur": 1,
+    "lt": 1,
+    "id": 1,
+    "ja": 1,
+    "no": 1,
+    "mr": 1,
+    "es_419": 1,
+    "en_PH": 1,
+    "ms": 1,
+    "hi": 1,
+    "en_CA": 1,
+    "es": 1,
+    "pl": 1,
+    "en_IN": 1,
+    "ca": 1,
+    "ta": 1,
+    "fr_CA": 1,
+    "fr": 1,
+    "or": 1,
+    "da": 1,
+    "bg": 1,
+    "te": 1,
+    "pt_BR": 1,
+    "zh_CN": 1,
+    "gu": 1,
+    "hr": 1,
+    "de": 1,
+    "th": 1,
+    "en_GB": 1,
+    "sk": 1,
+    "zh_HK": 1,
+    "sl": 1,
+    "ro": 1,
+    "kk": 1,
+    "hu": 1,
+    "bn": 1,
+    "ar": 1,
+    "it": 1,
+    "kn": 1,
+    "ko": 1,
+    "uk": 1,
+    "pa": 1,
+    "yue_CN": 1,
+    "ru": 1,
+    "en_AU": 1,
+    "vi": 1,
+    "none": 2,
+    "pt_PT": 1,
+    "ml": 1,
+    "fi": 1,
+    "tr": 1,
+    "el": 1,
+    "es_US": 1,
+    "cs": 1,
+    "sv": 1,
+    "nl": 1,
+    "he": 1,
+    "en": 1
+  },
+  "fi": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%[tt]@-tukea sisäiseen puhesyötteen käsittelyyn ladataan.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Tuki sisäiseen puhesyötteen käsittelyyn ladataan, kun %@ on yhteydessä WLANiin. [Tietoja: Siri ja tietosuoja…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Jotta Siri-tuki voidaan ladata loppuun, tarvitaan %@ lisää tilaa. [Hallitse tallennustilaa](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Tuki sisäiseen puhesyötteen käsittelyyn ladataan, kun %@ on yhteydessä WLANiin. [Käytä mobiilidataa](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Tuki sisäiseen puhesyötteen käsittelyyn ladataan, kun %@ on yhteydessä Wi-Fiin. [Käytä mobiilidataa](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Tuki sisäiseen puhesyötteen käsittelyyn ladataan, kun %@ on yhteydessä Wi-Fiin. [Tietoja: Siri ja tietosuoja…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@ %% valmiina…"
+  },
+  "tr": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "%@ üzerinde ses girişini işleme desteği indiriliyor.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "%@ üzerinde ses girişini işleme desteği WLAN’a bağlanıldığında indirilir. [Siri ve Gizlilik Hakkında…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Siri desteğini indirmeyi bitirmek için daha fazla alan gerekiyor. %@ gerekli. [Saklama Alanını Yönet](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "%@ üzerinde ses girişini işleme desteği WLAN’a bağlanıldığında indirilir. [Hücresel Veri’yi Kullan](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "%@ üzerinde ses girişini işleme desteği Wi-Fi’ye bağlanıldığında indirilir. [Hücresel Veri’yi Kullan](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "%@ üzerinde ses girişini işleme desteği Wi-Fi’ye bağlanıldığında indirilir. [Siri ve Gizlilik Hakkında…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%%%@ tamamlandı…"
+  },
+  "el": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Γίνεται λήψη υποστήριξης για επεξεργασία φωνητικής εισόδου στο %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Η υποστήριξη για επεξεργασία φωνητικής εισόδου στο %@ θα ληφθεί όταν συνδεθείτε σε WLAN. [Πληροφορίες για το Siri και το απόρρητο…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Απαιτείται περισσότερος χώρος για ολοκλήρωση της λήψης υποστήριξης για το Siri. Απαιτούνται %@. [Διαχείριση χώρου αποθήκευσης](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Η υποστήριξη για επεξεργασία φωνητικής εισόδου στο %@ θα ληφθεί όταν συνδεθείτε σε WLAN. [Χρήση δεδομένων κινητού δικτύου](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Η υποστήριξη για επεξεργασία φωνητικής εισόδου στο %@ θα ληφθεί όταν συνδεθείτε σε Wi-Fi. [Χρήση δεδομένων κινητού δικτύου](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Η υποστήριξη για επεξεργασία φωνητικής εισόδου στο %@ θα ληφθεί όταν συνδεθείτε σε δίκτυο Wi-Fi. [Πληροφορίες για το Siri και το απόρρητο…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% ολοκληρώθηκε…"
+  },
+  "es_US": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Se está descargando el soporte para procesar entradas de voz en %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "El contenido necesario para procesar las entradas de voz en tu %@ se descargará más tarde cuando te conectes a una red WLAN. [Acerca de Siri y la privacidad…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Se necesita más espacio para terminar de descargar el contenido necesario para usar Siri. Se requieren %@. [Administrar el almacenamiento](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "El contenido necesario para procesar las entradas de voz en tu %@ se descargará cuando te conectes a una red WLAN. [Usar los datos celulares](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "El contenido necesario para procesar las entradas de voz en tu %@ se descargará cuando te conectes a una red Wi-Fi. [Usar los datos celulares](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "El contenido necesario para procesar las entradas de voz en tu %@ se descargará más tarde cuando te conectes a una red Wi-Fi. [Acerca de Siri y la privacidad…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% completado…"
+  },
+  "cs": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Stahuje se podpora pro zpracování hlasového vstupu na zařízení %@.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Podpora zpracování hlasového vstupu na zařízení %@ se stáhne později, až budete připojení k WLAN. [O Siri a soukromí…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "K dokončení stahování podpory Siri potřebujete o %@ víc místa. [Spravovat úložiště](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Podpora zpracování hlasového vstupu na zařízení %@ se stáhne, až budete připojení k WLAN. [Použít mobilní data](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Podpora zpracování hlasového vstupu na zařízení %@ se stáhne, až budete připojení k Wi‑Fi. [Použít mobilní data](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Podpora zpracování hlasového vstupu na zařízení %@ se stáhne později, až budete připojení k Wi‑Fi. [O Siri a soukromí…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "Staženo %@ %%…"
+  },
+  "sv": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Stöd för behandling av röstinmatning på %@ hämtas.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Stöd för behandling av röstinmatning på %@ hämtas senare när du är ansluten till WLAN. [Om Siri och integritet…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Det krävs mer utrymme för att slutföra hämtningen av stöd för Siri. %@ behövs. [Hantera lagring](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Stöd för behandling av röstinmatning på %@ hämtas när du är ansluten till WLAN. [Använd mobildata](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Stöd för behandling av röstinmatning på %@ hämtas när du är ansluten till Wi-Fi. [Använd mobildata](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Stöd för behandling av röstinmatning på %@ hämtas senare när du är ansluten till Wi‑Fi. [Om Siri och integritet…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% klart…"
+  },
+  "nl": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Er wordt ondersteuning voor het verwerken van steminvoer op de %@ gedownload.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Ondersteuning voor het verwerken van steminvoer op de %@ wordt later gedownload wanneer je verbinding maakt met WLAN. [Over Siri en privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "Er is meer ruimte nodig om het downloaden van ondersteuning voor Siri te voltooien. Er is %@ nodig. [Beheer opslagruimte](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Ondersteuning voor het verwerken van steminvoer op de %@ wordt gedownload wanneer er verbinding is met WLAN. [Gebruik mobiele data](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Ondersteuning voor het verwerken van steminvoer op de %@ wordt gedownload wanneer er verbinding is met wifi. [Gebruik mobiele data](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Ondersteuning voor het verwerken van steminvoer op de %@ wordt later gedownload wanneer er verbinding is met wifi. [Over Siri en privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% voltooid…"
+  },
+  "he": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "חבילת התמיכה לעיבוד קלט קולי ב-%@ נמצאת כרגע בהורדה.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "הורדת חבילת התמיכה לעיבוד קלט קולי ב-%@ תבוצע מאוחר יותר עם החיבור לרשת WLAN. [מידע בנושא Siri ופרטיות…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "נדרש שטח אחסון של %@ להשלמת ההורדה של חבילת התמיכה ב-Siri. [ניהול שטח האחסון](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "הורדת חבילת התמיכה לעיבוד קלט קולי ב-%@ תבוצע עם החיבור לרשת WLAN. [שימוש בנתונים סלולריים](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "הורדת חבילת התמיכה לעיבוד קלט קולי ב-%@ תבוצע עם החיבור לרשת אלחוטית. [שימוש בנתונים סלולריים](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "הורדת חבילת התמיכה לעיבוד קלט קולי ב-%@ תבוצע מאוחר יותר עם החיבור לרשת אלחוטית. [מידע בנושא Siri ופרטיות…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "אחוזי ההשלמה: ⁨%@%%⁩…"
+  },
+  "en": {
+    "SIRI_ASSET_DOWNLOADING_FOOTER": "Support for processing voice input on %@ is downloading.",
+    "SIRI_ASSET_DOWNLOAD_FOOTER_CHINA": "Support for processing voice input on %@ will download later when connected to WLAN. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_OUT_OF_SPACE": "More space is required to finish downloading support for Siri. %@ needed. [Manage Storage](siri-asset://manage-storage)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER_CHINA": "Support for processing voice input on %@ will download when connected to WLAN. [Use Cellular Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_EXPENSIVE_NETWORK_FOOTER": "Support for processing voice input on %@ will download when connected to Wi-Fi. [Use Cellular Data](siri-asset://use-cellular)",
+    "SIRI_ASSET_DOWNLOAD_FOOTER": "Support for processing voice input on %@ will download later when connected to Wi-Fi. [About Siri & Privacy…](siri-asset://about-siri)",
+    "SIRI_ASSET_DOWNLOAD_PERCENT": "%@%% complete…"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.speech.automaticspeechrecognition",
+  "UsageTypes": [
+    "asr.language",
+    "asr.include_lid"
+  ],
+  "UsageValues": {
+    "asr.language": [
+      "ar",
+      "cmn",
+      "de",
+      "en",
+      "es",
+      "fr",
+      "it",
+      "ja",
+      "ko",
+      "mul-IN",
+      "pt",
+      "yue"
+    ]
+  },
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Speech.AutomaticSpeechRecognition",
+  "MetadataAsset": "com.apple.speech.automaticspeechrecognition.uaf.metadata",
+  "Assets": [
+    {
+      "AssetName": "com.apple.speech.automaticspeechrecognition.uaf.metadata",
+      "IgnoreOSCompatibility": true,
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.speech.automaticspeechrecognition.uaf.metadata"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.speech.asr.transcription",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "asr.language"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.speech.asr.transcription.{asr.language}"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.speech.asr.language.identification",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "asr.include_lid"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.speech.asr.language.identification"
+        }
+      ]
+    }
+  ]
+}

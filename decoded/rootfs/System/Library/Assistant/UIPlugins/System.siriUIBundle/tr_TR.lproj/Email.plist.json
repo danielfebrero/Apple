@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Emine’ye e-posta gönder",
+            "Sinem’e planlardaki değişiklikler hakkında e-posta gönder",
+            "Ahmet Bey’e yeni e-posta",
+            "Babama kira ödemesi hakkında e-posta gönder",
+            "Dr. Yılmaz’a e-posta gönder ve şunu yaz: formları aldım, teşekkürler",
+            "Tolga ve Ayşe’ye parti hakkında ileti gönder ve iletiye şunu yaz: Parti bir harikaydı"
+          ]
+        }
+      ],
+      "SectionName": "E-posta gönderme"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "E-postaları denetle",
+            "Cemil’den bugün gelen e-posta var mı?",
+            "Kira ile ilgili yeni iletiyi göster",
+            "Emrah’tan dün gelen e-postayı göster"
+          ]
+        }
+      ],
+      "SectionName": "E-posta denetleme"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Şöyle yanıtla: Sevgili Deniz, ödeme geciktiği için özür dilerim"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Onu evden ara"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Onu işten FaceTime ile ara"
+          ]
+        }
+      ],
+      "SectionName": "E-postayı yanıtlama"
+    }
+  ]
+}

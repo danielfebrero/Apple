@@ -1,0 +1,63 @@
+{
+    "domain": "globalKnowledgeStore",
+    "entries": {
+        "manifest": {
+            "local": {
+                "relativeToBundle": {
+                    "bundle": "intelligencePlatformCore",
+                    "relativeFilePath": "globalKnowledge/manifest.plist"
+                }
+            }
+        },
+        "LocalizedRelationshipTopics": {
+            "trial": {
+                "namespace": "INTELLIGENCE_PLATFORM_GLOBAL_KNOWLEDGE_SERVICE",
+                "factor": "LocalizedRelationshipTopics",
+                "assetType": "file"
+            },
+            "userInfo": {
+                "version": "9"
+            }
+        },
+        "PortraitTopics": {
+            "trial": {
+                "namespace": "INTELLIGENCE_PLATFORM_GLOBAL_KNOWLEDGE_SERVICE",
+                "factor": "PortraitTopics",
+                "assetType": "file"
+            },
+            "userInfo": {
+                "version": "1"
+            }
+        },
+        "MediaEntitiesSubgraph": {
+            "trial": {
+                "namespace": "INTELLIGENCE_PLATFORM_GLOBAL_KNOWLEDGE_SERVICE",
+                "factor": "MediaEntitiesSubgraph",
+                "assetType": "file"
+            },
+            "userInfo": {
+                "version": "3"
+            }
+        },
+        "HolidayEventSubgraph": {
+            "trial": {
+                "namespace": "INTELLIGENCE_PLATFORM_GLOBAL_KNOWLEDGE_SERVICE",
+                "factor": "HolidayEventSubgraph",
+                "assetType": "file"
+            },
+            "userInfo": {
+                "version": "5"
+            }
+        },
+        "PriorBeliefs": {
+            "trial": {
+                "namespace": "INTELLIGENCE_PLATFORM_GLOBAL_KNOWLEDGE_SERVICE",
+                "factor": "PriorBeliefs",
+                "assetType": "file"
+            },
+            "userInfo": {
+                "version": "4"
+            }
+        }
+    }
+}

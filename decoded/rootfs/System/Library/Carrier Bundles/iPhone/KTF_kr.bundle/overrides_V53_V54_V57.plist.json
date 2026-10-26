@@ -1,0 +1,77 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "ShowVoNRSwitch": true,
+  "IgnoresDeactivateOnNetworkScanServiceMask": 131072,
+  "Enable5GStandaloneByDefault": true,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SMSBundleToVoice": true,
+      "SupportedDomains": {
+        "LTE": true,
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": false
+    },
+    "XCAP": {
+      "NafHost": "xcap.ims.mnc008.mcc450.pub.3gppnetwork.org",
+      "BsfPort": 9090,
+      "XcapHttpVersion": "1.1",
+      "imsFeatureDependency": true,
+      "NafPort": 8080,
+      "SupportsCLIR": true,
+      "supported": true,
+      "ContentType": "application/vnd.etsi.simservs+xml",
+      "DisableOnNetworkError": true,
+      "ForbiddenHttpErrorCodes": "500",
+      "imsRegistrationDependency": true,
+      "UnsolicitedRequestDelay": 0,
+      "IgnoreInternationalDataRoamingSwitch": false,
+      "IgnoreCellularDataSwitch": true,
+      "useSecureTransport": false,
+      "BsfHost": "bsf.ims.mnc008.mcc450.pub.3gppnetwork.org"
+    }
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "type-mask": 5275653,
+      "password": "",
+      "AlwaysOnPDU": true,
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "internet",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "AlwaysOnPDU": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "IMS",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 48,
+      "password": "",
+      "AlwaysOnPDU": true,
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "tethering",
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

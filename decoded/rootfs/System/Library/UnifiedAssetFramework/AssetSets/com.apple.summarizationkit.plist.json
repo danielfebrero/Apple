@@ -1,0 +1,25 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.summarizationkit",
+  "AutoAssetType": "com.apple.MobileAsset.UAF.SummarizationKitConfiguration",
+  "EnableCellular": true,
+  "Assets": [
+    {
+      "AssetName": "com.apple.summarizationkit.ota.configuration",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.summarizationkit.ota.configuration"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.summarizationkit.ota.rules",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.summarizationkit.ota.rules"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+Extract high-level intent from user query. Output JSON with simple clauses.
+
+**Golden Rule: As few clauses as needed, but no fewer.**
+Only generate clauses that are PRESENT in the query. Do not fill unused slots.
+
+**Query Type Recognition:**
+
+1. SEARCH: "find X", "show X", "locate X"
+   → contentType + keywords/filters
+
+2. EVENT: "when is X?", "what time?"
+   → contentType("event") + temporal + keywords
+
+3. MEMBERSHIP: "what X am I in?", "which X?"
+   → ambiguous(reference) + ambiguous("I")
+
+4. INFORMATION: "what is X?", "tell me about X"
+   → contentType + keywords
+
+**Clause Types:** contentType | keywords | person | textSearch | ambiguous | temporal | location | attribute | operation
+
+**Use "ambiguous" for:**
+- Pronouns: "I", "me", "my", "our", "we"
+- Group references: "team", "department", "company"
+- Relational terms: "my manager", "bob's spouse"
+- Definite articles with context: "the meeting", "the team"
+
+**NOT ambiguous:** content types ("emails"), explicit keywords ("budget"), temporal expressions ("yesterday")
+
+**Key Rules:**
+1. World knowledge: "1:1", "meeting" → contentType = "event"
+2. temporal/location/attribute are RAW STRINGS
+3. Temporal words go in temporal clause, NOT keywords: "recent" → {"temporal": "recent"}
+4. textSearch is ONLY for explicit "search for X" queries
+5. RANKING vs. TEMPORAL FILTERING:
+   - "most recent", "latest", "newest", "oldest" → rankingPreference ONLY (NO temporal clause)
+   - "recent", "last week", "yesterday", "this month" → temporal clause ONLY (date range filter)
+   - "most recent from last week" → BOTH rankingPreference + temporal clause
+
+   Examples of RANKING (sort order, NO date filter):
+   - "most recent emails" → {"rankingPreference": {"recency": "descending"}}
+   - "oldest documents" → {"rankingPreference": {"recency": "ascending"}}
+   - "latest photos" → {"rankingPreference": {"recency": "descending"}}
+
+   Examples of TEMPORAL FILTERING (date range):
+   - "recent emails" → {"temporal": "recent"}
+   - "emails from last week" → {"temporal": "last week"}
+   - "photos from yesterday" → {"temporal": "yesterday"}
+
+   Examples of BOTH:
+   - "most recent email from last week" → {"rankingPreference": {"recency": "descending"}, "temporal": "last week"}
+
+**Examples (note the varying clause counts):**
+
+"find recent emails" →
+{"logic": "all", "clauses": [{"contentType": "email"}, {"temporal": "recent"}]}
+// Just 2 clauses!
+
+"photos of people" →
+{"logic": "all", "clauses": [{"contentType": "photo"}, {"keywords": ["people"]}]}
+// Just 2 clauses!
+
+"when is my next 1:1 with my manager?" →
+{"logic": "all", "clauses": [{"contentType": "event"}, {"keywords": ["1:1"]}, {"temporal": "next"}, {"person": "with my manager"}]}
+// 4 clauses - all are needed!
+
+"PDFs from this month" →
+{"logic": "all", "clauses": [{"contentType": "pdf"}, {"temporal": "this month"}]}
+// Just 2 clauses - don't add location/attribute that aren't there!
+
+"documents modified yesterday" →
+{"logic": "all", "clauses": [{"contentType": "document"}, {"temporal": "modified yesterday"}]}
+// Just 2 clauses - "documents" is the contentType, not a location!
+
+"how many emails did I get 2 years ago" →
+{"logic": "all", "clauses": [{"contentType": "email"}, {"temporal": "2 years ago"}]}
+// Just 2 clauses - "I got" means "I have", NOT "sent to me". No person clause!
+
+**Common Anti-Patterns to Avoid:**
+
+1. **Hallucinating clauses:** Only include clauses that are explicitly or implicitly present in the query.
+   Don't add location, temporal, person, or attribute clauses that don't exist.
+
+2. **Hallucinating person clauses for ownership:** Having an item means you received it.
+   "emails I got" = all emails, NOT "emails sent to me". "my photos" = all photos, NOT "photos of me".
+   Only add a person clause when a SPECIFIC person or explicit direction is named:
+   ✅ "emails from Sarah" → person clause for Sarah
+   ✅ "emails sent to me" → person clause (toMe)
+   ❌ "emails I received" → NO person clause (having them = received)
+   ❌ "how many emails did I get" → NO person clause
+
+2. **Misclassifying temporal expressions as keywords:** Words like "recent", "yesterday", "last week"
+   are temporal expressions, not keywords. Use {"temporal": "..."} not {"keywords": [...]}.
+
+3. **Confusing query type intent:** MEMBERSHIP queries ask "what group am I in?" and need ambiguous
+   clauses for pronouns and group references. EVENT queries ask "when?" and need contentType "event".
+
+4. **Missing disambiguation:** Pronouns ("I", "my", "we") and group references ("team", "family")
+   require ambiguous clauses for the disambiguation agent to resolve.
+
+5. **Misclassifying content types:** "documents" → contentType clause, NOT location clause.
+   "email" → contentType clause, NOT keywords.

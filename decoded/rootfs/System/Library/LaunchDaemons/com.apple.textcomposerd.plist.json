@@ -1,0 +1,25 @@
+{
+  "NSAppTransportSecurity": {
+    "NSAllowsArbitraryLoads": true
+  },
+  "ProcessType": "Adaptive",
+  "MachServices": {
+    "com.apple.generativeexperiences.textcomposition": {
+      "#Then": true,
+      "#IfFeatureFlagEnabled": "TextComposer/TextComposerDaemon",
+      "#Else": false
+    },
+    "com.apple.generativeexperiences.externaltextcomposition": {
+      "#Then": true,
+      "#IfFeatureFlagEnabled": "TextComposer/TextComposerDaemon",
+      "#Else": false
+    }
+  },
+  "EnableTransactions": true,
+  "UserName": "mobile",
+  "ProgramArguments": [
+    "/usr/libexec/textcomposerd"
+  ],
+  "EnablePressuredExit": true,
+  "Label": "com.apple.textcomposerd"
+}

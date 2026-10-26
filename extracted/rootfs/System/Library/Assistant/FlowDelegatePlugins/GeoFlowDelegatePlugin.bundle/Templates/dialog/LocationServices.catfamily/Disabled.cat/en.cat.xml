@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="LocationServices#Disabled" locale="en" xmlns="urn:apple:names:siri:cat:2.0">
+    <first>
+        <dialog><phrase name="intro"/> <phrase name="instruction"/></dialog>
+    </first>
+    <phrases>
+        <first phrase="instruction">
+            <text condition="device.isHomePod">In the Home app, go to the Home Settings. Then scroll down <break time="50ms"/>and turn on Location Services.</text>
+            <text condition="isSiriLocationSharingDenied">Go to Privacy Settings, select Location Services, scroll to ‘Siri’ and allow location access.</text>
+            <text>Go to Location Services Settings and turn it on. Then scroll to ‘Siri’ and allow location access.</text>
+        </first>
+        <random phrase="intro">
+            <text>First you have to tell me where you are.</text>
+            <text>I don't know where you are. But you can show me.</text>
+        </random>
+    </phrases>
+</cat>

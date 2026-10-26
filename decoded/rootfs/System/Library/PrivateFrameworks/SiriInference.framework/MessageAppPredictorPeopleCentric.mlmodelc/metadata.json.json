@@ -1,0 +1,98 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "v1231",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "appsShowToUser",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "appConfident",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "v1231",
+    "modelParameters": [],
+    "specificationVersion": 5,
+    "storagePrecision": "Float32",
+    "computePrecision": "Float16",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "11.0",
+      "tvOS": "14.0",
+      "visionOS": "1.0",
+      "watchOS": "7.0",
+      "iOS": "14.0",
+      "macCatalyst": "14.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "14... × 2...",
+        "shapeRange": "[[14, -1], [2, -1]]",
+        "formattedType": "MultiArray (Float32 14 × 2)",
+        "type": "MultiArray",
+        "shape": "[14, 2]",
+        "name": "X",
+        "shortDescription": ""
+      }
+    ],
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-rdg2n5mg5z",
+      "com.github.apple.coremltools.source": "torch==1.11.0",
+      "com.github.apple.coremltools.version": "5.2.0",
+      "tag": "mldb-rdg2n5mg5z"
+    },
+    "generatedClassName": "MessageAppPredictorPeopleCentric",
+    "neuralNetworkLayerTypeHistogram": {
+      "ReduceSum": 22,
+      "Multiply": 22,
+      "ActivationLinear": 2,
+      "ConcatND": 2,
+      "AddBroadcastable": 2,
+      "MultiplyBroadcastable": 2,
+      "ReduceMax": 2,
+      "Squeeze": 1,
+      "UnaryLog": 1,
+      "UnaryInverse": 1,
+      "GreaterThan": 9,
+      "GreaterEqual": 3,
+      "SliceStatic": 28,
+      "Add": 11,
+      "WhereBroadcastable": 44,
+      "Unary": 1,
+      "LoadConstantND": 71,
+      "ExpandDims": 17,
+      "Scatter": 8,
+      "NotEqual": 1,
+      "ArgSort": 2,
+      "Equal": 25,
+      "DivideBroadcastable": 9,
+      "LessThan": 1,
+      "LessEqual": 4,
+      "UnaryExp": 1,
+      "ReduceMin": 2,
+      "UnaryAbs": 1
+    },
+    "method": "predict"
+  }
+]

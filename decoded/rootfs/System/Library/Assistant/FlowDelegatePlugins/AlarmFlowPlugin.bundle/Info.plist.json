@@ -1,0 +1,110 @@
+{
+  "CFBundleName": "AlarmFlowPlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedIntents": [
+    "sirikit.intent.alarm.CreateAlarmIntent",
+    "sirikit.intent.alarm.ChangeAlarmStatusIntent",
+    "sirikit.intent.alarm.DeleteAlarmIntent",
+    "sirikit.intent.alarm.SnoozeAlarmIntent",
+    "sirikit.intent.alarm.UpdateAlarmIntent",
+    "sirikit.intent.alarm.SearchAlarmIntent"
+  ],
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "AlarmFlowPlugin.AlarmFlowPlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "AlarmFlowPlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.AlarmFlowPlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "alarm"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "uso_NoEntity",
+      "verb": "update",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "start",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "read",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "enable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "disable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "delete",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "resume",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "stop",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Alarm",
+      "verb": "*",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.DirectInvocation.Alarm.Snooze",
+    "com.apple.siri.DirectInvocation.Alarm.Undo",
+    "com.apple.siri.DirectInvocation.Alarm.Stop",
+    "com.apple.siri.DirectInvocation.Alarm.ReformedAlarmIntentFromTimer",
+    "com.apple.siri.DirectInvocation.Alarm.ButtonPress",
+    "com.apple.siri.DirectInvocation.Alarm.Disambiguation",
+    "com.apple.siri.DirectInvocation.Alarm.HandleVerbAction"
+  ]
+}

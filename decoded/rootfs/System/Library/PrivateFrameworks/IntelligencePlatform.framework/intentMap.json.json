@@ -1,0 +1,78 @@
+{
+  "intentRoutes": {
+    "GeoSearch": [
+      {
+        "args": [
+          "person"
+        ],
+        "conditionKGQ": "all(intentArgCount(1),intentArgName(person),intentArgType(person,SB104))",
+        "flags": [
+          "address"
+        ],
+        "kgq": "getAddressWithLabel($person,'_$!<Home>!$_')",
+        "name": "address of person by id"
+      },
+      {
+        "args": [
+          "person"
+        ],
+        "conditionKGQ": "all(intentArgCount(1),intentArgName(person))",
+        "flags": [
+          "address"
+        ],
+        "kgq": "pvp([PS33,PS312],$person).getAddressWithLabel('_$!<Home>!$_')",
+        "name": "address of person by name"
+      },
+      {
+        "args": [
+          "person",
+          "locationLabel"
+        ],
+        "conditionKGQ": "all(intentArgCount(2),intentArgName(person),intentArgType(person,SB104),intentArgName(locationLabel))",
+        "flags": [
+          "address"
+        ],
+        "kgq": "getAddressWithLabel($person,$locationLabel)",
+        "name": "address of a person with label"
+      },
+      {
+        "args": [
+          "person",
+          "locationLabel"
+        ],
+        "conditionKGQ": "all(intentArgCount(2),intentArgName(person),intentArgName(locationLabel))",
+        "flags": [
+          "address"
+        ],
+        "kgq": "pvp([PS33,PS312],$person).getAddressWithLabel($locationLabel)",
+        "name": "address of a person by name with label"
+      },
+      {
+        "args": [
+          "person",
+          "event"
+        ],
+        "conditionKGQ": "all(intentArgCount(2),intentArgName(person),intentArgName(event))",
+        "flags": [
+          "address"
+        ],
+        "kgq": "pvp([PS33,PS312],$person).pvp(PS578).triple(PS33,$event).get(PS317)",
+        "name": "person name eventName address"
+      }
+    ],
+    "MusicEntitySearch": [
+      {
+        "args": [
+          "adamId"
+        ],
+        "conditionKGQ": "intentArgName(adamId_1)",
+        "flags": [
+          "skipFactsRender",
+          "musicEntityRenderer"
+        ],
+        "kgq": "entityForIdTypeFromGKSLive(Adam_ID,$adamId,[PS486,PS358,PS123,PS137,PS106,PS10])",
+        "name": "search music entities for adamIds from live GKS"
+      }
+    ]
+  }
+}

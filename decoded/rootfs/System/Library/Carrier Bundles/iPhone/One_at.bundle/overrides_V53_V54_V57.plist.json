@@ -1,0 +1,119 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "ShowVoNRSwitch": true,
+  "IgnoresDeactivateOnNetworkScanServiceMask": 131072,
+  "TechSettings": {
+    "IKE": {
+      "Proposals": [
+        {
+          "EncryptionAlgorithm": "AES-256",
+          "IntegrityAlgorithm": "SHA2-512",
+          "DHGroup": 14,
+          "AuthenticationMethod": "None",
+          "Lifetime": 80000,
+          "EAPMethod": "EAP-AKA",
+          "PRFAlgorithm": "SHA2-512"
+        }
+      ]
+    },
+    "TechPolicies": [
+      {
+        "policy": "TRUE",
+        "serviceMask": 131072
+      },
+      {
+        "policy": "TRUE",
+        "serviceMask": 262144
+      },
+      {
+        "policy": "TRUE",
+        "serviceMask": 1048576
+      }
+    ],
+    "ChildSAs": {
+      "FirstChild": {
+        "ChildProposals": [
+          {
+            "IntegrityAlgorithm": [
+              "SHA2-512"
+            ],
+            "ChildProtocol": "ESP",
+            "EncryptionAlgorithm": [
+              "AES-256"
+            ],
+            "DHGroup": 14,
+            "Lifetime": 80000
+          }
+        ]
+      }
+    }
+  },
+  "Show5GSwitch": true,
+  "AttachAPN": {
+    "3GPP": {
+      "AllowedProtocolMask": 3,
+      "AllowedProtocolMaskInRoaming": 3
+    }
+  },
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "E911OverIMSSupported": true,
+      "EnableVoNRByDefault": true,
+      "E911OverITechSupported": false
+    },
+    "Signaling": {
+      "ResetSocketWhenNetworkChange": false
+    }
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "apns": [
+    {
+      "password": "",
+      "username": "",
+      "AllowedProtocolMaskInRoaming": 3,
+      "apn": "drei.at",
+      "type-mask": 32823,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "password": "",
+      "tech-type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "password": "",
+      "tech-type-mask": 262144,
+      "username": "",
+      "apn": "sos",
+      "type-mask": 262144,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 1048576,
+      "password": "",
+      "tech-type-mask": 1048576,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "hos",
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Show5GStandaloneSwitch": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "Enable5GStandaloneByDefault": true,
+  "SupportsNRNSAInboundRoaming": true
+}

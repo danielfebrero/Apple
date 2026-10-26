@@ -1,0 +1,48 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "提我打電話俾阿媽",
+            "唔該提我陣間要去圖書館讀書",
+            "記住帶遮",
+            "提醒我聽朝六點帶文件",
+            "提我六點前要完成報告",
+            "讀出我嘅提醒事項",
+            "將第三項標示為完成",
+            "新增一個超級市場購物清單",
+            "聽日提我睇返呢封電郵",
+            "記住呢個網站",
+            "返到屋企提我FaceTime阿媽",
+            "走嘅時候提我打俾家傑",
+            "上車嗰陣提我打俾老豆"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "離開呢度嘅時候提我攞返件衫"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": []
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": []
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "NSContactsUsageDescription": "Contact images are used to show avatars in Feedback Assistant.",
+  "UIRequiredDeviceCapabilities": [
+    "armv7"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "UISupportedInterfaceOrientations~ipad": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationPortraitUpsideDown",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "CFBundleName": "Feedback Assistant",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SBAppUsesLocalNotifications": true,
+  "UIViewControllerBasedStatusBarAppearance": true,
+  "CFBundleIcons": {
+    "CFBundlePrimaryIcon": {
+      "CFBundleIconFiles": [
+        "AppIcon60x60"
+      ],
+      "CFBundleIconName": "AppIcon"
+    }
+  },
+  "FBKUsePersistentStore": true,
+  "UIStatusBarTintParameters": {
+    "UINavigationBar": {
+      "Style": "UIBarStyleDefault",
+      "Translucent": false
+    }
+  },
+  "CFBundleDisplayName": "Feedback",
+  "LSRequiresIPhoneOS": true,
+  "DTSDKBuild": "24B104",
+  "CFBundleShortVersionString": "4.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "SBIconVisibilityDefaultVisible": false,
+  "SBIconVisibilitySetByAppPreference": true,
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformBuild": "",
+  "CFBundlePackageType": "APPL",
+  "MinimumOSVersion": "27.2",
+  "CFBundleDevelopmentRegion": "en",
+  "DTXcodeBuild": "27A225b",
+  "CFBundleVersion": "644",
+  "UISupportedInterfaceOrientations": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight",
+    "UIInterfaceOrientationPortraitUpsideDown"
+  ],
+  "UILaunchStoryboardName": "LaunchImage",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "CFBundleIdentifier": "com.apple.appleseed.FeedbackAssistant",
+  "DTXcode": "2700",
+  "UIApplicationShortcutItems": [
+    {
+      "UIApplicationShortcutItemTitle": "NEW_FEEDBACK",
+      "UIApplicationShortcutItemType": "com.apple.appleseed.FeedbackAssistant.compose",
+      "UIApplicationShortcutItemIconType": "UIApplicationShortcutIconTypeCompose"
+    }
+  ],
+  "CFBundleExecutable": "Feedback Assistant iOS",
+  "CFBundleIcons~ipad": {
+    "CFBundlePrimaryIcon": {
+      "CFBundleIconFiles": [
+        "AppIcon60x60",
+        "AppIcon76x76"
+      ],
+      "CFBundleIconName": "AppIcon"
+    }
+  },
+  "CFBundleSignature": "????",
+  "UIMainStoryboardFile": "Main",
+  "DTPlatformName": "iphoneos",
+  "UNUserNotificationCenter": {
+    "UNDaemonShouldReceiveBackgroundResponses": true,
+    "UNDefaultSettings": {
+      "UNSettingBadges": true,
+      "UNSettingAlerts": true,
+      "UNSettingNotificationCenter": true,
+      "UNSettingSounds": false,
+      "UNSettingLockScreen": true,
+      "UNSettingAlwaysShowPreviews": true
+    }
+  },
+  "CFBundleURLTypes": [
+    {
+      "CFBundleTypeRole": "Editor",
+      "CFBundleURLName": "com.apple.appleseed.FeedbackAssistant.ios.action",
+      "CFBundleURLSchemes": [
+        "applefeedback"
+      ]
+    }
+  ]
+}

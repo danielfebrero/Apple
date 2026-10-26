@@ -1,0 +1,31 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "打电话给俊涵",
+            "拨打张晨的移动电话",
+            "拨打秦葳的工作电话",
+            "拨打123-456-7890",
+            "打电话回家",
+            "呼叫110",
+            "打电话给消防局",
+            "查看我的通话记录",
+            "我有未接来电吗？",
+            "重拨刚才那个电话"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          }
+        }
+      ],
+      "SectionName": "电话"
+    }
+  ]
+}

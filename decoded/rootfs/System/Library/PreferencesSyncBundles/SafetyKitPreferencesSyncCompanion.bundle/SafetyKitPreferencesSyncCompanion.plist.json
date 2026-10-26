@@ -1,0 +1,22 @@
+{
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleExecutable": "$(EXECUTABLE_NAME)",
+  "CFBundleIdentifier": "$(PRODUCT_BUNDLE_IDENTIFIER)",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleName": "$(PRODUCT_NAME)",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSignature": "????",
+  "CFBundleVersion": "1",
+  "NPSDomains": [
+    {
+      "NPSAction": "TwoWaySync",
+      "NPSChangeNotificationName": "SAKappaThirdPartyBundleIdChangedNotification",
+      "NPSDefaultsDomain": "com.apple.SafetyKit",
+      "NPSDefaultsKeys": [
+        "SAKappaThirdPartyBundleId"
+      ],
+      "NPSPerGizmo": false
+    }
+  ]
+}

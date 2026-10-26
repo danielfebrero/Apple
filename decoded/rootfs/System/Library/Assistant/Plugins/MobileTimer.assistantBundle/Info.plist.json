@@ -1,0 +1,46 @@
+{
+  "CFBundleName": "MobileTimer Assistant Plugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "AssistantDomains": {
+    "com.apple.ace.alarm": {
+      "Update": "MobileTimerAssistantAlarmUpdate",
+      "Search": "MobileTimerAssistantAlarmSearch",
+      "Delete": "MobileTimerAssistantAlarmDelete",
+      "Snooze": "MobileTimerAssistantAlarmSnooze",
+      "Create": "MobileTimerAssistantAlarmCreate",
+      "Dismiss": "MobileTimerAssistantAlarmDismiss"
+    },
+    "com.apple.ace.timer": {
+      "Cancel": "MobileTimerAssistantTimerCancel",
+      "Get": "MobileTimerAssistantTimerGet",
+      "Pause": "MobileTimerAssistantTimerPause",
+      "Set": "MobileTimerAssistantTimerSet",
+      "Resume": "MobileTimerAssistantTimerResume",
+      "Dismiss": "MobileTimerAssistantTimerDismiss"
+    }
+  },
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "MobileTimer",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.mobiletimer.assistant",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "CFBundleSignature": "????",
+  "DTPlatformBuild": ""
+}

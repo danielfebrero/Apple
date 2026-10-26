@@ -1,0 +1,22 @@
+Multi-Agent Spotlight Search
+
+Search files, emails, calendar events, and other indexed content using an intelligent
+multi-agent system that optimizes queries for complex requests.
+
+This tool uses specialist agents to:
+- Resolve ambiguous references ("my manager", "last week")
+- Build optimized Spotlight queries
+- Configure custom ranking
+- Compose aggregation pipelines
+- Validate query correctness
+
+Just pass your natural language request. The orchestrator will coordinate
+the necessary agents to fulfill it.
+
+Example requests:
+- "Find emails from Alice about the budget"
+- "Show me PDFs from last week"
+- "Count emails by sender"
+- "Find my most recent notes about Swift"
+
+The tool returns JSON results with found items and metadata.

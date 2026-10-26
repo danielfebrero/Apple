@@ -1,0 +1,15 @@
+{
+  "bundleIdentifier": "com.apple.SiriMetrics.SiriTurnRestatementExtension",
+  "name": "com.apple.siri.metrics.SiriTurnRestatement",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 21600,
+      "minDurationBetweenInstances": 17280
+    },
+    "requiresExternalPower": true,
+    "requiresUserInactivity": true,
+    "requiresClassC": true,
+    "groupName": "com.apple.siri.metrics.SiriTurnRestatement",
+    "groupConcurrencyLimit": 1
+  }
+}

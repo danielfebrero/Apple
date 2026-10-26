@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:4.0" id="SystemQuery#QueryGuestUserMode">
+  <meta name="description" value="Report the device's guest user mode enablement state."/>
+  <meta name="category" value="Handled"/>
+  <meta name="readyForLoc" value="true"/>
+
+  <parameters>
+    <parameter name="isGuestUserModeEnabled" type="dialog.Boolean" redacted="false" description="Enablement state. (This includes the case of owner still in headset after activating GUM)"/>
+  </parameters>
+</cat>

@@ -1,0 +1,84 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "AllowSAOnWiFiAssociation": true,
+  "ShowVoNRSwitch": true,
+  "TechSettings": {
+    "SuppressSAInOverCellHandover": true
+  },
+  "Enable5GStandaloneByDefault": true,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://sm-v4-030-a-gtm.pr.go-esim.com",
+    "RequiresDeleteBeforeTransfer": true,
+    "TransferErrorCodes": {
+      "CarrierDefaultErrors": [
+        "M1002",
+        "M1003"
+      ],
+      "BillingErrors": [],
+      "IneligibleAccountErrors": [],
+      "MaintenanceErrors": [
+        "M1001"
+      ],
+      "BlockedAccountErrors": []
+    },
+    "MinCompatibleOS": "26.1",
+    "SupportsFallbackToLegacyFlow": false
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "SupportsVoNR": true,
+  "CarrierEntitlements": {
+    "SupportSecureIntent": true,
+    "SupportedEntitlements": 9217
+  },
+  "apns": [
+    {
+      "configuration": [
+        {
+          "apn": "sunsurf",
+          "AllowedProtocolMask": 3,
+          "type-mask": 32817
+        },
+        {
+          "type-mask": 131072,
+          "Support5GSaHandOver": true,
+          "password": "",
+          "tech-type-mask": 131072,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "AllowNoDNS": 1,
+          "apn": "sos",
+          "type-mask": 262144,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "xcap",
+          "type-mask": 1048576,
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 9
+    }
+  ],
+  "Show5GStandaloneSwitch": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

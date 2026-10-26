@@ -1,0 +1,20 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "ambientLight": {}
+    }
+  },
+  "name": "ambientLightSignal",
+  "type": "signal",
+  "update": {
+    "alwaysUpdateListeners": [
+      {
+        "schedule": "none"
+      }
+    ]
+  }
+}

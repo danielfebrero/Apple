@@ -1,0 +1,77 @@
+{
+  "DerPriFileVersion": "6.0.163",
+  "SupportsNRNSAInboundRoaming": true,
+  "MTU": [
+    {
+      "technology-mask": 25,
+      "size": 1410
+    }
+  ],
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "Signaling": {
+      "EnableBrandedCallingByDefault": true
+    }
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "IPv6SupportedDataModeMask": 57372,
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 1081351,
+          "password": "",
+          "tech-type-mask": 32775,
+          "UseNetworkMTU": true,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "endo",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 16,
+          "password": "",
+          "UseNetworkMTU": true,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "mht",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "UseNetworkMTU": true,
+          "AllowedProtocolMaskInRoaming": 3,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "UseNetworkMTU": true,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true,
+  "AttachAPN": {
+    "3GPP": {
+      "apn": "endo"
+    }
+  }
+}

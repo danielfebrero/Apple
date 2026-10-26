@@ -1,0 +1,28 @@
+{
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "Show4GSwitchWith5G": true,
+  "apns": [
+    {
+      "type-mask": 1081393,
+      "password": "clarogprs999",
+      "tech-type-mask": 1048576,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "clarogprs",
+      "apn": "igprs.claro.com.ar",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "password": "claro",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "claro",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    }
+  ],
+  "DerPriFileVersion": "0.1.161",
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ]
+}

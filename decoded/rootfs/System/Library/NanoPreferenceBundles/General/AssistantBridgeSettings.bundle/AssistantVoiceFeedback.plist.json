@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "id": "VOICE_FEEDBACK_GROUP_ID",
+      "isRadioGroup": true
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "VOICE_FEEDBACK_ALWAYS_ON_ID",
+      "label": "VOICE_FEEDBACK_ALWAYS_ON"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "VOICE_FEEDBACK_CONTROL_WITH_SILENT_MODE_ID",
+      "label": "VOICE_FEEDBACK_CONTROL_WITH_SILENT_MODE"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "VOICE_FEEDBACK_HEADPHONES_ONLY_ID",
+      "label": "VOICE_FEEDBACK_HEADPHONES_ONLY"
+    }
+  ],
+  "title": "VOICE_FEEDBACK"
+}

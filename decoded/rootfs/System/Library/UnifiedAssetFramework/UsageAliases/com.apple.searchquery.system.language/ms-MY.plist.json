@@ -1,0 +1,17 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.searchquery.system.language",
+  "UsageAliasValues": {
+    "ms-MY": {
+      "com.apple.search.queryparser": {
+        "sqp.language": "ms",
+        "sqp.parser": "ms",
+        "sqp.safety": "ms"
+      },
+      "com.apple.search.queryparser.overrides": {
+        "sqp.language": "ms"
+      }
+    }
+  }
+}

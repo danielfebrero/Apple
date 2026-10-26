@@ -1,0 +1,45 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Llámale a Gerardo",
+            "Llamar al celular de María",
+            "Márcale a Gustavo al trabajo",
+            "Llamar al 408 555 1212",
+            "Llama a casa",
+            "Llamar al 066",
+            "Llama a los bomberos",
+            "Muestra mis llamadas recientes",
+            "¿Tengo llamadas perdidas?",
+            "Vuelve a llamar"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          }
+        }
+      ],
+      "SectionName": "LLAMADAS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "¿Tengo mensajes de voz nuevos?",
+            "Escuchar el mensaje de voz de Lidia"
+          ]
+        }
+      ],
+      "SectionName": "BUZÓN DE VOZ"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Adiciona alcachofra à lista de compras",
+            "Adiciona paraquedas à minha lista de desejos",
+            "Lembrar de levar um guarda-chuva",
+            "Me lembra de tomar o meu remédio amanhã às 6h da manhã",
+            "Me lembra de terminar o relatório até as 18 horas",
+            "Ler a minha lista de afazeres",
+            "Marca o terceiro como concluído",
+            "Criar uma nova lista chamada Supermercado",
+            "Lembre-me deste e-mail amanhã",
+            "Lembrar deste site"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Me lembra de ligar para a mãe quando eu chegar em casa",
+            "Quando eu sair, lembre-me de ligar para o Bruno",
+            "Me lembra de ligar para o meu pai quando eu estiver no carro"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Me lembra de ligar para a minha mãe pelo FaceTime quando eu chegar em casa",
+            "Quando eu sair, lembre-me de ligar para o Bruno pelo FaceTime"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Lembrar de comprar flores quando eu sair daqui"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

@@ -1,0 +1,3406 @@
+{
+  "converted_patterns" : [
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}(duration:duration){的}(鬧鐘|鬧鈴)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)(?:的)?(?:鬧鐘|鬧鈴)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "5b67ee3f-811c-5ebd-8979-5eb0bc1121db"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要))(弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增){個|一個}(time:time){的}(鬧鐘|鬧鈴)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增)(?:(?:個|一個))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))(?:的)?(?:鬧鐘|鬧鈴)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2f4524c8-b8da-54b0-9a70-0eeb004ab22d"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要))(弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增){個|一個}(鬧鐘|鬧鈴)(在|到)(time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增)(?:(?:個|一個))?(?:鬧鐘|鬧鈴)(?:在|到)(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d89ffcff-49a1-5493-932c-0a2ba41f83a8"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(停止|停掉|關閉|關掉|取消){我|我的}(鬧鐘|鬧鈴)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:停止|停掉|關閉|關掉|取消)(?:(?:我|我的))?(?:鬧鐘|鬧鈴)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "af5ebc5d-7f77-5037-bae4-cd09befacd95"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(停止|停掉|關閉|關掉|取消){我}(全部|所有){的}(鬧鐘|鬧鈴)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:停止|停掉|關閉|關掉|取消)(?:我)?(?:全部|所有)(?:的)?(?:鬧鐘|鬧鈴)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "9687d5e9-db63-50d7-96b7-e4c5a196950b"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}(能|可以){麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增){個|一個}(time:time){的}(鬧鐘|鬧鈴)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:能|可以)(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增)(?:(?:個|一個))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))(?:的)?(?:鬧鐘|鬧鈴)嗎$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "4ca51250-1cbb-5854-a8cc-23921f95d872"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}(能|可以){麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增){個|一個}(鬧鐘|鬧鈴)(在|到)(time:time)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:能|可以)(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增)(?:(?:個|一個))?(?:鬧鐘|鬧鈴)(?:在|到)(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))嗎$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "fb17126d-797e-512e-b794-ff26e51f61a3"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}(鬧鐘|鬧鈴)(duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:鬧鐘|鬧鈴)(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "9ccdf5b4-6d68-5ebb-8d81-c220f5e4f7c6"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{到|在}(time:time){到}{的時候}{鬧鐘|鬧鈴|用鬧鐘|用鬧鈴}(叫我|喊我|跟我(說|講){一下|一聲})",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:(?:到|在))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))(?:到)?(?:的時候)?(?:(?:鬧鐘|鬧鈴|用鬧鐘|用鬧鈴))?(?:叫我|喊我|跟我(?:說|講)(?:(?:一下|一聲))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "cba31c0d-a455-5fd1-8942-d0cb8106e118"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{在}(time:time){的時候}{鬧鐘|鬧鈴|用鬧鐘|用鬧鈴}(叫醒我|叫我起床|叫我起來|要我起床|要我起來|我要起床)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:在)?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))(?:的時候)?(?:(?:鬧鐘|鬧鈴|用鬧鐘|用鬧鈴))?(?:叫醒我|叫我起床|叫我起來|要我起床|要我起來|我要起床)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "69d9f5fa-c389-57ac-af4d-d37d2814613d"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}(弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增){個|一個}(duration:duration){的}(鬧鐘|鬧鈴)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增)(?:(?:個|一個))?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)(?:的)?(?:鬧鐘|鬧鈴)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "87800de6-6d19-568c-99c7-d4676fce1a96"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}(弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增){個|一個}(鬧鐘|鬧鈴)(duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:弄|做|作|轉|創|用|調|定|設|訂|計|記|設定|設置|新增)(?:(?:個|一個))?(?:鬧鐘|鬧鈴)(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "be71de06-addd-53f6-922f-21cb3a95fe99"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}(把|將){我|我的}(鬧鐘|鬧鈴)(停止|停掉|停下來|停了|關起來|關閉|關掉|取消|關上)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:(?:我|我的))?(?:鬧鐘|鬧鈴)(?:停止|停掉|停下來|停了|關起來|關閉|關掉|取消|關上)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e67a2e2f-ffe8-5adc-9459-6ccb14702759"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}(把|將){我}(全部|所有){的}(鬧鐘|鬧鈴){都}(停止|停掉|停下來|停了|關起來|關閉|關掉|取消|關上)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我)?(?:全部|所有)(?:的)?(?:鬧鐘|鬧鈴)(?:都)?(?:停止|停掉|停下來|停了|關起來|關閉|關掉|取消|關上)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "1e3d7258-8ebf-5094-9fb8-a4675f2a7ec7"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}{個|一個}(time:time){的}(鬧鐘|鬧鈴)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:(?:個|一個))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))(?:的)?(?:鬧鐘|鬧鈴)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "c6f8d0c4-cfab-599e-a34d-cc6dafef1ffd"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}{個|一個}(鬧鐘|鬧鈴)(在|到)(time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:(?:個|一個))?(?:鬧鐘|鬧鈴)(?:在|到)(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "a165cf58-4e0d-58ea-a925-eee4bac9c3ac"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}{在}(duration:duration){的時候}(鬧鐘|鬧鈴|用鬧鐘|用鬧鈴)(叫我|喊我|跟我(說|講){一下|一聲})",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:在)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)(?:的時候)?(?:鬧鐘|鬧鈴|用鬧鐘|用鬧鈴)(?:叫我|喊我|跟我(?:說|講)(?:(?:一下|一聲))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "492ab79a-65cf-5538-8b19-52b1a7490498"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}{在}(duration:duration){的時候}{鬧鐘|鬧鈴|用鬧鐘|用鬧鈴}(叫醒我|叫我起床|叫我起來|要我起床|要我起來|我要起床)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:在)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)(?:的時候)?(?:(?:鬧鐘|鬧鈴|用鬧鐘|用鬧鈴))?(?:叫醒我|叫我起床|叫我起來|要我起床|要我起來|我要起床)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "dd6a6421-0f68-5f83-a91e-38d325a1d86f"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}{麻煩}{我}{要}{在}(time:time){的時候}{一定}{要}(起床|醒來|叫醒我|叫我起床|叫我起來|我起床|我起來)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:麻煩)?(?:我)?(?:要)?(?:在)?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))(?:的時候)?(?:一定)?(?:要)?(?:起床|醒來|叫醒我|叫我起床|叫我起來|我起床|我起來)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b823d105-ce16-50c7-829f-da1594102a95"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(聯絡|撥{電話}給|打{電話}給)(contact:*{1,5})(請|請你|麻煩)",
+      "priority" : 51,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:聯絡|撥(?:電話)?給|打(?:電話)?給)(?P<contact>.{1,5})(?:請|請你|麻煩)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9bf15a72-dc5e-5d9d-a8b0-3912f842c20e"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}給(contact:*{1,5})(請|請你|麻煩)(打|撥)電話",
+      "priority" : 51,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?給(?P<contact>.{1,5})(?:請|請你|麻煩)(?:打|撥)電話$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "04cc4ace-5aed-5640-9e5e-cd42fcb97efc"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "phone_call_verb" : "phone_call_verb",
+        "phone_call_verb__phone_call_verb" : "phone_call_verb",
+        "phone_noun_optional" : "phone_noun_optional",
+        "phone_noun_optional__phone_noun_optional" : "phone_noun_optional",
+        "situation" : "situation",
+        "situation__situation" : "situation",
+        "to" : "to",
+        "to__to" : "to"
+      },
+      "pattern" : "{(hs:hs)}(situation:situation)(我要|我想|我需要|我想要)(phone_call_verb:phone_call_verb)(phone_noun_optional:phone_noun_optional)(to:to)(contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))(?:我要|我想|我需要|我想要)(?P<phone_call_verb>(?P<phone_call_verb__phone_call_verb>打|撥|撥打))(?P<phone_noun_optional>(?P<phone_noun_optional__phone_noun_optional>|電話))(?P<to>(?P<to__to>到|給|至))(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "0ad0b786-edaf-5945-8410-cf7d3d3bfdfb"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "phone_call_verb" : "phone_call_verb",
+        "phone_call_verb__phone_call_verb" : "phone_call_verb",
+        "phone_noun_optional" : "phone_noun_optional",
+        "phone_noun_optional__phone_noun_optional" : "phone_noun_optional",
+        "situation" : "situation",
+        "situation__situation" : "situation",
+        "to" : "to",
+        "to__to" : "to"
+      },
+      "pattern" : "{(hs:hs)}(situation:situation)(能|可以){麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(phone_call_verb:phone_call_verb)(phone_noun_optional:phone_noun_optional)(to:to)(contact:emergencyServices)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))(?:能|可以)(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?P<phone_call_verb>(?P<phone_call_verb__phone_call_verb>打|撥|撥打))(?P<phone_noun_optional>(?P<phone_noun_optional__phone_noun_optional>|電話))(?P<to>(?P<to__to>到|給|至))(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))嗎$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6c13b017-f518-5b70-be6a-9b0e816d2353"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{(hs:hs)}(situation:situation)(能|可以){麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(叫|聯絡)(contact:emergencyServices)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))(?:能|可以)(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:叫|聯絡)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))嗎$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e58e5678-50b0-5b3f-a7b7-cc7959d30ba6"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "phone_call_verb" : "phone_call_verb",
+        "phone_call_verb__phone_call_verb" : "phone_call_verb",
+        "phone_noun_optional" : "phone_noun_optional",
+        "phone_noun_optional__phone_noun_optional" : "phone_noun_optional",
+        "situation" : "situation",
+        "situation__situation" : "situation",
+        "to" : "to",
+        "to__to" : "to"
+      },
+      "pattern" : "{(hs:hs)}(situation:situation)(能不能|可不可以){麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(phone_call_verb:phone_call_verb)(phone_noun_optional:phone_noun_optional)(to:to)(contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))(?:能不能|可不可以)(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?P<phone_call_verb>(?P<phone_call_verb__phone_call_verb>打|撥|撥打))(?P<phone_noun_optional>(?P<phone_noun_optional__phone_noun_optional>|電話))(?P<to>(?P<to__to>到|給|至))(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "865aa572-3fd2-53b1-83b2-30df0ef198d8"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{(hs:hs)}(situation:situation){(能不能|可不可以)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(叫|聯絡)(contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))(?:(?:能不能|可不可以))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:叫|聯絡)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9f1e4083-74f5-5ea2-93c0-7364ceca5425"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "phone_call_verb" : "phone_call_verb",
+        "phone_call_verb__phone_call_verb" : "phone_call_verb",
+        "phone_noun_optional" : "phone_noun_optional",
+        "phone_noun_optional__phone_noun_optional" : "phone_noun_optional",
+        "situation" : "situation",
+        "situation__situation" : "situation",
+        "to" : "to",
+        "to__to" : "to"
+      },
+      "pattern" : "{(hs:hs)}(situation:situation){麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}(phone_call_verb:phone_call_verb)(phone_noun_optional:phone_noun_optional)(to:to)(contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?P<phone_call_verb>(?P<phone_call_verb__phone_call_verb>打|撥|撥打))(?P<phone_noun_optional>(?P<phone_noun_optional__phone_noun_optional>|電話))(?P<to>(?P<to__to>到|給|至))(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e6de7610-ee56-5269-940a-b2d7d3130ce2"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "phone_call_verb" : "phone_call_verb",
+        "phone_call_verb__phone_call_verb" : "phone_call_verb",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{(hs:hs)}(situation:situation)給(contact:emergencyServices)(phone_call_verb:phone_call_verb)電話",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))給(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))(?P<phone_call_verb>(?P<phone_call_verb__phone_call_verb>打|撥|撥打))電話$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ffd2f4fc-76f2-56ae-9f5d-bbaba781b52f"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}({電話}接起來|接聽{電話})",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:電話)?接起來|接聽(?:電話)?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "015653f7-6509-52ab-8ae8-f9b9b27678c5"
+    },
+    {
+      "action" : "end_call",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(不|不好|不要|不對|不是|不用|不需要|不ok){了}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:不|不好|不要|不對|不是|不用|不需要|不ok)(?:了)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9296feaa-ae83-561e-8849-540b2cad747e"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{(hs:hs)}(可以|能){麻煩|麻煩請|麻煩請你|請你|請}{快}{幫我|幫忙|給我}(叫|聯絡|打給)(contact:emergencyServices)嗎{因為}(situation:situation)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:可以|能)(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:快)?(?:(?:幫我|幫忙|給我))?(?:叫|聯絡|打給)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))嗎(?:因為)?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8aa3df9b-aa11-5171-a04e-b159017ab220"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(好|要|對|是|用|需要|ok){啊}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:好|要|對|是|用|需要|ok)(?:啊)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7d4ddf0c-3ab3-5183-a70b-231f0e60c54d"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "phone_call_verb" : "phone_call_verb",
+        "phone_call_verb__phone_call_verb" : "phone_call_verb",
+        "phone_noun_optional" : "phone_noun_optional",
+        "phone_noun_optional__phone_noun_optional" : "phone_noun_optional",
+        "situation" : "situation",
+        "situation__situation" : "situation",
+        "to" : "to",
+        "to__to" : "to"
+      },
+      "pattern" : "{(hs:hs)}(我要|我想|我需要|我想要)(phone_call_verb:phone_call_verb)(phone_noun_optional:phone_noun_optional)(to:to)(contact:emergencyServices){因為}(situation:situation)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:我要|我想|我需要|我想要)(?P<phone_call_verb>(?P<phone_call_verb__phone_call_verb>打|撥|撥打))(?P<phone_noun_optional>(?P<phone_noun_optional__phone_noun_optional>|電話))(?P<to>(?P<to__to>到|給|至))(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))(?:因為)?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "cb0e8f3d-39d2-5ebc-962d-2d4f61d5ed8e"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(我需要|我要|給我)(contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:我需要|我要|給我)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "5a906afb-a2ae-54c2-a138-314f0273bc59"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(我需要|讓|我要|我想要)(contact:emergencyServices)(接電話|聽電話|接聽|在線|在線上)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:我需要|讓|我要|我想要)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))(?:接電話|聽電話|接聽|在線|在線上)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e59f0a5c-9e0d-51c7-a42b-1816a7f0aef2"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(接|聽|接聽){一下}電話",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:接|聽|接聽)(?:一下)?電話$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3d4391d6-189a-5e81-b749-efa4f1cf7224"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "phone_call_verb" : "phone_call_verb",
+        "phone_call_verb__phone_call_verb" : "phone_call_verb",
+        "phone_noun_optional" : "phone_noun_optional",
+        "phone_noun_optional__phone_noun_optional" : "phone_noun_optional",
+        "situation" : "situation",
+        "situation__situation" : "situation",
+        "to" : "to",
+        "to__to" : "to"
+      },
+      "pattern" : "{(hs:hs)}(能|可以){麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(phone_call_verb:phone_call_verb)(phone_noun_optional:phone_noun_optional)(to:to)(contact:emergencyServices)嗎{因為}(situation:situation)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:能|可以)(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?P<phone_call_verb>(?P<phone_call_verb__phone_call_verb>打|撥|撥打))(?P<phone_noun_optional>(?P<phone_noun_optional__phone_noun_optional>|電話))(?P<to>(?P<to__to>到|給|至))(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))嗎(?:因為)?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b64b39ea-7db5-5ae4-af81-27690142074c"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "phone_call_verb" : "phone_call_verb",
+        "phone_call_verb__phone_call_verb" : "phone_call_verb",
+        "phone_noun_optional" : "phone_noun_optional",
+        "phone_noun_optional__phone_noun_optional" : "phone_noun_optional",
+        "situation" : "situation",
+        "situation__situation" : "situation",
+        "to" : "to",
+        "to__to" : "to"
+      },
+      "pattern" : "{(hs:hs)}(能不能|可不可以){麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(phone_call_verb:phone_call_verb)(phone_noun_optional:phone_noun_optional)(to:to)(contact:emergencyServices){因為}(situation:situation)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:能不能|可不可以)(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?P<phone_call_verb>(?P<phone_call_verb__phone_call_verb>打|撥|撥打))(?P<phone_noun_optional>(?P<phone_noun_optional__phone_noun_optional>|電話))(?P<to>(?P<to__to>到|給|至))(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))(?:因為)?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d2ddc4a6-2b54-566a-8884-28847f690bb1"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{(hs:hs)}{可不可以|能不能}{麻煩|麻煩請|麻煩請你|請你|請}{快}{幫我|幫忙|給我}(叫|聯絡|打給)(contact:emergencyServices){因為}(situation:situation)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:可不可以|能不能))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:快)?(?:(?:幫我|幫忙|給我))?(?:叫|聯絡|打給)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))(?:因為)?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c06884c8-7e15-5aca-9e4d-fc78c4588966"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{幫我|幫忙|給我}(接|聽)((個|一下){電話}|電話)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:幫我|幫忙|給我))?(?:接|聽)(?:(?:個|一下)(?:電話)?|電話)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "5f1e8335-6911-524d-803d-26cee2d60b4b"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{快}{幫忙|幫我}(打|打電話|撥|撥電話){給}(contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:快)?(?:(?:幫忙|幫我))?(?:打|打電話|撥|撥電話)(?:給)?(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ac69f8a3-a6fc-51af-baf2-b74be6bf7294"
+    },
+    {
+      "action" : "end_call",
+      "context_free" : false,
+      "metadata" : {
+        "hangup" : "hangup",
+        "hangup__hangup" : "hangup",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(hangup:hangup)(電話|通話|來電)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?P<hangup>(?P<hangup__hangup>停止|切斷|取消|拒絕|掛|掛掉|掛斷|無視|終止|結束))(?:電話|通話|來電)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f421c422-669a-53f7-bc1d-beae7b6905f8"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(聯絡|撥{電話}給|打{電話}給)(contact:*{1,5})",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:聯絡|撥(?:電話)?給|打(?:電話)?給)(?P<contact>.{1,5})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "32b74802-2b90-5027-90f2-10c764c838f5"
+    },
+    {
+      "action" : "end_call",
+      "context_free" : false,
+      "metadata" : {
+        "hangup" : "hangup",
+        "hangup__hangup" : "hangup",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}把(電話|通話|來電)(hangup:hangup){了}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?把(?:電話|通話|來電)(?P<hangup>(?P<hangup__hangup>停止|切斷|取消|拒絕|掛|掛掉|掛斷|無視|終止|結束))(?:了)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b9884401-2ecf-5912-9aa4-da509a5b49b2"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}給(contact:*{1,5})(打|撥)電話",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?給(?P<contact>.{1,5})(?:打|撥)電話$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e56619b0-8fee-560f-934c-e8115ae638b2"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "phone_call_verb" : "phone_call_verb",
+        "phone_call_verb__phone_call_verb" : "phone_call_verb",
+        "phone_noun_optional" : "phone_noun_optional",
+        "phone_noun_optional__phone_noun_optional" : "phone_noun_optional",
+        "situation" : "situation",
+        "situation__situation" : "situation",
+        "to" : "to",
+        "to__to" : "to"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}(phone_call_verb:phone_call_verb)(phone_noun_optional:phone_noun_optional)(to:to)(contact:emergencyServices){因為}(situation:situation)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?P<phone_call_verb>(?P<phone_call_verb__phone_call_verb>打|撥|撥打))(?P<phone_noun_optional>(?P<phone_noun_optional__phone_noun_optional>|電話))(?P<to>(?P<to__to>到|給|至))(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))(?:因為)?(?P<situation>(?P<situation__situation>中毒急救|受到性騷擾|吸食過多的毒品|呼吸困難|喝了一些老鼠藥|嗑藥過量|害怕我的安全|想死|憂鬱|我不想活了|我受傷了|我已經中毒了|我快死了|我想自殘|我現在受傷了|我現在有危險|我被強暴了|我被打了|我被虐待|我被襲擊|我被跟蹤|摔斷了我手臂|有人性侵我|正遭遇性侵犯|氣喘發作|溺水了|站不起來|被打了|被毆打|被綁架|被跟蹤|請協助我們|請幫助我|身體不適|需要使用腎上腺素|需要幫忙|需要心肺復甦))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "12967af6-fbc3-5c3b-9d32-5b70a7536332"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}我(需要|要找|想要找)(contact:emergencyServices){你}(可以|能){麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(打|打電話|撥|撥電話)給(他|他們)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?我(?:需要|要找|想要找)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))(?:你)?(?:可以|能)(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:打|打電話|撥|撥電話)給(?:他|他們)嗎$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "5271eac1-4e21-545c-8916-ef076061d3a5"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}我(需要|要找|想要找)(contact:emergencyServices){你}{可不可以|能不能}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(打|打電話|撥|撥電話)給(他|他們)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?我(?:需要|要找|想要找)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))(?:你)?(?:(?:可不可以|能不能))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:打|打電話|撥|撥電話)給(?:他|他們)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d033b576-46ff-573d-b317-59152801c718"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}我{現在}{需}要(contact:emergencyServices){的號碼|的電話|的專線}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?我(?:現在)?(?:需)?要(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))(?:(?:的號碼|的電話|的專線))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c2476b1c-c869-50fb-bf93-87c6d709d8cc"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}我{需}要你{幫忙}(叫|聯絡|撥{電話}給|打{電話}給)(contact:emergencyServices){我需要幫忙|我需要協助}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?我(?:需)?要你(?:幫忙)?(?:叫|聯絡|撥(?:電話)?給|打(?:電話)?給)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:熱|專)線|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:專線|熱線|中心|組織)|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:專線|熱線|中心|組織)|112救命專線|113保護專線|119急救|中毒防制諮詢組織|婦女保護熱線|家庭暴力支援專線|家暴受害人關心組織|家暴諮詢中心|張老師|性侵防治中心|戒毒專線|救護中心|救護車|消防人員|消防員|消防局|消防隊|生命線|緊急急救站|緊急救難專線|自殺防治中心|警察|警察局|醫護人員|防治家庭暴力專線|預防自殺))(?:(?:我需要幫忙|我需要協助))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "03e5f4bd-f313-5fa2-b5e9-e4c57206d6bc"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(撥|打|撥打){電話}{給}{我的|我們的}(contact:emergency_contact_parser)(請|請你|麻煩)",
+      "priority" : 36,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:撥|打|撥打)(?:電話)?(?:給)?(?:(?:我的|我們的))?(?P<contact>(?P<contact__emergency_contact_parser>緊急聯絡人))(?:請|請你|麻煩)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9a7fad9a-a1e6-5e54-aa67-1d7eed399d7f"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(撥|打|撥打){電話}{給}{我的|我們的}(contact:emergency_contact_parser)",
+      "priority" : 35,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:撥|打|撥打)(?:電話)?(?:給)?(?:(?:我的|我們的))?(?P<contact>(?P<contact__emergency_contact_parser>緊急聯絡人))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e2c88298-563d-5242-8c3c-005c5c5634de"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{用|開}擴音(撥|打){電話}給{我的|我們的}(contact:emergency_contact_parser)",
+      "priority" : 35,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:用|開))?擴音(?:撥|打)(?:電話)?給(?:(?:我的|我們的))?(?P<contact>(?P<contact__emergency_contact_parser>緊急聯絡人))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "55ff01b3-5852-5ed4-92ca-72670993f833"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(現在|目前){這裡}{的}時間",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:現在|目前)(?:這裡)?(?:的)?時間$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "16ca94b2-801b-5977-a7d8-341dfd4ca918"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{告訴我}(現在|目前){這裡}{是}(幾點幾分|幾點鐘|幾點|什麼時候|什麼時間){了}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:告訴我)?(?:現在|目前)(?:這裡)?(?:是)?(?:幾點幾分|幾點鐘|幾點|什麼時候|什麼時間)(?:了)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "48ef494e-b6e4-57ae-9dc0-95a9988398e3"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}現在(幾點|幾點幾分|時間)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?現在(?:幾點|幾點幾分|時間)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "0aba786f-8a9c-56b6-a5cd-88a18a958e87"
+    },
+    {
+      "action" : "call_911",
+      "context_free" : false,
+      "metadata" : {
+        "emergency_number" : "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser" : "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser" : "locale_emergency_number_parser",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "number" : "emergency_number_parser"
+      },
+      "pattern" : "{(hs:hs)}(number:emergency_number_parser)",
+      "priority" : 10,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>110|119))))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid" : "94f12cb5-dad6-5b94-903b-37b665adc4ee"
+    },
+    {
+      "action" : "call_911",
+      "context_free" : false,
+      "metadata" : {
+        "emergency_number" : "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser" : "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser" : "locale_emergency_number_parser",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "number" : "emergency_number_parser"
+      },
+      "pattern" : "{(hs:hs)}打{電話}{給}(number:emergency_number_parser)",
+      "priority" : 10,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?打(?:電話)?(?:給)?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>110|119))))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid" : "adb3561b-d029-5203-925b-a6a733eb5421"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{使}用facetime(聯絡|撥{電話}給|打{電話}給)(contact:*{1,5})(請|請你|麻煩)",
+      "priority" : 51,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:使)?用facetime(?:聯絡|撥(?:電話)?給|打(?:電話)?給)(?P<contact>.{1,5})(?:請|請你|麻煩)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "21da6e21-ab8e-5c07-8fd4-7e68c071fed0"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{打|撥}facetime{給|到}(contact:*{1,5})(請|請你|麻煩)",
+      "priority" : 51,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:(?:打|撥))?facetime(?:(?:給|到))?(?P<contact>.{1,5})(?:請|請你|麻煩)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "2b4d80a7-145d-55a1-9bc0-78efa92edf08"
+    },
+    {
+      "action" : "facetime_audio_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}({用|使用|開}語音facetime|{{使}用}facetime語音)(聯絡|撥{電話}給|打{電話}給)(contact:*{1,5})",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:(?:(?:用|使用|開))?語音facetime|(?:(?:使)?用)?facetime語音)(?:聯絡|撥(?:電話)?給|打(?:電話)?給)(?P<contact>.{1,5})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e5413f9c-f47e-5a93-89b6-66148aa05bcb"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{使}用facetime(聯絡|撥{電話}給|打{電話}給)(contact:*{1,5})",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:使)?用facetime(?:聯絡|撥(?:電話)?給|打(?:電話)?給)(?P<contact>.{1,5})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d3f74211-9e1e-59f7-9be3-41f4779b749b"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{打|撥}facetime{給|到}(contact:*{1,5})",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:(?:打|撥))?facetime(?:(?:給|到))?(?P<contact>.{1,5})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "578d04a2-dde8-5c47-8c0e-5edc832c3acd"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='home_device_control')",
+      "context_free" : false,
+      "metadata" : {
+        "homeAutomation" : "wildcard{1..*5}",
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(homeAutomation:*{1,5})",
+      "priority" : 55,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<homeAutomation>.{1,5})$",
+      "required_labels" : {
+        "homeAutomation" : [
+          "homeAutomationScene"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8cbf8d59-9024-58e3-bb3b-396b8396da45"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "place" : "wildcard{1..*5}"
+      },
+      "pattern" : "{(hs:hs)}(place:*{1,5})什麼時候(開|開門|開始營業|關|關門|結束營業)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<place>.{1,5})什麼時候(?:開|開門|開始營業|關|關門|結束營業)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d2c603d6-5ade-5815-bdd0-03a005ebb7f0"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "team" : "wildcard{1..*5}"
+      },
+      "pattern" : "{(hs:hs)}(team:*{1,5})((今|明)(天|晚)的比賽是幾點|(今|昨)(天|晚)的(比數|比分)是多少)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<team>.{1,5})(?:(?:今|明)(?:天|晚)的比賽是幾點|(?:今|昨)(?:天|晚)的(?:比數|比分)是多少)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c1f7b1ac-0579-52da-8613-66f4f170b5e2"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "unit" : "wildcard{1..*3}",
+        "unit2" : "wildcard{1..*3}"
+      },
+      "pattern" : "{(hs:hs)}(unit2:*{1,3})(等於|是)(多少|幾)(unit:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<unit2>.{1,3})(?:等於|是)(?:多少|幾)(?P<unit>.{1,3})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7fec5b42-4315-5d2a-a876-36dcaceb0d06"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "word" : "wildcard{1..*1}"
+      },
+      "pattern" : "{(hs:hs)}(word:*{1,1}){要}怎麼(寫|念|讀|拼)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<word>.{1,1})(?:要)?怎麼(?:寫|念|讀|拼)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8173348b-0888-58d0-9915-3e1f2025cdc4"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{今天|今晚|明天|明晚|現在}{外面}(會下雨嗎|會不會下雨|天氣(如何|怎麼樣))",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:今天|今晚|明天|明晚|現在))?(?:外面)?(?:會下雨嗎|會不會下雨|天氣(?:如何|怎麼樣))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ac6c98c9-c2c3-5622-9c43-5f648ac288d2"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "thing" : "wildcard{1..*10}"
+      },
+      "pattern" : "{(hs:hs)}{小}(兔子|狗|狗狗|貓|貓貓)(可以|可不可以|能|能不能)吃(thing:*{1,10})嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:小)?(?:兔子|狗|狗狗|貓|貓貓)(?:可以|可不可以|能|能不能)吃(?P<thing>.{1,10})嗎$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d2a990df-7324-510a-bc06-b8e3ff5b2e8a"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要))((繼續|恢復|回復)(播|放|播放|聽)(歌|歌曲|音樂)|(把|將)(歌|歌曲|音樂)(繼續|恢復|回復)(播|放|播放))",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:(?:繼續|恢復|回復)(?:播|放|播放|聽)(?:歌|歌曲|音樂)|(?:把|將)(?:歌|歌曲|音樂)(?:繼續|恢復|回復)(?:播|放|播放))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "dcad817c-a9e1-57bf-826b-10a8db5260ad"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要))(切|換|跳|切換){到|去}{上|前|下}{一}首(歌|歌曲|音樂)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:切|換|跳|切換)(?:(?:到|去))?(?:(?:上|前|下))?(?:一)?首(?:歌|歌曲|音樂)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "76db1ff5-59a2-5e69-9a40-b23dc02bf984"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要))(播|放|播放)下一(首|個)(歌|歌曲|音樂)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:播|放|播放)下一(?:首|個)(?:歌|歌曲|音樂)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "912971f7-c0bf-5146-9555-e16961febd12"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要))(暫停(歌|歌曲|音樂)|(把|將)(歌|歌曲|音樂)暫停{一下})",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:暫停(?:歌|歌曲|音樂)|(?:把|將)(?:歌|歌曲|音樂)暫停(?:一下)?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b26db023-d443-5cbc-8ac0-aea61172e78a"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要)){切|換|跳|切換}{到|去}(上|前|下){一}首{歌|歌曲|音樂}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:(?:切|換|跳|切換))?(?:(?:到|去))?(?:上|前|下)(?:一)?首(?:(?:歌|歌曲|音樂))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "076a1d5e-3734-555d-b8e8-b15e2b64e069"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要))停止(播|放|播放)(歌|歌曲|音樂)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))停止(?:播|放|播放)(?:歌|歌曲|音樂)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8be9216f-ee67-57f5-9d54-e21435cf4441"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要))暫時((暫停|停掉|不要播放)(歌|歌曲|音樂)|(把|將)(歌|歌曲|音樂)(暫停|停|停掉){一下})",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))暫時(?:(?:暫停|停掉|不要播放)(?:歌|歌曲|音樂)|(?:把|將)(?:歌|歌曲|音樂)(?:暫停|停|停掉)(?:一下)?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7dfab878-d88d-5af5-9136-15096a8c7700"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}{繼續|開始}播放{音樂|影片}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:(?:繼續|開始))?播放(?:(?:音樂|影片))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7a11c4dc-6457-5d06-864c-3421f7103d82"
+    },
+    {
+      "action" : "search_and_read(query='messages', entity_types='MessageEntity')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(訊息|簡訊|短訊|信息)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:訊息|簡訊|短訊|信息)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "255b4beb-b16e-5e9a-ac7e-270310788108"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "of" : "on_off",
+        "of__on_off" : "on_off",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{(hs:hs)}(of:on_off){我的}(s:connection_settings){功能}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<of>(?P<of__on_off>開啟|關閉))(?:我的)?(?P<s>(?P<s__connection_settings>Wi-Fi|個人熱點|網路|藍牙|行動數據))(?:功能)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4744f21f-4080-5299-a97f-e70b366a2f4a"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "of" : "on_off",
+        "of__on_off" : "on_off",
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{(hs:hs)}(of:on_off){我的}(s:flashlight_settings){功能}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<of>(?P<of__on_off>開啟|關閉))(?:我的)?(?P<s>(?P<s__flashlight_settings>手電筒|閃光燈|電筒))(?:功能)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "241993b6-aafd-5788-a73d-2b73d3214382"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "ud" : "up_down",
+        "ud__up_down" : "up_down"
+      },
+      "pattern" : "{(hs:hs)}(ud:up_down)音量",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?P<ud>(?P<ud__up_down>調低|調高|降低))音量$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "69046891-7a9d-5756-a996-a8b750cc17bd"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{你}(大|小)聲{一點}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:你)?(?:大|小)聲(?:一點)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "af34741b-3847-5c5e-b448-1f577eccfc33"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{你}(音量|聲音)(太|好)(大|吵|小){聲}{了|啦|呀}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:你)?(?:音量|聲音)(?:太|好)(?:大|吵|小)(?:聲)?(?:(?:了|啦|呀))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "9cf0a96a-7546-55c1-9401-ee95175962c9"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{你}太(大|小)(聲|音量|聲音)了",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:你)?太(?:大|小)(?:聲|音量|聲音)了$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "13420538-92ee-5f50-8ceb-1fa143809a51"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{(hs:hs)}{為什麼|你為什麼|怎麼|你怎麼}{還|還是}(沒|沒有|聽不到|聽不見){你的}(s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:為什麼|你為什麼|怎麼|你怎麼))?(?:(?:還|還是))?(?:沒|沒有|聽不到|聽不見)(?:你的)?(?P<s>(?P<s__volume_settings>聲音|音樂|音量))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d2e76f32-f121-50fc-be1b-00bd86446d98"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "increase" : "increase",
+        "increase__increase" : "increase",
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{(hs:hs)}{請|請你}(increase:increase)(s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:請|請你))?(?P<increase>(?P<increase__increase>加大|加強|加高|升高|增大|增強|增高|提高|調大|調強|調高|轉大|轉強|轉高|開大|開高))(?P<s>(?P<s__volume_settings>聲音|音樂|音量))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "da57fecf-44cb-5551-ab6d-72bd6602b702"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "increase" : "increase",
+        "increase__increase" : "increase",
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{(hs:hs)}{請|請你}(把|將)(s:volume_settings)(increase:increase){吧|好嗎}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:請|請你))?(?:把|將)(?P<s>(?P<s__volume_settings>聲音|音樂|音量))(?P<increase>(?P<increase__increase>加大|加強|加高|升高|增大|增強|增高|提高|調大|調強|調高|轉大|轉強|轉高|開大|開高))(?:(?:吧|好嗎))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "6537ca64-015f-5fcc-a68d-5c1a7a067c4f"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_ov" : "verb_disable_ov",
+        "verb_disable_ov__verb_disable_ov" : "verb_disable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{我的}(s:connection_settings){功能}可以(verb_disable_ov:verb_disable_ov)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:我的)?(?P<s>(?P<s__connection_settings>Wi-Fi|個人熱點|網路|藍牙|行動數據))(?:功能)?可以(?P<verb_disable_ov>(?P<verb_disable_ov__verb_disable_ov>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關了|關起來))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "2e564e5e-b2f7-538a-8e92-2016da5a27be"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_ov" : "verb_disable_ov",
+        "verb_disable_ov__verb_disable_ov" : "verb_disable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{我的}(s:flashlight_settings){功能}可以(verb_disable_ov:verb_disable_ov)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:我的)?(?P<s>(?P<s__flashlight_settings>手電筒|閃光燈|電筒))(?:功能)?可以(?P<verb_disable_ov>(?P<verb_disable_ov__verb_disable_ov>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關了|關起來))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "32deb4bb-64e0-55fe-b87a-4a84f8e85fa6"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_ov" : "verb_disable_ov",
+        "verb_disable_ov__verb_disable_ov" : "verb_disable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{我的}(s:mode_settings){功能}可以(verb_disable_ov:verb_disable_ov)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:我的)?(?P<s>(?P<s__mode_settings>低耗電模式|勿擾模式|夜覽|深色模式|飛航模式))(?:功能)?可以(?P<verb_disable_ov>(?P<verb_disable_ov__verb_disable_ov>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關了|關起來))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "db9e684b-5920-5b3c-aac0-91759ff3b488"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_ov" : "verb_disable_ov",
+        "verb_disable_ov__verb_disable_ov" : "verb_disable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能|可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:connection_settings){功能}(verb_disable_ov:verb_disable_ov)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能|可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__connection_settings>Wi-Fi|個人熱點|網路|藍牙|行動數據))(?:功能)?(?P<verb_disable_ov>(?P<verb_disable_ov__verb_disable_ov>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關了|關起來))嗎$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "5ec18825-62dc-563f-8324-d942fb5bb39d"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings",
+        "verb_enable" : "verb_enable",
+        "verb_enable__verb_enable" : "verb_enable",
+        "verb_enable_ov" : "verb_enable_ov",
+        "verb_enable_ov__verb_enable_ov" : "verb_enable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能|可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:connection_settings){功能}(verb_enable_ov:verb_enable_ov)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能|可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__connection_settings>Wi-Fi|個人熱點|網路|藍牙|行動數據))(?:功能)?(?P<verb_enable_ov>(?P<verb_enable_ov__verb_enable_ov>(?P<verb_enable>(?P<verb_enable__verb_enable>啟動|啟用|打開|開啟))|開了|開起來))嗎$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "2ac4d664-eb51-5eba-88d3-af3d2f8f4476"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_ov" : "verb_disable_ov",
+        "verb_disable_ov__verb_disable_ov" : "verb_disable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能|可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:flashlight_settings){功能}(verb_disable_ov:verb_disable_ov)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能|可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__flashlight_settings>手電筒|閃光燈|電筒))(?:功能)?(?P<verb_disable_ov>(?P<verb_disable_ov__verb_disable_ov>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關了|關起來))嗎$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7cca6c5b-9958-54a0-8eb4-f7c5364576c7"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings",
+        "verb_enable" : "verb_enable",
+        "verb_enable__verb_enable" : "verb_enable",
+        "verb_enable_ov" : "verb_enable_ov",
+        "verb_enable_ov__verb_enable_ov" : "verb_enable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能|可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:flashlight_settings){功能}(verb_enable_ov:verb_enable_ov)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能|可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__flashlight_settings>手電筒|閃光燈|電筒))(?:功能)?(?P<verb_enable_ov>(?P<verb_enable_ov__verb_enable_ov>(?P<verb_enable>(?P<verb_enable__verb_enable>啟動|啟用|打開|開啟))|開了|開起來))嗎$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4e830fb7-0124-5994-a7f2-5c936bb1d089"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_ov" : "verb_disable_ov",
+        "verb_disable_ov__verb_disable_ov" : "verb_disable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能|可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:mode_settings){功能}(verb_disable_ov:verb_disable_ov)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能|可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__mode_settings>低耗電模式|勿擾模式|夜覽|深色模式|飛航模式))(?:功能)?(?P<verb_disable_ov>(?P<verb_disable_ov__verb_disable_ov>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關了|關起來))嗎$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "13928156-2bf2-515d-973d-96717e4a0f7b"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings",
+        "verb_enable" : "verb_enable",
+        "verb_enable__verb_enable" : "verb_enable",
+        "verb_enable_ov" : "verb_enable_ov",
+        "verb_enable_ov__verb_enable_ov" : "verb_enable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能|可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:mode_settings){功能}(verb_enable_ov:verb_enable_ov)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能|可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__mode_settings>低耗電模式|勿擾模式|夜覽|深色模式|飛航模式))(?:功能)?(?P<verb_enable_ov>(?P<verb_enable_ov__verb_enable_ov>(?P<verb_enable>(?P<verb_enable__verb_enable>啟動|啟用|打開|開啟))|開了|開起來))嗎$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "098d481c-df2d-547f-926a-72efc6fb359e"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_vo" : "verb_disable_vo",
+        "verb_disable_vo__verb_disable_vo" : "verb_disable_vo"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(verb_disable_vo:verb_disable_vo){我的}(s:connection_settings){功能}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?P<verb_disable_vo>(?P<verb_disable_vo__verb_disable_vo>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關))(?:我的)?(?P<s>(?P<s__connection_settings>Wi-Fi|個人熱點|網路|藍牙|行動數據))(?:功能)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "64da19a9-7d20-5fc5-842a-f74cf539a2d6"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_vo" : "verb_disable_vo",
+        "verb_disable_vo__verb_disable_vo" : "verb_disable_vo"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(verb_disable_vo:verb_disable_vo){我的}(s:flashlight_settings){功能}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?P<verb_disable_vo>(?P<verb_disable_vo__verb_disable_vo>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關))(?:我的)?(?P<s>(?P<s__flashlight_settings>手電筒|閃光燈|電筒))(?:功能)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3b2db25b-878b-5913-9e3e-d4c970c7ad9e"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_vo" : "verb_disable_vo",
+        "verb_disable_vo__verb_disable_vo" : "verb_disable_vo"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(verb_disable_vo:verb_disable_vo){我的}(s:mode_settings){功能}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?P<verb_disable_vo>(?P<verb_disable_vo__verb_disable_vo>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關))(?:我的)?(?P<s>(?P<s__mode_settings>低耗電模式|勿擾模式|夜覽|深色模式|飛航模式))(?:功能)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "2aa220a9-6a36-514e-a713-843504ddb113"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings",
+        "verb_enable" : "verb_enable",
+        "verb_enable__verb_enable" : "verb_enable",
+        "verb_enable_vo" : "verb_enable_vo",
+        "verb_enable_vo__verb_enable_vo" : "verb_enable_vo"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(verb_enable_vo:verb_enable_vo){我的}(s:connection_settings){功能}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?P<verb_enable_vo>(?P<verb_enable_vo__verb_enable_vo>(?P<verb_enable>(?P<verb_enable__verb_enable>啟動|啟用|打開|開啟))|開))(?:我的)?(?P<s>(?P<s__connection_settings>Wi-Fi|個人熱點|網路|藍牙|行動數據))(?:功能)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "030d96ea-1781-59a1-baeb-0783264d0577"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings",
+        "verb_enable" : "verb_enable",
+        "verb_enable__verb_enable" : "verb_enable",
+        "verb_enable_vo" : "verb_enable_vo",
+        "verb_enable_vo__verb_enable_vo" : "verb_enable_vo"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(verb_enable_vo:verb_enable_vo){我的}(s:flashlight_settings){功能}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?P<verb_enable_vo>(?P<verb_enable_vo__verb_enable_vo>(?P<verb_enable>(?P<verb_enable__verb_enable>啟動|啟用|打開|開啟))|開))(?:我的)?(?P<s>(?P<s__flashlight_settings>手電筒|閃光燈|電筒))(?:功能)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7c18e14f-46c8-5435-8223-24536cb54512"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings",
+        "verb_enable" : "verb_enable",
+        "verb_enable__verb_enable" : "verb_enable",
+        "verb_enable_vo" : "verb_enable_vo",
+        "verb_enable_vo__verb_enable_vo" : "verb_enable_vo"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(verb_enable_vo:verb_enable_vo){我的}(s:mode_settings){功能}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?P<verb_enable_vo>(?P<verb_enable_vo__verb_enable_vo>(?P<verb_enable>(?P<verb_enable__verb_enable>啟動|啟用|打開|開啟))|開))(?:我的)?(?P<s>(?P<s__mode_settings>低耗電模式|勿擾模式|夜覽|深色模式|飛航模式))(?:功能)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "74f35bb5-04de-51c6-824e-1a3861d44cde"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_ov" : "verb_disable_ov",
+        "verb_disable_ov__verb_disable_ov" : "verb_disable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:connection_settings){功能}(verb_disable_ov:verb_disable_ov)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__connection_settings>Wi-Fi|個人熱點|網路|藍牙|行動數據))(?:功能)?(?P<verb_disable_ov>(?P<verb_disable_ov__verb_disable_ov>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關了|關起來))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "32e5d5d4-7571-5744-88ce-7d3ad0af7b62"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings",
+        "verb_enable" : "verb_enable",
+        "verb_enable__verb_enable" : "verb_enable",
+        "verb_enable_ov" : "verb_enable_ov",
+        "verb_enable_ov__verb_enable_ov" : "verb_enable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:connection_settings){功能}(verb_enable_ov:verb_enable_ov)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__connection_settings>Wi-Fi|個人熱點|網路|藍牙|行動數據))(?:功能)?(?P<verb_enable_ov>(?P<verb_enable_ov__verb_enable_ov>(?P<verb_enable>(?P<verb_enable__verb_enable>啟動|啟用|打開|開啟))|開了|開起來))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3702cc9e-1419-57c3-9c64-1bf813f0ee4c"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_ov" : "verb_disable_ov",
+        "verb_disable_ov__verb_disable_ov" : "verb_disable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:flashlight_settings){功能}(verb_disable_ov:verb_disable_ov)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__flashlight_settings>手電筒|閃光燈|電筒))(?:功能)?(?P<verb_disable_ov>(?P<verb_disable_ov__verb_disable_ov>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關了|關起來))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b81656c6-d13e-5557-b563-42f67aefe022"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings",
+        "verb_enable" : "verb_enable",
+        "verb_enable__verb_enable" : "verb_enable",
+        "verb_enable_ov" : "verb_enable_ov",
+        "verb_enable_ov__verb_enable_ov" : "verb_enable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:flashlight_settings){功能}(verb_enable_ov:verb_enable_ov)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__flashlight_settings>手電筒|閃光燈|電筒))(?:功能)?(?P<verb_enable_ov>(?P<verb_enable_ov__verb_enable_ov>(?P<verb_enable>(?P<verb_enable__verb_enable>啟動|啟用|打開|開啟))|開了|開起來))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a01bce69-85c1-52b7-8552-973fac9f83af"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings",
+        "verb_disable" : "verb_disable",
+        "verb_disable__verb_disable" : "verb_disable",
+        "verb_disable_ov" : "verb_disable_ov",
+        "verb_disable_ov__verb_disable_ov" : "verb_disable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:mode_settings){功能}(verb_disable_ov:verb_disable_ov)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__mode_settings>低耗電模式|勿擾模式|夜覽|深色模式|飛航模式))(?:功能)?(?P<verb_disable_ov>(?P<verb_disable_ov__verb_disable_ov>(?P<verb_disable>(?P<verb_disable__verb_disable>不要|停掉|停止|停用|取消|關上|關掉|關閉))|關了|關起來))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f337adf8-6eb3-57fe-9e48-dbd12b835621"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings",
+        "verb_enable" : "verb_enable",
+        "verb_enable__verb_enable" : "verb_enable",
+        "verb_enable_ov" : "verb_enable_ov",
+        "verb_enable_ov__verb_enable_ov" : "verb_enable_ov"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|拜託}{能不能|可不可以}{請|請你}{幫我|幫忙|給我}(把|將){我的}(s:mode_settings){功能}(verb_enable_ov:verb_enable_ov)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|拜託))?(?:(?:能不能|可不可以))?(?:(?:請|請你))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我的)?(?P<s>(?P<s__mode_settings>低耗電模式|勿擾模式|夜覽|深色模式|飛航模式))(?:功能)?(?P<verb_enable_ov>(?P<verb_enable_ov__verb_enable_ov>(?P<verb_enable>(?P<verb_enable__verb_enable>啟動|啟用|打開|開啟))|開了|開起來))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "662b7b20-6068-530e-be9c-1c11d5a020a0"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(能|可以|{麻煩}){幫我|幫忙|給我}(重開|重啟|重{新}開機|重{新}啟動)嗎",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:能|可以|(?:麻煩)?)(?:(?:幫我|幫忙|給我))?(?:重開|重啟|重(?:新)?開機|重(?:新)?啟動)嗎$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "1790eaa4-ea00-542a-995c-8338ed0e3796"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(能不能|可不可以|{麻煩}){幫我|幫忙|給我}(重開|重啟|重{新}開機|重{新}啟動)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:能不能|可不可以|(?:麻煩)?)(?:(?:幫我|幫忙|給我))?(?:重開|重啟|重(?:新)?開機|重(?:新)?啟動)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "ddd53216-d8ec-56cf-909f-18f679adcba9"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(重啟|關機|重新啟動)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:重啟|關機|重新啟動)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b564ff2e-bfe1-5fba-bcba-19644577ee5e"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩}{幫我|幫忙|給我}{把|將}{螢幕|照片}截圖{起來}{一下}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:麻煩)?(?:(?:幫我|幫忙|給我))?(?:(?:把|將))?(?:(?:螢幕|照片))?截圖(?:起來)?(?:一下)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "6dc6b377-96bb-58ac-a4ab-cdf842448748"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(跑|算|設|開|計|記|訂|定|設定|打開)|{麻煩}(給我|我需要|我要|我想|我想要)(跑|算|設|開|計|記|訂|定|設定|打開){{一}個}){到|在}(time:time){的}(計時|定時|到計時|倒{數}計時){器}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:跑|算|設|開|計|記|訂|定|設定|打開)|(?:麻煩)?(?:給我|我需要|我要|我想|我想要)(?:跑|算|設|開|計|記|訂|定|設定|打開)(?:(?:一)?個)?)(?:(?:到|在))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))(?:的)?(?:計時|定時|到計時|倒(?:數)?計時)(?:器)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "f22e7dda-6fb1-56d4-a3b5-048788b5b1ac"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(跑|算|設|開|計|記|訂|定|設定|打開|用)|{麻煩}(給我|我需要|我要|我想|我想要)(跑|算|設|開|計|記|訂|定|設定|打開|用){{一}個})(duration:duration){的}(計時|定時|到計時|倒{數}計時){器}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:跑|算|設|開|計|記|訂|定|設定|打開|用)|(?:麻煩)?(?:給我|我需要|我要|我想|我想要)(?:跑|算|設|開|計|記|訂|定|設定|打開|用)(?:(?:一)?個)?)(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)(?:的)?(?:計時|定時|到計時|倒(?:數)?計時)(?:器)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "32ecab1c-4d94-5709-ba61-ee4e1ed3b5b8"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要)){做|作|進行|開始|用}{一個}(duration:duration){的}(倒數|計時|到計時|倒{數}計時)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:(?:做|作|進行|開始|用))?(?:一個)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)(?:的)?(?:倒數|計時|到計時|倒(?:數)?計時)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "62811a4b-19f7-538a-98f1-3b86a704ac17"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要)){做|作|進行|開始|用}{一個}(倒數|計時|定時|到計時|倒{數}計時)(duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:(?:做|作|進行|開始|用))?(?:一個)?(?:倒數|計時|定時|到計時|倒(?:數)?計時)(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "165020db-0c44-542b-9e5f-33cfdb74c2bd"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要)){做|作|進行|開始}{一個}(倒數|計時|定時|到計時|倒{數}計時){到|在}(time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:(?:做|作|進行|開始))?(?:一個)?(?:倒數|計時|定時|到計時|倒(?:數)?計時)(?:(?:到|在))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "3614d0a5-9c74-59b7-a059-c057868cde8c"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}({麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要)){做|作|進行|開始}{一個}{到|在}(time:time){的}(倒數|計時|到計時|倒{數}計時)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要))(?:(?:做|作|進行|開始))?(?:一個)?(?:(?:到|在))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))(?:的)?(?:倒數|計時|到計時|倒(?:數)?計時)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "9dd4a4dc-d526-52ac-8a2d-d28ab84010a2"
+    },
+    {
+      "action" : "stop_timers(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(停止|停掉|關閉|關掉|取消){我|我的}(計時器|定時器|計時|倒數|倒數計時){器}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:停止|停掉|關閉|關掉|取消)(?:(?:我|我的))?(?:計時器|定時器|計時|倒數|倒數計時)(?:器)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ecf2300a-6f43-57b0-8269-a209de7977c8"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}(停止|停掉|關閉|關掉|取消){我}(全部|所有){的}(計時器|定時器|計時|倒數|倒數計時){器}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:停止|停掉|關閉|關掉|取消)(?:我)?(?:全部|所有)(?:的)?(?:計時器|定時器|計時|倒數|倒數計時)(?:器)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "23071b1a-5df3-5477-807e-32152f81daa2"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}|{麻煩}(給我|我需要|我要|我想|我想要)}{個|一個}(duration:duration){的}(計時|定時|到計時|倒{數}計時){器}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?|(?:麻煩)?(?:給我|我需要|我要|我想|我想要)))?(?:(?:個|一個))?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)(?:的)?(?:計時|定時|到計時|倒(?:數)?計時)(?:器)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "754cb0d8-e84e-5693-bd11-b3f11d7ef651"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}{一個}{到|在}(time:time){的}(計時|定時|到計時|倒{數}計時){器}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:一個)?(?:(?:到|在))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))(?:的)?(?:計時|定時|到計時|倒(?:數)?計時)(?:器)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2834ba26-7b97-54ce-97cd-73e0dec3b3e6"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{可不可以|能不能}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{設|設定|設置|調}{{一}個}(訂時|倒數|計時|倒數計時){器}{在}(duration:duration){之|過|經過}後{叫我|叫醒我|叫我起床|要我起床}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:可不可以|能不能))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:(?:設|設定|設置|調))?(?:(?:一)?個)?(?:訂時|倒數|計時|倒數計時)(?:器)?(?:在)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)(?:(?:之|過|經過))?後(?:(?:叫我|叫醒我|叫我起床|要我起床))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "7729e567-a15c-57c5-94aa-5642a0c69f9a"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}{可不可以|能不能}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{設|設定|設置|調}{{一}個}(訂時|倒數|計時|倒數計時){器}{在}(time:time){的時候}{叫我|叫醒我|叫我起床|要我起床}",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:可不可以|能不能))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:(?:設|設定|設置|調))?(?:(?:一)?個)?(?:訂時|倒數|計時|倒數計時)(?:器)?(?:在)?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))(?:的時候)?(?:(?:叫我|叫醒我|叫我起床|要我起床))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "37609efd-3a17-5e33-81bf-79b666e040b7"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{能不能|可不可以}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{(設|開|計|記|訂|定|設定|打開|用){個|一個}{訂時|倒數|計時|到計時|倒{數}計時}{器}{跑|算|計}}{在}(duration:duration){之|過|經過}後((喊|叫|告訴)我{一下}|{跟我}(說|講)一下)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:能不能|可不可以))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:(?:設|開|計|記|訂|定|設定|打開|用)(?:(?:個|一個))?(?:(?:訂時|倒數|計時|到計時|倒(?:數)?計時))?(?:器)?(?:(?:跑|算|計))?)?(?:在)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)(?:(?:之|過|經過))?後(?:(?:喊|叫|告訴)我(?:一下)?|(?:跟我)?(?:說|講)一下)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "5bab1d2e-3f07-5afe-b630-007dd036b943"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{能不能|可不可以}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{在}(duration:duration){之|過|經過}後{(設|開|計|記|訂|定|設定|打開|用){個|一個}{訂時|倒數|計時|到計時|倒{數}計時}{器}}((喊|叫|告訴)我{一下}|{跟我}(說|講)一下)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:能不能|可不可以))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:在)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)(?:(?:之|過|經過))?後(?:(?:設|開|計|記|訂|定|設定|打開|用)(?:(?:個|一個))?(?:(?:訂時|倒數|計時|到計時|倒(?:數)?計時))?(?:器)?)?(?:(?:喊|叫|告訴)我(?:一下)?|(?:跟我)?(?:說|講)一下)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "871c0e2f-1043-523a-bc9e-eefa95c73498"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}(算|設|開|計|記|訂|定|設定)(duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:算|設|開|計|記|訂|定|設定)(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "40020e7f-4624-5dbb-b6d6-ea2fc6b90e78"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{設|開|計|記|訂|定|設定|打開|用}(訂時|倒數|計時|到計時|倒{數}計時){器}{跑|算|計}(duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:(?:設|開|計|記|訂|定|設定|打開|用))?(?:訂時|倒數|計時|到計時|倒(?:數)?計時)(?:器)?(?:(?:跑|算|計))?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "509d5388-58d7-5c0c-b2aa-5926913a7919"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|請你|請|麻煩請{你}}{幫我|幫忙|給我}{設|開|計|記|訂|定|設定|打開}(訂時|倒數|計時|到計時|倒{數}計時){器}{跑|算|計}{到|在}(time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|請你|請|麻煩請(?:你)?))?(?:(?:幫我|幫忙|給我))?(?:(?:設|開|計|記|訂|定|設定|打開))?(?:訂時|倒數|計時|到計時|倒(?:數)?計時)(?:器)?(?:(?:跑|算|計))?(?:(?:到|在))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "55cb6e04-824c-52d4-ba47-37913f1a3378"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}(定時|訂時|倒數|到數|計時|倒計時|到計時|倒數計時)(duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:定時|訂時|倒數|到數|計時|倒計時|到計時|倒數計時)(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>個小時|個鐘頭|小時)))?(?:又)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分鐘)))?(?:又)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒|秒鐘)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "fdf46c31-b8b3-50ab-9ecf-09fd2638a579"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "hs" : "hs",
+        "hs__hs" : "hs",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}(定時|訂時|倒數|到數|計時|倒計時|到計時|倒數計時){到|在}(time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:定時|訂時|倒數|到數|計時|倒計時|到計時|倒數計時)(?:(?:到|在))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|凌晨|早上)|(?P<am_pm__time_of_day_parser__pm>下午|傍晚|午夜|半夜|夜間|晚上|晚間|深夜))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|九|二|五|兩|八|六|十|十一|十二|四|零)))(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>點|點鐘)))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "35dcf5e1-066a-5a0d-846a-8b889dac565b"
+    },
+    {
+      "action" : "stop_timers(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}(把|將){我|我的}(計時器|定時器|計時|倒數|倒數計時){器}(停止|停掉|停下來|停了|關起來|關閉|關掉|取消|關上)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:(?:我|我的))?(?:計時器|定時器|計時|倒數|倒數計時)(?:器)?(?:停止|停掉|停下來|停了|關起來|關閉|關掉|取消|關上)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "81568e8e-d0a5-5d94-b116-c4957d9d3496"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+        "hs" : "hs",
+        "hs__hs" : "hs"
+      },
+      "pattern" : "{(hs:hs)}{麻煩|麻煩請|麻煩請你|請你|請}{幫我|幫忙|給我}(把|將){我}(全部|所有){的}(計時器|定時器|計時|倒數|倒數計時){器}{都}(停止|停掉|停下來|停了|關起來|關閉|關掉|取消|關上)",
+      "priority" : 50,
+      "regex" : "^(?:(?P<hs>(?P<hs__hs>siri|siri siri|嗨siri|嘿siri|欸siri)))?(?:(?:麻煩|麻煩請|麻煩請你|請你|請))?(?:(?:幫我|幫忙|給我))?(?:把|將)(?:我)?(?:全部|所有)(?:的)?(?:計時器|定時器|計時|倒數|倒數計時)(?:器)?(?:都)?(?:停止|停掉|停下來|停了|關起來|關閉|關掉|取消|關上)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "6741653a-c3e6-5c31-95f8-f581dd85bc4d"
+    }
+  ],
+  "version" : "5500000.22501.0"
+}

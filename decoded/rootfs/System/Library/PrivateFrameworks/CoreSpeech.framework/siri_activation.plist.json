@@ -1,0 +1,31 @@
+{
+  "Amplitude": 1.0,
+  "Atoms": [
+    {
+      "Amplitude": 0.8,
+      "StartTime": 0.0,
+      "Type": "Minitap5"
+    },
+    {
+      "Amplitude": 0.8,
+      "Duration": 0.25,
+      "Envelope": [
+        {
+          "Level": 1.0,
+          "Time": 0.0
+        },
+        {
+          "Level": 0.5,
+          "Time": 0.1
+        },
+        {
+          "Level": 0.0,
+          "Time": 0.25
+        }
+      ],
+      "Frequency": 122.05181188821439,
+      "StartTime": 0.015,
+      "Type": "RampSine"
+    }
+  ]
+}

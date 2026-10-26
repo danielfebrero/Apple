@@ -1,0 +1,227 @@
+{
+  "DerPriFileVersion": "0.1.162",
+  "Show5GSwitch": true,
+  "AttachAPN": {
+    "3GPP": [
+      {
+        "password": "",
+        "PcscfAddressRequired": true,
+        "username": "",
+        "apn": "ims",
+        "AllowedProtocolMaskInRoamingLTE": 3,
+        "AllowedProtocolMask": 3
+      },
+      {
+        "password": "",
+        "PcscfAddressRequired": false,
+        "username": "",
+        "apn": "ccinternet",
+        "AllowedProtocolMaskInRoamingLTE": 3,
+        "AllowedProtocolMask": 3
+      },
+      "_Exclude",
+      [
+        "3GPP2"
+      ]
+    ],
+    "WiFiCalling3GPP": {
+      "password": "",
+      "PcscfAddressRequired": false,
+      "APNClass": 3,
+      "apn": "ccinternet",
+      "username": "",
+      "AllowedProtocolMask": 3
+    }
+  },
+  "IMSConfig": {
+    "Media": {
+      "EVSHardBwLimit": "nb-swb"
+    },
+    "Signaling": {
+      "AdditionalFeatureTags": {
+        "sms": {
+          "+cdmaless": ""
+        },
+        "voice": {
+          "+cdmaless": "",
+          "+g.gsma.rcs.telephony": "\"cs,volte\"",
+          "audio": ""
+        }
+      },
+      "NoFallbackVoiceService": true
+    },
+    "Voice": {
+      "BlockCallsOverCS": true,
+      "BlockSilentRedialOverCS": true,
+      "DisableVolteSwitchOnIncompatibleState": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "EHRPD": false
+      }
+    },
+    "AllowIMSUnprovisioned": true
+  },
+  "ShowHighDataModeSwitch": true,
+  "ForceWPSCallsOverCS": false,
+  "CellBroadcast": {
+    "_Exclude": [
+      "MessageIDParameters3GPP2"
+    ]
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4205785,
+    "SupportsOnDevicePhysicalSIMConvert": true
+  },
+  "SMSSettings": {
+    "MessageFormat": {
+      "SignalingFormat": 1,
+      "PacketFormat": 1
+    }
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "CDMAInternationalRoaming": {
+    "EnabledByDefault": false
+  },
+  "Show5GWarningUnsupportedCarrier": false,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "ccinternet",
+          "type-mask": 1,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 33280,
+          "password": "",
+          "tech-type-mask": 33280,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "ccadmin",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "cchotspot",
+          "type-mask": 16,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "AllowedProtocolMaskInRoaming": 3,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 6,
+          "password": "",
+          "tech-type-mask": 6,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "ccapps",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 1
+    },
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "ccinternet",
+          "type-mask": 1,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "cchotspot",
+          "type-mask": 16,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "AllowedProtocolMaskInRoaming": 3,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 33280,
+          "password": "",
+          "tech-type-mask": 33280,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "ccadmin",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 1048576,
+          "password": "",
+          "tech-type-mask": 1048576,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "xcap",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 6,
+          "password": "",
+          "tech-type-mask": 6,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "ccapps",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 9
+    }
+  ],
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "MTU": [
+    {
+      "technology-mask": 28,
+      "size": 1428
+    },
+    {
+      "technology-mask": 2,
+      "size": 1472
+    }
+  ]
+}

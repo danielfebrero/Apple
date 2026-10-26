@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Manda um e-mail para a Emília sobre a viagem",
+            "Envia um e-mail para a Luana sobre a mudança de planos",
+            "Novo e-mail para Susana Carvalho",
+            "E-mail para o pai sobre o aluguel",
+            "Manda um e-mail para o Dr. Paulo dizendo ‘recebi os formulários, obrigado’",
+            "Envia um e-mail para a Emília e o Bruno sobre a festa e fala que eu me diverti muito"
+          ]
+        }
+      ],
+      "SectionName": "Enviar e-mails"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Verificar e-mails",
+            "Algum e-mail novo do João hoje?",
+            "Mostrar e-mails sobre o aluguel",
+            "Mostra o e-mail que a Emília mandou ontem"
+          ]
+        }
+      ],
+      "SectionName": "Verificar e-mails"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Responder ‘oi Susana, desculpa pelo pagamento atrasado’"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Liga para ele no trabalho"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime com ele no trabalho"
+          ]
+        }
+      ],
+      "SectionName": "Responder a e-mails"
+    }
+  ]
+}

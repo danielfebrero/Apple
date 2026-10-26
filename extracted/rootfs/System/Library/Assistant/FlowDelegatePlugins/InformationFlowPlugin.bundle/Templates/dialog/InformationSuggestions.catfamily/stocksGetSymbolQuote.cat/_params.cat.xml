@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="InformationSuggestions#stocksGetSymbolQuote">
+    <meta name="description" value="Suggests asking what a given stock price is"/>
+    <meta name="category" value="UsedForSnippet"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="deliveryVehicle" type="dialog.String"/>
+        <parameter name="name" type="dialog.String"/>
+        <parameter name="instrumentType" type="dialog.String"/>
+    </parameters>
+</cat>

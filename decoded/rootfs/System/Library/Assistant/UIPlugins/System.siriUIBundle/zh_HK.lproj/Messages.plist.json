@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "話俾嘉麗聽我好快就到",
+            "Send個短訊俾靜儀",
+            "發個短訊俾家傑，問佢：不如聽日好唔好？",
+            "話俾海琪知表演好精彩",
+            "Send個短訊去嘉麗嘅手提電話，話佢知：我會遲到",
+            "發個訊息去2123-4567",
+            "幫我send個短訊俾家傑同靜儀，問：你哋喺邊度？"
+          ]
+        }
+      ],
+      "SectionName": "發送訊息"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "讀出我嘅短訊",
+            "讀多一次"
+          ]
+        }
+      ],
+      "SectionName": "讀出訊息提示"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "覆佢話：真係一個好消息",
+            "回覆：我十分鐘到"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "打電話俾佢"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime佢"
+          ]
+        }
+      ],
+      "SectionName": "回覆訊息"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "讀出靜儀俾我嘅訊息"
+          ]
+        }
+      ],
+      "SectionName": "搜尋訊息"
+    }
+  ]
+}

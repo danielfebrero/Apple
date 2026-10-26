@@ -1,0 +1,56 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Qual é o endereço da Emília?",
+            "Qual é o telefone da Susana Carvalho?",
+            "Quando é o aniversário da minha esposa?",
+            "Mostra o e-mail particular da Luana",
+            "Qual é o endereço de trabalho do meu irmão?"
+          ]
+        }
+      ],
+      "SectionName": "Perguntar sobre contatos"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Mostrar Bruno Pereira",
+            "Busca pessoas com o nome Carvalho"
+          ]
+        }
+      ],
+      "SectionName": "Buscar contatos"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Minha mãe é a Susana Carvalho",
+            "José Mendes é o meu irmão"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Liga para o meu irmão no trabalho"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime com meu irmão no trabalho"
+          ]
+        }
+      ],
+      "SectionName": "Relacionamentos"
+    }
+  ]
+}

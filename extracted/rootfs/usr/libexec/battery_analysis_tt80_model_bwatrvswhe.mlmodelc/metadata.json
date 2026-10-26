@@ -1,0 +1,69 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float16",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "tt80_prediction",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "bwatrvswhe",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1... × 29",
+        "shapeRange" : "[[1, -1], [29, 29]]",
+        "formattedType" : "MultiArray (Float32 1 × 29)",
+        "type" : "MultiArray",
+        "shape" : "[1, 29]",
+        "name" : "input_1",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.conversion_date" : "2026-06-29",
+      "com.github.apple.coremltools.source" : "tensorflow==2.15.0",
+      "mldb_token" : "mldb-7nwypjwy9o",
+      "com.github.apple.coremltools.version" : "9.0"
+    },
+    "generatedClassName" : "battery_analysis_tt80_model_bwatrvswhe",
+    "neuralNetworkLayerTypeHistogram" : {
+      "LoadConstantND" : 2,
+      "MultiplyBroadcastable" : 1,
+      "InnerProduct" : 4,
+      "SubtractBroadcastable" : 1,
+      "ActivationReLU" : 3,
+      "ActivationSoftplus" : 1
+    },
+    "method" : "predict"
+  }
+]

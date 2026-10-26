@@ -1,0 +1,18 @@
+?
+
+For each candidate, provide:
+1. Confidence score (0.0-1.0)
+2. Reasoning (why this person matches the relationship)
+3. Key evidence (which patterns are strongest indicators)
+
+Return JSON array:
+[
+  {
+    "person": "person_identifier",
+    "confidence": 0.85,
+    "reasoning": "...",
+    "keyEvidence": ["..."]
+  }
+]
+
+IMPORTANT: Return ONLY the JSON array, no markdown, no explanation.

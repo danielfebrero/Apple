@@ -1,0 +1,19 @@
+{
+  "name": "HeySiriToVoiceUILaunch",
+  "maximum_duration": 5.0,
+  "signposts": [
+    {
+      "name": "voiceUILaunch",
+      "subsystem": "com.apple.AgentCanvasKit",
+      "category": "SiriChat",
+      "start": true,
+      "end": true
+    }
+  ],
+  "diagnostics": [
+    {
+      "trigger_threshold_duration_single": 1.0,
+      "gather_tailspin": true
+    }
+  ]
+}

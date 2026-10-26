@@ -1,0 +1,1399 @@
+{
+  "zh_TW": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "other": "%2$@和其他%1$d個",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "正常",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "other": "%d個異常數值",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "需要更多資料",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "所有測量指標都在範圍內"
+  },
+  "ur": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "‏%2$@ اور %1$d دیگر",
+        "other": "‏%2$@ اور ‏%1$d دیگر",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "‏%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "عام",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "‏%d آؤٹ لائر",
+        "other": "‏%d آؤٹ لائر",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "‏%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "مزید ڈیٹا کی ضرورت ہے",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "رینج میں آنے والے سبھی میٹرکس"
+  },
+  "lt": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "few": "%2$@ ir %1$d kiti",
+        "one": "%2$@ ir %1$d kitas",
+        "other": "%2$@ ir %1$d kitų",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%2$@ ir %1$d kito"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Įprastas",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "few": "%d neįprasti rodikliai",
+        "one": "%d neįprastas rodiklis",
+        "other": "%d neįprastų rodiklių",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%d neįprasto rodiklio"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Reikia daugiau duomenų",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Visi rodikliai įprasti"
+  },
+  "id": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "other": "%2$@ dan %1$d lainnya",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Tipikal",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "other": "%d Deviasi",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Data Tidak Cukup",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Semua Metrik dalam Cakupan"
+  },
+  "ja": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "other": "%2$@およびその他%1$d個",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "標準的",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "other": "%d個の異常値",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "追加のデータが必要です",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "すべての指標は範囲内"
+  },
+  "no": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ og %1$d til",
+        "other": "%2$@ og %1$d til",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Normal",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d avvik",
+        "other": "%d avvik",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Trenger mer data",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Alle målinger er innenfor normalen"
+  },
+  "mr": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ आणि %1$d इतर",
+        "other": "%2$@ आणि %1$d इतर",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "ठराविक",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d आउटलायर",
+        "other": "%d आउटलायर",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "जास्त डेटाची गरज आहे",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "रेंज मध्ये असलेले सर्व मेट्रिक्स"
+  },
+  "es_419": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ y %1$d más",
+        "other": "%2$@ y %1$d más",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Típico",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d valor anómalo",
+        "other": "%d valores anómalos",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Se necesitan más datos",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Todas las mediciones están dentro del rango"
+  },
+  "en_PH": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ and %1$d other",
+        "other": "%2$@ and %1$d others",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Typical",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d Outlier",
+        "other": "%d Outliers",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Needs More Data",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "All Metrics in Range"
+  },
+  "ms": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "other": "%2$@ dan %1$d yang lain",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Lazim",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "other": "%d Pesisih",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Memerlukan Lebih Data",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Semua Metrik dalam Julat"
+  },
+  "hi": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ और %1$d अन्य",
+        "other": "%2$@ और %1$d अन्य",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "सामान्य",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d आउटलायर",
+        "other": "%d आउटलायर",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "अधिक डेटा चाहिए",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "रेंज में आने वाले सभी मेट्रिक्स"
+  },
+  "en_CA": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ and %1$d other",
+        "other": "%2$@ and %1$d others",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Typical",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d Outlier",
+        "other": "%d Outliers",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Needs More Data",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "All Metrics in Range"
+  },
+  "es": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ y %1$d más",
+        "other": "%2$@ y %1$d más",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Típico",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d valor atípico",
+        "other": "%d valores atípicos",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Se necesitan más datos",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Todas las métricas en el intervalo"
+  },
+  "en_IN": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ and %1$d other",
+        "other": "%2$@ and %1$d others",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Typical",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d Outlier",
+        "other": "%d Outliers",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Needs More Data",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "All Metrics in Range"
+  },
+  "pl": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "few": "%2$@ i %1$d inne",
+        "one": "%2$@ i %1$d inny",
+        "other": "%2$@ i %1$d innego",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%2$@ i %1$d innych"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Typowe",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "few": "%d wartości odstające",
+        "one": "%d wartość odstająca",
+        "other": "%d wartości odstającej",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%d wartości odstających"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Za mało danych",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Wszystkie miary w normie"
+  },
+  "ca": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ i %1$d més",
+        "other": "%2$@ i %1$d més",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Normal",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d valor anòmal",
+        "other": "%d valors anòmals",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Dades insuficients",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Mesuraments dins l’interval"
+  },
+  "ta": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ மற்றும் %1$d",
+        "other": "%2$@ மற்றும் %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "வழக்கம்",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d அவுட்லையர்",
+        "other": "%d அவுட்லையர்கள்",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "மேலும் தரவு தேவை",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "அனைத்து அளவீடுகளும் வரம்புக்குள் உள்ளன"
+  },
+  "fr_CA": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ et %1$d autre",
+        "other": "%2$@ et %1$d autres",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Normal",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d anomalie",
+        "other": "%d anomalies",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Données supplémentaires requises",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Toutes les mesures dans l’intervalle"
+  },
+  "fr": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ et %1$d autre",
+        "other": "%2$@ et %1$d autres",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Typique",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d anomalie",
+        "other": "%d anomalies",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Plus de données requises",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Toutes les mesures dans la plage"
+  },
+  "or": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ ଏବଂ %1$d ଅନ୍ୟ",
+        "other": "%2$@ ଏବଂ ଅନ୍ଯ %1$d ଟି",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "ସାଧାରଣ",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d ଟି ଆଉଟ୍‌ଲାୟର୍",
+        "other": "%d ଟି ଆଉଟ୍‌ଲାୟର୍",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "ଅଧିକ ଡେଟା ଆବଶ୍ୟକ",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "ରେଞ୍ଜ୍‌ରେ ଆସୁଥିବା ସମସ୍ତ ମେଟ୍ରିକ୍ସ୍"
+  },
+  "da": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ og %1$d anden",
+        "other": "%2$@ og %1$d andre",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Normale",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d afvigelse",
+        "other": "%d afvigelser",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Kræver flere data",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Alle målinger inden for normalområde"
+  },
+  "bg": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ и още %1$d",
+        "other": "%2$@ и още %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Типично",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d отклонение",
+        "other": "%d отклонения",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Необходими са повече данни",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Всички показатели в норма"
+  },
+  "te": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ మరియు మరో %1$d వ్యక్తి",
+        "other": "%2$@ మరియు మరో %1$d మంది",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "సాధారణం",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d ఔట్‌లయర్",
+        "other": "%d ఔట్‌లయర్‌లు",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "మరింత డేటా అవసరం",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "అన్ని కొలమానాలు పరిధిలో ఉన్నాయి"
+  },
+  "zh_CN": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "other": "%2$@和其他%1$d个",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "正常",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "other": "%d个异常值",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "需要更多数据",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "所有指标均在范围内"
+  },
+  "gu": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ અને %1$d અન્ય",
+        "other": "%2$@ અને %1$d અન્ય",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "સામાન્ય",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d આઉટલાયર",
+        "other": "%d આઉટલાયર",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "વધુ ડેટાની જરૂર છે",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "રેંજમાં આવતા બધા મેટ્રિક્સ"
+  },
+  "hr": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "few": "%2$@ i još %1$d",
+        "one": "%2$@ i još %1$d",
+        "other": "%2$@ i još %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Uobičajeno",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "few": "%d parametra izvan tipičnih vrijednosti",
+        "one": "%d parametar izvan tipičnih vrijednosti",
+        "other": "%d parametara izvan tipičnih vrijednosti",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Potrebno je još podataka",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Sva mjerenja unutar raspona"
+  },
+  "de": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ und %1$d weitere Info",
+        "other": "%2$@ und %1$d weitere",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Normal",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d Abweichung",
+        "other": "%d Abweichungen",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Mehr Daten erforderlich",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Alle Messwerte im Bereich"
+  },
+  "th": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "other": "%2$@ และอีก %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "ปกติ",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "other": "%d ค่าผิดปกติ",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "ต้องใช้ข้อมูลเพิ่มเติม",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "ตัวชี้วัดทั้งหมดอยู่ภายในช่วง"
+  },
+  "en_GB": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ and %1$d other",
+        "other": "%2$@ and %1$d others",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Typical",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d Outlier",
+        "other": "%d Outliers",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Needs More Data",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "All Metrics in Range"
+  },
+  "sk": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "few": "%2$@ a %1$d ďalšie",
+        "one": "%2$@ a %1$d ďalšia",
+        "other": "%2$@ a %1$d ďalších",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%2$@ a %1$d ďalšej"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Normálne",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "few": "%d odchýlky",
+        "one": "%d odchýlka",
+        "other": "%d odchýlok",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%d odchýlky"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Je potrebných viac dát",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Všetky štatistiky sú v norme"
+  },
+  "zh_HK": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "other": "「%2$@」和其他%1$d個",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "正常",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "other": "%d個異常",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "需要更多資料",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "所有指標均在範圍內"
+  },
+  "pt": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ e mais %1$d",
+        "other": "%2$@ e mais %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Típico",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d Valor Atípico",
+        "other": "%d Valores Atípicos",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Requer Mais Dados",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Todas as Métricas no Intervalo"
+  },
+  "sl": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "few": "%2$@ in še %1$d",
+        "one": "%2$@ in še %1$d",
+        "other": "%2$@ in še %1$d",
+        "two": "%2$@ in še %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Običajno",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "few": "%d izjeme",
+        "one": "%d izjema",
+        "other": "%d izjem",
+        "two": "%d izjemi",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Potrebuje več podatkov",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Vse metrike so v območju"
+  },
+  "ro": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "few": "%2$@ și încă %1$d",
+        "one": "%2$@ și încă %1$d",
+        "other": "%2$@ și încă %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Tipic",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "few": "%d anomalii",
+        "one": "%d anomalie",
+        "other": "%d de anomalii",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Necesită mai multe date",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Toți parametrii în intervalul țintă"
+  },
+  "kk": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ және тағы %1$d",
+        "other": "%2$@ және тағы %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Қалыпты",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "Нормадан ауытқу: %d",
+        "other": "Нормадан ауытқу: %d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Қосымша деректер қажет",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Ауқымдағы барлық көрсеткіш"
+  },
+  "hu": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ és %1$d további",
+        "other": "%2$@ és %1$d további",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Szokásos",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d kiugró érték",
+        "other": "%d kiugró érték",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "További adatokat igényel",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Az összes mérőszám a tartományon belül"
+  },
+  "bn": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ এবং অন্যান্য %1$dটি",
+        "other": "%2$@ এবং আরও %1$dটি",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "স্বাভাবিক",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%dটি আউটলায়ার",
+        "other": "%dটি আউটলায়ার",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "আরও তথ্যের প্রয়োজন",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "সমস্ত হেলথ মেট্রিক স্বাভাবিক রেঞ্জের মধ্যে রয়েছে"
+  },
+  "ar": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "‏%2$@ و%1$d أخرى",
+        "few": "‏%2$@ و %1$d أخرى",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "many": "‏%2$@ و %1$d أخرى",
+        "two": "‏%2$@ و %1$d أخريان",
+        "other": "‏%2$@ و %1$d أخرى",
+        "NSStringFormatValueTypeKey": "d",
+        "zero": "‏%2$@ و %1$d أخرى"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "اعتيادية",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "قيمة واحدة شاذة",
+        "few": "%d قيم شاذة",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "many": "%d قيمة شاذة",
+        "two": "قيمتان شاذتان",
+        "other": "%d قيمة شاذة",
+        "NSStringFormatValueTypeKey": "d",
+        "zero": "%d قيمة شاذة"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "مطلوب المزيد من البيانات",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "كل القياسات في النطاق"
+  },
+  "it": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ e %1$d altro",
+        "other": "%2$@ e altri %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Tipico",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d valore anomalo",
+        "other": "%d valori anomali",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Più dati richiesti",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Tutte le metriche nell’intervallo"
+  },
+  "kn": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ ಮತ್ತು %1$d ಇತರೆ",
+        "other": "%2$@ ಮತ್ತು %1$d ಇತರೆ",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "ಸಾಮಾನ್ಯ",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d ಔಟ್‌ಲೈಯರ್",
+        "other": "%d ಔಟ್‌ಲೈಯರ್‌ಗಳು",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "ಹೆಚ್ಚಿನ ಡೇಟದ ಅಗತ್ಯವಿದೆ",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "ಎಲ್ಲಾ ಮೆಟ್ರಿಕ್‌ಗಳು ರೇಂಜ್‌ನಲ್ಲಿವೆ"
+  },
+  "ko": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "other": "%2$@ 외 %1$d개",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "평상적인 범위",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "other": "%d개의 이상치",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "데이터가 더 필요함",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "모든 수치가 범위 내에 있음"
+  },
+  "uk": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "few": "%2$@ і ще %1$d",
+        "one": "%2$@ і ще %1$d",
+        "other": "%2$@ і ще %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%2$@ і ще %1$d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Типові",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "few": "%d відхилення",
+        "one": "%d відхилення",
+        "other": "%d відхилення",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%d відхилень"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Потребує більше даних",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Усі показники в нормі"
+  },
+  "pa": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ ਅਤੇ %1$d ਹੋਰ",
+        "other": "%2$@ ਅਤੇ %1$d ਹੋਰ",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "ਆਮ",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d ਆਊਟਲਾਇਰ",
+        "other": "%d ਆਊਟਲਾਇਰ",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "ਹੋਰ ਡੇਟਾ ਦੀ ਲੋੜ ਹੈ",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "ਰੇਂਜ ਵਿੱਚ ਸਾਰੇ ਮਾਪਕ"
+  },
+  "en_AU": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ and %1$d other",
+        "other": "%2$@ and %1$d others",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Typical",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d Outlier",
+        "other": "%d Outliers",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Needs More Data",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "All Metrics in Range"
+  },
+  "ru": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "few": "%2$@ и еще %1$d показателя",
+        "one": "%2$@ и еще %1$d показатель",
+        "other": "%2$@ и еще %1$d показателя",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%2$@ и еще %1$d показателей"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Обычные",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "few": "%d отклонения от нормы",
+        "one": "%d отклонение от нормы",
+        "other": "%d отклонения от нормы",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%d отклонений от нормы"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Требуются дополнительные данные",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Все показатели в норме"
+  },
+  "vi": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "other": "%2$@ và %1$d mục khác",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Thông thường",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "other": "%d ngoại lệ",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Cần thêm dữ liệu",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Tất cả số liệu trong phạm vi"
+  },
+  "pt_PT": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ e mais %1$d",
+        "other": "%2$@ e mais %1$d",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Normal",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d valor atípico",
+        "other": "%d valores atípicos",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Necessita de mais dados",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Todas as métricas no intervalo"
+  },
+  "ml": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ എന്നതും മറ്റ് %1$d എണ്ണവും",
+        "other": "%2$@ എന്നതും മറ്റ് %1$d എണ്ണവും",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "സാധാരണം",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "ഔട്ട്ലയർ",
+        "other": "%d ഔട്ട്ലയറുകൾ",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "കൂടുതൽ ഡാറ്റ ആവശ്യമാണ്",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "റേഞ്ചിലുള്ള എല്ലാ മെട്രിക്കുകളും"
+  },
+  "LocProvenance": {
+    "zh_TW": 3,
+    "ur": 3,
+    "lt": 3,
+    "id": 3,
+    "ja": 3,
+    "no": 3,
+    "mr": 3,
+    "es_419": 3,
+    "en_PH": 3,
+    "ms": 3,
+    "hi": 3,
+    "en_CA": 3,
+    "es": 3,
+    "en_IN": 3,
+    "pl": 3,
+    "ca": 3,
+    "ta": 3,
+    "fr_CA": 3,
+    "fr": 3,
+    "or": 3,
+    "da": 3,
+    "bg": 3,
+    "te": 3,
+    "zh_CN": 3,
+    "gu": 3,
+    "hr": 3,
+    "de": 3,
+    "th": 3,
+    "en_GB": 3,
+    "sk": 3,
+    "zh_HK": 3,
+    "pt": 3,
+    "sl": 3,
+    "ro": 3,
+    "kk": 3,
+    "hu": 3,
+    "bn": 3,
+    "ar": 3,
+    "it": 3,
+    "kn": 3,
+    "ko": 3,
+    "uk": 3,
+    "pa": 3,
+    "en_AU": 3,
+    "ru": 3,
+    "vi": 3,
+    "none": 0,
+    "pt_PT": 3,
+    "ml": 3,
+    "fi": 3,
+    "tr": 3,
+    "el": 3,
+    "es_US": 3,
+    "cs": 3,
+    "sv": 3,
+    "nl": 3,
+    "he": 3,
+    "en": 3
+  },
+  "fi": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ ja %1$d muu",
+        "other": "%2$@ ja %1$d muuta",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Tyypillinen",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d poikkeama",
+        "other": "%d poikkeamaa",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Lisää dataa tarvitaan",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Kaikki mittauskohteet normaalilla alueella"
+  },
+  "tr": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ ve %1$d tane daha",
+        "other": "%2$@ ve %1$d tane daha",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Normal",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d Uç Değer",
+        "other": "%d Uç Değer",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Daha Fazla Veri Gerekiyor",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Tüm Ölçümler Aralık İçinde"
+  },
+  "el": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ και %1$d ακόμη",
+        "other": "%2$@ και %1$d ακόμη",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Εντός εύρους",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d ακραία τιμή",
+        "other": "%d ακραίες τιμές",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Απαιτούνται περισσότερα δεδομένα",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Όλα τα μετρικά στοιχεία είναι εντός εύρους"
+  },
+  "es_US": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ y %1$d más",
+        "other": "%2$@ y %1$d más",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Típico",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d valor anómalo",
+        "other": "%d valores anómalos",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Se necesitan más datos",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Todas las mediciones están dentro del rango"
+  },
+  "cs": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "few": "%2$@ a %1$d další",
+        "one": "%2$@ a %1$d další",
+        "other": "%2$@ a %1$d dalších",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%2$@ a %1$d dalších"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Normální",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "few": "%d odchylky",
+        "one": "%d odchylka",
+        "other": "%d odchylek",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d",
+        "many": "%d odchylky"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Je potřeba víc dat",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Všechny statistiky jsou v normě"
+  },
+  "sv": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ och %1$d annan",
+        "other": "%2$@ och %1$d andra",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Typisk",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d avvikelse",
+        "other": "%d avvikelser",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Kräver mer data",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Samtliga mått i intervallet"
+  },
+  "nl": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ en %1$d andere",
+        "other": "%2$@ en %1$d anderen",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Normaal",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d uitschieter",
+        "other": "%d uitschieters",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Meer gegevens vereist",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "Alle metingen binnen bereik"
+  },
+  "he": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "‏%2$@ ואחד נוסף",
+        "many": "‏%2$@ ו-%1$d נוספים",
+        "other": "‏%2$@ ו-%1$d נוספים",
+        "two": "‏%2$@ ושניים נוספים",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "‏%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "בטווח הנורמלי",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "חריגה אחת",
+        "many": "‏%d חריגות",
+        "other": "‏%d חריגות",
+        "two": "שתי חריגות",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "‏%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "דרושים נתונים נוספים",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "כל המדדים נמצאים בטווח"
+  },
+  "en": {
+    "BALANCE_SNIDGET_SUBTITLE_AND_MORE": {
+      "data_and_more": {
+        "one": "%2$@ and %1$d other",
+        "other": "%2$@ and %1$d others",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@data_and_more@"
+    },
+    "BALANCE_SNIDGET_TYPICAL_TITLE": "Typical",
+    "BALANCE_SNIDGET_OUTLIERS_TITLE": {
+      "outliers": {
+        "one": "%d Outlier",
+        "other": "%d Outliers",
+        "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+        "NSStringFormatValueTypeKey": "d"
+      },
+      "NSStringLocalizedFormatKey": "%#@outliers@"
+    },
+    "BALANCE_SNIDGET_ESTABLISHING_BASELINE_TITLE": "Needs More Data",
+    "BALANCE_SNIDGET_TYPICAL_DESCRIPTION": "All Metrics in Range"
+  }
+}

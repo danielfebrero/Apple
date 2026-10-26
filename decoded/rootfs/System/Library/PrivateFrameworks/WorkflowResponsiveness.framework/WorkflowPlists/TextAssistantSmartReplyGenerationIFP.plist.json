@@ -1,0 +1,29 @@
+{
+  "name": "TextAssistantSmartReplyGenerationIFP",
+  "maximum_duration": 100,
+  "signposts": [
+    {
+      "start": true,
+      "end": true,
+      "subsystem": "com.apple.InputAnalytics",
+      "category": "TextAssistant",
+      "name": "SmartReplyGenerate",
+      "environment_field_names": [
+        "Result"
+      ]
+    },
+    {
+      "subsystem": "com.apple.modelmanager",
+      "category": "OSSignPoster",
+      "name": "Asset Transition Request",
+      "early_allowance": 5,
+      "environment": [
+        {
+          "field_name": "assetIdentifier",
+          "merge_strategy": "last",
+          "sharing_strategy": "all"
+        }
+      ]
+    }
+  ]
+}

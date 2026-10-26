@@ -1,0 +1,20 @@
+{
+  "application-identifier": "com.apple.siri.TypeToSiriWidget",
+  "com.apple.accounts.appleaccount.fullaccess": true,
+  "com.apple.accounts.idms.fullaccess": true,
+  "com.apple.authkit.client.private": true,
+  "com.apple.chrono.open-urls-direct": true,
+  "com.apple.familycircle": true,
+  "com.apple.private.appintents-attribution-override": "YES",
+  "com.apple.private.coreservices.canmaplsdatabase": true,
+  "com.apple.security.exception.mach-lookup.global-name": [
+    "com.apple.assistant.settings",
+    "com.apple.familycircle.agent",
+    "com.apple.siri.activation.service"
+  ],
+  "com.apple.security.exception.shared-preference.read-write": [
+    "com.apple.siri"
+  ],
+  "com.apple.siri.activation.service": true,
+  "com.apple.springboard.opensensitiveurl": true
+}

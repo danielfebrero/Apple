@@ -1,0 +1,491 @@
+{
+  "ToolPromptOverride": {
+    "intent_count": 394,
+    "top_keys": [
+      "AddMediaAssetsToAlbumIntent",
+      "ApplyMediaFilterIntent",
+      "ArchiveMailIntent",
+      "CleanupMediaIntent",
+      "ClearHistoryIntent",
+      "CloseTabsIntent",
+      "CopyMediaEditsIntent",
+      "CreateDraftIntent",
+      "CreateFolderIntent",
+      "CreateMediaAlbumIntent",
+      "CreateTabIntent",
+      "CreateWindowIntent",
+      "CropMediaIntent",
+      "DeleteDraftIntent",
+      "DeleteMailIntent",
+      "DeleteMediaAlbumIntent",
+      "DeleteMediaAssetsIntent",
+      "DuplicateMediaAssetsIntent",
+      "EnhanceMediaIntent",
+      "FindOnPageIntent"
+    ],
+    "entry_types": {
+      "dict": 394
+    },
+    "property_keys": {
+      "description": 394
+    }
+  },
+  "ImagePlaygroundCurated": {
+    "files": 55,
+    "entries_total": 3190,
+    "locales": [
+      {
+        "locale": "es.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "358b751433ab612d8dbf280c7c383a1b866e8f189c065783314bb1398f6a3b3b"
+      },
+      {
+        "locale": "th.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "67d8a15d54240763db1af48a9949e05bae3c07a01b5af1bb11d14e229fdb5683"
+      },
+      {
+        "locale": "hu.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "587ca8e12739ccbfb21359009e0318a7c5744b36646faf828602e48a0954efbd"
+      },
+      {
+        "locale": "id.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "39bac7c40c0ef85b14f8beb2a0cb84208a2e061c69717affe9d1aadff8dd46fc"
+      },
+      {
+        "locale": "pt_PT.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "e45d94e303852c9ab0a94e59e7460fddd06002f72cd3927267dcbc142c91089a"
+      },
+      {
+        "locale": "ro.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "2986183a628e452155ee3596d98d258b592bc488a50cd992dcbb462a0b8f3402"
+      },
+      {
+        "locale": "ja.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "d204b46539e2654c9c109876212ed1c3072ce1a0cfbe5ac55aed628f1bc630a7"
+      },
+      {
+        "locale": "ms.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "ab685a60eb423ff8bf58e57ca28a5adbb24e099164357473a0d836dbfe408a87"
+      },
+      {
+        "locale": "hr.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "7c1e26cbec7c5bb20e24376d73f9885ea1f6bdfebdc9b77d89d8160b7e3b72dd"
+      },
+      {
+        "locale": "pa.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "8fb1c317f42b988ccc34de83a1e6dee5cbb64b0e276db7834628dcfbc98b2636"
+      },
+      {
+        "locale": "en_PH.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "03e2172ba5542985bf5a60aaa002d3b22c833fb7ac73a592eefa0247cf666c7c"
+      },
+      {
+        "locale": "or.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "b7fcca05775ad03261cbd848869061b61466a1afe8e66c0559083a04221ef413"
+      },
+      {
+        "locale": "de.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "6a43304e886a0f1cfc20ec386db8d2440714978818778b453ca310c1a812c424"
+      },
+      {
+        "locale": "kn.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "5b07f3432fddb48030c5aaffaa5529dcbf3c0508472bf04a218e32b49fc37a2a"
+      },
+      {
+        "locale": "ru.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "3ef48f735f535bfa97296744748b949411342d6b4a881f7803fb6bb74e546551"
+      },
+      {
+        "locale": "bn.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "8159dfa367dc6712da096ac01bd16e82886f063aad92abebc4805450ef8f4755"
+      },
+      {
+        "locale": "sv.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "83a9dd054f2cbdf54e6743c0cb64d4f07e304d1e274912547b3c34fa2863cb9e"
+      },
+      {
+        "locale": "en_GB.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "d090a989e6a68244c9ace1b45beb75872788ec99a02a28e33666bff3765891e2"
+      },
+      {
+        "locale": "pt_BR.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "bd4053e7158831a284eed14e4801a3d59a24869b8be4174bea1334fc936a193c"
+      },
+      {
+        "locale": "ca.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "d31dd91042e43e75f0762d62780b545341148049b2474f937a728f41de9f76ef"
+      },
+      {
+        "locale": "mr.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "023a0f39cecbbfa7bfb5faea756a4f63538829ce92d1e7c96f2454b53079d7a9"
+      },
+      {
+        "locale": "pl.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "b6e6a8316086428aa1f2c0551f7254537d759507fa5e0c9331eda9b1a79affa9"
+      },
+      {
+        "locale": "zh_TW.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "0d05bfed9faaa348903cc1f788d25957ff6a292f17d9a6bdcc8ff828b0457fb1"
+      },
+      {
+        "locale": "sk.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "69694f1cb08d55f5f0fe6d5a0f94bb4383cf45eb66ff4170f9333a8c7bebba12"
+      },
+      {
+        "locale": "gu.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "8bebe778457ae837d7637fe7257f32767a9ae96048e9ac4b58acd3568c68f8f5"
+      },
+      {
+        "locale": "el.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "468c6ce80aacba6779a158fbc5bad78308eb699c54150e4fa7f95033e329ba28"
+      },
+      {
+        "locale": "ur.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "003b02a8b71cb4768e0e2e95da8932dbb484ec13075c297098989d975dbc41f9"
+      },
+      {
+        "locale": "zh_HK.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "72f7f783caf98370aa790107be8dcbfbfd35c0811dd07ee6754c9002ce3cbe36"
+      },
+      {
+        "locale": "fr_CA.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "d38787b346208237223441867dc3da409b64a9d62ecbfb74126d208b98c7502d"
+      },
+      {
+        "locale": "cs.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "806e8093d58bc6a2da2809426d75abad7773f8fad01a28e3b94f3a2a185970fa"
+      },
+      {
+        "locale": "it.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "f289734cea7851082d74027f64ef86fc9778d3fb91a108d5a8317c32c7b1b6d4"
+      },
+      {
+        "locale": "ml.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "60b0e1b36a3e959ac9056dc8bfa0d6397acc852ca4d31fe422c9cf36f895fab9"
+      },
+      {
+        "locale": "zh_CN.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "0225ebc9ea21f5be79750ca4e1db190ddfbe8f5ae877da1024bcf4b474d73437"
+      },
+      {
+        "locale": "tr.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "0580999960cfeecb1cb6509bb026cce208d56fe745f406fd32d99f0a1fedcee8"
+      },
+      {
+        "locale": "ta.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "c394bbc3b9467282f9378058e5617800730eaa3db03d4ecc2f8eb291f9bc08cf"
+      },
+      {
+        "locale": "uk.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "c5a04b510ba21c8ba36f125eccbe874b9dbdb613d7d92bc414bfcf254745fd8f"
+      },
+      {
+        "locale": "bg.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "86defcb6988f69445cdd7b2a824bc88857ab311a3a931e9d8aab050ac3b98f75"
+      },
+      {
+        "locale": "ar.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "c8cfa14ee40841f3761ab9fe6d408fb3135d4d6229c7cc5262c4a1b47668b9aa"
+      },
+      {
+        "locale": "he.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "dfd3401d2d2e5ea3e584979a3c0ecb9635a8b95b8f9d9f380764b932b9469144"
+      },
+      {
+        "locale": "fr.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "a9312c6eb6d41b7cfb6aa78825e45060e91a9caa85f2544530a7bb40ac6e54da"
+      },
+      {
+        "locale": "en_AU.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "a91d5440c615f152cadcd5d2a6ba25f08757b3ac59c2be44f01d6bb92e086b3d"
+      },
+      {
+        "locale": "en_IN.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "d090a989e6a68244c9ace1b45beb75872788ec99a02a28e33666bff3765891e2"
+      },
+      {
+        "locale": "nl.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "888f627db994c47a1e55e89e33dd283a1806522699278ba2427512ac5dc5a536"
+      },
+      {
+        "locale": "kk.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "081655774269e58350bb361b2531e1625a1f325da15db9718a33880307d23b98"
+      },
+      {
+        "locale": "fi.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "f0c7dc0fe031fab6da6ca14f00a570c2993c2d81e0df0110053abd0dda0200f0"
+      },
+      {
+        "locale": "es_US.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "3745a9a8ae7b683c76a4ec3e43f048709c24fe9b50f80972ef405419b9ff62e0"
+      },
+      {
+        "locale": "es_419.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "3745a9a8ae7b683c76a4ec3e43f048709c24fe9b50f80972ef405419b9ff62e0"
+      },
+      {
+        "locale": "vi.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "4e79e27f8b5c94b9237ff02985f0f1919a920648bc7b0b4d557cc1e8c8659469"
+      },
+      {
+        "locale": "en.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "03e2172ba5542985bf5a60aaa002d3b22c833fb7ac73a592eefa0247cf666c7c"
+      },
+      {
+        "locale": "da.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "9df04b6a9036e74af718ce74e3f29a9af16691bb307a316420d03a1c2ca47bc0"
+      },
+      {
+        "locale": "en_CA.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "2a5f864ac1d13208d572d1e304603a1e7e048826fc93a035f8d4dda9e54a2cea"
+      },
+      {
+        "locale": "hi.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "b1679cbcb2036b7fba29609154359a29bdd019930243de80e0edfa9d6a93731e"
+      },
+      {
+        "locale": "te.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "285cd4fa92ecdba39dc149fcfbd7e8c5cb164dd2bd79d07a549347cd1069d22e"
+      },
+      {
+        "locale": "no.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "ed8cdb42b14d8ae4e78fb3ad96bb311aba058d5513aba1b748e7a217eea02da1"
+      },
+      {
+        "locale": "ko.lproj",
+        "categories": 5,
+        "prompts": 58,
+        "source_sha256": "cd915d95e273d328f4af241800b277aee2721634e6f115c04db140c48ba8cf17"
+      }
+    ]
+  },
+  "PhotoAnalysisWhimsical": {
+    "files": 23,
+    "entries_total": 554,
+    "locales": [
+      {
+        "name": "WhimsicalPrompts_no_NO.json",
+        "entries": 24,
+        "source_sha256": "91b6f730aa0242f074b408b0c6d4491b34a682517898e97498ddc0fd577a9bb5"
+      },
+      {
+        "name": "WhimsicalPrompts_zh_HK.json",
+        "entries": 24,
+        "source_sha256": "5d31ab94a9d5c1eb859767e23d42bcb4dc5c52fa7e43a35d4b028eb403959d61"
+      },
+      {
+        "name": "WhimsicalPrompts_da_DK.json",
+        "entries": 24,
+        "source_sha256": "82a33f8294a56456e958a79e8c66ec1d18050aeda26e9dd4a93890367c69249f"
+      },
+      {
+        "name": "WhimsicalPrompts_de_DE.json",
+        "entries": 24,
+        "source_sha256": "aabcf744c0a09e080c5ede3f954ea9eb7eb74620d18e6d2aa7d7f70b0ee2fd8f"
+      },
+      {
+        "name": "WhimsicalPrompts_fr_FR.json",
+        "entries": 24,
+        "source_sha256": "f31095994d6d4eef5092c7eb9a506d1281117cb5857639c1d01e6e534155959f"
+      },
+      {
+        "name": "WhimsicalPrompts_en_GB.json",
+        "entries": 24,
+        "source_sha256": "09aecb22ac7dba396703b06a3176c798ea364c67b6258bc5edb6120803b922f9"
+      },
+      {
+        "name": "WhimsicalPrompts_en_US.json",
+        "entries": 24,
+        "source_sha256": "aea9e09923bc0540020e10dfe897a869c3223fab72548ab6dfc730928377f958"
+      },
+      {
+        "name": "WhimsicalPrompts_es_US.json",
+        "entries": 24,
+        "source_sha256": "608ba5401ee361c8e73cc7f93ac0a40bc726c4279bad42511fe575662ae00c72"
+      },
+      {
+        "name": "WhimsicalPrompts_sv_SE.json",
+        "entries": 24,
+        "source_sha256": "a7129b7eb641b68319fac60c66e2079ff87ac0b70167fdeb4fe5d1871ad6bbb2"
+      },
+      {
+        "name": "WhimsicalPrompts_fr_CA.json",
+        "entries": 24,
+        "source_sha256": "6a04a0d26f7e4042ea9eb0bd062979610119e4366bf85f0a2a9a9fc6f57eecbf"
+      },
+      {
+        "name": "WhimsicalPrompts_tr_TR.json",
+        "entries": 24,
+        "source_sha256": "5e3ced9a2d9a696e4563f6ee233558d861b682d7e3ca75dba4b66b6462513a40"
+      },
+      {
+        "name": "WhimsicalPrompts_vi_VN.json",
+        "entries": 24,
+        "source_sha256": "2a6820b1524cdbec98b22fdf9833dfc792b3b3cf1f51c43faae1c5fa8cd0441d"
+      },
+      {
+        "name": "WhimsicalPrompts_es_MX.json",
+        "entries": 24,
+        "source_sha256": "da39415312ad93e8ba717e154d6442a9080e68def220a1d2117414cc1ca96c15"
+      },
+      {
+        "name": "WhimsicalPrompts_nl_NL.json",
+        "entries": 24,
+        "source_sha256": "13bc1d881f742bf731ca59a4b7303bab17abace0fbaf2a0387eb6a8083ead184"
+      },
+      {
+        "name": "WhimsicalPrompts_zh_CN.json",
+        "entries": 24,
+        "source_sha256": "6af6ba7e0fabf3ab4b4d4fb7c93e3c0557e9535af326d09820b38f80cc47768d"
+      },
+      {
+        "name": "WhimsicalPrompts_zh_TW.json",
+        "entries": 24,
+        "source_sha256": "1ce33f67d52226277aa0f7faced5fab90f4deb5e29663695ffc4eaf9ad854903"
+      },
+      {
+        "name": "WhimsicalPrompts_pt_PT.json",
+        "entries": 24,
+        "source_sha256": "3e8870056836030a1bc24a56e4f2a000e4bc021b346abbd38e5b533710153cda"
+      },
+      {
+        "name": "WhimsicalPrompts_ja_JP.json",
+        "entries": 24,
+        "source_sha256": "dd37e18ac1c2d099072426f6518317c4a9cd92ccc2954ead728a4c54be31e29a"
+      },
+      {
+        "name": "WhimsicalPrompts_es_ES.json",
+        "entries": 24,
+        "source_sha256": "88de75018ace4ceb3ac8213b0f748e9c3a3797164304811763d4ae117e8ae42a"
+      },
+      {
+        "name": "WhimsicalPrompts_pt_BR.json",
+        "entries": 24,
+        "source_sha256": "837a8bc87c16d1dbaabf6178014b119bc9358df46cff79108cf5382655532aa8"
+      },
+      {
+        "name": "WhimsicalPrompts_ko_KR.json",
+        "entries": 24,
+        "source_sha256": "78b7590d78ea7cc3c8fc0ce10b10dc66b66a8c7694f172d4db87b2d04789e1c6"
+      },
+      {
+        "name": "WhimsicalPrompts_it_IT.json",
+        "entries": 26,
+        "source_sha256": "1bb5128f8b9827518f187f065128f000795f916a3eabebccb8b9dd81d90eac45"
+      },
+      {
+        "name": "WhimsicalPrompts_en_AU.json",
+        "entries": 24,
+        "source_sha256": "c7f6556aec2db79daed6f1ca2371247cabb630fee0daee685bc97ee8582a126a"
+      }
+    ]
+  },
+  "PhotoAnalysisContextualEntries": 160
+}

@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "configuration-type": "com.apple.configuration.siri.settings",
+  "supported-os": {
+    "iOS": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "system"
+      ]
+    },
+    "SharediPad": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "user"
+      ]
+    },
+    "macOS": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "system",
+        "user"
+      ]
+    },
+    "tvOS": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "system"
+      ]
+    },
+    "visionOS": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "system"
+      ]
+    },
+    "watchOS": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "system"
+      ]
+    }
+  },
+  "asset-references": [],
+  "device-configuration": [
+    {
+      "setting": "com.apple.AudioIntelligence/allowAutomaticSiriNotesMDM",
+      "key-path": "$.AllowAutomaticNotes",
+      "type": "boolean",
+      "default": true,
+      "supported-os": {
+        "iOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        },
+        "SharediPad": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": []
+        }
+      }
+    },
+    {
+      "setting": "com.apple.AudioIntelligence/allowLiveRewindMDM",
+      "key-path": "$.AllowLiveRewind",
+      "type": "boolean",
+      "default": true,
+      "supported-os": {
+        "iOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        },
+        "SharediPad": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": []
+        }
+      }
+    }
+  ]
+}

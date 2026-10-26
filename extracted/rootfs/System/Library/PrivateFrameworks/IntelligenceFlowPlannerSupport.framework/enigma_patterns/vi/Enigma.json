@@ -1,0 +1,1930 @@
+{
+  "converted_patterns" : [
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<time>(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>giờ|giờ đúng)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>sáng)|(?P<am_pm__time_of_day_parser__pm>chiều|tối))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "eb9a2bf9-3e6c-5c24-b6ab-5b6f3e17780e"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} (time:time) {hãy} (gọi tôi thức dậy|gọi tôi dậy|đánh thức tôi dậy|đánh thức tôi)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<time>(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>giờ|giờ đúng)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>sáng)|(?P<am_pm__time_of_day_parser__pm>chiều|tối))))?)\\s+(?:hãy\\s+)?(?:gọi\\s+tôi\\s+thức\\s+dậy|gọi\\s+tôi\\s+dậy|đánh\\s+thức\\s+tôi\\s+dậy|đánh\\s+thức\\s+tôi)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "929290b5-8a11-59d3-9e6c-529b5f9ae7bc"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} (đánh thức|báo thức) tôi {lúc|vào {lúc}} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:đánh\\s+thức|báo\\s+thức)\\s+tôi(?:(?:\\s+lúc|\\s+vào(?:\\s+lúc)?))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>giờ|giờ đúng)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>sáng)|(?P<am_pm__time_of_day_parser__pm>chiều|tối))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "f85f5f35-8666-59bc-8f5d-6b286f60078a"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} (đánh thức|gọi) tôi {dậy} {vào {lúc}|lúc|tại {lúc}|ở|cho} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:đánh\\s+thức|gọi)\\s+tôi(?:\\s+dậy)?(?:(?:\\s+vào(?:\\s+lúc)?|\\s+lúc|\\s+tại(?:\\s+lúc)?|\\s+ở|\\s+cho))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>giờ|giờ đúng)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>sáng)|(?P<am_pm__time_of_day_parser__pm>chiều|tối))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d33dee38-6212-5bd7-b0d4-8ba84949ff56"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} báo thức sau (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?báo\\s+thức\\s+sau(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>giờ|h|một giờ|vài giờ)))?(?:\\s+và)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>một phút|ph|phút|vài phút)))?(?:\\s+và)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_s>(?P<unit_s__second_parser>giây|một giây|s|vài giây)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "26551e2e-68fa-5d24-b41d-099b6566b752"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} bạn có thể đánh thức tôi sau (duration:duration) không",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?bạn\\s+có\\s+thể\\s+đánh\\s+thức\\s+tôi\\s+sau(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>giờ|h|một giờ|vài giờ)))?(?:\\s+và)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>một phút|ph|phút|vài phút)))?(?:\\s+và)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_s>(?P<unit_s__second_parser>giây|một giây|s|vài giây)))?)\\s+không$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2609a1e8-b622-56ce-a3d4-d9cb3d041993"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} tôi cần được đánh thức sau (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tôi\\s+cần\\s+được\\s+đánh\\s+thức\\s+sau(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>giờ|h|một giờ|vài giờ)))?(?:\\s+và)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>một phút|ph|phút|vài phút)))?(?:\\s+và)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_s>(?P<unit_s__second_parser>giây|một giây|s|vài giây)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2fa6621a-e468-5c15-91df-f9ad9352a940"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} tắt {hết|mọi|tất cả} báo thức",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tắt\\s+(?:(?:hết|mọi|tất\\s+cả)\\s+)?báo\\s+thức$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "be6c7c6c-ff69-595a-8f9e-de7335deb796"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} {hãy|bạn hãy} (thiết lập|cài đặt|tạo|đặt|cài) {đồng hồ} {báo thức} {cho tôi|giúp tôi} {vào|vào lúc|lúc|cho} (time:time) {đi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:hãy|bạn\\s+hãy)\\s+)?(?:thiết\\s+lập|cài\\s+đặt|tạo|đặt|cài)(?:\\s+đồng\\s+hồ)?(?:\\s+báo\\s+thức)?(?:\\s+(?:cho\\s+tôi|giúp\\s+tôi))?(?:\\s+(?:vào|vào\\s+lúc|lúc|cho))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>giờ|giờ đúng)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>sáng)|(?P<am_pm__time_of_day_parser__pm>chiều|tối))))?)(?:\\s+đi)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "8e55763f-1127-5687-92d4-054383127545"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {hãy|giúp tôi} (hủy|huỷ {bỏ}|tắt|dừng|ngừng|ngưng|bỏ qua|phớt lờ|vô hiệu hóa) {đồng hồ|chuông} báo thức {của tôi} {đi|ngay {đi}|lại {đi}}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:hãy|giúp\\s+tôi)\\s+)?(?:hủy|huỷ(?:\\s+bỏ)?|tắt|dừng|ngừng|ngưng|bỏ\\s+qua|phớt\\s+lờ|vô\\s+hiệu\\s+hóa)\\s+(?:(?:đồng\\s+hồ|chuông)\\s+)?báo\\s+thức(?:\\s+của\\s+tôi)?(?:(?:\\s+đi|\\s+ngay(?:\\s+đi)?|\\s+lại(?:\\s+đi)?))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "58a6ead7-3b4b-5ddc-9854-7929a26cffd2"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} đánh thức tôi sau (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?đánh\\s+thức\\s+tôi\\s+sau(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>giờ|h|một giờ|vài giờ)))?(?:\\s+và)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>một phút|ph|phút|vài phút)))?(?:\\s+và)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_s>(?P<unit_s__second_parser>giây|một giây|s|vài giây)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "7a77915f-fa7a-567a-bc34-98a5fc13f6b5"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} đặt báo thức (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?đặt\\s+báo\\s+thức(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>giờ|h|một giờ|vài giờ)))?(?:\\s+và)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>một phút|ph|phút|vài phút)))?(?:\\s+và)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_s>(?P<unit_s__second_parser>giây|một giây|s|vài giây)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "7b7144a1-f33a-581e-a0c3-0861e555f296"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hey} {siri} đặt báo thức sau (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?đặt\\s+báo\\s+thức\\s+sau(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>giờ|h|một giờ|vài giờ)))?(?:\\s+và)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>một phút|ph|phút|vài phút)))?(?:\\s+và)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_s>(?P<unit_s__second_parser>giây|một giây|s|vài giây)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "428678a6-2941-5fda-b05f-cd94c134022f"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} gọi (contact:*{1,5}) làm ơn",
+      "priority" : 51,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?gọi\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+làm\\s+ơn$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8f5ac0ae-3900-5f6c-8028-cad5ddc02b69"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} (calling|call) {cho|tới|đến} (contact:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:calling|call)\\s+(?:(?:cho|tới|đến)\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "74825c35-bf9c-52a8-8b7c-64596ed83855"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<contact>(?P<contact__emergencyServices>AAPCC|Alec|Alisa|An tươi|Andy|Ba|Ba bông|Bá Hào|Bái Y|Bùi Tâm|Bảo Ngọc|Bắc Nhân|Cam|Chiêu Hành|Chiêu Long|Chu Gia Nho|Chu Lan Quân|Chu Trạch Lỵ|Chu Tử Côn|Chung Kiên|Châu Vũ|Chín Huệ|Chồng béo|Chồng thúi đáng yêu|Cung Kiện|Cung Linh|Cung Luyện|Cung Lương|Cung Phu|Cung Vũ|Cung Vỹ|Công|Cẩm Đào|Cụ Nội|Diệu|Dung|Dũng|Dương Sâm|Em trái tim|Gia Dung|Gia Hân|Gia Hòa|Gia Linh|Gia Lâm|Gia Nghi|Gia Nguyên|Gia Tuấn|Gia Tường|Giai Xuân|Giai Âm|Giang Tĩnh|Giá|Hiếu|Hiếu Hiền|Hoàng Nam Cường|Hoàng Phủ|Huy|Huyền|Hà Chí Hùng|Hà Duyệt Phi|Hà Học Minh|Hà Kim Bân|Hà Kiện Sinh|Hà Lâm|Hà Minh Nguyệt|Hà Phương|Hà Phồn Hương|Hà Quốc Hùng|Hà Tiểu Bình|Hà Trung|Hà Tín|Hà Tú Trinh|Hà Vĩ Tường|Hán Thanh|Hướng Chí Cường|Hướng Hiền|Hướng Hoa|Hướng Tinh|Hải|Hắc Hô|Hằng|Hằng Lê|Hồ Học Ý|Hồng|Hợp Hải|Hợp Minh|Hợp Vũ|Hứa Trâu|Jennifer|Jim|Kate|Kelly|Kevin|Kha Ho|Kha Huyên|Kha Nhi|Kha Phỉ|Kha Vĩ|Khang Hy|Khải Nhi|Khắc Hữu|Kim|Kim Minh|Kiên Hùng|Kiều Diễm|Kiều Kỳ|Kiều Linh|Kiều Nhi|Kiều Thuần|Kiều Vân|Kiện Dân|Kính Hòa|Kỳ Huy|Kỳ Kỳ|Kỳ Minh|Kỳ Nguyên|Kỳ Quyên|Lan|Lan Nhi|Linh|Lyly|Lâm Chí Thanh|Lâm Lộ|Lâm Nhi|Lôi|Lương Chí Thành|Lương Chính Vĩ|Lương Dục Kỳ|Lương Hân|Lương Học Nhẫn|Lương Hữu Kỳ|Lương Nghi Lâm|Lương Tiểu Phong|Lương Triết Thư|Lương Tĩnh Uyển|Lương Tử Hào|Lương Văn Thuần|Lương Vương Nhất Mĩ|Lệ Linh|Lệ Nguyên|Lệ Phi|Lục Mĩ Di|Lục Triệu Mỹ Phẩm|Lục Trần Thượng Mỹ|Lục Tuấn Kỳ|Lục Vũ Tuân|Mai|Mandy|Melissa|Meo meo|Minh Thái|Mạnh Tử|Nam Bá Thiên|Nga|Nguyên Nhung|Nguyễn Ngọc Linh|Nguyễn Thị Dung|Nguyễn Thị Như Thùy|Nguyệt|Nguyệt Tinh|Ngô Anh|Ngô Bình|Ngô Chiếu Lâm|Ngô Chí Anh|Ngô Chấn Lâm|Ngô Hiếu Xuân|Ngô Hoa|Ngô Huệ Hiền|Ngô Hà|Ngô Hào Thiên|Ngô Học Tinh|Ngô Liên|Ngô Mạn|Ngô Mạn Hân|Ngô Mộng Tuyền|Ngô Nghiệp Huệ|Ngô Phong|Ngô Phương|Ngô Phương Lâm|Ngô Phương Quân|Ngô Thi Trân|Ngô Thiếu Hoa|Ngô Thư Lâm|Ngô Thượng Thành|Ngô Thượng Xuyên|Ngô Thục Nghi|Ngô Thừa|Ngô Thừa Nguyên|Ngô Tiểu Hân|Ngô Tiểu Mạn|Ngô Tiểu Ý|Ngô Trung|Ngô Trần Trường Sơn|Ngô Tường|Ngô Á Lợi|Ngô Á Phượng|Ngô Ích Tuấn|Ngô Đông Nhiên|Ngọc|Ngọc Anh|Ngọc Lan|Nhan Vân Dương|Nhi Nguyễn|Nhi điên|Nhiên Nhiên|Nhung|Nhà Trắng|Nhân Trần|Nicole|Paul|Phan Elly|Phong|Phùng Ngọc Dung|Phúc Thành|Phúc Thành Schanel|Phương|Phương Khanh|Phương Quyên|Phương Vũ|Phạm Nhàn|Phạm Như|Phạm Thật|Phạm Thị Nga|Phạm Xín|Quang|Quang Anh|Quy|Quyên|Quốc Hoa|Quốc Tường|Quốc Vỹ|Quỳnh Anh|Sakura|Sek|Soạn|Steve|Thanh|Thiện Hiền|Thiện Kiệt|Thiện Trân|Thiện như|Thiệu Hưng|Thành Cảnh|Thư Huệ|Thư Lâm|Thư Minh|Thư Ngải|Thư Từ Triết Hân|Thư Uyên|Thảo|Thất tín|Thắng Hiền|Thế Hiền|Thế Vỹ|Thị|Tiến|Trang|Trinh|Trí Kiệt|Trí Nguyên|Trí Tuấn|Trí Vĩ|Trí Vũ|Trí huệ|Trường|Trần Huệ Nghi|Trần Học Cường|Trần Nhung|Trần Sáng|Trần Tiểu Cường|Trịnh Chính|Trịnh Minh|Trịnh Mẫn|Trịnh Nghiệp|Trịnh Thành|Trịnh Tường|Trịnh Đức Hào|Trịnh Đức Thắng|Trọng Quý|Trợ giúp AAPCC|Tuấn|Tào Chi|Tâm|Tâm Nguyễn|Tâm beo|Tâm béo|Tín An|Tín Chí|Tín Hiến|Tín Hỉ|Tín Lương|Tín Mẫn|Tín Vũ|Tô Chị|Tô Hòa|Tô Trung|Tô Tuấn|Tướng|Tưởng Trung|Tạ Thu|Uyên|V K|V K yêu|V ba Định|VietPay|Vinh|Vinh Hao|Vinh Hào|Văn|Vĩ Chí|Vĩ Kiệt|Vũ Hải|Vũ Thảo Bình|Vương Chân|Vương Hạo|Vương Tường Nguyên|Xuyên Nhiên|Xuân Hưng|Xuân Thu|Xích Thành|Xảo Kiệt|Yên|Yên Cát Tường|Yên Mãn Lâm|Yên Nhi|Yên Tiểu Sương|Yến|anh Tài|anh tuấn|anh yêu|baby|bà cúc|bé Hằng|bé Thảo xin|bé heo|bạn cấp hai|bệnh viện|chăm sóc ngộ độc|chị Hai là số một|chị Vy Sơn La|chủ nhà|công an|cơ quan chức năng|cảnh sát|cấp cứu|cục nợ|cứu hỏa|dịch vụ chăm sóc ngộ độc|dịch vụ cứu thương|dịch vụ kiểm soát chất độc|dịch vụ kiểm soát chất độc quốc gia|dịch vụ y tế|dịch vụ y tế khẩn cấp|em Nam|em yêu|em yêu xinh gái|hotline phòng chống tự tử|học|irina|lily|lớp Pháp|ngọc hương|nhân viên y tế|nông trại gia đình|phòng cháy chữa cháy|quỳnh lan|quỳnh trang|sis|số khẩn cấp|số điện thoại đường dây nóng khẩn cấp|taylor morgan|thối|trung\\s+tâm\\s+(?:kiểm\\s+soát\\s+chất\\s+độc|phòng\\s+chống\\s+ngộ\\s+độc)|trung tâm chăm sóc ngộ độc|trung tâm chống độc|trung tâm cấp cứu ngộ độc|trung tâm kiểm soát chất độc|trung tâm kiểm soát chất độc quốc gia|trợ giúp|tùng|tùng kendy|tổng bộ vinhomes|tổng đài chống tự tử|vợ yêu xinh đẹp|xe cấp cứu|yên khùng|yên phương|ông già khó tính|Đinh Đinh|Đàm Tinh|Đường dây khẩn cấp AAPCC|Đường dây nóng AAPCC|Đường dây nóng dịch vụ kiểm soát chất độc|Đường dây nóng kiểm soát chất độc quốc gia|Đường dây trợ giúp khi bị ngộ độc|Đạt|đường dây chăm sóc ngộ độc|đường dây cấp cứu ngộ độc|đường dây dịch vụ kiểm soát chất độc|đường dây dịch vụ kiểm soát chất độc quốc gia|đường dây kiểm soát chất độc|đường dây nóng AAPCC|đường dây nóng chăm sóc người bị ngộ độc|đường dây nóng cấp cứu ngộ độc|đường dây nóng cấp cứu ngộ độc quốc gia|đường dây nóng dịch vụ kiểm soát chất độc|đường dây nóng dịch vụ kiểm soát chất độc quốc gia|đường dây nóng dịch vụ phòng chống ngộ độc|đường dây nóng hỗ trợ các trường hợp ngộ độc khẩn cấp|đường dây nóng hỗ trợ kiểm soát ngộ độc khẩn cấp|đường dây nóng hỗ trợ trường hợp ngộ độc|đường dây nóng khẩn cấp|đường dây nóng kiểm soát chất độc quốc gia|đường dây nóng kiểm soát ngộ độc khẩn cấp|đường dây nóng phòng chống chất độc|đường dây nóng phòng chống ngộ độc|đường dây nóng phòng chống tự tử|đường dây nóng về ngộ độc))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "470c455e-6caa-5555-9b92-928d82be3ee8"
+    },
+    {
+      "action" : "end_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (gác máy|cúp máy) {đi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:gác\\s+máy|cúp\\s+máy)(?:\\s+đi)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "35437afb-c0f3-5441-82b3-9f5d9a098aa7"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{hey} {siri} (situation:situation) bạn có thể (gọi điện|gọi|điện thoại|điện) {cho} (contact:emergencyServices) {được} không",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<situation>(?P<situation__situation>ai đó đã chĩa súng vào tôi|bố tôi đang khó thở|chó của tôi bị tấn công|có người bất tỉnh trên đường|có người đang đuổi tôi|cần trợ giúp y tế ngay|cứu tôi|giúp tôi|hai người đàn ông đang đánh nhau|mẹ tôi ngất|nhà tôi đang bốc cháy|trời ơi anh ta đã cán chết người|tôi bị bắn|tôi bị gãy tay|tôi bị khó thở|tôi bị tai nạn xe|tôi bị tai nạn xe hơi|tôi cảm thấy choáng váng|tôi dùng thuốc quá liều|tôi không thể đánh thức con gái tôi dậy được|tôi nghĩ tôi bị ngộ độc|tôi nghĩ tôi cần được chăm sóc y tế|tôi sắp chết|tôi vừa bị cướp|tôi vừa bị tai nạn xe|tôi đang bị đau dữ dội|tôi đang bị đau tim|tôi đang bị động kinh|tôi đang chảy máu|tôi đang gặp tai nạn|tôi đã bị tại nạn xe hơi|vợ tôi bị bắn|xe của tôi đang bốc cháy|đang có một cuộc ẩu đả ở quán bar))\\s+bạn\\s+có\\s+thể\\s+(?:gọi\\s+điện|gọi|điện\\s+thoại|điện)\\s+(?:cho\\s+)?(?P<contact>(?P<contact__emergencyServices>AAPCC|Alec|Alisa|An tươi|Andy|Ba|Ba bông|Bá Hào|Bái Y|Bùi Tâm|Bảo Ngọc|Bắc Nhân|Cam|Chiêu Hành|Chiêu Long|Chu Gia Nho|Chu Lan Quân|Chu Trạch Lỵ|Chu Tử Côn|Chung Kiên|Châu Vũ|Chín Huệ|Chồng béo|Chồng thúi đáng yêu|Cung Kiện|Cung Linh|Cung Luyện|Cung Lương|Cung Phu|Cung Vũ|Cung Vỹ|Công|Cẩm Đào|Cụ Nội|Diệu|Dung|Dũng|Dương Sâm|Em trái tim|Gia Dung|Gia Hân|Gia Hòa|Gia Linh|Gia Lâm|Gia Nghi|Gia Nguyên|Gia Tuấn|Gia Tường|Giai Xuân|Giai Âm|Giang Tĩnh|Giá|Hiếu|Hiếu Hiền|Hoàng Nam Cường|Hoàng Phủ|Huy|Huyền|Hà Chí Hùng|Hà Duyệt Phi|Hà Học Minh|Hà Kim Bân|Hà Kiện Sinh|Hà Lâm|Hà Minh Nguyệt|Hà Phương|Hà Phồn Hương|Hà Quốc Hùng|Hà Tiểu Bình|Hà Trung|Hà Tín|Hà Tú Trinh|Hà Vĩ Tường|Hán Thanh|Hướng Chí Cường|Hướng Hiền|Hướng Hoa|Hướng Tinh|Hải|Hắc Hô|Hằng|Hằng Lê|Hồ Học Ý|Hồng|Hợp Hải|Hợp Minh|Hợp Vũ|Hứa Trâu|Jennifer|Jim|Kate|Kelly|Kevin|Kha Ho|Kha Huyên|Kha Nhi|Kha Phỉ|Kha Vĩ|Khang Hy|Khải Nhi|Khắc Hữu|Kim|Kim Minh|Kiên Hùng|Kiều Diễm|Kiều Kỳ|Kiều Linh|Kiều Nhi|Kiều Thuần|Kiều Vân|Kiện Dân|Kính Hòa|Kỳ Huy|Kỳ Kỳ|Kỳ Minh|Kỳ Nguyên|Kỳ Quyên|Lan|Lan Nhi|Linh|Lyly|Lâm Chí Thanh|Lâm Lộ|Lâm Nhi|Lôi|Lương Chí Thành|Lương Chính Vĩ|Lương Dục Kỳ|Lương Hân|Lương Học Nhẫn|Lương Hữu Kỳ|Lương Nghi Lâm|Lương Tiểu Phong|Lương Triết Thư|Lương Tĩnh Uyển|Lương Tử Hào|Lương Văn Thuần|Lương Vương Nhất Mĩ|Lệ Linh|Lệ Nguyên|Lệ Phi|Lục Mĩ Di|Lục Triệu Mỹ Phẩm|Lục Trần Thượng Mỹ|Lục Tuấn Kỳ|Lục Vũ Tuân|Mai|Mandy|Melissa|Meo meo|Minh Thái|Mạnh Tử|Nam Bá Thiên|Nga|Nguyên Nhung|Nguyễn Ngọc Linh|Nguyễn Thị Dung|Nguyễn Thị Như Thùy|Nguyệt|Nguyệt Tinh|Ngô Anh|Ngô Bình|Ngô Chiếu Lâm|Ngô Chí Anh|Ngô Chấn Lâm|Ngô Hiếu Xuân|Ngô Hoa|Ngô Huệ Hiền|Ngô Hà|Ngô Hào Thiên|Ngô Học Tinh|Ngô Liên|Ngô Mạn|Ngô Mạn Hân|Ngô Mộng Tuyền|Ngô Nghiệp Huệ|Ngô Phong|Ngô Phương|Ngô Phương Lâm|Ngô Phương Quân|Ngô Thi Trân|Ngô Thiếu Hoa|Ngô Thư Lâm|Ngô Thượng Thành|Ngô Thượng Xuyên|Ngô Thục Nghi|Ngô Thừa|Ngô Thừa Nguyên|Ngô Tiểu Hân|Ngô Tiểu Mạn|Ngô Tiểu Ý|Ngô Trung|Ngô Trần Trường Sơn|Ngô Tường|Ngô Á Lợi|Ngô Á Phượng|Ngô Ích Tuấn|Ngô Đông Nhiên|Ngọc|Ngọc Anh|Ngọc Lan|Nhan Vân Dương|Nhi Nguyễn|Nhi điên|Nhiên Nhiên|Nhung|Nhà Trắng|Nhân Trần|Nicole|Paul|Phan Elly|Phong|Phùng Ngọc Dung|Phúc Thành|Phúc Thành Schanel|Phương|Phương Khanh|Phương Quyên|Phương Vũ|Phạm Nhàn|Phạm Như|Phạm Thật|Phạm Thị Nga|Phạm Xín|Quang|Quang Anh|Quy|Quyên|Quốc Hoa|Quốc Tường|Quốc Vỹ|Quỳnh Anh|Sakura|Sek|Soạn|Steve|Thanh|Thiện Hiền|Thiện Kiệt|Thiện Trân|Thiện như|Thiệu Hưng|Thành Cảnh|Thư Huệ|Thư Lâm|Thư Minh|Thư Ngải|Thư Từ Triết Hân|Thư Uyên|Thảo|Thất tín|Thắng Hiền|Thế Hiền|Thế Vỹ|Thị|Tiến|Trang|Trinh|Trí Kiệt|Trí Nguyên|Trí Tuấn|Trí Vĩ|Trí Vũ|Trí huệ|Trường|Trần Huệ Nghi|Trần Học Cường|Trần Nhung|Trần Sáng|Trần Tiểu Cường|Trịnh Chính|Trịnh Minh|Trịnh Mẫn|Trịnh Nghiệp|Trịnh Thành|Trịnh Tường|Trịnh Đức Hào|Trịnh Đức Thắng|Trọng Quý|Trợ giúp AAPCC|Tuấn|Tào Chi|Tâm|Tâm Nguyễn|Tâm beo|Tâm béo|Tín An|Tín Chí|Tín Hiến|Tín Hỉ|Tín Lương|Tín Mẫn|Tín Vũ|Tô Chị|Tô Hòa|Tô Trung|Tô Tuấn|Tướng|Tưởng Trung|Tạ Thu|Uyên|V K|V K yêu|V ba Định|VietPay|Vinh|Vinh Hao|Vinh Hào|Văn|Vĩ Chí|Vĩ Kiệt|Vũ Hải|Vũ Thảo Bình|Vương Chân|Vương Hạo|Vương Tường Nguyên|Xuyên Nhiên|Xuân Hưng|Xuân Thu|Xích Thành|Xảo Kiệt|Yên|Yên Cát Tường|Yên Mãn Lâm|Yên Nhi|Yên Tiểu Sương|Yến|anh Tài|anh tuấn|anh yêu|baby|bà cúc|bé Hằng|bé Thảo xin|bé heo|bạn cấp hai|bệnh viện|chăm sóc ngộ độc|chị Hai là số một|chị Vy Sơn La|chủ nhà|công an|cơ quan chức năng|cảnh sát|cấp cứu|cục nợ|cứu hỏa|dịch vụ chăm sóc ngộ độc|dịch vụ cứu thương|dịch vụ kiểm soát chất độc|dịch vụ kiểm soát chất độc quốc gia|dịch vụ y tế|dịch vụ y tế khẩn cấp|em Nam|em yêu|em yêu xinh gái|hotline phòng chống tự tử|học|irina|lily|lớp Pháp|ngọc hương|nhân viên y tế|nông trại gia đình|phòng cháy chữa cháy|quỳnh lan|quỳnh trang|sis|số khẩn cấp|số điện thoại đường dây nóng khẩn cấp|taylor morgan|thối|trung\\s+tâm\\s+(?:kiểm\\s+soát\\s+chất\\s+độc|phòng\\s+chống\\s+ngộ\\s+độc)|trung tâm chăm sóc ngộ độc|trung tâm chống độc|trung tâm cấp cứu ngộ độc|trung tâm kiểm soát chất độc|trung tâm kiểm soát chất độc quốc gia|trợ giúp|tùng|tùng kendy|tổng bộ vinhomes|tổng đài chống tự tử|vợ yêu xinh đẹp|xe cấp cứu|yên khùng|yên phương|ông già khó tính|Đinh Đinh|Đàm Tinh|Đường dây khẩn cấp AAPCC|Đường dây nóng AAPCC|Đường dây nóng dịch vụ kiểm soát chất độc|Đường dây nóng kiểm soát chất độc quốc gia|Đường dây trợ giúp khi bị ngộ độc|Đạt|đường dây chăm sóc ngộ độc|đường dây cấp cứu ngộ độc|đường dây dịch vụ kiểm soát chất độc|đường dây dịch vụ kiểm soát chất độc quốc gia|đường dây kiểm soát chất độc|đường dây nóng AAPCC|đường dây nóng chăm sóc người bị ngộ độc|đường dây nóng cấp cứu ngộ độc|đường dây nóng cấp cứu ngộ độc quốc gia|đường dây nóng dịch vụ kiểm soát chất độc|đường dây nóng dịch vụ kiểm soát chất độc quốc gia|đường dây nóng dịch vụ phòng chống ngộ độc|đường dây nóng hỗ trợ các trường hợp ngộ độc khẩn cấp|đường dây nóng hỗ trợ kiểm soát ngộ độc khẩn cấp|đường dây nóng hỗ trợ trường hợp ngộ độc|đường dây nóng khẩn cấp|đường dây nóng kiểm soát chất độc quốc gia|đường dây nóng kiểm soát ngộ độc khẩn cấp|đường dây nóng phòng chống chất độc|đường dây nóng phòng chống ngộ độc|đường dây nóng phòng chống tự tử|đường dây nóng về ngộ độc))\\s+(?:được\\s+)?không$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "bdd3fa70-9b35-5672-a322-73bbcbc3ac21"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{hey} {siri} (situation:situation) {tôi cần bạn} (gọi điện|gọi|điện thoại|điện) {cho} (contact:emergencyServices) {{để} giúp tôi|giùm tôi|cho tôi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<situation>(?P<situation__situation>ai đó đã chĩa súng vào tôi|bố tôi đang khó thở|chó của tôi bị tấn công|có người bất tỉnh trên đường|có người đang đuổi tôi|cần trợ giúp y tế ngay|cứu tôi|giúp tôi|hai người đàn ông đang đánh nhau|mẹ tôi ngất|nhà tôi đang bốc cháy|trời ơi anh ta đã cán chết người|tôi bị bắn|tôi bị gãy tay|tôi bị khó thở|tôi bị tai nạn xe|tôi bị tai nạn xe hơi|tôi cảm thấy choáng váng|tôi dùng thuốc quá liều|tôi không thể đánh thức con gái tôi dậy được|tôi nghĩ tôi bị ngộ độc|tôi nghĩ tôi cần được chăm sóc y tế|tôi sắp chết|tôi vừa bị cướp|tôi vừa bị tai nạn xe|tôi đang bị đau dữ dội|tôi đang bị đau tim|tôi đang bị động kinh|tôi đang chảy máu|tôi đang gặp tai nạn|tôi đã bị tại nạn xe hơi|vợ tôi bị bắn|xe của tôi đang bốc cháy|đang có một cuộc ẩu đả ở quán bar))\\s+(?:tôi\\s+cần\\s+bạn\\s+)?(?:gọi\\s+điện|gọi|điện\\s+thoại|điện)\\s+(?:cho\\s+)?(?P<contact>(?P<contact__emergencyServices>AAPCC|Alec|Alisa|An tươi|Andy|Ba|Ba bông|Bá Hào|Bái Y|Bùi Tâm|Bảo Ngọc|Bắc Nhân|Cam|Chiêu Hành|Chiêu Long|Chu Gia Nho|Chu Lan Quân|Chu Trạch Lỵ|Chu Tử Côn|Chung Kiên|Châu Vũ|Chín Huệ|Chồng béo|Chồng thúi đáng yêu|Cung Kiện|Cung Linh|Cung Luyện|Cung Lương|Cung Phu|Cung Vũ|Cung Vỹ|Công|Cẩm Đào|Cụ Nội|Diệu|Dung|Dũng|Dương Sâm|Em trái tim|Gia Dung|Gia Hân|Gia Hòa|Gia Linh|Gia Lâm|Gia Nghi|Gia Nguyên|Gia Tuấn|Gia Tường|Giai Xuân|Giai Âm|Giang Tĩnh|Giá|Hiếu|Hiếu Hiền|Hoàng Nam Cường|Hoàng Phủ|Huy|Huyền|Hà Chí Hùng|Hà Duyệt Phi|Hà Học Minh|Hà Kim Bân|Hà Kiện Sinh|Hà Lâm|Hà Minh Nguyệt|Hà Phương|Hà Phồn Hương|Hà Quốc Hùng|Hà Tiểu Bình|Hà Trung|Hà Tín|Hà Tú Trinh|Hà Vĩ Tường|Hán Thanh|Hướng Chí Cường|Hướng Hiền|Hướng Hoa|Hướng Tinh|Hải|Hắc Hô|Hằng|Hằng Lê|Hồ Học Ý|Hồng|Hợp Hải|Hợp Minh|Hợp Vũ|Hứa Trâu|Jennifer|Jim|Kate|Kelly|Kevin|Kha Ho|Kha Huyên|Kha Nhi|Kha Phỉ|Kha Vĩ|Khang Hy|Khải Nhi|Khắc Hữu|Kim|Kim Minh|Kiên Hùng|Kiều Diễm|Kiều Kỳ|Kiều Linh|Kiều Nhi|Kiều Thuần|Kiều Vân|Kiện Dân|Kính Hòa|Kỳ Huy|Kỳ Kỳ|Kỳ Minh|Kỳ Nguyên|Kỳ Quyên|Lan|Lan Nhi|Linh|Lyly|Lâm Chí Thanh|Lâm Lộ|Lâm Nhi|Lôi|Lương Chí Thành|Lương Chính Vĩ|Lương Dục Kỳ|Lương Hân|Lương Học Nhẫn|Lương Hữu Kỳ|Lương Nghi Lâm|Lương Tiểu Phong|Lương Triết Thư|Lương Tĩnh Uyển|Lương Tử Hào|Lương Văn Thuần|Lương Vương Nhất Mĩ|Lệ Linh|Lệ Nguyên|Lệ Phi|Lục Mĩ Di|Lục Triệu Mỹ Phẩm|Lục Trần Thượng Mỹ|Lục Tuấn Kỳ|Lục Vũ Tuân|Mai|Mandy|Melissa|Meo meo|Minh Thái|Mạnh Tử|Nam Bá Thiên|Nga|Nguyên Nhung|Nguyễn Ngọc Linh|Nguyễn Thị Dung|Nguyễn Thị Như Thùy|Nguyệt|Nguyệt Tinh|Ngô Anh|Ngô Bình|Ngô Chiếu Lâm|Ngô Chí Anh|Ngô Chấn Lâm|Ngô Hiếu Xuân|Ngô Hoa|Ngô Huệ Hiền|Ngô Hà|Ngô Hào Thiên|Ngô Học Tinh|Ngô Liên|Ngô Mạn|Ngô Mạn Hân|Ngô Mộng Tuyền|Ngô Nghiệp Huệ|Ngô Phong|Ngô Phương|Ngô Phương Lâm|Ngô Phương Quân|Ngô Thi Trân|Ngô Thiếu Hoa|Ngô Thư Lâm|Ngô Thượng Thành|Ngô Thượng Xuyên|Ngô Thục Nghi|Ngô Thừa|Ngô Thừa Nguyên|Ngô Tiểu Hân|Ngô Tiểu Mạn|Ngô Tiểu Ý|Ngô Trung|Ngô Trần Trường Sơn|Ngô Tường|Ngô Á Lợi|Ngô Á Phượng|Ngô Ích Tuấn|Ngô Đông Nhiên|Ngọc|Ngọc Anh|Ngọc Lan|Nhan Vân Dương|Nhi Nguyễn|Nhi điên|Nhiên Nhiên|Nhung|Nhà Trắng|Nhân Trần|Nicole|Paul|Phan Elly|Phong|Phùng Ngọc Dung|Phúc Thành|Phúc Thành Schanel|Phương|Phương Khanh|Phương Quyên|Phương Vũ|Phạm Nhàn|Phạm Như|Phạm Thật|Phạm Thị Nga|Phạm Xín|Quang|Quang Anh|Quy|Quyên|Quốc Hoa|Quốc Tường|Quốc Vỹ|Quỳnh Anh|Sakura|Sek|Soạn|Steve|Thanh|Thiện Hiền|Thiện Kiệt|Thiện Trân|Thiện như|Thiệu Hưng|Thành Cảnh|Thư Huệ|Thư Lâm|Thư Minh|Thư Ngải|Thư Từ Triết Hân|Thư Uyên|Thảo|Thất tín|Thắng Hiền|Thế Hiền|Thế Vỹ|Thị|Tiến|Trang|Trinh|Trí Kiệt|Trí Nguyên|Trí Tuấn|Trí Vĩ|Trí Vũ|Trí huệ|Trường|Trần Huệ Nghi|Trần Học Cường|Trần Nhung|Trần Sáng|Trần Tiểu Cường|Trịnh Chính|Trịnh Minh|Trịnh Mẫn|Trịnh Nghiệp|Trịnh Thành|Trịnh Tường|Trịnh Đức Hào|Trịnh Đức Thắng|Trọng Quý|Trợ giúp AAPCC|Tuấn|Tào Chi|Tâm|Tâm Nguyễn|Tâm beo|Tâm béo|Tín An|Tín Chí|Tín Hiến|Tín Hỉ|Tín Lương|Tín Mẫn|Tín Vũ|Tô Chị|Tô Hòa|Tô Trung|Tô Tuấn|Tướng|Tưởng Trung|Tạ Thu|Uyên|V K|V K yêu|V ba Định|VietPay|Vinh|Vinh Hao|Vinh Hào|Văn|Vĩ Chí|Vĩ Kiệt|Vũ Hải|Vũ Thảo Bình|Vương Chân|Vương Hạo|Vương Tường Nguyên|Xuyên Nhiên|Xuân Hưng|Xuân Thu|Xích Thành|Xảo Kiệt|Yên|Yên Cát Tường|Yên Mãn Lâm|Yên Nhi|Yên Tiểu Sương|Yến|anh Tài|anh tuấn|anh yêu|baby|bà cúc|bé Hằng|bé Thảo xin|bé heo|bạn cấp hai|bệnh viện|chăm sóc ngộ độc|chị Hai là số một|chị Vy Sơn La|chủ nhà|công an|cơ quan chức năng|cảnh sát|cấp cứu|cục nợ|cứu hỏa|dịch vụ chăm sóc ngộ độc|dịch vụ cứu thương|dịch vụ kiểm soát chất độc|dịch vụ kiểm soát chất độc quốc gia|dịch vụ y tế|dịch vụ y tế khẩn cấp|em Nam|em yêu|em yêu xinh gái|hotline phòng chống tự tử|học|irina|lily|lớp Pháp|ngọc hương|nhân viên y tế|nông trại gia đình|phòng cháy chữa cháy|quỳnh lan|quỳnh trang|sis|số khẩn cấp|số điện thoại đường dây nóng khẩn cấp|taylor morgan|thối|trung\\s+tâm\\s+(?:kiểm\\s+soát\\s+chất\\s+độc|phòng\\s+chống\\s+ngộ\\s+độc)|trung tâm chăm sóc ngộ độc|trung tâm chống độc|trung tâm cấp cứu ngộ độc|trung tâm kiểm soát chất độc|trung tâm kiểm soát chất độc quốc gia|trợ giúp|tùng|tùng kendy|tổng bộ vinhomes|tổng đài chống tự tử|vợ yêu xinh đẹp|xe cấp cứu|yên khùng|yên phương|ông già khó tính|Đinh Đinh|Đàm Tinh|Đường dây khẩn cấp AAPCC|Đường dây nóng AAPCC|Đường dây nóng dịch vụ kiểm soát chất độc|Đường dây nóng kiểm soát chất độc quốc gia|Đường dây trợ giúp khi bị ngộ độc|Đạt|đường dây chăm sóc ngộ độc|đường dây cấp cứu ngộ độc|đường dây dịch vụ kiểm soát chất độc|đường dây dịch vụ kiểm soát chất độc quốc gia|đường dây kiểm soát chất độc|đường dây nóng AAPCC|đường dây nóng chăm sóc người bị ngộ độc|đường dây nóng cấp cứu ngộ độc|đường dây nóng cấp cứu ngộ độc quốc gia|đường dây nóng dịch vụ kiểm soát chất độc|đường dây nóng dịch vụ kiểm soát chất độc quốc gia|đường dây nóng dịch vụ phòng chống ngộ độc|đường dây nóng hỗ trợ các trường hợp ngộ độc khẩn cấp|đường dây nóng hỗ trợ kiểm soát ngộ độc khẩn cấp|đường dây nóng hỗ trợ trường hợp ngộ độc|đường dây nóng khẩn cấp|đường dây nóng kiểm soát chất độc quốc gia|đường dây nóng kiểm soát ngộ độc khẩn cấp|đường dây nóng phòng chống chất độc|đường dây nóng phòng chống ngộ độc|đường dây nóng phòng chống tự tử|đường dây nóng về ngộ độc))(?:(?:\\s+(?:để\\s+)?giúp\\s+tôi|\\s+giùm\\s+tôi|\\s+cho\\s+tôi))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b95ccc1a-38fb-5d53-bbc5-e8b6cb841d2f"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} (tôi cần|tôi muốn) (gọi|gọi điện) cho (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:tôi\\s+cần|tôi\\s+muốn)\\s+(?:gọi|gọi\\s+điện)\\s+cho\\s+(?P<contact>(?P<contact__emergencyServices>AAPCC|Alec|Alisa|An tươi|Andy|Ba|Ba bông|Bá Hào|Bái Y|Bùi Tâm|Bảo Ngọc|Bắc Nhân|Cam|Chiêu Hành|Chiêu Long|Chu Gia Nho|Chu Lan Quân|Chu Trạch Lỵ|Chu Tử Côn|Chung Kiên|Châu Vũ|Chín Huệ|Chồng béo|Chồng thúi đáng yêu|Cung Kiện|Cung Linh|Cung Luyện|Cung Lương|Cung Phu|Cung Vũ|Cung Vỹ|Công|Cẩm Đào|Cụ Nội|Diệu|Dung|Dũng|Dương Sâm|Em trái tim|Gia Dung|Gia Hân|Gia Hòa|Gia Linh|Gia Lâm|Gia Nghi|Gia Nguyên|Gia Tuấn|Gia Tường|Giai Xuân|Giai Âm|Giang Tĩnh|Giá|Hiếu|Hiếu Hiền|Hoàng Nam Cường|Hoàng Phủ|Huy|Huyền|Hà Chí Hùng|Hà Duyệt Phi|Hà Học Minh|Hà Kim Bân|Hà Kiện Sinh|Hà Lâm|Hà Minh Nguyệt|Hà Phương|Hà Phồn Hương|Hà Quốc Hùng|Hà Tiểu Bình|Hà Trung|Hà Tín|Hà Tú Trinh|Hà Vĩ Tường|Hán Thanh|Hướng Chí Cường|Hướng Hiền|Hướng Hoa|Hướng Tinh|Hải|Hắc Hô|Hằng|Hằng Lê|Hồ Học Ý|Hồng|Hợp Hải|Hợp Minh|Hợp Vũ|Hứa Trâu|Jennifer|Jim|Kate|Kelly|Kevin|Kha Ho|Kha Huyên|Kha Nhi|Kha Phỉ|Kha Vĩ|Khang Hy|Khải Nhi|Khắc Hữu|Kim|Kim Minh|Kiên Hùng|Kiều Diễm|Kiều Kỳ|Kiều Linh|Kiều Nhi|Kiều Thuần|Kiều Vân|Kiện Dân|Kính Hòa|Kỳ Huy|Kỳ Kỳ|Kỳ Minh|Kỳ Nguyên|Kỳ Quyên|Lan|Lan Nhi|Linh|Lyly|Lâm Chí Thanh|Lâm Lộ|Lâm Nhi|Lôi|Lương Chí Thành|Lương Chính Vĩ|Lương Dục Kỳ|Lương Hân|Lương Học Nhẫn|Lương Hữu Kỳ|Lương Nghi Lâm|Lương Tiểu Phong|Lương Triết Thư|Lương Tĩnh Uyển|Lương Tử Hào|Lương Văn Thuần|Lương Vương Nhất Mĩ|Lệ Linh|Lệ Nguyên|Lệ Phi|Lục Mĩ Di|Lục Triệu Mỹ Phẩm|Lục Trần Thượng Mỹ|Lục Tuấn Kỳ|Lục Vũ Tuân|Mai|Mandy|Melissa|Meo meo|Minh Thái|Mạnh Tử|Nam Bá Thiên|Nga|Nguyên Nhung|Nguyễn Ngọc Linh|Nguyễn Thị Dung|Nguyễn Thị Như Thùy|Nguyệt|Nguyệt Tinh|Ngô Anh|Ngô Bình|Ngô Chiếu Lâm|Ngô Chí Anh|Ngô Chấn Lâm|Ngô Hiếu Xuân|Ngô Hoa|Ngô Huệ Hiền|Ngô Hà|Ngô Hào Thiên|Ngô Học Tinh|Ngô Liên|Ngô Mạn|Ngô Mạn Hân|Ngô Mộng Tuyền|Ngô Nghiệp Huệ|Ngô Phong|Ngô Phương|Ngô Phương Lâm|Ngô Phương Quân|Ngô Thi Trân|Ngô Thiếu Hoa|Ngô Thư Lâm|Ngô Thượng Thành|Ngô Thượng Xuyên|Ngô Thục Nghi|Ngô Thừa|Ngô Thừa Nguyên|Ngô Tiểu Hân|Ngô Tiểu Mạn|Ngô Tiểu Ý|Ngô Trung|Ngô Trần Trường Sơn|Ngô Tường|Ngô Á Lợi|Ngô Á Phượng|Ngô Ích Tuấn|Ngô Đông Nhiên|Ngọc|Ngọc Anh|Ngọc Lan|Nhan Vân Dương|Nhi Nguyễn|Nhi điên|Nhiên Nhiên|Nhung|Nhà Trắng|Nhân Trần|Nicole|Paul|Phan Elly|Phong|Phùng Ngọc Dung|Phúc Thành|Phúc Thành Schanel|Phương|Phương Khanh|Phương Quyên|Phương Vũ|Phạm Nhàn|Phạm Như|Phạm Thật|Phạm Thị Nga|Phạm Xín|Quang|Quang Anh|Quy|Quyên|Quốc Hoa|Quốc Tường|Quốc Vỹ|Quỳnh Anh|Sakura|Sek|Soạn|Steve|Thanh|Thiện Hiền|Thiện Kiệt|Thiện Trân|Thiện như|Thiệu Hưng|Thành Cảnh|Thư Huệ|Thư Lâm|Thư Minh|Thư Ngải|Thư Từ Triết Hân|Thư Uyên|Thảo|Thất tín|Thắng Hiền|Thế Hiền|Thế Vỹ|Thị|Tiến|Trang|Trinh|Trí Kiệt|Trí Nguyên|Trí Tuấn|Trí Vĩ|Trí Vũ|Trí huệ|Trường|Trần Huệ Nghi|Trần Học Cường|Trần Nhung|Trần Sáng|Trần Tiểu Cường|Trịnh Chính|Trịnh Minh|Trịnh Mẫn|Trịnh Nghiệp|Trịnh Thành|Trịnh Tường|Trịnh Đức Hào|Trịnh Đức Thắng|Trọng Quý|Trợ giúp AAPCC|Tuấn|Tào Chi|Tâm|Tâm Nguyễn|Tâm beo|Tâm béo|Tín An|Tín Chí|Tín Hiến|Tín Hỉ|Tín Lương|Tín Mẫn|Tín Vũ|Tô Chị|Tô Hòa|Tô Trung|Tô Tuấn|Tướng|Tưởng Trung|Tạ Thu|Uyên|V K|V K yêu|V ba Định|VietPay|Vinh|Vinh Hao|Vinh Hào|Văn|Vĩ Chí|Vĩ Kiệt|Vũ Hải|Vũ Thảo Bình|Vương Chân|Vương Hạo|Vương Tường Nguyên|Xuyên Nhiên|Xuân Hưng|Xuân Thu|Xích Thành|Xảo Kiệt|Yên|Yên Cát Tường|Yên Mãn Lâm|Yên Nhi|Yên Tiểu Sương|Yến|anh Tài|anh tuấn|anh yêu|baby|bà cúc|bé Hằng|bé Thảo xin|bé heo|bạn cấp hai|bệnh viện|chăm sóc ngộ độc|chị Hai là số một|chị Vy Sơn La|chủ nhà|công an|cơ quan chức năng|cảnh sát|cấp cứu|cục nợ|cứu hỏa|dịch vụ chăm sóc ngộ độc|dịch vụ cứu thương|dịch vụ kiểm soát chất độc|dịch vụ kiểm soát chất độc quốc gia|dịch vụ y tế|dịch vụ y tế khẩn cấp|em Nam|em yêu|em yêu xinh gái|hotline phòng chống tự tử|học|irina|lily|lớp Pháp|ngọc hương|nhân viên y tế|nông trại gia đình|phòng cháy chữa cháy|quỳnh lan|quỳnh trang|sis|số khẩn cấp|số điện thoại đường dây nóng khẩn cấp|taylor morgan|thối|trung\\s+tâm\\s+(?:kiểm\\s+soát\\s+chất\\s+độc|phòng\\s+chống\\s+ngộ\\s+độc)|trung tâm chăm sóc ngộ độc|trung tâm chống độc|trung tâm cấp cứu ngộ độc|trung tâm kiểm soát chất độc|trung tâm kiểm soát chất độc quốc gia|trợ giúp|tùng|tùng kendy|tổng bộ vinhomes|tổng đài chống tự tử|vợ yêu xinh đẹp|xe cấp cứu|yên khùng|yên phương|ông già khó tính|Đinh Đinh|Đàm Tinh|Đường dây khẩn cấp AAPCC|Đường dây nóng AAPCC|Đường dây nóng dịch vụ kiểm soát chất độc|Đường dây nóng kiểm soát chất độc quốc gia|Đường dây trợ giúp khi bị ngộ độc|Đạt|đường dây chăm sóc ngộ độc|đường dây cấp cứu ngộ độc|đường dây dịch vụ kiểm soát chất độc|đường dây dịch vụ kiểm soát chất độc quốc gia|đường dây kiểm soát chất độc|đường dây nóng AAPCC|đường dây nóng chăm sóc người bị ngộ độc|đường dây nóng cấp cứu ngộ độc|đường dây nóng cấp cứu ngộ độc quốc gia|đường dây nóng dịch vụ kiểm soát chất độc|đường dây nóng dịch vụ kiểm soát chất độc quốc gia|đường dây nóng dịch vụ phòng chống ngộ độc|đường dây nóng hỗ trợ các trường hợp ngộ độc khẩn cấp|đường dây nóng hỗ trợ kiểm soát ngộ độc khẩn cấp|đường dây nóng hỗ trợ trường hợp ngộ độc|đường dây nóng khẩn cấp|đường dây nóng kiểm soát chất độc quốc gia|đường dây nóng kiểm soát ngộ độc khẩn cấp|đường dây nóng phòng chống chất độc|đường dây nóng phòng chống ngộ độc|đường dây nóng phòng chống tự tử|đường dây nóng về ngộ độc))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "dd94d45f-3e9c-5d82-b050-2e7a27111bb9"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (yes|yeah|ừ|vâng|ok)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:yes|yeah|ừ|vâng|ok)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "cf18f4c5-5c75-5ecf-8b27-0961ccc66cb6"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} cho tôi gặp (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?cho\\s+tôi\\s+gặp\\s+(?P<contact>(?P<contact__emergencyServices>AAPCC|Alec|Alisa|An tươi|Andy|Ba|Ba bông|Bá Hào|Bái Y|Bùi Tâm|Bảo Ngọc|Bắc Nhân|Cam|Chiêu Hành|Chiêu Long|Chu Gia Nho|Chu Lan Quân|Chu Trạch Lỵ|Chu Tử Côn|Chung Kiên|Châu Vũ|Chín Huệ|Chồng béo|Chồng thúi đáng yêu|Cung Kiện|Cung Linh|Cung Luyện|Cung Lương|Cung Phu|Cung Vũ|Cung Vỹ|Công|Cẩm Đào|Cụ Nội|Diệu|Dung|Dũng|Dương Sâm|Em trái tim|Gia Dung|Gia Hân|Gia Hòa|Gia Linh|Gia Lâm|Gia Nghi|Gia Nguyên|Gia Tuấn|Gia Tường|Giai Xuân|Giai Âm|Giang Tĩnh|Giá|Hiếu|Hiếu Hiền|Hoàng Nam Cường|Hoàng Phủ|Huy|Huyền|Hà Chí Hùng|Hà Duyệt Phi|Hà Học Minh|Hà Kim Bân|Hà Kiện Sinh|Hà Lâm|Hà Minh Nguyệt|Hà Phương|Hà Phồn Hương|Hà Quốc Hùng|Hà Tiểu Bình|Hà Trung|Hà Tín|Hà Tú Trinh|Hà Vĩ Tường|Hán Thanh|Hướng Chí Cường|Hướng Hiền|Hướng Hoa|Hướng Tinh|Hải|Hắc Hô|Hằng|Hằng Lê|Hồ Học Ý|Hồng|Hợp Hải|Hợp Minh|Hợp Vũ|Hứa Trâu|Jennifer|Jim|Kate|Kelly|Kevin|Kha Ho|Kha Huyên|Kha Nhi|Kha Phỉ|Kha Vĩ|Khang Hy|Khải Nhi|Khắc Hữu|Kim|Kim Minh|Kiên Hùng|Kiều Diễm|Kiều Kỳ|Kiều Linh|Kiều Nhi|Kiều Thuần|Kiều Vân|Kiện Dân|Kính Hòa|Kỳ Huy|Kỳ Kỳ|Kỳ Minh|Kỳ Nguyên|Kỳ Quyên|Lan|Lan Nhi|Linh|Lyly|Lâm Chí Thanh|Lâm Lộ|Lâm Nhi|Lôi|Lương Chí Thành|Lương Chính Vĩ|Lương Dục Kỳ|Lương Hân|Lương Học Nhẫn|Lương Hữu Kỳ|Lương Nghi Lâm|Lương Tiểu Phong|Lương Triết Thư|Lương Tĩnh Uyển|Lương Tử Hào|Lương Văn Thuần|Lương Vương Nhất Mĩ|Lệ Linh|Lệ Nguyên|Lệ Phi|Lục Mĩ Di|Lục Triệu Mỹ Phẩm|Lục Trần Thượng Mỹ|Lục Tuấn Kỳ|Lục Vũ Tuân|Mai|Mandy|Melissa|Meo meo|Minh Thái|Mạnh Tử|Nam Bá Thiên|Nga|Nguyên Nhung|Nguyễn Ngọc Linh|Nguyễn Thị Dung|Nguyễn Thị Như Thùy|Nguyệt|Nguyệt Tinh|Ngô Anh|Ngô Bình|Ngô Chiếu Lâm|Ngô Chí Anh|Ngô Chấn Lâm|Ngô Hiếu Xuân|Ngô Hoa|Ngô Huệ Hiền|Ngô Hà|Ngô Hào Thiên|Ngô Học Tinh|Ngô Liên|Ngô Mạn|Ngô Mạn Hân|Ngô Mộng Tuyền|Ngô Nghiệp Huệ|Ngô Phong|Ngô Phương|Ngô Phương Lâm|Ngô Phương Quân|Ngô Thi Trân|Ngô Thiếu Hoa|Ngô Thư Lâm|Ngô Thượng Thành|Ngô Thượng Xuyên|Ngô Thục Nghi|Ngô Thừa|Ngô Thừa Nguyên|Ngô Tiểu Hân|Ngô Tiểu Mạn|Ngô Tiểu Ý|Ngô Trung|Ngô Trần Trường Sơn|Ngô Tường|Ngô Á Lợi|Ngô Á Phượng|Ngô Ích Tuấn|Ngô Đông Nhiên|Ngọc|Ngọc Anh|Ngọc Lan|Nhan Vân Dương|Nhi Nguyễn|Nhi điên|Nhiên Nhiên|Nhung|Nhà Trắng|Nhân Trần|Nicole|Paul|Phan Elly|Phong|Phùng Ngọc Dung|Phúc Thành|Phúc Thành Schanel|Phương|Phương Khanh|Phương Quyên|Phương Vũ|Phạm Nhàn|Phạm Như|Phạm Thật|Phạm Thị Nga|Phạm Xín|Quang|Quang Anh|Quy|Quyên|Quốc Hoa|Quốc Tường|Quốc Vỹ|Quỳnh Anh|Sakura|Sek|Soạn|Steve|Thanh|Thiện Hiền|Thiện Kiệt|Thiện Trân|Thiện như|Thiệu Hưng|Thành Cảnh|Thư Huệ|Thư Lâm|Thư Minh|Thư Ngải|Thư Từ Triết Hân|Thư Uyên|Thảo|Thất tín|Thắng Hiền|Thế Hiền|Thế Vỹ|Thị|Tiến|Trang|Trinh|Trí Kiệt|Trí Nguyên|Trí Tuấn|Trí Vĩ|Trí Vũ|Trí huệ|Trường|Trần Huệ Nghi|Trần Học Cường|Trần Nhung|Trần Sáng|Trần Tiểu Cường|Trịnh Chính|Trịnh Minh|Trịnh Mẫn|Trịnh Nghiệp|Trịnh Thành|Trịnh Tường|Trịnh Đức Hào|Trịnh Đức Thắng|Trọng Quý|Trợ giúp AAPCC|Tuấn|Tào Chi|Tâm|Tâm Nguyễn|Tâm beo|Tâm béo|Tín An|Tín Chí|Tín Hiến|Tín Hỉ|Tín Lương|Tín Mẫn|Tín Vũ|Tô Chị|Tô Hòa|Tô Trung|Tô Tuấn|Tướng|Tưởng Trung|Tạ Thu|Uyên|V K|V K yêu|V ba Định|VietPay|Vinh|Vinh Hao|Vinh Hào|Văn|Vĩ Chí|Vĩ Kiệt|Vũ Hải|Vũ Thảo Bình|Vương Chân|Vương Hạo|Vương Tường Nguyên|Xuyên Nhiên|Xuân Hưng|Xuân Thu|Xích Thành|Xảo Kiệt|Yên|Yên Cát Tường|Yên Mãn Lâm|Yên Nhi|Yên Tiểu Sương|Yến|anh Tài|anh tuấn|anh yêu|baby|bà cúc|bé Hằng|bé Thảo xin|bé heo|bạn cấp hai|bệnh viện|chăm sóc ngộ độc|chị Hai là số một|chị Vy Sơn La|chủ nhà|công an|cơ quan chức năng|cảnh sát|cấp cứu|cục nợ|cứu hỏa|dịch vụ chăm sóc ngộ độc|dịch vụ cứu thương|dịch vụ kiểm soát chất độc|dịch vụ kiểm soát chất độc quốc gia|dịch vụ y tế|dịch vụ y tế khẩn cấp|em Nam|em yêu|em yêu xinh gái|hotline phòng chống tự tử|học|irina|lily|lớp Pháp|ngọc hương|nhân viên y tế|nông trại gia đình|phòng cháy chữa cháy|quỳnh lan|quỳnh trang|sis|số khẩn cấp|số điện thoại đường dây nóng khẩn cấp|taylor morgan|thối|trung\\s+tâm\\s+(?:kiểm\\s+soát\\s+chất\\s+độc|phòng\\s+chống\\s+ngộ\\s+độc)|trung tâm chăm sóc ngộ độc|trung tâm chống độc|trung tâm cấp cứu ngộ độc|trung tâm kiểm soát chất độc|trung tâm kiểm soát chất độc quốc gia|trợ giúp|tùng|tùng kendy|tổng bộ vinhomes|tổng đài chống tự tử|vợ yêu xinh đẹp|xe cấp cứu|yên khùng|yên phương|ông già khó tính|Đinh Đinh|Đàm Tinh|Đường dây khẩn cấp AAPCC|Đường dây nóng AAPCC|Đường dây nóng dịch vụ kiểm soát chất độc|Đường dây nóng kiểm soát chất độc quốc gia|Đường dây trợ giúp khi bị ngộ độc|Đạt|đường dây chăm sóc ngộ độc|đường dây cấp cứu ngộ độc|đường dây dịch vụ kiểm soát chất độc|đường dây dịch vụ kiểm soát chất độc quốc gia|đường dây kiểm soát chất độc|đường dây nóng AAPCC|đường dây nóng chăm sóc người bị ngộ độc|đường dây nóng cấp cứu ngộ độc|đường dây nóng cấp cứu ngộ độc quốc gia|đường dây nóng dịch vụ kiểm soát chất độc|đường dây nóng dịch vụ kiểm soát chất độc quốc gia|đường dây nóng dịch vụ phòng chống ngộ độc|đường dây nóng hỗ trợ các trường hợp ngộ độc khẩn cấp|đường dây nóng hỗ trợ kiểm soát ngộ độc khẩn cấp|đường dây nóng hỗ trợ trường hợp ngộ độc|đường dây nóng khẩn cấp|đường dây nóng kiểm soát chất độc quốc gia|đường dây nóng kiểm soát ngộ độc khẩn cấp|đường dây nóng phòng chống chất độc|đường dây nóng phòng chống ngộ độc|đường dây nóng phòng chống tự tử|đường dây nóng về ngộ độc))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "53afc3f9-55b6-5b8c-9408-1f4e47dd2374"
+    },
+    {
+      "action" : "end_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} không nghe {máy}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?không\\s+nghe(?:\\s+máy)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "00c8ba79-e97e-5d43-8792-15ba8771e9ba"
+    },
+    {
+      "action" : "end_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} no",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?no$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "909a5bab-ec74-5ccc-8a13-2deb7dddc663"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} tôi cần (contact:emergencyServices) {bạn có thể} gọi cho họ {không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tôi\\s+cần\\s+(?P<contact>(?P<contact__emergencyServices>AAPCC|Alec|Alisa|An tươi|Andy|Ba|Ba bông|Bá Hào|Bái Y|Bùi Tâm|Bảo Ngọc|Bắc Nhân|Cam|Chiêu Hành|Chiêu Long|Chu Gia Nho|Chu Lan Quân|Chu Trạch Lỵ|Chu Tử Côn|Chung Kiên|Châu Vũ|Chín Huệ|Chồng béo|Chồng thúi đáng yêu|Cung Kiện|Cung Linh|Cung Luyện|Cung Lương|Cung Phu|Cung Vũ|Cung Vỹ|Công|Cẩm Đào|Cụ Nội|Diệu|Dung|Dũng|Dương Sâm|Em trái tim|Gia Dung|Gia Hân|Gia Hòa|Gia Linh|Gia Lâm|Gia Nghi|Gia Nguyên|Gia Tuấn|Gia Tường|Giai Xuân|Giai Âm|Giang Tĩnh|Giá|Hiếu|Hiếu Hiền|Hoàng Nam Cường|Hoàng Phủ|Huy|Huyền|Hà Chí Hùng|Hà Duyệt Phi|Hà Học Minh|Hà Kim Bân|Hà Kiện Sinh|Hà Lâm|Hà Minh Nguyệt|Hà Phương|Hà Phồn Hương|Hà Quốc Hùng|Hà Tiểu Bình|Hà Trung|Hà Tín|Hà Tú Trinh|Hà Vĩ Tường|Hán Thanh|Hướng Chí Cường|Hướng Hiền|Hướng Hoa|Hướng Tinh|Hải|Hắc Hô|Hằng|Hằng Lê|Hồ Học Ý|Hồng|Hợp Hải|Hợp Minh|Hợp Vũ|Hứa Trâu|Jennifer|Jim|Kate|Kelly|Kevin|Kha Ho|Kha Huyên|Kha Nhi|Kha Phỉ|Kha Vĩ|Khang Hy|Khải Nhi|Khắc Hữu|Kim|Kim Minh|Kiên Hùng|Kiều Diễm|Kiều Kỳ|Kiều Linh|Kiều Nhi|Kiều Thuần|Kiều Vân|Kiện Dân|Kính Hòa|Kỳ Huy|Kỳ Kỳ|Kỳ Minh|Kỳ Nguyên|Kỳ Quyên|Lan|Lan Nhi|Linh|Lyly|Lâm Chí Thanh|Lâm Lộ|Lâm Nhi|Lôi|Lương Chí Thành|Lương Chính Vĩ|Lương Dục Kỳ|Lương Hân|Lương Học Nhẫn|Lương Hữu Kỳ|Lương Nghi Lâm|Lương Tiểu Phong|Lương Triết Thư|Lương Tĩnh Uyển|Lương Tử Hào|Lương Văn Thuần|Lương Vương Nhất Mĩ|Lệ Linh|Lệ Nguyên|Lệ Phi|Lục Mĩ Di|Lục Triệu Mỹ Phẩm|Lục Trần Thượng Mỹ|Lục Tuấn Kỳ|Lục Vũ Tuân|Mai|Mandy|Melissa|Meo meo|Minh Thái|Mạnh Tử|Nam Bá Thiên|Nga|Nguyên Nhung|Nguyễn Ngọc Linh|Nguyễn Thị Dung|Nguyễn Thị Như Thùy|Nguyệt|Nguyệt Tinh|Ngô Anh|Ngô Bình|Ngô Chiếu Lâm|Ngô Chí Anh|Ngô Chấn Lâm|Ngô Hiếu Xuân|Ngô Hoa|Ngô Huệ Hiền|Ngô Hà|Ngô Hào Thiên|Ngô Học Tinh|Ngô Liên|Ngô Mạn|Ngô Mạn Hân|Ngô Mộng Tuyền|Ngô Nghiệp Huệ|Ngô Phong|Ngô Phương|Ngô Phương Lâm|Ngô Phương Quân|Ngô Thi Trân|Ngô Thiếu Hoa|Ngô Thư Lâm|Ngô Thượng Thành|Ngô Thượng Xuyên|Ngô Thục Nghi|Ngô Thừa|Ngô Thừa Nguyên|Ngô Tiểu Hân|Ngô Tiểu Mạn|Ngô Tiểu Ý|Ngô Trung|Ngô Trần Trường Sơn|Ngô Tường|Ngô Á Lợi|Ngô Á Phượng|Ngô Ích Tuấn|Ngô Đông Nhiên|Ngọc|Ngọc Anh|Ngọc Lan|Nhan Vân Dương|Nhi Nguyễn|Nhi điên|Nhiên Nhiên|Nhung|Nhà Trắng|Nhân Trần|Nicole|Paul|Phan Elly|Phong|Phùng Ngọc Dung|Phúc Thành|Phúc Thành Schanel|Phương|Phương Khanh|Phương Quyên|Phương Vũ|Phạm Nhàn|Phạm Như|Phạm Thật|Phạm Thị Nga|Phạm Xín|Quang|Quang Anh|Quy|Quyên|Quốc Hoa|Quốc Tường|Quốc Vỹ|Quỳnh Anh|Sakura|Sek|Soạn|Steve|Thanh|Thiện Hiền|Thiện Kiệt|Thiện Trân|Thiện như|Thiệu Hưng|Thành Cảnh|Thư Huệ|Thư Lâm|Thư Minh|Thư Ngải|Thư Từ Triết Hân|Thư Uyên|Thảo|Thất tín|Thắng Hiền|Thế Hiền|Thế Vỹ|Thị|Tiến|Trang|Trinh|Trí Kiệt|Trí Nguyên|Trí Tuấn|Trí Vĩ|Trí Vũ|Trí huệ|Trường|Trần Huệ Nghi|Trần Học Cường|Trần Nhung|Trần Sáng|Trần Tiểu Cường|Trịnh Chính|Trịnh Minh|Trịnh Mẫn|Trịnh Nghiệp|Trịnh Thành|Trịnh Tường|Trịnh Đức Hào|Trịnh Đức Thắng|Trọng Quý|Trợ giúp AAPCC|Tuấn|Tào Chi|Tâm|Tâm Nguyễn|Tâm beo|Tâm béo|Tín An|Tín Chí|Tín Hiến|Tín Hỉ|Tín Lương|Tín Mẫn|Tín Vũ|Tô Chị|Tô Hòa|Tô Trung|Tô Tuấn|Tướng|Tưởng Trung|Tạ Thu|Uyên|V K|V K yêu|V ba Định|VietPay|Vinh|Vinh Hao|Vinh Hào|Văn|Vĩ Chí|Vĩ Kiệt|Vũ Hải|Vũ Thảo Bình|Vương Chân|Vương Hạo|Vương Tường Nguyên|Xuyên Nhiên|Xuân Hưng|Xuân Thu|Xích Thành|Xảo Kiệt|Yên|Yên Cát Tường|Yên Mãn Lâm|Yên Nhi|Yên Tiểu Sương|Yến|anh Tài|anh tuấn|anh yêu|baby|bà cúc|bé Hằng|bé Thảo xin|bé heo|bạn cấp hai|bệnh viện|chăm sóc ngộ độc|chị Hai là số một|chị Vy Sơn La|chủ nhà|công an|cơ quan chức năng|cảnh sát|cấp cứu|cục nợ|cứu hỏa|dịch vụ chăm sóc ngộ độc|dịch vụ cứu thương|dịch vụ kiểm soát chất độc|dịch vụ kiểm soát chất độc quốc gia|dịch vụ y tế|dịch vụ y tế khẩn cấp|em Nam|em yêu|em yêu xinh gái|hotline phòng chống tự tử|học|irina|lily|lớp Pháp|ngọc hương|nhân viên y tế|nông trại gia đình|phòng cháy chữa cháy|quỳnh lan|quỳnh trang|sis|số khẩn cấp|số điện thoại đường dây nóng khẩn cấp|taylor morgan|thối|trung\\s+tâm\\s+(?:kiểm\\s+soát\\s+chất\\s+độc|phòng\\s+chống\\s+ngộ\\s+độc)|trung tâm chăm sóc ngộ độc|trung tâm chống độc|trung tâm cấp cứu ngộ độc|trung tâm kiểm soát chất độc|trung tâm kiểm soát chất độc quốc gia|trợ giúp|tùng|tùng kendy|tổng bộ vinhomes|tổng đài chống tự tử|vợ yêu xinh đẹp|xe cấp cứu|yên khùng|yên phương|ông già khó tính|Đinh Đinh|Đàm Tinh|Đường dây khẩn cấp AAPCC|Đường dây nóng AAPCC|Đường dây nóng dịch vụ kiểm soát chất độc|Đường dây nóng kiểm soát chất độc quốc gia|Đường dây trợ giúp khi bị ngộ độc|Đạt|đường dây chăm sóc ngộ độc|đường dây cấp cứu ngộ độc|đường dây dịch vụ kiểm soát chất độc|đường dây dịch vụ kiểm soát chất độc quốc gia|đường dây kiểm soát chất độc|đường dây nóng AAPCC|đường dây nóng chăm sóc người bị ngộ độc|đường dây nóng cấp cứu ngộ độc|đường dây nóng cấp cứu ngộ độc quốc gia|đường dây nóng dịch vụ kiểm soát chất độc|đường dây nóng dịch vụ kiểm soát chất độc quốc gia|đường dây nóng dịch vụ phòng chống ngộ độc|đường dây nóng hỗ trợ các trường hợp ngộ độc khẩn cấp|đường dây nóng hỗ trợ kiểm soát ngộ độc khẩn cấp|đường dây nóng hỗ trợ trường hợp ngộ độc|đường dây nóng khẩn cấp|đường dây nóng kiểm soát chất độc quốc gia|đường dây nóng kiểm soát ngộ độc khẩn cấp|đường dây nóng phòng chống chất độc|đường dây nóng phòng chống ngộ độc|đường dây nóng phòng chống tự tử|đường dây nóng về ngộ độc))\\s+(?:bạn\\s+có\\s+thể\\s+)?gọi\\s+cho\\s+họ(?:\\s+không)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "49c52d22-173e-5b68-a81c-2370020bbe0b"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} tôi cần {người} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tôi\\s+cần\\s+(?:người\\s+)?(?P<contact>(?P<contact__emergencyServices>AAPCC|Alec|Alisa|An tươi|Andy|Ba|Ba bông|Bá Hào|Bái Y|Bùi Tâm|Bảo Ngọc|Bắc Nhân|Cam|Chiêu Hành|Chiêu Long|Chu Gia Nho|Chu Lan Quân|Chu Trạch Lỵ|Chu Tử Côn|Chung Kiên|Châu Vũ|Chín Huệ|Chồng béo|Chồng thúi đáng yêu|Cung Kiện|Cung Linh|Cung Luyện|Cung Lương|Cung Phu|Cung Vũ|Cung Vỹ|Công|Cẩm Đào|Cụ Nội|Diệu|Dung|Dũng|Dương Sâm|Em trái tim|Gia Dung|Gia Hân|Gia Hòa|Gia Linh|Gia Lâm|Gia Nghi|Gia Nguyên|Gia Tuấn|Gia Tường|Giai Xuân|Giai Âm|Giang Tĩnh|Giá|Hiếu|Hiếu Hiền|Hoàng Nam Cường|Hoàng Phủ|Huy|Huyền|Hà Chí Hùng|Hà Duyệt Phi|Hà Học Minh|Hà Kim Bân|Hà Kiện Sinh|Hà Lâm|Hà Minh Nguyệt|Hà Phương|Hà Phồn Hương|Hà Quốc Hùng|Hà Tiểu Bình|Hà Trung|Hà Tín|Hà Tú Trinh|Hà Vĩ Tường|Hán Thanh|Hướng Chí Cường|Hướng Hiền|Hướng Hoa|Hướng Tinh|Hải|Hắc Hô|Hằng|Hằng Lê|Hồ Học Ý|Hồng|Hợp Hải|Hợp Minh|Hợp Vũ|Hứa Trâu|Jennifer|Jim|Kate|Kelly|Kevin|Kha Ho|Kha Huyên|Kha Nhi|Kha Phỉ|Kha Vĩ|Khang Hy|Khải Nhi|Khắc Hữu|Kim|Kim Minh|Kiên Hùng|Kiều Diễm|Kiều Kỳ|Kiều Linh|Kiều Nhi|Kiều Thuần|Kiều Vân|Kiện Dân|Kính Hòa|Kỳ Huy|Kỳ Kỳ|Kỳ Minh|Kỳ Nguyên|Kỳ Quyên|Lan|Lan Nhi|Linh|Lyly|Lâm Chí Thanh|Lâm Lộ|Lâm Nhi|Lôi|Lương Chí Thành|Lương Chính Vĩ|Lương Dục Kỳ|Lương Hân|Lương Học Nhẫn|Lương Hữu Kỳ|Lương Nghi Lâm|Lương Tiểu Phong|Lương Triết Thư|Lương Tĩnh Uyển|Lương Tử Hào|Lương Văn Thuần|Lương Vương Nhất Mĩ|Lệ Linh|Lệ Nguyên|Lệ Phi|Lục Mĩ Di|Lục Triệu Mỹ Phẩm|Lục Trần Thượng Mỹ|Lục Tuấn Kỳ|Lục Vũ Tuân|Mai|Mandy|Melissa|Meo meo|Minh Thái|Mạnh Tử|Nam Bá Thiên|Nga|Nguyên Nhung|Nguyễn Ngọc Linh|Nguyễn Thị Dung|Nguyễn Thị Như Thùy|Nguyệt|Nguyệt Tinh|Ngô Anh|Ngô Bình|Ngô Chiếu Lâm|Ngô Chí Anh|Ngô Chấn Lâm|Ngô Hiếu Xuân|Ngô Hoa|Ngô Huệ Hiền|Ngô Hà|Ngô Hào Thiên|Ngô Học Tinh|Ngô Liên|Ngô Mạn|Ngô Mạn Hân|Ngô Mộng Tuyền|Ngô Nghiệp Huệ|Ngô Phong|Ngô Phương|Ngô Phương Lâm|Ngô Phương Quân|Ngô Thi Trân|Ngô Thiếu Hoa|Ngô Thư Lâm|Ngô Thượng Thành|Ngô Thượng Xuyên|Ngô Thục Nghi|Ngô Thừa|Ngô Thừa Nguyên|Ngô Tiểu Hân|Ngô Tiểu Mạn|Ngô Tiểu Ý|Ngô Trung|Ngô Trần Trường Sơn|Ngô Tường|Ngô Á Lợi|Ngô Á Phượng|Ngô Ích Tuấn|Ngô Đông Nhiên|Ngọc|Ngọc Anh|Ngọc Lan|Nhan Vân Dương|Nhi Nguyễn|Nhi điên|Nhiên Nhiên|Nhung|Nhà Trắng|Nhân Trần|Nicole|Paul|Phan Elly|Phong|Phùng Ngọc Dung|Phúc Thành|Phúc Thành Schanel|Phương|Phương Khanh|Phương Quyên|Phương Vũ|Phạm Nhàn|Phạm Như|Phạm Thật|Phạm Thị Nga|Phạm Xín|Quang|Quang Anh|Quy|Quyên|Quốc Hoa|Quốc Tường|Quốc Vỹ|Quỳnh Anh|Sakura|Sek|Soạn|Steve|Thanh|Thiện Hiền|Thiện Kiệt|Thiện Trân|Thiện như|Thiệu Hưng|Thành Cảnh|Thư Huệ|Thư Lâm|Thư Minh|Thư Ngải|Thư Từ Triết Hân|Thư Uyên|Thảo|Thất tín|Thắng Hiền|Thế Hiền|Thế Vỹ|Thị|Tiến|Trang|Trinh|Trí Kiệt|Trí Nguyên|Trí Tuấn|Trí Vĩ|Trí Vũ|Trí huệ|Trường|Trần Huệ Nghi|Trần Học Cường|Trần Nhung|Trần Sáng|Trần Tiểu Cường|Trịnh Chính|Trịnh Minh|Trịnh Mẫn|Trịnh Nghiệp|Trịnh Thành|Trịnh Tường|Trịnh Đức Hào|Trịnh Đức Thắng|Trọng Quý|Trợ giúp AAPCC|Tuấn|Tào Chi|Tâm|Tâm Nguyễn|Tâm beo|Tâm béo|Tín An|Tín Chí|Tín Hiến|Tín Hỉ|Tín Lương|Tín Mẫn|Tín Vũ|Tô Chị|Tô Hòa|Tô Trung|Tô Tuấn|Tướng|Tưởng Trung|Tạ Thu|Uyên|V K|V K yêu|V ba Định|VietPay|Vinh|Vinh Hao|Vinh Hào|Văn|Vĩ Chí|Vĩ Kiệt|Vũ Hải|Vũ Thảo Bình|Vương Chân|Vương Hạo|Vương Tường Nguyên|Xuyên Nhiên|Xuân Hưng|Xuân Thu|Xích Thành|Xảo Kiệt|Yên|Yên Cát Tường|Yên Mãn Lâm|Yên Nhi|Yên Tiểu Sương|Yến|anh Tài|anh tuấn|anh yêu|baby|bà cúc|bé Hằng|bé Thảo xin|bé heo|bạn cấp hai|bệnh viện|chăm sóc ngộ độc|chị Hai là số một|chị Vy Sơn La|chủ nhà|công an|cơ quan chức năng|cảnh sát|cấp cứu|cục nợ|cứu hỏa|dịch vụ chăm sóc ngộ độc|dịch vụ cứu thương|dịch vụ kiểm soát chất độc|dịch vụ kiểm soát chất độc quốc gia|dịch vụ y tế|dịch vụ y tế khẩn cấp|em Nam|em yêu|em yêu xinh gái|hotline phòng chống tự tử|học|irina|lily|lớp Pháp|ngọc hương|nhân viên y tế|nông trại gia đình|phòng cháy chữa cháy|quỳnh lan|quỳnh trang|sis|số khẩn cấp|số điện thoại đường dây nóng khẩn cấp|taylor morgan|thối|trung\\s+tâm\\s+(?:kiểm\\s+soát\\s+chất\\s+độc|phòng\\s+chống\\s+ngộ\\s+độc)|trung tâm chăm sóc ngộ độc|trung tâm chống độc|trung tâm cấp cứu ngộ độc|trung tâm kiểm soát chất độc|trung tâm kiểm soát chất độc quốc gia|trợ giúp|tùng|tùng kendy|tổng bộ vinhomes|tổng đài chống tự tử|vợ yêu xinh đẹp|xe cấp cứu|yên khùng|yên phương|ông già khó tính|Đinh Đinh|Đàm Tinh|Đường dây khẩn cấp AAPCC|Đường dây nóng AAPCC|Đường dây nóng dịch vụ kiểm soát chất độc|Đường dây nóng kiểm soát chất độc quốc gia|Đường dây trợ giúp khi bị ngộ độc|Đạt|đường dây chăm sóc ngộ độc|đường dây cấp cứu ngộ độc|đường dây dịch vụ kiểm soát chất độc|đường dây dịch vụ kiểm soát chất độc quốc gia|đường dây kiểm soát chất độc|đường dây nóng AAPCC|đường dây nóng chăm sóc người bị ngộ độc|đường dây nóng cấp cứu ngộ độc|đường dây nóng cấp cứu ngộ độc quốc gia|đường dây nóng dịch vụ kiểm soát chất độc|đường dây nóng dịch vụ kiểm soát chất độc quốc gia|đường dây nóng dịch vụ phòng chống ngộ độc|đường dây nóng hỗ trợ các trường hợp ngộ độc khẩn cấp|đường dây nóng hỗ trợ kiểm soát ngộ độc khẩn cấp|đường dây nóng hỗ trợ trường hợp ngộ độc|đường dây nóng khẩn cấp|đường dây nóng kiểm soát chất độc quốc gia|đường dây nóng kiểm soát ngộ độc khẩn cấp|đường dây nóng phòng chống chất độc|đường dây nóng phòng chống ngộ độc|đường dây nóng phòng chống tự tử|đường dây nóng về ngộ độc))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "10b2f768-fd71-52eb-9608-8f43ef5c8085"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} tôi muốn gọi cho (contact:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tôi\\s+muốn\\s+gọi\\s+cho\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8f014c74-e825-55fb-b6ae-00c46594ea6f"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bạn có thể} (trả lời|nhận) {cuộc gọi|điện thoại|cuộc gọi điện thoại} {của tôi} {giúp tôi|đi|với|{được} không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bạn\\s+có\\s+thể\\s+)?(?:trả\\s+lời|nhận)(?:\\s+(?:cuộc\\s+gọi|điện\\s+thoại|cuộc\\s+gọi\\s+điện\\s+thoại))?(?:\\s+của\\s+tôi)?(?:(?:\\s+giúp\\s+tôi|\\s+đi|\\s+với|\\s+(?:được\\s+)?không))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7839ad18-d3b8-50bc-9892-7298b9e4ce3a"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} {làm ơn} gọi (contact:*{1,5})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:làm\\s+ơn\\s+)?gọi\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "bd29f680-bc0e-54b6-9e21-3291377ca9ae"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{hey} {siri} {tôi cần} (gọi điện|điện thoại|gọi|điện) {cho} (contact:emergencyServices) (situation:situation)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:tôi\\s+cần\\s+)?(?:gọi\\s+điện|điện\\s+thoại|gọi|điện)\\s+(?:cho\\s+)?(?P<contact>(?P<contact__emergencyServices>AAPCC|Alec|Alisa|An tươi|Andy|Ba|Ba bông|Bá Hào|Bái Y|Bùi Tâm|Bảo Ngọc|Bắc Nhân|Cam|Chiêu Hành|Chiêu Long|Chu Gia Nho|Chu Lan Quân|Chu Trạch Lỵ|Chu Tử Côn|Chung Kiên|Châu Vũ|Chín Huệ|Chồng béo|Chồng thúi đáng yêu|Cung Kiện|Cung Linh|Cung Luyện|Cung Lương|Cung Phu|Cung Vũ|Cung Vỹ|Công|Cẩm Đào|Cụ Nội|Diệu|Dung|Dũng|Dương Sâm|Em trái tim|Gia Dung|Gia Hân|Gia Hòa|Gia Linh|Gia Lâm|Gia Nghi|Gia Nguyên|Gia Tuấn|Gia Tường|Giai Xuân|Giai Âm|Giang Tĩnh|Giá|Hiếu|Hiếu Hiền|Hoàng Nam Cường|Hoàng Phủ|Huy|Huyền|Hà Chí Hùng|Hà Duyệt Phi|Hà Học Minh|Hà Kim Bân|Hà Kiện Sinh|Hà Lâm|Hà Minh Nguyệt|Hà Phương|Hà Phồn Hương|Hà Quốc Hùng|Hà Tiểu Bình|Hà Trung|Hà Tín|Hà Tú Trinh|Hà Vĩ Tường|Hán Thanh|Hướng Chí Cường|Hướng Hiền|Hướng Hoa|Hướng Tinh|Hải|Hắc Hô|Hằng|Hằng Lê|Hồ Học Ý|Hồng|Hợp Hải|Hợp Minh|Hợp Vũ|Hứa Trâu|Jennifer|Jim|Kate|Kelly|Kevin|Kha Ho|Kha Huyên|Kha Nhi|Kha Phỉ|Kha Vĩ|Khang Hy|Khải Nhi|Khắc Hữu|Kim|Kim Minh|Kiên Hùng|Kiều Diễm|Kiều Kỳ|Kiều Linh|Kiều Nhi|Kiều Thuần|Kiều Vân|Kiện Dân|Kính Hòa|Kỳ Huy|Kỳ Kỳ|Kỳ Minh|Kỳ Nguyên|Kỳ Quyên|Lan|Lan Nhi|Linh|Lyly|Lâm Chí Thanh|Lâm Lộ|Lâm Nhi|Lôi|Lương Chí Thành|Lương Chính Vĩ|Lương Dục Kỳ|Lương Hân|Lương Học Nhẫn|Lương Hữu Kỳ|Lương Nghi Lâm|Lương Tiểu Phong|Lương Triết Thư|Lương Tĩnh Uyển|Lương Tử Hào|Lương Văn Thuần|Lương Vương Nhất Mĩ|Lệ Linh|Lệ Nguyên|Lệ Phi|Lục Mĩ Di|Lục Triệu Mỹ Phẩm|Lục Trần Thượng Mỹ|Lục Tuấn Kỳ|Lục Vũ Tuân|Mai|Mandy|Melissa|Meo meo|Minh Thái|Mạnh Tử|Nam Bá Thiên|Nga|Nguyên Nhung|Nguyễn Ngọc Linh|Nguyễn Thị Dung|Nguyễn Thị Như Thùy|Nguyệt|Nguyệt Tinh|Ngô Anh|Ngô Bình|Ngô Chiếu Lâm|Ngô Chí Anh|Ngô Chấn Lâm|Ngô Hiếu Xuân|Ngô Hoa|Ngô Huệ Hiền|Ngô Hà|Ngô Hào Thiên|Ngô Học Tinh|Ngô Liên|Ngô Mạn|Ngô Mạn Hân|Ngô Mộng Tuyền|Ngô Nghiệp Huệ|Ngô Phong|Ngô Phương|Ngô Phương Lâm|Ngô Phương Quân|Ngô Thi Trân|Ngô Thiếu Hoa|Ngô Thư Lâm|Ngô Thượng Thành|Ngô Thượng Xuyên|Ngô Thục Nghi|Ngô Thừa|Ngô Thừa Nguyên|Ngô Tiểu Hân|Ngô Tiểu Mạn|Ngô Tiểu Ý|Ngô Trung|Ngô Trần Trường Sơn|Ngô Tường|Ngô Á Lợi|Ngô Á Phượng|Ngô Ích Tuấn|Ngô Đông Nhiên|Ngọc|Ngọc Anh|Ngọc Lan|Nhan Vân Dương|Nhi Nguyễn|Nhi điên|Nhiên Nhiên|Nhung|Nhà Trắng|Nhân Trần|Nicole|Paul|Phan Elly|Phong|Phùng Ngọc Dung|Phúc Thành|Phúc Thành Schanel|Phương|Phương Khanh|Phương Quyên|Phương Vũ|Phạm Nhàn|Phạm Như|Phạm Thật|Phạm Thị Nga|Phạm Xín|Quang|Quang Anh|Quy|Quyên|Quốc Hoa|Quốc Tường|Quốc Vỹ|Quỳnh Anh|Sakura|Sek|Soạn|Steve|Thanh|Thiện Hiền|Thiện Kiệt|Thiện Trân|Thiện như|Thiệu Hưng|Thành Cảnh|Thư Huệ|Thư Lâm|Thư Minh|Thư Ngải|Thư Từ Triết Hân|Thư Uyên|Thảo|Thất tín|Thắng Hiền|Thế Hiền|Thế Vỹ|Thị|Tiến|Trang|Trinh|Trí Kiệt|Trí Nguyên|Trí Tuấn|Trí Vĩ|Trí Vũ|Trí huệ|Trường|Trần Huệ Nghi|Trần Học Cường|Trần Nhung|Trần Sáng|Trần Tiểu Cường|Trịnh Chính|Trịnh Minh|Trịnh Mẫn|Trịnh Nghiệp|Trịnh Thành|Trịnh Tường|Trịnh Đức Hào|Trịnh Đức Thắng|Trọng Quý|Trợ giúp AAPCC|Tuấn|Tào Chi|Tâm|Tâm Nguyễn|Tâm beo|Tâm béo|Tín An|Tín Chí|Tín Hiến|Tín Hỉ|Tín Lương|Tín Mẫn|Tín Vũ|Tô Chị|Tô Hòa|Tô Trung|Tô Tuấn|Tướng|Tưởng Trung|Tạ Thu|Uyên|V K|V K yêu|V ba Định|VietPay|Vinh|Vinh Hao|Vinh Hào|Văn|Vĩ Chí|Vĩ Kiệt|Vũ Hải|Vũ Thảo Bình|Vương Chân|Vương Hạo|Vương Tường Nguyên|Xuyên Nhiên|Xuân Hưng|Xuân Thu|Xích Thành|Xảo Kiệt|Yên|Yên Cát Tường|Yên Mãn Lâm|Yên Nhi|Yên Tiểu Sương|Yến|anh Tài|anh tuấn|anh yêu|baby|bà cúc|bé Hằng|bé Thảo xin|bé heo|bạn cấp hai|bệnh viện|chăm sóc ngộ độc|chị Hai là số một|chị Vy Sơn La|chủ nhà|công an|cơ quan chức năng|cảnh sát|cấp cứu|cục nợ|cứu hỏa|dịch vụ chăm sóc ngộ độc|dịch vụ cứu thương|dịch vụ kiểm soát chất độc|dịch vụ kiểm soát chất độc quốc gia|dịch vụ y tế|dịch vụ y tế khẩn cấp|em Nam|em yêu|em yêu xinh gái|hotline phòng chống tự tử|học|irina|lily|lớp Pháp|ngọc hương|nhân viên y tế|nông trại gia đình|phòng cháy chữa cháy|quỳnh lan|quỳnh trang|sis|số khẩn cấp|số điện thoại đường dây nóng khẩn cấp|taylor morgan|thối|trung\\s+tâm\\s+(?:kiểm\\s+soát\\s+chất\\s+độc|phòng\\s+chống\\s+ngộ\\s+độc)|trung tâm chăm sóc ngộ độc|trung tâm chống độc|trung tâm cấp cứu ngộ độc|trung tâm kiểm soát chất độc|trung tâm kiểm soát chất độc quốc gia|trợ giúp|tùng|tùng kendy|tổng bộ vinhomes|tổng đài chống tự tử|vợ yêu xinh đẹp|xe cấp cứu|yên khùng|yên phương|ông già khó tính|Đinh Đinh|Đàm Tinh|Đường dây khẩn cấp AAPCC|Đường dây nóng AAPCC|Đường dây nóng dịch vụ kiểm soát chất độc|Đường dây nóng kiểm soát chất độc quốc gia|Đường dây trợ giúp khi bị ngộ độc|Đạt|đường dây chăm sóc ngộ độc|đường dây cấp cứu ngộ độc|đường dây dịch vụ kiểm soát chất độc|đường dây dịch vụ kiểm soát chất độc quốc gia|đường dây kiểm soát chất độc|đường dây nóng AAPCC|đường dây nóng chăm sóc người bị ngộ độc|đường dây nóng cấp cứu ngộ độc|đường dây nóng cấp cứu ngộ độc quốc gia|đường dây nóng dịch vụ kiểm soát chất độc|đường dây nóng dịch vụ kiểm soát chất độc quốc gia|đường dây nóng dịch vụ phòng chống ngộ độc|đường dây nóng hỗ trợ các trường hợp ngộ độc khẩn cấp|đường dây nóng hỗ trợ kiểm soát ngộ độc khẩn cấp|đường dây nóng hỗ trợ trường hợp ngộ độc|đường dây nóng khẩn cấp|đường dây nóng kiểm soát chất độc quốc gia|đường dây nóng kiểm soát ngộ độc khẩn cấp|đường dây nóng phòng chống chất độc|đường dây nóng phòng chống ngộ độc|đường dây nóng phòng chống tự tử|đường dây nóng về ngộ độc))\\s+(?P<situation>(?P<situation__situation>ai đó đã chĩa súng vào tôi|bố tôi đang khó thở|chó của tôi bị tấn công|có người bất tỉnh trên đường|có người đang đuổi tôi|cần trợ giúp y tế ngay|cứu tôi|giúp tôi|hai người đàn ông đang đánh nhau|mẹ tôi ngất|nhà tôi đang bốc cháy|trời ơi anh ta đã cán chết người|tôi bị bắn|tôi bị gãy tay|tôi bị khó thở|tôi bị tai nạn xe|tôi bị tai nạn xe hơi|tôi cảm thấy choáng váng|tôi dùng thuốc quá liều|tôi không thể đánh thức con gái tôi dậy được|tôi nghĩ tôi bị ngộ độc|tôi nghĩ tôi cần được chăm sóc y tế|tôi sắp chết|tôi vừa bị cướp|tôi vừa bị tai nạn xe|tôi đang bị đau dữ dội|tôi đang bị đau tim|tôi đang bị động kinh|tôi đang chảy máu|tôi đang gặp tai nạn|tôi đã bị tại nạn xe hơi|vợ tôi bị bắn|xe của tôi đang bốc cháy|đang có một cuộc ẩu đả ở quán bar))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "add0aa84-b295-5556-b0ce-e942a9bd30d8"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} {tôi cần} (gọi|điện|điện thoại|gọi điện) {cho|đến|tới} (contact:emergencyServices) {liền|ngay|ngay lập tức|{ngay}bây giờ}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:tôi\\s+cần\\s+)?(?:gọi|điện|điện\\s+thoại|gọi\\s+điện)\\s+(?:(?:cho|đến|tới)\\s+)?(?P<contact>(?P<contact__emergencyServices>AAPCC|Alec|Alisa|An tươi|Andy|Ba|Ba bông|Bá Hào|Bái Y|Bùi Tâm|Bảo Ngọc|Bắc Nhân|Cam|Chiêu Hành|Chiêu Long|Chu Gia Nho|Chu Lan Quân|Chu Trạch Lỵ|Chu Tử Côn|Chung Kiên|Châu Vũ|Chín Huệ|Chồng béo|Chồng thúi đáng yêu|Cung Kiện|Cung Linh|Cung Luyện|Cung Lương|Cung Phu|Cung Vũ|Cung Vỹ|Công|Cẩm Đào|Cụ Nội|Diệu|Dung|Dũng|Dương Sâm|Em trái tim|Gia Dung|Gia Hân|Gia Hòa|Gia Linh|Gia Lâm|Gia Nghi|Gia Nguyên|Gia Tuấn|Gia Tường|Giai Xuân|Giai Âm|Giang Tĩnh|Giá|Hiếu|Hiếu Hiền|Hoàng Nam Cường|Hoàng Phủ|Huy|Huyền|Hà Chí Hùng|Hà Duyệt Phi|Hà Học Minh|Hà Kim Bân|Hà Kiện Sinh|Hà Lâm|Hà Minh Nguyệt|Hà Phương|Hà Phồn Hương|Hà Quốc Hùng|Hà Tiểu Bình|Hà Trung|Hà Tín|Hà Tú Trinh|Hà Vĩ Tường|Hán Thanh|Hướng Chí Cường|Hướng Hiền|Hướng Hoa|Hướng Tinh|Hải|Hắc Hô|Hằng|Hằng Lê|Hồ Học Ý|Hồng|Hợp Hải|Hợp Minh|Hợp Vũ|Hứa Trâu|Jennifer|Jim|Kate|Kelly|Kevin|Kha Ho|Kha Huyên|Kha Nhi|Kha Phỉ|Kha Vĩ|Khang Hy|Khải Nhi|Khắc Hữu|Kim|Kim Minh|Kiên Hùng|Kiều Diễm|Kiều Kỳ|Kiều Linh|Kiều Nhi|Kiều Thuần|Kiều Vân|Kiện Dân|Kính Hòa|Kỳ Huy|Kỳ Kỳ|Kỳ Minh|Kỳ Nguyên|Kỳ Quyên|Lan|Lan Nhi|Linh|Lyly|Lâm Chí Thanh|Lâm Lộ|Lâm Nhi|Lôi|Lương Chí Thành|Lương Chính Vĩ|Lương Dục Kỳ|Lương Hân|Lương Học Nhẫn|Lương Hữu Kỳ|Lương Nghi Lâm|Lương Tiểu Phong|Lương Triết Thư|Lương Tĩnh Uyển|Lương Tử Hào|Lương Văn Thuần|Lương Vương Nhất Mĩ|Lệ Linh|Lệ Nguyên|Lệ Phi|Lục Mĩ Di|Lục Triệu Mỹ Phẩm|Lục Trần Thượng Mỹ|Lục Tuấn Kỳ|Lục Vũ Tuân|Mai|Mandy|Melissa|Meo meo|Minh Thái|Mạnh Tử|Nam Bá Thiên|Nga|Nguyên Nhung|Nguyễn Ngọc Linh|Nguyễn Thị Dung|Nguyễn Thị Như Thùy|Nguyệt|Nguyệt Tinh|Ngô Anh|Ngô Bình|Ngô Chiếu Lâm|Ngô Chí Anh|Ngô Chấn Lâm|Ngô Hiếu Xuân|Ngô Hoa|Ngô Huệ Hiền|Ngô Hà|Ngô Hào Thiên|Ngô Học Tinh|Ngô Liên|Ngô Mạn|Ngô Mạn Hân|Ngô Mộng Tuyền|Ngô Nghiệp Huệ|Ngô Phong|Ngô Phương|Ngô Phương Lâm|Ngô Phương Quân|Ngô Thi Trân|Ngô Thiếu Hoa|Ngô Thư Lâm|Ngô Thượng Thành|Ngô Thượng Xuyên|Ngô Thục Nghi|Ngô Thừa|Ngô Thừa Nguyên|Ngô Tiểu Hân|Ngô Tiểu Mạn|Ngô Tiểu Ý|Ngô Trung|Ngô Trần Trường Sơn|Ngô Tường|Ngô Á Lợi|Ngô Á Phượng|Ngô Ích Tuấn|Ngô Đông Nhiên|Ngọc|Ngọc Anh|Ngọc Lan|Nhan Vân Dương|Nhi Nguyễn|Nhi điên|Nhiên Nhiên|Nhung|Nhà Trắng|Nhân Trần|Nicole|Paul|Phan Elly|Phong|Phùng Ngọc Dung|Phúc Thành|Phúc Thành Schanel|Phương|Phương Khanh|Phương Quyên|Phương Vũ|Phạm Nhàn|Phạm Như|Phạm Thật|Phạm Thị Nga|Phạm Xín|Quang|Quang Anh|Quy|Quyên|Quốc Hoa|Quốc Tường|Quốc Vỹ|Quỳnh Anh|Sakura|Sek|Soạn|Steve|Thanh|Thiện Hiền|Thiện Kiệt|Thiện Trân|Thiện như|Thiệu Hưng|Thành Cảnh|Thư Huệ|Thư Lâm|Thư Minh|Thư Ngải|Thư Từ Triết Hân|Thư Uyên|Thảo|Thất tín|Thắng Hiền|Thế Hiền|Thế Vỹ|Thị|Tiến|Trang|Trinh|Trí Kiệt|Trí Nguyên|Trí Tuấn|Trí Vĩ|Trí Vũ|Trí huệ|Trường|Trần Huệ Nghi|Trần Học Cường|Trần Nhung|Trần Sáng|Trần Tiểu Cường|Trịnh Chính|Trịnh Minh|Trịnh Mẫn|Trịnh Nghiệp|Trịnh Thành|Trịnh Tường|Trịnh Đức Hào|Trịnh Đức Thắng|Trọng Quý|Trợ giúp AAPCC|Tuấn|Tào Chi|Tâm|Tâm Nguyễn|Tâm beo|Tâm béo|Tín An|Tín Chí|Tín Hiến|Tín Hỉ|Tín Lương|Tín Mẫn|Tín Vũ|Tô Chị|Tô Hòa|Tô Trung|Tô Tuấn|Tướng|Tưởng Trung|Tạ Thu|Uyên|V K|V K yêu|V ba Định|VietPay|Vinh|Vinh Hao|Vinh Hào|Văn|Vĩ Chí|Vĩ Kiệt|Vũ Hải|Vũ Thảo Bình|Vương Chân|Vương Hạo|Vương Tường Nguyên|Xuyên Nhiên|Xuân Hưng|Xuân Thu|Xích Thành|Xảo Kiệt|Yên|Yên Cát Tường|Yên Mãn Lâm|Yên Nhi|Yên Tiểu Sương|Yến|anh Tài|anh tuấn|anh yêu|baby|bà cúc|bé Hằng|bé Thảo xin|bé heo|bạn cấp hai|bệnh viện|chăm sóc ngộ độc|chị Hai là số một|chị Vy Sơn La|chủ nhà|công an|cơ quan chức năng|cảnh sát|cấp cứu|cục nợ|cứu hỏa|dịch vụ chăm sóc ngộ độc|dịch vụ cứu thương|dịch vụ kiểm soát chất độc|dịch vụ kiểm soát chất độc quốc gia|dịch vụ y tế|dịch vụ y tế khẩn cấp|em Nam|em yêu|em yêu xinh gái|hotline phòng chống tự tử|học|irina|lily|lớp Pháp|ngọc hương|nhân viên y tế|nông trại gia đình|phòng cháy chữa cháy|quỳnh lan|quỳnh trang|sis|số khẩn cấp|số điện thoại đường dây nóng khẩn cấp|taylor morgan|thối|trung\\s+tâm\\s+(?:kiểm\\s+soát\\s+chất\\s+độc|phòng\\s+chống\\s+ngộ\\s+độc)|trung tâm chăm sóc ngộ độc|trung tâm chống độc|trung tâm cấp cứu ngộ độc|trung tâm kiểm soát chất độc|trung tâm kiểm soát chất độc quốc gia|trợ giúp|tùng|tùng kendy|tổng bộ vinhomes|tổng đài chống tự tử|vợ yêu xinh đẹp|xe cấp cứu|yên khùng|yên phương|ông già khó tính|Đinh Đinh|Đàm Tinh|Đường dây khẩn cấp AAPCC|Đường dây nóng AAPCC|Đường dây nóng dịch vụ kiểm soát chất độc|Đường dây nóng kiểm soát chất độc quốc gia|Đường dây trợ giúp khi bị ngộ độc|Đạt|đường dây chăm sóc ngộ độc|đường dây cấp cứu ngộ độc|đường dây dịch vụ kiểm soát chất độc|đường dây dịch vụ kiểm soát chất độc quốc gia|đường dây kiểm soát chất độc|đường dây nóng AAPCC|đường dây nóng chăm sóc người bị ngộ độc|đường dây nóng cấp cứu ngộ độc|đường dây nóng cấp cứu ngộ độc quốc gia|đường dây nóng dịch vụ kiểm soát chất độc|đường dây nóng dịch vụ kiểm soát chất độc quốc gia|đường dây nóng dịch vụ phòng chống ngộ độc|đường dây nóng hỗ trợ các trường hợp ngộ độc khẩn cấp|đường dây nóng hỗ trợ kiểm soát ngộ độc khẩn cấp|đường dây nóng hỗ trợ trường hợp ngộ độc|đường dây nóng khẩn cấp|đường dây nóng kiểm soát chất độc quốc gia|đường dây nóng kiểm soát ngộ độc khẩn cấp|đường dây nóng phòng chống chất độc|đường dây nóng phòng chống ngộ độc|đường dây nóng phòng chống tự tử|đường dây nóng về ngộ độc))(?:(?:\\s+liền|\\s+ngay|\\s+ngay\\s+lập\\s+tức|\\s+(?:ngay)?bây\\s+giờ))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "729def13-bb07-5256-9a29-14ea568cbb6d"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hey} {siri} {tôi cần} {bạn} (gọi|điện) {cho} (contact:emergencyServices) {{tôi cần} giúp đỡ}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:tôi\\s+cần\\s+)?(?:bạn\\s+)?(?:gọi|điện)\\s+(?:cho\\s+)?(?P<contact>(?P<contact__emergencyServices>AAPCC|Alec|Alisa|An tươi|Andy|Ba|Ba bông|Bá Hào|Bái Y|Bùi Tâm|Bảo Ngọc|Bắc Nhân|Cam|Chiêu Hành|Chiêu Long|Chu Gia Nho|Chu Lan Quân|Chu Trạch Lỵ|Chu Tử Côn|Chung Kiên|Châu Vũ|Chín Huệ|Chồng béo|Chồng thúi đáng yêu|Cung Kiện|Cung Linh|Cung Luyện|Cung Lương|Cung Phu|Cung Vũ|Cung Vỹ|Công|Cẩm Đào|Cụ Nội|Diệu|Dung|Dũng|Dương Sâm|Em trái tim|Gia Dung|Gia Hân|Gia Hòa|Gia Linh|Gia Lâm|Gia Nghi|Gia Nguyên|Gia Tuấn|Gia Tường|Giai Xuân|Giai Âm|Giang Tĩnh|Giá|Hiếu|Hiếu Hiền|Hoàng Nam Cường|Hoàng Phủ|Huy|Huyền|Hà Chí Hùng|Hà Duyệt Phi|Hà Học Minh|Hà Kim Bân|Hà Kiện Sinh|Hà Lâm|Hà Minh Nguyệt|Hà Phương|Hà Phồn Hương|Hà Quốc Hùng|Hà Tiểu Bình|Hà Trung|Hà Tín|Hà Tú Trinh|Hà Vĩ Tường|Hán Thanh|Hướng Chí Cường|Hướng Hiền|Hướng Hoa|Hướng Tinh|Hải|Hắc Hô|Hằng|Hằng Lê|Hồ Học Ý|Hồng|Hợp Hải|Hợp Minh|Hợp Vũ|Hứa Trâu|Jennifer|Jim|Kate|Kelly|Kevin|Kha Ho|Kha Huyên|Kha Nhi|Kha Phỉ|Kha Vĩ|Khang Hy|Khải Nhi|Khắc Hữu|Kim|Kim Minh|Kiên Hùng|Kiều Diễm|Kiều Kỳ|Kiều Linh|Kiều Nhi|Kiều Thuần|Kiều Vân|Kiện Dân|Kính Hòa|Kỳ Huy|Kỳ Kỳ|Kỳ Minh|Kỳ Nguyên|Kỳ Quyên|Lan|Lan Nhi|Linh|Lyly|Lâm Chí Thanh|Lâm Lộ|Lâm Nhi|Lôi|Lương Chí Thành|Lương Chính Vĩ|Lương Dục Kỳ|Lương Hân|Lương Học Nhẫn|Lương Hữu Kỳ|Lương Nghi Lâm|Lương Tiểu Phong|Lương Triết Thư|Lương Tĩnh Uyển|Lương Tử Hào|Lương Văn Thuần|Lương Vương Nhất Mĩ|Lệ Linh|Lệ Nguyên|Lệ Phi|Lục Mĩ Di|Lục Triệu Mỹ Phẩm|Lục Trần Thượng Mỹ|Lục Tuấn Kỳ|Lục Vũ Tuân|Mai|Mandy|Melissa|Meo meo|Minh Thái|Mạnh Tử|Nam Bá Thiên|Nga|Nguyên Nhung|Nguyễn Ngọc Linh|Nguyễn Thị Dung|Nguyễn Thị Như Thùy|Nguyệt|Nguyệt Tinh|Ngô Anh|Ngô Bình|Ngô Chiếu Lâm|Ngô Chí Anh|Ngô Chấn Lâm|Ngô Hiếu Xuân|Ngô Hoa|Ngô Huệ Hiền|Ngô Hà|Ngô Hào Thiên|Ngô Học Tinh|Ngô Liên|Ngô Mạn|Ngô Mạn Hân|Ngô Mộng Tuyền|Ngô Nghiệp Huệ|Ngô Phong|Ngô Phương|Ngô Phương Lâm|Ngô Phương Quân|Ngô Thi Trân|Ngô Thiếu Hoa|Ngô Thư Lâm|Ngô Thượng Thành|Ngô Thượng Xuyên|Ngô Thục Nghi|Ngô Thừa|Ngô Thừa Nguyên|Ngô Tiểu Hân|Ngô Tiểu Mạn|Ngô Tiểu Ý|Ngô Trung|Ngô Trần Trường Sơn|Ngô Tường|Ngô Á Lợi|Ngô Á Phượng|Ngô Ích Tuấn|Ngô Đông Nhiên|Ngọc|Ngọc Anh|Ngọc Lan|Nhan Vân Dương|Nhi Nguyễn|Nhi điên|Nhiên Nhiên|Nhung|Nhà Trắng|Nhân Trần|Nicole|Paul|Phan Elly|Phong|Phùng Ngọc Dung|Phúc Thành|Phúc Thành Schanel|Phương|Phương Khanh|Phương Quyên|Phương Vũ|Phạm Nhàn|Phạm Như|Phạm Thật|Phạm Thị Nga|Phạm Xín|Quang|Quang Anh|Quy|Quyên|Quốc Hoa|Quốc Tường|Quốc Vỹ|Quỳnh Anh|Sakura|Sek|Soạn|Steve|Thanh|Thiện Hiền|Thiện Kiệt|Thiện Trân|Thiện như|Thiệu Hưng|Thành Cảnh|Thư Huệ|Thư Lâm|Thư Minh|Thư Ngải|Thư Từ Triết Hân|Thư Uyên|Thảo|Thất tín|Thắng Hiền|Thế Hiền|Thế Vỹ|Thị|Tiến|Trang|Trinh|Trí Kiệt|Trí Nguyên|Trí Tuấn|Trí Vĩ|Trí Vũ|Trí huệ|Trường|Trần Huệ Nghi|Trần Học Cường|Trần Nhung|Trần Sáng|Trần Tiểu Cường|Trịnh Chính|Trịnh Minh|Trịnh Mẫn|Trịnh Nghiệp|Trịnh Thành|Trịnh Tường|Trịnh Đức Hào|Trịnh Đức Thắng|Trọng Quý|Trợ giúp AAPCC|Tuấn|Tào Chi|Tâm|Tâm Nguyễn|Tâm beo|Tâm béo|Tín An|Tín Chí|Tín Hiến|Tín Hỉ|Tín Lương|Tín Mẫn|Tín Vũ|Tô Chị|Tô Hòa|Tô Trung|Tô Tuấn|Tướng|Tưởng Trung|Tạ Thu|Uyên|V K|V K yêu|V ba Định|VietPay|Vinh|Vinh Hao|Vinh Hào|Văn|Vĩ Chí|Vĩ Kiệt|Vũ Hải|Vũ Thảo Bình|Vương Chân|Vương Hạo|Vương Tường Nguyên|Xuyên Nhiên|Xuân Hưng|Xuân Thu|Xích Thành|Xảo Kiệt|Yên|Yên Cát Tường|Yên Mãn Lâm|Yên Nhi|Yên Tiểu Sương|Yến|anh Tài|anh tuấn|anh yêu|baby|bà cúc|bé Hằng|bé Thảo xin|bé heo|bạn cấp hai|bệnh viện|chăm sóc ngộ độc|chị Hai là số một|chị Vy Sơn La|chủ nhà|công an|cơ quan chức năng|cảnh sát|cấp cứu|cục nợ|cứu hỏa|dịch vụ chăm sóc ngộ độc|dịch vụ cứu thương|dịch vụ kiểm soát chất độc|dịch vụ kiểm soát chất độc quốc gia|dịch vụ y tế|dịch vụ y tế khẩn cấp|em Nam|em yêu|em yêu xinh gái|hotline phòng chống tự tử|học|irina|lily|lớp Pháp|ngọc hương|nhân viên y tế|nông trại gia đình|phòng cháy chữa cháy|quỳnh lan|quỳnh trang|sis|số khẩn cấp|số điện thoại đường dây nóng khẩn cấp|taylor morgan|thối|trung\\s+tâm\\s+(?:kiểm\\s+soát\\s+chất\\s+độc|phòng\\s+chống\\s+ngộ\\s+độc)|trung tâm chăm sóc ngộ độc|trung tâm chống độc|trung tâm cấp cứu ngộ độc|trung tâm kiểm soát chất độc|trung tâm kiểm soát chất độc quốc gia|trợ giúp|tùng|tùng kendy|tổng bộ vinhomes|tổng đài chống tự tử|vợ yêu xinh đẹp|xe cấp cứu|yên khùng|yên phương|ông già khó tính|Đinh Đinh|Đàm Tinh|Đường dây khẩn cấp AAPCC|Đường dây nóng AAPCC|Đường dây nóng dịch vụ kiểm soát chất độc|Đường dây nóng kiểm soát chất độc quốc gia|Đường dây trợ giúp khi bị ngộ độc|Đạt|đường dây chăm sóc ngộ độc|đường dây cấp cứu ngộ độc|đường dây dịch vụ kiểm soát chất độc|đường dây dịch vụ kiểm soát chất độc quốc gia|đường dây kiểm soát chất độc|đường dây nóng AAPCC|đường dây nóng chăm sóc người bị ngộ độc|đường dây nóng cấp cứu ngộ độc|đường dây nóng cấp cứu ngộ độc quốc gia|đường dây nóng dịch vụ kiểm soát chất độc|đường dây nóng dịch vụ kiểm soát chất độc quốc gia|đường dây nóng dịch vụ phòng chống ngộ độc|đường dây nóng hỗ trợ các trường hợp ngộ độc khẩn cấp|đường dây nóng hỗ trợ kiểm soát ngộ độc khẩn cấp|đường dây nóng hỗ trợ trường hợp ngộ độc|đường dây nóng khẩn cấp|đường dây nóng kiểm soát chất độc quốc gia|đường dây nóng kiểm soát ngộ độc khẩn cấp|đường dây nóng phòng chống chất độc|đường dây nóng phòng chống ngộ độc|đường dây nóng phòng chống tự tử|đường dây nóng về ngộ độc))(?:\\s+(?:tôi\\s+cần\\s+)?giúp\\s+đỡ)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d75dcd3e-c017-5f48-bfa3-91022e2ae750"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser"
+      },
+      "pattern" : "{hey} {siri} {gọi} (contact:emergency_contact_parser) {của tôi|của chúng tôi} làm ơn",
+      "priority" : 36,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:gọi\\s+)?(?P<contact>(?P<contact__emergency_contact_parser>liên hệ khẩn cấp))\\s+(?:(?:của\\s+tôi|của\\s+chúng\\s+tôi)\\s+)?làm\\s+ơn$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "0b28f862-76c9-518c-8670-d6896d80b674"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser"
+      },
+      "pattern" : "{hey} {siri} {làm ơn} {gọi} (contact:emergency_contact_parser) {của tôi|của chúng tôi}",
+      "priority" : 35,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:làm\\s+ơn\\s+)?(?:gọi\\s+)?(?P<contact>(?P<contact__emergency_contact_parser>liên hệ khẩn cấp))(?:\\s+(?:của\\s+tôi|của\\s+chúng\\s+tôi))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a739d1c7-0739-552d-8d16-14a6c304dbf2"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} {làm ơn} gọi (contact:*{1,3}) {bằng|với|dùng|qua} loa ngoài",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:làm\\s+ơn\\s+)?gọi\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+(?:(?:bằng|với|dùng|qua)\\s+)?loa\\s+ngoài$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "55f7f69c-d00a-54a3-86b3-4f179c550f7c"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser"
+      },
+      "pattern" : "{hey} {siri} {làm ơn} gọi (contact:emergency_contact_parser) (của tôi|của chúng tôi) {bằng|với|dùng|qua} loa ngoài",
+      "priority" : 35,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:làm\\s+ơn\\s+)?gọi\\s+(?P<contact>(?P<contact__emergency_contact_parser>liên hệ khẩn cấp))\\s+(?:của\\s+tôi|của\\s+chúng\\s+tôi)\\s+(?:(?:bằng|với|dùng|qua)\\s+)?loa\\s+ngoài$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "5a108daf-bed1-5954-9f95-2621cef4d875"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} mấy giờ {rồi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?mấy\\s+giờ(?:\\s+rồi)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "195fda05-05c9-584c-b55f-bb72243107c9"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bây giờ|hiện giờ|hiện|hiện tại|giờ} (là (mấy|bao nhiêu) giờ {tại đây|ở đây}|{ở đây} là (mấy|bao nhiêu) giờ) {rồi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:bây\\s+giờ|hiện\\s+giờ|hiện|hiện\\s+tại|giờ)\\s+)?(?:là\\s+(?:mấy|bao\\s+nhiêu)\\s+giờ(?:\\s+(?:tại\\s+đây|ở\\s+đây))?|(?:ở\\s+đây\\s+)?là\\s+(?:mấy|bao\\s+nhiêu)\\s+giờ)(?:\\s+rồi)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6da305eb-a6b0-5960-a120-1a1c1f7a2d60"
+    },
+    {
+      "action" : "call_911",
+      "context_free" : true,
+      "metadata" : {
+        "emergency_number" : "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser" : "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser" : "locale_emergency_number_parser",
+        "number" : "emergency_number_parser"
+      },
+      "pattern" : "{hey} {siri} (tôi muốn|làm ơn|xin hãy) {gọi} {số} (number:emergency_number_parser) {giúp tôi|đi}",
+      "priority" : 10,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:tôi\\s+muốn|làm\\s+ơn|xin\\s+hãy)\\s+(?:gọi\\s+)?(?:số\\s+)?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>113|114|115))))(?:\\s+(?:giúp\\s+tôi|đi))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid" : "d1946725-3119-53bf-b33f-ee39d4ac4413"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} {gọi} facetime {số} (contact:*{1,5}) {đi|liền|{ngay} lập tức|cho tôi|giúp tôi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:gọi\\s+)?facetime\\s+(?:số\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})(?:(?:\\s+đi|\\s+liền|\\s+(?:ngay\\s+)?lập\\s+tức|\\s+cho\\s+tôi|\\s+giúp\\s+tôi))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "1fe1a5b2-3502-54e7-bb5c-e235bde203d5"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} {gọi} {số} (contact:*{1,5}) (bằng|qua) facetime {đi|liền|{ngay} lập tức|cho tôi|giúp tôi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:gọi\\s+)?(?:số\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+(?:bằng|qua)\\s+facetime(?:(?:\\s+đi|\\s+liền|\\s+(?:ngay\\s+)?lập\\s+tức|\\s+cho\\s+tôi|\\s+giúp\\s+tôi))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "21f9d707-2d2c-5085-843b-afb70f743492"
+    },
+    {
+      "action" : "facetime_audio_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} {làm ơn} {gọi} facetime (contact:*{1,3}) {bằng|với|dùng|qua} loa ngoài {đi|liền|{ngay} lập tức|cho tôi|giúp tôi}",
+      "priority" : 40,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:làm\\s+ơn\\s+)?(?:gọi\\s+)?facetime\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+(?:(?:bằng|với|dùng|qua)\\s+)?loa\\s+ngoài(?:(?:\\s+đi|\\s+liền|\\s+(?:ngay\\s+)?lập\\s+tức|\\s+cho\\s+tôi|\\s+giúp\\s+tôi))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "74ffb183-5811-518a-93d2-0aae25fe51d6"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='home_device_control')",
+      "context_free" : false,
+      "metadata" : {
+        "homeAutomation" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} (homeAutomation:*{1,5})",
+      "priority" : 55,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<homeAutomation>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels" : {
+        "homeAutomation" : [
+          "homeAutomationScene"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3406d813-6d0e-5a8a-a43b-16a9e6268e66"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "thing" : "wildcard{1..*10}"
+      },
+      "pattern" : "{hey} {siri} (chó|mèo) có thể ăn (thing:*{1,10}) {được không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:chó|mèo)\\s+có\\s+thể\\s+ăn\\s+(?P<thing>[^\\s]+(?:\\s+[^\\s]+){0,9})(?:\\s+được\\s+không)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6a20bb41-982c-5e88-882b-4cf255199293"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "unit" : "wildcard{1..*3}",
+        "unit2" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} có bao nhiêu (unit:*{1,3}) là (unit2:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?có\\s+bao\\s+nhiêu\\s+(?P<unit>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+là\\s+(?P<unit2>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "decd0520-dae1-5d78-a783-fd7dc845474d"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} hôm nay trời có mưa không",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?hôm\\s+nay\\s+trời\\s+có\\s+mưa\\s+không$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "df223f1a-db45-5303-8312-222a0cc6e13f"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "team" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} khi nào là trận đấu của {đội} (team:*{1,5}) hôm nay",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?khi\\s+nào\\s+là\\s+trận\\s+đấu\\s+của\\s+(?:đội\\s+)?(?P<team>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+hôm\\s+nay$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "955d8ee7-6726-5d1e-b3f3-96e6924c8d33"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "place" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hey} {siri} khi nào {thì} (place:*{1,3}) (mở|đóng) {cửa}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?khi\\s+nào\\s+(?:thì\\s+)?(?P<place>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+(?:mở|đóng)(?:\\s+cửa)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c91a5607-c378-5980-ba35-332098c49802"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} thời tiết hôm nay thế nào",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?thời\\s+tiết\\s+hôm\\s+nay\\s+thế\\s+nào$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "be5c063c-4e88-59ab-a9ba-cceb05b48967"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "team" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hey} {siri} tỷ số của {đội} (team:*{1,5}) hôm nay là bao nhiêu",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tỷ\\s+số\\s+của\\s+(?:đội\\s+)?(?P<team>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+hôm\\s+nay\\s+là\\s+bao\\s+nhiêu$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "2e493d89-ba09-5c60-ae47-2184b6bb21e9"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "word" : "wildcard{1..*1}"
+      },
+      "pattern" : "{hey} {siri} {làm sao|chỉ tôi} {cách} đánh vần {từ} (word:*{1,1})",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:làm\\s+sao|chỉ\\s+tôi)\\s+)?(?:cách\\s+)?đánh\\s+vần\\s+(?:từ\\s+)?(?P<word>[^\\s]+)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f454ed58-ef07-53f6-9812-0e2c74660986"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (bỏ qua|qua|cho qua|skip|bỏ|chuyển) (bài hát|bài nhạc|nhạc|bài) {này} {cho tôi} {đi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bỏ\\s+qua|qua|cho\\s+qua|skip|bỏ|chuyển)\\s+(?:bài\\s+hát|bài\\s+nhạc|nhạc|bài)(?:\\s+này)?(?:\\s+cho\\s+tôi)?(?:\\s+đi)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b3f18132-72f5-55e9-a3cb-ff5db67dcb70"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (chuyển|phát|chạy|chơi|đi đến|mở|đổi|sang|chuyển sang) {bài} nhạc (sau|kế tiếp|tiếp theo|kế|khác) {cho tôi nghe} {đi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:chuyển|phát|chạy|chơi|đi\\s+đến|mở|đổi|sang|chuyển\\s+sang)\\s+(?:bài\\s+)?nhạc\\s+(?:sau|kế\\s+tiếp|tiếp\\s+theo|kế|khác)(?:\\s+cho\\s+tôi\\s+nghe)?(?:\\s+đi)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "29a2c6ad-5c75-56c7-ae2d-e552d6fed294"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (phát|chơi) nhạc",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:phát|chơi)\\s+nhạc$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "cc0d7dd0-fff9-5ca5-9fc7-f3f3493f3c95"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} dừng phát nhạc",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?dừng\\s+phát\\s+nhạc$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "da8a38f9-beca-573a-bb87-4176f5705032"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} tiếp tục (mở nhạc|nhạc|nghe nhạc|phát nhạc|hát|chơi nhạc|bật nhạc) {này} {giúp tôi|cho tôi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tiếp\\s+tục\\s+(?:mở\\s+nhạc|nhạc|nghe\\s+nhạc|phát\\s+nhạc|hát|chơi\\s+nhạc|bật\\s+nhạc)(?:\\s+này)?(?:\\s+(?:giúp\\s+tôi|cho\\s+tôi))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c02301ca-bbeb-5734-840c-d7d584a22e0b"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} tiếp tục bài hát {giúp tôi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tiếp\\s+tục\\s+bài\\s+hát(?:\\s+giúp\\s+tôi)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "2fe32b3c-fce4-53db-b521-998fcb7f8551"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} tiếp tục phát nhạc",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tiếp\\s+tục\\s+phát\\s+nhạc$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "cbc33645-4cb5-58fb-98dd-287e895547e4"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} tạm (ngưng|ngừng|dừng) nhạc {này} {lại} {cho tôi|giúp tôi|đi} {được không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tạm\\s+(?:ngưng|ngừng|dừng)\\s+nhạc(?:\\s+này)?(?:\\s+lại)?(?:\\s+(?:cho\\s+tôi|giúp\\s+tôi|đi))?(?:\\s+được\\s+không)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9c3ee448-5595-5d9e-8c5d-a848f5b813b9"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {mở|phát|chơi} (bài hát|bài) tiếp (sau|theo) {đó}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:mở|phát|chơi)\\s+)?(?:bài\\s+hát|bài)\\s+tiếp\\s+(?:sau|theo)(?:\\s+đó)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "01b42727-c2f3-5393-9c72-092540d908a0"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {{cho tôi} nghe} (bài nhạc|nhạc|bài|bài hát) (kế|kế tiếp|tiếp theo|tiếp|sau|khác)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:cho\\s+tôi\\s+)?nghe\\s+)?(?:bài\\s+nhạc|nhạc|bài|bài\\s+hát)\\s+(?:kế|kế\\s+tiếp|tiếp\\s+theo|tiếp|sau|khác)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "803c802b-28a1-53c6-afda-f883857532d8"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} đổi (bài|bài hát|nhạc|bài nhạc)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?đổi\\s+(?:bài|bài\\s+hát|nhạc|bài\\s+nhạc)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ef43de23-314a-5f4b-89a9-442eef49a300"
+    },
+    {
+      "action" : "search_and_read(query='messages', entity_types='MessageEntity')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {đọc} tin nhắn",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:đọc\\s+)?tin\\s+nhắn$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "206d620c-e6c6-5d6d-acdf-244d7ec5d309"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hey} {siri} (giảm|giảm nhỏ|hạ|làm nhỏ|làm giảm|bật nhỏ|bé) (s:volume_settings) {lại|xuống} {hơn một chút|hơn|hơn nữa|thêm nữa|nữa} {giúp tôi} {được không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:giảm|giảm\\s+nhỏ|hạ|làm\\s+nhỏ|làm\\s+giảm|bật\\s+nhỏ|bé)\\s+(?P<s>(?P<s__volume_settings>khử tiếng ồn|nhạc|âm lượng|âm thanh|điều khiển bằng giọng nói))(?:\\s+(?:lại|xuống))?(?:\\s+(?:hơn\\s+một\\s+chút|hơn|hơn\\s+nữa|thêm\\s+nữa|nữa))?(?:\\s+giúp\\s+tôi)?(?:\\s+được\\s+không)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "c5c9b7f9-187f-5a0e-93e1-093769533d45"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "of" : "on_off",
+        "of__on_off" : "on_off",
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hey} {siri} (of:on_off) (s:connection_settings) {đi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<of>(?P<of__on_off>bật|tắt))\\s+(?P<s>(?P<s__connection_settings>VPN|bluetooth|dữ liệu di động|hotspot|wi-fi|wifi))(?:\\s+đi)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ebb217ec-fbde-59f0-a3f0-ffcbc3e46df0"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "of" : "on_off",
+        "of__on_off" : "on_off",
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hey} {siri} (of:on_off) (s:flashlight_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<of>(?P<of__on_off>bật|tắt))\\s+(?P<s>(?P<s__flashlight_settings>flash|flashlight|ánh sáng|đèn flash|đèn pin))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "32d84748-dcd5-504c-a1f3-9493748287e4"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "of" : "on_off",
+        "of__on_off" : "on_off",
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hey} {siri} (of:on_off) (s:mode_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<of>(?P<of__on_off>bật|tắt))\\s+(?P<s>(?P<s__mode_settings>chế độ ban đêm|chế độ máy bay|chế độ tiết kiệm pin|chế độ tối|không làm phiền))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ea1c7975-5d6c-5664-a6ae-e88640488267"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hey} {siri} (s:connection_settings) {đi|giúp tôi {với}}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<s>(?P<s__connection_settings>VPN|bluetooth|dữ liệu di động|hotspot|wi-fi|wifi))(?:(?:\\s+đi|\\s+giúp\\s+tôi(?:\\s+với)?))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f3f09097-ae1a-51f0-9cc4-b5f81c5ef2a2"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hey} {siri} (s:flashlight_settings) {đi|giúp tôi {với}}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<s>(?P<s__flashlight_settings>flash|flashlight|ánh sáng|đèn flash|đèn pin))(?:(?:\\s+đi|\\s+giúp\\s+tôi(?:\\s+với)?))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7fd0eafe-aa94-5fc8-b1ce-355a70119f7a"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hey} {siri} (s:mode_settings) {đi|giúp tôi {với}}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<s>(?P<s__mode_settings>chế độ ban đêm|chế độ máy bay|chế độ tiết kiệm pin|chế độ tối|không làm phiền))(?:(?:\\s+đi|\\s+giúp\\s+tôi(?:\\s+với)?))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "83f0f087-4df3-5c01-b649-3515145060ba"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "ud" : "up_down",
+        "ud__up_down" : "up_down"
+      },
+      "pattern" : "{hey} {siri} (ud:up_down) âm lượng",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<ud>(?P<ud__up_down>giảm|tăng))\\s+âm\\s+lượng$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "ecd51067-7967-50a5-83fb-0ca048c29e29"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hey} {siri} {bạn có thể|làm ơn|tôi muốn} (tắt|làm im|im|ngừng|dừng|(ngắt|tắt) kết nối {với}) (s:connection_settings) {của tôi} {đi|liền|ngay lập tức} {không|được không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:bạn\\s+có\\s+thể|làm\\s+ơn|tôi\\s+muốn)\\s+)?(?:tắt|làm\\s+im|im|ngừng|dừng|(?:ngắt|tắt)\\s+kết\\s+nối(?:\\s+với)?)\\s+(?P<s>(?P<s__connection_settings>VPN|bluetooth|dữ liệu di động|hotspot|wi-fi|wifi))(?:\\s+của\\s+tôi)?(?:\\s+(?:đi|liền|ngay\\s+lập\\s+tức))?(?:\\s+(?:không|được\\s+không))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4f4c5aca-af03-53cb-b3a7-2657af16d693"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hey} {siri} {bạn có thể|làm ơn|tôi muốn} (tắt|làm im|im|ngừng|dừng|(ngắt|tắt) kết nối {với}) (s:flashlight_settings) {của tôi} {đi|liền|ngay lập tức} {không|được không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:bạn\\s+có\\s+thể|làm\\s+ơn|tôi\\s+muốn)\\s+)?(?:tắt|làm\\s+im|im|ngừng|dừng|(?:ngắt|tắt)\\s+kết\\s+nối(?:\\s+với)?)\\s+(?P<s>(?P<s__flashlight_settings>flash|flashlight|ánh sáng|đèn flash|đèn pin))(?:\\s+của\\s+tôi)?(?:\\s+(?:đi|liền|ngay\\s+lập\\s+tức))?(?:\\s+(?:không|được\\s+không))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "838800b0-d747-5bd0-8a14-d63d670cf829"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hey} {siri} {bạn có thể|tôi muốn} (bật|{bật} kết nối|kích hoạt) {với|với lại} (s:connection_settings) {của tôi} {lên} {đi|giúp tôi} {không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:bạn\\s+có\\s+thể|tôi\\s+muốn)\\s+)?(?:bật|(?:bật\\s+)?kết\\s+nối|kích\\s+hoạt)\\s+(?:(?:với|với\\s+lại)\\s+)?(?P<s>(?P<s__connection_settings>VPN|bluetooth|dữ liệu di động|hotspot|wi-fi|wifi))(?:\\s+của\\s+tôi)?(?:\\s+lên)?(?:\\s+(?:đi|giúp\\s+tôi))?(?:\\s+không)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "147516e0-c508-56d3-a50f-846951a1ad24"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hey} {siri} {bạn có thể|tôi muốn} (bật|{bật} kết nối|kích hoạt) {với|với lại} (s:flashlight_settings) {của tôi} {lên} {đi|giúp tôi} {không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:bạn\\s+có\\s+thể|tôi\\s+muốn)\\s+)?(?:bật|(?:bật\\s+)?kết\\s+nối|kích\\s+hoạt)\\s+(?:(?:với|với\\s+lại)\\s+)?(?P<s>(?P<s__flashlight_settings>flash|flashlight|ánh sáng|đèn flash|đèn pin))(?:\\s+của\\s+tôi)?(?:\\s+lên)?(?:\\s+(?:đi|giúp\\s+tôi))?(?:\\s+không)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "03569e71-01f9-504a-a72e-d441bb337891"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "quieter" : "quieter_1",
+        "quieter__quieter_1" : "quieter_1",
+        "volume" : "volume",
+        "volume__volume" : "volume"
+      },
+      "pattern" : "{hey} {siri} {(làm|vặn)} (quieter:quieter_1) (volume:volume)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:làm|vặn)\\s+)?(?P<quieter>(?P<quieter__quieter_1>nhạc))\\s+(?P<volume>(?P<volume__volume>bé đi|nhỏ hơn|nhỏ lại|nhỏ xuống|nhỏ đi))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6e348fbc-a736-528c-8ae5-6e63344f7f2c"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bạn có thể|làm ơn|tôi cần} (khởi động lại|tắt nguồn) {được không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:bạn\\s+có\\s+thể|làm\\s+ơn|tôi\\s+cần)\\s+)?(?:khởi\\s+động\\s+lại|tắt\\s+nguồn)(?:\\s+được\\s+không)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "ec01fbee-4ab5-5ac8-b4e9-60d7800513eb"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} {bạn có thể} chụp {ảnh|lại} màn hình {không}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:bạn\\s+có\\s+thể\\s+)?chụp\\s+(?:(?:ảnh|lại)\\s+)?màn\\s+hình(?:\\s+không)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b975cc76-701a-58ab-81a1-6ac7c1cce148"
+    },
+    {
+      "action" : "handoff-to-siri-x",
+      "context_free" : true,
+      "metadata" : {
+        "userShortcut" : "wildcard{1..*10}"
+      },
+      "pattern" : "{hey} {siri} (userShortcut:*{1,10})",
+      "priority" : 1,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?P<userShortcut>[^\\s]+(?:\\s+[^\\s]+){0,9})$",
+      "required_labels" : {
+        "userShortcut" : [
+          "userDefinedShortcut"
+        ]
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b782180d-65e1-569c-beef-212ad3b2daf4"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "(duration:duration) {tiếng} (hẹn giờ|đếm ngược)",
+      "priority" : 50,
+      "regex" : "^(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>giờ|h|một giờ|vài giờ))\\s+)?(?:và\\s+)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>một phút|ph|phút|vài phút))\\s+)?(?:và\\s+)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_s>(?P<unit_s__second_parser>giây|một giây|s|vài giây))\\s+)?)(?:tiếng\\s+)?(?:hẹn\\s+giờ|đếm\\s+ngược)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "711464f0-8eed-5c44-8cf6-26190edd0b3d"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "(hẹn|hẹn tôi) (duration:duration) {nữa}",
+      "priority" : 50,
+      "regex" : "^(?:hẹn|hẹn\\s+tôi)(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>giờ|h|một giờ|vài giờ)))?(?:\\s+và)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>một phút|ph|phút|vài phút)))?(?:\\s+và)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_s>(?P<unit_s__second_parser>giây|một giây|s|vài giây)))?)(?:\\s+nữa)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "e0c48523-d3af-5528-b9a7-561a8b58e48b"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} ((huỷ|hủy) bỏ|(huỷ|hủy)|tắt|ngắt|bỏ|dừng|kết thúc|xóa) (tất cả|mọi|hết) {các} {đồng hồ|bộ} (hẹn (thời gian|giờ)|(đếm|bấm) ngược thời gian|(đếm|bấm) ngược giờ|(đếm|bấm) ngược|đếm giờ|hẹn giờ) {của tôi} {đi|lại} {được không {vậy}}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:(?:huỷ|hủy)\\s+bỏ|(?:huỷ|hủy)|tắt|ngắt|bỏ|dừng|kết\\s+thúc|xóa)\\s+(?:tất\\s+cả|mọi|hết)\\s+(?:các\\s+)?(?:(?:đồng\\s+hồ|bộ)\\s+)?(?:hẹn\\s+(?:thời\\s+gian|giờ)|(?:đếm|bấm)\\s+ngược\\s+thời\\s+gian|(?:đếm|bấm)\\s+ngược\\s+giờ|(?:đếm|bấm)\\s+ngược|đếm\\s+giờ|hẹn\\s+giờ)(?:\\s+của\\s+tôi)?(?:\\s+(?:đi|lại))?(?:\\s+được\\s+không(?:\\s+vậy)?)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "01ec09d1-a8b2-5d57-8169-d10279a8ba02"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (dừng|kết thúc) (tất cả|mọi|hết) {các} đếm ngược",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:dừng|kết\\s+thúc)\\s+(?:tất\\s+cả|mọi|hết)\\s+(?:các\\s+)?đếm\\s+ngược$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b54c83aa-66ca-5cc4-a841-8f360a9c2871"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (tất cả|mọi|hết) {các} bộ (đếm giờ|hẹn giờ) cần được (tắt|dừng|hủy|kết thúc|xóa)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:tất\\s+cả|mọi|hết)\\s+(?:các\\s+)?bộ\\s+(?:đếm\\s+giờ|hẹn\\s+giờ)\\s+cần\\s+được\\s+(?:tắt|dừng|hủy|kết\\s+thúc|xóa)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "05bdf193-743d-5312-bd5c-c2c8e8de936d"
+    },
+    {
+      "action" : "stop_timers(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} (tắt|hủy bỏ|hủy|dừng|ngừng|ngưng) {hoàn toàn} {đồng hồ} (hẹn giờ|đếm ngược) {của tôi} {đi|lại}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:tắt|hủy\\s+bỏ|hủy|dừng|ngừng|ngưng)\\s+(?:hoàn\\s+toàn\\s+)?(?:đồng\\s+hồ\\s+)?(?:hẹn\\s+giờ|đếm\\s+ngược)(?:\\s+của\\s+tôi)?(?:\\s+(?:đi|lại))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "31a5a702-b733-5ebf-9c8a-1eb41920e26f"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hey} {siri} (đặt|tạo|thiết lập|cài|cài đặt) {một {cái}} {đồng hồ} (hẹn giờ|đếm ngược) {kêu|báo|chạy} {cho|vào|vào lúc|lúc|tại} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?(?:đặt|tạo|thiết\\s+lập|cài|cài\\s+đặt)\\s+(?:một(?:\\s+cái)?\\s+)?(?:đồng\\s+hồ\\s+)?(?:hẹn\\s+giờ|đếm\\s+ngược)(?:\\s+(?:kêu|báo|chạy))?(?:\\s+(?:cho|vào|vào\\s+lúc|lúc|tại))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>giờ|giờ đúng)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>sáng)|(?P<am_pm__time_of_day_parser__pm>chiều|tối))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "c3006796-9630-58f1-98a4-ffdfac967ae3"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} bạn có thể (tắt|dừng|hủy|kết thúc|xóa) (tất cả|mọi|hết) {các} bộ (đếm giờ|hẹn giờ) {của tôi} không",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?bạn\\s+có\\s+thể\\s+(?:tắt|dừng|hủy|kết\\s+thúc|xóa)\\s+(?:tất\\s+cả|mọi|hết)\\s+(?:các\\s+)?bộ\\s+(?:đếm\\s+giờ|hẹn\\s+giờ)\\s+(?:của\\s+tôi\\s+)?không$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "4ee91e7f-573e-5e6c-81d1-a7c21c25f65b"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hey} {siri} tôi muốn (tắt|dừng|hủy|kết thúc|xóa) (tất cả|mọi|hết) {các} bộ (đếm giờ|hẹn giờ) {của tôi}",
+      "priority" : 50,
+      "regex" : "^(?:hey\\s+)?(?:siri\\s+)?tôi\\s+muốn\\s+(?:tắt|dừng|hủy|kết\\s+thúc|xóa)\\s+(?:tất\\s+cả|mọi|hết)\\s+(?:các\\s+)?bộ\\s+(?:đếm\\s+giờ|hẹn\\s+giờ)(?:\\s+của\\s+tôi)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "060ff650-4ba2-505d-9d8e-77151a64126e"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{đồng hồ} (hẹn giờ|đếm ngược|bấm ngược) {trong} (duration:duration) {giúp tôi}",
+      "priority" : 50,
+      "regex" : "^(?:đồng\\s+hồ\\s+)?(?:hẹn\\s+giờ|đếm\\s+ngược|bấm\\s+ngược)(?:\\s+trong)?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>giờ|h|một giờ|vài giờ)))?(?:\\s+và)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>một phút|ph|phút|vài phút)))?(?:\\s+và)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>ba|bảy|bốn|chín|hai|không|mười|một|năm|sáu|tám)))\\s+(?P<unit_s>(?P<unit_s__second_parser>giây|một giây|s|vài giây)))?)(?:\\s+giúp\\s+tôi)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "8d003ad4-c72c-5adb-9e1c-cf1f16464380"
+    }
+  ],
+  "version" : "5500000.22501.0"
+}

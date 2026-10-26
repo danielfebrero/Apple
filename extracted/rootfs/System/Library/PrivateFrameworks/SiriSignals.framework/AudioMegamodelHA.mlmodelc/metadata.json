@@ -1,0 +1,105 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "v0000",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "disambiguation_mask",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "hp_app_confidence",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "logging",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float32",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 5,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "11.0",
+      "tvOS" : "14.0",
+      "visionOS" : "1.0",
+      "watchOS" : "7.0",
+      "iOS" : "14.0",
+      "macCatalyst" : "14.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "23... × 1...",
+        "shapeRange" : "[[23, -1], [1, -1]]",
+        "formattedType" : "MultiArray (Float32 23 × 1)",
+        "type" : "MultiArray",
+        "shape" : "[23, 1]",
+        "name" : "inputs",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "5.2.3",
+      "mldb_token" : "mldb-rxg5j27ao8",
+      "com.github.apple.coremltools.source" : "torch==1.11.0"
+    },
+    "generatedClassName" : "AudioMegamodelHA",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Transpose" : 3,
+      "Ceil" : 30,
+      "ReduceMax" : 3,
+      "Squeeze" : 8,
+      "AddBroadcastable" : 8,
+      "Multiply" : 81,
+      "Gather" : 4,
+      "ConcatND" : 4,
+      "GreaterThan" : 44,
+      "SliceStatic" : 27,
+      "Add" : 30,
+      "WhereBroadcastable" : 33,
+      "BatchedMatmul" : 4,
+      "LoadConstantND" : 59,
+      "ExpandDims" : 24,
+      "CumSum" : 8,
+      "ReshapeStatic" : 3,
+      "Equal" : 17,
+      "LessThan" : 2,
+      "MultiplyBroadcastable" : 4,
+      "ReduceSum" : 14,
+      "Floor" : 30,
+      "ActivationLinear" : 13
+    },
+    "method" : "predict"
+  }
+]

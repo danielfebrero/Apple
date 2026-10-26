@@ -1,0 +1,140 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "bolt-taskid: mqvgm86gts iteration: 270842",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 1 × 108)",
+        "shortDescription": "",
+        "shape": "[1, 1, 1, 108]",
+        "name": "y",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 1 × 256)",
+        "shortDescription": "",
+        "shape": "[1, 1, 1, 256]",
+        "name": "new_decoder_state_h",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 1 × 256)",
+        "shortDescription": "",
+        "shape": "[1, 1, 1, 256]",
+        "name": "new_decoder_state_c",
+        "type": "MultiArray"
+      }
+    ],
+    "storagePrecision": "Float32",
+    "modelParameters": [],
+    "author": "corerecognition",
+    "specificationVersion": 4,
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "10.15",
+      "tvOS": "13.0",
+      "visionOS": "1.0",
+      "watchOS": "6.0",
+      "iOS": "13.0",
+      "macCatalyst": "13.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 1 × 108)",
+        "shortDescription": "",
+        "shape": "[1, 1, 1, 108]",
+        "name": "y_prev",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 1 × 256)",
+        "shortDescription": "",
+        "shape": "[1, 1, 1, 256]",
+        "name": "decoder_state_h",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 1 × 256)",
+        "shortDescription": "",
+        "shape": "[1, 1, 1, 256]",
+        "name": "decoder_state_c",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 512 × 256)",
+        "shortDescription": "",
+        "shape": "[1, 1, 512, 256]",
+        "name": "encoded_regions_projected",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 512 × 32)",
+        "shortDescription": "",
+        "shape": "[1, 1, 512, 32]",
+        "name": "encoded_regions",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 1 × 512)",
+        "shortDescription": "",
+        "shape": "[1, 1, 1, 512]",
+        "name": "mask",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "6.3.0",
+      "com.github.apple.coremltools.source": "torch==1.12.1"
+    },
+    "generatedClassName": "tsr_decoder",
+    "neuralNetworkLayerTypeHistogram": {
+      "DivideBroadcastable": 1,
+      "UnaryExp": 1,
+      "InnerProduct": 5,
+      "UniDirectionalLSTM": 1,
+      "Transpose": 2,
+      "ReduceMax": 1,
+      "UnaryLog": 1,
+      "ReduceSum": 2,
+      "Squeeze": 20,
+      "Add": 4,
+      "ExpandDims": 13,
+      "Multiply": 3,
+      "ActivationLinear": 1,
+      "SoftmaxND": 2,
+      "BatchedMatmul": 1
+    },
+    "method": "predict"
+  }
+]

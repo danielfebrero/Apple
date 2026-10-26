@@ -1,0 +1,39 @@
+{
+  "CFBundleName": "SiriPhoneFlowTools",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "SiriPhoneFlowTools",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "CFBundleIdentifier": "com.apple.siri.SiriPhoneFlowTools",
+  "FlowTools": [
+    "SiriPhoneFlowTools.StartEmergencyCallFlowTool",
+    "SiriPhoneFlowTools.StartCrisisHelplineCallFlowTool",
+    "SiriPhoneFlowTools.StartCallFlowTool",
+    "SiriPhoneFlowTools.AnswerCallFlowTool",
+    "SiriPhoneFlowTools.CallbackFlowTool",
+    "SiriPhoneFlowTools.RedialFlowTool",
+    "SiriPhoneFlowTools.ReadCallMessageFlowTool",
+    "SiriPhoneFlowTools.PrepareCallMessagesFlowTool",
+    "SiriPhoneFlowTools.PrepareReadCallRecordsFlowTool",
+    "SiriPhoneFlowTools.CallEmergencyContactFlowTool",
+    "SiriPhoneFlowTools.EmergencyFallbackFlowTool"
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "MinimumOSVersion": "27.2",
+  "DTPlatformBuild": ""
+}

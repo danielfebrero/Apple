@@ -1,0 +1,138 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "bolt-taskid: hvcthxumvz iteration: 10116",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 240 × 240)",
+        "shortDescription" : "",
+        "shape" : "[1, 1, 240, 240]",
+        "name" : "link_score_horizontal",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 240 × 240)",
+        "shortDescription" : "",
+        "shape" : "[1, 1, 240, 240]",
+        "name" : "link_score_vertical",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 9 × 120 × 120)",
+        "shortDescription" : "",
+        "shape" : "[1, 9, 120, 120]",
+        "name" : "orientation_score",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 240 × 240)",
+        "shortDescription" : "",
+        "shape" : "[1, 1, 240, 240]",
+        "name" : "region_score",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 9 × 120 × 120)",
+        "shortDescription" : "",
+        "shape" : "[1, 9, 120, 120]",
+        "name" : "script_feature",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 240 × 240)",
+        "shortDescription" : "",
+        "shape" : "[1, 1, 240, 240]",
+        "name" : "table_score",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 3 × 120 × 120)",
+        "shortDescription" : "",
+        "shape" : "[1, 3, 120, 120]",
+        "name" : "text_type_score",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float32",
+    "modelParameters" : [
+
+    ],
+    "author" : "corerecognition",
+    "specificationVersion" : 5,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "11.0",
+      "tvOS" : "14.0",
+      "visionOS" : "1.0",
+      "watchOS" : "7.0",
+      "iOS" : "14.0",
+      "macCatalyst" : "14.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "480",
+        "colorspace" : "BGR",
+        "isOptional" : "0",
+        "width" : "480",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 480 × 480)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "img_input"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "8.3.2",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript",
+      "com.github.apple.coremltools.source" : "torch==2.5.1"
+    },
+    "generatedClassName" : "cr_td_model_v3",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 12,
+      "Copy" : 2,
+      "Convolution" : 135,
+      "Clip" : 3,
+      "PoolingINVALID" : 1,
+      "ActivationSigmoid" : 17,
+      "UpsampleBiLinear" : 17,
+      "LoadConstantND" : 2,
+      "Softmax" : 3,
+      "Multiply" : 19,
+      "Add" : 18,
+      "Slice" : 4,
+      "ActivationLinear" : 1,
+      "ActivationReLU" : 107,
+      "PoolingAverage" : 20
+    },
+    "method" : "predict"
+  }
+]

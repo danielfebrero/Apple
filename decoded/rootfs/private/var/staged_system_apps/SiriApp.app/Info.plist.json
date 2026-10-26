@@ -1,0 +1,97 @@
+{
+  "UIRequiredDeviceCapabilities": [
+    "DeviceSupportsGenerativeModelSystems"
+  ],
+  "SBRepresentedBundleIdentifier": "com.apple.campo",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "UISupportedInterfaceOrientations~ipad": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationPortraitUpsideDown",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "DTPlatformVersion": "27.2",
+  "UISupportsFullScreenInAssistiveAccess": true,
+  "DTSDKName": "iphoneos27.2.internal",
+  "CFBundleName": "SiriApp",
+  "LSCounterpartIdentifiers": [
+    "com.apple.SiriApp.watchapp"
+  ],
+  "UIViewControllerBasedStatusBarAppearance": false,
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "LSEligibilityDeletionDomain": 99,
+  "UILaunchScreen": {
+    "UIColorName": "LaunchScreenColor"
+  },
+  "CFBundleIcons": {
+    "CFBundlePrimaryIcon": {
+      "CFBundleIconFiles": [
+        "AppIcon60x60"
+      ],
+      "CFBundleIconName": "AppIcon"
+    }
+  },
+  "LSInstallByDefault": false,
+  "CFBundleDisplayName": "Siri",
+  "LSRequiresIPhoneOS": true,
+  "PUIAvailablePairingModes": [
+    1
+  ],
+  "DTSDKBuild": "24B107",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformBuild": "24B107",
+  "CFBundlePackageType": "APPL",
+  "MinimumOSVersion": "27.2",
+  "CFBundleDevelopmentRegion": "en",
+  "DTXcodeBuild": "27A225b",
+  "LSRequiredFeatureFlags": {
+    "IntelligenceFlow/Campo": true,
+    "IntelligenceFlow/Linwood": true
+  },
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "CFBundleIdentifier": "com.apple.SiriApp",
+  "UIApplicationSceneManifest": {
+    "UIApplicationSupportsMultipleScenes": false,
+    "UISceneConfigurations": {
+      "UIWindowSceneSessionRoleApplication": [
+        {
+          "UISceneConfigurationName": "Default Configuration",
+          "UISceneDelegateClassName": "SiriApp.SceneDelegate"
+        }
+      ]
+    }
+  },
+  "DTXcode": "2700",
+  "UIApplicationSupportsIndirectInputEvents": true,
+  "LSExplicitlyRestrictable": true,
+  "CFBundleExecutable": "SiriApp",
+  "UISupportedInterfaceOrientations~iphone": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "CFBundleIcons~ipad": {
+    "CFBundlePrimaryIcon": {
+      "CFBundleIconFiles": [
+        "AppIcon60x60",
+        "AppIcon76x76"
+      ],
+      "CFBundleIconName": "AppIcon"
+    }
+  },
+  "DTPlatformName": "iphoneos",
+  "CFBundleURLTypes": [
+    {
+      "CFBundleURLName": "com.apple.siri",
+      "CFBundleURLSchemes": [
+        "siri"
+      ]
+    }
+  ]
+}

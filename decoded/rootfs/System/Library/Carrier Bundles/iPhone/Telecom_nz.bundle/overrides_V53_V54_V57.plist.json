@@ -1,0 +1,112 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "Show5GSwitch": true,
+  "SatelliteAccessInfo": {
+    "AppCategories": [
+      "8001",
+      "8002",
+      "8003",
+      "8004",
+      "8005",
+      "8006",
+      "8007",
+      "8008",
+      "8009",
+      "8010",
+      "8011",
+      "8012",
+      "8013",
+      "8014"
+    ],
+    "Tier": 4
+  },
+  "IMSConfig": {
+    "Media": {
+      "AudioCodecs": {
+        "112": {
+          "bw": "nb-swb"
+        }
+      },
+      "EVSHardBwLimit": "nb-swb"
+    }
+  },
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://tnz.prod.ondemandconnectivity.com",
+    "TransferErrorCodes": {
+      "CarrierDefaultErrors": [
+        "ER001",
+        "ER002"
+      ],
+      "BillingErrors": [],
+      "IneligibleAccountErrors": [
+        "ER006",
+        "ER007",
+        "ER008"
+      ],
+      "MaintenanceErrors": [
+        "ER003",
+        "ER004"
+      ],
+      "BlockedAccountErrors": []
+    }
+  },
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "ShowHighDataModeSwitch": true,
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 9217,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "SMSSettings": {
+    "SMSCarrierReportJunkAddress": "7726"
+  },
+  "SatelliteSystemTransitionTimeToAllowed": 30,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "tech-type-mask": 4,
+          "username": "",
+          "apn": "internet",
+          "UseNetworkMTU": true,
+          "type-mask": 32821
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "AllowNoDNS": 1,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "tech-type-mask": 1048576,
+          "username": "",
+          "apn": "xcap",
+          "type-mask": 1048576,
+          "AllowedProtocolMask": 1
+        }
+      ],
+      "technology-mask": 9
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsSatellite": true,
+  "Enable5GAutoByDefault": true,
+  "ShowSatelliteSwitch": true,
+  "SupportsNRNSAInboundRoaming": true
+}

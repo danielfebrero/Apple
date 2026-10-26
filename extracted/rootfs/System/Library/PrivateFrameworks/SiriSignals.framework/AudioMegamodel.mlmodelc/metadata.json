@@ -1,0 +1,119 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "v7210",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "disambiguation_mask",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "is_requested_probability",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "evaluation",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float32",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 5,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "11.0",
+      "tvOS" : "14.0",
+      "visionOS" : "1.0",
+      "watchOS" : "7.0",
+      "iOS" : "14.0",
+      "macCatalyst" : "14.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "59... × 1...100",
+        "shapeRange" : "[[59, -1], [1, 100]]",
+        "formattedType" : "MultiArray (Float32 59 × 1)",
+        "type" : "MultiArray",
+        "shape" : "[59, 1]",
+        "name" : "inputs",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.source_dialect" : "TorchScript",
+      "com.github.apple.coremltools.source" : "torch==2.7.0",
+      "com.github.apple.coremltools.version" : "8.3.0"
+    },
+    "generatedClassName" : "AudioMegamodel",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Ceil" : 1,
+      "BatchedMatmul" : 2,
+      "SoftmaxND" : 1,
+      "UnaryLog" : 3,
+      "LessThan" : 1,
+      "LoadConstantND" : 56,
+      "Multiply" : 38,
+      "ReduceMax" : 7,
+      "ConcatND" : 6,
+      "UnaryInverse" : 1,
+      "InnerProduct" : 2,
+      "ReduceMin" : 1,
+      "WhereBroadcastable" : 8,
+      "ReduceMean" : 3,
+      "Slice" : 3,
+      "Gather" : 7,
+      "SliceStatic" : 32,
+      "Squeeze" : 5,
+      "NotEqual" : 2,
+      "Equal" : 22,
+      "Unary" : 1,
+      "AddBroadcastable" : 8,
+      "UnaryAbs" : 1,
+      "Floor" : 1,
+      "MultiplyBroadcastable" : 12,
+      "UnaryPower" : 5,
+      "UnaryExp" : 2,
+      "ExpandDims" : 36,
+      "CumSum" : 3,
+      "ReduceSum" : 24,
+      "ArgMax" : 1,
+      "DivideBroadcastable" : 7,
+      "GreaterThan" : 12,
+      "Transpose" : 1,
+      "Add" : 37,
+      "SubtractBroadcastable" : 8,
+      "ActivationLinear" : 45
+    },
+    "method" : "predict"
+  }
+]

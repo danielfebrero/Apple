@@ -1,0 +1,102 @@
+{
+  "DerPriFileVersion": "5.0.161",
+  "IMSConfig": {
+    "Signaling": {
+      "AdditionalFeatureTags": {
+        "sms": {
+          "+cdmaless": ""
+        },
+        "voice": {
+          "+cdmaless": "",
+          "+g.gsma.rcs.telephony": "\"cs,volte\"",
+          "audio": ""
+        }
+      },
+      "NoFallbackVoiceService": true
+    },
+    "Voice": {
+      "BlockCallsOverCS": true,
+      "BlockSilentRedialOverCS": true,
+      "DisableVolteSwitchOnIncompatibleState": true
+    },
+    "SMS": {
+      "enableInNonVoLTEMode": true,
+      "SupportedDomains": {
+        "EHRPD": false,
+        "LTE": true,
+        "GSM": false,
+        "UMTS": false,
+        "NR": true
+      }
+    },
+    "AllowIMSUnprovisioned": true
+  },
+  "CellBroadcast": {
+    "_Exclude": [
+      "MessageIDParameters3GPP2"
+    ]
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "ForceWPSCallsOverCS": false,
+  "SMSSettings": {
+    "MessageFormat": {
+      "SignalingFormat": 1,
+      "PacketFormat": 1
+    }
+  },
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "CDMAInternationalRoaming": {
+    "EnabledByDefault": false
+  },
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 1,
+          "apn": "4g.myawi.com",
+          "type-mask": 33335,
+          "AllowedProtocolMask": 1
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131078,
+          "AllowedProtocolMaskInRoaming": 3,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 1048576,
+          "password": "",
+          "tech-type-mask": 1048576,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "hos.myawi.com",
+          "AllowedProtocolMask": 1
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "Enable5GAutoByDefault": true,
+  "Enable5GStandaloneByDefault": true,
+  "AttachAPN": {
+    "_Exclude": [
+      "3GPP2"
+    ]
+  }
+}

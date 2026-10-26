@@ -1,0 +1,37 @@
+    Provide a progress update during their Stair Stepper workout session. **The response MUST be 25-50 words. If you find yourself over 50 words, drop the least essential clause; do not exceed the limit.**
+
+    Use only facts from THIS turn's [CURRENT FACTS] — do NOT carry forward any metric or media from prior turns.
+
+    **Write every number as digits, never spelled out.**
+    - BAD: "Twenty minutes in" / "Fifteen miles down" → GOOD: "20 minutes in" / "15 miles down".
+    **Never convert time units.** Report time exactly as stated — do NOT convert minutes to hours or drop seconds. "30 minutes" stays "30 minutes" (not "0.3 hours"). "19 minutes, 19 seconds" stays "19 minutes and 19 seconds" (not "19 minutes").
+
+    **Use the exact distance unit from [CURRENT FACTS] — never substitute or convert.** If facts use kilometers, report in kilometers. If facts use miles, report in miles. Do NOT convert km to miles or miles to km.
+
+    Structure your response:
+    1. Open with an optional short opener (e.g., "Okay,", "Alright,", "Great start!") that does NOT state a metric and never claims how far along the user is in their workout (e.g., "Halfway there", "Almost done"). Reserve the elapsed time for the sentence that follows. Then weave the cumulative elapsed time from `Elapsed time since workout start` into a natural sentence (do NOT echo the field name verbatim, e.g., never say "Elapsed time since workout start: 20 minutes"). If `Energy burned since workout start` is explicitly present in [CURRENT FACTS], you may fuse it into the same opener; otherwise omit any calorie mention entirely (do NOT say "burned 0 calories", "no calories yet", or invent a number).
+    2. Report this split's metrics — always include Average heart rate with its window (e.g., "in the last 10 minutes"). Other split metrics in [CURRENT FACTS] (e.g., power) may be included in any order.
+    3. If [CURRENT FACTS] includes a split rank or directional trend, include it — see rules below.
+    4. If [CURRENT FACTS] includes a media item, you MAY mention it as a standalone sentence — never weave it into a metric clause. Optional even when present.
+    5. Motivational close (2-4 words): filler only. Add one only when the output is below 35 words. Skip when the output is in range or the facts already celebrate.
+
+    **Always include the split window when reporting split metrics.** Do NOT drop, shrink, or change it.
+    - BAD (dropped): "Your average heart rate was 150 beats per minute" — missing window
+    - BAD (dropped): "averaging 36:50 per mile" when facts say "Average pace in the last 1 mile: 36:50"
+    - BAD (shrunk): "Average speed in the last 5 miles" → reported as "for that last mile"
+
+    **Average metrics:**
+    - Use stated values directly — do NOT compute average pace from distance/time or derive heart rate from other fields. If not in [CURRENT FACTS], omit it.
+    - Do NOT describe an average as "steady", "holding steady", or "constant at" — state the value plainly with its window.
+
+    If [CURRENT FACTS] includes a split rank, report the single most significant one. When multiple overlapping windows with different ranks are given (e.g., "fastest in the last 4 weeks" + "fastest in the last 3 months" + "2nd fastest so far this year"), pick the most significant and echo it — do not list all windows. Significance: best rank first (1st beats 2nd); for equal ranks, longest window wins.
+    - Example: "fastest in last 4 weeks", "fastest in last 3 months", "2nd fastest this year" → report "fastest split for a Cycling workout in the last 3 months" (longest window where rank = 1st).
+
+    If [CURRENT FACTS] states a directional trend, echo it — do not contradict or silently drop it. Examples of stated trends:
+    - "My average heart rate has risen in the last 10 minutes, compared to the 10 minutes before."
+    - "I'm picking up the pace. I was faster in the last 1 mile compared to the 1 mile before."
+
+    If no trend is stated, do not infer one. A single average value tells you nothing about direction — never say "heart rate is climbing" or "rising" without an explicit trend statement.
+
+    Before outputting, verify:
+    - Word count: the response is between 25 and 50 words. If over 50, drop the least essential clause.

@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Mail Evelien over de reis",
+            "Mail Lisa over het gewijzigde plan",
+            "Mail papa over de huur",
+            "Nieuwe e-mail aan Emma Janssens",
+            "E-mail dokter Mertens met de tekst: bedankt, ik heb de papieren ontvangen",
+            "Mail Evelien en Bram over het feest en zeg ‘ik heb het reuze naar mijn zin gehad’"
+          ]
+        }
+      ],
+      "SectionName": "E-mail versturen"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Controleer mijn e-mail",
+            "Heb ik vandaag nieuwe mail van Jonas?",
+            "Laat de nieuwe mail over de huur zien",
+            "Laat de e-mail van Evelien van gisteren zien"
+          ]
+        }
+      ],
+      "SectionName": "E-mail bekijken"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Beantwoord de mail van Emma: sorry voor de late betaling"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Bel hem op kantoor"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime hem op kantoor"
+          ]
+        }
+      ],
+      "SectionName": "E-mail beantwoorden"
+    }
+  ]
+}

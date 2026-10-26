@@ -1,0 +1,138 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Telefon",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Ring til Jesper",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime Lise",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Apps",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Åbn Fotos",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Beskeder",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Fortæl Susanne, jeg er der snart",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Kalender",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Arranger et møde kl. 9",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Fotos",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Vis mine fotos fra i går",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Kort",
+      "DomainAlternateDisplayName": "Kort",
+      "TagPhrase": "Find en rutevejledning hjem",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Tweet med min placering…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Publicer til Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Publicer til Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Musik",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Afspil Agnes Obel",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Påmindelser",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Mind mig om at ringe til mor",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "Mail",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Send e-mail til Emilie om turen",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Vejr",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Hvordan er vejret i dag?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Værdipapirer",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Hvad er kursen på Apple-aktien?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Ur",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Væk mig i morgen kl. 7",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Kontakter",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Hvad er Emilies adresse?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Indstillinger",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Slå Flyfunktion til",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Websøgning",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Søg efter isbjørne på internettet",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Q&A",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "Hvor højt er Himmelbjerget?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "Podcasts",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Afspil podcasts",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

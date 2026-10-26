@@ -1,0 +1,60 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Envoie un e-mail à Adélaïde",
+            "Envoie un e-mail à Mathieu sur le changement de programme",
+            "Nouveau mail à Stéphanie Lacroix",
+            "Envoie un e-mail à papa à propos de la facture du loyer",
+            "Envoie un e-mail à Thomas avec Sortie cinéma comme objet",
+            "Envoyer un e-mail à Marie pour lui dire que j’ai reçu les formulaires",
+            "Envoie un e-mail à Max et Ludo objet Sortie cinéma contenu Voilà un film génial"
+          ]
+        }
+      ],
+      "SectionName": "ENVOI D’E-MAILS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Montre-moi mes e-mails",
+            "Est-ce que j’ai reçu des e-mails de Salem aujourd’hui?",
+            "Affiche les nouveaux courriers concernant le bail",
+            "Affiche l’e-mail de Marie reçu hier"
+          ]
+        }
+      ],
+      "SectionName": "CONSULTATION D’E-MAILS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Réponds Chère Stéphanie désolé pour le retard de ce paiement",
+            "Réponds-lui que tout va pour le mieux"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Appelle-le à son bureau"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Appelle-la sur FaceTime"
+          ]
+        }
+      ],
+      "SectionName": "RÉPONSE À DES E-MAILS"
+    }
+  ]
+}

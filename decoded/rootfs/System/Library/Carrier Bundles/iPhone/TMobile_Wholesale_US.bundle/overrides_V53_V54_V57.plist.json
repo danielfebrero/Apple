@@ -1,0 +1,78 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "IPv6SupportedDataModeMask": 106527,
+  "SatelliteSystemTransitionTimeToAllowed": 5,
+  "ShowSatelliteSwitch": true,
+  "Location": {
+    "EmergencyLocation": {
+      "AugmentedEmergencyAction": {
+        "AML": {
+          "SMSOverNAS": {
+            "SMSDestination": "9265",
+            "EnableForSatellitePLMNs": true
+          }
+        }
+      }
+    }
+  },
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4727193
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "NRSlicing": {
+    "SupportsLLPHS": true,
+    "EntitlementsGenres": true,
+    "OsId": [
+      67,
+      1,
+      210,
+      17,
+      151,
+      217,
+      66,
+      201,
+      177,
+      194,
+      246,
+      117,
+      131,
+      192,
+      249,
+      32
+    ],
+    "ManagedSliceApps": true,
+    "IgnoreEntitledLLPHS": true
+  },
+  "SatelliteAccessInfo": {
+    "AllowCarrierApp": true
+  },
+  "AllowSAOnWiFiAssociation": true,
+  "SupportsSatellite": true,
+  "DataIndicatorOverrideForNRMmwave": "NRUC",
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "TechSettings": {
+    "SuppressSAInOverCellHandover": false
+  },
+  "SupportsVoNR": true
+}

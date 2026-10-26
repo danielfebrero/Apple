@@ -1,0 +1,21 @@
+{
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "Show4GSwitchWith5G": true,
+  "DerPriFileVersion": "0.1.161",
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 8193,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "TransferSIMService"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "tcb.prod.ondemandconnectivity.com",
+    "RequiresDeleteAfterTransfer": true
+  }
+}

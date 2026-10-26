@@ -1,0 +1,179 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Float16",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "step_binary",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "step_location",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "cadence",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "ped_state",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "speed_mean",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 6,
+    "mlProgramOperationTypeHistogram": {
+      "Concat": 5,
+      "Linear": 7,
+      "LayerNorm": 18,
+      "Transpose": 34,
+      "Relu": 20,
+      "ReduceMean": 2,
+      "Cast": 13,
+      "Squeeze": 9,
+      "Add": 8,
+      "ExpandDims": 10,
+      "BatchNorm": 2,
+      "Conv": 22
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "12.0",
+      "tvOS": "15.0",
+      "visionOS": "1.0",
+      "watchOS": "8.0",
+      "iOS": "15.0",
+      "macCatalyst": "15.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.conversion_date": "2026-06-26",
+      "com.github.apple.coremltools.version": "9.0",
+      "com.github.apple.coremltools.source": "torch==2.5.1",
+      "mldb_token": "mldb-8vajzqwgz6",
+      "com.github.apple.coremltools.source_dialect": "TorchScript"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 128)",
+        "shortDescription": "",
+        "shape": "[1, 128]",
+        "name": "accel_x",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 128)",
+        "shortDescription": "",
+        "shape": "[1, 128]",
+        "name": "accel_y",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 128)",
+        "shortDescription": "",
+        "shape": "[1, 128]",
+        "name": "accel_z",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 128)",
+        "shortDescription": "",
+        "shape": "[1, 128]",
+        "name": "gyro_x",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 128)",
+        "shortDescription": "",
+        "shape": "[1, 128]",
+        "name": "gyro_y",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 128)",
+        "shortDescription": "",
+        "shape": "[1, 128]",
+        "name": "gyro_z",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1)",
+        "shortDescription": "",
+        "shape": "[1, 1]",
+        "name": "height",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1)",
+        "shortDescription": "",
+        "shape": "[1, 1]",
+        "name": "is_indoor",
+        "type": "MultiArray"
+      }
+    ],
+    "generatedClassName": "pednet_v5_0626",
+    "method": "predict"
+  }
+]

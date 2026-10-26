@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   com.apple.siri.metrics.plist
+   SiriMetrics
+
+   Created by Nagen Sankaralingam on 4/5/24.
+   Copyright (c) 2024 Apple Inc. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>DEFAULT-OPTIONS</key>
+        <dict>
+            <key>Level</key>
+            <dict>
+                <key>Persist</key>
+                <string>Default</string>
+                <key>Enable</key>
+                <string>Default</string>
+            </dict>
+        </dict>
+    </dict>
+</plist>

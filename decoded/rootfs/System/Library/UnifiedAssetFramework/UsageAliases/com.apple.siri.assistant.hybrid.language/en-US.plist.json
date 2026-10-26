@@ -1,0 +1,21 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.siri.assistant.hybrid.language",
+  "UsageAliasValues": {
+    "en-US": {
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "attention.language": "en_US",
+        "cam.language": "en_US",
+        "nl.assistant": "enabled",
+        "nl.language": "en_US"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "en_US"
+      }
+    }
+  }
+}

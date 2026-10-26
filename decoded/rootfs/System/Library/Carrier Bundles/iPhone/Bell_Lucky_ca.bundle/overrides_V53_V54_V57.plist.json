@@ -1,0 +1,18 @@
+{
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://bmc.prod.ondemandconnectivity.com",
+    "RequiresPasscodeForCrossPlatformTransfer": true
+  },
+  "DerPriFileVersion": "6.0.161",
+  "PushSettings": {
+    "CellularPlanTransferTopic": "ca.bell.iphone-plan-transfer"
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4202577,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true,
+    "SupportCrossPlatformSIMTransfer": true
+  }
+}

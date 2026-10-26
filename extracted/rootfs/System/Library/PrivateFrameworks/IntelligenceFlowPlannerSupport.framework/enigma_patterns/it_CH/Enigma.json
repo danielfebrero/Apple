@@ -1,0 +1,2420 @@
+{
+  "converted_patterns" : [
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{ehi siri|siri} (crea|metti|imposta) una sveglia alle (time:time) {per favore|per piacere}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:crea|metti|imposta)\\s+una\\s+sveglia\\s+alle(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>in punto)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>di mattina)|(?P<am_pm__time_of_day_parser__pm>di notte|di pomeriggio|di sera))))?)(?:\\s+(?:per\\s+favore|per\\s+piacere))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "452ec5f8-4361-52a2-b190-eafceee97892"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{ehi siri|siri} imposta sveglia per le (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?imposta\\s+sveglia\\s+per\\s+le(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>in punto)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>di mattina)|(?P<am_pm__time_of_day_parser__pm>di notte|di pomeriggio|di sera))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "18024c66-225e-502a-8ef4-24f6695c6c1a"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{ehi siri|siri} imposta una sveglia per le (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?imposta\\s+una\\s+sveglia\\s+per\\s+le(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>in punto)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>di mattina)|(?P<am_pm__time_of_day_parser__pm>di notte|di pomeriggio|di sera))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d3262f99-432d-511f-9b01-17b7d9fee2d7"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi siri|siri} spegni tutte le sveglie",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?spegni\\s+tutte\\s+le\\s+sveglie$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "8348c313-a609-58b2-b634-348ee2cc0d9d"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{ehi siri|siri} sveglia per le (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?sveglia\\s+per\\s+le(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>in punto)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>di mattina)|(?P<am_pm__time_of_day_parser__pm>di notte|di pomeriggio|di sera))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "50e1d946-8107-5d80-b4d6-af47f92fd5cb"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{ehi siri|siri} svegliami alle (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?svegliami\\s+alle(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>in punto)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>di mattina)|(?P<am_pm__time_of_day_parser__pm>di notte|di pomeriggio|di sera))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2ba02d25-af17-5a9a-9c33-6d2d3a2f652f"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} disattiva {tutte le} sveglie",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?disattiva\\s+(?:tutte\\s+le\\s+)?sveglie$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "65226ca1-c65a-5bd5-ba8b-a1b716c6b3bc"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{ehi} {siri} {imposta} {la} sveglia {alle} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?(?:imposta\\s+)?(?:la\\s+)?sveglia(?:\\s+alle)?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>in punto)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>di mattina)|(?P<am_pm__time_of_day_parser__pm>di notte|di pomeriggio|di sera))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d23aca64-9624-521c-a78d-425907e06c0e"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{{ehi} siri} (imposta|metti) la sveglia per le (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?:imposta|metti)\\s+la\\s+sveglia\\s+per\\s+le(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>in punto)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>di mattina)|(?P<am_pm__time_of_day_parser__pm>di notte|di pomeriggio|di sera))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "95712ff1-e919-5195-a31e-53d5b603be02"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{{ehi} siri} (time:time) sveglia",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?P<time>(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>in punto)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>di mattina)|(?P<am_pm__time_of_day_parser__pm>di notte|di pomeriggio|di sera))))?)\\s+sveglia$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "03a7ccc3-3fa2-5cd0-a092-b974587a9950"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{{ehi} siri} ferma la sveglia",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?ferma\\s+la\\s+sveglia$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "509efb5b-b366-57be-af3e-92819d152335"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{{ehi} siri} imposta{re} {una} sveglia per le (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?imposta(?:re)?\\s+(?:una\\s+)?sveglia\\s+per\\s+le(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>in punto)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>di mattina)|(?P<am_pm__time_of_day_parser__pm>di notte|di pomeriggio|di sera))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "3919c0dd-645c-5356-854f-8612ba16dfe5"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{{ehi} siri} spegni la {mia} sveglia",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?spegni\\s+la\\s+(?:mia\\s+)?sveglia$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6513e7e7-7b0a-5627-9863-a2f2867c9e07"
+    },
+    {
+      "action" : "end_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} no",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?no$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "29281687-6e81-5459-a2b1-eae027f88589"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "chiama (contact:*{1,3}) {con il|in} vivavoce",
+      "priority" : 50,
+      "regex" : "^chiama\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+(?:(?:con\\s+il|in)\\s+)?vivavoce$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "559f1e7d-8da6-5044-898e-e7a7d5428eb1"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "ehi siri chiama (contact:*{1,3}) {con il|in} vivavoce",
+      "priority" : 50,
+      "regex" : "^ehi\\s+siri\\s+chiama\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+(?:(?:con\\s+il|in)\\s+)?vivavoce$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4c48ec70-4115-5bba-933e-c6fcf05cf40f"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser"
+      },
+      "pattern" : "{ehi} {siri} (chiama|componi) {mio|nostro|il} (contact:emergency_contact_parser) in (vivavoce)",
+      "priority" : 35,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?(?:chiama|componi)\\s+(?:(?:mio|nostro|il)\\s+)?(?P<contact>(?P<contact__emergency_contact_parser>contatto di emergenza))\\s+in\\s+(?:vivavoce)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "93f08c83-d714-57b4-8a72-98e8120b47ca"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} che ore sono",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?che\\s+ore\\s+sono$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d199474e-76d6-5393-b1f8-a5301a06427e"
+    },
+    {
+      "action" : "call_911",
+      "context_free" : false,
+      "metadata" : {
+        "emergency_number" : "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser" : "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser" : "locale_emergency_number_parser",
+        "number" : "emergency_number_parser"
+      },
+      "pattern" : "{{ehi} siri} {chiama} (number:emergency_number_parser)",
+      "priority" : 10,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?:chiama\\s+)?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>112|117|118|144))))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid" : "7c3f3a90-3bf4-578f-a7af-c879932f5101"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{ehi} {siri} facetime (contact:*{1,5})",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?facetime\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a6d69c9b-7f86-50d4-abd8-ab134de7c20f"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} (pioverà|qual è il tempo) oggi",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?(?:pioverà|qual\\s+è\\s+il\\s+tempo)\\s+oggi$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d11a5aca-f5f3-58df-abfb-e5f3f83b4d20"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "word" : "wildcard{1..*1}"
+      },
+      "pattern" : "{ehi} {siri} come si scrive (word:*{1,1})",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?come\\s+si\\s+scrive\\s+(?P<word>[^\\s]+)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "db2df537-11b3-583b-a509-9cea3179358e"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "team" : "wildcard{1..*5}"
+      },
+      "pattern" : "{ehi} {siri} qual è il risultato di (team:*{1,5}) oggi",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?qual\\s+è\\s+il\\s+risultato\\s+di\\s+(?P<team>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+oggi$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4c27f977-ffe1-5e44-8a77-e45021e2dc26"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "place" : "wildcard{1..*3}"
+      },
+      "pattern" : "{ehi} {siri} quando (apre|chiude) (place:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?quando\\s+(?:apre|chiude)\\s+(?P<place>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6fcb8acf-764c-5b81-a79c-0212ba67c90e"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "team" : "wildcard{1..*5}"
+      },
+      "pattern" : "{ehi} {siri} quando gioca (team:*{1,5}) oggi",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?quando\\s+gioca\\s+(?P<team>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+oggi$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "179fa13a-bdeb-5eb2-8587-753cb48c918e"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "unit" : "wildcard{1..*3}",
+        "unit2" : "wildcard{1..*3}"
+      },
+      "pattern" : "{ehi} {siri} quanti (unit:*{1,3}) sono (unit2:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?quanti\\s+(?P<unit>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+sono\\s+(?P<unit2>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d4277b3c-48de-5d75-9223-ec913248e13f"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "thing" : "wildcard{1..*10}"
+      },
+      "pattern" : "{ehi} {siri} un cane può mangiare (thing:*{1,10})",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?un\\s+cane\\s+può\\s+mangiare\\s+(?P<thing>[^\\s]+(?:\\s+[^\\s]+){0,9})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d9faaad5-e430-54db-9a12-9acfbfd66c92"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "(cambia|schipa|schippa|skip{pa}) (canzone|traccia|brano|pezzo|la canzone|la traccia|il brano|il pezzo)",
+      "priority" : 50,
+      "regex" : "^(?:cambia|schipa|schippa|skip(?:pa)?)\\s+(?:canzone|traccia|brano|pezzo|la\\s+canzone|la\\s+traccia|il\\s+brano|il\\s+pezzo)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "efdd8a3e-dd5e-5ae9-baab-223cb77d7505"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "prossima (canzone|traccia)",
+      "priority" : 50,
+      "regex" : "^prossima\\s+(?:canzone|traccia)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "117d8c09-1593-57fa-8b14-32bcc5f428b4"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} (riprendi la|riproduci) musica",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?(?:riprendi\\s+la|riproduci)\\s+musica$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f4604c3b-35d9-5515-b40c-9e7462fb3010"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} canzone successiva",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?canzone\\s+successiva$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "0651eef2-83a9-5880-96ac-afd39891d8e8"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} ferma la musica",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?ferma\\s+la\\s+musica$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c401e8df-8c99-5cbf-aefe-86610304ef97"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{{ehi} siri} riproduci",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?riproduci$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e37a70e6-6759-5eb7-b49a-641a9eff4444"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{{ehi} siri} suona",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?suona$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4fe82a0a-0bb4-56d8-bc0f-9cce7f2a2221"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "(abilitare|abilita|attivare|attiva|accend(i|ere)|metti|mettere) ((s:mode_settings)|le {restrizioni} contenuti e privacy)",
+      "priority" : 50,
+      "regex" : "^(?:abilitare|abilita|attivare|attiva|accend(?:i|ere)|metti|mettere)(?:\\s+(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))|\\s+le\\s+(?:restrizioni\\s+)?contenuti\\s+e\\s+privacy)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "fb6c5a5e-a102-5647-b2a5-536d9b2fbde5"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "(diminuisci|abbassa|riduci) {il} (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:diminuisci|abbassa|riduci)\\s+(?:il\\s+)?(?P<s>(?P<s__volume_settings>audio|controllo vocale|musica|suoneria|volume))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "e2f6c531-d0c3-545a-8f75-759cc52ab02f"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "(disattiva|disabilita){re} (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:disattiva|disabilita)(?:re)?\\s+(?P<s>(?P<s__connection_settings>bluetooth|hotspot|rete cellulare|wi-fi|wireless))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ec4e57cc-34a3-51df-b46f-d03b8fe7e618"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "(disattiva|disabilita){re} (s:flashlight_settings)",
+      "priority" : 50,
+      "regex" : "^(?:disattiva|disabilita)(?:re)?\\s+(?P<s>(?P<s__flashlight_settings>flash|luce|torcia))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3f5b1d9b-191f-5b89-8b96-95753b1aa7d6"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "(disattiva|disabilita){re} (s:mode_settings)",
+      "priority" : 50,
+      "regex" : "^(?:disattiva|disabilita)(?:re)?\\s+(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7d09c419-c4e6-52c2-a952-52768f77cc9c"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "(sospend|spegn)(i|ere) (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:sospend|spegn)(?:i|ere)\\s+(?P<s>(?P<s__connection_settings>bluetooth|hotspot|rete cellulare|wi-fi|wireless))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f83cfbbc-517d-502c-a0e2-4d5a7890d8f3"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "(sospend|spegn)(i|ere) (s:flashlight_settings)",
+      "priority" : 50,
+      "regex" : "^(?:sospend|spegn)(?:i|ere)\\s+(?P<s>(?P<s__flashlight_settings>flash|luce|torcia))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a3231c01-54bd-5a81-9d1f-334bf56a0af7"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "(sospend|spegn)(i|ere) (s:mode_settings)",
+      "priority" : 50,
+      "regex" : "^(?:sospend|spegn)(?:i|ere)\\s+(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8d6351f9-294e-50e1-bd7c-96dd7fd6c8c8"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "(spegnere|chiudere|nascondere|lasciare) l’ambiente",
+      "priority" : 50,
+      "regex" : "^(?:spegnere|chiudere|nascondere|lasciare)\\s+l’ambiente$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "cbebcd98-fa52-5028-bd82-4dfe8d518279"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "(spegni|disattiva|disabilita|chiudi|stop{pa}){mi} {la} (s:flashlight_settings)",
+      "priority" : 50,
+      "regex" : "^(?:spegni|disattiva|disabilita|chiudi|stop(?:pa)?)(?:mi)?\\s+(?:la\\s+)?(?P<s>(?P<s__flashlight_settings>flash|luce|torcia))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d71c1773-d84e-51ad-9ae3-5e7bb831e894"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{ehi siri|siri} (abbassa|diminuisci|riduci) (s:volume_settings) {per cortesia}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:abbassa|diminuisci|riduci)\\s+(?P<s>(?P<s__volume_settings>audio|controllo vocale|musica|suoneria|volume))(?:\\s+per\\s+cortesia)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "368352de-6470-5c7a-a8bb-54dba39b5071"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{ehi siri|siri} (disattiva|disabilita|spegni) (s:connection_settings) {per favore}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:disattiva|disabilita|spegni)\\s+(?P<s>(?P<s__connection_settings>bluetooth|hotspot|rete cellulare|wi-fi|wireless))(?:\\s+per\\s+favore)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "2b1b62c7-b95f-5096-b236-209ffe3d7564"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{ehi siri|siri} (disattiva|disabilita|spegni) (s:flashlight_settings) {per favore}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:disattiva|disabilita|spegni)\\s+(?P<s>(?P<s__flashlight_settings>flash|luce|torcia))(?:\\s+per\\s+favore)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "474c550c-a3fe-57d4-91db-96b9c71a66ee"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{ehi siri|siri} (disattiva|disabilita|spegni) (s:mode_settings) {per favore}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:disattiva|disabilita|spegni)\\s+(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))(?:\\s+per\\s+favore)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "46aa1562-8aa3-5cf1-bfaa-eb146828ff21"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{ehi siri|siri} (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?P<s>(?P<s__connection_settings>bluetooth|hotspot|rete cellulare|wi-fi|wireless))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7db5d074-8073-51fa-8fa7-4fc713522974"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{ehi siri|siri} (s:flashlight_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?P<s>(?P<s__flashlight_settings>flash|luce|torcia))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "62a081a5-7125-5cc4-b3a4-ea3e22cc6cfd"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{ehi siri|siri} (s:mode_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "fcd28b81-4d6d-5d31-b8a3-efae30b018cb"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{ehi siri|siri} {per favore|potresti|puoi} (alzare|aumenta|aumentare) {un po'} {il} (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:(?:per\\s+favore|potresti|puoi)\\s+)?(?:alzare|aumenta|aumentare)\\s+(?:un\\s+po'\\s+)?(?:il\\s+)?(?P<s>(?P<s__volume_settings>audio|controllo vocale|musica|suoneria|volume))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d13c4f08-523a-51fc-9ac3-89d5d0713aae"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{ehi siri|siri} {per piacere} (abilita|attiva|accendi) (s:connection_settings) {per favore}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:per\\s+piacere\\s+)?(?:abilita|attiva|accendi)\\s+(?P<s>(?P<s__connection_settings>bluetooth|hotspot|rete cellulare|wi-fi|wireless))(?:\\s+per\\s+favore)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "dab28a76-af56-5827-bc35-2de6553fadca"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{ehi siri|siri} {per piacere} (abilita|attiva|accendi) (s:mode_settings) {per favore}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:per\\s+piacere\\s+)?(?:abilita|attiva|accendi)\\s+(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))(?:\\s+per\\s+favore)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d7242b3e-7f33-5154-95c2-bfcab04beb26"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{ehi siri|siri} {schermo|display} (s:volume_settings) {grazie}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:(?:schermo|display)\\s+)?(?P<s>(?P<s__volume_settings>audio|controllo vocale|musica|suoneria|volume))(?:\\s+grazie)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "1e65aa7a-564a-5495-8595-2b433ee495bd"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{ehi siri} (aumenta|alza) {il} (s:volume_settings) {per favore}",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+siri\\s+)?(?:aumenta|alza)\\s+(?:il\\s+)?(?P<s>(?P<s__volume_settings>audio|controllo vocale|musica|suoneria|volume))(?:\\s+per\\s+favore)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "90fded7e-e1fd-5703-8a24-e290745fad76"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} (accendi|spegni) la torcia",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?(?:accendi|spegni)\\s+la\\s+torcia$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a4124cc2-4668-52f7-aa35-2f5c0022fe27"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "of" : "on_off",
+        "of__on_off" : "on_off",
+        "s" : "settings",
+        "s__settings" : "settings"
+      },
+      "pattern" : "{ehi} {siri} (of:on_off) (s:settings)",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?(?P<of>(?P<of__on_off>attiva il|attiva la|disattivare il|disattivare la))\\s+(?P<s>(?P<s__settings>bluetooth|dati|dati cellulare|modalità aereo|modalità risparmio energetico|non disturbare|torcia|wifi|wireless))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8d843123-5ae6-54f7-8346-4deac94ccb64"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{metti|fallo} (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:metti|fallo)\\s+)?(?P<s>(?P<s__volume_settings>audio|controllo vocale|musica|suoneria|volume))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "9c2bc9d3-feca-5e04-b538-a71916c5ec25"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{{ehi} siri} (attivare|leva|spegnere) (s:mode_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?:attivare|leva|spegnere)\\s+(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c7f61e0e-7882-58e0-9cae-a578a8dec801"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{{ehi} siri} accendi (il|la|lo) (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?accendi\\s+(?:il|la|lo)\\s+(?P<s>(?P<s__connection_settings>bluetooth|hotspot|rete cellulare|wi-fi|wireless))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f0ae878d-bbe8-5dcc-812b-7c0d0bb35d9f"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{{ehi} siri} togli{ere|mi} (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?togli(?:(?:ere|mi))?\\s+(?P<s>(?P<s__connection_settings>bluetooth|hotspot|rete cellulare|wi-fi|wireless))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "07e75bd0-e190-5a8c-b082-542338e0d344"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{{ehi} siri} togli{ere|mi} (s:mode_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?togli(?:(?:ere|mi))?\\s+(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "32b36deb-968d-5c1f-a95a-c481c46e32d9"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{{ehi} siri} {per favore} (apri|accendi|cambia|metti|inserisci|mostra) (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?:per\\s+favore\\s+)?(?:apri|accendi|cambia|metti|inserisci|mostra)\\s+(?P<s>(?P<s__connection_settings>bluetooth|hotspot|rete cellulare|wi-fi|wireless))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "752be8da-0783-5d6f-a1bd-90c71ac2625c"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{{ehi} siri} {per favore} (apri|accendi|cambia|metti|inserisci|mostra) (s:mode_settings)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?:per\\s+favore\\s+)?(?:apri|accendi|cambia|metti|inserisci|mostra)\\s+(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "93d2269c-334c-5317-bf25-5cde99e17d42"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{{ehi} siri} {per piacere} (attiva|abilita|imposta) la modalità (s:mode_settings) {grazie}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?:per\\s+piacere\\s+)?(?:attiva|abilita|imposta)\\s+la\\s+modalità\\s+(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))(?:\\s+grazie)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b71acdf0-6e4d-5465-9a58-1dc754723d5b"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "(scatta|fai|cattura) (uno screenshot|(una |un')istantanea dello schermo|(una |un')istantanea)",
+      "priority" : 50,
+      "regex" : "^(?:scatta|fai|cattura)\\s+(?:uno\\s+screenshot|(?:una\\s+|un')istantanea\\s+dello\\s+schermo|(?:una\\s+|un')istantanea)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "38dd9266-3e98-55cf-b447-77126bcd09e6"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "disattiva{re}",
+      "priority" : 50,
+      "regex" : "^disattiva(?:re)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "5a6b0833-db28-5035-9a10-2ed3d1941c99"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "spegn(i|ere)",
+      "priority" : 50,
+      "regex" : "^spegn(?:i|ere)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "e74f5f8c-f8ec-591e-89b5-fa82fcee2ebb"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} riavvia",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?riavvia$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "e2b6c13f-cd61-5d9c-8e2f-8fb0d182a704"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} screenshot",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?screenshot$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "04dea6dc-93ec-5891-9dbf-6abb8ed66b03"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi} {siri} spegni",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?spegni$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "32fec4e4-4633-5198-b665-64991ab2bf2f"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{ehi siri|siri} (duration:duration) timer",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>hr|hrs|ora|ore))\\s+)?(?:e\\s+)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>min|mins|minuti|minuto))\\s+)?(?:e\\s+)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sec|secondi|secondo|secs))\\s+)?)timer$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2a93dcd3-3d00-57b4-84a1-e79f324f2eaf"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{ehi siri|siri} (imposta|aggiungi) un timer di (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:imposta|aggiungi)\\s+un\\s+timer\\s+di(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>hr|hrs|ora|ore)))?(?:\\s+e)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>min|mins|minuti|minuto)))?(?:\\s+e)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sec|secondi|secondo|secs)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2450a2d2-a908-55ba-aff5-071bc6b222d5"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{ehi} {siri} {imposta} {un} timer {per} (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?(?:imposta\\s+)?(?:un\\s+)?timer(?:\\s+per)?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>hr|hrs|ora|ore)))?(?:\\s+e)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>min|mins|minuti|minuto)))?(?:\\s+e)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sec|secondi|secondo|secs)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "a9fea255-29cd-53e5-9a09-ad532a176cac"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{{ehi} siri} (duration:duration) di timer",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>hr|hrs|ora|ore))\\s+)?(?:e\\s+)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>min|mins|minuti|minuto))\\s+)?(?:e\\s+)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sec|secondi|secondo|secs))\\s+)?)di\\s+timer$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "069dbb04-5989-5c2e-b812-8f6fde34ab3e"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{{ehi} siri} (impostami|metti il) timer a (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?:impostami|metti\\s+il)\\s+timer\\s+a(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>hr|hrs|ora|ore)))?(?:\\s+e)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>min|mins|minuti|minuto)))?(?:\\s+e)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sec|secondi|secondo|secs)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "adb2dec5-3659-5d1b-9cf3-555215f0955a"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{{ehi} siri} (imposta|aggiungi) timer {per} (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?:imposta|aggiungi)\\s+timer(?:\\s+per)?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>hr|hrs|ora|ore)))?(?:\\s+e)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>min|mins|minuti|minuto)))?(?:\\s+e)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sec|secondi|secondo|secs)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "683567d9-bb18-5b0b-9d09-d6a46aa799fb"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{{ehi} siri} (tempo|timer di) (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?:tempo|timer\\s+di)(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>hr|hrs|ora|ore)))?(?:\\s+e)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>min|mins|minuti|minuto)))?(?:\\s+e)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sec|secondi|secondo|secs)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "691fab21-eebf-5597-ab39-1dc413c829c6"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{{ehi} siri} imposta timer (di|tra) (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?imposta\\s+timer\\s+(?:di|tra)(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>hr|hrs|ora|ore)))?(?:\\s+e)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>min|mins|minuti|minuto)))?(?:\\s+e)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sec|secondi|secondo|secs)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d4fb11aa-4888-53c5-a39f-1826e7121350"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "(chiama|chiamare|telefona a|telefonare a) (contact:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:chiama|chiamare|telefona\\s+a|telefonare\\s+a)\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "0c852454-4d3e-5a77-8901-c06184791ff3"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "(chiama|contatta){re} (contact:emergencyServices) {ho bisogno d'aiuto}",
+      "priority" : 50,
+      "regex" : "^(?:chiama|contatta)(?:re)?(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))(?:\\s+ho\\s+bisogno\\s+d'aiuto)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "57e58ebf-538a-517d-9092-ffe79466a0ca"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "(situation:situation) (chiama|telefona a|contatta) (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?P<situation>(?P<situation__situation>aiutatemi aiutatemi|aiuto aiuto aiuto|c'è una rissa in un bar|due persone stanno litigando|ho appena avuto un incidente|ho avuto un incidente d'auto|il mio cane è stato aggredito|la mia auto è in fiamme|la mia casa è in fiamme|mi hanno appena rapinato|mi hanno sparato|mi sento svenire|mi sono rotto il braccio|mia mamma è svenuta|mia moglie è stata ferita da un colpo di arma da fuoco|mio padre ha difficoltà respiratorie|non riesco a svegliare mia figlia|oh mio dio ho investito qualcuno|penso di aver bisogno di attenzione medica|penso di essere stato avvelenato|qualcuno mi ha puntato una pistola|qualcuno mi sta inseguendo|qualcuno è incosciente per strada|sono stato coinvolto in un incidente|sono stato coinvolto in un incidente d'auto|sto avendo difficoltà respiratorie|sto avendo un attacco di cuore|sto avendo un attacco epilettico|sto avendo un overdose|sto morendo|sto provando un dolore acuto|sto sanguinando|è necessario un pronto intervento medico immediato))\\s+(?:chiama|telefona\\s+a|contatta)(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d21fd04d-8cee-5111-87eb-6b4620182364"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "(situation:situation) (voglio|ho bisogno di) parlare con (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?P<situation>(?P<situation__situation>aiutatemi aiutatemi|aiuto aiuto aiuto|c'è una rissa in un bar|due persone stanno litigando|ho appena avuto un incidente|ho avuto un incidente d'auto|il mio cane è stato aggredito|la mia auto è in fiamme|la mia casa è in fiamme|mi hanno appena rapinato|mi hanno sparato|mi sento svenire|mi sono rotto il braccio|mia mamma è svenuta|mia moglie è stata ferita da un colpo di arma da fuoco|mio padre ha difficoltà respiratorie|non riesco a svegliare mia figlia|oh mio dio ho investito qualcuno|penso di aver bisogno di attenzione medica|penso di essere stato avvelenato|qualcuno mi ha puntato una pistola|qualcuno mi sta inseguendo|qualcuno è incosciente per strada|sono stato coinvolto in un incidente|sono stato coinvolto in un incidente d'auto|sto avendo difficoltà respiratorie|sto avendo un attacco di cuore|sto avendo un attacco epilettico|sto avendo un overdose|sto morendo|sto provando un dolore acuto|sto sanguinando|è necessario un pronto intervento medico immediato))\\s+(?:voglio|ho\\s+bisogno\\s+di)\\s+parlare\\s+con(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f601d6ef-c70c-589a-83ee-0e932c1bc548"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "(situation:situation) {puoi|devi} (chiamare|telefonare a|contattare) (contact:emergencyServices) {ho bisogno d'aiuto}",
+      "priority" : 50,
+      "regex" : "^(?P<situation>(?P<situation__situation>aiutatemi aiutatemi|aiuto aiuto aiuto|c'è una rissa in un bar|due persone stanno litigando|ho appena avuto un incidente|ho avuto un incidente d'auto|il mio cane è stato aggredito|la mia auto è in fiamme|la mia casa è in fiamme|mi hanno appena rapinato|mi hanno sparato|mi sento svenire|mi sono rotto il braccio|mia mamma è svenuta|mia moglie è stata ferita da un colpo di arma da fuoco|mio padre ha difficoltà respiratorie|non riesco a svegliare mia figlia|oh mio dio ho investito qualcuno|penso di aver bisogno di attenzione medica|penso di essere stato avvelenato|qualcuno mi ha puntato una pistola|qualcuno mi sta inseguendo|qualcuno è incosciente per strada|sono stato coinvolto in un incidente|sono stato coinvolto in un incidente d'auto|sto avendo difficoltà respiratorie|sto avendo un attacco di cuore|sto avendo un attacco epilettico|sto avendo un overdose|sto morendo|sto provando un dolore acuto|sto sanguinando|è necessario un pronto intervento medico immediato))\\s+(?:(?:puoi|devi)\\s+)?(?:chiamare|telefonare\\s+a|contattare)(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))(?:\\s+ho\\s+bisogno\\s+d'aiuto)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b024f50f-05f5-5de0-842a-76a9a02fff93"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "({puoi|devi} (chiamare|telefonare a|contattare) (contact:emergencyServices)  (situation:situation))",
+      "priority" : 50,
+      "regex" : "^(?:(?:(?:puoi|devi)\\s+)?(?:chiamare|telefonare\\s+a|contattare)(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))\\s+(?P<situation>(?P<situation__situation>aiutatemi aiutatemi|aiuto aiuto aiuto|c'è una rissa in un bar|due persone stanno litigando|ho appena avuto un incidente|ho avuto un incidente d'auto|il mio cane è stato aggredito|la mia auto è in fiamme|la mia casa è in fiamme|mi hanno appena rapinato|mi hanno sparato|mi sento svenire|mi sono rotto il braccio|mia mamma è svenuta|mia moglie è stata ferita da un colpo di arma da fuoco|mio padre ha difficoltà respiratorie|non riesco a svegliare mia figlia|oh mio dio ho investito qualcuno|penso di aver bisogno di attenzione medica|penso di essere stato avvelenato|qualcuno mi ha puntato una pistola|qualcuno mi sta inseguendo|qualcuno è incosciente per strada|sono stato coinvolto in un incidente|sono stato coinvolto in un incidente d'auto|sto avendo difficoltà respiratorie|sto avendo un attacco di cuore|sto avendo un attacco epilettico|sto avendo un overdose|sto morendo|sto provando un dolore acuto|sto sanguinando|è necessario un pronto intervento medico immediato)))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8c4aab3c-68ad-54a9-bfd4-7f823397bb60"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "chiama (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^chiama(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "16eafffe-9f69-5c77-b85e-234fd19be18a"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "chiama ({la} linea|{il} numero) {verde} {nazionale} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^chiama(?:\\s+(?:la\\s+)?linea|\\s+(?:il\\s+)?numero)(?:\\s+verde)?(?:\\s+nazionale)?(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "03fcd284-bf42-5133-b8cf-b882d2b87a01"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "chiama {il} numero di telefono {verde} {nazionale} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^chiama\\s+(?:il\\s+)?numero\\s+di\\s+telefono(?:\\s+verde)?(?:\\s+nazionale)?(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a8725bda-8663-56e8-a496-db1528ebf39b"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "ho bisogno (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^ho\\s+bisogno(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9fbd60b7-42f0-5138-a2d2-4a51f2b11d9a"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "ho bisogno (contact:emergencyServices) puoi chiamarli",
+      "priority" : 50,
+      "regex" : "^ho\\s+bisogno(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))\\s+puoi\\s+chiamarli$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c1f213ef-c172-5400-b66b-76b9adc420b1"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "ho bisogno (contact:emergencyServices) {ho bisogno d'aiuto}",
+      "priority" : 50,
+      "regex" : "^ho\\s+bisogno(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))(?:\\s+ho\\s+bisogno\\s+d'aiuto)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "fe27d0d4-888c-58d2-b754-015954b01f64"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "ho bisogno del numero {di telefono} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^ho\\s+bisogno\\s+del\\s+numero(?:\\s+di\\s+telefono)?(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "88440720-daec-5578-88b1-9fec8676b5ee"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "telefona{re} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^telefona(?:re)?(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "cf1766cb-49d9-5698-aea3-1ccfed36730b"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "telefona{re} a (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^telefona(?:re)?\\s+a(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "aa0baaa9-582a-5421-b0dd-f052886f1ef3"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "voglio parlare con (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^voglio\\s+parlare\\s+con(?P<contact>(?P<contact__emergencyServices>(?:\\s+linea|\\s+numero(?:\\s+verde)?)\\s+anti\\s+maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'assistenza\\s+sociale|(?:\\s+numero(?:\\s+verde)?|\\s+linea\\s+telefonica)\\s+dell'emergenza\\s+infanzia|\\s+aiuto|\\s+ambulanza|\\s+ambulanze|\\s+antiveleni|\\s+antiveleno|\\s+assistenza antiveleno|\\s+assistenza di emergenza|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+assistenza\\s+telefonica(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+assistenza telefonica antiveleno|\\s+autorità|\\s+carabinieri|\\s+caserma dei vigili del fuoco|\\s+centro antiveleni|\\s+centro antiveleno|\\s+centro assistenza antiveleno|\\s+centro emergenza antiveleni|\\s+centro emergenza antiveleno|\\s+centro emergenze antiveleni|\\s+centro emergenze antiveleno|\\s+centro nazionale antiveleni|\\s+emergenza|\\s+emergenza antiveleni|\\s+emergenza antiveleno|\\s+emergenza assistenza antiveleno|\\s+emergenza nazionale antiveleni|\\s+emergenza servizi antiveleno|\\s+emergenza servizi nazionali antiveleni|\\s+forze dell'ordine|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+anziani|\\s+linea\\s+di\\s+supporto(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+anziani|\\s+linea\\s+di\\s+supporto\\s+anti(?:\\s+)?maltrattamenti\\s+(?:domestici|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+medico|\\s+numero\\s+(?:(?:del\\s+centro|dell'associazione)\\s+)?(?:(?:di|per(?:\\s+la)?)\\s+)?prevenzione(?:\\s+(?:del\\s+suicidio|dei\\s+suicidi|al\\s+suicidio))?|\\s+numero\\s+anti(?:\\s+)?suicidi(?:o)?|\\s+numero dei servizi di assistenza di emergenza|\\s+numero di emergenza|\\s+numero per le emergenze|\\s+numero verde per il maltrattamento domestico|\\s+numero\\s+(?:verde\\s+)?(?:assistenza\\s+telefonica|numero)\\s+anti(?:\\s+)?maltrattamento\\s+(?:domestico|in\\s+famiglia|(?:in|a)\\s+casa)|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+la)\\s+violenza\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:associazione|onlus)\\s+nazionale(?:\\s+anti(?:\\s+)?|\\s+contro\\s+le)\\s+violenze\\s+sui\\s+minori|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+i\\s+suicidi|\\s+numero\\s+(?:verde\\s+)?(?:contro|per)\\s+il\\s+suicidio|\\s+numero\\s+(?:verde\\s+)?contro\\s+la\\s+violenza\\s+domestica|\\s+ospedale|\\s+paramedici|\\s+polizia|\\s+pompieri|\\s+servizi antiveleno|\\s+servizi assistenza antiveleno|\\s+servizi delle forze dell'ordine|\\s+servizi di assistenza per emergenze|\\s+servizi di emergenza|\\s+servizi di emergenza antiveleno|\\s+servizi di polizia|\\s+servizi nazionali antiveleni|\\s+servizio nazionale antiveleni|\\s+situazioni di emergenza|\\s+telefono\\s+(?:rosa|azzurro)|\\s+vigili del fuoco))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "946cb3f7-3390-5225-ac21-50d8bd380a40"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{ehi siri} {per favore|per piacere} (accetta|prendi) (la chiamata|la telefonata)",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+siri\\s+)?(?:(?:per\\s+favore|per\\s+piacere)\\s+)?(?:accetta|prendi)\\s+(?:la\\s+chiamata|la\\s+telefonata)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "158b9b9e-9ee6-59e3-9014-31ebf6406d2c"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{ehi} {siri} {per favore|per piacere} chiama (contact:*{1,5})",
+      "priority" : 50,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?(?:(?:per\\s+favore|per\\s+piacere)\\s+)?chiama\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e5b1b8b0-0959-5756-b0d2-7edfcfacba38"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser"
+      },
+      "pattern" : "{ehi} {siri} (chiama|componi) {mio|nostro|il} (contact:emergency_contact_parser) {per favore|per piacere}",
+      "priority" : 35,
+      "regex" : "^(?:ehi\\s+)?(?:siri\\s+)?(?:chiama|componi)\\s+(?:(?:mio|nostro|il)\\s+)?(?P<contact>(?P<contact__emergency_contact_parser>contatto di emergenza))(?:\\s+(?:per\\s+favore|per\\s+piacere))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4570b6f8-e6f0-5ac7-9f49-ec7b00103c18"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "(canzone|traccia musicale|traccia|brano) precedente {ancora|un'altra volta}",
+      "priority" : 50,
+      "regex" : "^(?:canzone|traccia\\s+musicale|traccia|brano)\\s+precedente(?:\\s+(?:ancora|un'altra\\s+volta))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "46ac3dcd-42d7-5134-9298-0a72b5fc7d02"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "(riproduci|riprodurre|metti|mettere|fai partire|suonare|suona) {la} (canzone|traccia musicale|traccia) precedente {ancora|un'altra volta}",
+      "priority" : 50,
+      "regex" : "^(?:riproduci|riprodurre|metti|mettere|fai\\s+partire|suonare|suona)\\s+(?:la\\s+)?(?:canzone|traccia\\s+musicale|traccia)\\s+precedente(?:\\s+(?:ancora|un'altra\\s+volta))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b9c5f784-1c2a-5dde-9eff-486164b58109"
+    },
+    {
+      "action" : "search_and_read(query='messages', entity_types='MessageEntity', structured_query='{\"messages\":[{}]}')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "ehi {siri} messaggi",
+      "priority" : 50,
+      "regex" : "^ehi\\s+(?:siri\\s+)?messaggi$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "1ad250b4-7e91-5511-84c8-bd30d2eff864"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "(attivare|attiva|abilitare|abilita|accend(i|ere)) (s:connection_settings) {per favore|per piacere}",
+      "priority" : 50,
+      "regex" : "^(?:attivare|attiva|abilitare|abilita|accend(?:i|ere))\\s+(?P<s>(?P<s__connection_settings>bluetooth|hotspot|rete cellulare|wi-fi|wireless))(?:\\s+(?:per\\s+favore|per\\s+piacere))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "23543ce7-ab63-5d9f-81da-fd21761fb977"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "(attivare|attiva|abilitare|abilita|accend(i|ere)) (s:flashlight_settings) {per favore|per piacere}",
+      "priority" : 50,
+      "regex" : "^(?:attivare|attiva|abilitare|abilita|accend(?:i|ere))\\s+(?P<s>(?P<s__flashlight_settings>flash|luce|torcia))(?:\\s+(?:per\\s+favore|per\\s+piacere))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "bf014590-80bb-553a-abe7-63a70adb9bf2"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "(attivare|attiva|abilitare|abilita|accend(i|ere)) (s:mode_settings) {per favore|per piacere}",
+      "priority" : 50,
+      "regex" : "^(?:attivare|attiva|abilitare|abilita|accend(?:i|ere))\\s+(?P<s>(?P<s__mode_settings>modalità aereo|modalità notte|non disturbare|risparmio energetico|tema scuro))(?:\\s+(?:per\\s+favore|per\\s+piacere))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f3c7c450-58b1-5c49-a6be-58302ff63543"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "(incrementa|alza|aumenta) la luminosità {del mio|del|dello} (schermo|display)",
+      "priority" : 50,
+      "regex" : "^(?:incrementa|alza|aumenta)\\s+la\\s+luminosità\\s+(?:(?:del\\s+mio|del|dello)\\s+)?(?:schermo|display)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "3f76daec-122a-5e53-93ea-356bdfd7302b"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "(s:flashlight_settings) per favore",
+      "priority" : 50,
+      "regex" : "^(?P<s>(?P<s__flashlight_settings>flash|luce|torcia))\\s+per\\s+favore$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ca01f854-1033-5e57-abd8-26585d9bba60"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "quieter" : "quieter_1",
+        "quieter__quieter_1" : "quieter_1",
+        "volume" : "volume_1",
+        "volume__volume_1" : "volume_1"
+      },
+      "pattern" : "{ehi siri|siri} {per favore|puoi|potresti} (aumentare|aggiustare|sistemare|impostare) {il} (volume:volume_1) {ancora} (quieter:quieter_1)",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:(?:per\\s+favore|puoi|potresti)\\s+)?(?:aumentare|aggiustare|sistemare|impostare)\\s+(?:il\\s+)?(?P<volume>(?P<volume__volume_1>livelli volume|livello del volume|livello suono|livello volume|suono|volume))\\s+(?:ancora\\s+)?(?P<quieter>(?P<quieter__quieter_1>più basso|più piano))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "edd554e0-0a45-5ed1-af22-1b213d9181c2"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{ehi siri|siri} {per piacere} (abilita|attiva|accendi) (s:flashlight_settings) {per favore|per piacere}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+siri|siri)\\s+)?(?:per\\s+piacere\\s+)?(?:abilita|attiva|accendi)\\s+(?P<s>(?P<s__flashlight_settings>flash|luce|torcia))(?:\\s+(?:per\\s+favore|per\\s+piacere))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "54a9a1ea-3706-592c-8d46-048a7503c141"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{{ehi} siri} accendi (il|la|lo) (s:flashlight_settings) {per favore|per piacere}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?accendi\\s+(?:il|la|lo)\\s+(?P<s>(?P<s__flashlight_settings>flash|luce|torcia))(?:\\s+(?:per\\s+favore|per\\s+piacere))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "526c061c-0936-5b04-aa52-69c1393255bd"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{{ehi} siri} {per favore} (apri|accendi|cambia|metti|inserisci|mostra) (s:flashlight_settings) {per favore|per piacere}",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?(?:per\\s+favore\\s+)?(?:apri|accendi|cambia|metti|inserisci|mostra)\\s+(?P<s>(?P<s__flashlight_settings>flash|luce|torcia))(?:\\s+(?:per\\s+favore|per\\s+piacere))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8910c4b4-5bcd-539f-a089-48bcc8bf6fbc"
+    },
+    {
+      "action" : "stop_timers(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "(fermeresti|cancelleresti|spegneresti|disattiveresti|chiuderesti) il (timer|tempo)",
+      "priority" : 50,
+      "regex" : "^(?:fermeresti|cancelleresti|spegneresti|disattiveresti|chiuderesti)\\s+il\\s+(?:timer|tempo)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "39cd5892-31eb-5db6-a6c4-fff681c5c42b"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "ehi siri (disattiva|terminare) tutti i timer",
+      "priority" : 50,
+      "regex" : "^ehi\\s+siri\\s+(?:disattiva|terminare)\\s+tutti\\s+i\\s+timer$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "bad16536-cf72-5dbc-ac9e-8925a7a1d781"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{{ehi} siri} timer (duration:duration) per favore",
+      "priority" : 50,
+      "regex" : "^(?:(?:ehi\\s+)?siri\\s+)?timer(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>hr|hrs|ora|ore)))?(?:\\s+e)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>min|mins|minuti|minuto)))?(?:\\s+e)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>cinque|dieci|due|nove|otto|quattro|sei|sette|tre|uno|zero)))\\s+(?P<unit_s>(?P<unit_s__second_parser>sec|secondi|secondo|secs)))?)\\s+per\\s+favore$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "192480bf-9bba-569c-abfc-58ea94bdfc68"
+    }
+  ],
+  "version" : "5500000.22501.0"
+}

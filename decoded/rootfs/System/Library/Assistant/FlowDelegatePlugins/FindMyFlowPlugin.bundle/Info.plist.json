@@ -1,0 +1,111 @@
+{
+  "CFBundleName": "FindMyFlowPlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedIntents": [
+    "sirikit.intent.find_my.FindDeviceAndPlaySoundIntent"
+  ],
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "FindMyFlowPlugin.FindMyFlowPlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "FindMyFlowPlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.findmy.FindMyFlowPlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "findMy"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "common_UserEntity",
+      "verb": "checkLocation",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "ping",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "getLocation",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "checkLocation",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_GeographicArea",
+      "verb": "getPerson",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "getLocation",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_FindMyStatus",
+      "verb": "disableNotifications",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_FindMyStatus",
+      "verb": "enableNotifications",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_FindMyStatus",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_FindMyStatus",
+      "verb": "hide",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_FindMyStatus",
+      "verb": "unhide",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "request",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.findmy.directInvocation.sharedLocationVisibility"
+  ]
+}

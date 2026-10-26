@@ -1,0 +1,44 @@
+{
+  "Bundle OS Type code": "BNDL",
+  "Bundle name": "$(PRODUCT_NAME)",
+  "CFBundleDevelopmentRegion": "$(DEVELOPMENT_LANGUAGE)",
+  "CFBundleDisplayName": "Safety Alerts",
+  "CFBundleExecutable": "$(EXECUTABLE_NAME)",
+  "CFBundleIdentifier": "$(PRODUCT_BUNDLE_IDENTIFIER)",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundlePackageType": "$(PRODUCT_BUNDLE_PACKAGE_TYPE)",
+  "CFBundleVersion": "${CURRENT_PROJECT_VERSION}",
+  "UNUserNotificationCenter": {
+    "UNAllowCriticalAlerts": true,
+    "UNAllowUnlimitedContentBody": true,
+    "UNDaemonShouldReceiveBackgroundResponses": true,
+    "UNDefaultSettings": {
+      "UNSettingAlerts": true,
+      "UNSettingAlwaysShowPreviews": true,
+      "UNSettingBadges": false,
+      "UNSettingCarPlay": true,
+      "UNSettingLockScreen": true,
+      "UNSettingModalAlertStyle": true,
+      "UNSettingNotificationCenter": true,
+      "UNSettingSounds": true,
+      "UNSettingSpoken": false
+    },
+    "UNHideSettings": true,
+    "UNNotificationIcons": {
+      "UNNotificationIconCarPlay": "emergency-29",
+      "UNNotificationIconDefault": "emergency-20",
+      "UNNotificationIconWatchList394h": "emergency-55",
+      "UNNotificationIconWatchList448h": "emergency-58",
+      "UNNotificationIconWatchListLarge": "emergency-55",
+      "UNNotificationIconWatchListSmall": "emergency-48",
+      "UNNotificationIconWatchQuickLook394h": "emergency-196",
+      "UNNotificationIconWatchQuickLook448h": "emergency-216",
+      "UNNotificationIconWatchQuickLookLarge": "emergency-196",
+      "UNNotificationIconWatchQuickLookSmall": "emergency-172"
+    },
+    "UNSuppressDismissalSync": true,
+    "UNSuppressIconMask": true,
+    "UNSuppressUserAuthorizationPrompt": true,
+    "UNUniversalApplicationIdentifier": "com.apple.safetyalerts.gen"
+  }
+}

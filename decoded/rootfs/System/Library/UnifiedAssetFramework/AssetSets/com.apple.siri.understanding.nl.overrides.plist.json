@@ -1,0 +1,33 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.siri.understanding.nl.overrides",
+  "UsageTypes": [
+    "nl.language"
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Siri.UnderstandingNLOverrides",
+  "MetadataAsset": "com.apple.siri.understanding.nl.overrides.uaf.metadata",
+  "EnableCellular": true,
+  "Assets": [
+    {
+      "AssetName": "com.apple.siri.understanding.nl.overrides.uaf.metadata",
+      "IgnoreOSCompatibility": true,
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.understanding.nl.overrides.uaf.metadata"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.overrides",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "nl.language"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.overrides.{nl.language}"
+        }
+      ]
+    }
+  ]
+}

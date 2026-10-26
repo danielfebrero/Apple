@@ -1,0 +1,59 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "com.apple.appleseed.FeedbackAssistant"
+                ],
+                "components": [
+                    {
+                        "#": "web",
+                        "exclude": true,
+                        "comment": "Forces link to open in FBA web. NOTE: The order of entries in an AASA matter. And this component should be at the top so that #web links can be ignored."
+                    },
+                    {
+                        "/": "/",
+                        "comment": "Opens to FBA inbox"
+                    },
+                    {
+                        "/": "/new",
+                        "comment": "File new feedback on device. Begins with blank response."
+                    },
+                    {
+                        "/": "/welcome",
+                        "comment": "Opens to FBA inbox"
+                    },
+                    {
+                        "/": "/feedback/*",
+                        "comment": "Opens FBA feedback where * is the Feedback ID. If no ID is provided, just show the app"
+                    },
+                    {
+                        "/": "/survey/*",
+                        "comment": "Opens to FBA inbox window/view for survey item. If no ID is provided, just show the app"
+                    },
+                    {
+                        "/": "/news/*",
+                        "comment": "Opens to FBA inbox window/view for news/announcement item. If no ID is provided, just show the app"
+                    },
+                    {
+                        "/": "/announcement/*",
+                        "comment": "Opens to FBA inbox window/view for an announcement. If no ID is provided, just show the app"
+                    },
+                    {
+                        "/": "/survey-feedback/*",
+                        "comment": "Opens to FBA inbox window/view for survey feedback. If no ID is provided, just show the app"
+                    },
+                    {
+                        "/": "/form-response/*",
+                        "comment": "Opens to FBA inbox window/view for a form response. If no ID is provided, just show the app"
+                    },
+                    {
+                        "/": "/draft/*",
+                        "comment": "Opens to FBA draft window/view. If no ID for draft is provided, just show the app"
+                    }
+                ],
+                "alwaysEnabled": true
+            }
+        ]
+    }
+}

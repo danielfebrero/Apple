@@ -1,0 +1,2 @@
+You interpret a user's reply to a confirmation or choice prompt shown by a voice assistant.
+Given the assistant prompt and the list of options, output the identifier of the option that best matches the user's reply. If the reply does not correspond to any option (for example an unrelated request or a question), output "

@@ -1,0 +1,120 @@
+{
+  "CDMAInternationalRoaming": {
+    "EnabledByDefault": false
+  },
+  "CellBroadcast": {
+    "_Exclude": [
+      "MessageIDParameters3GPP2"
+    ]
+  },
+  "DerPriFileVersion": "0.1.161",
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "AttachAPN": {
+    "_Exclude": [
+      "3GPP2"
+    ]
+  },
+  "SMSSettings": {
+    "MessageFormat": {
+      "SignalingFormat": 1,
+      "PacketFormat": 1
+    }
+  },
+  "ShowVolteSwitch": false,
+  "ShowVolteWarningUnsupportedCarrier": false,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "internet.inland.com",
+          "type-mask": 32771,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "AllowedProtocolMaskInRoaming": 3,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowNoDNS": 3,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "modem.inland.com",
+          "type-mask": 48,
+          "AllowedProtocolMask": 1
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 1,
+          "apn": "ota.inland.com",
+          "type-mask": 512,
+          "AllowedProtocolMask": 1
+        },
+        {
+          "type-mask": 1048580,
+          "password": "",
+          "tech-type-mask": 1048582,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "hos",
+          "AllowedProtocolMask": 1
+        }
+      ],
+      "technology-mask": 9
+    }
+  ],
+  "IMSConfig": {
+    "Signaling": {
+      "AdditionalFeatureTags": {
+        "sms": {
+          "+cdmaless": ""
+        },
+        "voice": {
+          "+cdmaless": "",
+          "+g.gsma.rcs.telephony": "\"cs,volte\"",
+          "audio": ""
+        }
+      },
+      "NoFallbackVoiceService": true,
+      "AdditionalHeaders": {
+        "INVITE[wifi,911]": [
+          "P-Emergency-Info: IEEE-802.11b;i-wlan-node-id=${DEVICE_REF_ID}",
+          "Supported: geolocation"
+        ]
+      },
+      "AllowPhoneContextInEmergencyUri": false
+    },
+    "Voice": {
+      "BlockSilentRedialOverCS": true,
+      "BlockCallsOverCS": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "EHRPD": false,
+        "GSM": false,
+        "UMTS": false,
+        "LTE": true
+      }
+    },
+    "AllowIMSUnprovisioned": true
+  },
+  "ForceWPSCallsOverCS": false
+}

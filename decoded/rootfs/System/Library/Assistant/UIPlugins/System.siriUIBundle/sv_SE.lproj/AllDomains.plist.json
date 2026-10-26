@@ -1,0 +1,144 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Telefon",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Ring till Björn",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime till Lisa",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Appar",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Öppna Bilder",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Meddelanden",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Skriv till Sanna jag kommer snart",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Kalender",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Skapa ett möte klockan 9",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Bilder",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Visa mina bilder från igår",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Kartor",
+      "DomainAlternateDisplayName": "Kartor",
+      "TagPhrase": "Ge mig en färdbeskrivning hem",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Skicka tweet med min plats…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Skicka till Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Lägg upp på Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Musik",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Spela Norah Jones",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Påminnelser",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Påminn mig om att ringa mamma",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "E-post",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Skicka e-brev till Elin om resan",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Väder",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Vad blir det för väder idag?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Aktier",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Vad är Apples börskurs?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Klocka",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Väck mig imorgon klockan 7:00",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Kontakter",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Vad är Elins adress?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Anteckningar",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Notera att bion kostade 90 kr",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Inställningar",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Aktivera Flygplansläge",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Webbsökning",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Sök på webben efter isbjörnar",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Vanliga frågor",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "Hur långt är det till solen?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "Podcaster",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Spela podcaster",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

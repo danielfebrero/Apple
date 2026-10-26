@@ -1,0 +1,65 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "entityIdentifier",
+          "INTEGER"
+        ],
+        [
+          "isFavorite",
+          "BOOL"
+        ],
+        [
+          "isEmergencyContact",
+          "BOOL"
+        ],
+        [
+          "isICloudFamily",
+          "BOOL"
+        ],
+        [
+          "relationshipLabel",
+          "TEXT"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "entityIdentifier"
+      ],
+      "subjectIdentifierColumn": "entityIdentifier",
+      "tableName": "entityImportanceSignalsIDMap"
+    },
+    "path": "entityRelevance/entityImportanceSignals.db",
+    "type": "customRow"
+  },
+  "customViewClass": "EntityImportanceSignals",
+  "name": "entityImportanceSignals",
+  "type": "custom",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entity": "SB104",
+            "predicates": [
+              "PS1",
+              "nm_isFavorite",
+              "PS598/CS168/nm_relationshipLabel",
+              "nm_relationshipLabel"
+            ],
+            "sources": [
+              "CNContact",
+              "FAFamily",
+              "HKEmergencyContact",
+              "IPEntityTaggingPersonInference"
+            ]
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ]
+  }
+}

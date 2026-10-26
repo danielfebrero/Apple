@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "configuration-type": "com.apple.configuration.siri.settings",
+  "supported-os": {
+    "iOS": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "system"
+      ]
+    },
+    "SharediPad": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "user"
+      ]
+    },
+    "macOS": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "system",
+        "user"
+      ]
+    },
+    "tvOS": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "system"
+      ]
+    },
+    "visionOS": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "system"
+      ]
+    },
+    "watchOS": {
+      "allowed-enrollments": [
+        "supervised"
+      ],
+      "allowed-scopes": [
+        "system"
+      ]
+    }
+  },
+  "asset-references": [],
+  "managed-settings": [
+    {
+      "setting": "siri.denySiri",
+      "key-path": "$.Enabled",
+      "type": "boolean",
+      "invert-boolean": true,
+      "default": true,
+      "scope": "user",
+      "supported-os": {
+        "iOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        },
+        "SharediPad": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "user"
+          ]
+        },
+        "macOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system",
+            "user"
+          ]
+        },
+        "tvOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        },
+        "visionOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        }
+      }
+    },
+    {
+      "setting": "siri.denySiri3489",
+      "key-path": "$.AllowSiriAI",
+      "type": "boolean",
+      "invert-boolean": true,
+      "default": true,
+      "scope": "user",
+      "supported-os": {
+        "iOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        },
+        "SharediPad": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": []
+        },
+        "macOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system",
+            "user"
+          ]
+        },
+        "visionOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        }
+      }
+    },
+    {
+      "setting": "siri.denySiriUserGeneratedContent",
+      "key-path": "$.AllowUserGeneratedContent",
+      "type": "boolean",
+      "invert-boolean": true,
+      "default": true,
+      "scope": "user",
+      "supported-os": {
+        "iOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        },
+        "SharediPad": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "user"
+          ]
+        },
+        "watchOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        }
+      }
+    },
+    {
+      "setting": "siri.denySiriWhileLocked",
+      "key-path": "$.AllowWhileLocked",
+      "type": "boolean",
+      "invert-boolean": true,
+      "default": true,
+      "scope": "user",
+      "supported-os": {
+        "iOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        },
+        "SharediPad": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "user"
+          ]
+        },
+        "watchOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        }
+      }
+    },
+    {
+      "setting": "siri.forceSiriProfanityFilter",
+      "key-path": "$.ForceProfanityFilter",
+      "type": "boolean",
+      "invert-boolean": false,
+      "default": false,
+      "scope": "user",
+      "supported-os": {
+        "iOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        },
+        "SharediPad": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "user"
+          ]
+        },
+        "macOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system",
+            "user"
+          ]
+        }
+      }
+    },
+    {
+      "setting": "siri.forceSiriReduceSensitiveContent",
+      "key-path": "$.ForceReduceSensitiveContent",
+      "type": "boolean",
+      "invert-boolean": false,
+      "default": false,
+      "scope": "user",
+      "supported-os": {
+        "iOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        },
+        "SharediPad": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "user"
+          ]
+        },
+        "macOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system",
+            "user"
+          ]
+        },
+        "visionOS": {
+          "allowed-enrollments": [
+            "supervised"
+          ],
+          "allowed-scopes": [
+            "system"
+          ]
+        }
+      }
+    }
+  ]
+}

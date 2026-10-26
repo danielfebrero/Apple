@@ -1,0 +1,17 @@
+{
+  "$class": "DonateRankedQueriesToPortrait",
+  "$group": "com.apple.ace.system",
+  "queryDonations": [
+    {
+      "$class": "DonateSiriQueryToPortrait",
+      "$group": "com.apple.ace.system",
+      "domain": "encyclopedia",
+      "originalQuery": "How old is Donald Trump",
+      "qid": "Q237801321",
+      "rank": "1",
+      "rankerConfidence": "0.1"
+    }
+  ],
+  "resultCandidateId": "0",
+  "utterance": "Who is Barack Obama"
+}

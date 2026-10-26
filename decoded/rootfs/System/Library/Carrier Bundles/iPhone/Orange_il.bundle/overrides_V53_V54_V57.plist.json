@@ -1,0 +1,44 @@
+{
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 9217,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "AuthenticateTrustFlag",
+      "transferSIMService"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "ShowHighDataModeSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "0.1.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "ShowVolteSwitch": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true,
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://sm-v4-052-a-gtm.pr.go-esim.com:4443",
+    "MinCompatibleOS": "26.3",
+    "TransferErrorCodes": {
+      "CarrierDefaultErrors": [
+        "3"
+      ],
+      "BillingErrors": [
+        "1"
+      ],
+      "IneligibleAccountErrors": [
+        "4"
+      ],
+      "MaintenanceErrors": [
+        "5"
+      ],
+      "BlockedAccountErrors": [
+        "2"
+      ]
+    }
+  },
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ]
+}

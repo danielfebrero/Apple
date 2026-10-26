@@ -1,0 +1,1 @@
+For multi-part questions, put ALL stages in one pipeline. Each stage has id + output on the Stage, with stage-specific fields inside kind. bindVariable captures peak values; filter/extractGroupItems use them downstream. One call, many answers.

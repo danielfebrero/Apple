@@ -1,0 +1,53 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "提醒我打電話回家",
+            "回到這裡的時候提醒我要買票",
+            "記得要帶雨傘",
+            "別忘記要買巧克力",
+            "提醒我明天早上六點吃藥",
+            "半小時以後提醒我要去接小孩",
+            "朗讀我的工作待辦事項",
+            "將第三個提醒事項標記為已完成",
+            "建立購物列表",
+            "明天提醒我這封信",
+            "記得這個網頁"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "提醒我回家的時候FaceTime給媽媽",
+            "到辦公室的時候提醒我打電話給我表妹"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "提醒我到車上的時候打給我爸爸",
+            "到家的時候提醒我FaceTime給媽媽",
+            "提醒我離開的時候FaceTime給裕嘉"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "提醒我離開這邊的時候要買禮物"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

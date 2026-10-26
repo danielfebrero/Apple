@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="OnDeviceDialog#gettingDirectionsToAddress" locale="en" xmlns="urn:apple:names:siri:cat:2.0">
+    <first>
+        <dialog spokenOnly="true">
+            <print><phrase name="directions"/><opt> to <phrase name="destinationToPrint"/></opt><opt> from <phrase name="sourceNameToPrint"/></opt><opt><phrase name="thirdPartyAppPhrase"/></opt><opt><phrase name="routingPreferences"/></opt><phrase name="ellipsis"/></print>
+            <speak><phrase name="directions"/><opt> to <phrase name="destinationToSpeak"/></opt><opt> from <phrase name="sourceNameToSpeak"/></opt><opt><phrase name="thirdPartyAppPhrase"/></opt><opt><phrase name="routingPreferences"/></opt></speak>
+        </dialog>
+    </first>
+    <phrases>
+        <switch phrase="transportationModePhrase" value="transportationMode">
+            <text case="'driving'">driving </text>
+            <text case="'cycling'">cycling </text>
+            <text case="'transit'">transit </text>
+            <text case="'walking'">walking </text>
+            <text></text>
+        </switch>
+        <switch phrase="thirdPartyAppName" value="thirdPartyAppBundleId">
+            <text case="'com.google.Maps'">Google Maps</text>
+            <text case="'com.waze.iphone'">Waze</text>
+            <text case="'com.baidu.map'">Baidu Maps</text>
+            <text case="'com.autonavi.amap'">AutoNavi</text>
+            <text case="'ru.yandex.traffic'">Yandex Maps</text>
+            <text case="'ru.yandex.mobile.navigator'">Yandex Navi</text>
+            <text case="'com.tencent.sosomap'">Tencent Maps</text>
+            <text></text>
+        </switch>
+        <first phrase="directions">
+            <text>Getting <opt><phrase name="transportationModePhrase"/></opt>directions</text>
+        </first>
+        <first phrase="thirdPartyAppPhrase">
+            <text condition="thirdPartyAppBundleId"> using <phrase name="thirdPartyAppName"/></text>
+            <text></text>
+        </first>
+        <first phrase="routingPreferences">
+            <text condition="isAvoidHighwaysAndTolls"> avoiding highways and avoiding tolls</text>
+            <text condition="isAvoidHighways"> avoiding highways</text>
+            <text condition="isAvoidTolls"> avoiding tolls</text>
+            <text></text>
+        </first>
+        <first phrase="ellipsis">
+            <text>…</text>
+        </first>
+
+        <first phrase="sourceNameToSpeak">
+            <text condition="isSourceAddress"><say-as interpret-as="address"><var name="sourceAddressToSpeak.shortLocation"/></say-as></text>
+            <text><var name="sourcePOIName"/></text>
+        </first>
+        <first phrase="sourceNameToPrint">
+            <text condition="isSourceAddress"><var name="sourceAddressToPrint.shortLocation"/></text>
+            <text><var name="sourcePOIName"/></text>
+        </first>
+
+        <first phrase="destinationToSpeak">
+            <text condition="isPostCodeSearch"><say-as interpret-as="address"><var name="addressToSpeak.locality"/>, <var name="addressToSpeak.postCode"/></say-as></text>
+            <text><say-as interpret-as="address"><var name="locationToSpeak.shortLocation"/></say-as></text>
+        </first>
+        <first phrase="destinationToPrint">
+            <text condition="isPostCodeSearch"><var name="addressToPrint.locality"/>, <var name="addressToPrint.postCode"/></text>
+            <text><var name="locationToPrint.shortLocation"/></text>
+        </first>
+    </phrases>
+    <conditions>
+        <condition name="isAvoidHighwaysAndTolls">
+            <and>
+              <expression name="isAvoidHighways"/>
+              <expression name="isAvoidTolls"/>
+            </and>
+        </condition>
+    </conditions>
+</cat>

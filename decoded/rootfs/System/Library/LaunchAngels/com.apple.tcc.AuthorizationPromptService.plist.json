@@ -1,0 +1,22 @@
+{
+  "EnablePressuredExit": false,
+  "RunAtLoad": false,
+  "ProcessType": "App",
+  "_ManagedBy": "com.apple.runningboard",
+  "MachServices": {
+    "com.apple.tcc.AuthorizationPromptService": {
+      "_ExperimentalNonLaunching": true
+    }
+  },
+  "UserName": "mobile",
+  "ProgramArguments": [
+    "/Applications/AuthorizationPromptService.app/AuthorizationPromptService"
+  ],
+  "_AdditionalProperties": {
+    "RunningBoard": {
+      "Managed": true,
+      "Reported": true
+    }
+  },
+  "Label": "com.apple.tcc.AuthorizationPromptService"
+}

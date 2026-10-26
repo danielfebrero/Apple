@@ -1,0 +1,15 @@
+{
+  "name": "com.apple.siri.OnDeviceAnalytics.SpeakerIdSamplingExtension.daily",
+  "bundleIdentifier": "com.apple.siri.OnDeviceAnalytics.SpeakerIdSamplingExtension",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 79200.0,
+      "minDurationBetweenInstances": 39600
+    },
+    "requiresProtectionClass": "ClassC",
+    "priority": "Utility",
+    "requiresExternalPower": false,
+    "groupName": "com.apple.Siri.OnDeviceAnalytics.SpeakerIdSamplingExtension",
+    "groupConcurrencyLimit": 1
+  }
+}

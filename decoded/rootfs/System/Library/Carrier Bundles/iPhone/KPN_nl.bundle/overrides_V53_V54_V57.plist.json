@@ -1,0 +1,47 @@
+{
+  "ShowHighDataModeSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "AttachAPN": {
+    "3GPP": {
+      "AllowedProtocolMaskInRoamingLTE": 3,
+      "AllowedProtocolMaskInRoamingUMTS": 3
+    }
+  },
+  "DerPriFileVersion": "0.1.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "ShowVolteSwitch": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true,
+  "apns": [
+    {
+      "type-mask": 32819,
+      "password": "",
+      "tech-type-mask": 2,
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "internet",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 1048576,
+      "password": "",
+      "tech-type-mask": 1048576,
+      "AllowNoDNS": 1,
+      "enableXLAT464": true,
+      "username": "",
+      "apn": "ut",
+      "AllowedProtocolMask": 3
+    }
+  ]
+}

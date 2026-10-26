@@ -1,0 +1,275 @@
+{
+  "ASROnByDefault": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "CompositionResolution": {
+    "Enabled": true
+  },
+  "NanoSiriUIRefresh": {
+    "Enabled": true
+  },
+  "SKESiriCorrectionsCheckUndo": {
+    "Enabled": true
+  },
+  "SKESiriCorrectionsUndoFollowup": {
+    "Enabled": true
+  },
+  "SKESiriNLUTypesSDAAdoption": {
+    "Enabled": true
+  },
+  "SKESiriNLUTypesUserParseAdoption": {
+    "Enabled": true
+  },
+  "accessible_announce": {
+    "Enabled": true
+  },
+  "asr_adopting_uaf": {
+    "Enabled": true
+  },
+  "asr_euclid_entity_retrieval": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "asr_jr_entity_ranking": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "asr_speech_profile_app_entities": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "asr_speech_profile_migration": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "asr_speech_profile_onscreen_entities": {
+    "Enabled": true
+  },
+  "asr_speech_profile_shared_data": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "asr_via_speech_api": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "asr_via_speech_api_borealis": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "assistant_engine": {
+    "Enabled": true
+  },
+  "assisted_linwood": {
+    "Enabled": true
+  },
+  "assisted_linwood_voice_response_from_companion": {
+    "Enabled": true
+  },
+  "audio_homepod_app_prediction": {
+    "Enabled": true
+  },
+  "audio_session_coordination": {
+    "Enabled": true
+  },
+  "awdl_fallback_for_personal_requests": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "background_session": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "bobble": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "cda_face_detection": {
+    "Enabled": true
+  },
+  "ck_secondary_zone_routing": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "continuous_conversation": {
+    "Enabled": true
+  },
+  "conversational_action_manager": {
+    "Enabled": true
+  },
+  "cross_device_media_control_from_watch": {
+    "Enabled": true
+  },
+  "dictation_auto_punctuation": {
+    "Enabled": true
+  },
+  "dictation_combined_euclid_and_asr_alternatives": {
+    "Enabled": true
+  },
+  "dictation_emoji_recognition": {
+    "Enabled": true
+  },
+  "dictation_emoji_v2": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "dictation_euclid_alternatives": {
+    "Enabled": true
+  },
+  "dictation_on_ifp": {
+    "Enabled": true
+  },
+  "dictation_on_srd": {
+    "Enabled": true
+  },
+  "dictation_user_edit_classification": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "dictation_voice_commands": {
+    "Enabled": true
+  },
+  "dictation_voice_trigger": {
+    "Enabled": true
+  },
+  "dictation_with_personal_context": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "disable_fallback_domain": {
+    "Enabled": true
+  },
+  "disable_fallback_nl": {
+    "Enabled": true
+  },
+  "fall2022_ambiguity_handling": {
+    "Enabled": true
+  },
+  "fall2022_conversation_runtime": {
+    "Enabled": true
+  },
+  "force_ble_discovery_for_companion_link": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "hang_up": {
+    "Enabled": true
+  },
+  "home_automation_background_request": {
+    "Enabled": true
+  },
+  "hs_answer_call_notification": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "interruptible_user_session": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "intuitive_conversation_announce": {
+    "Enabled": true
+  },
+  "is_identity_bridge_instrumentation_enabled": {
+    "Enabled": true
+  },
+  "lasso": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "linwood_modality_connection_skip": {
+    "Enabled": true
+  },
+  "medoc": {
+    "Enabled": true
+  },
+  "mini_block": {
+    "Enabled": true
+  },
+  "mu_sessions": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "multilingual_response_variant_selector": {
+    "Enabled": true
+  },
+  "myriad_self_metrics": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "offline_dictation_language_mapping_enabled": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "personal_request_defined_error_dialogs_server": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "proximity_user_enrollment": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "scda_framework": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "scda_trial_boosts": {
+    "Enabled": true
+  },
+  "shared_backedup_migration": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "siriXFallbackForNoMatchingTool": {
+    "Enabled": true
+  },
+  "siri_capella_enabled_for_tvos": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "siri_data_sharing_reprompt": {
+    "Enabled": true
+  },
+  "siri_ifflow": {
+    "Enabled": true
+  },
+  "siri_location_services_prompting": {
+    "Enabled": true
+  },
+  "siri_request_dispatcher": {
+    "Enabled": true
+  },
+  "siri_state_feedback": {
+    "Enabled": true
+  },
+  "sirix": {
+    "Enabled": true
+  },
+  "stationary_device_location_manager": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "suggestions": {
+    "Enabled": true
+  },
+  "thoughtful_announce": {
+    "Enabled": true
+  },
+  "trial_dictation_asset_delivery": {
+    "Enabled": true
+  },
+  "ttr_audio_attachment": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "ttr_speech_profile_attachment": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "ttr_user_vocab_profile_attachment": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "tv_polyglot": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "unified_asset_namespace": {
+    "Enabled": true
+  },
+  "uod_asr_on_server_enabled": {
+    "Enabled": true
+  },
+  "uod_asr_on_server_enabled_atv": {
+    "Enabled": true
+  },
+  "uod_asr_on_server_enabled_macos": {
+    "Enabled": true
+  },
+  "uod_asr_on_server_enabled_watchos": {
+    "Enabled": true
+  },
+  "uod_enabled_for_macos": {
+    "Enabled": true
+  },
+  "uod_enabled_for_tvos": {
+    "Enabled": true
+  },
+  "uod_enabled_for_watchos2": {
+    "Enabled": true
+  },
+  "uod_force_disabled_for_tvos": {
+    "Enabled": true
+  },
+  "use_flow_runtime": {
+    "Enabled": true
+  }
+}

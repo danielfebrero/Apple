@@ -1,0 +1,183 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "電話",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "打給我哥哥",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime給陳裕嘉",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "App",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "我要看照片",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "訊息",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "傳簡訊給我媽媽",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "行事曆",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "下午四點要開會",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "體育",
+      "IconResourceName": "Sports",
+      "TagPhrase": "巨人隊贏了嗎？",
+      "DomainName": "Sports"
+    },
+    {
+      "DomainDisplayName": "照片",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "顯示昨天拍的照片",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "地圖",
+      "DomainAlternateDisplayName": "地圖",
+      "TagPhrase": "帶我回家",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "推文而且包含我的位置",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "微博",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "在微博上發文⋯",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "發佈臉書",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "餐廳",
+      "IconResourceName": "Restaurants",
+      "TagPhrase": "我想吃牛肉麵",
+      "DomainName": "Restaurants"
+    },
+    {
+      "DomainDisplayName": "電影",
+      "IconResourceName": "Movies",
+      "TagPhrase": "我要找喜劇片",
+      "DomainName": "Movies"
+    },
+    {
+      "DomainDisplayName": "音樂",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "播放蘇打綠",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "提醒事項",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "提醒我打電話回家",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "電子郵件",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "發郵件給薏婷說明天開會",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "天氣",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "今天天氣如何？",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "股市",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "蘋果公司的股價",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "時鐘",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "幫我調鬧鐘",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "聯絡資訊",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "陳裕嘉他家住哪裡？",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "尋找我的朋友",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "健行在哪裡？",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "備忘錄",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "在備忘錄記下今天花了$200",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "設定",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "開啟飛航模式",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "網頁搜尋",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "上網查一下北極熊",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "問與答",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "一磅等於幾公斤？",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "iTunes",
+      "IconDisplayIdentifier": "com.apple.MobileStore",
+      "TagPhrase": "在iTunes下載電影料理鼠王",
+      "DomainName": "iTunes"
+    },
+    {
+      "DomainDisplayName": "書籍",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "在iBooks尋找紅樓夢",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "Podcasts",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "播放podcast",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+Given a span of ORIGINAL text and an EDITED version of that span of text, provide an explanation for the change that was made for the edit. If the edit is undesirable, flag it as such instead.
+
+Desirable edits follow these guidelines for text:
+
+- **Spelling errors**: Fix typos, misspelled words, homophone errors, etc.
+- **Grammar mistakes**: Enforce subject-verb agreement, tense consistency, pronoun-antecedent agreement, misplaced/dangling modifiers, etc.
+- **Capitalization**: Capitalize proper nouns, titles, sentence beginnings, heading consistency, etc.
+- **Punctuation**: Fix missing/incorrect punctuation, quotation marks, apostrophes, comma splices, run-on sentences, etc.
+- **Word choice**: Adjust unclear, incorrect, or awkward word usage
+- **Clarity**: Do major restructuring for unclear sentences
+- **Clichéd Writing**: Rewrite sentences containing clichés
+
+**EXPLANATION CONSTRAINTS:**
+- Write a single 1-sentence explanation per edit, no more than 180 characters.
+- Explanations should reference the above guidelines/principles as a colon-delimited header at the beginning.
+- Explanations should describe the change made in the past tense.
+- Explanations should avoid strong sentiment, especially negative.
+
+**OUTPUT FORMAT:**
+
+Output raw text containing one explanation for each change in the text. Do not output additional commentary or explanations. Do not use markdown
+
+This example output shows one desirable edit and one undesirable edit:
+{
+  "original": "[exact original text]",
+  "edited": "[exact edited text]",
+  "explanations":
+  [
+    {
+      "category": "[exact name of guideline/principle the edit pertains to]",
+      "accept_edits": true,
+      "explanation": "[explanation of specific category of change made to original text by edited text]"
+    },
+    {
+      "category": "[exact name of guideline/principle the edit pertains to]",
+      "accept_edits": false
+    }
+  ]
+}
+
+**ORIGINAL:**

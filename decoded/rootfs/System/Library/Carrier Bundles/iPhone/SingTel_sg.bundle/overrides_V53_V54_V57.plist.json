@@ -1,0 +1,76 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "ShowVoNRSwitch": true,
+  "Enable5GStandaloneByDefault": true,
+  "NRSlicing": {
+    "SupportsLLPHS": true,
+    "OsId": [
+      67,
+      1,
+      210,
+      17,
+      151,
+      217,
+      66,
+      201,
+      177,
+      194,
+      246,
+      117,
+      131,
+      192,
+      249,
+      32
+    ],
+    "EntitlementsGenres": true,
+    "ManagedSliceApps": true
+  },
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "EnableWiFiCallingByDefault": true
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "Enable5GStandaloneAfterUpgrade": true,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "password": "65ideas",
+      "username": "65ideas",
+      "apn": "e-ideas",
+      "type-mask": 32821,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "password": "",
+      "tech-type-mask": 131072,
+      "AllowedProtocolMaskInRoaming": 3,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "password": "",
+      "tech-type-mask": 1048576,
+      "username": "",
+      "apn": "stm-ut",
+      "type-mask": 1048576,
+      "AllowedProtocolMask": 2
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoAfterUpgrade": true,
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true,
+  "SupportsNRNSAInboundRoaming": true
+}

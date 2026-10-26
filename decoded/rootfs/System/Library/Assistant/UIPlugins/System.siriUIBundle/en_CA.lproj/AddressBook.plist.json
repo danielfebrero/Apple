@@ -1,0 +1,66 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "What’s Emily’s address?",
+            "What is Susan Conway’s phone number?",
+            "When is my wife’s birthday?",
+            "Show Lindsey’s home email address",
+            "What’s my brother’s work address?"
+          ]
+        }
+      ],
+      "SectionName": "Asking about contacts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Show Brian Park",
+            "Find people named Conway"
+          ]
+        }
+      ],
+      "SectionName": "Finding contacts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "My mum is Susan Conway",
+            "Jimmy Manning is my brother"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Call my brother at work"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": []
+        }
+      ],
+      "SectionName": "Relationships"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Learn how to pronounce my name",
+            "Learn how to pronounce my mum’s name",
+            "Learn how to pronounce Siobhan Conway’s name"
+          ]
+        }
+      ],
+      "SectionName": "Pronunciation"
+    }
+  ]
+}

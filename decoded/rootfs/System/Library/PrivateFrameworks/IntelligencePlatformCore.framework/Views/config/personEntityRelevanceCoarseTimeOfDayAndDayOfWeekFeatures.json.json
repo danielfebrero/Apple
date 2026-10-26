@@ -1,0 +1,36 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "entityRelevanceContextualFeatures": {
+        "currentContextViews": [
+          "currentCoarseTimeOfDayContext",
+          "currentDayOfWeekContext"
+        ],
+        "entityInteractionHistogramView": "personEntityHistograms"
+      }
+    }
+  },
+  "name": "personEntityRelevanceCoarseTimeOfDayAndDayOfWeekFeatures",
+  "type": "signal",
+  "update": {
+    "group": "personEntityRelevance",
+    "viewListeners": [
+      {
+        "name": "personEntityHistograms",
+        "schedule": "daily"
+      },
+      {
+        "name": "currentCoarseTimeOfDayContext",
+        "schedule": "live"
+      },
+      {
+        "name": "currentDayOfWeekContext",
+        "schedule": "live"
+      }
+    ]
+  }
+}

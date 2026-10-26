@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:2.0" id="PaymentsBase#ErrorWithCode">
+    <meta name="description" value="Present failure dialog specific to an error code."/>
+    <meta name="category" value="Can't Do"/>
+    <meta name="subcategory" value="Other"/>
+    <meta name="readyForLoc" value="true"/>
+    <parameters>
+        <parameter name="errorCode" type="dialog.String" description="Representing an entry in the ErrorCode enum for a particular intent."/>
+        <parameter name="paymentsConcept" type="payments.DialogConcept" description="The DialogConcept schema for Siri Payments domain."/>
+        <parameter name="intentType" type="dialog.String" description="The type of intent being performed."/>
+    </parameters>
+
+</cat>
+

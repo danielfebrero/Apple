@@ -1,0 +1,77 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Mixed (Float16, Int8)",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 48 × 144)",
+        "shortDescription" : "",
+        "shape" : "[1, 48, 144]",
+        "name" : "enc_3d_output",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 7,
+    "mlProgramOperationTypeHistogram" : {
+      "Concat" : 6,
+      "Ios16.mul" : 24,
+      "Ios16.layerNorm" : 30,
+      "SliceByIndex" : 6,
+      "Ios16.constexprAffineDequantize" : 68,
+      "Transpose" : 43,
+      "Ios16.sigmoid" : 6,
+      "Ios16.linear" : 49,
+      "Ios16.add" : 42,
+      "Ios16.relu" : 2,
+      "Ios16.matmul" : 18,
+      "Ios16.conv" : 20,
+      "Ios16.softmax" : 6,
+      "ExpandDims" : 2,
+      "Split" : 6,
+      "Ios16.reshape" : 31,
+      "Ios16.silu" : 18
+    },
+    "computePrecision" : "Mixed (Float16, Int32)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "13.0",
+      "tvOS" : "16.0",
+      "visionOS" : "1.0",
+      "watchOS" : "9.0",
+      "iOS" : "16.0",
+      "macCatalyst" : "16.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.source_dialect" : "TorchScript",
+      "com.github.apple.coremltools.source" : "torch==1.12.1",
+      "com.github.apple.coremltools.version" : "7.2",
+      "mldb_token" : "mldb-ndg4j6nglq"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 198 × 40)",
+        "shortDescription" : "",
+        "shape" : "[198, 40]",
+        "name" : "input_wav",
+        "type" : "MultiArray"
+      }
+    ],
+    "generatedClassName" : "aa_encoder_125141826",
+    "method" : "predict"
+  }
+]

@@ -1,0 +1,132 @@
+{
+    "cases": [
+        {
+            "bundleType":"timeContext",
+            "templates" :[
+                {
+                    "_comment_": "/* 7 day workout summary */",
+                    "conditions":["summary_type = workout_summary"],
+                    "labels":["Recent Workouts"],
+                },
+                {
+                    "_comment_": "/* 2+ workout types - mind and body workout and other workout */",
+
+                    "conditions":["unique_activity_count>1", "unique_action_type_count=1","!summary_type","unique_action_type_1=mind_and_body_workout", "unique_action_type_2=workout"],
+                    "labels":["Mind and body workout and more"],
+                },
+                {
+                    "_comment_": "/* 2+ workout types - mind and body workout and other workout */",
+
+                    "conditions":["unique_activity_count>1", "unique_action_type_count=1","!summary_type","unique_action_type_2=mind_and_body_workout", "unique_action_type_1=workout"],
+                    "labels":["Mind and body workout and more"],
+                },
+                {
+                    "_comment_": "/* 2 workout types and no place (back to back workouts) */",
+
+                    "conditions":["unique_activity_count=2", "unique_action_type_count=1", "unique_place_count=0","!summary_type"],
+                    "labels":["{time} {unique_action_1} and {unique_action_2}"],
+                },
+                {
+                    "_comment_": "/* 2 workout types and no place (back to back workouts) */",
+
+                    "conditions":["unique_activity_count=2", "unique_action_type_count=1", "unique_place_count=0","!summary_type"],
+                    "labels":["{unique_action_1} and {unique_action_2}"],
+                },
+
+                {
+                    "_comment_": "/* 2 workout types and workouts happen at single place of medium confidence without time */",
+
+                    "conditions":[ "unique_action_type_count=1", "unique_activity_count=2", "unique_place_count=1", "place_count=1", "confidence_1=medium","!summary_type"],
+                    "labels":["{time} {unique_action_1} and {unique_action_2} near {unique_place_1}"],
+                },
+                {
+                    "_comment_": "/* 2 workout types and workouts happen at single place of medium confidence without time */",
+
+                    "conditions":[ "unique_action_type_count=1", "unique_activity_count=2", "unique_place_count=1", "place_count=1", "confidence_1=medium","!summary_type"],
+                    "labels":["{unique_action_1} and {unique_action_2} near {unique_place_1}"],
+                },
+                {
+                    "_comment_": "/* 2 workout types and workouts happen at single place of high or low confidence without time*/",
+
+                    "conditions":[ "unique_action_type_count=1", "unique_activity_count=2", "unique_place_count=1", "place_count=1","confidence_1!=medium","!summary_type"],
+                    "labels":["{time} {unique_action_1} and {unique_action_2}, {unique_place_1}"],
+                },
+                {
+                    "_comment_": "/* 2 workout types and workouts happen at single place of high or low confidence without time*/",
+
+                    "conditions":[ "unique_action_type_count=1", "unique_activity_count=2", "unique_place_count=1", "place_count=1","confidence_1!=medium","!summary_type"],
+                    "labels":["{unique_action_1} and {unique_action_2}, {unique_place_1}"],
+                },
+
+                {
+                    "_comment_": "/* 2 workout types and not all workouts have place */",
+
+                    "conditions":["unique_activity_count=2", "unique_action_type_count=1", "unique_place_count=1", "place_count>unique_place_count","!summary_type"],
+                    "labels":["{unique_action_1} and {unique_action_2}"],
+                },
+                
+                {
+                    "_comment_": "/* 2 workout types and 2+ places in the same city */",
+
+                    "conditions":["unique_action_type_count=1", "unique_activity_count=2", "unique_place_count>1", "unique_city_count=1"],
+                    "labels":["{unique_action_1} and {unique_action_2}, {unique_city_1}"],
+                },
+
+                {
+                    "_comment_": "/* 2 workout types and 2+ places */",
+
+                    "conditions":["unique_action_type_count=1", "unique_activity_count=2", "unique_place_count>1","!summary_type"],
+                    "labels":["{unique_action_1} and {unique_action_2}, multiple places"],
+                },
+
+                {
+                    "_comment_": "/* 3+ workout types with no place */",
+
+                    "conditions":["unique_action_type_count=1", "unique_activity_count>2","unique_place_count=0","!summary_type"],
+                    "labels":["{time} {unique_action_1}, {unique_action_2} and more"],
+                },
+                {
+                    "_comment_": "/* 3+ workout types with no place */",
+
+                    "conditions":["unique_action_type_count=1", "unique_activity_count>2","unique_place_count=0","!summary_type"],
+                    "labels":["{unique_action_1}, {unique_action_2} and more"],
+                },
+
+                {
+                    "_comment_": "/* 3+ workout types at single place of medium confidence */",
+
+                    "conditions":["unique_action_type_count=1", "unique_activity_count>2","unique_place_count=1","place_count=1", "confidence_1=medium","!summary_type"],
+                    "labels":["{unique_action_1}, {unique_action_2}, and more, near {unique_place_1}"],
+                },
+
+                {
+                    "_comment_": "/* 3+ workout types at single place of high or low confidence */",
+
+                    "conditions":["unique_action_type_count=1", "unique_activity_count>2","unique_place_count=1","place_count=1", "confidence_1!=medium","!summary_type"],
+                    "labels":["{unique_action_1}, {unique_action_2}, and more, {unique_place_1}"],
+                },
+                {
+                    "_comment_": "/* 3+ workout types with more than 1 place in the same city */",
+
+                    "conditions":["unique_action_type_count=1", "unique_activity_count>2","unique_place_count>=1","place_count>1", "unique_city_count=1","!summary_type"],
+                    "labels":["{unique_action_1}, {unique_action_2}, and more, {unique_city_1}"],
+                },
+
+                {
+                    "_comment_": "/* 3+ workout types with more than 1 place */",
+                    "conditions":["unique_action_type_count=1", "unique_activity_count>2","unique_place_count>=1","place_count>1","!summary_type"],
+                    "labels":["{unique_action_1}, {unique_action_2}, and more, multiple places"],
+                },
+                {
+                    "_comment_": "/* fallback for multiple workout */",
+
+                    "conditions":["unique_activity_count>1", "unique_action_type_count=1","!summary_type"],
+                    "labels":["Workout"],
+                }
+            ]
+        }
+    ]
+}
+
+
+

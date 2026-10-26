@@ -1,0 +1,51 @@
+{
+  "CFBundleName": "HomeCommunicationFlowDelegatePlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedIntents": [
+    "sirikit.intent.home.communication.SendAnnouncementIntent",
+    "sirikit.intent.home.communication.StopAnnouncementIntent",
+    "sirikit.intent.home.communication.ReadAnnouncementIntent",
+    "sirikit.intent.home.communication.SkipAnnouncementIntent"
+  ],
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "HomeCommunicationFlowDelegatePlugin.HomeCommunicationFlowDelegatePlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "HomeCommunicationFlowDelegatePlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.HomeCommunicationFlowDelegatePlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [],
+  "SupportedTopics": [
+    {
+      "entity": "common_Announcement",
+      "verb": "*",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.directInvocation.homeCommunication.reply",
+    "com.apple.siri.directInvocation.homeCommunication.stop",
+    "com.apple.siri.directInvocation.homeCommunication.announce",
+    "com.apple.siri.directInvocation.homeCommunication.announce.notification",
+    "com.apple.siri.directInvocation.homeCommunication.read",
+    "com.apple.siri.directInvocation.homeCommunication.send"
+  ]
+}

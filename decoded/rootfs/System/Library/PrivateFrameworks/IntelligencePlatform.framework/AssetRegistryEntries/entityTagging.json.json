@@ -1,0 +1,21 @@
+{
+  "domain": "entityTagging",
+  "entries": {
+    "familyAndFriendsLocalModel": {
+      "local": {
+        "relativeToBundle": {
+          "bundle": "intelligencePlatformCore",
+          "relativeFilePath": "EntityTagging_FamilyAndFriends.mlmodelc"
+        }
+      }
+    },
+    "familyLocalModel": {
+      "local": {
+        "relativeToBundle": {
+          "bundle": "intelligencePlatformCore",
+          "relativeFilePath": "EntityTagging_Family.mlmodelc"
+        }
+      }
+    }
+  }
+}

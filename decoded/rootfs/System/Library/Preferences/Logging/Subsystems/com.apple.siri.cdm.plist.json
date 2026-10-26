@@ -1,0 +1,20 @@
+{
+  "DEFAULT-OPTIONS": {
+    "Level": {
+      "Enable": "Default",
+      "Persist": "Default"
+    },
+    "Enable-Oversize-Messages": true,
+    "Signpost-Scope": "Process",
+    "Signpost-Persisted": false
+  },
+  "CDM-External": {
+    "Level": {
+      "Enable": "Default",
+      "Persist": "Default"
+    },
+    "Enable-Oversize-Messages": true,
+    "Signpost-Scope": "Process",
+    "Signpost-Persisted": true
+  }
+}

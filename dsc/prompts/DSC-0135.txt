@@ -1,0 +1,15 @@
+
+
+**ANNOTATION FORMAT:**
+- [text:"..."] contains regular query text - extract contentType, author, keywords from it
+- [date:YYYY] marks a year - combine with modifier words to make temporal clauses
+
+**EXTRACTION RULES:**
+1. Process [text:"..."] content FIRST: extract contentType, author, keywords
+2. When you see [date:...] preceded by "since"/"before"/"after":
+   → temporal clause = "modifier + date"
+   → Example: [text:"emails since "][date:2009] → contentType:"email" + temporal:"since 2009"
+3. When [date:...] is standalone:
+   → temporal clause = just the date
+
+Use .all logic.

@@ -1,0 +1,84 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "ShowVoNRSwitch": true,
+  "Enable5GStandaloneByDefault": true,
+  "ShowHighDataModeSwitch": true,
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://sm-v4-009-esa-gtm.pr.go-esim.com",
+    "TransferErrorCodes": {
+      "BlockedAccountErrors": [
+        "Blocked Account",
+        "Blocked Account"
+      ],
+      "IneligibleAccountErrors": [
+        "Ineligible Account",
+        "Ineligible Account"
+      ],
+      "CarrierDefaultErrors": [
+        "Default Error",
+        "Default Error"
+      ]
+    }
+  },
+  "IMSConfig": {
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4203729,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportPreflightOnSource": true,
+    "SupportedActions": [
+      "TransferSIMService",
+      "TransferSIMService"
+    ],
+    "SupportSecureIntent": true,
+    "SupportsOnDevicePhysicalSIMConvert": true
+  },
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "SupportsVoNR": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "apns": [
+    {
+      "password": "orange",
+      "username": "orange",
+      "apn": "orangeworld",
+      "type-mask": 32769,
+      "AllowedProtocolMask": 1
+    },
+    {
+      "password": "orange",
+      "username": "orange",
+      "apn": "orangemms",
+      "type-mask": 4,
+      "AllowedProtocolMask": 1
+    },
+    {
+      "password": "orange",
+      "username": "orange",
+      "AllowedProtocolMask": 1,
+      "apn": "internet",
+      "type-mask": 48,
+      "Support5GSaHandOver": true
+    },
+    {
+      "type-mask": 131072,
+      "password": "",
+      "Support5GSaHandOver": true,
+      "tech-type-mask": 131072,
+      "apn": "ims",
+      "AllowNoDNS": 1,
+      "SupportSwitchOver": true,
+      "username": "",
+      "UseNetworkMTU": true,
+      "AllowedProtocolMask": 1
+    }
+  ],
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

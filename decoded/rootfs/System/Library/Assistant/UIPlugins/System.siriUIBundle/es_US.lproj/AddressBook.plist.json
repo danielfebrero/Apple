@@ -1,0 +1,60 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "¿Cuál es el teléfono de María?",
+            "¿Cuál es la dirección del trabajo de Lidia?",
+            "¿Cuándo es el cumpleaños de mi suegra?",
+            "Ver la dirección de correo electrónico de casa de Beatriz",
+            "¿Cuál es la dirección del trabajo de mi hermano?"
+          ]
+        }
+      ],
+      "SectionName": "INFORMACIÓN SOBRE CONTACTOS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Muéstrame a Lupita Gutiérrez",
+            "Busca contactos llamados Pérez"
+          ]
+        }
+      ],
+      "SectionName": "BUSCAR CONTACTOS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Mi madre es Beatriz Lara",
+            "Esteban Hernández es mi hermano"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Llama a mi hermano a casa"
+          ]
+        }
+      ],
+      "SectionName": "RELACIONES"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Aprende a pronunciar mi nombre",
+            "Aprende la pronunciación del nombre de mi mamá",
+            "Aprende a pronunciar el nombre de María Pérez"
+          ]
+        }
+      ],
+      "SectionName": "PRONUNCIACIÓN"
+    }
+  ]
+}

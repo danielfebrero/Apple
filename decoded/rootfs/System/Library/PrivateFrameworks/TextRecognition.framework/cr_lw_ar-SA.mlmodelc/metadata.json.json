@@ -1,0 +1,58 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "classLabel",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "keyType": "Int64",
+        "formattedType": "Dictionary (Int64 → Double)",
+        "type": "Dictionary",
+        "name": "classProbability",
+        "shortDescription": ""
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 1,
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_glmClassifier"
+    },
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "7.2",
+      "com.github.apple.coremltools.source": "scikit-learn==0.19.2"
+    },
+    "classLabels": [
+      0,
+      1
+    ],
+    "generatedClassName": "cr_lw_ar_SA",
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double 279)",
+        "shortDescription": "",
+        "shape": "[279]",
+        "name": "input",
+        "type": "MultiArray"
+      }
+    ],
+    "method": "predict"
+  }
+]

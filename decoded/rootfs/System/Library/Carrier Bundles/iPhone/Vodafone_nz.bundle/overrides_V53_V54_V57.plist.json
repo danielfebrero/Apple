@@ -1,0 +1,50 @@
+{
+  "DerPriFileVersion": "5.2.162",
+  "ShowSatelliteSwitch": true,
+  "MMS": {
+    "MaxMessageSizeOverSatellite": 3000
+  },
+  "IMSConfig": {
+    "Satellite": {
+      "IMSServiceMask": 2
+    }
+  },
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://sm-v4-077-a-gtm.pr.go-esim.com",
+    "TransferErrorCodes": {
+      "CarrierDefaultErrors": [
+        "DeviceValidationFailed"
+      ],
+      "BillingErrors": [
+        "IncompleteOrderExists",
+        "MaximumSimSwapReached"
+      ],
+      "IneligibleAccountErrors": [
+        "OwnerAuthorizationRequired"
+      ],
+      "MaintenanceErrors": [],
+      "BlockedAccountErrors": [
+        "DisabledByOwner"
+      ]
+    }
+  },
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "ShowHighDataModeSwitch": true,
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 533505,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "SMSSettings": {
+    "SMSCarrierReportJunkAddress": "7726",
+    "NoTransportFallbackForSatelliteSystem": true
+  },
+  "SatelliteSystemTransitionTimeToAllowed": 30,
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsSatellite": true,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

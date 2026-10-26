@@ -1,0 +1,72 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Float16",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "Identity",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 7,
+    "mlProgramOperationTypeHistogram": {
+      "Concat": 1,
+      "Ios16.conv": 13,
+      "Ios16.minimum": 1,
+      "Ios16.relu": 12,
+      "SliceByIndex": 1,
+      "Transpose": 2,
+      "Ios16.reduceMax": 1,
+      "Ios16.maximum": 1,
+      "Ios16.cast": 2
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "13.0",
+      "tvOS": "16.0",
+      "watchOS": "9.0",
+      "iOS": "16.0",
+      "macCatalyst": "16.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata": {},
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1... × 1... × 128",
+        "shapeRange": "[[1, -1], [1, -1], [128, 128]]",
+        "formattedType": "MultiArray (Float32 1 × 1 × 128)",
+        "type": "MultiArray",
+        "shape": "[1, 1, 128]",
+        "name": "input_decoder_input",
+        "shortDescription": ""
+      },
+      {
+        "dataType": "Int32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1...",
+        "shapeRange": "[[1, -1]]",
+        "formattedType": "MultiArray (Int32 1)",
+        "type": "MultiArray",
+        "shape": "[1]",
+        "name": "input_decoder_length",
+        "shortDescription": ""
+      }
+    ],
+    "generatedClassName": "fastspeech2_decoder",
+    "method": "predict"
+  }
+]

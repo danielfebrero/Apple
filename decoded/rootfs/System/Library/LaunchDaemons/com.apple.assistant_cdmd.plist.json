@@ -1,0 +1,57 @@
+{
+  "EnableTransactions": true,
+  "EnvironmentVariables": {
+    "MallocNanoZone": "0"
+  },
+  "Label": "com.apple.assistant_cdmd",
+  "LaunchEvents": {
+    "com.apple.distnoted.matching.trusted": {
+      "com.apple.LaunchServices.applicationRegistered": {
+        "Name": "com.apple.LaunchServices.applicationRegistered"
+      },
+      "com.apple.LaunchServices.applicationUnregistered": {
+        "Name": "com.apple.LaunchServices.applicationUnregistered"
+      }
+    },
+    "com.apple.notifyd.matching": {
+      "com.apple.siri.VoiceShortcuts.DataDidUpdateNotification": {
+        "Notification": "com.apple.siri.VoiceShortcuts.DataDidUpdateNotification"
+      },
+      "com.apple.siri.uaf.com.apple.if.planner": {
+        "Notification": "com.apple.siri.uaf.com.apple.if.planner"
+      },
+      "com.apple.siri.uaf.com.apple.if.planner.overrides": {
+        "Notification": "com.apple.siri.uaf.com.apple.if.planner.overrides"
+      },
+      "com.apple.siri.uaf.com.apple.siri.understanding": {
+        "Notification": "com.apple.siri.uaf.com.apple.siri.understanding"
+      },
+      "com.apple.siri.uaf.com.apple.siri.understanding.nl.overrides": {
+        "Notification": "com.apple.siri.uaf.com.apple.siri.understanding.nl.overrides"
+      },
+      "com.apple.trial.NamespaceUpdate.SIRI_UNDERSTANDING_NL": {
+        "Notification": "com.apple.trial.NamespaceUpdate.SIRI_UNDERSTANDING_NL"
+      },
+      "com.apple.trial.NamespaceUpdate.SIRI_UNDERSTANDING_NL_OVERRIDES": {
+        "Notification": "com.apple.trial.NamespaceUpdate.SIRI_UNDERSTANDING_NL_OVERRIDES"
+      }
+    },
+    "com.apple.xpc.activity": {
+      "com.apple.siri.cdm.xpc_activity.maintenance": {
+        "Name": "com.apple.siri.cdm.xpc_activity.maintenance"
+      },
+      "com.apple.siri.cdm.xpc_activity.post_install": {
+        "Name": "com.apple.siri.cdm.xpc_activity.post_install"
+      }
+    }
+  },
+  "MachServices": {
+    "com.apple.assistant.cdm": true
+  },
+  "ProcessType": "Adaptive",
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/ContinuousDialogManagerService.framework/assistant_cdmd"
+  ],
+  "RunAtLoad": false,
+  "UserName": "mobile"
+}

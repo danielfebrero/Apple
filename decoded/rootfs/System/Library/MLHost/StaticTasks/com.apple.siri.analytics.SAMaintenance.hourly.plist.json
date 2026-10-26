@@ -1,0 +1,14 @@
+{
+  "name": "com.apple.siri.analytics.SAMaintenance.hourly",
+  "bundleIdentifier": "com.apple.siri.analytics.SAMaintenance",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 4950.0,
+      "minDurationBetweenInstances": 2250
+    },
+    "requiresExternalPower": true,
+    "requiresUserInactivity": true,
+    "requiresProtectionClass": "ClassC",
+    "priority": "Maintenance"
+  }
+}

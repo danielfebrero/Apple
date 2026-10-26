@@ -1,0 +1,91 @@
+{
+  "UIRequiredDeviceCapabilities": [
+    "armv7"
+  ],
+  "CanInheritApplicationStateFromOtherProcesses": true,
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "UISupportedInterfaceOrientations~ipad": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationPortraitUpsideDown",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "CAProcessCanAccessGPU": true,
+  "DTPlatformVersion": "27.2",
+  "CFBundleName": "Siri",
+  "DTSDKName": "iphoneos27.2.internal",
+  "application-identifier": "com.apple.siri",
+  "CFBundleIcons": {
+    "CFBundlePrimaryIcon": {
+      "CFBundleIconFiles": [
+        "AppIcon60x60"
+      ],
+      "CFBundleIconName": "AppIcon"
+    }
+  },
+  "platform-application": true,
+  "LSRequiresIPhoneOS": true,
+  "UIBackgroundModes": [
+    "audio",
+    "processing"
+  ],
+  "DTSDKBuild": "24B108",
+  "UIApplicationSystemWindowsSecureKey": true,
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleShortVersionString": "1.0",
+  "SBMachServices": [
+    "com.apple.siri.app"
+  ],
+  "UISupportedInterfaceOrientations": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationPortraitUpsideDown",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformBuild": "24B108",
+  "CFBundlePackageType": "APPL",
+  "BGTaskSchedulerPermittedIdentifiers": [
+    "com.apple.siri.CheckAssetStatus"
+  ],
+  "CFBundleDevelopmentRegion": "en",
+  "MinimumOSVersion": "27.2",
+  "CFBundleVersion": "1",
+  "DTXcodeBuild": "27A225b",
+  "TVBootURL": "https://apps.mzstatic.com/content/tvos-search-app/",
+  "UIApplicationShowsViewsWhileLocked": true,
+  "UIStatusBarHidden": true,
+  "UILaunchStoryboardName": "LaunchScreen",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "com.apple.private.security.container-required": true,
+  "CFBundleIdentifier": "com.apple.siri",
+  "DTXcode": "2700",
+  "SBAppTags": [
+    "hidden"
+  ],
+  "CFBundleExecutable": "Siri",
+  "CFBundleIcons~ipad": {
+    "CFBundlePrimaryIcon": {
+      "CFBundleIconFiles": [
+        "AppIcon60x60",
+        "AppIcon76x76"
+      ],
+      "CFBundleIconName": "AppIcon"
+    }
+  },
+  "UNUserNotificationCenter": {
+    "UNDaemonShouldReceiveBackgroundResponses": true,
+    "UNHideSettings": true,
+    "UNNotificationIcons": {
+      "UNNotificationIconDefault": "SiriNotification"
+    },
+    "UNSuppressUserAuthorizationPrompt": true
+  },
+  "DTPlatformName": "iphoneos",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0"
+}

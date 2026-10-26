@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="InformationSuggestions#weatherConditions">
+    <meta name="description" value="Suggests asking what the weather conditions are"/>
+    <meta name="category" value="UsedForSnippet"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="deliveryVehicle" type="dialog.String"/>
+        <parameter name="location" type="dialog.Location" description="Location for which weather data is delivered" redacted="false"/>
+    </parameters>
+</cat>

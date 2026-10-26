@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Beritahu Amira saya akan tiba sebentar lagi",
+            "Hantar mesej kepada Kamales",
+            "Hantar mesej kepada Julie untuk bertanya bagaimana dengan esok",
+            "Beritahu Nora bahawa filem ini hebat",
+            "Hantar mesej ke telefon bimbit Amira menyatakan saya lambat",
+            "Hantar mesej ke 012 345 6789",
+            "Hantar SMS kepada Kamales dan Julie di manakah kamu?"
+          ]
+        }
+      ],
+      "SectionName": "menghantar mesej"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Baca mesej baru saya",
+            "Bacanya sekali lagi"
+          ]
+        }
+      ],
+      "SectionName": "membaca isyarat mesej"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Balas ini berita baik",
+            "Berita dia saya akan tiba dalam masa 10 minit"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Hubungi dia"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime dia"
+          ]
+        }
+      ],
+      "SectionName": "membalas mesej"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Baca mesej terakhir saya daripada Julie"
+          ]
+        }
+      ],
+      "SectionName": "mencari mesej"
+    }
+  ]
+}

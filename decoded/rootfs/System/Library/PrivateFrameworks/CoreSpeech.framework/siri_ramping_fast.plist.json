@@ -1,0 +1,26 @@
+{
+  "Amplitude": 1.0,
+  "Atoms": [
+    {
+      "Amplitude": 1.0,
+      "Duration": 0.3,
+      "Envelope": [
+        {
+          "Level": 0.0,
+          "Time": 0.0
+        },
+        {
+          "Level": 0.3,
+          "Time": 0.2
+        },
+        {
+          "Level": 0.5,
+          "Time": 0.3
+        }
+      ],
+      "Frequency": 135.64659999999998,
+      "StartTime": 0.0,
+      "Type": "RampSine"
+    }
+  ]
+}

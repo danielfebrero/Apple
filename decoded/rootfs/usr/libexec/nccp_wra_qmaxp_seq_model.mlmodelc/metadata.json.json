@@ -1,0 +1,141 @@
+[
+  {
+    "shortDescription": "--",
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 5 × 3)",
+        "shortDescription": "--",
+        "shape": "[1, 5, 3]",
+        "name": "nccp_wra_qmaxp_q10_forecast",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 5 × 3)",
+        "shortDescription": "--",
+        "shape": "[1, 5, 3]",
+        "name": "nccp_wra_qmaxp_q25_forecast",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 5 × 3)",
+        "shortDescription": "--",
+        "shape": "[1, 5, 3]",
+        "name": "nccp_wra_qmaxp_q50_forecast",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 5 × 3)",
+        "shortDescription": "--",
+        "shape": "[1, 5, 3]",
+        "name": "nccp_wra_qmaxp_q75_forecast",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 5 × 3)",
+        "shortDescription": "--",
+        "shape": "[1, 5, 3]",
+        "name": "nccp_wra_qmaxp_q90_forecast",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "9zr4tnrr35",
+    "modelParameters": [],
+    "author": "--",
+    "specificationVersion": 6,
+    "storagePrecision": "Mixed (Float16, Float32)",
+    "license": "--",
+    "mlProgramOperationTypeHistogram": {
+      "Transpose": 4,
+      "Range1d": 4,
+      "Squeeze": 2,
+      "Sub": 2,
+      "Sigmoid": 6,
+      "Reshape": 5,
+      "Matmul": 4,
+      "MakeList": 6,
+      "Cast": 33,
+      "Split": 2,
+      "Select": 6,
+      "Add": 13,
+      "Tanh": 4,
+      "Less": 2,
+      "Concat": 1,
+      "Shape": 4,
+      "ListRead": 4,
+      "ExpandDims": 4,
+      "WhileLoop": 2,
+      "ListGather": 2,
+      "NotEqual": 2,
+      "Linear": 7,
+      "ListScatter": 4,
+      "ListWrite": 2,
+      "SliceByIndex": 8,
+      "Relu": 2,
+      "ReduceSum": 2,
+      "Mul": 17
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "12.0",
+      "tvOS": "15.0",
+      "visionOS": "1.0",
+      "watchOS": "8.0",
+      "iOS": "15.0",
+      "macCatalyst": "15.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 1 × 6",
+        "shapeRange": "[[1, 1], [1, 1], [6, 6]]",
+        "formattedType": "MultiArray (Float32 1 × 1 × 6)",
+        "type": "MultiArray",
+        "shape": "[1, 1, 6]",
+        "name": "daily_history_input",
+        "shortDescription": "--"
+      },
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 1...5000 × 5",
+        "shapeRange": "[[1, 1], [1, 5000], [5, 5]]",
+        "formattedType": "MultiArray (Float32 1 × 5000 × 5)",
+        "type": "MultiArray",
+        "shape": "[1, 5000, 5]",
+        "name": "usage_history_input",
+        "shortDescription": "--"
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "7.2",
+      "com.github.apple.coremltools.source": "tensorflow==2.11.0",
+      "mldb_token": "mldb-7nwypjwy9o"
+    },
+    "generatedClassName": "nccp_wra_qmaxp_seq_model",
+    "method": "predict"
+  }
+]

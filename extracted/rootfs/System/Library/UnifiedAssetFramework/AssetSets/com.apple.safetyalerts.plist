@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>FileType</key>
+    <string>AssetSetConfiguration</string>
+    <key>FileVersion</key>
+    <string>1.0.0</string>
+    <key>AssetSetName</key>
+    <string>com.apple.safetyalerts</string>
+    <key>AutoAssetType</key>
+    <string>com.apple.MobileAsset.UAF.SafetyAlerts</string>
+    <key>MetadataAsset</key>
+    <string>com.apple.safetyalerts.uaf.metadata</string>
+    <key>UsageTypes</key>
+    <array>
+      <string>countries.configuration</string>
+    </array>
+    <key>Assets</key>
+    <array>
+      <!-- Metadata -->
+      <dict>
+        <key>AssetName</key>
+        <string>com.apple.safetyalerts.uaf.metadata</string>
+        <key>IgnoreOSCompatibility</key>
+        <true/>
+        <key>Expansions</key>
+        <array>
+          <dict>
+            <key>AutoAssetSpecifierTemplate</key>
+            <string>com.apple.safetyalerts.uaf.metadata</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>AssetName</key>
+        <string>com.apple.safetyalerts.configuration.generic</string>
+        <key>Expansions</key>
+        <array>
+          <dict>
+            <key>RequiredUsageTypes</key>
+            <array>
+              <string>countries.configuration</string>
+            </array>
+            <key>AutoAssetSpecifierTemplate</key>
+            <string>com.apple.safetyalerts.configuration.generic</string>
+          </dict>
+        </array>
+      </dict>
+    </array>
+  </dict>
+</plist>

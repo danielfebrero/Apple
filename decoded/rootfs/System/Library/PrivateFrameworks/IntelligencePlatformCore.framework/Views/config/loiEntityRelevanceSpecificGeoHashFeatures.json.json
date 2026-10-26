@@ -1,0 +1,32 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "entityRelevanceContextualFeatures": {
+        "currentContextViews": [
+          "currentSpecificGeoHashContext"
+        ],
+        "entityInteractionHistogramView": "loiEntityHistograms"
+      }
+    }
+  },
+  "featureFlag": "EntityRelevanceBiomeSources",
+  "name": "loiEntityRelevanceSpecificGeoHashFeatures",
+  "type": "signal",
+  "update": {
+    "group": "loiEntityRelevance",
+    "viewListeners": [
+      {
+        "name": "loiEntityHistograms",
+        "schedule": "live"
+      },
+      {
+        "name": "currentSpecificGeoHashContext",
+        "schedule": "live"
+      }
+    ]
+  }
+}

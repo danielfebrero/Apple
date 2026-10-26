@@ -1,0 +1,56 @@
+{
+  "AssetSetName": "com.apple.MobileAsset.UAF.Handwriting.Synthesis",
+  "Assets": [
+    {
+      "AssetName": "com.apple.fm.handwriting.synthesis_multilingual.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.handwriting.synthesis_multilingual.generic",
+          "RequiredUsageTypes": [
+            "com.apple.fm.handwriting.synthesis_multilingual.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.handwriting.synthesis_multilingual.zhja",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.handwriting.synthesis_multilingual.zhja",
+          "RequiredUsageTypes": [
+            "com.apple.fm.handwriting.synthesis_multilingual.zhja"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.handwriting.synthesis_multilingual.ko",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.handwriting.synthesis_multilingual.ko",
+          "RequiredUsageTypes": [
+            "com.apple.fm.handwriting.synthesis_multilingual.ko"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.handwriting.synthesis.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.handwriting.synthesis.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Handwriting.Synthesis",
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.handwriting.synthesis.uaf.metadata",
+  "UsageTypes": [
+    "com.apple.fm.handwriting.synthesis_multilingual.generic",
+    "com.apple.fm.handwriting.synthesis_multilingual.ko",
+    "com.apple.fm.handwriting.synthesis_multilingual.zhja"
+  ]
+}

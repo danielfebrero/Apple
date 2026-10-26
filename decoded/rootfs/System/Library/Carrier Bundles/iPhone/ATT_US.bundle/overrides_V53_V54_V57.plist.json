@@ -1,0 +1,81 @@
+{
+  "DerPriFileVersion": "6.0.163",
+  "Enable5GStandaloneByDefault": false,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Signaling": {
+      "EmergencyLocationLookupTimeoutSeconds": 6,
+      "EnableBrandedCallingByDefault": true
+    }
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "IPv6SupportedDataModeMask": 57372,
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "apns": [
+    {
+      "AlwaysOnPDU": true,
+      "password": "",
+      "tech-type-mask": 1081351,
+      "type-mask": 1081351,
+      "AllowedProtocolMask": 3,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "UseNetworkMTU": true,
+      "apn": "nxtgenphone"
+    },
+    {
+      "type-mask": 16,
+      "password": "",
+      "UseNetworkMTU": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "hotspot",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "AlwaysOnPDU": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "type-mask": 131072,
+      "NoCellularReconnectCauseCodes": [
+        {
+          "CauseCodes": [
+            33
+          ],
+          "Type": "3GPP",
+          "RecoversOnAirplaneMode": true
+        }
+      ],
+      "AllowedProtocolMaskInRoaming": 3,
+      "SupportSwitchOver": true,
+      "username": "",
+      "AllowedProtocolMask": 3,
+      "UseNetworkMTU": true,
+      "apn": "ims"
+    },
+    {
+      "type-mask": 262144,
+      "password": "",
+      "tech-type-mask": 262144,
+      "UseNetworkMTU": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "sos",
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Show5GStandaloneSwitch": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "EncryptedOnDeviceActivation": {
+    "CertificateIdentifier": "ATT",
+    "Certificate": "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"
+  },
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

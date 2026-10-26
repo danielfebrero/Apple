@@ -1,0 +1,33 @@
+{
+  "Client": {
+    "Signpost-Persisted": true,
+    "Signpost-Scope": "System"
+  },
+  "DEFAULT-OPTIONS": {
+    "Level": {
+      "Enable": "Default",
+      "Persist": "Default"
+    }
+  },
+  "Networking.Functional": {
+    "Level": {
+      "Enable": "Debug",
+      "Persist": "Info"
+    },
+    "Symptoms": true
+  },
+  "Networking.Operational": {
+    "Level": {
+      "Enable": "Debug",
+      "Persist": "Info"
+    },
+    "Symptoms": true
+  },
+  "Networking.Performance": {
+    "Level": {
+      "Enable": "Debug",
+      "Persist": "Info"
+    },
+    "Symptoms": true
+  }
+}

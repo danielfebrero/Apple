@@ -1,0 +1,422 @@
+{
+  "approvedIntents": [
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intent.notes.CreateNoteIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intent.notes.AddTasksIntent"
+    },
+    {
+      "intentType": "action",
+      "typeName": "System_SearchRestaurants"
+    },
+    {
+      "intentParameters": {
+        "movieType": "new"
+      },
+      "intentType": "action",
+      "typeName": "TV_ShowGenres"
+    },
+    {
+      "intentParameters": {
+        "movieType": "comedy"
+      },
+      "intentType": "action",
+      "typeName": "TV_ShowGenres"
+    },
+    {
+      "intentParameters": {
+        "movieType": "action"
+      },
+      "intentType": "action",
+      "typeName": "TV_ShowGenres"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intents.custom.com.apple.siri.SiriTimeInternal.TimerIntentsExtension.DeleteTimerIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intents.custom.com.apple.siri.SiriTimeInternal.TimerIntentsExtension.ResetTimerIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intents.custom.com.apple.siri.SiriTimeAlarmInternal.AlarmIntentsExtension.SearchAlarmIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intents.custom.com.apple.siri.SiriTimeAlarmInternal.AlarmIntentsExtension.DeleteAlarmIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intents.custom.com.apple.siri.SiriTimeInternal.TimerIntentsExtension.SetTimerAttributeIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intents.custom.com.apple.siri.SiriTimeAlarmInternal.AlarmIntentsExtension.ChangeAlarmStatusIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intents.custom.com.apple.siri.SiriTimeInternal.TimerIntentsExtension.CreateTimerIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intents.custom.com.apple.siri.SiriTimeInternal.TimerIntentsExtension.SearchTimerIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intents.custom.com.apple.siri.SiriTimeAlarmInternal.AlarmIntentsExtension.CreateAlarmIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intents.custom.com.apple.siri.SiriTimeAlarmInternal.AlarmIntentsExtension.UpdateAlarmIntent"
+    },
+    {
+      "intentType": "action",
+      "typeName": "Phone_PlayVoicemail"
+    },
+    {
+      "intentType": "action",
+      "typeName": "Mail_UnreadMail"
+    },
+    {
+      "intentType": "action",
+      "typeName": "System_Screenshot"
+    },
+    {
+      "intentType": "action",
+      "typeName": "System_RestartDevice"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intent.calendar.CreateEventIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intent.calendar.FindEventsIntent"
+    },
+    {
+      "intentParameters": {
+        "attachment": "location"
+      },
+      "intentType": "inIntent",
+      "typeName": "sirikit.intent.messages.SendMessageIntent"
+    },
+    {
+      "intentParameters": {
+        "isToggleAction": "true",
+        "settingName": "flashlight"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSOnlySettings"
+    },
+    {
+      "intentParameters": {
+        "isToggleAction": "true",
+        "settingName": "hotspot"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSOnlySettings"
+    },
+    {
+      "intentParameters": {
+        "isToggleAction": "true",
+        "settingName": "cellularData"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSOnlySettings"
+    },
+    {
+      "intentParameters": {
+        "isToggleAction": "true",
+        "settingName": "lowPower"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSOnlySettings"
+    },
+    {
+      "intentParameters": {
+        "isToggleAction": "true",
+        "settingName": "airplane"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSOnlySettings"
+    },
+    {
+      "intentParameters": {
+        "isToggleAction": "true",
+        "settingName": "bluetooth"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSmacOSSettings"
+    },
+    {
+      "intentParameters": {
+        "isToggleAction": "true",
+        "settingName": "nightShift"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSmacOSSettings"
+    },
+    {
+      "iOSDisabledLocales": [
+        "de"
+      ],
+      "intentParameters": {
+        "settingAction": "LightMode",
+        "settingName": "appearance"
+      },
+      "intentType": "action",
+      "macOSDisabledLocales": [
+        "de"
+      ],
+      "typeName": "Settings_iOSmacOSSettings"
+    },
+    {
+      "iOSDisabledLocales": [
+        "de"
+      ],
+      "intentParameters": {
+        "settingAction": "DarkMode",
+        "settingName": "appearance"
+      },
+      "intentType": "action",
+      "macOSDisabledLocales": [
+        "de"
+      ],
+      "typeName": "Settings_iOSmacOSSettings"
+    },
+    {
+      "intentParameters": {
+        "isToggleAction": "true",
+        "settingName": "dnd"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSmacOSSettings"
+    },
+    {
+      "iOSDisabledLocales": [
+        "pt"
+      ],
+      "intentParameters": {
+        "isToggleAction": "true",
+        "settingName": "wifi"
+      },
+      "intentType": "action",
+      "macOSDisabledLocales": [
+        "pt"
+      ],
+      "typeName": "Settings_iOSmacOSSettings"
+    },
+    {
+      "intentParameters": {
+        "settingAction": "up",
+        "settingName": "brightness"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSmacOSSettings"
+    },
+    {
+      "intentParameters": {
+        "settingAction": "down",
+        "settingName": "brightness"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSmacOSSettings"
+    },
+    {
+      "intentParameters": {
+        "settingAction": "down",
+        "settingName": "volume"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSmacOSSettings"
+    },
+    {
+      "intentParameters": {
+        "settingAction": "up",
+        "settingName": "volume"
+      },
+      "intentType": "action",
+      "typeName": "Settings_iOSmacOSSettings"
+    },
+    {
+      "iOSDisabledLocales": [
+        "ja",
+        "pt",
+        "ko"
+      ],
+      "intentParameters": {
+        "weatherCondition": "foggy"
+      },
+      "intentType": "action",
+      "macOSDisabledLocales": [
+        "ja",
+        "pt",
+        "ko"
+      ],
+      "typeName": "Weather_Condition"
+    },
+    {
+      "iOSDisabledLocales": [
+        "de",
+        "ko"
+      ],
+      "intentParameters": {
+        "weatherCondition": "humid"
+      },
+      "intentType": "action",
+      "macOSDisabledLocales": [
+        "de",
+        "ko"
+      ],
+      "typeName": "Weather_Condition"
+    },
+    {
+      "intentParameters": {
+        "weatherCondition": "windy"
+      },
+      "intentType": "action",
+      "typeName": "Weather_Condition"
+    },
+    {
+      "iOSDisabledLocales": [
+        "pt"
+      ],
+      "intentParameters": {
+        "weatherCondition": "airQuality"
+      },
+      "intentType": "action",
+      "macOSDisabledLocales": [
+        "pt"
+      ],
+      "typeName": "Weather_Condition"
+    },
+    {
+      "iOSDisabledLocales": [
+        "ja",
+        "zh",
+        "ko"
+      ],
+      "intentParameters": {
+        "weatherCondition": "moon"
+      },
+      "intentType": "action",
+      "macOSDisabledLocales": [
+        "ja",
+        "zh",
+        "ko"
+      ],
+      "typeName": "Weather_Condition"
+    },
+    {
+      "intentParameters": {
+        "weatherCondition": "thisWeek"
+      },
+      "intentType": "action",
+      "typeName": "Weather_Condition"
+    },
+    {
+      "intentParameters": {
+        "weatherCondition": "rainy"
+      },
+      "intentType": "action",
+      "typeName": "Weather_Condition"
+    },
+    {
+      "intentParameters": {
+        "weatherCondition": "today"
+      },
+      "intentType": "action",
+      "typeName": "Weather_Condition"
+    },
+    {
+      "intentParameters": {
+        "weatherCondition": "sunny"
+      },
+      "intentType": "action",
+      "typeName": "Weather_Condition"
+    },
+    {
+      "intentParameters": {
+        "mediaType": "music"
+      },
+      "intentType": "inIntent",
+      "typeName": "sirikit.intent.media.PlayMediaIntent"
+    },
+    {
+      "iOSDisabledLocales": [
+        "de"
+      ],
+      "intentParameters": {
+        "mediaType": "news"
+      },
+      "intentType": "inIntent",
+      "macOSDisabledLocales": [
+        "de"
+      ],
+      "typeName": "sirikit.intent.media.PlayMediaIntent"
+    },
+    {
+      "iOSDisabledLocales": [
+        "pt"
+      ],
+      "intentType": "appIntent",
+      "macOSDisabledLocales": [
+        "pt"
+      ],
+      "typeName": "RecognizeMusicIntent"
+    },
+    {
+      "dialogParameters": {
+        "source": "asYouTypeStaticCallSuggestion"
+      },
+      "intentType": "inIntent",
+      "typeName": "sirikit.intent.call.StartCallIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intent.messages.SendMessageIntent"
+    },
+    {
+      "intentType": "inIntent",
+      "typeName": "sirikit.intent.messages.SearchForMessagesIntent"
+    },
+    {
+      "intentType": "action",
+      "typeName": "flipACoin"
+    },
+    {
+      "intentType": "action",
+      "typeName": "readMeAPoem"
+    },
+    {
+      "intentType": "action",
+      "typeName": "tellMeAJoke"
+    },
+    {
+      "intentType": "action",
+      "typeName": "tellMeAStory"
+    },
+    {
+      "iOSDisabledLocales": [
+        "de"
+      ],
+      "intentType": "action",
+      "macOSDisabledLocales": [
+        "de"
+      ],
+      "typeName": "Stocks_CheckMarketToday"
+    },
+    {
+      "intentType": "action",
+      "typeName": "Translate_TranslatePhrase"
+    },
+    {
+      "intentType": "action",
+      "typeName": "suggestHelp"
+    }
+  ]
+}

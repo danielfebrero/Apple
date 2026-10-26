@@ -1,0 +1,14 @@
+{
+  "ConfigurationID": "com.apple.modelcatalog",
+  "ConfigurationItems": [
+    {
+      "CombineOperator": "And",
+      "Description": "Allow VisualIntelligence feature. The expected default when absent should be true",
+      "Name": "allowVisualIntelligence",
+      "PrivacySensitive": false,
+      "Type": "Boolean"
+    }
+  ],
+  "Description": "Device Configuration Spec to Allow Apple Intelligence Features",
+  "Version": 1
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <cat id="NavigationControl#AnswerETA" xmlns="urn:apple:names:siri:cat:3.0">
+   <meta name="description" value="Notifies user of their ETA"/>
+   <meta name="category" value="Handled"/>
+   <meta name="readyForLoc" value="true"/>
+   <parameters>
+     <parameter name="duration" type="dialog.Duration" description="How long it will take user to arrive at the destination"/>
+   </parameters>
+ </cat>

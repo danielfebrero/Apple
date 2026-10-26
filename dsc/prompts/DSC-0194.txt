@@ -1,0 +1,4 @@
+Use this tool when the user's requests an on-device action to be taken by Siri.
+To use this tool:
+- Rewrite the request in the user's language, in a format that Siri can understand (see "modifiedUserRequest" rules).
+- If the user cites text from the assistant's last reply, replace that text with a placeholder “[reference]” in “modifiedUserRequest” and copy the cited text into “contentReference”.

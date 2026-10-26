@@ -1,0 +1,144 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Телефон",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Позвони Борису",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "Позвони Лизе по FaceTime",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Программы",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Запустить Фото",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Сообщения",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Сказать Пете: я скоро буду",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Календарь",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Назначь собрание на 9 утра",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Фото",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Покажи мои фото за вчера",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Карты",
+      "DomainAlternateDisplayName": "Карты",
+      "TagPhrase": "Проложи маршрут домой",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Твит с моим местоположением",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Опубликуй на Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Опубликуй на Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Музыка",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Включи Norah Jones",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Напоминания",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Напомни мне позвонить маме",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "Почта",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Написать письмо Андрею",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Погода",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Какая сегодня погода?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Акции",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Какова цена акций Apple",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Часы",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Разбуди меня завтра в 7 утра",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Контакты",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Какой адрес у Лены?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Заметки",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Найти заметки с совещания",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Настройки",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Включи Авиарежим",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Поиск в Интернете",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Найди изображения касаток",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Вопросы и ответы",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "Что такое амурский тигр?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "Подкасты",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Включить подкасты",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

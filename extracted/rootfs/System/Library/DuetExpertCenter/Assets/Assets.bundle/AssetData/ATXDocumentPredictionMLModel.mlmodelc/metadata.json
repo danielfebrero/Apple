@@ -1,0 +1,162 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "Document predictor, scores documents to recommend in Spotlight. This is a non-probabilistic model that is simple weighted sum of features set based on intuitions and testing on a device to make sure it's somewhat reasonable..",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "score",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreConfirms",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreRejects",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreOpenAge",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreDocumentPopularity",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreAssociatedApp",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreCategoryPopularity",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "SubScoreSSIDPopularity",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "AppScorePresumedProbabilistic",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "0.0.3",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 6,
+    "mlProgramOperationTypeHistogram" : {
+      "Log" : 1,
+      "Concat" : 1,
+      "Greater" : 1,
+      "Select" : 4,
+      "SliceByIndex" : 11,
+      "GreaterEqual" : 3,
+      "Pow" : 1,
+      "Clip" : 1,
+      "Shape" : 2,
+      "LogicalAnd" : 2,
+      "LessEqual" : 1,
+      "Fill" : 4,
+      "Mul" : 14,
+      "Cast" : 12,
+      "ReduceSum" : 1,
+      "Add" : 5,
+      "Less" : 1
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...512 × 27",
+        "shapeRange" : "[[1, 512], [27, 27]]",
+        "formattedType" : "MultiArray (Float32 1 × 27)",
+        "type" : "MultiArray",
+        "shape" : "[1, 27]",
+        "name" : "input_feature_vector",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "feature_names" : "AppIntentSSIDPopularity,AppIntentCoreMotionPopularity,AppIntentTrendingPopularity,AppIntentDayOfWeekPopularity,AppIntentTimeOfDayPopularity,AppIntentLaunchDayOfWeekPopularity,AppIntentLaunchPartOfWeekPopularity,AppIntentAmbientLightTypeLaunchPopularity,AppIntentLaunchPopularity,AppIntentCoarseTimeOfDayPopularity,AppIntentPartOfWeekPopularity,AppIntentAmbientLightTypePopularity,AppIntentUnlockTime,DocumentCreatedAge,DocumentModifiedAge,DocumentOpenedAge,DocumentCategoryPopularity,DocumentCategoryDayOfWeekPopularity,DocumentCategoryDayOfWeekRelativePopularity,DocumentCategoryPartOfWeekPopularity,DocumentCategoryPartOfWeekRelativePopularity,DocumentCategoryTrendingPopularity,DocumentAssociatedAppPredictionScore,AppForAllActionsConfirmEvents,TotalAppForAllActionsConfirmEvents,AppForAllActionsRejectEvents,TotalAppForAllActionsRejectEvents",
+      "mldb_token" : "mldb-8mbymokg7x",
+      "intermediate_values" : "SubScoreConfirms,SubScoreRejects,SubScoreOpenAge,SubScoreDocumentPopularity,SubScoreAssociatedApp,SubScoreCategoryPopularity,SubScoreSSIDPopularity,AppScorePresumedProbabilistic",
+      "com.github.apple.coremltools.source" : "torch==2.5.0",
+      "com.github.apple.coremltools.version" : "8.2",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "generatedClassName" : "ATXDocumentPredictionMLModel",
+    "method" : "predict"
+  }
+]

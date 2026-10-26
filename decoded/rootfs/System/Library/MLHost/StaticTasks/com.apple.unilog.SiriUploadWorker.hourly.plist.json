@@ -1,0 +1,16 @@
+{
+  "name": "com.apple.unilog.SiriUploadWorker.hourly",
+  "bundleIdentifier": "com.apple.unilog.SiriUploadWorker",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 3600,
+      "minDurationBetweenInstances": 900
+    },
+    "RequiresInexpensiveNetworkConnectivity": true,
+    "RequiresExternalPower": true,
+    "RequiresProtectionClass": "ClassC",
+    "priority": "Maintenance",
+    "groupName": "com.apple.unilog.uploader.SiriUploadWorker",
+    "groupConcurrencyLimit": 1
+  }
+}

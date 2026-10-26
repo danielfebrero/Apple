@@ -1,0 +1,37 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.siri.assistant.assistantengine.language",
+  "UsageAliasValues": {
+    "pt-PT": {
+      "com.apple.if.planner": {
+        "ae.language": "pt",
+        "nlrouter.language": "pt",
+        "rg.language": "pt_PT"
+      },
+      "com.apple.if.planner.overrides": {
+        "ae.language": "pt",
+        "if.language": "pt_PT",
+        "nlrouter.locale": "pt_PT",
+        "rg.language": "pt_PT",
+        "rg.region": "PT"
+      },
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "pt_PT"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "pt_PT",
+        "attention.language": "pt_PT",
+        "cam.language": "pt_PT",
+        "nl.assistant": "enabled",
+        "nl.language": "pt_PT"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "pt_PT"
+      }
+    }
+  }
+}

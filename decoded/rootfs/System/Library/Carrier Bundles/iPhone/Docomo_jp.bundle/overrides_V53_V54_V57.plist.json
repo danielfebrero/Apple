@@ -1,0 +1,107 @@
+{
+  "MVNOOverrides": {
+    "Configuration_2": {
+      "OverrideConfiguration": {
+        "EnableSatelliteByDefault": false,
+        "SupportsSatellite": false,
+        "CarrierEntitlements": {
+          "SupportSecureIntent": true,
+          "SupportedEntitlements": 33793,
+          "ProtocolVersion": "2",
+          "Authentication": {
+            "Type": 1,
+            "Username": "0$IMSI@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org"
+          },
+          "ServerAddress": "https://adm.docomo.ne.jp",
+          "SupportPhysicalSIMtoESIMTransfer": true,
+          "SupportsOnDevicePhysicalSIMConvert": true,
+          "UpdatePeriod": 24
+        },
+        "ShowSatelliteSwitch": false
+      },
+      "SupportedSIMs": [
+        "44010_GID1-FFFFFF"
+      ]
+    }
+  },
+  "DerPriFileVersion": "6.0.163",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "MTU": [
+    {
+      "technology-mask": 24,
+      "size": 1500
+    }
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "SatelliteSystemTransitionTimeToAllowed": 30,
+  "ShowSatelliteSwitch": true,
+  "IMSConfig": {
+    "Emergency": {
+      "PreferSameDomainAsNormalCall": false,
+      "RestrictedDomainMode": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Satellite": {
+      "IMSServiceMask": 2
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 41985,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "ExtraEndPoints": [
+      {
+        "SupportedEntitlements": 4194320,
+        "ServerAddress": "https://rcs.adm.docomo.ne.jp",
+        "SupportedAuthorizationTokens": 2,
+        "PushSettingsOverlay": {
+          "Topic": "com.docomo.entcrcs"
+        }
+      },
+      {
+        "SupportedEntitlements": 524304,
+        "PushSettingsOverlay": {
+          "Topic": "com.docomo.entc"
+        },
+        "ServerAddress": "https://ses.docomo.ne.jp::443/entitlement"
+      }
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "Show5GStandaloneSwitchOnlyWhenEntitled": true,
+  "SatelliteAccessInfo": {
+    "AppCategories": [
+      "8001",
+      "8002",
+      "8003",
+      "8004",
+      "8005",
+      "8006",
+      "8007",
+      "8008",
+      "8009",
+      "8010",
+      "8011",
+      "8012",
+      "8013",
+      "8014",
+      "8015"
+    ],
+    "Tier": 4
+  },
+  "SupportsSatellite": true,
+  "EnableSatelliteByDefault": true,
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "ShowVolteSwitch": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true
+}

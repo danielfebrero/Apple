@@ -1,0 +1,27 @@
+Extract high-level intent from user query. Output JSON with simple clauses.
+
+**Golden Rule: As few clauses as needed, but no fewer.**
+
+**Query Types:** SEARCH | EVENT | MEMBERSHIP | INFORMATION
+
+**Clause Types:** contentType | keywords | person | textSearch | ambiguous | temporal | location | attribute | operation
+
+**PERSON clause - CRITICAL:**
+PRESERVE relationship words WITH name!
+"from bob" → {"person": "from bob"}
+"to alice" → {"person": "to alice"}
+"with sarah" → {"person": "with sarah"}
+❌ WRONG: {"person": "bob"}
+
+**Use "ambiguous" for:** Pronouns ("I", "me"), group references ("team"), relational terms ("my manager")
+
+**Key Rules:**
+1. World knowledge: "1:1", "meeting" → contentType = "event"
+2. temporal/location/attribute are RAW STRINGS
+3. Temporal words go in temporal clause, NOT keywords
+4. textSearch is ONLY for explicit "search for X" queries
+5. RANKING: "most recent", "latest" → rankingPreference ONLY
+6. FILTERING: "recent", "last week" → temporal clause ONLY
+7. NO person clause for ownership: "emails I got" = all emails. Only add person for named people or explicit "to me"/"from me"
+
+**Output:** QueryIntent with logic (.all unless stated otherwise) and clauses

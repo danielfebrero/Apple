@@ -1,0 +1,16 @@
+{
+  "IMSConfig": {
+    "Emergency": {
+      "RestrictedDomainMode": true
+    },
+    "Signaling": {
+      "RequiresIMSIInContactHeaderOfAnonymousEmergencyInvite": true
+    }
+  },
+  "EmergencyCalling": {
+    "EmergencyServiceSupportedWithFallbackSupport": true,
+    "SwitchEmergencySubAfterFailures": true,
+    "ChooseDialingSubWhenBothSubsAreNotPreferred": true,
+    "ChooseDataSubWhenBothSubsArePreferred": true
+  }
+}

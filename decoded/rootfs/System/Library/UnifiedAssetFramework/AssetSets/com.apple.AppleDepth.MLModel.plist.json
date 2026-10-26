@@ -1,0 +1,32 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.AppleDepth.MLModel",
+  "UsageTypes": [
+    "model.name"
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.AppleDepth.MLModel",
+  "MetadataAsset": "com.apple.AppleDepth.MLModel.uaf.metadata",
+  "Assets": [
+    {
+      "AssetName": "com.apple.AppleDepth.MLModel.uaf.metadata",
+      "IgnoreOSCompatibility": true,
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.AppleDepth.MLModel.uaf.metadata"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.AppleDepth.MLModel",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "model.name"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.AppleDepth.MLModel.{model.name}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Give me directions home",
+            "Get me directions to Jasper",
+            "Directions to my dad’s work",
+            "Get me directions from Vancouver to Calgary",
+            "Give me walking directions to Emily’s"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "What’s my next turn?",
+            "Are we there yet?",
+            "What’s my ETA?",
+            "Find a gas station"
+          ]
+        }
+      ],
+      "SectionName": "Navigation"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Show me the Niagara Falls",
+            "Show me a map of 1 Infinite Loop Cupertino California"
+          ]
+        }
+      ],
+      "SectionName": "Maps"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Find coffee near me",
+            "Find the best nail salon",
+            "Where is the closest Apple Store?"
+          ]
+        }
+      ],
+      "SectionName": "Local businesses"
+    }
+  ]
+}

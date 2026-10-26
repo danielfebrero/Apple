@@ -1,0 +1,64 @@
+{
+  "ShowHighDataModeSwitch": true,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "6.0.163",
+  "IPv6SupportedDataModeMask": 57372,
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "tech-type-mask": 1081351,
+          "username": "",
+          "apn": "ereseller",
+          "UseNetworkMTU": true,
+          "type-mask": 1081351
+        },
+        {
+          "password": "",
+          "tech-type-mask": 16,
+          "username": "",
+          "apn": "resellermht",
+          "UseNetworkMTU": true,
+          "type-mask": 16
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "UseNetworkMTU": true,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "UseNetworkMTU": true,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "ereseller",
+          "UseNetworkMTU": true,
+          "type-mask": 1081350
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "Show5GSwitch": true,
+  "DataIndicatorOverrideForNRMmwave": "NRPlus"
+}

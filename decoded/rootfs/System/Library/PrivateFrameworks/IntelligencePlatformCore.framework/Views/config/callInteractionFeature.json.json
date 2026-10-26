@@ -1,0 +1,23 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "callInteraction": {}
+    }
+  },
+  "featureFlag": "LivableSources",
+  "name": "callInteractionFeature",
+  "type": "signal",
+  "update": {
+    "viewListeners": [
+      {
+        "name": "handleMap",
+        "requiredSource": true,
+        "schedule": "none"
+      }
+    ]
+  }
+}

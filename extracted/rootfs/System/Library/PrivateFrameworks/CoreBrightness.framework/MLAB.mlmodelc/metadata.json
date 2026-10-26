@@ -1,0 +1,303 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity_1",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity_10",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity_11",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity_12",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity_13",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity_14",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "LTM_output_S",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "STM_output_S",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity_2",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity_3",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "LTM_output_E",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "STM_output_E",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "LTM_output_L",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "STM_output_L",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity_8",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity_9",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "0.4",
+    "modelParameters" : [
+
+    ],
+    "author" : "PPOVX",
+    "specificationVersion" : 5,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "11.0",
+      "tvOS" : "14.0",
+      "visionOS" : "1.0",
+      "watchOS" : "7.0",
+      "iOS" : "14.0",
+      "macCatalyst" : "14.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1... × 36 × 3",
+        "shapeRange" : "[[1, -1], [36, 36], [3, 3]]",
+        "formattedType" : "MultiArray (Float32 1 × 36 × 3)",
+        "type" : "MultiArray",
+        "shape" : "[1, 36, 3]",
+        "name" : "input_x",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1... × 36",
+        "shapeRange" : "[[1, -1], [36, 36]]",
+        "formattedType" : "MultiArray (Float32 1 × 36)",
+        "type" : "MultiArray",
+        "shape" : "[1, 36]",
+        "name" : "target_lux",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1... × 36",
+        "shapeRange" : "[[1, -1], [36, 36]]",
+        "formattedType" : "MultiArray (Float32 1 × 36)",
+        "type" : "MultiArray",
+        "shape" : "[1, 36]",
+        "name" : "target_nits",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1... × 36",
+        "shapeRange" : "[[1, -1], [36, 36]]",
+        "formattedType" : "MultiArray (Float32 1 × 36)",
+        "type" : "MultiArray",
+        "shape" : "[1, 36]",
+        "name" : "target_weight",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "5.1.0",
+      "com.github.apple.coremltools.source" : "tensorflow==2.2.0",
+      "mldb_token" : "mldb-ndg4jknglq"
+    },
+    "generatedClassName" : "MLAB",
+    "neuralNetworkLayerTypeHistogram" : {
+      "ActivationLinear" : 16,
+      "LessEqual" : 5,
+      "UnaryLog" : 3,
+      "LessThan" : 5,
+      "Loop" : 1,
+      "LoadConstantND" : 45,
+      "Multiply" : 23,
+      "ReduceMax" : 1,
+      "ConcatND" : 17,
+      "InnerProduct" : 17,
+      "FillDynamic" : 12,
+      "Branch" : 4,
+      "WhereBroadcastable" : 4,
+      "Copy" : 18,
+      "Slice" : 31,
+      "Gather" : 2,
+      "SliceStatic" : 8,
+      "Squeeze" : 3,
+      "NotEqual" : 3,
+      "LogicalAnd" : 2,
+      "AddBroadcastable" : 22,
+      "GreaterEqual" : 3,
+      "Floor" : 1,
+      "UnaryAbs" : 1,
+      "Max" : 1,
+      "MultiplyBroadcastable" : 21,
+      "ExpandDims" : 5,
+      "Scatter" : 2,
+      "SplitND" : 2,
+      "ActivationTanh" : 1,
+      "ReduceSum" : 6,
+      "ActivationReLU" : 10,
+      "ReduceProd" : 1,
+      "GreaterThan" : 2,
+      "GetShape" : 10,
+      "Transpose" : 1,
+      "MinBroadcastable" : 10,
+      "ActivationSigmoid" : 7,
+      "Add" : 21,
+      "SubtractBroadcastable" : 7,
+      "DivideBroadcastable" : 9,
+      "Min" : 1,
+      "MaxBroadcastable" : 12,
+      "Ceil" : 1
+    },
+    "method" : "predict"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "ShowHighDataModeSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "6.0.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "ShowVolteSwitch": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true,
+  "IMSConfig": {
+    "Media": {
+      "AudioCodecs": {
+        "109": {
+          "max-red": "220",
+          "SampleRate": 16000,
+          "ch-aw-recv": "-1",
+          "maxptime": "240",
+          "EncodingName": "EVS",
+          "br": "5.9-24.4",
+          "bw": "nb-swb"
+        }
+      },
+      "SelectForkWithActiveEarlyMedia": true,
+      "EVSHardBwLimit": "nb-swb"
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "LTE": false
+      }
+    }
+  }
+}

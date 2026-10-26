@@ -1,0 +1,27 @@
+{
+  "ShowHighDataModeSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "0.1.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "ShowVolteSwitch": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true,
+  "IMSConfig": {
+    "Media": {
+      "AudioCodecs": {
+        "106": {
+          "ch-aw-recv": "-1",
+          "br": "9.6-24.4",
+          "SampleRate": 16000,
+          "EncodingName": "EVS",
+          "bw": "nb-swb"
+        }
+      },
+      "EVSHardBwLimit": "nb-swb"
+    }
+  },
+  "PhoneAccountTransfer": {
+    "MinCompatibleOS": "18.6"
+  }
+}

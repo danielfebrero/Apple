@@ -1,0 +1,112 @@
+{
+  "tips": [
+    {
+      "id": "CONSENT_TIP",
+      "categories": [
+        "PROMOTIONS",
+        "UPDATES"
+      ],
+      "icon": {
+        "type": "symbol",
+        "value": "mailcleanup.fill"
+      },
+      "title": "Clean Up iCloud Mail",
+      "description": "iCloud Mail can help you free up storage and reduce incoming messages.",
+      "submitButtonLabel": "Get Recommendations",
+      "submitAction": {
+        "actionType": "modal",
+        "url": "https://p98-mccgateway.icloud.com/encodedview/v1/mail/v1/mailassistant/consent",
+        "httpMethod": "POST",
+        "requestBody": null
+      },
+      "cancelButtonLabel": null,
+      "cancelAction": {
+        "actionType": "dismiss",
+        "url": "https://p98-mccgateway.icloud.com/mailis/v1/mail/consent/dismiss",
+        "httpMethod": "PUT",
+        "requestBody": "{\"dismiss\":true}"
+      },
+      "isActive": false
+    },
+    {
+      "id": "UNSUBSCRIBE_TIP",
+      "categories": [
+        "PROMOTIONS",
+        "UPDATES"
+      ],
+      "icon": {
+        "type": "symbol",
+        "value": "mailcleanup.fill"
+      },
+      "title": "Unsubscribe Recommendations",
+      "description": "iCloud Mail found 10 senders in Promotions and Updates you often deleted or left unread.",
+      "submitButtonLabel": "Review",
+      "submitAction": {
+        "actionType": "modal",
+        "url": "https://p98-mccgateway.icloud.com/encodedview/v1/mail/v1/mailassistant/unsubscribe",
+        "httpMethod": "POST",
+        "requestBody": null
+      },
+      "cancelButtonLabel": null,
+      "cancelAction": {
+        "actionType": "dismiss",
+        "url": "https://p98-mccgateway.icloud.com/mailis/v1/mail/recommendations/filters/inline",
+        "httpMethod": "PUT",
+        "requestBody": "{\"dismiss\":true}"
+      },
+      "isActive": true
+    },
+    {
+      "id": "PROMOTIONS_TIP",
+      "categories": [
+        "PROMOTIONS"
+      ],
+      "icon": {
+        "type": "symbol",
+        "value": "mailcleanup.fill"
+      },
+      "title": "Free Up Space with iCloud Mail Cleanup",
+      "description": "Save iCloud storage by automatically deleting promotions you haven't read after a year.",
+      "submitButtonLabel": "Set Up",
+      "submitAction": {
+        "actionType": "modal",
+        "url": "https://p01-mccgateway.icloud.com/encodedview/v1/mail/v1/mailassistant/cleanup",
+        "httpMethod": "POST",
+        "requestBody": "{\"category\":\"Promotions\"}"
+      },
+      "cancelButtonLabel": null,
+      "cancelAction": {
+        "actionType": "dismiss",
+        "url": "https://p01-mccgateway.icloud.com/mailis/v1/mail/recommendations/automations/inline",
+        "httpMethod": "PUT",
+        "requestBody": "{\"transientId\":\"3ebfdfbc-1982-4b05-9d96-20ad39c84f49\",\"dismiss\":true,\"recommendationId\":\"e82e89f0-bb71-367f-9b45-c5900a855dcc\"}"
+      },
+      "isActive": true
+    },
+    {
+      "id": "CLEANUP_TURN_OFF_TIP",
+      "categories": [],
+      "icon": {
+        "type": "symbol",
+        "value": "mailcleanup.fill"
+      },
+      "title": "Turn off iCloud Mail Cleanup?",
+      "description": "iCloud Mail Cleanup is using Categories to automatically delete old messages in Promotions and Updates on this device. To stop deleting messages, turn off iCloud Mail Cleanup in Settings.",
+      "submitButtonLabel": "Go to Settings",
+      "submitAction": {
+        "actionType": "link",
+        "url": "settings-navigation://com.apple.Settings.AppleAccount/ICLOUD_SERVICE/com.apple.Dataclass.Mail/ICLOUD_MAIL_CLEANUP",
+        "httpMethod": null,
+        "requestBody": null
+      },
+      "cancelButtonLabel": null,
+      "cancelAction": null,
+      "isActive": false
+    }
+  ],
+  "dashboardEntryPoint": {
+    "menuItemTitle": "iCloud Mail Cleanup",
+    "menuItemSubtitle": "Set Up",
+    "isConsentObtained": true
+  }
+}

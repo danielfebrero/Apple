@@ -1,0 +1,257 @@
+{
+  "FileType": "PrestageConfiguration",
+  "FileVersion": "1.1.0",
+  "Identifier": "com.apple.Settings.AppleIntelligence.prestage",
+  "ValidConfigs": [
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'ar')",
+      "Name": "language_ar",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_ar"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'da')",
+      "Name": "language_da",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_da"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'de')",
+      "Name": "language_de",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_de"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'en')",
+      "Name": "language_en",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_en"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'es')",
+      "Name": "language_es",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_es"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'fi')",
+      "Name": "language_fi",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_fi"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'fr')",
+      "Name": "language_fr",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_fr"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'he')",
+      "Name": "language_he",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_he"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'hi')",
+      "Name": "language_hi",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_hi"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'id')",
+      "Name": "language_id",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_id"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'it')",
+      "Name": "language_it",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_it"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'ja')",
+      "Name": "language_ja",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_ja"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'ko')",
+      "Name": "language_ko",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_ko"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'ms')",
+      "Name": "language_ms",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_ms"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'nb')",
+      "Name": "language_nb",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_nb"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'nl')",
+      "Name": "language_nl",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_nl"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'pl')",
+      "Name": "language_pl",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_pl"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'pt')",
+      "Name": "language_pt",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_pt"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'sv')",
+      "Name": "language_sv",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_sv"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'th')",
+      "Name": "language_th",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_th"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'tr')",
+      "Name": "language_tr",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_tr"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'vi')",
+      "Name": "language_vi",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_vi"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'zh')",
+      "Name": "language_zh",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_zh"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'zh_HK')",
+      "Name": "language_zh_HK",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_zh_HK"
+      }
+    },
+    {
+      "TargetingType": "PrestagePredicate",
+      "TargetingPredicate": "(DeviceSupportsGenerativeModelSystems == '1') AND (EligibleAppleIntelligenceDeviceLanguage == 'zh_TW')",
+      "Name": "language_zh_TW",
+      "MinOSVersion": "26.3",
+      "MaxOSVersion": "26.9",
+      "UsageAliases": {
+        "com.apple.Settings.AppleIntelligence": "language_zh_TW"
+      }
+    }
+  ]
+}

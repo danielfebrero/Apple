@@ -1,0 +1,51 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "食材リストに大根を追加",
+            "やりたいことリストにスカイダイビングを追加",
+            "傘を持っていくのをリマインドして",
+            "明日の朝6時に薬を飲むこと",
+            "6時までに宿題を終わらせるのをリマインドして",
+            "仕事のリマインダーリストを見せて",
+            "3つ目をチェック済みにして",
+            "食料品という新しいリストを作って",
+            "明日このメールについてリマインドして",
+            "このウェブサイトを覚えて"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "ここから出るときに一郎に電話をするようにリマインドして",
+            "車に乗ったらお父さんに電話するようにとリマインドして"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "家に着いたら母さんにFaceTimeコールするのを思い出させて",
+            "ここを出るときに一郎にFaceTimeコールとリマインド"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "ここから出るときに花を買うのを思い出させて"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

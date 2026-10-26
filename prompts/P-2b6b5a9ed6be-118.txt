@@ -1,0 +1,20 @@
+, identify:
+1. Meeting frequency (high/medium/low)
+2. Meeting type (recurring_1on1, ad_hoc, group) - FAMILY: personal, not work 1:1s
+3. Title patterns that suggest the relationship
+4. Timing (work_hours, personal_time, mixed) - FAMILY MUST BE PERSONAL TIME
+5. Domain validation (work domains get confidence penalty)
+6. Confidence score (0.0-1.0) - PENALIZE work meetings heavily
+
+FAMILY RELATIONSHIP REQUIREMENTS:
+- Personal meeting times (evenings, weekends) AND informal titles
+- Personal titles (dinner, birthday, family) not work titles
+- Confidence < 0.3 for any work email address with work-style meetings
+
+Return a MeetingPatternOutput containing an array of MeetingPattern objects with:
+- person: person identifier (email address)
+- frequency: "high", "medium", or "low"
+- meetingType: "recurring_1on1", "ad_hoc", or "group"
+- titlePatterns: array of meeting title patterns
+- timing: "work_hours", "personal_time", or "mixed"
+- confidence: 0.0-1.0 score (PENALIZE work meetings heavily)

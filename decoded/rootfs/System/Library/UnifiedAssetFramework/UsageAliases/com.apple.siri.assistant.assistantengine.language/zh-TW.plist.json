@@ -1,0 +1,36 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.siri.assistant.assistantengine.language",
+  "UsageAliasValues": {
+    "zh-TW": {
+      "com.apple.if.planner": {
+        "ae.language": "zh",
+        "nlrouter.language": "zh_TW",
+        "rg.language": "zh_TW"
+      },
+      "com.apple.if.planner.overrides": {
+        "ae.language": "zh",
+        "if.language": "zh_TW",
+        "nlrouter.locale": "zh_TW",
+        "rg.language": "zh_TW",
+        "rg.region": "TW"
+      },
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "zh_TW"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "zh_TW",
+        "attention.language": "zh_TW",
+        "nl.assistant": "enabled",
+        "nl.language": "zh_TW"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "zh_TW"
+      }
+    }
+  }
+}

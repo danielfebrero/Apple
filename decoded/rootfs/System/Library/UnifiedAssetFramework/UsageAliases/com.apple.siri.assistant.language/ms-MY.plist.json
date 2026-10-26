@@ -1,0 +1,24 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.siri.assistant.language",
+  "UsageAliasValues": {
+    "ms-MY": {
+      "com.apple.siri.asr.hammer": {
+        "asr.language": "ms_MY"
+      },
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "asr.language": "ms_MY",
+        "attention.language": "ms_MY",
+        "nl.assistant": "enabled",
+        "nl.language": "ms_MY"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "ms_MY"
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+  → {id:"byMonth", kind:groupBy(from:"peakItems", attribute:contentCreationDateMonth)} → {id:"monthCounts", output:agent, kind:valueCount(from:"byMonth")}

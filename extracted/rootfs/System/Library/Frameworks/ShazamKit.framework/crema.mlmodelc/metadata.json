@@ -1,0 +1,95 @@
+[
+  {
+    "shortDescription" : "Convolutional and recurrent estimators for music analysis",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "crema",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "1",
+    "modelParameters" : [
+
+    ],
+    "author" : "Brian McFee",
+    "specificationVersion" : 9,
+    "storagePrecision" : "Mixed (Float16, Float32, Int8)",
+    "license" : "BSD",
+    "mlProgramOperationTypeHistogram" : {
+      "ListGather" : 4,
+      "Range1d" : 8,
+      "Ios18.mul" : 21,
+      "Ios18.concat" : 2,
+      "Ios18.matmul" : 12,
+      "Ios18.batchNorm" : 3,
+      "Ios18.sigmoid" : 1,
+      "MakeList" : 6,
+      "Ios18.minimum" : 8,
+      "Ios18.reverse" : 4,
+      "Ios18.add" : 29,
+      "Ios18.reshape" : 2,
+      "Shape" : 4,
+      "ListRead" : 4,
+      "ListLength" : 4,
+      "WhileLoop" : 4,
+      "Ios18.maximum" : 8,
+      "Ios18.linear" : 13,
+      "Ios18.conv" : 2,
+      "Ios18.relu" : 2,
+      "ListScatter" : 4,
+      "Ios18.transpose" : 12,
+      "Ios18.cast" : 22,
+      "Ios18.less" : 4,
+      "Ios18.sub" : 4,
+      "Ios18.tanh" : 4,
+      "ListWrite" : 4,
+      "Ios18.sliceByIndex" : 6,
+      "Ios18.squeeze" : 1,
+      "Ios18.constexprBlockwiseShiftScale" : 26
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "15.0",
+      "tvOS" : "18.0",
+      "visionOS" : "2.0",
+      "watchOS" : "11.0",
+      "iOS" : "18.0",
+      "macCatalyst" : "18.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1 × 10...323 × 216 × 2",
+        "shapeRange" : "[[1, 1], [10, 323], [216, 216], [2, 2]]",
+        "formattedType" : "MultiArray (Float32 1 × 128 × 216 × 2)",
+        "type" : "MultiArray",
+        "shape" : "[1, 128, 216, 2]",
+        "name" : "hcqt",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "8.3.0",
+      "com.github.apple.coremltools.source" : "tensorflow==2.12.1",
+      "mldb_token" : "mldb-zxy8d4vg59"
+    },
+    "generatedClassName" : "crema",
+    "method" : "predict"
+  }
+]

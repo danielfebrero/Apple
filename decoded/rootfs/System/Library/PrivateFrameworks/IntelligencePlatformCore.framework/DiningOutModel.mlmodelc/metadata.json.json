@@ -1,0 +1,90 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Float32",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "confidence",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 5,
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "11.0",
+      "tvOS": "14.0",
+      "visionOS": "1.0",
+      "watchOS": "7.0",
+      "iOS": "14.0",
+      "macCatalyst": "14.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-blgx7bqype",
+      "com.github.apple.coremltools.source": "torch==1.11.0",
+      "com.github.apple.coremltools.version": "6.2"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1)",
+        "shortDescription": "",
+        "shape": "[1]",
+        "name": "POI",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1)",
+        "shortDescription": "",
+        "shape": "[1]",
+        "name": "PassKit",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1)",
+        "shortDescription": "",
+        "shape": "[1]",
+        "name": "FIA",
+        "type": "MultiArray"
+      }
+    ],
+    "generatedClassName": "DiningOutModel",
+    "neuralNetworkLayerTypeHistogram": {
+      "UnaryExp": 1,
+      "Scatter": 3,
+      "Clip": 3,
+      "Transpose": 1,
+      "ReshapeStatic": 1,
+      "LoadConstantND": 8,
+      "UnaryLog": 1,
+      "ReduceSum": 1,
+      "SliceStatic": 3,
+      "Multiply": 3,
+      "Add": 4,
+      "ConcatND": 1,
+      "ActivationLinear": 4,
+      "Slice": 3,
+      "ExpandDims": 3
+    },
+    "method": "predict"
+  }
+]

@@ -1,0 +1,159 @@
+{
+  "CellBroadcast": {
+    "_Exclude": [
+      "MessageIDParameters3GPP2"
+    ]
+  },
+  "DerPriFileVersion": "0.1.161",
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "AttachAPN": {
+    "3GPP": [
+      {
+        "AllowedProtocolMask": 3,
+        "password": "",
+        "PcscfAddressRequired": false,
+        "APNClass": 1,
+        "username": "",
+        "apn": "vzwinternet",
+        "AllowedProtocolMaskInRoamingLTE": 3
+      },
+      {
+        "AllowedProtocolMask": 3,
+        "password": "",
+        "PcscfAddressRequired": true,
+        "APNClass": 3,
+        "username": "",
+        "apn": "ims",
+        "AllowedProtocolMaskInRoamingLTE": 2
+      }
+    ]
+  },
+  "AllowedServicesTypeMaskOnInternet": 32768,
+  "SMSSettings": {
+    "MessageFormat": {
+      "SignalingFormat": 1,
+      "PacketFormat": 1
+    }
+  },
+  "ShowVolteSwitch": false,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "NoCellularReconnectCauseCodes": [
+            {
+              "Type": "3GPP2",
+              "CauseCodes": [
+                13
+              ]
+            }
+          ],
+          "username": "",
+          "apn": "vzwinternet",
+          "type-mask": 4194359,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "NoCellularReconnectCauseCodes": [
+            {
+              "Type": "3GPP2",
+              "CauseCodes": [
+                13
+              ]
+            },
+            {
+              "CauseCodes": [
+                8
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                27
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                29
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                32
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                33
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            }
+          ],
+          "AllowedProtocolMaskInRoaming": 2,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "tech-type-mask": 49152,
+          "username": "",
+          "apn": "vzwapp",
+          "type-mask": 49152,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "vzwadmin",
+          "type-mask": 512,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "vzwemergency",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 9
+    }
+  ],
+  "ForceWPSCallsOverCS": false,
+  "IMSConfig": {
+    "Signaling": {
+      "AdditionalFeatureTags": {
+        "sms": {
+          "+cdmaless": ""
+        },
+        "voice": {
+          "+cdmaless": "",
+          "+g.gsma.rcs.telephony": "\"cs,volte\""
+        }
+      },
+      "NoFallbackVoiceService": true
+    },
+    "AllowHandoverWithoutIMSVoiceService": true,
+    "Voice": {
+      "BlockSilentRedialOverCS": true,
+      "BlockCallsOverCS": true
+    },
+    "AllowIMSUnprovisioned": true
+  }
+}

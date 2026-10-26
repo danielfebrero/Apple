@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "보라에게 여행에 대한 이메일 보내",
+            "약속 장소 변경에 대한 이메일을 민지에게 보내줘",
+            "혜진이한테 새 이메일을 보내",
+            "아빠에게 가족 사진에 대한 메일을 보내",
+            "서류 잘 받았어요라는 이메일을 민호에게 보내줘",
+            "유진이랑 보라에게 좋은 시간 보냈어라고 이메일 보내"
+          ]
+        }
+      ],
+      "SectionName": "이메일 보내기"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "이메일 확인",
+            "오늘 지성이가 보낸 새 이메일 찾아줘",
+            "결혼에 대한 이메일을 보여줘",
+            "어제 보라가 보낸 이메일을 보여줘"
+          ]
+        }
+      ],
+      "SectionName": "이메일 확인하기"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "회비는 내일 보낸다라고 답장해줘"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "이 사람 직장으로 전화해"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "이 사람 직장으로 FaceTime 걸어줘"
+          ]
+        }
+      ],
+      "SectionName": "이메일에 답장하기"
+    }
+  ]
+}

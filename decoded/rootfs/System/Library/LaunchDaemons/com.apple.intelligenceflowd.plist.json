@@ -1,0 +1,130 @@
+{
+  "Label": "com.apple.intelligenceflowd",
+  "EnvironmentVariables": {},
+  "ProcessType": "Adaptive",
+  "Disabled": {
+    "#Then": false,
+    "#IfFeatureFlagEnabled": "IntelligenceFlow/IntelligenceFlow",
+    "#Else": true
+  },
+  "MachServices": {
+    "com.apple.intelligenceflow.toolbox": true,
+    "com.apple.intelligenceflow.orchestrator": true,
+    "com.apple.intelligenceflow.querydecoration": true,
+    "com.apple.intelligenceflow.imageretrieval": true,
+    "com.apple.intelligenceflow.transcript-entity-querying": true,
+    "com.apple.intelligenceflow.internal": true,
+    "com.apple.intelligenceflow.activation.prewarm": true,
+    "com.apple.intelligenceflow.snippet-streaming": true,
+    "com.apple.siri.orchestration.prescribedaction": true
+  },
+  "EnableTransactions": true,
+  "UserName": "mobile",
+  "LaunchEvents": {
+    "com.apple.bg.system.task": {
+      "com.apple.intelligenceflow.toolbox.update": {
+        "Priority": "Maintenance",
+        "RequiresExternalPower": false,
+        "RequiresNetworkConnectivity": false,
+        "RequiresProtectionClass": "C",
+        "RepeatingTask": {
+          "MinDurationBetweenInstances": 21600,
+          "Interval": 86400
+        },
+        "RequiresUserInactivity": true
+      },
+      "com.apple.intelligenceflow.toolbox.update.fastpass": {
+        "NonRepeatingTask": {
+          "FastPassTask": {
+            "ProcessingTaskIdentifiers": [
+              "com.apple.intelligenceflow.toolbox.update"
+            ]
+          }
+        },
+        "RequiresExternalPower": false,
+        "FeatureCodes": [
+          1102
+        ],
+        "RequiresNetworkConnectivity": false,
+        "RequiresProtectionClass": "C",
+        "Dependencies": [
+          {
+            "DependencyType": "DependencyTypeCompletion",
+            "DependencyIdentifier": "com.apple.siriactionsd.toolkit.high-prio-deferred-delta-index.fastpass"
+          }
+        ]
+      }
+    },
+    "com.apple.biome.compute.publisher": {
+      "com.apple.intelligenceflowd.DeviceUpgrade": {
+        "graph": {
+          "name": "streamPublisher",
+          "version": 1,
+          "streamIdentifier": "Device.Metadata"
+        },
+        "client": "com.apple.intelligenceflow.intelligenceflowd",
+        "identifier": "com.apple.intelligenceflowd.DeviceUpgrade"
+      }
+    },
+    "com.apple.rapport.matching": {
+      "MessageCenterWakeUpRequest": {
+        "scope": 34,
+        "serviceType": "com.apple.siri.companionlink",
+        "type": "server",
+        "internetRelay": true
+      }
+    },
+    "com.apple.notifyd.matching": {
+      "com.apple.os-eligibility-domain.change.greymatter": {
+        "#Then": {
+          "Notification": "com.apple.os-eligibility-domain.change.greymatter"
+        },
+        "#IfFeatureFlagEnabled": "IntelligenceFlow/Linwood"
+      },
+      "com.apple.siri.companionlink": {
+        "Notification": "com.apple.siri.companionlink"
+      },
+      "com.apple.siri.uaf.tool_retrieval.denylist": {
+        "#Then": {
+          "Notification": "com.apple.siri.uaf.com.apple.if.planner.overrides"
+        },
+        "#IfFeatureFlagEnabled": "IntelligenceFlow/Linwood"
+      },
+      "com.apple.mobile.keybagd.first_unlock": {
+        "Notification": "com.apple.mobile.keybagd.first_unlock"
+      },
+      "com.apple.siri.uaf.tool_retrieval.embeddingModel": {
+        "#Then": {
+          "Notification": "com.apple.siri.uaf.com.apple.if.planner"
+        },
+        "#IfFeatureFlagEnabled": "IntelligenceFlow/Linwood"
+      },
+      "com.apple.os-eligibility-domain.change.siri-mode": {
+        "#Then": {
+          "Notification": "com.apple.os-eligibility-domain.change.siri-mode"
+        },
+        "#IfFeatureFlagEnabled": "IntelligenceFlow/Linwood"
+      }
+    },
+    "com.apple.applicationservice.matching": {
+      "ClientCompanionServiceDiscovery": {
+        "scope": 34,
+        "serviceName": "com.apple.siri.companionlink.watch",
+        "type": "listen",
+        "internetRelay": true
+      }
+    },
+    "com.apple.distnoted.matching": {
+      "TKToolkitDatabaseChangedNotification": {
+        "#Then": {
+          "Name": "TKToolkitDatabaseChangedNotification"
+        },
+        "#IfFeatureFlagEnabled": "IntelligenceFlow/Linwood"
+      }
+    }
+  },
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/IntelligenceFlowRuntime.framework/intelligenceflowd"
+  ],
+  "EnablePressuredExit": true
+}

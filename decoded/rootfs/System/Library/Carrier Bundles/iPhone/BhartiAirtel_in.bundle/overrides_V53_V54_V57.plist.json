@@ -1,0 +1,53 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Enable5GStandaloneAfterUpgrade": true,
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "password": "",
+      "username": "",
+      "apn": "airtelgprs.com",
+      "type-mask": 32817,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "NoCellularReconnectCauseCodes": [
+        {
+          "CauseCodes": [
+            2086
+          ],
+          "Type": "3GPP",
+          "RecoversOnAirplaneMode": true
+        }
+      ],
+      "DontSuspend": true,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Enable5GAutoByDefault": true,
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true
+}

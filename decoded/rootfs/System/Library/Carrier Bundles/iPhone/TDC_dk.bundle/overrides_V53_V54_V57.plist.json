@@ -1,0 +1,19 @@
+{
+  "ShowHighDataModeSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "5.0.161",
+  "Enable5GStandaloneByDefault": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "ShowVolteSwitch": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    }
+  },
+  "Show5GStandaloneSwitch": true
+}

@@ -1,0 +1,28 @@
+{
+  "PushSettings": {
+    "CellularPlanTransferTopic": "com.telcel.ent.iphone.plan.transfer"
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 9233,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "TransferSIMService"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true,
+    "UpdatePeriod": 168
+  },
+  "ShowHighDataModeSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "6.0.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true,
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://tmx.prod.ondemandconnectivity.com"
+  },
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ]
+}

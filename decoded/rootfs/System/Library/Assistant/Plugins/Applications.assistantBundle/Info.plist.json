@@ -1,0 +1,47 @@
+{
+  "CFBundleName": "Applications",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "AssistantLockRestrictedDomains": {
+    "com.apple.ace.apps": [
+      "LaunchApp"
+    ]
+  },
+  "AssistantDomains": {
+    "com.apple.ace.apps": {
+      "QuitAllApps": "AAPCommandQuitAll",
+      "CheckRestriction": "AAPCommandCheckRestriction",
+      "AppSearch": "AAPCommandSearch",
+      "GetRestrictedApps": "AAPCommandFilterNonRestricted",
+      "LaunchApp": "AAPCommandLaunch",
+      "QuitApp": "AAPCommandQuit",
+      "SearchMarketplace": "AAPCommandSearchMarketplace"
+    }
+  },
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "Applications",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.applications",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "",
+  "AssistantSyncAnchorKeys": {
+    "com.apple.siri.applications": "AAPSyncHandler",
+    "com.apple.siri.appIntentSupportPolicyAndVocab": "AAPIntentsInfoSyncHandler"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "iCloudService": true,
+  "LaunchDarwinNotification": "com.apple.siri.idslaunchnotification",
+  "DisplayName": "SiriPhraseSpotter",
+  "DuetIdentifiers": [
+    "com.apple.Siri"
+  ],
+  "PushTopic": "com.apple.private.alloy.siri.phrasespotter",
+  "ProtocolName": "com.apple.private.alloy",
+  "AdHocServiceType": 2,
+  "AutoConfigureVettedAddresses": true,
+  "Identifier": "com.apple.private.alloy.siri.phrasespotter",
+  "ServiceName": "com.apple.private.alloy.siri.phrasespotter"
+}

@@ -1,0 +1,50 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "subgraph": {
+      "allowObjectRewrite": true,
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "predicate",
+          "TEXT"
+        ],
+        [
+          "relationshipId",
+          "INTEGER"
+        ],
+        [
+          "relationshipPredicate",
+          "TEXT"
+        ],
+        [
+          "object",
+          "TEXT"
+        ]
+      ],
+      "tableName": "location_subgraph_features"
+    },
+    "type": "subgraph"
+  },
+  "featureFlag": "EntityRelevanceBiomeSources",
+  "name": "locationSubgraphFeatures",
+  "type": "subgraph",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB152"
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "CFBundleName": "CarCommandsFlowDelegatePlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "CarCommandsFlowDelegatePlugin.CarCommandsFlowDelegatePlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "CarCommandsFlowDelegatePlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.CarCommandsFlowDelegatePlugin",
+  "InputAffinityScorer": {
+    "requireAll": false,
+    "type": "first",
+    "children": [
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "vocab:com.apple.passd"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carName"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carAirCirculationMode"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carAudioSource"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carCommandsNoun"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carCommandsSettingsMode"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carCommandsSettingState"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carCommandsSettingsUnits"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carCommandsState"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carCommandsTempRelative"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carSeatType"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carSpeedUnit"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:carVentMode"
+          }
+        ],
+        "type": "compare"
+      },
+      0
+    ]
+  },
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "carCommands"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "*",
+      "verb": "skipBackward",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "*",
+      "verb": "skipForward",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "open",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_RadioStation",
+      "verb": "*",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "checkExistence",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "decreaseBy",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "decreaseByMeasurement",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "disable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "enable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "increaseBy",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "increaseByMeasurement",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "open",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "set",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "setMeasurement",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "setNumber",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "toggle",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "checkExistence",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "request",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.carCommands.directInvocation.toggleLockStatus",
+    "com.apple.siri.carCommands.directInvocation.toggleVisibleSignalStatus",
+    "com.apple.siri.carCommands.directInvocation.toggleAudibleSignalStatus",
+    "com.apple.siri.carCommands.directInvocation.toggleTrunkStatus",
+    "com.apple.siri.carCommands.directInvocation.toggleClimateStatus"
+  ]
+}

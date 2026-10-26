@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FileType</key>
+	<string>UsageAliasConfiguration</string>
+	<key>FileVersion</key>
+	<string>1.0.0</string>
+	<key>UsageAliasName</key>
+	<string>com.apple.searchquery.system.language</string>
+	<key>UsageAliasValues</key>
+	<dict>
+		<key>el-GR</key>
+		<dict>
+			<key>com.apple.search.queryparser</key>
+			<dict>
+				<key>sqp.language</key>
+				<string>el</string>
+				<key>sqp.parser</key>
+				<string>el</string>
+				<key>sqp.safety</key>
+				<string>el</string>
+			</dict>
+			<key>com.apple.search.queryparser.overrides</key>
+			<dict>
+				<key>sqp.language</key>
+				<string>el</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

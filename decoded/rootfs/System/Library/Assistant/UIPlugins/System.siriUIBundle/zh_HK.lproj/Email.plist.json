@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Email靜儀問佢想唔想去旅行",
+            "發送電郵俾海琪關於計劃有改變",
+            "Send個email俾余嘉麗",
+            "寫封電郵俾阿爸話佢知支票收咗喇",
+            "Email何醫生，話我收到份報告喇，唔該",
+            "發個電郵俾靜儀同埋家傑，講話今晚好好玩"
+          ]
+        }
+      ],
+      "SectionName": "發送電郵"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "有冇電郵",
+            "顯示志強寄嚟嘅電郵",
+            "搵吓關於旅行嘅電郵",
+            "搵吓尋日靜儀俾我嘅電郵"
+          ]
+        }
+      ],
+      "SectionName": "檢查電郵"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "回覆電郵，話唔好意思"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "打去佢公司電話"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "用FaceTime打電話去佢公司"
+          ]
+        }
+      ],
+      "SectionName": "回覆電郵"
+    }
+  ]
+}

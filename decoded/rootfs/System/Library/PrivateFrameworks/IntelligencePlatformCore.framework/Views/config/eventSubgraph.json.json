@@ -1,0 +1,51 @@
+{
+  "artifact": {
+    "path": "internal/views.db",
+    "subgraph": {
+      "allowObjectRewrite": true,
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "predicate",
+          "TEXT"
+        ],
+        [
+          "relationshipId",
+          "INTEGER"
+        ],
+        [
+          "relationshipPredicate",
+          "TEXT"
+        ],
+        [
+          "object",
+          "TEXT"
+        ]
+      ],
+      "tableName": "event_subgraph"
+    },
+    "type": "subgraph"
+  },
+  "featureFlag": "NERD",
+  "name": "eventSubgraph",
+  "type": "subgraph",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB65",
+            "entityTypeIncludeDescendants": true
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "eventGraph"
+        ]
+      }
+    ]
+  }
+}

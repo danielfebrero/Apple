@@ -1,0 +1,120 @@
+{
+  "DerPriFileVersion": "5.0.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "NRSlicing": {
+    "OsId": [
+      67,
+      1,
+      210,
+      17,
+      151,
+      217,
+      66,
+      201,
+      177,
+      194,
+      246,
+      117,
+      131,
+      192,
+      249,
+      32
+    ],
+    "EntitlementsGenres": true,
+    "SupportsLLPHS": true
+  },
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "LTE": true,
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "XCAP": {
+      "NafHost": "xcap.ims.mnc000.mcc454.pub.3gppnetwork.org",
+      "SupportsCB": true,
+      "BsfPort": 80,
+      "imsFeatureDependency": true,
+      "NafPort": 80,
+      "SupportCFMediaTag": "true",
+      "SupportsCLIR": false,
+      "supported": true,
+      "ContentType": "application/vnd.etsi.simservs+xml",
+      "SupportsCFErasure": true,
+      "DisableOnNetworkError": true,
+      "ForbiddenHttpErrorCodes": "404,501,502,503,504",
+      "ServeMultipleCDIVRulesPerRequest": false,
+      "SupportCBMediaTag": "true",
+      "imsRegistrationDependency": true,
+      "BsfHost": "bsf.ims.mnc000.mcc454.pub.3gppnetwork.org",
+      "SupportsCW": true
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 109585
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "AllowSAOnWiFiAssociation": true,
+  "ShowVolteSwitch": false,
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "TechSettings": {
+    "TechPolicies": [
+      {
+        "policy": "true",
+        "serviceMask": 131072
+      },
+      {
+        "policy": "true",
+        "serviceMask": 262144
+      }
+    ]
+  },
+  "PushSettings": {
+    "Topic": "ec-apns.hkcsl.com"
+  },
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "apn": "mobile",
+          "type-mask": 32823
+        },
+        {
+          "type-mask": 131072,
+          "Support5GSaHandOver": true,
+          "password": "",
+          "tech-type-mask": 131072,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "type-mask": 1048576,
+          "password": "",
+          "tech-type-mask": 1048576,
+          "AllowNoDNS": 1,
+          "username": "",
+          "apn": "hos",
+          "AllowedProtocolMask": 1
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "SupportsVoNR": true
+}

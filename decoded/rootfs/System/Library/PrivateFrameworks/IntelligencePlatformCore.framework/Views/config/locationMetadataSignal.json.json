@@ -1,0 +1,16 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "tableName": "kv",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "locationMetadata": {}
+    }
+  },
+  "featureFlag": "LivableSources",
+  "name": "locationMetadataSignal",
+  "type": "signal",
+  "update": {}
+}

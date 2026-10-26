@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="InformationSuggestions#sportsGetLeagueScore">
+    <meta name="description" value="Suggests asking what the sports league scores are"/>
+    <meta name="category" value="UsedForSnippet"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="deliveryVehicle" type="dialog.String"/>
+        <parameter description="Name of league using semantic concept" name="leagueVocName" type="dialog.String" semanticConcept="leagueName" redacted="false"/>
+        <parameter description="Fallback string name for the league" name="leagueName" type="dialog.String"/>
+    </parameters>
+</cat>

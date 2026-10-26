@@ -1,0 +1,540 @@
+{
+  "operators": {
+    "address": {
+      "args": [
+        "s"
+      ],
+      "description": "get full address of entity",
+      "implicitArg": "s",
+      "kgq": "get($s,PS317).get(PS316)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "childClasses": {
+      "args": [
+        "c"
+      ],
+      "description": "get the child classes of the given class from the ontology",
+      "implicitArg": "c",
+      "kgq": "pvp(PS1,$c,indexType=ontologyIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "entityByFirstName": {
+      "args": [
+        "s"
+      ],
+      "description": "find an entity by its first name",
+      "implicitArg": "s",
+      "kgq": "pvp(PS312,$s)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "entityForIdTypeFromGKSLive": {
+      "args": [
+        "idtype",
+        "ids",
+        "properties"
+      ],
+      "description": "get entities from live global knowledge api",
+      "implicitArg": "s",
+      "kgq": "qselect(NIL, all(pvp(PS1,$idtype,indexType=liveGlobalKnowledgeIndex),pvp(PS1,$ids,indexType=liveGlobalKnowledgeIndex))).pvp(PS72,indexType=liveGlobalKnowledgeIndex).match($properties,NIL,indexType=liveGlobalKnowledgeIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "entityForMuid": {
+      "args": [
+        "s"
+      ],
+      "description": "get an entity given its MUID",
+      "implicitArg": "s",
+      "kgq": "qselect(NIL, all(pvp(PS396,'muid'),pvp(PS69,$s))).pvp(PS72)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "entityName": {
+      "args": [
+        "s"
+      ],
+      "description": "get name of an entity",
+      "implicitArg": "s",
+      "kgq": "get($s,PS33)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "entityTypeByName": {
+      "args": [
+        "t",
+        "s"
+      ],
+      "description": "Search entity by name",
+      "implicitArg": "",
+      "kgq": "and(pvp(PS1,$t),searchByName($s))",
+      "name": "entityTypeByName",
+      "repeatedArg": false
+    },
+    "filterByObject": {
+      "args": [
+        "s",
+        "o"
+      ],
+      "description": "filter results by matching object",
+      "implicitArg": "s",
+      "kgq": "match($s, NIL, $o)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "filterByPredicate": {
+      "args": [
+        "s",
+        "p"
+      ],
+      "description": "filter results by matching predicate",
+      "implicitArg": "s",
+      "kgq": "match($s, $p, NIL, indexType=noIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "getAddressWithLabel": {
+      "args": [
+        "s",
+        "label"
+      ],
+      "description": "get the address of an entity with label",
+      "implicitArg": "s",
+      "kgq": "get($s,PS225).qselect(pvp(PS733,$label)).qpropget(PS107)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "getAge": {
+      "args": [
+        "s"
+      ],
+      "description": "get age of entity",
+      "implicitArg": "s",
+      "kgq": "get($s, nm_imputedBirthday).sub(NOW).renderDateTime(duration)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "getBirthday": {
+      "args": [
+        "s"
+      ],
+      "description": "get birthday of entity",
+      "implicitArg": "s",
+      "kgq": "get($s, nm_imputedBirthday).renderDateTime(datetime)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "getFirstName": {
+      "args": [
+        "s"
+      ],
+      "description": "get age of entity",
+      "implicitArg": "s",
+      "kgq": "get($s, PS312)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "getFlightReservationNumber": {
+      "args": [
+        "s"
+      ],
+      "description": "get flight reservation number",
+      "implicitArg": "s",
+      "kgq": "get($s,PS51)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "getLifeEventsSinceTime": {
+      "args": [
+        "time"
+      ],
+      "description": "get all life events since given timestamp in reference time",
+      "implicitArg": "time",
+      "kgq": "searchStartTimeFrom($time).pvp(PS1,SB764)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "getName": {
+      "args": [
+        "s"
+      ],
+      "description": "get name of entity",
+      "implicitArg": "s",
+      "kgq": "get($s,PS33)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "getPersonByRelationship": {
+      "args": [
+        "s",
+        "name"
+      ],
+      "description": "get people by given relationship to given person",
+      "implicitArg": "s",
+      "kgq": "qselect($s,and(pvp(PS1,CS168),pvp(nm_relationshipLabel,$name))).qpropget(nm_personIdentifier)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "getPropQualifier": {
+      "args": [
+        "s",
+        "p",
+        "qp"
+      ],
+      "description": "get value of an entity's sub-entity by predicate and sub-entity predicate. same as (entityId, predicate, relationshipPredicate) -> object",
+      "implicitArg": "",
+      "kgq": "qpropget(get($s,$p),$qp)",
+      "name": "getPropQualifier",
+      "repeatedArg": false
+    },
+    "intentArgCount": {
+      "args": [
+        "count"
+      ],
+      "description": "validate if intent arg request has $count number of arguments",
+      "implicitArg": "",
+      "kgq": "triple(intent,argCount,$count,indexType=contextIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "intentArgName": {
+      "args": [
+        "s"
+      ],
+      "description": "validate if intent arg with name exists",
+      "implicitArg": "",
+      "kgq": "entity($s,indexType=contextIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "intentArgType": {
+      "args": [
+        "s",
+        "type"
+      ],
+      "description": "validate ontology type of intent arg or value",
+      "implicitArg": "",
+      "kgq": "triple($s,PS1,$type,indexType=contextIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "isA": {
+      "args": [
+        "s"
+      ],
+      "description": "find all entities with its entity class ID",
+      "implicitArg": "s",
+      "kgq": "pvp(PS1,$s)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "locationWithMuid": {
+      "args": [
+        "s"
+      ],
+      "description": "get the location given its MUID",
+      "implicitArg": "s",
+      "kgq": "textPhrase(NIL, NIL, $s)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "me": {
+      "args": [],
+      "description": "get entity of current user",
+      "implicitArg": "",
+      "kgq": "pvp(nm_isCurrentUser,true)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "mediaEntitiesFromStaticGlobalKnowledge": {
+      "args": [],
+      "description": "Filters entities that are media entities from static global knowledge",
+      "implicitArg": "",
+      "kgq": "pvp(PS1,[SB14,SB115,SB185,SB85,SB138,SB184,SB183,SB295,SB152],indexType=staticGlobalKnowledgeIndex)",
+      "name": "mediaEntitiesFromStaticGlobalKnowledge",
+      "repeatedArg": false
+    },
+    "ontologyId": {
+      "args": [
+        "c"
+      ],
+      "description": "get the class or predicate id of the given name from the ontology",
+      "implicitArg": "c",
+      "kgq": "pvp(PS33,$c,indexType=ontologyIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "ontologyName": {
+      "args": [
+        "c"
+      ],
+      "description": "get the name of the given class or predicate from the ontology",
+      "implicitArg": "c",
+      "kgq": "get($c,PS33,indexType=ontologyIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "parentClasses": {
+      "args": [
+        "c"
+      ],
+      "description": "get the parent classes of the given class",
+      "implicitArg": "c",
+      "kgq": "get($c,PS1,indexType=ontologyIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "phoneNumber": {
+      "args": [
+        "s"
+      ],
+      "description": "get phone number of entity",
+      "implicitArg": "s",
+      "kgq": "get($s,PS407)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "predicateDomain": {
+      "args": [
+        "p"
+      ],
+      "description": "get the domain of the given predicate from the ontology",
+      "implicitArg": "p",
+      "kgq": "get($p,nm_hasDomain,indexType=ontologyIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "predicateRange": {
+      "args": [
+        "p"
+      ],
+      "description": "get the range of the given predicate from the ontology",
+      "implicitArg": "p",
+      "kgq": "get($p,nm_hasRange,indexType=ontologyIndex)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchByEmail": {
+      "args": [
+        "s"
+      ],
+      "description": "find all entities by email address",
+      "implicitArg": "s",
+      "kgq": "qselect(NIL,and(pvp(PS1,CS97),pvp(PS406,$s)))",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchByFullName": {
+      "args": [
+        "s"
+      ],
+      "description": "find all entities by full name",
+      "implicitArg": "s",
+      "kgq": "pvp(PS33,$s)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchByLastName": {
+      "args": [
+        "s"
+      ],
+      "description": "find all entities by its last name",
+      "implicitArg": "s",
+      "kgq": "pvp(PS441,$s)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchByName": {
+      "args": [
+        "s"
+      ],
+      "description": "Search entity by name",
+      "implicitArg": "",
+      "kgq": "text(NIL,NIL, $s, params='ftsType:anyToken')",
+      "name": "searchByName",
+      "repeatedArg": false
+    },
+    "searchByObject": {
+      "args": [
+        "o"
+      ],
+      "description": "search entire graph for entities containing object",
+      "implicitArg": "",
+      "kgq": "match(NIL, NIL, $o)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchByPhoneNumber": {
+      "args": [
+        "s"
+      ],
+      "description": "find all entities by phone number",
+      "implicitArg": "s",
+      "kgq": "qselect(NIL,and(pvp(PS1,CS97),pvp(PS407,$s)))",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchByPredicate": {
+      "args": [
+        "p"
+      ],
+      "description": "search entire graph for entities containing predicate",
+      "implicitArg": "",
+      "kgq": "match(NIL, $p, NIL)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchBySameAs": {
+      "args": [
+        "s"
+      ],
+      "description": "find all entities by its same-as external ID",
+      "implicitArg": "s",
+      "kgq": "pvp(PS102,$s)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchBySourceIDs": {
+      "args": [
+        "s"
+      ],
+      "description": "get entities by source IDs",
+      "implicitArg": "s",
+      "kgq": "textPhrase(NIL, NIL, $s)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchByTypeAndClause": {
+      "args": [
+        "t",
+        "s"
+      ],
+      "description": "find all entities with its entity class ID and some search clause like pvp or qselect",
+      "implicitArg": "",
+      "kgq": "and(isA($t),$s)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchEntityByLocation": {
+      "args": [
+        "s"
+      ],
+      "description": "search entity by address",
+      "implicitArg": "s",
+      "kgq": "textPhrase(NIL, PS225, $s)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchFlightReservation": {
+      "args": [],
+      "description": "search all flight reservations",
+      "implicitArg": "",
+      "kgq": "pvp(nm_sgEventType,FlightReservation)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchSongHistoryByArtist": {
+      "args": [
+        "artist"
+      ],
+      "description": "search all songs in play history by artist name",
+      "implicitArg": "artist",
+      "kgq": "textAny(NIL,[nm_artistName],$artist)",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchStartTimeFrom": {
+      "args": [
+        "time"
+      ],
+      "description": "search all events since `time`",
+      "implicitArg": "time",
+      "kgq": "qselect(triple(NIL,nm_hasDate,NIL),gte(nm_imputedStartTime,$time))",
+      "name": "",
+      "repeatedArg": false
+    },
+    "searchTimeRange": {
+      "args": [
+        "start",
+        "end"
+      ],
+      "description": "search or restrict to occurrence time between start and end",
+      "implicitArg": "",
+      "kgq": "qselect(NIL, all(pvp(PS1,nm_dateRelationshipType),gte(nm_imputedStartTime,$start),lte(nm_imputedEndTime,$end)))",
+      "name": "searchTimeRange",
+      "repeatedArg": false
+    },
+    "substringMatchGlobalEntities": {
+      "args": [
+        "s"
+      ],
+      "description": "substring match query where entities have a name that is a substring of the query",
+      "implicitArg": "",
+      "kgq": "and(mediaEntitiesFromStaticGlobalKnowledge(),text(NIL,PS33,$s,params='ftsType:substring',indexType=staticGlobalKnowledgeIndex))",
+      "name": "substringMatchGlobalEntities",
+      "repeatedArg": false
+    },
+    "textAll": {
+      "args": [
+        "s",
+        "p",
+        "o"
+      ],
+      "description": "full text search matching any object where all tokens are present",
+      "implicitArg": "",
+      "kgq": "text($s,$p,$o,params='ftsType:allTokens')",
+      "name": "",
+      "repeatedArg": false
+    },
+    "textAllPrefixes": {
+      "args": [
+        "s",
+        "p",
+        "o"
+      ],
+      "description": "full text search matching any object where all prefixes match",
+      "implicitArg": "",
+      "kgq": "text($s,$p,$o,params='ftsType:allPrefixes')",
+      "name": "",
+      "repeatedArg": false
+    },
+    "textAny": {
+      "args": [
+        "s",
+        "p",
+        "o"
+      ],
+      "description": "full text search matching any object where any token is present",
+      "implicitArg": "",
+      "kgq": "text($s,$p,$o,params='ftsType:anyToken')",
+      "name": "",
+      "repeatedArg": false
+    },
+    "textPhrase": {
+      "args": [
+        "s",
+        "p",
+        "o"
+      ],
+      "description": "full text search matching any object where the entire phrase appears",
+      "implicitArg": "",
+      "kgq": "text($s,$p,$o,params='ftsType:phrase')",
+      "name": "",
+      "repeatedArg": false
+    },
+    "textPrefixPhrase": {
+      "args": [
+        "s",
+        "p",
+        "o"
+      ],
+      "description": "full text search matching any object where the entire phrase appears as a prefix to the object",
+      "implicitArg": "",
+      "kgq": "text($s,$p,$o,params='ftsType:prefixPhrase')",
+      "name": "",
+      "repeatedArg": false
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "NSContactsUsageDescription": "This app will access your contacts in order to suggest and add new contacts for you",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "UISupportedInterfaceOrientations~ipad": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationPortraitUpsideDown",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "DTPlatformVersion": "27.2",
+  "NSUserActivityTypes": [
+    "com.apple.corespotlightquerycontinuation"
+  ],
+  "CFBundleName": "Siri AI",
+  "DTSDKName": "iphoneos27.2.internal",
+  "NSPhotoLibraryUsageDescription": "Use your photo library to get images to modify",
+  "UISupportsFullScreenInAssistiveAccess": true,
+  "UIViewControllerBasedStatusBarAppearance": true,
+  "CFBundleIcons": {
+    "CFBundlePrimaryIcon": {
+      "CFBundleIconFiles": [
+        "AppIcon60x60"
+      ],
+      "CFBundleIconName": "AppIcon"
+    }
+  },
+  "UILaunchScreen": {},
+  "UIStatusBarStyle": "UIStatusBarStyleDefault",
+  "CFBundleDisplayName": "Campo",
+  "LSRequiresIPhoneOS": true,
+  "MediaClientInfo": {
+    "API": {
+      "Identifier": "com.apple.Siri.app",
+      "Version": "1"
+    },
+    "Bag": {
+      "Profile": "Music",
+      "Version": "1"
+    }
+  },
+  "PUICAlertDefinitions": [
+    {
+      "hostApplicationBundleID": "com.apple.campo",
+      "domain": "com.apple.campo.transient.request.alert"
+    }
+  ],
+  "DTSDKBuild": "24B107",
+  "NSCameraUsageDescription": "Capture a photo to get image to modify",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "NSAccentColorName": "AccentColor",
+  "SBIconVisibilityDefaultVisibleFeatureFlag": "IntelligenceFlow/Campo",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformBuild": "24B107",
+  "CFBundlePackageType": "APPL",
+  "MinimumOSVersion": "27.2",
+  "CFBundleDevelopmentRegion": "en",
+  "DTXcodeBuild": "27A225b",
+  "CFBundleVersion": "3605.10.2.11.9",
+  "NSSpeechRecognitionUsageDescription": "Transcribe speech",
+  "UIApplicationShowsViewsWhileLocked": true,
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "CoreSpotlightContinuation": true,
+  "CFBundleIdentifier": "com.apple.campo",
+  "BSServiceDomains": {
+    "com.apple.campo": {
+      "Multiplexing": "MatchInitiator",
+      "Start": "ManualBootstrap",
+      "MachName": "com.apple.campo",
+      "ListenerQueueServiceQuality": "UserInteractive",
+      "Services": {
+        "com.apple.campo.activation": {},
+        "com.apple.campo.companion-activation-booster": {},
+        "com.apple.campo": {},
+        "com.apple.campo.test": {}
+      }
+    }
+  },
+  "UIApplicationSceneManifest": {
+    "UIApplicationSupportsMultipleScenes": true,
+    "UISceneConfigurations": {
+      "CPTemplateApplicationSceneSessionRoleApplication": [
+        {
+          "UISceneClassName": "CPTemplateApplicationScene",
+          "UISceneConfigurationName": "CarPlay",
+          "UISceneDelegateClassName": "Siri_AI.CarPlaySceneDelegate"
+        }
+      ]
+    }
+  },
+  "DTXcode": "2700",
+  "NSSiriUsageDescription": "This app lets you chat with Siri",
+  "SBAppTags": [
+    "hidden"
+  ],
+  "LSExplicitlyRestrictable": true,
+  "UIApplicationSupportsIndirectInputEvents": true,
+  "CFBundleExecutable": "Siri AI",
+  "UISupportedInterfaceOrientations~iphone": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "LSLaunchDLabel": "com.apple.campo",
+  "CFBundleIcons~ipad": {
+    "CFBundlePrimaryIcon": {
+      "CFBundleIconFiles": [
+        "AppIcon60x60",
+        "AppIcon76x76"
+      ],
+      "CFBundleIconName": "AppIcon"
+    }
+  },
+  "UNUserNotificationCenter": {
+    "UNUniversalApplicationIdentifier": "com.apple.campo",
+    "UNDefaultSettings": {
+      "UNSettingAlerts": true,
+      "UNSettingNotificationCenter": true,
+      "UNSettingLockScreen": true
+    }
+  },
+  "WKApplication": false,
+  "DTPlatformName": "iphoneos",
+  "CADisableMinimumFrameDurationOnPhone": true
+}

@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "What’s Robert's address?",
+            "What is Kate Miller's phone number?",
+            "When is my wife’s birthday?",
+            "Show Kate's home email address",
+            "What’s my brother’s work address?"
+          ]
+        }
+      ],
+      "SectionName": "Asking about contacts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Show James Ashford",
+            "Find people named Miller"
+          ]
+        }
+      ],
+      "SectionName": "Finding contacts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "My mum is Kate Miller",
+            "Chris Miller is my brother"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Call my brother at work"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime my brother at work"
+          ]
+        }
+      ],
+      "SectionName": "Relationships"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Learn how to pronounce my name",
+            "Learn how to pronounce my mum’s name",
+            "Learn how to pronounce Siobhan Conway’s name"
+          ]
+        }
+      ],
+      "SectionName": "Pronunciation"
+    }
+  ]
+}

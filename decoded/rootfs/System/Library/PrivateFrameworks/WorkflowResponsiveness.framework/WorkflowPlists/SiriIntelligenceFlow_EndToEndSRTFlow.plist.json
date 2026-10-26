@@ -1,0 +1,26 @@
+{
+  "name": "SiriIntelligenceFlow_EndToEndSRTFlow",
+  "contextual_telemetry": "NO",
+  "signposts": [
+    {
+      "subsystem": "com.apple.corespeech",
+      "category": "Framework",
+      "name": "UserSpeakingEnd",
+      "start": true
+    },
+    {
+      "subsystem": "com.apple.modelmanager",
+      "category": "Signposter.Siri.AgenticPlanner",
+      "name": "Execute Request",
+      "environment_field_names": [
+        "inferenceProviderIdentifier"
+      ]
+    },
+    {
+      "subsystem": "com.apple.siri",
+      "category": "Client",
+      "name": "UsefulUserFacingResults",
+      "end": true
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "PushSettings": {
+    "Topic": "com.sasktel.aes.general"
+  },
+  "ShowHighDataModeSwitch": true,
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "sm-v4-062-a-gtm.pr.go-esim.com"
+  },
+  "SuppressSimToolkitSendShortMessageNotifications": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4205745,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "apns": [
+    {
+      "tech-type-mask": 1048580,
+      "apn": "pda2.stm.sk.ca",
+      "type-mask": 1081397,
+      "AllowedProtocolMask": 1
+    },
+    {
+      "tech-type-mask": 262144,
+      "apn": "sos",
+      "technology-mask": 24,
+      "type-mask": 262144,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "AllowedProtocolMask": 3,
+      "tech-type-mask": 131072,
+      "apn": "ims",
+      "SupportSwitchOver": true,
+      "type-mask": 131072,
+      "technology-mask": 25
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true
+}

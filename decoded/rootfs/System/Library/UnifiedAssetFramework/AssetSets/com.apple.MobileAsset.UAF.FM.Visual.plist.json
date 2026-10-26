@@ -1,0 +1,229 @@
+{
+  "AssetSetName": "com.apple.MobileAsset.UAF.FM.Visual",
+  "Assets": [
+    {
+      "AssetName": "com.apple.fm.visual.image_diffusion_v1.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.image_diffusion_v1.base",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.image_diffusion_v1.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.image_diffusion_v1.base.generic_alternate",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.image_diffusion_v1.base.generic_alternate",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.image_diffusion_v1.base.generic_alternate"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.image_diffusion_v1.emoji.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.image_diffusion_v1.emoji",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.image_diffusion_v1.emoji.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.image_diffusion_v1.emoji.generic_alternate",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.image_diffusion_v1.emoji.generic_alternate",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.image_diffusion_v1.emoji.generic_alternate"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic_alternate",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic_alternate",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic_alternate"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.image_diffusion_v1.personalized_emoji",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic_alternate",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic_alternate",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic_alternate"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.image_diffusion_v1.style_scribble",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic_alternate",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic_alternate",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic_alternate"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.imageplayground.curatedprompts.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.imageplayground.curatedprompts",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.imageplayground.curatedprompts.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.imagescaler.upscaler.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.imagescaler.upscaler",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.imagescaler.upscaler.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.understanding.conditioning.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.understanding.conditioning",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.understanding.conditioning.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.understanding.conditioning.generic_alternate",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.understanding.conditioning.generic_alternate",
+          "RequiredUsageTypes": [
+            "com.apple.fm.visual.understanding.conditioning.generic_alternate"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.gm.image_generation_services.debiasing.metadata.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.gm.image_generation_services.debiasing.metadata.generic",
+          "RequiredUsageTypes": [
+            "com.apple.gm.image_generation_services.debiasing.metadata.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.gm.prompt_allow_list.input.delta_lexicon.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.gm.prompt_allow_list.input.delta_lexicon.generic",
+          "RequiredUsageTypes": [
+            "com.apple.gm.prompt_allow_list.input.delta_lexicon.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.gm.safety_deny.input.visual_generation.safety.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.gm.safety_deny.input.visual_generation.safety.generic",
+          "RequiredUsageTypes": [
+            "com.apple.gm.safety_deny.input.visual_generation.safety.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.visual.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.visual.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.FM.Visual",
+  "ExperimentalAssets": {
+    "TrialFactor": "ExperimentAssetsDirectory",
+    "TrialNamespace": "SIML_ADM_PERSONALIZATION",
+    "TrialProject": "SIML"
+  },
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.fm.visual.uaf.metadata",
+  "UsageTypes": [
+    "com.apple.fm.visual.image_diffusion_v1.base.generic",
+    "com.apple.fm.visual.image_diffusion_v1.base.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.emoji.generic",
+    "com.apple.fm.visual.image_diffusion_v1.emoji.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic",
+    "com.apple.fm.visual.image_diffusion_v1.messages_backgrounds.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic",
+    "com.apple.fm.visual.image_diffusion_v1.personalized_emoji.generic_alternate",
+    "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic",
+    "com.apple.fm.visual.image_diffusion_v1.style_scribble.generic_alternate",
+    "com.apple.fm.visual.imageplayground.curatedprompts.generic",
+    "com.apple.fm.visual.imagescaler.upscaler.generic",
+    "com.apple.fm.visual.understanding.conditioning.generic",
+    "com.apple.fm.visual.understanding.conditioning.generic_alternate",
+    "com.apple.gm.image_generation_services.debiasing.metadata.generic",
+    "com.apple.gm.prompt_allow_list.input.delta_lexicon.generic",
+    "com.apple.gm.safety_deny.input.visual_generation.safety.generic"
+  ]
+}

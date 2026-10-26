@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Dis à Sofiane que j’arrive",
+            "Envoie un message à Sébastien",
+            "Envoie un SMS à Alex disant Pourquoi pas demain?",
+            "Dis à Stéphanie que le spectacle était super",
+            "Envoie un message à Mathieu sur son portable disant que je serai en retard",
+            "Envoie un message au 075 143 42 15",
+            "Envoie un message à Max et Thomas Où êtes-vous?"
+          ]
+        }
+      ],
+      "SectionName": "ENVOI DE MESSAGES"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lis mes nouveaux messages",
+            "Relis"
+          ]
+        }
+      ],
+      "SectionName": "LECTURE DES NOUVEAUX MESSAGES"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Réponds c’est une excellente nouvelle",
+            "Dis-lui que je serai là dans 10 minutes"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Appelle-le"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime avec elle"
+          ]
+        }
+      ],
+      "SectionName": "RÉPONSE À DES MESSAGES"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lis mon dernier message de Stéphanie"
+          ]
+        }
+      ],
+      "SectionName": "RECHERCHE DE MESSAGES"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "DerPriFileVersion": "0.1.162",
+  "IgnoresDeactivateOnNetworkScanServiceMask": 131072,
+  "TechSettings": {
+    "IKE": {
+      "LocalIdentifier": "0$impi_user@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org"
+    }
+  },
+  "Show5GSwitch": true,
+  "MTU": [
+    {
+      "technology-mask": 28,
+      "size": 1428
+    },
+    {
+      "technology-mask": 2,
+      "size": 1472
+    }
+  ],
+  "fallback-apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 4194323,
+          "password": "",
+          "APNSwitchCauseCodes": [
+            33,
+            27,
+            523
+          ],
+          "username": "",
+          "OrigApn": "vzwinternet",
+          "apn": "tracfone.vzwentp",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "IMSConfig": {
+    "Media": {
+      "InactivityTimerRTCPSeconds": 20,
+      "TTYRelayNumber": "711",
+      "RTCPXRBasebandSupport": {
+        "voip-metrics": "",
+        "stat-summary": "loss,dup,jitt,HL"
+      },
+      "SRTPEndToAccessEdgeProtection": true,
+      "EnableRTCPExtendedReports": true,
+      "InactivityTimerRTPSeconds": 20
+    },
+    "Signaling": {
+      "AlwaysAddSipInstanceToSubscribeRequest": true,
+      "AdditionalFeatureTags": {
+        "sms": {
+          "+cdmaless": ""
+        },
+        "voice": {
+          "+cdmaless": "",
+          "+g.gsma.rcs.telephony": "\"cs,volte\""
+        }
+      },
+      "T3396PdpBackOffSeconds": 300,
+      "NoFallbackVoiceService": true,
+      "IncomingCallEndReasons": {
+        "CallPulled": {
+          "ReasonHeaderText": "Call Has Been Pulled by Another Device",
+          "TerminationEvent": "TransferredToOtherDevice"
+        },
+        "AllDevicesBusy": {
+          "ReasonHeaderText": "Another device sent All Devices Busy response",
+          "TerminationEvent": "RemoteCallRejected"
+        },
+        "CallLimitReached": {
+          "ReasonHeaderText": "Simultaneous Call Limit Has Already Been Reached",
+          "StatusCode": 403,
+          "TerminationEvent": "SecondaryDeviceInUse"
+        },
+        "ForbiddenDeregister": {
+          "ReasonHeaderText": "Forbidden - Originating user not registered",
+          "DropsRegistration": true,
+          "StatusCode": 403
+        },
+        "CallCompletionElsewhere": {
+          "ReasonHeaderText": "Call Completion Elsewhere",
+          "TerminationEvent": "CallAnsweredElsewhere"
+        }
+      },
+      "TimeoutRegistrationAllProxyErrorCodes": "480",
+      "HonorSimAccessClassBeforeBarring": true
+    },
+    "Voice": {
+      "BlockSilentRedialOverCS": true,
+      "BlockCallsOverCS": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "EHRPD": false
+      }
+    },
+    "AllowIMSUnprovisioned": true
+  },
+  "ShowHighDataModeSwitch": true,
+  "PcoOptions": {
+    "PcoMcc": 311,
+    "ContainerIds": [
+      65283
+    ],
+    "PcoMnc": 480
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRUWB",
+  "CarrierEntitlements": {
+    "EnableVolteWhileEntitlementStatusIsUnknown": true,
+    "SupportedEntitlements": 4194489
+  },
+  "SMSSettings": {
+    "MessageFormat": {
+      "SignalingFormat": 1,
+      "PacketFormat": 1
+    }
+  },
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "apn": "vzwinternet",
+          "type-mask": 4194323,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "tech-type-mask": 16390,
+          "username": "",
+          "apn": "vzwapp",
+          "type-mask": 49156,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "NoCellularReconnectCauseCodes": [
+            {
+              "CauseCodes": [
+                24
+              ],
+              "RecoversOnAirplaneMode": true,
+              "NumTriesAllowed": 3,
+              "Type": "Non3GPP"
+            },
+            {
+              "CauseCodes": [
+                8
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                27
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                29
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                32
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                33
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            }
+          ],
+          "AllowedProtocolMaskInRoaming": 2,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "vzwadmin",
+          "type-mask": 512,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "vzwemergency",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "AttachAPN": {
+    "3GPP": [
+      {
+        "AllowedProtocolMask": 3,
+        "password": "",
+        "PcscfAddressRequired": false,
+        "APNClass": 1,
+        "username": "",
+        "apn": "vzwinternet",
+        "AllowedProtocolMaskInRoamingLTE": 3
+      },
+      {
+        "AllowedProtocolMask": 3,
+        "password": "",
+        "PcscfAddressRequired": true,
+        "APNClass": 3,
+        "username": "",
+        "apn": "ims",
+        "AllowedProtocolMaskInRoamingLTE": 2
+      }
+    ]
+  }
+}

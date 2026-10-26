@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="InformationSuggestions#localSearch">
+    <meta name="description" value="Suggests performing a local search"/>
+    <meta name="category" value="UsedForSnippet"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="deliveryVehicle" type="dialog.String"/>
+        <parameter name="address" description="An address string" type="dialog.String"/>
+        <parameter name="localBusiness" description="Name of a local business. Example: Starbucks" type="dialog.String"/>
+        <parameter name="personal" description="Name of a personally labelled location like Home, Work, School" type="dialog.String"/>
+    </parameters>
+</cat>

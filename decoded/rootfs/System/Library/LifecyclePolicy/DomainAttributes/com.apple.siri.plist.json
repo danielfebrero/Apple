@@ -1,0 +1,376 @@
+{
+  "IntentStartupGrant": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSDefineRelativeStartTimeGrant"
+          },
+          {
+            "Class": "RBSDurationAttribute",
+            "StartPolicy": "RBSDurationStartPolicyFixed",
+            "WarningDuration": 10,
+            "InvalidationDuration": 32,
+            "EndPolicy": "RBSDurationEndPolicyInvalidate"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractive"
+          },
+          {
+            "Class": "RBSPreventIdleSleepGrant"
+          },
+          {
+            "Class": "RBSCoalitionLevelGrant",
+            "CoalitionLevel": "RBSCoalitionLevelHigh"
+          },
+          {
+            "Class": "RBSGPUAccessGrant",
+            "Role": "RBSGPURoleBackground"
+          },
+          {
+            "Class": "RBSAcquisitionCompletionAttribute",
+            "CompletionPolicy": "RBSAcquisitionCompletionPolicyAfterApplication"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20219
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "CompoundAny",
+      "Restrictions": [
+        {
+          "Class": "OriginatorEntitlement",
+          "Entitlement": "com.apple.private.xpc.launchd.app-server"
+        },
+        {
+          "Class": "OriginatorEntitlement",
+          "Entitlement": "com.apple.assertiond.system-shell"
+        },
+        {
+          "Class": "OriginatorEntitlement",
+          "Entitlement": "com.apple.runningboard.launchprocess"
+        }
+      ]
+    }
+  },
+  "MediaQuotationIntentHandler": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleBackground"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20220
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.siri"
+    }
+  },
+  "ActiveAssistantSessionUIClient": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractiveNonFocal"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 30
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSAcquisitionCompletionAttribute",
+            "CompletionPolicy": "RBSAcquisitionCompletionPolicyAfterApplication"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20915
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.siri"
+    }
+  },
+  "AppIntentsExtensionConnection": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSDurationAttribute",
+            "StartPolicy": "RBSDurationStartPolicyFixed",
+            "WarningDuration": 10,
+            "InvalidationDuration": 32,
+            "EndPolicy": "RBSDurationEndPolicyInvalidate"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractiveNonFocal"
+          },
+          {
+            "Class": "RBSCoalitionLevelGrant",
+            "CoalitionLevel": "RBSCoalitionLevelHigh"
+          },
+          {
+            "Class": "RBSGPUAccessGrant",
+            "Role": "RBSGPURoleBackground"
+          },
+          {
+            "Class": "RBSPreventIdleSleepGrant"
+          },
+          {
+            "Class": "RBSAcquisitionCompletionAttribute",
+            "CompletionPolicy": "RBSAcquisitionCompletionPolicyAfterApplication"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20705
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "CompoundAny",
+      "Restrictions": [
+        {
+          "Class": "OriginatorEntitlement",
+          "Entitlement": "com.apple.private.xpc.launchd.app-server"
+        },
+        {
+          "Class": "OriginatorEntitlement",
+          "Entitlement": "com.apple.assertiond.system-shell"
+        },
+        {
+          "Class": "OriginatorEntitlement",
+          "Entitlement": "com.apple.runningboard.launchprocess"
+        }
+      ]
+    }
+  },
+  "UserInteractiveActivationAngelIPC": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSLaunchGrant"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractiveNonFocal"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 40
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSResistTerminationGrant",
+            "Resistance": "RBSTerminationResistanceNonInteractive"
+          },
+          {
+            "Class": "RBSDefineRelativeStartTimeGrant"
+          },
+          {
+            "Class": "RBSMimicTaskSuspensionAttribute"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20909
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "TargetEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.angeltarget.campo"
+    }
+  },
+  "SiriBackground": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 37
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSLaunchGrant"
+          },
+          {
+            "Class": "RBSPersistentAttribute"
+          },
+          {
+            "Class": "RBSBaseMemoryGrant",
+            "Strength": "RBSMemoryLimitStrengthSoft",
+            "Category": "SiriBackground"
+          },
+          {
+            "Class": "RBSMimicTaskSuspensionAttribute"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20921
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.siri.memorylimits"
+    }
+  },
+  "SiriTransient": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSBaseMemoryGrant",
+            "Strength": "RBSMemoryLimitStrengthSoft",
+            "Category": "SiriTransient"
+          },
+          {
+            "Class": "RBSMimicTaskSuspensionAttribute"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20922
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.siri.memorylimits"
+    }
+  },
+  "SiriApp": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSBaseMemoryGrant",
+            "Strength": "RBSMemoryLimitStrengthSoft",
+            "Category": "SiriApp"
+          },
+          {
+            "Class": "RBSMimicTaskSuspensionAttribute"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20923
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.siri.memorylimits"
+    }
+  },
+  "ForegroundLinkConnection": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSDurationAttribute",
+            "StartPolicy": "RBSDurationStartPolicyFixed",
+            "WarningDuration": 4,
+            "InvalidationDuration": 12,
+            "EndPolicy": "RBSDurationEndPolicyInvalidate"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractive"
+          },
+          {
+            "Class": "RBSCoalitionLevelGrant",
+            "CoalitionLevel": "RBSCoalitionLevelHigh"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 100
+          },
+          {
+            "Class": "RBSBaseMemoryGrant",
+            "Strength": "RBSMemoryLimitStrengthSoft",
+            "Category": "Active"
+          },
+          {
+            "Class": "RBSPreventIdleSleepGrant"
+          },
+          {
+            "Class": "RBSGPUAccessGrant",
+            "Role": "RBSGPURoleUserInteractive"
+          },
+          {
+            "Class": "RBSAcquisitionCompletionAttribute",
+            "CompletionPolicy": "RBSAcquisitionCompletionPolicyAfterApplication"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20241
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.siri"
+    }
+  },
+  "PlaySound": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSDurationAttribute",
+            "StartPolicy": "RBSDurationStartPolicyDelayedRelative",
+            "WarningDuration": 1,
+            "InvalidationDuration": 5,
+            "EndPolicy": "RBSDurationEndPolicyInvalidate"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleBackground"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 40
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20237
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.siri"
+    }
+  }
+}

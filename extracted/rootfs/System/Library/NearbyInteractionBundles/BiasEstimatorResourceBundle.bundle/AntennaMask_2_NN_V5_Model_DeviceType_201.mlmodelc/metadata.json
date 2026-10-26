@@ -1,0 +1,65 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "Bias Estimation Model NN Ver02",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float32",
+    "modelParameters" : [
+
+    ],
+    "author" : "Location Tech",
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 43)",
+        "shortDescription" : "",
+        "shape" : "[1, 43]",
+        "name" : "input_1",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "5.2.0",
+      "com.github.apple.coremltools.source" : "tensorflow==2.6.0"
+    },
+    "generatedClassName" : "trainedModel_AntennaMask_2_noMagField_allDataV1_copiedOverModelWithBatchSize_1",
+    "neuralNetworkLayerTypeHistogram" : {
+      "ActivationLeakyReLU" : 8,
+      "ReshapeStatic" : 4,
+      "Transpose" : 6,
+      "SoftmaxND" : 1,
+      "SplitND" : 1,
+      "ActivationTanh" : 2,
+      "ConcatND" : 1,
+      "Convolution" : 4,
+      "InnerProduct" : 7
+    },
+    "method" : "predict"
+  }
+]

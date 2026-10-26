@@ -1,0 +1,141 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Telefon",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Hubungi Arif",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime Nora",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Aplikasi",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Lancarkan Foto",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Mesej",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Beritahu Amira saya akan sampai",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Kalendar",
+      "IconNeedsProcessing": true,
+      "TagPhrase": "Setkan mesyuarat pukul 9",
+      "IconResourceName": "Calendar",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Peta",
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainName": "MapsAndLocal",
+      "TagPhrase": "Tunjukkan arah ke rumah",
+      "DomainAlternateDisplayName": "Peta"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Tweet lokasi saya…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Siarkan ke Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Muzik",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Mainkan lagu Yuna",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Peringatan",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Ingatkan untuk hubungi ibu",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "E-mel",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "E-mel Julie tentang cuti",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Cuaca",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Apakah cuaca hari ini?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Saham",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Apa harga saham Apple?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Jam",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Bangunkan saya 7 pg esok",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Kenalan",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Apakah e-mel Kamales?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Cari Rakan Saya",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "Di manakah Chandru?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "Nota",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Catatkan saya berbelanja RM12",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Seting",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Aktifkan Mod Pesawat",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Carian Web",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Cari di web untuk harimau",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Soal Jawab",
+      "IconNeedsProcessing": true,
+      "TagPhrase": "Apakah keluasan Malaysia?",
+      "IconResourceName": "QandA",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "Podcast",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Mainkan podcast",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

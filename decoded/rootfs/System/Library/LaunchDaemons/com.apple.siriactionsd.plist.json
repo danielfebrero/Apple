@@ -1,0 +1,249 @@
+{
+  "EnablePressuredExit": true,
+  "EnvironmentVariables": {
+    "MallocStackLoggingDirectory": "/private/var/tmp/com.apple.siriactionsd"
+  },
+  "Label": "com.apple.siriactionsd",
+  "LaunchEvents": {
+    "com.apple.appprotection.preferences.change.event": {
+      "Hidden App Bundle IDs Subscription": {
+        "hiddenEvent": true,
+        "unhiddenEvent": true
+      }
+    },
+    "com.apple.bg.system.task": {
+      "com.apple.siriactionsd.toolkit.high-prio-deferred-delta-index.fastpass": {
+        "Dependencies": [
+          {
+            "DependencyIdentifier": "com.apple.linkd.index.build.fastpass",
+            "DependencyType": "DependencyTypeCompletion"
+          }
+        ],
+        "FeatureCodes": [
+          1101
+        ],
+        "NonRepeatingTask": {
+          "FastPassTask": {}
+        },
+        "ProducedResultIdentifiers": [
+          "com.apple.siriactionsd.toolkit.high-prio-deferred-delta-index.fastpass"
+        ],
+        "RequiresBuddyComplete": false,
+        "RequiresExternalPower": false,
+        "RequiresProtectionClass": "C"
+      }
+    },
+    "com.apple.biome.compute.publisher": {
+      "com.apple.siriactionsd.UserFocusComputedMode": {
+        "client": "com.apple.siriactionsd",
+        "graph": {
+          "name": "streamPublisher",
+          "streamIdentifier": "UserFocusComputedMode",
+          "version": "1"
+        },
+        "identifier": "com.apple.siriactionsd.UserFocusComputedMode"
+      }
+    },
+    "com.apple.cascade.xpc_event.setChange": {
+      "com.apple.toolkit.sync.pull": {}
+    },
+    "com.apple.coreduetcontext.client_event_stream": {
+      "notification": {
+        "client-identifier": "com.apple.siriactionsd.contextstore-registration"
+      }
+    },
+    "com.apple.distnoted.matching": {
+      "ApplicationRegistered": {
+        "Name": "com.apple.LaunchServices.applicationRegistered"
+      },
+      "ApplicationStateChanged": {
+        "Name": "com.apple.LaunchServices.applicationStateChanged"
+      },
+      "ApplicationUnregistered": {
+        "Name": "com.apple.LaunchServices.applicationUnregistered"
+      },
+      "CoreDataDatabaseChanged": {
+        "Name": "com.apple.shortcuts.WFCoreDataDatabaseContextDidSaveNotification"
+      },
+      "LNAppShortcutsChangedNotification": {
+        "Name": "LNAppShortcutsChangedNotification"
+      },
+      "LNMetadataChangedNotification": {
+        "Name": "LNMetadataChangedNotification"
+      },
+      "TKToolkitLocalDatabaseChangedNotification": {
+        "Name": "TKToolkitLocalDatabaseChangedNotification"
+      },
+      "TKToolkitRemoteDatabaseChangedNotification": {
+        "Name": "TKToolkitRemoteDatabaseChangedNotification"
+      }
+    },
+    "com.apple.distnoted.matching.trusted": {
+      "LNAppShortcutsChangedNotification": {
+        "Name": "LNAppShortcutsChangedNotification"
+      },
+      "LNMetadataChangedNotification": {
+        "Name": "LNMetadataChangedNotification"
+      }
+    },
+    "com.apple.notifyd.matching": {
+      "CNFavoritesChangedExternallyNotification": {
+        "Notification": "CNFavoritesChangedExternallyNotification"
+      },
+      "UIAccessibilityInvertColorsChanged": {
+        "Notification": "UIAccessibilityInvertColorsChanged"
+      },
+      "com.apple.accessibility.classic.wob.status": {
+        "Notification": "com.apple.accessibility.classic.wob.status"
+      },
+      "com.apple.accessibility.commandandcontrol.status": {
+        "Notification": "com.apple.accessibility.commandandcontrol.status"
+      },
+      "com.apple.accessibility.enhance.background.contrast.status": {
+        "Notification": "com.apple.accessibility.enhance.background.contrast.status"
+      },
+      "com.apple.accessibility.pointer.increased.contrast": {
+        "Notification": "com.apple.accessibility.pointer.increased.contrast"
+      },
+      "com.apple.accessibility.reduce.motion.status": {
+        "Notification": "com.apple.accessibility.reduce.motion.status"
+      },
+      "com.apple.accessibility.reduce.white.point": {
+        "Notification": "com.apple.accessibility.reduce.white.point"
+      },
+      "com.apple.accessibility.voiceovertouch.status": {
+        "Notification": "com.apple.accessibility.voiceovertouch.status"
+      },
+      "com.apple.accessibility.zoomtouch.status": {
+        "Notification": "com.apple.accessibility.zoomtouch.status"
+      },
+      "com.apple.appprotection.change.hidden": {
+        "Notification": "com.apple.appprotection.change.hidden"
+      },
+      "com.apple.callhistory.notification.calls-changed": {
+        "Notification": "com.apple.callhistory.notification.calls-changed"
+      },
+      "com.apple.commcenter.DataSettingsChangedNotification": {
+        "Notification": "com.apple.commcenter.DataSettingsChangedNotification"
+      },
+      "com.apple.gms.availability.notification": {
+        "Notification": "com.apple.gms.availability.notification"
+      },
+      "com.apple.homed.prefschanged": {
+        "Notification": "com.apple.homed.prefschanged"
+      },
+      "com.apple.language.changed": {
+        "Notification": "com.apple.language.changed"
+      },
+      "com.apple.mediaaccessibility.displayFilterSettingsChanged": {
+        "Notification": "com.apple.mediaaccessibility.displayFilterSettingsChanged"
+      },
+      "com.apple.mobile.keybagd.first_unlock": {
+        "Notification": "com.apple.mobile.keybagd.first_unlock"
+      },
+      "com.apple.nanoregistry.paireddevicedidchangeversion": {
+        "Notification": "com.apple.nanoregistry.paireddevicedidchangeversion"
+      },
+      "com.apple.shortcuts.daemon-wakeup-request": {
+        "Notification": "com.apple.shortcuts.daemon-wakeup-request"
+      },
+      "com.apple.siri.ShortcutsCloudKitAccountAddedNotification": {
+        "Notification": "com.apple.siri.ShortcutsCloudKitAccountAddedNotification"
+      },
+      "com.apple.siri.ShortcutsCloudKitAccountModifiedNotification": {
+        "Notification": "com.apple.siri.ShortcutsCloudKitAccountModifiedNotification"
+      },
+      "com.apple.siri.uaf.com.apple.MobileAsset.UAF.Shortcuts.Generator": {
+        "Notification": "com.apple.siri.uaf.com.apple.MobileAsset.UAF.Shortcuts.Generator"
+      },
+      "com.apple.spotlightui.prefschanged": {
+        "Notification": "com.apple.spotlightui.prefschanged"
+      },
+      "com.apple.system.clock_set": {
+        "Notification": "com.apple.system.clock_set"
+      },
+      "com.apple.system.console_mode_changed": {
+        "Notification": "com.apple.system.console_mode_changed"
+      },
+      "com.apple.system.timezone": {
+        "Notification": "com.apple.system.timezone"
+      },
+      "com.apple.workflow.remotewidgets": {
+        "Notification": "com.apple.workflow.remotewidgets"
+      },
+      "kAFPreferencesDidChangeDarwinNotification": {
+        "Notification": "kAFPreferencesDidChangeDarwinNotification"
+      }
+    },
+    "com.apple.perceptiond.context.change": {
+      "LaunchOnDemand": {
+        "ClientIdentifier": "com.apple.siriactionsd"
+      }
+    },
+    "com.apple.rapport.matching": {
+      "remote-widgets-connection": {
+        "serviceType": "com.apple.workflow.remotewidgets",
+        "type": "server"
+      }
+    },
+    "com.apple.xpc.activity": {
+      "com.apple.siriactionsd.RemoteQuarantineUpdate": {
+        "AllowBattery": true,
+        "DuetRelatedApplications": [
+          "com.apple.shortcuts"
+        ],
+        "Interval": 86400,
+        "NetworkTransferDirection": "Download",
+        "Priority": "Utility",
+        "RandomInitialDelay": 3600,
+        "Repeating": true,
+        "RequireNetworkConnectivity": true
+      },
+      "com.apple.siriactionsd.ShortcutsDailyMetricCheckIn": {
+        "AllowBattery": true,
+        "DuetRelatedApplications": [
+          "com.apple.shortcuts"
+        ],
+        "Interval": 28800,
+        "Priority": "Maintenance",
+        "RandomInitialDelay": 28800.0,
+        "Repeating": true
+      },
+      "com.apple.siriactionsd.ShortcutsWeeklyMetricCheckIn": {
+        "AllowBattery": true,
+        "DuetRelatedApplications": [
+          "com.apple.shortcuts"
+        ],
+        "Interval": 86400,
+        "Priority": "Maintenance",
+        "RandomInitialDelay": 86400,
+        "Repeating": true
+      },
+      "com.apple.siriactionsd.TriggersEnabledBootNotification": {
+        "AllowBattery": true,
+        "GracePeriod": 0,
+        "Priority": "Utility",
+        "Repeating": false,
+        "RequiresClassC": false
+      }
+    }
+  },
+  "MachServices": {
+    "com.apple.aps.siriactionsd": true,
+    "com.apple.private.alloy.shortcuts-idswake": true,
+    "com.apple.private.alloy.siri.voiceshortcuts-idswake": true,
+    "com.apple.shortcuts.dialogpresentation": true,
+    "com.apple.shortcuts.systemshortcutservice.runner": true,
+    "com.apple.siri.VoiceShortcuts.xpc": true,
+    "com.apple.siriactionsd.pairedsync": true,
+    "com.apple.siriactionsd.xpc": true,
+    "com.apple.usernotifications.delegate.com.apple.shortcuts": true,
+    "com.apple.usernotifications.delegate.com.apple.shortcuts.AutomationLockscreenNotifications": true
+  },
+  "ProcessType": "Adaptive",
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/VoiceShortcuts.framework/Support/siriactionsd"
+  ],
+  "RunAtLoad": false,
+  "UserName": "mobile"
+}

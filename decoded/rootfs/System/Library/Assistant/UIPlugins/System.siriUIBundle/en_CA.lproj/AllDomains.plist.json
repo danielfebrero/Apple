@@ -1,0 +1,183 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Phone",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Call Brian",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime Lisa",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Apps",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Launch Photos",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Messages",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Tell Susan I’ll be right there",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Calendar",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Set up a meeting at 9",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Sports",
+      "IconResourceName": "Sports",
+      "TagPhrase": "Hockey scores from last night",
+      "DomainName": "Sports"
+    },
+    {
+      "DomainDisplayName": "Photos",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Show my photos from yesterday",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Maps",
+      "DomainAlternateDisplayName": "Maps",
+      "TagPhrase": "Give me directions home",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Tweet with my location…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Post to Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Post to Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Restaurants",
+      "IconResourceName": "Restaurants",
+      "TagPhrase": "Table for four in Toronto…",
+      "DomainName": "Restaurants"
+    },
+    {
+      "DomainDisplayName": "Movies",
+      "IconResourceName": "Movies",
+      "TagPhrase": "What movies are playing?",
+      "DomainName": "Movies"
+    },
+    {
+      "DomainDisplayName": "Music",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Play Norah Jones",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Reminders",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Remind me to call mum",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "Email",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Email Emily about the trip",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Weather",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "What’s the weather for today?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Stocks",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "What is Apple’s stock price?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Clock",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Wake me up tomorrow at 7am",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Contacts",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "What’s Emily’s address?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Find My Friends",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "Where’s Brian?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "Notes",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Note that I spent $12 on lunch",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Settings",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Turn on Airplane Mode",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Web Search",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Search the web for polar bears",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Q&A",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "How many ounces in a litre?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "iTunes",
+      "IconDisplayIdentifier": "com.apple.MobileStore",
+      "TagPhrase": "Get The Lego Movie on iTunes",
+      "DomainName": "iTunes"
+    },
+    {
+      "DomainDisplayName": "Books",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "Get Into Thin Air from iBooks",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "Podcasts",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Play podcasts",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

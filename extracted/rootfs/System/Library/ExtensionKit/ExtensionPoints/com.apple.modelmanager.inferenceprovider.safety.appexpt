@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>com.apple.modelmanager.inferenceprovider.safety</key>
+    <dict>
+        <key>EXExtensionPointIsPublic</key>
+        <false/>
+        <key>EXPresentsUserInterface</key>
+        <false/>
+        <key>EXRequiredEntitlements</key>
+        <dict>
+            <key>com.apple.modelmanager.inferenceprovidermanager</key>
+            <true/>
+        </dict>
+        <key>EXRequiresLibXPCConnection</key>
+        <true/>
+        <key>EXSupportedPlatforms</key>
+        <array>
+            <string>iOS</string>
+            <string>macOS</string>
+            <string>watchOS</string>
+            <string>xrOS</string>
+            <string>tvOS</string>
+        </array>
+        <key>EXRequiresMultiInstance</key>
+        <true/>
+        <key>EXSandboxProfileName</key>
+        <string>safety-inference-extension</string>
+    </dict>
+</dict>
+</plist>

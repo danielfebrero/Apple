@@ -1,0 +1,2304 @@
+{
+  "version": "v11.2.20260722",
+  "voices": [
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 4.0,
+          "f0Var": 5.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 5.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 5.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 5.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 13.0,
+          "intensityMean": 13.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 4.0,
+          "f0Var": 5.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 5.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 5.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 5.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 13.0,
+          "intensityMean": 13.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 4.0,
+          "f0Var": 5.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 5.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 5.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 5.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 13.0,
+          "intensityMean": 13.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 4.0,
+          "f0Var": 5.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 5.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 5.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 5.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 13.0,
+          "intensityMean": 13.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 4.0,
+          "f0Var": 5.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 5.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 5.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 5.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 13.0,
+          "intensityMean": 13.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice",
+      "adapterUseCaseId": "Siri.Voice",
+      "gender": "male",
+      "id": "en-US-F",
+      "language": "en-US"
+    },
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 12.0,
+          "f0Var": 6.0,
+          "intensityMean": 6.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 12.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 12.0,
+          "f0Var": 10.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 12.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 12.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 12.0,
+          "f0Var": 6.0,
+          "intensityMean": 6.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 12.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 12.0,
+          "f0Var": 10.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 12.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 12.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 12.0,
+          "f0Var": 6.0,
+          "intensityMean": 6.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 12.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 12.0,
+          "f0Var": 10.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 12.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 12.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 12.0,
+          "f0Var": 6.0,
+          "intensityMean": 6.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 12.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 12.0,
+          "f0Var": 10.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 12.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 12.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 12.0,
+          "f0Var": 6.0,
+          "intensityMean": 6.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 12.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 12.0,
+          "f0Var": 10.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 12.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 12.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice",
+      "adapterUseCaseId": "Siri.Voice",
+      "gender": "female",
+      "id": "en-US-G",
+      "language": "en-US"
+    },
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 4.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 12.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 12.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 12.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 12.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 4.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 12.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 12.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 12.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 12.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 4.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 12.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 12.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 12.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 12.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 4.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 12.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 12.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 12.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 12.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 4.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 12.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 12.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 12.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 12.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice",
+      "adapterUseCaseId": "Siri.Voice",
+      "gender": "female",
+      "id": "nora",
+      "language": "en-US"
+    },
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 5.0,
+          "f0Var": 5.0,
+          "intensityMean": 5.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 5.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 5.0,
+          "f0Var": 11.0,
+          "intensityMean": 9.0,
+          "intensityVar": 10.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 5.0,
+          "f0Var": 12.0,
+          "intensityMean": 11.0,
+          "intensityVar": 10.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 15.0,
+          "intensityMean": 14.0,
+          "intensityVar": 15.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 5.0,
+          "f0Var": 5.0,
+          "intensityMean": 5.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 5.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 5.0,
+          "f0Var": 11.0,
+          "intensityMean": 9.0,
+          "intensityVar": 10.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 5.0,
+          "f0Var": 12.0,
+          "intensityMean": 11.0,
+          "intensityVar": 10.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 15.0,
+          "intensityMean": 14.0,
+          "intensityVar": 15.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 5.0,
+          "f0Var": 5.0,
+          "intensityMean": 5.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 5.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 5.0,
+          "f0Var": 11.0,
+          "intensityMean": 9.0,
+          "intensityVar": 10.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 5.0,
+          "f0Var": 12.0,
+          "intensityMean": 11.0,
+          "intensityVar": 10.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 15.0,
+          "intensityMean": 14.0,
+          "intensityVar": 15.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 5.0,
+          "f0Var": 5.0,
+          "intensityMean": 5.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 5.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 5.0,
+          "f0Var": 11.0,
+          "intensityMean": 9.0,
+          "intensityVar": 10.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 5.0,
+          "f0Var": 12.0,
+          "intensityMean": 11.0,
+          "intensityVar": 10.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 15.0,
+          "intensityMean": 14.0,
+          "intensityVar": 15.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 5.0,
+          "f0Var": 5.0,
+          "intensityMean": 5.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 5.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 5.0,
+          "f0Var": 11.0,
+          "intensityMean": 9.0,
+          "intensityVar": 10.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 5.0,
+          "f0Var": 12.0,
+          "intensityMean": 11.0,
+          "intensityVar": 10.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 15.0,
+          "intensityMean": 14.0,
+          "intensityVar": 15.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice",
+      "adapterUseCaseId": "Siri.Voice",
+      "gender": "male",
+      "id": "aaron",
+      "language": "en-US"
+    },
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 9.0,
+          "f0Var": 6.0,
+          "intensityMean": 6.0,
+          "intensityVar": 2.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 10.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 10.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 10.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 10.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 9.0,
+          "f0Var": 6.0,
+          "intensityMean": 6.0,
+          "intensityVar": 2.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 10.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 10.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 10.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 10.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 9.0,
+          "f0Var": 6.0,
+          "intensityMean": 6.0,
+          "intensityVar": 2.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 10.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 10.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 10.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 10.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 9.0,
+          "f0Var": 6.0,
+          "intensityMean": 6.0,
+          "intensityVar": 2.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 10.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 10.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 10.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 10.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 9.0,
+          "f0Var": 6.0,
+          "intensityMean": 6.0,
+          "intensityVar": 2.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 10.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 10.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 10.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 10.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice",
+      "adapterUseCaseId": "Siri.Voice",
+      "gender": "female",
+      "id": "simone",
+      "language": "en-US"
+    },
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 6.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 7.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 7.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 7.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 7.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 6.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 7.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 7.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 7.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 7.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 6.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 860.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 7.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 860.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 7.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 860.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 7.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 860.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 7.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 860.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 6.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 980.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 7.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 980.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 7.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 980.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 7.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 980.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 7.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 980.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 6.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 7.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 7.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 7.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 7.0,
+          "f0Var": 14.0,
+          "intensityMean": 12.0,
+          "intensityVar": 15.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice",
+      "adapterUseCaseId": "Siri.Voice",
+      "gender": "male",
+      "id": "damon",
+      "language": "en-US"
+    },
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 8.0,
+          "f0Var": 5.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 8.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 8.0,
+          "f0Var": 10.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 8.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 8.0,
+          "f0Var": 13.0,
+          "intensityMean": 10.0,
+          "intensityVar": 15.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 8.0,
+          "f0Var": 5.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 8.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 8.0,
+          "f0Var": 10.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 8.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 8.0,
+          "f0Var": 13.0,
+          "intensityMean": 10.0,
+          "intensityVar": 15.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 8.0,
+          "f0Var": 5.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 8.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 8.0,
+          "f0Var": 10.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 8.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 8.0,
+          "f0Var": 13.0,
+          "intensityMean": 10.0,
+          "intensityVar": 15.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 8.0,
+          "f0Var": 5.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 8.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 8.0,
+          "f0Var": 10.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 8.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 8.0,
+          "f0Var": 13.0,
+          "intensityMean": 10.0,
+          "intensityVar": 15.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 8.0,
+          "f0Var": 5.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 8.0,
+          "f0Var": 8.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 8.0,
+          "f0Var": 10.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 8.0,
+          "f0Var": 12.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 8.0,
+          "f0Var": 13.0,
+          "intensityMean": 10.0,
+          "intensityVar": 15.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice",
+      "adapterUseCaseId": "Siri.Voice",
+      "gender": "neutral",
+      "id": "quinn",
+      "language": "en-US"
+    },
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 750.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice2",
+      "adapterUseCaseId": "Siri.Voice2",
+      "gender": "male",
+      "id": "arthur",
+      "language": "en-GB"
+    },
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice2",
+      "adapterUseCaseId": "Siri.Voice2",
+      "gender": "female",
+      "id": "martha",
+      "language": "en-GB"
+    },
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 0.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 660.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 0.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 0.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 900.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 0.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 2.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 9.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 0.0,
+          "f0Var": 14.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1100.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice2",
+      "adapterUseCaseId": "Siri.Voice2",
+      "gender": "female",
+      "id": "en-GB-C",
+      "language": "en-GB"
+    },
+    {
+      "acoustics": {
+        "pace1_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 4.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 700.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 700.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 0.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 700.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 700.0,
+          "wsola": 1.0
+        },
+        "pace1_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 700.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 4.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 0.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace2_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 800.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 4.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 0.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace3_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 950.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 4.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 0.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace4_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.0
+        },
+        "pace5_expressivity1": {
+          "f0Mean": 0.0,
+          "f0Var": 4.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity2": {
+          "f0Mean": 0.0,
+          "f0Var": 6.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity3": {
+          "f0Mean": 0.0,
+          "f0Var": 0.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity4": {
+          "f0Mean": 0.0,
+          "f0Var": 11.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        },
+        "pace5_expressivity5": {
+          "f0Mean": 6.0,
+          "f0Var": 13.0,
+          "intensityMean": 0.0,
+          "intensityVar": 0.0,
+          "ppm": 1056.0,
+          "wsola": 1.2
+        }
+      },
+      "adapterBundleId": "com.apple.fm.language.instruct_3b.voice2",
+      "adapterUseCaseId": "Siri.Voice2",
+      "gender": "male",
+      "id": "en-GB-D",
+      "language": "en-GB"
+    }
+  ]
+}

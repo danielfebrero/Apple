@@ -1,0 +1,32 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.safetyalerts",
+  "AutoAssetType": "com.apple.MobileAsset.UAF.SafetyAlerts",
+  "MetadataAsset": "com.apple.safetyalerts.uaf.metadata",
+  "UsageTypes": [
+    "countries.configuration"
+  ],
+  "Assets": [
+    {
+      "AssetName": "com.apple.safetyalerts.uaf.metadata",
+      "IgnoreOSCompatibility": true,
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.safetyalerts.uaf.metadata"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.safetyalerts.configuration.generic",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "countries.configuration"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.safetyalerts.configuration.generic"
+        }
+      ]
+    }
+  ]
+}

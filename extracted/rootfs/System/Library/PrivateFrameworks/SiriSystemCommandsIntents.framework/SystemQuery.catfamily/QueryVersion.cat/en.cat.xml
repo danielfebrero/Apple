@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:4.0" id="SystemQuery#QueryVersion" locale="en">
+  <first>
+    <dialog id="Item_Vision" condition="deviceState.isRealityDevice">You're running visionOS version <var name="version"/>.</dialog>
+    <dialog id="Item_Phone" condition="deviceState.isPhone">You're running iOS version <var name="version"/>.</dialog>
+    <dialog id="Item_Pad" condition="deviceState.isPad">You're running iPadOS version <var name="version"/>.</dialog>
+    <dialog id="Item_Mac" condition="deviceState.isMac">You're running macOS version <var name="version"/>.</dialog>
+    <dialog id="Item_TV" condition="deviceState.isAppleTV">You're running tvOS version <var name="version"/>.</dialog>
+    <dialog id="Item_Watch" condition="deviceState.isWatch">You're running watchOS version <var name="version"/>.</dialog>
+    <dialog id="Item">You're running version <var name="version"/>.</dialog>
+  </first>
+</cat>

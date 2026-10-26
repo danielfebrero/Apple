@@ -1,0 +1,143 @@
+{
+    "cases": [
+        {
+            "bundleType":"timeContext",
+            "templates" :[
+                {
+                    "_comment_": "/* visit with no place */",
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=0"],
+                    "labels":["Outing"],
+                },
+                {
+                    "_comment_": "/* visit single place, medium confidence */",
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=1", "confidence_1=medium"],
+                    "labels":["{time} visit near {unique_place_1}"],
+                },
+                {
+                    "_comment_": "/* visit single place, medium confidence */",
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=1", "confidence_1=medium"],
+                    "labels":["Near {unique_place_1}"],
+                },
+
+                {
+                    "_comment_": "/* visit single place , high confidence or low confidence*/",
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=1", "confidence_1!=medium"],
+                    "labels":["{time} visit to {unique_place_1}"],
+                },
+                {
+                    "_comment_": "/* visit single place, high confidence or low confidence*/",
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=1", "confidence_1!=medium"],
+                    "labels":["{unique_place_1}"],
+                },
+
+
+                {
+                    "_comment_": "/* visit 2 places and both are medium confidence*/",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2=medium"],
+                    "labels":["{time} visit near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "_comment_": "/* visit 2 places and both are medium confidence*/",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2=medium"],
+                    "labels":["Near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2!=medium", "include_low_confidence_place_name"],
+                    "labels":["{time} visit near {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* visit 2 places, place 1 is medium confidence and place 2 is high/low confidence */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2!=medium"],
+                    "labels":["{time} visit near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2!=medium", "include_low_confidence_place_name"],
+                    "labels":["Near {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* visit 2 places, place 1 is medium confidence and place 2 is high/low confidence */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2!=medium"],
+                    "labels":["Near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2=medium", "include_low_confidence_place_name"],
+                    "labels":["{time} visit to {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* visit 2 places, place 2 is medium confidence and place 1 is high/low confidence */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2=medium"],
+                    "labels":["{time} visit near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2=medium", "include_low_confidence_place_name"],
+                    "labels":["Near {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* visit 2 places, place 2 is medium confidence and place 1 is high/low confidence */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2=medium"],
+                    "labels":["Near {unique_place_1} and {unique_place_2}"],
+                },
+                
+                {
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2!=medium", "include_low_confidence_place_name"],
+                    "labels":["{time} visit to {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* visit 2 places, place 1 and place 2 are both high confidence or both low confidence */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2!=medium"],
+                    "labels":["{time} visit to {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2!=medium", "include_low_confidence_place_name"],
+                    "labels":["{unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* visit 2 places, place 1 and place 2 are both high confidence or both low confidence */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2!=medium"],
+                    "labels":["{unique_place_1} and {unique_place_2}"],
+                },
+
+                {
+                    "_comment_": "/* visit 3+ places, place 1 is either high or low confidence */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count>2","confidence_1!=medium"],
+                    "labels":["{time} visit to {unique_place_1} and nearby places"],
+                },
+                {
+                    "_comment_": "/* visit 3+ places, place 1 is either high or low confidence */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count>2","confidence_1!=medium"],
+                    "labels":["{unique_place_1} and nearby places"],
+                },
+                {
+                    "_comment_": "/* visit 3+ places, place 1 is medium confidence */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count>2","confidence_1=medium"],
+                    "labels":["{time} visit near {unique_place_1}"],
+                },
+                {
+                    "_comment_": "/* visit 3+ places, place 1 is medium confidenc */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1", "unique_place_count>2","confidence_1=medium"],
+                    "labels":["Near {unique_place_1}"],
+                },
+                {
+                    "_comment_": "/* fall back for visit_only cases */",
+
+                    "conditions":["action_type_1=visit", "unique_action_type_count=1"],
+                    "labels":["Outing"],
+                }
+            ]
+        }
+    ]
+}
+
+

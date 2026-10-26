@@ -1,0 +1,291 @@
+{
+  "SupportsVoNR": true,
+  "DerPriFileVersion": "6.0.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "MTU": [
+    {
+      "technology-mask": 28,
+      "size": 1428
+    },
+    {
+      "technology-mask": 2,
+      "size": 1472
+    }
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "SMSSettings": {
+    "MessageFormat": {
+      "SignalingFormat": 1,
+      "PacketFormat": 1
+    }
+  },
+  "AllowCSCallsForInboundDomesticRoaming": true,
+  "Roadside": {
+    "SupportedProviderIds": [
+      101
+    ]
+  },
+  "ShowHighDataModeSwitch": true,
+  "EFSFiles": [
+    {
+      "carrier.ims": "/shared/qpconfig.xml"
+    }
+  ],
+  "NRSlicing": {
+    "SupportsLLPHS": true,
+    "ForceEnableL4S": true,
+    "EntitlementsGenres": true,
+    "OsId": [
+      67,
+      1,
+      210,
+      17,
+      151,
+      217,
+      66,
+      201,
+      177,
+      194,
+      246,
+      117,
+      131,
+      192,
+      249,
+      32
+    ],
+    "ManagedSliceApps": true,
+    "IgnoreEntitledLLPHS": true
+  },
+  "IMSConfig": {
+    "Emergency": {
+      "T911EMFEnabled": true
+    },
+    "Signaling": {
+      "IPSecBringupUseNetworkPath": true,
+      "EPSFallbackTimerSeconds": 6,
+      "HonorSimAccessClassBeforeBarring": true,
+      "SupportPEarlyMediaHeader": true,
+      "CSFBOnAccessBarred": false,
+      "RequireRegistrationOnEPSFallback": true,
+      "EarlyMediaNeedsHeader": true,
+      "SkipEmergRegUnderSameTransport": true,
+      "IPSecSegmentOffset": 210,
+      "ResetDisabledModeOnEvents": "SimInserted,AirplaneModeToggled,ServingNetworkChanged",
+      "SipTimers": {
+        "EPSInviteResponseTimeout": 6000
+      },
+      "DefaultIPSecPort": 65000,
+      "UseEphemeralRangeForIPSec": false,
+      "SkipReRegisterWhenNetworkTypeChangedOnNrBetweenTddAndFdd": true,
+      "NeedToSuppressRegistrationEventWhenRegTerminationReasonNoLegacyFallback": true,
+      "AlwaysSendSessionProgress": true,
+      "ResponseCodesBlockedForSilentRedialNRSANonEm": "403,404,480",
+      "ResetSocketWhenNetworkChange": false,
+      "TIMSEstablishmentTimeoutSeconds": 120,
+      "ImpuRank": "MDN@domain",
+      "NoFallbackVoiceService": true,
+      "ReportSipErrorsDuringReRegistration": true,
+      "AdditionalFeatureTags": {
+        "sms": {
+          "+cdmaless": ""
+        },
+        "voice": {
+          "+cdmaless": "",
+          "+g.gsma.rcs.telephony": "\"cs,volte\""
+        }
+      },
+      "ReRegisterOnCellularHandover": true,
+      "MaxIPSecTransportRetries": 10,
+      "TPLMNBarringTimeoutSeconds": 60,
+      "UseIPSec": true,
+      "T3396PdpBackOffSeconds": 300
+    },
+    "Voice": {
+      "BlockCallsOverCS": true,
+      "EnableVoNRByDefault": true,
+      "BlockSilentRedialOverCS": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "EHRPD": false,
+        "NR": true
+      }
+    },
+    "AllowIMSUnprovisioned": true
+  },
+  "CarrierEntitlements": {
+    "AllowCellularPlanTransferTarget": true,
+    "SupportSecureIntent": true,
+    "SupportedEntitlements": 4235673,
+    "TransferMetadata": {
+      "OnDeviceActivation": "OnDeviceActivation"
+    },
+    "EntitlementRequestViaWebService": true,
+    "SupportCrossPlatformSIMTransfer": true,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportsOnDevicePhysicalSIMConvert": true
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "EncryptedOnDeviceActivation": {
+    "CertificateIdentifier": "0773F6476A99EC89088CB3D9469A9641",
+    "Certificate": "MIIFUjCCBDqgAwIBAgIQB3P2R2qZ7IkIjLPZRpqWQTANBgkqhkiG9w0BAQsFADBq\nMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3\nd3cuZGlnaWNlcnQuY29tMSkwJwYDVQQDEyBEaWdpQ2VydCBBc3N1cmVkIElEIENs\naWVudCBDQSBHMjAeFw0yNDAxMjMwMDAwMDBaFw0yNjAxMjMyMzU5NTlaMIGSMQsw\nCQYDVQQGEwJVUzEQMA4GA1UECBMHRmxvcmlkYTEXMBUGA1UEBxMOVGVtcGxlIFRl\ncnJhY2UxIjAgBgNVBAoTGVZlcml6b24gRGF0YSBTZXJ2aWNlcyBMTEMxDDAKBgNV\nBAsTA1ZHUzEmMCQGA1UEAxMdb3RhbXMtYXV0aGVuY3J5cHQudmVyaXpvbi5jb20w\nggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCyNh6nMoFVTTldbJx/jRS3\n3A1f2fDUO3AWRgab37MjxVjX1nibsysMABEp9juWewH+wnfb0qzMqq9Hczd0DlYT\nVxkUjmXuf9OznRsQYIFsGuuZlcsgthlCdchqxC/Di42STDFy/Tz4TWJdIk67Xs4s\no9uhXlamHl1Sf9bu8jBPzdjyHNqOFwxgv7N+en8zlez6Pn7LeMAXH0co/iYviA8K\nY8v7d+L0prccAfoMZLjn6BvUbNr4SpOOWgeVmFi90heTHZBCc8XLkg2ibkE6ZxRc\nw1lbPQTJUM+NlIGU9cEDo54NjtUc6nzG+EzIZNMBIn4zHh2HOwIv3JMnP2QVwCJl\nAgMBAAGjggHJMIIBxTAfBgNVHSMEGDAWgBSlYiBQ3LtbV5etI4814lRsqX75TjAd\nBgNVHQ4EFgQUKopKnV0ibIWrKChJdeHVUGYndf0wDAYDVR0TAQH/BAIwADAOBgNV\nHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwIwQwYDVR0gBDwwOjA4Bgpg\nhkgBhv1sBgEBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNv\nbS9DUFMwgYsGA1UdHwSBgzCBgDA+oDygOoY4aHR0cDovL2NybDMuZGlnaWNlcnQu\nY29tL0RpZ2lDZXJ0QXNzdXJlZElEQ2xpZW50Q0FHMi5jcmwwPqA8oDqGOGh0dHA6\nLy9jcmw0LmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEFzc3VyZWRJRENsaWVudENBRzIu\nY3JsMH0GCCsGAQUFBwEBBHEwbzAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGln\naWNlcnQuY29tMEcGCCsGAQUFBzAChjtodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5j\nb20vRGlnaUNlcnRBc3N1cmVkSURDbGllbnRDQUcyLmNydDANBgkqhkiG9w0BAQsF\nAAOCAQEACEtwED1aMCGY5VJoJpwsuBh4ZehDSopVz9nDnG7wKcZ56PZzsD9bx7Qw\ncl3enYvaFue+WeKrhGf45CJuMKaGu/9SSVVZcypRP/dCLgNtZQ/9Ya69TyRpNgFK\neanItkncMY+4pq8wYIqRjV6U2LX/0KuRjmUPe5x10Remfh+jkue+P8ofdJGLZJ0H\n3JqHh6qapz6MyU9rgc2RDhDWTejWYCDHnZl2YWdtUwZWOQ5FJXutbM36nVN6vqPk\n4aTBMH11pCA/6nccL5pwyCA1KnLSEdv2BmRB+xi8lsFtCD8KPk1G8Mr/g35g14ST\nVmsu0KBRw17BJ7SC0iw7YcPUfXCLkQ=="
+  },
+  "AttachAPN": {
+    "3GPP": [
+      {
+        "AllowedProtocolMask": 3,
+        "password": "",
+        "PcscfAddressRequired": false,
+        "APNClass": 1,
+        "username": "",
+        "apn": "vzwinternet",
+        "AllowedProtocolMaskInRoamingLTE": 3
+      },
+      {
+        "AllowedProtocolMask": 3,
+        "password": "",
+        "PcscfAddressRequired": true,
+        "APNClass": 3,
+        "username": "",
+        "apn": "ims",
+        "AllowedProtocolMaskInRoamingLTE": 2
+      }
+    ]
+  },
+  "SupportsCellularLoggingAccess": true,
+  "PhoneAccountTransfer": {
+    "SendTransferTypeHintToCloud": false,
+    "TransferErrorCodes": {
+      "IneligibleAccountErrors": [
+        "4003",
+        "4004",
+        "4005",
+        "4006"
+      ]
+    },
+    "RequiresPasscodeForCrossPlatformTransfer": true,
+    "SupportsFallbackToLegacyFlow": false,
+    "LocalInstallSMDPURL": "https://2.vzw.otgeuicc.com",
+    "OneTimeCodeSenders": [
+      "71097",
+      "899000"
+    ],
+    "MinCompatibleOS": "15.6"
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRUWB",
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "VoiceTextMedia": {
+    "SupportsTTY": true
+  },
+  "SupportsNRNSAInboundRoaming": true,
+  "TechSettings": {
+    "SuppressSAInOverCellHandover": true
+  },
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "apn": "vzwinternet",
+          "type-mask": 4194835,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "tech-type-mask": 16390,
+          "username": "",
+          "apn": "vzwapp",
+          "type-mask": 49156,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "vzwemergency",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "Support5GSaHandOver": true,
+          "password": "",
+          "tech-type-mask": 131072,
+          "NoCellularReconnectCauseCodes": [
+            {
+              "CauseCodes": [
+                24
+              ],
+              "RecoversOnAirplaneMode": true,
+              "NumTriesAllowed": 3,
+              "Type": "Non3GPP"
+            },
+            {
+              "CauseCodes": [
+                8
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                27
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                29
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                32
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                33
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            }
+          ],
+          "AllowedProtocolMaskInRoaming": 2,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "vzwadmin",
+          "type-mask": 0,
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "PcoOptions": {
+    "PcoMnc": 480,
+    "RequestMSISDN": true,
+    "PcoMcc": 311,
+    "ContainerIds": [
+      65283,
+      65280
+    ]
+  }
+}

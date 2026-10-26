@@ -1,0 +1,45 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Appelle Thomas",
+            "Appelle Mathieu sur son GSM",
+            "Appelle Florence Rousseau sur son téléphone professionnel",
+            "Appelle le 0473 25 62 48",
+            "Appelle la maison",
+            "Compose le 112",
+            "Appelle les pompiers",
+            "Affiche l’historique de mes appels",
+            "Est-ce que j’ai des appels manqués ?",
+            "Recompose le dernier numéro"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          }
+        }
+      ],
+      "SectionName": "APPELS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Est-ce que j’ai des nouveaux messages dans ma boîte vocale ?",
+            "Fais-moi écouter les messages de Sofiane"
+          ]
+        }
+      ],
+      "SectionName": "MESSAGERIE VOCALE"
+    }
+  ]
+}

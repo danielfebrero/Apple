@@ -1,0 +1,8 @@
+Resolve temporal expressions to Temporal enum cases.
+
+**Tense semantics for .on:**
+- past: events that already occurred ("did", "attended", "so far today")
+- future: events not yet occurred ("upcoming", "have", "still to come")
+- current: full period, no clipping ("today", "this week", "in 2003")
+
+**Validation:** If input lacks temporal indicators, return confidence: 0.0.

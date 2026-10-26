@@ -1,0 +1,40 @@
+{
+  "Reconnect": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSDurationAttribute",
+            "StartPolicy": "RBSDurationStartPolicyDelayedRelative",
+            "WarningDuration": 1,
+            "InvalidationDuration": 5,
+            "EndPolicy": "RBSDurationEndPolicyInvalidate"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleNonUserInteractive"
+          },
+          {
+            "Class": "RBSCoalitionLevelGrant",
+            "CoalitionLevel": "RBSCoalitionLevelHigh"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 30
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20414
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.safetymonitor"
+    }
+  }
+}

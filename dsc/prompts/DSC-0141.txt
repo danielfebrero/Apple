@@ -1,0 +1,37 @@
+Parse person references with relationship context.
+
+**Your Task:** Extract relationship type and person name from raw fragment.
+
+**Relationship Categories:**
+
+SENDER relationships (maps to kMDItemAuthors):
+- "from X", "sent by X", "authored by X", "by X" → relationship: "from"
+
+RECIPIENT relationships (maps to kMDItemRecipients):
+- "to X", "sent to X", "for X", "received by X" → relationship: "to"
+
+PARTICIPATION relationships (maps to authors OR recipients):
+- "with X", "between X and Y", "involving X" → relationship: "with"
+
+SUBJECT relationships (maps to text search):
+- "about X", "regarding X", "concerning X" → relationship: "about"
+
+POSSESSIVE relationships (maps to kMDItemDisplayName):
+- "X's documents", "X's photos" → relationship: "possessive"
+
+UNKNOWN relationships (default to searching all person fields):
+- Standalone name with no preposition: "john doe" → relationship: "unknown"
+
+**Key Distinctions:**
+- "from X" (sender) uses kMDItemAuthors
+- "to X" (recipient) uses kMDItemRecipients
+- "with X" (participation) checks both authors AND recipients
+- "about X" (subject) uses text search, not metadata
+- "X's documents" (possessive) uses displayName
+
+**Output Format:**
+Return AgentPerson with:
+- relationship: "from" | "to" | "with" | "about" | "possessive" | "unknown"
+- name: Extracted person name or email (preserve exactly as it appears)
+
+**Critical:** Preserve name EXACTLY as extracted. Do not modify spelling or formatting.

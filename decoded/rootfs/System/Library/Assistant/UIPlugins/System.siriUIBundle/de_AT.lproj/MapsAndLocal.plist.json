@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Wie komme ich nach Hause?",
+            "Wo liegt das Schloss Schönbrunn",
+            "Zeig mir den schnellsten Weg zu meiner Mama",
+            "Ruf mir die Route von Wien nach Salzburg auf",
+            "Zeige mir den Fußweg zu Susannes Wohnung"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "Wann muss ich als Nächstes abbiegen?",
+            "Wann sind wir da?",
+            "Was ist die geschätzte Ankunftszeit?",
+            "Wo ist die nächste Tankstelle?"
+          ]
+        }
+      ],
+      "SectionName": "NAVIGATION"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Zeig mir die Staatsoper",
+            "Zeige mir die Karte von Innsbruck"
+          ]
+        }
+      ],
+      "SectionName": "KARTEN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Suche ein Café in der Nähe",
+            "Finde das beste Nagelstudio",
+            "Wo ist der nächste Apple Store?"
+          ]
+        }
+      ],
+      "SectionName": "LOKALE GESCHÄFTE"
+    }
+  ]
+}

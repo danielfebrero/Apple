@@ -1,0 +1,179 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "bolt-taskid: rqwnxz6cdr iteration: 179400",
+    "outputSchema" : [
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...2 × 4...16 × 4...64 × 1",
+        "shapeRange" : "[[1, 2], [4, 16], [4, 64], [1, 1]]",
+        "formattedType" : "MultiArray (Float16 1 × 4 × 4 × 1)",
+        "type" : "MultiArray",
+        "shape" : "[1, 4, 4, 1]",
+        "name" : "attention_weights",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...2 × 384",
+        "shapeRange" : "[[1, 2], [384, 384]]",
+        "formattedType" : "MultiArray (Float16 1 × 384)",
+        "type" : "MultiArray",
+        "shape" : "[1, 384]",
+        "name" : "new_decoder_state_c",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...2 × 384",
+        "shapeRange" : "[[1, 2], [384, 384]]",
+        "formattedType" : "MultiArray (Float16 1 × 384)",
+        "type" : "MultiArray",
+        "shape" : "[1, 384]",
+        "name" : "new_decoder_state_h",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...2 × 225",
+        "shapeRange" : "[[1, 2], [225, 225]]",
+        "formattedType" : "MultiArray (Float16 1 × 225)",
+        "type" : "MultiArray",
+        "shape" : "[1, 225]",
+        "name" : "y",
+        "shortDescription" : ""
+      }
+    ],
+    "storagePrecision" : "Mixed (Float16, Int8)",
+    "modelParameters" : [
+
+    ],
+    "author" : "corerecognition",
+    "specificationVersion" : 9,
+    "mlProgramOperationTypeHistogram" : {
+      "Ios18.linear" : 6,
+      "Ios18.conv" : 1,
+      "Ios18.expandDims" : 6,
+      "Ios18.gather" : 4,
+      "Ios18.concat" : 3,
+      "Ios18.add" : 4,
+      "Shape" : 2,
+      "Ios18.lstm" : 1,
+      "Ios18.tanh" : 1,
+      "Ios18.softmax" : 2,
+      "Ios18.transpose" : 3,
+      "Ios18.cast" : 6,
+      "Ios16.reduceSum" : 1,
+      "Ios18.squeeze" : 4,
+      "Ios18.constexprBlockwiseShiftScale" : 8,
+      "Ios18.reshape" : 2,
+      "Ios18.mul" : 1
+    },
+    "computePrecision" : "Mixed (Float16, Int16, Int32, UInt16)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "15.0",
+      "tvOS" : "18.0",
+      "visionOS" : "2.0",
+      "watchOS" : "11.0",
+      "iOS" : "18.0",
+      "macCatalyst" : "18.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...2 × 384",
+        "shapeRange" : "[[1, 2], [384, 384]]",
+        "formattedType" : "MultiArray (Float16 1 × 384)",
+        "type" : "MultiArray",
+        "shape" : "[1, 384]",
+        "name" : "decoder_state_c",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...2 × 384",
+        "shapeRange" : "[[1, 2], [384, 384]]",
+        "formattedType" : "MultiArray (Float16 1 × 384)",
+        "type" : "MultiArray",
+        "shape" : "[1, 384]",
+        "name" : "decoder_state_h",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...2 × 16...1024 × 440",
+        "shapeRange" : "[[1, 2], [16, 1024], [440, 440]]",
+        "formattedType" : "MultiArray (Float16 1 × 16 × 440)",
+        "type" : "MultiArray",
+        "shape" : "[1, 16, 440]",
+        "name" : "encoded_image",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...2 × 16...1024 × 384",
+        "shapeRange" : "[[1, 2], [16, 1024], [384, 384]]",
+        "formattedType" : "MultiArray (Float16 1 × 16 × 384)",
+        "type" : "MultiArray",
+        "shape" : "[1, 16, 384]",
+        "name" : "encoded_image_projected",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...2 × 4...16 × 4...64 × 1",
+        "shapeRange" : "[[1, 2], [4, 16], [4, 64], [1, 1]]",
+        "formattedType" : "MultiArray (Float16 1 × 4 × 4 × 1)",
+        "type" : "MultiArray",
+        "shape" : "[1, 4, 4, 1]",
+        "name" : "past_attention_weights",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Float16",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...2 × 225",
+        "shapeRange" : "[[1, 2], [225, 225]]",
+        "formattedType" : "MultiArray (Float16 1 × 225)",
+        "type" : "MultiArray",
+        "shape" : "[1, 225]",
+        "name" : "y_prev",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "8.2",
+      "com.github.apple.coremltools.source" : "torch==2.4.1",
+      "mldb_token" : "mldb-qnoydl5gxj",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "generatedClassName" : "model",
+    "method" : "predict"
+  }
+]

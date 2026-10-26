@@ -1,0 +1,20 @@
+{
+  "pfl:com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.SiriSafety:metrics:": {
+    "TelemetryAllowed": true,
+    "PrivatizationAlgorithm": "PINEMetrics",
+    "DirectUpload": true,
+    "BudgetKeyName": "pfl.com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.SiriSafety.metrics"
+  },
+  "pfl:com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.SiriSafety:metadata:": {
+    "TelemetryAllowed": true,
+    "PrivatizationAlgorithm": "PINEMetadata",
+    "DirectUpload": true,
+    "BudgetKeyName": "pfl.com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.SiriSafety.metadata"
+  },
+  "pfl:com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.SiriSafety:results:": {
+    "TelemetryAllowed": true,
+    "PrivatizationAlgorithm": "PINEResults",
+    "DirectUpload": true,
+    "BudgetKeyName": "pfl.com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.SiriSafety.results"
+  }
+}

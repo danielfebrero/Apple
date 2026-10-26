@@ -1,0 +1,37 @@
+{
+  "CFBundleName": "SiriPrivateLearningLogging",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "FMWK",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "SiriPrivateLearningLogging",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.SiriPrivateLearningLogging",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "",
+  "PLSELFMessagesAllowList": {
+    "ASR_CLIENT_EVENT": true,
+    "UEI_CLIENT_EVENT": true,
+    "NLX_CLIENT_EVENT": true,
+    "ORDERED_ANY_EVENT": true,
+    "FLOW_CLIENT_EVENT": true,
+    "IH_CLIENT_EVENT": true,
+    "REQUEST_LINK_EVENT": true,
+    "ORCH_CLIENT_EVENT": true
+  }
+}

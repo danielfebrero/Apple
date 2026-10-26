@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Was ist Sabines Adresse?",
+            "Was ist die Telefonnummer von Diana Kappel?",
+            "Wann ist der Geburtstag meiner Frau?",
+            "Zeige die private E-Mail-Adresse von Susanne",
+            "Wie ist die Geschäftsadresse von meinem Bruder?"
+          ]
+        }
+      ],
+      "SectionName": "NACH KONTAKTEN FRAGEN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Zeige Tobias Böhm",
+            "Suche Personen mit dem Namen Kappel"
+          ]
+        }
+      ],
+      "SectionName": "KONTAKTE SUCHEN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Meine Mutter ist Diana Kappel",
+            "Christian Winter ist mein Bruder"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Rufe meinen Bruder im Geschäft an"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime-Anruf mit meinem Bruder im Geschäft"
+          ]
+        }
+      ],
+      "SectionName": "BEZIEHUNGEN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lerne meinen Namen richtig auszusprechen",
+            "Lerne, wie der Name von meiner Mutter richtig ausgesprochen wird",
+            "Lerne, wie der Name von Cengiz Bozkurt ausgesprochen wird"
+          ]
+        }
+      ],
+      "SectionName": "AUSSPRACHE"
+    }
+  ]
+}

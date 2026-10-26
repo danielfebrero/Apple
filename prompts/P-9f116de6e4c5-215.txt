@@ -1,0 +1,22 @@
+
+If images are provided as input, use them to influence the generated image.
+
+{% if gender != "none" or skinTone != "none" or hairstyle != "none" or facialHair != "none" or additionalDescription != "none" or accessories != "none" %}
+Use the following instructions to modify the generated image.
+The generated image must feature a person.
+
+### Use the following description to modify the appearance of the person in the generated image
+{% if gender != "none" or skinTone != "none" or hairstyle != "none" or facialHair != "none" or additionalDescription != "none" or accessories != "none" %}The person in the new image should adhere to the following description: {% endif %}
+{% unless gender == "none" %}a {{ gender }} person{% endunless %}
+{% unless skinTone == "none" %}they have {{ skinTone }} skin tone{% endunless %}
+{% unless hairstyle == "none" %}with {{ hairstyle }} hairstyle{% endunless %}
+{% unless facialHair == "none" %}with {{ facialHair }} facial hair{% endunless %}
+{% unless additionalDescription == "none" %}the person should have {{ additionalDescription }}{% endunless %}
+{% unless accessories == "none" %}with {{ accessories }} accessories{% endunless %}
+{% else %}
+Do not add people or other elements unless explicitly requested.
+{% endif %}
+
+{%unless themes contains "none" and styles contains "none"%}### Theme and Style Modifiers (may not be present if none are selected){% endunless %}
+{%unless themes contains "none"%}The generated image should contain themes of {{themes | join: ", "}} {% endunless %}
+{%unless styles contains "none"%}Use the following description for the style of the image: {{styles | join: ", "}}{% endunless %}

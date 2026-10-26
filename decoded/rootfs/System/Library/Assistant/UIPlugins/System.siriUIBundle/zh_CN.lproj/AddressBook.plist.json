@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "秦葳的地址？",
+            "小凤的电话号码？",
+            "我妻子的生日？",
+            "显示小喻的家庭电子邮件",
+            "我哥哥的工作地址？"
+          ]
+        }
+      ],
+      "SectionName": "查询联系人"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "显示张晨的联系方式",
+            "查找联系人俊涵"
+          ]
+        }
+      ],
+      "SectionName": "查找联系人"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "小凤是我姐姐",
+            "我哥哥是立仁"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "拨打我哥哥的工作电话"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime我哥哥的工作电话号码"
+          ]
+        }
+      ],
+      "SectionName": "关系"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "学习我的名字的读音",
+            "学习妈妈的名字发音",
+            "学习曲扬这个名字的读音"
+          ]
+        }
+      ],
+      "SectionName": "读音"
+    }
+  ]
+}

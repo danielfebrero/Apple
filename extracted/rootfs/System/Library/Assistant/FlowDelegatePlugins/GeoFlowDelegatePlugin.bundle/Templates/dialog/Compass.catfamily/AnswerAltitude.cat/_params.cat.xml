@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ <cat id="Compass#AnswerAltitude" xmlns="urn:apple:names:siri:cat:2.0">
+   <meta name="description" value="Notifies user of their altitude -- dialog is not finalized by Design"/>
+   <meta name="category" value="Handled"/>
+   <meta name="readyForLoc" value="true"/>
+   <parameters>
+     <parameter name="altitude" type="dialog.Length" description="distance in meters above sea level."/>
+   </parameters>
+ </cat>

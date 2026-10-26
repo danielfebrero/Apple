@@ -1,0 +1,22 @@
+Execute a sample query and check which attributes are available in the results.
+
+Use this to validate ranking decisions before applying them:
+- Check if date attributes exist for recency ranking
+- Check if size attributes exist for size ranking
+- Verify >80% coverage before ranking
+
+Returns coverage statistics for each requested attribute.
+
+**Example:**
+check_attribute_coverage(
+  baseQuery: {"find": {"attribute": "any", "operator": "prefix", "value": "report"}},
+  attributes: ["kMDItemContentCreationDate", "kMDItemFSSize"],
+  sampleSize: 10
+)
+
+Returns:
+{
+  "kMDItemContentCreationDate": {"coverage": 0.9, "count": 9},
+  "kMDItemFSSize": {"coverage": 1.0, "count": 10},
+  "totalSamples": 10
+}

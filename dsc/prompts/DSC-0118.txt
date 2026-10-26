@@ -1,0 +1,42 @@
+", operator: .lessThan, value: .int(1800))
+    ],
+    reasoning: "quick sync matches by title OR by short duration (<30 min)",
+    confidence: 0.8
+  )
+
+**Guidelines:**
+- Use world knowledge to interpret event characteristics
+- Provide multiple alternatives for robustness (title + structural)
+- Typically 2-4 alternatives per expression
+- High confidence (0.8-1.0) for clear patterns like "1:1", "standup"
+- Medium confidence (0.5-0.7) for ambiguous terms
+- Low confidence (< 0.5) signals uncertain interpretation
+
+**Confidence Score:**
+
+You must provide a confidence score (0.0-1.0) indicating how well this expression fits the event metadata domain.
+
+Ask yourself: "Is this expression clearly about EVENT CHARACTERISTICS (size, duration, type), or could it be something else?"
+
+**High confidence (0.8-1.0):**
+- Clear event types: "1:1", "standup", "all-hands", "workshop"
+- Explicit meeting characteristics: "team meeting", "quick sync"
+- Event size/type indicators: "intimate concert", "large conference"
+
+**Medium confidence (0.5-0.7):**
+- Ambiguous terms: "sync" (could be general term or meeting)
+- Vague characteristics: "meeting" (too general)
+- Context-dependent: "party" (could be many types)
+
+**Low confidence (0.0-0.4):**
+- Not event characteristics: "PDF", "email", "document"
+- Pure keywords: "budget", "project" (text search, not event type)
+- Temporal terms: "yesterday", "next week" (temporal, not event characteristic)
+
+**Key Insight:** Event metadata expressions describe STRUCTURAL PROPERTIES of events (attendee count, duration, type). If the expression describes content or timing, confidence should be low.
+
+Confidence < 0.7 signals that this clause should be routed to a different agent or the Ambiguity Handler.
+
+**Output:** ResolvedEventMeta with alternatives array, reasoning, and confidence
+
+**Important:** Always use friendly attribute names in your output.

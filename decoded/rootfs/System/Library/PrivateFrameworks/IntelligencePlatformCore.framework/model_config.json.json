@@ -1,0 +1,12 @@
+{
+  "parameters": {
+    "bpe_vocab": "index_char_re",
+    "char_vocab": "address_char_idx",
+    "embedder": "LocationEmbedderInferenceService-locationConfig",
+    "featureSize": "10",
+    "name": "ALM",
+    "padValue": "0",
+    "threshold": "0.88",
+    "version": "2023_04_24"
+  }
+}

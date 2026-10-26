@@ -1,0 +1,57 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "Identity",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "author" : "Copyright Apple",
+    "specificationVersion" : 4,
+    "license" : "Proprietary and confidential",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1... × 8",
+        "shapeRange" : "[[1, -1], [8, 8]]",
+        "formattedType" : "MultiArray (Float32 1 × 8)",
+        "type" : "MultiArray",
+        "shape" : "[1, 8]",
+        "name" : "featureVector",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.0.3",
+      "com.github.apple.coremltools.source" : "tensorflow==2.3.1"
+    },
+    "generatedClassName" : "SGMISaliencyModel",
+    "neuralNetworkLayerTypeHistogram" : {
+      "BatchedMatmul" : 1
+    },
+    "method" : "predict"
+  }
+]

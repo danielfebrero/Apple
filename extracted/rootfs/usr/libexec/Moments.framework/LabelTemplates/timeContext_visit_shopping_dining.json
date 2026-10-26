@@ -1,0 +1,171 @@
+{
+    "cases": [
+        {
+            "bundleType":"timeContext",
+            "templates" :[
+
+                {
+                    "_comment_": "/* 2 actions: visit + dining/shopping (back to back) with same place (example: visit to place A + shopping, another visit to place A, the second visit has lots of photos so goodness score is higher)*/",
+
+                    "conditions":["action_count = 2", "action_type_1=visit", "action_type_2!=visit", "unique_action_type_count=2", "activity_count=0", "unique_place_count=1"],
+                    "labels":["{action_2} and more, {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + dining/shopping (back to back) with same place(example: visit to place A + shopping, another visit to place A, the first visit has lots of photos so goodness score is higher) */",
+
+                    "conditions":["action_count = 2", "action_type_1!=visit", "action_type_2=visit", "unique_action_type_count=2", "activity_count=0", "unique_place_count=1"],
+                    "labels":["{action_1} and more, {place}|TitleCap"],
+                },
+
+                {
+                    "_comment_": "/* 2 actions: visit + shopping (back to back) and visit with place 1 of medium confidence, shopping with place 2 of medium/low confidence (example: visit to place A + shopping, another visit to place B, the second visit has lots of photos so goodness score is higher)*/",
+
+                    "conditions":["action_count = 2", "action_type_1=visit", "action_type_2=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "place_count=2","confidence_1=medium", "confidence_2!=high"],
+                    "labels":["Visit near {place_1} and {action_2}"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + shopping (back to back) and visit with place 1 of medium confidence, shopping with place 2 of high confidence (example: visit to place A + shopping, another visit to place B, the second visit has lots of photos so goodness score is higher) */",
+
+                    "conditions":["action_count = 2", "action_type_1=visit", "action_type_2=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2","confidence_1=medium", "confidence_2=high"],
+                    "labels":["Visit near {place_1} and shopping at {place_2}"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + shopping (back to back) and visit with place 1 of high/low confidence, shopping with place 2 of medium/low confidence * (example: visit to place A + shopping, another visit to place B, the second visit has lots of photos so goodness score is higher)*/",
+
+                    "conditions":["action_count = 2", "action_type_1=visit", "action_type_2=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "confidence_1!=medium", "confidence_2!=high"],
+                    "labels":["{place_1} visit and {action_2}"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + shopping (back to back) and visit with place 1 of medium confidence, shopping with place 2 of medium confidence (example: visit to place A + shopping, another visit to place B, the second visit has lots of photos so goodness score is higher)*/",
+
+                    "conditions":["action_count = 2", "action_type_1=visit", "action_type_2=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "confidence_1!=medium", "confidence_2=high"],
+                    "labels":["{place_1} visit and shopping at {place_2}"],
+                },
+
+
+                {
+                    "_comment_": "/* 2 actions: visit + shopping (back to back) and shopping with place 1 of medium confidence, visit with place 2 of medium/low confidence (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher)*/",
+
+                    "conditions":["action_count = 2", "action_type_2=visit", "action_type_1=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "place_count=2","confidence_2=medium", "confidence_1!=high"],
+                    "labels":["{action_1} and visit near {place_2}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + shopping (back to back) and shopping with place 1 of medium confidence, visit with place 2 of high confidence * (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher) */",
+
+                    "conditions":["action_count = 2", "action_type_2=visit", "action_type_1=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2","confidence_2=medium", "confidence_1=high"],
+                    "labels":["{action_1} at {place_1} and visit near {place_2}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + shopping (back to back) and shopping with place 1 of high/low confidence, visit with place 2 of medium/low confidence * (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher) */",
+
+                    "conditions":["action_count = 2", "action_type_2=visit", "action_type_1=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "confidence_2!=medium", "confidence_1!=high"],
+                    "labels":["{action_1} and {place_2} visit|TitleCap"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + shopping (back to back) and shopping with place 1 of medium confidence, visit with place 2 of medium confidence * (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher) */",
+
+                    "conditions":["action_count = 2", "action_type_2=visit", "action_type_1=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "confidence_2!=medium", "confidence_1=high"],
+                    "labels":["{action_1} at {place_1} and {place_2} visit|TitleCap"],
+                },
+
+
+                {
+                    "_comment_": "/* 2 actions: visit + dining (back to back) and visit with place 1 of medium confidence, dining with place 2 of medium/low confidence  (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher)*/",
+
+                    "conditions":["action_count = 2", "action_type_1=visit", "action_type_2!=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "place_count=2","confidence_1=medium", "confidence_2!=high"],
+                    "labels":["Visit near {place_1} and {action_2}"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + dining (back to back) and visit with place 1 of medium confidence, dining with place 2 of high confidence  (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher) */",
+
+                    "conditions":["action_count = 2", "action_type_1=visit", "action_type_2!=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2","confidence_1=medium", "confidence_2=high"],
+                    "labels":["Visit near {place_1} and eating at {place_2}"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + dining (back to back) and visit with place 1 of high/low confidence, dining with place 2 of medium/low confidence  (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher) */",
+
+                    "conditions":["action_count = 2", "action_type_1=visit", "action_type_2!=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "confidence_1!=medium", "confidence_2!=high"],
+                    "labels":["{place_1} visit and {action_2}"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + dining (back to back) and visit with place 1 of medium confidence, dining with place 2 of medium confidence  (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher) */",
+
+                    "conditions":["action_count = 2", "action_type_1=visit", "action_type_2!=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "confidence_1!=medium", "confidence_2=high"],
+                    "labels":["{place_1} visit and eating at {place_2}"],
+                },
+
+                {
+                    "_comment_": "/* 2 actions: visit + dining (back to back) and dining with place 1 of medium confidence, visit with place 2 of medium/low confidence  (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher)*/",
+
+                    "conditions":["action_count = 2", "action_type_2=visit", "action_type_1!=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "place_count=2","confidence_2=medium", "confidence_1!=high"],
+                    "labels":["{action_1} and visit near {place_2}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + dining (back to back) and dining with place 1 of medium confidence, visit with place 2 of high confidence   (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher) */",
+
+                    "conditions":["action_count = 2", "action_type_2=visit", "action_type_1!=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2","confidence_2=medium", "confidence_1=high"],
+                    "labels":["Eating at {place_1} and visit near {place_2}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + dining (back to back) and dining with place 1 of high/low confidence, visit with place 2 of medium/low confidence * (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher) */",
+
+                    "conditions":["action_count = 2", "action_type_2=visit", "action_type_1!=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "confidence_2!=medium", "confidence_1!=high"],
+                    "labels":["{action_1} and {place_2} visit|TitleCap"],
+                },
+                {
+                    "_comment_": "/* 2 actions: visit + dining (back to back) and dining with place 1 of medium confidence, visit with place 2 of medium confidence * (example: visit to place A + shopping, another visit to place B, the first visit has lots of photos so goodness score is higher)*/",
+
+                    "conditions":["action_count = 2", "action_type_2=visit", "action_type_1!=shopping", "unique_action_type_count=2", "activity_count=0", "unique_place_count=2", "confidence_2!=medium", "confidence_1=high"],
+                    "labels":["Eating at {place_1} and {place_2} visit|TitleCap"],
+                },
+
+                {
+                    "_comment_": "/* 3+ actions and 2 action types: 2 visits + dining/shopping and visit is of highest bundle goodness score (example: visit to place A + shopping, another visit to place B, another visit to place C and the second visit has lots of photos so goodness score is highest)*/",
+
+                    "conditions":["action_count >= 3", "unique_action_type_count=2", "unique_action_type_1=visit", "activity_count=0", "visit_count>1"],
+                    "labels":["Visits to multiple places and {unique_action_2}"],
+                },
+                {
+                    "_comment_": "/* 3+ actions and 2 action types: 2 visits) + dining/shopping and dining/shoppinng is of highest bundle goodness socre (example: visit to place A + shopping, another visit to place B, another visit to place C and the first visit has lots of photos so goodness score is highest)*/",
+
+                    "conditions":["action_count >= 3", "unique_action_type_count=2",  "unique_action_type_1!=visit","activity_count=0", "visit_count>1"],
+                    "labels":["{unique_action_1} and visits to multiple places|TitleCap"],
+                },
+                {
+                    "_comment_": "/* 3+ actions and 3 action types: visit + dining + shopping and visit is of highest bundle goodness score (example: visit to place A + shopping, another visit to place B + dining, another visit to place C and the last visit has lots of photos so goodness score is highest)*/*/",
+
+                    "conditions":["action_count >= 3", "unique_action_type_count=3", "activity_count=0", "unique_action_type_1=visit", "visit_count=1"],
+                    "labels":["{place_1} visit, {unique_action_2}, and {unique_action_3}"],
+                },
+                {
+                    "_comment_": "/* 3+ actions and 3 action types: visit + dining + shopping and shoppinng is of highest bundle goodness socre  (example: visit to place A + shopping, another visit to place B + dining, another visit to place C and the first visit has lots of photos so goodness score is highest)*/",
+
+                    "conditions":["action_count >= 3", "unique_action_type_count=3", "activity_count=0", "unique_action_type_1!=visit", "unique_action_type_2=shopping", "visit_count=1"],
+                    "labels":["Shopping and Eating out"],
+                },
+                {
+                    "_comment_": "/* 3+ actions and 3 action types: visit + dining + shopping and dining is of highest bundle goodness socre  (example: visit to place A + shopping, another visit to place B + dining, another visit to place C and the second visit has lots of photos so goodness score is highest)*/",
+
+                    "conditions":["action_count >= 3", "unique_action_type_count=3", "activity_count=0", "unique_action_type_1!=visit", "unique_action_type_2!=shopping", "visit_count=1"],
+                    "labels":["Eating out and Shopping"],
+                },
+
+                {
+                    "_comment_": "/* 3+ actions and 3 action types: visit + dining + shopping  (example: visit to place A + shopping, another visit to place B + dining, another visit to place C, another visit to place D)*/",
+
+                    "conditions":["action_count >= 3", "unique_action_type_count=3", "activity_count=0", "visit_count>1"],
+                    "labels":["Shopping, eating out, and multiple visits"],
+                },
+                {
+                    "_comment_": "/* fall back for visit + shopping + dining*/",
+
+                    "conditions":["unique_action_type_count>=2", "activity_count=0", "visit_count>=1"],
+                    "labels":["Outing"],
+                }
+            ]
+        }
+    ]
+}
+
+
+

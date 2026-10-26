@@ -1,0 +1,15 @@
+Build a sequential pipeline. Stages execute in order; each takes input from previous.
+First stage fetches data. Subsequent stages transform it.
+
+**PREFER BUILT-IN STAGES** - They are optimized and execute efficiently:
+- groupBy: Partition results by attribute. Downstream stages compute per-group statistics.
+- valueCount/valueSum/valueAverage/valueMax/valueMin/valueMedian/valueStddev/itemSelect: Statistics
+- sort: Order results
+- limit: Restrict count (use sortBy + sortOrder for top-N / bottom-N)
+
+**Stages execute in sequence:** Each stage takes input from the previous stage automatically.
+
+**Aggregation example:** To count items grouped by year, chain two stages:
+stageType: "groupBy"
+id: "by_year"
+parameters: [{"key": "attribute", "value": "

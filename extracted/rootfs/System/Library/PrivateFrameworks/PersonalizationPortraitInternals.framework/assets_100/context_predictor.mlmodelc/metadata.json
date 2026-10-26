@@ -1,0 +1,65 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "probabilities",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 4,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 20 × 300)",
+        "shortDescription" : "",
+        "shape" : "[1, 20, 300]",
+        "name" : "embedded_content",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.1.5",
+      "com.github.apple.coremltools.source" : "torch==1.7.1"
+    },
+    "generatedClassName" : "context_predictor",
+    "neuralNetworkLayerTypeHistogram" : {
+      "BiDirectionalLSTM" : 1,
+      "Concat" : 2,
+      "ReshapeStatic" : 1,
+      "SoftmaxND" : 1,
+      "ExpandDims" : 3,
+      "LoadConstantND" : 2,
+      "InnerProduct" : 1,
+      "SplitND" : 2,
+      "Squeeze" : 3
+    },
+    "method" : "predict"
+  }
+]

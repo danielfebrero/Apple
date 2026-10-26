@@ -1,0 +1,17 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.searchquery.system.language",
+  "UsageAliasValues": {
+    "ru-RU": {
+      "com.apple.search.queryparser": {
+        "sqp.language": "ru",
+        "sqp.parser": "ru",
+        "sqp.safety": "ru"
+      },
+      "com.apple.search.queryparser.overrides": {
+        "sqp.language": "ru"
+      }
+    }
+  }
+}

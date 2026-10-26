@@ -1,0 +1,183 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Téléphone",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Appelle Thomas",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime avec Ludovic",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Apps",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Ouvre l’app Photos",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Messages",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Dis à Sofiane que j’arrive",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Calendrier",
+      "IconNeedsProcessing": true,
+      "TagPhrase": "Programme une réunion à 9 h",
+      "IconResourceName": "Calendar",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Sports",
+      "IconResourceName": "Sports",
+      "TagPhrase": "Résultats du basket",
+      "DomainName": "Sports"
+    },
+    {
+      "DomainDisplayName": "Photos",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Montre-moi mes photos d’hier",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Plans",
+      "DomainAlternateDisplayName": "Plans",
+      "TagPhrase": "Comment aller à Liège ?",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Tweete avec ma position…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Dire sur Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Publie sur Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Restaurants",
+      "IconResourceName": "Restaurants",
+      "TagPhrase": "Meilleur restaurant italien",
+      "DomainName": "Restaurants"
+    },
+    {
+      "DomainDisplayName": "Cinéma",
+      "IconResourceName": "Movies",
+      "TagPhrase": "Cherche des films d’action",
+      "DomainName": "Movies"
+    },
+    {
+      "DomainDisplayName": "Musique",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Album de U2 en aléatoire",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Rappels",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Rappelle-moi d’appeler maman",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "E-mail",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Envoie un e-mail à Adélaïde",
+      "DomainName": "Email"
+    },
+    {
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "IconNeedsProcessing": true,
+      "DomainDisplayName": "Météo",
+      "TagPhrase": "Quel temps fera-t-il demain ?",
+      "DomainName": "Weather"
+    },
+    {
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "IconNeedsProcessing": true,
+      "DomainDisplayName": "Bourse",
+      "TagPhrase": "Quel est le cours d’Apple ?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Horloge",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Réveille-moi demain matin à 7 h",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Contacts",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Quel est le numéro d’Alex ?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Localiser mes amis",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "Où est Stéphanie ?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "Notes",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Note que j’ai dépensé 12 €",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Réglages",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Active le mode Avion",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Recherche sur le Web",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Trouve Bora Bora sur le Web",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Questions/Réponses",
+      "IconNeedsProcessing": true,
+      "TagPhrase": "Convertis 1 mètre en pieds",
+      "IconResourceName": "QandA",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "iTunes",
+      "IconDisplayIdentifier": "com.apple.MobileStore",
+      "TagPhrase": "Acheter l’album de Coldplay",
+      "DomainName": "iTunes"
+    },
+    {
+      "DomainDisplayName": "Livres",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "Trouve-moi des livres de Tolkien",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "Podcasts",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Joue des podcasts",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

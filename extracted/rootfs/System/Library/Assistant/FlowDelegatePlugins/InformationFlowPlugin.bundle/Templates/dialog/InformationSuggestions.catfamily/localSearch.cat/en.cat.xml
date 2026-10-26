@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en">
+    <conditions>
+      <condition name="isSiriHelp">
+         <expression name="deliveryVehicle" op="eq" value="'siriHelp'"/>
+      </condition>
+    </conditions>
+    <phrases>
+        <random phrase="siriHelpSuggestionUtterance">
+            <text>Find restaurants near me</text>
+            <text>Get directions to the library</text>
+        </random>
+        <first phrase="suggestionUtterance">
+            <!-- Phrase is split up for different location types so phrase can be localized correctly for other locales. -->
+            <text>Directions to <var name="localBusiness"/></text>
+            <text>Directions to <var name="personal"/></text>
+            <text>Directions to <var name="address"/></text>
+        </first>
+    </phrases>
+    <all>
+        <dialog id="exampleUtterance" condition="isSiriHelp"><phrase name="siriHelpSuggestionUtterance"/></dialog>
+        <dialog id="exampleUtterance"><phrase name="suggestionUtterance"/></dialog>
+    </all>
+</cat>

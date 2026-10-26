@@ -1,0 +1,21 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.siri.assistant.hybrid.language",
+  "UsageAliasValues": {
+    "zh-HK": {
+      "com.apple.siri.dialog": {},
+      "com.apple.siri.findmy": {},
+      "com.apple.siri.tts": {},
+      "com.apple.siri.understanding": {
+        "attention.language": "zh_HK",
+        "cam.language": "zh_HK",
+        "nl.assistant": "enabled",
+        "nl.language": "zh_HK"
+      },
+      "com.apple.siri.understanding.nl.overrides": {
+        "nl.language": "zh_HK"
+      }
+    }
+  }
+}

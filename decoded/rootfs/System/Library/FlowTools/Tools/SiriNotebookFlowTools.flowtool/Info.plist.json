@@ -1,0 +1,34 @@
+{
+  "CFBundleName": "SiriNotebookFlowTools",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "NSHumanReadableCopyright": "Copyright © 2026 Apple Inc. All rights reserved.",
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "SiriNotebookFlowTools",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.notebook.SiriNotebookFlowTools",
+  "FlowTools": [
+    "SiriNotebookFlowTools.CreateReminderFlowTool",
+    "SiriNotebookFlowTools.CreateListAddReminderFlowTool",
+    "SiriNotebookFlowTools.UpdateReminderFlowTool",
+    "SiriNotebookFlowTools.PrepareReadRemindersFlowTool"
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformBuild": ""
+}

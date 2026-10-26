@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pattern xmlns="urn:apple:names:siri:pattern:1.0" id="runLinkAction#actionPerformed" type="pattern.SuccessStatus">
+    <settings>
+      <setting name="sonicStatusIndicator" value="false"/>
+      <setting name="printSupportingDialogInDisplayModes" value="true"/>
+    </settings>
+    <group name="Status">
+        <visual id="runLinkAction#custom_Visual#*"/>
+        <dialog id="runLinkAction#actionPerformed#*"/>
+    </group>
+</pattern>

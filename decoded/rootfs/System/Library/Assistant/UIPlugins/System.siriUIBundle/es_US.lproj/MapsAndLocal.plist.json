@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Indícame cómo llegar a casa",
+            "Indicaciones para llegar a San Francisco",
+            "Muéstrame el trayecto para ir a la oficina de papá",
+            "Muéstrame la ruta para ir de Orlando a Tampa",
+            "Indicaciones para ir a casa de Jennifer"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "¿Cuál es la siguiente indicación?",
+            "¿Cuánto falta para llegar?",
+            "Busca una gasolinera",
+            "¿Cuándo llegaré?"
+          ]
+        }
+      ],
+      "SectionName": "NAVEGACIÓN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Muéstrame Central Park",
+            "Ver la Torre Eiffel en el mapa"
+          ]
+        }
+      ],
+      "SectionName": "MAPAS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Quiero comer tacos",
+            "Busca la mejor barbería",
+            "¿Dónde está la Apple Store más cercana?"
+          ]
+        }
+      ],
+      "SectionName": "NEGOCIOS LOCALES"
+    }
+  ]
+}

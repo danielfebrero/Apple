@@ -1,0 +1,84 @@
+{
+  "artifact": {
+    "entityRelevanceRanking": {
+      "entityClass": "person",
+      "tableName": "person_entity_relevance"
+    },
+    "path": "entityRelevance/entityRelevanceInferences.db",
+    "type": "entityRelevanceRanking"
+  },
+  "customViewClass": "EntityRelevanceInferenceView",
+  "entityRelevance": {
+    "featureViewNames": [
+      "personEntityRelevanceWiFiFeatures",
+      "personEntityRelevanceSpecificGeoHashFeatures",
+      "personEntityRelevanceSpecificGeoHashAndCoarseTimeOfDayFeatures",
+      "personEntityRelevanceNonContextualFeatures",
+      "personEntityRelevanceDayOfWeekFeatures",
+      "personEntityRelevanceCoarseTimeOfDayFeatures",
+      "personEntityRelevanceCoarseGeoHashFeatures",
+      "personEntityRelevanceCoarseGeoHashAndCoarseTimeOfDayFeatures",
+      "personEntityRelevanceWiFiAndCoarseTimeOfDayFeatures",
+      "personEntityRelevanceWiFiAndDayOfWeekFeatures",
+      "personEntityRelevanceCoarseTimeOfDayAndDayOfWeekFeatures",
+      "personEntityRelevanceLOIFeatures"
+    ]
+  },
+  "name": "personEntityRelevanceRanking",
+  "type": "custom",
+  "update": {
+    "filters": [],
+    "group": "personEntityRelevance",
+    "viewListeners": [
+      {
+        "name": "personEntityRelevanceWiFiFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceSpecificGeoHashFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceSpecificGeoHashAndCoarseTimeOfDayFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceNonContextualFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceDayOfWeekFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceCoarseTimeOfDayFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceCoarseGeoHashFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceCoarseGeoHashAndCoarseTimeOfDayFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceWiFiAndCoarseTimeOfDayFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceWiFiAndDayOfWeekFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceCoarseTimeOfDayAndDayOfWeekFeatures",
+        "schedule": "live"
+      },
+      {
+        "name": "personEntityRelevanceLOIFeatures",
+        "schedule": "live"
+      }
+    ]
+  },
+  "writeToStream": true
+}

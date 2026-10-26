@@ -1,0 +1,291 @@
+{
+  "MVNOOverrides": {
+    "Configuration_1": {
+      "OverrideConfiguration": {
+        "DerPriFileVersion": "6.0.162",
+        "DerPriFileName": "overrides_mvno1_V53_V54_V57.der.pri",
+        "ShowSatelliteSwitch": false,
+        "CarrierName": "T-Mobile Private Network",
+        "ShowVoNRSwitch": false,
+        "SupportsSatellite": false,
+        "apns": [
+          {
+            "configuration": [
+              {
+                "type-mask": 32785,
+                "password": "",
+                "AllowedProtocolMaskInDomesticRoaming": 1,
+                "enableXLAT464": true,
+                "AllowedProtocolMaskInRoaming": 1,
+                "username": "",
+                "apn": "iot.t-mobile.com",
+                "AllowedProtocolMask": 3
+              },
+              {
+                "AlwaysOnPDU": true,
+                "Support5GSaHandOver": true,
+                "AllowedProtocolMaskInDomesticRoaming": 3,
+                "password": "",
+                "tech-type-mask": 131072,
+                "AllowedProtocolMaskInRoaming": 3,
+                "SupportSwitchOver": true,
+                "type-mask": 131072,
+                "username": "",
+                "apn": "ims",
+                "AllowedProtocolMask": 3
+              },
+              {
+                "type-mask": 1048582,
+                "password": "",
+                "AllowedProtocolMaskInDomesticRoaming": 1,
+                "tech-type-mask": 1048582,
+                "enableXLAT464": true,
+                "AllowedProtocolMaskInRoaming": 1,
+                "username": "",
+                "apn": "service",
+                "AllowedProtocolMask": 3
+              },
+              {
+                "AlwaysOnPDU": true,
+                "password": "",
+                "AllowedProtocolMaskInDomesticRoaming": 3,
+                "tech-type-mask": 262144,
+                "type-mask": 262144,
+                "AllowedProtocolMaskInRoaming": 3,
+                "username": "",
+                "apn": "sos",
+                "AllowedProtocolMask": 3
+              }
+            ],
+            "technology-mask": 25
+          }
+        ],
+        "GeofenceOptimizations": {
+          "Enabled": true
+        }
+      }
+    },
+    "Configuration_2": {
+      "OverrideConfiguration": {
+        "ShowSatelliteSwitch": false,
+        "SupportsSatellite": false,
+        "apns": [
+          {
+            "configuration": [
+              {
+                "type-mask": 32785,
+                "password": "",
+                "AllowedProtocolMaskInDomesticRoaming": 1,
+                "enableXLAT464": true,
+                "AllowedProtocolMaskInRoaming": 1,
+                "username": "",
+                "apn": "iot.t-mobile.com",
+                "AllowedProtocolMask": 3
+              },
+              {
+                "AlwaysOnPDU": true,
+                "Support5GSaHandOver": true,
+                "AllowedProtocolMaskInDomesticRoaming": 3,
+                "password": "",
+                "tech-type-mask": 131072,
+                "AllowedProtocolMaskInRoaming": 3,
+                "SupportSwitchOver": true,
+                "type-mask": 131072,
+                "username": "",
+                "apn": "ims",
+                "AllowedProtocolMask": 3
+              },
+              {
+                "type-mask": 1048582,
+                "password": "",
+                "AllowedProtocolMaskInDomesticRoaming": 1,
+                "tech-type-mask": 1048582,
+                "enableXLAT464": true,
+                "AllowedProtocolMaskInRoaming": 1,
+                "username": "",
+                "apn": "service",
+                "AllowedProtocolMask": 3
+              },
+              {
+                "AlwaysOnPDU": true,
+                "password": "",
+                "AllowedProtocolMaskInDomesticRoaming": 3,
+                "tech-type-mask": 262144,
+                "type-mask": 262144,
+                "AllowedProtocolMaskInRoaming": 3,
+                "username": "",
+                "apn": "sos",
+                "AllowedProtocolMask": 3
+              }
+            ],
+            "technology-mask": 25
+          }
+        ]
+      }
+    }
+  },
+  "SupportsVoNR": true,
+  "DerPriFileVersion": "6.0.165",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "MTU": [
+    {
+      "technology-mask": 25,
+      "size": 1440
+    },
+    {
+      "technology-mask": 32,
+      "size": 1436
+    }
+  ],
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "IPv6SupportedDataModeMask": 106527,
+  "SatelliteSystemTransitionTimeToAllowed": 5,
+  "ShowHighDataModeSwitch": true,
+  "ShowSatelliteSwitch": true,
+  "NRSlicing": {
+    "SupportsLLPHS": true,
+    "ForceEnableL4S": true,
+    "EntitlementsGenres": true,
+    "OsId": [
+      67,
+      1,
+      210,
+      17,
+      151,
+      217,
+      66,
+      201,
+      177,
+      194,
+      246,
+      117,
+      131,
+      192,
+      249,
+      32
+    ],
+    "ManagedSliceApps": true,
+    "IgnoreEntitledLLPHS": true
+  },
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "Signaling": {
+      "AdditionalFeatureTags": {
+        "voice": {
+          "tmo.rcd": "",
+          "+sip.call-info.spam": ""
+        }
+      }
+    }
+  },
+  "Location": {
+    "EmergencyLocation": {
+      "AugmentedEmergencyAction": {
+        "AML": {
+          "SMSOverNAS": {
+            "SMSDestination": "9265",
+            "EnableForSatellitePLMNs": true
+          }
+        }
+      }
+    }
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 13172121
+  },
+  "SatelliteAccessInfo": {
+    "AllowCarrierApp": true
+  },
+  "AllowSAOnWiFiAssociation": true,
+  "EncryptedOnDeviceActivation": {
+    "CertificateIdentifier": "TMOBILE-DAF-SODA-2021",
+    "Certificate": "MIIEPDCCAqQCCQCplKu4i1AFejANBgkqhkiG9w0BAQsFADBgMQswCQYDVQQGEwJVUzELMAkGA1UECAwCV0ExETAPBgNVBAcMCEJlbGxldnVlMREwDwYDVQQKDAhULU1vYmlsZTEeMBwGA1UEAwwVZGFmLXNvZGEudC1tb2JpbGUuY29tMB4XDTIxMTIxNzIzMTI0MFoXDTI2MTIxODIzMTI0MFowYDELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAldBMREwDwYDVQQHDAhCZWxsZXZ1ZTERMA8GA1UECgwIVC1Nb2JpbGUxHjAcBgNVBAMMFWRhZi1zb2RhLnQtbW9iaWxlLmNvbTCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAKXLQonP/dacQc/1kpAryqZF62oy2U0FNZb6bcBosZZ+AEecggFXW9y/XEU70ncOO2GrqF2c3pNfI0XOhN4INBF+4yY+Vwb7vu/1ktWtzG5tgY79O2FBWuOJybpfAGBQDHaW/o007ksyWBYffPSlXQFkSHZxulUM2uvPdU1ukMvL6L/EQEQtyNlUJMeussLSqm+iUlBkBrUsWFXYNxhx2+zrz9ji++GhxEIwxpKHiD95R8d6eg8fSNStf+mcGc3Yo5m5klzm44bAhVv9rS3+O4t6ftKiaHJuoBD+oiHvo8iSqvGQwzBruB5BuW9RkHrhCzr9F6pkPRHLIRzAAQxoi72/VD/dQF0tGmLz2QzmH0IS/hPvEt7kHeodsvuSecDt4kisiBlWvql0932yoLZvTUKe5HdndvxgrZDFT8i/5CHF1Ivqz3kYbxbgEc/5UwxbuFNNipYOu36+kjB9b9uDlGCUjYnLfUY/KvOobM8DF8cTT3KjCFjwus9QOPC11F1+uwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBgQBQrsMHYOErx/kEKPKtI6QDTy+pONUl6T5mfrlhjYw+5Atcb2wNSsC+uVw/stwWbSYVr4mZyPtXc646hRZ/IWoFruz7o9VHGFhtoanl2Ga8ld75MZdFvQk2IGWqSJoEYk0cGajGSMjviQxQhuHREPB4poIfCezxKeIb/esoCKRyohHErCeLt4c68LMxAmySHMYZXQn6nzKG2pBWY2WJvPJYxLXrZFY5DMKVNV0nzVCuSmGgsUvkQo/c4nt6XHmm5pcsz9WPOcHYXs/Wx84YOxPlW87lFHU93N6SnaD5Se7dLxZ9VqC91NQbMqK9gaMgu5+GXLzAoCFxO/2CnTNNMvOeolwSK6bRF/+yvQXUkpHaXq1JzIPR9KfnaG1dcsau409u0ALUGSHf9QEI05UCGMsZRvRCLukIIwDsDcJMI0AqmkgZJTfZnBrhq3iK7+Gnkd3RttGhtMtHVbyg7yjiBvm5q2DqG8pMQcqusSdl/2b7v4uPUdnOK0naoh5HldiGJ1I="
+  },
+  "SupportsSatellite": true,
+  "DataIndicatorOverrideForNRMmwave": "NRUC",
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "SatelliteApps": [
+    "com.tmobile.tuesdays"
+  ],
+  "TechSettings": {
+    "SuppressSAInOverCellHandover": false
+  },
+  "Enable5GStandaloneAfterUpgrade": true,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 1081351,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "enableXLAT464": true,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "fast.t-mobile.com",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "AlwaysOnPDU": true,
+          "Support5GSaHandOver": true,
+          "AllowedProtocolMaskInDomesticRoaming": 3,
+          "password": "",
+          "tech-type-mask": 131072,
+          "AllowedProtocolMaskInRoaming": 3,
+          "SupportSwitchOver": true,
+          "type-mask": 131072,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "tech-type-mask": 1048582,
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "tmus",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "type-mask": 16,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "enableXLAT464": true,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "pcweb.tmobile.com",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "AlwaysOnPDU": true,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 3,
+          "tech-type-mask": 262144,
+          "type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 2
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "Enable5GAutoAfterUpgrade": true
+}

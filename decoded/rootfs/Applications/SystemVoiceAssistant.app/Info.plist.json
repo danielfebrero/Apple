@@ -1,0 +1,112 @@
+{
+  "CFBundleName": "SystemVoiceAssistant",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SBAppTags": [
+    "hidden"
+  ],
+  "DTSDKBuild": "24B108",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "application-identifier": "com.apple.SystemVoiceAssistant",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "APPL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "SystemVoiceAssistant",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.SystemVoiceAssistant",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "LSLaunchDLabel": "com.apple.systemvoiceassistant",
+  "BSServiceDomains": {
+    "com.apple.assistant.domain.system": {
+      "MachName": "com.apple.assistant.domain.system.service",
+      "Services": {
+        "com.apple.assistant.domain.system.integration": {}
+      }
+    },
+    "com.apple.assistant.domain.status": {
+      "MachName": "com.apple.assistant.domain.status.service",
+      "Services": {
+        "com.apple.assistant.domain.status.providing": {}
+      }
+    },
+    "com.apple.assistant.domain.application": {
+      "MachName": "com.apple.assistant.domain.application.service",
+      "Services": {
+        "com.apple.assistant.domain.application.activation": {},
+        "com.apple.assistant.domain.application.settings": {}
+      }
+    },
+    "com.apple.assistant.domain.system.settings": {
+      "MachName": "com.apple.assistant.domain.system.settings.service",
+      "Services": {
+        "com.apple.assistant.domain.system.settings.accessing": {}
+      }
+    },
+    "com.apple.assistant.domain.validation": {
+      "MachName": "com.apple.assistant.domain.validation.service",
+      "Services": {
+        "com.apple.assistant.domain.validation.invocation.providing": {}
+      }
+    },
+    "com.apple.assistant.domain.audio.level": {
+      "MachName": "com.apple.assistant.domain.audio.level.service",
+      "Services": {
+        "com.apple.assistant.domain.audio.level.reading.client.polling": {}
+      }
+    }
+  },
+  "UIApplicationSceneManifest": {
+    "UIApplicationSupportsMultipleScenes": true,
+    "UISceneConfigurations": {
+      "ActivitySceneSessionRoleListItem": [
+        {
+          "UISceneConfigurationName": "Create Cover Sheet Banner Configuration",
+          "UISceneDelegateClassName": "SystemVoiceAssistant.SessionPlatterSceneDelegate"
+        }
+      ],
+      "SBSUIWindowSceneSessionRoleRemoteAlert": [
+        {
+          "UISceneConfigurationName": "Remote Alert Configuration",
+          "UISceneDelegateClassName": "SystemVoiceAssistant.RemoteAlertSceneDelegate"
+        }
+      ],
+      "ActivitySceneSessionRoleSystemAperture": [
+        {
+          "UISceneConfigurationName": "Create Dynamic Island Configuration",
+          "UISceneDelegateClassName": "SystemVoiceAssistant.SessionPlatterSceneDelegate"
+        }
+      ],
+      "ActivitySceneSessionRoleAmbient": [
+        {
+          "UISceneConfigurationName": "Create Assistant Ambient Compact Scene",
+          "UISceneDelegateClassName": "SystemVoiceAssistant.AssistantAmbientCompactSceneDelegate"
+        }
+      ],
+      "ActivitySceneSessionRoleAmbientCompact": [
+        {
+          "UISceneConfigurationName": "Create Assistant Ambient Compact Scene",
+          "UISceneDelegateClassName": "SystemVoiceAssistant.AssistantAmbientCompactSceneDelegate"
+        }
+      ],
+      "ActivitySceneSessionRoleBanner": [
+        {
+          "UISceneConfigurationName": "Create Alert Banner Configuration",
+          "UISceneDelegateClassName": "SystemVoiceAssistant.SessionPlatterSceneDelegate"
+        }
+      ]
+    }
+  },
+  "DTPlatformBuild": "24B108",
+  "UIApplicationShowsViewsWhileLocked": true
+}

@@ -1,0 +1,30 @@
+{
+  "candidateGeneratorConfig": {
+    "algorithms": [
+      {
+        "structuredSearch": {}
+      }
+    ],
+    "populateFeatures": true,
+    "searchMode": {
+      "topK": {
+        "numLimits": 10
+      }
+    },
+    "useRelevanceFeatures": false
+  },
+  "enableCache": false,
+  "mentionGenPreprocessorConfig": {
+    "mode": []
+  },
+  "mentionGeneratorConfig": {
+    "algorithm": "fullContextMention"
+  },
+  "preprocessorConfig": {
+    "maxNumberOfSourceIDs": 100,
+    "mode": []
+  },
+  "rerankerConfig": {
+    "algorithm": "contextualModel"
+  }
+}

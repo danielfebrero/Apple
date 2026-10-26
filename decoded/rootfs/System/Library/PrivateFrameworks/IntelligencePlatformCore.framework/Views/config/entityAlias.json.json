@@ -1,0 +1,80 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "MD_ID",
+          "INTEGER"
+        ],
+        [
+          "alias",
+          "TEXT"
+        ],
+        [
+          "entity_type",
+          "TEXT"
+        ],
+        [
+          "signal_type",
+          "TEXT"
+        ],
+        [
+          "confirmation_confidence",
+          "REAL"
+        ]
+      ],
+      "ftsColumns": [
+        "alias"
+      ],
+      "prefixIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "primaryKeyColumns": [
+        "MD_ID",
+        "alias",
+        "signal_type"
+      ],
+      "subjectIdentifierColumn": "MD_ID",
+      "tableName": "entity_alias"
+    },
+    "path": "internal/views.db",
+    "type": "customRow"
+  },
+  "featureFlag": "NERD",
+  "name": "entityAlias",
+  "sql": {
+    "update": "nerd/entity_alias"
+  },
+  "type": "customSQL",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "computeIfPastSLA": true,
+        "filters": [
+          {
+            "predicates": [
+              "nm_entityAliasRelationship"
+            ]
+          }
+        ],
+        "schedule": "live",
+        "source": "PHPerson",
+        "stores": [
+          "stableGraph",
+          "eventGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "entitySubgraph",
+        "schedule": "none"
+      }
+    ]
+  },
+  "writeToStream": true
+}

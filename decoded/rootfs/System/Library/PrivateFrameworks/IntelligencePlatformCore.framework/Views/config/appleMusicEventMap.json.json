@@ -1,0 +1,55 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "starttime",
+          "DOUBLE"
+        ],
+        [
+          "endtime",
+          "DOUBLE"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "subject"
+      ],
+      "subjectIdentifierColumn": "subject",
+      "tableName": "appleMusicEvent_map"
+    },
+    "path": "appleMusicEvent/appleMusicEventView.db",
+    "type": "customRow"
+  },
+  "customViewClass": "AppleMusicEventMapView",
+  "name": "appleMusicEventMap",
+  "type": "custom",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB65",
+            "sources": [
+              "BMAppleMusicEvent"
+            ]
+          }
+        ],
+        "schedule": "live",
+        "source": "BMAppleMusicEvent",
+        "stores": [
+          "eventGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "appleMusicEventSubgraph",
+        "schedule": "none"
+      }
+    ]
+  }
+}

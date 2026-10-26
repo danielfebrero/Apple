@@ -1,0 +1,53 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "SupportsNRNSAInboundRoaming": true,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    }
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "password": "",
+      "username": "",
+      "apn": "cmhk",
+      "type-mask": 32821
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 1
+    },
+    {
+      "password": "",
+      "username": "",
+      "apn": "cmhk",
+      "type-mask": 32820
+    },
+    {
+      "password": "",
+      "tech-type-mask": 1048576,
+      "username": "",
+      "apn": "XCAP",
+      "type-mask": 1048576
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true,
+  "Enable5GStandaloneByDefault": true
+}

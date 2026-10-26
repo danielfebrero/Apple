@@ -1,0 +1,40 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AutoAssetType": "com.apple.MobileAsset.UAF.AONSenseConfiguration",
+  "AssetSetName": "com.apple.aonsense",
+  "MetadataAsset": "com.apple.aonsense.uaf.metadata",
+  "UsageTypes": [
+    "crashDetection.countryCode"
+  ],
+  "Assets": [
+    {
+      "AssetName": "com.apple.aonsense.safety.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.aonsense.safety.generic"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.aonsense.safety.country",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "crashDetection.countryCode"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.aonsense.safety.{crashDetection.countryCode}"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.aonsense.uaf.metadata",
+      "IgnoreOSCompatibility": true,
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.aonsense.uaf.metadata"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.Settings.AppleIntelligence",
+  "UsageAliasValues": {
+    "default": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.accessibility_reader_ai.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.calendar_magic_compose_backward_pass.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.generative_shortcuts.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.icloud_mail_event_extraction.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.intelligent_pass_creation.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.notify_me_when.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.personalized_smart_reply.nicknames.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.proofreading.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.safari.safe_browsing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.safari_magic_extensions.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.stx_multimodal.health_data.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.stx_multimodal.receipt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_intelligence_nutrition.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.visual_intelligence_suggested_questions.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.writing_question_answer.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.writing_question_answer.payload.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.accessibility_reader_ai.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.calendar_magic_compose_backward_pass.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.generative_shortcuts.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.icloud_mail_event_extraction.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.intelligent_pass_creation.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.proofreading.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.safari.safe_browsing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.safari_magic_extensions.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.stx_multimodal.health_data.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.stx_multimodal.receipt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.visual_intelligence_nutrition.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.visual_intelligence_suggested_questions.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.writing_question_answer.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

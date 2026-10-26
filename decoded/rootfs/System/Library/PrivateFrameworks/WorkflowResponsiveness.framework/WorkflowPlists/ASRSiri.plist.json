@@ -1,0 +1,122 @@
+{
+  "name": "ASRSiri",
+  "maximum_duration": 10,
+  "signposts": [
+    {
+      "start": false,
+      "end": true,
+      "subsystem": "com.apple.corespeech",
+      "category": "Framework",
+      "name": "ondevice_EagerCPL",
+      "diagnostics": [
+        {
+          "name": "EagerCPL",
+          "trigger_threshold_duration_single": 1.5,
+          "gather_tailspin": true,
+          "option_tailspin_includes_oslogs": true
+        }
+      ]
+    },
+    {
+      "start": true,
+      "end": false,
+      "subsystem": "com.apple.siri",
+      "category": "Speech",
+      "name": "CESA: Responsiveness Workflow Trigger on EagerCPL"
+    }
+  ],
+  "option_filter_tailspin_logs_to_subsystem_categories": {
+    "com.apple.app_launch_measurement": [
+      "*"
+    ],
+    "com.apple.appintents": [
+      "*"
+    ],
+    "com.apple.CoreSceneUnderstanding": [
+      "*"
+    ],
+    "com.apple.corespeech": [
+      "*"
+    ],
+    "com.apple.corespotlight": [
+      "*"
+    ],
+    "com.apple.Foundation": [
+      "NSProcessInfoInteractionTracking"
+    ],
+    "com.apple.GenerativeModels": [
+      "*"
+    ],
+    "com.apple.intelligenceflow": [
+      "*"
+    ],
+    "com.apple.modelmanager": [
+      "*"
+    ],
+    "com.apple.omnisearch": [
+      "*"
+    ],
+    "com.apple.pommes": [
+      "*"
+    ],
+    "com.apple.privatecloudcompute": [
+      "*"
+    ],
+    "com.apple.privatemlclient": [
+      "*"
+    ],
+    "com.apple.privatemlclientInferenceProvider": [
+      "*"
+    ],
+    "com.apple.shortcuts": [
+      "*"
+    ],
+    "com.apple.siri": [
+      "Client",
+      "Daemon",
+      "Performance"
+    ],
+    "com.apple.siri.analytics": [
+      "Performance"
+    ],
+    "com.apple.siri.cdm": [
+      "*"
+    ],
+    "com.apple.siri.identity": [
+      "*"
+    ],
+    "com.apple.siri.marrs.mrr": [
+      "*"
+    ],
+    "com.apple.siri.request_dispatcher": [
+      "*"
+    ],
+    "com.apple.siri.sirikit": [
+      "*"
+    ],
+    "com.apple.siri.tts": [
+      "*"
+    ],
+    "com.apple.sirinaturallanguageparsing": [
+      "*"
+    ],
+    "com.apple.sirireferenceresolution": [
+      "*"
+    ],
+    "com.apple.speech.localspeechrecognition": [
+      "*"
+    ],
+    "com.apple.spotlight": [
+      "*"
+    ],
+    "com.apple.SpotlightServices": [
+      "*"
+    ],
+    "com.apple.tokengenerationinference": [
+      "*"
+    ],
+    "com.apple.UnifiedAssetFramework": [
+      "*"
+    ]
+  }
+}

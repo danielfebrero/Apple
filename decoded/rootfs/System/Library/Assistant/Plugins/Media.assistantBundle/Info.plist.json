@@ -1,0 +1,81 @@
+{
+  "CFBundleName": "Media Assistant",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "AssistantDomains": {
+    "com.apple.ace.media": {
+      "GetStateResponseRemote": "MPAssistantGetStateResponseRemote",
+      "LikesMediaEntity": "MPAssistantLikesMediaEntity",
+      "GeniusSummon": "MPAssistantGeniusSummon",
+      "AddMediaItemsToLibrary": "MPAssistantAddMediaItemsToLibrary",
+      "LoadPredefinedQueue": "MPAssistantLoadPredefinedQueue",
+      "DislikesMediaEntity": "MPAssistantDislikesMediaEntity",
+      "AddMediaItemsToUpNextQueue": "MPAssistantAddMediaItemsToUpNextQueue",
+      "RateMediaEntity": "MPAssistantRateMediaEntity",
+      "AddMediaItemsToPlaylist": "MPAssistantAddMediaItemsToPlaylist",
+      "Search": "MPAssistantSearch",
+      "SetOutputSource": "MPAssistantSetOutputSource",
+      "AddMediaEntityToWishList": "MPAssistantAddMediaEntityToWishList",
+      "AddMediaEntityToAcousticIdHistory": "MPAssistantAddMediaEntityToAcousticIDHistory",
+      "MusicPlaybackImminent": "MPAssistantMusicPlaybackImminent",
+      "CreateRadioStation": "MPAssistantCreateRadioStation",
+      "GetState": "MPAssistantGetState",
+      "SetQueue": "MPAssistantSetQueue",
+      "SetState": "MPAssistantSetState"
+    },
+    "com.apple.ace.setting": {
+      "SetMusicInfluence": "MPAssistantSetMusicInfluence",
+      "GetMusicInfluence": "MPAssistantGetMusicInfluence"
+    },
+    "com.apple.ace.nowplaying": {
+      "SetShuffleMode": "MPAssistantSetShuffleMode",
+      "StartPlayback": "MPAssistantStartPlayback",
+      "SkipToPreviousItem": "MPAssistantSkipToPreviousItem",
+      "GetNowPlayingQueueDetailsRemote": "MPAssistantGetNowPlayingQueueDetailsRemote",
+      "GetVolumeLevel": "MPAssistantGetVolumeLevel",
+      "SeekToPlaybackPosition": "MPAssistantSeekToPlaybackPosition",
+      "GetNowPlayingQueueDetails": "MPAssistantGetNowPlayingQueueDetails",
+      "DecreasePlaybackSpeed": "MPAssistantDecreasePlaybackSpeed",
+      "RemoveOutputDevicesFromGroup": "MPAssistantRemoveOutputDevicesFromGroup",
+      "MoveOutputGroupToDevices": "MPAssistantMoveOutputGroupToDevices",
+      "IncreasePlaybackSpeed": "MPAssistantIncreasePlaybackSpeed",
+      "SetRepeatMode": "MPAssistantSetRepeatMode",
+      "AddOutputDevicesToGroup": "MPAssistantAddOutputDevicesToGroup",
+      "PausePlayback": "MPAssistantPausePlayback",
+      "SetVolumeLevel": "MPAssistantSetVolumeLevel",
+      "SkipTimeInterval": "MPAssistantSkipTimeInterval",
+      "SkipToNextItem": "MPAssistantSkipToNextItem",
+      "StopPlayback": "MPAssistantStopPlayback",
+      "SetPlaybackSpeed": "MPAssistantSetPlaybackSpeed"
+    },
+    "com.apple.ace.system": {
+      "GetDynamiteClientState": "MPAssistantGetDynamiteClientState"
+    }
+  },
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "Media",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.mobileipod.assistant",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "",
+  "AssistantSyncAnchorKeys": {
+    "com.apple.siri.client.state.DynamiteClientState": "MPAssistantSubscriptionStatusSyncHandler",
+    "com.apple.media.entities": "MPAssistantSyncHandler"
+  }
+}

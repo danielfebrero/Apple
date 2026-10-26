@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="Suggestions#Flashlight" locale="en">
+    <phrases>
+        <random phrase="suggestion">
+            <text>Turn on flashlight</text>
+        </random>
+    </phrases>
+    <all>
+        <dialog id="suggestion"><phrase name="suggestion"/></dialog>
+        <dialog id="description">Turns on the flashlight.</dialog>
+    </all>
+</cat>

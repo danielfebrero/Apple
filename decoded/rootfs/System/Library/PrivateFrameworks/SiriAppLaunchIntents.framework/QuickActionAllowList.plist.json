@@ -1,0 +1,520 @@
+{
+  "allowedApps": [
+    {
+      "appName": "微信",
+      "bundleID": "com.tencent.xin"
+    },
+    {
+      "appName": "QQ",
+      "bundleID": "com.tencent.mqq"
+    },
+    {
+      "appName": "支付宝",
+      "bundleID": "com.alipay.iphoneclient"
+    },
+    {
+      "appName": "支付宝 HD",
+      "bundleID": "com.alipay.ipadclient"
+    },
+    {
+      "appName": "美团",
+      "bundleID": "com.meituan.imeituan"
+    },
+    {
+      "appName": "抖音",
+      "bundleID": "com.ss.iphone.ugc.Aweme"
+    },
+    {
+      "appName": "抖音-記錄美好生活",
+      "bundleID": "com.ss.iphone.ugc.aweme.mobile"
+    },
+    {
+      "appName": "抖音极速版",
+      "bundleID": "com.ss.iphone.ugc.aweme.lite"
+    },
+    {
+      "appName": "快手",
+      "bundleID": "com.jiangjia.gif"
+    },
+    {
+      "appName": "快手极速版",
+      "bundleID": "com.kuaishou.nebula"
+    },
+    {
+      "appName": "微博",
+      "bundleID": "com.sina.weibo"
+    },
+    {
+      "appName": "微博极速版",
+      "bundleID": "com.sina.weibolite"
+    },
+    {
+      "appName": "盒马",
+      "bundleID": "com.wdk.hmxs"
+    },
+    {
+      "appName": "蜻蜓FM",
+      "bundleID": "com.Qting.QTTour"
+    },
+    {
+      "appName": "京东",
+      "bundleID": "com.360buy.jdmobile"
+    },
+    {
+      "appName": "京东 HD",
+      "bundleID": "com.360buy.jdiPad"
+    },
+    {
+      "appName": "手机天猫",
+      "bundleID": "com.taobao.tmall"
+    },
+    {
+      "appName": "饿了么",
+      "bundleID": "me.ele.ios.eleme"
+    },
+    {
+      "appName": "Metro大都会",
+      "bundleID": "Metropoles.com"
+    },
+    {
+      "appName": "淘宝",
+      "bundleID": "com.taobao.taobao4iphone"
+    },
+    {
+      "appName": "学习强国",
+      "bundleID": "cn.xuexi.qg"
+    },
+    {
+      "appName": "百度",
+      "bundleID": "com.baidu.BaiduMobile"
+    },
+    {
+      "appName": "百度极速版",
+      "bundleID": "com.baidu.BaiduMobileInfo"
+    },
+    {
+      "appName": "钉钉",
+      "bundleID": "com.laiwang.DingTalk"
+    },
+    {
+      "appName": "58同城",
+      "bundleID": "com.taofang.iphone"
+    },
+    {
+      "appName": "网易云音乐",
+      "bundleID": "com.netease.cloudmusic"
+    },
+    {
+      "appName": "网易云音乐HD",
+      "bundleID": "com.netease.CloudMusicIpad"
+    },
+    {
+      "appName": "QQ音乐",
+      "bundleID": "com.tencent.QQMusic"
+    },
+    {
+      "appName": "QQ音乐HD",
+      "bundleID": "com.tencent.QQMusicHD"
+    },
+    {
+      "appName": "酷狗音乐",
+      "bundleID": "com.kugou.kugou1002"
+    },
+    {
+      "appName": "酷狗音乐HD",
+      "bundleID": "com.ipad.kugou.appstore"
+    },
+    {
+      "appName": "拼多多",
+      "bundleID": "com.xunmeng.pinduoduo"
+    },
+    {
+      "appName": "小红书",
+      "bundleID": "com.xingin.discover"
+    },
+    {
+      "appName": "抖音火山版",
+      "bundleID": "com.ss.iphone.ugc.Live"
+    },
+    {
+      "appName": "腾讯视频",
+      "bundleID": "com.tencent.live4iphone"
+    },
+    {
+      "appName": "爱奇艺",
+      "bundleID": "com.qiyi.iphone"
+    },
+    {
+      "appName": "哔哩哔哩",
+      "bundleID": "tv.danmaku.bilianime"
+    },
+    {
+      "appName": "芒果TV",
+      "bundleID": "com.hunantv.imgotv"
+    },
+    {
+      "appName": "优酷视频",
+      "bundleID": "com.youku.YouKu"
+    },
+    {
+      "appName": "高德地图",
+      "bundleID": "com.autonavi.amap"
+    },
+    {
+      "appName": "百度地图",
+      "bundleID": "com.baidu.map"
+    },
+    {
+      "appName": "腾讯地图",
+      "bundleID": "com.tencent.sosomap"
+    },
+    {
+      "appName": "酷狗",
+      "bundleID": "com.kugou.kugou1002"
+    },
+    {
+      "appName": "知乎",
+      "bundleID": "com.zhihu.ios"
+    },
+    {
+      "appName": "大众点评",
+      "bundleID": "com.dianping.dpscope"
+    },
+    {
+      "appName": "虎牙",
+      "bundleID": "com.yy.kiwi"
+    },
+    {
+      "appName": "斗鱼",
+      "bundleID": "tv.douyu.live"
+    },
+    {
+      "appName": "天猫",
+      "bundleID": "com.taobao.tmall"
+    },
+    {
+      "appName": "闲鱼",
+      "bundleID": "com.taobao.fleamarket"
+    },
+    {
+      "appName": "全民K歌",
+      "bundleID": "com.tencent.QQKSong"
+    },
+    {
+      "appName": "饿了么",
+      "bundleID": "me.ele.ios.eleme"
+    },
+    {
+      "appName": "作业帮",
+      "bundleID": "com.baidu.homework"
+    },
+    {
+      "appName": "QQ浏览器",
+      "bundleID": "com.tencent.mttlite"
+    },
+    {
+      "appName": "美图秀秀",
+      "bundleID": "com.meitu.mtxx"
+    },
+    {
+      "appName": "百度网盘",
+      "bundleID": "com.baidu.netdisk"
+    },
+    {
+      "appName": "美团外卖",
+      "bundleID": "com.meituan.itakeaway"
+    },
+    {
+      "appName": "今日头条",
+      "bundleID": "com.ss.iphone.article.News"
+    },
+    {
+      "appName": "陌陌",
+      "bundleID": "com.wemomo.momoappdemo1"
+    },
+    {
+      "appName": "中国移动",
+      "bundleID": "cn.10086.app"
+    },
+    {
+      "appName": "中国联通",
+      "bundleID": "com.chinaunicom.mobilebusiness"
+    },
+    {
+      "appName": "中国电信",
+      "bundleID": "CtClient"
+    },
+    {
+      "appName": "UC浏览器",
+      "bundleID": "com.ucweb.iphone.lowversion"
+    },
+    {
+      "appName": "喜马拉雅",
+      "bundleID": "com.gemd.iting"
+    },
+    {
+      "appName": "懂车帝",
+      "bundleID": "com.ss.ios.auto"
+    },
+    {
+      "appName": "QQ邮箱",
+      "bundleID": "com.tencent.qqmail"
+    },
+    {
+      "appName": "探探",
+      "bundleID": "com.yaymedialabs.putong"
+    },
+    {
+      "appName": "一甜相机",
+      "bundleID": "com.kwai.mtu"
+    },
+    {
+      "appName": "企业微信",
+      "bundleID": "com.tencent.ww"
+    },
+    {
+      "appName": "唯品会",
+      "bundleID": "com.vipshop.iphone"
+    },
+    {
+      "appName": "得物",
+      "bundleID": "com.siwuai.duapp"
+    },
+    {
+      "appName": "携程",
+      "bundleID": "ctrip.com"
+    },
+    {
+      "appName": "转转",
+      "bundleID": "com.wuba.zhuanzhuan"
+    },
+    {
+      "appName": "美颜相机",
+      "bundleID": "com.meitu.myxj"
+    },
+    {
+      "appName": "中国银行",
+      "bundleID": "com.boc.BOCMBCI"
+    },
+    {
+      "appName": "招商银行",
+      "bundleID": "com.cmbchina.MPBBank"
+    },
+    {
+      "appName": "中国建设银行",
+      "bundleID": "com.ccb.ccbDemo"
+    },
+    {
+      "appName": "中国工商银行",
+      "bundleID": "com.icbc.iphoneclient"
+    },
+    {
+      "appName": "中国农业银行",
+      "bundleID": "com.bankabc.iphonerelease"
+    },
+    {
+      "appName": "交通银行",
+      "bundleID": "com.bankcomm.Bankcomm"
+    },
+    {
+      "appName": "浦发银行",
+      "bundleID": "com.spdb.retail.bank"
+    },
+    {
+      "appName": "兴业银行",
+      "bundleID": "com.cib.cibmb"
+    },
+    {
+      "appName": "夸克",
+      "bundleID": "com.quark.browser"
+    },
+    {
+      "appName": "云闪付",
+      "bundleID": "com.unionpay.chsp"
+    },
+    {
+      "appName": "菜鸟",
+      "bundleID": "com.cainiao.cnwireless"
+    },
+    {
+      "appName": "米家",
+      "bundleID": "com.xiaomi.mihome"
+    },
+    {
+      "appName": "安居客",
+      "bundleID": "com.anjuke.anjuke"
+    },
+    {
+      "appName": "谷歌浏览器",
+      "bundleID": "com.google.chrome.ios"
+    },
+    {
+      "appName": "百度极速版",
+      "bundleID": "com.baidu.BaiduMobileInfo"
+    },
+    {
+      "appName": "谷歌地图",
+      "bundleID": "com.google.Maps"
+    },
+    {
+      "appName": "推特",
+      "bundleID": "com.atebits.Tweetie2"
+    },
+    {
+      "appName": "墨迹天气",
+      "bundleID": "com.moji.MojiWeather"
+    },
+    {
+      "appName": "滴滴出行",
+      "bundleID": "com.xiaojukeji.didi"
+    },
+    {
+      "appName": "soul",
+      "bundleID": "com.soulapp.cn"
+    },
+    {
+      "appName": "识货",
+      "bundleID": "com.hupu.shihuo"
+    },
+    {
+      "appName": "酷我音乐",
+      "bundleID": "com.yeelion.kwplayer"
+    },
+    {
+      "appName": "微信读书",
+      "bundleID": "com.tencent.weread"
+    },
+    {
+      "appName": "小猿口算",
+      "bundleID": "com.fenbi.leo"
+    },
+    {
+      "appName": "百度贴吧",
+      "bundleID": "com.baidu.tieba"
+    },
+    {
+      "appName": "航旅纵横",
+      "bundleID": "com.travelsky.umetrip"
+    },
+    {
+      "appName": "京东金融",
+      "bundleID": "com.jd.jinrong"
+    },
+    {
+      "appName": "QQ阅读",
+      "bundleID": "com.tencent.qqreaderiphone"
+    },
+    {
+      "appName": "哈啰出行",
+      "bundleID": "com.jingyao.EasyBike"
+    },
+    {
+      "appName": "豆瓣",
+      "bundleID": "com.douban.frodo"
+    },
+    {
+      "appName": "飞猪旅行",
+      "bundleID": "com.taobao.travel"
+    },
+    {
+      "appName": "瓜子二手车",
+      "bundleID": "com.ganji.haoche"
+    },
+    {
+      "appName": "飞书",
+      "bundleID": "com.bytedance.ee.lark"
+    },
+    {
+      "appName": "上海交通卡",
+      "bundleID": "com.jiuyu.sptcc.phonegap"
+    },
+    {
+      "appName": "中国国航",
+      "bundleID": "com.airchina.CAMobile"
+    },
+    {
+      "appName": "春秋航空",
+      "bundleID": "com.china3s.ios"
+    },
+    {
+      "appName": "东方航空",
+      "bundleID": "com.ceair.b2m"
+    },
+    {
+      "appName": "海南航空",
+      "bundleID": "com.hnair.mobile"
+    },
+    {
+      "appName": "吉祥航空",
+      "bundleID": "com.juneyaoair.distribution"
+    },
+    {
+      "appName": "飞常准",
+      "bundleID": "com.Feeyo.VeryZhunLITE"
+    },
+    {
+      "appName": "随申办市民云",
+      "bundleID": "mobi.w3studio.apps.ios.shsm"
+    },
+    {
+      "appName": "唱吧",
+      "bundleID": "com.changba.ktv"
+    },
+    {
+      "appName": "北京一卡通",
+      "bundleID": "cn.com.bmac.iosapp"
+    },
+    {
+      "appName": "同花顺",
+      "bundleID": "cn.com.10jqka.IHexin"
+    },
+    {
+      "appName": "东方财富",
+      "bundleID": "com.eastmoney.iphone"
+    },
+    {
+      "appName": "雪球",
+      "bundleID": "com.xueqiu"
+    },
+    {
+      "appName": "大智慧",
+      "bundleID": "com.gw.dzhiphone622"
+    },
+    {
+      "appName": "美柚",
+      "bundleID": "com.linggan.xiyou"
+    },
+    {
+      "appName": "肯德基",
+      "bundleID": "com.yum.kfc.brand"
+    },
+    {
+      "appName": "大麦",
+      "bundleID": "cn.damai.iphone"
+    },
+    {
+      "appName": "起点读书",
+      "bundleID": "m.qidian.QDReaderAppStore"
+    },
+    {
+      "appName": "网易有道词典",
+      "bundleID": "youdaoPro"
+    },
+    {
+      "appName": "咪咕音乐",
+      "bundleID": "com.migu.migumobilemusic"
+    },
+    {
+      "appName": "阿里巴巴1688",
+      "bundleID": "com.alibaba.wireless"
+    },
+    {
+      "appName": "猫眼",
+      "bundleID": "com.meituan.imovie"
+    }
+  ],
+  "allowedLocales": [
+    "zh_CN",
+    "yue_CN"
+  ]
+}

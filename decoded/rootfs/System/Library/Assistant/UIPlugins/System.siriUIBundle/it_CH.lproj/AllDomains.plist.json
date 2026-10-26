@@ -1,0 +1,183 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Telefono",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Chiama Fabrizio",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "Chiama Elisa con FaceTime",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "App",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Apri la fotocamera",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Messaggi",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Scrivi a Carla che sto arrivando",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Calendario",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Fissa una riunione per le 9:00",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Sport",
+      "IconResourceName": "Sports",
+      "TagPhrase": "Ha vinto il Basilea?",
+      "DomainName": "Sports"
+    },
+    {
+      "DomainDisplayName": "Foto",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Mostrami le foto scattate ieri",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Mappe",
+      "DomainAlternateDisplayName": "Mappe",
+      "TagPhrase": "Indicazioni per Lugano",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Twitta che sono felice",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Scrivi su Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Pubblica su Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Ristoranti",
+      "IconResourceName": "Restaurants",
+      "TagPhrase": "Consigliami un ristorante cinese",
+      "DomainName": "Restaurants"
+    },
+    {
+      "DomainDisplayName": "Film",
+      "IconResourceName": "Movies",
+      "TagPhrase": "Quale commedia mi consigli?",
+      "DomainName": "Movies"
+    },
+    {
+      "DomainDisplayName": "Musica",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Ascoltiamo i Foo Fighters",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Promemoria",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Ricordami di chiamare mamma",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "E-mail",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Manda un'e-mail a Simonetta",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Meteo",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Che tempo fa oggi?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Borsa",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Come ha chiuso Apple?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Orologio",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Domani svegliami alle 7:00",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Contatti",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Qual è l'indirizzo di Sara?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Trova i miei amici",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "Dov'è Fabrizio?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "Note",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Annota che sono contento",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Impostazioni",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Attiva la modalità 'Uso in aereo'",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Ricerca su Internet",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Cerca 'pizza' su Internet",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Domande e risposte",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "Quanti chilometri sono 2 miglia?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "iTunes",
+      "IconDisplayIdentifier": "com.apple.MobileStore",
+      "TagPhrase": "Scarica il film 'Lo squalo'",
+      "DomainName": "iTunes"
+    },
+    {
+      "DomainDisplayName": "Libri",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "Trova libri di Stefano Benni",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "Podcast",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Fammi ascoltare i podcast",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

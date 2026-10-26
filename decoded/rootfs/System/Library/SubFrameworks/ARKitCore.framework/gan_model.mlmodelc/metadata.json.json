@@ -1,0 +1,60 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "Completion model fp16 ['j9xrpkftr3', 'complete_scene_0120.hdf5']",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double 3 × 128 × 128)",
+        "shortDescription": "",
+        "shape": "[3, 128, 128]",
+        "name": "output",
+        "type": "MultiArray"
+      }
+    ],
+    "storagePrecision": "Float16",
+    "modelParameters": [],
+    "author": "Apple Inc",
+    "specificationVersion": 2,
+    "license": "Copyright (c) 2019 Apple Inc. All rights reserved.",
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "10.13.2",
+      "tvOS": "11.2",
+      "visionOS": "1.0",
+      "watchOS": "4.2",
+      "iOS": "11.2",
+      "macCatalyst": "11.2"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double 4 × 128 × 128)",
+        "shortDescription": "",
+        "shape": "[4, 128, 128]",
+        "name": "input",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {},
+    "generatedClassName": "gan_model",
+    "neuralNetworkLayerTypeHistogram": {
+      "Concat": 49,
+      "ActivationLeakyReLU": 56,
+      "PoolingAverage": 7,
+      "ActivationTanh": 1,
+      "BatchNorm": 57,
+      "Convolution": 60,
+      "UpsampleNearestNeighbor": 7
+    },
+    "method": "predict"
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "footerText": "URL_PREFIX_FOOTER",
+      "id": "URLPrefix",
+      "label": "URL_PREFIX"
+    },
+    {
+      "cell": "PSEditTextCell",
+      "get": "modelValueForSpecifier:",
+      "id": "URL_OVERRIDE",
+      "isURL": true,
+      "placeholder": "https://example.com/",
+      "set": "setModelValue:forSpecifier:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "BUNDLE_ID_FOOTER",
+      "id": "BundleID",
+      "label": "BUNDLE_ID"
+    },
+    {
+      "cell": "PSEditTextCell",
+      "get": "modelValueForSpecifier:",
+      "id": "URL_OVERRIDE_CLIP_BUNDLE_ID",
+      "noAutoCorrect": true,
+      "placeholder": "com.example.app.clip",
+      "set": "setModelValue:forSpecifier:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "ABR_GROUP",
+      "label": "APP_CLIP_CARD"
+    },
+    {
+      "autoCaps": "words",
+      "cell": "PSEditTextCell",
+      "get": "modelValueForSpecifier:",
+      "id": "ABR_TITLE",
+      "label": "TITLE",
+      "placeholder": "Name of the experience",
+      "set": "setModelValue:forSpecifier:"
+    },
+    {
+      "autoCaps": "sentences",
+      "cell": "PSEditTextCell",
+      "get": "modelValueForSpecifier:",
+      "id": "ABR_SUBTITLE",
+      "label": "SUBTITLE",
+      "placeholder": "Description of the app clip",
+      "set": "setModelValue:forSpecifier:"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "default": 0,
+      "detail": "PSListItemsController",
+      "get": "modelValueForSpecifier:",
+      "id": "ABR_VERB",
+      "label": "ACTION",
+      "set": "setModelValue:forSpecifier:",
+      "validTitles": [
+        "VERB_OPEN",
+        "VERB_VIEW",
+        "VERB_PLAY"
+      ],
+      "validValues": [
+        "open",
+        "view",
+        "play"
+      ]
+    },
+    {
+      "buttonAction": "chooseImage:",
+      "cell": "PSButtonCell",
+      "id": "ABR_HERO_IMAGE",
+      "label": "CHOOSE_IMAGE"
+    },
+    {
+      "cell": "PSGroupCell"
+    },
+    {
+      "buttonAction": "removeOverride:",
+      "cell": "PSButtonCell",
+      "id": "RESET",
+      "label": "REMOVE_OVERRIDE"
+    }
+  ],
+  "title": "LOCAL_EXPERIENCE"
+}

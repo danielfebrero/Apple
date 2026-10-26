@@ -1,0 +1,15 @@
+{
+  "AdHocServiceType": 2,
+  "AutoConfigureVettedAddresses": true,
+  "DisplayName": "SiriProxy",
+  "DuetIdentifiers": [
+    "com.apple.assistantd",
+    "com.apple.Siri"
+  ],
+  "Identifier": "com.apple.private.alloy.siri.proxy",
+  "LaunchMachServiceNotification": "com.apple.private.alloy.siri.proxy-idswake",
+  "ProtocolName": "com.apple.private.alloy",
+  "PushTopic": "com.apple.private.alloy.siri.proxy",
+  "ServiceName": "com.apple.private.alloy.siri.proxy",
+  "iCloudService": true
+}

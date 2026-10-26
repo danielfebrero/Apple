@@ -1,0 +1,59 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "currentTime": {
+        "aspect": {
+          "dayOfWeek": {}
+        },
+        "supportsContextualFeature": "dayOfWeek"
+      }
+    }
+  },
+  "featureFlag": "EntityRelevanceBiomeSources",
+  "name": "currentDayOfWeekContext",
+  "type": "signal",
+  "update": {
+    "alwaysUpdateListeners": [
+      {
+        "computeIfPastSLA": false,
+        "schedule": "every2Hours"
+      }
+    ],
+    "biomeListeners": [
+      {
+        "computeIfPastSLA": false,
+        "requiredSource": false,
+        "schedule": "every21Minutes",
+        "stream": "Device.ScreenLocked"
+      },
+      {
+        "computeIfPastSLA": false,
+        "requiredSource": false,
+        "schedule": "every21Minutes",
+        "stream": "App.InFocus"
+      },
+      {
+        "computeIfPastSLA": false,
+        "requiredSource": false,
+        "schedule": "every21Minutes",
+        "stream": "App.Intent"
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "handleMap",
+        "requiredSource": true,
+        "schedule": "none"
+      },
+      {
+        "name": "phPersonIdentifierMap",
+        "requiredSource": true,
+        "schedule": "none"
+      }
+    ]
+  }
+}

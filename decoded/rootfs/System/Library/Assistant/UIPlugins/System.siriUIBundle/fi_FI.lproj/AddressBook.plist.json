@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Mikä on Emman osoite?",
+            "Mikä on Anne Virtasen puhelinnumero?",
+            "Milloin on vaimoni syntymäpäivä?",
+            "Näytä Liisan kotisähköpostiosoite",
+            "Mikä on veljeni työosoite?"
+          ]
+        }
+      ],
+      "SectionName": "Asking about contacts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Näytä Pekka Lahti",
+            "Etsi ihmisiä, joiden nimi on Virtanen"
+          ]
+        }
+      ],
+      "SectionName": "Finding contacts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Äitini on Anne Virtanen",
+            "Jukka Mattila on veljeni"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Soita veljelleni töihin"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Soita FaceTimella veljelleni töihin"
+          ]
+        }
+      ],
+      "SectionName": "Relationships"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Opettele ääntämään nimeni",
+            "Opettele ääntämään äitini nimi",
+            "Opettele ääntämään Kerstin Virtasen nimi"
+          ]
+        }
+      ],
+      "SectionName": "Pronunciation"
+    }
+  ]
+}

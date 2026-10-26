@@ -1,0 +1,69 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Mixed (Float16, Palettized (14 bits), Palettized (16 bits))",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16 1 × 512 × 1 × 122)",
+        "shortDescription": "",
+        "shape": "[1, 512, 1, 122]",
+        "name": "image_encoder_head_out",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 9,
+    "mlProgramOperationTypeHistogram": {
+      "Ios18.linear": 1,
+      "Ios18.constexprLutToDense": 8,
+      "Ios18.conv": 6,
+      "Ios18.expandDims": 1,
+      "Ios18.gelu": 1,
+      "Ios18.concat": 2,
+      "Ios16.einsum": 8,
+      "Ios18.add": 4,
+      "Ios18.softmax": 1,
+      "Ios18.layerNorm": 4,
+      "Ios18.transpose": 2,
+      "Ios18.reshape": 4,
+      "Split": 4,
+      "Ios18.mul": 4
+    },
+    "computePrecision": "Mixed (Float16, Int32)",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "15.0",
+      "tvOS": "18.0",
+      "visionOS": "2.0",
+      "watchOS": "11.0",
+      "iOS": "18.0",
+      "macCatalyst": "18.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-m8vajzvgz6",
+      "com.github.apple.coremltools.source": "torch==2.5.1",
+      "com.github.apple.coremltools.version": "8.3.1"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16 1 × 1 × 122 × 768)",
+        "shortDescription": "",
+        "shape": "[1, 1, 122, 768]",
+        "name": "bridge_input",
+        "type": "MultiArray"
+      }
+    ],
+    "generatedClassName": "model",
+    "method": "predict"
+  }
+]

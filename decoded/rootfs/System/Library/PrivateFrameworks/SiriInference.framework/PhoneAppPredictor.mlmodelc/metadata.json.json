@@ -1,0 +1,107 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "SeAS heuristic (limited edition) v1.011",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "appsShowToUser",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "appConfident",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "v1011",
+    "modelParameters": [],
+    "specificationVersion": 5,
+    "storagePrecision": "Float32",
+    "computePrecision": "Float16",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "11.0",
+      "tvOS": "14.0",
+      "visionOS": "1.0",
+      "watchOS": "7.0",
+      "iOS": "14.0",
+      "macCatalyst": "14.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "7 × 1...",
+        "shapeRange": "[[7, 7], [1, -1]]",
+        "formattedType": "MultiArray (Float32 7 × 1)",
+        "type": "MultiArray",
+        "shape": "[7, 1]",
+        "name": "X",
+        "shortDescription": ""
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1)",
+        "shortDescription": "",
+        "shape": "[1]",
+        "name": "domain_type",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "5.2.0",
+      "com.github.apple.coremltools.source": "torch==1.11.0",
+      "tag": "mldb-rdg2nd8g5z",
+      "mldb_token": "mldb-rdg2nd8g5z"
+    },
+    "generatedClassName": "PhoneAppPredictor",
+    "neuralNetworkLayerTypeHistogram": {
+      "ConcatND": 1,
+      "Multiply": 11,
+      "ReduceMax": 3,
+      "ReduceSum": 6,
+      "LessEqual": 1,
+      "Floor": 2,
+      "Ceil": 2,
+      "Copy": 1,
+      "UnaryLog": 1,
+      "UnaryInverse": 1,
+      "GreaterThan": 6,
+      "GreaterEqual": 5,
+      "SliceStatic": 16,
+      "Add": 10,
+      "WhereBroadcastable": 21,
+      "Unary": 1,
+      "LoadConstantND": 32,
+      "ExpandDims": 3,
+      "NotEqual": 1,
+      "ArgSort": 2,
+      "Equal": 8,
+      "DivideBroadcastable": 1,
+      "LessThan": 2,
+      "MultiplyBroadcastable": 2,
+      "ActivationLinear": 1,
+      "UnaryAbs": 1,
+      "UnaryExp": 1
+    },
+    "method": "predict"
+  }
+]

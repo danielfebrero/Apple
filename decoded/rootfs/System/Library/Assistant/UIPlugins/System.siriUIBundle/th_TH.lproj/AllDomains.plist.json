@@ -1,0 +1,144 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "โทรศัพท์",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "โทรหานวพล",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime หาชูกิจ",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "แอพ",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "เปิดรูปภาพ",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "ข้อความ",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "บอกนิติว่าจะถึงแล้ว",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "ปฏิทิน",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "สร้างนัดหมาย 9 โมง",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "รูปภาพ",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "โชว์ภาพของฉันที่ถ่ายเมื่อวาน",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "แผนที่",
+      "DomainAlternateDisplayName": "แผนที่",
+      "TagPhrase": "หาเส้นทางไปบ้าน",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "ทวีตตำแหน่งที่ตั้งของฉัน…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "โพสต์ในเว่ยป๋อ…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "โพสต์ Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "เพลง",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "เล่นเพลง สวัสดีปีใหม่",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "เตือนความจำ",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "เตือนฉันให้โทรหาแม่",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "เมล",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "ส่งอีเมลเรื่องการไปเที่ยวให้ไอริณ",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "สภาพอากาศ",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "อากาศวันนี้เป็นยังไง",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "หุ้น",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "ราคาของหุ้น Apple ตอนนี้เท่าไหร่",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "นาฬิกา",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "ตั้งปลุกฉันพรุ่งนี้ตอน 7.00 น.",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "รายชื่อ",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "ขอที่อยู่ของอภิษฐา",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "โน้ต",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "จดโน้ตว่าฉันจ่ายค่าข้าวไป 90 บาท",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "การตั้งค่า",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "เปิดโหมดเครื่องบิน",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "การค้นหาในเว็บ",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "ค้นหาเรื่องหมีขั้วโลกบนเว็บ",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Q&A",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "รถลากคืออะไร",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "พ็อดคาสท์",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "เล่นพ็อดคาสท์",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

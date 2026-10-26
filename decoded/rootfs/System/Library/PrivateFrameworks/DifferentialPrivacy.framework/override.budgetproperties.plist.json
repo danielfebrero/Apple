@@ -1,0 +1,48 @@
+{
+  "PFL.Budget.PFLCarryTraining.PlaygroundPlugin:Metadata": {
+    "RefillAmount": 1,
+    "RefillInterval": 3600,
+    "SessionAmount": 1,
+    "SessionSeconds": 86400
+  },
+  "PFL.Budget.PFLCarryTraining.PlaygroundPlugin:Metrics": {
+    "RefillAmount": 1,
+    "RefillInterval": 3600,
+    "SessionAmount": 1,
+    "SessionSeconds": 86400
+  },
+  "PFL.Budget.PFLCarryTraining.PlaygroundPlugin:Results": {
+    "RefillAmount": 1,
+    "RefillInterval": 3600,
+    "SessionAmount": 1,
+    "SessionChunks": 2,
+    "SessionSeconds": 86400
+  },
+  "com.apple.AppLaunch": {
+    "RefillAmount": 20,
+    "RefillInterval": 3600.0,
+    "SessionAmount": 10,
+    "SessionChunks": 2,
+    "SessionSeconds": 86400.0
+  },
+  "com.apple.differentialprivacy.14DaysTestBudget": {
+    "RefillAmount": 50,
+    "RefillInterval": 3600.0,
+    "SessionAmount": 1,
+    "SessionSeconds": 1209600.0
+  },
+  "com.apple.differentialprivacy.testBudget": {
+    "RefillAmount": 50,
+    "RefillInterval": 3600,
+    "SessionAmount": 10,
+    "SessionChunks": 60,
+    "SessionSeconds": 86400
+  },
+  "fedstats.com.apple.insights.photos-video-assets-stats": {
+    "RefillAmount": 20,
+    "RefillInterval": 3600.0,
+    "SessionAmount": 3,
+    "SessionChunks": 1,
+    "SessionSeconds": 86400.0
+  }
+}

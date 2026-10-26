@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en" id="CAMDisambiguate#AppShortcutCollisionFirstRunHomePod">
+    <conditions>
+        <condition name="hasSecondPhrase" note="True if secondPhrase exists">
+            <expression name="secondPhrase" op="nonempty"/>
+        </condition>
+    </conditions>
+    <phrases>
+        <first phrase="displaySecondPhrase">
+            <text condition="hasSecondPhrase"> and "<var name="secondPhrase"/>".</text>
+            <text>.</text>
+        </first>
+    </phrases>
+   <all>
+       <dialog>To do this, you need to turn on <var name="app"/> shortcuts with Siri, which lets you say phrases like "<var name="firstPhrase"/>"<phrase name="displaySecondPhrase"/></dialog>
+       <dialog>Do you want to turn on <var name="app"/> shortcuts now?</dialog>
+   </all>
+</cat>
+

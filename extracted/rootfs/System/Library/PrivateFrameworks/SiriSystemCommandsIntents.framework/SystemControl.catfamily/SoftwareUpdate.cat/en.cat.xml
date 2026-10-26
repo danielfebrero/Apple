@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:2.4" id="SystemControl#SoftwareUpdate" locale="en">
+  <first>
+    <dialog id="Item_Watch" condition="deviceState.isWatch">You can do that in the Watch app on your iPhone.</dialog>
+    <dialog id="Item">You can do that in Software Update Settings.</dialog>
+  </first>
+</cat>

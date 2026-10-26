@@ -1,0 +1,36 @@
+{
+  "CFBundleName": "HomeKit Assistant Plugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "AssistantDomains": {
+    "com.apple.ace.homeautomation": {
+      "Command": "HMAssistantCommand"
+    }
+  },
+  "DTSDKBuild": "24B109",
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleVersion": "1520.2.7.1.3",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "HMAssistant",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.homekit.assistant",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "CFBundleSignature": "????",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "24B109",
+  "AssistantSyncAnchorKeys": {
+    "com.apple.homekit.name": "HMAssistantSyncHome"
+  }
+}

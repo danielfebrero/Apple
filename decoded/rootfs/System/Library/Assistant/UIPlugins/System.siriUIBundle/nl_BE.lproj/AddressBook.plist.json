@@ -1,0 +1,56 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Wat is het adres van Evelien?",
+            "Wat is het telefoonnummer van Emma Janssens?",
+            "Wanneer is de verjaardag van mijn vrouw?",
+            "Toon het e-mailadres van Evelien",
+            "Wat is het zakelijke adres van mijn broer?"
+          ]
+        }
+      ],
+      "SectionName": "Vragen over contacten"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Laat Bram Jacobs zien",
+            "Zoek mensen met de naam Mertens"
+          ]
+        }
+      ],
+      "SectionName": "Contacten zoeken"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Mijn moeder is Emma Janssens",
+            "Jonas Wouters is mijn broer"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Bel mijn broer op kantoor"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime mijn broer op kantoor"
+          ]
+        }
+      ],
+      "SectionName": "Relaties"
+    }
+  ]
+}

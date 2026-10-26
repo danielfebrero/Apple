@@ -1,0 +1,56 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Email Renuka about the trip",
+            "Email Ibrahim about the change in plans",
+            "New email to Renuka Raju",
+            "Mail Dad about this month's rent",
+            "Email Dr Lee and say I got the forms, thanks",
+            "Mail Shanti and Ibrahim about the party and say I had a great time"
+          ]
+        }
+      ],
+      "SectionName": "Sending email"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Check email",
+            "Any new email from Ahmad today?",
+            "Show new mail about the lease",
+            "Show the email from Renuka yesterday"
+          ]
+        }
+      ],
+      "SectionName": "Checking email"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Reply dear Ling Ling sorry about the late payment"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Call him at work"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": []
+        }
+      ],
+      "SectionName": "Responding to email"
+    }
+  ]
+}

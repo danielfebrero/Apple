@@ -1,0 +1,1 @@
+"[header]\nlanguage = enu\ntype = initialism\ncharset = utf-8\n\n[data]\n\n# replace all letter x with x_\n/([a-zA-Z])/   -->   \"$1_\"\n"

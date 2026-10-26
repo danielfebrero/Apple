@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "太郎君にすぐ行きますと伝えて",
+            "田中一郎さんにメッセージを送る",
+            "一郎に明日はどうですかという\nメッセージを送信",
+            "真由美に最高のコンサートでした\nと伝える",
+            "一郎の携帯に遅れますという\nメッセージを送って",
+            "03-1234-1234にメッセージを送信",
+            "鈴木と高橋に今どこにいると\nメッセージ"
+          ]
+        }
+      ],
+      "SectionName": "メッセージを送信する"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "新着メッセージを読み上げて",
+            "もう一度読んで"
+          ]
+        }
+      ],
+      "SectionName": "メッセージを読み上げる"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "素敵なお知らせありがとうと返信",
+            "その人に10分で着きますって\n伝えて"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "この人に電話して"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "その人にFaceTime"
+          ]
+        }
+      ],
+      "SectionName": "メッセージに返信する"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "田中さんからの最新のメッセージを読み上げて"
+          ]
+        }
+      ],
+      "SectionName": "メッセージを検索する"
+    }
+  ]
+}

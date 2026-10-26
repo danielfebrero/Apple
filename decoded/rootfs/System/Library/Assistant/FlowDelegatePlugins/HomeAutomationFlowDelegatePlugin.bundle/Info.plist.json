@@ -1,0 +1,174 @@
+{
+  "CFBundleName": "HomeAutomationFlowDelegatePlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedIntents": [
+    "sirikit.intent.home.ControlHomeIntent",
+    "sirikit.intent.home.ShowHomeIntent",
+    "sirikit.intent.home.DiscoverHomeIntent"
+  ],
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "HomeAutomationFlowDelegatePlugin.HomeAutomationFlowDelegatePlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "HomeAutomationFlowDelegatePlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.HomeAutomationFlowDelegatePlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "homeAutomation"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "common_Setting",
+      "verb": "enable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "disable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "toggle",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "set",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "setNumber",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "increaseBy",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "decreaseBy",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "setMeasurement",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "increaseByMeasurement",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "decreaseByMeasurement",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "checkExistence",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "checkExistence",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "getLocation",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "request",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "checkIdentity",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "pause",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "resume",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.directInvocation.homeAutomation.allEverywhereSelection",
+    "com.apple.siri.directInvocation.homeAutomation.disambiguationSelection",
+    "com.apple.siri.directInvocation.homeAutomation.undo",
+    "com.apple.siri.directInvocation.homeAutomation.buttonPress",
+    "com.apple.siri.directInvocation.homeAutomation.async",
+    "com.apple.siri.directInvocation.homeAutomation.roomSynonymRequest",
+    "com.apple.siri.directInvocation.homeAutomation.handoffToCompanion",
+    "com.apple.siri.directInvocation.homeAutomation.toggleCompletionState"
+  ]
+}

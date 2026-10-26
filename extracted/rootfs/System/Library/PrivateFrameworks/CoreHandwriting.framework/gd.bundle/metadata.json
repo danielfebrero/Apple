@@ -1,0 +1,67 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "bolt-taskid: axppu6b896 iteration: 1409290",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 2)",
+        "shortDescription" : "",
+        "shape" : "[1, 2]",
+        "name" : "softmax_output",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float32",
+    "modelParameters" : [
+
+    ],
+    "author" : "handwriting-dev",
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 48 × 48)",
+        "shortDescription" : "",
+        "shape" : "[1, 1, 48, 48]",
+        "name" : "imgData",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "7.1.1",
+      "com.github.apple.coremltools.source" : "torch==2.0.1",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "generatedClassName" : "gd",
+    "neuralNetworkLayerTypeHistogram" : {
+      "SoftmaxND" : 1,
+      "Convolution" : 2,
+      "PoolingINVALID" : 2,
+      "ReshapeStatic" : 1,
+      "ActivationReLU" : 4,
+      "InnerProduct" : 3
+    },
+    "method" : "predict"
+  }
+]

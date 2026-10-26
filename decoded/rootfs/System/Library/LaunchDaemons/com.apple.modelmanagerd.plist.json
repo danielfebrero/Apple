@@ -1,0 +1,30 @@
+{
+  "EnablePressuredExit": {
+    "#Then": true,
+    "#IfFeatureFlagEnabled": "ModelManager/idle_exit",
+    "#Else": false
+  },
+  "Program": "/usr/libexec/modelmanagerd",
+  "ThrottleInterval": 1,
+  "ProcessType": "Adaptive",
+  "RemoteServices": {
+    "#Then": {
+      "com.apple.modelmanager.remote": {
+        "ServiceProperties": {
+          "UsesRemoteXPC": true
+        },
+        "RequireEntitlement": "AppleInternal"
+      }
+    },
+    "#IfFeatureFlagEnabled": "ModelManager/virtualization"
+  },
+  "MachServices": {
+    "com.apple.modelmanager": true
+  },
+  "DaemonNotifications": {
+    "com.apple.notification.modelmanager": true
+  },
+  "UserName": "mobile",
+  "_Conclave": "com.apple.modelmanagerd.daemonnotification",
+  "Label": "com.apple.modelmanagerd"
+}

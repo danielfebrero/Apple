@@ -1,0 +1,22 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "messagingInteraction": {}
+    }
+  },
+  "name": "messagingInteractionFeature",
+  "type": "signal",
+  "update": {
+    "viewListeners": [
+      {
+        "name": "handleMap",
+        "requiredSource": true,
+        "schedule": "none"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "IgnoresDeactivateOnNetworkScanServiceMask": 131072,
+  "ShowVoNRSwitch": true,
+  "Show5GSwitch": true,
+  "Enable5GStandaloneByDefault": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "LTE": true,
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "Signaling": {
+      "ResetSocketWhenNetworkChange": false
+    }
+  },
+  "ShowHighDataModeSwitch": true,
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4236289
+  },
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "type-mask": 1081399,
+      "password": "",
+      "tech-type-mask": 1081351,
+      "AllowNoDNS": 1,
+      "AllowedProtocolMaskInRoaming": 1,
+      "username": "",
+      "apn": "sl2sfr",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GStandaloneSwitchOnlyWhenEntitled": true
+}

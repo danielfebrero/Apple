@@ -1,0 +1,509 @@
+{
+  "AssetSetName": "com.apple.siri.understanding",
+  "Assets": [
+    {
+      "AssetName": "com.apple.siri.understanding.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.understanding.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    },
+    {
+      "AssetName": "com.apple.siri.cam.auto_confirm.auto_send",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.cam.auto_confirm.auto_send.{cam.language}",
+          "RequiredUsageTypes": [
+            "cam.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.cam.auto_confirm.auto_send_private",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.cam.auto_confirm.auto_send_private.{cam.language}",
+          "RequiredUsageTypes": [
+            "cam.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.asr.assistant",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.asr.assistant.{asr.language}",
+          "RequiredUsageTypes": [
+            "asr.language"
+          ]
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    },
+    {
+      "AssetName": "com.apple.siri.asr.geolm",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.asr.geolm.{asr.geo}",
+          "RequiredUsageTypes": [
+            "asr.geo"
+          ]
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    },
+    {
+      "AssetName": "com.apple.siri.asr.geolm.regionMapping",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.asr.geolm.regionMapping.{asr.language}",
+          "RequiredUsageTypes": [
+            "asr.language"
+          ],
+          "UsageValues": {
+            "asr.language": [
+              "de_DE",
+              "en_AU",
+              "en_CA",
+              "en_GB",
+              "en_IN",
+              "en_US",
+              "es_ES",
+              "es_MX",
+              "es_US",
+              "fr_FR",
+              "ja_JP",
+              "zh_CN",
+              "zh_HK"
+            ]
+          }
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    },
+    {
+      "AssetName": "com.apple.siri.sp.invocation",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.sp.invocation.{attention.language}",
+          "RequiredUsageTypes": [
+            "attention.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.sp.mitigation",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.sp.mitigation.{attention.language}",
+          "RequiredUsageTypes": [
+            "attention.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.morphun",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.morphun.{morphun.language}",
+          "RequiredUsageTypes": [
+            "morphun.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.cati",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.cati.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.data_detectors",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.data_detectors.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.lvc",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.lvc.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ],
+          "UsageValues": {
+            "nl.language": [
+              "en_AU",
+              "en_CA",
+              "en_GB",
+              "en_IE",
+              "en_IN",
+              "en_NZ",
+              "en_US",
+              "en_ZA"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.marrs.ccqr",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.marrs.ccqr.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.marrs.md",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.marrs.md.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.marrs.mr",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.marrs.mr.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.marrs.rd",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.marrs.rd.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.nlv4",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.nlv4.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.owl",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.owl.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.psc",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.psc.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.snlc",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.snlc.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.uaap.mds",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.uaap.mds.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.dictation"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.voc",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.voc.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.ssu.datasets",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.ssu.datasets.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        },
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.ssu.datasets.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.ssu"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.nl.ssu.encoder",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.ssu.encoder.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.assistant"
+          ]
+        },
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.nl.ssu.encoder.{nl.language}",
+          "RequiredUsageTypes": [
+            "nl.language",
+            "nl.ssu"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.sp.adblocker",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.siri.sp.adblocker.generic",
+          "RequiredUsageTypes": [
+            "attention.language"
+          ]
+        }
+      ]
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Siri.Understanding",
+  "ExperimentalAssets": {
+    "TrialFactor": "ExperimentAssetsDirectory",
+    "TrialNamespace": "UAF_AB_UNDERSTANDING",
+    "TrialProject": "UAF_AB"
+  },
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.siri.understanding.uaf.metadata",
+  "UsageTypes": [
+    "asr.language",
+    "asr.geo",
+    "attention.language",
+    "cam.language",
+    "nl.assistant",
+    "nl.dictation",
+    "nl.language",
+    "nl.ssu",
+    "morphun.language"
+  ],
+  "UsageValues": {
+    "asr.language": [
+      "ar_SA",
+      "ca_ES",
+      "cs_CZ",
+      "da_DK",
+      "de_AT",
+      "de_CH",
+      "de_DE",
+      "el_GR",
+      "en_AU",
+      "en_CA",
+      "en_GB",
+      "en_IE",
+      "en_IN",
+      "en_NZ",
+      "en_SG",
+      "en_US",
+      "en_ZA",
+      "es_CL",
+      "es_ES",
+      "es_MX",
+      "es_US",
+      "fi_FI",
+      "fr_BE",
+      "fr_CA",
+      "fr_CH",
+      "fr_FR",
+      "he_IL",
+      "hi_IN",
+      "hr_HR",
+      "hu_HU",
+      "id_ID",
+      "it_CH",
+      "it_IT",
+      "ja_JP",
+      "ko_KR",
+      "ms_MY",
+      "nb_NO",
+      "nl_BE",
+      "nl_NL",
+      "pl_PL",
+      "pt_BR",
+      "pt_PT",
+      "ro_RO",
+      "ru_RU",
+      "sk_SK",
+      "sv_SE",
+      "th_TH",
+      "tr_TR",
+      "uk_UA",
+      "vi_VN",
+      "yue_CN",
+      "zh_CN",
+      "zh_HK",
+      "zh_TW"
+    ],
+    "morphun.language": [
+      "ar",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fi",
+      "fr",
+      "he",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "nb",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "yue.Hans",
+      "yue.Hant",
+      "zh.Hans",
+      "zh.Hant"
+    ],
+    "nl.language": [
+      "ar_SA",
+      "ca_ES",
+      "cs_CZ",
+      "da_DK",
+      "de_AT",
+      "de_CH",
+      "de_DE",
+      "el_GR",
+      "en_AU",
+      "en_CA",
+      "en_GB",
+      "en_IE",
+      "en_IN",
+      "en_NZ",
+      "en_SG",
+      "en_US",
+      "en_ZA",
+      "es_CL",
+      "es_ES",
+      "es_MX",
+      "es_US",
+      "fi_FI",
+      "fr_BE",
+      "fr_CA",
+      "fr_CH",
+      "fr_FR",
+      "he_IL",
+      "hi_IN",
+      "hr_HR",
+      "hu_HU",
+      "id_ID",
+      "it_CH",
+      "it_IT",
+      "ja_JP",
+      "ko_KR",
+      "ms_MY",
+      "nb_NO",
+      "nl_BE",
+      "nl_NL",
+      "pl_PL",
+      "pt_BR",
+      "pt_PT",
+      "ro_RO",
+      "ru_RU",
+      "sk_SK",
+      "sv_SE",
+      "th_TH",
+      "tr_TR",
+      "uk_UA",
+      "vi_VN",
+      "yue_CN",
+      "zh_CN",
+      "zh_HK",
+      "zh_TW"
+    ]
+  }
+}

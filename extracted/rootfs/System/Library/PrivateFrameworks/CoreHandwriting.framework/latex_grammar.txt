@@ -1,0 +1,454 @@
+// Number have terminal rules created ad hoc
+
+// Common operators
+Expression -> Expression OpExp
+Expression -> Number OpExp
+Expression -> Variable OpExp
+OpExp -> Op Expression
+OpExp -> Op Number
+OpExp -> Op Variable
+Op -> +
+Op -> -
+Op -> \times
+Op -> \cdot
+Op -> \ast
+Op -> /
+Op -> \div
+Op -> :
+
+// Closed expressions
+ClosedExp -> Sqrt Arg
+ClosedExp -> Frac TwoArgs
+ClosedExp -> Number ScriptArg
+ClosedExp -> Variable ScriptArg
+ClosedExp -> LPar ExpRPar
+ClosedExp -> LeftPar ExpRightPar
+
+// Multiplication without operator
+Expression -> ClosedExp ClosedExp
+Expression -> Number ClosedExp
+Expression -> Variable ClosedExp %| 0.1
+Expression -> ClosedExp Number %| 0.1
+Expression -> ClosedExp Variable %| 0.1
+Expression -> Number Variable
+Expression -> Variable Number %| 0.1
+Expression -> Variable Variable %| 0.1
+Expression -> Variable VarVar %| 0.1
+VarVar -> Variable VarVar %| 0.1
+VarVar -> Variable Variable %| 0.1
+
+// Variables
+// Latin lowercase
+Variable -> a
+Variable -> b
+Variable -> c
+Variable -> d
+Variable -> e
+Variable -> f
+Variable -> g
+Variable -> h
+Variable -> i
+Variable -> j
+Variable -> k
+Variable -> l
+Variable -> m
+Variable -> n
+Variable -> o
+Variable -> p
+Variable -> q
+Variable -> r
+Variable -> s
+Variable -> t
+Variable -> u
+Variable -> v
+Variable -> w
+Variable -> x
+Variable -> y
+Variable -> z
+// Latin uppercase
+Variable -> A
+Variable -> B
+Variable -> C
+Variable -> D
+Variable -> E
+Variable -> F
+Variable -> G
+Variable -> H
+Variable -> I
+Variable -> J
+Variable -> K
+Variable -> L
+Variable -> M
+Variable -> N
+Variable -> O
+Variable -> P
+Variable -> Q
+Variable -> R
+Variable -> S
+Variable -> T
+Variable -> U
+Variable -> V
+Variable -> W
+Variable -> X
+Variable -> Y
+Variable -> Z
+// Greek lowercase
+Variable -> \alpha
+Variable -> \beta
+Variable -> \gamma
+Variable -> \delta
+Variable -> \epsilon
+Variable -> \zeta
+Variable -> \eta
+Variable -> \theta
+Variable -> \kappa
+Variable -> \lambda
+Variable -> \mu
+Variable -> \nu
+Variable -> \xi
+Variable -> \pi
+Variable -> \rho
+Variable -> \sigma
+Variable -> \tau
+Variable -> \phi
+Variable -> \chi
+Variable -> \psi
+Variable -> \omega
+// Greek uppercase
+Variable -> \Gamma
+Variable -> \Delta
+Variable -> \Theta
+Variable -> \Lambda
+Variable -> \Xi
+Variable -> \Pi
+Variable -> \Sigma
+Variable -> \Phi
+Variable -> \Psi
+Variable -> \Omega
+// Other
+Variable -> \partial
+Variable -> \varepsilon
+Variable -> \varphi
+Variable -> \nabla
+Variable -> \hbar
+Variable -> \square
+// Constants
+// TODO: Maybe they should be seprated from variables
+Variable -> \ell
+Variable -> \infty
+Variable -> \emptyset
+
+// Arguments
+Arg -> LArgCurly ExpRArgCurly
+ExpRArgCurly -> Expression RArgCurly
+ExpRArgCurly -> Number RArgCurly
+ExpRArgCurly -> Variable RArgCurly
+LArgCurly -> {
+RArgCurly -> }
+
+// Functions
+// TODO: These are actually unary operators, maybe they don't need special non-terminals
+Expression -> Sqrt Arg
+Sqrt -> \sqrt
+// TODO: Support [] argument
+Expression -> Sin Arg
+Expression -> Sin ClosedExp
+Expression -> Sin Number
+Expression -> Sin Variable
+Sin -> \sin
+Expression -> Cos Arg
+Expression -> Cos ClosedExp
+Expression -> Cos Number
+Expression -> Cos Variable
+Cos -> \cos
+Expression -> Tan Arg
+Expression -> Tan ClosedExp
+Expression -> Tan Number
+Expression -> Tan Variable
+Tan -> \tan
+Expression -> Arctan Arg
+Expression -> Arctan ClosedExp
+Expression -> Arctan Number
+Expression -> Arctan Variable
+Arctan -> \arctan
+
+// Factorial
+Expression -> CloseExp Fact
+Expression -> Number Fact
+Expression -> Variable Fact
+Fact -> !
+
+// Fraction
+Expression -> Frac TwoArgs
+TwoArgs -> Arg Arg
+Frac -> \frac
+
+// Big operators
+Expression -> BigOp Arg
+Expression -> BigOp ClosedExp
+Expression -> BigOp Number
+Expression -> BigOp Variable
+Expression -> BigOpArgs Arg
+Expression -> BigOpArgs ClosedExp
+Expression -> BigOpArgs Number
+Expression -> BigOpArgs Variable
+BigOpArgs -> BigOp ScriptArgs
+BigOpArgs -> BigOp ScriptArg
+ScriptArgs -> ScriptArg ScriptArg
+BigOp -> \sum
+BigOp -> \prod
+BigOp -> \int
+BigOp -> \iint
+BigOp -> \iiint
+BigOp -> \oint
+
+// Parentheses
+Expression -> LPar ExpRPar
+ExpRPar -> Expression RPar
+ExpRPar -> Number RPar
+ExpRPar -> Variable RPar
+LPar -> (
+RPar -> )
+Expression -> LeftPar ExpRightPar
+ExpRightPar -> Expression RightPar
+ExpRightPar -> Number RightPar
+ExpRightPar -> Variable RightPar
+LeftPar -> \left(
+RightPar -> \right)
+
+// Special big parentheses (enforce matching)
+Expression -> LeftCurly ExpRightCurly
+ExpRightCurly -> Expression RightCurly
+ExpRightCurly -> Number RightCurly
+ExpRightCurly -> Variable RightCurly
+LeftCurly -> \left\{
+RightCurly -> \right\}
+Expression -> LeftBrack ExpRightBrack
+ExpRightBrack -> Expression RightBrack
+ExpRightBrack -> Number RightBrack
+ExpRightBrack -> Variable RightBrack
+LeftBrack -> \left[
+RightBrack -> \right]
+Expression -> LeftAbs ExpRightAbs
+ExpRightAbs -> Expression RightAbs
+ExpRightAbs -> Number RightAbs
+ExpRightAbs -> Variable RightAbs
+LeftAbs -> \left|
+LeftAbs -> |
+RightAbs -> \right|
+RightAbs -> |
+Expression -> LeftAngle ExpRightAngle
+ExpRightAngle -> Expression RightAngle
+ExpRightAngle -> Number RightAngle
+ExpRightAngle -> Variable RightAngle
+LeftAngle -> \left\langle
+RightAngle -> \right\rangle
+Expression -> LeftFloor ExpRightFloor
+ExpRightFloor -> Expression RightFloor
+ExpRightFloor -> Number RightFloor
+ExpRightFloor -> Variable RightFloor
+LeftFloor -> \left\lfloor
+RightFloor -> \right\rfloor
+Expression -> LeftCeil ExpRightCeil
+ExpRightCeil -> Expression RightCeil
+ExpRightCeil -> Number RightCeil
+ExpRightCeil -> Variable RightCeil
+LeftCeil -> \left\lceil
+RightCeil -> \right\rceil
+
+// Special small parentheses (enforce matching)
+// TODO: Add support for not matching parentheses (incomplete expression)
+Expression -> LCurly ExpRCurly
+ExpRCurly -> Expression RCurly
+ExpRCurly -> Number RCurly
+ExpRCurly -> Variable RCurly
+LCurly -> \{
+RCurly -> \}
+Expression -> LBrack ExpRBrack
+ExpRBrack -> Expression RBrack
+ExpRBrack -> Number RBrack
+ExpRBrack -> Variable RBrack
+LBrack -> \lbrack
+RBrack -> \rbrack
+Expression -> LAbs ExpRAbs
+ExpRAbs -> Expression RAbs
+ExpRAbs -> Number RAbs
+ExpRAbs -> Variable RAbs
+LAbs -> ∣
+RAbs -> ∣
+Expression -> LAngle ExpRAngle
+ExpRAngle -> Expression RAngle
+ExpRAngle -> Number RAngle
+ExpRAngle -> Variable RAngle
+LAngle -> \langle
+RAngle -> \rangle
+Expression -> LFloor ExpRFloor
+ExpRFloor -> Expression RFloor
+ExpRFloor -> Number RFloor
+ExpRFloor -> Variable RFloor
+LFloor -> \lfloor
+RFloor -> \rfloor
+Expression -> LCeil ExpRCeil
+ExpRCeil -> Expression RCeil
+ExpRCeil -> Number RCeil
+ExpRCeil -> Variable RCeil
+LCeil -> \lceil
+RCeil -> \rceil
+
+// Scripts
+Expression -> Expression ScriptArg
+Expression -> Number ScriptArg
+Expression -> Variable ScriptArg
+ScriptArg -> Sub Arg
+ScriptArg -> Sup Arg
+ScriptArg -> Sup Design
+ScriptArg -> Sup DoubleDesign
+DoubleDesign -> Design Design
+Sub -> _
+Sup -> ^
+Design -> \prime
+Design -> \circ
+Design -> \ast
+
+// Equal sign
+Expression -> Expression Eq
+Expression -> Number Eq
+Expression -> Variable Eq
+Expression -> Expression EqExp
+Expression -> Number EqExp
+Expression -> Variable EqExp
+EqExp -> Eq Expression
+EqExp -> Eq Number
+EqExp -> Eq Variable
+Eq -> =
+
+// Assign
+Expression -> Expression ColEqExp
+Expression -> Number ColEqExp
+Expression -> Variable ColEqExp
+ColEqExp -> Col EqExp
+ColEqExp -> Col EqExp
+ColEqExp -> Col EqExp
+Col -> :
+
+// Decorators
+Expression -> Decor Arg
+Decor -> \dot
+Decor -> \ddot
+Decor -> \widetilde
+Decor -> \overline
+Decor -> \widehat
+Decor -> \vec
+
+// Unary operators
+Expression -> UnOp ClosedExp
+Expression -> UnOp Number
+Expression -> UnOp Variable
+UnOp -> -
+UnOp -> \forall
+UnOp -> \exists
+UnOp -> \nexists
+UnOp -> \neg
+UnOp -> !
+UnOp -> ?
+UnOp -> \pm
+UnOp -> \cot
+UnOp -> \arcsin
+UnOp -> \arccos
+UnOp -> \sinh
+UnOp -> \cosh
+UnOp -> \tanh
+UnOp -> \coth
+UnOp -> \log
+UnOp -> \ln
+UnOp -> \lg
+UnOp -> \exp
+UnOp -> \det
+UnOp -> \deg
+UnOp -> \gcd
+UnOp -> \sec
+UnOp -> \ker
+UnOp -> \csc
+UnOp -> \hom
+
+// Unary operators with args
+Expression -> ArgUnOpArg ClosedExp
+Expression -> ArgUnOpArg Number
+Expression -> ArgUnOpArg Variable
+ArgUnOpArg -> ArgUnOp SubArg
+SubArg -> Sub Arg
+ArgUnOp -> \lim
+ArgUnOp -> \limsup
+ArgUnOp -> \liminf
+ArgUnOp -> \sup
+ArgUnOp -> \inf
+
+// Binary operators
+Expression -> Expression BinOpExp
+Expression -> Number BinOpExp
+Expression -> Variable BinOpExp
+BinOpExp -> BinOp Expression
+BinOpExp -> BinOp Number
+BinOpExp -> BinOp Variable
+BinOp -> \cap
+BinOp -> \cup
+BinOp -> \square
+BinOp -> \circ
+BinOp -> \propto
+BinOp -> :
+BinOp -> <
+BinOp -> >
+BinOp -> \leq
+BinOp -> \geq
+BinOp -> \neq
+BinOp -> \approx
+BinOp -> \equiv
+BinOp -> \subseteq
+BinOp -> /
+BinOp -> |
+BinOp -> \simeq
+BinOp -> \sim
+BinOp -> \wedge
+BinOp -> \vee
+BinOp -> \otimes
+BinOp -> \oplus
+BinOp -> \ominus
+BinOp -> \oslash
+BinOp -> \bot
+BinOp -> \setminus
+BinOp -> \in
+BinOp -> \notin
+BinOp -> \ni
+BinOp -> \not\ni
+BinOp -> \subset
+BinOp -> \supset
+BinOp -> \supseteq
+BinOp -> \nsubseteq
+BinOp -> \nsupseteq
+BinOp -> \not\supset
+BinOp -> \not\subset
+BinOp -> \rightarrow
+BinOp -> \leftarrow
+BinOp -> \Rightarrow
+BinOp -> \Leftrightarrow
+BinOp -> \leftrightarrow
+BinOp -> \mapsto
+
+// Vertical math
+Expression -> OpenVerticalMath EntriesHLineCloseVerticalMath
+EntriesHLineCloseVerticalMath -> EntriesHLine CloseVerticalMath
+EntriesHLine -> Entries HLine
+Entries -> Entry Entry
+Entries -> Entry Entries
+Entry -> Op AndNumberLinebreak
+Entry -> And NumberLinebreak
+AndNumberLinebreak -> And NumberLinebreak
+NumberLinebreak -> Number Linebreak
+
+OpenVerticalMath -> \begin{array}{lr}
+CloseVerticalMath -> \end{array}
+And -> &
+Linebreak -> \\
+HLine -> \hline
+
+// TODO: Add support for expressions assembled from individual latin characters

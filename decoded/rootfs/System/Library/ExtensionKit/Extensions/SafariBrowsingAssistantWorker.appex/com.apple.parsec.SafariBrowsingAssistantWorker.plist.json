@@ -1,0 +1,11 @@
+{
+  "bundleIdentifier": "com.apple.parsec.SafariBrowsingAssistantWorker",
+  "name": "com.apple.parsec.SafariBrowsingAssistantWorker",
+  "taskRequest": {
+    "RequiresExternalPower": true,
+    "RequiresInexpensiveNetworkConnectivity": true,
+    "repeatingTask": {
+      "interval": 86400
+    }
+  }
+}

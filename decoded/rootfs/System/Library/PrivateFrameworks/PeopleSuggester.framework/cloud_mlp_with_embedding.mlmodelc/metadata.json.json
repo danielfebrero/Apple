@@ -1,0 +1,80 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "Embedding extraction for contact based on interaction history",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double 1)",
+        "shortDescription": "",
+        "shape": "[1]",
+        "name": "output1",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 128)",
+        "shortDescription": "",
+        "shape": "[128]",
+        "name": "last_layer_before_activation",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 128)",
+        "shortDescription": "",
+        "shape": "[128]",
+        "name": "last_layer_after_activation",
+        "type": "MultiArray"
+      }
+    ],
+    "storagePrecision": "Float32",
+    "modelParameters": [],
+    "author": "Yuanlong Chen",
+    "specificationVersion": 1,
+    "license": "BSD",
+    "computePrecision": "Float16",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double 62)",
+        "shortDescription": "",
+        "shape": "[62]",
+        "name": "input1",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-ondg4x4alq"
+    },
+    "generatedClassName": "cloud_mlp_with_embedding",
+    "neuralNetworkLayerTypeHistogram": {
+      "ActivationLinear": 2,
+      "InnerProduct": 3,
+      "ActivationSigmoid": 1,
+      "ActivationReLU": 2
+    },
+    "method": "predict"
+  }
+]

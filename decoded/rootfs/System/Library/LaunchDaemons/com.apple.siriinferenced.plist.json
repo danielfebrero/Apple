@@ -1,0 +1,44 @@
+{
+  "Label": "com.apple.siriinferenced",
+  "EnvironmentVariables": {},
+  "ProcessType": "Adaptive",
+  "MachServices": {
+    "com.apple.siriinferenced.remembers": true,
+    "com.apple.siriinferenced.signals": true,
+    "com.apple.sirisuggestions": true,
+    "com.apple.siriinferenced": true
+  },
+  "EnableTransactions": true,
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/SiriInference.framework/Support/siriinferenced"
+  ],
+  "LaunchEvents": {
+    "com.apple.biome.compute.publisher": {
+      "com.apple.siriinferenced.AppIntent": {
+        "graph": {
+          "streamIdentifier": "AppIntent",
+          "name": "streamPublisher",
+          "streamType": 1,
+          "version": 1
+        },
+        "client": "com.apple.siriinferenced",
+        "identifier": "com.apple.siriinferenced.AppIntent"
+      }
+    },
+    "com.apple.notifyd.matching": {
+      "kAFPreferencesDidChangeDarwinNotification": {
+        "Notification": "kAFPreferencesDidChangeDarwinNotification"
+      }
+    },
+    "com.apple.xpc.activity": {
+      "com.apple.siri.inference.FirstBoot": {
+        "Priority": "Utility",
+        "GracePeriod": 120,
+        "Repeating": false,
+        "Delay": 0
+      }
+    }
+  },
+  "UserName": "mobile",
+  "EnablePressuredExit": true
+}

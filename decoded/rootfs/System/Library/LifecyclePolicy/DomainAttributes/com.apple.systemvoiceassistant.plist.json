@@ -1,0 +1,88 @@
+{
+  "Hosting": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractiveFocal"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 100
+          },
+          {
+            "Class": "RBSBaseMemoryGrant",
+            "Strength": "RBSMemoryLimitStrengthSoft",
+            "Category": "Active"
+          },
+          {
+            "Class": "RBSResistTerminationGrant",
+            "Resistance": "RBSTerminationResistanceInteractive"
+          },
+          {
+            "Class": "RBSInvalidateUnderConditionAttribute",
+            "Condition": "therm",
+            "MinValue": 860
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20604
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "CompoundAll",
+      "Restrictions": [
+        {
+          "Class": "OriginatorEntitlement",
+          "Entitlement": "com.apple.runningboard.systemvoiceassistant"
+        },
+        {
+          "Class": "TargetsSelf"
+        }
+      ]
+    }
+  },
+  "UserInteractiveAngelIPC": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSLaunchGrant"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractiveNonFocal"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 40
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSResistTerminationGrant",
+            "Resistance": "RBSTerminationResistanceNonInteractive"
+          },
+          {
+            "Class": "RBSDefineRelativeStartTimeGrant"
+          },
+          {
+            "Class": "RBSMimicTaskSuspensionAttribute"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20808
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "TargetEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.angeltarget"
+    }
+  }
+}

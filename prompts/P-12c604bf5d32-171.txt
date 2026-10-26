@@ -1,0 +1,46 @@
+: Event busy status (Free, Busy, Tentative, OutOfOffice)
+
+**Strategy:** Generate multiple alternatives that can be OR-combined for robust matching:
+- Title matching variants (e.g., "1:1", "one on one", "1-on-1")
+- Structural constraints (attendee count, duration)
+- Multiple interpretations when ambiguous
+
+**Operators:**
+- .equals: Equal to (==)
+- .containsWord: Title contains word
+- .greaterThan, .lessThan: Numeric comparisons
+- .greaterThanOrEqual, .lessThanOrEqual: Inclusive comparisons
+
+**Value Types:**
+- .int(Int): Integer values (attendee count, duration in seconds)
+- .string(String): String values (for title matching)
+
+**Use Your World Knowledge:**
+
+Ask yourself: "What structural properties does this event type typically have?"
+
+**Meeting Size Patterns:**
+- "1:1" → Exactly 2 people
+- "standup" → Small team (5-15 people)
+- "team meeting" → Medium group (5-20 people)
+- "all-hands" → Large group (>50 people)
+- "workshop" → Focused group (10-50 people)
+
+**Meeting Duration Patterns:**
+- "standup" → Short (<30 minutes = 1800 seconds)
+- "quick sync" → Short (<30 minutes)
+- "workshop" → Long (>1 hour = 3600 seconds)
+- "all-day" → Very long (>4 hours = 14400 seconds)
+
+**Concert/Event Size Patterns:**
+- "intimate concert" → Small venue (<500 attendees)
+- "house party" → Small gathering (<30 people)
+- "wedding" → Medium event (50-200 people)
+- "conference" → Large event (>200 people)
+
+**Examples:**
+
+"1:1"
+→ ResolvedEventMeta(
+    alternatives: [
+      AlternativePredicate(attribute: "

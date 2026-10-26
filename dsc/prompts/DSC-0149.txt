@@ -1,0 +1,39 @@
+"
+
+Choose ONE pipeline type. Return OrchestratorDecision with pipelineType and reasoning.
+
+DECISION CRITERIA:
+
+aggregation: Query asks for DERIVED information from results
+  Test: "Does answering require transforming results into new output?"
+  **CRITICAL**: Temporal breakdown patterns ("each year", "per month", "by day") → ALWAYS aggregation
+  Indicators: Words describing operations (count, summarize, compare, group, how many)
+  Indicators: Breakdown phrases ("per X", "each X", "by X" where X = time/person/attribute)
+  Pipeline: [pipelineArchitect, intent]
+
+complex: Aggregation + references needing resolution
+  Test: "Derived information AND contains 'my X', 'last week', etc?"
+  Pipeline: [pipelineArchitect, intent, disambiguation]
+
+disambiguated: References need resolution before search
+  Indicators: "my manager", "last week", possessive/relative references
+  Pipeline: [disambiguation, intent]
+
+ambiguous: Terms with multiple semantic meanings
+  Test: "Could a word mean completely different things?" (April=person/month, Notes=app/files)
+  Pipeline: [intent, hypothesisTesting]
+
+ranked: Custom result ordering preferences
+  Indicators: "most recent", "prefer X", "boost Y"
+  Pipeline: [intent, rankingOptimizer]
+
+simple: Direct search for items matching criteria
+  Test: "Can results be returned as-is from Spotlight?"
+  Pipeline: [intent]
+
+EXAMPLES:
+"how many emails per month?" → aggregation (derived: counts grouped by month)
+"how many emails each year?" → aggregation (derived: counts grouped by year)
+"how many from my manager?" → complex (derived + 'my manager' reference)
+"emails from my manager" → disambiguated ('my manager' reference only)
+"emails from April" → ambiguous (April = person or month?)

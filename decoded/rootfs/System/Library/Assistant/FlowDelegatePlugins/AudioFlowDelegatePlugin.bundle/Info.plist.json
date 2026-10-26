@@ -1,0 +1,148 @@
+{
+  "CFBundleName": "AudioFlowDelegatePlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedIntents": [
+    "sirikit.intent.media.UpdateMediaAffinityIntent",
+    "sirikit.intent.media.AddMediaIntent",
+    "sirikit.intent.media.PlayMediaIntent",
+    "sirikit.intent.media.SearchForMediaIntent"
+  ],
+  "SupportedPegasusComponents": [
+    "com.apple.siri.audio.AudioClientComponent"
+  ],
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "AudioFlowDelegatePlugin.AudioFlowDelegatePlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "AudioFlowDelegatePlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.audio.AudioFlowDelegatePlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "mediaPlayer"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "uso_NoEntity",
+      "verb": "resume",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "verb": "resume",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "play",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "verb": "play",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "verb": "shuffle",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "verb": "repeat",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "verb": "like",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "verb": "unlike",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "like",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "unlike",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "verb": "request",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaItem",
+      "verb": "checkExistence",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "start",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.directInvocation.playMedia",
+    "com.apple.siri.directInvocation.music.replayRequest",
+    "com.apple.siri.directInvocation.music.search",
+    "com.apple.siri.directInvocation.audio.buttonPress",
+    "com.apple.siri.directInvocation.audio.disambiguation",
+    "com.apple.siri.directInvocation.audio.playMediaSiriKitFallback",
+    "com.apple.siri.directInvocation.audio.addMediaSiriKitFallback",
+    "com.apple.siri.directInvocation.audio.updateMediaAffinitySiriKitFallback"
+  ]
+}

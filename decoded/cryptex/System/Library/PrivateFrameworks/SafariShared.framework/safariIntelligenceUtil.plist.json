@@ -1,0 +1,16 @@
+{
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleIdentifier": "${PRODUCT_BUNDLE_IDENTIFIER}",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleName": "${PRODUCT_NAME}",
+  "CFBundleShortVersionString": "$(SHORT_VERSION_STRING)",
+  "CFBundleVersion": "$(BUNDLE_VERSION)",
+  "NSAppTransportSecurity": {
+    "NSExceptionDomains": {
+      "127.0.0.1": {
+        "NSExceptionAllowsInsecureHTTPLoads": true
+      }
+    }
+  },
+  "com.apple.private.feedback.drafting": "true"
+}

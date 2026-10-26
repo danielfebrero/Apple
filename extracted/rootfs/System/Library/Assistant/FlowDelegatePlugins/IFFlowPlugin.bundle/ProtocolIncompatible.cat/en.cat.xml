@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="IFFlow#ProtocolIncompatible" locale="en" xmlns="urn:apple:names:siri:cat:2.0">
+    <first>
+        <dialog condition="companionNeedsUpdate">
+           Before I can help with that, you need to update the software on <var name="user.givenName"/>'s iPhone. <break time="250ms"/> Open the Settings app, and go to General > Software Update
+        </dialog>
+        <dialog>
+            You’ll need to update the software on this <var name="device.deviceName"/> before I can help with that. You can check for an update in the Settings app.
+        </dialog>
+    </first>
+</cat>

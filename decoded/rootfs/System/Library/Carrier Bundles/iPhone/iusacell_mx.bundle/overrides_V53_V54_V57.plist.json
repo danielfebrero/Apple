@@ -1,0 +1,94 @@
+{
+  "PushSettings": {
+    "CellularPlanTransferTopic": "com.attmx.ent.iphone-transfer"
+  },
+  "CarrierEntitlements": {
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true,
+    "SupportedEntitlements": 9233,
+    "SupportCrossPlatformSIMTransfer": true,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "UpdatePeriod": 24,
+    "SupportedActions": [
+      "TransferSIMService"
+    ]
+  },
+  "DerPriFileVersion": "6.0.161",
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "Show4GSwitchWith5G": false,
+  "MVNOOverrides": {
+    "Configuration_1": {
+      "OverrideConfiguration": {
+        "ShowHighDataModeSwitch": true,
+        "Enable5GAutoByDefault": true,
+        "Show5GWarningUnsupportedCarrier": false,
+        "AttachAPN": {
+          "3GPP": {
+            "password": "",
+            "username": "",
+            "apn": "web.5g.attmex.mx",
+            "AllowedProtocolMask": 3
+          }
+        },
+        "SupportsNRNSAInboundRoaming": true,
+        "Show4GSwitchWith5G": false,
+        "Show5GSwitch": true,
+        "apns": [
+          {
+            "type-mask": 131072,
+            "password": "",
+            "NoCellularReconnectCauseCodes": [
+              {
+                "CauseCodes": [
+                  27
+                ],
+                "RecoversOnAirplaneMode": true,
+                "NumTriesAllowed": 1,
+                "Type": "3GPP"
+              }
+            ],
+            "SupportSwitchOver": true,
+            "username": "",
+            "apn": "ims",
+            "AllowedProtocolMask": 3
+          },
+          {
+            "password": "",
+            "username": "",
+            "apn": "modem.attmex.mx",
+            "UseNetworkMTU": true,
+            "type-mask": 48
+          },
+          {
+            "password": "",
+            "username": "",
+            "apn": "mms.attmex.mx",
+            "type-mask": 4
+          },
+          {
+            "password": "",
+            "username": "",
+            "AllowedProtocolMask": 3,
+            "apn": "web.5g.attmex.mx",
+            "type-mask": 32769,
+            "UseNetworkMTU": true
+          }
+        ]
+      },
+      "SupportedSIMs": [
+        "334050_GID1-4154543547"
+      ]
+    }
+  },
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://ius.prod.ondemandconnectivity.com",
+    "TransferErrorCodes": {
+      "MaintenanceErrors": [
+        "300"
+      ]
+    }
+  },
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ]
+}

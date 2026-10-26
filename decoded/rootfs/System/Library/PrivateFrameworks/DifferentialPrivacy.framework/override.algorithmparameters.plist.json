@@ -1,0 +1,14 @@
+{
+  "PreambleHmacSha256Aes128": {
+    "MaxCentralDelta": 1e-06,
+    "MaxCentralEpsilon": 16.0,
+    "VDAFType": 4294905863
+  },
+  "PreambleProofField32HmacSha256Aes128": {
+    "MaxCentralDelta": 1e-06,
+    "MaxCentralEpsilon": 16.0,
+    "PreambleProofWraparoundCheckCount": 30,
+    "VDAFNumOfProofs": 4,
+    "VDAFType": 4294905864
+  }
+}

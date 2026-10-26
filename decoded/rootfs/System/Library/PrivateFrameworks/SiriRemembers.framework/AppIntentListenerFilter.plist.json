@@ -1,0 +1,22 @@
+{
+  "actionIdentifiers": [
+    "SendMessageIntent",
+    "EndCallIntent",
+    "PlayMusicItemSiriIntent",
+    "PlayAudioIntent"
+  ],
+  "allowedParameterEntityTypes": [
+    "DraftMessageEntity",
+    "EventEntity"
+  ],
+  "blacklistedActionIdentifiers": [
+    "OpenEventDetailsIntent",
+    "SearchToolControl",
+    "OpenConversationIntent",
+    "SettingsNavigationEventDonationIntent"
+  ],
+  "blacklistedBundleIds": [
+    "com.apple.telephonyutilities.callservicesd",
+    "com.apple.campo"
+  ]
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Softmax" : 1,
+      "InnerProduct" : 1
+    },
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "output1",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "classLabel",
+        "shortDescription" : ""
+      }
+    ],
+    "storagePrecision" : "Float32",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "updateParameters" : [
+      {
+        "defaultValue" : "200",
+        "allowedSet" : "[200]",
+        "scope" : "",
+        "name" : "epochs",
+        "dataType" : "Int64",
+        "shortDescription" : "Default number of iterations during training"
+      },
+      {
+        "defaultValue" : "true",
+        "scope" : "",
+        "name" : "shuffle",
+        "dataType" : "Bool",
+        "shortDescription" : "Controls whether data is shuffled on each epoch"
+      },
+      {
+        "defaultValue" : "1234",
+        "scope" : "",
+        "name" : "seed",
+        "dataType" : "Int64",
+        "shortDescription" : "Random seed"
+      },
+      {
+        "defaultValue" : "0.001000",
+        "scope" : "",
+        "allowedRange" : "[0.000000, 1.000000]",
+        "name" : "learningRate",
+        "dataType" : "Double",
+        "shortDescription" : "Controls learning step size. Adjustable in progress"
+      },
+      {
+        "defaultValue" : "1",
+        "allowedSet" : "[1]",
+        "scope" : "",
+        "name" : "miniBatchSize",
+        "dataType" : "Int64",
+        "shortDescription" : "Number of examples used to compute single gradient step"
+      },
+      {
+        "defaultValue" : "0.000000",
+        "scope" : "",
+        "allowedRange" : "[0.000000, 1.000000]",
+        "name" : "momentum",
+        "dataType" : "Double",
+        "shortDescription" : "Helps accelerate gradients vectors in the right directions"
+      }
+    ],
+    "isUpdatable" : "1",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "computePrecision" : "Float16",
+    "modelType" : {
+      "name" : "MLModelType_neuralNetworkClassifier"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 2)",
+        "shortDescription" : "",
+        "shape" : "[2]",
+        "name" : "input1",
+        "type" : "MultiArray"
+      }
+    ],
+    "classLabels" : [
+      "clustering",
+      "recency"
+    ],
+    "generatedClassName" : "interactionPrediction",
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.0b2",
+      "com.github.apple.coremltools.source" : "keras==2.2.4",
+      "mldb_token" : "mldb-ondg4x4alq"
+    },
+    "trainingInputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 2)",
+        "shortDescription" : "feature tuple of dist to cluster and time since recent",
+        "shape" : "[2]",
+        "name" : "input1",
+        "type" : "MultiArray"
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "classLabel",
+        "shortDescription" : "label denoting whether to use the clustering result"
+      }
+    ],
+    "method" : "predict"
+  }
+]

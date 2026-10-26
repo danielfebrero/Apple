@@ -1,0 +1,8 @@
+"
+
+Return ResolvedAttribute with:
+- attribute (kMDItem... metadata key)
+- operator (comparison type)
+- value (appropriate type and value)
+- reasoning (explain your interpretation)
+- confidence: Score (0.0-1.0) indicating how well this expression fits the attribute domain (0.8-1.0 = clear attribute, 0.5-0.7 = vague, 0.0-0.4 = not attribute)

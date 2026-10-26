@@ -1,0 +1,52 @@
+{
+  "artifact": {
+    "path": "k2t/views.db",
+    "subgraph": {
+      "allowObjectRewrite": false,
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "predicate",
+          "TEXT"
+        ],
+        [
+          "relationshipId",
+          "INTEGER"
+        ],
+        [
+          "relationshipPredicate",
+          "TEXT"
+        ],
+        [
+          "object",
+          "TEXT"
+        ]
+      ],
+      "objectFTSIndex": true,
+      "objectIndex": true,
+      "tableName": "k2t_people_subgraph"
+    },
+    "type": "subgraph"
+  },
+  "featureFlag": "ExperimentalK2TViews",
+  "name": "k2tPeopleSubgraph",
+  "type": "subgraph",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB104"
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ]
+  }
+}

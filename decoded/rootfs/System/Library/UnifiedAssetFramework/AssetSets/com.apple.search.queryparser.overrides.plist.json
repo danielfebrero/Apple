@@ -1,0 +1,32 @@
+{
+  "AssetSetName": "com.apple.search.queryparser.overrides",
+  "Assets": [
+    {
+      "AssetName": "com.apple.search.queryparser.overrides.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.search.queryparser.overrides.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    },
+    {
+      "AssetName": "com.apple.search.searchfederationclassifier",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.search.searchfederationclassifier.{sqp.language}",
+          "RequiredUsageTypes": [
+            "sqp.language"
+          ]
+        }
+      ]
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.SearchQueryUnderstandingOverrides",
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.search.queryparser.overrides.uaf.metadata",
+  "UsageTypes": [
+    "sqp.language"
+  ]
+}

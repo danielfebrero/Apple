@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "footerText": "VOICE_FOOTER",
+      "id": "VOICE_FOOTER_GROUP"
+    },
+    {
+      "cell": "PSGroupCell",
+      "id": "VOICE_LANGUAGE_GROUP",
+      "isRadioGroup": true,
+      "label": "VOICE_LANGUAGE"
+    },
+    {
+      "cell": "PSListItemCell",
+      "cellClass": "AssistantVoiceDownloadingCell",
+      "id": "VOICE_PROTO",
+      "label": "VOICE_PROTO"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "VOICE_VARIATION_FOOTERTEXT",
+      "id": "VOICE_VARIATION_GROUP",
+      "isRadioGroup": true,
+      "label": "VOICE_VARIATION"
+    },
+    {
+      "cell": "PSListItemCell",
+      "cellClass": "AssistantVoiceDownloadingCell",
+      "id": "VOICE_VARIATION_PROTO",
+      "label": "VOICE_VARIATION_PROTO"
+    }
+  ],
+  "title": "ASSISTANT_VOICE"
+}

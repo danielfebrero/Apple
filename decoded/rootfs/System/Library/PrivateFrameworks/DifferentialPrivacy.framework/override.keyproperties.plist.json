@@ -1,0 +1,87 @@
+{
+  "14DaysBudgetTest": {
+    "BudgetKeyName": "com.apple.differentialprivacy.14DaysTestBudget",
+    "PrivatizationAlgorithm": "Prio3SumVectorField64MultiproofHmacSha256Aes128"
+  },
+  "DediscoDirectUploadTest": {
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "DirectUpload": true,
+    "PrivatizationAlgorithm": "Prio3SumVectorField64MultiproofHmacSha256Aes128",
+    "TelemetryAllowed": true
+  },
+  "DediscoTest": {
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "PrivatizationAlgorithm": "Prio3SumVectorField64MultiproofHmacSha256Aes128",
+    "TelemetryAllowed": true
+  },
+  "PFL.PFLCarryTraining.PlaygroundPlugin.V2:Metadata": {
+    "BudgetKeyName": "PFL.Budget.PFLCarryTraining.PlaygroundPlugin:Metadata",
+    "DirectUpload": true,
+    "PrivatizationAlgorithm": "PINEMetadata"
+  },
+  "PFL.PFLCarryTraining.PlaygroundPlugin.V2:Metrics": {
+    "BudgetKeyName": "PFL.Budget.PFLCarryTraining.PlaygroundPlugin:Metrics",
+    "DirectUpload": true,
+    "PrivatizationAlgorithm": "PINEMetrics"
+  },
+  "PFL.PFLCarryTraining.PlaygroundPlugin.V2:Results": {
+    "BudgetKeyName": "PFL.Budget.PFLCarryTraining.PlaygroundPlugin:Results",
+    "DirectUpload": true,
+    "PrivatizationAlgorithm": "PINEResults"
+  },
+  "PINETest:Metadata": {
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "DirectUpload": true,
+    "PrivatizationAlgorithm": "PINEMetadata"
+  },
+  "PINETest:Metrics": {
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "DirectUpload": true,
+    "PrivatizationAlgorithm": "PINEMetrics"
+  },
+  "PINETest:Results": {
+    "AlgorithmParameters": {
+      "MaxCentralEpsilon": 8.0
+    },
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "DirectUpload": true,
+    "PrivatizationAlgorithm": "PINEResults"
+  },
+  "PINETestWithoutDirectUpload:Results:": {
+    "AlgorithmParameters": {
+      "MaxCentralEpsilon": 8.0
+    },
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "PrivatizationAlgorithm": "PINEResults"
+  },
+  "PhotosVideoAssetsStats": {
+    "BudgetKeyName": "fedstats.com.apple.insights.photos-video-assets-stats",
+    "PrivatizationAlgorithm": "Prio3SumVectorField64MultiproofHmacSha256Aes128",
+    "TelemetryAllowed": true
+  },
+  "PreambleDirectUploadTest": {
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "DirectUpload": true,
+    "PrivatizationAlgorithm": "PreambleHmacSha256Aes128",
+    "TelemetryAllowed": true
+  },
+  "PreambleProofTest": {
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "PrivatizationAlgorithm": "PreambleProofField32HmacSha256Aes128",
+    "TelemetryAllowed": true
+  },
+  "PreambleTest": {
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "PrivatizationAlgorithm": "PreambleHmacSha256Aes128",
+    "TelemetryAllowed": true
+  },
+  "Prio3SumVectorField64MultiproofHmacSha256Aes128DirectUploadTest": {
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "DirectUpload": true,
+    "PrivatizationAlgorithm": "Prio3SumVectorField64MultiproofHmacSha256Aes128"
+  },
+  "Prio3SumVectorField64MultiproofHmacSha256Aes128Test": {
+    "BudgetKeyName": "com.apple.differentialprivacy.testBudget",
+    "PrivatizationAlgorithm": "Prio3SumVectorField64MultiproofHmacSha256Aes128"
+  }
+}

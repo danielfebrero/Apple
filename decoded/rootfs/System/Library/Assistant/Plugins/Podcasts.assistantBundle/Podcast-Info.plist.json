@@ -1,0 +1,19 @@
+{
+  "AssistantDomains": {
+    "com.apple.ace.media": {
+      "PlayPodcastCollection": "POPlayPodcastCollection",
+      "PlayPodcastStation": "POPlayPodcastStation",
+      "PlayPodcasts": "POPlayPodcasts"
+    }
+  },
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleExecutable": "${EXECUTABLE_NAME}",
+  "CFBundleIconFile": "",
+  "CFBundleIdentifier": "com.apple.siri.${PRODUCT_NAME:rfc1034identifier}",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleName": "${PRODUCT_NAME}",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSignature": "????",
+  "CFBundleVersion": "1"
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "bolt-taskid: meyyhqc6cg iteration: 96832",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 128 × 34)",
+        "shortDescription": "",
+        "shape": "[1, 128, 34]",
+        "name": "score",
+        "type": "MultiArray"
+      }
+    ],
+    "storagePrecision": "Float32",
+    "modelParameters": [],
+    "author": "corerecognition",
+    "specificationVersion": 5,
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "11.0",
+      "tvOS": "14.0",
+      "visionOS": "1.0",
+      "watchOS": "7.0",
+      "iOS": "14.0",
+      "macCatalyst": "14.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 128 × 5)",
+        "shortDescription": "",
+        "shape": "[1, 1, 128, 5]",
+        "name": "fields",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 128 × 7700)",
+        "shortDescription": "",
+        "shape": "[1, 1, 128, 7700]",
+        "name": "labels",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 1 × 1)",
+        "shortDescription": "",
+        "shape": "[1, 1, 1, 1]",
+        "name": "length",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 1 × 1 × 1)",
+        "shortDescription": "",
+        "shape": "[1, 1, 1, 1]",
+        "name": "num_labels",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-ondg4w4ylq",
+      "com.github.apple.coremltools.source": "torch==2.0.1",
+      "com.github.apple.coremltools.version": "7.1.4",
+      "com.github.apple.coremltools.source_dialect": "TorchScript"
+    },
+    "generatedClassName": "cr_form_ct_v2",
+    "neuralNetworkLayerTypeHistogram": {
+      "Transpose": 14,
+      "Ceil": 12,
+      "Multiply": 20,
+      "InnerProduct": 28,
+      "Squeeze": 24,
+      "Convolution": 18,
+      "ReduceSum": 6,
+      "AddBroadcastable": 7,
+      "Gelu": 3,
+      "ConcatND": 2,
+      "GreaterThan": 12,
+      "SliceStatic": 8,
+      "Add": 28,
+      "Tile": 1,
+      "WhereBroadcastable": 13,
+      "ActivationSigmoid": 4,
+      "BatchedMatmul": 2,
+      "LoadConstantND": 20,
+      "ExpandDims": 32,
+      "Scale": 11,
+      "ReshapeStatic": 53,
+      "Equal": 14,
+      "Mvn": 11,
+      "SoftmaxND": 1,
+      "DivideBroadcastable": 3,
+      "LessThan": 2,
+      "Clip": 24,
+      "MultiplyBroadcastable": 15,
+      "ActivationLinear": 18,
+      "Floor": 12,
+      "UnaryExp": 3
+    },
+    "method": "predict"
+  }
+]

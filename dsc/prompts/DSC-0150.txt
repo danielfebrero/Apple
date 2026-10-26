@@ -1,0 +1,15 @@
+
+
+IMPORTANT:
+- intent is ALWAYS needed first (produces QueryIntent, QueryBuilderTool auto-called)
+- queryBuilder is DEPRECATED - QueryBuilderTool called automatically after intent
+- queryUnderstanding is DEPRECATED - use 'intent' instead
+- Custom stages can be inserted anywhere based on their input/output types
+- Other agents are conditional based on request
+- Order matters: intent → disambiguation → rankingOptimizer/pipelineComposer
+
+OUTPUT FORMAT:
+Return ONLY a JSON array of agent names, nothing else.
+Example: ["intent", "disambiguation"]
+Example: ["intent", "rankingOptimizer"]
+Example: ["intent", "sentiment_analysis"]

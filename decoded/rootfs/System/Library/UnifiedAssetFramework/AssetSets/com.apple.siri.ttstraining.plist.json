@@ -1,0 +1,37 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.siri.ttstraining",
+  "UsageTypes": [
+    "training.language",
+    "training.mode",
+    "trainingscript.mode"
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Siri.TTSDeviceTraining",
+  "Assets": [
+    {
+      "AssetName": "com.apple.siri.tts.training",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "training.language",
+            "training.mode"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.siri.tts.training.{training.language}.{training.mode}"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.siri.tts.trainingscript",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "training.language",
+            "trainingscript.mode"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.siri.tts.trainingscript.{training.language}.{trainingscript.mode}"
+        }
+      ]
+    }
+  ]
+}

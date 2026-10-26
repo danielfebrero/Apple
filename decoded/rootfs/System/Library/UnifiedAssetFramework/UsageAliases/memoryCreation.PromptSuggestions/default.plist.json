@@ -1,0 +1,16 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "memoryCreation.PromptSuggestions",
+  "UsageAliasValues": {
+    "default": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.overrides.model_config.all.generic": "ENABLED",
+        "com.apple.gm.safety_embedding_deny.all.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

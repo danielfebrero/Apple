@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Anna reittiohjeet kotiin",
+            "Anna reittiohjeet Nuuksioon",
+            "Reitti isän työpaikalle",
+            "Hae reitti Oulusta Ivaloon",
+            "Anna kävelyohjeet Emman kotiin"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "Mikä on seuraava risteys?",
+            "Ollaanko pian perillä?",
+            "Mikä on arvioitu saapumisaika?",
+            "Etsi bensiiniasema"
+          ]
+        }
+      ],
+      "SectionName": "Navigation"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Näytä Finlandia-talo",
+            "Näytä kartta osoitteessa 1 Infinite Loop Cupertino Kalifornia"
+          ]
+        }
+      ],
+      "SectionName": "Maps"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Etsi läheltä kahvipaikka",
+            "Etsi paras kampaamo",
+            "Missä on lähin Apple Store?"
+          ]
+        }
+      ],
+      "SectionName": "Local businesses"
+    }
+  ]
+}

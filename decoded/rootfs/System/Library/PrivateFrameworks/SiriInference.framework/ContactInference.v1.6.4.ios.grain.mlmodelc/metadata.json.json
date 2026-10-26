@@ -1,0 +1,88 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "v1.6.4.ios.grain",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "scores",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "showToUser",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "topMatchIsConfident",
+        "type": "MultiArray"
+      }
+    ],
+    "storagePrecision": "Float32",
+    "modelParameters": [],
+    "specificationVersion": 4,
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.15",
+      "tvOS": "13.0",
+      "visionOS": "1.0",
+      "watchOS": "6.0",
+      "iOS": "13.0",
+      "macCatalyst": "13.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Double",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "46 × 1...",
+        "shapeRange": "[[46, 46], [1, -1]]",
+        "formattedType": "MultiArray (Double 46 × 1)",
+        "type": "MultiArray",
+        "shape": "[46, 1]",
+        "name": "inputs",
+        "shortDescription": ""
+      }
+    ],
+    "userDefinedMetadata": {
+      "tag": "mldb-lxyvzq5an7",
+      "mldb_token": "mldb-lxyvzq5an7"
+    },
+    "generatedClassName": "ContactInference_v1_6_4_ios_grain",
+    "neuralNetworkLayerTypeHistogram": {
+      "BatchedMatmul": 1,
+      "GreaterThan": 1,
+      "GreaterEqual": 2,
+      "ReduceINVALID": 1,
+      "LogicalAnd": 1,
+      "Equal": 1,
+      "LoadConstantND": 3,
+      "Slice": 1,
+      "SubtractBroadcastable": 2,
+      "TopK": 1,
+      "Squeeze": 1
+    },
+    "method": "predict"
+  }
+]

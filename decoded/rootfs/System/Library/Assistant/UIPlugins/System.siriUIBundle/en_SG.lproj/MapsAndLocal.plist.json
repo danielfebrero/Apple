@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Give me directions home",
+            "Get me directions to Sentosa",
+            "Directions to my dad’s work",
+            "Get me directions from Serangoon to Marina Bay Sands",
+            "Give me walking directions to Ling Ling's"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "What’s my next turn?",
+            "Are we there yet?",
+            "What’s my ETA?",
+            "Find a petrol station"
+          ]
+        }
+      ],
+      "SectionName": "Navigation"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Show me Changi Airport",
+            "Show me a map of 80 Mandai Lake Road Singapore"
+          ]
+        }
+      ],
+      "SectionName": "Maps"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Find coffee near me",
+            "Find the best nail salon",
+            "Where is the closest shopping centre?"
+          ]
+        }
+      ],
+      "SectionName": "Local businesses"
+    }
+  ]
+}

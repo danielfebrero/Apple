@@ -1,0 +1,19 @@
+{
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 109585
+  },
+  "PushSettings": {
+    "Topic": "ec-apns.hkcsl.com"
+  },
+  "ShowHighDataModeSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "0.1.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "ShowVolteSwitch": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ]
+}

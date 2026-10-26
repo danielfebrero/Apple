@@ -1,0 +1,193 @@
+Spotlight Search (Native + JSON API)
+Execute Spotlight queries to search files, emails, calendar events, and other indexed content.
+
+📚 Help/Schema Queries (JSON):
+For schema introspection and help, use schemaQuery or helpQuery parameters:
+- schemaQuery: "{"describe": "schema"}" - List all attributes
+- helpQuery: "{"help": true}" - Get help system introduction
+
+Search capabilities: Files by name, content, type, metadata - Calendar events, emails, contacts - Answer "what files do I have that..." questions - Complex multi-stage queries (grouping, aggregation, analytics)
+
+Results are automatically paginated to prevent context overflow (default: 15 items per page).
+
+Response format:
+{
+  "items": [...],            // Array of search results (this page)
+  "count": 124,              // Total results found
+  "hasMore": true,           // More pages available
+  "cursor": "page_1"         // Pass this back to get the next page
+}
+
+When hasMore is true, you MUST call the tool again with the cursor value to retrieve remaining results before answering the user. Incomplete data leads to wrong answers.
+
+🚀 Quick Start: Use the Built-In Help System!
+The search tool has a comprehensive interactive help system. Start here instead of guessing!
+
+Step 1: Get oriented
+
+{"help": true}
+Returns: Welcome message, available topics, quick examples, discovery queries
+
+Step 2: Explore topics based on your need
+
+For common use cases: json {"help": "quickstart"} Shows: Email frequency, content search, grouping/counting patterns
+
+For understanding operators: json {"help": "operators"} Shows: Fast vs slow operators, performance characteristics, examples
+
+For discovering attributes (RECOMMENDED APPROACH): json { "pipeline": [ { "id": "discover", "type": "query", "find": {"attribute": "kMDItemContentType", "operator": "equals", "value": "public.email-message"}, "fetch": ["_kMDItemSDBInfo"], "limit": 1 } ] } Returns: Complete schema for email objects - ALL available field names and their values! This is much more accurate than the static schema list.
+
+For static schema list (fallback): json {"describe": "schema"} Lists all 827+ available attributes across all schemas (but may be incomplete)
+
+For complex queries (pipelines): json {"help": "pipelines"} Shows: Multi-stage queries (query → group → compute), patterns, examples
+
+For smart queries with world knowledge: json {"help": "smart_queries"} Shows: Travel bookings, shopping receipts, medical appointments, using entity knowledge
+
+Step 3: Get specific help
+
+Find attribute details: json {"describe": "attribute", "attribute": "kMDItemAuthors"} Returns: Type, multi-valued flag, example values, common content types, next steps
+
+Explore content type attributes: json {"describe": "content_type", "uti": "public.email-message"} Returns: All attributes available for emails
+
+Learn reusable patterns: json {"help": "pipelines.patterns.find_top_n"} Returns: Template for "most frequent sender", "largest file", etc.
+
+Basic Query Format
+Simple query:
+
+{
+  "find": {
+    "attribute": "any",
+    "operator": "prefix",
+    "value": "keyword"
+  }
+}
+Multi-condition query:
+
+{
+  "find": {
+    "match": "all",
+    "conditions": [
+      {"attribute": "kMDItemContentType", "operator": "equals", "value": "com.adobe.pdf"},
+      {"attribute": "any", "operator": "prefix", "value": "report"}
+    ]
+  }
+}
+Pipeline query (advanced):
+
+{
+  "pipeline": [
+    {
+      "id": "find_emails",
+      "type": "query",
+      "find": {"attribute": "kMDItemContentType", "operator": "equals", "value": "public.email-message"},
+      "fetch": ["kMDItemAuthors"]
+    },
+    {
+      "id": "group_by_sender",
+      "type": "groupby",
+      "groupBy": "kMDItemAuthors",
+      "aggregations": [{"function": "count", "outputField": "email_count"}]
+    },
+    {
+      "id": "find_most_frequent",
+      "type": "compute",
+      "expression": "max({{group_by_sender}}, "email_count")",
+      "outputFields": ["most_frequent_sender", "most_frequent_sender_value"]
+    }
+  ]
+}
+Key Operators (Quick Reference)
+⚡ Fast (use these first): - equals - Exact match - prefix - Word-start match (use instead of slow_infix!) - in - Match any value in list - range - Numeric/date range
+
+🐌 Slow (avoid): - slow_infix - Substring anywhere (scans all documents!)
+
+💡 Tip: Query {"help": "operators"} for full details and performance tips!
+
+Key Attributes (Quick Reference)
+⭐ Recommended for broad search: - "any" - Search all fields including body text (fastest) - "*" - Search all metadata (no body text)
+
+📋 Common specific attributes: - kMDItemDisplayName - File/item name - kMDItemContentType - File type - kMDItemAuthors - Authors/senders - kMDItemTitle - Title (emails, docs, events)
+
+💡 Tip: Query {"describe": "schema"} to see all 827+ attributes!
+
+Execution
+
+Determine what kind of query you need:
+
+Unknown? → Query {"help": true} first
+Common pattern? → Query {"help": "quickstart"}
+Need attribute? → Query {"describe": "schema"}
+Ready to query? → Build your JSON query
+
+Workflow for Complex Queries
+Example: "Who sends me the most emails?"
+
+Ask for help → {"help": "quickstart"}
+Find matching use case → "email_frequency"
+Get pattern details → {"help": "pipelines.patterns.find_top_n"}
+Execute the pipeline → Use the provided 3-stage example
+Done! Results show most frequent sender
+Example: "Find PDFs by a specific author"
+
+Find attribute → {"describe": "schema"} → Find "kMDItemAuthors"
+Get attribute details → {"describe": "attribute", "attribute": "kMDItemAuthors"}
+Build query → Combine with kMDItemContentType
+Execute!
+Example: "What fields are available for calendar events?"
+
+Discover schema dynamically → json { "pipeline": [ { "id": "discover", "type": "query", "find": {"attribute": "kMDItemContentType", "operator": "equals", "value": "com.apple.ical.Event"}, "fetch": ["_kMDItemSDBInfo"], "limit": 1 } ] }
+Extract field names → Look at keys in _kMDItemSDBInfo result
+Use discovered fields → Build query using real field names
+Done! No guessing needed!
+Best Practices for LLMs
+🎯 Use the help system proactively - Don't guess, query!
+📚 Start with quickstart - Common patterns are already documented
+🔍 Discover schema dynamically - Use _kMDItemSDBInfo to see REAL fields, not guessed ones
+⚡ Prefer fast operators - prefix not slow_infix
+🌐 Use world knowledge - Check smart_queries for travel, shopping, medical queries
+🔗 Follow next_steps - Every help response suggests what to learn next
+Schema Discovery Pattern (NEW!)
+Problem: Don't know what fields are available for emails/PDFs/events?
+
+Solution: Fetch _kMDItemSDBInfo to see the ACTUAL schema!
+
+{
+  "pipeline": [
+    {
+      "id": "discover",
+      "type": "query",
+      "find": {"attribute": "kMDItemContentType", "operator": "equals", "value": "public.email-message"},
+      "fetch": ["_kMDItemSDBInfo"],
+      "limit": 1
+    }
+  ]
+}
+Result: Object with ~100+ field names and values showing: - Standard fields (kMDItemDisplayName, kMDItemAuthors, etc.) - Private fields (_kMDItemBundleID, kMDItemDomainIdentifier, etc.) - App-specific fields (comapplemaildateReceived, etc.) - Type information (values show if field is string, number, array, date)
+
+Workflow: 1. Fetch _kMDItemSDBInfo once per content type 2. Cache field names for that content type 3. Use discovered fields to construct queries/aggregations 4. Never guess field names again!
+
+Common Mistakes to Avoid
+❌ Guessing attribute names → ✅ Query {"describe": "schema"} first ❌ Using slow_infix → ✅ Use prefix instead ❌ OR-ing many attributes → ✅ Use "any" to search all fields ❌ Reinventing patterns → ✅ Check {"help": "pipelines.patterns"} ❌ Vague searches → ✅ Use {"help": "smart_queries"} for entity-based queries
+
+Examples You Can Copy-Paste
+Search for keyword anywhere: json {"find": {"attribute": "any", "operator": "prefix", "value": "neurology"}}
+
+Find recent PDFs: json { "find": { "match": "all", "conditions": [ {"attribute": "kMDItemContentType", "operator": "equals", "value": "com.adobe.pdf"}, {"attribute": "kMDItemContentModificationDate", "operator": "range", "value": ["2024-01-01", "2024-12-31"]} ] } }
+
+Find most frequent email sender: json { "pipeline": [ {"id": "emails", "type": "query", "find": {"attribute": "kMDItemContentType", "operator": "equals", "value": "public.email-message"}, "fetch": ["kMDItemAuthors"]}, {"id": "grouped", "type": "groupby", "groupBy": "kMDItemAuthors", "aggregations": [{"function": "count", "outputField": "count"}]}, {"id": "top", "type": "compute", "expression": "max({{grouped}}, "count")", "outputFields": ["sender", "count"]} ] }
+
+Learning Path for New Users
+1. {"help": true}
+   ↓
+2. {"help": "quickstart"}  (if matching common use case)
+   OR
+   {"help": "operators"}    (if building simple query)
+   OR
+   {"help": "pipelines"}    (if need grouping/aggregation)
+   ↓
+3. {"describe": "schema"}   (to discover attributes)
+   ↓
+4. Build and execute query
+   ↓
+5. {"help": "performance_tips"} (to optimize)
+Remember
+The search tool is self-documenting! When in doubt, query the help system. It's interactive, cross-linked, and designed specifically for LLMs to learn efficiently (3-4 queries to go from zero to executing complex queries).

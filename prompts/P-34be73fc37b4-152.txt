@@ -1,0 +1,115 @@
+
+
+---
+
+## Pattern Recognition Framework
+
+Ask yourself: "Could any term in this query have multiple meanings?"
+
+### Category 1: Name Ambiguity
+
+**Use when:** A single word could be EITHER a person name OR a temporal/location term.
+
+**Key semantic distinction:**
+- Person name: Refers to a specific individual (author, sender, recipient)
+- Temporal term: Refers to a time period (month, season, year)
+- Location term: Refers to a place (city, country, region)
+
+**Examples with reasoning:**
+
+1. "pictures from april"
+   Ambiguity: YES
+   - Hypothesis A: April as PERSON → author("April") + contentType("image")
+     Reasoning: April is a common person name, user might want photos from/by April
+   - Hypothesis B: April as MONTH → temporal(.lastMonth) + contentType("image")
+     Reasoning: April is a calendar month, user might want photos taken in April
+   Likelihood: 50/50 without context
+
+2. "emails from may in paris"
+   Ambiguity: YES
+   - Hypothesis A: May as PERSON, Paris as LOCATION → author("May") + location("Paris")
+     Reasoning: May and Paris are both person names and location names
+   - Hypothesis B: May as MONTH, Paris as LOCATION → temporal(.lastMonth, specific="May") + location("Paris")
+     Reasoning: May is a month, user might want emails from that time period in Paris
+   Likelihood: Context-dependent (both plausible)
+
+3. "documents from april 2024"
+   Ambiguity: NO
+   Reasoning: "april 2024" has temporal context (year), clearly refers to the month not a person
+
+### Category 2: Location Ambiguity
+
+**Use when:** A term could be EITHER a physical location OR an application/digital location.
+
+**Key semantic distinction:**
+- Physical location: Geographic place (office building, home address)
+- Digital location: Application or file path (Office app, ~/home directory)
+
+**Examples with reasoning:**
+
+1. "files in the office"
+   Ambiguity: YES
+   - Hypothesis A: Physical OFFICE → location("office") + contentType("file")
+     Reasoning: User might want files located at their office
+   - Hypothesis B: Office APP → contentType("com.microsoft.office.*")
+     Reasoning: User might want files created with Microsoft Office apps
+   Likelihood: 60/40 toward application (more common query pattern)
+
+2. "go home"
+   Ambiguity: YES
+   - Hypothesis A: HOME DIRECTORY → location("/Users/*/") or filePath("~")
+     Reasoning: User might want files in home directory
+   - Hypothesis B: HOME LOCATION → location("home address")
+     Reasoning: User might want directions or info about their home location
+   Likelihood: 70/30 toward directory (search context)
+
+### Category 3: Content Type Ambiguity
+
+**Use when:** A term could refer to EITHER an application OR a file format/content type.
+
+**Key semantic distinction:**
+- Application: Software that creates/edits content (Pages, Numbers, Notes)
+- File format: Type of document (web pages, numeric data, note files)
+
+**Examples with reasoning:**
+
+1. "recent pages"
+   Ambiguity: YES
+   - Hypothesis A: Pages APP → contentType("com.apple.iwork.pages.*")
+     Reasoning: User might want documents created with Pages app
+   - Hypothesis B: Web PAGES → contentType("public.html")
+     Reasoning: User might want recently viewed web pages
+   Likelihood: 60/40 toward application (capitalization context)
+
+2. "my numbers"
+   Ambiguity: YES
+   - Hypothesis A: Numbers APP → contentType("com.apple.iwork.numbers.*")
+     Reasoning: User might want spreadsheets from Numbers app
+   - Hypothesis B: Numeric DATA → keywords("numbers")
+     Reasoning: User might want files containing numeric information
+   Likelihood: 80/20 toward application (possessive "my" suggests documents)
+
+### Edge Cases
+
+**Not ambiguous:**
+- Multiple context clues: "april 2024", "office documents", "web pages online"
+- Explicit qualifiers: "person named April", "Microsoft Office", "Numbers spreadsheet"
+- Clear content type: contentType already specified unambiguously
+
+**Handling uncertainty:**
+- If ambiguity is unclear (confidence < 0.6), mark isAmbiguous: false
+- Better to skip ambiguous cases than force false positives
+- User can always refine their query
+
+---
+
+## Output Format
+
+Provide your analysis as SemanticAmbiguity with:
+- isAmbiguous: true/false
+- ambiguityType: name/temporal/location/contentType/mixed
+- hypotheses: 2-3 plausible interpretations with clauseModifications
+- confidence: 0.0-1.0 (confidence in ambiguity detection)
+- reasoning: Explain which pattern(s) you detected and why
+
+Remember: Teach patterns, not memorize mappings. Focus on semantic distinctions.

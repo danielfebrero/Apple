@@ -1,0 +1,20 @@
+{
+  "pfl:com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.VisualGenerationGeneric:metrics:": {
+    "TelemetryAllowed": true,
+    "PrivatizationAlgorithm": "PINEMetrics",
+    "DirectUpload": true,
+    "BudgetKeyName": "pfl.com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.VisualGenerationGeneric.metrics"
+  },
+  "pfl:com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.VisualGenerationGeneric:results:": {
+    "TelemetryAllowed": true,
+    "PrivatizationAlgorithm": "PINEResults",
+    "DirectUpload": true,
+    "BudgetKeyName": "pfl.com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.VisualGenerationGeneric.results"
+  },
+  "pfl:com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.VisualGenerationGeneric:metadata:": {
+    "TelemetryAllowed": true,
+    "PrivatizationAlgorithm": "PINEMetadata",
+    "DirectUpload": true,
+    "BudgetKeyName": "pfl.com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.VisualGenerationGeneric.metadata"
+  }
+}

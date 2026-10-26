@@ -1,0 +1,73 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "Heuristics based PER model that picks the candidate with recencyRank = 1 if its lastContiguousCount >= 3, else uncertainty disambiguation.",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "disambiguation_mask",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Double",
+        "formattedType": "MultiArray (Double)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "scores",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "1.0.2",
+    "modelParameters": [],
+    "specificationVersion": 4,
+    "storagePrecision": "Float32",
+    "computePrecision": "Float16",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "10.15",
+      "tvOS": "13.0",
+      "visionOS": "1.0",
+      "watchOS": "6.0",
+      "iOS": "13.0",
+      "macCatalyst": "13.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Double",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "11 × 1...",
+        "shapeRange": "[[11, 11], [1, -1]]",
+        "formattedType": "MultiArray (Double 11 × 1)",
+        "type": "MultiArray",
+        "shape": "[11, 1]",
+        "name": "model_input",
+        "shortDescription": ""
+      }
+    ],
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-94yzndlyol"
+    },
+    "generatedClassName": "mldb_patched_PervasiveEntityResolution",
+    "neuralNetworkLayerTypeHistogram": {
+      "Equal": 1,
+      "LoadConstantND": 4,
+      "GreaterEqual": 1,
+      "LogicalAnd": 1,
+      "Squeeze": 2,
+      "BatchedMatmul": 2
+    },
+    "method": "predict"
+  }
+]

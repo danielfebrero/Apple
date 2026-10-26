@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="GeoLabel#AddressString" xmlns="urn:apple:names:siri:cat:2.0">
+    <meta name="category" value="Handled"/>
+    <parameters>
+        <parameter name="addressToPrint" type="dialog.LocationAddress"/>
+    </parameters>
+
+    <meta name="readyForLoc" value="true"/>
+</cat>
+

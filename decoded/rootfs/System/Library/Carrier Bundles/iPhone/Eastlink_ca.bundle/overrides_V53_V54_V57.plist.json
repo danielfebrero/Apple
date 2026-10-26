@@ -1,0 +1,70 @@
+{
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 8369,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "6.0.162",
+  "Show5GWarningUnsupportedCarrier": false,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "tech-type-mask": 4,
+          "username": "",
+          "apn": "mms.mobi.eastlink.ca",
+          "type-mask": 4
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "wisp.mobi.eastlink.ca",
+          "type-mask": 32819
+        }
+      ],
+      "technology-mask": 25
+    },
+    {
+      "configuration": [
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "AllowedProtocolMaskInRoaming": 2,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 1048576,
+          "password": "",
+          "tech-type-mask": 1048578,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "services",
+          "AllowedProtocolMask": 1
+        }
+      ],
+      "technology-mask": 24
+    }
+  ],
+  "Show5GSwitch": true,
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://sm-v4-118-a-gtm.pr.go-esim.com"
+  }
+}

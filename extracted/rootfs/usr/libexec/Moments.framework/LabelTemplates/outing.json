@@ -1,0 +1,1091 @@
+{
+    "cases": [
+        {
+            "bundleType":"outing",
+            "templates" :[
+                {
+                    "conditions":["sensitive", "confidence=high", "person_1", "person_2", "person_3"],
+                    "labels":["Time at {place} with {person_1} and others"],
+                },
+                {
+                    "conditions":["sensitive", "confidence=high", "person_1", "person_2"],
+                    "labels":["Time at {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["sensitive", "confidence=high", "person_1"],
+                    "labels":["Time at {place} with {person_1}"],
+                },
+                {
+                    "conditions":["sensitive", "confidence=high"],
+                    "labels":["Time at {place}"],
+                },
+                {
+                    "conditions":["sensitive", "confidence=medium", "person_1", "person_2", "person_3"],
+                    "labels":["Time near {place} with {person_1} and others"],
+                },
+                {
+                    "conditions":["sensitive", "confidence=medium", "person_1", "person_2"],
+                    "labels":["Time near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["sensitive", "confidence=medium", "person_1"],
+                    "labels":["Time near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["sensitive", "confidence=medium"],
+                    "labels":["Time near {place}"],
+                },
+                {
+                    "conditions":["invite_title", "with_more_than_three_persons"],
+                    "labels":["{invite_title} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["invite_title", "person_3", "person_2", "person_1"],
+                    "labels":["{invite_title} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["invite_title", "person_2", "person_1"],
+                    "labels":["{invite_title} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["invite_title", "me_person_identified", "person_1"],
+                    "labels":["{invite_title} with {person_1}"],
+                },
+                {
+                    "conditions":["invite_title"],
+                    "labels":["{invite_title}"],
+                },
+                {
+                    "conditions":["birthday_person_name", "confidence=high"],
+                    "labels":["{birthday_person_name}'s birthday at {place}"],
+                },
+                {
+                    "conditions":["birthday_person_name", "confidence=medium"],
+                    "labels":["{birthday_person_name}'s birthday near {place}"],
+                },
+                {
+                    "conditions":["birthday_person_name", "confidence=low"],
+                    "labels":["{birthday_person_name}'s Birthday"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=high", "with_more_than_three_persons"],
+                    "labels":["{holiday_name} at {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=high", "person_3", "person_2", "person_1"],
+                    "labels":["{holiday_name} at {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=medium", "with_more_than_three_persons"],
+                    "labels":["{holiday_name} near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=medium", "person_3", "person_2", "person_1"],
+                    "labels":["{holiday_name} near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=low", "with_more_than_three_persons"],
+                    "labels":["{holiday_name} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=low", "person_3", "person_2", "person_1"],
+                    "labels":["{holiday_name} with {person_1}, {person_2}, and {person_3}"],
+                },
+                
+                {
+                    "conditions":["holiday_name", "confidence=high", "person_2", "person_1"],
+                    "labels":["{holiday_name} at {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=medium", "person_2", "person_1"],
+                    "labels":["{holiday_name} near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=low", "person_2", "person_1"],
+                    "labels":["{holiday_name} with {person_1} and {person_2}"],
+                },
+                
+                {
+                    "conditions":["holiday_name", "confidence=high", "me_person_identified", "person_1"],
+                    "labels":["{holiday_name} at {place} with {person_1}"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=medium", "me_person_identified", "person_1"],
+                    "labels":["{holiday_name} near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=low", "me_person_identified", "person_1"],
+                    "labels":["{holiday_name} with {person_1}"],
+                },
+                
+                {
+                    "conditions":["holiday_name", "confidence=high"],
+                    "labels":["{holiday_name} at {place}"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=medium"],
+                    "labels":["{holiday_name} near {place}"],
+                },
+                {
+                    "conditions":["holiday_name", "confidence=low"],
+                    "labels":["{holiday_name}"],
+                },
+                
+                {
+                    "conditions":["flight","place_type=4"],
+                    "labels":["Flight to {city}"],
+                },
+                {
+                    "conditions":["flight","place_type=6"],
+                    "labels":["Flight to {city}"],
+                },
+                {
+                    "conditions":["flight"],
+                    "labels":["Flight to {place}"],
+                },
+                
+                {
+                    "conditions":["action_type=shopping", "confidence=high", "with_more_than_three_persons"],
+                    "labels":["Shopping at {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["action_type=shopping", "confidence=high", "person_3", "person_2", "person_1"],
+                    "labels":["Shopping at {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["action_type=shopping", "confidence=high", "person_2", "person_1"],
+                    "labels":["Shopping at {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["action_type=shopping", "confidence=high","me_person_identified", "person_1"],
+                    "labels":["Shopping at {place} with {person_1}"],
+                },
+                {
+                    "conditions":["action_type=shopping", "confidence=high"],
+                    "labels":["Shopping at {place}"],
+                },
+                
+                {
+                    "conditions":["action_type=shopping", "confidence=medium", "with_more_than_three_persons"],
+                    "labels":["Shopping near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["action_type=shopping", "confidence=medium", "person_3", "person_2", "person_1"],
+                    "labels":["Shopping near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["action_type=shopping", "confidence=medium", "person_2", "person_1"],
+                    "labels":["Shopping near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["action_type=shopping", "confidence=medium","me_person_identified", "person_1"],
+                    "labels":["Shopping near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["action_type=shopping", "confidence=medium"],
+                    "labels":["Shopping near {place}"],
+                },
+                
+                {
+                    "conditions":["action_type=shopping","confidence=low", "with_more_than_three_persons"],
+                    "labels":["{place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["action_type=shopping","confidence=low", "person_3", "person_2", "person_1"],
+                    "labels":["{place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["action_type=shopping","confidence=low", "person_2", "person_1"],
+                    "labels":["{place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["action_type=shopping","confidence=low","me_person_identified", "person_1"],
+                    "labels":["{place} with {person_1}"],
+                },
+                {
+                    "conditions":["action_type=shopping","confidence=low"],
+                    "labels":["{place}"],
+                },
+                
+                {
+                    "conditions":["action_type=eating_out","confidence=high", "with_more_than_three_persons"],
+                    "labels":["Eating at {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=high", "person_3", "person_2", "person_1"],
+                    "labels":["Eating at {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=high", "person_2", "person_1"],
+                    "labels":["Eating at {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=high","me_person_identified", "person_1"],
+                    "labels":["Eating at {place} with {person_1}"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=high"],
+                    "labels":["Eating at {place}"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=medium", "with_more_than_three_persons"],
+                    "labels":["Eating out near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=medium", "person_3", "person_2", "person_1"],
+                    "labels":["Eating out near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=medium", "person_2", "person_1"],
+                    "labels":["Eating out near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=medium","me_person_identified","person_1"],
+                    "labels":["Eating out near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=medium"],
+                    "labels":["Eating out near {place}"],
+                },
+                
+                {
+                    "conditions":["action_type=eating_out","confidence=low", "with_more_than_three_persons"],
+                    "labels":["{place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=low", "person_3", "person_2", "person_1"],
+                    "labels":["{place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=low", "person_2", "person_1"],
+                    "labels":["{place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=low","me_person_identified",  "person_1"],
+                    "labels":["{place} with {person_1}"],
+                },
+                {
+                    "conditions":["action_type=eating_out","confidence=low"],
+                    "labels":["{place}"],
+                },
+                
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=medium", "!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["{time} outing near {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=medium", "!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["{time} outing near {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=medium", "!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["{time} outing near {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=medium", "!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["{time} outing near {place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=medium", "!place_name_overlap_with_city"],
+                    "labels":["{time} outing near {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=high", "!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["{time} outing to {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=high", "!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["{time} outing to {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=high", "!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["{time} outing to {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=high", "!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["{time} outing to {place}, {city} with {person_1}"],
+                }, 
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=high", "!place_name_overlap_with_city"],
+                    "labels":["{time} outing to {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=low", "vicinity", "with_more_than_three_persons"],
+                    "labels":["{time} visit near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=low", "vicinity", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=low", "vicinity", "person_2", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=low", "vicinity","me_person_identified", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=low", "vicinity"],
+                    "labels":["{time} visit near {place}"],
+                },
+                
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=low", "with_more_than_three_persons"],
+                    "labels":["{time} visit to {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=low", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=low", "person_2", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=low","me_person_identified", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "place_user_type_tag=outing", "confidence=low"],
+                    "labels":["{time} visit to {place}"],
+                },
+                
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=medium", "with_more_than_three_persons"],
+                    "labels":["{time} outing near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=medium", "person_3", "person_2", "person_1"],
+                    "labels":["{time} outing near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=medium", "person_2", "person_1"],
+                    "labels":["{time} outing near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=medium","me_person_identified", "person_1"],
+                    "labels":["{time} outing near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=medium"],
+                    "labels":["{time} outing near {place}"],
+                },
+                
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=high", "with_more_than_three_persons"],
+                    "labels":["{time} outing to {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=high", "person_3", "person_2", "person_1"],
+                    "labels":["{time} outing to {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=high", "person_2", "person_1"],
+                    "labels":["{time} outing to {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=high","me_person_identified", "person_1"],
+                    "labels":["{time} outing to {place} with {person_1}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=high"],
+                    "labels":["{time} outing to {place}"],
+                },
+                
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=low", "vicinity", "with_more_than_three_persons"],
+                    "labels":["{time} visit near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=low", "vicinity", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=low", "vicinity", "person_2", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=low", "vicinity","me_person_identified", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=low", "vicinity"],
+                    "labels":["{time} visit near {place}"],
+                },
+                
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=low", "with_more_than_three_persons"],
+                    "labels":["{time} visit to {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=low", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=low", "person_2", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=low","me_person_identified", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1}"],
+                },
+                {
+                    "conditions":["place_user_type_tag=outing", "confidence=low"],
+                    "labels":["{time} visit to {place}"],
+                },
+                
+                {
+                    "conditions":["trip", "confidence=medium", "!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["{time} visit near {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "confidence=medium", "!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit near {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "confidence=medium", "!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["{time} visit near {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "confidence=medium", "!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["{time} visit near {place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "confidence=medium", "!place_name_overlap_with_city"],
+                    "labels":["{time} visit near {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["trip", "confidence=high", "!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["{time} visit to {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "confidence=high", "!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit to {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "confidence=high", "!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["{time} visit to {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "confidence=high", "!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["{time} visit to {place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "confidence=high", "!place_name_overlap_with_city"],
+                    "labels":["{time} visit to {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["trip", "confidence=low", "vicinity", "with_more_than_three_persons"],
+                    "labels":["{time} visit near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "vicinity", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "vicinity", "person_2", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "vicinity","me_person_identified", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "vicinity"],
+                    "labels":["{time} visit near {place}"],
+                },
+                
+                {
+                    "conditions":["trip", "confidence=low", "with_more_than_three_persons"],
+                    "labels":["{time} visit to {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "person_2", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low","me_person_identified",  "person_1"],
+                    "labels":["{time} visit to {place} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low"],
+                    "labels":["{time} visit to {place}"],
+                },
+                
+                {
+                    "conditions":["place_user_type_tag=work", "date_reference_weekday_timeofday"],
+                    "extends":["date_reference_weekday_timeofday:date_reference_Sunday_morning,date_reference_Sunday_prenoon,date_reference_Sunday_afternoon,date_reference_Sunday_preevening,date_reference_Sunday_evening,date_reference_Sunday_night,date_reference_Sunday_midnight,date_reference_Monday_morning,date_reference_Monday_prenoon,date_reference_Monday_afternoon,date_reference_Monday_preevening,date_reference_Monday_evening,date_reference_Monday_night,date_reference_Monday_midnight,date_reference_Tuesday_morning,date_reference_Tuesday_prenoon,date_reference_Tuesday_afternoon,date_reference_Tuesday_preevening,date_reference_Tuesday_evening,date_reference_Tuesday_night,date_reference_Tuesday_midnight,date_reference_Wednesday_morning,date_reference_Wednesday_prenoon,date_reference_Wednesday_afternoon,date_reference_Wednesday_preevening,date_reference_Wednesday_evening,date_reference_Wednesday_night,date_reference_Wednesday_midnight, date_reference_Thursday_morning,date_reference_Thursday_prenoon,date_reference_Thursday_afternoon,date_reference_Thursday_preevening,date_reference_Thursday_evening,date_reference_Thursday_night,date_reference_Thursday_midnight,date_reference_Friday_morning,date_reference_Friday_prenoon,date_reference_Friday_afternoon,date_reference_Friday_preevening,date_reference_Friday_evening,date_reference_Friday_night,date_reference_Friday_midnight,date_reference_Saturday_morning,date_reference_Saturday_prenoon,date_reference_Saturday_afternoon,date_reference_Saturday_preevening,date_reference_Saturday_evening,date_reference_Saturday_night,date_reference_Saturday_midnight"],
+                    "labels":["{date_reference_weekday_timeofday} at work"],
+                },
+                {
+                    "conditions":["place_user_type_tag=work", "date_reference_weekday"],
+                    "extends":["date_reference_weekday:date_reference_Sunday, date_reference_Monday, date_reference_Tuesday, date_reference_Wednesday, date_reference_Thursday, date_reference_Friday, date_reference_Saturday"],
+                    "labels":["{date_reference_weekday} at Work"],
+                },
+                
+                {
+                    "conditions":["confidence=medium", "with_more_than_three_persons"],
+                    "labels":["{time} visit near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["confidence=medium", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["confidence=medium", "person_2", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["confidence=medium","me_person_identified", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["confidence=medium"],
+                    "labels":["{time} visit near {place}"],
+                },
+                
+                {
+                    "conditions":["confidence=high", "with_more_than_three_persons"],
+                    "labels":["{time} visit to {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["confidence=high", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["confidence=high", "person_2", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["confidence=high","me_person_identified", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1}"],
+                },
+                {
+                    "conditions":["confidence=high"],
+                    "labels":["{time} visit to {place}"],
+                },
+                
+                {
+                    "conditions":["confidence=low", "vicinity", "with_more_than_three_persons"],
+                    "labels":["{time} visit near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["confidence=low", "vicinity", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["confidence=low", "vicinity", "person_2", "person_1"],
+                    "labels":["{time} visit near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["confidence=low", "vicinity","me_person_identified",  "person_1"],
+                    "labels":["{time} visit near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["confidence=low", "vicinity"],
+                    "labels":["{time} visit near {place}"],
+                },
+                
+                {
+                    "conditions":["confidence=low", "with_more_than_three_persons"],
+                    "labels":["{time} visit to {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["confidence=low", "person_3", "person_2", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["confidence=low", "person_2", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["confidence=low","me_person_identified", "person_1"],
+                    "labels":["{time} visit to {place} with {person_1}"],
+                },
+                {
+                    "conditions":["confidence=low"],
+                    "labels":["{time} visit to {place}"],
+                },
+                
+                {
+                    "conditions":["trip", "confidence=medium", "!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["Near {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "confidence=medium", "!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["Near {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "confidence=medium", "!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["Near {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "confidence=medium", "!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["Near {place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "confidence=medium", "!place_name_overlap_with_city"],
+                    "labels":["Near {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["trip", "confidence=high", "!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["{place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "confidence=high", "!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["{place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "confidence=high", "!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["{place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "confidence=high", "!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["{place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "confidence=high", "!place_name_overlap_with_city"],
+                    "labels":["{place}, {city}"],
+                },
+                
+                {
+                    "conditions":["trip", "confidence=low", "vicinity", "with_more_than_three_persons"],
+                    "labels":["Near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "vicinity", "person_3", "person_2", "person_1"],
+                    "labels":["Near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "vicinity", "person_2", "person_1"],
+                    "labels":["Near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "vicinity","me_person_identified", "person_1"],
+                    "labels":["Near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "vicinity"],
+                    "labels":["Near {place}"],
+                },
+                
+                {
+                    "conditions":["trip", "confidence=low", "with_more_than_three_persons"],
+                    "labels":["{place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "person_3", "person_2", "person_1"],
+                    "labels":["{place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low", "person_2", "person_1"],
+                    "labels":["{place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low","me_person_identified",  "person_1"],
+                    "labels":["{place} with {person_1}"],
+                },
+                {
+                    "conditions":["trip", "confidence=low"],
+                    "labels":["{place}"],
+                },
+                
+                {
+                    "conditions":["confidence=medium", "with_more_than_three_persons"],
+                    "labels":["Near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["confidence=medium", "person_3", "person_2", "person_1"],
+                    "labels":["Near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["confidence=medium", "person_2", "person_1"],
+                    "labels":["Near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["confidence=medium","me_person_identified", "person_1"],
+                    "labels":["Near {place} with {person_1}"],
+                },{
+                    "conditions":["confidence=medium"],
+                    "labels":["Near {place}"],
+                },
+                
+                {
+                    "conditions":["confidence=high", "with_more_than_three_persons"],
+                    "labels":["{place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["confidence=high", "person_3", "person_2", "person_1"],
+                    "labels":["{place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["confidence=high", "person_2", "person_1"],
+                    "labels":["{place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["confidence=high","me_person_identified", "person_1"],
+                    "labels":["{place} with {person_1}"],
+                },
+                {
+                    "conditions":["confidence=high"],
+                    "labels":["{place}"],
+                },
+                
+                {
+                    "conditions":["confidence=low", "vicinity", "with_more_than_three_persons"],
+                    "labels":["Near {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["confidence=low", "vicinity", "person_3", "person_2", "person_1"],
+                    "labels":["Near {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["confidence=low", "vicinity", "person_2", "person_1"],
+                    "labels":["Near {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["confidence=low", "vicinity","me_person_identified",  "person_1"],
+                    "labels":["Near {place} with {person_1}"],
+                },
+                {
+                    "conditions":["confidence=low", "vicinity"],
+                    "labels":["Near {place}"],
+                },
+                
+                {
+                    "conditions":["confidence=low", "with_more_than_three_persons"],
+                    "labels":["{place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["confidence=low", "person_3", "person_2", "person_1"],
+                    "labels":["{place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["confidence=low", "person_2", "person_1"],
+                    "labels":["{place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["confidence=low","me_person_identified", "person_1"],
+                    "labels":["{place} with {person_1}"],
+                },
+                {
+                    "conditions":["confidence=low"],
+                    "labels":["{place}"],
+                },
+
+                {
+                    "conditions":["action_type!=visit"],
+                    "labels":["{action}|TitleCap"],
+                },
+                {
+                    "comments":"defaults",
+                    "conditions":[],
+                    "labels":["Outing"],
+                }
+            ]
+        },
+        {
+            "bundleType":"trip",
+            "templates" :[
+                {
+                    "conditions":["sensitive", "single_dominant_place", "person_1", "person_2", "person_3"],
+                    "labels":["Travel to {place} with {person_1} and others"],
+                },
+                {
+                    "conditions":["sensitive", "single_dominant_place", "person_1", "person_2"],
+                    "labels":["Travel to {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["sensitive", "single_dominant_place", "person_1"],
+                    "labels":["Travel to {place} with {person_1}"],
+                },
+                {
+                    "conditions":["sensitive", "single_dominant_place"],
+                    "labels":["Travel to {place}"],
+                },
+                {
+                    "conditions":["sensitive", "typeOfDay=weekend", "single_dominant_place", "!place_name_overlap_with_city"],
+                    "labels":["Weekend travel to {place}, {city}"],
+                },
+                {
+                    "conditions":["sensitive", "single_dominant_place", "!place_name_overlap_with_city"],
+                    "labels":["Travel to {place}, {city}"],
+                },
+                {
+                    "conditions":["sensitive", "single_dominant_place", "typeOfDay=weekend"],
+                    "labels":["Weekend travel to {place}"],
+                },
+                {
+                    "comments":"Single day/recent trip labels",
+                    
+                    "conditions":["double_dominant_places", "many_places"],
+                    "labels":["{date_reference_weekday_string} trip to {place_1}, {place_2} and more"],
+                },
+                {
+                    "conditions":["double_dominant_places"],
+                    "labels":["{date_reference_weekday_string} trip to {place_1} and {place_2}"],
+                },
+                {
+                    "conditions":["single_dominant_place", "many_places"],
+                    "labels":["{date_reference_weekday_string} trip to {place} and other places"],
+                },
+                {
+                    "conditions":["single_dominant_place","!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["{date_reference_weekday_string} trip to {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["single_dominant_place","!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["{date_reference_weekday_string} trip to {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["single_dominant_place","!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["{date_reference_weekday_string} trip to {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["single_dominant_place","!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["{date_reference_weekday_string} trip to {place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["single_dominant_place","!place_name_overlap_with_city"],
+                    "labels":["{date_reference_weekday_string} trip to {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["{date_reference_weekday_string} trip to {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["{date_reference_weekday_string} trip to {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["{date_reference_weekday_string} trip to {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["{date_reference_weekday_string} trip to {place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["!place_name_overlap_with_city"],
+                    "labels":["{date_reference_weekday_string} trip to {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["with_more_than_three_persons"],
+                    "labels":["{date_reference_weekday_string} trip to {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["person_3", "person_2", "person_1"],
+                    "labels":["{date_reference_weekday_string} trip to {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":[ "person_2", "person_1"],
+                    "labels":["{date_reference_weekday_string} trip to {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["me_person_identified", "person_1"],
+                    "labels":["{date_reference_weekday_string} trip to {place} with {person_1}"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["{date_reference_weekday_string} trip to {place}"],
+                },
+                
+                {
+                    "comments":"Weekend specific labels",
+                    
+                    "conditions":["typeOfDay=weekend", "many_places"],
+                    "labels":["Weekend trip to {place_1}, {place_2} and more"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "double_dominant_places"],
+                    "labels":["Weekend trip to {place_1} and {place_2}"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "single_dominant_place", "many_places"],
+                    "labels":["Weekend trip to {place} and other places"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "single_dominant_place","!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["Weekend trip to {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "single_dominant_place","!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["Weekend trip to {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "single_dominant_place","!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["Weekend trip to {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "single_dominant_place","!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["Weekend trip to {place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "single_dominant_place","!place_name_overlap_with_city"],
+                    "labels":["Weekend trip to {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["typeOfDay=weekend", "!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["Weekend trip to {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["Weekend trip to {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["Weekend trip to {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["Weekend trip to {place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "!place_name_overlap_with_city"],
+                    "labels":["Weekend trip to {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["typeOfDay=weekend", "with_more_than_three_persons"],
+                    "labels":["Weekend trip to {place} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "person_3", "person_2", "person_1"],
+                    "labels":["Weekend trip to {place} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend", "person_2", "person_1"],
+                    "labels":["Weekend trip to {place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend","me_person_identified", "person_1"],
+                    "labels":["Weekend trip to {place} with {person_1}"],
+                },
+                {
+                    "conditions":["typeOfDay=weekend"],
+                    "labels":["Weekend trip to {place}"],
+                },
+                
+                {
+                    "comments":"Multi-day/old trip labels",
+                    
+                    "conditions":["double_dominant_places", "many_places"],
+                    "labels":["Trip to {place_1}, {place_2} and more"],
+                },
+                {
+                    "conditions":["double_dominant_places"],
+                    "labels":["Trip to {place_1} and {place_2}"],
+                },
+                {
+                    "conditions":["single_dominant_place", "many_places"],
+                    "labels":["Trip to {place} and other places"],
+                },
+                {
+                    "conditions":["single_dominant_place","!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["Trip to {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["single_dominant_place","!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["Trip to {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["single_dominant_place","!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["Trip to {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["single_dominant_place","!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["Trip to {place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["single_dominant_place","!place_name_overlap_with_city"],
+                    "labels":["Trip to {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["single_dominant_place", "with_more_than_three_persons"],
+                    "labels":["{place} Trip with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["single_dominant_place", "person_3", "person_2", "person_1"],
+                    "labels":["{place} Trip with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["single_dominant_place", "person_2", "person_1"],
+                    "labels":["{place} Trip with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["single_dominant_place","me_person_identified", "person_1"],
+                    "labels":["{place} Trip with {person_1}"],
+                },
+                {
+                    "conditions":["single_dominant_place"],
+                    "labels":["{place} Trip"],
+                },
+                
+                {
+                    "conditions":["!place_name_overlap_with_city", "with_more_than_three_persons"],
+                    "labels":["Trip to {place}, {city} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["!place_name_overlap_with_city", "person_3", "person_2", "person_1"],
+                    "labels":["Trip to {place}, {city} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["!place_name_overlap_with_city", "person_2", "person_1"],
+                    "labels":["Trip to {place}, {city} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["!place_name_overlap_with_city","me_person_identified", "person_1"],
+                    "labels":["Trip to {place}, {city} with {person_1}"],
+                },
+                {
+                    "conditions":["!place_name_overlap_with_city"],
+                    "labels":["Trip to {place}, {city}"],
+                },
+                
+                {
+                    "conditions":["with_more_than_three_persons"],
+                    "labels":["{place} Trip with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["person_3", "person_2", "person_1"],
+                    "labels":["{place} Trip with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["person_2", "person_1"],
+                    "labels":["{place} Trip with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["me_person_identified", "person_1"],
+                    "labels":["{place} Trip with {person_1}"],
+                },
+                {
+                    "conditions":["sensitive"],
+                    "labels":["Travel to {place}"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["{place} Trip"],
+                },
+                {
+                    "comments":"defaults",
+                    "conditions":[],
+                    "labels":["Travel"],
+                }
+            ]
+        }
+    ]
+}

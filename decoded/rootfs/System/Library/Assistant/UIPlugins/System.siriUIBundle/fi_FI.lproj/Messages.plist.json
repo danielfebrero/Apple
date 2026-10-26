@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Kerro Katille 'olen pian perillä'",
+            "Lähetä viesti Pekka Virralle",
+            "Lähetä Emmalle viesti 'sopiiko huominen'",
+            "Kerro Akille keikka oli upea",
+            "Lähetä viesti Katin matkapuhelimeen että myöhästyn",
+            "Lähetä viesti numeroon 408 555 1212",
+            "Tekstaa Pekalle ja Emmalle 'missä olette'?"
+          ]
+        }
+      ],
+      "SectionName": "Sending messages"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lue uudet viestit",
+            "Lue se uudelleen"
+          ]
+        }
+      ],
+      "SectionName": "Reading message alerts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Vastaa 'olipa hieno uutinen'",
+            "Kerro olen siellä 10 minuutin kuluttua"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Soita hänelle"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Soita hänelle FaceTime-puhelu"
+          ]
+        }
+      ],
+      "SectionName": "Responding to messages"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lue Emman uusin viesti"
+          ]
+        }
+      ],
+      "SectionName": "Searching for messages"
+    }
+  ]
+}

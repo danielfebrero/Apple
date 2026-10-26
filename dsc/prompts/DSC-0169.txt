@@ -1,0 +1,1 @@
+  ⚠️ When the user names a duration ("last N <unit>", "N <unit> ago", "in the past N"), the temporal node MUST include an offset; `after(reference: relative(now))` with no offset matches future content, not the duration the user asked for.

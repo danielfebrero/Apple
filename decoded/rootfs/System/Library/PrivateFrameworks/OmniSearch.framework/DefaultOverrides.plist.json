@@ -1,0 +1,51 @@
+[
+  {
+    "inputMatch": {
+      "kind": "exactRewrittenQuery",
+      "query": "^overridePCS"
+    },
+    "outputOverride": [
+      {
+        "payload": {
+          "_kMDItemAppEntityInstanceIdentifier": "messageAppEntityInstanceIdentifier",
+          "_kMDItemAppEntityTypeIdentifier": "MessageEntity",
+          "_kMDItemBundleID": "com.apple.MobileSMS",
+          "_kMDItemSnippet": "This is the body of a test message",
+          "kMDItemContentCreationDate": "2024-09-04 22:21:14",
+          "kMDItemContentType": "public.message",
+          "supportedTypeIdentifiersForExport": []
+        }
+      },
+      {
+        "payload": {
+          "_kMDItemAppEntityInstanceIdentifier": "mailAppEntityInstanceIdentifier",
+          "_kMDItemAppEntityTypeIdentifier": "MailMessageEntity",
+          "_kMDItemBundleID": "com.apple.mobilemail",
+          "_kMDItemSnippet": "This is the body of a test email",
+          "kMDItemContentCreationDate": "2024-09-04 22:21:14",
+          "kMDItemContentType": "public.email-message",
+          "supportedTypeIdentifiersForExport": []
+        }
+      }
+    ]
+  },
+  {
+    "inputMatch": {
+      "kind": "exactRewrittenQuery",
+      "query": "^overrideLLMQUOnly"
+    },
+    "llmQUOverride": {
+      "response": "{\"describe\": true, \"order_by_time\": \"ascending\", \"person_is_me\": true, \"preferred_type\": \"flight\", \"temporal_reference\": \"future\"}"
+    }
+  },
+  {
+    "cerberusOverride": {
+      "arguments": "{\"primaryTool\":{\"arguments\":{\"transportationType\":\"flight\",\"person\":\"SELF\",\"upcomingReservationsOnly\":true},\"name\":\"transportationReservationSearch\"},\"secondaryTools\":[{\"arguments\":{\"keywords\":[\"flight\"],\"upcomingEventsOnly\":true},\"name\":\"calendarSearch\"},{\"arguments\":{\"keywords\":[\"flight\",\"ticket\",\"reservation\"],\"date\":\"upcoming\"},\"name\":\"emailSearch\"},{\"arguments\":{\"keywords\":[\"flight\",\"ticket\",\"reservation\"]},\"name\":\"messageSearch\"}]}",
+      "name": "searchForAnswers"
+    },
+    "inputMatch": {
+      "kind": "exactRewrittenQuery",
+      "query": "^overrideCerberusOnly"
+    }
+  }
+]

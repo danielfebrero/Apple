@@ -1,0 +1,665 @@
+{
+  "ar-SA": [
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.samer",
+      "name": "samer",
+      "order": 1,
+      "pitchRange": "NearLow"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.soha",
+      "name": "soha",
+      "order": 2,
+      "pitchRange": "NearHigh"
+    }
+  ],
+  "da-DK": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.else",
+      "name": "else",
+      "order": 2,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.jens",
+      "name": "jens",
+      "order": 1,
+      "pitchRange": "MidLow"
+    }
+  ],
+  "de-DE": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.helena",
+      "name": "helena",
+      "order": 2,
+      "pitchRange": "MidHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.martin",
+      "name": "martin",
+      "order": 1,
+      "pitchRange": "Low"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.de-DE-C",
+      "name": "de-DE-C",
+      "order": 3,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.de-DE-D",
+      "name": "de-DE-D",
+      "order": 4,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "en-AU": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.catherine",
+      "name": "catherine",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.gordon",
+      "name": "gordon",
+      "order": 1,
+      "pitchRange": "NearLow"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.en-AU-C",
+      "name": "en-AU-C",
+      "order": 3,
+      "pitchRange": "MidLow"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.en-AU-D",
+      "name": "en-AU-D",
+      "order": 4,
+      "pitchRange": "NearHigh"
+    }
+  ],
+  "en-GB": [
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.arthur",
+      "name": "arthur",
+      "order": 2,
+      "pitchRange": "NearLow"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.martha",
+      "name": "martha",
+      "order": 1,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.en-GB-C",
+      "name": "en-GB-C",
+      "order": 3,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.en-GB-D",
+      "name": "en-GB-D",
+      "order": 4,
+      "pitchRange": "MidLow"
+    }
+  ],
+  "en-IE": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.maeve",
+      "name": "maeve",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.aidan",
+      "name": "aidan",
+      "order": 1,
+      "pitchRange": "MidLow"
+    }
+  ],
+  "en-IN": [
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.akash",
+      "languages": [
+        "en-IN",
+        "hi-IN"
+      ],
+      "name": "akash",
+      "order": 2,
+      "pitchRange": "MidLow"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.riya",
+      "languages": [
+        "en-IN",
+        "hi-IN"
+      ],
+      "name": "riya",
+      "order": 1,
+      "pitchRange": "NearHigh"
+    }
+  ],
+  "en-US": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.nora",
+      "name": "nora",
+      "order": 4,
+      "pitchRange": "VeryHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.aaron",
+      "name": "aaron",
+      "order": 1,
+      "pitchRange": "Low"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.damon",
+      "name": "damon",
+      "order": 3,
+      "pitchRange": "MidLow"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.simone",
+      "name": "simone",
+      "order": 2,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 3,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.quinn",
+      "name": "quinn",
+      "order": 5,
+      "pitchRange": "MidHigh"
+    },
+    {
+      "featureCapabilities": [
+        "GenerativeModels",
+        "SiriAI"
+      ],
+      "gender": 2,
+      "hardwareCapabilities": {
+        "isAppleTV": "FmPlatform",
+        "isHomePod": "NeuralPlatform",
+        "isMacOS": "FmPlatform",
+        "isVisionOS": "FmPlatform",
+        "isWatchOS": "NeuralPlatform",
+        "isiOS": "FmPlatform"
+      },
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.en-US-G",
+      "name": "en-US-G",
+      "order": 6,
+      "pitchRange": "High"
+    },
+    {
+      "featureCapabilities": [
+        "GenerativeModels",
+        "SiriAI"
+      ],
+      "gender": 1,
+      "hardwareCapabilities": {
+        "isAppleTV": "FmPlatform",
+        "isHomePod": "NeuralPlatform",
+        "isMacOS": "FmPlatform",
+        "isVisionOS": "FmPlatform",
+        "isWatchOS": "NeuralPlatform",
+        "isiOS": "FmPlatform"
+      },
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.en-US-F",
+      "name": "en-US-F",
+      "order": 7,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "en-ZA": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.leona",
+      "name": "leona",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.xander",
+      "name": "xander",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "es-ES": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.luisa",
+      "name": "luisa",
+      "order": 2,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.vincent",
+      "name": "vincent",
+      "order": 1,
+      "pitchRange": "MidLow"
+    }
+  ],
+  "es-MX": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.carmen",
+      "name": "carmen",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.angel",
+      "name": "angel",
+      "order": 1,
+      "pitchRange": "Low"
+    }
+  ],
+  "fi-FI": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.suvi",
+      "name": "suvi",
+      "order": 2,
+      "pitchRange": "MidHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.topi",
+      "name": "topi",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "fr-CA": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.sophie",
+      "name": "sophie",
+      "order": 2,
+      "pitchRange": "MidHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.pierre",
+      "name": "pierre",
+      "order": 1,
+      "pitchRange": "Low"
+    }
+  ],
+  "fr-FR": [
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.daniel",
+      "name": "daniel",
+      "order": 2,
+      "pitchRange": "Low"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.marie",
+      "name": "marie",
+      "order": 1,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.fr-FR-C",
+      "name": "fr-FR-C",
+      "order": 3,
+      "pitchRange": "MidHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.fr-FR-D",
+      "name": "fr-FR-D",
+      "order": 4,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "he-IL": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.yasmin",
+      "name": "yasmin",
+      "order": 2,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.ziv",
+      "name": "ziv",
+      "order": 1,
+      "pitchRange": "Low"
+    }
+  ],
+  "it-IT": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.francesca",
+      "name": "francesca",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.paolo",
+      "name": "paolo",
+      "order": 1,
+      "pitchRange": "Low"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.it-IT-C",
+      "name": "it-IT-C",
+      "order": 3,
+      "pitchRange": "MidLow"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.it-IT-D",
+      "name": "it-IT-D",
+      "order": 4,
+      "pitchRange": "MidHigh"
+    }
+  ],
+  "ja-JP": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.sakura",
+      "name": "sakura",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.hiro",
+      "name": "hiro",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "ko-KR": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.minji",
+      "name": "minji",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.jinsoo",
+      "name": "jinsoo",
+      "order": 1,
+      "pitchRange": "Low"
+    }
+  ],
+  "ms-MY": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.ms-MY-B",
+      "name": "ms-MY-B",
+      "order": 2,
+      "pitchRange": "MidHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.ms-MY-A",
+      "name": "ms-MY-A",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "nb-NO": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.ingrid",
+      "name": "ingrid",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.marius",
+      "name": "marius",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "nl-NL": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.klaar",
+      "name": "klaar",
+      "order": 2,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.pieter",
+      "name": "pieter",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "pt-BR": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.sandra",
+      "name": "sandra",
+      "order": 2,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.nando",
+      "name": "nando",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "pt-PT": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.pt-PT-B",
+      "name": "pt-PT-B",
+      "order": 2,
+      "pitchRange": "MidHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.pt-PT-A",
+      "name": "pt-PT-A",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "ru-RU": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.yelena",
+      "name": "yelena",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.aleksei",
+      "name": "aleksei",
+      "order": 1,
+      "pitchRange": "Low"
+    }
+  ],
+  "sv-SE": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.tilde",
+      "name": "tilde",
+      "order": 2,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.axel",
+      "name": "axel",
+      "order": 1,
+      "pitchRange": "MidLow"
+    }
+  ],
+  "th-TH": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.th-TH-B",
+      "name": "th-TH-B",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.th-TH-A",
+      "name": "th-TH-A",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "tr-TR": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.elif",
+      "name": "elif",
+      "order": 2,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.kaan",
+      "name": "kaan",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "vi-VN": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.vi-VN-A",
+      "name": "vi-VN-A",
+      "order": 1,
+      "pitchRange": "MidHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.vi-VN-B",
+      "name": "vi-VN-B",
+      "order": 2,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "vi-VN-u-sd-vnct": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.vi-VN-C",
+      "name": "vi-VN-C",
+      "order": 3,
+      "pitchRange": "NearHigh"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.vi-VN-D",
+      "name": "vi-VN-D",
+      "order": 4,
+      "pitchRange": "Low"
+    }
+  ],
+  "zh-CN": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.linfei",
+      "name": "linfei",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.li-mu",
+      "name": "limu",
+      "order": 1,
+      "pitchRange": "NearLow"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.zh-CN-C",
+      "name": "zh-CN-C",
+      "order": 3,
+      "pitchRange": "MidLow"
+    },
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.zh-CN-D",
+      "name": "zh-CN-D",
+      "order": 4,
+      "pitchRange": "NearHigh"
+    }
+  ],
+  "zh-HK": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.kayan",
+      "name": "kayan",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.hoyin",
+      "name": "hoyin",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ],
+  "zh-TW": [
+    {
+      "gender": 2,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.shufen",
+      "name": "shufen",
+      "order": 2,
+      "pitchRange": "High"
+    },
+    {
+      "gender": 1,
+      "identifier": "com.apple.speech.synthesis.voice.custom.siri.chenghan",
+      "name": "chenghan",
+      "order": 1,
+      "pitchRange": "NearLow"
+    }
+  ]
+}

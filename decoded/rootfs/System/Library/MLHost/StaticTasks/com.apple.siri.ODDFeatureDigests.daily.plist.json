@@ -1,0 +1,15 @@
+{
+  "name": "com.apple.siri.ODDFeatureDigests.daily",
+  "bundleIdentifier": "com.apple.siri.ODDFeatureDigestsExtension",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 86400.0,
+      "minDurationBetweenInstances": 69120
+    },
+    "requiresProtectionClass": "ClassC",
+    "priority": "Utility",
+    "requiresExternalPower": false,
+    "groupName": "com.apple.siri.ODDFeatureDigests",
+    "groupConcurrencyLimit": 1
+  }
+}

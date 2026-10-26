@@ -1,0 +1,92 @@
+{
+  "ShowHighDataModeSwitch": true,
+  "MTU": [
+    {
+      "technology-mask": 25,
+      "size": 1460
+    }
+  ],
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "0.1.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 32771,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "altice",
+          "AllowedProtocolMask": 1
+        },
+        {
+          "type-mask": 48,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "tethering",
+          "AllowedProtocolMask": 1
+        },
+        {
+          "type-mask": 4,
+          "password": "",
+          "tech-type-mask": 4,
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "mms",
+          "AllowedProtocolMask": 1
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131072,
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "AllowedProtocolMaskInRoaming": 1,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 1
+        },
+        {
+          "type-mask": 1048576,
+          "password": "",
+          "tech-type-mask": 1048576,
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "AllowedProtocolMaskInRoaming": 1,
+          "username": "",
+          "apn": "xcap",
+          "AllowedProtocolMask": 1
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInDomesticRoaming": 3,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "Show5GSwitch": true,
+  "IMSConfig": {
+    "Media": {
+      "EnableRTCPExtendedReports": true
+    },
+    "Signaling": {
+      "VerstatFeatureCapability": "Enabled"
+    }
+  }
+}

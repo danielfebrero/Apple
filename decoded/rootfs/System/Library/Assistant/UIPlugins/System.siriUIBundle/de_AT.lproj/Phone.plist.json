@@ -1,0 +1,47 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Rufe Tobias an",
+            "Wähle die Handynummer von Sabine",
+            "Rufe Diana auf ihrer Geschäftsnummer an",
+            "01 1270043 anrufen",
+            "Rufe daheim an",
+            "Rufe 112 an",
+            "Ruf die Feuerwehr an",
+            "Zeig mir die Anrufliste"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Habe ich Anrufe verpasst?",
+            "Rufe sie bitte nochmal an"
+          ]
+        }
+      ],
+      "SectionName": "ANRUFE"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Habe ich eine neue Voicemail?",
+            "Spiele die Voicemail von Susanne ab"
+          ]
+        }
+      ],
+      "SectionName": "VOICEMAIL"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en">
+    <conditions>
+        <condition name="isStock">
+            <expression name="instrumentType" op="eq" value="'equity'"/>
+        </condition>
+    </conditions>
+    <phrases>
+        <first phrase="suggestionUtterance">
+            <text condition="isStock">Stock price of <var name="name"/></text>
+            <text>Price of <var name="name"/></text>
+        </first>
+    </phrases>
+    <first>
+        <dialog id="exampleUtterance"><phrase name="suggestionUtterance"/></dialog>
+    </first>
+</cat>

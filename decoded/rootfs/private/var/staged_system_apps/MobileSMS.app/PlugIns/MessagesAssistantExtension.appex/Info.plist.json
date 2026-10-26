@@ -1,0 +1,47 @@
+{
+  "CFBundleName": "MessagesAssistantExtension",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B108",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1491.200.101.2.5",
+  "BuildMachineOSBuild": "23A344017",
+  "UIBackgroundModes": [
+    "audio"
+  ],
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "XPC!",
+  "CFBundleShortVersionString": "26.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "MessagesAssistantExtension",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.MobileSMS.MessagesAssistantExtension",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "CFBundleDisplayName": "MessagesAssistantExtension",
+  "DTPlatformBuild": "24B108",
+  "NSExtension": {
+    "NSExtensionAttributes": {
+      "IntentsRestrictedWhileLocked": [],
+      "IntentsSupported": [
+        "INEditMessageIntent",
+        "INSendMessageIntent",
+        "INSearchForMessagesIntent",
+        "INSetMessageAttributeIntent",
+        "INPlayAudioMessageIntent",
+        "INPlayMessageSoundIntent",
+        "INUnsendMessagesIntent"
+      ]
+    },
+    "NSExtensionPointIdentifier": "com.apple.intents-service",
+    "NSExtensionPrincipalClass": "CKAssistantIntentHandler"
+  }
+}

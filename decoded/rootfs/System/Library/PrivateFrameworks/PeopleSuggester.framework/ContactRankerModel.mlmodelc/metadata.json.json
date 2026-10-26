@@ -1,0 +1,338 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Int64",
+        "type": "Int64",
+        "name": "label",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "keyType": "Int64",
+        "formattedType": "Dictionary (Int64 → Double)",
+        "type": "Dictionary",
+        "name": "classProbability",
+        "shortDescription": ""
+      }
+    ],
+    "modelParameters": [],
+    "author": "GC",
+    "specificationVersion": 1,
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_pipelineClassifier",
+      "structure": [
+        {
+          "name": "MLModelType_featureVectorizer"
+        },
+        {
+          "name": "MLModelType_treeEnsembleClassifier"
+        }
+      ]
+    },
+    "inputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "timeSinceLastContactViaShare",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "timeSinceLastContactViaIncomingText",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "timeSinceLastContactViaOutgoingText",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "timeSinceLastContactViaIncomingCall",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "normalizedShareFrequency",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "normalizedIncomingTextFrequency",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "normalizedOutgoingTextFrequency",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "normalizedIncomingCallFrequency",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "normalizedOutgoingCallFrequency",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "numberOfBehavioralRulesAdvocating",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "averageBehavioralRuleSupport",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "averageBehavioralRuleConfidence",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "averageBehavioralRuleLift",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "averageBehavioralRuleConviction",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "averageBehavioralRulePowerFactor",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "averageBehavioralRuleMLScore",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "minimumBehavioralRuleSupport",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "minimumBehavioralRuleConfidence",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "minimumBehavioralRuleLift",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "minimumBehavioralRuleConviction",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "minimumBehavioralRulePowerFactor",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "minimumBehavioralRuleMLScore",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "maximumBehavioralRuleSupport",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "maximumBehavioralRuleConfidence",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "maximumBehavioralRuleLift",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "maximumBehavioralRuleConviction",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "maximumBehavioralRulePowerFactor",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "maximumBehavioralRuleMLScore",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "stdevBehavioralRuleSupport",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "stdevBehavioralRuleConfidence",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "stdevBehavioralRuleLift",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "stdevBehavioralRuleConviction",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "stdevBehavioralRulePowerFactor",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "stdevBehavioralRuleMLScore",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "interactionModelScore",
+        "shortDescription": ""
+      }
+    ],
+    "classLabels": [
+      0,
+      1
+    ],
+    "generatedClassName": "ContactRankerModel",
+    "userDefinedMetadata": {
+      "normalizedShareFrequency": "1",
+      "averageBehavioralRuleConfidence": "1",
+      "stdevBehavioralRuleConviction": "1",
+      "minimumBehavioralRuleConfidence": "1",
+      "maximumBehavioralRuleLift": "1",
+      "minimumBehavioralRulePowerFactor": "1",
+      "maximumBehavioralRuleConfidence": "1",
+      "averageBehavioralRuleSupport": "1",
+      "minimumBehavioralRuleSupport": "1",
+      "stdevBehavioralRuleLift": "1",
+      "stdevBehavioralRuleSupport": "1",
+      "timeSinceLastContactViaIncomingCall": "1",
+      "stdevBehavioralRulePowerFactor": "1",
+      "stdevBehavioralRuleMLScore": "1",
+      "normalizedOutgoingTextFrequency": "1",
+      "averageBehavioralRuleMLScore": "1",
+      "mlModelVersion": "1.0",
+      "timeSinceLastContactViaIncomingText": "1",
+      "timeSinceLastContactViaOutgoingText": "1",
+      "averageBehavioralRulePowerFactor": "1",
+      "stdevBehavioralRuleConfidence": "1",
+      "averageBehavioralRuleConviction": "1",
+      "normalizedIncomingCallFrequency": "1",
+      "maximumBehavioralRuleSupport": "1",
+      "minimumBehavioralRuleMLScore": "1",
+      "minimumBehavioralRuleLift": "1",
+      "minimumBehavioralRuleConviction": "1",
+      "timeSinceLastContactViaShare": "1",
+      "maximumBehavioralRuleConviction": "1",
+      "maximumBehavioralRulePowerFactor": "1",
+      "maximumBehavioralRuleMLScore": "1",
+      "coremltoolsVersion": "3.4",
+      "normalizedOutgoingCallFrequency": "1",
+      "normalizedIncomingTextFrequency": "1",
+      "interactionModelScore": "1",
+      "numberOfBehavioralRulesAdvocating": "1",
+      "averageBehavioralRuleLift": "1"
+    },
+    "method": "predict"
+  }
+]

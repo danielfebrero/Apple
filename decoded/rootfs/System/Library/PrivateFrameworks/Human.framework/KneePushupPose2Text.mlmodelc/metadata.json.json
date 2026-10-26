@@ -1,0 +1,215 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Float32",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 5 × 28)",
+        "shortDescription": "",
+        "shape": "[1, 5, 28]",
+        "name": "atomic_events",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 28 × 28)",
+        "shortDescription": "",
+        "shape": "[1, 28, 28]",
+        "name": "pair_events",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 28)",
+        "shortDescription": "",
+        "shape": "[1, 28]",
+        "name": "priorities",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 5 × 28)",
+        "shortDescription": "",
+        "shape": "[1, 5, 28]",
+        "name": "atomic_signals",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 28 × 28)",
+        "shortDescription": "",
+        "shape": "[1, 28, 28]",
+        "name": "pair_signals",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 28 × 3)",
+        "shortDescription": "",
+        "shape": "[1, 28, 3]",
+        "name": "source_post_process",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 28 × 3)",
+        "shortDescription": "",
+        "shape": "[1, 28, 3]",
+        "name": "target_post_process",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "mpjpe",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "nmpjpe",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Int32",
+        "formattedType": "MultiArray (Int32 1)",
+        "shortDescription": "",
+        "shape": "[1]",
+        "name": "rotation_category",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1)",
+        "shortDescription": "",
+        "shape": "[1]",
+        "name": "rotation_angle",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 6,
+    "mlProgramOperationTypeHistogram": {
+      "Sqrt": 4,
+      "Stack": 11,
+      "Greater": 6,
+      "Cast": 16,
+      "ReduceL2Norm": 10,
+      "SliceByIndex": 90,
+      "Concat": 3,
+      "Identity": 1,
+      "ScatterNd": 3,
+      "Sign": 3,
+      "ReduceMin": 4,
+      "ReduceMean": 4,
+      "Shape": 3,
+      "Gather": 18,
+      "Sin": 2,
+      "Squeeze": 5,
+      "Acos": 5,
+      "LogicalAnd": 2,
+      "RealDiv": 10,
+      "Maximum": 4,
+      "LogicalNot": 2,
+      "Matmul": 2,
+      "Less": 3,
+      "Equal": 1,
+      "NonZero": 3,
+      "Mul": 54,
+      "Abs": 1,
+      "ExpandDims": 13,
+      "Scatter": 62,
+      "ReduceSum": 19,
+      "Pow": 1,
+      "Clip": 7,
+      "Sub": 46,
+      "Reshape": 32,
+      "Transpose": 2,
+      "Add": 8,
+      "Select": 1,
+      "Cos": 2,
+      "Tile": 7
+    },
+    "computePrecision": "Mixed (Float32, Int32)",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "12.0",
+      "tvOS": "15.0",
+      "visionOS": "1.0",
+      "watchOS": "8.0",
+      "iOS": "15.0",
+      "macCatalyst": "15.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-6lvy3jxado",
+      "com.github.apple.coremltools.source": "torch==2.7.0",
+      "com.github.apple.coremltools.version": "8.3.2",
+      "com.github.apple.coremltools.source_dialect": "TorchScript"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 28 × 3)",
+        "shortDescription": "",
+        "shape": "[1, 28, 3]",
+        "name": "source_pose3d",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1 × 28 × 3)",
+        "shortDescription": "",
+        "shape": "[1, 28, 3]",
+        "name": "target_pose3d",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Int32",
+        "formattedType": "MultiArray (Int32 1)",
+        "shortDescription": "",
+        "shape": "[1]",
+        "name": "exercise",
+        "type": "MultiArray"
+      }
+    ],
+    "generatedClassName": "KneePushupPose2Text",
+    "method": "predict"
+  }
+]

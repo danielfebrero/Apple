@@ -1,0 +1,44 @@
+{
+  "AssetSetName": "com.apple.MobileAsset.UAF.MotionAnomalyFM",
+  "Assets": [
+    {
+      "AssetName": "com.apple.fm.motionanomalyfm.adapter.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.motionanomalyfm.adapter.generic",
+          "RequiredUsageTypes": [
+            "com.apple.fm.motionanomalyfm.adapter.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.fm.motionanomalyfm.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.motionanomalyfm.base.generic",
+          "RequiredUsageTypes": [
+            "com.apple.fm.motionanomalyfm.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.motionanomalyfm.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.motionanomalyfm.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.MotionAnomalyFM",
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.motionanomalyfm.uaf.metadata",
+  "UsageTypes": [
+    "com.apple.fm.motionanomalyfm.adapter.generic",
+    "com.apple.fm.motionanomalyfm.base.generic"
+  ]
+}

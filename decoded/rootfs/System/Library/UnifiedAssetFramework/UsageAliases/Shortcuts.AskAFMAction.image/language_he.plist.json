@@ -1,0 +1,22 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "Shortcuts.AskAFMAction.image",
+  "UsageAliasValues": {
+    "language_he": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.shortcuts_ask_afm_action.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.shortcuts_ask_afm_action.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.base.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.shortcuts_ask_afm_action.generic": "ENABLED",
+        "com.apple.gm.server.instruct_server_v1.shortcuts_ask_afm_action_v2.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

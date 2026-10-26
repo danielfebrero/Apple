@@ -1,0 +1,50 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Recuérdame llamar a mamá",
+            "Añade zanahorias a la lista de la compra",
+            "Recuérdame que tengo que coger el paraguas",
+            "Recuérdame que me tengo que tomar la pastilla mañana a las 6 de la mañana",
+            "Recordarme que el informe tiene que estar listo a las 3",
+            "Léeme la lista de recordatorios Boda",
+            "Marca el tercero como completado",
+            "Crea la lista de recordatorios Compras",
+            "Recuérdame este mensaje de correo mañana",
+            "Recuérdame esta página web"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Recuérdame llamar a mi hermana cuando llegue a casa",
+            "Recuérdame llamar a Paco cuando salga de aquí"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Recordarme llamar por FaceTime a papá cuando esté en el coche"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Recordarme que compre flores al salir de aquí"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

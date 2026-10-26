@@ -1,0 +1,125 @@
+{
+  "com.apple.CommCenter.fine-grained": [
+    "spi",
+    "cellular-plan"
+  ],
+  "com.apple.Contacts.database-allow": true,
+  "com.apple.appprotectiond.read.access": true,
+  "com.apple.coreaudio.allow-amr-decode": true,
+  "com.apple.coreaudio.allow-amr-encode": true,
+  "com.apple.coreduetd.allow": true,
+  "com.apple.coreduetd.context": true,
+  "com.apple.developer.usersafety.client": [
+    "analysis"
+  ],
+  "com.apple.imagent": true,
+  "com.apple.locationd.usage_oracle": true,
+  "com.apple.mediaanalysisd.client": true,
+  "com.apple.message-payload-provider.host": true,
+  "com.apple.private.CallHistory.read": true,
+  "com.apple.private.accounts.allaccounts": true,
+  "com.apple.private.attribution.usage-reporting-only.implicitly-assumed-identity": {
+    "type": "bundleID",
+    "value": "com.apple.MobileSMS"
+  },
+  "com.apple.private.biome.read-write": [
+    "Discoverability.Signals",
+    "Discoverability.Usage"
+  ],
+  "com.apple.private.contacts": true,
+  "com.apple.private.dmd.emergency-mode": true,
+  "com.apple.private.dmd.policy": true,
+  "com.apple.private.ids.idquery-cache": true,
+  "com.apple.private.ids.messaging": [
+    "com.apple.private.alloy.biz",
+    "com.apple.madrid",
+    "com.apple.madrid.lite",
+    "com.apple.madrid.lite.relay"
+  ],
+  "com.apple.private.ids.phone-number-authentication": true,
+  "com.apple.private.imcore.imagent": true,
+  "com.apple.private.imcore.imdpersistence.data-detection-access": true,
+  "com.apple.private.imcore.imdpersistence.database-access": true,
+  "com.apple.private.imcore.imremoteurlconnection": true,
+  "com.apple.private.imcore.spi.database-access": true,
+  "com.apple.private.intents.extension": true,
+  "com.apple.private.screen-time": true,
+  "com.apple.private.screen-time-settings": true,
+  "com.apple.private.screentime-communication": true,
+  "com.apple.private.security.storage.CallHistory": true,
+  "com.apple.private.security.storage.Messages": true,
+  "com.apple.private.security.storage.MessagesEscrow": true,
+  "com.apple.private.security.storage.Photos": true,
+  "com.apple.private.tcc.allow": [
+    "kTCCServiceAddressBook"
+  ],
+  "com.apple.private.tcc.allow.overridable": [
+    "kTCCServicePhotos",
+    "kTCCServiceAddressBook"
+  ],
+  "com.apple.private.ubiquity-additional-kvstore-identifiers": [
+    "com.apple.tipsd"
+  ],
+  "com.apple.security.app-sandbox": true,
+  "com.apple.security.application-groups": [
+    "group.com.apple.tipsnext"
+  ],
+  "com.apple.security.exception.files.absolute-path.read-only": [
+    "/private/var/mobile/Library/SMS/",
+    "/private/var/tmp/",
+    "/private/var/mobile/tmp/"
+  ],
+  "com.apple.security.exception.files.absolute-path.read-write": [
+    "/private/var/tmp/com.apple.messages/",
+    "/private/var/mobile/tmp/com.apple.messages/"
+  ],
+  "com.apple.security.exception.files.home-relative-path.read-only": [
+    "/Library/com.apple.ManagedSettings/EffectiveSettings.plist"
+  ],
+  "com.apple.security.exception.files.home-relative-path.read-write": [
+    "/Library/CallHistoryDB/"
+  ],
+  "com.apple.security.exception.mach-lookup.global-name": [
+    "com.apple.dmd.emergency-mode",
+    "com.apple.telephonyutilities.callservicesdaemon.callprovidermanager",
+    "com.apple.CellularPlanDaemon.xpc",
+    "com.apple.imdpersistence.IMDPersistenceAgent",
+    "com.apple.identityservicesd.embedded.auth",
+    "com.apple.imfoundation.IMRemoteURLConnectionAgent",
+    "com.apple.ScreenTimeAgent",
+    "com.apple.ScreenTimeAgent.private",
+    "com.apple.dmd.policy",
+    "com.apple.idsremoteurlconnectionagent.embedded.auth",
+    "com.apple.familycircle.agent",
+    "com.apple.ScreenTimeAgent.communication",
+    "com.apple.telephonyutilities.callservicesdaemon.callstatecontroller",
+    "com.apple.CallHistorySyncHelper",
+    "com.apple.mediaanalysisd.analysis",
+    "com.apple.ManagedSettingsAgent.publisher",
+    "com.apple.appprotectiond.read",
+    "com.apple.commcenter.coretelephony.xpc",
+    "com.apple.commcenter.xpc",
+    "com.apple.ScreenTimeSettingsAgent.private"
+  ],
+  "com.apple.security.exception.shared-preference.read-only": [
+    "com.apple.ScreenTimeAgent"
+  ],
+  "com.apple.security.exception.shared-preference.read-write": [
+    "com.apple.ScreenTimeAgent.conversation",
+    "com.apple.MobileSMS",
+    "com.apple.messages"
+  ],
+  "com.apple.security.hardened-process": true,
+  "com.apple.security.personal-information.addressbook": true,
+  "com.apple.security.temporary-exception.mach-lookup.global-name": [
+    "com.apple.imagent.embedded.auth"
+  ],
+  "com.apple.telephonyutilities.callservicesd": [
+    "access-calls",
+    "access-call-providers"
+  ],
+  "com.apple.trial.client": [
+    "351"
+  ],
+  "com.apple.usersafety.service": "messages"
+}

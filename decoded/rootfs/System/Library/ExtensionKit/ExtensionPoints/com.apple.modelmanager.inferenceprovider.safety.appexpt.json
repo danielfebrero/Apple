@@ -1,0 +1,19 @@
+{
+  "com.apple.modelmanager.inferenceprovider.safety": {
+    "EXExtensionPointIsPublic": false,
+    "EXPresentsUserInterface": false,
+    "EXRequiredEntitlements": {
+      "com.apple.modelmanager.inferenceprovidermanager": true
+    },
+    "EXRequiresLibXPCConnection": true,
+    "EXSupportedPlatforms": [
+      "iOS",
+      "macOS",
+      "watchOS",
+      "xrOS",
+      "tvOS"
+    ],
+    "EXRequiresMultiInstance": true,
+    "EXSandboxProfileName": "safety-inference-extension"
+  }
+}

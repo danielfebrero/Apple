@@ -1,0 +1,15 @@
+{
+  "name": "com.apple.siri.ODDI.experimentation.daily",
+  "bundleIdentifier": "com.apple.siri.ODDIExperimentationExtension",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 79200.0,
+      "minDurationBetweenInstances": 39600
+    },
+    "requiresProtectionClass": "ClassC",
+    "priority": "Utility",
+    "requiresExternalPower": false,
+    "groupName": "com.apple.siri.ODDI",
+    "groupConcurrencyLimit": 1
+  }
+}

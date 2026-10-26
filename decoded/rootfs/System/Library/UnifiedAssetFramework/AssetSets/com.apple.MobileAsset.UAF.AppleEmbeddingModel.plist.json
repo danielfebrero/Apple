@@ -1,0 +1,92 @@
+{
+  "AssetSetName": "com.apple.MobileAsset.UAF.AppleEmbeddingModel",
+  "Assets": [
+    {
+      "AssetName": "com.apple.mediaanalysis.aem.md7.encoder.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.mediaanalysis.aem.md7.encoder",
+          "RequiredUsageTypes": [
+            "com.apple.mediaanalysis.aem.md7.encoder.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.mediaanalysis.aem.md7.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.mediaanalysis.aem.md7.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.mediaanalysis.aem.md7.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.mediaanalysis.aem.md8.encoder.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.mediaanalysis.aem.md8.encoder",
+          "RequiredUsageTypes": [
+            "com.apple.mediaanalysis.aem.md8.encoder.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.mediaanalysis.aem.md8.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.mediaanalysis.aem.md8.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.mediaanalysis.aem.md8.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.mediaanalysis.aem.md9.encoder.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.mediaanalysis.aem.md9.encoder",
+          "RequiredUsageTypes": [
+            "com.apple.mediaanalysis.aem.md9.encoder.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.mediaanalysis.aem.md9.tokenizer.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.mediaanalysis.aem.md9.tokenizer",
+          "RequiredUsageTypes": [
+            "com.apple.mediaanalysis.aem.md9.tokenizer.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.appleembeddingmodel.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.appleembeddingmodel.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.AppleEmbeddingModel",
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.appleembeddingmodel.uaf.metadata",
+  "UsageTypes": [
+    "com.apple.mediaanalysis.aem.md7.encoder.generic",
+    "com.apple.mediaanalysis.aem.md7.tokenizer.generic",
+    "com.apple.mediaanalysis.aem.md8.encoder.generic",
+    "com.apple.mediaanalysis.aem.md8.tokenizer.generic",
+    "com.apple.mediaanalysis.aem.md9.encoder.generic",
+    "com.apple.mediaanalysis.aem.md9.tokenizer.generic"
+  ]
+}

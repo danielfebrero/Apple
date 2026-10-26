@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Apakah alamat Julie?",
+            "Apakah nombor telefon Amira?",
+            "Bilakah hari lahir isteri saya?",
+            "Tunjukkan alamat e-mel rumah Nora",
+            "Apakah alamat kerja abang saya?"
+          ]
+        }
+      ],
+      "SectionName": "bertanya mengenai kenalan"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Tunjukkan Kamales",
+            "Cari orang bernama Abdullah"
+          ]
+        }
+      ],
+      "SectionName": "mencari kenalan"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Ibu saya ialah Amira Abdullah",
+            "Kamales ialah abang saya"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Hubungi abang saya di tempat kerja"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime abang saya di tempat kerja"
+          ]
+        }
+      ],
+      "SectionName": "perhubungan"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Pelajari cara menyebut nama saya",
+            "Ketahui cara menyebut nama ibu saya",
+            "Pelajari cara menyebut nama Jaya Kumar"
+          ]
+        }
+      ],
+      "SectionName": "sebutan"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FileType</key>
+	<string>AssetSetConfiguration</string>
+	<key>FileVersion</key>
+	<string>1.0.0</string>
+	<key>AssetSetName</key>
+	<string>com.apple.parsec.sba</string>
+	<key>UsageTypes</key>
+	<array>
+		<string>sba.systemlocale</string>
+		<string>sba.countrycode</string>		
+	</array>
+	<key>AutoAssetType</key>
+	<string>com.apple.MobileAsset.UAF.SafariBrowsingAssistant</string>
+	<key>Assets</key>
+	<array>
+		<dict>
+			<key>AssetName</key>
+			<string>com.apple.parsec.sba.prefetch</string>
+			<key>Expansions</key>
+			<array>
+				<dict>
+					<key>RequiredUsageTypes</key>
+					<array>
+						<string>sba.systemlocale</string>
+						<string>sba.countrycode</string>				       
+					</array>
+					<key>AutoAssetSpecifierTemplate</key>
+					<string>com.apple.parsec.sba.prefetch.{sba.countrycode}.{sba.systemlocale}</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
+

@@ -1,0 +1,101 @@
+{
+  "AllowDelaySetupUntilRequest": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "NLRouter": {
+    "Enabled": true
+  },
+  "NLRouterAllowRoutingToGenAIGlobal": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "NLRouterAllowRoutingToPlannerGlobal": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "NLRouterOverrides": {
+    "Enabled": true
+  },
+  "NLRouterQueryDecorationOnScreenContextSignalsInMiniPrompt": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "NLRouterUpdatableCorrection": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "SiriMiniAmbiguityRefactor": {
+    "Enabled": true
+  },
+  "SiriMiniCATI": {
+    "Enabled": true
+  },
+  "SiriMiniCATIMultiTurn": {
+    "Enabled": true
+  },
+  "SiriMiniCDMClientXPC": {
+    "Enabled": true
+  },
+  "SiriMiniCbrUnrestrictedByRD": {
+    "Enabled": true
+  },
+  "SiriMiniCcqrAerCbr": {
+    "Enabled": true
+  },
+  "SiriMiniContextUpdate": {
+    "Enabled": true
+  },
+  "SiriMiniFeatureStoreEnabled": {
+    "Enabled": true
+  },
+  "SiriMiniFeatureStoreEnabledForExternalBuilds": {
+    "Enabled": true
+  },
+  "SiriMiniInterpretationGroupFiltering": {
+    "Enabled": true
+  },
+  "SiriMiniLVC": {
+    "Enabled": true
+  },
+  "SiriMiniLighthouseAPI": {
+    "Enabled": true
+  },
+  "SiriMiniMain": {
+    "Enabled": true
+  },
+  "SiriMiniMarrsContextualSpanMatcher": {
+    "Enabled": true
+  },
+  "SiriMiniMarrsMentionDetector": {
+    "Enabled": true
+  },
+  "SiriMiniMarrsMentionResolver": {
+    "Enabled": true
+  },
+  "SiriMiniNLv4ServiceOverrides": {
+    "Enabled": true
+  },
+  "SiriMiniOverrides": {
+    "Enabled": true
+  },
+  "SiriMiniRepetitionDetection": {
+    "Enabled": true
+  },
+  "SiriMiniSSU": {
+    "Enabled": true
+  },
+  "SiriMiniSSUEnableIndexing": {
+    "Enabled": true
+  },
+  "SiriMiniServiceSharing": {
+    "Enabled": true
+  },
+  "SiriMiniShortcutsNLv4Followup": {
+    "DevelopmentPhase": "FeatureComplete"
+  },
+  "SiriMiniTrieOverrides": {
+    "Enabled": true
+  },
+  "SiriMiniUAFAssets": {
+    "Enabled": true
+  },
+  "SiriMiniUsoEntitySpan": {
+    "Enabled": true
+  }
+}

@@ -1,0 +1,5 @@
+**JSON FORMAT for enum/union types:**
+All enum types use discriminated union format: {"type": "<caseName>", "value": <payload>}
+Examples: {"type": "search", "value": {...}}, {"type": "contentType", "value": {"contentTypes": [...]}}
+Person cases nest inside a person node: {"type": "person", "value": {"type": "recipient", "value": "Alice Smith"}}; self-relations inside personMe: {"type": "personMe", "value": {"type": "fromMe", "value": true}}
+Always include the "type" key and "value" key.

@@ -1,0 +1,16 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "VisualGeneration.ADMPromptAnalyzer",
+  "UsageAliasValues": {
+    "isIFPEnabled_false_language_da": {
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.adm_prompt_analyzer.draft.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.adm_prompt_analyzer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "entityRelevanceContextualFeatures": {
+        "currentContextViews": [
+          "currentCoarseTimeOfDayContext",
+          "currentDayOfWeekContext"
+        ],
+        "entityInteractionHistogramView": "loiEntityHistograms"
+      }
+    }
+  },
+  "featureFlag": "EntityRelevanceBiomeSources",
+  "name": "loiEntityRelevanceCoarseTimeOfDayAndDayOfWeekFeatures",
+  "type": "signal",
+  "update": {
+    "group": "loiEntityRelevance",
+    "viewListeners": [
+      {
+        "name": "loiEntityHistograms",
+        "schedule": "live"
+      },
+      {
+        "name": "currentCoarseTimeOfDayContext",
+        "schedule": "live"
+      },
+      {
+        "name": "currentDayOfWeekContext",
+        "schedule": "live"
+      }
+    ]
+  }
+}

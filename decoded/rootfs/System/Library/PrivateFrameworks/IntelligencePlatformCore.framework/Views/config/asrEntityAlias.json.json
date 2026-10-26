@@ -1,0 +1,70 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "MD_ID",
+          "INTEGER"
+        ],
+        [
+          "alias",
+          "TEXT"
+        ],
+        [
+          "entity_type",
+          "TEXT"
+        ],
+        [
+          "signal_type",
+          "TEXT"
+        ],
+        [
+          "contact_identifier",
+          "TEXT"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "MD_ID",
+        "signal_type",
+        "contact_identifier"
+      ],
+      "subjectIdentifierColumn": "MD_ID",
+      "tableName": "asr_entity_alias"
+    },
+    "path": "ecr/views.db",
+    "type": "customRow"
+  },
+  "featureFlag": "NERD",
+  "name": "asrEntityAlias",
+  "sql": {
+    "delete": "nerd/delete",
+    "update": "nerd/asr_entity_alias"
+  },
+  "type": "customSQL",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB104"
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "entityAlias",
+        "schedule": "none"
+      },
+      {
+        "name": "peopleSubgraph",
+        "schedule": "none"
+      }
+    ]
+  },
+  "writeToStream": true
+}

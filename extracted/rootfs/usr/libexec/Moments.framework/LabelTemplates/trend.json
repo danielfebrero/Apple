@@ -1,0 +1,25 @@
+{
+    "cases": [
+        {
+            "bundleType":"conversationTrend",
+            "templates" :[
+                {
+                    "conditions":[],
+                    "labels":["You’ve Connected"],
+                    "prompts":["How has connecting with {person_1} changed over the last month?"],
+                }
+            ]
+        },
+        {
+            "bundleType":"workoutTrend",
+            "templates" :[
+                {
+                    "conditions":[],
+                    "labels":["Workout Routine"],
+                    "prompts":["How have your workouts changed over the last month?"],
+                }
+            ]
+        }
+    ]
+}
+

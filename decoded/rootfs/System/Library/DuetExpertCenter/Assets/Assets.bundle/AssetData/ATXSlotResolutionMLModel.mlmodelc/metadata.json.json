@@ -1,0 +1,86 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "Slot Resolution, scores action parameter combinations as the second stage of action predictions for Spotlight. This is a direct translation of the Chapman et al. model to CoreML.",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "score",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "0.0.1",
+    "modelParameters": [],
+    "specificationVersion": 6,
+    "storagePrecision": "Float32",
+    "mlProgramOperationTypeHistogram": {
+      "Fill": 5,
+      "Cast": 49,
+      "LogicalOr": 5,
+      "Select": 9,
+      "Concat": 2,
+      "Add": 3,
+      "GreaterEqual": 26,
+      "Tile": 3,
+      "Less": 1,
+      "RealDiv": 1,
+      "Shape": 6,
+      "ExpandDims": 3,
+      "Linear": 1,
+      "NotEqual": 2,
+      "ScatterNd": 3,
+      "LogicalAnd": 9,
+      "Log": 1,
+      "Greater": 1,
+      "SliceByIndex": 31,
+      "Equal": 10,
+      "LogicalNot": 1,
+      "LessEqual": 23,
+      "Mul": 12,
+      "NonZero": 3,
+      "ReduceSum": 2
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "12.0",
+      "tvOS": "15.0",
+      "visionOS": "1.0",
+      "watchOS": "8.0",
+      "iOS": "15.0",
+      "macCatalyst": "15.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1...512 × 84",
+        "shapeRange": "[[1, 512], [84, 84]]",
+        "formattedType": "MultiArray (Float32 1 × 84)",
+        "type": "MultiArray",
+        "shape": "[1, 84]",
+        "name": "input_feature_vector",
+        "shortDescription": ""
+      }
+    ],
+    "userDefinedMetadata": {
+      "feature_names": "SlotLaunchLocationPopularity,SlotLaunchDayOfWeekPopularity,SlotTimeAndDayPopularity,SlotLaunchCoarseTimePopularity,SlotLaunchPopularity,SlotLaunchTimePopularity,SlotTimeAndDayAndLocationPopularity,SlotLaunchTimeAndDayPopularity,SlotLaunchTimeAndLocationPopularity,SlotLaunchDayAndLocationPopularity,SlotLaunchCoreMotionPopularity,SlotDayAndLocationPopularity,SlotLaunchTimeAndDayAndLocationPopularity,SlotDayAndPreviousLocationPopularity,SlotTimeAndPreviousLocationPopularity,SlotTimeOfDayPopularity,SlotTimeAndLocationPopularity,SlotLaunchPreviousLocationPopularity,SlotDayOfWeekPopularity,ScoreInputSlotLocationPopularity,SlotPreviousLocationPopularity,SlotLaunchTimeAndPreviousLocationPopularity,SlotPreviousLocationAndCoreMotionPopularity,SlotLaunchDayAndPreviousLocationPopularity,SlotLaunchPreviousLocationAndLocationPopularity,SlotPreviousLocationAndLocationPopularity,SlotCoarseTimeOfDayPopularity,SlotLaunchPreviousLocationAndCoreMotionPopularity,SlotCoreMotionPopularity,SlotFeedbackConfirmRatio,ActionsInTimeBucket0ForAction,ActionsInTimeBucket1ForAction,ActionsInTimeBucket2ForAction,ActionsInTimeBucket3ForAction,ActionsInTimeBucket4ForAction,ActionsInTimeBucket5ForAction,ActionsInTimeBucket6ForAction,ActionsInTimeBucket7ForAction,ActionsInTimeBucket8ForAction,ActionsInTimeBucket9ForAction,ActionsInTimeBucket10ForAction,ActionsInTimeBucket11ForAction,ActionsInTimeBucket12ForAction,ActionsInTimeBucket13ForAction,ActionsInTimeBucket14ForAction,ActionsInTimeBucket15ForAction,ActionsInTimeBucket16ForAction,ActionsInTimeBucket17ForAction,ActionsInTimeBucket18ForAction,ActionsInTimeBucket19ForAction,ActionsInTimeBucket20ForAction,ActionsInTimeBucket21ForAction,ActionsInTimeBucket22ForAction,ActionsInTimeBucket23ForAction,ActionsInTimeBucket24ForAction,ActionsOnDayOfWeekSundayForAction,ActionsOnDayOfWeekMondayForAction,ActionsOnDayOfWeekTuesdayForAction,ActionsOnDayOfWeekWednesdayForAction,ActionsOnDayOfWeekThursdayForAction,ActionsOnDayOfWeekFridayForAction,ActionsOnDayOfWeekSaturdayForAction,SlotSecondsSinceLastSlot,SlotTotalNumberOfUndecayedLaunchesForSlot,SlotNumberOfUniqueDaysLaunchedForSlot,SlotFeedbackTotalConfirmsForSlot,SlotFeedbackMinutesSinceLastConfirmInSpotlight,SlotFeedbackMinutesSinceLastConfirmInLockscreen,SlotLaunchPartOfWeekPopularity,SlotLaunchDayOfWeekCount,ActionsCoarseTimePowLocationForAction,ActionsCoarseTimePowLocationForActionInContext,SlotLaunchTimeCount,SlotLaunchPartOfWeekCount,ActionsAtCoarseGeoHashForActionInContext,SlotFeedbackMinutesSinceLastExplicitRejectInSpotlight,SlotFeedbackMinutesSinceLastExplicitRejectInHomeScreen,SlotLaunchTimeWithEightHourWindowCount,ActionNumberOfCoarseGeohashesForAction,IsLocationServicesDisabled,SlotTotalNumberOfLaunchesForSlot,AppIntentStaticAppPoints,ActionKeyCategory,AppCategory",
+      "com.github.apple.coremltools.source_dialect": "TorchScript",
+      "com.github.apple.coremltools.source": "torch==2.5.0",
+      "mldb_token": "mldb-lqgwek4g9p",
+      "com.github.apple.coremltools.version": "8.2"
+    },
+    "generatedClassName": "ATXSlotResolutionMLModel",
+    "method": "predict"
+  }
+]

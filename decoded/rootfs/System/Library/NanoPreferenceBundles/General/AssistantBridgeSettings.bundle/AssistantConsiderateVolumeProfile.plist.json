@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "get": "userProfile",
+      "id": "CONSIDERATE_VOLUME_PROFILE_GROUP_ID",
+      "isRadioGroup": true,
+      "set": "setUserProfile:"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "CONSIDERATE_VOLUME_PROFILE_LOUDER_ID",
+      "label": "CONSIDERATE_VOLUME_PROFILE_LOUDER",
+      "value": 2
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "CONSIDERATE_VOLUME_PROFILE_DEFAULT_ID",
+      "label": "CONSIDERATE_VOLUME_PROFILE_DEFAULT",
+      "value": 1
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "CONSIDERATE_VOLUME_PROFILE_QUIETER_ID",
+      "label": "CONSIDERATE_VOLUME_PROFILE_QUIETER",
+      "value": 0
+    }
+  ],
+  "title": "CONSIDERATE_VOLUME_PROFILE_TITLE"
+}

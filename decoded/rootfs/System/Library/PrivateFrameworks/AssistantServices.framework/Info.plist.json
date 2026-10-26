@@ -1,0 +1,59 @@
+{
+  "CFBundleName": "AssistantServices",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTXcode": "2700",
+  "DTSDKBuild": "24B107",
+  "NSMotionUsageDescription": "Siri uses your barometer for things like answering questions about your altitude.",
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "FMWK",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CLRequiredCapabilities": [
+    "assistant"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "AssistantServices",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.AssistantServices",
+  "MediaClientInfo": {
+    "API": {
+      "Identifier": "com.apple.assistant_service",
+      "Version": "1"
+    },
+    "Bag": {
+      "Profile": "Music",
+      "Version": "1"
+    }
+  },
+  "DTPlatformVersion": "27.2",
+  "CFBundleIconFiles": [
+    "settings_siri"
+  ],
+  "CFBundleDisplayName": "AssistantServices",
+  "BSServiceDomains": {
+    "com.apple.frontboard": {
+      "Services": {
+        "com.apple.frontboard.system-service": {
+          "LaunchWhitelisted": true
+        }
+      }
+    }
+  },
+  "CFBundleSignature": "????",
+  "DTXcodeBuild": "27A225b",
+  "NSLocationTemporaryUsageDescriptionDictionary": {
+    "generic": "Siri needs this information to help you with requests that are based on your specific location."
+  },
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformBuild": "24B107",
+  "NSLocationWhenInUseUsageDescription": "Siri uses your location for things like answering questions and offering suggestions about what’s nearby."
+}

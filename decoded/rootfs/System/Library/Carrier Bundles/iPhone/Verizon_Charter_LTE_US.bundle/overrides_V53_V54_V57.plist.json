@@ -1,0 +1,304 @@
+{
+  "SupportsVoNR": true,
+  "DerPriFileVersion": "5.3.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "MTU": [
+    {
+      "technology-mask": 28,
+      "size": 1428
+    },
+    {
+      "technology-mask": 2,
+      "size": 1472
+    }
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "IgnoresDeactivateOnNetworkScanServiceMask": 131072,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "SMSSettings": {
+    "MessageFormat": {
+      "SignalingFormat": 1,
+      "PacketFormat": 1
+    }
+  },
+  "EFSFiles": [
+    {
+      "carrier.ims": "/shared/qpconfig.xml"
+    }
+  ],
+  "NRSlicing": {
+    "OsId": [
+      67,
+      1,
+      210,
+      17,
+      151,
+      217,
+      66,
+      201,
+      177,
+      194,
+      246,
+      117,
+      131,
+      192,
+      249,
+      32
+    ],
+    "EntitlementsGenres": true,
+    "SupportsLLPHS": true
+  },
+  "IMSConfig": {
+    "Emergency": {
+      "T911EMFEnabled": true
+    },
+    "Media": {
+      "TTYRelayNumber": "711",
+      "RTCPXRBasebandSupport": {
+        "voip-metrics": "",
+        "stat-summary": "loss,dup,jitt,HL"
+      },
+      "RTCPIntervalSeconds": 5,
+      "SRTPEndToAccessEdgeProtection": true,
+      "EnableRTCPExtendedReports": true,
+      "UseEphemeralRTPPorts": true
+    },
+    "Signaling": {
+      "SkipEmergRegUnderSameTransport": true,
+      "CSFBOnAccessBarred": true,
+      "NoFallbackVoiceService": true,
+      "SupportPEarlyMediaHeader": false,
+      "IPSecSegmentOffset": 210,
+      "AdditionalFeatureTags": {
+        "sms": {
+          "+cdmaless": ""
+        },
+        "voice": {
+          "+cdmaless": "",
+          "+g.gsma.rcs.telephony": "\"cs,volte\""
+        }
+      },
+      "EarlyMediaNeedsHeader": false,
+      "AlwaysAddSipInstanceToSubscribeRequest": true,
+      "T3396PdpBackOffSeconds": 300,
+      "TimeoutRegistrationAllProxyErrorCodes": "480",
+      "UseIPSec": true,
+      "HonorSimAccessClassBeforeBarring": true
+    },
+    "Voice": {
+      "BlockCallsOverCS": true,
+      "EnableVoNRByDefault": true,
+      "BlockSilentRedialOverCS": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "EHRPD": false,
+        "NR": true
+      }
+    },
+    "AllowIMSUnprovisioned": true
+  },
+  "CarrierEntitlements": {
+    "ExtraEndPoints": [
+      {
+        "PvDDefinition": {
+          "Server": "apis6.spectrum.net",
+          "service-name": [
+            "enhanced-throughput"
+          ]
+        },
+        "BlindToken": {
+          "NumTokens": 20,
+          "SupportedServices": [
+            {
+              "DeviceType": "iPhone",
+              "ServiceNames": 1
+            }
+          ]
+        },
+        "TLSTrustedCACertificates": [
+          "MIIEsDCCA5igAwIBAgIQd70OB0LV2enQSdd00CpvmjANBgkqhkiG9w0BAQsFADBMMSAwHgYDVQQLExdHbG9iYWxTaWduIFJvb3QgQ0EgLSBSMzETMBEGA1UEChMKR2xvYmFsU2lnbjETMBEGA1UEAxMKR2xvYmFsU2lnbjAeFw0yMDA3MjgwMDAwMDBaFw0yOTAzMTgwMDAwMDBaMFMxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSkwJwYDVQQDEyBHbG9iYWxTaWduIEdDQyBSMyBEViBUTFMgQ0EgMjAyMDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKxnlJV/de+OpwyvCXAJIcxPCqkFPh1lttW2oljS3oUqPKq8qX6m7K0OVKaKG3GXi4CJ4fHVUgZYE6HRdjqjhhnuHY6EBCBegcUFgPG0scB12Wi8BHm9zKjWxo3Y2bwhO8Fvr8R42pW0eINc6OTbQXC0VWFCMVzpcqgz6X49KMZowAMFV6XqtItcG0cMS//9dOJs4oBlpuqX9INxMTGp6EASAF9cnlAGy/RXkVS9nOLCCa7pCYV+WgDKLTF+OK2Vxw3RUJ/p8009lQeUARv2UCcNNPCifYX1xIspvarkdjzLwzOdLahDdQbJON58zN4V+lMj0msg+c0KnywPIRp3BMkCAwEAAaOCAYUwggGBMA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQUDZjAc3+rvb3ZR0tJrQpKDKw+x3wwHwYDVR0jBBgwFoAUj/BLf6guRSSuTVD6Y5qL3uLdG7wwewYIKwYBBQUHAQEEbzBtMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcDIuZ2xvYmFsc2lnbi5jb20vcm9vdHIzMDsGCCsGAQUFBzAChi9odHRwOi8vc2VjdXJlLmdsb2JhbHNpZ24uY29tL2NhY2VydC9yb290LXIzLmNydDA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vY3JsLmdsb2JhbHNpZ24uY29tL3Jvb3QtcjMuY3JsMEcGA1UdIARAMD4wPAYEVR0gADA0MDIGCCsGAQUFBwIBFiZodHRwczovL3d3dy5nbG9iYWxzaWduLmNvbS9yZXBvc2l0b3J5LzANBgkqhkiG9w0BAQsFAAOCAQEAy8j/c550ea86oCkfr2W+ptTCYe6iVzvo7H0V1vUEADJOWelTv07Obf+YkEatdN1Jg09ctgSNv2h+LMTkKRZdAXmsE3N5ve+z1Oa9kuiu7284LjeS09zHJQB4DJJJkvtIbjL/ylMK1fbMHhAWi0O194TWvH3XWZGXZ6ByxTUIv1+kAIql/Mt29PmKraTT5jrzcVzQ5A9jw16yysuRXRrLODlkS1hyBjsfyTNZrmL1h117IFgntBA5SQNVl9ckedq5r4RSAU85jV8XK5ULREjRZt2I6M9Po9QL7guFLu4sPFJpwR1sPJvubS2THeo7SxYoNDtdyBHs7euaGcMaD/fayQ=="
+        ],
+        "SupportedEntitlements": 2359312,
+        "Authentication": {
+          "Type": 1,
+          "Username": "0$IMSI@wlan.mnc$MNC.mcc$MCC.3gppnetwork.org"
+        },
+        "PushSettingsOverlay": {
+          "Topic": "com.spectrummobile.entitlement",
+          "geofence-data": "com.spectrummobile.geofence"
+        },
+        "ServerAddress": "https://device.es.cm.spectrum.net/entitlement/",
+        "SupportedActions": [
+          "private-net-provisioning",
+          "getGeoFenceData",
+          "getAnonymousCredentials"
+        ],
+        "AllowedConnectivityOnly": "Internet"
+      },
+      {
+        "AllowedConnectivityOnly": "Internet",
+        "ServerAddress": "https://device.es.cm.spectrum.net/entitlement/",
+        "Authentication": {
+          "Type": 5
+        },
+        "SupportedActions": [
+          "enableEnhancedThroughput"
+        ],
+        "TLSTrustedCACertificates": [
+          "MIIEsDCCA5igAwIBAgIQd70OB0LV2enQSdd00CpvmjANBgkqhkiG9w0BAQsFADBMMSAwHgYDVQQLExdHbG9iYWxTaWduIFJvb3QgQ0EgLSBSMzETMBEGA1UEChMKR2xvYmFsU2lnbjETMBEGA1UEAxMKR2xvYmFsU2lnbjAeFw0yMDA3MjgwMDAwMDBaFw0yOTAzMTgwMDAwMDBaMFMxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSkwJwYDVQQDEyBHbG9iYWxTaWduIEdDQyBSMyBEViBUTFMgQ0EgMjAyMDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKxnlJV/de+OpwyvCXAJIcxPCqkFPh1lttW2oljS3oUqPKq8qX6m7K0OVKaKG3GXi4CJ4fHVUgZYE6HRdjqjhhnuHY6EBCBegcUFgPG0scB12Wi8BHm9zKjWxo3Y2bwhO8Fvr8R42pW0eINc6OTbQXC0VWFCMVzpcqgz6X49KMZowAMFV6XqtItcG0cMS//9dOJs4oBlpuqX9INxMTGp6EASAF9cnlAGy/RXkVS9nOLCCa7pCYV+WgDKLTF+OK2Vxw3RUJ/p8009lQeUARv2UCcNNPCifYX1xIspvarkdjzLwzOdLahDdQbJON58zN4V+lMj0msg+c0KnywPIRp3BMkCAwEAAaOCAYUwggGBMA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQUDZjAc3+rvb3ZR0tJrQpKDKw+x3wwHwYDVR0jBBgwFoAUj/BLf6guRSSuTVD6Y5qL3uLdG7wwewYIKwYBBQUHAQEEbzBtMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcDIuZ2xvYmFsc2lnbi5jb20vcm9vdHIzMDsGCCsGAQUFBzAChi9odHRwOi8vc2VjdXJlLmdsb2JhbHNpZ24uY29tL2NhY2VydC9yb290LXIzLmNydDA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vY3JsLmdsb2JhbHNpZ24uY29tL3Jvb3QtcjMuY3JsMEcGA1UdIARAMD4wPAYEVR0gADA0MDIGCCsGAQUFBwIBFiZodHRwczovL3d3dy5nbG9iYWxzaWduLmNvbS9yZXBvc2l0b3J5LzANBgkqhkiG9w0BAQsFAAOCAQEAy8j/c550ea86oCkfr2W+ptTCYe6iVzvo7H0V1vUEADJOWelTv07Obf+YkEatdN1Jg09ctgSNv2h+LMTkKRZdAXmsE3N5ve+z1Oa9kuiu7284LjeS09zHJQB4DJJJkvtIbjL/ylMK1fbMHhAWi0O194TWvH3XWZGXZ6ByxTUIv1+kAIql/Mt29PmKraTT5jrzcVzQ5A9jw16yysuRXRrLODlkS1hyBjsfyTNZrmL1h117IFgntBA5SQNVl9ckedq5r4RSAU85jV8XK5ULREjRZt2I6M9Po9QL7guFLu4sPFJpwR1sPJvubS2THeo7SxYoNDtdyBHs7euaGcMaD/fayQ=="
+        ],
+        "BindingInterface": "en0"
+      },
+      {
+        "AllowedConnectivityOnly": "Internet",
+        "ServerAddress": "https://ios.eserver.cm.spectrum.net",
+        "Authentication": {
+          "Type": 1,
+          "Username": "0$IMSI@wlan.mnc$MNC.mcc$MCC.3gppnetwork.org"
+        },
+        "SupportedAuthorizationTokens": 2,
+        "SupportedEntitlements": 4194304
+      }
+    ],
+    "EnableVolteWhileEntitlementStatusIsUnknown": true,
+    "SupportedEntitlements": 42137
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "NoDafPopupTemporaryErrors": "1110,2509",
+  "AllowSAOnWiFiAssociation": true,
+  "AttachAPN": {
+    "3GPP": [
+      {
+        "AllowedProtocolMask": 3,
+        "password": "",
+        "PcscfAddressRequired": false,
+        "APNClass": 1,
+        "username": "",
+        "apn": "vzwinternet",
+        "AllowedProtocolMaskInRoamingLTE": 3
+      },
+      {
+        "AllowedProtocolMask": 3,
+        "password": "",
+        "PcscfAddressRequired": true,
+        "APNClass": 3,
+        "username": "",
+        "apn": "ims",
+        "AllowedProtocolMaskInRoamingLTE": 2
+      }
+    ]
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRUWB",
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 4194835,
+          "password": "",
+          "AllowedProtocolMaskInDomesticRoaming": 1,
+          "AlwaysOnPDU": true,
+          "username": "",
+          "apn": "vzwinternet",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "tech-type-mask": 16390,
+          "username": "",
+          "apn": "vzwapp",
+          "type-mask": 49156,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "vzwemergency",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "AlwaysOnPDU": true,
+          "Support5GSaHandOver": true,
+          "password": "",
+          "tech-type-mask": 131072,
+          "NoCellularReconnectCauseCodes": [
+            {
+              "CauseCodes": [
+                24
+              ],
+              "RecoversOnAirplaneMode": true,
+              "NumTriesAllowed": 3,
+              "Type": "Non3GPP"
+            },
+            {
+              "CauseCodes": [
+                8
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                27
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                29
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                32
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            },
+            {
+              "CauseCodes": [
+                33
+              ],
+              "Type": "3GPP",
+              "NumTriesAllowed": 2
+            }
+          ],
+          "AllowedProtocolMaskInRoaming": 2,
+          "SupportSwitchOver": true,
+          "type-mask": 131072,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "vzwadmin",
+          "type-mask": 0,
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 25
+    }
+  ],
+  "PcoOptions": {
+    "PcoMnc": 480,
+    "RequestMSISDN": true,
+    "PcoMcc": 311,
+    "ContainerIds": [
+      65280,
+      65283
+    ]
+  }
+}

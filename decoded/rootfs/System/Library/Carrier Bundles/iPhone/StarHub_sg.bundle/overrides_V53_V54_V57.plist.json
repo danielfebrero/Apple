@@ -1,0 +1,67 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "ShowVoNRSwitch": true,
+  "TechSettings": {
+    "SuppressSAInOverCellHandover": true
+  },
+  "SupportsNRNSAInboundRoaming": true,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "CarrierEntitlements": {
+    "SupportSecureIntent": true,
+    "SupportedEntitlements": 11265
+  },
+  "apns": [
+    {
+      "password": "",
+      "username": "",
+      "apn": "shwap",
+      "type-mask": 32817,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "password": "",
+      "username": "",
+      "apn": "shxcap",
+      "type-mask": 1048576,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "AllowNoDNS": 1,
+      "password": "",
+      "username": "",
+      "apn": "sos",
+      "type-mask": 262144,
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Show5GStandaloneSwitch": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true,
+  "Enable5GStandaloneByDefault": true
+}

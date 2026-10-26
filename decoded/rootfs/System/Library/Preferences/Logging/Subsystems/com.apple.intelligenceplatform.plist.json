@@ -1,0 +1,23 @@
+{
+  "DEFAULT-OPTIONS": {
+    "Enable-Oversize-Messages": true,
+    "Level": {
+      "Enable": "Info",
+      "Persist": "Info"
+    }
+  },
+  "orchestration": {
+    "Level": {
+      "Enable": "Inherit",
+      "Persist": "Inherit"
+    },
+    "TTL": {
+      "Default": "7",
+      "Info": "2"
+    }
+  },
+  "signpost": {
+    "Signpost-Persisted": true,
+    "Signpost-Scope": "Process"
+  }
+}

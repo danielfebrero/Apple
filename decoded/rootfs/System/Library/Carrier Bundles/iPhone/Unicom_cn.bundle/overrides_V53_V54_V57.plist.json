@@ -1,0 +1,32 @@
+{
+  "DerPriFileVersion": "6.0.164",
+  "IgnoresDeactivateOnNetworkScanServiceMask": 131072,
+  "ShowVoNRSwitch": false,
+  "Enable5GStandaloneByDefault": true,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "EnableBackupOnCellular": false,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "ShowHighDataModeSwitch": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRCA",
+  "ShowVoNRWarningUnsupportedCarrier": false,
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": false,
+  "SupportsVoNR": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoAfterUpgrade": true,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

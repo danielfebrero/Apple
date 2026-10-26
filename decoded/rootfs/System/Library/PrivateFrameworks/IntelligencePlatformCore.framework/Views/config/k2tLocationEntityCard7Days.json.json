@@ -1,0 +1,62 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "summary",
+          "TEXT"
+        ],
+        [
+          "activities",
+          "TEXT"
+        ],
+        [
+          "spantext",
+          "TEXT"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "subject"
+      ],
+      "subjectIdentifierColumn": "subject",
+      "tableName": "k2t_location_entity_card_7days"
+    },
+    "path": "k2t/views.db",
+    "type": "customRow"
+  },
+  "featureFlag": "ExperimentalK2TViews",
+  "name": "k2tLocationEntityCard7Days",
+  "sql": {
+    "update": "customSQL/k2t_location_entity_card_7days"
+  },
+  "type": "customSQL",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB152"
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "k2tLocationActivities7Days",
+        "schedule": "live"
+      },
+      {
+        "name": "k2tLocationNameAndInfos",
+        "schedule": "live"
+      }
+    ]
+  }
+}

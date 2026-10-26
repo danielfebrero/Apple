@@ -1,0 +1,2440 @@
+{
+    "Profiles" : [
+        {
+            "Name" : "DefaultOverride",
+            "ComputeTime" : 0.01,
+            "OverflowDetectionHistoryLength" : 12,
+            "OverflowDetectionTimingThresholdSeconds" : 0.25,
+            "Categories" : [
+                {
+                    "Name" : "DirectPathTransmission",
+                    "Modeler" : "DirectPathTransmission",
+                    "ComputeWeight" : 1.0,
+                    "Graphs" : [
+                        {
+                            "Name" : "Attack",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 3
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 3
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 3
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 3
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1024
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1024
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 3
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 3
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name" : "Sustain",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 3
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 3
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 3
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 3
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1024
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1024
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 3
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 3
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name" : "Overflow",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 3
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 3
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 3
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 3
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1024
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1024
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 3
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 3
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name" : "EarlyReflections",
+                    "Modeler" : "PresetEarlyReflections",
+                    "ComputeWeight" : 1.0,
+                    "Graphs" : [
+                        {
+                            "Name" : "Attack",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name" : "Sustain",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 5
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 5
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 5
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 5
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 5
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 5
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name" : "Overflow",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 5
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 5
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 5
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 5
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 5
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 5
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name" : "LateReverb",
+                    "Modeler" : "PresetLateReverb",
+                    "ComputeWeight" : 1.0,
+                    "Graphs" : [
+                        {
+                            "Name" : "Attack",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name" : "Sustain",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name" : "Overflow",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 10
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 10
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name" : "Ambient",
+                    "Modeler" : "Ambient",
+                    "ComputeWeight" : 1.0,
+                    "Graphs" : [
+                        {
+                            "Name" : "Attack",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1024
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1024
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name" : "Sustain",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1024
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1024
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name" : "Overflow",
+                            "Stages" : [
+                                {
+                                    "Name" : "Cull",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "CullabilityThreshold",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 0
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Cluster",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "MaximumClusterCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1024
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1024
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Name" : "Spatialize",
+                                    "Parameters" : [
+                                        {
+                                            "Name" : "UpdateRate",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 50
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 50
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "SubbandCount",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "JumpToEndValue"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "Name" : "TimeLimit",
+                                            "Envelope" : {
+                                                "StartPoint" : {
+                                                    "X" : 0,
+                                                    "Y" : 1
+                                                },
+                                                "Segments" : [
+                                                    {
+                                                        "EndPoint" : {
+                                                            "X" : 1,
+                                                            "Y" : 1
+                                                        },
+                                                        "CurveType" : "Linear"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

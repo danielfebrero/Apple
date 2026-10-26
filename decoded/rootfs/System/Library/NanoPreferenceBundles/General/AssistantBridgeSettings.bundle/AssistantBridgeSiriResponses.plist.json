@@ -1,0 +1,112 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "id": "VOICE_FEEDBACK_GROUP_ID",
+      "isRadioGroup": true,
+      "label": "VOICE_FEEDBACK"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "VOICE_FEEDBACK_ALWAYS_ON_ID",
+      "label": "VOICE_FEEDBACK_ALWAYS_ON"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "VOICE_FEEDBACK_CONTROL_WITH_SILENT_MODE_ID",
+      "label": "VOICE_FEEDBACK_CONTROL_WITH_SILENT_MODE"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "VOICE_FEEDBACK_HEADPHONES_ONLY_ID",
+      "label": "VOICE_FEEDBACK_HEADPHONES_ONLY"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "ALWAYS_SHOW_SIRI_CAPTIONS_FOOTER",
+      "id": "ALWAYS_SHOW_SIRI_CAPTIONS_GROUP_ID",
+      "isRadioGroup": false,
+      "requiredFeatureFlags": {
+        "ResponseFramework": [
+          "Enabled"
+        ]
+      }
+    },
+    {
+      "allowMultilineTitleKey": true,
+      "cell": "PSSwitchCell",
+      "get": "siriResponseShouldAlwaysPrint",
+      "id": "ALWAYS_SHOW_SIRI_CAPTIONS_SWITCH_ID",
+      "label": "ALWAYS_SHOW_SIRI_CAPTIONS",
+      "requiredFeatureFlags": {
+        "ResponseFramework": [
+          "Enabled"
+        ]
+      },
+      "set": "setSiriResponseShouldAlwaysPrint:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "ALWAYS_SHOW_SPEECH_FOOTER",
+      "id": "ALWAYS_SHOW_SPEECH_GROUP_ID",
+      "isRadioGroup": false,
+      "requiredFeatureFlags": {
+        "Siri": [
+          "NanoSiriUIRefresh"
+        ]
+      }
+    },
+    {
+      "allowMultilineTitleKey": true,
+      "cell": "PSSwitchCell",
+      "get": "alwaysShowRecognizedSpeech",
+      "id": "ALWAYS_SHOW_SPEECH_SWITCH_ID",
+      "label": "ALWAYS_SHOW_SPEECH",
+      "requiredFeatureFlags": {
+        "Siri": [
+          "NanoSiriUIRefresh"
+        ]
+      },
+      "set": "setAlwaysShowRecognizedSpeech:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "CONSIDERATE_VOLUME_FOOTER",
+      "id": "CONSIDERATE_VOLUME_GROUP_ID",
+      "label": "VOICE_VOLUME"
+    },
+    {
+      "cell": "PSSwitchCell",
+      "get": "useConsiderateVolume",
+      "id": "CONSIDERATE_VOLUME_SWITCH_ID",
+      "label": "CONSIDERATE_VOLUME_SWITCH",
+      "set": "setUseConsiderateVolume:"
+    },
+    {
+      "cell": "PSLinkListCell",
+      "detail": "AssistantBridgeConsiderateVolumeProfileController",
+      "get": "considerateVolumeProfileValue",
+      "id": "CONSIDERATE_VOLUME_PROFILE_ID",
+      "label": "CONSIDERATE_VOLUME_PROFILE_TITLE"
+    },
+    {
+      "cell": "PSSliderCell",
+      "get": "voiceVolume",
+      "id": "CONSIDERATE_VOLUME_SLIDER_ID",
+      "set": "setVoiceVolume:"
+    },
+    {
+      "cell": "PSGroupCell",
+      "footerText": "VOICE_VOLUME_FOOTER",
+      "id": "VOICE_VOLUME_GROUP_ID",
+      "label": "VOICE_VOLUME"
+    },
+    {
+      "cell": "PSSliderCell",
+      "get": "voiceVolume",
+      "id": "VOICE_VOLUME_SLIDER_ID",
+      "set": "setVoiceVolume:"
+    }
+  ],
+  "title": "SIRI_RESPONSES"
+}

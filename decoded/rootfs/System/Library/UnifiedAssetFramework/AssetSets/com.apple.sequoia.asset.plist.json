@@ -1,0 +1,165 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.sequoia.asset",
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Translation.Assets",
+  "EnableCellular": true,
+  "Assets": [
+    {
+      "AssetName": "com.apple.sequoia.asset.asr",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.sequoia.asset.asr.{asr.language}",
+          "RequiredUsageTypes": [
+            "asr.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.sequoia.asset.config",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.sequoia.asset.config"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.sequoia.asset.endpointer",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.sequoia.asset.endpointer"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.sequoia.asset.lid",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.sequoia.asset.lid"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.sequoia.asset.mt",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.sequoia.asset.mt.{mt.family}.{mt.capability}",
+          "RequiredUsageTypes": [
+            "mt.capability",
+            "mt.family"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.sequoia.asset.mt.partial",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.sequoia.asset.mt.{mt.family}.{mt.language}.{mt.capability}",
+          "RequiredUsageTypes": [
+            "mt.capability",
+            "mt.family",
+            "mt.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.sequoia.asset.pb",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.sequoia.asset.pb.{pb.language}",
+          "RequiredUsageTypes": [
+            "pb.language"
+          ]
+        }
+      ]
+    }
+  ],
+  "UsageTypes": [
+    "asr.language",
+    "mt.capability",
+    "mt.family",
+    "mt.language",
+    "pb.language"
+  ],
+  "UsageValues": {
+    "asr.language": [
+      "ar_AE",
+      "de_DE",
+      "en_GB",
+      "en_US",
+      "es_ES",
+      "fr_FR",
+      "id_ID",
+      "it_IT",
+      "ja_JP",
+      "ko_KR",
+      "nl_NL",
+      "pl_PL",
+      "pt_BR",
+      "ru_RU",
+      "th_TH",
+      "tr_TR",
+      "uk_UA",
+      "vi_VN",
+      "zh_CN",
+      "zh_TW"
+    ],
+    "mt.capability": [
+      "0",
+      "20"
+    ],
+    "mt.family": [
+      "bi-en-ar",
+      "bi-en-es-de-it-fr-pt-nl",
+      "bi-en-hi",
+      "bi-en-id-th-vi",
+      "bi-en-ru-pl-uk",
+      "bi-en-tr",
+      "bi-en-zh-ja-ko"
+    ],
+    "mt.language": [
+      "ar",
+      "de",
+      "en",
+      "es",
+      "fr",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "nl",
+      "pl",
+      "pt",
+      "ru",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "zh"
+    ],
+    "pb.language": [
+      "ar",
+      "de",
+      "en",
+      "es",
+      "fr",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "nl",
+      "pl",
+      "pt",
+      "ru",
+      "th",
+      "tr",
+      "vi",
+      "zh"
+    ]
+  }
+}

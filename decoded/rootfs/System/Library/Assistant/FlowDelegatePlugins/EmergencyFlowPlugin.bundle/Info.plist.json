@@ -1,0 +1,88 @@
+{
+  "CFBundleName": "EmergencyFlowPlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedIntents": [],
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "EmergencyFlowPlugin.EmergencyFlowPlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "EmergencyFlowPlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.EmergencyFlowPlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "emergency"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "common_Person",
+      "verb": "checkExistence",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "request",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Person",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "disable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "enable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_CrisisSupport",
+      "verb": "*",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.directInvocation.emergency.buttonPress",
+    "com.apple.siri.directInvocation.emergency.callEmergencyResource",
+    "com.apple.siri.directInvocation.emergency.startSiren",
+    "com.apple.siri.directInvocation.emergency.gatFallback"
+  ]
+}

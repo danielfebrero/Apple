@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Tell Shanti I’ll be right there",
+            "Send a message to Ling Ling",
+            "Send a message to Ibrahim saying how about tomorrow",
+            "Tell Ahmad the show was great",
+            "Send a message to Ling Ling on her mobile saying I’ll be late",
+            "Send a message to 9123 3132",
+            "Text Renuka and Ling Ling where are you?"
+          ]
+        }
+      ],
+      "SectionName": "Sending messages"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Read my new messages",
+            "Read it again"
+          ]
+        }
+      ],
+      "SectionName": "Reading message alerts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Reply that’s great news",
+            "Tell him I’ll be there in 10 minutes"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Call her"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime her"
+          ]
+        }
+      ],
+      "SectionName": "Responding to messages"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Read my last message from Renuka"
+          ]
+        }
+      ],
+      "SectionName": "Searching for messages"
+    }
+  ]
+}

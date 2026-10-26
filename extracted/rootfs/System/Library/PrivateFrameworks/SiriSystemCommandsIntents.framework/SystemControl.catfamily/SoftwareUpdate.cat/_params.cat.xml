@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:2.4" id="SystemControl#SoftwareUpdate">
+  <meta name="description" value="Explain how the user can update their device."/>
+  <meta name="category" value="Handled"/>
+  <meta name="readyForLoc" value="true"/>
+
+  <parameters>
+    <parameter name="deviceState" type="sirikit.DeviceState" description="The device state."/>
+  </parameters>
+</cat>

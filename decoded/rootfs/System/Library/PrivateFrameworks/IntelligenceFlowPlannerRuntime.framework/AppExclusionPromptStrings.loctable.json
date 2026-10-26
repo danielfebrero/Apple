@@ -1,0 +1,565 @@
+{
+  "zh_TW": {
+    "appExclusion.prompt.display.genericApp": "在協助你之前，你需要開啟此App的取用權限。",
+    "appExclusion.prompt.spoken.withAppName": "在協助你之前，你需要開啟%@的取用權限。要現在開啟嗎？",
+    "appExclusion.prompt.button.cancel": "取消",
+    "appExclusion.prompt.button.turnOn": "開啟",
+    "appExclusion.prompt.spoken.genericApp": "在協助你之前，你需要開啟此App的取用權限。要現在開啟嗎？",
+    "appExclusion.prompt.display.withAppName": "在協助你之前，你需要開啟%[tt]@的取用權限。",
+    "appExclusion.reminder.spoken": "這不包含排除的App的結果。"
+  },
+  "ur": {
+    "appExclusion.prompt.display.genericApp": "اس میں مدد کرنے سے پہلے، آپ کو اس ایپ تک رسائی چالو کرنی ہوگی۔",
+    "appExclusion.prompt.spoken.withAppName": "اس میں مدد کرنے سے پہلے آپ کو %@ تک رسائی چالو کرنی ہوگی۔ اسے ابھی چالو کرنا ہے؟",
+    "appExclusion.prompt.button.cancel": "منسوخ کریں",
+    "appExclusion.prompt.button.turnOn": "چالو کریں",
+    "appExclusion.prompt.spoken.genericApp": "اس سے پہلے کہ میں اس میں مدد کر سکوں، آپ کو اس ایپ تک رسائی چالو کرنی ہوگی۔ اسے ابھی چالو کرنا ہے؟",
+    "appExclusion.prompt.display.withAppName": "اس حوالے سے میں آپ کی مدد کر سکوں اس کے لیے آپ کو %@ تک رسائی چالو کرنی ہوگی۔",
+    "appExclusion.reminder.spoken": "اس میں شامل نہ کیے گئے ایپ کے نتائج شامل نہیں ہیں۔"
+  },
+  "lt": {
+    "appExclusion.prompt.display.genericApp": "Kad galėčiau padėti, pirmiausia turite įjungti prieigą prie šios programos.",
+    "appExclusion.prompt.spoken.withAppName": "Kad galėčiau padėti, pirmiausia turite įjungti prieigą prie „%@“. Įjungti dabar?",
+    "appExclusion.prompt.button.cancel": "Atšaukti",
+    "appExclusion.prompt.button.turnOn": "Įjungti",
+    "appExclusion.prompt.spoken.genericApp": "Kad galėčiau padėti, pirmiausia turite įjungti prieigą prie šios programos. Įjungti dabar?",
+    "appExclusion.prompt.display.withAppName": "Kad galėčiau padėti, pirmiausia turite įjungti prieigą prie „%@“.",
+    "appExclusion.reminder.spoken": "Tai neapima rezultatų iš neįtrauktų programų."
+  },
+  "id": {
+    "appExclusion.prompt.display.genericApp": "Sebelum bisa saya bantu, Anda perlu menyalakan akses ke app ini.",
+    "appExclusion.prompt.spoken.withAppName": "Sebelum bisa saya bantu, Anda perlu menyalakan akses ke %@. Nyalakan sekarang?",
+    "appExclusion.prompt.button.cancel": "Batalkan",
+    "appExclusion.prompt.button.turnOn": "Nyalakan",
+    "appExclusion.prompt.spoken.genericApp": "Sebelum bisa saya bantu, Anda perlu menyalakan akses ke app ini. Nyalakan sekarang?",
+    "appExclusion.prompt.display.withAppName": "Sebelum bisa saya bantu, Anda perlu menyalakan akses ke %@.",
+    "appExclusion.reminder.spoken": "Ini tidak menyertakan hasil dari app yang dikecualikan."
+  },
+  "ja": {
+    "appExclusion.prompt.display.genericApp": "これを行うには、このアプリへのアクセスをオンにする必要があります。",
+    "appExclusion.prompt.spoken.withAppName": "これを行うには、%@へのアクセスをオンにする必要があります。今すぐオンにしますか?",
+    "appExclusion.prompt.button.cancel": "キャンセル",
+    "appExclusion.prompt.button.turnOn": "オンにする",
+    "appExclusion.prompt.spoken.genericApp": "これを行うには、このアプリへのアクセスをオンにする必要があります。今すぐオンにしますか?",
+    "appExclusion.prompt.display.withAppName": "これを行うには、%@へのアクセスをオンにする必要があります。",
+    "appExclusion.reminder.spoken": "除外されたアプリからの結果は含まれません。"
+  },
+  "no": {
+    "appExclusion.prompt.display.genericApp": "Du må slå på tilgang til denne appen før jeg kan hjelpe med dette.",
+    "appExclusion.prompt.spoken.withAppName": "Du må slå på tilgang til %@ før jeg kan hjelpe med dette. Skal jeg slå på tilgang nå?",
+    "appExclusion.prompt.button.cancel": "Avbryt",
+    "appExclusion.prompt.button.turnOn": "Slå på",
+    "appExclusion.prompt.spoken.genericApp": "Du må slå på tilgang til denne appen før jeg kan hjelpe med dette. Skal jeg slå på tilgang nå?",
+    "appExclusion.prompt.display.withAppName": "Du må slå på tilgang til %@ før jeg kan hjelpe med dette.",
+    "appExclusion.reminder.spoken": "Resultater fra ekskluderte apper er ikke inkludert."
+  },
+  "mr": {
+    "appExclusion.prompt.display.genericApp": "मी त्याबाबत मदत करण्यापूर्वी, तुम्हाला ह्या ॲपचा ॲक्सेस चालू करणे गरजेचे असेल.",
+    "appExclusion.prompt.spoken.withAppName": "मी त्याबाबत मदत करण्यापूर्वी, तुम्हाला %@ चा ॲक्सेस चालू करणे गरजेचे असेल. तो आता चालू करायचा का?",
+    "appExclusion.prompt.button.cancel": "रद्द करा",
+    "appExclusion.prompt.button.turnOn": "चालू करा",
+    "appExclusion.prompt.spoken.genericApp": "मी त्याबाबत मदत करण्यापूर्वी, तुम्हाला ह्या ॲपचा ॲक्सेस चालू करणे गरजेचे असेल. तो आता चालू करायचा का?",
+    "appExclusion.prompt.display.withAppName": "मी त्याबाबत मदत करण्यापूर्वी, तुम्हाला %@ चा ॲक्सेस चालू करणे गरजेचे असेल.",
+    "appExclusion.reminder.spoken": "त्यामध्ये वगळलेल्या ॲपमधील परिणाम समाविष्ट नाहीत."
+  },
+  "es_419": {
+    "appExclusion.prompt.display.genericApp": "Para poder ayudarte, tendrás que permitir el acceso a esta app.",
+    "appExclusion.prompt.spoken.withAppName": "Para poder ayudarte, tendrás que permitir el acceso a %@. ¿Quieres hacerlo ahora?",
+    "appExclusion.prompt.button.cancel": "Cancelar",
+    "appExclusion.prompt.button.turnOn": "Encender",
+    "appExclusion.prompt.spoken.genericApp": "Para poder ayudarte, tendrás que permitir el acceso a esta app. ¿Quieres hacerlo ahora?",
+    "appExclusion.prompt.display.withAppName": "Para poder ayudarte, tendrás que permitir el acceso a %@.",
+    "appExclusion.reminder.spoken": "Eso no incluye resultados de apps excluidas."
+  },
+  "ms": {
+    "appExclusion.prompt.display.genericApp": "Sebelum saya boleh membantu dengannya, anda perlu mengaktifkan akses kepada app ini.",
+    "appExclusion.prompt.spoken.withAppName": "Sebelum saya boleh membantu dengannya, anda perlu mengaktifkan akses kepada %@. Aktifkannya sekarang?",
+    "appExclusion.prompt.button.cancel": "Batal",
+    "appExclusion.prompt.button.turnOn": "Aktifkan",
+    "appExclusion.prompt.spoken.genericApp": "Sebelum saya boleh membantu dengannya, anda perlu mengaktifkan akses kepada app ini. Aktifkannya sekarang?",
+    "appExclusion.prompt.display.withAppName": "Sebelum saya boleh membantu dengannya, anda perlu mengaktifkan akses kepada %@.",
+    "appExclusion.reminder.spoken": "Ini tidak termasuk hasil daripada app dikecualikan."
+  },
+  "hi": {
+    "appExclusion.prompt.display.genericApp": "इसमें आपकी मदद की जाए इससे पहले आपको इस ऐप का ऐक्सेस चालू करना होगा।",
+    "appExclusion.prompt.spoken.withAppName": "इसमें आपकी मदद की जाए इससे पहले आपको %@ का ऐक्सेस चालू करना होगा। क्या इसे अभी चालू करना है?",
+    "appExclusion.prompt.button.cancel": "रद्द करें",
+    "appExclusion.prompt.button.turnOn": "चालू करें",
+    "appExclusion.prompt.spoken.genericApp": "इसमें आपकी मदद की जाए इससे पहले आपको इस ऐप का ऐक्सेस चालू करना होगा। क्या इसे अभी चालू करना है?",
+    "appExclusion.prompt.display.withAppName": "इसमें आपकी मदद की जाए इससे पहले आपको %@ का ऐक्सेस चालू करना होगा।",
+    "appExclusion.reminder.spoken": "इसमें उन ऐप्स के परिणामों को शामिल नहीं किया जाता है जिन्हें बाहर रखा गया है।"
+  },
+  "en_CA": {
+    "appExclusion.prompt.display.genericApp": "Before I can help with that, you’ll need to turn on access to this app.",
+    "appExclusion.prompt.spoken.withAppName": "Before I can help with that, you’ll need to turn on access to %@. Turn it on now?",
+    "appExclusion.prompt.button.cancel": "Cancel",
+    "appExclusion.prompt.button.turnOn": "Turn On",
+    "appExclusion.prompt.spoken.genericApp": "Before I can help with that, you’ll need to turn on access to this app. Turn it on now?",
+    "appExclusion.prompt.display.withAppName": "Before I can help with that, you’ll need to turn on access to %@.",
+    "appExclusion.reminder.spoken": "That doesn't include results from excluded apps."
+  },
+  "es": {
+    "appExclusion.prompt.display.genericApp": "Para hacerlo, primero debes permitirme acceder a esta app.",
+    "appExclusion.prompt.spoken.withAppName": "Para hacerlo, primero debes permitirme acceder a la app %@. ¿Quieres activar el acceso ahora?",
+    "appExclusion.prompt.button.cancel": "Cancelar",
+    "appExclusion.prompt.button.turnOn": "Activar",
+    "appExclusion.prompt.spoken.genericApp": "Para hacerlo, primero debes permitirme acceder a esta app.¿Quieres activar el acceso ahora?",
+    "appExclusion.prompt.display.withAppName": "Para hacerlo, primero debes permitirme acceder a la app %@.",
+    "appExclusion.reminder.spoken": "No se incluyen los resultados de las apps que hayas excluido."
+  },
+  "en_IN": {
+    "appExclusion.prompt.display.genericApp": "Before I can help with that, you’ll need to turn on access to this app.",
+    "appExclusion.prompt.spoken.withAppName": "Before I can help with that, you’ll need to turn on access to %@. Turn it on now?",
+    "appExclusion.prompt.button.cancel": "Cancel",
+    "appExclusion.prompt.button.turnOn": "Turn On",
+    "appExclusion.prompt.spoken.genericApp": "Before I can help with that, you’ll need to turn on access to this app. Turn it on now?",
+    "appExclusion.prompt.display.withAppName": "Before I can help with that, you’ll need to turn on access to %@.",
+    "appExclusion.reminder.spoken": "That doesn't include results from excluded apps."
+  },
+  "pl": {
+    "appExclusion.prompt.display.genericApp": "Zanim pomogę w tej sprawie, włącz dostęp do tej aplikacji.",
+    "appExclusion.prompt.spoken.withAppName": "Zanim pomogę w tej sprawie, włącz dostęp do aplikacji %@. Włączyć go teraz?",
+    "appExclusion.prompt.button.cancel": "Anuluj",
+    "appExclusion.prompt.button.turnOn": "Włącz",
+    "appExclusion.prompt.spoken.genericApp": "Zanim pomogę w tej sprawie, włącz dostęp do tej aplikacji. Czy mam to zrobić teraz?",
+    "appExclusion.prompt.display.withAppName": "Zanim pomogę w tej sprawie, włącz dostęp do aplikacji %@.",
+    "appExclusion.reminder.spoken": "Nie obejmuje to wyników z aplikacji wykluczonych."
+  },
+  "ca": {
+    "appExclusion.prompt.display.genericApp": "Perquè pugui ajudar‑te, cal que em permetis accedir a l’app.",
+    "appExclusion.prompt.spoken.withAppName": "Perquè pugui ajudar‑te, cal que em permetis accedir a l’app %@. Vols canviar els permisos d’accés ara?",
+    "appExclusion.prompt.button.cancel": "Cancel·la",
+    "appExclusion.prompt.button.turnOn": "Activa",
+    "appExclusion.prompt.spoken.genericApp": "Perquè pugui ajudar‑te, cal que em permetis accedir a l’app. Vols canviar els permisos d’accés ara?",
+    "appExclusion.prompt.display.withAppName": "Perquè pugui ajudar‑te, cal que em permetis accedir a l’app %@.",
+    "appExclusion.reminder.spoken": "Això no inclou els resultats de les apps excloses."
+  },
+  "ta": {
+    "appExclusion.prompt.display.genericApp": "நான் உங்களுக்கு உதவத் தொடங்குவதற்கு முன், இந்தச் செயலிக்கான அணுகலை நீங்கள் ஆன் செய்ய வேண்டும்.",
+    "appExclusion.prompt.spoken.withAppName": "நான் உங்களுக்கு உதவத் தொடங்குவதற்கு முன், %@-க்கான அணுகலை நீங்கள் ஆன் செய்ய வேண்டும். இப்போது ஆன் செய்யவா?",
+    "appExclusion.prompt.button.cancel": "ரத்துசெய்",
+    "appExclusion.prompt.button.turnOn": "ஆன் செய்",
+    "appExclusion.prompt.spoken.genericApp": "நான் உங்களுக்கு உதவத் தொடங்குவதற்கு முன், இந்தச் செயலிக்கான அணுகலை நீங்கள் ஆன் செய்ய வேண்டும். இப்போது ஆன் செய்யவா?",
+    "appExclusion.prompt.display.withAppName": "நான் உங்களுக்கு உதவத் தொடங்குவதற்கு முன், %@-க்கான அணுகலை நீங்கள் ஆன் செய்ய வேண்டும்.",
+    "appExclusion.reminder.spoken": "விலக்கப்பட்ட செயலிகளில் இருந்து வரும் முடிவுகள் அதில் இருக்காது."
+  },
+  "fr_CA": {
+    "appExclusion.prompt.display.genericApp": "Pour que je puisse vous aider, veuillez activer l’accès à cette app.",
+    "appExclusion.prompt.spoken.withAppName": "Pour que je puisse vous aider, veuillez activer l’accès à %@. Voulez-vous l’activer maintenant?",
+    "appExclusion.prompt.button.cancel": "Annuler",
+    "appExclusion.prompt.button.turnOn": "Activer",
+    "appExclusion.prompt.spoken.genericApp": "Pour que je puisse vous aider, veuillez activer l’accès à cette app. Voulez-vous l’activer maintenant?",
+    "appExclusion.prompt.display.withAppName": "Pour que je puisse vous aider, veuillez activer l’accès à %@.",
+    "appExclusion.reminder.spoken": "Les résultats des apps exclues ne sont pas inclus."
+  },
+  "fr": {
+    "appExclusion.prompt.display.genericApp": "Pour que je puisse vous aider, activez l’accès à cette app.",
+    "appExclusion.prompt.spoken.withAppName": "Pour que je puisse vous aider, vous devez activer l’accès à %@. Voulez-vous l’activer maintenant ?",
+    "appExclusion.prompt.button.cancel": "Annuler",
+    "appExclusion.prompt.button.turnOn": "Activer",
+    "appExclusion.prompt.spoken.genericApp": "Pour que je puisse vous aider, vous devez activer l’accès à cette app. Voulez-vous l’activer maintenant ?",
+    "appExclusion.prompt.display.withAppName": "Pour que je puisse vous aider, activez l’accès à %@.",
+    "appExclusion.reminder.spoken": "Cela n’inclut pas les résultats des apps exclues."
+  },
+  "or": {
+    "appExclusion.prompt.display.genericApp": "ମୁଁ ଏଥିରେ ସାହାଯ୍ୟ କରିବା ପୂର୍ବରୁ, ଆପଣଙ୍କୁ ଏହି ଆପ୍‌ରେ ଆକ୍ସେସ୍ ଚାଲୁ କରିବାକୁ ପଡ଼ିବ।",
+    "appExclusion.prompt.spoken.withAppName": "ମୁଁ ସେଥିରେ ସାହାଯ୍ୟ କରିବା ପୂର୍ବରୁ, ଆପଣଙ୍କୁ %@ ପାଇଁ ଆକ୍ସେସ୍‌ ଚାଲୁ କରିବାକୁ ପଡ଼ିବ। ଏହାକୁ ବର୍ତ୍ତମାନ ଚାଲୁ କରିବେ?",
+    "appExclusion.prompt.button.cancel": "ବାତିଲ୍ କରନ୍ତୁ",
+    "appExclusion.prompt.button.turnOn": "ଚାଲୁ କରନ୍ତୁ",
+    "appExclusion.prompt.spoken.genericApp": "ମୁଁ ଏଥିରେ ସାହାଯ୍ୟ କରିବା ପୂର୍ବରୁ, ଆପଣଙ୍କୁ ଏହି ଆପ୍‌ରେ ଆକ୍ସେସ୍ ଚାଲୁ କରିବାକୁ ପଡ଼ିବ। ଏହାକୁ ବର୍ତ୍ତମାନ ଚାଲୁ କରିବେ?",
+    "appExclusion.prompt.display.withAppName": "ମୁଁ ସେଥିରେ ସାହାଯ୍ୟ କରିବା ପୂର୍ବରୁ, ଆପଣଙ୍କୁ %@ ପାଇଁ ଆକ୍ସେସ୍ ଚାଲୁ କରିବାକୁ ପଡ଼ିବ।",
+    "appExclusion.reminder.spoken": "ବାଦ୍ ଦିଆଯାଇଥିବା ଆପ୍‌ରୁ ଫଳାଫଳ ଏଥିରେ ଅନ୍ତର୍ଭୁକ୍ତ ନାହିଁ।"
+  },
+  "da": {
+    "appExclusion.prompt.display.genericApp": "Før jeg kan hjælpe med det, skal du slå adgang til denne app til.",
+    "appExclusion.prompt.spoken.withAppName": "Før jeg kan hjælpe med det, skal du slå adgang til %@ til. Skal den slås til nu?",
+    "appExclusion.prompt.button.cancel": "Annuller",
+    "appExclusion.prompt.button.turnOn": "Slå til",
+    "appExclusion.prompt.spoken.genericApp": "Før jeg kan hjælpe med det, skal du slå adgang til denne app til. Skal den slås til nu?",
+    "appExclusion.prompt.display.withAppName": "Før jeg kan hjælpe med det, skal du slå adgang til %@ til.",
+    "appExclusion.reminder.spoken": "Resultater fra udeladte apps inkluderes ikke."
+  },
+  "bg": {
+    "appExclusion.prompt.display.genericApp": "Преди да мога да помогна с това, ще трябва да активирате достъпа до това приложение.",
+    "appExclusion.prompt.spoken.withAppName": "Преди да мога да помогна с това, ще трябва да активирате достъпа до %@. Да го активирам ли сега?",
+    "appExclusion.prompt.button.cancel": "Отказ",
+    "appExclusion.prompt.button.turnOn": "Включи",
+    "appExclusion.prompt.spoken.genericApp": "Преди да мога да помогна с това, ще трябва да активирате достъпа до това приложение. Да го активирам ли сега?",
+    "appExclusion.prompt.display.withAppName": "Преди да мога да помогна с това, ще трябва да активирате достъпа до %@.",
+    "appExclusion.reminder.spoken": "Това не включва резултати от приложения, изключени от списъка."
+  },
+  "te": {
+    "appExclusion.prompt.display.genericApp": "నేను సహాయం చేసే ముందు, మీరు ఈ యాప్‌కు యాక్సెస్‌ను ఆన్ చేయాలి.",
+    "appExclusion.prompt.spoken.withAppName": "నేను సహాయం చేసే ముందు, మీరు %@కు యాక్సెస్‌ను ఆన్ చేయాలి. దీన్ని ఇప్పుడే ఆన్ చేయాలా?",
+    "appExclusion.prompt.button.cancel": "రద్దు",
+    "appExclusion.prompt.button.turnOn": "ఆన్ చేయండి",
+    "appExclusion.prompt.spoken.genericApp": "నేను సహాయం చేసే ముందు, మీరు ఈ యాప్‌కు యాక్సెస్‌ను ఆన్ చేయాలి. దీన్ని ఇప్పుడే ఆన్ చేయాలా?",
+    "appExclusion.prompt.display.withAppName": "నేను సహాయం చేసే ముందు, మీరు %@కు యాక్సెస్‌ను ఆన్ చేయాలి.",
+    "appExclusion.reminder.spoken": "మినహాయించబడిన యాప్‌లు అందించే ఫలితాలు అందులో చేర్చబడవు."
+  },
+  "pt_BR": {
+    "appExclusion.prompt.display.genericApp": "Para eu ajudar, você precisará ativar o acesso a este app.",
+    "appExclusion.prompt.spoken.withAppName": "Para eu ajudar, você precisará ativar o acesso ao app %@. Ativar agora?",
+    "appExclusion.prompt.button.cancel": "Cancelar",
+    "appExclusion.prompt.button.turnOn": "Ativar",
+    "appExclusion.prompt.spoken.genericApp": "Para eu ajudar, você precisará ativar o acesso a este app. Ativar agora?",
+    "appExclusion.prompt.display.withAppName": "Para eu ajudar, você precisará ativar o acesso ao app %@.",
+    "appExclusion.reminder.spoken": "Isso não inclui os resultados dos apps excluídos."
+  },
+  "zh_CN": {
+    "appExclusion.prompt.display.genericApp": "在帮你处理前，你需要先允许访问此App。",
+    "appExclusion.prompt.spoken.withAppName": "在帮你处理前，你需要先允许访问%[tt]@。要现在允许吗？",
+    "appExclusion.prompt.button.cancel": "取消",
+    "appExclusion.prompt.button.turnOn": "打开",
+    "appExclusion.prompt.spoken.genericApp": "在帮你处理前，你需要先允许访问此App。要现在允许吗？",
+    "appExclusion.prompt.display.withAppName": "在帮你处理前，你需要先允许访问%[tt]@。",
+    "appExclusion.reminder.spoken": "这不包含排除的App中的结果。"
+  },
+  "gu": {
+    "appExclusion.prompt.display.genericApp": "આમાં મદદ કરી શકું તે પહેલાં, તમારે આ ઍપ માટે ઍક્સેસ ચાલુ કરવો પડશે.",
+    "appExclusion.prompt.spoken.withAppName": "હું તમને મદદ કરી શકું તે પહેલાં તમારે %@નો ઍક્સેસ ચાલુ કરવો પડશે. તેને હમણાં ચાલુ કરવો છે?",
+    "appExclusion.prompt.button.cancel": "રદ કરો",
+    "appExclusion.prompt.button.turnOn": "ચાલુ કરો",
+    "appExclusion.prompt.spoken.genericApp": "આમાં મદદ કરી શકું તે પહેલાં, તમારે આ ઍપનો ઍક્સેસ ચાલુ કરવો પડશે. તેને હમણાં ચાલુ કરવો છે?",
+    "appExclusion.prompt.display.withAppName": "હું તમને મદદ કરી શકું તે પહેલાં તમારે %@નો ઍક્સેસ ચાલુ કરવો પડશે.",
+    "appExclusion.reminder.spoken": "તેમાં બાકાત રાખેલ ઍપના પરિણામો સામેલ નથી."
+  },
+  "hr": {
+    "appExclusion.prompt.display.genericApp": "Prije nego što vam mogu pomoći s tim, trebate uključiti pristup ovoj aplikaciji.",
+    "appExclusion.prompt.spoken.withAppName": "Prije nego što vam mogu pomoći s tim, trebate uključiti pristup aplikaciji %@. Želite li ga uključiti sada?",
+    "appExclusion.prompt.button.cancel": "Poništi",
+    "appExclusion.prompt.button.turnOn": "Uključi",
+    "appExclusion.prompt.spoken.genericApp": "Prije nego što vam mogu pomoći s tim, trebate uključiti pristup ovoj aplikaciji. Želite li ga uključiti sada?",
+    "appExclusion.prompt.display.withAppName": "Prije nego što vam mogu pomoći s tim, trebate uključiti pristup aplikaciji %@.",
+    "appExclusion.reminder.spoken": "To ne uključuje rezultate iz izuzetih aplikacija."
+  },
+  "de": {
+    "appExclusion.prompt.display.genericApp": "Bevor ich dir dabei helfen kann, musst du den Zugriff auf diese App aktivieren.",
+    "appExclusion.prompt.spoken.withAppName": "Bevor ich dir dabei helfen kann, musst du den Zugriff auf %@ aktivieren. Jetzt aktivieren?",
+    "appExclusion.prompt.button.cancel": "Abbrechen",
+    "appExclusion.prompt.button.turnOn": "Aktivieren",
+    "appExclusion.prompt.spoken.genericApp": "Bevor ich dir dabei helfen kann, musst du den Zugriff auf diese App aktivieren. Jetzt aktivieren?",
+    "appExclusion.prompt.display.withAppName": "Bevor ich dir dabei helfen kann, musst du den Zugriff auf %@ aktivieren.",
+    "appExclusion.reminder.spoken": "Ergebnisse aus Apps, die du ausgeschlossen hast, wurden nicht berücksichtigt."
+  },
+  "th": {
+    "appExclusion.prompt.display.genericApp": "คุณจะต้องเปิดใช้การเข้าถึงแอปนี้ก่อนที่ฉันจะสามารถช่วยคุณได้",
+    "appExclusion.prompt.spoken.withAppName": "คุณจะต้องเปิดใช้การเข้าถึง%[tt]@ก่อนที่ฉันจะสามารถช่วยคุณได้ เปิดใช้ตอนนี้หรือไม่",
+    "appExclusion.prompt.button.cancel": "ยกเลิก",
+    "appExclusion.prompt.button.turnOn": "เปิดใช้",
+    "appExclusion.prompt.spoken.genericApp": "คุณจะต้องเปิดใช้การเข้าถึงแอปนี้ก่อนที่ฉันจะสามารถช่วยคุณได้ เปิดใช้ตอนนี้หรือไม่",
+    "appExclusion.prompt.display.withAppName": "คุณจะต้องเปิดใช้การเข้าถึง%[tt]@ก่อนที่ฉันจะสามารถช่วยคุณได้",
+    "appExclusion.reminder.spoken": "การค้นหานั้นไม่รวมผลการค้นหาจากแอปที่ไม่ได้รวมไว้"
+  },
+  "en_GB": {
+    "appExclusion.prompt.display.genericApp": "Before I can help with that, you’ll need to turn on access to this app.",
+    "appExclusion.prompt.spoken.withAppName": "Before I can help with that, you’ll need to turn on access to %@. Turn it on now?",
+    "appExclusion.prompt.button.cancel": "Cancel",
+    "appExclusion.prompt.button.turnOn": "Turn On",
+    "appExclusion.prompt.spoken.genericApp": "Before I can help with that, you’ll need to turn on access to this app. Turn it on now?",
+    "appExclusion.prompt.display.withAppName": "Before I can help with that, you’ll need to turn on access to %@.",
+    "appExclusion.reminder.spoken": "That doesn't include results from excluded apps."
+  },
+  "sk": {
+    "appExclusion.prompt.display.genericApp": "Skôr ako vám s tým budem môcť pomôcť, musíte zapnúť prístup k tejto apke.",
+    "appExclusion.prompt.spoken.withAppName": "Skôr ako vám s tým budem môcť pomôcť, musíte zapnúť prístup k apke %@. Chcete ho zapnúť teraz?",
+    "appExclusion.prompt.button.cancel": "Zrušiť",
+    "appExclusion.prompt.button.turnOn": "Zapnúť",
+    "appExclusion.prompt.spoken.genericApp": "Skôr ako vám s tým budem môcť pomôcť, musíte zapnúť prístup k tejto apke. Chcete ho zapnúť teraz?",
+    "appExclusion.prompt.display.withAppName": "Skôr ako vám s tým budem môcť pomôcť, musíte zapnúť prístup k apke %@.",
+    "appExclusion.reminder.spoken": "Nezahŕňa výsledky z vylúčených apiek."
+  },
+  "zh_HK": {
+    "appExclusion.prompt.display.genericApp": "你需要開啟此App的取用權限我才可以協助你。",
+    "appExclusion.prompt.spoken.withAppName": "你需要開啟%[tt]@的取用權限我才可以協助你。現在就開啟嗎？",
+    "appExclusion.prompt.button.cancel": "取消",
+    "appExclusion.prompt.button.turnOn": "開啟",
+    "appExclusion.prompt.spoken.genericApp": "你需要開啟此App的取用權限我才可以協助你。現在就開啟嗎？",
+    "appExclusion.prompt.display.withAppName": "你需要開啟%[tt]@的取用權限我才可以協助你。",
+    "appExclusion.reminder.spoken": "這不包括被排除App的結果。"
+  },
+  "sl": {
+    "appExclusion.prompt.display.genericApp": "Preden lahko pomagam pri tem, boste morali omogočiti dostop do te aplikacije.",
+    "appExclusion.prompt.spoken.withAppName": "Preden lahko pomagam pri tem, boste morali omogočiti dostop do aplikacije %@. Ga želite omogočiti zdaj?",
+    "appExclusion.prompt.button.cancel": "Prekliči",
+    "appExclusion.prompt.button.turnOn": "Vklopi",
+    "appExclusion.prompt.spoken.genericApp": "Preden lahko pomagam pri tem, boste morali omogočiti dostop do te aplikacije. Ga želite omogočiti zdaj?",
+    "appExclusion.prompt.display.withAppName": "Preden vam lahko pomagam pri tem, morate omogočiti dostop do aplikacije %@.",
+    "appExclusion.reminder.spoken": "To ne vključuje rezultatov iz izključenih aplikacij."
+  },
+  "ro": {
+    "appExclusion.prompt.display.genericApp": "Înainte de a vă putea ajuta, va trebui să activați accesul la această aplicație.",
+    "appExclusion.prompt.spoken.withAppName": "Înainte de a vă putea ajuta, va trebui să activați accesul la %@. Doriți să îl activați acum?",
+    "appExclusion.prompt.button.cancel": "Anulați",
+    "appExclusion.prompt.button.turnOn": "Activați",
+    "appExclusion.prompt.spoken.genericApp": "Înainte de a vă putea ajuta, va trebui să activați accesul la această aplicație. Doriți să îl activați acum?",
+    "appExclusion.prompt.display.withAppName": "Înainte de a vă putea ajuta, va trebui să activați accesul la %@.",
+    "appExclusion.reminder.spoken": "Aceasta nu include rezultate din aplicațiile excluse."
+  },
+  "kk": {
+    "appExclusion.prompt.display.genericApp": "Сізге көмектесуім үшін, алдымен осы қолданбаға қол жеткізу рұқсатын қосуыңыз керек.",
+    "appExclusion.prompt.spoken.withAppName": "Сізге көмектесуім үшін, алдымен %@ қолданбасына қол жеткізу рұқсатын қосуыңыз керек. Қазір қосасыз ба?",
+    "appExclusion.prompt.button.cancel": "Бас тарту",
+    "appExclusion.prompt.button.turnOn": "Қосу",
+    "appExclusion.prompt.spoken.genericApp": "Сізге көмектесуім үшін, алдымен осы қолданбаға қол жеткізу рұқсатын қосуыңыз керек. Қазір қосасыз ба?",
+    "appExclusion.prompt.display.withAppName": "Сізге көмектесуім үшін, алдымен %@ қолданбасына қол жеткізу рұқсатын қосуыңыз керек.",
+    "appExclusion.reminder.spoken": "Бұл нәтижелерге алып тасталған қолданбалардан нәтижелер кірмейді."
+  },
+  "hu": {
+    "appExclusion.prompt.display.genericApp": "Mielőtt segíthetnék ebben, be kell kapcsolnia az apphoz való hozzáférést.",
+    "appExclusion.prompt.spoken.withAppName": "Mielőtt segíthetnék ebben, be kell kapcsolnia a(z) %@ apphoz való hozzáférést. Bekapcsolja most?",
+    "appExclusion.prompt.button.cancel": "Mégsem",
+    "appExclusion.prompt.button.turnOn": "Bekapcsolás",
+    "appExclusion.prompt.spoken.genericApp": "Mielőtt segíthetnék ebben, be kell kapcsolnia az apphoz való hozzáférést. Bekapcsolja most?",
+    "appExclusion.prompt.display.withAppName": "Mielőtt segíthetnék ebben, be kell kapcsolnia a(z) %@ apphoz való hozzáférést.",
+    "appExclusion.reminder.spoken": "Ez nem tartalmazza a kizárt appokból származó eredményeket."
+  },
+  "bn": {
+    "appExclusion.prompt.display.genericApp": "আমি আপনাকে সাহায্য করার আগে, আপনাকে এই অ্যাপের অ্যাক্সেস চালু করতে হবে।",
+    "appExclusion.prompt.spoken.withAppName": "আমি আপনাকে সাহায্য করার আগে, আপনাকে %@-এর অ্যাক্সেস চালু করতে হবে। এখন চালু করবেন?",
+    "appExclusion.prompt.button.cancel": "বাতিল করুন",
+    "appExclusion.prompt.button.turnOn": "চালু করুন",
+    "appExclusion.prompt.spoken.genericApp": "আমি আপনাকে সাহায্য করার আগে, আপনাকে এই অ্যাপের অ্যাক্সেস চালু করতে হবে। এখন চালু করবেন?",
+    "appExclusion.prompt.display.withAppName": "আমি আপনাকে সাহায্য করার আগে, আপনাকে %@-এর অ্যাক্সেস চালু করতে হবে।",
+    "appExclusion.reminder.spoken": "এতে বাদ দেওয়া অ্যাপ থেকে প্রাপ্ত ফলাফল অন্তর্ভুক্ত নয়।"
+  },
+  "ar": {
+    "appExclusion.prompt.display.genericApp": "قبل أن أتمكن من المساعدة في ذلك، ستحتاج إلى تشغيل الوصول إلى هذا التطبيق.",
+    "appExclusion.prompt.spoken.withAppName": "قبل أن أتمكن من المساعدة في ذلك، ستحتاج إلى تشغيل الوصول إلى %@. هل تريد تشغيله الآن؟",
+    "appExclusion.prompt.button.cancel": "إلغاء",
+    "appExclusion.prompt.button.turnOn": "تشغيل",
+    "appExclusion.prompt.spoken.genericApp": "قبل أن أتمكن من المساعدة في ذلك، ستحتاج إلى تشغيل الوصول إلى هذا التطبيق. هل تريد تشغيله الآن؟",
+    "appExclusion.prompt.display.withAppName": "قبل أن أتمكن من المساعدة في ذلك، ستحتاج إلى تشغيل الوصول إلى %@.",
+    "appExclusion.reminder.spoken": "لا يشمل ذلك النتائج من التطبيقات المستبعدة."
+  },
+  "it": {
+    "appExclusion.prompt.display.genericApp": "Per permettermi di aiutarti, devi attivare l’accesso a questa app.",
+    "appExclusion.prompt.spoken.withAppName": "Per permettermi di aiutarti, devi attivare l’accesso a %@. Vuoi attivarlo ora?",
+    "appExclusion.prompt.button.cancel": "Annulla",
+    "appExclusion.prompt.button.turnOn": "Attiva",
+    "appExclusion.prompt.spoken.genericApp": "Per permettermi di aiutarti, devi attivare l’accesso a questa app. Vuoi attivarlo ora?",
+    "appExclusion.prompt.display.withAppName": "Per permettermi di aiutarti, devi attivare l’accesso a %@.",
+    "appExclusion.reminder.spoken": "I risultati delle app escluse non sono inclusi."
+  },
+  "kn": {
+    "appExclusion.prompt.display.genericApp": "ನಾನು ಅದರ ಕುರಿತು ಸಹಾಯ ಮಾಡುವ ಮೊದಲು, ನೀವು ಈ ಆ್ಯಪ್‌ಗೆ ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ.",
+    "appExclusion.prompt.spoken.withAppName": "ನಾನು ಅದರ ಕುರಿತು ಸಹಾಯ ಮಾಡುವ ಮೊದಲು, ನೀವು %@ ಆ್ಯಪ್‌ಗೆ ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ. ಈಗ ಅದನ್ನು ಆನ್ ಮಾಡಬೇಕೆ?",
+    "appExclusion.prompt.button.cancel": "ರದ್ದು",
+    "appExclusion.prompt.button.turnOn": "ಆನ್ ಮಾಡಿ",
+    "appExclusion.prompt.spoken.genericApp": "ನಾನು ಅದರ ಕುರಿತು ಸಹಾಯ ಮಾಡುವ ಮೊದಲು, ನೀವು ಈ ಆ್ಯಪ್‌ಗೆ ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ. ಈಗ ಆನ್ ಮಾಡಬೇಕೆ?",
+    "appExclusion.prompt.display.withAppName": "ನಾನು ಅದರ ಕುರಿತು ಸಹಾಯ ಮಾಡುವ ಮೊದಲು, ನೀವು %@ ಆ್ಯಪ್‌ಗೆ ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ.",
+    "appExclusion.reminder.spoken": "ಇದು ಹೊರತುಪಡಿಸಿದ ಆ್ಯಪ್‌ಗಳಿಂದ ಬಂದ ಫಲಿತಾಂಶಗಳನ್ನು ಒಳಗೊಂಡಿರುವುದಿಲ್ಲ."
+  },
+  "ko": {
+    "appExclusion.prompt.display.genericApp": "그 작업을 도와드리려면 먼저 이 앱에 대한 접근 권한을 켜야 합니다.",
+    "appExclusion.prompt.spoken.withAppName": "그 작업을 도와드리려면 먼저 %@에 대한 접근 권한을 켜야 합니다. 지금 켜겠습니까?",
+    "appExclusion.prompt.button.cancel": "취소",
+    "appExclusion.prompt.button.turnOn": "켜기",
+    "appExclusion.prompt.spoken.genericApp": "그 작업을 도와드리려면 먼저 이 앱에 대한 접근 권한을 켜야 합니다. 지금 켜겠습니까?",
+    "appExclusion.prompt.display.withAppName": "그 작업을 도와드리려면 먼저 %@에 대한 접근 권한을 켜야 합니다.",
+    "appExclusion.reminder.spoken": "제외된 앱의 결과는 포함되지 않습니다."
+  },
+  "uk": {
+    "appExclusion.prompt.display.genericApp": "Перш ніж я зможу допомогти, потрібно ввімкнути доступ до цієї програми.",
+    "appExclusion.prompt.spoken.withAppName": "Перш ніж я зможу допомогти, потрібно ввімкнути доступ до програми «%@». Увімкнути?",
+    "appExclusion.prompt.button.cancel": "Скасувати",
+    "appExclusion.prompt.button.turnOn": "Увімкнути",
+    "appExclusion.prompt.spoken.genericApp": "Перш ніж я зможу допомогти, потрібно ввімкнути доступ до цієї програми. Увімкнути?",
+    "appExclusion.prompt.display.withAppName": "Перш ніж я зможу допомогти, потрібно ввімкнути доступ до програми «%@».",
+    "appExclusion.reminder.spoken": "Результати із вилучених програм не долучаються."
+  },
+  "pa": {
+    "appExclusion.prompt.display.genericApp": "ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਇਸ ਐਪ ਦਾ ਐਕਸੈੱਸ ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ, ਫੇਰ ਹੀ ਮੇਰੇ ਲਈ ਮਦਦ ਕਰਨਾ ਸੰਭਵ ਹੋਵੇਗਾ।",
+    "appExclusion.prompt.spoken.withAppName": "ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ %@ ਦਾ ਐਕਸੈੱਸ ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ, ਫੇਰ ਹੀ ਮੇਰੇ ਲਈ ਮਦਦ ਕਰਨਾ ਸੰਭਵ ਹੋਵੇਗਾ। ਇਸਨੂੰ ਹੁਣ ਚਾਲੂ ਕਰੀਏ?",
+    "appExclusion.prompt.button.cancel": "ਰੱਦ ਕਰੋ",
+    "appExclusion.prompt.button.turnOn": "ਚਾਲੂ ਕਰੋ",
+    "appExclusion.prompt.spoken.genericApp": "ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਇਸ ਐਪ ਦਾ ਐਕਸੈੱਸ ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ, ਫੇਰ ਹੀ ਮੇਰੇ ਲਈ ਮਦਦ ਕਰਨਾ ਸੰਭਵ ਹੋਵੇਗਾ। ਇਸਨੂੰ ਹੁਣ ਚਾਲੂ ਕਰੀਏ?",
+    "appExclusion.prompt.display.withAppName": "ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ %@ ਦਾ ਐਕਸੈੱਸ ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ, ਫੇਰ ਹੀ ਮੇਰੇ ਲਈ ਮਦਦ ਕਰਨਾ ਸੰਭਵ ਹੋਵੇਗਾ।",
+    "appExclusion.reminder.spoken": "ਇਸ ਵਿੱਚ ਬਾਹਰ ਰੱਖੀਆਂ ਐਪਾਂ ਦੇ ਨਤੀਜੇ ਸ਼ਾਮਲ ਨਹੀਂ ਹੁੰਦੇ।"
+  },
+  "en_AU": {
+    "appExclusion.prompt.display.genericApp": "Before I can help with that, you’ll need to turn on access to this app.",
+    "appExclusion.prompt.spoken.withAppName": "Before I can help with that, you’ll need to turn on access to %@. Turn it on now?",
+    "appExclusion.prompt.button.cancel": "Cancel",
+    "appExclusion.prompt.button.turnOn": "Turn On",
+    "appExclusion.prompt.spoken.genericApp": "Before I can help with that, you’ll need to turn on access to this app. Turn it on now?",
+    "appExclusion.prompt.display.withAppName": "Before I can help with that, you’ll need to turn on access to %@.",
+    "appExclusion.reminder.spoken": "That doesn't include results from excluded apps."
+  },
+  "ru": {
+    "appExclusion.prompt.display.genericApp": "Прежде чем я смогу помочь, нужно будет включить доступ к этому приложению.",
+    "appExclusion.prompt.spoken.withAppName": "Прежде чем я смогу помочь, нужно будет включить доступ к приложению «%@». Включить его сейчас?",
+    "appExclusion.prompt.button.cancel": "Отменить",
+    "appExclusion.prompt.button.turnOn": "Включить",
+    "appExclusion.prompt.spoken.genericApp": "Прежде чем я смогу помочь, нужно будет включить доступ к этому приложению. Включить его сейчас?",
+    "appExclusion.prompt.display.withAppName": "Прежде чем я смогу помочь, нужно будет включить доступ к приложению «%@».",
+    "appExclusion.reminder.spoken": "Результаты из исключенных приложений не включаются."
+  },
+  "vi": {
+    "appExclusion.prompt.display.genericApp": "Trước khi tôi có thể trợ giúp, bạn cần bật quyền truy cập vào ứng dụng này.",
+    "appExclusion.prompt.spoken.withAppName": "Trước khi tôi có thể trợ giúp, bạn cần bật quyền truy cập vào %@. Bạn có muốn bật bây giờ không?",
+    "appExclusion.prompt.button.cancel": "Hủy",
+    "appExclusion.prompt.button.turnOn": "Bật",
+    "appExclusion.prompt.spoken.genericApp": "Trước khi tôi có thể trợ giúp, bạn cần bật quyền truy cập vào ứng dụng này. Bạn có muốn bật bây giờ không?",
+    "appExclusion.prompt.display.withAppName": "Trước khi tôi có thể trợ giúp, bạn cần bật quyền truy cập vào %@.",
+    "appExclusion.reminder.spoken": "Kết quả từ các ứng dụng bị loại trừ sẽ không được bao gồm."
+  },
+  "pt_PT": {
+    "appExclusion.prompt.display.genericApp": "Antes de poder ajudar, tem de ativar o acesso a esta aplicação.",
+    "appExclusion.prompt.spoken.withAppName": "Antes de poder ajudar, tem de ativar o acesso a %@. Pretende ativar agora?",
+    "appExclusion.prompt.button.cancel": "Cancelar",
+    "appExclusion.prompt.button.turnOn": "Ativar",
+    "appExclusion.prompt.spoken.genericApp": "Antes de poder ajudar, tem de ativar o acesso a esta aplicação. Pretende ativar agora?",
+    "appExclusion.prompt.display.withAppName": "Antes de poder ajudar, tem de ativar o acesso a %@.",
+    "appExclusion.reminder.spoken": "Não inclui resultados de aplicações excluídas."
+  },
+  "ml": {
+    "appExclusion.prompt.display.genericApp": "എനിക്ക് അക്കാര്യത്തിൽ സഹായിക്കാൻ കഴിയണമെങ്കിൽ, നിങ്ങൾ ഈ ആപ്പിലേക്കുള്ള ആക്സസ് ഓൺ ചെയ്യേണ്ടതുണ്ട്.",
+    "appExclusion.prompt.spoken.withAppName": "എനിക്ക് അക്കാര്യത്തിൽ സഹായിക്കാൻ കഴിയണമെങ്കിൽ, നിങ്ങൾ %@ എന്നതിലേക്കുള്ള ആക്സസ് ഓൺ ചെയ്യേണ്ടതുണ്ട്. അത് ഇപ്പോൾ ഓൺ ചെയ്യണോ?",
+    "appExclusion.prompt.button.cancel": "റദ്ദാക്കൂ",
+    "appExclusion.prompt.button.turnOn": "ഓണാക്കൂ",
+    "appExclusion.prompt.spoken.genericApp": "എനിക്ക് അക്കാര്യത്തിൽ സഹായിക്കാൻ കഴിയണമെങ്കിൽ, നിങ്ങൾ ഈ ആപ്പിലേക്കുള്ള ആക്സസ് ഓൺ ചെയ്യേണ്ടതുണ്ട്. അത് ഇപ്പോൾ ഓൺ ചെയ്യണോ?",
+    "appExclusion.prompt.display.withAppName": "എനിക്ക് അക്കാര്യത്തിൽ സഹായിക്കാൻ കഴിയണമെങ്കിൽ, നിങ്ങൾ %@ എന്നതിലേക്കുള്ള ആക്സസ് ഓൺ ചെയ്യേണ്ടതുണ്ട്.",
+    "appExclusion.reminder.spoken": "അതിൽ ഒഴിവാക്കപ്പെട്ട ആപ്പുകളിൽ നിന്നുള്ള ഫലങ്ങൾ ഉൾപ്പെടുന്നില്ല."
+  },
+  "LocProvenance": {
+    "zh_TW": 1,
+    "ur": 1,
+    "lt": 1,
+    "id": 1,
+    "ja": 1,
+    "no": 1,
+    "mr": 1,
+    "es_419": 1,
+    "ms": 1,
+    "hi": 1,
+    "en_CA": 1,
+    "es": 1,
+    "en_IN": 1,
+    "pl": 1,
+    "ca": 1,
+    "ta": 1,
+    "fr_CA": 1,
+    "fr": 1,
+    "or": 1,
+    "da": 1,
+    "bg": 1,
+    "te": 1,
+    "pt_BR": 1,
+    "zh_CN": 1,
+    "gu": 1,
+    "hr": 1,
+    "de": 1,
+    "th": 1,
+    "en_GB": 1,
+    "sk": 1,
+    "zh_HK": 1,
+    "sl": 1,
+    "ro": 1,
+    "kk": 1,
+    "hu": 1,
+    "bn": 1,
+    "ar": 1,
+    "it": 1,
+    "kn": 1,
+    "ko": 1,
+    "uk": 1,
+    "pa": 1,
+    "en_AU": 1,
+    "ru": 1,
+    "vi": 1,
+    "none": 2,
+    "pt_PT": 1,
+    "ml": 1,
+    "fi": 1,
+    "tr": 1,
+    "el": 1,
+    "es_US": 1,
+    "cs": 1,
+    "sv": 1,
+    "nl": 1,
+    "he": 1,
+    "en": 1
+  },
+  "fi": {
+    "appExclusion.prompt.display.genericApp": "Ennen kuin voin auttaa, sinun on laitettava päälle pääsy tähän appiin.",
+    "appExclusion.prompt.spoken.withAppName": "Ennen kuin voin auttaa, sinun on laitettava päälle pääsy %[tt]@-appiin. Laitetaanko se päälle nyt?",
+    "appExclusion.prompt.button.cancel": "Kumoa",
+    "appExclusion.prompt.button.turnOn": "Laita päälle",
+    "appExclusion.prompt.spoken.genericApp": "Ennen kuin voin auttaa, sinun on laitettava päälle pääsy tähän appiin. Laitetaanko se päälle nyt?",
+    "appExclusion.prompt.display.withAppName": "Ennen kuin voin auttaa, sinun on laitettava päälle pääsy %[tt]@-appiin.",
+    "appExclusion.reminder.spoken": "Tämä ei sisällä poissuljettujen appien tuloksia."
+  },
+  "tr": {
+    "appExclusion.prompt.display.genericApp": "Bu konuda yardımcı olabilmem için önce bu uygulamaya erişimi açmanız gerekir.",
+    "appExclusion.prompt.spoken.withAppName": "Bu konuda yardımcı olabilmem için önce %@ uygulamasına erişimi açmanız gerekir. Şimdi açılsın mı?",
+    "appExclusion.prompt.button.cancel": "Vazgeç",
+    "appExclusion.prompt.button.turnOn": "Aç",
+    "appExclusion.prompt.spoken.genericApp": "Bu konuda yardımcı olabilmem için önce bu uygulamaya erişimi açmanız gerekir. Şimdi açılsın mı?",
+    "appExclusion.prompt.display.withAppName": "Bu konuda yardımcı olabilmem için önce %@ uygulamasına erişimi açmanız gerekir.",
+    "appExclusion.reminder.spoken": "Bu, hariç tutulan uygulamalardan elde edilen sonuçları içermez."
+  },
+  "el": {
+    "appExclusion.prompt.display.genericApp": "Για να μπορέσω να βοηθήσω με αυτό, πρέπει να ενεργοποιήσετε την πρόσβαση σε αυτήν την εφαρμογή.",
+    "appExclusion.prompt.spoken.withAppName": "Για να μπορέσω να βοηθήσω με αυτό, πρέπει να ενεργοποιήσετε την πρόσβαση στο «%@». Να ενεργοποιηθεί τώρα;",
+    "appExclusion.prompt.button.cancel": "Ακύρωση",
+    "appExclusion.prompt.button.turnOn": "Ενεργοποίηση",
+    "appExclusion.prompt.spoken.genericApp": "Για να μπορέσω να βοηθήσω με αυτό, πρέπει να ενεργοποιήσετε την πρόσβαση σε αυτήν την εφαρμογή. Να ενεργοποιηθεί τώρα;",
+    "appExclusion.prompt.display.withAppName": "Για να μπορέσω να βοηθήσω με αυτό, πρέπει να ενεργοποιήσετε την πρόσβαση στο «%@».",
+    "appExclusion.reminder.spoken": "Δεν περιλαμβάνονται αποτελέσματα από αποκλεισμένες εφαρμογές."
+  },
+  "es_US": {
+    "appExclusion.prompt.display.genericApp": "Para poder ayudarte, tendrás que permitir el acceso a esta app.",
+    "appExclusion.prompt.spoken.withAppName": "Para poder ayudarte, tendrás que permitir el acceso a %@. ¿Quieres hacerlo ahora?",
+    "appExclusion.prompt.button.cancel": "Cancelar",
+    "appExclusion.prompt.button.turnOn": "Encender",
+    "appExclusion.prompt.spoken.genericApp": "Para poder ayudarte, tendrás que permitir el acceso a esta app. ¿Quieres hacerlo ahora?",
+    "appExclusion.prompt.display.withAppName": "Para poder ayudarte, tendrás que permitir el acceso a %@.",
+    "appExclusion.reminder.spoken": "Eso no incluye resultados de apps excluidas."
+  },
+  "cs": {
+    "appExclusion.prompt.display.genericApp": "Než vám s tím budu moct pomoct, musíte zapnout přístup k této aplikaci.",
+    "appExclusion.prompt.spoken.withAppName": "Než vám s tím budu moct pomoct, musíte zapnout přístup k aplikaci %@. Chcete ho zapnout hned teď?",
+    "appExclusion.prompt.button.cancel": "Zrušit",
+    "appExclusion.prompt.button.turnOn": "Zapnout",
+    "appExclusion.prompt.spoken.genericApp": "Než vám s tím budu moct pomoct, musíte zapnout přístup k této aplikaci. Chcete ho zapnout hned teď?",
+    "appExclusion.prompt.display.withAppName": "Než vám s tím budu moct pomoct, musíte zapnout přístup k aplikaci %@.",
+    "appExclusion.reminder.spoken": "Nezahrnuje to výsledky z vyloučených aplikací."
+  },
+  "sv": {
+    "appExclusion.prompt.display.genericApp": "Innan jag kan hjälpa till med det måste du aktivera åtkomst till den här appen.",
+    "appExclusion.prompt.spoken.withAppName": "Innan jag kan hjälpa till med det måste du aktivera åtkomst till %@. Ska jag slå på den nu?",
+    "appExclusion.prompt.button.cancel": "Avbryt",
+    "appExclusion.prompt.button.turnOn": "Slå på",
+    "appExclusion.prompt.spoken.genericApp": "Innan jag kan hjälpa till med det måste du slå på åtkomst till den här appen. Ska jag slå på det nu?",
+    "appExclusion.prompt.display.withAppName": "Innan jag kan hjälpa till med det måste du aktivera åtkomst till %@.",
+    "appExclusion.reminder.spoken": "Detta inkluderar inte resultat från uteslutna appar."
+  },
+  "nl": {
+    "appExclusion.prompt.display.genericApp": "Voordat ik je daarmee kan helpen, moet je toegang tot deze app inschakelen.",
+    "appExclusion.prompt.spoken.withAppName": "Voordat ik je daarmee kan helpen, moet je de toegang tot %@ inschakelen. Wil je dat nu doen?",
+    "appExclusion.prompt.button.cancel": "Annuleer",
+    "appExclusion.prompt.button.turnOn": "Schakel in",
+    "appExclusion.prompt.spoken.genericApp": "Voordat ik je daarmee kan helpen, moet je de toegang tot deze app inschakelen. Wil je dat nu doen?",
+    "appExclusion.prompt.display.withAppName": "Voordat ik je daarmee kan helpen, moet je toegang tot %@ inschakelen.",
+    "appExclusion.reminder.spoken": "Resultaten van uitgesloten apps worden buiten beschouwing gelaten."
+  },
+  "he": {
+    "appExclusion.prompt.display.genericApp": "לפני שאוכל לסייע עם זה יהיה צורך להפעיל את הרשאת הגישה ליישום זה.",
+    "appExclusion.prompt.spoken.withAppName": "לפני שאוכל לסייע עם זה יהיה צורך להפעיל את הרשאת הגישה ליישום ״⁨%@⁩״. להפעיל אותה כעת?",
+    "appExclusion.prompt.button.cancel": "ביטול",
+    "appExclusion.prompt.button.turnOn": "הפעלה",
+    "appExclusion.prompt.spoken.genericApp": "לפני שאוכל לסייע עם זה יהיה צורך להפעיל את הרשאת הגישה ליישום זה. להפעיל אותה כעת?",
+    "appExclusion.prompt.display.withAppName": "לפני שאוכל לסייע עם זה יהיה צורך להפעיל את הרשאת הגישה ליישום ״⁨%@⁩״.",
+    "appExclusion.reminder.spoken": "התוצאות לא כוללות תוצאות יישומים שבחרת לא לכלול."
+  },
+  "en": {
+    "appExclusion.prompt.display.genericApp": "Before I can help with that, you’ll need to turn on access to this app.",
+    "appExclusion.prompt.spoken.withAppName": "Before I can help with that, you’ll need to turn on access to %@. Turn it on now?",
+    "appExclusion.prompt.button.cancel": "Cancel",
+    "appExclusion.prompt.button.turnOn": "Turn On",
+    "appExclusion.prompt.spoken.genericApp": "Before I can help with that, you’ll need to turn on access to this app. Turn it on now?",
+    "appExclusion.prompt.display.withAppName": "Before I can help with that, you’ll need to turn on access to %@.",
+    "appExclusion.reminder.spoken": "That doesn't include results from excluded apps."
+  }
+}

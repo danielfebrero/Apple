@@ -1,0 +1,17 @@
+{
+  "name": "TextAssistantProofreadGeneration",
+  "contextual_telemetry": "YES",
+  "maximum_duration": 100,
+  "signposts": [
+    {
+      "start": true,
+      "end": true,
+      "subsystem": "com.apple.InputAnalytics",
+      "category": "TextAssistant",
+      "name": "ProofreadGeneration",
+      "environment_field_names": [
+        "Result"
+      ]
+    }
+  ]
+}

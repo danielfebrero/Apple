@@ -1,0 +1,73 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "AllowSAOnWiFiAssociation": true,
+  "ShowVoNRSwitch": true,
+  "Show5GSwitch": true,
+  "Enable5GStandaloneByDefault": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "LTE": true,
+        "GSM": false,
+        "UMTS": false,
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "ShowHighDataModeSwitch": true,
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "IPv6SupportedDataModeMask": 106527,
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4236497
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Show5GStandaloneSwitch": true,
+  "ShowVolteSwitch": false,
+  "Show5GWarningUnsupportedCarrier": false,
+  "apns": [
+    {
+      "type-mask": 1081399,
+      "password": "orange",
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "orange",
+      "apn": "orange",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "password": "orange",
+      "tech-type-mask": 1081350,
+      "username": "orange",
+      "apn": "vowifiorange",
+      "UseNetworkMTU": true
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "orange",
+      "tech-type-mask": 131072,
+      "UseNetworkMTU": true,
+      "SupportSwitchOver": true,
+      "username": "orange",
+      "apn": "ims",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 262144,
+      "password": "",
+      "tech-type-mask": 262144,
+      "apn": "sos",
+      "AllowNoDNS": 1,
+      "username": "",
+      "UseNetworkMTU": true,
+      "AllowedProtocolMask": 3
+    }
+  ],
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GStandaloneSwitchOnlyWhenEntitled": true
+}

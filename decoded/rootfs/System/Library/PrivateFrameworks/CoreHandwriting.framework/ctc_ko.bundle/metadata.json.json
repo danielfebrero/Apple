@@ -1,0 +1,126 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "bolt-taskid: n3nbngq6xi iteration: 39892",
+    "outputSchema": [
+      {
+        "dataType": "Float16",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 1...2500 × 20",
+        "shapeRange": "[[1, 1], [1, 2500], [20, 20]]",
+        "formattedType": "MultiArray (Float16 1 × 1 × 20)",
+        "type": "MultiArray",
+        "shape": "[1, 1, 20]",
+        "name": "output_after_topk",
+        "shortDescription": ""
+      },
+      {
+        "dataType": "Float16",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 4...10000 × 5",
+        "shapeRange": "[[1, 1], [4, 10000], [5, 5]]",
+        "formattedType": "MultiArray (Float16 1 × 4 × 5)",
+        "type": "MultiArray",
+        "shape": "[1, 4, 5]",
+        "name": "output_principal_points",
+        "shortDescription": ""
+      },
+      {
+        "dataType": "Int32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 1...2500 × 20",
+        "shapeRange": "[[1, 1], [1, 2500], [20, 20]]",
+        "formattedType": "MultiArray (Int32 1 × 1 × 20)",
+        "type": "MultiArray",
+        "shape": "[1, 1, 20]",
+        "name": "output_topk_indices",
+        "shortDescription": ""
+      }
+    ],
+    "storagePrecision": "Mixed (Float16, Int8)",
+    "modelParameters": [],
+    "author": "corerecognition",
+    "specificationVersion": 9,
+    "mlProgramOperationTypeHistogram": {
+      "Ios18.softmax": 2,
+      "Ios18.mul": 4,
+      "Ios18.topk": 1,
+      "Ios18.log": 1,
+      "Ios18.exp": 2,
+      "Ios18.realDiv": 2,
+      "Ios18.sigmoid": 2,
+      "Ios18.equal": 2,
+      "Select": 2,
+      "Ios18.add": 13,
+      "Ios18.gather": 1,
+      "Ios18.layerNorm": 4,
+      "Ios16.reduceSum": 4,
+      "Ios18.reshape": 18,
+      "Shape": 1,
+      "Ios18.linear": 6,
+      "Ios18.conv": 14,
+      "Ios18.relu": 4,
+      "Ios18.clip": 8,
+      "Ios18.concat": 2,
+      "Ios18.lstm": 4,
+      "Ios18.transpose": 17,
+      "Ios18.cast": 2,
+      "Ios18.maxPool": 2,
+      "Ios18.convTranspose": 2,
+      "Ios18.sliceByIndex": 10,
+      "Ios18.gelu": 2,
+      "Ios18.constexprBlockwiseShiftScale": 32
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int16, Int32, UInt16)",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "15.0",
+      "tvOS": "18.0",
+      "visionOS": "2.0",
+      "watchOS": "11.0",
+      "iOS": "18.0",
+      "macCatalyst": "18.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float16",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 4...10000 × 4",
+        "shapeRange": "[[1, 1], [4, 10000], [4, 4]]",
+        "formattedType": "MultiArray (Float16 1 × 4 × 4)",
+        "type": "MultiArray",
+        "shape": "[1, 4, 4]",
+        "name": "input_stroke",
+        "shortDescription": ""
+      },
+      {
+        "dataType": "Float16",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 4...10000 × 1 × 68",
+        "shapeRange": "[[1, 1], [4, 10000], [1, 1], [68, 68]]",
+        "formattedType": "MultiArray (Float16 1 × 4 × 1 × 68)",
+        "type": "MultiArray",
+        "shape": "[1, 4, 1, 68]",
+        "name": "input_pp_positional_encodings",
+        "shortDescription": ""
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.source_dialect": "TorchScript",
+      "com.github.apple.coremltools.source": "torch==2.4.1",
+      "mldb_token": "mldb-6lvy37qado",
+      "com.github.apple.coremltools.version": "8.2"
+    },
+    "generatedClassName": "model",
+    "method": "predict"
+  }
+]

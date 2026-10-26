@@ -1,0 +1,60 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "Computes a PCA of the user aggregate vector to construct a user embedding.",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 200)",
+        "shortDescription" : "User embedding vector",
+        "shape" : "[200]",
+        "name" : "user_vector",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float16",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 2,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "10.13.2",
+      "tvOS" : "11.2",
+      "visionOS" : "1.0",
+      "watchOS" : "4.2",
+      "iOS" : "11.2",
+      "macCatalyst" : "11.2"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 4841)",
+        "shortDescription" : "User aggregate vector",
+        "shape" : "[4841]",
+        "name" : "aggregates",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "mldb_token" : "mldb-nwypmrry9o",
+      "version" : "en-1.0"
+    },
+    "generatedClassName" : "FCUserVectorModel",
+    "neuralNetworkLayerTypeHistogram" : {
+      "InnerProduct" : 1
+    },
+    "method" : "predict"
+  }
+]

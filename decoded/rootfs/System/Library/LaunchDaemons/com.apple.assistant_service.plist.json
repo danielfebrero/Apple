@@ -1,0 +1,33 @@
+{
+  "AppIntents": {
+    "AttributionBundleIdentifier": "com.apple.siri",
+    "MetadataAbsolutePaths": [
+      "/System/Library/PrivateFrameworks/FlowTools.framework/"
+    ]
+  },
+  "EnablePressuredExit": true,
+  "Label": "com.apple.assistant_service",
+  "LaunchEvents": {
+    "com.apple.notifyd.matching": {
+      "com.apple.assistant.speech-capture.finished": {
+        "Notification": "com.apple.assistant.speech-capture.finished"
+      },
+      "com.apple.homekit.sync-data-cache-updated": {
+        "Notification": "com.apple.homekit.sync-data-cache-updated"
+      }
+    }
+  },
+  "MachServices": {
+    "com.apple.assistant_service": true,
+    "com.apple.private.appintents.delegate.com.apple.assistant_service": true,
+    "com.apple.siri.encore_xpc_service": true,
+    "com.apple.siri.execution_service": true,
+    "com.apple.siri.flowtools_xpc_service": true,
+    "com.apple.siri.shared_flow_plugin_service": true
+  },
+  "POSIXSpawnType": "Adaptive",
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/AssistantServices.framework/assistant_service"
+  ],
+  "UserName": "mobile"
+}

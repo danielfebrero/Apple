@@ -1,0 +1,45 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "一郎君に電話",
+            "鈴木さんの携帯に電話",
+            "愛ちゃんの職場に電話",
+            "03-1234-1234に電話をかける",
+            "家に電話して",
+            "110に電話",
+            "消防署に電話",
+            "通話履歴を表示して",
+            "不在着信はある?",
+            "最後にかけた番号にリダイヤル"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          }
+        }
+      ],
+      "SectionName": "電話"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "新しい留守電はある?",
+            "一郎の留守録メッセージを再生"
+          ]
+        }
+      ],
+      "SectionName": "留守番電話"
+    }
+  ]
+}

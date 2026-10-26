@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FileType</key>
+	<string>UsageAliasConfiguration</string>
+	<key>FileVersion</key>
+	<string>1.0.0</string>
+	<key>UsageAliasName</key>
+	<string>com.apple.siri.assistant.assistantengine.language</string>
+	<key>UsageAliasValues</key>
+	<dict>
+		<key>yue-CN</key>
+		<dict>
+			<key>com.apple.if.planner</key>
+			<dict>
+				<key>ae.language</key>
+				<string>yue</string>
+				<key>nlrouter.language</key>
+				<string>yue</string>
+				<key>rg.language</key>
+				<string>yue_CN</string>
+			</dict>
+			<key>com.apple.if.planner.overrides</key>
+			<dict>
+				<key>ae.language</key>
+				<string>yue</string>
+				<key>if.language</key>
+				<string>yue_CN</string>
+				<key>nlrouter.locale</key>
+				<string>yue_CN</string>
+				<key>rg.language</key>
+				<string>yue_CN</string>
+				<key>rg.region</key>
+				<string>CN</string>
+			</dict>
+			<key>com.apple.siri.asr.hammer</key>
+			<dict>
+				<key>asr.language</key>
+				<string>yue_CN</string>
+			</dict>
+			<key>com.apple.siri.dialog</key>
+			<dict/>
+			<key>com.apple.siri.findmy</key>
+			<dict/>
+			<key>com.apple.siri.tts</key>
+			<dict/>
+			<key>com.apple.siri.understanding</key>
+			<dict>
+				<key>asr.language</key>
+				<string>yue_CN</string>
+				<key>attention.language</key>
+				<string>yue_CN</string>
+				<key>nl.assistant</key>
+				<string>enabled</string>
+				<key>nl.language</key>
+				<string>yue_CN</string>
+			</dict>
+			<key>com.apple.siri.understanding.nl.overrides</key>
+			<dict>
+				<key>nl.language</key>
+				<string>yue_CN</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,26 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.odla",
+  "UsageTypes": [
+    "odla.bundleidsuffix",
+    "odla.client",
+    "odla.recipe"
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Search.ODLA",
+  "Assets": [
+    {
+      "AssetName": "com.apple.odla.recipe",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "odla.bundleidsuffix",
+            "odla.client",
+            "odla.recipe"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.odla.recipe.{odla.bundleidsuffix}.{odla.client}.{odla.recipe}"
+        }
+      ]
+    }
+  ]
+}

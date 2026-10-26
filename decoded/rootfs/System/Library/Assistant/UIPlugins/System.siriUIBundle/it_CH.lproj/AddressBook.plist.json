@@ -1,0 +1,69 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Qual è l'indirizzo di Simonetta?",
+            "Qual è il numero di telefono di Carla Molari?",
+            "Quand'è il compleanno di mia moglie?",
+            "Mostrami l'indirizzo e-mail personale di Francesca",
+            "Qual è l'indirizzo dell'ufficio di mio fratello?"
+          ]
+        }
+      ],
+      "SectionName": "CHIEDERE INFORMAZIONI SUI CONTATTI"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Mostra Fabrizio Ciani",
+            "Trova i contatti con il cognome Molari"
+          ]
+        }
+      ],
+      "SectionName": "TROVARE CONTATTI"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Simonetta è mia mamma",
+            "Giovanni Ferraris è mio fratello"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Chiama mio fratello in ufficio"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Chiama mio fratello in ufficio con FaceTime",
+            "Invia una chiamata FaceTime a Carla Molari"
+          ]
+        }
+      ],
+      "SectionName": "RELAZIONI"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Impara a pronunciare il mio nome",
+            "Impara a pronunciare il nome di mia madre",
+            "Impara a pronunciare il nome di Giovanni Molari"
+          ]
+        }
+      ],
+      "SectionName": "PRONUNCIA"
+    }
+  ]
+}

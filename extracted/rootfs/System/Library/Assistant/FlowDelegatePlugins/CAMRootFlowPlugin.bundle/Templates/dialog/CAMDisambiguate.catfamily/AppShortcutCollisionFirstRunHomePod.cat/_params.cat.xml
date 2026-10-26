@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="CAMDisambiguate#AppShortcutCollisionFirstRunHomePod">
+    <meta name="description" value="Asks the user if they would like to enable App Shortcuts for an app."/>
+    <meta name="category" value="Prompt"/>
+    <meta name="readyForLoc" value="true"/>
+    <parameters>
+        <parameter name="app" type="dialog.String"/>
+        <parameter name="firstPhrase" type="dialog.String" description="The first action phrase of the app"/>
+        <parameter name="secondPhrase" type="dialog.String" description="The second action phrase of the app"/>
+    </parameters>
+</cat>

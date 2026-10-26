@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Comment aller à La Rochelle ?",
+            "Montre-moi comment rentrer chez moi",
+            "Emmène-moi au travail de Thomas",
+            "Quel est l’itinéraire entre Paris et Lyon ?",
+            "Comment aller à pied chez Florence ?"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "Quand est le prochain virage ?",
+            "On arrive dans combien de temps ?",
+            "On arrive à quelle heure ?",
+            "Trouve une station-service sur mon trajet"
+          ]
+        }
+      ],
+      "SectionName": "NAVIGATION"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Où est la tour Eiffel ?",
+            "Affiche le plan de Paris"
+          ]
+        }
+      ],
+      "SectionName": "PLANS"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Trouve-moi un café à proximité",
+            "Je cherche le meilleur restaurant italien du coin",
+            "Où se trouve l’Apple Store le plus proche ?"
+          ]
+        }
+      ],
+      "SectionName": "COMMERCES DE PROXIMITÉ"
+    }
+  ]
+}

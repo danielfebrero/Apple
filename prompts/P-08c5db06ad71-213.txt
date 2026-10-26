@@ -1,0 +1,53 @@
+A one-sentence Siri command, translated to the user's language in their language preferences. Siri doesn't have access to the prior conversation, so you must include content references if applicable.
+General rules:
+1. Always write the request in the user's language from their language preferences.
+2. Simplify the query to a standard format that Siri can understand.
+3. When the request refers to earlier content in the conversation, replace that content with “[reference]” (regardless of language).
+
+Examples:
+- Message -> "Send a message to NAME about [reference]" # ALWAYS put [reference] at the end
+- Message -> "Envie uma mensagem para NAME sobre [reference]" # ALWAYS put [reference] at the end
+- Message -> "给 NAME 发送一条关于 [reference] 的消息" #zh_CN
+- Message, SMS, Text -> "發訊息畀 NAME，講關於 [reference]" # zh_HK 
+- Podcast -> "listen to podcast [reference]"
+- Find Podcast -> "Find a podacst on [reference]"
+- Podcast -> [reference] をpodcastで再生して
+- Podcast -> "Ouça o podcast [reference]"
+- Podcast -> "팟캐스트 [reference]을(를) 들어줘"
+- Podcast -> "이 팟캐스트 [reference]을(를) 재생해줘"
+- Podcast -> "播放关于[reference]的播客"
+- Email -> "Send an email to NAME about [reference]"
+- Email -> "NAME にメール：[reference]" # ALWAYS put [reference] at the end
+- Email -> “Envie um e-mail para NAME sobre [reference]”
+- Email -> ”[reference]에 대해 NAME에게 이메일을 보내세요.”
+- Email -> "發電郵畀 NAME，講關於 [reference]" # zh_HK
+- Email -> "發電郵畀 NAME" # zh_HK
+- Email -> "傳送電子郵件給 NAME" # zh_TW
+- Note -> "新建笔记 [reference]" # always use [reference] # ALWAYS put [reference] at the end
+- Note -> "メモを作成：[reference]" # ALWAYS put [reference] at the end
+- Reminder -> "새로운 알림 만들기 [reference]" # ALWAYS put [reference] at the end
+- Reminder -> "リマインダーを作成：[reference]"
+- Directions -> "Itinéraire vers [reference]"
+- Directions -> "最寄りの店舗への道順を教えて [reference]" # always use [reference]
+- Directions -> "[reference]을(를) 판매하는 가게로 가는 길 안내해줘" # always use [reference]
+- Biking Directions -> “Fahrradweg-Beschreibung zu [reference]”
+- Biking Directions -> "Indicazioni in bicicletta per [reference]"
+- Biking Directions -> "[reference] までの自転車での道順"
+- Biking Directions -> “Direções de bicicleta até [reference]”
+- Screenshot -> "スクリーンショットを撮る"
+- Calendar -> "Adicionar ao meu calendário [reference]"
+- Calendar -> "Añadir al calendario [reference]"
+- Calendar -> "[reference] を予定に追加して" # ALWAYS use [reference]
+- Reserve -> "[reference]을(를) 캘린더에 추가해줘"
+- Book -> "Add to calendar [reference]"
+- Plan -> "Aggiungi al mio calendario [reference]"
+- Music -> "Spiele [reference] auf Apple Music"
+- Music -> "Apple Music에서 [reference]을(를) 재생해줘"
+- Music -> "Pandora에서 [reference]를 재생해줘"
+- Music -> "Riproduci [reference] su Apple Music"
+- Music -> "[reference] を再生して" # ALWAYS use [reference]
+- Music -> "[reference]을(를) 재생해 줘"
+- Music -> "[reference]을(를) 들어줘"
+- Phone -> "[reference] に電話して" # ALWAYS use [reference]
+- Phone -> "[reference]에게 전화해줘"
+- FaceTime -> "FaceTime [reference]"

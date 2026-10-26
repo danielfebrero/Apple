@@ -1,0 +1,136 @@
+{
+  "com.apple.siri.SiriPhoneFlowTools.SiriPhoneFlowTools.StartCallFlowTool|com.apple.calls.PhoneAppIntentsExtension.StartFaceTimeCallIntent": [
+    "com.apple.calls.PhoneAppIntentsExtension.StartFaceTimeCallIntent"
+  ],
+  "com.apple.siri.SiriPhoneFlowTools.SiriPhoneFlowTools.StartCallFlowTool|com.apple.calls.PhoneAppIntentsExtension.StartTelephonyCallIntent": [
+    "com.apple.calls.PhoneAppIntentsExtension.StartTelephonyCallIntent"
+  ],
+  "com.apple.siri.SiriVideoFlowTools.SiriVideoFlowTools.PlayVideoContentTool": [
+    "com.apple.tv.PlayContentIntent"
+  ],
+  "com.apple.siri.flowtools.FlowTools.AddAudioToLibraryTool|com.apple.Music.AddMusicItemToLibrarySiriIntent": [
+    "com.apple.Music.CloseNowPlayingIntent",
+    "com.apple.Music.CreatePlaylistIntent",
+    "com.apple.Music.DownloadMusicItemIntent",
+    "com.apple.Music.OpenLibrarySectionAppIntent",
+    "com.apple.Music.OpenMusicItemIntent",
+    "com.apple.Music.OpenMusicLibrarySectionIntent",
+    "com.apple.Music.OpenMusicTabIntent",
+    "com.apple.Music.OpenNowPlayingIntent",
+    "com.apple.Music.RemoveDownloadForMusicItemIntent",
+    "com.apple.Music.RemoveMusicItemFromLibraryIntent",
+    "com.apple.Music.SearchMusicIntent",
+    "com.apple.Music.SuggestLessMusicItemIntent",
+    "com.apple.Music.UndoSuggestLessMusicItemIntent",
+    "com.apple.Music.CreateStationSiriIntent",
+    "com.apple.Music.AddMusicItemToLibrarySiriIntent",
+    "com.apple.Music.UpdateMusicItemAffinitySiriIntent",
+    "com.apple.Music.WarmupMusicQueueInternalSiriIntent",
+    "com.apple.Music.OpenMusicItemSiriIntent",
+    "com.apple.Music.AddMusicItemToPlaylistSiriIntent",
+    "com.apple.Music.PlayMusicItemInternalSiriIntent",
+    "com.apple.Music.OpenMusicViewSiriIntent"
+  ],
+  "com.apple.siri.flowtools.FlowTools.AddAudioToPlaylistTool|com.apple.Music.AddMusicItemToPlaylistSiriIntent": [
+    "com.apple.Music.CloseNowPlayingIntent",
+    "com.apple.Music.CreatePlaylistIntent",
+    "com.apple.Music.DownloadMusicItemIntent",
+    "com.apple.Music.OpenLibrarySectionAppIntent",
+    "com.apple.Music.OpenMusicItemIntent",
+    "com.apple.Music.OpenMusicLibrarySectionIntent",
+    "com.apple.Music.OpenMusicTabIntent",
+    "com.apple.Music.OpenNowPlayingIntent",
+    "com.apple.Music.RemoveDownloadForMusicItemIntent",
+    "com.apple.Music.RemoveMusicItemFromLibraryIntent",
+    "com.apple.Music.SearchMusicIntent",
+    "com.apple.Music.SuggestLessMusicItemIntent",
+    "com.apple.Music.UndoSuggestLessMusicItemIntent",
+    "com.apple.Music.CreateStationSiriIntent",
+    "com.apple.Music.AddMusicItemToLibrarySiriIntent",
+    "com.apple.Music.UpdateMusicItemAffinitySiriIntent",
+    "com.apple.Music.WarmupMusicQueueInternalSiriIntent",
+    "com.apple.Music.OpenMusicItemSiriIntent",
+    "com.apple.Music.AddMusicItemToPlaylistSiriIntent",
+    "com.apple.Music.PlayMusicItemInternalSiriIntent",
+    "com.apple.Music.OpenMusicViewSiriIntent"
+  ],
+  "com.apple.siri.flowtools.FlowTools.CreateDraftMessageTool|com.apple.MobileSMS.SendMessageIntent": [
+    "com.apple.siri.CreateDraftTool"
+  ],
+  "com.apple.siri.flowtools.FlowTools.EditLastMessageSentWithSiriTool|com.apple.MobileSMS.EditSentMessageIntent": [
+    "com.apple.siri.EditLastMessageSentWithSiriTool"
+  ],
+  "com.apple.siri.flowtools.FlowTools.PlayAudioTool|com.apple.Music.PlayMusicItemSiriIntent": [
+    "com.apple.Music.CloseNowPlayingIntent",
+    "com.apple.Music.CreatePlaylistIntent",
+    "com.apple.Music.DownloadMusicItemIntent",
+    "com.apple.Music.OpenLibrarySectionAppIntent",
+    "com.apple.Music.OpenMusicItemIntent",
+    "com.apple.Music.OpenMusicLibrarySectionIntent",
+    "com.apple.Music.OpenMusicTabIntent",
+    "com.apple.Music.OpenNowPlayingIntent",
+    "com.apple.Music.RemoveDownloadForMusicItemIntent",
+    "com.apple.Music.RemoveMusicItemFromLibraryIntent",
+    "com.apple.Music.SearchMusicIntent",
+    "com.apple.Music.SuggestLessMusicItemIntent",
+    "com.apple.Music.UndoSuggestLessMusicItemIntent",
+    "com.apple.Music.CreateStationSiriIntent",
+    "com.apple.Music.AddMusicItemToLibrarySiriIntent",
+    "com.apple.Music.UpdateMusicItemAffinitySiriIntent",
+    "com.apple.Music.WarmupMusicQueueInternalSiriIntent",
+    "com.apple.Music.OpenMusicItemSiriIntent",
+    "com.apple.Music.AddMusicItemToPlaylistSiriIntent",
+    "com.apple.Music.PlayMusicItemInternalSiriIntent",
+    "com.apple.Music.OpenMusicViewSiriIntent"
+  ],
+  "com.apple.siri.flowtools.FlowTools.SendDraftMessageTool|com.apple.MobileSMS.SendMessageIntent": [
+    "com.apple.siri.SendDraftTool"
+  ],
+  "com.apple.siri.flowtools.FlowTools.UnsendLastMessageSentWithSiriTool|com.apple.MobileSMS.UnsendMessageIntent": [
+    "com.apple.siri.UnsendLastMessageSentWithSiriTool"
+  ],
+  "com.apple.siri.flowtools.FlowTools.UpdateAudioAffinityTool|com.apple.Music.UpdateMusicItemAffinitySiriIntent": [
+    "com.apple.Music.CloseNowPlayingIntent",
+    "com.apple.Music.CreatePlaylistIntent",
+    "com.apple.Music.DownloadMusicItemIntent",
+    "com.apple.Music.OpenLibrarySectionAppIntent",
+    "com.apple.Music.OpenMusicItemIntent",
+    "com.apple.Music.OpenMusicLibrarySectionIntent",
+    "com.apple.Music.OpenMusicTabIntent",
+    "com.apple.Music.OpenNowPlayingIntent",
+    "com.apple.Music.RemoveDownloadForMusicItemIntent",
+    "com.apple.Music.RemoveMusicItemFromLibraryIntent",
+    "com.apple.Music.SearchMusicIntent",
+    "com.apple.Music.SuggestLessMusicItemIntent",
+    "com.apple.Music.UndoSuggestLessMusicItemIntent",
+    "com.apple.Music.CreateStationSiriIntent",
+    "com.apple.Music.AddMusicItemToLibrarySiriIntent",
+    "com.apple.Music.UpdateMusicItemAffinitySiriIntent",
+    "com.apple.Music.WarmupMusicQueueInternalSiriIntent",
+    "com.apple.Music.OpenMusicItemSiriIntent",
+    "com.apple.Music.AddMusicItemToPlaylistSiriIntent",
+    "com.apple.Music.PlayMusicItemInternalSiriIntent",
+    "com.apple.Music.OpenMusicViewSiriIntent"
+  ],
+  "com.apple.siri.flowtools.FlowTools.UpdateDraftMessageTool|com.apple.MobileSMS.SendMessageIntent": [
+    "com.apple.siri.UpdateDraftTool"
+  ],
+  "com.apple.siri.notebook.SiriNotebookFlowTools.SiriNotebookFlowTools.CreateReminderFlowTool|com.apple.reminders.TTRCreateReminderAppIntent": [
+    "com.apple.reminders.TTRCreateReminderAppIntent"
+  ],
+  "com.apple.siri.notebook.SiriNotebookFlowTools.SiriNotebookFlowTools.SnoozeRemindersFlowTool|com.apple.reminders.SnoozeRemindersAppIntent": [
+    "com.apple.reminders.SnoozeRemindersAppIntent"
+  ],
+  "com.apple.siri.notebook.SiriNotebookFlowTools.SiriNotebookFlowTools.UpdateReminderFlowTool|com.apple.reminders.UpdateReminderAppIntent": [
+    "com.apple.reminders.UpdateReminderAppIntent"
+  ],
+  "messages-CreateDraftMessage": [
+    "com.apple.siri.CreateDraftTool"
+  ],
+  "messages-SendDraftMessage": [
+    "com.apple.siri.SendDraftTool"
+  ],
+  "messages-UpdateDraftMessage": [
+    "com.apple.siri.UpdateDraftTool"
+  ]
+}

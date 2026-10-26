@@ -1,0 +1,17 @@
+{
+    "mailRules": [{
+        "ruleId": "64987a34-f9f1-4d0f-b1c1-b590ce8727bf",
+        "ruleName": "Hide Unwanted Senders",
+        "tag": "BLOCK",
+        "predicate": {
+            "type": "AND",
+            "conditions": [{
+                "prefix": "FROM_EMAILS",
+                "conditionType": "CONTAINS",
+                "bodyList": ["unsubscribed@example.com"],
+            }]
+        },
+        "action": "TRSH",
+        "actionTime": "ON_ARRIVAL"
+    }]
+}

@@ -1,0 +1,50 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Denke dran Schirm mitnehmen",
+            "Erinnere mich morgen früh um 6 daran Medizin nehmen",
+            "Neue Erinnerung für 18 Uhr Bericht fertigstellen",
+            "Zeige mir meine Bücherliste",
+            "Als erledigt markieren",
+            "Erstelle eine neue Liste Lebensmittel",
+            "Erinnere mich morgen an diese Email",
+            "Merk dir diese Website"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Erinnere mich daran Mama anrufen wenn ich nach Hause komme",
+            "Erinnere mich daran Tobias anrufen wenn ich das Büro verlasse",
+            "Erinnere mich an Papa anrufen wenn ich im Auto bin"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Erinnerung FaceTime mit meiner Mutter wenn ich zu Hause ankomme",
+            "Erinnere mich an FaceTime-Anruf mit Georg wenn ich das Büro verlasse"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Erinnere mich dran Blumen abholen wenn ich weggehe"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

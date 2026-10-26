@@ -1,0 +1,2916 @@
+{
+    "cases": [
+        {
+            "bundleType":"significant_contact",
+            "templates" :[
+                {
+                    "conditions":["summary_type = contact_summary"],
+                    "labels":["People You’ve Connected With"],
+                },
+                {
+                    "conditions":["person_2"],
+                    "labels":["People You’ve Connected With"]
+                },
+                {
+                    "conditions":[],
+                    "labels":["You’ve Connected"]
+                }
+            ]
+        },
+        {
+            "bundleType":"state_of_mind",
+            "templates" :[
+                {
+                    "conditions":["state_of_mind_app_name","reflective_interval=momentary_emotion"],
+                    "labels":["{state_of_mind_app_name} — Momentary Emotion"],
+                },
+                {
+                    "conditions":["state_of_mind_app_name","reflective_interval=daily_mood"],
+                    "labels":["{state_of_mind_app_name} — Daily Mood"],
+                },
+                {
+                    "conditions":["reflective_interval=momentary_emotion", "state_of_mind_label_count=0"],
+                    "labels":["Momentary Emotion"],
+                },
+                {
+                    "conditions":["reflective_interval=momentary_emotion", "state_of_mind_label_count>0", "valence_classification_granular=very_pleasant_valence"],
+                    "labels":["Momentary Emotion · Very Pleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=momentary_emotion", "state_of_mind_label_count>0", "valence_classification_granular=pleasant_valence"],
+                    "labels":["Momentary Emotion · Pleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=momentary_emotion", "state_of_mind_label_count>0", "valence_classification_granular=slightly_pleasant_valence"],
+                    "labels":["Momentary Emotion · Slightly Pleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=momentary_emotion", "state_of_mind_label_count>0", "valence_classification_granular=neutral_valence"],
+                    "labels":["Momentary Emotion · Neutral"],
+                },
+                {
+                    "conditions":["reflective_interval=momentary_emotion", "state_of_mind_label_count>0", "valence_classification_granular=slightly_unpleasant_valence"],
+                    "labels":["Momentary Emotion · Slightly Unpleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=momentary_emotion", "state_of_mind_label_count>0", "valence_classification_granular=unpleasant_valence"],
+                    "labels":["Momentary Emotion · Unpleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=momentary_emotion", "state_of_mind_label_count>0", "valence_classification_granular=very_unpleasant_valence"],
+                    "labels":["Momentary Emotion · Very Unpleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=daily_mood", "state_of_mind_label_count=0"],
+                    "labels":["Daily Mood"],
+                },
+                {
+                    "conditions":["reflective_interval=daily_mood", "state_of_mind_label_count>0", "valence_classification_granular=very_pleasant_valence"],
+                    "labels":["Daily Mood · Very Pleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=daily_mood", "state_of_mind_label_count>0", "valence_classification_granular=pleasant_valence"],
+                    "labels":["Daily Mood · Pleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=daily_mood", "state_of_mind_label_count>0", "valence_classification_granular=slightly_pleasant_valence"],
+                    "labels":["Daily Mood · Slightly Pleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=daily_mood", "state_of_mind_label_count>0", "valence_classification_granular=neutral_valence"],
+                    "labels":["Daily Mood · Neutral"],
+                },
+                {
+                    "conditions":["reflective_interval=daily_mood", "state_of_mind_label_count>0", "valence_classification_granular=slightly_unpleasant_valence"],
+                    "labels":["Daily Mood · Slightly Unpleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=daily_mood", "state_of_mind_label_count>0", "valence_classification_granular=unpleasant_valence"],
+                    "labels":["Daily Mood · Unpleasant"],
+                },
+                {
+                    "conditions":["reflective_interval=daily_mood", "state_of_mind_label_count>0", "valence_classification_granular=very_unpleasant_valence"],
+                    "labels":["Daily Mood · Very Unpleasant"],
+                }
+            ]
+        },
+        {
+            "bundleType":"media",
+            "templates" :[
+                {
+                    "conditions":["media_on_repeat", "media_type=1", "media_event_count>1","summary_type = media_summary"],
+                    "labels":["Songs on Repeat"],
+                },
+                {
+                    "conditions":["media_on_repeat", "media_type=1", "summary_type = media_summary"],
+                    "labels":["Song on Repeat"],
+                },
+                {
+                    "conditions":["media_on_repeat_third_party", "summary_type = media_summary"],
+                    "labels":["Media on Repeat"],
+                },
+                {
+                    "conditions":["media_type=2","media_event_count>1", "summary_type = media_summary"],
+                    "labels":["Listened to Podcasts"],
+                },
+                {
+                    "conditions":["media_type=2", "summary_type = media_summary"],
+                    "labels":["Listened to a Podcast"],
+                },
+                {
+                    "conditions":["media_type=5", "summary_type = media_summary", "third_party_dominate_value"],
+                    "labels":["Listened to {third_party_dominate_value}"],
+                },
+                {
+                    "conditions":["media_type=5", "summary_type = media_summary"],
+                    "labels":["Listened to Media"],
+                },
+                {
+                    "conditions":["media_on_repeat", "media_type=1","media_event_count>1"],
+                    "labels":["Songs on Repeat"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":["media_on_repeat_third_party", "media_type=5","media_event_count>1"],
+                    "labels":["Media on Repeat"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":["played_media_sessions"],
+                    "labels":["played_media_sessions: {title}"],
+                    "comments":"header=[played_media_sessions] for internal bundle",
+                },
+                {
+                    "conditions":["played_media_sessions"],
+                    "labels":["played_media_sessions"],
+                    "comments":"header=[played_media_sessions] for internal bundle",
+                },
+                {
+                    "conditions":["media_type=1","media_event_count>1"],
+                    "labels":["Listened to Music"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":["media_type=2", "media_event_count>1"],
+                    "labels":["Listened to Podcasts"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":["media_on_repeat_third_party","media_type=5","media_event_count=1"],
+                    "labels":["Media on Repeat: {title}"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":["media_type=5", "media_event_count>1", "third_party_dominate_value"],
+                    "labels":["Listened to {third_party_dominate_value}"],
+                    "comments":"Listen to alum, artist, genre, app",
+                },
+                {
+                    "conditions":["media_type=5", "media_event_count=1", "third_party_dominate_value"],
+                    "labels":["Listened to {third_party_dominate_value}"],
+                    "comments":"Listen to alum, artist, genre, app",
+                },
+                {
+                    "conditions":["media_type=5", "media_event_count>1"],
+                    "labels":["Listened to Media"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":["media_on_repeat","media_type=1","media_event_count=1"],
+                    "labels":["Song on Repeat: {title}"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":["media_type=1","media_event_count=1"],
+                    "labels":["Listened to Music: {title}"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":["media_type=2", "media_event_count=1"],
+                    "labels":["Listened to a Podcast: {title}"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":["media_type=5", "media_event_count=1"],
+                    "labels":["Listened to Media: {title}"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":[],
+                    "labels":["{header}: {title}"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                },
+                {
+                    "conditions":[],
+                    "labels":["{header}"],
+                    "comments":"header=[Media on repeat, Played media], Use “Media on Repeat” only as a fallback when we can’t be specific to the media type: ex) Song on Repeat, Podcast on Repeat",
+                }
+            ]
+        },
+        {
+            "bundleType":"photo_memory",
+            "templates" :[
+                {
+                    "conditions":[],
+                    "labels":["Memories from Photos\n{title}"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["Memories from Photos"],
+                }
+
+            ]
+        },
+        {
+            "bundleType":"time_at_home",
+            "templates" :[
+                {
+                    "conditions":["invite_title", "with_more_than_three_persons"],
+                    "labels":["{invite_title} with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["invite_title", "person_3", "person_2", "person_1"],
+                    "labels":["{invite_title} with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["invite_title", "person_2", "person_1"],
+                    "labels":["{invite_title} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["invite_title", "me_person_identified", "person_1"],
+                    "labels":["{invite_title} with {person_1}"],
+                },
+                {
+                    "conditions":["invite_title"],
+                    "labels":["{invite_title}"],
+                },
+                {
+                    "conditions":["birthday_person_name"],
+                    "labels":["{birthday_person_name}'s Birthday at Home"],
+                },
+                {
+                    "conditions":["holiday_name", "with_more_than_three_persons"],
+                    "labels":["{holiday_name} at home with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["holiday_name", "person_3", "person_2", "person_1"],
+                    "labels":["{holiday_name} at home with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["holiday_name", "person_2", "person_1"],
+                    "labels":["{holiday_name} at home with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["holiday_name", "me_person_identified", "person_1"],
+                    "labels":["{holiday_name} at home with {person_1}"],
+                },
+                {
+                    "conditions":["holiday_name"],
+                    "labels":["{holiday_name} at Home"],
+                },
+                {
+                    "conditions":["date_reference_weekday_timeofday", "with_more_than_three_persons"],
+                    "extends":["date_reference_weekday_timeofday:date_reference_Sunday_morning,date_reference_Sunday_prenoon,date_reference_Sunday_afternoon,date_reference_Sunday_preevening,date_reference_Sunday_evening,date_reference_Sunday_night,date_reference_Sunday_midnight,date_reference_Monday_morning,date_reference_Monday_prenoon,date_reference_Monday_afternoon,date_reference_Monday_preevening,date_reference_Monday_evening,date_reference_Monday_night,date_reference_Monday_midnight,date_reference_Tuesday_morning,date_reference_Tuesday_prenoon,date_reference_Tuesday_afternoon,date_reference_Tuesday_preevening,date_reference_Tuesday_evening,date_reference_Tuesday_night,date_reference_Tuesday_midnight,date_reference_Wednesday_morning,date_reference_Wednesday_prenoon,date_reference_Wednesday_afternoon,date_reference_Wednesday_preevening,date_reference_Wednesday_evening,date_reference_Wednesday_night,date_reference_Wednesday_midnight, date_reference_Thursday_morning,date_reference_Thursday_prenoon,date_reference_Thursday_afternoon,date_reference_Thursday_preevening,date_reference_Thursday_evening,date_reference_Thursday_night,date_reference_Thursday_midnight,date_reference_Friday_morning,date_reference_Friday_prenoon,date_reference_Friday_afternoon,date_reference_Friday_preevening,date_reference_Friday_evening,date_reference_Friday_night,date_reference_Friday_midnight,date_reference_Saturday_morning,date_reference_Saturday_prenoon,date_reference_Saturday_afternoon,date_reference_Saturday_preevening,date_reference_Saturday_evening,date_reference_Saturday_night,date_reference_Saturday_midnight"],
+                    "labels":["Time at Home with {person_1}, {person_2}, and others, {date_reference_weekday_timeofday}"],
+                },
+                {
+                    "conditions":["date_reference_weekday_timeofday", "person_3", "person_2", "person_1"],
+                    "extends":["date_reference_weekday_timeofday:date_reference_Sunday_morning,date_reference_Sunday_prenoon,date_reference_Sunday_afternoon,date_reference_Sunday_preevening,date_reference_Sunday_evening,date_reference_Sunday_night,date_reference_Sunday_midnight,date_reference_Monday_morning,date_reference_Monday_prenoon,date_reference_Monday_afternoon,date_reference_Monday_preevening,date_reference_Monday_evening,date_reference_Monday_night,date_reference_Monday_midnight,date_reference_Tuesday_morning,date_reference_Tuesday_prenoon,date_reference_Tuesday_afternoon,date_reference_Tuesday_preevening,date_reference_Tuesday_evening,date_reference_Tuesday_night,date_reference_Tuesday_midnight,date_reference_Wednesday_morning,date_reference_Wednesday_prenoon,date_reference_Wednesday_afternoon,date_reference_Wednesday_preevening,date_reference_Wednesday_evening,date_reference_Wednesday_night,date_reference_Wednesday_midnight, date_reference_Thursday_morning,date_reference_Thursday_prenoon,date_reference_Thursday_afternoon,date_reference_Thursday_preevening,date_reference_Thursday_evening,date_reference_Thursday_night,date_reference_Thursday_midnight,date_reference_Friday_morning,date_reference_Friday_prenoon,date_reference_Friday_afternoon,date_reference_Friday_preevening,date_reference_Friday_evening,date_reference_Friday_night,date_reference_Friday_midnight,date_reference_Saturday_morning,date_reference_Saturday_prenoon,date_reference_Saturday_afternoon,date_reference_Saturday_preevening,date_reference_Saturday_evening,date_reference_Saturday_night,date_reference_Saturday_midnight"],
+                    "labels":["Time at Home with {person_1}, {person_2}, and {person_3}, {date_reference_weekday_timeofday}"],
+                },
+                {
+                    "conditions":["date_reference_weekday_timeofday", "person_2", "person_1"],
+                    "extends":["date_reference_weekday_timeofday:date_reference_Sunday_morning,date_reference_Sunday_prenoon,date_reference_Sunday_afternoon,date_reference_Sunday_preevening,date_reference_Sunday_evening,date_reference_Sunday_night,date_reference_Sunday_midnight,date_reference_Monday_morning,date_reference_Monday_prenoon,date_reference_Monday_afternoon,date_reference_Monday_preevening,date_reference_Monday_evening,date_reference_Monday_night,date_reference_Monday_midnight,date_reference_Tuesday_morning,date_reference_Tuesday_prenoon,date_reference_Tuesday_afternoon,date_reference_Tuesday_preevening,date_reference_Tuesday_evening,date_reference_Tuesday_night,date_reference_Tuesday_midnight,date_reference_Wednesday_morning,date_reference_Wednesday_prenoon,date_reference_Wednesday_afternoon,date_reference_Wednesday_preevening,date_reference_Wednesday_evening,date_reference_Wednesday_night,date_reference_Wednesday_midnight, date_reference_Thursday_morning,date_reference_Thursday_prenoon,date_reference_Thursday_afternoon,date_reference_Thursday_preevening,date_reference_Thursday_evening,date_reference_Thursday_night,date_reference_Thursday_midnight,date_reference_Friday_morning,date_reference_Friday_prenoon,date_reference_Friday_afternoon,date_reference_Friday_preevening,date_reference_Friday_evening,date_reference_Friday_night,date_reference_Friday_midnight,date_reference_Saturday_morning,date_reference_Saturday_prenoon,date_reference_Saturday_afternoon,date_reference_Saturday_preevening,date_reference_Saturday_evening,date_reference_Saturday_night,date_reference_Saturday_midnight"],
+                    "labels":["Time at Home with {person_1} and {person_2}, {date_reference_weekday_timeofday}"],
+                },
+                {
+                    "conditions":["date_reference_weekday_timeofday","me_person_identified", "person_1"],
+                    "extends":["date_reference_weekday_timeofday:date_reference_Sunday_morning,date_reference_Sunday_prenoon,date_reference_Sunday_afternoon,date_reference_Sunday_preevening,date_reference_Sunday_evening,date_reference_Sunday_night,date_reference_Sunday_midnight,date_reference_Monday_morning,date_reference_Monday_prenoon,date_reference_Monday_afternoon,date_reference_Monday_preevening,date_reference_Monday_evening,date_reference_Monday_night,date_reference_Monday_midnight,date_reference_Tuesday_morning,date_reference_Tuesday_prenoon,date_reference_Tuesday_afternoon,date_reference_Tuesday_preevening,date_reference_Tuesday_evening,date_reference_Tuesday_night,date_reference_Tuesday_midnight,date_reference_Wednesday_morning,date_reference_Wednesday_prenoon,date_reference_Wednesday_afternoon,date_reference_Wednesday_preevening,date_reference_Wednesday_evening,date_reference_Wednesday_night,date_reference_Wednesday_midnight, date_reference_Thursday_morning,date_reference_Thursday_prenoon,date_reference_Thursday_afternoon,date_reference_Thursday_preevening,date_reference_Thursday_evening,date_reference_Thursday_night,date_reference_Thursday_midnight,date_reference_Friday_morning,date_reference_Friday_prenoon,date_reference_Friday_afternoon,date_reference_Friday_preevening,date_reference_Friday_evening,date_reference_Friday_night,date_reference_Friday_midnight,date_reference_Saturday_morning,date_reference_Saturday_prenoon,date_reference_Saturday_afternoon,date_reference_Saturday_preevening,date_reference_Saturday_evening,date_reference_Saturday_night,date_reference_Saturday_midnight"],
+                    "labels":["Time at Home with {person_1}, {date_reference_weekday_timeofday}"],
+                },
+                {
+                    "conditions":["date_reference_weekday_timeofday"],
+                    "extends":["date_reference_weekday_timeofday:date_reference_Sunday_morning,date_reference_Sunday_prenoon,date_reference_Sunday_afternoon,date_reference_Sunday_preevening,date_reference_Sunday_evening,date_reference_Sunday_night,date_reference_Sunday_midnight,date_reference_Monday_morning,date_reference_Monday_prenoon,date_reference_Monday_afternoon,date_reference_Monday_preevening,date_reference_Monday_evening,date_reference_Monday_night,date_reference_Monday_midnight,date_reference_Tuesday_morning,date_reference_Tuesday_prenoon,date_reference_Tuesday_afternoon,date_reference_Tuesday_preevening,date_reference_Tuesday_evening,date_reference_Tuesday_night,date_reference_Tuesday_midnight,date_reference_Wednesday_morning,date_reference_Wednesday_prenoon,date_reference_Wednesday_afternoon,date_reference_Wednesday_preevening,date_reference_Wednesday_evening,date_reference_Wednesday_night,date_reference_Wednesday_midnight, date_reference_Thursday_morning,date_reference_Thursday_prenoon,date_reference_Thursday_afternoon,date_reference_Thursday_preevening,date_reference_Thursday_evening,date_reference_Thursday_night,date_reference_Thursday_midnight,date_reference_Friday_morning,date_reference_Friday_prenoon,date_reference_Friday_afternoon,date_reference_Friday_preevening,date_reference_Friday_evening,date_reference_Friday_night,date_reference_Friday_midnight,date_reference_Saturday_morning,date_reference_Saturday_prenoon,date_reference_Saturday_afternoon,date_reference_Saturday_preevening,date_reference_Saturday_evening,date_reference_Saturday_night,date_reference_Saturday_midnight"],
+                    "labels":["Time at Home, {date_reference_weekday_timeofday}"],
+                },
+                {
+                    "conditions":["date_reference_weekday", "with_more_than_three_persons"],
+                    "extends":["date_reference_weekday:date_reference_Sunday, date_reference_Monday, date_reference_Tuesday, date_reference_Wednesday, date_reference_Thursday, date_reference_Friday, date_reference_Saturday"],
+                    "labels":["Time at Home with {person_1}, {person_2}, and others, {date_reference_weekday}"],
+                },
+                {
+                    "conditions":["date_reference_weekday", "person_3", "person_2", "person_1"],
+                    "extends":["date_reference_weekday:date_reference_Sunday, date_reference_Monday, date_reference_Tuesday, date_reference_Wednesday, date_reference_Thursday, date_reference_Friday, date_reference_Saturday"],
+                    "labels":["Time at Home with {person_1}, {person_2}, and {person_3}, {date_reference_weekday}"],
+                },
+                {
+                    "conditions":["date_reference_weekday", "person_2", "person_1"],
+                    "extends":["date_reference_weekday:date_reference_Sunday, date_reference_Monday, date_reference_Tuesday, date_reference_Wednesday, date_reference_Thursday, date_reference_Friday, date_reference_Saturday"],
+                    "labels":["Time at Home with {person_1} and {person_2}, {date_reference_weekday}"],
+                },
+                {
+                    "conditions":["date_reference_weekday","me_person_identified", "person_1"],
+                    "extends":["date_reference_weekday:date_reference_Sunday, date_reference_Monday, date_reference_Tuesday, date_reference_Wednesday, date_reference_Thursday, date_reference_Friday, date_reference_Saturday"],
+                    "labels":["Time at Home with {person_1}, {date_reference_weekday}"],
+                },
+                {
+                    "conditions":["date_reference_weekday"],
+                    "extends":["date_reference_weekday:date_reference_Sunday, date_reference_Monday, date_reference_Tuesday, date_reference_Wednesday, date_reference_Thursday, date_reference_Friday, date_reference_Saturday"],
+                    "labels":["Time at Home, {date_reference_weekday}"],
+                },
+                {
+                    "conditions":["with_more_than_three_persons"],
+                    "labels":["Time at Home with {person_1}, {person_2}, and others"],
+                },
+                {
+                    "conditions":["person_3", "person_2", "person_1"],
+                    "labels":["Time at Home with {person_1}, {person_2}, and {person_3}"],
+                },
+                {
+                    "conditions":["person_2", "person_1"],
+                    "labels":["Time at Home with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["me_person_identified", "person_1"],
+                    "labels":["Time at Home with {person_1}"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["Time at Home"],
+                },
+            ]
+        },
+        {
+            "bundleType":"clustering",
+            "templates" :[
+                {
+                    "conditions":["cluster_subtype=clustering_outing_routine"],
+                    "labels":["clustering:outing routine"],
+                },
+                {
+                    "conditions":["cluster_subtype=clustering_activity_routine"],
+                    "labels":["clustering:activity routine"],
+                },
+                {
+                    "conditions":["cluster_subtype=clustering_contact_routine"],
+                    "labels":["clustering:contact routine"],
+                },
+                {
+                    "conditions":["cluster_subtype=clustering_time_at_home_routine"],
+                    "labels":["clustering:Time@Home routine"],
+                },
+                {
+                    "conditions":["cluster_subtype=clustering_location_grouping"],
+                    "labels":["clustering:location group"],
+                },
+                {
+                    "conditions":["cluster_subtype=clustering_activity_grouping"],
+                    "labels":["clustering:activity group"],
+                },
+                {
+                    "conditions":["cluster_subtype=clustering_contact_grouping"],
+                    "labels":["clustering:contact group"],
+                },
+                {
+                    "conditions":["cluster_subtype=clustering_thematic_grouping"],
+                    "labels":["clustering:thematic group"],
+                },
+                {
+                    "conditions":["cluster_subtype=clustering_time_at_home_grouping"],
+                    "labels":["clustering:Time@Home group"],
+                },
+                {
+                    "conditions":["cluster_subtype=clustering_unspecified_grouping"],
+                    "labels":["clustering:unspecified"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["clustering"],
+                }
+            ]
+        },
+        {
+            "bundleType":"behavioral_pattern",
+            "templates" :[
+                {
+                    "conditions":["behavioral_pattern_subtype=behavioral_pattern_workout"],
+                    "labels":["BehavioralPattern-workout <no loc>"]
+                },
+                {
+                    "conditions":["behavioral_pattern_subtype=behavioral_pattern_outing"],
+                    "labels":["BehavioralPattern-outing <no loc>"]
+                },
+                {
+                    "conditions":["behavioral_pattern_subtype=behavioral_pattern_contact"],
+                    "labels":["BehavioralPattern-contact <no loc>"]
+                },
+                {
+                    "conditions":["behavioral_pattern_subtype=behavioral_pattern_work_routine"],
+                    "labels":["BehavioralPattern-work_routine <no loc>"]
+                },
+                {
+                    "conditions":[],
+                    "labels":["BehavioralPattern <no loc>"]
+                }
+            ]
+        },
+        {
+            "bundleType":"thematic_summary",
+            "templates" :[
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_more_than_two_contacts"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Highlights\n{place} with {person_1} and others"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Highlights\n{place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Highlights\n{place} with {person_1}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_more_than_two_contacts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Highlights\n{enclosing_area} with {person_1} and others"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Highlights\n{enclosing_area} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Highlights\n{enclosing_area} with {person_1}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_family"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Highlights\n{place} with family"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_family"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Highlights\n{enclosing_area} with family"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_friends"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Highlights\n{place} with friends"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_friends"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Highlights\n{enclosing_area} with friends"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_pet"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Highlights\n{place} with pets"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_pet"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Highlights\n{enclosing_area} with pets"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights"],
+                    "labels":["{holiday_name} Highlights\nWith {person_1}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_family"],
+                    "labels":["{holiday_name} Highlights\nWith family"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_friends"],
+                    "labels":["{holiday_name} Highlights\nWith friends"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","with_pet"],
+                    "labels":["{holiday_name} Highlights\nWith pets"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Highlights\n{place} and more"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Highlights\n{place}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Highlights\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=highlights"],
+                    "labels":["{holiday_name} Highlights"],
+                },
+                
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_more_than_two_contacts"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Reflection\n{place} with {person_1} and others"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Reflection\n{place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Reflection\n{place} with {person_1}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_more_than_two_contacts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Reflection\n{enclosing_area} with {person_1} and others"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Reflection\n{enclosing_area} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Reflection\n{enclosing_area} with {person_1}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_family"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Reflection\n{place} with family"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_family"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Reflection\n{enclosing_area} with family"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_friends"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Reflection\n{place} with friends"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_friends"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Reflection\n{enclosing_area} with friends"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_pet"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Reflection\n{place} with pets"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_pet"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Reflection\n{enclosing_area} with pets"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection"],
+                    "labels":["{holiday_name} Reflection\nWith {person_1}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_family"],
+                    "labels":["{holiday_name} Reflection\nWith family"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_friends"],
+                    "labels":["{holiday_name} Reflection\nWith friends"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","with_pet"],
+                    "labels":["{holiday_name} Reflection\nWith pets"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Reflection\n{place} and more"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Reflection\n{place}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Reflection\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=reflection"],
+                    "labels":["{holiday_name} Reflection"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_more_than_two_contacts"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Moments\n{place} with {person_1} and others"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Moments\n{place} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Moments\n{place} with {person_1}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_more_than_two_contacts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Moments\n{enclosing_area} with {person_1} and others"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Moments\n{enclosing_area} with {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Moments\n{enclosing_area} with {person_1}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_family"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Moments\n{place} with family"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_family"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Moments\n{enclosing_area} with family"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_friends"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Moments\n{place} with friends"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_friends"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Moments\n{enclosing_area} with friends"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_pet"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Moments\n{place} with pets"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_pet"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Moments\n{enclosing_area} with pets"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_more_than_two_contacts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Moments\nWith {person_1} and others"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Moments\nWith {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments"],
+                    "labels":["{holiday_name} Moments\nWith {person_1}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_family"],
+                    "labels":["{holiday_name} Moments\nWith family"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_friends"],
+                    "labels":["{holiday_name} Moments\nWith friends"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","with_pet"],
+                    "labels":["{holiday_name} Moments\nWith pets"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Moments\n{place} and more"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments"],
+                    "capitalizations":["place"],
+                    "labels":["{holiday_name} Moments\n{place}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{holiday_name} Moments\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday","diversity_key=moments"],
+                    "labels":["{holiday_name} Moments"],
+                },
+                {
+                    "conditions":["photo_trait_subject=food","with_more_than_two_contacts"],
+                    "labels":["Culinary Adventures With {person_1} and others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=food"],
+                    "labels":["Culinary Adventures With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=food"],
+                    "labels":["Culinary Adventures With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=food"],
+                    "labels":["Culinary Adventures"],
+                },
+                {
+                    "conditions":["photo_trait_subject=nature","with_more_than_two_contacts"],
+                    "labels":["Nature's Beauty With {person_1} and Others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=nature"],
+                    "labels":["Nature's Beauty With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=nature"],
+                    "labels":["Nature's Beauty With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=nature"],
+                    "labels":["Nature's Beauty"],
+                },
+                {
+                    "conditions":["photo_trait_subject=selfie","with_more_than_two_contacts"],
+                    "labels":["Selfies: Capturing Moments With {person_1} and Others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=selfie"],
+                    "labels":["Selfies: Capturing Moments With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=selfie"],
+                    "labels":["Selfies: Capturing Moments With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=selfie"],
+                    "labels":["Selfies: Capturing Moments"],
+                },
+                {
+                    "conditions":["photo_trait_subject=pet","with_more_than_two_contacts"],
+                    "labels":["Pet Moments With {person_1} and Others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=pet"],
+                    "labels":["Pet Moments With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=pet"],
+                    "labels":["Pet Moments With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=pet"],
+                    "labels":["Pet Moments"],
+                },
+                {
+                    "conditions":["photo_trait_subject=wildlife","with_more_than_two_contacts"],
+                    "labels":["Exploring Wildlife With {person_1} and others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=wildlife"],
+                    "labels":["Exploring Wildlife With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=wildlife"],
+                    "labels":["Exploring Wildlife With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=wildlife"],
+                    "labels":["Exploring Wildlife"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sky","with_more_than_two_contacts"],
+                    "labels":["Sky Shots With {person_1} and others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sky"],
+                    "labels":["Sky Shots With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sky"],
+                    "labels":["Sky Shots With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sky"],
+                    "labels":["Sky Shots"],
+                },
+                {
+                    "conditions":["photo_trait_subject=flower","with_more_than_two_contacts"],
+                    "labels":["Floral Adventures With {person_1} and Others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=flower"],
+                    "labels":["Floral Adventures With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=flower"],
+                    "labels":["Floral Adventures With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=flower"],
+                    "labels":["Nature's Palette"],
+                },
+                {
+                    "conditions":["photo_trait_subject=waterfall","with_more_than_two_contacts"],
+                    "labels":["Waterfall Wonders With {person_1} and Others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=waterfall"],
+                    "labels":["Waterfall Wonders With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=waterfall"],
+                    "labels":["Waterfall Wonders With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=waterfall"],
+                    "labels":["Waterfall Wonders"],
+                },
+                {
+                    "conditions":["photo_trait_subject=rainbow","with_more_than_two_contacts"],
+                    "labels":["Chasing Rainbows With {person_1} and Others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=rainbow"],
+                    "labels":["Chasing Rainbows With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=rainbow"],
+                    "labels":["Chasing Rainbows With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=rainbow"],
+                    "labels":["Chasing Rainbows"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sunrise","with_more_than_two_contacts"],
+                    "labels":["Sunrise Moments With {person_1} and Others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sunrise"],
+                    "labels":["Sunrise Moments With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sunrise"],
+                    "labels":["Sunrise Moments With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sunrise"],
+                    "labels":["Sunrise Moments"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sunset","with_more_than_two_contacts"],
+                    "labels":["Sunset Views With {person_1} and Others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sunset"],
+                    "labels":["Sunset Views With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sunset"],
+                    "labels":["Sunset Views With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=sunset"],
+                    "labels":["Sunset Views"],
+                },
+                {
+                    "conditions":["photo_trait_subject=firework","with_more_than_two_contacts"],
+                    "labels":["Fireworks With {person_1} and others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=firework"],
+                    "labels":["Fireworks With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=firework"],
+                    "labels":["Fireworks With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=firework"],
+                    "labels":["Fireworks\nPainted Sky"],
+                },
+                {
+                    "conditions":["photo_trait_subject=painting","with_more_than_two_contacts"],
+                    "labels":["Artistic Wonder With {person_1} and Others"],
+                },
+                {
+                    "conditions":["photo_trait_subject=painting"],
+                    "labels":["Artistic Wonder With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=painting"],
+                    "labels":["Artistic Wonder With {person_1}"],
+                },
+                {
+                    "conditions":["photo_trait_subject=painting"],
+                    "labels":["Artistic Wonder"],
+                },
+
+
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and Others\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and {person_2}\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1}\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and Others\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and {person_2}\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1}\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and others\n{action} and more"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1} and {person_2}\n{action} and more"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1}\n{action} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Family\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Family\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Family\n{action} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Friends\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Friends\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Friends\n{action} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Pets\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Pets\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","diversity_key=workouts", "multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Pets\n{action} and more"],
+                },
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and Others\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and Others\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and {person_2}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and {person_2}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and Others\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and {person_2}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1} and others\n{action}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1} and {person_2}\n{action}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With {person_1}\n{action}"],
+                },
+                {
+                    "conditions":["enclosing_area","with_more_than_two_contacts","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With {person_1} and Others\n{place} and more"],
+                },
+                {
+                    "conditions":["enclosing_area","with_more_than_two_contacts","diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With {person_1} and Others\n{place}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With {person_1} and {person_2}\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With {person_1} and {person_2}\n{place}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With {person_1}\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With {person_1}\n{place}"],
+                },
+                {
+                    "conditions":["enclosing_area","with_more_than_two_contacts","diversity_key=workouts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Workout Routine With {person_1} and Others\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Workout Routine With {person_1} and {person_2}\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Workout Routine With {person_1}\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Family\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Family\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Family\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Family\n{action}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With Family\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With Family\n{place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","diversity_key=workouts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Workout Routine With Family\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Friends\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Friends\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Friends\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Friends\n{action}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With Friends\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With Friends\n{place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","diversity_key=workouts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Workout Routine With Friends\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Pets\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Pets\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Pets\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine With Pets\n{action}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","diversity_key=workouts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With Pets\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine With Pets\n{place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","diversity_key=workouts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Workout Routine With Pets\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1} and Others\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1} and Others\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1} and {person_2}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1} and {person_2}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1} and Others\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1} and {person_2}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1} and others\n{action}"],
+                },
+                {
+                    "conditions":["is_routine"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1} and {person_2}\n{action}"],
+                },
+                {
+                    "conditions":["is_routine"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With {person_1}\n{action}"],
+                },
+                {
+                    "conditions":["enclosing_area","with_more_than_two_contacts","not_home","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With {person_1} and Others\n{place} and more"],
+                },
+                {
+                    "conditions":["enclosing_area","with_more_than_two_contacts","not_home"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With {person_1} and Others\n{place}"],
+                },
+                {
+                    "conditions":["is_routine","not_home","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With {person_1} and {person_2}\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine","not_home"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With {person_1} and {person_2}\n{place}"],
+                },
+                {
+                    "conditions":["is_routine","not_home","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With {person_1}\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine","not_home"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With {person_1}\n{place}"],
+                },
+                {
+                    "conditions":["enclosing_area","with_more_than_two_contacts","not_home"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Routine With {person_1} and Others\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","not_home"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Routine With {person_1} and {person_2}\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","not_home"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Routine With {person_1}\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Family\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_family"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Family\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Family\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Family\n{action}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","not_home","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With Family\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","not_home"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With Family\n{place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_family","not_home"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Routine With Family\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Friends\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Friends\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Friends\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Friends\n{action}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","not_home","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With Friends\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","not_home"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With Friends\n{place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_friends","not_home"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Routine With Friends\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Pets\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Pets\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Pets\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine With Pets\n{action}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","not_home","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With Pets\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","not_home"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine With Pets\n{place}"],
+                },
+                {
+                    "conditions":["is_routine", "with_pets","not_home"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Routine With Pets\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and Others\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and Others\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and Others\n{action}, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and {person_2}\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and {person_2}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and {person_2}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1}\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and Others\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and Others\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and {person_2}\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and {person_2}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1}\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and Others\n{action} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and Others\n{action}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and {person_2}\n{action} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1} and {person_2}\n{action}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1}\n{action} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts With {person_1}\n{action}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workouts With {person_1} and Others\n{place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workouts With {person_1} and Others\n{place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workouts With {person_1} and {person_2}\n{place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workouts With {person_1} and {person_2}\n{place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workouts With {person_1}\n{place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workouts With {person_1}\n{place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Workouts With {person_1} and Others\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Workouts With {person_1} and {person_2}\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Workouts With {person_1}\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and Others\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and Others\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and Others\n{action}, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and {person_2}\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and {person_2}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and {person_2}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1}\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and Others\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and Others\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and {person_2}\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and {person_2}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1}\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and others\n{action} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and others\n{action}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and {person_2}\n{action} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1} and {person_2}\n{action}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1}\n{action} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Workouts With {person_1}\n{action}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts","multiple_places"],
+                    "labels":["Workouts With {person_1} and Others, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "labels":["Workouts With {person_1} and Others, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "labels":["Workouts With {person_1} and {person_2}, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "labels":["Workouts With {person_1} and {person_2}, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "labels":["Workouts With {person_1}, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "labels":["Workouts With {person_1}, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "labels":["Workouts With {person_1} and Others, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "labels":["Workouts With {person_1} and {person_2}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "labels":["Workouts With {person_1}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_more_than_two_contacts"],
+                    "labels":["Workouts With {person_1} and Others"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "labels":["Workouts With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "labels":["Workouts With {person_1}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_family","multiple_places"],
+                    "labels":["Workouts With Family, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_family"],
+                    "labels":["Workouts With Family, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_family"],
+                    "labels":["Workouts With Family, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_family"],
+                    "labels":["Workouts With Family"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_friends","multiple_places"],
+                    "labels":["Workouts With Friends, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_friends"],
+                    "labels":["Workouts With Friends, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_friends"],
+                    "labels":["Workouts With Friends, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_friends"],
+                    "labels":["Workouts With Friends"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_pets","multiple_places"],
+                    "labels":["Workouts With Pets, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_pets"],
+                    "labels":["Workouts With Pets, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_pets"],
+                    "labels":["Workouts With Pets, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","with_pets"],
+                    "labels":["Workouts With Pets"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","multiple_places","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With {person_1} and Others\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With {person_1} and Others\n{action}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With {person_1} and {person_2}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With {person_1} and {person_2}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With {person_1}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With {person_1}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1} and Others\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1} and Others\n{action}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1} and {person_2}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1} and {person_2}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1} and Others\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1} and Others\n{action}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1} and {person_2}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1} and {person_2}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1} and Others\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1} and {person_2}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1} and Others\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1} and {person_2}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1} and Others\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1} and Others\n{action}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1} and {person_2}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1} and {person_2}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1}\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1}\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1} and Others\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1} and {person_2}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1}\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","multiple_places","day_summary"],
+                    "capitalizations":["place"],
+                    "labels":["{time} With {person_1} and Others, {place} and more"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","day_summary"],
+                    "capitalizations":["place"],
+                    "labels":["{time} With {person_1} and Others, {place}"],
+                },
+                {
+                    "conditions":["multiple_places","day_summary"],
+                    "capitalizations":["place"],
+                    "labels":["{time} With {person_1} and {person_2}, {place} and more"],
+                },
+                {
+                    "conditions":["day_summary"],
+                    "capitalizations":["place"],
+                    "labels":["{time} With {person_1} and {person_2}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places","day_summary"],
+                    "capitalizations":["place"],
+                    "labels":["{time} With {person_1}, {place} and more"],
+                },
+                {
+                    "conditions":["day_summary"],
+                    "capitalizations":["place"],
+                    "labels":["{time} With {person_1}, {place}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","day_summary"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} With {person_1} and Others, {enclosing_area}"],
+                },
+                {
+                    "conditions":["day_summary"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} With {person_1} and {person_2}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["day_summary"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} With {person_1}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{times} With {person_1} and Others, {place} and more"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["place"],
+                    "labels":["{times} With {person_1} and Others, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{times} With {person_1} and {person_2}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["place"],
+                    "labels":["{times} With {person_1} and {person_2}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{times} With {person_1}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["place"],
+                    "labels":["{times} With {person_1}, {place}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{times} With {person_1} and Others, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{times} With {person_1} and {person_2}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{times} With {person_1}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Moments With {person_1} and Others, {place} and more"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Moments With {person_1} and Others, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Moments With {person_1} and {person_2}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["place"],
+                    "labels":["{time} Moments With {person_1} and {person_2}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Moments With {person_1}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["place"],
+                    "labels":["{time} Moments With {person_1}, {place}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Moments With {person_1} and Others, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Moments With {person_1} and {person_2}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Moments With {person_1}, {enclosing_area}"],
+                },
+
+
+                {
+                    "conditions":["with_more_than_two_contacts","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With {person_1} and Others\n{action}"],
+                },
+                {
+                    "conditions":["day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With {person_1} and {person_2}\n{action}"],
+                },
+                {
+                    "conditions":["day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With {person_1}\n{action}"],
+                },
+
+
+
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1} and Others\n{action}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1} and {person_2}\n{action}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{times} With {person_1}\n{action}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1} and Others\n{action}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1} and {person_2}\n{action}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With {person_1}\n{action}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["Moments With {person_1} and Others, {place} and more"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["place"],
+                    "labels":["Moments With {person_1} and Others, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["Moments With {person_1} and {person_2}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["place"],
+                    "labels":["Moments With {person_1} and {person_2}, {place}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["Moments With {person_1}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["place"],
+                    "labels":["Moments With {person_1}, {place}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["Moments With {person_1} and Others, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["Moments With {person_1} and {person_2}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["Moments With {person_1}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1} and Others\n{action}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1} and {person_2}\n{action}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["Moments With {person_1}\n{action}"],
+                },
+                {
+                    "conditions":["with_more_than_two_contacts"],
+                    "labels":["Moments With {person_1} and Others"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["Moments With {person_1} and {person_2}"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["Moments With {person_1}"],
+                },
+
+
+                {
+                    "conditions":["with_family","multiple_places","day_summary"],
+                    "capitalizations":["time"],
+                    "labels":["{time} With Family\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_family","day_summary"],
+                    "capitalizations":["time"],
+                    "labels":["{time} With Family\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_family","day_summary"],
+                    "capitalizations":["time"],
+                    "labels":["{time} With Family\n{action}, {enclosing_area}"],
+                },
+
+
+
+                {
+                    "conditions":["with_family","multiple_places"],
+                    "capitalizations":["time"],
+                    "labels":["{times} With Family\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["time"],
+                    "labels":["{times} With Family\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["time"],
+                    "labels":["{times} With Family\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_family","multiple_places"],
+                    "capitalizations":["time"],
+                    "labels":["{time} Moments With Family\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["time"],
+                    "labels":["{time} Moments With Family\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["time"],
+                    "labels":["{time} Moments With Family\n{action}, {enclosing_area}"],
+                },
+
+
+                {
+                    "conditions":["with_family","multiple_places","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With family, {place} and more"],
+                },
+                {
+                    "conditions":["with_family","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With family, {place}"],
+                },
+                {
+                    "conditions":["with_family","day_summary"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} With family, {enclosing_area}"],
+                },
+
+
+
+                {
+                    "conditions":["with_family","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With family, {place} and more"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With family, {place}"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{times} With family, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_family","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With family, {place} and more"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With family, {place}"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Moments With family, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_family","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Family Time\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["action"],
+                    "labels":["Family Time\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["action"],
+                    "labels":["Family Time\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_family","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["Family Time, {place} and more"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["place"],
+                    "labels":["Family Time, {place}"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["Family Time, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "capitalizations":["action"],
+                    "labels":["Family Time\n{action}"],
+                },
+                {
+                    "conditions":["with_family"],
+                    "labels":["Family Time"],
+                },
+
+                {
+                    "conditions":["with_friends","multiple_places","day_summary"],
+                    "capitalizations":["time"],
+                    "labels":["{time} With Friends\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_friends","day_summary"],
+                    "capitalizations":["time"],
+                    "labels":["{time} With Friends\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_friends","day_summary"],
+                    "capitalizations":["time"],
+                    "labels":["{time} With Friends\n{action}, {enclosing_area}"],
+                },
+
+
+                {
+                    "conditions":["with_friends","multiple_places"],
+                    "capitalizations":["time"],
+                    "labels":["{times} With Friends\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["time"],
+                    "labels":["{times} With Friends\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["time"],
+                    "labels":["{times} With Friends\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_friends","multiple_places"],
+                    "capitalizations":["time"],
+                    "labels":["{time} Moments With Friends\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["time"],
+                    "labels":["{time} Moments With Friends\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["time"],
+                    "labels":["{time} Moments With Friends\n{action}, {enclosing_area}"],
+                },
+
+
+                {
+                    "conditions":["with_friends","multiple_places","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With Friends, {place} and more"],
+                },
+                {
+                    "conditions":["with_friends","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With Friends, {place}"],
+                },
+                {
+                    "conditions":["with_friends","day_summary"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} With Friends, {enclosing_area}"],
+                },
+
+
+                {
+                    "conditions":["with_friends","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With Friends, {place} and more"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With Friends, {place}"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{times} With Friends, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_friends","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With Friends, {place} and more"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With Friends, {place}"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Moments With Friends, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_friends","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With Friends\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With Friends\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With Friends\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_friends","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["Moments With Friends, {place} and more"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["place"],
+                    "labels":["Moments With Friends, {place}"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["Moments With Friends, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With Friends\n{action}"],
+                },
+                {
+                    "conditions":["with_friends"],
+                    "labels":["Moments With Friends"],
+                },
+
+
+                {
+                    "conditions":["with_pets","multiple_places","day_summary"],
+                    "capitalizations":["time"],
+                    "labels":["{time} With Pets\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_pets","day_summary"],
+                    "capitalizations":["time"],
+                    "labels":["{time} With Pets\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_pets","day_summary"],
+                    "capitalizations":["time"],
+                    "labels":["{time} With Pets\n{action}, {enclosing_area}"],
+                },
+
+
+                {
+                    "conditions":["with_pets","multiple_places"],
+                    "capitalizations":["time"],
+                    "labels":["{times} With Pets\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["time"],
+                    "labels":["{times} With Pets\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["time"],
+                    "labels":["{times} With Pets\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_pets","multiple_places"],
+                    "capitalizations":["time"],
+                    "labels":["{time} Moments With Pets\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["time"],
+                    "labels":["{time} Moments With Pets\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["time"],
+                    "labels":["{time} Moments With Pets\n{action}, {enclosing_area}"],
+                },
+
+                {
+                    "conditions":["with_pets","multiple_places","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With Pets, {place} and more"],
+                },
+                {
+                    "conditions":["with_pets","day_summary"],
+                    "capitalizations":["action"],
+                    "labels":["{time} With Pets, {place}"],
+                },
+                {
+                    "conditions":["with_pets","day_summary"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} With Pets, {enclosing_area}"],
+                },
+
+
+                {
+                    "conditions":["with_pets","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With Pets, {place} and more"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["action"],
+                    "labels":["{times} With Pets, {place}"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{times} With Pets, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_pets","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With Pets, {place} and more"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments With Pets, {place}"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Moments With Pets, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_pets","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With Pets\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With Pets\n{action}, {place}"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With Pets\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_pets","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["Moments With Pets, {place} and more"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["place"],
+                    "labels":["Moments With Pets, {place}"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["Moments With Pets, {enclosing_area}"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "capitalizations":["action"],
+                    "labels":["Moments With Pets\n{action}"],
+                },
+                {
+                    "conditions":["with_pets"],
+                    "labels":["Moments With Pets"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["is_routine","multiple_places","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine\n{action} and more"],
+                },
+                {
+                    "conditions":["is_routine","diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workout Routine\n{action}"],
+                },
+                {
+                    "conditions":["is_routine","not_home","multiple_places","diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine","not_home","diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Workout Routine\n{place}"],
+                },
+                {
+                    "conditions":["is_routine","not_home","diversity_key=workouts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Workout Routine\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["is_routine"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine\n{action}, {place}"],
+                },
+                {
+                    "conditions":["is_routine"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["is_routine"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Routine\n{action}"],
+                },
+                {
+                    "conditions":["is_routine","not_home","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine\n{place} and more"],
+                },
+                {
+                    "conditions":["is_routine","not_home"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Routine\n{place}"],
+                },
+                {
+                    "conditions":["is_routine","not_home"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Routine\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts\n{action}, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts\n{action} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Workouts\n{action}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Recent Workouts\n{action} and more, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Recent Workouts\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Recent Workouts\n{action}, {place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Recent Workouts\n{action} and more, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Recent Workouts\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Recent Workouts\n{action}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["Recent Workouts\n{action} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts","multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["Recent Workouts\n{place} and more"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["place"],
+                    "labels":["Recent Workouts\n{place}"],
+                },
+                {
+                    "conditions":["diversity_key=workouts"],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["Recent Workouts\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["at_home","day_summary"],
+                    "labels":["{time} at Home"],
+                },
+                {
+                    "conditions":["at_home"],
+                    "labels":["{times} at Home"],
+                },
+                {
+                    "conditions":["at_home"],
+                    "labels":["{time} Moments at Home"],
+                },
+                {
+                    "conditions":["at_home"],
+                    "labels":["Moments at Home"],
+                },
+                {
+                    "conditions":["multiple_workouts"],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments\n{action}, {place}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["{time} Moments\n{action}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["{time} Outings\n{place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["place"],
+                    "labels":["{time} Outings\n{place}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["{time} Outings\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["action"],
+                    "labels":["Recent Moments\n{action}, {place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["Recent Moments\n{action}, {place}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["Recent Moments\n{action}, {enclosing_area}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["action"],
+                    "labels":["Recent Moments\n{action}"],
+                },
+                {
+                    "conditions":["multiple_places"],
+                    "capitalizations":["place"],
+                    "labels":["Recent Outings\n{place} and more"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["place"],
+                    "labels":["Recent Outings\n{place}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":["enclosing_area"],
+                    "labels":["Recent Outings\n{enclosing_area}"],
+                },
+                {
+                    "conditions":["is_outing"],
+                    "capitalizations":[],
+                    "labels":["{time} Outings"],
+                },
+                {
+                    "conditions":["day_summary"],
+                    "capitalizations":[],
+                    "labels":["{time}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":[],
+                    "labels":["{times}"],
+                },
+                {
+                    "conditions":[],
+                    "capitalizations":[],
+                    "labels":["{time} Moments"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_holiday"],
+                    "labels":["Recent Holidays"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_common_place"],
+                    "labels":["Recent Outings"],
+                },
+                {
+                    "conditions":["thematic_summary_subtype=thematic_summary_photo_subject"],
+                    "labels":["Recent Photos"],
+                },
+                {
+                    "conditions":[],
+                    "labels":["Recent Moments"],
+                },
+            ]
+        }
+    ]
+}
+

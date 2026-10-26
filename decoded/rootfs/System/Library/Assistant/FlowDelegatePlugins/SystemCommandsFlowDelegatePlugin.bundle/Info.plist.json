@@ -1,0 +1,247 @@
+{
+  "CFBundleName": "SystemCommandsFlowDelegatePlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "SystemCommandsFlowDelegatePlugin.SystemCommandsFlowDelegatePlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "SystemCommandsFlowDelegatePlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.SystemCommandsFlowDelegatePlugin",
+  "LSApplicationCategoryType": "",
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "InputAffinityScorer": {
+    "type": "first",
+    "children": [
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:systemAttribute"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:systemCategory"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "taskType:capture::common_MediaCapture"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "taskType:startCapture::common_MediaCapture"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "taskType:stopCapture::common_MediaCapture"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "taskType:restart::common_UserEntity"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "taskType:restart::uso_NoEntity"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "taskType:enable::common_Setting"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "taskType:disable::common_Setting"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "taskType:reset::common_UserEntity"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "taskType:softwareUpdate::common_UserEntity"
+          }
+        ],
+        "type": "compare"
+      },
+      0
+    ]
+  },
+  "SupportedDomains": [
+    "systemCommands"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "common_Setting",
+      "verb": "enable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "restart",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "restart",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "disable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaCapture",
+      "verb": "capture",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaCapture",
+      "verb": "startCapture",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_MediaCapture",
+      "verb": "stopCapture",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "summarise",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "reset",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_UserEntity",
+      "verb": "softwareUpdate",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "checkExistence",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "open",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "set",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "toggle",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "softwareUpdate",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": []
+}

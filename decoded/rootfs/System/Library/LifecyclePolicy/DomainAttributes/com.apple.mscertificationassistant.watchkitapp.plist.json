@@ -1,0 +1,44 @@
+{
+  "TestInProcess": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSDurationAttribute",
+            "StartPolicy": "RBSDurationStartPolicyFixed",
+            "WarningDuration": 15,
+            "InvalidationDuration": 300,
+            "EndPolicy": "RBSDurationEndPolicyInvalidate"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractiveNonFocal"
+          },
+          {
+            "Class": "RBSGPUAccessGrant",
+            "Role": "RBSGPURoleBackground"
+          },
+          {
+            "Class": "RBSPreventIdleSleepGrant"
+          },
+          {
+            "Class": "RBSDefineRelativeStartTimeGrant"
+          },
+          {
+            "Class": "RBSInvalidateUnderConditionAttribute",
+            "Condition": "therm",
+            "MinValue": 850
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20029
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.mscertificationassistant"
+    }
+  }
+}

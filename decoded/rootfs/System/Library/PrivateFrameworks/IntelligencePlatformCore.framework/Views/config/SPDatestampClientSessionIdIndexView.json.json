@@ -1,0 +1,16 @@
+{
+  "artifact": {
+    "path": "Siri.PostSiriEngagement.Indexes",
+    "type": "external"
+  },
+  "name": "SPDatestampClientSessionIdIndexView",
+  "type": "biomeIncremental",
+  "update": {
+    "biomeListeners": [
+      {
+        "schedule": "live",
+        "stream": "Siri.PostSiriEngagement"
+      }
+    ]
+  }
+}

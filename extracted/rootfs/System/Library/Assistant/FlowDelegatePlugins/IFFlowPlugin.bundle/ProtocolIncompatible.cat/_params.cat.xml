@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="IFFlow#ProtocolIncompatible" xmlns="urn:apple:names:siri:cat:2.0">
+    <meta name="description" value="The Siri versions on the device and its companion have incompatible versions. Ask the user to update their devices"/>
+    <meta name="category" value="Can't Do"/>
+    <meta name="subcategory" value="Unsupported On Device"/>
+    <meta name="readyForLoc" value="true"/>
+    <meta name="listenAfterSpeaking" value="false"/>
+    <parameters>
+        <parameter name="companionNeedsUpdate" type="dialog.Boolean"/>
+    </parameters>
+</cat>

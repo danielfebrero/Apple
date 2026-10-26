@@ -1,0 +1,447 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "iPad inactivity lock-cascade XGBoost classifier (55 features, 3 strata)",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "Int64",
+        "type" : "Int64",
+        "name" : "target",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "keyType" : "Int64",
+        "formattedType" : "Dictionary (Int64 → Double)",
+        "type" : "Dictionary",
+        "name" : "classProbability",
+        "shortDescription" : ""
+      }
+    ],
+    "version" : "1.0",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 1,
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "visionOS" : "1.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_treeEnsembleClassifier"
+    },
+    "inputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "time_since_inactive",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "time_of_day",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_dur_til_act_p10",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_dur_til_act_p25",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_dur_til_act_p50",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_dur_til_act_p75",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_dur_til_act_p90",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_dur_til_act_std",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(-60,0)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(-60,0)_dur_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(30,60)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(30,60)_dur_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(60,120)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(60,120)_dur_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(60,120)_cnt_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(60,120)_cnt_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(120,240)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(120,240)_dur_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(120,240)_cnt_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "all_(120,240)_cnt_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_dur_til_act_p10",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_dur_til_act_p25",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_dur_til_act_p50",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_dur_til_act_p75",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_dur_til_act_p90",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_dur_til_act_std",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(-60,0)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(-60,0)_dur_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(-60,0)_cnt_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(-60,0)_cnt_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(0,30)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(0,30)_cnt_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(30,60)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(30,60)_dur_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(30,60)_cnt_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(30,60)_cnt_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(60,120)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(60,120)_dur_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(60,120)_cnt_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(120,240)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(120,240)_dur_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(120,240)_cnt_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "woo_(120,240)_cnt_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_dur_til_act_p10",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_dur_til_act_p25",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_dur_til_act_p50",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_dur_til_act_p75",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_dur_til_act_p90",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_dur_til_act_std",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_(-60,0)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_(-60,0)_dur_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_(-60,0)_cnt_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_(-60,0)_cnt_r8",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_(120,240)_dur_act",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "l3d_(120,240)_dur_r8",
+        "shortDescription" : ""
+      }
+    ],
+    "classLabels" : [
+      0,
+      1
+    ],
+    "generatedClassName" : "lock_cascade_xgboost",
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.source" : "xgboost==3.2.0",
+      "com.github.apple.coremltools.version" : "9.0",
+      "max_chunks" : "3",
+      "requires_duration_model" : "0",
+      "feature_names" : "[\"time_since_inactive\", \"time_of_day\", \"all_dur_til_act_p10\", \"all_dur_til_act_p25\", \"all_dur_til_act_p50\", \"all_dur_til_act_p75\", \"all_dur_til_act_p90\", \"all_dur_til_act_std\", \"all_(-60,0)_dur_act\", \"all_(-60,0)_dur_r8\", \"all_(30,60)_dur_act\", \"all_(30,60)_dur_r8\", \"all_(60,120)_dur_act\", \"all_(60,120)_dur_r8\", \"all_(60,120)_cnt_act\", \"all_(60,120)_cnt_r8\", \"all_(120,240)_dur_act\", \"all_(120,240)_dur_r8\", \"all_(120,240)_cnt_act\", \"all_(120,240)_cnt_r8\", \"woo_dur_til_act_p10\", \"woo_dur_til_act_p25\", \"woo_dur_til_act_p50\", \"woo_dur_til_act_p75\", \"woo_dur_til_act_p90\", \"woo_dur_til_act_std\", \"woo_(-60,0)_dur_act\", \"woo_(-60,0)_dur_r8\", \"woo_(-60,0)_cnt_act\", \"woo_(-60,0)_cnt_r8\", \"woo_(0,30)_dur_act\", \"woo_(0,30)_cnt_r8\", \"woo_(30,60)_dur_act\", \"woo_(30,60)_dur_r8\", \"woo_(30,60)_cnt_act\", \"woo_(30,60)_cnt_r8\", \"woo_(60,120)_dur_act\", \"woo_(60,120)_dur_r8\", \"woo_(60,120)_cnt_r8\", \"woo_(120,240)_dur_act\", \"woo_(120,240)_dur_r8\", \"woo_(120,240)_cnt_act\", \"woo_(120,240)_cnt_r8\", \"l3d_dur_til_act_p10\", \"l3d_dur_til_act_p25\", \"l3d_dur_til_act_p50\", \"l3d_dur_til_act_p75\", \"l3d_dur_til_act_p90\", \"l3d_dur_til_act_std\", \"l3d_(-60,0)_dur_act\", \"l3d_(-60,0)_dur_r8\", \"l3d_(-60,0)_cnt_act\", \"l3d_(-60,0)_cnt_r8\", \"l3d_(120,240)_dur_act\", \"l3d_(120,240)_dur_r8\"]",
+      "long_threshold" : "21600",
+      "chunk_engage_duration" : "14400",
+      "recommended_wait_time" : "7200",
+      "model_version" : "lock_cascade_v1"
+    },
+    "method" : "predict"
+  }
+]

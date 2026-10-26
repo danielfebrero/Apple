@@ -1,0 +1,52 @@
+{
+  "CFBundleName": "ChatKitAssistant",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "AssistantDomains": {
+    "com.apple.ace.sms": {
+      "Search": "CKAssistantSearch",
+      "DomainObjectCreate": "CKAssistantSMSCreate",
+      "DomainObjectCommit": "CKAssistantSMSSend",
+      "GroupSearch": "CKAssistantSMSGroupSearch",
+      "DomainObjectCancel": "CKAssistantSMSCancel",
+      "DomainObjectUpdate": "CKAssistantSMSUpdate",
+      "RecipientSearch": "CKAssistantSMSRecipientSearch",
+      "DomainObjectRetrieve": "CKAssistantSMSRetrieve"
+    }
+  },
+  "DTSDKBuild": "24B108",
+  "CFBundleDevelopmentRegion": "English",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "ChatKitAssistant",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.ChatKitAssistant",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "CFBundleSignature": "????",
+  "DTXcodeBuild": "27A225b",
+  "AssistantFirstUnlockRestrictedDomains": {
+    "com.apple.ace.sms": [
+      "Search",
+      "RecipientSearch",
+      "DomainObjectCommit",
+      "DomainObjectCreate",
+      "DomainObjectCancel",
+      "DomainObjectUpdate",
+      "DomainObjectRetrieve",
+      "GroupSearch"
+    ]
+  },
+  "DTPlatformBuild": "24B108"
+}

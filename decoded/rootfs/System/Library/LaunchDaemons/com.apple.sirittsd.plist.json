@@ -1,0 +1,44 @@
+{
+  "Label": "com.apple.sirittsd",
+  "ProcessType": "Adaptive",
+  "MachServices": {
+    "com.apple.sirittsd": true
+  },
+  "EnableTransactions": true,
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/SiriTTSService.framework/sirittsd"
+  ],
+  "LaunchEvents": {
+    "com.apple.xpc.activity": {
+      "com.apple.sirittsd.neuralCompiling": {
+        "Priority": "Maintenance",
+        "Repeating": true,
+        "RequireSignificantUserInactivity": true,
+        "Interval": 14400
+      },
+      "com.apple.sirittsd.cleanUp": {
+        "Priority": "Maintenance",
+        "Interval": 86400.0,
+        "Repeating": true
+      },
+      "com.apple.sirittsd.postInstall": {
+        "PostInstall": true
+      },
+      "com.apple.sirittsd.weeklyVoiceUpdate": {
+        "Priority": "Maintenance",
+        "RequireInexpensiveNetworkConnectivity": true,
+        "Repeating": true,
+        "Interval": 604800
+      },
+      "com.apple.sirittsd.voiceUpdate": {
+        "Priority": "Maintenance",
+        "RandomInitialDelay": 3600,
+        "Repeating": true,
+        "RequireInexpensiveNetworkConnectivity": true,
+        "Interval": 86400.0
+      }
+    }
+  },
+  "UserName": "mobile",
+  "EnablePressuredExit": true
+}

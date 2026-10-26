@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat id="SiriGeoSuggestions#ShareETA" xmlns="urn:apple:names:siri:cat:1.0" locale="en" >
+    <all>
+        <dialog id="preambleOverride">You can share when you’ll arrive, just say</dialog>
+        <dialog id="exampleUtterance">Share my ETA with <var name="contactName" /></dialog>
+    </all>
+</cat>

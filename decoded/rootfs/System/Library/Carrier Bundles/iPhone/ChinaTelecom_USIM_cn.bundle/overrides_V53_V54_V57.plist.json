@@ -1,0 +1,94 @@
+{
+  "SupportsVoNR": true,
+  "DerPriFileVersion": "6.0.165",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": false,
+  "_Exclude": [
+    "CDMAInternationalRoaming",
+    "EnableLTEAfterUpgrade"
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "Show4GSwitch": true,
+  "IMSConfig": {
+    "Media": {
+      "InactivityTimerRTPSeconds": 20
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true,
+      "BlockCallsOverCS": true
+    }
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "AllowNAISelection": false,
+  "AttachAPN": {
+    "_Exclude": [
+      "3GPP2"
+    ]
+  },
+  "ShowVoNRWarningUnsupportedCarrier": false,
+  "DataIndicatorOverrideForNRMmwave": "NRCA",
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": false,
+  "EnableBackupOnCellular": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 1081905,
+          "password": "",
+          "UseNetworkMTU": true,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "CTNET",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "CTWAP",
+          "type-mask": 4,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 1081904,
+          "password": "",
+          "UseNetworkMTU": true,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "CTNET",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "SupportSwitchOver": true,
+          "username": "",
+          "WaitForBringUpComplete": true,
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "AllowNoDNS": 1,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 30
+    }
+  ],
+  "Enable5GAutoAfterUpgrade": true
+}

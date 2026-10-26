@@ -1,0 +1,36 @@
+{
+  "CFBundleName": "AssistantTTSPlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "AssistantDomains": {
+    "com.apple.ace.tts": {
+      "SpeechSynthesisStreamingBegin": "VSPluginTTSForwardStreamHandler",
+      "EstimateTTSRequestDuration": "VSPluginTTSDurationEstimation",
+      "GetUnspeakableRangeOfText": "VSPluginTTSUnspeakableRangeHandler",
+      "SpeechSynthesisStreamingEnd": "VSPluginTTSForwardStreamHandler",
+      "SpeechSynthesisStreamingChunk": "VSPluginTTSForwardStreamHandler"
+    }
+  },
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "AssistantTTSPlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.tts.AssistantTTSPlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": ""
+}

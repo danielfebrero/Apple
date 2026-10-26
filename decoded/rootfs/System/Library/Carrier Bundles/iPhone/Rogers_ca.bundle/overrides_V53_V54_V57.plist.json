@@ -1,0 +1,143 @@
+{
+  "DerPriFileVersion": "6.0.163",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "Enable5GStandaloneByDefault": true,
+  "EnableWiFiN1ModeOnlyWhenSAEnabled": true,
+  "Show5GSwitch": true,
+  "EnableVoNRByDefault": true,
+  "ShowHighDataModeSwitch": true,
+  "ShowSatelliteSwitch": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4254897,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "ServerAddress": "https://dmsa2.egslb.net.rogers.com:8181/ium-OEMInterface/servlet/IUMServlet",
+    "SupportIMEIPredictionForSIMTransfer": true,
+    "SupportSecureIntent": true,
+    "SupportsOnDevicePhysicalSIMConvert": true
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "SupportsSatellite": true,
+  "SatelliteAccessInfo": {
+    "AllowCarrierApp": true,
+    "AppCategories": [
+      "8001",
+      "8002",
+      "8003",
+      "8004",
+      "8005",
+      "8006",
+      "8007",
+      "8008",
+      "8009",
+      "8010",
+      "8011",
+      "8012",
+      "8013",
+      "8014"
+    ],
+    "Tier": 4
+  },
+  "AllowSAOnWiFiAssociation": true,
+  "AttachAPN": {
+    "3GPP": {
+      "apn": "mobile.apn",
+      "AllowedProtocolMask": 2
+    }
+  },
+  "ShowVoNRWarningUnsupportedCarrier": true,
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://rsp-4038.idemia.io"
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Enable5GAutoByDefault": true,
+  "EmergencyCalling": {
+    "EmergencyNumbers": [
+      {
+        "PreferredEmergencyNumber": true,
+        "SupportsText": true,
+        "Number": "911"
+      }
+    ]
+  },
+  "ShowVoNRSwitch": true,
+  "MMS": {
+    "MaxMessageSizeOverSatellite": 3000
+  },
+  "SupportsNRNSAInboundRoaming": true,
+  "PushSettings": {
+    "Topic": "com.rogers.hp.cmb"
+  },
+  "apns": [
+    {
+      "type-mask": 32775,
+      "password": "",
+      "AllowedProtocolMaskInDomesticRoaming": 1,
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 1,
+      "username": "",
+      "apn": "mobile.apn",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 1048576,
+      "password": "",
+      "tech-type-mask": 1048582,
+      "AllowedProtocolMaskInRoaming": 3,
+      "username": "",
+      "apn": "netsvcs",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "NoCellularReconnectCauseCodes": [
+        {
+          "CauseCodes": [
+            29
+          ],
+          "RecoversOnAirplaneMode": true,
+          "NumTriesAllowed": 1,
+          "Type": "3GPP"
+        }
+      ],
+      "AllowedProtocolMaskInRoaming": 2,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 262144,
+      "password": "",
+      "tech-type-mask": 262144,
+      "AllowedProtocolMaskInRoaming": 2,
+      "username": "",
+      "apn": "sos",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 48,
+      "password": "",
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 1,
+      "username": "",
+      "apn": "data.apn",
+      "AllowedProtocolMask": 2
+    }
+  ],
+  "SupportsVoNR": true
+}

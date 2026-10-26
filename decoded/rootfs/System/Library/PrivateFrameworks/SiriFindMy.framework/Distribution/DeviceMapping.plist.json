@@ -1,0 +1,1254 @@
+{
+  "airtag": {
+    "productTypes": [
+      "B389",
+      "AirTag0,0"
+    ]
+  },
+  "backpack": {
+    "nlv3SemanticCategory": "IsFindMyBackpackTag",
+    "categoryId": 1
+  },
+  "bike": {
+    "categoryId": 2
+  },
+  "camera": {
+    "categoryId": 3
+  },
+  "handbag": {
+    "nlv3SemanticCategory": "IsFindMyHandbagTag",
+    "categoryId": 4
+  },
+  "jacket": {
+    "categoryId": 5
+  },
+  "keys": {
+    "categoryId": 6
+  },
+  "luggage": {
+    "nlv3SemanticCategory": "IsFindMyLuggageTag",
+    "categoryId": 7
+  },
+  "umbrella": {
+    "categoryId": 8
+  },
+  "wallet": {
+    "nlv3SemanticCategory": "IsFindMyWalletTag",
+    "categoryId": 9
+  },
+  "itemHeadphones": {
+    "categoryId": 10,
+    "isHeadphones": true,
+    "productNameSemantic": "headphones"
+  },
+  "belkin_soundform_pro_true_wireless_earbuds": {
+    "minimumOSVersions": {
+      "iOS": "14.5",
+      "macOS": "Future",
+      "tvOS": "Future",
+      "watchOS": "Future"
+    },
+    "isNotFindable": true,
+    "isEarbuds": true,
+    "productTypes": [
+      "Soundform Pro True Wireless Earbuds (SAP114)"
+    ]
+  },
+  "airpods": {
+    "isEarbuds": true,
+    "isCanonicalSemantic": true,
+    "deviceClass": "HEADPHONE",
+    "deviceClassSemantic": "airpods",
+    "officialName": "AirPods",
+    "productTypes": [
+      "AirPods_8228",
+      "AirPods_8202",
+      "AirPods_8194",
+      "AirPods_8207",
+      "AirPods_8206",
+      "AirPods_8211",
+      "AirPods_8212",
+      "AirPods_8217",
+      "AirPods_8219",
+      "AirPods_8231"
+    ]
+  },
+  "airpods_case": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "airpods_pro": {
+    "isEarbuds": true,
+    "isCanonicalSemantic": true,
+    "deviceClass": "HEADPHONE",
+    "deviceClassSemantic": "airpods_pro",
+    "officialName": "AirPods Pro",
+    "productTypes": [
+      "AirPods_8228",
+      "AirPods_8206",
+      "AirPods_8212",
+      "AirPods_8231"
+    ]
+  },
+  "airpods_pro_case": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "airpods_max": {
+    "isCanonicalSemantic": true,
+    "isHeadphones": true,
+    "deviceClass": "HEADPHONE",
+    "deviceClassSemantic": "airpods_max",
+    "officialName": "AirPods Max",
+    "productTypes": [
+      "AirPods_8202",
+      "AirPods_8223"
+    ]
+  },
+  "apple_pencil": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "apple_tv": {
+    "isNotFindable": true,
+    "deviceClass": "TV",
+    "officialName": "Apple TV"
+  },
+  "apple_tv_4k": {
+    "isNotFindable": true,
+    "deviceClass": "TV",
+    "officialName": "Apple TV 4K"
+  },
+  "apple_tv_siri_remote": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "apple_watch": {
+    "deviceClass": "WATCH",
+    "deviceClassSemantic": "apple_watch",
+    "officialName": "Apple Watch",
+    "productTypes": [
+      "Watch1,1",
+      "Watch1,2",
+      "Watch2,3",
+      "Watch2,4",
+      "Watch2,6",
+      "Watch2,7",
+      "Watch3,1",
+      "Watch3,2",
+      "Watch3,3",
+      "Watch3,4",
+      "Watch4,1",
+      "Watch4,2",
+      "Watch4,3",
+      "Watch4,4",
+      "Watch5,1",
+      "Watch5,2",
+      "Watch5,3",
+      "Watch5,4",
+      "Watch5,9",
+      "Watch5,10",
+      "Watch5,11",
+      "Watch5,12",
+      "Watch6,1",
+      "Watch6,2",
+      "Watch6,3",
+      "Watch6,4",
+      "Watch6,6",
+      "Watch6,7",
+      "Watch6,8",
+      "Watch6,9",
+      "Watch6,10",
+      "Watch6,11",
+      "Watch6,12",
+      "Watch6,13",
+      "Watch6,14",
+      "Watch6,15",
+      "Watch6,16",
+      "Watch6,17",
+      "Watch6,18",
+      "Watch7,1",
+      "Watch7,2",
+      "Watch7,3",
+      "Watch7,4",
+      "Watch7,5",
+      "Watch7,6",
+      "Watch7,7",
+      "Watch7,8",
+      "Watch7,9",
+      "Watch7,10",
+      "Watch7,11",
+      "Watch7,13",
+      "Watch7,14",
+      "Watch7,15",
+      "Watch7,16",
+      "Watch7,17",
+      "Watch7,18",
+      "Watch7,19",
+      "Watch7,20",
+      "Watch7,12"
+    ]
+  },
+  "apple_watch_ultra": {
+    "deviceClass": "WATCH",
+    "deviceClassSemantic": "apple_watch_ultra",
+    "officialName": "Apple Watch Ultra",
+    "productTypes": [
+      "Watch6,18",
+      "Watch7,5",
+      "Watch7,12"
+    ]
+  },
+  "beats_flex": {
+    "isNotFindable": true,
+    "minimumOSVersions": {
+      "iOS": "14.6",
+      "macOS": "Future",
+      "tvOS": "Future",
+      "watchOS": "Future"
+    },
+    "productTypes": [
+      "BeatsFlex1,1"
+    ],
+    "officialName": "Beats Flex",
+    "isHeadphones": true,
+    "isEarbuds": true
+  },
+  "beats_fit_pro": {
+    "isNotFindable": true,
+    "minimumOSVersions": {
+      "iOS": "15.1",
+      "macOS": "12.0",
+      "tvOS": "Future",
+      "watchOS": "7.1"
+    },
+    "productTypes": [
+      "BeatsFitPro1,1"
+    ],
+    "officialName": "Beats Fit Pro",
+    "isHeadphones": true,
+    "isEarbuds": true
+  },
+  "beats_powerbeats": {
+    "isNotFindable": true,
+    "minimumOSVersions": {
+      "iOS": "14.6",
+      "macOS": "Future",
+      "tvOS": "Future",
+      "watchOS": "Future"
+    },
+    "productTypes": [
+      "PowerBeats1,1"
+    ],
+    "officialName": "Powerbeats",
+    "isHeadphones": true,
+    "isEarbuds": true
+  },
+  "beats_powerbeats_pro": {
+    "minimumOSVersions": {
+      "iOS": "14.6",
+      "macOS": "Future",
+      "tvOS": "Future",
+      "watchOS": "Future"
+    },
+    "officialName": "Powerbeats Pro",
+    "productTypes": [
+      "PowerBeatsPro1,1"
+    ],
+    "deviceClassSemantic": "beats_powerbeats_pro",
+    "isEarbuds": true,
+    "isNotFindable": true
+  },
+  "beats_solo_pro": {
+    "isHeadphones": true,
+    "minimumOSVersions": {
+      "iOS": "14.6",
+      "macOS": "Future",
+      "tvOS": "Future",
+      "watchOS": "Future"
+    },
+    "officialName": "Beats Solo Pro",
+    "productTypes": [
+      "BeatsSoloPro1,1"
+    ],
+    "deviceClassSemantic": "beats_solo_pro",
+    "isNotFindable": true
+  },
+  "beats_studio_pro": {
+    "isHeadphones": true,
+    "minimumOSVersions": {
+      "iOS": "15.5",
+      "macOS": "Future",
+      "tvOS": "Future",
+      "watchOS": "Future"
+    },
+    "officialName": "Beats Studio Pro",
+    "productTypes": [
+      "BeatsStudioPro1,1"
+    ],
+    "deviceClassSemantic": "beats_studio_pro",
+    "isNotFindable": true
+  },
+  "beats_studio_buds": {
+    "isNotFindable": true,
+    "minimumOSVersions": {
+      "iOS": "14.6",
+      "macOS": "Future",
+      "tvOS": "Future",
+      "watchOS": "Future"
+    },
+    "productTypes": [
+      "BeatsStudioBuds1,1"
+    ],
+    "officialName": "Beats Studio Buds",
+    "deviceClassSemantic": "beats_studio_buds",
+    "isEarbuds": true
+  },
+  "beats_headphones": {
+    "semanticAliases": [
+      "beats_powerbeats",
+      "beats_powerbeats_pro",
+      "beats_flex",
+      "beats_solo_pro",
+      "beats_studio_buds",
+      "beats_studio_pro",
+      "beats_fit_pro"
+    ],
+    "minimumOSVersions": {
+      "iOS": "14.6",
+      "macOS": "Future",
+      "tvOS": "Future",
+      "watchOS": "Future"
+    },
+    "officialName": "Beats",
+    "deviceClassSemantic": "beats",
+    "isNotFindable": true
+  },
+  "car_play": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "earbuds": {
+    "semanticAliases": [
+      "itemHeadphones",
+      "beats_flex",
+      "beats_powerbeats",
+      "beats_powerbeats_pro",
+      "beats_studio_buds",
+      "beats_fit_pro"
+    ],
+    "isEarbuds": true,
+    "deviceClass": "HEADPHONE",
+    "officialName": "AirPods",
+    "productTypes": [
+      "AirPods_8194",
+      "AirPods_8207",
+      "AirPods_8206",
+      "AirPods_8211",
+      "AirPods_8212",
+      "AirPods_8231"
+    ]
+  },
+  "headphones": {
+    "semanticAliases": [
+      "beats_flex",
+      "beats_solo_pro",
+      "beats_powerbeats",
+      "beats_powerbeats_pro",
+      "beats_studio_buds",
+      "beats_fit_pro",
+      "itemHeadphones"
+    ],
+    "deviceClass": "HEADPHONE",
+    "officialName": "AirPods",
+    "productTypes": [
+      "AirPods_8228",
+      "AirPods_8202",
+      "AirPods_8194",
+      "AirPods_8207",
+      "AirPods_8206",
+      "AirPods_8211",
+      "AirPods_8212",
+      "AirPods_8231"
+    ]
+  },
+  "homepod": {
+    "isNotFindable": true,
+    "deviceClass": "HOMEPOD",
+    "officialName": "HomePod"
+  },
+  "homepod_mini": {
+    "isNotFindable": true,
+    "deviceClass": "HOMEPOD",
+    "officialName": "HomePod Mini"
+  },
+  "imac": {
+    "deviceClass": "MAC",
+    "officialName": "iMac"
+  },
+  "imac_pro": {
+    "deviceClass": "MAC",
+    "officialName": "iMac Pro"
+  },
+  "ipad": {
+    "isCanonicalSemantic": true,
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad"
+  },
+  "ipad2": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad 2"
+  },
+  "ipad3": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad 3"
+  },
+  "ipad4": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad 4"
+  },
+  "ipad_accessories": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipad_car_audio": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipad_cases": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipad_headphones": {
+    "deviceClass": "HEADPHONE",
+    "officialName": "EarPod"
+  },
+  "ipad_keyboards": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipad_power": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipad_speakers": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipadair": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad Air"
+  },
+  "ipadair2": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad Air 2"
+  },
+  "ipadair3": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad Air (3rd Generation)"
+  },
+  "ipadair4": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad Air (4th Generation)"
+  },
+  "ipadmini": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad mini"
+  },
+  "ipadmini2": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad mini"
+  },
+  "ipadmini3": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad mini 3"
+  },
+  "ipadmini4": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad mini 4"
+  },
+  "ipadmini5": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad mini (5th Generation)"
+  },
+  "ipadmini6": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad mini (6th generation)"
+  },
+  "ipadpro": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad Pro"
+  },
+  "iphone": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone"
+  },
+  "iphone3g": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 3G"
+  },
+  "iphone3gs": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 3GS"
+  },
+  "iphone4": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 4"
+  },
+  "iphone4s": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 4s"
+  },
+  "iphone5": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 5"
+  },
+  "iphone5c": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 5c"
+  },
+  "iphone5s": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 5s"
+  },
+  "iphone6": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 6"
+  },
+  "iphone6Plus": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 6 Plus"
+  },
+  "iphone6s": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 6s"
+  },
+  "iphone6sPlus": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 6s Plus"
+  },
+  "iphone7": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 7"
+  },
+  "iphone7Plus": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 7 Plus"
+  },
+  "iphone8": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 8"
+  },
+  "iphone8Plus": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 8 Plus"
+  },
+  "iphoneX": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone X"
+  },
+  "iphoneXr": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone XR"
+  },
+  "iphoneXs": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone XS"
+  },
+  "iphoneXsMax": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone XS Max"
+  },
+  "iphone11": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 11"
+  },
+  "iphone11Pro": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 11 Pro"
+  },
+  "iphone11ProMax": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 11 Pro Max"
+  },
+  "iphone12": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 12"
+  },
+  "iphone12Pro": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 12 Pro"
+  },
+  "iphone12ProMax": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 12 Pro Max"
+  },
+  "iphone12Mini": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 12 mini"
+  },
+  "iphone13": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 13"
+  },
+  "iphone13Pro": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 13 Pro"
+  },
+  "iphone13ProMax": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 13 Pro Max"
+  },
+  "iphone13Mini": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 13 mini"
+  },
+  "iphone14": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 14"
+  },
+  "iphone14Plus": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 14 Plus"
+  },
+  "iphone14Pro": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 14 Pro"
+  },
+  "iphone14ProMax": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 14 Pro Max"
+  },
+  "iphone15": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 15"
+  },
+  "iphone15Plus": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 15 Plus"
+  },
+  "iphone15Pro": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 15 Pro"
+  },
+  "iphone15ProMax": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 15 Pro Max"
+  },
+  "iphone16": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 16"
+  },
+  "iphone16e": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 16e"
+  },
+  "iphone16Plus": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 16 Plus"
+  },
+  "iphone16Pro": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 16 Pro"
+  },
+  "iphone16ProMax": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 16 Pro Max"
+  },
+  "iphoneair": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone Air"
+  },
+  "iphone17": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 17"
+  },
+  "iphone17Pro": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 17 Pro"
+  },
+  "iphone17ProMax": {
+    "deviceClass": "IPHONE",
+    "deviceClassSemantic": "iphone",
+    "officialName": "iPhone 17 Pro Max"
+  },
+  "iphone_accessories": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "iphone_car_audio": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "iphone_cases": {
+    "deviceClass": "ACCESSORIES"
+  },
+  "iphone_headsets": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "iphone_power": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "iphone_speakers": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "iphonese": {
+    "deviceClass": "IPHONE",
+    "officialName": "iPhone SE"
+  },
+  "ipod": {
+    "isCanonicalSemantic": true,
+    "deviceClass": "IPOD",
+    "deviceClassSemantic": "ipod",
+    "officialName": "iPod"
+  },
+  "ipod_accessories": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipod_car_audio": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipod_cases": {
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipod_classic": {
+    "deviceClass": "IPOD",
+    "deviceClassSemantic": "ipod",
+    "officialName": "iPod"
+  },
+  "ipod_headphones": {
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipod_nano": {
+    "deviceClass": "IPOD",
+    "deviceClassSemantic": "ipod",
+    "officialName": "iPod"
+  },
+  "ipod_power": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipod_shuffle": {
+    "deviceClass": "IPOD",
+    "deviceClassSemantic": "ipod",
+    "officialName": "iPod"
+  },
+  "ipod_speakers": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "ipod_touch": {
+    "deviceClass": "IPOD",
+    "deviceClassSemantic": "ipod",
+    "officialName": "iPod"
+  },
+  "left_airpod": {
+    "isEarbuds": true,
+    "deviceClass": "HEADPHONE",
+    "officialName": "AirPods",
+    "productTypes": [
+      "AirPods_8194",
+      "AirPods_8207",
+      "AirPods_8206",
+      "AirPods_8211",
+      "AirPods_8212"
+    ]
+  },
+  "mac": {
+    "deviceClass": "MAC",
+    "deviceClassSemantic": "mac",
+    "officialName": "Mac",
+    "productTypes": [
+      "iMac0,0",
+      "iMac4,1",
+      "iMac4,2",
+      "iMac5,1",
+      "iMac5,2",
+      "iMac6,1",
+      "iMac7,1",
+      "iMac8,1",
+      "iMac9,1",
+      "iMac10,1",
+      "iMac11,1",
+      "iMac11,2",
+      "iMac11,3",
+      "iMac12,1",
+      "iMac12,2",
+      "iMac13,1",
+      "iMac13,2",
+      "iMac14,1",
+      "iMac14,2",
+      "iMac14,3",
+      "iMac14,4",
+      "Mac14,3",
+      "Mac14,5",
+      "Mac14,6",
+      "Mac14,8",
+      "Mac14,9",
+      "Mac14,10",
+      "Mac14,12",
+      "Mac14,13",
+      "Mac14,14",
+      "Mac14,15",
+      "Mac17,5",
+      "iMac15,1",
+      "iMac16,1",
+      "iMac16,2",
+      "iMac17,1",
+      "iMac18,1",
+      "iMac18,2",
+      "iMac18,3",
+      "iMac19,1",
+      "iMac19,2",
+      "iMac20,1",
+      "iMac20,2",
+      "iMac21,1",
+      "iMac21,2",
+      "iMacPro1,1",
+      "MacPro0,0",
+      "MacPro1,1",
+      "MacPro2,1",
+      "MacPro3,1",
+      "MacPro4,1",
+      "MacPro5,1",
+      "MacPro6,1",
+      "MacPro7,1",
+      "Macmini0,0",
+      "Macmini1,1",
+      "Macmini2,1",
+      "Macmini3,1",
+      "Macmini4,1",
+      "Macmini5,1",
+      "Macmini5,2",
+      "Macmini5,3",
+      "Macmini6,1",
+      "Macmini6,2",
+      "Macmini6,3",
+      "Macmini7,1",
+      "Macmini7,2",
+      "Macmini7,3",
+      "Macmini8,1",
+      "Macmini8,2",
+      "Macmini9,1",
+      "ADP3,2",
+      "MacBook0,0",
+      "MacBook1,1",
+      "MacBook2,1",
+      "MacBook3,1",
+      "MacBook4,1",
+      "MacBook5,1",
+      "MacBook5,2",
+      "MacBook6,1",
+      "MacBook7,1",
+      "MacBook8,1",
+      "MacBook9,1",
+      "MacBook10,1",
+      "MacBookAir0,0",
+      "MacBookAir1,1",
+      "MacBookAir2,1",
+      "MacBookAir3,1",
+      "MacBookAir3,2",
+      "MacBookAir4,1",
+      "MacBookAir4,2",
+      "MacBookAir5,1",
+      "MacBookAir5,2",
+      "MacBookAir6,1",
+      "MacBookAir6,2",
+      "MacBookAir7,1",
+      "MacBookAir7,2",
+      "MacBookAir8,1",
+      "MacBookAir8,2",
+      "MacBookAir9,1",
+      "MacBookAir10,1",
+      "MacBookPro1,1",
+      "MacBookPro1,2",
+      "MacBookPro2,1",
+      "MacBookPro2,2",
+      "MacBookPro3,1",
+      "MacBookPro4,1",
+      "MacBookPro5,1",
+      "MacBookPro5,2",
+      "MacBookPro5,3",
+      "MacBookPro5,4",
+      "MacBookPro5,5",
+      "MacBookPro6,1",
+      "MacBookPro6,2",
+      "MacBookPro7,1",
+      "MacBookPro8,1",
+      "MacBookPro8,2",
+      "MacBookPro8,3",
+      "MacBookPro9,1",
+      "MacBookPro9,2",
+      "MacBookPro10,1",
+      "MacBookPro10,2",
+      "MacBookPro11,1",
+      "MacBookPro11,2",
+      "MacBookPro11,3",
+      "MacBookPro11,4",
+      "MacBookPro11,5",
+      "MacBookPro12,1",
+      "MacBookPro13,1",
+      "MacBookPro13,2",
+      "MacBookPro13,3",
+      "MacBookPro14,1",
+      "MacBookPro14,2",
+      "MacBookPro14,3",
+      "MacBookPro15,1",
+      "MacBookPro15,2",
+      "MacBookPro15,3",
+      "MacBookPro15,4",
+      "MacBookPro16,1",
+      "MacBookPro16,2",
+      "MacBookPro16,3",
+      "MacBookPro16,4",
+      "MacBookPro17,1",
+      "MacBookPro18,1",
+      "MacBookPro18,2",
+      "MacBookPro18,3",
+      "MacBookPro18,4"
+    ]
+  },
+  "mac_accessories": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "mac_applecare": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "mac_audio_speaker": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "mac_cables": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "mac_displays": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "mac_mini": {
+    "deviceClass": "MAC",
+    "officialName": "Mac mini"
+  },
+  "mac_networking": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "mac_power": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "mac_printers": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "mac_pro": {
+    "deviceClass": "MAC",
+    "officialName": "Mac Pro"
+  },
+  "mac_scanner": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "mac_storage": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "macbook": {
+    "deviceClass": "MAC",
+    "deviceClassSemantic": "macbook",
+    "officialName": "MacBook",
+    "productTypes": [
+      "MacBook0,0",
+      "MacBook1,1",
+      "MacBook2,1",
+      "MacBook3,1",
+      "MacBook4,1",
+      "MacBook5,1",
+      "MacBook5,2",
+      "MacBook6,1",
+      "MacBook7,1",
+      "MacBook8,1",
+      "MacBook9,1",
+      "MacBook10,1",
+      "MacBookAir0,0",
+      "MacBookAir1,1",
+      "MacBookAir2,1",
+      "MacBookAir3,1",
+      "MacBookAir3,2",
+      "MacBookAir4,1",
+      "MacBookAir4,2",
+      "MacBookAir5,1",
+      "MacBookAir5,2",
+      "MacBookAir6,1",
+      "MacBookAir6,2",
+      "MacBookAir7,1",
+      "MacBookAir7,2",
+      "MacBookAir8,1",
+      "MacBookAir8,2",
+      "MacBookAir9,1",
+      "MacBookAir10,1",
+      "MacBookPro1,1",
+      "MacBookPro1,2",
+      "MacBookPro2,1",
+      "MacBookPro2,2",
+      "MacBookPro3,1",
+      "MacBookPro4,1",
+      "MacBookPro5,1",
+      "MacBookPro5,2",
+      "MacBookPro5,3",
+      "MacBookPro5,4",
+      "MacBookPro5,5",
+      "MacBookPro6,1",
+      "MacBookPro6,2",
+      "MacBookPro7,1",
+      "MacBookPro8,1",
+      "MacBookPro8,2",
+      "MacBookPro8,3",
+      "MacBookPro9,1",
+      "MacBookPro9,2",
+      "MacBookPro10,1",
+      "MacBookPro10,2",
+      "MacBookPro11,1",
+      "MacBookPro11,2",
+      "MacBookPro11,3",
+      "MacBookPro11,4",
+      "MacBookPro11,5",
+      "MacBookPro12,1",
+      "MacBookPro13,1",
+      "MacBookPro13,2",
+      "MacBookPro13,3",
+      "MacBookPro14,1",
+      "MacBookPro14,2",
+      "MacBookPro14,3",
+      "MacBookPro15,1",
+      "MacBookPro15,2",
+      "MacBookPro15,3",
+      "MacBookPro15,4",
+      "MacBookPro16,1",
+      "MacBookPro16,2",
+      "MacBookPro16,3",
+      "MacBookPro16,4",
+      "MacBookPro17,1",
+      "MacBookPro18,1",
+      "MacBookPro18,2",
+      "MacBookPro18,3",
+      "MacBookPro18,4",
+      "Mac17,5"
+    ]
+  },
+  "laptop": {
+    "deviceClass": "MAC",
+    "deviceClassSemantic": "macbook",
+    "officialName": "MacBook",
+    "productTypes": [
+      "MacBook0,0",
+      "MacBook1,1",
+      "MacBook2,1",
+      "MacBook3,1",
+      "MacBook4,1",
+      "MacBook5,1",
+      "MacBook5,2",
+      "MacBook6,1",
+      "MacBook7,1",
+      "MacBook8,1",
+      "MacBook9,1",
+      "MacBook10,1",
+      "MacBookAir0,0",
+      "MacBookAir1,1",
+      "MacBookAir2,1",
+      "MacBookAir3,1",
+      "MacBookAir3,2",
+      "MacBookAir4,1",
+      "MacBookAir4,2",
+      "MacBookAir5,1",
+      "MacBookAir5,2",
+      "MacBookAir6,1",
+      "MacBookAir6,2",
+      "MacBookAir7,1",
+      "MacBookAir7,2",
+      "MacBookAir8,1",
+      "MacBookAir8,2",
+      "MacBookAir9,1",
+      "MacBookAir10,1",
+      "Mac14,15",
+      "MacBookPro1,1",
+      "MacBookPro1,2",
+      "MacBookPro2,1",
+      "MacBookPro2,2",
+      "MacBookPro3,1",
+      "MacBookPro4,1",
+      "MacBookPro5,1",
+      "MacBookPro5,2",
+      "MacBookPro5,3",
+      "MacBookPro5,4",
+      "MacBookPro5,5",
+      "MacBookPro6,1",
+      "MacBookPro6,2",
+      "MacBookPro7,1",
+      "MacBookPro8,1",
+      "MacBookPro8,2",
+      "MacBookPro8,3",
+      "MacBookPro9,1",
+      "MacBookPro9,2",
+      "MacBookPro10,1",
+      "MacBookPro10,2",
+      "MacBookPro11,1",
+      "MacBookPro11,2",
+      "MacBookPro11,3",
+      "MacBookPro11,4",
+      "MacBookPro11,5",
+      "MacBookPro12,1",
+      "MacBookPro13,1",
+      "MacBookPro13,2",
+      "MacBookPro13,3",
+      "MacBookPro14,1",
+      "MacBookPro14,2",
+      "MacBookPro14,3",
+      "MacBookPro15,1",
+      "MacBookPro15,2",
+      "MacBookPro15,3",
+      "MacBookPro15,4",
+      "MacBookPro16,1",
+      "MacBookPro16,2",
+      "MacBookPro16,3",
+      "MacBookPro16,4",
+      "MacBookPro17,1",
+      "MacBookPro18,1",
+      "MacBookPro18,2",
+      "MacBookPro18,3",
+      "MacBookPro18,4",
+      "Mac14,5",
+      "Mac14,6",
+      "Mac14,9",
+      "Mac14,10",
+      "Mac17,5"
+    ]
+  },
+  "macbook_air": {
+    "deviceClass": "MAC",
+    "deviceClassSemantic": "macbook_air",
+    "officialName": "MacBook Air",
+    "productTypes": [
+      "MacBookAir0,0",
+      "MacBookAir1,1",
+      "MacBookAir2,1",
+      "MacBookAir3,1",
+      "MacBookAir3,2",
+      "MacBookAir4,1",
+      "MacBookAir4,2",
+      "MacBookAir5,1",
+      "MacBookAir5,2",
+      "MacBookAir6,1",
+      "MacBookAir6,2",
+      "MacBookAir7,1",
+      "MacBookAir7,2",
+      "MacBookAir8,1",
+      "MacBookAir8,2",
+      "MacBookAir9,1",
+      "Mac14,15"
+    ]
+  },
+  "macbook_neo": {
+    "deviceClass": "MAC",
+    "officialName": "MacBook Neo",
+    "productTypes": [
+      "Mac17,5"
+    ]
+  },
+  "macbook_pro": {
+    "deviceClass": "MAC",
+    "officialName": "MacBook Pro"
+  },
+  "magic_keyboard": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "magic_mouse": {
+    "isNotFindable": true,
+    "deviceClass": "ACCESSORIES"
+  },
+  "nano": {
+    "deviceClass": "IPOD",
+    "officialName": "iPod"
+  },
+  "newipad": {
+    "deviceClass": "IPAD",
+    "deviceClassSemantic": "ipad",
+    "officialName": "iPad"
+  },
+  "right_airpod": {
+    "isEarbuds": true,
+    "deviceClass": "ACCESSARY",
+    "officialName": "AirPods"
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:3.0" id="GetETA#GetEtaQuery">
+    <meta name="category" value="Handled"/>
+    <meta name="readyForLoc" value="true"/>
+    <parameters>
+        <parameter description="The location the directions start at" name="origin" type="dialog.String"/>
+        <parameter description="The location the directions end at" name="destination" type="dialog.String"/>
+        <parameter description="The method of transport" name="transportationType" type="dialog.String"/>
+    </parameters>
+</cat>

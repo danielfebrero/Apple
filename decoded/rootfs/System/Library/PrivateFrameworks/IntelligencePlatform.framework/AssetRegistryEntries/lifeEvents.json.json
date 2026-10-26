@@ -1,0 +1,20 @@
+{
+  "domain": "lifeEvents",
+  "entries": {
+    "diningOut": {
+      "local": {
+        "relativeToBundle": {
+          "bundle": "intelligencePlatformCore",
+          "relativeFilePath": "DiningOutModel.mlmodelc"
+        }
+      }
+    },
+    "diningOutTrial": {
+      "trial": {
+        "assetType": "directory",
+        "factor": "DiningOutModelTrial",
+        "namespace": "CONTEXTUAL_UNDERSTANDING_EXPERIMENTATION"
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "DerPriFileVersion": "6.0.162",
+  "AllowSAOnWiFiAssociation": true,
+  "ShowVoNRSwitch": true,
+  "EnableWiFiN1ModeOnlyWhenSAEnabled": true,
+  "EnableVoNRByDefault": true,
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "LTE": true,
+        "NR": true,
+        "UMTS": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    }
+  },
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://mconnect-es2-006.oberthur.net",
+    "RequiresPasscodeForCrossPlatformTransfer": true
+  },
+  "ShowHighDataModeSwitch": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4203697,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true,
+    "SupportCrossPlatformSIMTransfer": true
+  },
+  "SupportsVoNR": true,
+  "Show5GStandaloneSwitch": true,
+  "apns": [
+    {
+      "type-mask": 131072,
+      "password": "",
+      "tech-type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "AllowedProtocolMaskInRoaming": 2,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 32823,
+      "password": "",
+      "UseNetworkMTU": true,
+      "enableXLAT464": true,
+      "AllowedProtocolMaskInRoaming": 1,
+      "username": "",
+      "apn": "sp.koodo.com",
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 262144,
+      "password": "",
+      "tech-type-mask": 262144,
+      "AllowedProtocolMaskInRoaming": 2,
+      "username": "",
+      "apn": "sos",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 1048576,
+      "password": "",
+      "tech-type-mask": 1048582,
+      "AllowedProtocolMaskInRoaming": 2,
+      "username": "",
+      "apn": "services.koodo.com",
+      "AllowedProtocolMask": 2
+    }
+  ],
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true,
+  "Enable5GStandaloneByDefault": true
+}

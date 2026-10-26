@@ -1,0 +1,81 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "predicate",
+          "TEXT"
+        ],
+        [
+          "relationshipId",
+          "INTEGER"
+        ],
+        [
+          "relationshipPredicate",
+          "TEXT"
+        ],
+        [
+          "object",
+          "TEXT"
+        ]
+      ],
+      "primaryKeyColumns": [],
+      "subjectIdentifierColumn": "subject",
+      "tableName": "representation_learning_subset"
+    },
+    "path": "internal/views.db",
+    "type": "customRow"
+  },
+  "customViewClass": "RepresentationLearningSubsetView",
+  "featureFlag": "LivableSources",
+  "name": "representationLearningSubset",
+  "representationPreprocessingConfig": {
+    "denyList": {
+      "eventGraph": {
+        "predicate": [
+          "nm_creationDate",
+          "nm_hasDate",
+          "nm_virtualConferenceURL",
+          "PS102",
+          "PS296",
+          "PS392",
+          "PS448",
+          "PS72"
+        ],
+        "relationshipPredicate": [
+          "PS29",
+          "PS69"
+        ]
+      },
+      "stableGraph": {
+        "predicate": [
+          "nm_applicationIdentifier",
+          "nm_bundleID",
+          "PS520",
+          "nm_QID",
+          "PS102",
+          "PS296",
+          "PS313",
+          "PS72"
+        ]
+      }
+    }
+  },
+  "type": "custom",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [],
+        "schedule": "weekly",
+        "stores": [
+          "stableGraph",
+          "eventGraph"
+        ]
+      }
+    ]
+  }
+}

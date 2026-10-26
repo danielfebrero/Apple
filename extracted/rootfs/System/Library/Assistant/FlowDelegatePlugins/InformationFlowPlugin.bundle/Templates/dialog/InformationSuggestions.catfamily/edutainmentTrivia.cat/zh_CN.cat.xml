@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="zh-cn">
+    <phrases>
+      <random phrase="suggestionUtterance">
+        <text>知识问答</text>
+        <text>玩知识问答</text>
+      </random>
+    </phrases>
+    <all>
+      <dialog id="exampleUtterance"><phrase name="suggestionUtterance"/></dialog>
+    </all>
+
+</cat>

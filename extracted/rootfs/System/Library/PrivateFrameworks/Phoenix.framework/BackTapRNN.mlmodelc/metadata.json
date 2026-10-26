@@ -1,0 +1,102 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float16",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "output",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 256)",
+        "shortDescription" : "",
+        "shape" : "[1, 256]",
+        "name" : "updated_history",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 6,
+    "mlProgramOperationTypeHistogram" : {
+      "Transpose" : 4,
+      "Fill" : 1,
+      "Squeeze" : 3,
+      "Sub" : 1,
+      "Gather" : 3,
+      "Sigmoid" : 2,
+      "Reshape" : 1,
+      "Cast" : 8,
+      "Concat" : 6,
+      "Add" : 5,
+      "Tanh" : 1,
+      "Less" : 1,
+      "Pow" : 1,
+      "Shape" : 2,
+      "Linear" : 7,
+      "WhileLoop" : 1,
+      "ExpandDims" : 3,
+      "Scatter" : 1,
+      "SliceByIndex" : 6,
+      "ReduceSum" : 1,
+      "Mul" : 4
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "7.0",
+      "com.github.apple.coremltools.source" : "torch==2.1.0",
+      "mldb_token" : "mldb-rva93pka72"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "3 × 1...500",
+        "shapeRange" : "[[3, 3], [1, 500]]",
+        "formattedType" : "MultiArray (Float32 3 × 1)",
+        "type" : "MultiArray",
+        "shape" : "[3, 1]",
+        "name" : "model_input",
+        "shortDescription" : ""
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 256)",
+        "shortDescription" : "",
+        "shape" : "[1, 256]",
+        "name" : "history",
+        "type" : "MultiArray"
+      }
+    ],
+    "generatedClassName" : "BackTapRNN",
+    "method" : "predict"
+  }
+]

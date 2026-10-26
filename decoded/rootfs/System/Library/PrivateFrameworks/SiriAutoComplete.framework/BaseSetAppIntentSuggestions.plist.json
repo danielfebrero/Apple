@@ -1,0 +1,282 @@
+{
+  "iOSMacOSApprovedIntents": [
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "CreateFolderLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "CreateTagLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "DeleteFoldersLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "DeleteNotesLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "DeleteTagsLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "LockNoteLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "RemoveLockFromNoteLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "RenameFolderLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "ScanDocumentLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "TakePhotoLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.DocumentsApp",
+      "intentName": "CreateFolderIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobilemail",
+      "intentName": "ComposeMessageIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobilemail",
+      "intentName": "UndoSendMessageIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "AutoFillContactInfoEntity"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "AutoFillContactInfoEntity-UpdatableEntity",
+      "intentParameters": {
+        "value": "true"
+      }
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "AutoFillContactInfoEntity-UpdatableEntity",
+      "intentParameters": {
+        "value": "false"
+      }
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "AutoFillCreditCardEntity"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "AutoFillCreditCardEntity-UpdatableEntity",
+      "intentParameters": {
+        "value": "true"
+      }
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "AutoFillCreditCardEntity-UpdatableEntity",
+      "intentParameters": {
+        "value": "false"
+      }
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "BlockPopUpsEntity"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "BlockPopUpsEntity-UpdatableEntity",
+      "intentParameters": {
+        "value": "true"
+      }
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "BlockPopUpsEntity-UpdatableEntity",
+      "intentParameters": {
+        "value": "false"
+      }
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "ClearHistoryIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "CloseTabsModeEntity"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "CreateNewTabGroup"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "CreateNewWindow",
+      "intentParameters": {
+        "isPrivate": "true"
+      }
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "CreateNewWindow",
+      "intentParameters": {
+        "isPrivate": "false"
+      }
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "CreateTabAssistantIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "DeleteTabGroups"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "PrivateSearchEngineEntity"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "SearchEngineEntity"
+    },
+    {
+      "appBundleId": "com.apple.mobileslideshow",
+      "intentName": "OpenMemoryCreationViewIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobileslideshow",
+      "intentName": "PhotosCreateAlbumAssistantIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobileslideshow",
+      "intentName": "PhotosDeleteAlbumsAssistantIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobileslideshow",
+      "intentName": "PhotosSearchAssistantIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobileslideshow",
+      "intentName": "PhotosUpdateAlbumAssistantIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobileslideshow",
+      "intentName": "PhotosUpdateRecognizedPersonAssistantIntent"
+    },
+    {
+      "appBundleId": "com.apple.Music",
+      "intentName": "CreatePlaylistIntent"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "BatteryPercentageToggleEntity"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "BatteryPercentageToggleEntity-UpdatableEntity",
+      "intentParameters": {
+        "value": "true"
+      }
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "BatteryPercentageToggleEntity-UpdatableEntity",
+      "intentParameters": {
+        "value": "false"
+      }
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenAirDropSettingsStaticLinks"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenDeveloperSettingsDeepLink"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenFilterUnknownSendersEntity"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenLowQualityImageModeEntity"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenNewDeviceOutreachStaticDeepLinks"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenNotificationsSettingsDeepLinks"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenNotifyMeEntity"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenRaiseToListenEntity"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenSendAsTextMessageEntity"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenSendReadReceiptsEntity"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenShowContactPhotosEntity"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenShowSubjectFieldEntity"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenSoftwareUpdateTimeDeepLinks"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenTwentyFourHourTimeEntity"
+    },
+    {
+      "appBundleId": "com.apple.reminders",
+      "intentName": "CreateCustomSmartListAppIntent"
+    },
+    {
+      "appBundleId": "com.apple.reminders",
+      "intentName": "IncludeDueTodayEntity"
+    },
+    {
+      "appBundleId": "com.apple.reminders",
+      "intentName": "MuteNotificationsEntity"
+    },
+    {
+      "appBundleId": "com.apple.reminders",
+      "intentName": "ShowAsOverdueEntity"
+    },
+    {
+      "appBundleId": "com.apple.reminders",
+      "intentName": "ShowSuggestionsEntity"
+    },
+    {
+      "appBundleId": "com.apple.reminders",
+      "intentName": "TodayNotificationEntity"
+    },
+    {
+      "appBundleId": "com.apple.reminders",
+      "intentName": "TTRCreateListAppIntent"
+    }
+  ]
+}

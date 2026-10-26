@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="CAMDisambiguate#AppShortcutCollisionFirstRun">
+    <meta name="description" value="Asks the user if they would like to enable App Shortcuts for an app."/>
+    <meta name="category" value="Prompt"/>
+    <meta name="readyForLoc" value="true"/>
+    <parameters>
+        <parameter name="app" type="dialog.String"/>
+    </parameters>
+</cat>

@@ -1,0 +1,1 @@
+The first query stage reads the index directly — it has NO from. Only downstream stages carry from, naming a prior stage id.

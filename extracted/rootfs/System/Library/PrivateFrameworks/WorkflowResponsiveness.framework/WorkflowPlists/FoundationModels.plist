@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>FoundationModels</string>
+	<key>maximum_duration</key>
+	<integer>200</integer>
+	<key>signposts</key>
+	<array>
+		<dict>
+			<key>start</key>
+			<true/>
+			<key>end</key>
+			<true/>
+			<key>subsystem</key>
+			<string>com.apple.FoundationModels</string>
+			<key>category</key>
+			<string>InstrumentSignpost</string>
+			<key>name</key>
+			<string>InstrumentedRequest</string>
+		</dict>
+	</array>
+</dict>
+</plist>

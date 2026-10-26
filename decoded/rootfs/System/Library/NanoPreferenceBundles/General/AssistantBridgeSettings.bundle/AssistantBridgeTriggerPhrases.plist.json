@@ -1,0 +1,26 @@
+{
+  "StringsTable": "AssistantBridgeSettings",
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "get": "triggerPhraseType",
+      "id": "TRIGGER_PHRASE_GROUP_ID",
+      "isRadioGroup": true,
+      "set": "setTriggerPhraseType:"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "HS_JS_ID"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "HEY_SIRI_ID"
+    },
+    {
+      "cell": "PSListItemCell",
+      "id": "VOICE_TRIGGER_DISABLED_ID",
+      "label": "VOICE_TRIGGER_DISABLED"
+    }
+  ],
+  "title": "LISTEN_FOR"
+}

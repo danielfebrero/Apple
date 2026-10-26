@@ -1,0 +1,3139 @@
+{
+  "predicates": [
+    {
+      "domain": [
+        "SB56",
+        "nm_localizedNameRelationshipType",
+        "nm_extractionTagRelationshipType"
+      ],
+      "intValue": 2,
+      "label": "name",
+      "predicateId": "PS33",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB56",
+        "nm_dateRelationshipType"
+      ],
+      "intValue": 3,
+      "label": "start time",
+      "predicateId": "PS29",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 4,
+      "label": "also known as",
+      "predicateId": "PS89",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB56",
+        "nm_email",
+        "SB10"
+      ],
+      "intValue": 5,
+      "label": "URL",
+      "predicateId": "PS296",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 6,
+      "label": "last updated",
+      "predicateId": "PS392",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB56",
+        "nm_transaction"
+      ],
+      "intValue": 7,
+      "label": "description",
+      "predicateId": "PS51",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 8,
+      "label": "has image",
+      "predicateId": "PS78",
+      "range": [
+        "CS2"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 9,
+      "label": "identifier",
+      "predicateId": "PS72",
+      "range": [
+        "CS22"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 10,
+      "label": "age",
+      "predicateId": "nm_age",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 11,
+      "label": "family member type",
+      "predicateId": "nm_familyMemberType",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 12,
+      "label": "official name",
+      "predicateId": "PS336",
+      "range": [
+        "CS105"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 13,
+      "label": "same as",
+      "predicateId": "PS102",
+      "range": [
+        "SB56"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 14,
+      "label": "is a",
+      "predicateId": "PS1",
+      "range": [
+        "SB197"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS1"
+      ],
+      "intValue": 15,
+      "label": "source URL",
+      "predicateId": "PS66",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_senderRelationshipType"
+      ],
+      "intValue": 16,
+      "label": "sender identifier",
+      "predicateId": "nm_senderIdentifier",
+      "range": [
+        "SB104"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB198"
+      ],
+      "intValue": 17,
+      "label": "member identifier",
+      "predicateId": "PS46",
+      "range": [
+        "SB198"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "nm_topicRelationshipType"
+      ],
+      "intValue": 18,
+      "label": "topic identifier",
+      "predicateId": "nm_topicIdentifier",
+      "range": [
+        "nm_topic"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 19,
+      "label": "event co-occurrence",
+      "predicateId": "PS718",
+      "range": [
+        "CS173"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS173"
+      ],
+      "intValue": 20,
+      "label": "has event",
+      "predicateId": "PS741",
+      "range": [
+        "SB65"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB513"
+      ],
+      "intValue": 21,
+      "label": "activity has activity type",
+      "predicateId": "PS719",
+      "range": [
+        "SB116"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_calendarRelationshipType"
+      ],
+      "intValue": 22,
+      "label": "calendar type",
+      "predicateId": "nm_calendarType",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "nm_calendarRelationshipType"
+      ],
+      "intValue": 23,
+      "label": "subscribed status",
+      "predicateId": "nm_isSubscribed",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "CS22",
+        "nm_calendarRelationshipType",
+        "nm_softwareRelationshipType",
+        "nm_entityAliasRelationshipType",
+        "nm_orderEmailRelationshipType",
+        "nm_entityOrganizationRelationshipType",
+        "nm_orderShipmentFullFillmentRelationshipType",
+        "nm_orderPersonRelationshipType",
+        "nm_orderPaymentRelationshipType",
+        "nm_orderTransactionRelationshipType",
+        "nm_shipmentFullFillmentEmailRelationshipType"
+      ],
+      "intValue": 24,
+      "label": "identifier id",
+      "predicateId": "PS69",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS38"
+      ],
+      "intValue": 25,
+      "label": "role",
+      "predicateId": "nm_role",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "CS38"
+      ],
+      "intValue": 26,
+      "label": "participant obligation",
+      "predicateId": "PS734",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "CS38",
+        "SB104"
+      ],
+      "intValue": 27,
+      "label": "is current user",
+      "maxCount": 1,
+      "predicateId": "nm_isCurrentUser",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "CS38"
+      ],
+      "intValue": 28,
+      "label": "attendee identifier",
+      "predicateId": "PS143",
+      "range": [
+        "SB104"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "CS105",
+        "nm_extractionTagRelationshipType"
+      ],
+      "intValue": 30,
+      "label": "text value",
+      "predicateId": "PS335",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 31,
+      "label": "full street address",
+      "predicateId": "PS316",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 32,
+      "label": "city",
+      "predicateId": "PS453",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97",
+        "SB152"
+      ],
+      "intValue": 33,
+      "label": "postal code",
+      "predicateId": "PS315",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS168",
+        "nm_orderPersonRelationshipType",
+        "nm_shipmentPersonRelationshipType"
+      ],
+      "intValue": 34,
+      "label": "person identifier",
+      "predicateId": "nm_personIdentifier",
+      "range": [
+        "SB104"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "CS168"
+      ],
+      "intValue": 35,
+      "label": "relationship label",
+      "predicateId": "nm_relationshipLabel",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97",
+        "SB198"
+      ],
+      "intValue": 36,
+      "label": "phone number",
+      "predicateId": "PS407",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97",
+        "SB198"
+      ],
+      "intValue": 37,
+      "label": "email address",
+      "predicateId": "PS406",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97",
+        "SB104"
+      ],
+      "intValue": 38,
+      "label": "contact label",
+      "predicateId": "PS740",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 39,
+      "label": "sub thoroughfare",
+      "predicateId": "PS570",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 40,
+      "label": "sub locality",
+      "predicateId": "PS569",
+      "range": [
+        "SB131"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 41,
+      "label": "sub administrative area",
+      "predicateId": "PS568",
+      "range": [
+        "SB131"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 42,
+      "label": "sub premises",
+      "predicateId": "PS730",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 43,
+      "label": "administrative area code",
+      "predicateId": "PS731",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 44,
+      "label": "address country",
+      "predicateId": "PS450",
+      "range": [
+        "SB163"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 45,
+      "label": "administrative district",
+      "predicateId": "PS455",
+      "range": [
+        "SB101"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS101"
+      ],
+      "intValue": 46,
+      "label": "has language",
+      "predicateId": "PS324",
+      "range": [
+        "SB74"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS22",
+        "nm_softwareRelationshipType",
+        "nm_entityAliasRelationshipType",
+        "nm_orderEmailRelationshipType",
+        "nm_entityOrganizationRelationshipType",
+        "nm_orderShippingInfoRelationshipType",
+        "nm_orderPersonRelationshipType",
+        "nm_shipmentPersonRelationshipType",
+        "nm_orderShipmentFullFillmentRelationshipType",
+        "nm_orderTransactionRelationshipType",
+        "nm_shipmentFullFillmentEmailRelationshipType"
+      ],
+      "intValue": 47,
+      "label": "identifier type",
+      "predicateId": "PS396",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104",
+        "CS22"
+      ],
+      "intValue": 48,
+      "label": "username",
+      "predicateId": "PS313",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS2"
+      ],
+      "intValue": 49,
+      "label": "image file",
+      "predicateId": "PS7",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS13"
+      ],
+      "intValue": 50,
+      "label": "role held",
+      "predicateId": "PS85",
+      "range": [
+        "SB60"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS13"
+      ],
+      "intValue": 51,
+      "label": "member of",
+      "predicateId": "PS45",
+      "range": [
+        "SB198"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS165"
+      ],
+      "intValue": 52,
+      "label": "department",
+      "predicateId": "PS548",
+      "range": [
+        "SB10"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS29"
+      ],
+      "intValue": 53,
+      "label": "has location",
+      "predicateId": "PS107",
+      "range": [
+        "SB152"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB370"
+      ],
+      "intValue": 54,
+      "label": "abbreviation",
+      "predicateId": "PS565",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB370"
+      ],
+      "intValue": 55,
+      "label": "seconds from GMT",
+      "predicateId": "PS567",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "CS154",
+        "SB65"
+      ],
+      "intValue": 56,
+      "label": "time zone",
+      "predicateId": "PS448",
+      "range": [
+        "SB370"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS3"
+      ],
+      "intValue": 57,
+      "label": "quantity",
+      "predicateId": "PS3",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "CS3"
+      ],
+      "intValue": 58,
+      "label": "unit",
+      "predicateId": "PS2",
+      "range": [
+        "CS4"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS36"
+      ],
+      "intValue": 59,
+      "label": "has religion",
+      "predicateId": "PS132",
+      "range": [
+        "CS37"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 60,
+      "label": "date of birth",
+      "predicateId": "PS37",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 61,
+      "label": "date of death",
+      "predicateId": "PS67",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 62,
+      "label": "name prefix",
+      "predicateId": "PS545",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 63,
+      "label": "first name",
+      "predicateId": "PS312",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 64,
+      "label": "middle name",
+      "predicateId": "PS546",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 65,
+      "label": "family name",
+      "predicateId": "PS441",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 66,
+      "label": "name suffix",
+      "predicateId": "PS547",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 67,
+      "label": "has child",
+      "predicateId": "PS79",
+      "range": [
+        "SB193"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 68,
+      "label": "has father",
+      "predicateId": "PS76",
+      "range": [
+        "SB193"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 69,
+      "label": "has mother",
+      "predicateId": "PS75",
+      "range": [
+        "SB193"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 70,
+      "label": "gender identity",
+      "predicateId": "PS34",
+      "range": [
+        "CS8"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB198"
+      ],
+      "intValue": 71,
+      "label": "net worth",
+      "predicateId": "PS99",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB198",
+        "SB152"
+      ],
+      "intValue": 72,
+      "label": "has address",
+      "predicateId": "PS317",
+      "range": [
+        "CS97"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 73,
+      "label": "birth name",
+      "predicateId": "PS36",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 74,
+      "label": "previous family name",
+      "predicateId": "PS574",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 75,
+      "label": "non-gregorian birthday",
+      "predicateId": "nm_nonGregorianBirthday",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 76,
+      "label": "dates",
+      "predicateId": "nm_dates",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB104",
+        "SB144"
+      ],
+      "intValue": 77,
+      "label": "bundle id",
+      "predicateId": "nm_bundleID",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 78,
+      "label": "relationship",
+      "predicateId": "nm_relationship",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104",
+        "CS97"
+      ],
+      "intValue": 79,
+      "label": "unknown handle",
+      "predicateId": "nm_unknownHandle",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104",
+        "CS97"
+      ],
+      "intValue": 80,
+      "label": "is favorite",
+      "predicateId": "nm_isFavorite",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 81,
+      "label": "contact favorite action type",
+      "predicateId": "nm_cnFavoriteActionType",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 82,
+      "label": "anniversary",
+      "predicateId": "nm_anniversary",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 83,
+      "label": "person type",
+      "predicateId": "nm_personType",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 84,
+      "label": "handles",
+      "predicateId": "nm_handles",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 85,
+      "label": "handle identifier",
+      "predicateId": "nm_handleIdentifier",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 86,
+      "label": "spouse",
+      "predicateId": "PS77",
+      "range": [
+        "SB104"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 87,
+      "label": "occupation",
+      "predicateId": "PS73",
+      "range": [
+        "CS25"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 88,
+      "label": "member of political party",
+      "predicateId": "PS424",
+      "range": [
+        "SB18"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 89,
+      "label": "employer",
+      "predicateId": "PS500",
+      "range": [
+        "CS13",
+        "CS165"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 90,
+      "label": "citizen of",
+      "predicateId": "PS35",
+      "range": [
+        "CS29"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 91,
+      "label": "religion",
+      "predicateId": "PS133",
+      "range": [
+        "CS36"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 92,
+      "label": "has location relationship",
+      "predicateId": "PS225",
+      "range": [
+        "CS29"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB104",
+        "SB65"
+      ],
+      "intValue": 93,
+      "label": "has topic",
+      "predicateId": "nm_hasTopic",
+      "range": [
+        "nm_topicRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB152",
+        "SB51",
+        "SB198"
+      ],
+      "intValue": 94,
+      "label": "has member",
+      "predicateId": "PS374",
+      "range": [
+        "CS13"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS29",
+        "CS97"
+      ],
+      "intValue": 95,
+      "label": "personalized label",
+      "predicateId": "PS733",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS29"
+      ],
+      "intValue": 96,
+      "label": "latitude",
+      "predicateId": "PS571",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS29"
+      ],
+      "intValue": 97,
+      "label": "longitude",
+      "predicateId": "PS572",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB152"
+      ],
+      "intValue": 98,
+      "label": "category",
+      "predicateId": "nm_category",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB152"
+      ],
+      "intValue": 99,
+      "label": "dynamic category",
+      "predicateId": "nm_dynamicCategory",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB152"
+      ],
+      "intValue": 100,
+      "label": "accuracy",
+      "predicateId": "nm_accuracy",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB152",
+        "SB514"
+      ],
+      "intValue": 102,
+      "label": "uncertainty",
+      "predicateId": "nm_uncertainty",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB152",
+        "CS168",
+        "nm_topic",
+        "SB513",
+        "SB116",
+        "nm_confidenceRelationshipType"
+      ],
+      "intValue": 103,
+      "label": "confidence",
+      "predicateId": "nm_confidence",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB152"
+      ],
+      "intValue": 104,
+      "label": "has timezone",
+      "predicateId": "PS447",
+      "range": [
+        "CS154"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB152"
+      ],
+      "intValue": 105,
+      "label": "location within location",
+      "predicateId": "PS515",
+      "range": [
+        "CS29"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB152"
+      ],
+      "intValue": 106,
+      "label": "has latitude/longitude",
+      "predicateId": "PS573",
+      "range": [
+        "CS29"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB48"
+      ],
+      "intValue": 107,
+      "label": "demonym",
+      "predicateId": "PS343",
+      "range": [
+        "CS105"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB48"
+      ],
+      "intValue": 108,
+      "label": "official language",
+      "predicateId": "PS484",
+      "range": [
+        "CS101"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB48"
+      ],
+      "intValue": 109,
+      "label": "population",
+      "predicateId": "PS147",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB48"
+      ],
+      "intValue": 110,
+      "label": "area",
+      "predicateId": "PS135",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB163",
+        "CS97"
+      ],
+      "intValue": 111,
+      "label": "country code ISO 3166-1 alpha-2",
+      "predicateId": "PS454",
+      "range": [],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 112,
+      "label": "birthday contact id",
+      "predicateId": "nm_birthdayContactID",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 113,
+      "label": "is all day",
+      "predicateId": "nm_isAllDay",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "SB65",
+        "SB77",
+        "nm_dateRelationshipType",
+        "nm_shipmentFullFillmentInfo",
+        "nm_transaction"
+      ],
+      "intValue": 114,
+      "label": "occurrence date",
+      "predicateId": "nm_occurrenceDate",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 115,
+      "label": "availability",
+      "predicateId": "nm_availability",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 116,
+      "label": "is detached",
+      "predicateId": "nm_isDetached",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 117,
+      "label": "creation date",
+      "predicateId": "nm_creationDate",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 118,
+      "label": "natural language identifier",
+      "predicateId": "nm_naturalLanguageEventTypeIdentifier",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB400"
+      ],
+      "intValue": 119,
+      "label": "has attendee",
+      "predicateId": "PS232",
+      "range": [
+        "CS38"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 120,
+      "label": "has organizer",
+      "predicateId": "PS578",
+      "range": [
+        "CS38"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 121,
+      "label": "has calendar",
+      "predicateId": "nm_hasCalendar",
+      "range": [
+        "nm_calendarRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 122,
+      "label": "has sender",
+      "predicateId": "nm_hasSender",
+      "range": [
+        "nm_senderRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_topic",
+        "SB116",
+        "SB14"
+      ],
+      "intValue": 123,
+      "label": "QID",
+      "predicateId": "nm_QID",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS167"
+      ],
+      "intValue": 124,
+      "label": "interested in",
+      "predicateId": "PS558",
+      "range": [
+        "SB56"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB198"
+      ],
+      "intValue": 125,
+      "label": "has interests",
+      "predicateId": "PS557",
+      "range": [
+        "CS167"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB2"
+      ],
+      "intValue": 126,
+      "label": "native home",
+      "predicateId": "PS524",
+      "range": [
+        "SB152"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB152"
+      ],
+      "intValue": 127,
+      "label": "point of interest type",
+      "predicateId": "nm_poiType",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB472"
+      ],
+      "intValue": 128,
+      "label": "on calendar",
+      "predicateId": "PS579",
+      "range": [
+        "SB471"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB472"
+      ],
+      "intValue": 129,
+      "label": "calendar event sender",
+      "predicateId": "PS580",
+      "range": [
+        "SB198"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 130,
+      "label": "second address line",
+      "predicateId": "PS581",
+      "range": [],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB473",
+        "nm_administratorRelationshipType"
+      ],
+      "intValue": 131,
+      "label": "home administrator",
+      "predicateId": "PS582",
+      "range": [
+        "SB198"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB56",
+        "CS1",
+        "nm_dateRelationshipType"
+      ],
+      "intValue": 132,
+      "label": "end time",
+      "predicateId": "PS30",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "nm_visualIdentifierRelationshipType"
+      ],
+      "intValue": 133,
+      "label": "visual identifier",
+      "predicateId": "nm_visualIdentifier",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB144"
+      ],
+      "intValue": 134,
+      "label": "application identifier",
+      "predicateId": "nm_applicationIdentifier",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB10"
+      ],
+      "intValue": 135,
+      "label": "team identifier",
+      "predicateId": "nm_teamIdentifier",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB51",
+        "SB44"
+      ],
+      "intValue": 136,
+      "label": "genre",
+      "predicateId": "PS10",
+      "range": [
+        "SB461",
+        "CS22"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB51"
+      ],
+      "intValue": 137,
+      "label": "published by",
+      "predicateId": "PS194",
+      "range": [
+        "SB10"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 138,
+      "label": "file",
+      "predicateId": "nm_file",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 139,
+      "label": "has source",
+      "predicateId": "nm_hasSource",
+      "range": [
+        "nm_calendarSourceRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_calendarSourceRelationshipType",
+        "SB152",
+        "SB65"
+      ],
+      "intValue": 140,
+      "label": "source type",
+      "predicateId": "nm_sourceType",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 141,
+      "label": "virtual conference URL",
+      "predicateId": "nm_virtualConferenceURL",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB198"
+      ],
+      "intValue": 142,
+      "label": "has association",
+      "predicateId": "PS598",
+      "range": [
+        "CS168"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB44"
+      ],
+      "intValue": 143,
+      "label": "song artist name",
+      "predicateId": "nm_artistName",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB44"
+      ],
+      "intValue": 144,
+      "label": "song album name",
+      "predicateId": "nm_albumName",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 145,
+      "label": "has contact information",
+      "predicateId": "PS520",
+      "range": [
+        "CS97"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [],
+      "intValue": 146,
+      "label": "has range",
+      "predicateId": "nm_hasRange",
+      "range": [],
+      "subjectType": "predicate"
+    },
+    {
+      "domain": [],
+      "intValue": 147,
+      "label": "has domain",
+      "predicateId": "nm_hasDomain",
+      "range": [],
+      "subjectType": "predicate"
+    },
+    {
+      "domain": [
+        "SB65",
+        "nm_shipmentFullFillmentInfo",
+        "nm_walletOrder",
+        "nm_email"
+      ],
+      "intValue": 148,
+      "label": "has date",
+      "predicateId": "nm_hasDate",
+      "range": [
+        "nm_dateRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB104",
+        "SB526",
+        "SB2"
+      ],
+      "intValue": 149,
+      "label": "has software",
+      "predicateId": "nm_hasSoftware",
+      "range": [
+        "nm_softwareRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_softwareRelationshipType",
+        "CS97"
+      ],
+      "intValue": 150,
+      "label": "software identifier",
+      "predicateId": "nm_softwareIdentifier",
+      "range": [
+        "SB144"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB65",
+        "SB473"
+      ],
+      "intValue": 151,
+      "label": "has administrator",
+      "predicateId": "nm_hasAdministrator",
+      "range": [
+        "nm_administratorRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB152"
+      ],
+      "intValue": 152,
+      "label": "address string",
+      "predicateId": "nm_addressString",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 153,
+      "label": "has song",
+      "predicateId": "nm_hasSong",
+      "range": [
+        "nm_songRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_songRelationshipType"
+      ],
+      "intValue": 154,
+      "label": "song identifier",
+      "predicateId": "nm_songIdentifier",
+      "range": [
+        "SB44"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB56",
+        "nm_dateRelationshipType"
+      ],
+      "intValue": 155,
+      "label": "imputed start time",
+      "predicateId": "nm_imputedStartTime",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB56",
+        "nm_dateRelationshipType"
+      ],
+      "intValue": 156,
+      "label": "imputed end time",
+      "predicateId": "nm_imputedEndTime",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB65",
+        "nm_dateRelationshipType"
+      ],
+      "intValue": 157,
+      "label": "imputed occurrence date",
+      "predicateId": "nm_imputedOccurrenceDate",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 158,
+      "label": "imputed date of birth",
+      "predicateId": "nm_imputedBirthday",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 159,
+      "label": "imputed anniversary",
+      "predicateId": "nm_imputedAnniversary",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 160,
+      "label": "imputed non-gregorian birthday",
+      "predicateId": "nm_imputedNonGregorianBirthday",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 161,
+      "label": "imputed creation date",
+      "predicateId": "nm_imputedCreationDate",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 162,
+      "label": "imputed last updated",
+      "predicateId": "nm_imputedLastUpdated",
+      "range": [],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB400"
+      ],
+      "intValue": 163,
+      "label": "starting location",
+      "predicateId": "PS248",
+      "range": [
+        "SB152"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB400"
+      ],
+      "intValue": 164,
+      "label": "end location",
+      "predicateId": "PS249",
+      "range": [
+        "SB152"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 165,
+      "label": "launch type",
+      "predicateId": "nm_launchType",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 166,
+      "label": "launch reason",
+      "predicateId": "nm_launchReason",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 167,
+      "label": "is starting",
+      "predicateId": "nm_isStarting",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB144"
+      ],
+      "intValue": 168,
+      "label": "extension host id",
+      "predicateId": "nm_extensionHostId",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB144"
+      ],
+      "intValue": 169,
+      "label": "parent bundle id",
+      "predicateId": "nm_parentBundleId",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB144"
+      ],
+      "intValue": 170,
+      "label": "short version",
+      "predicateId": "nm_shortVersion",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB144"
+      ],
+      "intValue": 171,
+      "label": "exact version",
+      "predicateId": "nm_exactVersion",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 172,
+      "label": "sgEvent type",
+      "predicateId": "nm_sgEventType",
+      "range": [
+        ""
+      ],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB514"
+      ],
+      "intValue": 173,
+      "label": "transportation type",
+      "predicateId": "PS710",
+      "range": [
+        "SB537"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB514"
+      ],
+      "intValue": 174,
+      "label": "elevation gain",
+      "predicateId": "PS711",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB514"
+      ],
+      "intValue": 175,
+      "label": "terrain",
+      "predicateId": "PS712",
+      "range": [
+        ""
+      ],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "SB425"
+      ],
+      "intValue": 176,
+      "label": "fuel consumed",
+      "predicateId": "PS713",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB425"
+      ],
+      "intValue": 177,
+      "label": "highway mileage",
+      "predicateId": "PS714",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB425"
+      ],
+      "intValue": 178,
+      "label": "city mileage",
+      "predicateId": "PS715",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB335"
+      ],
+      "intValue": 179,
+      "label": "make of automobile",
+      "predicateId": "PS716",
+      "range": [
+        "SB418"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB335"
+      ],
+      "intValue": 180,
+      "label": "model of automobile",
+      "predicateId": "PS717",
+      "range": [
+        "SB544"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 181,
+      "label": "length",
+      "predicateId": "PS83",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 182,
+      "label": "inferred birthday",
+      "predicateId": "nm_inferredBirthday",
+      "range": [
+        ""
+      ],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 183,
+      "label": "imputed inferred birthday",
+      "predicateId": "nm_imputedInferredBirthday",
+      "range": [
+        ""
+      ],
+      "subjectType": "dateTime"
+    },
+    {
+      "domain": [
+        "SB56",
+        "SB405"
+      ],
+      "intValue": 184,
+      "label": "duration",
+      "predicateId": "PS106",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 185,
+      "label": "status",
+      "predicateId": "PS586",
+      "range": [
+        ""
+      ],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB65",
+        "SB48"
+      ],
+      "intValue": 186,
+      "label": "languages spoken",
+      "predicateId": "PS325",
+      "range": [
+        ""
+      ],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB44"
+      ],
+      "intValue": 187,
+      "label": "album identifier",
+      "predicateId": "nm_albumIdentifier",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB44"
+      ],
+      "intValue": 188,
+      "label": "artist identifier",
+      "predicateId": "nm_artistIdentifier",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 189,
+      "label": "has localized name",
+      "predicateId": "nm_hasLocalizedName",
+      "range": [
+        "nm_localizedNameRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_localizedNameRelationshipType"
+      ],
+      "intValue": 190,
+      "label": "locale identifier",
+      "predicateId": "nm_localeIdentifier",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB514"
+      ],
+      "intValue": 191,
+      "label": "has driver",
+      "predicateId": "PS709",
+      "range": [
+        "SB198"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "nm_knowledgeSource"
+      ],
+      "intValue": 192,
+      "label": "has confidence",
+      "predicateId": "nm_hasConfidence",
+      "range": [
+        "nm_confidenceRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_confidenceRelationshipType"
+      ],
+      "intValue": 193,
+      "label": "has field",
+      "predicateId": "nm_hasField",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS168"
+      ],
+      "intValue": 196,
+      "label": "inference feedback identifier",
+      "predicateId": "nm_inferenceFeedbackID",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS31"
+      ],
+      "intValue": 197,
+      "label": "performer",
+      "predicateId": "PS16",
+      "range": [
+        "SB198"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS15"
+      ],
+      "intValue": 198,
+      "label": "part of",
+      "predicateId": "PS53",
+      "range": [
+        "SB56"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 199,
+      "label": "part in part-whole relationship",
+      "predicateId": "PS123",
+      "range": [
+        "CS15"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB51"
+      ],
+      "intValue": 200,
+      "label": "performed by",
+      "predicateId": "PS137",
+      "range": [
+        "CS31"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 201,
+      "label": "has rating",
+      "predicateId": "PS358",
+      "range": [
+        "CS113"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS113"
+      ],
+      "intValue": 202,
+      "label": "rating",
+      "predicateId": "PS359",
+      "range": [
+        "SB399"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 203,
+      "label": "display image",
+      "predicateId": "PS486",
+      "range": [
+        "CS2"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 204,
+      "label": "width",
+      "predicateId": "PS4",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 205,
+      "label": "height",
+      "predicateId": "PS5",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 207,
+      "label": "has visual identifier",
+      "predicateId": "nm_hasVisualIdentifier",
+      "range": [
+        "nm_visualIdentifierRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_visualIdentifierRelationshipType"
+      ],
+      "intValue": 208,
+      "label": "association reason",
+      "predicateId": "nm_associationReason",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB786"
+      ],
+      "intValue": 209,
+      "label": "behavior type",
+      "predicateId": "PS747",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_visualIdentifierRelationshipType"
+      ],
+      "intValue": 210,
+      "label": "suggested name",
+      "predicateId": "nm_suggestedName",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS166"
+      ],
+      "intValue": 211,
+      "label": "group has part",
+      "predicateId": "PS566",
+      "range": [
+        "SB56"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB175"
+      ],
+      "intValue": 212,
+      "label": "group includes individual",
+      "predicateId": "PS753",
+      "range": [
+        "CS166"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS38"
+      ],
+      "intValue": 213,
+      "label": "participated in",
+      "predicateId": "PS144",
+      "range": [
+        "SB65"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS97"
+      ],
+      "intValue": 214,
+      "label": "inferred semantic label",
+      "predicateId": "nm_inferredSemanticLabel",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS168"
+      ],
+      "intValue": 215,
+      "label": "associated with",
+      "predicateId": "PS599",
+      "range": [
+        "SB198"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 216,
+      "label": "has favorite sports team",
+      "predicateId": "nm_hasFavoriteSportsTeam",
+      "range": [
+        "SB14"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "CS168"
+      ],
+      "intValue": 217,
+      "label": "unlocalized relationship label",
+      "predicateId": "nm_unlocalizedRelationshipLabel",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 218,
+      "label": "has subevent",
+      "predicateId": "PS618",
+      "range": [
+        "CS173"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "CS22"
+      ],
+      "intValue": 219,
+      "label": "has profile image",
+      "predicateId": "nm_hasProfileImage",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "CS38",
+        "SB104"
+      ],
+      "intValue": 220,
+      "label": "is inferred device user",
+      "maxCount": 1,
+      "predicateId": "nm_inferredDeviceUser",
+      "range": [],
+      "subjectType": "number"
+    },
+    {
+      "domain": [
+        "SB56",
+        "nm_localizedNameRelationshipType"
+      ],
+      "intValue": 221,
+      "label": "phonetic name",
+      "predicateId": "nm_phoneticName",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 222,
+      "label": "phonetic first name",
+      "predicateId": "nm_phoneticFirstName",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 223,
+      "label": "phonetic middle name",
+      "predicateId": "nm_phoneticMiddleName",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB193"
+      ],
+      "intValue": 224,
+      "label": "phonetic family name",
+      "predicateId": "nm_phoneticFamilyName",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 225,
+      "label": "signal label",
+      "predicateId": "nm_signalLabel",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 226,
+      "label": "entity alias relationship",
+      "predicateId": "nm_entityAliasRelationship",
+      "range": [
+        "nm_entityAliasRelationshipType"
+      ],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB104"
+      ],
+      "intValue": 227,
+      "label": "photos detection type",
+      "predicateId": "nm_photosDetectionType",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB65"
+      ],
+      "intValue": 228,
+      "label": "has extraction tags",
+      "predicateId": "nm_hasExtractionTags",
+      "range": [
+        "nm_extractionTagRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_screenTimeSegment"
+      ],
+      "intValue": 229,
+      "label": "screen time segment person",
+      "predicateId": "nm_screenTimeSegmentPerson",
+      "range": [
+        "SB104"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_screenTimeSegment"
+      ],
+      "intValue": 230,
+      "label": "activity category",
+      "predicateId": "nm_activityCategory",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_screenTimeSegment"
+      ],
+      "intValue": 231,
+      "label": "total pickups",
+      "predicateId": "nm_totalPickups",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_screenTimeSegment"
+      ],
+      "intValue": 232,
+      "label": "total notifications",
+      "predicateId": "nm_totalNotifications",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_topicRelationshipType"
+      ],
+      "intValue": 233,
+      "label": "document ID",
+      "predicateId": "nm_documentID",
+      "range": [
+        ""
+      ],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_topic"
+      ],
+      "intValue": 234,
+      "label": "mapped topic",
+      "predicateId": "nm_mappedTopic",
+      "range": [
+        "nm_topic"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_visualIdentifierRelationshipType"
+      ],
+      "intValue": 235,
+      "label": "suggested relationship to device owner",
+      "predicateId": "nm_suggestedRelationshipToDeviceOwner",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_visualIdentifierRelationshipType"
+      ],
+      "intValue": 236,
+      "label": "suggested relationship confidence",
+      "predicateId": "nm_suggestedRelationshipConfidence",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_softwareRelationshipType"
+      ],
+      "intValue": 237,
+      "label": "intent person id",
+      "predicateId": "nm_intentPersonId",
+      "range": [
+        ""
+      ],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_entityAliasRelationshipType"
+      ],
+      "intValue": 238,
+      "label": "confirmation confidence",
+      "predicateId": "nm_confirmationConfidence",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB514"
+      ],
+      "intValue": 239,
+      "label": "flight number",
+      "predicateId": "nm_flightNumber",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB514"
+      ],
+      "intValue": 240,
+      "label": "iata code",
+      "predicateId": "nm_iataCode",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_walletOrder"
+      ],
+      "intValue": 241,
+      "label": "has transaction",
+      "predicateId": "nm_hasTransaction",
+      "range": [
+        "nm_orderTransactionRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_walletOrder",
+        "nm_email"
+      ],
+      "intValue": 242,
+      "label": "order number",
+      "predicateId": "nm_orderNumber",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_email"
+      ],
+      "intValue": 245,
+      "label": "email type",
+      "predicateId": "nm_emailType",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_email"
+      ],
+      "intValue": 247,
+      "label": "subject",
+      "predicateId": "nm_subject",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_email",
+        "nm_walletOrder"
+      ],
+      "intValue": 248,
+      "label": "sender domain",
+      "predicateId": "nm_senderDomain",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_walletOrder",
+        "nm_shipmentFullFillmentInfo"
+      ],
+      "intValue": 249,
+      "label": "has email",
+      "predicateId": "nm_hasEmail",
+      "range": [
+        "nm_orderEmailRelationshipType",
+        "nm_shipmentFullFillmentEmailRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "SB56"
+      ],
+      "intValue": 250,
+      "label": "has merchant",
+      "predicateId": "nm_hasMerchant",
+      "range": [
+        "nm_entityOrganizationRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_walletOrder"
+      ],
+      "intValue": 251,
+      "label": "has shipment full fillment",
+      "predicateId": "nm_hasShipmentFullFillment",
+      "range": [
+        "nm_orderShipmentFullFillmentRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_shipmentFullFillmentInfo"
+      ],
+      "intValue": 252,
+      "label": "shipping status",
+      "predicateId": "nm_shippingStatus",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_shipmentFullFillmentInfo",
+        "nm_walletOrder",
+        "nm_email"
+      ],
+      "intValue": 253,
+      "label": "tracking number",
+      "predicateId": "nm_trackingNumber",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_shipmentFullFillmentInfo"
+      ],
+      "intValue": 254,
+      "label": "carrier name",
+      "predicateId": "nm_carrierName",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_shipmentFullFillmentInfo"
+      ],
+      "intValue": 255,
+      "label": "shipping method",
+      "predicateId": "nm_shippingMethod",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_transaction"
+      ],
+      "intValue": 256,
+      "label": "account institution",
+      "predicateId": "nm_accountInstitution",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_transaction"
+      ],
+      "intValue": 257,
+      "label": "account last four digits",
+      "predicateId": "nm_accountLastFourDigits",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_transaction"
+      ],
+      "intValue": 258,
+      "label": "transaction source",
+      "predicateId": "nm_transactionSource",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_transaction"
+      ],
+      "intValue": 259,
+      "label": "account type",
+      "predicateId": "nm_accountType",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_transaction"
+      ],
+      "intValue": 260,
+      "label": "transaction status",
+      "predicateId": "nm_transactionStatus",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_transaction"
+      ],
+      "intValue": 261,
+      "label": "transaction type",
+      "predicateId": "nm_transactionType",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_walletOrder"
+      ],
+      "intValue": 262,
+      "label": "has shipping info",
+      "predicateId": "nm_hasShippingInfo",
+      "range": [
+        "nm_orderShippingInfoRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_payment"
+      ],
+      "intValue": 264,
+      "label": "payment method is apple pay",
+      "predicateId": "nm_paymentMethodIsApplePay",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_walletOrder"
+      ],
+      "intValue": 265,
+      "label": "has payment",
+      "predicateId": "nm_hasPayment",
+      "range": [
+        "nm_orderPaymentRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_email"
+      ],
+      "intValue": 266,
+      "label": "email from",
+      "predicateId": "nm_emailFrom",
+      "range": [
+        "SB198"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_email"
+      ],
+      "intValue": 267,
+      "label": "email to",
+      "predicateId": "nm_emailTo",
+      "range": [
+        "SB198"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_email"
+      ],
+      "intValue": 268,
+      "label": "email reply to",
+      "predicateId": "nm_emailReplyTo",
+      "range": [
+        "SB198"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_walletOrder",
+        "nm_shipmentFullFillmentInfo"
+      ],
+      "intValue": 269,
+      "label": "has person",
+      "predicateId": "nm_hasPerson",
+      "range": [
+        "nm_orderPersonRelationshipType",
+        "nm_shipmentPersonRelationshipType"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_transaction"
+      ],
+      "intValue": 270,
+      "label": "amount",
+      "predicateId": "nm_amount",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_payment"
+      ],
+      "intValue": 271,
+      "label": "total amount",
+      "predicateId": "nm_totalAmount",
+      "range": [
+        "CS3"
+      ],
+      "subjectType": "class"
+    },
+    {
+      "domain": [
+        "nm_orderTransactionRelationshipType"
+      ],
+      "intValue": 272,
+      "label": "transaction identifier",
+      "predicateId": "nm_transactionIdentifier",
+      "range": [
+        "nm_transaction"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "nm_orderPaymentRelationshipType"
+      ],
+      "intValue": 273,
+      "label": "payment identifier",
+      "predicateId": "nm_paymentIdentifier",
+      "range": [
+        "nm_payment"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "nm_orderShipmentFullFillmentRelationshipType"
+      ],
+      "intValue": 274,
+      "label": "shipment full fillment identifier",
+      "predicateId": "nm_shipmentFullFillmentIdentifier",
+      "range": [
+        "nm_shipmentFullFillmentInfo"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "nm_entityOrganizationRelationshipType"
+      ],
+      "intValue": 275,
+      "label": "organization identifier",
+      "predicateId": "nm_organizationIdentifier",
+      "range": [
+        "SB10"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "nm_orderEmailRelationshipType",
+        "nm_shipmentFullFillmentEmailRelationshipType"
+      ],
+      "intValue": 276,
+      "label": "email identifier",
+      "predicateId": "nm_emailIdentifier",
+      "range": [
+        "nm_email"
+      ],
+      "subjectType": "identifier"
+    },
+    {
+      "domain": [
+        "SB152",
+        "CS168",
+        "nm_topic",
+        "SB513",
+        "SB116",
+        "nm_confidenceRelationshipType"
+      ],
+      "intValue": 277,
+      "label": "reading confidence",
+      "predicateId": "nm_reading_confidence",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB152",
+        "CS168",
+        "nm_topic",
+        "SB513",
+        "SB116",
+        "nm_confidenceRelationshipType"
+      ],
+      "intValue": 278,
+      "label": "writing confidence",
+      "predicateId": "nm_writing_confidence",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB152",
+        "CS168",
+        "nm_topic",
+        "SB513",
+        "SB116",
+        "nm_confidenceRelationshipType"
+      ],
+      "intValue": 279,
+      "label": "listening confidence",
+      "predicateId": "nm_listening_confidence",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB14"
+      ],
+      "intValue": 280,
+      "label": "UMC ID",
+      "predicateId": "nm_UMC_ID",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB14"
+      ],
+      "intValue": 281,
+      "label": "league name",
+      "predicateId": "nm_league_name",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB14"
+      ],
+      "intValue": 282,
+      "label": "image bytes",
+      "predicateId": "nm_image_bytes",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_email"
+      ],
+      "intValue": 283,
+      "label": "to email address",
+      "predicateId": "nm_toEmailAddress",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_email"
+      ],
+      "intValue": 284,
+      "label": "to display name",
+      "predicateId": "nm_toDisplayName",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_email"
+      ],
+      "intValue": 285,
+      "label": "merchant name",
+      "predicateId": "nm_merchantName",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB71"
+      ],
+      "intValue": 286,
+      "label": "home team",
+      "predicateId": "nm_homeTeam",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "SB71"
+      ],
+      "intValue": 287,
+      "label": "sport",
+      "predicateId": "PS314",
+      "range": [],
+      "subjectType": "string"
+    },
+    {
+      "domain": [
+        "nm_email"
+      ],
+      "intValue": 288,
+      "label": "order content type",
+      "predicateId": "nm_orderContentType",
+      "range": [],
+      "subjectType": "string"
+    }
+  ]
+}

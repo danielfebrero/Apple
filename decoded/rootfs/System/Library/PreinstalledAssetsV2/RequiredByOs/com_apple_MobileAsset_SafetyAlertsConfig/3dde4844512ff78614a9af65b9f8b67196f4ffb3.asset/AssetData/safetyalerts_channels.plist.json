@@ -1,0 +1,2323 @@
+{
+  "USA": {
+    "regionDefinition_v1": [
+      {
+        "regionName": "sea",
+        "channelName": "sea",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -124.8,
+                  43.6
+                ],
+                [
+                  -115.0,
+                  44.0
+                ],
+                [
+                  -111.2,
+                  49.0
+                ],
+                [
+                  -124.8,
+                  49.0
+                ],
+                [
+                  -124.8,
+                  43.6
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "nyc",
+        "channelName": "nyc",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -75.6,
+                  41.2
+                ],
+                [
+                  -72.9,
+                  39.5
+                ],
+                [
+                  -70.25,
+                  40.1
+                ],
+                [
+                  -69.7,
+                  42.1
+                ],
+                [
+                  -75.6,
+                  41.2
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "iad",
+        "channelName": "iad",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -77.6,
+                  34.4
+                ],
+                [
+                  -74.545,
+                  35.424
+                ],
+                [
+                  -72.9,
+                  39.5
+                ],
+                [
+                  -75.6,
+                  41.2
+                ],
+                [
+                  -81.7,
+                  40.2
+                ],
+                [
+                  -77.6,
+                  34.4
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "mia",
+        "channelName": "mia",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -84.8,
+                  29.5
+                ],
+                [
+                  -81.3,
+                  24.4
+                ],
+                [
+                  -79.6,
+                  25.3
+                ],
+                [
+                  -77.6,
+                  34.4
+                ],
+                [
+                  -84.8,
+                  29.5
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "sjc",
+        "channelName": "sjc",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -124.8,
+                  43.6
+                ],
+                [
+                  -124.8,
+                  33.76
+                ],
+                [
+                  -119.4,
+                  33.76
+                ],
+                [
+                  -114.0,
+                  41.2
+                ],
+                [
+                  -115.0,
+                  44.0
+                ],
+                [
+                  -124.8,
+                  43.6
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "lax",
+        "channelName": "lax",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -119.4,
+                  33.76
+                ],
+                [
+                  -119.4,
+                  31.33
+                ],
+                [
+                  -111.2,
+                  31.33
+                ],
+                [
+                  -114.0,
+                  41.2
+                ],
+                [
+                  -119.4,
+                  33.76
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "den",
+        "channelName": "den",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -111.2,
+                  31.33
+                ],
+                [
+                  -105.9,
+                  31.3
+                ],
+                [
+                  -99.4,
+                  39.2
+                ],
+                [
+                  -99.0,
+                  49.0
+                ],
+                [
+                  -111.2,
+                  49.0
+                ],
+                [
+                  -115.0,
+                  44.0
+                ],
+                [
+                  -114.0,
+                  41.2
+                ],
+                [
+                  -111.2,
+                  31.33
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "msp",
+        "channelName": "msp",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -99.4,
+                  39.2
+                ],
+                [
+                  -90.8,
+                  38.6
+                ],
+                [
+                  -88.7,
+                  40.1
+                ],
+                [
+                  -87.28,
+                  48.13
+                ],
+                [
+                  -95.0,
+                  50.0
+                ],
+                [
+                  -99.0,
+                  49.0
+                ],
+                [
+                  -99.4,
+                  39.2
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "dfw",
+        "channelName": "dfw",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -105.9,
+                  31.3
+                ],
+                [
+                  -103.0,
+                  27.0
+                ],
+                [
+                  -97.4,
+                  25.6
+                ],
+                [
+                  -90.2,
+                  28.8
+                ],
+                [
+                  -90.8,
+                  38.6
+                ],
+                [
+                  -99.4,
+                  39.2
+                ],
+                [
+                  -105.9,
+                  31.3
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "atl",
+        "channelName": "atl",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -90.8,
+                  38.6
+                ],
+                [
+                  -90.2,
+                  28.8
+                ],
+                [
+                  -84.8,
+                  29.5
+                ],
+                [
+                  -77.6,
+                  34.4
+                ],
+                [
+                  -81.7,
+                  40.2
+                ],
+                [
+                  -88.7,
+                  40.1
+                ],
+                [
+                  -90.8,
+                  38.6
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "ord",
+        "channelName": "ord",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -88.7,
+                  40.1
+                ],
+                [
+                  -81.7,
+                  40.2
+                ],
+                [
+                  -79.78,
+                  45.8
+                ],
+                [
+                  -87.28,
+                  48.13
+                ],
+                [
+                  -88.7,
+                  40.1
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "bos",
+        "channelName": "bos",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -81.7,
+                  40.2
+                ],
+                [
+                  -75.6,
+                  41.2
+                ],
+                [
+                  -69.7,
+                  42.1
+                ],
+                [
+                  -65.44,
+                  43.48
+                ],
+                [
+                  -61.62,
+                  46.06
+                ],
+                [
+                  -64.42,
+                  47.52
+                ],
+                [
+                  -69.54,
+                  47.76
+                ],
+                [
+                  -79.78,
+                  45.8
+                ],
+                [
+                  -81.7,
+                  40.2
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "uscaribbean",
+        "channelName": "uscaribbean",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -67.96,
+                  18.52
+                ],
+                [
+                  -67.96,
+                  17.67
+                ],
+                [
+                  -64.56,
+                  17.67
+                ],
+                [
+                  -64.56,
+                  18.52
+                ],
+                [
+                  -67.96,
+                  18.52
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "alaskaeast",
+        "channelName": "alaskaeast",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  172.44,
+                  53.02
+                ],
+                [
+                  172.44,
+                  51.34
+                ],
+                [
+                  180.0,
+                  51.34
+                ],
+                [
+                  180.0,
+                  53.02
+                ],
+                [
+                  172.44,
+                  53.02
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "alaskawest",
+        "channelName": "alaskawest",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -180.0,
+                  71.4
+                ],
+                [
+                  -180.0,
+                  51.21
+                ],
+                [
+                  -129.97,
+                  51.21
+                ],
+                [
+                  -129.97,
+                  71.4
+                ],
+                [
+                  -180.0,
+                  71.4
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "uspacificwest",
+        "channelName": "uspacificwest",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -171.09,
+                  22.24
+                ],
+                [
+                  -171.09,
+                  -14.56
+                ],
+                [
+                  -154.8,
+                  -14.56
+                ],
+                [
+                  -154.8,
+                  22.24
+                ],
+                [
+                  -171.09,
+                  22.24
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "regionName": "uspacificeast",
+        "channelName": "uspacificeast",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  131.12,
+                  20.55
+                ],
+                [
+                  131.12,
+                  1.02
+                ],
+                [
+                  172.17,
+                  1.02
+                ],
+                [
+                  172.17,
+                  20.55
+                ],
+                [
+                  131.12,
+                  20.55
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "RegionalSafetyAlertsDelivery_v1": [
+      {
+        "typeOfAlert": "EarthquakeWifi",
+        "topicName": "com.apple.aps.gyps.safetyalert",
+        "featureSupportedRegion": [
+          {
+            "regionId": "sjc",
+            "channelList": [
+              "KyFIeax3EfAAAKpW6F0/2g=="
+            ],
+            "livabilityChannelList": [
+              "jgRCA7nqEfAAABqD7vUzig=="
+            ]
+          },
+          {
+            "regionId": "lax",
+            "channelList": [
+              "OfIokqx3EfAAAD64ycvSNg=="
+            ],
+            "livabilityChannelList": [
+              "jgRCA7nqEfAAABqD7vUzig=="
+            ]
+          },
+          {
+            "regionId": "sea",
+            "channelList": [
+              "yWxPnKx2EfAAABoE63fJqw=="
+            ],
+            "livabilityChannelList": [
+              "jgRCA7nqEfAAABqD7vUzig=="
+            ]
+          }
+        ]
+      },
+      {
+        "typeOfAlert": "OtherAlertsWifi",
+        "topicName": "com.apple.aps.buteo.safetyalert",
+        "featureSupportedRegion": [
+          {
+            "regionId": "sjc",
+            "channelList": [
+              "j0NtCq3dEfAAAKqkDPiMMQ=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "lax",
+            "channelList": [
+              "qzpmO63dEfAAAGYolqnN4A=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "sea",
+            "channelList": [
+              "LPh2763dEfAAAF5/DbV0bA=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "nyc",
+            "channelList": [
+              "Q/rOva3dEfAAAPKyldhYBg=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "iad",
+            "channelList": [
+              "WZ+WqK3dEfAAAOa7dh49lg=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "mia",
+            "channelList": [
+              "ayJQ5q3dEfAAANpQVYNKCw=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "den",
+            "channelList": [
+              "wcgq1K3dEfAAABoE63fJqw=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "msp",
+            "channelList": [
+              "2NSXaK3dEfAAANpQVYNKCw=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "dfw",
+            "channelList": [
+              "6qAXz63dEfAAAPKyldhYBg=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "atl",
+            "channelList": [
+              "ADC5Eq3eEfAAAD64ycvSNg=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "ord",
+            "channelList": [
+              "El9E4K3eEfAAAKpW6F0/2g=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "bos",
+            "channelList": [
+              "Io+NEK3eEfAAAPKyldhYBg=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "uscaribbean",
+            "channelList": [
+              "Mqtniq3eEfAAAJYOnmgOrA=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "alaskaeast",
+            "channelList": [
+              "Mqtniq3eEfAAAJYOnmgOrA=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "alaskawest",
+            "channelList": [
+              "Mqtniq3eEfAAAJYOnmgOrA=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "uspacificwest",
+            "channelList": [
+              "Mqtniq3eEfAAAJYOnmgOrA=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          },
+          {
+            "regionId": "uspacificeast",
+            "channelList": [
+              "Mqtniq3eEfAAAJYOnmgOrA=="
+            ],
+            "livabilityChannelList": [
+              "tXMgyLbEEfAAAGIsd/iEmQ=="
+            ]
+          }
+        ]
+      },
+      {
+        "typeOfAlert": "OtherAlertsDithered",
+        "topicName": "com.apple.aps.ardea.safetyalert",
+        "featureSupportedRegion": [
+          {
+            "regionId": "sjc",
+            "channelList": [
+              "+/JWYbRYEfAAAKohaG/5ZA==",
+              "+LTeubRYEfAAAN4OzxFDPA==",
+              "+YMrOrRYEfAAAN4OzxFDPA==",
+              "+lbPDrRYEfAAAN6nBiRt4A==",
+              "+yOUrrRYEfAAAE6acKcl7w==",
+              "02RpKrRYEfAAAN6nBiRt4A==",
+              "0Mo2KbRYEfAAABqD7vUzig==",
+              "0bg/ybRYEfAAAN6nBiRt4A==",
+              "0o+MuLRYEfAAAE6acKcl7w==",
+              "16rFS7RYEfAAABqD7vUzig==",
+              "19/9arRXEfAAAD5HZRuZJg==",
+              "1Dp9urRYEfAAABqD7vUzig==",
+              "1RqkZLRYEfAAAKohaG/5ZA==",
+              "1eoCm7RYEfAAAN6nBiRt4A==",
+              "1shUabRYEfAAAE6acKcl7w==",
+              "22qrjbRXEfAAAOr4DdyzcA==",
+              "29+VVLRYEfAAAN4OzxFDPA==",
+              "2IhUA7RYEfAAAN4OzxFDPA==",
+              "2Iy5DbRXEfAAANqL6H4ZJA==",
+              "2Tj967RXEfAAAFpXegQ/lA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "lax",
+            "channelList": [
+              "2VbuhbRYEfAAAKohaG/5ZA==",
+              "2efcPrRXEfAAANqL6H4ZJA==",
+              "2jcVfLRYEfAAABqD7vUzig==",
+              "2r4XRrRXEfAAAP5/SPS5hA==",
+              "2xJaJrRYEfAAAKohaG/5ZA==",
+              "3BhQHLRXEfAAAFpXegQ/lA==",
+              "3LS/pbRYEfAAAN4OzxFDPA==",
+              "3MXOLbRXEfAAAFpXegQ/lA==",
+              "3X9Z/LRXEfAAAD5HZRuZJg==",
+              "3YkmzbRYEfAAAN6nBiRt4A==",
+              "3l4pyrRYEfAAAE6acKcl7w==",
+              "3zK337RYEfAAAKohaG/5ZA==",
+              "45Gn+bRYEfAAAOr4DdyzcA==",
+              "4BHNO7RYEfAAAE6acKcl7w==",
+              "4MjEILRYEfAAANqL6H4ZJA==",
+              "4YKdXLRYEfAAAD5HZRuZJg==",
+              "4i3RrLRYEfAAAFpXegQ/lA==",
+              "4uf57bRYEfAAAFpXegQ/lA==",
+              "58f97bRYEfAAAD5HZRuZJg==",
+              "5ED68bRYEfAAANqL6H4ZJA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "sea",
+            "channelList": [
+              "5P4wcrRYEfAAANqL6H4ZJA==",
+              "5bJlQ7RYEfAAANqL6H4ZJA==",
+              "5l8f2rRYEfAAAOr4DdyzcA==",
+              "5wx227RYEfAAAOr4DdyzcA==",
+              "6+Sy3rRYEfAAAOr4DdyzcA==",
+              "6Hd3zrRYEfAAAD5HZRuZJg==",
+              "6SL6ObRYEfAAAP5/SPS5hA==",
+              "6cyoTLRYEfAAAOr4DdyzcA==",
+              "6nnXqrRYEfAAAP5/SPS5hA==",
+              "6zZKbbRYEfAAAOr4DdyzcA==",
+              "701ZdbRYEfAAANqL6H4ZJA==",
+              "7Jadv7RYEfAAAOr4DdyzcA==",
+              "7UKVMLRYEfAAAOr4DdyzcA==",
+              "7eswq7RYEfAAAP5/SPS5hA==",
+              "7qFhTrRYEfAAAFpXegQ/lA==",
+              "836mX7RYEfAAAFpXegQ/lA==",
+              "8AJRlrRYEfAAANqL6H4ZJA==",
+              "8K5vXLRYEfAAAP5/SPS5hA==",
+              "8W/ER7RYEfAAANqL6H4ZJA==",
+              "8iXNsbRYEfAAAOr4DdyzcA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "nyc",
+            "channelList": [
+              "8tA9wLRYEfAAAD5HZRuZJg==",
+              "99lLsLRYEfAAAKohaG/5ZA==",
+              "9C+AYrRYEfAAAOr4DdyzcA==",
+              "9PZ5ULRYEfAAAFpXegQ/lA==",
+              "9aLmqLRYEfAAANqL6H4ZJA==",
+              "9lRcWbRYEfAAANqL6H4ZJA==",
+              "9w6rg7RYEfAAAOr4DdyzcA==",
+              "HL7KtrRZEfAAABqD7vUzig==",
+              "HZivz7RZEfAAAE6acKcl7w==",
+              "Hmm7cLRZEfAAAE6acKcl7w==",
+              "HzpSB7RZEfAAABqD7vUzig==",
+              "I2JQ27RZEfAAABqD7vUzig==",
+              "IBcdeLRZEfAAABqD7vUzig==",
+              "IOUb2bRZEfAAABqD7vUzig==",
+              "IbcRsrRZEfAAAKohaG/5ZA==",
+              "IpCB6rRZEfAAABqD7vUzig==",
+              "J4xLVLRZEfAAAKohaG/5ZA==",
+              "JDIj7LRZEfAAAN4OzxFDPA==",
+              "JQ0av7RZEfAAAN6nBiRt4A==",
+              "JeNWgLRZEfAAAN6nBiRt4A=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "iad",
+            "channelList": [
+              "JrSwA7RZEfAAAKohaG/5ZA==",
+              "K7BSnbRZEfAAAN4OzxFDPA==",
+              "KFvQUbRZEfAAAE6acKcl7w==",
+              "KS+bErRZEfAAAE6acKcl7w==",
+              "Kf9uM7RZEfAAAE6acKcl7w==",
+              "KtYfTLRZEfAAABqD7vUzig==",
+              "L8kPUbRZEfAAAN6nBiRt4A==",
+              "LH54HbRZEfAAABqD7vUzig==",
+              "LU3V5bRZEfAAAKohaG/5ZA==",
+              "LiuyxrRZEfAAAKohaG/5ZA==",
+              "LvkU57RZEfAAAKohaG/5ZA==",
+              "M+m65bRZEfAAAE6acKcl7w==",
+              "MKL0frRZEfAAABqD7vUzig==",
+              "MXXUuLRZEfAAAKohaG/5ZA==",
+              "MkZrJLRZEfAAAE6acKcl7w==",
+              "Mxz1HrRZEfAAAN4OzxFDPA==",
+              "N6G52bRZEfAAAKohaG/5ZA==",
+              "O955QLRZEfAAAN4OzxFDPA==",
+              "OHnKf7RZEfAAABqD7vUzig==",
+              "OUwOdrRZEfAAAE6acKcl7w=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "mia",
+            "channelList": [
+              "OhuTj7RZEfAAAN4OzxFDPA==",
+              "OwBOJ7RZEfAAAE6acKcl7w==",
+              "PLCWYLRZEfAAABqD7vUzig==",
+              "PYRg+LRZEfAAAE6acKcl7w==",
+              "PlxKarRZEfAAAKohaG/5ZA==",
+              "Py/HMbRZEfAAABqD7vUzig==",
+              "Q10dC7RZEfAAAE6acKcl7w==",
+              "QAMcm7RZEfAAAKohaG/5ZA==",
+              "QNyMwbRZEfAAAN4OzxFDPA==",
+              "QavDsrRZEfAAABqD7vUzig==",
+              "QoImWbRZEfAAAE6acKcl7w==",
+              "R2XwprRYEfAAAN6nBiRt4A==",
+              "R4nW47RZEfAAAN4OzxFDPA==",
+              "RDBLorRZEfAAAN4OzxFDPA==",
+              "ROkwr7RYEfAAAN4OzxFDPA==",
+              "RQXD/LRZEfAAAKohaG/5ZA==",
+              "RbekZLRYEfAAAN6nBiRt4A==",
+              "ReKPorRZEfAAAN6nBiRt4A==",
+              "RpJM9bRYEfAAAN6nBiRt4A==",
+              "RrPpU7RZEfAAABqD7vUzig=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "den",
+            "channelList": [
+              "S5GY97RYEfAAAN6nBiRt4A==",
+              "SDYRwLRYEfAAAN4OzxFDPA==",
+              "SGTNpLRZEfAAABqD7vUzig==",
+              "SREvgbRYEfAAAN4OzxFDPA==",
+              "SejK37RYEfAAABqD7vUzig==",
+              "Sr0xs7RYEfAAAE6acKcl7w==",
+              "T755yLRYEfAAAN6nBiRt4A==",
+              "TGk0BLRYEfAAAE6acKcl7w==",
+              "TTtRGbRYEfAAAKohaG/5ZA==",
+              "ThSaQLRYEfAAABqD7vUzig==",
+              "TukoJbRYEfAAAE6acKcl7w==",
+              "U+3yg7RYEfAAAN4OzxFDPA==",
+              "UKST4rRYEfAAAN4OzxFDPA==",
+              "UXqBqbRYEfAAAN6nBiRt4A==",
+              "Ukrw8rRYEfAAABqD7vUzig==",
+              "UyDeZrRYEfAAAE6acKcl7w==",
+              "VMTKk7RYEfAAABqD7vUzig==",
+              "VZxlt7RYEfAAAE6acKcl7w==",
+              "Vm4NtLRYEfAAAN4OzxFDPA==",
+              "Vz8ZOLRYEfAAAE6acKcl7w=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "msp",
+            "channelList": [
+              "W9doHrRYEfAAAD5HZRuZJg==",
+              "WBXxVbRYEfAAAN4OzxFDPA==",
+              "WO2MirRYEfAAAKohaG/5ZA==",
+              "WbvZC7RYEfAAAKohaG/5ZA==",
+              "Wn2lYLRYEfAAANqL6H4ZJA==",
+              "WyoSAbRYEfAAANqL6H4ZJA==",
+              "X+lHwrRYEfAAANqL6H4ZJA==",
+              "XIQjB7RYEfAAAP5/SPS5hA==",
+              "XTDdn7RYEfAAAD5HZRuZJg==",
+              "XeeDoLRYEfAAAFpXegQ/lA==",
+              "XpHN7rRYEfAAAOr4DdyzcA==",
+              "XzyMSLRYEfAAAP5/SPS5hA==",
+              "Y/o8ALRYEfAAAOr4DdyzcA==",
+              "Y1A/obRYEfAAAD5HZRuZJg==",
+              "YJc7A7RYEfAAANqL6H4ZJA==",
+              "YURDALRYEfAAAD5HZRuZJg==",
+              "YezfObRYEfAAAP5/SPS5hA==",
+              "YqZrz7RYEfAAAOr4DdyzcA==",
+              "Z3GvgbRYEfAAAOr4DdyzcA==",
+              "ZKkZxLRYEfAAANqL6H4ZJA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "dfw",
+            "channelList": [
+              "ZVKferRYEfAAAP5/SPS5hA==",
+              "ZgzuorRYEfAAAD5HZRuZJg==",
+              "ZrtXO7RYEfAAAP5/SPS5hA==",
+              "a5cVg7RYEfAAAD5HZRuZJg==",
+              "aCCMkbRYEfAAAFpXegQ/lA==",
+              "aNxjErRYEfAAAOr4DdyzcA==",
+              "aYwEJbRYEfAAANqL6H4ZJA==",
+              "ajhwErRYEfAAAFpXegQ/lA==",
+              "aug4o7RYEfAAAOr4DdyzcA==",
+              "b8pe9bRYEfAAAD5HZRuZJg==",
+              "bFcxNLRYEfAAAD5HZRuZJg==",
+              "bQOeA7RYEfAAAFpXegQ/lA==",
+              "bbZz9rRYEfAAANqL6H4ZJA==",
+              "bmOjNLRYEfAAAFpXegQ/lA==",
+              "bx8Ep7RYEfAAANqL6H4ZJA==",
+              "c8E5yrRYEfAAAN6nBiRt4A==",
+              "cHZ9pbRYEfAAAFpXegQ/lA==",
+              "cUU9NLRYEfAAABqD7vUzig==",
+              "chZvurRYEfAAAE6acKcl7w==",
+              "cvB8DLRYEfAAAKohaG/5ZA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "atl",
+            "channelList": [
+              "d9ZzrLRYEfAAAE6acKcl7w==",
+              "dJLhhrRYEfAAAN4OzxFDPA==",
+              "dWEt7bRYEfAAAKohaG/5ZA==",
+              "djHra7RYEfAAAE6acKcl7w==",
+              "dwYrm7RYEfAAAN6nBiRt4A==",
+              "e/sXXbRYEfAAAN6nBiRt4A==",
+              "eKaU7rRYEfAAAKohaG/5ZA==",
+              "eXr77bRYEfAAAE6acKcl7w==",
+              "ekdMt7RYEfAAAN4OzxFDPA==",
+              "eyEyHLRYEfAAAN6nBiRt4A==",
+              "f1FuNbRYEfAAABqD7vUzig==",
+              "fMuGmLRYEfAAAN4OzxFDPA==",
+              "faakP7RYEfAAAKohaG/5ZA==",
+              "foL6mbRYEfAAAN4OzxFDPA==",
+              "g34nz7RYEfAAAE6acKcl7w==",
+              "gCl+trRYEfAAABqD7vUzig==",
+              "gQXUzrRYEfAAAE6acKcl7w==",
+              "gdJMzrRYEfAAAN6nBiRt4A==",
+              "gqGDirRYEfAAAN4OzxFDPA==",
+              "h6IvQbRYEfAAAN6nBiRt4A=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "ord",
+            "channelList": [
+              "hE4iG7RYEfAAAN4OzxFDPA==",
+              "hSqfj7RYEfAAAN6nBiRt4A==",
+              "hfpLYLRYEfAAAKohaG/5ZA==",
+              "hsxosLRYEfAAAN6nBiRt4A==",
+              "i8rxYrRYEfAAAN6nBiRt4A==",
+              "iHtQ8LRYEfAAAE6acKcl7w==",
+              "iUo5srRYEfAAAE6acKcl7w==",
+              "iiOpw7RYEfAAAE6acKcl7w==",
+              "iv0Z1LRYEfAAAE6acKcl7w==",
+              "j/3FZbRYEfAAAE6acKcl7w==",
+              "jKpUx7RYEfAAABqD7vUzig==",
+              "jX7isbRYEfAAAKohaG/5ZA==",
+              "jk0vTLRYEfAAAN4OzxFDPA==",
+              "jyLO87RYEfAAAN6nBiRt4A==",
+              "kNLIvbRYEfAAAN4OzxFDPA==",
+              "kajdVrRYEfAAAE6acKcl7w==",
+              "kntvrrRYEfAAAN4OzxFDPA==",
+              "s/UV7LRYEfAAAP5/SPS5hA==",
+              "s0TYlrRYEfAAAD5HZRuZJg==",
+              "sJ4YJbRXEfAAAP5/SPS5hA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "bos",
+            "channelList": [
+              "spjhVrRYEfAAAFpXegQ/lA==",
+              "t2J3WLRYEfAAAFpXegQ/lA==",
+              "tKYXKLRYEfAAANqL6H4ZJA==",
+              "tU/rlbRYEfAAAOr4DdyzcA==",
+              "tgfJV7RYEfAAAFpXegQ/lA==",
+              "traAmbRYEfAAANqL6H4ZJA==",
+              "u3yTSbRYEfAAAD5HZRuZJg==",
+              "uA0PLbRYEfAAAP5/SPS5hA==",
+              "uLqNF7RYEfAAAD5HZRuZJg==",
+              "uWgLKLRYEfAAAD5HZRuZJg==",
+              "uieyirRYEfAAANqL6H4ZJA==",
+              "utJwv7RYEfAAAP5/SPS5hA==",
+              "v6peqbRYEfAAAFpXegQ/lA==",
+              "vC1GZrRYEfAAAOr4DdyzcA==",
+              "vNrD4LRYEfAAAP5/SPS5hA==",
+              "vZ7++7RYEfAAANqL6H4ZJA==",
+              "vk9jF7RYEfAAAOr4DdyzcA==",
+              "vvq+SLRYEfAAAOr4DdyzcA==",
+              "w9mwdLRYEfAAAP5/SPS5hA==",
+              "wGeUIbRYEfAAAP5/SPS5hA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "uscaribbean",
+            "channelList": [
+              "wRl/vLRYEfAAANqL6H4ZJA==",
+              "wcfncrRYEfAAAP5/SPS5hA==",
+              "wnSiM7RYEfAAAP5/SPS5hA==",
+              "wy7LLbRYEfAAANqL6H4ZJA==",
+              "x/S3r7RYEfAAANqL6H4ZJA==",
+              "x0dfy7RYEfAAAD5HZRuZJg==",
+              "xIkDSrRYEfAAAFpXegQ/lA==",
+              "xTKwmrRYEfAAAD5HZRuZJg==",
+              "xeLHnrRYEfAAANqL6H4ZJA==",
+              "xp0WO7RYEfAAAFpXegQ/lA==",
+              "y8wih7RYEfAAAE6acKcl7w==",
+              "yKRX5bRYEfAAAP5/SPS5hA==",
+              "yU+zFrRYEfAAAP5/SPS5hA==",
+              "yib+ILRYEfAAAN4OzxFDPA==",
+              "yvvaUbRYEfAAAN4OzxFDPA==",
+              "z/mf2LRYEfAAAN6nBiRt4A==",
+              "zKmKMrRYEfAAAKohaG/5ZA==",
+              "zYIQArRYEfAAAN4OzxFDPA==",
+              "zlR7V7RYEfAAAN6nBiRt4A==",
+              "zyjiE7RYEfAAAKohaG/5ZA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "alaskaeast",
+            "channelList": [
+              "wRl/vLRYEfAAANqL6H4ZJA==",
+              "wcfncrRYEfAAAP5/SPS5hA==",
+              "wnSiM7RYEfAAAP5/SPS5hA==",
+              "wy7LLbRYEfAAANqL6H4ZJA==",
+              "x/S3r7RYEfAAANqL6H4ZJA==",
+              "x0dfy7RYEfAAAD5HZRuZJg==",
+              "xIkDSrRYEfAAAFpXegQ/lA==",
+              "xTKwmrRYEfAAAD5HZRuZJg==",
+              "xeLHnrRYEfAAANqL6H4ZJA==",
+              "xp0WO7RYEfAAAFpXegQ/lA==",
+              "y8wih7RYEfAAAE6acKcl7w==",
+              "yKRX5bRYEfAAAP5/SPS5hA==",
+              "yU+zFrRYEfAAAP5/SPS5hA==",
+              "yib+ILRYEfAAAN4OzxFDPA==",
+              "yvvaUbRYEfAAAN4OzxFDPA==",
+              "z/mf2LRYEfAAAN6nBiRt4A==",
+              "zKmKMrRYEfAAAKohaG/5ZA==",
+              "zYIQArRYEfAAAN4OzxFDPA==",
+              "zlR7V7RYEfAAAN6nBiRt4A==",
+              "zyjiE7RYEfAAAKohaG/5ZA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "alaskawest",
+            "channelList": [
+              "wRl/vLRYEfAAANqL6H4ZJA==",
+              "wcfncrRYEfAAAP5/SPS5hA==",
+              "wnSiM7RYEfAAAP5/SPS5hA==",
+              "wy7LLbRYEfAAANqL6H4ZJA==",
+              "x/S3r7RYEfAAANqL6H4ZJA==",
+              "x0dfy7RYEfAAAD5HZRuZJg==",
+              "xIkDSrRYEfAAAFpXegQ/lA==",
+              "xTKwmrRYEfAAAD5HZRuZJg==",
+              "xeLHnrRYEfAAANqL6H4ZJA==",
+              "xp0WO7RYEfAAAFpXegQ/lA==",
+              "y8wih7RYEfAAAE6acKcl7w==",
+              "yKRX5bRYEfAAAP5/SPS5hA==",
+              "yU+zFrRYEfAAAP5/SPS5hA==",
+              "yib+ILRYEfAAAN4OzxFDPA==",
+              "yvvaUbRYEfAAAN4OzxFDPA==",
+              "z/mf2LRYEfAAAN6nBiRt4A==",
+              "zKmKMrRYEfAAAKohaG/5ZA==",
+              "zYIQArRYEfAAAN4OzxFDPA==",
+              "zlR7V7RYEfAAAN6nBiRt4A==",
+              "zyjiE7RYEfAAAKohaG/5ZA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "uspacificwest",
+            "channelList": [
+              "wRl/vLRYEfAAANqL6H4ZJA==",
+              "wcfncrRYEfAAAP5/SPS5hA==",
+              "wnSiM7RYEfAAAP5/SPS5hA==",
+              "wy7LLbRYEfAAANqL6H4ZJA==",
+              "x/S3r7RYEfAAANqL6H4ZJA==",
+              "x0dfy7RYEfAAAD5HZRuZJg==",
+              "xIkDSrRYEfAAAFpXegQ/lA==",
+              "xTKwmrRYEfAAAD5HZRuZJg==",
+              "xeLHnrRYEfAAANqL6H4ZJA==",
+              "xp0WO7RYEfAAAFpXegQ/lA==",
+              "y8wih7RYEfAAAE6acKcl7w==",
+              "yKRX5bRYEfAAAP5/SPS5hA==",
+              "yU+zFrRYEfAAAP5/SPS5hA==",
+              "yib+ILRYEfAAAN4OzxFDPA==",
+              "yvvaUbRYEfAAAN4OzxFDPA==",
+              "z/mf2LRYEfAAAN6nBiRt4A==",
+              "zKmKMrRYEfAAAKohaG/5ZA==",
+              "zYIQArRYEfAAAN4OzxFDPA==",
+              "zlR7V7RYEfAAAN6nBiRt4A==",
+              "zyjiE7RYEfAAAKohaG/5ZA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          },
+          {
+            "regionId": "uspacificeast",
+            "channelList": [
+              "wRl/vLRYEfAAANqL6H4ZJA==",
+              "wcfncrRYEfAAAP5/SPS5hA==",
+              "wnSiM7RYEfAAAP5/SPS5hA==",
+              "wy7LLbRYEfAAANqL6H4ZJA==",
+              "x/S3r7RYEfAAANqL6H4ZJA==",
+              "x0dfy7RYEfAAAD5HZRuZJg==",
+              "xIkDSrRYEfAAAFpXegQ/lA==",
+              "xTKwmrRYEfAAAD5HZRuZJg==",
+              "xeLHnrRYEfAAANqL6H4ZJA==",
+              "xp0WO7RYEfAAAFpXegQ/lA==",
+              "y8wih7RYEfAAAE6acKcl7w==",
+              "yKRX5bRYEfAAAP5/SPS5hA==",
+              "yU+zFrRYEfAAAP5/SPS5hA==",
+              "yib+ILRYEfAAAN4OzxFDPA==",
+              "yvvaUbRYEfAAAN4OzxFDPA==",
+              "z/mf2LRYEfAAAN6nBiRt4A==",
+              "zKmKMrRYEfAAAKohaG/5ZA==",
+              "zYIQArRYEfAAAN4OzxFDPA==",
+              "zlR7V7RYEfAAAN6nBiRt4A==",
+              "zyjiE7RYEfAAAKohaG/5ZA=="
+            ],
+            "livabilityChannelList": [
+              "rWpdt7nLEfAAAOaiuRcJ8Q==",
+              "4TjX9i1IEfEAAAprcdcynw=="
+            ]
+          }
+        ]
+      }
+    ],
+    "SAEWBLEConfig_v2": {
+      "relayDelayConfig": {
+        "batteryConfig": [
+          {
+            "weightPercentage": 100,
+            "maxDelayMS": 20000,
+            "minDelayMS": 5000,
+            "level": 0
+          },
+          {
+            "weightPercentage": 100,
+            "maxDelayMS": 0,
+            "minDelayMS": 0,
+            "level": 10
+          }
+        ],
+        "densityConfig": [
+          {
+            "weightPercentage": 0,
+            "maxDelayMS": 300000,
+            "minDelayMS": 0,
+            "level": 0
+          }
+        ],
+        "gracePeriodMS": 0,
+        "backOffTimeMS": 3600000,
+        "overridePolicy": 2
+      },
+      "isBLERelaySupported_v2": true,
+      "advertiseDurationSeconds": 10.0,
+      "advertiseEvaluationIntervalSeconds": 900.0,
+      "discoveryEvaluationIntervalSeconds": 900.0,
+      "minBatteryLevelForBLEActivity": 20.0,
+      "minDeviceDensityCount": 10.0,
+      "bleCBAdvertiseRate": 60.0,
+      "bleCBScanRate": 30.0,
+      "bleCBScanRateScreenOff": 20.0,
+      "minTimeBetweenPeopleDensityQuery": 120.0,
+      "bleDataVersion": 1.0,
+      "displayBLEAlert": true,
+      "bleAdvertisementTimePrecisionInMSec": 200.0,
+      "isBLEDiscoveryDefaultOnSupported": true
+    },
+    "SAEWConfig": {
+      "weaTexts": [
+        "Earthquake Detected! Drop, Cover, Hold On. Protect Yourself. -USGS ShakeAlert",
+        "Terremoto detectado! Agachese, cubrase, sujetese. Protejase. -USGS ShakeAlert"
+      ],
+      "ProductionKey": [
+        "C03869AF-71E2-47B7-88A6-4285CA380272"
+      ],
+      "ThresholdTimeBetweenAlertsSec": 60.0,
+      "IgnoreAlertSec": 3600.0,
+      "PhoneChannelSubHysteresisSeconds": 3600.0,
+      "WatchChannelSubHysteresisSeconds": 3600.0,
+      "FollowUpMessageValidTime": 21600.0,
+      "displayTemplates": {
+        "action": {
+          "en-US": {
+            "withLocationText": "Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated __ED__ away.::- __ATTR__",
+            "withoutLocationText": "Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated.::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "es-US": {
+            "withLocationText": "Se espera un fuerte temblor.::Agáchate, cúbrete, sujétate.::M__MAG__ calculado __ED__ de distancia.::- __ATTR__",
+            "withoutLocationText": "Se espera un fuerte temblor.::Agáchate, cúbrete, sujétate.::M__MAG__ calculado.::- __ATTR__",
+            "toneFile": "action_default.caf"
+          }
+        },
+        "awareness": {
+          "en-US": {
+            "withLocationText": "If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated __ED__ away::- __ATTR__",
+            "withoutLocationText": "If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated::- __ATTR__",
+            "toneFile": ""
+          },
+          "es-US": {
+            "withLocationText": "Si el temblor se intensifica: Agáchate, cúbrete, sujétate::M__MAG__ calculado __ED__ de distancia::- __ATTR__",
+            "withoutLocationText": "Si el temblor se intensifica: Agáchate, cúbrete, sujétate::M__MAG__ calculado::- __ATTR__",
+            "toneFile": ""
+          }
+        },
+        "livability_action": {
+          "en-US": {
+            "withLocationText": "APPLE LIVABILITY TEST: Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated __ED__ away.::- __ATTR__",
+            "withoutLocationText": "APPLE LIVABILITY TEST: Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated.::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "es-US": {
+            "withLocationText": "APPLE LIVABILITY TEST: Se espera un fuerte temblor.::Agáchate, cúbrete, sujétate.::M__MAG__ calculado __ED__ de distancia.::- __ATTR__",
+            "withoutLocationText": "APPLE LIVABILITY TEST: Se espera un fuerte temblor.::Agáchate, cúbrete, sujétate.::M__MAG__ calculado.::- __ATTR__",
+            "toneFile": "action_default.caf"
+          }
+        },
+        "livability_awareness": {
+          "en-US": {
+            "withLocationText": "APPLE LIVABILITY TEST: If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated __ED__ away::- __ATTR__",
+            "withoutLocationText": "APPLE LIVABILITY TEST: If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated::- __ATTR__",
+            "toneFile": ""
+          },
+          "es-US": {
+            "withLocationText": "APPLE LIVABILITY TEST: Si el temblor se intensifica: Agáchate, cúbrete, sujétate::M__MAG__ calculado __ED__ de distancia::- __ATTR__",
+            "withoutLocationText": "APPLE LIVABILITY TEST: Si el temblor se intensifica: Agáchate, cúbrete, sujétate::M__MAG__ calculado::- __ATTR__",
+            "toneFile": ""
+          }
+        }
+      },
+      "sourceConfig": {
+        "USGS": {
+          "senderId": 3,
+          "defaultLanguage": "en-US",
+          "attribution": {
+            "en-US": "USGS ShakeAlert",
+            "es-US": "USGS ShakeAlert"
+          },
+          "mmiBandsConfig": [
+            {
+              "minMagnitude": 4.5,
+              "maxMagnitude": 5.5,
+              "minIntensity": 3.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.5,
+              "maxMagnitude": 100.0,
+              "minIntensity": 3.0,
+              "maxIntensity": 5.0,
+              "displayTemplate": "awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.5,
+              "maxMagnitude": 100.0,
+              "minIntensity": 5.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "action",
+              "level": "action"
+            }
+          ]
+        },
+        "USGSLivability": {
+          "senderId": 64512,
+          "defaultLanguage": "en-US",
+          "attribution": {
+            "en-US": "Apple livability test",
+            "es-US": "Prueba de habitabilidad de Apple"
+          },
+          "mmiBandsConfig": [
+            {
+              "minMagnitude": 4.5,
+              "maxMagnitude": 5.5,
+              "minIntensity": 3.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "livability_awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.5,
+              "maxMagnitude": 100.0,
+              "minIntensity": 3.0,
+              "maxIntensity": 5.0,
+              "displayTemplate": "livability_awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.5,
+              "maxMagnitude": 100.0,
+              "minIntensity": 5.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "livability_action",
+              "level": "action"
+            }
+          ]
+        }
+      }
+    },
+    "config": {
+      "supportedFeatures": [
+        "richHI",
+        "igneous"
+      ],
+      "security": {
+        "codebookFileName": "codebook.json",
+        "codebookDownloadPeriodSeconds": 86400
+      },
+      "countrySupport": "allowed",
+      "mapConfig": {
+        "cacheIntervalSeconds": 86400
+      },
+      "userSettingParams_v1": {
+        "mainSwitchVisible": true,
+        "earthquakeSwitchVisible": true,
+        "earthquakeSwitchState": true,
+        "earthquakeLearnMoreLink": "https://support.apple.com/111817",
+        "otherAlertsSwitchVisible": true,
+        "otherAlertsSwitchState": true,
+        "otherAlertsLearnMoreLink": "https://support.apple.com/111817",
+        "improvedAlertDeliverySwitchVisible": true,
+        "improvedAlertSwitchState": false,
+        "alwaysPlaySoundSwitchVisible": false,
+        "alwaysPlaySwitchState": false,
+        "emptyScreenSwitchVisible": true,
+        "aboutPrivacySwitchVisible": true,
+        "aboutPrivacyLink": "https://www.apple.com/legal/privacy/data/en/safety-features/"
+      },
+      "edcfu": {
+        "uptakeCoefficient": 0.0
+      },
+      "metrics": {
+        "efficacyManifestFileName": "efficacy_manifest_v4.txt",
+        "efficacyParticipationPercentage": 95,
+        "pullpc": 1,
+        "appc": 5,
+        "rmEnable": true,
+        "rmPeriodInSeconds": 86400.0
+      },
+      "apns": {
+        "wowControls": 1
+      },
+      "pull": {
+        "server": "https://safety-alert.apple.com/v1/alert/"
+      },
+      "livability": {
+        "weaEnrichmentChannel": "SlVOMDZfaENQdC1kZlNGQw=="
+      }
+    },
+    "bbox": [
+      -187.27875,
+      17.482763,
+      -63.84649,
+      73.028149
+    ],
+    "features": [
+      {
+        "bbox": [
+          -180.0,
+          17.482763,
+          -63.84649,
+          73.028149
+        ],
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                [
+                  -125.91464,
+                  39.117064
+                ],
+                [
+                  -118.0242,
+                  30.339299
+                ],
+                [
+                  -103.705,
+                  26.241426
+                ],
+                [
+                  -93.25166,
+                  25.315093
+                ],
+                [
+                  -79.718128,
+                  24.413675
+                ],
+                [
+                  -74.702064,
+                  29.120678
+                ],
+                [
+                  -72.5199,
+                  36.403689
+                ],
+                [
+                  -63.84649,
+                  45.129239
+                ],
+                [
+                  -68.308757,
+                  48.799175
+                ],
+                [
+                  -80.089269,
+                  44.973849
+                ],
+                [
+                  -84.728615,
+                  49.154806
+                ],
+                [
+                  -128.21967,
+                  49.456632
+                ],
+                [
+                  -125.91464,
+                  39.117064
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -175.4655,
+                  50.146797
+                ],
+                [
+                  -165.29097,
+                  52.146747
+                ],
+                [
+                  -131.11636,
+                  52.519119
+                ],
+                [
+                  -128.57951,
+                  54.544428
+                ],
+                [
+                  -131.70736,
+                  59.006849
+                ],
+                [
+                  -137.61016,
+                  60.395333
+                ],
+                [
+                  -132.6267,
+                  66.080472
+                ],
+                [
+                  -132.63663,
+                  70.817779
+                ],
+                [
+                  -152.2889,
+                  73.028149
+                ],
+                [
+                  -167.36442,
+                  70.855537
+                ],
+                [
+                  -168.88119,
+                  66.523762
+                ],
+                [
+                  -169.64794,
+                  63.452002
+                ],
+                [
+                  -167.4695,
+                  59.770905
+                ],
+                [
+                  -161.08788,
+                  57.497714
+                ],
+                [
+                  -165.34056,
+                  55.840965
+                ],
+                [
+                  -180.0,
+                  55.840965
+                ],
+                [
+                  -180.0,
+                  50.146797
+                ],
+                [
+                  -175.4655,
+                  50.146797
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -160.9143,
+                  21.541938
+                ],
+                [
+                  -155.33276,
+                  17.944995
+                ],
+                [
+                  -153.68633,
+                  19.814783
+                ],
+                [
+                  -159.48631,
+                  23.173749
+                ],
+                [
+                  -160.9143,
+                  21.541938
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -67.429249,
+                  17.70315
+                ],
+                [
+                  -64.744004,
+                  17.482763
+                ],
+                [
+                  -64.221524,
+                  17.94012
+                ],
+                [
+                  -65.182583,
+                  18.601351
+                ],
+                [
+                  -67.3644,
+                  18.738301
+                ],
+                [
+                  -67.429249,
+                  17.70315
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -170.94436,
+                  -14.453833
+                ],
+                [
+                  -169.32365,
+                  -14.45514
+                ],
+                [
+                  -169.34515,
+                  -13.997286
+                ],
+                [
+                  -170.96858,
+                  -13.988558
+                ],
+                [
+                  -170.94436,
+                  -14.453833
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  143.7344,
+                  16.21058
+                ],
+                [
+                  143.68114,
+                  12.97848
+                ],
+                [
+                  148.24349,
+                  12.94862
+                ],
+                [
+                  147.87243,
+                  16.0302
+                ],
+                [
+                  143.7344,
+                  16.21058
+                ]
+              ]
+            ]
+          ],
+          "type": "MultiPolygon"
+        },
+        "id": "US",
+        "properties": {
+          "channel": "TUFZMDRARk9OVi1Fd2t2VQ==",
+          "region": "US",
+          "ch_config": {
+            "mp_channel": "SkFOMTdfYkRIbi1yT2NDTA=="
+          }
+        },
+        "type": "Feature"
+      },
+      {
+        "bbox": [
+          172.72125,
+          50.146797,
+          180.0,
+          55.840965
+        ],
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                180.0,
+                55.840965
+              ],
+              [
+                180.0,
+                50.146797
+              ],
+              [
+                172.72125,
+                50.976078
+              ],
+              [
+                180.0,
+                55.840965
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "id": "US_Alaska_East",
+        "properties": {
+          "channel": "TUFZMDRARk9OVi1Fd2t2VQ==",
+          "region": "US_Alaska_East",
+          "ch_config": {
+            "mp_channel": "SkFOMTdfYkRIbi1yT2NDTA=="
+          }
+        },
+        "type": "Feature"
+      }
+    ],
+    "type": "FeatureCollection",
+    "SafetyAlertCoverageDetails_v1": [
+      {
+        "Region": "USA",
+        "CountryOfRelevance": "USA",
+        "LivabilityChannelPrefix": "liv2",
+        "StartingSWLat": -90.0,
+        "StartingSWLon": -180.0,
+        "SWLat": 30.0,
+        "SWLon": -126.8,
+        "NELat": 50.0,
+        "NELon": -113.2,
+        "GridSizeInDegree": 0.2,
+        "gridLatOffset": 0.1,
+        "gridLonOffset": 0.1,
+        "GridZoom": 10.0,
+        "RefreshRate": 72000.0,
+        "ChannelTopic": "com.apple.aps.mantis.safetyalert",
+        "SafetyAlertSupportedChannelsForRegion": [
+          {
+            "ChannelType": 0,
+            "ParticipationPercentage": 100.0,
+            "ChannelName": [
+              "ewus"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "TWN": {
+    "regionDefinition_v1": [
+      {
+        "regionName": "twn",
+        "channelName": "twn",
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  118.0,
+                  21.4
+                ],
+                [
+                  122.4,
+                  21.4
+                ],
+                [
+                  122.4,
+                  26.4
+                ],
+                [
+                  118.0,
+                  26.4
+                ],
+                [
+                  118.0,
+                  21.4
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "RegionalSafetyAlertsDelivery_v1": [
+      {
+        "typeOfAlert": "EarthquakeWifi",
+        "topicName": "com.apple.aps.gypstw.safetyalert",
+        "featureSupportedRegion": [
+          {
+            "regionId": "twn",
+            "channelList": [
+              "F30GRqx2EfAAAFZBqkpAdw=="
+            ],
+            "livabilityChannelList": [
+              "xkckcLbEEfAAAN4OzxFDPA=="
+            ]
+          }
+        ]
+      }
+    ],
+    "SAEWBLEConfig_v2": {
+      "relayDelayConfig": {
+        "batteryConfig": [
+          {
+            "weightPercentage": 100,
+            "maxDelayMS": 20000,
+            "minDelayMS": 5000,
+            "level": 0
+          },
+          {
+            "weightPercentage": 100,
+            "maxDelayMS": 0,
+            "minDelayMS": 0,
+            "level": 10
+          }
+        ],
+        "densityConfig": [
+          {
+            "weightPercentage": 0,
+            "maxDelayMS": 300000,
+            "minDelayMS": 0,
+            "level": 0
+          }
+        ],
+        "gracePeriodMS": 0,
+        "backOffTimeMS": 3600000,
+        "overridePolicy": 2
+      },
+      "isBLERelaySupported_v2": true,
+      "advertiseDurationSeconds": 10.0,
+      "advertiseEvaluationIntervalSeconds": 900.0,
+      "discoveryEvaluationIntervalSeconds": 900.0,
+      "minBatteryLevelForBLEActivity": 20.0,
+      "minDeviceDensityCount": 10.0,
+      "bleCBAdvertiseRate": 60.0,
+      "bleCBScanRate": 30.0,
+      "bleCBScanRateScreenOff": 20.0,
+      "minTimeBetweenPeopleDensityQuery": 120.0,
+      "bleDataVersion": 1.0,
+      "displayBLEAlert": true,
+      "bleAdvertisementTimePrecisionInMSec": 200.0
+    },
+    "SAEWConfig": {
+      "weaTexts": [
+        "Earthquake Detected! Drop, Cover, Hold On. Protect Yourself. -CWA",
+        "偵測到地震！「趴下、掩護、穩住」。保護好自己。-中央氣象署",
+        "检测到地震！伏地、遮挡、手抓牢。保护好自己。-中央气象署",
+        "偵測到地震！「趴低、掩護、扶穩」。保護好自己。-中央氣象署"
+      ],
+      "ProductionKey": [
+        "C03869AF-71E2-47B7-88A6-4285CA380272"
+      ],
+      "ThresholdTimeBetweenAlertsSec": 60.0,
+      "IgnoreAlertSec": 3600.0,
+      "PhoneChannelSubHysteresisSeconds": 3600.0,
+      "WatchChannelSubHysteresisSeconds": 3600.0,
+      "FollowUpMessageValidTime": 21600.0,
+      "displayTemplates": {
+        "action": {
+          "en-US": {
+            "withLocationText": "Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated __ED__ away.::- __ATTR__",
+            "withoutLocationText": "Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated.::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-TW": {
+            "withLocationText": "預計將有強烈搖晃。::「趴下、掩護、穩住」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "預計將有強烈搖晃。::「趴下、掩護、穩住」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-Hant-TW": {
+            "withLocationText": "預計將有強烈搖晃。::「趴下、掩護、穩住」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "預計將有強烈搖晃。::「趴下、掩護、穩住」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-CN": {
+            "withLocationText": "预计将有强烈摇晃。::伏地、遮挡、手抓牢。::震级约__MAG__，震中距约__ED__。::- __ATTR__",
+            "withoutLocationText": "预计将有强烈摇晃。::伏地、遮挡、手抓牢。::震级约__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-Hant-CN": {
+            "withLocationText": "预计将有强烈摇晃。::伏地、遮挡、手抓牢。::震级约__MAG__，震中距约__ED__。::- __ATTR__",
+            "withoutLocationText": "预计将有强烈摇晃。::伏地、遮挡、手抓牢。::震级约__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-HK": {
+            "withLocationText": "預計將有強烈搖晃。::「趴低、掩護、扶穩」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "預計將有強烈搖晃。::「趴低、掩護、扶穩」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-Hant-HK": {
+            "withLocationText": "預計將有強烈搖晃。::「趴低、掩護、扶穩」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "預計將有強烈搖晃。::「趴低、掩護、扶穩」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          }
+        },
+        "awareness": {
+          "en-US": {
+            "withLocationText": "If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated __ED__ away::- __ATTR__",
+            "withoutLocationText": "If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-TW": {
+            "withLocationText": "如果搖晃加劇：「趴下、掩護、穩住」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "如果搖晃加劇：「趴下、掩護、穩住」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-Hant-TW": {
+            "withLocationText": "如果搖晃加劇：「趴下、掩護、穩住」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "如果搖晃加劇：「趴下、掩護、穩住」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-CN": {
+            "withLocationText": "若摇晃加剧：伏地、遮挡、手抓牢::震级约__MAG__，震中距约__ED__::- __ATTR__",
+            "withoutLocationText": "若摇晃加剧：伏地、遮挡、手抓牢::震级约__MAG__::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-Hant-CN": {
+            "withLocationText": "若摇晃加剧：伏地、遮挡、手抓牢::震级约__MAG__，震中距约__ED__::- __ATTR__",
+            "withoutLocationText": "若摇晃加剧：伏地、遮挡、手抓牢::震级约__MAG__::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-HK": {
+            "withLocationText": "如果搖晃加劇：「趴低、掩護、扶穩」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "如果搖晃加劇：「趴低、掩護、扶穩」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-Hant-HK": {
+            "withLocationText": "如果搖晃加劇：「趴低、掩護、扶穩」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "如果搖晃加劇：「趴低、掩護、扶穩」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": ""
+          }
+        },
+        "livability_action": {
+          "en-US": {
+            "withLocationText": "APPLE LIVABILITY TEST: Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated __ED__ away.::- __ATTR__",
+            "withoutLocationText": "APPLE LIVABILITY TEST: Strong shaking expected.::Drop, cover, hold on.::M__MAG__ estimated.::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-TW": {
+            "withLocationText": "APPLE版本可用性測試：預計將有強烈搖晃。::「趴下、掩護、穩住」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性測試：預計將有強烈搖晃。::「趴下、掩護、穩住」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-Hant-TW": {
+            "withLocationText": "APPLE版本可用性測試：預計將有強烈搖晃。::「趴下、掩護、穩住」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性測試：預計將有強烈搖晃。::「趴下、掩護、穩住」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-CN": {
+            "withLocationText": "APPLE版本可用性测试：预计将有强烈摇晃。::伏地、遮挡、手抓牢。::震级约__MAG__，震中距约__ED__。::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性测试：预计将有强烈摇晃。::伏地、遮挡、手抓牢。::震级约__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-Hant-CN": {
+            "withLocationText": "APPLE版本可用性测试：预计将有强烈摇晃。::伏地、遮挡、手抓牢。::震级约__MAG__，震中距约__ED__。::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性测试：预计将有强烈摇晃。::伏地、遮挡、手抓牢。::震级约__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-HK": {
+            "withLocationText": "APPLE版本可用性測試：預計將有強烈搖晃。::「趴低、掩護、扶穩」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性測試：預計將有強烈搖晃。::「趴低、掩護、扶穩」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          },
+          "zh-Hant-HK": {
+            "withLocationText": "APPLE版本可用性測試：預計將有強烈搖晃。::「趴低、掩護、扶穩」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性測試：預計將有強烈搖晃。::「趴低、掩護、扶穩」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": "action_default.caf"
+          }
+        },
+        "livability_awareness": {
+          "en-US": {
+            "withLocationText": "APPLE LIVABILITY TEST: If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated __ED__ away::- __ATTR__",
+            "withoutLocationText": "APPLE LIVABILITY TEST: If shaking intensifies: Drop, cover, hold on::M__MAG__ estimated::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-TW": {
+            "withLocationText": "APPLE版本可用性測試：如果搖晃加劇：「趴下、掩護、穩住」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性測試：如果搖晃加劇：「趴下、掩護、穩住」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-Hant-TW": {
+            "withLocationText": "APPLE版本可用性測試：如果搖晃加劇：「趴下、掩護、穩住」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性測試：如果搖晃加劇：「趴下、掩護、穩住」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-CN": {
+            "withLocationText": "APPLE版本可用性测试：若摇晃加剧：伏地、遮挡、手抓牢::震级约__MAG__，震中距约__ED__::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性测试：若摇晃加剧：伏地、遮挡、手抓牢::震级约__MAG__::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-Hant-CN": {
+            "withLocationText": "APPLE版本可用性测试：若摇晃加剧：伏地、遮挡、手抓牢::震级约__MAG__，震中距约__ED__::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性测试：若摇晃加剧：伏地、遮挡、手抓牢::震级约__MAG__::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-HK": {
+            "withLocationText": "APPLE版本可用性測試：如果搖晃加劇：「趴低、掩護、扶穩」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性測試：如果搖晃加劇：「趴低、掩護、扶穩」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": ""
+          },
+          "zh-Hant-HK": {
+            "withLocationText": "APPLE版本可用性測試：如果搖晃加劇：「趴低、掩護、扶穩」。::預估地震規模__MAG__，震央在__ED__外。::- __ATTR__",
+            "withoutLocationText": "APPLE版本可用性測試：如果搖晃加劇：「趴低、掩護、扶穩」。::預估地震規模__MAG__。::- __ATTR__",
+            "toneFile": ""
+          }
+        }
+      },
+      "sourceConfig": {
+        "CWA": {
+          "senderId": 4,
+          "defaultLanguage": "zh-Hant-TW",
+          "attribution": {
+            "en-US": "Central Weather Administration",
+            "zh-TW": "中央氣象署",
+            "zh-Hant-TW": "中央氣象署",
+            "zh-CN": "中央气象署",
+            "zh-Hant-CN": "中央气象署",
+            "zh-HK": "中央氣象署",
+            "zh-Hant-HK": "中央氣象署"
+          },
+          "mmiBandsConfig": [
+            {
+              "minMagnitude": 4.5,
+              "maxMagnitude": 5.0,
+              "minIntensity": 3.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.0,
+              "maxMagnitude": 6.5,
+              "minIntensity": 3.0,
+              "maxIntensity": 4.0,
+              "displayTemplate": "awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.0,
+              "maxMagnitude": 100.0,
+              "minIntensity": 4.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "action",
+              "level": "action"
+            },
+            {
+              "minMagnitude": 6.5,
+              "maxMagnitude": 100.0,
+              "minIntensity": 3.0,
+              "maxIntensity": 4.0,
+              "displayTemplate": "action",
+              "level": "action"
+            }
+          ]
+        },
+        "CWALivability": {
+          "senderId": 64512,
+          "defaultLanguage": "zh-Hant-TW",
+          "attribution": {
+            "en-US": "Apple livability test",
+            "zh-TW": "APPLE版本可用性測試",
+            "zh-Hant-TW": "APPLE版本可用性測試",
+            "zh-CN": "APPLE版本可用性测试",
+            "zh-Hant-CN": "APPLE版本可用性测试",
+            "zh-HK": "APPLE版本可用性測試",
+            "zh-Hant-HK": "APPLE版本可用性測試"
+          },
+          "mmiBandsConfig": [
+            {
+              "minMagnitude": 4.5,
+              "maxMagnitude": 5.0,
+              "minIntensity": 3.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "livability_awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.0,
+              "maxMagnitude": 6.5,
+              "minIntensity": 3.0,
+              "maxIntensity": 4.0,
+              "displayTemplate": "livability_awareness",
+              "level": "awareness"
+            },
+            {
+              "minMagnitude": 5.0,
+              "maxMagnitude": 100.0,
+              "minIntensity": 4.0,
+              "maxIntensity": 100.0,
+              "displayTemplate": "livability_action",
+              "level": "action"
+            },
+            {
+              "minMagnitude": 6.5,
+              "maxMagnitude": 100.0,
+              "minIntensity": 3.0,
+              "maxIntensity": 4.0,
+              "displayTemplate": "livability_action",
+              "level": "action"
+            }
+          ]
+        }
+      }
+    },
+    "config": {
+      "supportedFeatures": [
+        "richHI",
+        "igneous"
+      ],
+      "security": {
+        "codebookFileName": "codebook_twn_v01.json",
+        "codebookDownloadPeriodSeconds": 86400
+      },
+      "countrySupport": "allowed",
+      "mapConfig": {
+        "cacheIntervalSeconds": 86400
+      },
+      "userSettingParams_v1": {
+        "mainSwitchVisible": true,
+        "earthquakeSwitchVisible": true,
+        "earthquakeSwitchState": true,
+        "earthquakeLearnMoreLink": "https://support.apple.com/111817",
+        "otherAlertsSwitchVisible": false,
+        "otherAlertsSwitchState": true,
+        "otherAlertsLearnMoreLink": "https://support.apple.com/111817",
+        "improvedAlertDeliverySwitchVisible": true,
+        "improvedAlertSwitchState": false,
+        "alwaysPlaySoundSwitchVisible": false,
+        "alwaysPlaySwitchState": false,
+        "emptyScreenSwitchVisible": true,
+        "aboutPrivacySwitchVisible": true,
+        "aboutPrivacyLink": "https://www.apple.com/legal/privacy/data/en/safety-features/"
+      },
+      "edcfu": {
+        "uptakeCoefficient": 0.0
+      },
+      "metrics": {
+        "efficacyManifestFileName": "efficacy_manifest_twn_v01.txt",
+        "efficacyParticipationPercentage": 95,
+        "pullpc": 1,
+        "appc": 5,
+        "rmEnable": true,
+        "rmPeriodInSeconds": 86400.0
+      },
+      "apns": {
+        "wowControls": 1
+      },
+      "pull": {
+        "server": "https://safety-alert.apple.com/v1/alert/"
+      },
+      "livability": {
+        "weaEnrichmentChannel": "SlVOMDZfaENQdC1kZlNGQw=="
+      }
+    },
+    "type": "FeatureCollection",
+    "SafetyAlertCoverageDetails_v1": [
+      {
+        "Region": "TWN",
+        "CountryOfRelevance": "TWN",
+        "LivabilityChannelPrefix": "livtwn",
+        "StartingSWLat": -90.0,
+        "StartingSWLon": -180.0,
+        "SWLat": 21.4,
+        "SWLon": 118.0,
+        "NELat": 26.4,
+        "NELon": 122.4,
+        "GridSizeInDegree": 0.2,
+        "gridLatOffset": 0.1,
+        "gridLonOffset": 0.1,
+        "GridZoom": 10.0,
+        "RefreshRate": 72000.0,
+        "ChannelTopic": "com.apple.aps.mantistw.safetyalert",
+        "SafetyAlertSupportedChannelsForRegion": [
+          {
+            "ChannelType": 0,
+            "ParticipationPercentage": 100.0,
+            "ChannelName": [
+              "ewtw"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "default": {
+    "config": {
+      "metrics": {
+        "rmEnable": true,
+        "rmPeriodInSeconds": 86400.0
+      }
+    }
+  }
+}

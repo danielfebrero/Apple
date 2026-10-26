@@ -1,0 +1,77 @@
+[
+  {
+    "shortDescription" : "CREPE is a monophonic pitch tracker based on a deep convolutional neural network operating directly on the time-domain waveform input",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 36)",
+        "shortDescription" : "",
+        "shape" : "[1, 36]",
+        "name" : "crepe",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "1",
+    "modelParameters" : [
+
+    ],
+    "author" : "Jong Wook Kim",
+    "specificationVersion" : 9,
+    "storagePrecision" : "Mixed (Float16, Palettized (8 bits), UInt8)",
+    "license" : "MIT",
+    "mlProgramOperationTypeHistogram" : {
+      "Ios18.linear" : 1,
+      "Ios18.batchNorm" : 6,
+      "Ios18.constexprLutToDense" : 8,
+      "Ios18.matmul" : 1,
+      "Ios18.relu" : 6,
+      "Ios18.expandDims" : 1,
+      "Ios18.conv" : 6,
+      "Ios18.maxPool" : 6,
+      "Ios18.sigmoid" : 1,
+      "Ios18.avgPool" : 1,
+      "Ios18.transpose" : 2,
+      "Ios18.cast" : 2,
+      "Ios18.squeeze" : 1,
+      "Ios18.reshape" : 4
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "15.0",
+      "tvOS" : "18.0",
+      "visionOS" : "2.0",
+      "watchOS" : "11.0",
+      "iOS" : "18.0",
+      "macCatalyst" : "18.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1024)",
+        "shortDescription" : "",
+        "shape" : "[1, 1024]",
+        "name" : "samples",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "8.3.0",
+      "com.github.apple.coremltools.source" : "tensorflow==2.13.1",
+      "mldb_token" : "mldb-zxy8d4vg59"
+    },
+    "generatedClassName" : "crepe",
+    "method" : "predict"
+  }
+]

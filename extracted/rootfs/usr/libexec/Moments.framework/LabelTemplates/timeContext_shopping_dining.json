@@ -1,0 +1,143 @@
+{
+    "cases": [
+        {
+            "bundleType":"timeContext",
+            "templates" :[
+                {
+                    "_comment_": "/* dining/shopping with no place */",
+                    "conditions":["action_count=1", "visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=0"],
+                    "labels":["{action}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* dining/shopping at a single place of low confidence*/",
+                    "conditions":["action_count=1", "action_type=shopping", "visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=1", "confidence=low"],
+                    "labels":["Shopping, {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* dining/shopping at a single place of low confidence*/",
+                    "conditions":["action_count=1", "action_type=eating_out", "visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=1", "confidence=low"],
+                    "labels":["Eating out, {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* shopping at a single place of medium confidence*/",
+                    "conditions":["action_count = 1", "action_type=shopping","visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=1", "confidence=medium"],
+                    "labels":["Shopping near {place}"],
+                },
+                {
+                    "_comment_": "/* eating at a single place of medium confidence*/",
+                    "conditions":["action_count = 1", "action_type=eating_out", "visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=1", "confidence=medium"],
+                    "labels":["Eating out near {place}"],
+                },
+                {
+                    "_comment_": "/* eating at single place of high confidence*/",
+                    "conditions":["action_count=1", "action_type=shopping","visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=1", "confidence=high"],
+                    "labels":["Shopping at {place}"],
+                },
+                {
+                    "_comment_": "/* dining at single place of high confidence*/",
+                    "conditions":["action_count=1", "action_type=eating_out", "visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=1", "confidence=high"],
+                    "labels":["Eating at {place}"],
+                },
+
+                {
+                    "_comment_": "/* back to back dining/shopping with 2 places of high confidence*/",
+
+                    "conditions":["action_count=2", "visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=2", "confidence_1=high", "confidence_2=high"],
+                    "labels":["{action}, {unique_place_1} and {unique_place_2}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* back to back dining/shopping with 2 places in the same city which are not both high confidence */",
+
+                    "conditions":["action_count=2", "visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=2","confidence_1!=high", "unique_city_count=1"],
+                    "labels":["{action}, {unique_city_1}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* back to back dining/shopping with 2 places which are not both high confidence */",
+
+                    "conditions":["action_count=2", "visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=2","confidence_1!=high"],
+                    "labels":["{action}, multiple places|TitleCap"],
+                },
+                {
+                    "_comment_": "/* back to back dining/shopping with 2 places in the same city which are not both high confidence */",
+
+                    "conditions":["action_count=2", "visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=2", "confidence_2!=high","unique_city_count=1"],
+                    "labels":["{action}, {unique_city_1}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* back to back dining/shopping with 2 places which are not both high confidence */",
+
+                    "conditions":["action_count=2", "visit_count=0", "unique_action_type_count=1", "activity_count=0", "unique_place_count=2", "confidence_2!=high"],
+                    "labels":["{action}, multiple places|TitleCap"],
+                },
+                {
+                    "_comment_": "/* back to back dining/shopping with 3+ places in the same city */",
+
+                    "conditions":["action_count>2", "visit_count=0", "unique_action_type_count=1", "activity_count=0",  "unique_place_count>2", "unique_city_count=1"],
+                    "labels":["{action}, {unique_city_1}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* back to back dining/shopping with 3+ places */",
+
+                    "conditions":["action_count>2", "visit_count=0", "unique_action_type_count=1", "activity_count=0",  "unique_place_count>2"],
+                    "labels":["{action}, multiple places|TitleCap"],
+                },
+
+
+                {
+                    "_comment_": "/* 2 actions: dining + shopping at single place with low confidence*/",
+
+                    "conditions":["action_count = 2", "visit_count=0", "unique_action_type_count=2", "activity_count=0", "unique_place_count=1", "confidence_1 = low"],
+                    "labels":["{unique_action_1} and {unique_action_2}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* 2 actions: dining + shopping at single place with medium confidence*/",
+
+                    "conditions":["action_count = 2", "visit_count=0", "unique_action_type_count=2", "activity_count=0", "unique_place_count=1", "confidence_1 = medium"],
+                    "labels":["{unique_action_1} and {unique_action_2} near {unique_place_1}|TitleCap"],
+                },
+
+                {
+                    "_comment_": "/* 2 actions: dining + shopping at single place with high confidence*/",
+
+                    "conditions":["action_count = 2", "visit_count=0", "unique_action_type_count=2", "activity_count=0", "unique_place_count=1", "confidence_1 = high"],
+                    "labels":["{unique_action_1} and {unique_action_2}, {unique_place_1}|TitleCap"],
+                },
+                
+                {
+                    "_comment_": "/* 2 actions: dining + shopping with more than one place in the same city */",
+
+                    "conditions":["action_count = 2","visit_count=0", "unique_action_type_count=2", "activity_count=0", "unique_place_count>1", "unique_city_count=1"],
+                    "labels":["{unique_action_1} and {unique_action_2}, {unique_city_1}|TitleCap"],
+                },
+
+                {
+                    "_comment_": "/* 2 actions: dining + shopping with more than one place */",
+
+                    "conditions":["action_count = 2","visit_count=0", "unique_action_type_count=2", "activity_count=0", "unique_place_count>1"],
+                    "labels":["{unique_action_1} and {unique_action_2}, multiple places|TitleCap"],
+                },
+                {
+                    "_comment_": "/* 3+ actions but only two action type: dining + shopping with multiple places */",
+
+                    "conditions":["action_count > 2", "visit_count=0", "unique_action_type_count=2", "activity_count=0", "unique_place_count>1", "unique_city_count=1"],
+                    "labels":["{unique_action_1}, {unique_action_2}, and more, {unique_city_1}|TitleCap"],
+                },
+
+                {
+                    "_comment_": "/* 3+ actions but only two action type: dining + shopping with multiple places */",
+
+                    "conditions":["action_count > 2", "visit_count=0", "unique_action_type_count=2", "activity_count=0", "unique_place_count>1"],
+                    "labels":["{unique_action_1}, {unique_action_2}, and more, multiple places|TitleCap"],
+                },
+                {
+                    "_comment_": "/* fall back for shopping + dining */",
+
+                    "conditions":["visit_count=0", "unique_action_type_count=2", "activity_count=0"],
+                    "labels":["Outing"],
+                }
+            ]
+        }
+    ]
+}
+
+

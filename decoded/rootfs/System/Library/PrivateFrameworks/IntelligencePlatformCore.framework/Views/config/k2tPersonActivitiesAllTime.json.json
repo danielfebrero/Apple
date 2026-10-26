@@ -1,0 +1,66 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "cnt",
+          "INTEGER"
+        ],
+        [
+          "activities",
+          "TEXT"
+        ],
+        [
+          "spantext",
+          "TEXT"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "subject"
+      ],
+      "subjectIdentifierColumn": "subject",
+      "tableName": "k2t_person_activites_alltime"
+    },
+    "path": "k2t/views.db",
+    "type": "customRow"
+  },
+  "featureFlag": "ExperimentalK2TViews",
+  "name": "k2tPersonActivitiesAllTime",
+  "sql": {
+    "update": "customSQL/k2t_person_activites_alltime"
+  },
+  "type": "customSQL",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB104"
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "k2tPeopleSubgraph",
+        "schedule": "live"
+      },
+      {
+        "name": "k2tActivitiesSubgraph",
+        "schedule": "live"
+      },
+      {
+        "name": "k2tLifeEventMap",
+        "schedule": "live"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "homeKit.DocumentationSearch",
+  "UsageAliasValues": {
+    "language_ar": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.notification_coalescing.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.semantic_search.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.notification_coalescing.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.base.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_1b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_2b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_3b.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.fm_api_generic_legacy.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.image_encoder.generic_sparse": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic_sparse": "ENABLED"
+      }
+    }
+  }
+}

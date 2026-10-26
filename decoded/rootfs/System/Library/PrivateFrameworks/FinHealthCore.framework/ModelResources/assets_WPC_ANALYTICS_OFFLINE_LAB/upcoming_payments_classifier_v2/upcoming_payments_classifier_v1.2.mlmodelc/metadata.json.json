@@ -1,0 +1,126 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "String",
+        "type": "String",
+        "name": "target",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "keyType": "String",
+        "formattedType": "Dictionary (String → Double)",
+        "type": "Dictionary",
+        "name": "classProbability",
+        "shortDescription": ""
+      }
+    ],
+    "version": "1.2",
+    "modelParameters": [],
+    "specificationVersion": 1,
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_treeEnsembleClassifier"
+    },
+    "inputSchema": [
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "freq_std",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "freq_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "freq_median",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "freq_max",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "freq_min",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "freq_std_over_mean",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "group_size",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "days_since_last_txn",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "transaction_transactiontype",
+        "shortDescription": ""
+      },
+      {
+        "isOptional": "0",
+        "formattedType": "Double",
+        "type": "Double",
+        "name": "fuzzy_amount",
+        "shortDescription": ""
+      }
+    ],
+    "classLabels": [
+      "no_prediction",
+      "irregular",
+      "weekly",
+      "fortnightly",
+      "monthly",
+      "quarterly",
+      "yearly"
+    ],
+    "generatedClassName": "upcoming_payments_classifier_v1_2",
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "8.3.1",
+      "mldb_token": "mldb-zxy8drpg59",
+      "com.github.apple.coremltools.source": "xgboost==1.4.2"
+    },
+    "method": "predict"
+  }
+]

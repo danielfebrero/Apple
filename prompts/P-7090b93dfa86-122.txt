@@ -1,0 +1,6 @@
+"
+
+Return ResolvedEventMeta with:
+- alternatives (array of AlternativePredicate - at least 1, typically 2-4)
+- reasoning (explain your interpretation and why you chose these alternatives)
+- confidence (0.0-1.0 score)

@@ -1,0 +1,216 @@
+{
+  "MVNOOverrides": {
+    "Configuration_1": {
+      "OverrideConfiguration": {
+        "ShowSatelliteSwitch": false,
+        "SupportsSatellite": false,
+        "apns": [
+          {
+            "configuration": [
+              {
+                "password": "",
+                "username": "",
+                "apn": "povo.jp",
+                "type-mask": 563
+              }
+            ],
+            "technology-mask": 1
+          },
+          {
+            "configuration": [
+              {
+                "password": "",
+                "username": "",
+                "apn": "povo.jp",
+                "type-mask": 563,
+                "AllowedProtocolMask": 3
+              },
+              {
+                "password": "",
+                "username": "",
+                "AllowedProtocolMaskInRoaming": 2,
+                "apn": "IMS",
+                "type-mask": 131072,
+                "AllowedProtocolMask": 2
+              },
+              {
+                "password": "",
+                "username": "",
+                "AllowedProtocolMaskInRoaming": 3,
+                "apn": "xcap",
+                "type-mask": 1048576,
+                "AllowedProtocolMask": 3
+              },
+              {
+                "password": "",
+                "username": "",
+                "AllowedProtocolMaskInRoaming": 3,
+                "apn": "",
+                "type-mask": 262144,
+                "AllowedProtocolMask": 3
+              },
+              {
+                "password": "",
+                "username": "",
+                "apn": "povo.jp",
+                "type-mask": 48,
+                "AllowedProtocolMask": 3
+              }
+            ],
+            "technology-mask": 30
+          }
+        ]
+      },
+      "SupportedPLMNs": [
+        "44051"
+      ]
+    }
+  },
+  "DerPriFileVersion": "6.0.163",
+  "Show5GWarningUnsupportedCarrier": false,
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "MTU": [
+    {
+      "technology-mask": 28,
+      "size": 1420
+    },
+    {
+      "technology-mask": 2,
+      "size": 1420
+    }
+  ],
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "SatelliteSystemTransitionTimeToAllowed": 30,
+  "ShowSatelliteSwitch": true,
+  "SupportedSIMs": [
+    "44051_GID1-26_GID2-00",
+    "44051",
+    "44055"
+  ],
+  "IMSConfig": {
+    "Satellite": {
+      "IMSServiceMask": 2
+    },
+    "Signaling": {
+      "MaxUdpMessageSize": 1
+    }
+  },
+  "Supports5GStandalone": false,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "SupportsSatellite": true,
+  "SatelliteAccessInfo": {
+    "AllowCarrierApp": true,
+    "AppCategories": [
+      "8011",
+      "8012",
+      "8013",
+      "8014",
+      "8010",
+      "8009",
+      "8008",
+      "8007",
+      "8005",
+      "8003",
+      "8002",
+      "8001",
+      "8004",
+      "8006",
+      "8015"
+    ],
+    "Tier": 4
+  },
+  "AttachAPN": {
+    "3GPP": [
+      {
+        "password": "KpyrR6BP",
+        "username": "685840734641020@uio5gn.au-net.ne.jp",
+        "apn": "uio5gn.au-net.ne.jp",
+        "auth_type": "CHAP",
+        "AllowedProtocolMask": 3
+      },
+      {
+        "password": "",
+        "PcscfAddressRequired": true,
+        "username": "",
+        "apn": "",
+        "AllowedProtocolMask": 2
+      }
+    ]
+  },
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Enable5GAutoByDefault": true,
+  "MMS": {
+    "MaxMessageSizeOverSatellite": 3000
+  },
+  "SatelliteApps": [
+    "com.kddi.ab.cmlab.auCSApp"
+  ],
+  "SupportsNRNSAInboundRoaming": true,
+  "PushSettings": {
+    "Topic": "com.kddi.Kddientapp"
+  },
+  "SupportedPLMNs": [
+    "44051",
+    "44055"
+  ],
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "KpyrR6BP",
+          "username": "685840734641020@uio5gn.au-net.ne.jp",
+          "apn": "uio5gn.au-net.ne.jp",
+          "auth_type": "CHAP",
+          "type-mask": 33303
+        }
+      ],
+      "technology-mask": 1
+    },
+    {
+      "configuration": [
+        {
+          "password": "KpyrR6BP",
+          "username": "685840734641020@uio5gn.au-net.ne.jp",
+          "AllowedProtocolMask": 3,
+          "apn": "uio5gn.au-net.ne.jp",
+          "type-mask": 33287,
+          "auth_type": "CHAP"
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 2,
+          "apn": "IMS",
+          "type-mask": 131072,
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "xcap",
+          "type-mask": 1048576,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "",
+          "type-mask": 262144,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "KpyrR6BP",
+          "username": "X36yN3Dhe9UjPhzm@uio5gntrg.au-net.ne.jp",
+          "AllowedProtocolMask": 3,
+          "apn": "uio5gntrg.au-net.ne.jp",
+          "type-mask": 16,
+          "auth_type": "CHAP"
+        }
+      ],
+      "technology-mask": 30
+    }
+  ]
+}

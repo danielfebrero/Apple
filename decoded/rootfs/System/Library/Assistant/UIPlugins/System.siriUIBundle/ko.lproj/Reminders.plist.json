@@ -1,0 +1,48 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "장보기 목록에 양파를 추가해",
+            "올해 할 일 목록에 번지점프를 추가해",
+            "우산 챙기기라고 기억해줘",
+            "아침 8시에 약이랑 비타민 먹기라고 미리 알려줘",
+            "보고서 마감이라고 6시에 미리 알려줘",
+            "나의 할 일 목록 읽어줘"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "집에 도착할 때 엄마에게 전화하라고 미리 알려줘",
+            "여기에서 출발할 때 민호에게 문자하라고 미리 알려줘",
+            "차에 탈 때 아빠한테 전화하라고 미리 알려줘"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "집에 도착할 때 엄마에게 FaceTime하라고 미리 알려줘",
+            "여기에서 출발하면 민호에게 FaceTime하라고 미리 알려줘"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "여기를 떠날 때 꽃집에 들러서 꽃바구니 픽업하기라고 미리 알려줘"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

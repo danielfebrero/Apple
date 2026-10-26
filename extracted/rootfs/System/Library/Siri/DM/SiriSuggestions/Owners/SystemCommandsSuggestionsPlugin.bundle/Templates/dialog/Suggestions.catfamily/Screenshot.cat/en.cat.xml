@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="Suggestions#Screenshot" locale="en">
+    <phrases>
+        <random phrase="suggestion">
+            <text>Take a screenshot</text>
+        </random>
+    </phrases>
+    <all>
+        <dialog id="suggestion"><transform mode="capitalizeSentence"><phrase name="suggestion"/></transform></dialog>
+        <dialog id="description"><transform mode="capitalizeSentence">Takes a picture of what's currently on-screen.</transform></dialog>
+    </all>
+</cat>

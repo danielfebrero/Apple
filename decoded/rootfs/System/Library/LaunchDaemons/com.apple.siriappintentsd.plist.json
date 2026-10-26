@@ -1,0 +1,45 @@
+{
+  "UserName": "mobile",
+  "EnvironmentVariables": {},
+  "ProcessType": "Adaptive",
+  "RemoteServices": {
+    "com.apple.private.siriappintentsd.orchestrator": {
+      "ServiceProperties": {
+        "UsesRemoteXPC": true
+      },
+      "RequireEntitlement": "AppleInternal"
+    }
+  },
+  "MachServices": {
+    "com.apple.private.siriappintentsd.orchestrator": true
+  },
+  "EnableTransactions": true,
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/SiriAppIntentsRuntime.framework/siriappintentsd"
+  ],
+  "LaunchEvents": {
+    "com.apple.xpc.activity": {},
+    "com.apple.distnoted.matching": {
+      "TBToolboxIndexingStarted": {
+        "Name": "TBToolboxIndexingStarted"
+      },
+      "TKToolkitDatabaseChangedNotification": {
+        "Name": "TKToolkitDatabaseChangedNotification"
+      },
+      "TBToolboxIndexingEnded": {
+        "Name": "TBToolboxIndexingEnded"
+      },
+      "TBToolboxDeleteStarted": {
+        "Name": "TBToolboxDeleteStarted"
+      },
+      "TBToolboxDeleteEnded": {
+        "Name": "TBToolboxDeleteEnded"
+      },
+      "TKToolKitIndexingBeganNotification": {
+        "Name": "TKToolKitIndexingBeganNotification"
+      }
+    }
+  },
+  "EnablePressuredExit": true,
+  "Label": "com.apple.siriappintentsd"
+}

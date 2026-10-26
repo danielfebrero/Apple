@@ -1,0 +1,56 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Banu'nun adresi nedir?",
+            "Kocamın yaş günü ne zaman?",
+            "Fulya Yılmaz’ın telefon numarası ne?",
+            "Nil'in ev e-posta adresi ne?",
+            "Kardeşimin iş adresi ne?"
+          ]
+        }
+      ],
+      "SectionName": "KİŞİLERLE İLGİLİ SORU SORMA"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Süleyman Ateş’i göster",
+            "Yılmaz isimli kişileri bul"
+          ]
+        }
+      ],
+      "SectionName": "KİŞİLERİ BULMA"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Babam Halim Melikoğlu",
+            "Buket Becer benim kızım"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Kardeşimi iş telefonundan ara"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Annemi FaceTime ile ara"
+          ]
+        }
+      ],
+      "SectionName": "İLİŞKİLER"
+    }
+  ]
+}

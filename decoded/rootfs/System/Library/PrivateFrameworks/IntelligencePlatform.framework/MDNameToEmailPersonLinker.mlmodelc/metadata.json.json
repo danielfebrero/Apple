@@ -1,0 +1,88 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Float32",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "Identity",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 5,
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "11.0",
+      "tvOS": "14.0",
+      "watchOS": "7.0",
+      "iOS": "14.0",
+      "macCatalyst": "14.0"
+    },
+    "neuralNetworkLayerTypeHistogram": {
+      "Ceil": 1,
+      "Tile": 2,
+      "BatchedMatmul": 8,
+      "LessThan": 2,
+      "Loop": 2,
+      "LoadConstantND": 15,
+      "FillDynamic": 19,
+      "Multiply": 4,
+      "ConcatND": 22,
+      "ReduceMax": 3,
+      "Branch": 10,
+      "WhereBroadcastable": 7,
+      "Copy": 30,
+      "Gather": 6,
+      "NotEqual": 7,
+      "SliceStatic": 25,
+      "Squeeze": 5,
+      "AddBroadcastable": 8,
+      "GreaterEqual": 5,
+      "Floor": 1,
+      "MultiplyBroadcastable": 9,
+      "ExpandDims": 3,
+      "Scatter": 5,
+      "ActivationTanh": 8,
+      "SplitND": 4,
+      "ReduceSum": 6,
+      "ActivationSigmoid": 12,
+      "GetShape": 19,
+      "GreaterThan": 1,
+      "Transpose": 4,
+      "Add": 11,
+      "SubtractBroadcastable": 5,
+      "RangeDynamic": 5,
+      "ActivationLinear": 1
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "5.2.3",
+      "com.github.apple.coremltools.source": "tensorflow==2.5.0"
+    },
+    "generatedClassName": "name2email",
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1... × 1... × 80",
+        "shapeRange": "[[1, -1], [1, -1], [80, 80]]",
+        "formattedType": "MultiArray (Float32 1 × 1 × 80)",
+        "type": "MultiArray",
+        "shape": "[1, 1, 80]",
+        "name": "input_1",
+        "shortDescription": ""
+      }
+    ],
+    "method": "predict"
+  }
+]

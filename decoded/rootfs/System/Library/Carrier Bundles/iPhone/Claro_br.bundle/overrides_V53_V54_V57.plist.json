@@ -1,0 +1,74 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "Enable5GStandaloneByDefault": false,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "PushSettings": {
+    "CellularPlanTransferTopic": "com.clarobr.ent.phone-transfer"
+  },
+  "ShowHighDataModeSwitch": true,
+  "PhoneAccountTransfer": {
+    "LocalInstallSMDPURL": "https://clr.prod.ondemandconnectivity.com"
+  },
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVolteByDefault": true
+    }
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 9233,
+    "SupportPhysicalSIMtoESIMTransfer": true,
+    "SupportedActions": [
+      "TransferSIMService"
+    ],
+    "SupportsOnDevicePhysicalSIMConvert": true,
+    "SupportSecureIntent": true,
+    "UpdatePeriod": 168
+  },
+  "apns": [
+    {
+      "password": "claro",
+      "username": "claro",
+      "apn": "java.claro.com.br",
+      "type-mask": 32817,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "password": "claro",
+      "username": "claro",
+      "apn": "mms.claro.com.br",
+      "SupportSwitchOver": true,
+      "type-mask": 4
+    },
+    {
+      "type-mask": 131072,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    },
+    {
+      "type-mask": 1048576,
+      "password": "",
+      "tech-type-mask": 1048576,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "xcap",
+      "AllowedProtocolMask": 2
+    }
+  ],
+  "Show5GStandaloneSwitch": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Show5GSwitch": true
+}

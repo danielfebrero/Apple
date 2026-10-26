@@ -1,0 +1,75 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 91)",
+        "shortDescription" : "",
+        "shape" : "[91]",
+        "name" : "Prediction",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "mawhves2nj",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 6,
+    "mlProgramOperationTypeHistogram" : {
+      "Concat" : 2,
+      "Scatter" : 8,
+      "Linear" : 30,
+      "NonZero" : 1,
+      "SliceByIndex" : 11,
+      "Sub" : 6,
+      "RealDiv" : 1,
+      "Relu" : 25,
+      "Mul" : 12,
+      "Equal" : 1,
+      "Reshape" : 18,
+      "Add" : 5,
+      "ReduceMean" : 1,
+      "Gather" : 3
+    },
+    "computePrecision" : "Mixed (Float32, Int32)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 7)",
+        "shortDescription" : "",
+        "shape" : "[7]",
+        "name" : "Input",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "7.1.3",
+      "com.github.apple.coremltools.source" : "torch==2.5.1+cu124",
+      "mldb_token" : "mldb-7nwypjwy9o",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "generatedClassName" : "ocv_drift_model",
+    "method" : "predict"
+  }
+]

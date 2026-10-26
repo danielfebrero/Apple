@@ -1,0 +1,93 @@
+{
+  "CellBroadcast": {
+    "_Exclude": [
+      "MessageIDParameters3GPP2"
+    ]
+  },
+  "DerPriFileVersion": "0.1.161",
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "AttachAPN": {
+    "_Exclude": [
+      "3GPP2"
+    ]
+  },
+  "SMSSettings": {
+    "MessageFormat": {
+      "SignalingFormat": 1,
+      "PacketFormat": 1
+    }
+  },
+  "ShowVolteSwitch": false,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 3,
+          "apn": "rinainternet.rinawireless.com",
+          "type-mask": 33335,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "",
+          "tech-type-mask": 131078,
+          "AllowedProtocolMaskInRoaming": 3,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowNoDNS": 3,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 1048576,
+          "password": "",
+          "tech-type-mask": 1048576,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "hos",
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 9
+    }
+  ],
+  "ForceWPSCallsOverCS": false,
+  "IMSConfig": {
+    "Signaling": {
+      "AdditionalFeatureTags": {
+        "sms": {
+          "+cdmaless": ""
+        },
+        "voice": {
+          "+cdmaless": "",
+          "+g.gsma.rcs.telephony": "\"cs,volte\"",
+          "audio": ""
+        }
+      },
+      "NoFallbackVoiceService": true
+    },
+    "Voice": {
+      "BlockCallsOverCS": true,
+      "BlockSilentRedialOverCS": true,
+      "DisableVolteSwitchOnIncompatibleState": true
+    },
+    "SMS": {
+      "enableInNonVoLTEMode": true,
+      "SupportedDomains": {
+        "EHRPD": false
+      }
+    },
+    "AllowIMSUnprovisioned": true
+  }
+}

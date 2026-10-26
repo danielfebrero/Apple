@@ -1,0 +1,1184 @@
+{
+    "AddMediaAssetsToAlbumIntent": {
+        "description": "Add the provided photos to the provided album"
+    },
+    "ApplyMediaFilterIntent": {
+        "description": "Apply the provided filter effect to the current photo"
+    },
+    "ArchiveMailIntent": {
+        "description": "Archive one or more email messages"
+    },
+    "CleanupMediaIntent": {
+        "description": "Clean up the current photo"
+    },
+    "ClearHistoryIntent": {
+        "description": "Clears history, and related cookies and other website data."
+    },
+    "CloseTabsIntent": {
+        "description": "Closes the selected tabs."
+    },
+    "CopyMediaEditsIntent": {
+        "description": "Copy edits from the selected photo"
+    },
+    "CreateDraftIntent": {
+        "description": "Compose an email message"
+    },
+    "CreateFolderIntent": {
+        "description": "Creates a new folder."
+    },
+    "CreateMediaAlbumIntent": {
+        "description": "Create an album with the provided name and optional photos"
+    },
+    "CreateTabIntent": {
+        "description": "Creates a new tab with an optional name and URL loaded, or blank if omitted."
+    },
+    "CreateWindowIntent": {
+        "description": "Creates a new browser window."
+    },
+    "CropMediaIntent": {
+        "description": "Opens the image cropping tool in the Photos app."
+    },
+    "DeleteDraftIntent": {
+        "description": "Delete an email message draft"
+    },
+    "DeleteMailIntent": {
+        "description": "Delete one or more email messages"
+    },
+    "DeleteMediaAlbumIntent": {
+        "description": "Delete the provided albums from the library"
+    },
+    "DeleteMediaAssetsIntent": {
+        "description": "Delete the provided photos"
+    },
+    "DuplicateMediaAssetsIntent": {
+        "description": "Duplicate the provided photos with optionally provided album"
+    },
+    "EnhanceMediaIntent": {
+        "description": "Enhance the current photo"
+    },
+    "FindOnPageIntent": {
+        "description": "Find the given text on the selected tab."
+    },
+    "ForwardMailIntent": {
+        "description": "Forward an email message"
+    },
+    "LoadURLInTabIntent": {
+        "description": "Navigates a tab to the given URL."
+    },
+    "NavigateBookPageIntent": {
+        "description": "Navigates to the next or previous page."
+    },
+    "OpenBookIntent": {
+        "description": "Opens the specified book."
+    },
+    "OpenBookmarkIntent": {
+        "description": "Opens the specified bookmark."
+    },
+    "OpenFileIntent": {
+        "description": "Opens a selected file or folder."
+    },
+    "OpenMediaAlbumIntent": {
+        "description": "Open the provided album"
+    },
+    "OpenMediaAssetIntent": {
+        "description": "Opens the app into a given photo."
+    },
+    "PasteMediaEditsIntent": {
+        "description": "Pastes edits onto the selected photos"
+    },
+    "RenameFileIntent": {
+        "description": "Renames an existing file or folder."
+    },
+    "ReplyMailIntent": {
+        "description": "Reply to an email message"
+    },
+    "RotateMediaIntent": {
+        "description": "Rotate the current photo in the direction specified."
+    },
+    "SaveDraftIntent": {
+        "description": "Save an email message draft"
+    },
+    "SearchLibraryIntent": {
+        "description": "Opens the app and searches for the given term."
+    },
+    "SearchMediaIntent": {
+        "description": "Search with the provided criteria"
+    },
+    "SendDraftIntent": {
+        "description": "Send an email message draft or schedule it to be sent later"
+    },
+    "SetMediaApertureIntent": {
+        "description": "Set depth value for a photo"
+    },
+    "SetMediaDepthIntent": {
+        "description": "Enable or disable depth in the current photo"
+    },
+    "SetMediaExposureIntent": {
+        "description": "Configures the exposure for a photo"
+    },
+    "SetMediaSaturationIntent": {
+        "description": "Configures the saturation for a photo"
+    },
+    "SetMediaWarmthIntent": {
+        "description": "Configures the warmth for a photo"
+    },
+    "ShowInAppSearchResultsIntent": {
+        "description": "Navigates the user to search results for the specified criteria."
+    },
+    "StraightenMediaIntent": {
+        "description": "Straighten the current photo"
+    },
+    "SwitchToTabIntent": {
+        "description": "Switch to an existing tab."
+    },
+    "UpdateBookFontSizeIntent": {
+        "description": "Updates the font size for a book."
+    },
+    "UpdateBookSettingsIntent": {
+        "description": "Updates the settings for a book."
+    },
+    "UpdateDraftIntent": {
+        "description": "Make updates to an email message draft while composing"
+    },
+    "UpdateMailIntent": {
+        "description": "Make updates to one or more existing email messages"
+    },
+    "UpdateMediaAlbumIntent": {
+        "description": "Rename the provided album with the provided title"
+    },
+    "UpdateMediaAssetIntent": {
+        "description": "Updates an existing photo's properties."
+    },
+    "UpdateMediaPersonIntent": {
+        "description": "Rename the provided person"
+    },
+    "com.apple.AppKit.WritingToolsProofreadIntent": {
+        "description": "Invoke Writing Tools and proofread the current text."
+    },
+    "com.apple.AppKit.WritingToolsRewriteIntent": {
+        "description": "Invoke Writing Tools and rewrite the current text."
+    },
+    "com.apple.DocumentsApp.CompressItemsIntent": {
+        "description": "Compress one or multiple items in Files"
+    },
+    "com.apple.DocumentsApp.CreateFolderIntent": {
+        "description": "Creates a new folder in Files application."
+    },
+    "com.apple.DocumentsApp.DuplicateItemsIntent": {
+        "description": "Duplicate a set of items in the Files application"
+    },
+    "com.apple.DocumentsApp.MoveItemsIntent": {
+        "description": "Moves existing files and/or folders."
+    },
+    "com.apple.DocumentsApp.OpenItemIntent": {
+        "description": "Opens a selected file or folder."
+    },
+    "com.apple.DocumentsApp.RenameItemIntent": {
+        "description": "Renames an existing file or folder."
+    },
+    "com.apple.DocumentsApp.RevealItemsIntent": {
+        "description": "Reveal the items in the Files app"
+    },
+    "com.apple.DocumentsApp.ScanDocument": {
+        "description": "Scan a document using the Files app"
+    },
+    "com.apple.GenerativePlaygroundApp.CreateImageIntent": {
+        "description": "Create an image with the specified description."
+    },
+    "com.apple.GenerativePlaygroundApp.GenerativePlaygroundAppIntents.CreateImageIntent": {
+        "description": "Create an image with the specified description."
+    },
+    "com.apple.Music.CloseNowPlayingIntent": {
+        "description": "Closes Now Playing or the selected destination"
+    },
+    "com.apple.Music.CreatePlaylistIntent": {
+        "description": "Creates a new playlist with a title"
+    },
+    "com.apple.Music.DownloadMusicItemIntent": {
+        "description": "Downloads the specified item to your device for offline playback"
+    },
+    "com.apple.Music.OpenLibrarySectionAppIntent": {
+        "description": "Closes Now Playing or the selected destination"
+    },
+    "com.apple.Music.OpenMusicItemIntent": {
+        "description": "Opens the specified item in Apple Music"
+    },
+    "com.apple.Music.OpenMusicLibrarySectionIntent": {
+        "description": "Opens a specific section of your music library"
+    },
+    "com.apple.Music.OpenMusicTabIntent": {
+        "description": "Opens a tab in Apple Music"
+    },
+    "com.apple.Music.OpenNowPlayingIntent": {
+        "description": "Opens Now Playing to the selected destination"
+    },
+    "com.apple.Music.RemoveDownloadForMusicItemIntent": {
+        "description": "Removes a downloaded item from your device"
+    },
+    "com.apple.Music.RemoveMusicItemFromLibraryIntent": {
+        "description": "Removes the specified item from your Library"
+    },
+    "com.apple.Music.SuggestLessMusicItemIntent": {
+        "description": "Marks an item as suggest less"
+    },
+    "com.apple.Music.UndoSuggestLessMusicItemIntent": {
+        "description": "Undoes marking an item suggest less"
+    },
+    "com.apple.Notes.AddTagsToNotesLinkAction": {
+        "description": "Adds tags to notes."
+    },
+    "com.apple.Notes.ApplyFormattingLinkAction": {
+        "description": "Formats selected text in a note."
+    },
+    "com.apple.Notes.ChangeSettingLinkAction": {
+        "description": "Change the settings of the Notes app."
+    },
+    "com.apple.Notes.CreateChecklistItemLinkAction": {
+        "description": "Adds a checklist item to the end of a note."
+    },
+    "com.apple.Notes.CreateFolderLinkAction": {
+        "description": "Creates a new folder in Notes app."
+    },
+    "com.apple.Notes.CreateTagLinkAction": {
+        "description": "Creates a tag that can be used in notes."
+    },
+    "com.apple.Notes.DeleteChecklistItemsLinkAction": {
+        "description": "Deletes checklist items from a note."
+    },
+    "com.apple.Notes.DeleteFoldersLinkAction": {
+        "description": "Deletes folders from Notes."
+    },
+    "com.apple.Notes.DeleteNotesLinkAction": {
+        "description": "Delete notes."
+    },
+    "com.apple.Notes.DeleteTagsLinkAction": {
+        "description": "Delete tags from Notes."
+    },
+    "com.apple.Notes.InsertAllMentionLinkAction": {
+        "description": "Insert an all mention into the provided target note, notifying all collaborators."
+    },
+    "com.apple.Notes.InsertMentionLinkAction": {
+        "description": "Mentions another participant or all participants in a shared note."
+    },
+    "com.apple.Notes.InsertNoteLinkLinkAction": {
+        "description": "Adds a link to a note in a note."
+    },
+    "com.apple.Notes.LockNoteLinkAction": {
+        "description": "Lock the given note so that viewing it requires a password, passcode, or biometric authentication."
+    },
+    "com.apple.Notes.MoveNotesToFolderLinkAction": {
+        "description": "Moves notes into a folder in Notes."
+    },
+    "com.apple.Notes.OpenFolderLinkAction": {
+        "description": "Opens an existing folder in Notes."
+    },
+    "com.apple.Notes.OpenTagLinkAction": {
+        "description": "Opens a list of notes that contain a specific tag."
+    },
+    "com.apple.Notes.PinNotesLinkAction": {
+        "description": "Pins or unpins notes."
+    },
+    "com.apple.Notes.RemoveLockFromNoteLinkAction": {
+        "description": "Remove lock from the given note so that viewing it does not require a password, passcode, or biometric authentication."
+    },
+    "com.apple.Notes.RemoveTagsFromNotesLinkAction": {
+        "description": "Removes tags from notes."
+    },
+    "com.apple.Notes.RenameFolderLinkAction": {
+        "description": "Renames a folder in Notes."
+    },
+    "com.apple.Notes.SetChecklistItemCheckedLinkAction": {
+        "description": "Change whether the given checklist items are checked or not."
+    },
+    "com.apple.Notes.SetParagraphStyleLinkAction": {
+        "description": "Applies a paragraph style to text in a note."
+    },
+    "com.apple.Photos.DecreaseApertureIntent": {
+        "description": "Decreases the aperture of the specified photo."
+    },
+    "com.apple.Photos.DecreaseExposureIntent": {
+        "description": "Decreases the exposure of the specified photo."
+    },
+    "com.apple.Photos.DecreaseSaturationIntent": {
+        "description": "Decreases the saturation of the specified photo."
+    },
+    "com.apple.Photos.DecreaseWarmthIntent": {
+        "description": "Decreases the warmth of the specified photo."
+    },
+    "com.apple.Photos.EditAssetIntent": {
+        "description": "Opens the specified photo to Edit."
+    },
+    "com.apple.Photos.FavoriteMemoriesIntent": {
+        "description": "Favorites or unfavorites the specified memories."
+    },
+    "com.apple.Photos.FilterLibraryIntent": {
+        "description": "Sets the specified library view option."
+    },
+    "com.apple.Photos.IncreaseApertureIntent": {
+        "description": "Increases the aperture of the photo by the specified number of stops."
+    },
+    "com.apple.Photos.IncreaseExposureIntent": {
+        "description": "Increases the exposure of the photo by the specified value."
+    },
+    "com.apple.Photos.IncreaseSaturationIntent": {
+        "description": "Increases the saturation of the photo by the specified value."
+    },
+    "com.apple.Photos.IncreaseWarmthIntent": {
+        "description": "Increases the warmth of the photo by the specified value."
+    },
+    "com.apple.Photos.MarkupIntent": {
+        "description": "Opens the specified photo to Markup."
+    },
+    "com.apple.Photos.MoveAssetsToPersonalLibraryIntent": {
+        "description": "Moves the specified photos to the Personal Library."
+    },
+    "com.apple.Photos.MoveAssetsToSharedLibraryIntent": {
+        "description": "Moves the specified photos to the Shared Library."
+    },
+    "com.apple.Photos.OpenAlbumIntent": {
+        "description": "Opens the provided album."
+    },
+    "com.apple.Photos.OpenAssetIntent": {
+        "description": "Opens the app into a given photo."
+    },
+    "com.apple.Photos.OpenDestinationIntent": {
+        "description": "Opens the specified view."
+    },
+    "com.apple.Photos.OpenMemoryCreationViewIntent": {
+        "description": "Creates a Memory movie with the specified description."
+    },
+    "com.apple.Photos.OpenMemoryIntent": {
+        "description": "Opens the specified memory."
+    },
+    "com.apple.Photos.OpenSharedAlbumIntent": {
+        "description": "Opens the specified shared album."
+    },
+    "com.apple.Photos.PhotosAddAssetsToAlbumAssistantIntent": {
+        "description": "Adds the provided photos to the provided album."
+    },
+    "com.apple.Photos.PhotosCleanupPhotoAssistantIntent": {
+        "description": "Clears edits from a photo."
+    },
+    "com.apple.Photos.PhotosCopyEditsAssistantIntent": {
+        "description": "Copies edits from the provided photo."
+    },
+    "com.apple.Photos.PhotosCreateAlbumAssistantIntent": {
+        "description": "Creates an album."
+    },
+    "com.apple.Photos.PhotosCropAssistantIntent": {
+        "description": "Crops a given photo."
+    },
+    "com.apple.Photos.PhotosDeleteAlbumsAssistantIntent": {
+        "description": "Deletes the provided albums."
+    },
+    "com.apple.Photos.PhotosDeleteAssetsAssistantIntent": {
+        "description": "Deletes the provided photos."
+    },
+    "com.apple.Photos.PhotosDuplicateAssetsAssistantIntent": {
+        "description": "Duplicates the selected photos."
+    },
+    "com.apple.Photos.PhotosPasteEditsAssistantIntent": {
+        "description": "Pastes edits to the provided photo."
+    },
+    "com.apple.Photos.PhotosSetDepthAssistantIntent": {
+        "description": "Sets the depth value of a photo."
+    },
+    "com.apple.Photos.PhotosSetExposureAssistantIntent": {
+        "description": "Configures the exposure for a photo."
+    },
+    "com.apple.Photos.PhotosSetFilterAssistantIntent": {
+        "description": "Applies a filter to a given photo."
+    },
+    "com.apple.Photos.PhotosSetRotationAssistantIntent": {
+        "description": "Rotates a given photo."
+    },
+    "com.apple.Photos.PhotosSetSaturationAssistantIntent": {
+        "description": "Configures the saturation for a photo."
+    },
+    "com.apple.Photos.PhotosSetWarmthAssistantIntent": {
+        "description": "Configures the warmth for a photo."
+    },
+    "com.apple.Photos.PhotosStraightenAssistantIntent": {
+        "description": "Straightens a given photo."
+    },
+    "com.apple.Photos.PhotosToggleDepthAssistantIntent": {
+        "description": "Toggles depth effect for a given photo."
+    },
+    "com.apple.Photos.PhotosToggleSuggestedEditsAssistantIntent": {
+        "description": "Enhances a given photo."
+    },
+    "com.apple.Photos.PhotosUpdateAlbumAssistantIntent": {
+        "description": "Renames the provided album."
+    },
+    "com.apple.Photos.PhotosUpdateAssetAssistantIntent": {
+        "description": "Updates an existing photo's properties."
+    },
+    "com.apple.Photos.PhotosUpdateRecognizedPersonAssistantIntent": {
+        "description": "Updates the provided person with new properties."
+    },
+    "com.apple.Photos.PostToSharedAlbumIntent": {
+        "description": "Posts the photos to the specified shared album."
+    },
+    "com.apple.Preferences.AvailableBatteryHealthDynamicDeepLinks": {
+        "description": "Navigates to a particular setting in Battery Health settings"
+    },
+    "com.apple.Preferences.AvailableChargingDynamicDeepLinks": {
+        "description": "Navigates to a particular setting in Charging Settings"
+    },
+    "com.apple.Preferences.BatteryPercentageToggleEntity": {
+        "description": "Get the current setting for whether battery percentage is shown."
+    },
+    "com.apple.Preferences.BatteryPercentageToggleEntity-UpdatableEntity": {
+        "description": "Change the setting for whether battery percentage is shown."
+    },
+    "com.apple.Preferences.OpenAirDropBringDevicesTogetherEntity": {
+        "description": "Open AirDrop Bring Devices Together Settings."
+    },
+    "com.apple.Preferences.OpenAirDropReceivingModeEntity": {
+        "description": "Open AirDrop Receiving Mode Settings."
+    },
+    "com.apple.Preferences.OpenAirDropSettingsStaticLinks": {
+        "description": "Open AirDrop Settings."
+    },
+    "com.apple.Preferences.OpenAirDropUseCellularDataEntity": {
+        "description": "Open AirDrop Use Cellular Data Settings."
+    },
+    "com.apple.Preferences.OpenAppleAccountMainDeepLink": {
+        "description": "Navigates to a particular setting in Apple Account Settings."
+    },
+    "com.apple.Preferences.OpenCharacterCountEntity": {
+        "description": "Open Character Count Settings."
+    },
+    "com.apple.Preferences.OpenDeveloperSettingsDeepLink": {
+        "description": "Navigates to a particular setting in Developer Settings."
+    },
+    "com.apple.Preferences.OpenFilterUnknownSendersEntity": {
+        "description": "Open Filter Unknown Senders Settings."
+    },
+    "com.apple.Preferences.OpenFocusSettingsDeepLinks": {
+        "description": "Navigates to a particular setting in Focus Settings."
+    },
+    "com.apple.Preferences.OpenFocusSettingsDynamicDeepLinks": {
+        "description": "Navigates to the settings for a particular Focus Mode."
+    },
+    "com.apple.Preferences.OpenGeneralSettingsIntentsDeepLinks": {
+        "description": "Navigates to a particular settings pane within General Settings."
+    },
+    "com.apple.Preferences.OpenInternetAccountsSettings": {
+        "description": "Open List of Internet Accounts"
+    },
+    "com.apple.Preferences.OpenLegalAndRegulatoryDeepLinks": {
+        "description": "Open Legal & Regulatory Settings"
+    },
+    "com.apple.Preferences.OpenLowQualityImageModeEntity": {
+        "description": "Open Low Quality Image Mode Settings."
+    },
+    "com.apple.Preferences.OpenMessagesSettingsDynamicDeepLinks": {
+        "description": "Open Messages Settings."
+    },
+    "com.apple.Preferences.OpenNewDeviceOutreachStaticDeepLinks": {
+        "description": "Open New Device Outreach Settings."
+    },
+    "com.apple.Preferences.OpenNotificationsSettingsDeepLinks": {
+        "description": "Open Notifications Settings."
+    },
+    "com.apple.Preferences.OpenNotifyMeEntity": {
+        "description": "Open Notify Me Settings."
+    },
+    "com.apple.Preferences.OpenPrivacyAndSecuritySettingsDeepLink": {
+        "description": "Navigates to a particular setting in Privacy and Security Settings."
+    },
+    "com.apple.Preferences.OpenRaiseToListenEntity": {
+        "description": "Open Raise to Listen Settings."
+    },
+    "com.apple.Preferences.OpenSendAsTextMessageEntity": {
+        "description": "Open Send As Text Message Settings."
+    },
+    "com.apple.Preferences.OpenSendReadReceiptsEntity": {
+        "description": "Open Send Read Receipts Settings."
+    },
+    "com.apple.Preferences.OpenSettingsCellularDeepLinks": {
+        "description": "Navigates to a particular setting in Cellular Setings."
+    },
+    "com.apple.Preferences.OpenShowContactPhotosEntity": {
+        "description": "Open Show Contact Photos Settings."
+    },
+    "com.apple.Preferences.OpenShowSubjectFieldEntity": {
+        "description": "Open Show Subject Field Settings."
+    },
+    "com.apple.Preferences.PerformSoftwareUpdateActionIntent": {
+        "description": "Change Software Update Time Settings."
+    },
+    "com.apple.Preferences.OpenTwentyFourHourTimeEntity": {
+        "description": "Open Twenty-Four Hour Time Settings."
+    },
+    "com.apple.Safari.CloseTabsAssistantIntent": {
+        "description": "Closes the selected tabs."
+    },
+    "com.apple.Safari.CloseView": {
+        "description": "Closes the view in Safari."
+    },
+    "com.apple.Safari.CreateNewTabGroup": {
+        "description": "Creates an empty Tab Group."
+    },
+    "com.apple.Safari.CreateNewWindow": {
+        "description": "Creates a new browser window."
+    },
+    "com.apple.Safari.CreateTabAssistantIntent": {
+        "description": "Creates a new tab with an optional name and URL loaded, or blank if omitted."
+    },
+    "com.apple.Safari.DeleteTabGroups": {
+        "description": "Delete one or more Safari Tab Groups."
+    },
+    "com.apple.Safari.FindOnPage": {
+        "description": "Find the given text on the selected tab."
+    },
+    "com.apple.Safari.LoadURLInTab": {
+        "description": "Navigates a tab to the given URL."
+    },
+    "com.apple.Safari.MoveTabsToTabGroup": {
+        "description": "Move Safari tabs from their current Tab Group into a new one."
+    },
+    "com.apple.Safari.OpenBookmark": {
+        "description": "Opens the selected Bookmark."
+    },
+    "com.apple.Safari.OpenBookmarkAssistantIntent": {
+        "description": "Opens the selected Bookmark."
+    },
+    "com.apple.Safari.OpenTab": {
+        "description": "Switch to an existing tab."
+    },
+    "com.apple.Safari.OpenTabGroup": {
+        "description": "Opens the selected Tab Group."
+    },
+    "com.apple.Safari.OpenView": {
+        "description": "Opens the view in Safari."
+    },
+    "com.apple.UIKitCore.WritingToolsProofreadIntent": {
+        "description": "Invoke Writing Tools and proofread the current text."
+    },
+    "com.apple.UIKitCore.WritingToolsRewriteIntent": {
+        "description": "Invoke Writing Tools and rewrite the current text."
+    },
+    "com.apple.finder.CompressItemsIntent": {
+        "description": "Compresses items into an archive"
+    },
+    "com.apple.finder.CreateFolderIntent": {
+        "description": "Creates a new folder in Finder app."
+    },
+    "com.apple.finder.DuplicateItemsIntent": {
+        "description": "Duplicates items in their current locations"
+    },
+    "com.apple.finder.MoveItemsIntent": {
+        "description": "Moves existing files and/or folders."
+    },
+    "com.apple.finder.OpenItemIntent": {
+        "description": "Opens a selected file or folder."
+    },
+    "com.apple.finder.RenameItemIntent": {
+        "description": "Renames an existing file or folder."
+    },
+    "com.apple.iBooks.AudiobookSleepTimerIntent": {
+        "description": "Sets a sleep timer in the Books app from available sleep timer options."
+    },
+    "com.apple.iBooks.BookReaderChangePageNavigationIntent": {
+        "description": "Sets navigation in an open book to page turning or continuous scrolling."
+    },
+    "com.apple.iBooks.BookReaderNavigatePageInBookIntent": {
+        "description": "Navigates to the next or previous page."
+    },
+    "com.apple.iBooks.ChangeFontSizeIntent": {
+        "description": "Updates the font size for a book."
+    },
+    "com.apple.iBooks.MenuOnLeftEntity-UpdatableEntity": {
+        "description": "Change the position (left or right) of the menu in Books."
+    },
+    "com.apple.iBooks.OpenDefaultCollectionIntent": {
+        "description": "Opens a specified default collection in the Books app."
+    },
+    "com.apple.iBooks.OpenSpecificBookIntent": {
+        "description": "Opens the specified book."
+    },
+    "com.apple.iBooks.OpenTabBarItemIntent": {
+        "description": "Opens the Books app to the tab or sidebar view you specify."
+    },
+    "com.apple.iBooks.UpdateBookSettingsIntent": {
+        "description": "Updates the settings for a book."
+    },
+    "com.apple.iBooksX.AudiobookSleepTimerIntent": {
+        "description": "Sets a sleep timer in the Books app from available sleep timer options."
+    },
+    "com.apple.iBooksX.BookReaderNavigatePageInBookIntent": {
+        "description": "Navigates to the next or previous page."
+    },
+    "com.apple.iBooksX.ChangeFontSizeIntent": {
+        "description": "Updates the font size for a book."
+    },
+    "com.apple.iBooksX.OpenDefaultCollectionIntent": {
+        "description": "Opens a specified default collection in the Books app."
+    },
+    "com.apple.iBooksX.OpenSpecificBookIntent": {
+        "description": "[books-OpenBookIntent-1.0.0] Opens the specified book."
+    },
+    "com.apple.iBooksX.OpenTabBarItemIntent": {
+        "description": "Opens the Books app to the tab or sidebar view you specify."
+    },
+    "com.apple.iBooksX.UpdateBookSettingsIntent": {
+        "description": "Updates the settings for a book."
+    },
+    "com.apple.mail.ArchiveMessageIntent": {
+        "description": "Archives one or more email messages."
+    },
+    "com.apple.mail.BlockSenderIntent": {
+        "description": "Block the sender of one or more email messages"
+    },
+    "com.apple.mail.ComposeMessageIntent": {
+        "description": "Opens an email composer to draft a message."
+    },
+    "com.apple.mail.DeleteDraftIntent": {
+        "description": "Deletes an email draft."
+    },
+    "com.apple.mail.DeleteMessageIntent": {
+        "description": "Deletes the selected email messages."
+    },
+    "com.apple.mail.DeleteReadLaterIntent": {
+        "description": "Delete the read later reminder on one or more email messages"
+    },
+    "com.apple.mail.ForwardMessageIntent": {
+        "description": "Opens an email composer to forward a message."
+    },
+    "com.apple.mail.MuteMessageIntent": {
+        "description": "Mute one or more email messages"
+    },
+    "com.apple.mail.RemoveFollowUpIntent": {
+        "description": "Remove the follow up suggestion on one or more email messages"
+    },
+    "com.apple.mail.ReplyMessageIntent": {
+        "description": "Opens an email composer to reply to a message."
+    },
+    "com.apple.mail.SaveDraftIntent": {
+        "description": "Saves an email draft."
+    },
+    "com.apple.mail.SendDraftIntent": {
+        "description": "Sends an email draft or schedules it to be sent later."
+    },
+    "com.apple.mail.SetReadLaterIntent": {
+        "description": "Mark one or more email messages to read later"
+    },
+    "com.apple.mail.SummarizeConversationIntent": {
+        "description": "Summarize an email conversation"
+    },
+    "com.apple.mail.UndoSendMessageIntent": {
+        "description": "Undo an email message that has just been sent"
+    },
+    "com.apple.mail.UnsubscribeMessageIntent": {
+        "description": "Unsubscribe from one or more email messages"
+    },
+    "com.apple.mail.UpdateDraftIntent": {
+        "description": "Updates the selected email drafts."
+    },
+    "com.apple.mail.UpdateMessageIntent": {
+        "description": "Updates the selected email messages."
+    },
+    "com.apple.mobilemail.ArchiveMessageIntent": {
+        "description": "Archives one or more email messages."
+    },
+    "com.apple.mobilemail.BlockSenderIntent": {
+        "description": "Block the sender of one or more email messages"
+    },
+    "com.apple.mobilemail.ComposeMessageIntent": {
+        "description": "Opens an email composer to draft a message."
+    },
+    "com.apple.mobilemail.DeleteDraftIntent": {
+        "description": "Deletes an email draft."
+    },
+    "com.apple.mobilemail.DeleteMessageIntent": {
+        "description": "Deletes the selected email messages."
+    },
+    "com.apple.mobilemail.DeleteReadLaterIntent": {
+        "description": "Delete the read later reminder on one or more email messages"
+    },
+    "com.apple.mobilemail.ForwardMessageIntent": {
+        "description": "Opens an email composer to forward a message."
+    },
+    "com.apple.mobilemail.MuteMessageIntent": {
+        "description": "Mute one or more email messages"
+    },
+    "com.apple.mobilemail.NotifyMessageIntent": {
+        "description": "Toggle notification setting on one or more email messages"
+    },
+    "com.apple.mobilemail.RemoveFollowUpIntent": {
+        "description": "Remove the follow up suggestion on one or more email messages"
+    },
+    "com.apple.mobilemail.ReplyMessageIntent": {
+        "description": "Opens an email composer to reply to a message."
+    },
+    "com.apple.mobilemail.SaveDraftIntent": {
+        "description": "Saves an email draft."
+    },
+    "com.apple.mobilemail.SendDraftIntent": {
+        "description": "Sends an email draft or schedules it to be sent later."
+    },
+    "com.apple.mobilemail.SetReadLaterIntent": {
+        "description": "Mark one or more email messages to be reminded about"
+    },
+    "com.apple.mobilemail.SummarizeConversationIntent": {
+        "description": "Summarize an email conversation"
+    },
+    "com.apple.mobilemail.UndoSendMessageIntent": {
+        "description": "Undo an email message that has just been sent"
+    },
+    "com.apple.mobilemail.UnsubscribeMessageIntent": {
+        "description": "Unsubscribe from one or more email messages"
+    },
+    "com.apple.mobilemail.UpdateDraftIntent": {
+        "description": "Updates the selected email drafts."
+    },
+    "com.apple.mobilemail.UpdateMessageIntent": {
+        "description": "Updates the selected email messages."
+    },
+    "com.apple.mobilenotes.AddTagsToNotesLinkAction": {
+        "description": "Adds tags to notes."
+    },
+    "com.apple.mobilenotes.ApplyFormattingLinkAction": {
+        "description": "Formats selected text in a note."
+    },
+    "com.apple.mobilenotes.ChangeSettingLinkAction": {
+        "description": "Change the settings of the Notes app."
+    },
+    "com.apple.mobilenotes.CreateChecklistItemLinkAction": {
+        "description": "Adds a checklist item to the end of a note."
+    },
+    "com.apple.mobilenotes.CreateFolderLinkAction": {
+        "description": "Creates a new folder in Notes app."
+    },
+    "com.apple.mobilenotes.CreateTagLinkAction": {
+        "description": "Creates a tag that can be used in notes."
+    },
+    "com.apple.mobilenotes.DeleteChecklistItemsLinkAction": {
+        "description": "Deletes checklist items from a note."
+    },
+    "com.apple.mobilenotes.DeleteFoldersLinkAction": {
+        "description": "Deletes folders from Notes."
+    },
+    "com.apple.mobilenotes.DeleteNotesLinkAction": {
+        "description": "Delete notes."
+    },
+    "com.apple.mobilenotes.DeleteTagsLinkAction": {
+        "description": "Delete tags from Notes."
+    },
+    "com.apple.mobilenotes.InsertAllMentionLinkAction": {
+        "description": "Insert an all mention into the provided target note, notifying all collaborators."
+    },
+    "com.apple.mobilenotes.InsertMentionLinkAction": {
+        "description": "Mentions another participant or all participants in a shared note."
+    },
+    "com.apple.mobilenotes.InsertNoteLinkLinkAction": {
+        "description": "Adds a link to a note in a note."
+    },
+    "com.apple.mobilenotes.LockNoteLinkAction": {
+        "description": "Lock the given note so that viewing it requires a password, passcode, or biometric authentication."
+    },
+    "com.apple.mobilenotes.MoveNotesToFolderLinkAction": {
+        "description": "Moves notes into a folder in Notes."
+    },
+    "com.apple.mobilenotes.OpenFolderLinkAction": {
+        "description": "Opens an existing folder in Notes."
+    },
+    "com.apple.mobilenotes.OpenTagLinkAction": {
+        "description": "Opens a list of notes that contain a specific tag."
+    },
+    "com.apple.mobilenotes.PinNotesLinkAction": {
+        "description": "Pins or unpins notes."
+    },
+    "com.apple.mobilenotes.RemoveLockFromNoteLinkAction": {
+        "description": "Remove lock from the given note so that viewing it does not require a password, passcode, or biometric authentication."
+    },
+    "com.apple.mobilenotes.RemoveTagsFromNotesLinkAction": {
+        "description": "Removes tags from notes."
+    },
+    "com.apple.mobilenotes.RenameFolderLinkAction": {
+        "description": "Renames a folder in Notes."
+    },
+    "com.apple.mobilenotes.ScanDocumentLinkAction": {
+        "description": "Opens a scanner that scans documents and inserts what\u2019s scanned into a note."
+    },
+    "com.apple.mobilenotes.SetChecklistItemCheckedLinkAction": {
+        "description": "Change whether the given checklist items are checked or not."
+    },
+    "com.apple.mobilenotes.SetParagraphStyleLinkAction": {
+        "description": "Applies a paragraph style to text in a note."
+    },
+    "com.apple.mobilenotes.TakePhotoLinkAction": {
+        "description": "Opens a camera in Notes and inserts what's captured into a note."
+    },
+    "com.apple.mobilesafari.AutoFillContactInfoEntity": {
+        "description": "Get the current AutoFill Use Contact Info setting"
+    },
+    "com.apple.mobilesafari.AutoFillContactInfoEntity-UpdatableEntity": {
+        "description": "Change the AutoFill Use Contact Info setting."
+    },
+    "com.apple.mobilesafari.AutoFillCreditCardEntity": {
+        "description": "Get the current AutoFill Use Credit Cards setting"
+    },
+    "com.apple.mobilesafari.AutoFillCreditCardEntity-UpdatableEntity": {
+        "description": "Change the AutoFill Use Credit Cards setting."
+    },
+    "com.apple.mobilesafari.BlockPopUpsEntity": {
+        "description": "Get the current Block Pop-Ups setting."
+    },
+    "com.apple.mobilesafari.BlockPopUpsEntity-UpdatableEntity": {
+        "description": "Change the Block Pop-Ups setting."
+    },
+    "com.apple.mobilesafari.ChangeReaderModeState": {
+        "description": "Changes Reader Mode of the current page."
+    },
+    "com.apple.mobilesafari.ClearHistoryIntent": {
+        "description": "Clears history, and related cookies and other website data."
+    },
+    "com.apple.mobilesafari.CloseTabsAssistantIntent": {
+        "description": "Closes the selected tabs."
+    },
+    "com.apple.mobilesafari.CloseTabsModeEntity": {
+        "description": "Get the current Close Tabs Mode setting."
+    },
+    "com.apple.mobilesafari.CloseTabsModeEntity-UpdatableEntity": {
+        "description": "Change the Close Tabs Mode setting."
+    },
+    "com.apple.mobilesafari.CloseView": {
+        "description": "Closes the view in Safari."
+    },
+    "com.apple.mobilesafari.CreateNewTabGroup": {
+        "description": "Creates an empty Tab Group."
+    },
+    "com.apple.mobilesafari.CreateNewWindow": {
+        "description": "Creates a new browser window."
+    },
+    "com.apple.mobilesafari.CreateTabAssistantIntent": {
+        "description": "Creates a new tab with an optional name and URL loaded, or blank if omitted."
+    },
+    "com.apple.mobilesafari.DeleteTabGroups": {
+        "description": "Delete one or more Safari Tab Groups."
+    },
+    "com.apple.mobilesafari.FindOnPage": {
+        "description": "Find the given text on the selected tab."
+    },
+    "com.apple.mobilesafari.LandscapeTabBarEntity": {
+        "description": "Get setting for whether the Safari Landscape Tab Bar is enabled."
+    },
+    "com.apple.mobilesafari.LandscapeTabBarEntity-UpdatableEntity": {
+        "description": "Change the Landscape Tab Bar value of Landscape Tab Bar"
+    },
+    "com.apple.mobilesafari.LoadURLInTab": {
+        "description": "Navigates a tab to the given URL."
+    },
+    "com.apple.mobilesafari.MoveTabsToTabGroup": {
+        "description": "Move Safari tabs from their current Tab Group into a new one."
+    },
+    "com.apple.mobilesafari.NavigateContinuousReadingList": {
+        "description": "Navigates to the previous or next article in Continuous Reading List."
+    },
+    "com.apple.mobilesafari.OpenBookmarkAssistantIntent": {
+        "description": "Opens the specified bookmark."
+    },
+    "com.apple.mobilesafari.OpenLinksInBackgroundEntity": {
+        "description": "Get setting for whether Safari opens new links in the background."
+    },
+    "com.apple.mobilesafari.OpenLinksInBackgroundEntity-UpdatableEntity": {
+        "description": "Change the setting for whether Safari opens new links in the background."
+    },
+    "com.apple.mobilesafari.OpenSafariSettingDeepLinks": {
+        "description": "Open Safari Settings."
+    },
+    "com.apple.mobilesafari.OpenTab": {
+        "description": "Switch to an existing tab."
+    },
+    "com.apple.mobilesafari.OpenTabGroup": {
+        "description": "Opens the selected Tab Group."
+    },
+    "com.apple.mobilesafari.OpenView": {
+        "description": "Opens the view in Safari."
+    },
+    "com.apple.mobilesafari.PrivateSearchEngineEntity": {
+        "description": "Get setting for current Safari private search engine."
+    },
+    "com.apple.mobilesafari.PrivateSearchEngineEntity-UpdatableEntity": {
+        "description": "Change setting for current Safari private search engine."
+    },
+    "com.apple.mobilesafari.SafariSuggestionsEntity": {
+        "description": "Get the current setting for whether to show Safari Suggestions."
+    },
+    "com.apple.mobilesafari.SafariSuggestionsEntity-UpdatableEntity": {
+        "description": "Change the setting for whether to show Safari Suggestions."
+    },
+    "com.apple.mobilesafari.SearchEngineEntity": {
+        "description": "Get the setting for the current default Safari search engine."
+    },
+    "com.apple.mobilesafari.SearchEngineEntity-UpdatableEntity": {
+        "description": "Change setting for the current default Safari search engine."
+    },
+    "com.apple.mobilesafari.SearchEngineSuggestionsEntity": {
+        "description": "Get the current setting for whether to show Safari search engine suggestions."
+    },
+    "com.apple.mobilesafari.SearchEngineSuggestionsEntity-UpdatableEntity": {
+        "description": "Change the setting for whether to show Safari search engine suggestions."
+    },
+    "com.apple.mobilesafari.TabBarLayoutEntity": {
+        "description": "Get the current setting for the Safari tab bar layout."
+    },
+    "com.apple.mobilesafari.TabBarLayoutEntity-UpdatableEntity": {
+        "description": "Change the setting for the Safari tab bar layout."
+    },
+    "com.apple.mobilesafari.TabLayoutEntity": {
+        "description": "Get the current setting for the Safari tab layout configuration."
+    },
+    "com.apple.mobilesafari.TabLayoutEntity-UpdatableEntity": {
+        "description": "Change the setting for the Safari tab layout configuration."
+    },
+    "com.apple.mobileslideshow.DecreaseApertureIntent": {
+        "description": "Decreases the aperture of the specified photo."
+    },
+    "com.apple.mobileslideshow.DecreaseExposureIntent": {
+        "description": "Decreases the exposure of the specified photo."
+    },
+    "com.apple.mobileslideshow.DecreaseSaturationIntent": {
+        "description": "Decreases the saturation of the specified photo."
+    },
+    "com.apple.mobileslideshow.DecreaseWarmthIntent": {
+        "description": "Decreases the warmth of the specified photo."
+    },
+    "com.apple.mobileslideshow.EditAssetIntent": {
+        "description": "Opens the specified photo to Edit."
+    },
+    "com.apple.mobileslideshow.FavoriteMemoriesIntent": {
+        "description": "Favorites or unfavorites the specified memories."
+    },
+    "com.apple.mobileslideshow.FilterLibraryIntent": {
+        "description": "Sets the specified library view option."
+    },
+    "com.apple.mobileslideshow.IncreaseApertureIntent": {
+        "description": "Increases the aperture of the photo by the specified number of stops."
+    },
+    "com.apple.mobileslideshow.IncreaseExposureIntent": {
+        "description": "Increases the exposure of the photo by the specified value."
+    },
+    "com.apple.mobileslideshow.IncreaseSaturationIntent": {
+        "description": "Increases the saturation of the photo by the specified value."
+    },
+    "com.apple.mobileslideshow.IncreaseWarmthIntent": {
+        "description": "Increases the warmth of the photo by the specified value."
+    },
+    "com.apple.mobileslideshow.MarkupIntent": {
+        "description": "Opens the specified photo to Markup."
+    },
+    "com.apple.mobileslideshow.MoveAssetsToPersonalLibraryIntent": {
+        "description": "Moves the specified photos to the Personal Library."
+    },
+    "com.apple.mobileslideshow.MoveAssetsToSharedLibraryIntent": {
+        "description": "Moves the specified photos to the Shared Library."
+    },
+    "com.apple.mobileslideshow.OpenAlbumIntent": {
+        "description": "Opens the provided album."
+    },
+    "com.apple.mobileslideshow.OpenAssetIntent": {
+        "description": "Opens the app into a given photo."
+    },
+    "com.apple.mobileslideshow.OpenDestinationIntent": {
+        "description": "Opens the specified view."
+    },
+    "com.apple.mobileslideshow.OpenMemoryCreationViewIntent": {
+        "description": "Creates a Memory movie with the specified description."
+    },
+    "com.apple.mobileslideshow.OpenMemoryIntent": {
+        "description": "Opens the specified memory."
+    },
+    "com.apple.mobileslideshow.OpenSharedAlbumIntent": {
+        "description": "Opens the specified shared album."
+    },
+    "com.apple.mobileslideshow.PhotosAddAssetsToAlbumAssistantIntent": {
+        "description": "Adds the provided photos to the provided album."
+    },
+    "com.apple.mobileslideshow.PhotosCleanupPhotoAssistantIntent": {
+        "description": "Clears edits from a photo."
+    },
+    "com.apple.mobileslideshow.PhotosCopyEditsAssistantIntent": {
+        "description": "Copies edits from the provided photo."
+    },
+    "com.apple.mobileslideshow.PhotosCreateAlbumAssistantIntent": {
+        "description": "Creates an album."
+    },
+    "com.apple.mobileslideshow.PhotosCropAssistantIntent": {
+        "description": "Crops a given photo."
+    },
+    "com.apple.mobileslideshow.PhotosDeleteAlbumsAssistantIntent": {
+        "description": "Deletes the provided albums."
+    },
+    "com.apple.mobileslideshow.PhotosDeleteAssetsAssistantIntent": {
+        "description": "Deletes the provided photos."
+    },
+    "com.apple.mobileslideshow.PhotosDuplicateAssetsAssistantIntent": {
+        "description": "Duplicates the selected photos."
+    },
+    "com.apple.mobileslideshow.PhotosPasteEditsAssistantIntent": {
+        "description": "Pastes edits to the provided photo."
+    },
+    "com.apple.mobileslideshow.PhotosSetDepthAssistantIntent": {
+        "description": "Sets the depth value of a photo."
+    },
+    "com.apple.mobileslideshow.PhotosSetExposureAssistantIntent": {
+        "description": "Configures the exposure for a photo."
+    },
+    "com.apple.mobileslideshow.PhotosSetFilterAssistantIntent": {
+        "description": "Applies a filter to a given photo."
+    },
+    "com.apple.mobileslideshow.PhotosSetRotationAssistantIntent": {
+        "description": "Rotates a given photo. If the direction is not specified, then it rotates counter-clockwise."
+    },
+    "com.apple.mobileslideshow.PhotosSetSaturationAssistantIntent": {
+        "description": "Configures the saturation for a photo."
+    },
+    "com.apple.mobileslideshow.PhotosSetWarmthAssistantIntent": {
+        "description": "Configures the warmth for a photo."
+    },
+    "com.apple.mobileslideshow.PhotosStraightenAssistantIntent": {
+        "description": "Straightens a given photo."
+    },
+    "com.apple.mobileslideshow.PhotosToggleDepthAssistantIntent": {
+        "description": "Toggles depth effect for a given photo."
+    },
+    "com.apple.mobileslideshow.PhotosToggleSuggestedEditsAssistantIntent": {
+        "description": "Enhances a given photo."
+    },
+    "com.apple.mobileslideshow.PhotosUpdateAlbumAssistantIntent": {
+        "description": "Renames the provided album."
+    },
+    "com.apple.mobileslideshow.PhotosUpdateAssetAssistantIntent": {
+        "description": "Updates an existing photo\u2019s properties."
+    },
+    "com.apple.mobileslideshow.PhotosUpdateRecognizedPersonAssistantIntent": {
+        "description": "Updates the provided person with new properties."
+    },
+    "com.apple.mobileslideshow.PostToSharedAlbumIntent": {
+        "description": "Posts the photos to the specified shared album."
+    },
+    "com.apple.reminders.AddOrRemoveTagsAppIntent": {
+        "description": "Add tags to or remove tags from reminders."
+    },
+    "com.apple.reminders.CreateCustomSmartListAppIntent": {
+        "description": "Creates a list to automatically include reminders filtered by tags, dates, and more."
+    },
+    "com.apple.reminders.CreateSectionAppIntent": {
+        "description": "Creates a section in a list."
+    },
+    "com.apple.reminders.DeleteListsAppIntent": {
+        "description": "Delete lists from Reminders."
+    },
+    "com.apple.reminders.DeleteRemindersAppIntent": {
+        "description": "Delete reminders."
+    },
+    "com.apple.reminders.DeleteRemindersListGroupsAppIntent": {
+        "description": "Delete groups from Reminders."
+    },
+    "com.apple.reminders.DeleteSectionsAppIntent": {
+        "description": "Delete sections from Reminders."
+    },
+    "com.apple.reminders.IncludeDueTodayEntity": {
+        "description": "Get the current setting for whether to include both overdue and due today items in badge count."
+    },
+    "com.apple.reminders.IncludeDueTodayEntity-UpdatableEntity": {
+        "description": "Change the setting for whether to include both overdue and due today items in badge count."
+    },
+    "com.apple.reminders.ListEntity-UpdatableEntity": {
+        "description": "Edit a Reminders list."
+    },
+    "com.apple.reminders.MoveRemindersAppIntent": {
+        "description": "Move Reminders to a given Reminders List or Section, or become subtasks of a parent reminder."
+    },
+    "com.apple.reminders.MuteNotificationsEntity": {
+        "description": "Get the current setting for whether to get notifications for assigned reminders."
+    },
+    "com.apple.reminders.MuteNotificationsEntity-UpdatableEntity": {
+        "description": "Change the setting for whether to get notifications for assigned reminders."
+    },
+    "com.apple.reminders.OpenIncludeDueTodayDeepLink": {
+        "description": "Opens the Include Due Today setting in the Reminders Settings pane."
+    },
+    "com.apple.reminders.OpenMuteNotificationsDeepLink": {
+        "description": "Opens the Mute Notifications setting in the Reminders Settings pane."
+    },
+    "com.apple.reminders.OpenRemindersSettingsDeepLink": {
+        "description": "Opens all Reminders settings."
+    },
+    "com.apple.reminders.OpenSectionAppIntent": {
+        "description": "Reveal a section in Reminders."
+    },
+    "com.apple.reminders.OpenShowAsOverdueDeepLink": {
+        "description": "Opens the Show as Overdue setting in the Reminders Settings pane."
+    },
+    "com.apple.reminders.OpenShowSuggestionsDeepLink": {
+        "description": "Opens the Show Suggestions setting in the Reminders Settings pane."
+    },
+    "com.apple.reminders.OpenSmartListAppIntent": {
+        "description": "Open a smart list in Reminders."
+    },
+    "com.apple.reminders.OpenTagsAppIntent": {
+        "description": "Open a tag in Reminders."
+    },
+    "com.apple.reminders.OpenTodayNotificationDeepLink": {
+        "description": "Opens the Today Notification setting in the Reminders Settings pane."
+    },
+    "com.apple.reminders.SectionEntity-UpdatableEntity": {
+        "description": "Edit a Reminders list section."
+    },
+    "com.apple.reminders.ShowAsOverdueEntity": {
+        "description": "Get the current setting for whether to show all-day reminders as overdue starting on the next day."
+    },
+    "com.apple.reminders.ShowAsOverdueEntity-UpdatableEntity": {
+        "description": "Change setting for whether to show all-day reminders as overdue starting on the next day."
+    },
+    "com.apple.reminders.ShowSuggestionsEntity": {
+        "description": "Get current setting for whether suggestions in Reminders is enabled."
+    },
+    "com.apple.reminders.ShowSuggestionsEntity-UpdatableEntity": {
+        "description": "Change setting for showing suggestions when adding reminders."
+    },
+    "com.apple.reminders.TTRCreateListAppIntent": {
+        "description": "Creates a list in Reminders."
+    },
+    "com.apple.reminders.TTROpenListAppIntent": {
+        "description": "Opens a list in Reminders."
+    },
+    "com.apple.reminders.TTRSmartListEntity-UpdatableEntity": {
+        "description": "Creates a list in Reminders."
+    },
+    "com.apple.reminders.TodayNotificationEntity": {
+        "description": "Get current setting for Today Notifications."
+    },
+    "com.apple.reminders.TodayNotificationEntity-UpdatableEntity": {
+        "description": "Sets a time to get notified for all-day reminders."
+    },
+    "is.workflow.actions.appendnote": {
+        "description": "Appends the text passed as input to the specified note."
+    },
+    "create_alarm": {
+        "description": "Creates an alarm at a specified time"
+    },
+    "create_reminder": {
+        "description": "Creates an a reminder with the specified content at a specified time or location"
+    },
+    "create_timer": {
+        "description": "Creates a timer for a specified duration"
+    },
+    "navigate_to": {
+        "description": "Starts to navigate to a location"
+    },
+    "play_media": {
+        "description": "Plays the provided media item"
+    },
+    "send_message": {
+        "description": "Sends a message"
+    },
+    "start_call": {
+        "description": "Makes an outgoing call"
+    }
+}

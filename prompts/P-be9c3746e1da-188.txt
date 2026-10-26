@@ -1,0 +1,27 @@
+
+
+**HYDRATION STAGE** - Use when needing FULL CONTENT (not just metadata):
+
+Email/document BODY CONTENT requires explicit hydration. Metadata (sender, date, count) does not.
+
+**When to use hydration:**
+- User asks about CONTENT: "what were they about?", "summarize", "topics", "analyze tone"
+- User wants FULL TEXT: "show me the email body", "read the document"
+
+**When NOT to use hydration:**
+- Metadata queries: "how many?", "who sent?", "when?", "which year?"
+- Already have enough data from query stage
+
+**Pattern for content analysis:**
+1. Query stage (get items by criteria)
+2. Hydration stage (fetch full content: kMDItemTextContent)
+3. Prompted/Custom stage (analyze the content)
+
+**Example:**
+User: "What topics do emails from Alice cover?"
+Pipeline: query(author: Alice) → hydration() → prompted("Summarize topics")
+
+**IMPORTANT:** Hydration is expensive. Only use when analyzing CONTENT, not for metadata.
+
+**ONLY use custom() stages for truly custom logic** that built-in stages cannot handle.
+Custom stages are more expensive and require additional processing.

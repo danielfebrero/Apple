@@ -1,0 +1,81 @@
+{
+  "ShowHighDataModeSwitch": true,
+  "Show5GStandaloneSwitch": true,
+  "Enable5GAutoByDefault": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "DerPriFileVersion": "5.0.161",
+  "Enable5GStandaloneByDefault": true,
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsNRNSAInboundRoaming": true,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "type-mask": 262144,
+          "password": "",
+          "AllowNoDNS": 1,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "password": "password",
+          "tech-type-mask": 131072,
+          "Support5GSaHandOver": true,
+          "AllowedProtocolMaskInRoaming": 0,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "IMS",
+          "AllowedProtocolMask": 2
+        },
+        {
+          "password": "",
+          "username": "",
+          "AllowedProtocolMaskInRoaming": 0,
+          "apn": "yesinternet",
+          "type-mask": 32819,
+          "AllowedProtocolMask": 1
+        },
+        {
+          "password": "",
+          "tech-type-mask": 4,
+          "AllowedProtocolMaskInRoaming": 0,
+          "apn": "mms",
+          "username": "",
+          "type-mask": 4
+        },
+        {
+          "password": "",
+          "tech-type-mask": 1048576,
+          "username": "",
+          "apn": "HOS",
+          "type-mask": 1048576,
+          "AllowedProtocolMask": 1
+        }
+      ],
+      "technology-mask": 9
+    }
+  ],
+  "Show5GSwitch": true,
+  "IMSConfig": {
+    "Emergency": {
+      "AlwaysEnableVoNRForEmergency": true
+    },
+    "Media": {
+      "AudioCodecs": {
+        "98": {
+          "bw": "nb-swb"
+        }
+      },
+      "PreferredAMRWBMode": 8,
+      "EVSHardBwLimit": "nb-swb"
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    }
+  }
+}

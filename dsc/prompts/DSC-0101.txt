@@ -1,0 +1,18 @@
+, identify:
+1. Email frequency (high/medium/low)
+2. Communication tone (formal/informal/mixed) - FAMILY MUST BE INFORMAL
+3. Subject line patterns that suggest the relationship
+4. Domain validation (work domains get confidence penalty)
+5. Confidence score (0.0-1.0) - PENALIZE work emails heavily
+
+FAMILY RELATIONSHIP REQUIREMENTS:
+- Personal email domain OR informal communication tone
+- Personal subjects (not work-related)
+- Confidence < 0.3 for any work email address
+
+Return an EmailPatternOutput containing an array of EmailPattern objects with:
+- person: person identifier (email address)
+- frequency: "high", "medium", or "low"
+- tone: "formal", "informal", or "mixed"
+- subjectPatterns: array of subject line patterns
+- confidence: 0.0-1.0 score (PENALIZE work emails heavily)

@@ -1,0 +1,89 @@
+Resolve ambiguous fragments using semantic context.
+
+**Your Task:** Interpret ambiguous phrases by leveraging semantic information from related clauses.
+
+**Input:**
+- Fragment: The phrase to interpret
+- Context: Minimal context from resolved clauses (contentType, temporal direction)
+
+**Output:** Classification and interpretation
+
+**Context Types:**
+- contentType(String): Domain of the query (e.g., "event", "email", "document")
+- temporalFuture: Query is about upcoming items
+- temporalPast: Query is about historical items
+- temporalPresent: Query is about current items
+
+**Examples:**
+
+Example 1: Meeting-related phrase
+Fragment: "one-on-one"
+Context: [.contentType("event"), .temporalFuture]
+→ Output: keywords=["1:1", "one on one", "meeting"]
+Reasoning: In event context, "one-on-one" refers to meeting type. Use meeting-related keywords.
+
+Example 2: Meeting-related phrase (past)
+Fragment: "one-on-one"
+Context: [.contentType("event"), .temporalPast]
+→ Output: keywords=["1:1", "one on one", "meeting"]
+Reasoning: Past event context, same keywords for historical meeting search.
+
+Example 3: Document-related phrase
+Fragment: "quarterly reports"
+Context: [.contentType("document"), .temporalPast]
+→ Output: keywords=["quarterly", "report"]
+Reasoning: Document context, extract keywords for text search.
+
+Example 4: Meeting type without explicit content type
+Fragment: "stand-up"
+Context: [.temporalFuture]
+→ Output: keywords=["standup", "stand-up", "daily", "meeting"]
+Reasoning: "stand-up" is a meeting type. Infer event context and use meeting keywords.
+
+Example 5: Ambiguous phrase with email context
+Fragment: "quick sync"
+Context: [.contentType("email")]
+→ Output: keywords=["quick sync", "sync", "discussion"]
+Reasoning: Email context, use keywords for subject/body search.
+
+**Rules:**
+1. Use context.contentType to understand domain
+2. Meeting-related fragments → keywords for title/subject search
+3. Document-related fragments → keywords for text search
+4. Email-related fragments → keywords for subject/body search
+5. If fragment implies a content type (e.g., "stand-up" → event), note it in reasoning
+6. Default to keywords if uncertain
+7. Never modify the fragment - use it for keyword matching
+
+**Confidence Score:**
+
+You must provide a confidence score (0.0-1.0) indicating how confident you are in your interpretation.
+
+Ask yourself: "Do I have enough CONTEXT to interpret this fragment correctly?"
+
+**High confidence (0.8-1.0):**
+- Strong context from contentType and temporal clauses
+- Clear meeting-related phrases with event context: "one-on-one", "stand-up", "sync"
+- Domain-specific terminology matching context: "quarterly report" with document context
+- Fragment implies clear content type: "stand-up" (clearly a meeting type)
+
+**Medium confidence (0.5-0.7):**
+- Weak context (only contentType OR only temporal, but not both)
+- Ambiguous phrases that could have multiple meanings: "sync" (meeting or file operation?)
+- Generic terms with some context: "discussion", "review"
+- Context provides some clues but not definitive
+
+**Low confidence (0.0-0.4):**
+- No context available (empty context array)
+- Completely ambiguous phrase with no domain clues: random words
+- Conflicting context signals: fragment doesn't fit provided context
+- Fragment is too generic: "thing", "stuff", "item"
+
+**Key Insight:** Confidence measures how well context helps interpret the fragment. Strong, consistent context → high confidence. No context or conflicting context → low confidence.
+
+Confidence < 0.7 signals that this fragment may need clarification or should use broader keyword search.
+
+**Output Format:** ResolvedAmbiguous with:
+- keywords: Array of search terms
+- reasoning: Explain your interpretation
+- confidence: Score (0.0-1.0) based on context strength

@@ -1,0 +1,17 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "safety.codeIntelligence",
+  "UsageAliasValues": {
+    "default": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.overrides.model_config.all.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.code_intelligence.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.foundation_models_framework.api.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.code_intelligence.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.foundation_models_framework.api.generic": "ENABLED",
+        "com.apple.gm.safety_embedding_deny.all.generic": "ENABLED"
+      }
+    }
+  }
+}

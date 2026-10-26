@@ -1,0 +1,13 @@
+{
+  "name": "com.apple.siri.SiriPrivateLearningAnalytics.SiriUserSegmentation.daily",
+  "bundleIdentifier": "com.apple.siri.SiriPrivateLearningAnalytics.SiriUserSegmentation",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 86400.0,
+      "minDurationBetweenInstances": 69120.0
+    },
+    "requiresExternalPower": true,
+    "requiresUserInactivity": true,
+    "priority": "Maintenance"
+  }
+}

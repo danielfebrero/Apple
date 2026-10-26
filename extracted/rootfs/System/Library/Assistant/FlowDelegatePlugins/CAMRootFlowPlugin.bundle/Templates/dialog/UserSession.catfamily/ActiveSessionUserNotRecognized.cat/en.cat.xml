@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="UserSession#ActiveSessionUserNotRecognized" locale="en">
+  <conditions>
+    <condition name="isFirstTwoTimes">
+      <expression name="dialogState.usageCount" op="le" value="2"/>
+    </condition>
+  </conditions>
+  <all>
+    <first>
+      <dialog condition="activeSessionUser" spokenOnly="false">Sorry, <var name="activeSessionUser"/> is currently using this <var name="deviceName"/>.</dialog>
+      <dialog spokenOnly="false">Sorry, someone is currently using this <var name="deviceName"/>.</dialog>
+    </first>
+    <dialog condition="isFirstTwoTimes" spokenOnly="false">Please try again later.</dialog>
+  </all>
+</cat>

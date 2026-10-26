@@ -1,0 +1,79 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Mixed (Float32, Int8)",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "cell_leaf_fully_connected_BiasAdd",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "leaf_leaf_predictions_probabilities",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 4,
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.15",
+      "tvOS": "13.0",
+      "visionOS": "1.0",
+      "watchOS": "6.0",
+      "iOS": "13.0",
+      "macCatalyst": "13.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "5.1.2",
+      "mldb_token": "mldb-rnyozw5g3b",
+      "com.github.apple.coremltools.source": "tensorflow==1.15.4"
+    },
+    "inputSchema": [
+      {
+        "height": "256",
+        "colorspace": "RGB",
+        "isOptional": "0",
+        "width": "256",
+        "isColor": "1",
+        "formattedType": "Image (Color 256 × 256)",
+        "hasSizeFlexibility": "0",
+        "type": "Image",
+        "shortDescription": "",
+        "name": "image_Placeholder"
+      }
+    ],
+    "generatedClassName": "beam_bridge_2022_v2_1",
+    "neuralNetworkLayerTypeHistogram": {
+      "InnerProduct": 1,
+      "UnaryThreshold": 28,
+      "Convolution": 54,
+      "Transpose": 1,
+      "LoadConstantND": 1,
+      "Squeeze": 1,
+      "SoftmaxND": 1,
+      "Multiply": 57,
+      "Add": 27,
+      "ActivationLinear": 57,
+      "ActivationReLU": 43,
+      "PoolingAverage": 10
+    },
+    "method": "predict"
+  }
+]

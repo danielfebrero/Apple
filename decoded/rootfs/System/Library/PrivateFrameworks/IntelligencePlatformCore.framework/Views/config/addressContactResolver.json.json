@@ -1,0 +1,64 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "address",
+          "TEXT"
+        ],
+        [
+          "mdId",
+          "INTEGER"
+        ],
+        [
+          "contactId",
+          "TEXT"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "mdId"
+      ],
+      "subjectIdentifierColumn": "mdId",
+      "tableName": "addressContacts"
+    },
+    "path": "addressResolution/addressResolution.db",
+    "type": "customRow"
+  },
+  "customViewClass": "AddressContactResolver",
+  "featureFlag": "AddressContactResolution",
+  "name": "addressContactResolver",
+  "type": "custom",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB152",
+            "predicates": [
+              "PS730",
+              "PS570",
+              "PS316",
+              "PS569",
+              "PS453",
+              "PS568",
+              "PS455",
+              "PS731",
+              "PS315",
+              "PS450",
+              "PS454",
+              "PS317",
+              "PS225",
+              "PS225/CS29/PS107",
+              "PS225/CS29/PS733"
+            ]
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "stableGraph",
+          "eventGraph"
+        ]
+      }
+    ]
+  }
+}

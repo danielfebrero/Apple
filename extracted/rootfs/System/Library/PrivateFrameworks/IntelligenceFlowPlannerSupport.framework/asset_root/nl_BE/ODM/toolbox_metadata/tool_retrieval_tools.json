@@ -1,0 +1,123 @@
+{
+    "extraMetadata": {
+        "locale": "nl_BE"
+    },
+    "swiftToolNameToMetadata": {
+        "answer_call": {
+            "embeddingDescription": "answer call, pick up phone, pick up, accept call, take call, answer incoming call, get phone, grab phone, answer that, take that call, accept incoming, pick it up, answer phone call, receive call, get call, answer ringing phone, take incoming call, pickup phone, pickup call, pick up the phone",
+            "promptToolName": "answer_call"
+        },
+        "ask_user": {
+            "embeddingDescription": "Interactive dialog tool that asks users clarifying questions, requests additional information, or helps users make decisions through conversational prompts. Handles user input collection, preference gathering, and option selection scenarios.",
+            "promptToolName": "ask_user"
+        },
+        "ask_user_to_pick": {
+            "embeddingDescription": "Helps users choose between multiple similar options when their request matches several entities. Used for disambiguation when there are multiple contacts with the same name, multiple apps with similar names, multiple locations, or multiple media items that match the user's criteria. Presents the available options to the user for selection when the system cannot determine which specific item the user intended.",
+            "promptToolName": "ask_user_to_pick"
+        },
+        "callback": {
+            "embeddingDescription": "Callback the most recent call. Initiates a new call to a previously called contact/number from the recent phone calls (aka Recents).",
+            "promptToolName": "callback"
+        },
+        "cancel_alarms": {
+            "embeddingDescription": "Cancel, dismiss, stop, or turn off currently ringing alarms without permanently deleting them. Stops active alarm notifications, silences firing alarms, dismisses sounding alarms, and handles alarm dismissal for morning wake-ups, reminders, and notifications that are currently going off or alerting.",
+            "promptToolName": "cancel_alarms"
+        },
+        "cancel_timer": {
+            "embeddingDescription": "Permanently cancels, stops and deletes timers from device. Removes single or multiple timers by ID. Used for stopping unwanted timers, clearing finished countdowns, cleaning up timer lists, and eliminating expired or unnecessary timers. Irreversible deletion - timers cannot be recovered once canceled.",
+            "promptToolName": "cancel_timers"
+        },
+        "create_alarm": {
+            "embeddingDescription": "Creates and sets alarms on device with specified times, labels, and scheduling options. Handles wake-up alarms, reminders, recurring schedules, one-time alerts, daily routines, and custom alarm labels. Supports various time formats (12-hour AM/PM, 24-hour), specific days of week, and repeat patterns for weekly recurring alarms or one-time events.",
+            "promptToolName": "create_alarm"
+        },
+        "create_and_start_timer": {
+            "embeddingDescription": "Creates and starts countdown timers with customizable duration and labels. Supports regular timers for activities like cooking, workouts, breaks, and study sessions. Also creates sleep timers that automatically stop media playback (music, TV, movies) after the specified time. Accepts durations in seconds, minutes, and hours. Can add custom labels to identify specific timer purposes.",
+            "promptToolName": "create_and_start_timer"
+        },
+        "create_draft_message": {
+            "embeddingDescription": "Create, draft, update, modify, and send text messages, SMS, and instant messages through messaging apps like iMessage, WhatsApp, Telegram, and SMS. Use this for texting, messaging, instant message communications, editing message drafts, and sending drafted messages. Do NOT use for emails.",
+            "promptToolName": "create_draft_message"
+        },
+        "delete_alarm": {
+            "embeddingDescription": "Permanently delete, remove, or eliminate alarms from device. Handles removal of specific alarms by ID, including morning alarms, weekend alarms, recurring alarms, old alarms, duplicate alarms, work alarms, medication reminders, and any unwanted wake-up times. Completely removes alarms from alarm lists and clears alarm schedules. Irreversible deletion operation for alarm management and cleanup.",
+            "promptToolName": "delete_alarms"
+        },
+        "end_call": {
+            "embeddingDescription": "End, terminate, hang up, or disconnect an active phone call, or decline/reject an incoming ringing phone call. Use this tool when the user wants to stop a phone conversation, hang up on someone, disconnect from an ongoing call, or reject an incoming call.",
+            "promptToolName": "decline_or_end_call"
+        },
+        "find": {
+            "embeddingDescription": "Search tool that finds answers for general web knowledge questions (weather, linguistics, news, stocks, sports, flight info, date resolution, world information and help/diagnostic information about any hardware/software/services/applications etc.). It can also solve user's personal questions involving personal data on device (emails, messages, contacts, photos, alarms, calendar events, etc.).",
+            "promptToolName": "find"
+        },
+        "make_call": {
+            "embeddingDescription": "make call facetime phone dial ring contact number google voice, whatsapp, facebook messenger, line, video audio conference group multiple people, including emergency and crisis support services",
+            "promptToolName": "make_call"
+        },
+        "manage_message_draft": {
+            "embeddingDescription": "Text someone, message someone, send a text, draft a message, edit my message, change what I wrote, update the draft, send this message, send it, texting, messaging, instant message communications, editing message drafts, sending drafted messages.",
+            "promptToolName": "manage_message_draft"
+        },
+        "not_supported": {
+            "embeddingDescription": "Fallback tool for unsupported requests or when no appropriate tool exists for the user's request. Handles queries that cannot be fulfilled by available tools, unclear user intentions, or requests that require capabilities not currently supported by the system. Provides graceful handling of unsupported functionality.",
+            "promptToolName": "not_supported"
+        },
+        "open": {
+            "embeddingDescription": "Generic open tool for opening any entity by ID. Opens photos, albums, audio content, books, reading list items, applications, and other entities. Use this when users want to open, launch, view, or access any type of entity on the device.",
+            "promptToolName": "open"
+        },
+        "pause_timer": {
+            "embeddingDescription": "Pauses or temporarily stops active timers without deleting them, allowing users to suspend timer countdown and resume later. Handles requests to pause, hold, or temporarily stop specific timers by ID while preserving timer state.",
+            "promptToolName": "pause_timers"
+        },
+        "prepare_read_calendar_events_list": {
+            "promptToolName": "prepare_calendar_reading_list"
+        },
+        "prepare_read_conversation": {
+            "promptToolName": "prepare_read_conversation"
+        },
+        "prepare_read_messages_list": {
+            "promptToolName": "prepare_read_messages_list"
+        },
+        "prepare_read_reminders_list": {
+            "promptToolName": "prepare_reminders_reading_list"
+        },
+        "redial": {
+            "embeddingDescription": "Redial the given call record or fallback to default redial which dials the most recent outgoing call.",
+            "promptToolName": "redial"
+        },
+        "reset_timers": {
+            "embeddingDescription": "Reset or restart a timer back to its original duration without deleting it. Use for restarting countdowns, cooking timers, workout timers, study sessions, or any timer that needs to start over from its initial time setting. Timer will be stopped and restored to original duration - perfect for reusing timers multiple times.",
+            "promptToolName": "reset_timers"
+        },
+        "resume_timer": {
+            "embeddingDescription": "Resume, continue, or restart a paused timer to keep counting down. Use for cooking timers, workout timers, study sessions, breaks, meditation, or any countdown that was temporarily stopped. Unpauses timers that were previously paused and continues from where they left off.",
+            "promptToolName": "resume_timers"
+        },
+        "send_draft_message": {
+            "embeddingDescription": "Create, draft, update, modify, and send text messages, SMS, and instant messages through messaging apps like iMessage, WhatsApp, Telegram, and SMS. Use this for texting, messaging, instant message communications, editing message drafts, and sending drafted messages. Do NOT use for emails.",
+            "promptToolName": "send_draft_message"
+        },
+        "settings_set_system_volume": {
+            "embeddingDescription": "Controls system audio and volume settings. Adjust volume up, volume down, volume to specific percentage levels (e.g. 50%, 75%), or mute/silence device or notification sound. Handles volume control, audio level adjustment, sound management, background sounds, and other system audio settings.",
+            "promptToolName": "manage_audio_settings"
+        },
+        "snooze_alarm": {
+            "embeddingDescription": "Snooze or temporarily delay a currently ringing alarm for a specified number of minutes. Allows users to postpone alarms, get more sleep time, or briefly silence firing alarms with custom or standard snooze durations. Works with morning alarms, reminders, and any actively ringing alarm that supports snoozing.",
+            "promptToolName": "snooze_alarms"
+        },
+        "update_alarm": {
+            "embeddingDescription": "update alarm, modify alarm, change alarm, edit alarm, adjust alarm, reschedule alarm, move alarm, shift alarm time, change alarm time, alarm settings, alarm volume, alarm sound, alarm tone, make alarm louder, turn up alarm, increase alarm volume, alarm volume up, turn on alarm, enable alarm, activate alarm, turn off alarm, disable alarm",
+            "promptToolName": "update_alarms"
+        },
+        "update_draft_message": {
+            "embeddingDescription": "Create, draft, update, modify, and send text messages, SMS, and instant messages through messaging apps like iMessage, WhatsApp, Telegram, and SMS. Use this for texting, messaging, instant message communications, editing message drafts, and sending drafted messages. Do NOT use for emails.",
+            "promptToolName": "update_draft_message"
+        },
+        "update_timer": {
+            "embeddingDescription": "update timer, modify timer, change timer, edit timer, extend timer, add time to timer, reduce timer, timer status, check timer, timer remaining, time left on timer, how much time left, timer progress",
+            "promptToolName": "update_timers"
+        }
+    }
+}

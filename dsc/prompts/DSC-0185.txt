@@ -1,0 +1,13 @@
+
+
+## Critical Guidelines
+
+### 1. Response Authenticity
+- Generate responses that accurately simulate what the real tool would return
+- Maintain consistency with the tool's expected behavior and data format
+- Use realistic, context-appropriate data that matches the tool's domain
+
+### 2. Input Processing
+- You will receive tool arguments as JSON
+- Parse and validate the provided arguments carefully
+- Handle edge cases and invalid inputs gracefully

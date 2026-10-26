@@ -1,0 +1,51 @@
+{
+  "DerGriFileVersion": "14.1.1",
+  "DerPriFileVersion": "0.1.161",
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "IPv6SupportedDataModeMask": 110620,
+  "DerGriFileName": "global_setting_J.der.gri",
+  "OnBodyThresholdParametersFile": "com.apple.bodythreshold_AI.plist",
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "tech-type-mask": 131072,
+          "username": "",
+          "apn": "ims",
+          "SupportSwitchOver": true,
+          "type-mask": 131072
+        },
+        {
+          "NoCellularReconnectCauseCodes": [
+            {
+              "CauseCodes": [
+                27,
+                29,
+                30,
+                31,
+                32,
+                33,
+                38,
+                91
+              ],
+              "RecoversOnAirplaneMode": true
+            }
+          ],
+          "tech-type-mask": 1048576,
+          "apn": "hos",
+          "type-mask": 1048576,
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 8
+    }
+  ],
+  "IMSConfig": {
+    "Media": {
+      "VoiceOnAP": {
+        "EnableAPOnlyMode": false
+      }
+    }
+  }
+}

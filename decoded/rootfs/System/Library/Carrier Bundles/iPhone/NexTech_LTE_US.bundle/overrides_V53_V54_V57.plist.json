@@ -1,0 +1,58 @@
+{
+  "DerPriFileVersion": "0.1.162",
+  "MTU": [
+    {
+      "technology-mask": 28,
+      "size": 1428
+    },
+    {
+      "technology-mask": 2,
+      "size": 1472
+    }
+  ],
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "Signaling": {
+      "AdditionalFeatureTags": {
+        "sms": {
+          "+cdmaless": ""
+        },
+        "voice": {
+          "+cdmaless": "",
+          "+g.gsma.rcs.telephony": "\"cs,volte\"",
+          "audio": ""
+        }
+      },
+      "NoFallbackVoiceService": true
+    },
+    "Voice": {
+      "BlockCallsOverCS": true,
+      "BlockSilentRedialOverCS": true,
+      "DisableVolteSwitchOnIncompatibleState": true
+    },
+    "SMS": {
+      "enableInNonVoLTEMode": true,
+      "SupportedDomains": {
+        "LTE": true,
+        "UMTS": false
+      }
+    },
+    "AllowIMSUnprovisioned": true
+  },
+  "CellBroadcast": {
+    "_Exclude": [
+      "MessageIDParameters3GPP2"
+    ]
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "CDMAInternationalRoaming": {
+    "EnabledByDefault": false
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 9361
+  },
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "Show5GSwitch": true,
+  "SupportsNRNSAInboundRoaming": true
+}

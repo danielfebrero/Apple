@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="UserSession#ActiveSessionUserNotRecognized">
+  <meta name="description" value="Informs the speaker that we can't help someone who isn't recognized as the active session user on a shared device"/>
+  <meta name="readyForLoc" value="true"/>
+  <meta name="category" value="Can't Do"/>
+  <meta name="subcategory" value="Disallowed"/>
+  <parameters>
+    <parameter name="activeSessionUser" type="dialog.Person"/>
+    <parameter name="deviceName" type="dialog.String"/>
+  </parameters>
+</cat>

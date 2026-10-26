@@ -1,0 +1,15 @@
+{
+  "name": "com.apple.siri.metrics.DevicePropertiesExtension.daily",
+  "bundleIdentifier": "com.apple.siri.metrics.DevicePropertiesExtension",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 79200.0,
+      "minDurationBetweenInstances": 39600
+    },
+    "requiresProtectionClass": "ClassC",
+    "priority": "Utility",
+    "requiresExternalPower": false,
+    "groupName": "com.apple.Siri.SiriMetrics.DevicePropertiesExtension",
+    "groupConcurrencyLimit": 1
+  }
+}

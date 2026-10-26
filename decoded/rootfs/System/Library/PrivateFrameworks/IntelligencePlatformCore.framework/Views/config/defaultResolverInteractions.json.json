@@ -1,0 +1,52 @@
+{
+  "alwaysAvailable": true,
+  "artifact": {
+    "path": "siri/defaultResolverInteractions/view.db",
+    "type": "defaultResolverInteractions"
+  },
+  "clearOnError": false,
+  "customViewClass": "DefaultResolverInteractions",
+  "featureFlag": "DefaultResolverInteractionsView",
+  "name": "defaultResolverInteractions",
+  "supportsClientObservedErrorRecovery": true,
+  "type": "custom",
+  "update": {
+    "alwaysUpdateListeners": [
+      {
+        "computeIfPastSLA": false,
+        "schedule": "weekly"
+      }
+    ],
+    "biomeListeners": [
+      {
+        "highPriority": true,
+        "rebuildOnPrune": false,
+        "schedule": "live",
+        "stream": "IntelligenceEngine.Interaction.Donation"
+      },
+      {
+        "excludeLocal": true,
+        "rebuildOnPrune": false,
+        "schedule": "every7Minutes",
+        "stream": "IntelligenceEngine.Interaction.Donation",
+        "syncedDeviceTypes": [
+          "platformiPad",
+          "platformiPhone",
+          "platformMacDesktop",
+          "platformMacPortable",
+          "platformWatch",
+          "platformHomePod",
+          "platformVision"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "diffType": "updatedObject",
+        "name": "siriRemembers",
+        "schedule": "live"
+      }
+    ]
+  },
+  "writeToStream": true
+}

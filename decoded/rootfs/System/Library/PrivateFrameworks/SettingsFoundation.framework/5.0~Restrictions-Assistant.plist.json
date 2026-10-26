@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "MCFeature": "allowAssistant",
+      "MCFeatureIsBool": true,
+      "cell": "PSSwitchCell",
+      "get": "featureValue:",
+      "iconCache": "Siri",
+      "label": "ASSISTANT_AND_DICTATION",
+      "requiredCapabilitiesOr": [
+        [
+          "dictation"
+        ],
+        [
+          "assistant"
+        ]
+      ],
+      "set": "setFeatureValue:specifier:"
+    }
+  ]
+}

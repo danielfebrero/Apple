@@ -1,0 +1,14 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.modelcatalog.migration.18.2",
+  "UsageAliasValues": {
+    "request-resources-key-use-case-disablement": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety.disabledusecases.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.code_intelligence.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.code_intelligence.base.generic": "ENABLED"
+      }
+    }
+  }
+}

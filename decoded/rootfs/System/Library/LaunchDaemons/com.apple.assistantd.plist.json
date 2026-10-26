@@ -1,0 +1,260 @@
+{
+  "EnablePressuredExit": true,
+  "EnableTransactions": true,
+  "Label": "com.apple.assistantd",
+  "LaunchEvents": {
+    "com.apple.distnoted.matching": {
+      "CKPersistentStorageKeysAndValuesUpdated.SiriUserCorrections": {
+        "Name": "CKPersistentStorageKeysAndValuesUpdated.SiriUserCorrections"
+      },
+      "CKPersistentStorageKeysAndValuesUpdated.synched": {
+        "Name": "CKPersistentStorageKeysAndValuesUpdated.synched"
+      },
+      "CKPersistentStorageKeysRemoved.SiriUserCorrections": {
+        "Name": "CKPersistentStorageKeysRemoved.SiriUserCorrections"
+      },
+      "CKPersistentStorageKeysRemoved.synched": {
+        "Name": "CKPersistentStorageKeysRemoved.synched"
+      },
+      "FMFDevicesChangedNotification": {
+        "Name": "FMFDevicesChangedNotification"
+      },
+      "FMFMeDeviceChangedNotification": {
+        "Name": "FMFMeDeviceChangedNotification"
+      },
+      "com.apple.LaunchServices.applicationRegistered": {
+        "Name": "com.apple.LaunchServices.applicationRegistered"
+      },
+      "com.apple.LaunchServices.applicationUnregistered": {
+        "Name": "com.apple.LaunchServices.applicationUnregistered"
+      }
+    },
+    "com.apple.notifyd.matching": {
+      "AppleDatePreferencesChangedNotification": {
+        "Notification": "AppleDatePreferencesChangedNotification"
+      },
+      "MPStoreClientTokenDidChangeNotification": {
+        "Notification": "MPStoreClientTokenDidChangeNotification"
+      },
+      "__ABDataBaseChangedByOtherProcessNotification": {
+        "Notification": "__ABDataBaseChangedByOtherProcessNotification"
+      },
+      "com.apple.MobileAsset.AutoAssetNotification^com.apple.MobileAsset.MAAutoAsset^STARTUP_ACTIVATED": {
+        "Notification": "com.apple.MobileAsset.AutoAssetNotification^com.apple.MobileAsset.MAAutoAsset^STARTUP_ACTIVATED"
+      },
+      "com.apple.MobileAsset.EmbeddedSpeech.ma.new-asset-installed": {
+        "Notification": "com.apple.MobileAsset.EmbeddedSpeech.ma.new-asset-installed"
+      },
+      "com.apple.MobileAsset.SpeechEndpointAssets.cached-metadata-updated": {
+        "Notification": "com.apple.MobileAsset.SpeechEndpointAssets.cached-metadata-updated"
+      },
+      "com.apple.MobileAsset.SpeechEndpointAssets.ma.cached-metadata-updated": {
+        "Notification": "com.apple.MobileAsset.SpeechEndpointAssets.ma.cached-metadata-updated"
+      },
+      "com.apple.MobileAsset.VoiceServices.VoiceResources.new-asset-installed": {
+        "Notification": "com.apple.MobileAsset.VoiceServices.VoiceResources.new-asset-installed"
+      },
+      "com.apple.MobileAsset.VoiceTriggerAssets.cached-metadata-updated": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerAssets.cached-metadata-updated"
+      },
+      "com.apple.MobileAsset.VoiceTriggerAssets.ma.cached-metadata-updated": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerAssets.ma.cached-metadata-updated"
+      },
+      "com.apple.MobileAsset.VoiceTriggerAssets.ma.new-asset-installed": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerAssets.ma.new-asset-installed"
+      },
+      "com.apple.MobileAsset.VoiceTriggerAssets.new-asset-installed": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerAssets.new-asset-installed"
+      },
+      "com.apple.MobileAsset.VoiceTriggerAssetsIPad.ma.cached-metadata-updated": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerAssetsIPad.ma.cached-metadata-updated"
+      },
+      "com.apple.MobileAsset.VoiceTriggerAssetsIPad.ma.new-asset-installed": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerAssetsIPad.ma.new-asset-installed"
+      },
+      "com.apple.MobileAsset.VoiceTriggerAssetsWatch.ma.new-asset-installed": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerAssetsWatch.ma.new-asset-installed"
+      },
+      "com.apple.MobileAsset.VoiceTriggerAssetsWatch.new-asset-installed": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerAssetsWatch.new-asset-installed"
+      },
+      "com.apple.MobileAsset.VoiceTriggerHSAssets.ma.cached-metadata-updated": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerHSAssets.ma.cached-metadata-updated"
+      },
+      "com.apple.MobileAsset.VoiceTriggerHSAssets.ma.new-asset-installed": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerHSAssets.ma.new-asset-installed"
+      },
+      "com.apple.MobileAsset.VoiceTriggerHSAssetsIPad.ma.cached-metadata-updated": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerHSAssetsIPad.ma.cached-metadata-updated"
+      },
+      "com.apple.MobileAsset.VoiceTriggerHSAssetsIPad.ma.new-asset-installed": {
+        "Notification": "com.apple.MobileAsset.VoiceTriggerHSAssetsIPad.ma.new-asset-installed"
+      },
+      "com.apple.SafariShared.Assistant.reload_plugin": {
+        "Notification": "com.apple.SafariShared.Assistant.reload_plugin"
+      },
+      "com.apple.ScreenTimeAgent.SettingsDidChangeNotification": {
+        "Notification": "com.apple.ScreenTimeAgent.SettingsDidChangeNotification"
+      },
+      "com.apple.VideoSubscriberAccount.DidRegisterSubscription": {
+        "Notification": "com.apple.VideoSubscriberAccount.DidRegisterSubscription"
+      },
+      "com.apple.assistant.app_vocabulary": {
+        "Notification": "com.apple.assistant.app_vocabulary"
+      },
+      "com.apple.assistant.siri_settings_did_change": {
+        "Notification": "com.apple.assistant.siri_settings_did_change"
+      },
+      "com.apple.assistant.sync_data_changed": {
+        "Notification": "com.apple.assistant.sync_data_changed"
+      },
+      "com.apple.assistant.sync_homekit_now": {
+        "Notification": "com.apple.assistant.sync_homekit_now"
+      },
+      "com.apple.assistant.sync_homekit_urgent": {
+        "Notification": "com.apple.assistant.sync_homekit_urgent"
+      },
+      "com.apple.assistant.sync_needed": {
+        "Notification": "com.apple.assistant.sync_needed"
+      },
+      "com.apple.chatkit.groups.siri_data_changed": {
+        "Notification": "com.apple.chatkit.groups.siri_data_changed"
+      },
+      "com.apple.geoservices.siri_data_changed": {
+        "Notification": "com.apple.geoservices.siri_data_changed"
+      },
+      "com.apple.homed.multi-user-status-changed": {
+        "Notification": "com.apple.homed.multi-user-status-changed"
+      },
+      "com.apple.homed.user-cloud-share.wake.com.apple.siri.data": {
+        "Notification": "com.apple.homed.user-cloud-share.wake.com.apple.siri.data"
+      },
+      "com.apple.homed.user-cloud-share.wake.com.apple.siri.zonesharing": {
+        "Notification": "com.apple.homed.user-cloud-share.wake.com.apple.siri.zonesharing"
+      },
+      "com.apple.icloud.fmip.siri_data_changed": {
+        "Notification": "com.apple.icloud.fmip.siri_data_changed"
+      },
+      "com.apple.managedconfiguration.effectivesettingschanged": {
+        "Notification": "com.apple.managedconfiguration.effectivesettingschanged"
+      },
+      "com.apple.media.entities.siri_data_changed": {
+        "Notification": "com.apple.media.entities.siri_data_changed"
+      },
+      "com.apple.media.podcasts.siri_data_changed": {
+        "Notification": "com.apple.media.podcasts.siri_data_changed"
+      },
+      "com.apple.mobile.keybagd.first_unlock": {
+        "Notification": "com.apple.mobile.keybagd.first_unlock"
+      },
+      "com.apple.nanoregistry.devicedidpair": {
+        "Notification": "com.apple.nanoregistry.devicedidpair"
+      },
+      "com.apple.nanoregistry.watchdidbecomeactive": {
+        "Notification": "com.apple.nanoregistry.watchdidbecomeactive"
+      },
+      "com.apple.parsecd.bag": {
+        "Notification": "com.apple.parsecd.bag"
+      },
+      "com.apple.proactive.PersonalizationPortrait.namedEntitiesInvalidated": {
+        "Notification": "com.apple.proactive.PersonalizationPortrait.namedEntitiesInvalidated"
+      },
+      "com.apple.siri.client.state.DynamiteClientState.siri_data_changed": {
+        "Notification": "com.apple.siri.client.state.DynamiteClientState.siri_data_changed"
+      },
+      "com.apple.siri.inference.audio-app-signals-update": {
+        "Notification": "com.apple.siri.inference.audio-app-signals-update"
+      },
+      "com.apple.siri.power.PowerContextPolicy.updated": {
+        "Notification": "com.apple.siri.power.PowerContextPolicy.updated"
+      },
+      "com.apple.siri.preheat.quiet": {
+        "Notification": "com.apple.siri.preheat.quiet"
+      },
+      "com.apple.siri.uaf.com.apple.siri.understanding": {
+        "Notification": "com.apple.siri.uaf.com.apple.siri.understanding"
+      },
+      "com.apple.siri.uaf.com.apple.siri.understanding.nl.overrides": {
+        "Notification": "com.apple.siri.uaf.com.apple.siri.understanding.nl.overrides"
+      },
+      "com.apple.siri.vocabulary.contacts_changed": {
+        "Notification": "com.apple.siri.vocabulary.contacts_changed"
+      },
+      "com.apple.trial.NamespaceUpdate.SIRI_UNDERSTANDING_ASR_ASSISTANT": {
+        "Notification": "com.apple.trial.NamespaceUpdate.SIRI_UNDERSTANDING_ASR_ASSISTANT"
+      },
+      "com.apple.voiceservices.notification.voice-update": {
+        "Notification": "com.apple.voiceservices.notification.voice-update"
+      },
+      "com.apple.voicetrigger.EarlyDetect": {
+        "Notification": "com.apple.voicetrigger.EarlyDetect"
+      },
+      "com.apple.voicetrigger.PHSProfileModified": {
+        "Notification": "com.apple.voicetrigger.PHSProfileModified"
+      }
+    },
+    "com.apple.rapport.matching": {
+      "MessageCenterDeviceSelectionRequest": {
+        "serviceType": "SCD.MessageCenter.deviceSelection",
+        "type": "server"
+      },
+      "MessageCenterWakeUpRequest": {
+        "serviceType": "SCD.MessageCenter.remoteIntelligence",
+        "type": "server"
+      },
+      "WakeUpRequest": {
+        "serviceType": "com.apple.siri.wakeup",
+        "type": "server"
+      }
+    }
+  },
+  "MachServices": {
+    "com.apple.aps.assistantd.fmip": true,
+    "com.apple.assistant.analytics": true,
+    "com.apple.assistant.analytics-observation": true,
+    "com.apple.assistant.announcement_state.service": true,
+    "com.apple.assistant.audio-session-assertion": true,
+    "com.apple.assistant.audio-session-event": true,
+    "com.apple.assistant.client": true,
+    "com.apple.assistant.device-context": true,
+    "com.apple.assistant.dictation": true,
+    "com.apple.assistant.flow_service": true,
+    "com.apple.assistant.notification_service": true,
+    "com.apple.assistant.request-dispatcher.uibridge-service": true,
+    "com.apple.assistant.security": true,
+    "com.apple.assistant.settings": true,
+    "com.apple.assistant.sync": true,
+    "com.apple.assistant.uibridge-service": true,
+    "com.apple.assistantd.aps": true,
+    "com.apple.assistantd.managedstorage": true,
+    "com.apple.private.alloy.siri.device-idswake": true,
+    "com.apple.private.alloy.siri.icloud-idswake": true,
+    "com.apple.private.alloy.siri.location-idswake": true,
+    "com.apple.private.alloy.siri.proxy-idswake": true,
+    "com.apple.siri.analytics.assistant": true,
+    "com.apple.siri.client_lite": true,
+    "com.apple.siri.device_resolution": true,
+    "com.apple.siri.deviceselection": true,
+    "com.apple.siri.external_request": true,
+    "com.apple.siri.flowtools_xpc_snippet_service": true,
+    "com.apple.siri.hearables": true,
+    "com.apple.siri.intelligence-tool-helper-service": true,
+    "com.apple.siri.local-turn-status": true,
+    "com.apple.siri.location": true,
+    "com.apple.siri.orchestration.capabilities": true,
+    "com.apple.siri.orchestration.intelligencesession": true,
+    "com.apple.siri.orchestration.sirix": true,
+    "com.apple.siri.pairedsync": true,
+    "com.apple.siri.pommes_search_xpc_service": true,
+    "com.apple.siri.tether": true,
+    "com.apple.siri.vocabularyupdates": true,
+    "com.apple.usernotifications.delegate.com.apple.crossdevicearbitration.feedback.notification": true,
+    "com.apple.usernotifications.delegate.com.apple.siri.NotificationSource": true
+  },
+  "ProcessType": "Adaptive",
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/AssistantServices.framework/assistantd"
+  ],
+  "RunAtLoad": true,
+  "UserName": "mobile"
+}

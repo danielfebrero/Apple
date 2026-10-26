@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "在我的购物列表里添加鸡蛋",
+            "在我的运动列表里添加打羽毛球",
+            "提醒我带伞",
+            "明天早上六点钟叫我吃药",
+            "提醒我星期五交报告",
+            "朗读我的提醒事项列表",
+            "把第三个提醒事项标记为已完成",
+            "创建叫做“日常购物”的新提醒事项列表",
+            "明天提醒我看一下这封邮件",
+            "提醒我记住这个网站",
+            "提醒我上车后给小白打电话"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "提醒我到家后给妈妈打电话",
+            "离开公司时提醒我打电话给俊涵"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "提醒我到家时打FaceTime给妈妈",
+            "离开公司时提醒我打个Facetime电话给张晨"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "提醒我离开这儿时去买花"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

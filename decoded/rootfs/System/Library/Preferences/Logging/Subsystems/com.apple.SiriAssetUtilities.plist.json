@@ -1,0 +1,35 @@
+{
+  "XPCService": {
+    "TTL": {
+      "Default": 7,
+      "Info": 0,
+      "Debug": 0
+    },
+    "Level": {
+      "Persist": "Inherit",
+      "Enable": "Inherit"
+    }
+  },
+  "Subscription": {
+    "TTL": {
+      "Default": 7,
+      "Info": 0,
+      "Debug": 0
+    },
+    "Level": {
+      "Persist": "Inherit",
+      "Enable": "Inherit"
+    }
+  },
+  "Client": {
+    "TTL": {
+      "Default": 7,
+      "Info": 0,
+      "Debug": 0
+    },
+    "Level": {
+      "Persist": "Inherit",
+      "Enable": "Inherit"
+    }
+  }
+}

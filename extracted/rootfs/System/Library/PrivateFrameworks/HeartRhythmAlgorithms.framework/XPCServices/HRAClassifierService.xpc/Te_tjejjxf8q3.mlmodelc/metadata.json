@@ -1,0 +1,73 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "RHYTHM_TYPE_HEAD\/FC_1\/fully_connected\/BiasAdd",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.0b2",
+      "com.github.apple.coremltools.source" : "tensorflow==1.11.0",
+      "mldb_token" : "mldb-qbg68m8axe"
+    },
+    "inputSchema" : [
+      {
+        "dataType" : "Float32",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1... × 240 × 1",
+        "shapeRange" : "[[1, -1], [240, 240], [1, 1]]",
+        "formattedType" : "MultiArray (Float32 1 × 240 × 1)",
+        "type" : "MultiArray",
+        "shape" : "[1, 240, 1]",
+        "name" : "Placeholder",
+        "shortDescription" : ""
+      }
+    ],
+    "generatedClassName" : "Te_tjejjxf8q3",
+    "neuralNetworkLayerTypeHistogram" : {
+      "AddBroadcastable" : 28,
+      "InnerProduct" : 1,
+      "Convolution" : 28,
+      "PoolingINVALID" : 3,
+      "Transpose" : 62,
+      "ReshapeStatic" : 7,
+      "LoadConstantND" : 56,
+      "MultiplyBroadcastable" : 28,
+      "Squeeze" : 28,
+      "ExpandDims" : 28,
+      "ConcatND" : 7,
+      "ActivationReLU" : 28
+    },
+    "method" : "predict"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "artifact": {
+    "path": "people/people.db",
+    "subgraph": {
+      "allowObjectRewrite": true,
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "predicate",
+          "TEXT"
+        ],
+        [
+          "relationshipId",
+          "INTEGER"
+        ],
+        [
+          "relationshipPredicate",
+          "TEXT"
+        ],
+        [
+          "object",
+          "TEXT"
+        ]
+      ],
+      "tableName": "people"
+    },
+    "type": "subgraph"
+  },
+  "name": "people",
+  "type": "subgraph",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB104",
+            "predicates": [
+              "PS1",
+              "PS33",
+              "PS34",
+              "PS37",
+              "PS89",
+              "PS225",
+              "PS312",
+              "PS406",
+              "PS407",
+              "PS441",
+              "PS545",
+              "PS546",
+              "PS547",
+              "nm_isFavorite",
+              "nm_personType"
+            ]
+          }
+        ],
+        "schedule": "none",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ]
+  }
+}

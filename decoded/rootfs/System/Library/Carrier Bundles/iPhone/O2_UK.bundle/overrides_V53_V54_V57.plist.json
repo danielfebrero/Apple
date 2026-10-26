@@ -1,0 +1,80 @@
+{
+  "DerPriFileVersion": "6.0.163",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "SatelliteSystemTransitionTimeToAllowed": 30,
+  "ShowHighDataModeSwitch": true,
+  "ShowSatelliteSwitch": true,
+  "Location": {
+    "EmergencyLocation": {
+      "AugmentedEmergencyAction": {
+        "AML": {
+          "SMSOverNAS": {
+            "SMSDestination": "999",
+            "EnableForSatellitePLMNs": true
+          }
+        }
+      }
+    }
+  },
+  "IMSConfig": {
+    "Satellite": {
+      "IMSServiceMask": 2
+    },
+    "Signaling": {
+      "ResetSocketWhenNetworkChange": false
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "LTE": true,
+        "NR": true
+      }
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 533520
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "SupportsSatellite": true,
+  "SatelliteAccessInfo": {
+    "AllowCarrierApp": true
+  },
+  "AllowSAOnWiFiAssociation": false,
+  "ShowVoNRWarningUnsupportedCarrier": false,
+  "DataIndicatorOverrideForNRMmwave": "NRPlus",
+  "Enable5GAutoByDefault": true,
+  "ShowVolteSwitch": false,
+  "ShowVoNRSwitch": true,
+  "SatelliteSystemName": "O2 Satellite",
+  "SupportsNRNSAInboundRoaming": true,
+  "SatelliteApps": [
+    "uk.co.o2.myo2"
+  ],
+  "apns": [
+    {
+      "password": "password",
+      "enableXLAT464": true,
+      "username": "vertigo",
+      "apn": "idata.o2.co.uk",
+      "type-mask": 1081399,
+      "AllowedProtocolMask": 3
+    },
+    {
+      "type-mask": 131072,
+      "Support5GSaHandOver": true,
+      "password": "",
+      "tech-type-mask": 131072,
+      "SupportSwitchOver": true,
+      "username": "",
+      "apn": "ims",
+      "AllowedProtocolMask": 2
+    }
+  ],
+  "SupportsVoNR": true
+}

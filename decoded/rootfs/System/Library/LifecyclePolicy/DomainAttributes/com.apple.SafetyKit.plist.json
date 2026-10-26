@@ -1,0 +1,100 @@
+{
+  "SafetyNotification": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSDurationAttribute",
+            "StartPolicy": "RBSDurationStartPolicyFixed",
+            "WarningDuration": 10,
+            "InvalidationDuration": 180,
+            "EndPolicy": "RBSDurationEndPolicyInvalidate"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractiveNonFocal"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 100
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSResistTerminationGrant",
+            "Resistance": "RBSTerminationResistanceInteractive"
+          },
+          {
+            "Class": "RBSPreventIdleSleepGrant"
+          },
+          {
+            "Class": "RBSDefineRelativeStartTimeGrant"
+          },
+          {
+            "Class": "RBSInvalidateUnderConditionAttribute",
+            "Condition": "therm",
+            "MinValue": 850
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20230
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.safetykit"
+    }
+  },
+  "SafetyCallNotice": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSDurationAttribute",
+            "StartPolicy": "RBSDurationStartPolicyFixed",
+            "WarningDuration": 5,
+            "InvalidationDuration": 60,
+            "EndPolicy": "RBSDurationEndPolicyInvalidate"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleUserInteractiveNonFocal"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 100
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSResistTerminationGrant",
+            "Resistance": "RBSTerminationResistanceInteractive"
+          },
+          {
+            "Class": "RBSPreventIdleSleepGrant"
+          },
+          {
+            "Class": "RBSDefineRelativeStartTimeGrant"
+          },
+          {
+            "Class": "RBSInvalidateUnderConditionAttribute",
+            "Condition": "therm",
+            "MinValue": 850
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20230
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.safetykit"
+    }
+  }
+}

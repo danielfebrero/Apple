@@ -1,0 +1,71 @@
+{
+  "CFBundleName": "MessagesFlowDelegatePlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedIntents": [
+    "sirikit.intent.messages.EditMessageIntent",
+    "sirikit.intent.messages.SearchForMessagesIntent",
+    "sirikit.intent.messages.SendMessageIntent",
+    "sirikit.intent.messages.UnsendMessagesIntent"
+  ],
+  "DTSDKBuild": "24B109",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "MessagesFlowDelegatePlugin.MessagesFlowDelegatePlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "MessagesFlowDelegatePlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.sirikit.MessagesFlowDelegatePlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "sms"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "common_Message",
+      "verb": "*",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "reply",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "24B109",
+  "SupportedInvocations": [
+    "com.apple.siri.DirectInvocation.Messages.EditMessage3pFallbackWithIntent",
+    "com.apple.siri.DirectInvocation.Messages.NewMessage3pFallbackWithIntent",
+    "com.apple.siri.DirectInvocation.Messages.UnsendMessage3pFallbackWithIntent",
+    "com.apple.siri.DirectInvocation.Messages.ButtonPress",
+    "com.apple.siri.DirectInvocation.Messages.TriggerGatekeeper",
+    "com.apple.siri.DirectInvocation.Messages.AnnounceMessage",
+    "com.apple.siri.DirectInvocation.Messages.ReadFromNotification",
+    "com.apple.siri.DirectInvocation.Messages.ReadFromConversation",
+    "com.apple.siri.DirectInvocation.Messages.NewMessage",
+    "com.apple.siri.DirectInvocation.Messages.NewMessageToContact",
+    "com.apple.siri.DirectInvocation.Messages.NewMessageToHandles",
+    "com.apple.siri.DirectInvocation.Messages.NewMessageToConversation",
+    "com.apple.siri.directInvocation.messages.MessageContentChangedViaSnippet",
+    "com.apple.siri.directInvocation.messages.MessageSendViaSnippet",
+    "com.apple.siri.DirectInvocation.Messages.NewMessageWithIntent",
+    "com.apple.siri.DirectInvocation.Messages.ItemSelection",
+    "com.apple.siri.DirectInvocation.Messages.SendFaceTimeInvite",
+    "com.apple.siri.DirectInvocation.Messages.ReadMessages3pFallbackWithIntent"
+  ]
+}

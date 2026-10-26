@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Sage Diana ich bin gleich da",
+            "Sende eine Nachricht an Andreas Scholz",
+            "Sende eine Nachricht an Sabine und sage wie wär’s mit morgen",
+            "Sage Susanne die Vorstellung war super",
+            "Schicke eine Nachricht an Dianas Handy und sage ich komme heute später",
+            "Sende eine Nachricht an 0791234567",
+            "SMS an Tobias und Sabine wo seid ihr?"
+          ]
+        }
+      ],
+      "SectionName": "NACHRICHTEN SENDEN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lies meine neuen Nachrichten vor",
+            "Lies sie noch einmal vor"
+          ]
+        }
+      ],
+      "SectionName": "BENACHRICHTIGUNGEN VORLESEN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Antworte das sind tolle Neuigkeiten",
+            "Sag ihm ich bin in 10 Minuten dort"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ruf sie an"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime-Anruf mit ihr"
+          ]
+        }
+      ],
+      "SectionName": "AUF NACHRICHTEN ANTWORTEN"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Lies die letzte Nachricht von Susanne vor"
+          ]
+        }
+      ],
+      "SectionName": "NACH NACHRICHTEN SUCHEN"
+    }
+  ]
+}

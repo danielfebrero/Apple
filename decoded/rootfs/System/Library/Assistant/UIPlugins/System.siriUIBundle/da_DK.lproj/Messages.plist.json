@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Fortæl Susanne, jeg er der snart",
+            "Send en besked til Bo Andersen",
+            "Send en besked til Emilie om i morgen passer",
+            "Fortæl Pia, at showet var super",
+            "Send en besked til Susanne på mobilen, at jeg er forsinket",
+            "Send en besked til 12345678",
+            "Send en besked til Jesper og Emilie hvor er I?"
+          ]
+        }
+      ],
+      "SectionName": "Sende beskeder"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Læs mine nye beskeder",
+            "Læs den igen"
+          ]
+        }
+      ],
+      "SectionName": "Læse beskeder"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Svar det er gode nyheder",
+            "Fortæl ham, jeg er der om 10 min."
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ring til hende"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime hende"
+          ]
+        }
+      ],
+      "SectionName": "Svare på beskeder"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Læs min nyeste besked fra Emma"
+          ]
+        }
+      ],
+      "SectionName": "Søge efter beskeder"
+    }
+  ]
+}

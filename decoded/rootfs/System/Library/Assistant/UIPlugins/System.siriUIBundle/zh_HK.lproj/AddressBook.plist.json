@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "靜儀嘅地址係咩？",
+            "余嘉麗嘅電話號碼係？",
+            "我老婆幾時生日？",
+            "我想要海琪嘅電郵地址",
+            "我大佬公司嘅地址係咩？"
+          ]
+        }
+      ],
+      "SectionName": "查詢聯絡人"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "睇吓李家傑嘅資料",
+            "搵姓陳嘅人"
+          ]
+        }
+      ],
+      "SectionName": "尋找聯絡人"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "我媽咪係余嘉麗",
+            "王志豪係我細佬"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "打去我大佬公司"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "用FaceTime打電話去大佬公司"
+          ]
+        }
+      ],
+      "SectionName": "親友關係"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "教你讀我個名",
+            "我教你讀我媽咪個名",
+            "學習點讀陳佩珊呢個名"
+          ]
+        }
+      ],
+      "SectionName": "發音"
+    }
+  ]
+}

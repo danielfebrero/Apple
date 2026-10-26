@@ -1,0 +1,32 @@
+{
+  "AssetSetName": "com.apple.MobileAsset.UAF.Shortcuts.Generator",
+  "Assets": [
+    {
+      "AssetName": "com.apple.fm.language.shortcuts.generator.tool_retrieval.base.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.language.shortcuts.generator.tool_retrieval.base.generic",
+          "RequiredUsageTypes": [
+            "com.apple.fm.language.shortcuts.generator.tool_retrieval.base.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.shortcuts.generator.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.shortcuts.generator.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Shortcuts.Generator",
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.shortcuts.generator.uaf.metadata",
+  "UsageTypes": [
+    "com.apple.fm.language.shortcuts.generator.tool_retrieval.base.generic"
+  ]
+}

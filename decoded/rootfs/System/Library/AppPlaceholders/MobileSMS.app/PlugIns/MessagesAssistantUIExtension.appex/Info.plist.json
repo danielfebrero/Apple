@@ -1,0 +1,37 @@
+{
+  "CFBundleName": "MessagesAssistantUIExtension",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B108",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1491.200.101.2.5",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "XPC!",
+  "CFBundleShortVersionString": "26.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "MessagesAssistantUIExtension",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.MobileSMS.MessagesAssistantUIExtension",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "CFBundleDisplayName": "MessagesAssistantUIExtension",
+  "DTPlatformBuild": "24B108",
+  "NSExtension": {
+    "NSExtensionAttributes": {
+      "IntentsSupported": [
+        "INSendMessageIntent_Disabled"
+      ]
+    },
+    "NSExtensionPointIdentifier": "com.apple.intents-ui-service",
+    "NSExtensionPrincipalClass": "CKAssistantUIIntentViewController"
+  }
+}

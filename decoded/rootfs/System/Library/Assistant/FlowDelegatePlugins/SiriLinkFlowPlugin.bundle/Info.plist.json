@@ -1,0 +1,132 @@
+{
+  "CFBundleName": "SiriLinkFlowPlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedIntents": [
+    "sirikit.intent.voice_commands.RunVoiceCommandIntent",
+    "sirikit.intent.voice_commands.ListShortcutsIntent",
+    "sirikit.intent.voice_commands.CustomIntent",
+    "com.apple.siri.directInvocation.RunVoiceShortcut"
+  ],
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "SiriLinkFlowPlugin.SiriLinkFlowPlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "SiriLinkFlowPlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.SiriLinkFlowPlugin",
+  "InputAffinityScorer": {
+    "type": "first",
+    "children": [
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "parseExpansionAppBundleId:*"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:app_setting"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:app_entity_type"
+          }
+        ],
+        "type": "compare"
+      },
+      {
+        "score": 100,
+        "operator": "*",
+        "children": [
+          {
+            "input": "namespace:app_entity"
+          }
+        ],
+        "type": "compare"
+      },
+      0
+    ]
+  },
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "appControl",
+    "voiceCommands"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "common_Setting",
+      "verb": "enable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "disable",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "toggle",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_VoiceCommand",
+      "verb": "execute",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_VoiceCommand",
+      "verb": "run",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "noVerb",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.directInvocation.RunVoiceShortcut.doneButton",
+    "com.apple.siri.directInvocation.RunVoiceShortcut.topLevelShortcut",
+    "com.apple.siri.directInvocation.RunVoiceShortcut.provisionalLinkAction",
+    "com.apple.siri.directInvocation.RunVoiceShortcut.runSuggestedLinkAction",
+    "com.apple.siri.directInvocation.RunVoiceShortcut.disambiguationItem",
+    "com.apple.siri.directInvocation.RunVoiceShortcut.confirmation",
+    "com.apple.siri.directInvocation.RunVoiceShortcut.serverTriggeredAppShortcut",
+    "com.apple.siri.directInvocation.RunVoiceShortcut.pausedShortcut"
+  ]
+}

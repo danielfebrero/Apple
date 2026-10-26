@@ -1,0 +1,40 @@
+{
+  "Label": "com.apple.GenerativeFunctions.agentstored",
+  "EnvironmentVariables": {},
+  "ProcessType": "Adaptive",
+  "MachServices": {
+    "com.apple.generativeexperiences.agentSessionStore": true,
+    "com.apple.aps.agentstored": true,
+    "com.apple.cascade.donationrequest.Siri.Transcript.Turn": true,
+    "com.apple.generativeexperiences.agentMediaStore": true,
+    "com.apple.GenerativeFunctions.agentstored.agentDebug": true
+  },
+  "EnableTransactions": true,
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/AgentSessionKitRuntime.framework/agentstored"
+  ],
+  "LaunchEvents": {
+    "com.apple.bg.system.task": {
+      "com.apple.GenerativeFunctions.agentstored.Maintenance": {
+        "Priority": "Maintenance",
+        "RequiresExternalPower": true,
+        "RequiresNetworkConnectivity": false,
+        "RequiresProtectionClass": "C",
+        "RepeatingTask": {
+          "Interval": 86400
+        }
+      },
+      "com.apple.GenerativeFunctions.agentstored.WeeklyMaintenance": {
+        "Priority": "Maintenance",
+        "RequiresExternalPower": true,
+        "RequiresNetworkConnectivity": true,
+        "RequiresProtectionClass": "C",
+        "RepeatingTask": {
+          "Interval": 604800
+        }
+      }
+    }
+  },
+  "UserName": "mobile",
+  "EnablePressuredExit": true
+}

@@ -1,0 +1,33 @@
+{
+  "DTXcode": "2700",
+  "NSHumanReadableCopyright": "\"Copyright © 2025 Apple Inc. All rights reserved.\"",
+  "DTSDKName": "iphoneos27.2.internal",
+  "CFBundleName": "SiriMailFlowTools",
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "SiriMailFlowTools",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.SiriMailFlowTools",
+  "FlowTools": [
+    "SiriMailFlowTools.CreateDraftMailTool",
+    "SiriMailFlowTools.UpdateDraftMailTool",
+    "SiriMailFlowTools.ForwardDraftMailTool",
+    "SiriMailFlowTools.ReplyDraftMailTool",
+    "SiriMailFlowTools.SendDraftMailTool"
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "UIDeviceFamily": [
+    2
+  ],
+  "DTPlatformBuild": ""
+}

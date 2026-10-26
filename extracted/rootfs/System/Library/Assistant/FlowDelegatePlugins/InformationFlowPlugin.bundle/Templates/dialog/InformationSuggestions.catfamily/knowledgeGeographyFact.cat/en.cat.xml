@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" locale="en">
+  <phrases>
+    <random phrase="suggestionUtterance">
+      <text>How tall is Mount Everest?</text>
+      <text>What is the population of Toronto?</text>
+      <text>How big is Florida?</text>
+      <text>In what state is Denali?</text>
+      <text>What is the capital of Spain?</text>
+      <text>What are the mountains in California?</text>
+      <text>What states border California?</text>
+    </random>
+  </phrases>
+  <all>
+    <dialog id="exampleUtterance"><phrase name="suggestionUtterance"/></dialog>
+  </all>
+</cat>

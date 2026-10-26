@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="CAMDisambiguate#AutoShortcutCollision">
+  <meta name="description" value="A dialog asking user for more information to disambiguate apps"/>
+  <meta name="category" value="Prompt"/>
+  <meta name="readyForLoc" value="true"/>
+
+  <parameters>
+    <parameter name="device" type="sirikit.DeviceState"/>
+    <parameter name="appNames" type="dialog.String[]" description="List of apps to disambiguate."/>
+  </parameters>
+</cat>

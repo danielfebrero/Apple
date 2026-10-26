@@ -1,0 +1,44 @@
+{
+  "AssetSetName": "com.apple.MobileAsset.UAF.Vision.ADT",
+  "Assets": [
+    {
+      "AssetName": "com.apple.vision.adt.detector.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.vision.adt.detector.generic",
+          "RequiredUsageTypes": [
+            "com.apple.vision.adt.detector.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.vision.adt.iphone_tracker.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.vision.adt.iphone_tracker.generic",
+          "RequiredUsageTypes": [
+            "com.apple.vision.adt.iphone_tracker.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.vision.adt.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.vision.adt.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Vision.ADT",
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.vision.adt.uaf.metadata",
+  "UsageTypes": [
+    "com.apple.vision.adt.detector.generic",
+    "com.apple.vision.adt.iphone_tracker.generic"
+  ]
+}

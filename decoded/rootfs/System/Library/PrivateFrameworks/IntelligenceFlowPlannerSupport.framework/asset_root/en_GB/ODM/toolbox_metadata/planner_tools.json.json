@@ -1,0 +1,502 @@
+{
+  "extraMetadata": {
+    "locale": "en_GB"
+  },
+  "swiftToolNameToMetadata": {
+    "answer_call": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"call_id\": {\"type\": \"string\"}, \"audio_route\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [\"call_id\"], \"type\": \"object\"}",
+      "dynamicFiltering": {
+        "companionExecutions": [
+          {
+            "idioms": [
+              "homePod",
+              "homeAccessory",
+              "tv"
+            ],
+            "needs_companion": true
+          }
+        ]
+      },
+      "estimatedTokenCount": 71,
+      "odmPccLink": "answer_call",
+      "parameterDescription": {
+        "audio_route": "",
+        "call_id": ""
+      },
+      "promptToolName": "answer_call",
+      "returnTypeForObservability": "LiveCallEntity",
+      "usageDescription": "if ringing"
+    },
+    "ask_user": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"printed\": {\"type\": \"string\"}, \"entities\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [\"printed\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 71,
+      "odmPccLink": "ask_user",
+      "parameterDescription": {
+        "entities": "",
+        "printed": ""
+      },
+      "promptToolName": "ask_user",
+      "returnTypeForObservability": "string",
+      "usageDescription": "clarify"
+    },
+    "ask_user_to_pick": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"printed\": {\"type\": \"string\"}, \"entities\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}}, \"required\": [\"printed\", \"entities\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 71,
+      "odmPccLink": "ask_user_to_pick",
+      "parameterDescription": {
+        "entities": "",
+        "printed": ""
+      },
+      "promptToolName": "ask_user_to_pick",
+      "returnTypeForObservability": "string"
+    },
+    "callback": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"audio_route\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [], \"type\": \"object\"}",
+      "dynamicFiltering": {
+        "companionExecutions": [
+          {
+            "idioms": [
+              "homePod",
+              "homeAccessory",
+              "tv"
+            ],
+            "needs_companion": true
+          }
+        ]
+      },
+      "estimatedTokenCount": 50,
+      "odmPccLink": "callback",
+      "parameterDescription": {
+        "audio_route": ""
+      },
+      "promptToolName": "callback",
+      "returnTypeForObservability": "string",
+      "usageDescription": "most recent"
+    },
+    "cancel_alarms": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"alarm_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}}, \"required\": [\"alarm_ids\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 54,
+      "odmPccLink": "cancel_alarms",
+      "parameterDescription": {
+        "alarm_ids": ""
+      },
+      "promptToolName": "cancel_alarms",
+      "returnTypeForObservability": "array[AlarmEntity]",
+      "usageDescription": "stop or disable"
+    },
+    "cancel_timer": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"timer_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}}, \"required\": [\"timer_ids\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 52,
+      "odmPccLink": "cancel_timer",
+      "parameterDescription": {
+        "timer_ids": ""
+      },
+      "promptToolName": "cancel_timers",
+      "returnTypeForObservability": "null",
+      "usageDescription": "delete"
+    },
+    "create_alarm": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"time\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"duration\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"label\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"target_day\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"recurrence_days\": {\"anyOf\": [{\"items\": {\"type\": \"DayNames\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"app\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [], \"type\": \"object\"}",
+      "estimatedTokenCount": 191,
+      "odmPccLink": "create_alarm",
+      "parameterDescription": {
+        "app": "",
+        "duration": "",
+        "label": "",
+        "recurrence_days": "",
+        "target_day": "",
+        "time": ""
+      },
+      "promptToolName": "create_alarm",
+      "returnTypeForObservability": "AlarmEntity | TimerEntity",
+      "usageDescription": "set time or duration; day for one-time: Today, Tomorrow"
+    },
+    "create_and_start_timer": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"duration\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"until\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"label\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"is_sleep_timer\": {\"anyOf\": [{\"type\": \"boolean\"}, {\"type\": \"null\"}], \"default\": null}, \"app\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [], \"type\": \"object\"}",
+      "estimatedTokenCount": 146,
+      "odmPccLink": "create_and_start_timer",
+      "parameterDescription": {
+        "app": "",
+        "duration": "",
+        "is_sleep_timer": "",
+        "label": "",
+        "until": ""
+      },
+      "promptToolName": "create_and_start_timer",
+      "returnTypeForObservability": "TimerEntity",
+      "usageDescription": "Set duration or until; is_sleep_timer stops media"
+    },
+    "create_draft_message": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"destinations\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"phone_numbers\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"content\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"app\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [], \"type\": \"object\"}",
+      "estimatedTokenCount": 135,
+      "parameterDescription": {
+        "app": "",
+        "content": "",
+        "destinations": "",
+        "phone_numbers": ""
+      },
+      "promptToolName": "create_draft_message",
+      "returnTypeForObservability": "DraftMessageEntity | string",
+      "usageDescription": "destinations (id or search) or numbers required; content verbatim"
+    },
+    "delete_alarm": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"alarm_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}}, \"required\": [\"alarm_ids\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 53,
+      "odmPccLink": "delete_alarm",
+      "parameterDescription": {
+        "alarm_ids": ""
+      },
+      "promptToolName": "delete_alarms",
+      "returnTypeForObservability": "null",
+      "usageDescription": "permanent"
+    },
+    "end_call": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"call_id\": {\"type\": \"string\"}}, \"required\": [\"call_id\"], \"type\": \"object\"}",
+      "dynamicFiltering": {
+        "companionExecutions": [
+          {
+            "idioms": [
+              "homePod",
+              "homeAccessory",
+              "tv"
+            ],
+            "needs_companion": true
+          }
+        ]
+      },
+      "estimatedTokenCount": 56,
+      "odmPccLink": "end_call",
+      "parameterDescription": {
+        "call_id": ""
+      },
+      "promptToolName": "decline_or_end_call",
+      "returnTypeForObservability": "null",
+      "usageDescription": "active; incoming to voicemail"
+    },
+    "find": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"query\": {\"type\": \"string\"}, \"structured_query\": {\"type\": \"string\"}, \"purpose\": {\"type\": \"SearchMainPurpose\"}}, \"required\": [\"query\", \"structured_query\", \"purpose\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 135,
+      "odmPccLink": "find",
+      "parameterDescription": {
+        "purpose": "",
+        "query": "",
+        "structured_query": ""
+      },
+      "promptToolName": "find",
+      "returnTypeForObservability": "SearchAndResolveResult | SearchHandOffEvents | string",
+      "usageDescription": "structured: alarm(label, time, status: firing/snoozed/enabled/disabled, next) or timer(label, duration)"
+    },
+    "make_call": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"destinations\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"phone_numbers\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"app\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"audio_visual_mode\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"audio_route\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [], \"type\": \"object\"}",
+      "estimatedTokenCount": 155,
+      "odmPccLink": "make_call",
+      "parameterDescription": {
+        "app": "",
+        "audio_route": "",
+        "audio_visual_mode": "",
+        "destinations": "",
+        "phone_numbers": ""
+      },
+      "promptToolName": "make_call",
+      "returnTypeForObservability": "LiveCallEntity | ConferenceCallEntity",
+      "usageDescription": "or FaceTime; destinations (id or search) or numbers required"
+    },
+    "manage_message_draft": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"action\": {\"type\": \"ManageMessageDraftAction\"}, \"destinations\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"phone_numbers\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"draft_id\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"body\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"app\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [\"action\"], \"type\": \"object\"}",
+      "dynamicFiltering": {
+        "companionExecutions": [
+          {
+            "idioms": [
+              "homePod",
+              "tv"
+            ],
+            "needs_companion": true
+          },
+          {
+            "allows_standalone_fallback": true,
+            "idioms": [
+              "homeAccessory"
+            ],
+            "needs_companion": true
+          }
+        ]
+      },
+      "estimatedTokenCount": 197,
+      "odmPccLink": "manage_message_draft",
+      "parameterDescription": {
+        "action": "",
+        "app": "",
+        "body": "",
+        "destinations": "",
+        "draft_id": "",
+        "phone_numbers": ""
+      },
+      "promptToolName": "manage_message_draft",
+      "returnTypeForObservability": "null",
+      "usageDescription": "Manage messages; action: create, update, send; destinations (id or search) or numbers required; body verbatim"
+    },
+    "not_supported": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {}, \"required\": [], \"type\": \"object\"}",
+      "estimatedTokenCount": 31,
+      "promptToolName": "not_supported",
+      "returnTypeForObservability": "null",
+      "usageDescription": "no matching tool"
+    },
+    "open": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"entity_id\": {\"type\": \"string\"}}, \"required\": [\"entity_id\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 45,
+      "odmPccLink": "open",
+      "parameterDescription": {
+        "entity_id": ""
+      },
+      "promptToolName": "open",
+      "returnTypeForObservability": "string"
+    },
+    "pause_timer": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"timer_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}}, \"required\": [\"timer_ids\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 50,
+      "odmPccLink": "pause_timer",
+      "parameterDescription": {
+        "timer_ids": ""
+      },
+      "promptToolName": "pause_timers",
+      "returnTypeForObservability": "array[TimerEntity]"
+    },
+    "prepare_read_calendar_events_list": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"event_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}}, \"required\": [\"event_ids\"], \"type\": \"object\"}",
+      "dynamicFiltering": {
+        "companionExecutions": [
+          {
+            "idioms": [
+              "homePod",
+              "homeAccessory",
+              "watch",
+              "tv"
+            ],
+            "needs_companion": true
+          }
+        ]
+      },
+      "estimatedTokenCount": 54,
+      "odmPccLink": "prepare_read_calendar_events_list",
+      "parameterDescription": {
+        "event_ids": ""
+      },
+      "promptToolName": "prepare_calendar_reading_list",
+      "returnTypeForObservability": "array[ReadableEventsPerDayEntity]"
+    },
+    "prepare_read_conversation": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"conversation_id\": {\"type\": \"string\"}}, \"required\": [\"conversation_id\"], \"type\": \"object\"}",
+      "dynamicFiltering": {
+        "companionExecutions": [
+          {
+            "idioms": [
+              "homePod",
+              "tv"
+            ],
+            "needs_companion": true
+          },
+          {
+            "allows_standalone_fallback": true,
+            "idioms": [
+              "homeAccessory"
+            ],
+            "needs_companion": true
+          }
+        ]
+      },
+      "estimatedTokenCount": 52,
+      "odmPccLink": "prepare_read_conversation",
+      "parameterDescription": {
+        "conversation_id": ""
+      },
+      "promptToolName": "prepare_read_conversation",
+      "returnTypeForObservability": "array[ReadableConversationEntity]"
+    },
+    "prepare_read_messages_list": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"message_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}}, \"required\": [\"message_ids\"], \"type\": \"object\"}",
+      "dynamicFiltering": {
+        "companionExecutions": [
+          {
+            "idioms": [
+              "homePod",
+              "tv"
+            ],
+            "needs_companion": true
+          },
+          {
+            "allows_standalone_fallback": true,
+            "idioms": [
+              "homeAccessory"
+            ],
+            "needs_companion": true
+          }
+        ]
+      },
+      "estimatedTokenCount": 54,
+      "odmPccLink": "prepare_read_messages_list",
+      "parameterDescription": {
+        "message_ids": ""
+      },
+      "promptToolName": "prepare_read_messages_list",
+      "returnTypeForObservability": "ReadableMessagesResultEntity"
+    },
+    "prepare_read_reminders_list": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"reminder_ids\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"list_ids\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [], \"type\": \"object\"}",
+      "dynamicFiltering": {
+        "companionExecutions": [
+          {
+            "idioms": [
+              "homePod",
+              "homeAccessory",
+              "watch",
+              "tv"
+            ],
+            "needs_companion": true
+          }
+        ]
+      },
+      "estimatedTokenCount": 79,
+      "odmPccLink": "prepare_read_reminders_list",
+      "parameterDescription": {
+        "list_ids": "",
+        "reminder_ids": ""
+      },
+      "promptToolName": "prepare_reminders_reading_list",
+      "returnTypeForObservability": "array[ReadableRemindersPerListEntity]"
+    },
+    "redial": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"audio_route\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [], \"type\": \"object\"}",
+      "dynamicFiltering": {
+        "companionExecutions": [
+          {
+            "idioms": [
+              "homePod",
+              "homeAccessory",
+              "tv"
+            ],
+            "needs_companion": true
+          }
+        ]
+      },
+      "estimatedTokenCount": 52,
+      "odmPccLink": "redial",
+      "parameterDescription": {
+        "audio_route": ""
+      },
+      "promptToolName": "redial",
+      "returnTypeForObservability": "LiveCallEntity",
+      "usageDescription": "most recent outgoing"
+    },
+    "reset_timers": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"timer_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}}, \"required\": [\"timer_ids\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 54,
+      "odmPccLink": "reset_timers",
+      "parameterDescription": {
+        "timer_ids": ""
+      },
+      "promptToolName": "reset_timers",
+      "returnTypeForObservability": "array[TimerEntity]",
+      "usageDescription": "restart countdown"
+    },
+    "resume_timer": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"timer_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}}, \"required\": [\"timer_ids\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 55,
+      "odmPccLink": "resume_timer",
+      "parameterDescription": {
+        "timer_ids": ""
+      },
+      "promptToolName": "resume_timers",
+      "returnTypeForObservability": "array[TimerEntity]",
+      "usageDescription": "continue countdown"
+    },
+    "send_draft_message": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"draft_message_id\": {\"type\": \"string\"}}, \"required\": [\"draft_message_id\"], \"type\": \"object\"}",
+      "dynamicFiltering": {
+        "companionExecutions": [
+          {
+            "allows_standalone_fallback": true,
+            "idioms": [
+              "homeAccessory"
+            ],
+            "needs_companion": true
+          }
+        ]
+      },
+      "estimatedTokenCount": 51,
+      "odmPccLink": "send_draft_message",
+      "parameterDescription": {
+        "draft_message_id": ""
+      },
+      "promptToolName": "send_draft_message",
+      "returnTypeForObservability": "MessageEntity"
+    },
+    "settings_set_system_volume": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"query\": {\"type\": \"string\"}}, \"required\": [\"query\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 68,
+      "odmPccLink": "settings_set_system_volume",
+      "parameterDescription": {
+        "query": ""
+      },
+      "promptToolName": "manage_audio_settings",
+      "returnTypeForObservability": "SiriXResult",
+      "usageDescription": "volume, mute, notifications, voice assistant, background sounds; query verbatim"
+    },
+    "snooze_alarm": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"alarm_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, \"duration_minutes\": {\"anyOf\": [{\"type\": \"integer\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [\"alarm_ids\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 76,
+      "odmPccLink": "snooze_alarm",
+      "parameterDescription": {
+        "alarm_ids": "",
+        "duration_minutes": ""
+      },
+      "promptToolName": "snooze_alarms",
+      "returnTypeForObservability": "array[AlarmEntity]",
+      "usageDescription": "or pause"
+    },
+    "update_alarm": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"alarm_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, \"time\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"duration\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"label\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"enabled\": {\"anyOf\": [{\"type\": \"boolean\"}, {\"type\": \"null\"}], \"default\": null}, \"target_day\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"recurrence_days\": {\"anyOf\": [{\"items\": {\"type\": \"DayNames\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"can_snooze\": {\"anyOf\": [{\"type\": \"boolean\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [\"alarm_ids\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 225,
+      "odmPccLink": "update_alarm",
+      "parameterDescription": {
+        "alarm_ids": "",
+        "can_snooze": "",
+        "duration": "",
+        "enabled": "",
+        "label": "",
+        "recurrence_days": "",
+        "target_day": "",
+        "time": ""
+      },
+      "promptToolName": "update_alarms",
+      "returnTypeForObservability": "array[AlarmEntity]"
+    },
+    "update_draft_message": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"draft_message_id\": {\"type\": \"string\"}, \"destinations\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"phone_numbers\": {\"anyOf\": [{\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, {\"type\": \"null\"}], \"default\": null}, \"content\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"app\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [\"draft_message_id\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 141,
+      "parameterDescription": {
+        "app": "",
+        "content": "",
+        "destinations": "",
+        "draft_message_id": "",
+        "phone_numbers": ""
+      },
+      "promptToolName": "update_draft_message",
+      "returnTypeForObservability": "DraftMessageEntity | string"
+    },
+    "update_timer": {
+      "argumentsSchemaForObservability": "{\"additionalProperties\": false, \"properties\": {\"timer_ids\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\"}, \"duration\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"until\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"label\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"null\"}], \"default\": null}, \"is_sleep_timer\": {\"anyOf\": [{\"type\": \"boolean\"}, {\"type\": \"null\"}], \"default\": null}}, \"required\": [\"timer_ids\"], \"type\": \"object\"}",
+      "estimatedTokenCount": 135,
+      "odmPccLink": "update_timer",
+      "parameterDescription": {
+        "duration": "",
+        "is_sleep_timer": "",
+        "label": "",
+        "timer_ids": "",
+        "until": ""
+      },
+      "promptToolName": "update_timers",
+      "returnTypeForObservability": "array[TimerEntity]"
+    }
+  }
+}

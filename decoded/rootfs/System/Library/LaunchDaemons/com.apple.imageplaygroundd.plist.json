@@ -1,0 +1,58 @@
+{
+  "Label": "com.apple.imageplaygroundd",
+  "ProcessType": "Adaptive",
+  "MachServices": {
+    "com.apple.usernotifications.delegate.com.apple.GenerativePlaygroundApp": true,
+    "com.apple.imageplaygroundd.onDemandImageRequesterService": true
+  },
+  "UserName": "mobile",
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/SuggestedImage.framework/Support/imageplaygroundd"
+  ],
+  "EnablePressuredExit": true,
+  "LaunchEvents": {
+    "com.apple.biome.compute.publisher": {
+      "com.apple.imageplaygroundd.PhotosDelete.reader": {
+        "graph": {
+          "name": "streamPublisher",
+          "streamIdentifier": "Photos.Delete",
+          "version": 1
+        },
+        "client": "com.apple.imageplaygroundd",
+        "identifier": "com.apple.imageplaygroundd.PhotosDelete.reader"
+      }
+    },
+    "com.apple.bg.system.task": {
+      "com.apple.imageplaygroundd.personalizationRequestProducer": {
+        "Priority": "Maintenance",
+        "RequiresExternalPower": true,
+        "RequireScreenSleep": true,
+        "RepeatingTask": {
+          "Interval": 7200
+        }
+      },
+      "com.apple.imageplaygroundd.fedstatsTrieProducer": {
+        "Priority": "Maintenance",
+        "RequiresExternalPower": true,
+        "RequireScreenSleep": true,
+        "RepeatingTask": {
+          "Interval": 7200
+        }
+      },
+      "com.apple.imageplaygroundd.defaultEventConsumer": {
+        "Priority": "Maintenance",
+        "RequiresExternalPower": true,
+        "RequireScreenSleep": true,
+        "RepeatingTask": {
+          "Interval": 7200
+        },
+        "Dependencies": [
+          {
+            "DependencyType": "DependencyTypeCompletion",
+            "DependencyIdentifier": "com.apple.imageplaygroundd.personalizationRequestProducer"
+          }
+        ]
+      }
+    }
+  }
+}

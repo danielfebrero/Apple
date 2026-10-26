@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "보라의 주소를 알려줘",
+            "박민호의 전화번호를 보여줘",
+            "우리 집사람의 생일은 언제지?",
+            "민지의 집 이메일 주소를 보여줘",
+            "우리 오빠의 직장 주소가 뭐지?"
+          ]
+        }
+      ],
+      "SectionName": "연락처에 대해 물어보기"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "박민호 연락처를 보여줘",
+            "이름이 진영이라는 연락처를 찾아줘"
+          ]
+        }
+      ],
+      "SectionName": "연락처 찾기"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "우리 엄마는 유진이야",
+            "김용기가 나의 오빠야"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "오빠 사무실에 전화 걸어줘"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "오빠 회사로 FaceTime 전화를 걸어줘"
+          ]
+        }
+      ],
+      "SectionName": "관계 정보"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "내 이름을 발음하는 방법을 배워",
+            "우리 엄마 이름 발음하는 법을 배워봐",
+            "유진이 이름을 발음하는 법"
+          ]
+        }
+      ],
+      "SectionName": "발음"
+    }
+  ]
+}

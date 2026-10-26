@@ -1,0 +1,32 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.devicecheck",
+  "UsageTypes": [
+    "twobit.encryption"
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.DeviceCheck",
+  "MetadataAsset": "com.apple.devicecheck.uaf.metadata",
+  "Assets": [
+    {
+      "AssetName": "com.apple.devicecheck.uaf.metadata",
+      "IgnoreOSCompatibility": true,
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.devicecheck.uaf.metadata"
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.devicecheck.two.bit",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "twobit.encryption"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.devicecheck.two.bit"
+        }
+      ]
+    }
+  ]
+}

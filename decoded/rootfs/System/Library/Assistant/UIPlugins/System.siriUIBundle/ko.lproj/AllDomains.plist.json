@@ -1,0 +1,168 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "전화",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "지아에게 전화해",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "미나에게 FaceTime 걸어줘",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "App",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "사진 열어줘",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "메시지",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "지우에게 방금 도착이라고 문자 보내",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "캘린더",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "9시에 회의 잡아줘",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "스포츠",
+      "IconResourceName": "Sports",
+      "TagPhrase": "보스톤 레드삭스 경기 결과를 보여줘",
+      "DomainName": "Sports"
+    },
+    {
+      "DomainDisplayName": "사진",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "어제 찍은 사진 보여줘",
+      "DomainName": "Photos"
+    },
+    {
+      "DomainDisplayName": "지도",
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainName": "MapsAndLocal",
+      "TagPhrase": "집에 가는 길을 보여줘",
+      "DomainAlternateDisplayName": "지도"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "나의 현재 위치를 포함해서 트윗해줘",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Weibo에 안녕이라고 게시해",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Facebook 담벼락에 글 올리기",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "음식점",
+      "IconResourceName": "Restaurants",
+      "TagPhrase": "부산에서 횟집 찾아줘",
+      "DomainName": "Restaurants"
+    },
+    {
+      "DomainDisplayName": "영화",
+      "IconResourceName": "Movies",
+      "TagPhrase": "주변에 있는 영화관 검색해줘",
+      "DomainName": "Movies"
+    },
+    {
+      "DomainDisplayName": "음악",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "아이유 음악을 재생해",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "미리 알림",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "어머니랑 통화하라고 미리 알려줘",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "이메일",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "보라에게 여행에 대한 이메일 보내",
+      "DomainName": "Email"
+    },
+    {
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "IconNeedsProcessing": true,
+      "DomainDisplayName": "날씨",
+      "TagPhrase": "오늘 날씨는 어때?",
+      "DomainName": "Weather"
+    },
+    {
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "IconNeedsProcessing": true,
+      "DomainDisplayName": "주식",
+      "TagPhrase": "Apple 주가가 얼마야?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "시계",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "내일 아침 7시에 깨워줘",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "연락처",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "보라의 주소를 알려줘",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "메모",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "오늘 점심값 5천원이라고 메모해",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "설정",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "에어플레인 모드 켜",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "웹 검색",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "인터넷에서 북극곰을 검색해줘",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Q&A",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "경복궁에 대해 알려줘",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "Books",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "iBooks에서 Into Thin Air 다운로드",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "Podcast",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Podcast 재생해",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

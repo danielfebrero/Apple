@@ -1,0 +1,43 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "أضف البطاطا إلى قائمة التسوق",
+            "تذكر أن تأخذ مظلة",
+            "ذكرني أن أتناول دوائي الساعة ٦ صباحًا",
+            "اقرأ قائمة مهام العمل"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "ذكرني أن أتصل بأمي عندما أصل إلى المنزل"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": []
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "ذكّرني أن أجلب زهورًا عند مغادرة العمل",
+            "تذكر موقع الويب هذا",
+            "ذكرني بهذا البريد الإلكتروني غدًا"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

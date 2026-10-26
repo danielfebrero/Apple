@@ -1,0 +1,15 @@
+{
+  "bundleIdentifier": "com.apple.siri.car.PnRCarPlayOnDeviceWorker",
+  "name": "com.apple.siri.car.PnRCarPlayOnDeviceWorker.hourly",
+  "taskRequest": {
+    "groupConcurrencyLimit": 1,
+    "groupName": "com.apple.siri.car.PnRCarPlayOnDeviceWorker",
+    "priority": "Maintenance",
+    "repeatingTask": {
+      "interval": 3600.0,
+      "minDurationBetweenInstances": 1800.0
+    },
+    "requiresExternalPower": true,
+    "requiresUserInactivity": true
+  }
+}

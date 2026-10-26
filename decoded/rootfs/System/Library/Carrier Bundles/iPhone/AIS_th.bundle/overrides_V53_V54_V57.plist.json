@@ -1,0 +1,32 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "ShowVoNRSwitch": true,
+  "Show5GSwitch": true,
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "Signaling": {
+      "AlwaysSendSessionProgress": true
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "EnableWiFiCallingWithoutEntitlement": false
+  },
+  "SupportsVoNR": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 11393
+  },
+  "ShowVolteSwitch": false,
+  "Show5GStandaloneSwitch": true,
+  "ShowEsimWarningUnsupportedCarrier": false,
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "Enable5GStandaloneByDefault": true
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="runInformationFlow#disableConfirmRequestsConfirmation">
+    <meta name="description" value="Confirmation text that prompts user if they'd like to disable Confirm Requests in Settings."/>
+    <meta name="category" value="UsedForSnippet"/>
+    <meta name="readyForLoc" value="true"/>
+    <parameters>
+        <parameter description="The content provider name" name="contentProviderName" type="dialog.String"/>
+    </parameters>
+</cat>

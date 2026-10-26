@@ -1,0 +1,177 @@
+{
+  "name": "SiriIntelligenceFlow_CustomInterval_SRT",
+  "contextual_telemetry": "YES",
+  "maximum_duration": 30,
+  "diagnostics": [
+    {
+      "trigger_threshold_duration_single": 7,
+      "option_tailspin_includes_oslogs": true,
+      "gather_tailspin": true,
+      "option_report_omit_network_bound_intervals": true
+    }
+  ],
+  "signposts": [
+    {
+      "subsystem": "com.apple.intelligenceflow",
+      "category": "TurnManagerService",
+      "name": "TurnInterval",
+      "network_bound": "indeterminate",
+      "incident_uuid_field_name": "ifUserTurnId",
+      "early_allowance": 30
+    },
+    {
+      "subsystem": "com.apple.intelligenceflow",
+      "category": "WorkflowResponsiveness",
+      "name": "GMSPlannerService.modelInference",
+      "network_bound": "indeterminate",
+      "diagnostics": [
+        {
+          "name": "TooManyModelInferences",
+          "trigger_threshold_count": 5,
+          "option_tailspin_includes_oslogs": true,
+          "gather_tailspin": true
+        }
+      ]
+    },
+    {
+      "subsystem": "com.apple.corespeech",
+      "category": "Framework",
+      "name": "UserSpeakingEnd",
+      "start": true
+    },
+    {
+      "subsystem": "com.apple.privatemlclientInferenceProvider",
+      "category": "provider",
+      "name": "requestOneShot",
+      "network_bound": true,
+      "required_log_message_contents": [
+        "full request"
+      ]
+    },
+    {
+      "subsystem": "com.apple.privatemlclientInferenceProvider",
+      "category": "provider",
+      "name": "requestStream",
+      "network_bound": true,
+      "required_log_message_contents": [
+        "full request"
+      ]
+    },
+    {
+      "subsystem": "com.apple.gms.PrototypeInferenceProvider",
+      "category": "genAIModelProvider",
+      "name": "completePrompt",
+      "network_bound": true
+    },
+    {
+      "subsystem": "com.apple.omnisearch",
+      "category": "Search",
+      "name": "OmniSearchService.agenticGlobalSearch",
+      "network_bound": true
+    },
+    {
+      "subsystem": "com.apple.siri",
+      "category": "Client",
+      "name": "UsefulUserFacingResults",
+      "network_bound": "indeterminate",
+      "end": true
+    }
+  ],
+  "option_filter_tailspin_logs_to_subsystem_categories": {
+    "com.apple.app_launch_measurement": [
+      "*"
+    ],
+    "com.apple.appintents": [
+      "*"
+    ],
+    "com.apple.CoreSceneUnderstanding": [
+      "*"
+    ],
+    "com.apple.corespeech": [
+      "*"
+    ],
+    "com.apple.corespotlight": [
+      "*"
+    ],
+    "com.apple.Foundation": [
+      "NSProcessInfoInteractionTracking"
+    ],
+    "com.apple.GenerativeModels": [
+      "*"
+    ],
+    "com.apple.intelligenceflow": [
+      "*"
+    ],
+    "com.apple.modelmanager": [
+      "*"
+    ],
+    "com.apple.omnisearch": [
+      "*"
+    ],
+    "com.apple.osanalytics.ReportCrash": [
+      "performance"
+    ],
+    "com.apple.pommes": [
+      "*"
+    ],
+    "com.apple.privatecloudcompute": [
+      "*"
+    ],
+    "com.apple.privatemlclient": [
+      "*"
+    ],
+    "com.apple.privatemlclientInferenceProvider": [
+      "*"
+    ],
+    "com.apple.shortcuts": [
+      "*"
+    ],
+    "com.apple.siri": [
+      "Client",
+      "Daemon",
+      "Performance"
+    ],
+    "com.apple.siri.analytics": [
+      "Performance"
+    ],
+    "com.apple.siri.cdm": [
+      "*"
+    ],
+    "com.apple.siri.identity": [
+      "*"
+    ],
+    "com.apple.siri.marrs.mrr": [
+      "*"
+    ],
+    "com.apple.siri.request_dispatcher": [
+      "*"
+    ],
+    "com.apple.siri.sirikit": [
+      "*"
+    ],
+    "com.apple.siri.tts": [
+      "*"
+    ],
+    "com.apple.sirinaturallanguageparsing": [
+      "*"
+    ],
+    "com.apple.sirireferenceresolution": [
+      "*"
+    ],
+    "com.apple.speech.localspeechrecognition": [
+      "*"
+    ],
+    "com.apple.spotlight": [
+      "*"
+    ],
+    "com.apple.SpotlightServices": [
+      "*"
+    ],
+    "com.apple.tokengenerationinference": [
+      "*"
+    ],
+    "com.apple.UnifiedAssetFramework": [
+      "*"
+    ]
+  }
+}

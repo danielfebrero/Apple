@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:visualcat:2.0" id="Suggestions#GetSuggestions_Visual">
+  <conditions>
+    <condition name="symbolWithRGBATint">
+        <and>
+            <expression name="suggestion.iconSymbol"/>
+            <expression name="suggestion.iconSymbolTintRGBA"/>
+        </and>
+    </condition>
+    <condition name="symbolWithNameTint">
+        <and>
+            <expression name="suggestion.iconSymbol"/>
+            <expression name="suggestion.iconSymbolTintName"/>
+        </and>
+    </condition>
+    <condition name="symbolWithoutTint">
+        <and>
+                <expression name="suggestion.iconSymbol"/>
+            <not>
+                <or>
+                    <expression name="suggestion.iconSymbolTintName"/>
+                    <expression name="suggestion.iconSymbolTintRGBA"/>
+                </or>
+            </not>
+        </and>
+    </condition>
+    <condition name="isDescriptionSet">
+        <expression name="suggestion.description" op="defined"/>
+    </condition>
+  </conditions>
+  <parameters>
+    <parameter name="appBundleId" type="dialog.String"/>
+    <parameter name="more" type="dialog.String" valueFromCat="Suggestions#GetSuggestions_Dialog#more"/>
+    <parameter name="trySaying" type="dialog.String" valueFromCat="Suggestions#GetSuggestions_Dialog_AppIntro"/>
+    <parameter name="moreSuggestionsDirectInvocation" type="dialog.String"/>
+    <parameter name="siriHelp" type="dialog.String" valueFromCat="Suggestions#GetSuggestions_Dialog#siriHelp"/>
+    <parameter name="suggestions" type="suggestions.Suggestion[]"/>
+    <parameter name="more" type="dialog.String" valueFromCat="Suggestions#GetSuggestions_Dialog#more"/>
+    <parameter name="learnMorePunchout" type="dialog.String"/>
+    <parameter name="learnMore" type="dialog.String" valueFromCat="Suggestions#GetSuggestions_Dialog#learnMore"/>
+    <parameter name="otherIntro" type="dialog.String" valueFromCat="Suggestions#GetSuggestions_Dialog_OtherIntro"/>
+    <parameter name="otherSuggestions" type="suggestions.Suggestion[]"/>
+    <parameter name="siriHelp" type="dialog.String" valueFromCat="Suggestions#GetSuggestions_Dialog#siriHelp"/>
+    <parameter name="siriHelpWithAppName" type="dialog.String" valueFromCat="Suggestions#GetSuggestions_Dialog#siriHelpWithAppName"/>
+  </parameters>
+
+  <response>
+    <hide-redacted-elements>false</hide-redacted-elements>
+    
+    <sections id="Response_sash">
+      <level-of-detail>FULL</level-of-detail>
+      <level-of-detail>SUPPORTING</level-of-detail>
+      <component-list>
+        <value>
+          <sash-standard>
+            <thumbnail>
+              <visuals>
+                <element>
+                  <image-element>
+                    <sources>
+                      <value>
+                        <app-icon>
+                          <application-bundle-identifier><var name="appBundleId"/></application-bundle-identifier>
+                        </app-icon>
+                      </value>
+                    </sources>
+                  </image-element>
+                </element>
+              </visuals>
+            </thumbnail>
+            <title>
+              <value>
+                <text><var name="siriHelpWithAppName"/></text>
+              </value>
+            </title>
+            <component-name><var name="appBundleId"/></component-name>
+          </sash-standard>
+        </value>
+      </component-list>
+    </sections>
+    <sections id="Response-tag">
+      <level-of-detail>FULL</level-of-detail>
+      <level-of-detail>SUPPORTING</level-of-detail>
+      <component-list>
+        <value>
+            <secondary-header-standard>
+                <text-1>
+                    <text-elements>
+                        <font>
+                            <value>
+                                <named>SUBHEADLINE</named>
+                            </value>
+                        </font>
+                        <value>
+                            <plain><var name="trySaying"/></plain>
+                        </value>
+                    </text-elements>
+                </text-1>
+            </secondary-header-standard>
+        </value>
+      </component-list>
+    </sections>
+    <sections id="Response_full" list="suggestions" iterator="suggestion">
+      <level-of-detail>FULL</level-of-detail>
+      <level-of-detail>SUPPORTING</level-of-detail>
+      <component-list>
+        <value>
+          <simple-item-reverse-rich>
+            <text-1>
+              <text-elements>
+                <value>
+                  <plain><transform mode="quote"><var name="suggestion.displayText"/></transform></plain>
+                </value>
+              </text-elements>
+              <redacted>true</redacted>
+            </text-1>
+            <text-2 condition="isDescriptionSet">
+              <text-elements>
+                <value>
+                  <plain><var name="suggestion.description"/></plain>
+                </value>
+              </text-elements>
+              <redacted>true</redacted>
+            </text-2>
+            <thumbnail condition="suggestion.showIcon">>
+              <visuals>
+                <element>
+                  <image-element>
+                    <sources condition="suggestion.iconData">
+                      <value>
+                         <data>
+                           <png-data><var name="suggestion.iconData"/></png-data>
+                         </data>
+                      </value>
+                    </sources>
+                    <sources condition="suggestion.iconAppBundleId">
+                      <value>
+                        <app-icon>
+                          <application-bundle-identifier><var name="suggestion.iconAppBundleId"/></application-bundle-identifier>
+                        </app-icon>
+                      </value>
+                    </sources>
+                    <sources condition="symbolWithNameTint">
+                      <value>
+                          <symbol>
+                            <name><var name="suggestion.iconSymbol"/></name>
+                            <tint-color>
+                                <value>
+                                    <name><var name="suggestion.iconSymbolTintName"/></name>
+                                </value>
+                            </tint-color>
+                          </symbol>
+                      </value>
+                    </sources>
+                    <sources condition="symbolWithoutTint">
+                      <value>
+                          <symbol>
+                            <name><var name="suggestion.iconSymbol"/></name>
+                          </symbol>
+                      </value>
+                    </sources>
+                    <sources condition="symbolWithRGBATint">
+                      <value>
+                          <symbol>
+                            <name><var name="suggestion.iconSymbol"/></name>
+                            <tint-color>
+                                <value>
+                                    <hex-value>
+                                        <rgba><var name="suggestion.iconSymbolTintRGBA"/></rgba>
+                                    </hex-value>
+                                </value>
+                            </tint-color>
+                          </symbol>
+                      </value>
+                    </sources>
+                  </image-element>
+                </element>
+              </visuals>
+              <redacted>true</redacted>
+            </thumbnail>
+            <action condition="suggestion.directInvocation">
+              <actions>
+                <command>
+                  <is-navigation>false</is-navigation>
+                  <value>
+                    <direct-invocation><var name="suggestion.directInvocation"/></direct-invocation>
+                  </value>
+                </command>
+              </actions>
+            </action>
+            <component-name><var name="suggestion.suggestionId"/></component-name>
+          </simple-item-reverse-rich>
+        </value>
+      </component-list>
+    </sections>
+    <sections id="Response_otherIntro" condition="otherSuggestions">
+      <level-of-detail>FULL</level-of-detail>
+      <level-of-detail>SUPPORTING</level-of-detail>
+      <component-list>
+        <value>
+          <secondary-header-standard>
+            <text-1>
+              <text-elements>
+                <font>
+                    <value>
+                        <named>SUBHEADLINE</named>
+                    </value>
+                </font>
+                <value>
+                  <plain><var name="otherIntro"/></plain>
+                </value>
+              </text-elements>
+            </text-1>
+          </secondary-header-standard>
+        </value>
+      </component-list>
+    </sections>
+    <sections id="Response_full2" list="otherSuggestions" iterator="suggestion">
+      <level-of-detail>FULL</level-of-detail>
+      <level-of-detail>SUPPORTING</level-of-detail>
+      <component-list>
+        <value>
+          <simple-item-reverse-rich>
+            <text-1>
+              <text-elements>
+                <value>
+                  <plain><transform mode="quote"><var name="suggestion.displayText"/></transform></plain>
+                </value>
+              </text-elements>
+              <redacted>true</redacted>
+            </text-1>
+            <text-2 condition="isDescriptionSet">
+              <text-elements>
+                <value>
+                  <plain><var name="suggestion.description"/></plain>
+                </value>
+              </text-elements>
+              <redacted>true</redacted>
+            </text-2>
+            <thumbnail condition="suggestion.showIcon">
+              <visuals>
+                <element>
+                  <image-element>
+                    <sources condition="suggestion.iconData">
+                      <value>
+                         <data>
+                           <png-data><var name="suggestion.iconData"/></png-data>
+                         </data>
+                      </value>
+                    </sources>
+                    <sources condition="suggestion.iconAppBundleId">
+                      <value>
+                        <app-icon>
+                          <application-bundle-identifier><var name="suggestion.iconAppBundleId"/></application-bundle-identifier>
+                        </app-icon>
+                      </value>
+                    </sources>
+                    <sources condition="symbolWithoutTint">
+                      <value>
+                          <symbol>
+                            <name><var name="suggestion.iconSymbol"/></name>
+                          </symbol>
+                      </value>
+                    </sources>
+                    <sources condition="symbolWithNameTint">
+                      <value>
+                          <symbol>
+                            <name><var name="suggestion.iconSymbol"/></name>
+                            <tint-color>
+                                <value>
+                                    <name><var name="suggestion.iconSymbolTintName"/></name>
+                                </value>
+                            </tint-color>
+                          </symbol>
+                      </value>
+                    </sources>
+                    <sources condition="symbolWithRGBATint">
+                      <value>
+                          <symbol>
+                            <name><var name="suggestion.iconSymbol"/></name>
+                            <tint-color>
+                                <value>
+                                    <hex-value>
+                                        <rgba><var name="suggestion.iconSymbolTintRGBA"/></rgba>
+                                    </hex-value>
+                                </value>
+                            </tint-color>
+                          </symbol>
+                      </value>
+                    </sources>
+                  </image-element>
+                </element>
+              </visuals>
+              <redacted>true</redacted>
+            </thumbnail>
+            <action condition="suggestion.directInvocation">
+              <actions>
+                <command>
+                  <is-navigation>false</is-navigation>
+                  <value>
+                    <direct-invocation><var name="suggestion.directInvocation"/></direct-invocation>
+                  </value>
+                </command>
+              </actions>
+            </action>
+            <component-name><var name="suggestion.suggestionId"/></component-name>
+          </simple-item-reverse-rich>
+        </value>
+      </component-list>
+    </sections>
+    <sections id="Response_conclusion_more" condition="moreSuggestionsDirectInvocation">
+      <level-of-detail>FULL</level-of-detail>
+      <level-of-detail>SUPPORTING</level-of-detail>
+      <component-list>
+        <value>
+          <simple-item-standard>
+              <text-1>
+                  <text-elements>
+                      <font>
+                          <value>
+                             <named>FOOTNOTE</named>
+                          </value>
+                      </font>
+                      <value>
+                        <plain><var name="more"/></plain>
+                      </value>
+                  </text-elements>
+              </text-1>
+              <action>
+                  <actions>
+                    <command>
+                      <is-navigation>true</is-navigation>
+                      <value>
+                          <direct-invocation><var name="moreSuggestionsDirectInvocation"/></direct-invocation>
+                      </value>
+                    </command>
+                  </actions>
+                  <action-name>SEE_MORE_TAPPED</action-name>
+              </action>
+              <component-name>SEE_MORE_BUTTON</component-name>
+          </simple-item-standard>
+        </value>
+      </component-list>
+    </sections>
+    <sections id="Response_conclusion_learn" condition="learnMorePunchout">
+        <level-of-detail>FULL</level-of-detail>
+        <level-of-detail>SUPPORTING</level-of-detail>
+        <component-list>
+          <value>
+            <simple-item-standard>
+                <text-1>
+                    <text-elements>
+                        <font>
+                            <value>
+                               <named>FOOTNOTE</named>
+                            </value>
+                        </font>
+                        <value>
+                          <plain><var name="learnMore"/></plain>
+                        </value>
+                    </text-elements>
+                </text-1>
+                <action>
+                    <actions>
+                      <command>
+                        <value>
+                            <ace-command><var name="learnMorePunchout"/></ace-command>
+                        </value>
+                      </command>
+                    </actions>
+                    <action-name>LEARN_MORE_TAPPED</action-name>
+                </action>
+                <component-name>LEARN_MORE_BUTTON</component-name>
+            </simple-item-standard>
+          </value>
+        </component-list>
+    </sections>
+  </response>
+</cat>

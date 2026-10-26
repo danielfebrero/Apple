@@ -1,0 +1,64 @@
+[
+  {
+    "shortDescription": "HomePod image classifier. Operates on SceneClassifierV2 descriptors (version 2.0).",
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 1)",
+        "shortDescription": "",
+        "shape": "[1]",
+        "name": "HomePodDetected",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "2.0",
+    "modelParameters": [],
+    "author": "DSCE-ML: Chengwei Bian, Wenyu Zhang",
+    "specificationVersion": 1,
+    "storagePrecision": "Float32",
+    "license": "Apple Internal",
+    "computePrecision": "Float16",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "10.13",
+      "tvOS": "11.0",
+      "visionOS": "1.0",
+      "watchOS": "4.0",
+      "iOS": "11.0",
+      "macCatalyst": "11.0"
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32 2048)",
+        "shortDescription": "",
+        "shape": "[2048]",
+        "name": "imageDescriptors",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-loabj9qynk",
+      "com.github.apple.coremltools.source": "keras==2.3.0",
+      "com.github.apple.coremltools.version": "4.1"
+    },
+    "generatedClassName": "ClassifierB520",
+    "neuralNetworkLayerTypeHistogram": {
+      "InnerProduct": 12,
+      "ActivationSigmoid": 3,
+      "BatchNorm": 12,
+      "ActivationReLU": 9,
+      "Average": 1
+    },
+    "method": "predict"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "VoiceControl.AI.Production",
+  "UsageAliasValues": {
+    "language_ar": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.safety_deny.input.voice_control_ai_v2.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.voice_control_ai_v2.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_300m.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.image_tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.safety.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.tokenizer.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.voice_control_ai_v2.generic": "ENABLED",
+        "com.apple.fm.language.instruct_300m.voice_control_ai_v2.image_tokenizer_adapter.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

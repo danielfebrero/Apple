@@ -1,0 +1,80 @@
+{
+  "iOSApprovedIntents": [
+    {
+      "appBundleId": "com.apple.DocumentsApp",
+      "intentName": "OpenItemIntent"
+    },
+    {
+      "appBundleId": "com.apple.DocumentsApp",
+      "intentName": "CreateFolderIntent"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenNotificationsSettingsDeepLinks"
+    },
+    {
+      "appBundleId": "com.apple.Preferences",
+      "intentName": "OpenNewDeviceOutreachStaticDeepLinks"
+    },
+    {
+      "appBundleId": "com.apple.reminders",
+      "intentName": "OpenRemindersSettingsDeepLink"
+    }
+  ],
+  "iOSMacOSApprovedIntents": [
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "OpenFolderLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilenotes",
+      "intentName": "OpenTagLinkAction"
+    },
+    {
+      "appBundleId": "com.apple.mobilemail",
+      "intentName": "ComposeMessageIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "OpenBookmarkAssistantIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "OpenTabGroup"
+    },
+    {
+      "appBundleId": "com.apple.mobilesafari",
+      "intentName": "OpenView"
+    },
+    {
+      "appBundleId": "com.apple.mobileslideshow",
+      "intentName": "OpenAlbumIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobileslideshow",
+      "intentName": "OpenMemoryIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobileslideshow",
+      "intentName": "OpenSharedAlbumIntent"
+    },
+    {
+      "appBundleId": "com.apple.mobileslideshow",
+      "intentName": "PhotosSearchAssistantIntent"
+    },
+    {
+      "appBundleId": "com.apple.reminders",
+      "intentName": "TTROpenListAppIntent"
+    }
+  ],
+  "macOSApprovedIntents": [
+    {
+      "appBundleId": "com.apple.finder",
+      "intentName": "OpenItemIntent"
+    },
+    {
+      "appBundleId": "com.apple.finder",
+      "intentName": "CreateFolderIntent"
+    }
+  ]
+}

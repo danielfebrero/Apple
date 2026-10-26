@@ -1,0 +1,14 @@
+{
+  "Label": "com.apple.SiriTTSTrainingAgent",
+  "ProcessType": "Interactive",
+  "MachServices": {
+    "com.apple.SiriTTSTrainingAgent": true
+  },
+  "EnableTransactions": true,
+  "ProgramArguments": [
+    "/System/Library/PrivateFrameworks/SiriTTSTraining.framework/SiriTTSTrainingAgent"
+  ],
+  "LaunchEvents": {},
+  "UserName": "mobile",
+  "EnablePressuredExit": true
+}

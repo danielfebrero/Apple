@@ -1,0 +1,26 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "Show5GSwitch": true,
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "ShowHighDataModeSwitch": true,
+  "IMSConfig": {
+    "Satellite": {
+      "IMSServiceMask": 2
+    }
+  },
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "SatelliteSystemName": "Entel SpaceX",
+  "CarrierEntitlements": {
+    "ProvisioningRecheckPeriod": 7,
+    "SupportedEntitlements": 533521
+  },
+  "SatelliteSystemTransitionTimeToAllowed": 5,
+  "Show5GWarningUnsupportedCarrier": false,
+  "SupportsSatellite": true,
+  "Enable5GAutoByDefault": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "ShowSatelliteSwitch": true
+}

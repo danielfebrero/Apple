@@ -1,0 +1,101 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "dataType" : "Double",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...10",
+        "shapeRange" : "[[1, 10]]",
+        "formattedType" : "MultiArray (Double 1)",
+        "type" : "MultiArray",
+        "shape" : "[1]",
+        "name" : "computed_bfOutput",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Double",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...10",
+        "shapeRange" : "[[1, 10]]",
+        "formattedType" : "MultiArray (Double 1)",
+        "type" : "MultiArray",
+        "shape" : "[1]",
+        "name" : "computed_sanitizerOutput",
+        "shortDescription" : ""
+      },
+      {
+        "dataType" : "Double",
+        "hasShapeFlexibility" : "1",
+        "isOptional" : "0",
+        "shapeFlexibility" : "1...10",
+        "shapeRange" : "[[1, 10]]",
+        "formattedType" : "MultiArray (Double 1)",
+        "type" : "MultiArray",
+        "shape" : "[1]",
+        "name" : "computed_regexOutput",
+        "shortDescription" : ""
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 4,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "customModels" : [
+      {
+        "className" : "PPSanitizedStringFilter",
+        "description" : ""
+      },
+      {
+        "className" : "PPSmallBloomFilter",
+        "description" : ""
+      },
+      {
+        "className" : "PPRegexModel",
+        "description" : ""
+      }
+    ],
+    "modelType" : {
+      "name" : "MLModelType_pipeline",
+      "structure" : [
+        {
+          "name" : "MLModelType_customModel"
+        },
+        {
+          "name" : "MLModelType_customModel"
+        },
+        {
+          "name" : "MLModelType_customModel"
+        }
+      ]
+    },
+    "inputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "name",
+        "shortDescription" : ""
+      }
+    ],
+    "userDefinedMetadata" : {
+
+    },
+    "generatedClassName" : "PPModel_NE_Filtering",
+    "method" : "predict"
+  }
+]

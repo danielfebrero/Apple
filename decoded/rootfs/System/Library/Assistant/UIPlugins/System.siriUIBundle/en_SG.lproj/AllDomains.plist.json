@@ -1,0 +1,183 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Phone",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Ring Ibrahim",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime Renuka",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Apps",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Launch Photos",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Messages",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Tell Shanti I’ll be right there",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Calendar",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Set up a meeting at 9",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Sports",
+      "IconResourceName": "Sports",
+      "TagPhrase": "Did the Giants win?",
+      "DomainName": "Sports"
+    },
+    {
+      "DomainDisplayName": "Photos",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Show my photos from yesterday",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Maps",
+      "DomainAlternateDisplayName": "Maps",
+      "TagPhrase": "Give me directions home",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Tweet with my location…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Post to Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Post to Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Restaurants",
+      "IconResourceName": "Restaurants",
+      "TagPhrase": "Find a good pizza restaurant…",
+      "DomainName": "Restaurants"
+    },
+    {
+      "DomainDisplayName": "Films",
+      "IconResourceName": "Movies",
+      "TagPhrase": "Find Disney films",
+      "DomainName": "Movies"
+    },
+    {
+      "DomainDisplayName": "Music",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Play Katy Perry",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Reminders",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Remind me to call mum",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "Email",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Email Renuka about the trip",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Weather",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "What’s the weather like today?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Stocks",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "What is Apple’s stock price?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Clock",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Wake me up tomorrow at 7am",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Contacts",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "What’s Ling Ling's address?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Find My Friends",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "Where’s Shanti?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "Notes",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Note that I spent $12 on lunch",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Settings",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Turn on Airplane Mode",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Web Search",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Search the web for polar bears",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Q&A",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "How far away is the Sun?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "iTunes",
+      "IconDisplayIdentifier": "com.apple.MobileStore",
+      "TagPhrase": "Buy Coldplay's album",
+      "DomainName": "iTunes"
+    },
+    {
+      "DomainDisplayName": "Books",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "Buy the book Pride and Prejudice",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "Podcasts",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Play podcasts",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

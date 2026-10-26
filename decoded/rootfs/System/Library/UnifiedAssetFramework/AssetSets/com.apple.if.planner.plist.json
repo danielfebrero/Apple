@@ -1,0 +1,145 @@
+{
+  "AssetSetName": "com.apple.if.planner",
+  "Assets": [
+    {
+      "AssetName": "com.apple.if.planner.context_filter",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.context_filter",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    },
+    {
+      "AssetName": "com.apple.if.planner.nlrouter.tokenizer",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.nlrouter.tokenizer.{nlrouter.language}",
+          "RequiredUsageTypes": [
+            "nlrouter.language"
+          ]
+        },
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.nlrouter.tokenizer.{ae.language}",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.nlrouter.base",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.nlrouter.base.{nlrouter.language}",
+          "RequiredUsageTypes": [
+            "nlrouter.language"
+          ]
+        },
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.nlrouter.base.{ae.language}",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.joint_resolver.base",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.joint_resolver.base.{ae.language}",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.context_retrieval.query_clf",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.context_retrieval.query_clf.{ae.language}",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.context_retrieval.context_ranker",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.context_retrieval.context_ranker.{ae.language}",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.context_retrieval.spatial_keywords",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.context_retrieval.spatial_keywords.{ae.language}",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.context_retrieval.ner",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.context_retrieval.ner.{ae.language}",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.tool_retrieval.base",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.tool_retrieval.base.{ae.language}",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.traffic_classifier",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.traffic_classifier",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.IF.Planner",
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.if.planner.uaf.metadata",
+  "UsageTypes": [
+    "rg.language",
+    "ae.language",
+    "nlrouter.language"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pattern xmlns="urn:apple:names:siri:pattern:1.0" id="workflowRunner#finalDone" type="pattern.SuccessStatus">
+    <settings>
+      <setting name="sonicStatusIndicator" value="true"/>
+    </settings>
+    <group name="Status">
+        <dialog id="runVoiceCommand#intentHandledResponseDone#*"/>
+    </group>
+</pattern>

@@ -1,0 +1,56 @@
+{
+  "CFBundleName": "SiriKitRuntime",
+  "DTXcode": "2700",
+  "NSExtensionSDK": {
+    "com.apple.siri.flow-extension": {
+      "CFBundlePackageType": "XPC!",
+      "XPCService": {
+        "ServiceType": "Application",
+        "RunLoopType": "NSRunLoop",
+        "_AdditionalSubServices": {
+          "apple-extension-service": true
+        },
+        "_LaunchWatchdogTimeOut": 0
+      },
+      "NSExtension": {
+        "NSExtensionAttributes": {
+          "NSExtensionPointName": "com.apple.siri.flow-extension",
+          "NSExtensionPointVersion": "1.0"
+        },
+        "PrincipalClass": "NSObject",
+        "NSExtensionPointIdentifier": "com.apple.siri.flow-extension",
+        "NSExtensionHostEntitlement": "com.apple.siri.flow-extension-discovery",
+        "NSExtensionContextClass": "SKRFlowExtensionContext",
+        "NSExtensionContextHostClass": "SKRFlowExtensionContextHost",
+        "NSExtensionProtocol": "NSObject",
+        "Subsystems": [
+          "SKRFlowExtensionSubsystem"
+        ]
+      }
+    }
+  },
+  "DTSDKName": "iphoneos27.2.internal",
+  "NSHumanReadableCopyright": "Copyright © 2020 Apple Inc. All rights reserved.",
+  "DTSDKBuild": "24B107",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "FMWK",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "SiriKitRuntime",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.SiriKitRuntime",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "24B107"
+}

@@ -1,0 +1,19 @@
+"
+
+**Identify pipeline operation words:**
+
+List words/phrases that specify HOW to aggregate/transform results:
+- Counting: "how many", "count"
+- Grouping by time buckets: "each year", "per month", "by day"
+- Grouping by attribute: "by sender", "by author"
+- Sorting: "sorted by", "ordered by"
+- Limiting: "first 10", "top 5"
+
+DO NOT claim search constraint words:
+- Content types: "emails", "documents", "photos"
+- People: names, email addresses
+- Temporal CONSTRAINTS: "since 2003", "before 2020", "this year", "last month"
+  (These specify WHEN to search, not HOW to group results)
+- Locations, topics, other filters
+
+Output claimedWords array, then build pipeline stages.

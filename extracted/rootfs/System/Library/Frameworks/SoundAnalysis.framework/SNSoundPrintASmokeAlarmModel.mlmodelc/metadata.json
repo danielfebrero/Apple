@@ -1,0 +1,169 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Int8",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 640)",
+        "shortDescription" : "",
+        "shape" : "[640]",
+        "name" : "input_1",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "Confidence",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "Detected",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 60)",
+        "shortDescription" : "",
+        "shape" : "[60]",
+        "name" : "thresholdedHistoryOut",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 60)",
+        "shortDescription" : "",
+        "shape" : "[60]",
+        "name" : "detectedHistoryOut",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 3,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "10.14",
+      "tvOS" : "12.0",
+      "visionOS" : "1.0",
+      "watchOS" : "5.0",
+      "iOS" : "12.0",
+      "macCatalyst" : "12.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_pipeline",
+      "structure" : [
+        {
+          "name" : "MLModelType_neuralNetwork"
+        },
+        {
+          "name" : "MLModelType_neuralNetwork"
+        },
+        {
+          "name" : "MLModelType_neuralNetwork"
+        },
+        {
+          "name" : "MLModelType_neuralNetwork"
+        }
+      ]
+    },
+    "userDefinedMetadata" : {
+      "sequenceHop" : "48",
+      "sequenceSize" : "20",
+      "hopSize" : "7680",
+      "windowSize" : "12192",
+      "boltTaskId" : "8tkpvwiavn",
+      "overlapFactor" : "0.3700787401574803",
+      "feedback_connections" : "input_1->stateIn,detectedHistoryOut->detectedHistoryIn,thresholdedHistoryOut->thresholdedHistoryIn",
+      "sequenceWindow" : "74",
+      "sampleRate" : "16000",
+      "soundIdentifier" : "smoke_alarm",
+      "mldb_token" : "mldb-br4yno3am9",
+      "inputFeature" : "_SNSoundPrintAFeatureEmbeddingCustomModel"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 512)",
+        "shortDescription" : "",
+        "shape" : "[512]",
+        "name" : "input1",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "1",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 640)?",
+        "shortDescription" : "",
+        "shape" : "[640]",
+        "name" : "stateIn",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "1",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 60)?",
+        "shortDescription" : "",
+        "shape" : "[60]",
+        "name" : "thresholdedHistoryIn",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "1",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 60)?",
+        "shortDescription" : "",
+        "shape" : "[60]",
+        "name" : "detectedHistoryIn",
+        "type" : "MultiArray"
+      }
+    ],
+    "generatedClassName" : "SNSoundPrintASmokeAlarmModel",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Crop" : 3,
+      "Copy" : 1,
+      "InnerProduct" : 19,
+      "GreaterEqual" : 3,
+      "ActivationSigmoid" : 1,
+      "SlidingWindows" : 1,
+      "GreaterThan" : 1,
+      "Softmax" : 16,
+      "Squeeze" : 4,
+      "Reshape" : 17,
+      "ReduceSum" : 3,
+      "Multiply" : 1,
+      "ExpandDims" : 7,
+      "ConcatND" : 5,
+      "Add" : 1,
+      "ActivationReLU" : 2,
+      "BatchedMatmul" : 16
+    },
+    "method" : "predict"
+  }
+]

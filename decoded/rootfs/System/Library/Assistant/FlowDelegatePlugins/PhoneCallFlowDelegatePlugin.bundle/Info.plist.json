@@ -1,0 +1,118 @@
+{
+  "CFBundleName": "PhoneCallFlowDelegatePlugin",
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "SupportedIntents": [
+    "sirikit.intent.call.StartVideoCallIntent",
+    "sirikit.intent.call.StartAudioCallIntent",
+    "sirikit.intent.call.IdentifyIncomingCallerIntent",
+    "sirikit.intent.call.AnswerCallIntent",
+    "sirikit.intent.call.HangUpCallIntent",
+    "sirikit.intent.call.StartCallIntent",
+    "sirikit.intent.call.SearchCallHistoryIntent"
+  ],
+  "DTSDKBuild": "24B104",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "NSPrincipalClass": "PhoneCallFlowDelegatePlugin.PhoneCallFlowDelegatePlugin",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "PhoneCallFlowDelegatePlugin",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.PhoneCallFlowDelegatePlugin",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "SupportedDomains": [
+    "phoneCall"
+  ],
+  "SupportedTopics": [
+    {
+      "entity": "*",
+      "verb": "*",
+      "type": "NLv4",
+      "identifier": "UserCancelled",
+      "version": "USOv3"
+    },
+    {
+      "entity": "*",
+      "verb": "*",
+      "type": "NLv4",
+      "identifier": "UserRejected",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_PhoneNumber",
+      "verb": "*",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Voicemail",
+      "verb": "*",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_PhoneCall",
+      "verb": "*",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Setting",
+      "verb": "*",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "uso_NoEntity",
+      "verb": "reply",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_Communication",
+      "verb": "update",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "open",
+      "type": "NLv4",
+      "version": "USOv3"
+    },
+    {
+      "entity": "common_App",
+      "verb": "close",
+      "type": "NLv4",
+      "version": "USOv3"
+    }
+  ],
+  "DTPlatformBuild": "",
+  "SupportedInvocations": [
+    "com.apple.siri.directInvocation.phone.fallbackToSiriXForMyriadOrEmergency",
+    "com.apple.siri.directInvocation.phone.announceIncomingCallNotification",
+    "com.apple.siri.directInvocation.phone.startEmergencyCall",
+    "com.apple.siri.directInvocation.phone.announceGroupFaceTimeInvite",
+    "com.apple.siri.directInvocation.phone.announceVoicemail",
+    "com.apple.siri.directInvocation.phone.identifyIncomingCaller",
+    "com.apple.siri.directInvocation.phone.startPhoneCall",
+    "com.apple.siri.DirectInvocation.Phone.StartAudioCall",
+    "com.apple.siri.directInvocation.phone.voiceCommandsStartCall",
+    "com.apple.siri.directInvocation.phone.announceCallBell",
+    "com.apple.siri.directInvocation.phone.hangUp",
+    "com.apple.siri.directInvocation.phone.startFacetimeCall"
+  ]
+}

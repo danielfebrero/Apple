@@ -1,0 +1,104 @@
+{
+  "allowedIntents": [
+    "INIntent",
+    "CreateAlarmIntent",
+    "MTCreateAlarmIntent",
+    "INCreateTimerIntent",
+    "LocateIntent",
+    "LocateDeviceIntent",
+    "INRequestPaymentIntent",
+    "INSendPaymentIntent",
+    "INPlayMediaIntent",
+    "INAddTasksIntent",
+    "INSendMessageIntent",
+    "INStartCallIntent"
+  ],
+  "deniedIntentParameters": [
+    {
+      "deniedParameterCombinations": [],
+      "deniedParameters": [
+        "taskTitles"
+      ],
+      "intentClass": "INAddTasksIntent"
+    },
+    {
+      "deniedParameterCombinations": [
+        [
+          "toAccount",
+          "fromAccount"
+        ],
+        [
+          "toAccount",
+          "fromAccount",
+          "transactionAmount"
+        ]
+      ],
+      "deniedParameters": [
+        "transactionAmount"
+      ],
+      "intentClass": "INTransferMoneyIntent"
+    },
+    {
+      "deniedParameterCombinations": [
+        [
+          "billPayee",
+          "fromAccount"
+        ],
+        [
+          "billPayee",
+          "fromAccount",
+          "transactionAmount"
+        ]
+      ],
+      "deniedParameters": [
+        "transactionAmount"
+      ],
+      "intentClass": "INPayBillIntent"
+    },
+    {
+      "deniedParameterCombinations": [],
+      "deniedParameters": [
+        "currencyAmount",
+        "note"
+      ],
+      "intentClass": "INSendPaymentIntent"
+    },
+    {
+      "deniedParameterCombinations": [],
+      "deniedParameters": [
+        "currencyAmount",
+        "note"
+      ],
+      "intentClass": "INRequestPaymentIntent"
+    },
+    {
+      "deniedParameterCombinations": [
+        [
+          "workoutLocationType",
+          "workoutName",
+          "isOpenEnded"
+        ],
+        [
+          "workoutName",
+          "isOpenEnded"
+        ],
+        [
+          "workoutName",
+          "workoutLocationType",
+          "isOpenEnded",
+          "goalValue",
+          "workoutGoalUnitType"
+        ]
+      ],
+      "deniedParameters": [],
+      "intentClass": "INStartWorkoutIntent"
+    },
+    {
+      "deniedParameterCombinations": [],
+      "deniedParameters": [
+        "content"
+      ],
+      "intentClass": "INSendMessageIntent"
+    }
+  ]
+}

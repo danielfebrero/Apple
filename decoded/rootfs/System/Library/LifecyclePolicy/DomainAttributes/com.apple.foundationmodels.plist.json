@@ -1,0 +1,39 @@
+{
+  "CompileDraftModel": {
+    "AttributeGroups": [
+      {
+        "Attributes": [
+          {
+            "Class": "RBSDurationAttribute",
+            "StartPolicy": "RBSDurationStartPolicyFixed",
+            "WarningDuration": 5,
+            "InvalidationDuration": 180,
+            "EndPolicy": "RBSDurationEndPolicyInvalidate"
+          },
+          {
+            "Class": "RBSCPUAccessGrant",
+            "Role": "RBSRoleNonUserInteractive"
+          },
+          {
+            "Class": "RBSJetsamPriorityGrant",
+            "Band": 40
+          },
+          {
+            "Class": "RBSPreserveBaseMemoryGrant"
+          },
+          {
+            "Class": "RBSPreventIdleSleepGrant"
+          },
+          {
+            "Class": "RBSRunningReasonAttribute",
+            "RunningReason": 20821
+          }
+        ]
+      }
+    ],
+    "Restriction": {
+      "Class": "OriginatorEntitlement",
+      "Entitlement": "com.apple.runningboard.assertions.foundationmodels"
+    }
+  }
+}

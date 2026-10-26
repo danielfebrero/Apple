@@ -1,0 +1,82 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Mixed (Float16, Float32)",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 19 × 1)",
+        "shortDescription" : "",
+        "shape" : "[1, 19, 1]",
+        "name" : "var_80",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "bolt_33qpn7sxhd",
+    "modelParameters" : [
+
+    ],
+    "author" : "OSI Team",
+    "specificationVersion" : 6,
+    "mlProgramOperationTypeHistogram" : {
+      "Linear" : 5,
+      "Concat" : 1,
+      "Cast" : 5,
+      "Lstm" : 1,
+      "Relu" : 4,
+      "Transpose" : 2,
+      "ExpandDims" : 1,
+      "Tile" : 1
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 19 × 5)",
+        "shortDescription" : "Time series of temporal features (seq_len=19): Temperature_battery, CPMSPPMBatteryPowerConsumptionPMU10s, Active_display, AbsoluteLevel_battery",
+        "shape" : "[1, 19, 5]",
+        "name" : "temporal_features",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 10)",
+        "shortDescription" : "Current state features: DesignCapacity_battery, AbsoluteLevel_battery, CycleCount_battery, airplaneMode_boolean, Enabled_gamemode, LpmEnabled_lpm, sysCap2_cpms, NCCP_battery, WeightedRa_battery",
+        "shape" : "[1, 10]",
+        "name" : "static_features",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "confidence_threshold" : "0.37124999999999997",
+      "model_logging_id" : "40",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript",
+      "com.github.apple.coremltools.source" : "torch==2.6.0",
+      "mldb_token" : "mldb-lqgw77ma9p",
+      "com.github.apple.coremltools.version" : "8.2.2"
+    },
+    "generatedClassName" : "hybrid_model",
+    "method" : "predict"
+  }
+]

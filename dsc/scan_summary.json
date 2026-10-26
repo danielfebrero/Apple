@@ -1,0 +1,502 @@
+{
+  "all_image_count": 4770,
+  "targeted_image_count": 382,
+  "section_count": 2024,
+  "string_count": 683891,
+  "errors": [],
+  "source_cache_files_hashed": 36,
+  "caches": [
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e",
+      "size": 802816,
+      "uuid_hex": "2e2bb543514c3becb7265cc4d9e26790",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.01",
+      "size": 131547136,
+      "uuid_hex": "c922346efb553cf38ea3420c2baa51c2",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.02",
+      "size": 229376,
+      "uuid_hex": "66a5e2ce5fa03522bc2098eedfc6de11",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.03",
+      "size": 131072000,
+      "uuid_hex": "2f239c1b51e03c858009b325f2707893",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.04",
+      "size": 294912,
+      "uuid_hex": "cfc4f9fc9ec03625959e5704593ea3f6",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.05",
+      "size": 131284992,
+      "uuid_hex": "32ae110b48843229a43a196e740f92c4",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.06",
+      "size": 212992,
+      "uuid_hex": "9eeb8c90daba365eabbed07e464fe2f3",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.07",
+      "size": 131268608,
+      "uuid_hex": "ee4e3319ba8d341a89f73c922ffd7cab",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.08",
+      "size": 262144,
+      "uuid_hex": "966380f88fd1339fad6924764e54d634",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.09",
+      "size": 131104768,
+      "uuid_hex": "655cbeedf84a30f98aa532aa86002c8d",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.10",
+      "size": 196608,
+      "uuid_hex": "0674ae44b25a31af8bbdfc3497dfd924",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.11",
+      "size": 131481600,
+      "uuid_hex": "4df3fc5bd81a39e18b2853d4d5c4d570",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.12",
+      "size": 278528,
+      "uuid_hex": "1400cf4269e13e69ade71eda927d33dc",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.13",
+      "size": 131465216,
+      "uuid_hex": "6141b5809dad31ccbf2add2bb807e74f",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.14",
+      "size": 229376,
+      "uuid_hex": "ea9abff5153c3c9d8490ff5edac22403",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+      "size": 131383296,
+      "uuid_hex": "d803f8c22a333fe1b8e086663a482b82",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.16",
+      "size": 245760,
+      "uuid_hex": "2c33e43458ae33c19c40ba4f92fa853a",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.17",
+      "size": 131416064,
+      "uuid_hex": "15e489d4d96730a9998eb1894542f30e",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.18",
+      "size": 294912,
+      "uuid_hex": "3b8ff6455be23cce958920413be595f4",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.19",
+      "size": 131448832,
+      "uuid_hex": "c2d192d0caca34c698629a29686e4c1e",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.20",
+      "size": 360448,
+      "uuid_hex": "9f6c241324833d50abbb6f9d07564dc6",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.21",
+      "size": 130957312,
+      "uuid_hex": "a6ba887c78573d888a0b9a0da238ea1e",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.22",
+      "size": 278528,
+      "uuid_hex": "7bb5bd0bf015372395d4c4889c818597",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.23",
+      "size": 130973696,
+      "uuid_hex": "4fbadd0e92753cbdb0b429d4210976c3",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.24",
+      "size": 327680,
+      "uuid_hex": "1fd7227d0bef39cebcb1a6929299b529",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.25.dylddata",
+      "size": 229425152,
+      "uuid_hex": "40416c68890b3b9aa894f518383714bb",
+      "mappings": 8
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.26.dyldreadonly",
+      "size": 197345280,
+      "uuid_hex": "56a8c554f11c35bcbf9ff4ee477be11b",
+      "mappings": 2
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.27",
+      "size": 32768,
+      "uuid_hex": "690249e66f0f337d9ec61985d4e67519",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.28",
+      "size": 131055616,
+      "uuid_hex": "84554076a2903d4c9f17cbfa74a64e49",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.29",
+      "size": 327680,
+      "uuid_hex": "391df6e0cadd37c98ba3b488af30de6c",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.30",
+      "size": 130875392,
+      "uuid_hex": "71c56756762e3812a6fb846b1781a664",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.31",
+      "size": 393216,
+      "uuid_hex": "5171dbbfd0083c249e2f25bcb8ef93e4",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.32",
+      "size": 130859008,
+      "uuid_hex": "5a84e40a4cfd3d9cba01d3dd08c5d2f3",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.33",
+      "size": 409600,
+      "uuid_hex": "078d29718d7b3164b79e45fe77185a10",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.34",
+      "size": 130482176,
+      "uuid_hex": "f05cce27343737ef8697b4964fd2d3dd",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.35",
+      "size": 147456,
+      "uuid_hex": "a01cb6277e32311891bc3a0124ef954e",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.36",
+      "size": 131547136,
+      "uuid_hex": "1e222d61992e3ec38c6255a93f50f3f0",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.37",
+      "size": 409600,
+      "uuid_hex": "3a5ae140eca83a8581417f0f3621c976",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.38",
+      "size": 131072000,
+      "uuid_hex": "1ed890294d04308ab652464eb952eef9",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.39",
+      "size": 458752,
+      "uuid_hex": "27ef3156506e3e108e6abee29587e1db",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.40",
+      "size": 131153920,
+      "uuid_hex": "e23d04281a9538ff8443ae02683de8b9",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.41",
+      "size": 393216,
+      "uuid_hex": "99be8a06592a3fc58ab56d3cf988e23c",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "size": 131170304,
+      "uuid_hex": "2ab408e4e3ec345b8c60d0af18266fc2",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.43",
+      "size": 557056,
+      "uuid_hex": "ac73350f99a83aaebe8949dc161abf27",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.44",
+      "size": 131055616,
+      "uuid_hex": "49b37966786b3110b1b72b69f6cc5712",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.45",
+      "size": 245760,
+      "uuid_hex": "299e64ae26b030c3ac7bcbd9aba2bbe4",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.46",
+      "size": 130793472,
+      "uuid_hex": "b4257e012c96335c8a1efea995e03af8",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.47",
+      "size": 294912,
+      "uuid_hex": "f00307c08d3d3dd8ab87fc5afcfa646f",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.48",
+      "size": 130793472,
+      "uuid_hex": "454d418bc25333d18a79fc2789d625f8",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.49",
+      "size": 409600,
+      "uuid_hex": "1353d21c9e7b3b89889d799b62b137c0",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.50",
+      "size": 131252224,
+      "uuid_hex": "17dd89cf2e1d3bc4b10b9f6672e38998",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.51",
+      "size": 311296,
+      "uuid_hex": "a0fccc87c09334a093e664ca7b24f7f9",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.52",
+      "size": 131121152,
+      "uuid_hex": "d87c2b6bf83f3d14a464b42f68d94ec5",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.53",
+      "size": 360448,
+      "uuid_hex": "0fe2cdac51ea34258ec17ab85758469b",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.54.dylddata",
+      "size": 219873280,
+      "uuid_hex": "431799d393893fc7b5a8a625d5d429ce",
+      "mappings": 8
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.55.dyldreadonly",
+      "size": 3686400,
+      "uuid_hex": "4e6c8734de48389085671ff1746db638",
+      "mappings": 2
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.56",
+      "size": 32768,
+      "uuid_hex": "1b46f6f458923f9b88ffbede1def11eb",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.57",
+      "size": 130514944,
+      "uuid_hex": "5f161931c8c2392fbc1d8e3e55969182",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.58",
+      "size": 294912,
+      "uuid_hex": "a08aa8a6980b3f719107fe4d17267026",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.59",
+      "size": 131121152,
+      "uuid_hex": "ac6163fbdfc43e548deaee611dfacd54",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.60",
+      "size": 344064,
+      "uuid_hex": "dbd85b37bc913958b8bb90722e442155",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.61",
+      "size": 130695168,
+      "uuid_hex": "8b91c61b24af34bfaf80dbc74c2facbe",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.62",
+      "size": 196608,
+      "uuid_hex": "6bb94376ae7e37989ca48604a66a6ce3",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.63",
+      "size": 131137536,
+      "uuid_hex": "3ab676d02b383d1196b4f04f0f71e624",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.64",
+      "size": 294912,
+      "uuid_hex": "d6c085739603338d9b3efbd5997103b2",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.65",
+      "size": 130777088,
+      "uuid_hex": "429bcba61f9b366aa76cbdbf8d53b218",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.66",
+      "size": 212992,
+      "uuid_hex": "f04577d006943b61b04b3504dd9a3e6d",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.67",
+      "size": 130859008,
+      "uuid_hex": "cde4b88940af360e92e4f888d56cf55c",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.68",
+      "size": 294912,
+      "uuid_hex": "3115377737ef3194b36e6501edd84c7b",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.69",
+      "size": 131088384,
+      "uuid_hex": "c53c2df44ca738bfb2904b9f23d94d18",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.70",
+      "size": 327680,
+      "uuid_hex": "822e581dc2c53417b022c147a6ca2182",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.71",
+      "size": 130859008,
+      "uuid_hex": "5e46e7e7f95f3f118b2cbd15a1d295e4",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.72",
+      "size": 262144,
+      "uuid_hex": "43621bf68f1739aab3791141efff85ba",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.73",
+      "size": 131203072,
+      "uuid_hex": "ee36f8bd53883cf48a1e49d7047211d1",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.74",
+      "size": 262144,
+      "uuid_hex": "308656371a883168b3f880ad7091ddfd",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.75",
+      "size": 130383872,
+      "uuid_hex": "73cedbb2f0323365bfb5cf843f1586c8",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.76",
+      "size": 294912,
+      "uuid_hex": "117bb9d70e5d346aabf7e70b45f344d2",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.77",
+      "size": 130351104,
+      "uuid_hex": "c50427d3a9103c51aaf1e3b53b89e84e",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.78",
+      "size": 98304,
+      "uuid_hex": "422f4c944fb33bfaa90e14bc8efa985f",
+      "mappings": 1
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.79.dylddata",
+      "size": 177717248,
+      "uuid_hex": "c6a4c32e38623de1bdc6637924fb3ed6",
+      "mappings": 8
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.80.dyldreadonly",
+      "size": 65536,
+      "uuid_hex": "5ef77ee6853b33dfae3f0c56754ad61e",
+      "mappings": 2
+    },
+    {
+      "file": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.81.dyldlinkedit",
+      "size": 698679296,
+      "uuid_hex": "5ef77ee6853b33dfae3f0c56754ad61e",
+      "mappings": 2
+    }
+  ]
+}

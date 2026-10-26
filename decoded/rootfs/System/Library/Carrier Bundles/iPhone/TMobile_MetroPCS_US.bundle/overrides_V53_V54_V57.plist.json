@@ -1,0 +1,76 @@
+{
+  "DerPriFileVersion": "6.0.161",
+  "Show5GWarningUnsupportedCarrier": false,
+  "Show5GStandaloneSwitch": true,
+  "SatelliteNoDataSuspendDelayTimeout": 1,
+  "MTU": [
+    {
+      "technology-mask": 25,
+      "size": 1440
+    },
+    {
+      "technology-mask": 32,
+      "size": 1436
+    }
+  ],
+  "_Exclude": [
+    "EnableLTEAfterUpgrade"
+  ],
+  "Enable5GStandaloneByDefault": true,
+  "Show5GSwitch": true,
+  "IPv6SupportedDataModeMask": 106527,
+  "SatelliteSystemTransitionTimeToAllowed": 5,
+  "ShowHighDataModeSwitch": true,
+  "ShowSatelliteSwitch": true,
+  "Location": {
+    "EmergencyLocation": {
+      "AugmentedEmergencyAction": {
+        "AML": {
+          "SMSOverNAS": {
+            "SMSDestination": "9265",
+            "EnableForSatellitePLMNs": true
+          }
+        }
+      }
+    }
+  },
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "Signaling": {
+      "AdditionalFeatureTags": {
+        "voice": {
+          "+sip.call-info.spam": ""
+        }
+      }
+    }
+  },
+  "CarrierEntitlements": {
+    "SupportedEntitlements": 4720025
+  },
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "SupportsSatellite": true,
+  "SatelliteAccessInfo": {
+    "AllowCarrierApp": true
+  },
+  "AllowSAOnWiFiAssociation": true,
+  "DataIndicatorOverrideForNRMmwave": "NRUC",
+  "Enable5GAutoByDefault": true,
+  "ShowVoNRSwitch": true,
+  "SupportsNRNSAInboundRoaming": true,
+  "SatelliteApps": [
+    "com.metropcs.mymetro"
+  ],
+  "TechSettings": {
+    "SuppressSAInOverCellHandover": false
+  },
+  "Enable5GStandaloneAfterUpgrade": true,
+  "Enable5GAutoAfterUpgrade": true,
+  "SupportsVoNR": true
+}

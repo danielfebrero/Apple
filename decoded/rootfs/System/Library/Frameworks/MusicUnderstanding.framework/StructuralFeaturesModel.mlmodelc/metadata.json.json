@@ -1,0 +1,120 @@
+[
+  {
+    "shortDescription": "Provides MIR for a song",
+    "metadataOutputVersion": "3.0",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "The time sequence of phrases strength for the song",
+        "shape": "[]",
+        "name": "phrases",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "The time sequence of segments strength for the song",
+        "shape": "[]",
+        "name": "segments",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "The time sequence of sections strength for the song",
+        "shape": "[]",
+        "name": "sections",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "The time sequence of kind strength for the song",
+        "shape": "[]",
+        "name": "kind",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "The time sequence of pace strength for the song",
+        "shape": "[]",
+        "name": "pace",
+        "type": "MultiArray"
+      }
+    ],
+    "version": "3.2.1.dev",
+    "modelParameters": [],
+    "author": "Apple Inc.",
+    "specificationVersion": 9,
+    "storagePrecision": "Mixed (Float16, Int8)",
+    "license": "Property of Apple Inc. All rights reserved.",
+    "mlProgramOperationTypeHistogram": {
+      "Ios18.conv": 78,
+      "Ios18.sub": 1,
+      "Ios18.relu": 32,
+      "Ios18.gelu": 25,
+      "Ios18.concat": 3,
+      "Ios18.sigmoid": 3,
+      "Ios18.add": 16,
+      "Ios18.maximum": 1,
+      "Ios18.transpose": 1,
+      "Ios18.cast": 6,
+      "Ios18.squeeze": 1,
+      "Ios18.constexprBlockwiseShiftScale": 74,
+      "Ios18.reshape": 3,
+      "Ios18.mul": 1
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int32)",
+    "stateSchema": [],
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "15.0",
+      "tvOS": "18.0",
+      "visionOS": "2.0",
+      "watchOS": "11.0",
+      "iOS": "18.0",
+      "macCatalyst": "18.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 400...6000 × 256 × 1",
+        "shapeRange": "[[1, 1], [400, 6000], [256, 256], [1, 1]]",
+        "formattedType": "MultiArray (Float32 1 × 1024 × 256 × 1)",
+        "type": "MultiArray",
+        "shape": "[1, 1024, 256, 1]",
+        "name": "MelSpectrogram",
+        "shortDescription": "The Mel Spectrogram data for the song"
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.source": "torch==2.4.1",
+      "com.github.apple.coremltools.version": "9.0",
+      "com.github.apple.coremltools.conversion_date": "2026-04-10",
+      "sourceInfo": "{\"hubRunId\": \"65f2d676-6ebc-41d9-a95c-626318346f3d\", \"hubProjectId\": \"mu_distillation\"}",
+      "com.github.apple.coremltools.source_dialect": "TorchScript",
+      "configuration": "{\"preprocessingConfiguration\": {\"audioFormat\": {\"sampleRate\": 24000, \"channelCount\": 1}}, \"featureComputationConfiguration\": {\"melSpectrogramConfiguration\": {\"windowLength\": 2048, \"hopLength\": 1200, \"filterCount\": 256, \"minimumFrequency\": 27.5, \"maximumFrequency\": 12000.0, \"paddingValue\": 0}, \"receptiveFieldLength\": 4081, \"predictionResolution\": 0.05, \"inputFrameCount\": 6000}, \"postprocessingConfiguration\": {\"peakPicking\": {\"detectionThreshold\": 0.33, \"minimumPhraseBoundaryDistanceInSeconds\": 1.0, \"minimumPhraseBoundaryDistanceInBars\": 1.0, \"minimumSegmentBoundaryDistanceInSeconds\": 2.0, \"minimumSegmentBoundaryDistanceInBars\": 2.0, \"minimumSectionBoundaryDistanceInSeconds\": 4.0, \"minimumSectionBoundaryDistanceInBars\": 3.0}, \"timeAlignment\": {\"songStartTimeThresholdInSeconds\": 1.0, \"songEndTimeThresholdInSeconds\": 1.0}, \"pace\": {\"validAssetsPerBeatValues\": [4.0, 3.0, 2.0, 1.0, 0.5, 0.3333333333333333, 0.25, 0.16666666666666666, 0.125, 0.08333333333333333, 0.0625, 0.041666666666666664, 0.03125], \"assetsPerMinuteVertices\": [0, 20, 40, 80], \"classIndexVertices\": [0, 20, 30, 40]}}}",
+      "copyright": "Copyright © 2025 Apple Inc. All rights reserved.",
+      "mldb_token": "mldb-r4yn34lam9"
+    },
+    "generatedClassName": "StructuralFeaturesModel",
+    "method": "predict"
+  }
+]

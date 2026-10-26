@@ -1,0 +1,183 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Teléfono",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Llama a Pablo",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime con Víctor",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Aplicaciones",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Abre Fotos",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Mensajes",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Dile a Enrique que llego pronto",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Calendario",
+      "IconNeedsProcessing": true,
+      "TagPhrase": "Crea una reunión para las 9",
+      "IconResourceName": "Calendar",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Deportes",
+      "IconResourceName": "Sports",
+      "TagPhrase": "¿Ha ganado el Barcelona?",
+      "DomainName": "Sports"
+    },
+    {
+      "DomainDisplayName": "Fotos",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Ver mis fotos de ayer",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Mapas",
+      "DomainAlternateDisplayName": "Mapas",
+      "TagPhrase": "Indícame cómo llegar a casa",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Publica en Twitter…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Publica en Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Publica en Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Restaurantes",
+      "IconResourceName": "Restaurants",
+      "TagPhrase": "Restaurantes chinos por aquí",
+      "DomainName": "Restaurants"
+    },
+    {
+      "DomainDisplayName": "Películas",
+      "IconResourceName": "Movies",
+      "TagPhrase": "Busca películas de Disney",
+      "DomainName": "Movies"
+    },
+    {
+      "DomainDisplayName": "Música",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Pon algo de blues",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Recordatorios",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Recuérdame llamar a mamá",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "Correo",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Envía un mensaje de correo…",
+      "DomainName": "Email"
+    },
+    {
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "IconNeedsProcessing": true,
+      "DomainDisplayName": "Tiempo",
+      "TagPhrase": "¿Qué tiempo hace hoy?",
+      "DomainName": "Weather"
+    },
+    {
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "IconNeedsProcessing": true,
+      "DomainDisplayName": "Bolsa",
+      "TagPhrase": "¿Cómo va la bolsa?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Reloj",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Despiértame mañana a las 7",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Contactos",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "¿Cuál es el teléfono de Ana?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Buscar a mis amigos",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "¿Dónde está Carlos?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "Notas",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Apunta que me he gastado 12 €",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Ajustes",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Activa el modo Avión",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Búsqueda en Internet",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Busca osos polares en Internet",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Conocimientos generales",
+      "IconNeedsProcessing": true,
+      "TagPhrase": "¿Cuántos litros hay en un galón?",
+      "IconResourceName": "QandA",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "iTunes",
+      "IconDisplayIdentifier": "com.apple.MobileStore",
+      "TagPhrase": "La LEGO película en iTunes",
+      "DomainName": "iTunes"
+    },
+    {
+      "DomainDisplayName": "Libros",
+      "IconDisplayIdentifier": "com.apple.iBooks",
+      "TagPhrase": "Compra el libro Don Quijote",
+      "DomainName": "Books"
+    },
+    {
+      "DomainDisplayName": "Podcasts",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Reproduce podcasts",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

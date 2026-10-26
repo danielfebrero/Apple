@@ -1,0 +1,132 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "Instance based heuristic model for video app selection",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "Int64",
+        "type" : "Int64",
+        "name" : "SelectedApp",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "keyType" : "Int64",
+        "formattedType" : "Dictionary (Int64 → Double)",
+        "type" : "Dictionary",
+        "name" : "SelectedAppProbability",
+        "shortDescription" : ""
+      }
+    ],
+    "version" : "010002",
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 1,
+    "storagePrecision" : "Float32",
+    "computePrecision" : "Float16",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "visionOS" : "1.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_pipeline",
+      "structure" : [
+        {
+          "name" : "MLModelType_featureVectorizer"
+        },
+        {
+          "name" : "MLModelType_neuralNetworkClassifier"
+        }
+      ]
+    },
+    "inputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "AppUsage.7d",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "EntityAbsoluteCount.2min",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "EntityAbsoluteCount.10min",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "EntityAbsoluteCount.1hr",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "EntityAbsoluteCount.6hr",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "EntityAbsoluteCount.1day",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "EntityAbsoluteCount.7day",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "raw.foregroundAppSignal",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "Double",
+        "type" : "Double",
+        "name" : "LastForegroundApp",
+        "shortDescription" : ""
+      }
+    ],
+    "classLabels" : [
+      1
+    ],
+    "generatedClassName" : "VideoAppSelectionModel",
+    "userDefinedMetadata" : {
+      "mldb_token" : "mldb-rva93wqa72"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "LoadConstantND" : 1,
+      "InnerProduct" : 1,
+      "MultiplyBroadcastable" : 1,
+      "GreaterThan" : 1
+    },
+    "method" : "predict"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "com.apple.siri.SiriSuggestionsLightHousePlugin.daily",
+  "bundleIdentifier": "com.apple.siri.SiriSuggestionsLightHousePlugin",
+  "taskRequest": {
+    "repeatingTask": {
+      "interval": 86400,
+      "minDurationBetweenInstances": 86400
+    },
+    "requiresExternalPower": true
+  }
+}

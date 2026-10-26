@@ -1,0 +1,533 @@
+{
+  "AssetSetName": "com.apple.if.planner.overrides",
+  "Assets": [
+    {
+      "AssetName": "com.apple.if.planner.overrides.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.overrides.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    },
+    {
+      "AssetName": "com.apple.if.planner.patches",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.patches.{if.language}",
+          "RequiredUsageTypes": [
+            "if.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.catalog.en_ZA",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.catalog.en_ZA",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.catalog.en_US",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.catalog.en_US",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.catalog.en_NZ",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.catalog.en_NZ",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.catalog.en_IE",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.catalog.en_IE",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.catalog.en_GB",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.catalog.en_GB",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.catalog.en_CA",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.catalog.en_CA",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.catalog.en_AU",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.catalog.en_AU",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.catalog.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.catalog.generic",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.de_DE",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.de_DE",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.en_AU",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.en_AU",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.en_CA",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.en_CA",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.en_GB",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.en_GB",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.en_IE",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.en_IE",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.en_NZ",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.en_NZ",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.en_US",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.en_US",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.en_ZA",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.en_ZA",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.es_ES",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.es_ES",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.es_MX",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.es_MX",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.fr_CA",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.fr_CA",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.fr_FR",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.fr_FR",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.it_IT",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.it_IT",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.ja_JP",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.ja_JP",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.ko_KR",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.ko_KR",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.pt_BR",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.pt_BR",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.overrides.zh_CN",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.overrides.zh_CN",
+          "RequiredUsageTypes": [
+            "rg.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.AU",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.AU",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.BR",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.BR",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.CA",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.CA",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.CN",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.CN",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.DE",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.DE",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.ES",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.ES",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.FR",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.FR",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.GB",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.GB",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.IE",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.IE",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.IT",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.IT",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.JP",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.JP",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.KR",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.KR",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.MX",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.MX",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.NZ",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.NZ",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.US",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.US",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.response_generation.regulatoryOverrides.ZA",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.response_generation.regulatoryOverrides.ZA",
+          "RequiredUsageTypes": [
+            "rg.region"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.nlrouter.overrides",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.nlrouter.overrides.{nlrouter.locale}",
+          "RequiredUsageTypes": [
+            "nlrouter.locale"
+          ]
+        },
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.nlrouter.overrides.{if.language}",
+          "RequiredUsageTypes": [
+            "if.language"
+          ]
+        },
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.nlrouter.overrides.{ae.language}",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.skimmer.flows",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.skimmer.flows.{if.language}",
+          "RequiredUsageTypes": [
+            "if.language"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.if.planner.tool_retrieval.denylist",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.if.planner.tool_retrieval.denylist.{ae.language}",
+          "RequiredUsageTypes": [
+            "ae.language"
+          ]
+        }
+      ]
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.IF.PlannerOverrides",
+  "EnableCellular": true,
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.if.planner.overrides.uaf.metadata",
+  "UsageTypes": [
+    "if.language",
+    "ae.language",
+    "rg.language",
+    "rg.region",
+    "nlrouter.locale"
+  ]
+}

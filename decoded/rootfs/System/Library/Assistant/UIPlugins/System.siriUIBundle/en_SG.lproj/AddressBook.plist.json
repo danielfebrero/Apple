@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "What’s Ling Ling's address?",
+            "What is Renuka Raju's phone number?",
+            "When is my wife’s birthday?",
+            "Show me Ahmad's home email address",
+            "What’s my brother’s work address?"
+          ]
+        }
+      ],
+      "SectionName": "Asking about contacts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Show Ahmad Prakash",
+            "Find people named Raju"
+          ]
+        }
+      ],
+      "SectionName": "Finding contacts"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "My mum is Renuka Raju",
+            "Muhammad Raju is my brother"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Call my brother at work"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime my brother at work"
+          ]
+        }
+      ],
+      "SectionName": "Relationships"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Learn how to pronounce my name",
+            "Learn how to pronounce my mum's name",
+            "Learn how to pronounce Batu Raju's name"
+          ]
+        }
+      ],
+      "SectionName": "Pronunciation"
+    }
+  ]
+}

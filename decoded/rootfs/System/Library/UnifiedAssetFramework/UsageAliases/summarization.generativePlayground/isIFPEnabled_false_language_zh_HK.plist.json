@@ -1,0 +1,25 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "summarization.generativePlayground",
+  "UsageAliasValues": {
+    "isIFPEnabled_false_language_zh_HK": {
+      "com.apple.MobileAsset.UAF.FM.Overrides": {
+        "com.apple.gm.overrides.model_config.all.generic": "ENABLED",
+        "com.apple.gm.safety.disabledusecases.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.summarization.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.input.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.base.generic": "ENABLED",
+        "com.apple.gm.safety_deny.output.summarization.visual_prompt.generic": "ENABLED",
+        "com.apple.gm.safety_embedding_deny.all.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.fm.language.instruct_3b.base.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.summarization.draft.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.summarization.generic": "ENABLED",
+        "com.apple.fm.language.instruct_3b.tokenizer.generic": "ENABLED",
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

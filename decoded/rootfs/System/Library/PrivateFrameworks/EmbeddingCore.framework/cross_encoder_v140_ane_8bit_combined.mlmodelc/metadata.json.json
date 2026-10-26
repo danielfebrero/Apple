@@ -1,0 +1,225 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Mixed (Float16, Int8)",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "output",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 9,
+    "functions": [
+      {
+        "inputSchema": [
+          {
+            "shortDescription": "",
+            "dataType": "Int32",
+            "hasShapeFlexibility": "1",
+            "isOptional": "0",
+            "shapeFlexibility": "1 × 128 | 4 × 128 | 20 × 128",
+            "formattedType": "MultiArray (Int32 1 × 128)",
+            "type": "MultiArray",
+            "shape": "[1, 128]",
+            "name": "input_ids",
+            "enumeratedShapes": "[[1, 128], [4, 128], [20, 128]]"
+          },
+          {
+            "shortDescription": "",
+            "dataType": "Int32",
+            "hasShapeFlexibility": "1",
+            "isOptional": "0",
+            "shapeFlexibility": "1 × 128 | 4 × 128 | 20 × 128",
+            "formattedType": "MultiArray (Int32 1 × 128)",
+            "type": "MultiArray",
+            "shape": "[1, 128]",
+            "name": "attention_mask",
+            "enumeratedShapes": "[[1, 128], [4, 128], [20, 128]]"
+          }
+        ],
+        "computePrecision": "Mixed (Float16, Int32, UInt16)",
+        "storagePrecision": "Mixed (Float16, Int8)",
+        "stateSchema": [],
+        "outputSchema": [
+          {
+            "hasShapeFlexibility": "0",
+            "isOptional": "0",
+            "dataType": "Float16",
+            "formattedType": "MultiArray (Float16)",
+            "shortDescription": "",
+            "shape": "[]",
+            "name": "output",
+            "type": "MultiArray"
+          }
+        ],
+        "name": "main_ctx_128",
+        "mlProgramOperationTypeHistogram": {
+          "Ios18.expandDims": 101,
+          "Ios18.softmax": 48,
+          "Ios18.constexprBlockwiseShiftScale": 39,
+          "Ios18.mul": 50,
+          "Ios18.matmul": 96,
+          "Ios18.batchNorm": 13,
+          "Split": 18,
+          "Ios18.gather": 3,
+          "Ios18.add": 62,
+          "Ios18.layerNorm": 13,
+          "Ios18.conv": 38,
+          "Ios18.concat": 6,
+          "Ios18.gelu": 6,
+          "Ios18.sub": 2,
+          "Ios18.transpose": 9,
+          "Ios18.cast": 4,
+          "Ios18.tanh": 1,
+          "Ios18.notEqual": 1,
+          "Ios18.sliceByIndex": 1,
+          "Ios16.cumsum": 1,
+          "Ios18.squeeze": 194
+        }
+      },
+      {
+        "inputSchema": [
+          {
+            "shortDescription": "",
+            "dataType": "Int32",
+            "hasShapeFlexibility": "1",
+            "isOptional": "0",
+            "shapeFlexibility": "1 × 512 | 4 × 512 | 20 × 512",
+            "formattedType": "MultiArray (Int32 1 × 512)",
+            "type": "MultiArray",
+            "shape": "[1, 512]",
+            "name": "input_ids",
+            "enumeratedShapes": "[[1, 512], [4, 512], [20, 512]]"
+          },
+          {
+            "shortDescription": "",
+            "dataType": "Int32",
+            "hasShapeFlexibility": "1",
+            "isOptional": "0",
+            "shapeFlexibility": "1 × 512 | 4 × 512 | 20 × 512",
+            "formattedType": "MultiArray (Int32 1 × 512)",
+            "type": "MultiArray",
+            "shape": "[1, 512]",
+            "name": "attention_mask",
+            "enumeratedShapes": "[[1, 512], [4, 512], [20, 512]]"
+          }
+        ],
+        "computePrecision": "Mixed (Float16, Int32, UInt16)",
+        "storagePrecision": "Mixed (Float16, Int8)",
+        "stateSchema": [],
+        "outputSchema": [
+          {
+            "hasShapeFlexibility": "0",
+            "isOptional": "0",
+            "dataType": "Float16",
+            "formattedType": "MultiArray (Float16)",
+            "shortDescription": "",
+            "shape": "[]",
+            "name": "output",
+            "type": "MultiArray"
+          }
+        ],
+        "name": "main_ctx_512",
+        "mlProgramOperationTypeHistogram": {
+          "Ios18.expandDims": 101,
+          "Ios18.softmax": 48,
+          "Ios18.constexprBlockwiseShiftScale": 39,
+          "Ios18.mul": 50,
+          "Ios18.matmul": 96,
+          "Ios18.batchNorm": 13,
+          "Split": 18,
+          "Ios18.gather": 3,
+          "Ios18.add": 62,
+          "Ios18.layerNorm": 13,
+          "Ios18.conv": 38,
+          "Ios18.concat": 6,
+          "Ios18.gelu": 6,
+          "Ios18.sub": 2,
+          "Ios18.transpose": 9,
+          "Ios18.cast": 4,
+          "Ios18.tanh": 1,
+          "Ios18.notEqual": 1,
+          "Ios18.sliceByIndex": 1,
+          "Ios16.cumsum": 1,
+          "Ios18.squeeze": 194
+        }
+      }
+    ],
+    "mlProgramOperationTypeHistogram": {
+      "Ios18.expandDims": 101,
+      "Ios18.softmax": 48,
+      "Ios18.constexprBlockwiseShiftScale": 39,
+      "Ios18.mul": 50,
+      "Ios18.matmul": 96,
+      "Ios18.batchNorm": 13,
+      "Split": 18,
+      "Ios18.gather": 3,
+      "Ios18.add": 62,
+      "Ios18.layerNorm": 13,
+      "Ios18.conv": 38,
+      "Ios18.concat": 6,
+      "Ios18.gelu": 6,
+      "Ios18.sub": 2,
+      "Ios18.transpose": 9,
+      "Ios18.cast": 4,
+      "Ios18.tanh": 1,
+      "Ios18.notEqual": 1,
+      "Ios18.sliceByIndex": 1,
+      "Ios16.cumsum": 1,
+      "Ios18.squeeze": 194
+    },
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "15.0",
+      "tvOS": "18.0",
+      "visionOS": "2.0",
+      "watchOS": "11.0",
+      "iOS": "18.0",
+      "macCatalyst": "18.0"
+    },
+    "computePrecision": "Mixed (Float16, Int32, UInt16)",
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "shortDescription": "",
+        "dataType": "Int32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 128 | 4 × 128 | 20 × 128",
+        "formattedType": "MultiArray (Int32 1 × 128)",
+        "type": "MultiArray",
+        "shape": "[1, 128]",
+        "name": "input_ids",
+        "enumeratedShapes": "[[1, 128], [4, 128], [20, 128]]"
+      },
+      {
+        "shortDescription": "",
+        "dataType": "Int32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 128 | 4 × 128 | 20 × 128",
+        "formattedType": "MultiArray (Int32 1 × 128)",
+        "type": "MultiArray",
+        "shape": "[1, 128]",
+        "name": "attention_mask",
+        "enumeratedShapes": "[[1, 128], [4, 128], [20, 128]]"
+      }
+    ],
+    "defaultFunctionName": "main_ctx_128",
+    "generatedClassName": "cross_encoder_v140_newdata135k_b1420_ane_8bit_combined",
+    "userDefinedMetadata": {
+      "VersionString": "1.4.0"
+    },
+    "method": "predict"
+  }
+]

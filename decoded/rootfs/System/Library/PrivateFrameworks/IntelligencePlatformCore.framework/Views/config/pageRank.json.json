@@ -1,0 +1,37 @@
+{
+  "artifact": {
+    "objectRow": {
+      "columns": [
+        [
+          "MD_ID",
+          "INTEGER"
+        ],
+        [
+          "page_rank",
+          "DOUBLE"
+        ]
+      ],
+      "subjectIdentifierColumn": "MD_ID",
+      "tableName": "page_rank"
+    },
+    "path": "internal/views.db",
+    "type": "objectRow"
+  },
+  "featureFlag": "LivableSources",
+  "name": "pageRank",
+  "type": "pageRank",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {}
+        ],
+        "schedule": "weekly",
+        "stores": [
+          "stableGraph",
+          "eventGraph"
+        ]
+      }
+    ]
+  }
+}

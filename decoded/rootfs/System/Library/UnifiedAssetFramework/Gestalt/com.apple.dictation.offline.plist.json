@@ -1,0 +1,21 @@
+{
+  "FileType": "GestaltConfiguration",
+  "FileVersion": "1.0.0",
+  "GestaltName": "com.apple.dictation.offline",
+  "ValidConfigs": [
+    {
+      "SupportedKeys": [
+        "fr_CA",
+        "pt_BR"
+      ],
+      "TargetingPredicate": "'ProductType' contains 'iPad7,'",
+      "TargetingType": "GestaltPredicate"
+    },
+    {
+      "SupportedKeys": [
+        "vi_VN"
+      ],
+      "TargetingType": "AllDevices"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Legg til artisjokker i handlelisten",
+            "Legg til oljeskift i gjøremålslisten",
+            "Minn meg på å ta med en paraply",
+            "Minn meg på å ta medisinen kl. 6 i morgen tidlig",
+            "Minn meg på å gjøre ferdig innleveringen innen kl. 18",
+            "Les opp listen over gjøremål",
+            "Merk den tredje som fullført",
+            "Lag en ny liste kalt Handleliste"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Minn meg på denne e-posten i morgen",
+            "Husk denne nettsiden",
+            "Minn meg på å ringe til Ådne når jeg drar"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Minn meg på å ringe mamma med FaceTime når jeg kommer hjem",
+            "Husk at jeg må ringe pappa fra bilen",
+            "Minn meg på å ringe Eirik med FaceTime når jeg drar"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Minn meg på å hente blomstene når jeg drar herfra"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

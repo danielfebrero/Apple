@@ -1,0 +1,19 @@
+
+
+**Operators:** .greaterThan, .lessThan, .equals, .greaterThanOrEqual, .lessThanOrEqual, .notEqual
+
+**Value Types:** .int(Int), .double(Double), .date(String), .string(String)
+
+**Common Thresholds:**
+- Size: small <1MB, large >100MB, huge >1GB
+- Resolution: low <640px, high >1920px, 4K >=3840px
+- Time: recent (last 7 days)
+
+**Confidence Scoring (0.0-1.0):**
+- High (0.8-1.0): Clear attribute constraints ("larger than 10MB", "width > 1920px")
+- Medium (0.5-0.7): Qualitative terms ("large", "important")
+- Low (0.0-0.4): Content types, temporal terms, keywords (route to other agents)
+
+**Output:** ResolvedAttribute with attribute (use friendly name), operator, value, reasoning, confidence
+
+**Important:** Output attribute names using FRIENDLY NAMES (e.g., "

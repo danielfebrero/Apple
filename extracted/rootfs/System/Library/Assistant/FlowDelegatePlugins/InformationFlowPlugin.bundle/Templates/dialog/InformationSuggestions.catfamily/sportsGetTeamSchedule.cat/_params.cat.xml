@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="InformationSuggestions#sportsGetTeamSchedule">
+    <meta name="description" value="Suggests asking what the sports schedule is"/>
+    <meta name="category" value="UsedForSnippet"/>
+    <meta name="readyForLoc" value="true"/>
+    
+    <parameters>
+        <parameter name="deliveryVehicle" type="dialog.String"/>
+        <parameter description="Name of the sports team using semantic concept" name="teamVocName" type="dialog.String" semanticConcept="teamName" redacted="false"/>
+        <parameter description="Location of the sports team using semantic concept" name="teamVocLocation" type="dialog.String" semanticConcept="teamLocation" redacted="false"/>
+        <parameter description="Fallback full team name string" name="teamFullName" type="dialog.String"/>
+    </parameters>
+</cat>

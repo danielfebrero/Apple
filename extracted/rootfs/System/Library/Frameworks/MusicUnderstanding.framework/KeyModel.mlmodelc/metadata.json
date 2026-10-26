@@ -1,0 +1,96 @@
+[
+  {
+    "shortDescription" : "Key detection model",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1293 × 35)",
+        "shortDescription" : "Key probabilities (35 classes)",
+        "shape" : "[1, 1293, 35]",
+        "name" : "key_output",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "2.2.0",
+    "modelParameters" : [
+
+    ],
+    "author" : "Apple Inc.",
+    "specificationVersion" : 9,
+    "storagePrecision" : "Mixed (Float16, Int8, Sparse, UInt1)",
+    "license" : "Property of Apple Inc. All rights reserved.",
+    "mlProgramOperationTypeHistogram" : {
+      "Ios18.expandDims" : 4,
+      "Ios18.mul" : 20,
+      "Ios18.softmax" : 1,
+      "Ios18.batchNorm" : 13,
+      "Ios16.reduceMean" : 26,
+      "Ios18.realDiv" : 13,
+      "Ios18.add" : 38,
+      "Ios18.layerNorm" : 3,
+      "Ios18.reshape" : 38,
+      "Ios18.instanceNorm" : 10,
+      "Ios18.constexprSparseToDense" : 13,
+      "Ios18.maximum" : 2,
+      "Ios18.conv" : 88,
+      "Ios18.linear" : 3,
+      "Ios18.gelu" : 24,
+      "Ios18.concat" : 17,
+      "Ios18.sub" : 13,
+      "Ios18.transpose" : 11,
+      "Ios18.cast" : 2,
+      "Ios18.sqrt" : 21,
+      "Ios18.square" : 13,
+      "Ios18.sliceByIndex" : 8,
+      "Ios18.squeeze" : 1,
+      "Ios18.constexprBlockwiseShiftScale" : 43
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "15.0",
+      "tvOS" : "18.0",
+      "visionOS" : "2.0",
+      "watchOS" : "11.0",
+      "iOS" : "18.0",
+      "macCatalyst" : "18.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 661504)",
+        "shortDescription" : "Raw audio waveform at target sample rate",
+        "shape" : "[1, 661504]",
+        "name" : "audio",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "enabled_inputs" : "audio",
+      "output_heads" : "key",
+      "com.github.apple.coremltools.version" : "8.3.2",
+      "bolt_iteration" : "130338",
+      "export_stage" : "full",
+      "configuration" : "{\"sampleRate\":22050,\"audioDurationSeconds\":30.0001814058957,\"outputTimeFrameCount\":1293,\"keyClassCount\":35,\"keyClassNames\":[\"No Key\",\"C\",\"C#\",\"Db\",\"D\",\"D#\",\"Eb\",\"E\",\"F\",\"F#\",\"Gb\",\"G\",\"G#\",\"Ab\",\"A\",\"A#\",\"Bb\",\"B\",\"Cm\",\"C#m\",\"Dbm\",\"Dm\",\"D#m\",\"Ebm\",\"Em\",\"Fm\",\"F#m\",\"Gbm\",\"Gm\",\"G#m\",\"Abm\",\"Am\",\"A#m\",\"Bbm\",\"Bm\"],\"noKeyClassIndex\":0,\"majorClassRange\":[1,17],\"minorClassRange\":[18,34]}",
+      "bolt_task" : "6xcr9qfzhb",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript",
+      "com.github.apple.coremltools.source" : "torch==2.7.1",
+      "mldb_token" : "mldb-nwypoqpg9o",
+      "framework" : "maml-harmony-model",
+      "model_type" : "chord_detection"
+    },
+    "generatedClassName" : "KeyModel",
+    "method" : "predict"
+  }
+]

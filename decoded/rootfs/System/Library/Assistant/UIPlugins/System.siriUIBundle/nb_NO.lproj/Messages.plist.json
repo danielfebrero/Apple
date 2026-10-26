@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Skriv til Tuva at jeg er på vei",
+            "Send en melding til Oliver Hansen",
+            "Skriv en melding til Vemund og si hva med i morgen",
+            "Si takk for besøket til Trym",
+            "Send en sms til Eirik og si at jeg blir litt forsinket",
+            "Send melding til 123 45 678",
+            "Tekst Annlaug og Brynjar og si hvor er dere?"
+          ]
+        }
+      ],
+      "SectionName": "Sende meldinger"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Les opp nye meldinger",
+            "Les den på nytt"
+          ]
+        }
+      ],
+      "SectionName": "Lese meldingsvarsler"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Svar det var godt å høre",
+            "Si til ham at jeg er der om 10 minutter"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ring henne tilbake"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime henne"
+          ]
+        }
+      ],
+      "SectionName": "Svare på meldinger"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Les opp nyeste melding fra Sindre"
+          ]
+        }
+      ],
+      "SectionName": "Søke etter meldinger"
+    }
+  ]
+}

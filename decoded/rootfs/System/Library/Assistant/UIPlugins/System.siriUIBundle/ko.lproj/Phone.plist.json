@@ -1,0 +1,40 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "이 서방에게 전화해",
+            "지아 핸드폰으로 전화를 걸어줘",
+            "유진이 회사 번호로 전화해",
+            "010-123-4567번으로 전화 걸어",
+            "집에 전화해",
+            "119에 전화걸어",
+            "소방서에 전화걸어줘",
+            "나의 최근 통화 기록을 찾아줘",
+            "부재중 전화 온 거 있어?",
+            "재다이얼해줘"
+          ]
+        }
+      ],
+      "SectionName": "전화걸기"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "새로운 음성 메시지 있어?",
+            "유진이가 보낸 음성 메시지 재생해"
+          ]
+        }
+      ],
+      "SectionName": "음성 메시지"
+    }
+  ]
+}

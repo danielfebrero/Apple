@@ -1,0 +1,56 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Email Emily about the trip",
+            "Email Chris about the change in plans",
+            "New email to Susan Conway",
+            "Email Dad about this month's rent",
+            "Email Dr Jenkins and say I got the forms, thanks",
+            "Email Emily and Andrew about the party and say I had a great time"
+          ]
+        }
+      ],
+      "SectionName": "SENDING EMAIL"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Check email",
+            "Any new email from Stuart today?",
+            "Show new mail about the lease",
+            "Show me the email from Emily yesterday"
+          ]
+        }
+      ],
+      "SectionName": "CHECKING EMAIL"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Reply dear Susan sorry about the late payment"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Call him at work"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": []
+        }
+      ],
+      "SectionName": "RESPONDING TO EMAIL"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "artifact": {
+    "path": "entityRelevance/clients.db",
+    "subgraph": {
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "predicate",
+          "TEXT"
+        ],
+        [
+          "relationshipId",
+          "INTEGER"
+        ],
+        [
+          "relationshipPredicate",
+          "TEXT"
+        ],
+        [
+          "object",
+          "TEXT"
+        ]
+      ],
+      "tableName": "siriPerson"
+    },
+    "type": "subgraph"
+  },
+  "name": "siriPersonView",
+  "type": "subgraph",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB104",
+            "predicates": [
+              "PS1",
+              "PS33",
+              "PS545",
+              "PS312",
+              "PS546",
+              "PS441",
+              "PS89",
+              "nm_phoneticFirstName",
+              "nm_phoneticMiddleName",
+              "nm_phoneticFamilyName",
+              "PS500/CS165/PS45",
+              "PS500/CS165/PS1",
+              "PS72/CS22/PS69",
+              "PS72/CS22/PS396"
+            ],
+            "sources": [
+              "CNContact"
+            ]
+          },
+          {
+            "entityType": "SB10",
+            "predicates": [
+              "PS1",
+              "PS33",
+              "nm_phoneticName"
+            ],
+            "sources": [
+              "CNContact"
+            ]
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ]
+  },
+  "writeToStream": true
+}

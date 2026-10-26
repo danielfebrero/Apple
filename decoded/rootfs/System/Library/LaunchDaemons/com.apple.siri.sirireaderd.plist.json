@@ -1,0 +1,14 @@
+{
+  "CFBundleIdentifier": "$(PRODUCT_BUNDLE_IDENTIFIER)",
+  "Disabled": false,
+  "EnablePressuredExit": true,
+  "Label": "com.apple.siri.sirireaderd",
+  "MachServices": {
+    "com.apple.siri.sirireaderd": true
+  },
+  "ProcessType": "Interactive",
+  "ProgramArguments": [
+    "/usr/libexec/sirireaderd"
+  ],
+  "UserName": "mobile"
+}

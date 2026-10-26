@@ -1,0 +1,213 @@
+__PAGEZERO
+__TEXT
+__text
+__TEXT
+__auth_stubs
+__TEXT
+__swift5_entry
+__TEXT
+__const
+__TEXT
+__constg_swiftt
+__TEXT
+__swift5_typeref__TEXT
+__objc_classname__TEXT
+__swift5_fieldmd__TEXT
+__swift5_types
+__TEXT
+__unwind_info
+__TEXT
+__DATA_CONST
+__const
+__DATA_CONST
+__objc_imageinfo__DATA_CONST
+__auth_got
+__DATA_CONST
+__got
+__DATA_CONST
+__auth_ptr
+__DATA_CONST
+__DATA
+__objc_const
+__DATA
+__objc_data
+__DATA
+__data
+__DATA
+__bss
+__DATA
+__LINKEDIT
+/usr/lib/dyld
+v){j2
+/System/Library/Frameworks/Foundation.framework/Foundation
+/usr/lib/libobjc.A.dylib
+/usr/lib/libSystem.B.dylib
+/System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
+/System/Library/PrivateFrameworks/GenerativeExperiencesRuntime.framework/GenerativeExperiencesRuntime
+/System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices
+/usr/lib/swift/libswiftAccelerate.dylib
+/usr/lib/swift/libswiftCore.dylib
+/usr/lib/swift/libswiftCoreFoundation.dylib
+/usr/lib/swift/libswiftDispatch.dylib
+/usr/lib/swift/libswiftMetal.dylib
+/usr/lib/swift/libswiftOSLog.dylib
+/usr/lib/swift/libswiftObjectiveC.dylib
+/usr/lib/swift/libswiftQuartzCore.dylib
+/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
+/usr/lib/swift/libswiftXPC.dylib
+/usr/lib/swift/libswift_Builtin_float.dylib
+/usr/lib/swift/libswiftos.dylib
+/usr/lib/swift/libswiftsimd.dylib
+j@yu
+GenerativeExperiencesSafetyInferenceProvider
+GenerativeExperiencesSafetyInferenceProviderService
+_TtC44GenerativeExperiencesSafetyInferenceProviderP33_F34589A7890DDC02A9860BBDDD2479B251GenerativeExperiencesSafetyInferenceProviderService
+_NSExtensionMain
+_$s19ExtensionFoundation03AppA0PAAE4mainyyKFZ
+_$s20ModelManagerServices26InferenceProviderExtensionCACyxGycfc
+_$s20ModelManagerServices26InferenceProviderExtensionCfd
+_swift_allocObject
+_swift_deallocClassInstance
+_swift_errorInMain
+_swift_getSingletonMetadata
+_swift_getWitnessTable
+_swift_initClassMetadata2
+_$s20ModelManagerServices26InferenceProviderExtensionCyxG0F10Foundation03AppF0AAMc
+_$s20ModelManagerServices26InferenceProviderExtensionCMn
+_$s28GenerativeExperiencesRuntime0aB23SafetyInferenceProviderCMn
+_$s20ModelManagerServices26InferenceProviderExtensionCACyxGycfCTq
+__objc_empty_cache
+_OBJC_METACLASS_$__TtCs12_SwiftObject
+_mh_execute_header
+	main
+40`LX@
+__mh_execute_header
+_main
+_NSExtensionMain
+_OBJC_METACLASS_$__TtCs12_SwiftObject
+__objc_empty_cache
+__swift_FORCE_LOAD_$_swiftAccelerate
+__swift_FORCE_LOAD_$_swiftCoreFoundation
+__swift_FORCE_LOAD_$_swiftDispatch
+__swift_FORCE_LOAD_$_swiftFoundation
+__swift_FORCE_LOAD_$_swiftMetal
+__swift_FORCE_LOAD_$_swiftOSLog
+__swift_FORCE_LOAD_$_swiftObjectiveC
+__swift_FORCE_LOAD_$_swiftQuartzCore
+__swift_FORCE_LOAD_$_swiftUniformTypeIdentifiers
+__swift_FORCE_LOAD_$_swiftXPC
+__swift_FORCE_LOAD_$_swift_Builtin_float
+__swift_FORCE_LOAD_$_swiftos
+__swift_FORCE_LOAD_$_swiftsimd
+_swift_allocObject
+_swift_deallocClassInstance
+_swift_errorInMain
+_swift_getSingletonMetadata
+_swift_getWitnessTable
+_swift_initClassMetadata2
+radr://5614542
+com.apple.GenerativeFunctions.GenerativeExperiencesSafetyInferenceProvider
+9g^?
+Ig%^|%0s
+LUgqY
+sX^Z
+{|Rj
+~bD,
+Ph)Fe
+&]%!
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application-identifier</key>
+	<string>com.apple.generativemodelsexperiences.safetyinferenceprovider</string>
+	<key>com.apple.modelcatalog.full-access</key>
+	<true/>
+	<key>com.apple.private.assets.accessible-asset-types</key>
+	<array>
+		<string>com.apple.MobileAsset.UAF.FM.GenerativeModels</string>
+		<string>com.apple.MobileAsset.UAF.FM.Overrides</string>
+	</array>
+	<key>com.apple.private.biome.read-write</key>
+	<array>
+		<string>AppleIntelligence.Reporting.SafetyOverrides</string>
+	</array>
+	<key>com.apple.private.intelligenceplatform.client-identifier</key>
+	<string>com.apple.generativemodelsexperiences.safetyinferenceprovider</string>
+	<key>com.apple.private.security.storage.MobileAssetGenerativeModels</key>
+	<true/>
+	<key>com.apple.security.exception.files.absolute-path.read-only</key>
+	<array>
+		<string>/private/var/MobileAsset/AssetsV2/locks/com.apple.UnifiedAssetFramework/</string>
+		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_GenerativeModels/purpose_auto/</string>
+		<string>/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_Overrides/purpose_auto/</string>
+		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/</string>
+		<string>/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_Overrides/</string>
+		<string>/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/</string>
+		<string>/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_Overrides/</string>
+		<string>/private/var/mobile/Library/com.apple.modelcatalog/sideload/</string>
+		<string>/private/var/db/assetsubscriptiond/</string>
+		<string>/private/var/db/com.apple.countryd/</string>
+		<string>/private/var/db/os_eligibility/eligibility.plist</string>
+	</array>
+	<key>com.apple.security.exception.mach-lookup.global-name</key>
+	<array>
+		<string>com.apple.modelcatalog.catalog</string>
+		<string>com.apple.siri.uaf.service</string>
+		<string>com.apple.siri.uaf.subscription.service</string>
+		<string>com.apple.mobileasset.autoasset</string>
+		<string>com.apple.mobileassetd.v2</string>
+		<string>com.apple.biome.access.user</string>
+		<string>com.apple.biome.access.system</string>
+		<string>com.apple.biome.compute.source</string>
+		<string>com.apple.biome.compute.source.user</string>
+		<string>com.apple.mediaanalysisd.service.public</string>
+	</array>
+	<key>com.apple.security.exception.shared-preference.read-only</key>
+	<array>
+		<string>com.apple.UnifiedAssetFramework</string>
+		<string>com.apple.modelcatalog.ajax</string>
+		<string>com.apple.GenerativeFunctions.GenerativeFunctionsInstrumentation</string>
+		<string>kCFPreferencesAnyApplication</string>
+	</array>
+</dict>
+</plist>
+application-identifier
+=com.apple.generativemodelsexperiences.safetyinferenceprovider0'
+"com.apple.modelcatalog.full-access
+/com.apple.private.assets.accessible-asset-types0W
+-com.apple.MobileAsset.UAF.FM.GenerativeModels
+&com.apple.MobileAsset.UAF.FM.Overrides0S
+"com.apple.private.biome.read-write0-
++AppleIntelligence.Reporting.SafetyOverrides0y
+8com.apple.private.intelligenceplatform.client-identifier
+=com.apple.generativemodelsexperiences.safetyinferenceprovider0C
+>com.apple.private.security.storage.MobileAssetGenerativeModels
+:com.apple.security.exception.files.absolute-path.read-only0
+H/private/var/MobileAsset/AssetsV2/locks/com.apple.UnifiedAssetFramework/
+]/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_GenerativeModels/purpose_auto/
+V/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_Overrides/purpose_auto/
+j/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/
+c/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_Overrides/
+`/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/
+Y/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_Overrides/
+</private/var/mobile/Library/com.apple.modelcatalog/sideload/
+#/private/var/db/assetsubscriptiond/
+#/private/var/db/com.apple.countryd/
+0/private/var/db/os_eligibility/eligibility.plist0
+4com.apple.security.exception.mach-lookup.global-name0
+com.apple.modelcatalog.catalog
+com.apple.siri.uaf.service
+'com.apple.siri.uaf.subscription.service
+com.apple.mobileasset.autoasset
+com.apple.mobileassetd.v2
+com.apple.biome.access.user
+com.apple.biome.access.system
+com.apple.biome.compute.source
+#com.apple.biome.compute.source.user
+'com.apple.mediaanalysisd.service.public0
+8com.apple.security.exception.shared-preference.read-only0
+com.apple.UnifiedAssetFramework
+com.apple.modelcatalog.ajax
+@com.apple.GenerativeFunctions.GenerativeFunctionsInstrumentation
+kCFPreferencesAnyApplication

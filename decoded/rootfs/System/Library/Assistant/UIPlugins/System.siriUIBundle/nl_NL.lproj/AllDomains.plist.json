@@ -1,0 +1,144 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Telefoon",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Bel Bram",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "FaceTime Lisa",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Apps",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Start Foto's",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Berichten",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Vertel Suus: Ik ben onderweg",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Agenda",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Plan een afspraak om negen uur",
+      "DomainName": "Calendar"
+    },
+    {
+      "DomainDisplayName": "Foto's",
+      "IconDisplayIdentifier": "com.apple.mobileslideshow",
+      "TagPhrase": "Toon mijn foto's van gisteren",
+      "DomainName": "Photos"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Kaarten",
+      "DomainAlternateDisplayName": "Kaarten",
+      "TagPhrase": "Routebeschrijving naar huis",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Tweet met mijn locatie…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Plaats op Weibo…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Plaats op Facebook…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Muziek",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Speel Norah Jones",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Herinneringen",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Herinnering: bel mama",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "Mail",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Mail Evelien over de reis",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Weer",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Hoe wordt het weer vandaag?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Aandelen",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Wat is de beurskoers van Apple?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Klok",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Maak me om zeven uur wakker",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Contacten",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Wat is het adres van Evelien?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Notities",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Noteer: geluncht voor € 12",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Instellingen",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Schakel vliegtuigmodus in",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Zoeken op het web",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Zoek op het web naar ijsberen",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Vraag en antwoord",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "Wie zijn Suske en Wiske?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "Podcasts",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Speel podcasts af",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

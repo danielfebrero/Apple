@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "cell": "PSGroupCell",
+      "id": "SELECT_LOCATION",
+      "isRadioGroup": true,
+      "label": "Select Location"
+    },
+    {
+      "assetURL": "https://mesu.apple.com/assets",
+      "cell": "PSListItemCell",
+      "description": "Public firmware releases; i.e. Mesu, Pallas",
+      "id": "CUSTOMER",
+      "label": "Customer"
+    },
+    {
+      "assetURL": "https://basejumper.apple.com/mesu_staging",
+      "cell": "PSListItemCell",
+      "description": "Staging location for public firmware releases; i.e. Mesu, Pallas",
+      "id": "CUSTOMER_STAGING",
+      "label": "Customer Staging"
+    },
+    {
+      "assetURL": "https://mesu.apple.com/assets/AirPodsDeveloperSeed",
+      "cell": "PSListItemCell",
+      "description": "Customer facing developer seed; not every accessory will have a developer seed",
+      "id": "DEVELOPER_SEED",
+      "label": "Developer Seed"
+    },
+    {
+      "assetURL": "https://mesu.apple.com/assets/AirPodsPublicSeed",
+      "cell": "PSListItemCell",
+      "description": "Customer facing public seed; not every accessory will have a public seed",
+      "id": "PUBLIC_SEED",
+      "label": "Public Seed"
+    }
+  ],
+  "title": "CUSTOMER_STAGING_OVERRIDE"
+}

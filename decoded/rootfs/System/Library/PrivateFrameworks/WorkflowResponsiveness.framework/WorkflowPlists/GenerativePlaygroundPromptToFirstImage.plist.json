@@ -1,0 +1,45 @@
+{
+  "name": "GenerativePlaygroundPromptToFirstImage",
+  "maximum_duration": 30,
+  "diagnostics": [
+    {
+      "trigger_threshold_duration_single": 9.7,
+      "gather_tailspin": true
+    }
+  ],
+  "signposts": [
+    {
+      "start": true,
+      "subsystem": "com.apple.GenerativePlaygroundUI",
+      "category": "framework",
+      "name": "playgroundConfiguration"
+    },
+    {
+      "subsystem": "com.apple.GenerativePlaygroundUI",
+      "category": "framework",
+      "name": "assignPrompt"
+    },
+    {
+      "subsystem": "com.apple.GenerativePlaygroundUI",
+      "category": "framework",
+      "name": "assignStyle"
+    },
+    {
+      "subsystem": "com.apple.GenerativePlaygroundUI",
+      "category": "framework",
+      "name": "assignConditioningImage"
+    },
+    {
+      "end_group": "completion",
+      "subsystem": "com.apple.GenerativePlaygroundUI",
+      "category": "framework",
+      "name": "generateImages"
+    },
+    {
+      "end_group": "completion",
+      "subsystem": "com.apple.GenerativePlaygroundUI",
+      "category": "framework",
+      "name": "GenerationDismissed"
+    }
+  ]
+}

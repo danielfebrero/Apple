@@ -1,0 +1,2242 @@
+[
+  {
+    "prompt": "Daisies and daffodils",
+    "localizationKey": "PHAPromptContextualDaisiesAndDaffodils",
+    "contextualTrigger": {
+      "type": "SeasonInHistory",
+      "features": [
+        {
+          "type": "Season",
+          "remark": "CLSClueTimeSeasonValue",
+          "name": "Spring"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Springtime delights",
+    "localizationKey": "PHAPromptContextualSpringtimeDelights",
+    "contextualTrigger": {
+      "type": "SeasonInHistory",
+      "features": [
+        {
+          "type": "Season",
+          "remark": "CLSClueTimeSeasonValue",
+          "name": "Spring"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Shout out to summer",
+    "localizationKey": "PHAPromptContextualShoutOutToSummer",
+    "contextualTrigger": {
+      "type": "SeasonInHistory",
+      "features": [
+        {
+          "type": "Season",
+          "remark": "CLSClueTimeSeasonValue",
+          "name": "Summer"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Break out the sunglasses",
+    "localizationKey": "PHAPromptContextualBreakOutTheSunglasses",
+    "contextualTrigger": {
+      "type": "SeasonInHistory",
+      "features": [
+        {
+          "type": "Season",
+          "remark": "CLSClueTimeSeasonValue",
+          "name": "Summer"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Winter blues",
+    "localizationKey": "PHAPromptContextualWinterBlues",
+    "contextualTrigger": {
+      "type": "SeasonInHistory",
+      "features": [
+        {
+          "type": "Season",
+          "remark": "CLSClueTimeSeasonValue",
+          "name": "Winter"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "A winter special",
+    "localizationKey": "PHAPromptContextualAWinterSpecial",
+    "contextualTrigger": {
+      "type": "SeasonInHistory",
+      "features": [
+        {
+          "type": "Season",
+          "remark": "CLSClueTimeSeasonValue",
+          "name": "Winter"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Christmas memories",
+    "localizationKey": "PHAPromptContextualChristmasMemories",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Decorating the house for Christmas",
+    "localizationKey": "PHAPromptContextualDecoratingTheHouseForChristmas",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Around the Christmas tree",
+    "localizationKey": "PHAPromptContextualAroundTheChristmasTree",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Christmas light displays",
+    "localizationKey": "PHAPromptContextualChristmasLightDisplays",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Around the dinner table on Christmas",
+    "localizationKey": "PHAPromptContextualAroundTheDinnerTableOnChristmas",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Out about town on Christmas day",
+    "localizationKey": "PHAPromptContextualOutAboutTownOnChristmasDay",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "All the Holiday Cheer",
+    "localizationKey": "PHAPromptContextualAllTheHolidayCheer",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Cozy christmas moments",
+    "localizationKey": "PHAPromptContextualCozyChristmasMoments",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "All I want for Christmas",
+    "localizationKey": "PHAPromptContextualAllIWantForChristmas",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Gearing up for the holiday season",
+    "localizationKey": "PHAPromptContextualGearingUpForTheHolidaySeason",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Wrapping Christmas presents",
+    "localizationKey": "PHAPromptContextualWrappingChristmasPresents",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Christmas baking",
+    "localizationKey": "PHAPromptContextualChristmasBaking",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Christmas Eve traditions",
+    "localizationKey": "PHAPromptContextualChristmasEveTraditions",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Christmas Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Celebrating Diwali together",
+    "localizationKey": "PHAPromptContextualCelebratingDiwaliTogether",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Diwali"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Diwali memories",
+    "localizationKey": "PHAPromptContextualDiwaliMemories",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Diwali"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Favorite Diwali food",
+    "localizationKey": "PHAPromptContextualFavoriteDiwaliFood",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Diwali"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Decorating for Diwali",
+    "localizationKey": "PHAPromptContextualDecoratingForDiwali",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Diwali"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Gathering together for Diwali at home",
+    "localizationKey": "PHAPromptContextualGatheringTogetherForDiwaliAtHome",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Diwali"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Meals together on Diwali",
+    "localizationKey": "PHAPromptContextualMealsTogetherOnDiwali",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Diwali"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Light and love",
+    "localizationKey": "PHAPromptContextualLightAndLove",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Diwali"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Sweets, sweets and more sweets",
+    "localizationKey": "PHAPromptContextualSweetsSweetsAndMoreSweets",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Diwali"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Good times on Diwali",
+    "localizationKey": "PHAPromptContextualGoodTimesOnDiwali",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Diwali"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Heres to Dad",
+    "localizationKey": "PHAPromptContextualHeresToDad",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Father’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Worlds Best Dad",
+    "localizationKey": "PHAPromptContextualWorldsBestDad",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Father’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "#1 Dad",
+    "localizationKey": "PHAPromptContextual1Dad",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Father’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Carving pumpkins on Halloween",
+    "localizationKey": "PHAPromptContextualCarvingPumpkinsOnHalloween",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "All the jack-o-lanterns",
+    "localizationKey": "PHAPromptContextualAllTheJackOLanterns",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Dressing up for Halloween",
+    "localizationKey": "PHAPromptContextualDressingUpForHalloween",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Halloween decorations of years past",
+    "localizationKey": "PHAPromptContextualHalloweenDecorationsOfYearsPast",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "A Halloween Gathering",
+    "localizationKey": "PHAPromptContextualAHalloweenGathering",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Costume party",
+    "localizationKey": "PHAPromptContextualCostumeParty",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Halloween highlights",
+    "localizationKey": "PHAPromptContextualHalloweenHighlights",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Halloween streets at night",
+    "localizationKey": "PHAPromptContextualHalloweenStreetsAtNight",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Trick or Treat",
+    "localizationKey": "PHAPromptContextualTrickOrTreat",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Candy haul on Halloween",
+    "localizationKey": "PHAPromptContextualCandyHaulOnHalloween",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Spooky Season",
+    "localizationKey": "PHAPromptContextualSpookySeason",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Halloween"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Lighting the Hanukkah candles",
+    "localizationKey": "PHAPromptContextualLightingTheHanukkahCandles",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Fun & games on Hanukkah",
+    "localizationKey": "PHAPromptContextualFunGamesOnHanukkah",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "First night of Hanukkahs past",
+    "localizationKey": "PHAPromptContextualFirstNightOfHanukkahsPast",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Cheer during Hanukkah",
+    "localizationKey": "PHAPromptContextualCheerDuringHanukkah",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Around the table on Hanukkah",
+    "localizationKey": "PHAPromptContextualAroundTheTableOnHanukkah",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The Festival of Lights",
+    "localizationKey": "PHAPromptContextualTheFestivalOfLights",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Hanukkah oh Hanukkah",
+    "localizationKey": "PHAPromptContextualHanukkahOhHanukkah",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Hanukkah oh Hanukkah",
+    "localizationKey": "PHAPromptContextualHanukkahOhHanukkah",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Favorite Hanukkah memories",
+    "localizationKey": "PHAPromptContextualFavoriteHanukkahMemories",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Lighting the Menorah",
+    "localizationKey": "PHAPromptContextualLightingTheMenorah",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Hanukkah meals together",
+    "localizationKey": "PHAPromptContextualHanukkahMealsTogether",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Hanukkah feasts",
+    "localizationKey": "PHAPromptContextualHanukkahFeasts",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Hanukkah with the kids",
+    "localizationKey": "PHAPromptContextualHanukkahWithTheKids",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Opening gifts on Hanukkah",
+    "localizationKey": "PHAPromptContextualOpeningGiftsOnHanukkah",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Family Hanukkah",
+    "localizationKey": "PHAPromptContextualFamilyHanukkah",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Getting together for Hanukkah",
+    "localizationKey": "PHAPromptContextualGettingTogetherForHanukkah",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Kindle the flames of kindness and compassion",
+    "localizationKey": "PHAPromptContextualKindleTheFlamesOfKindnessAndCompassion",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Hanukkah_First"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Vibrant Holi celebration",
+    "localizationKey": "PHAPromptContextualVibrantHoliCelebration",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Holi"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Throwing colors on Holi",
+    "localizationKey": "PHAPromptContextualThrowingColorsOnHoli",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Holi"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "A Great Holi party",
+    "localizationKey": "PHAPromptContextualAGreatHoliParty",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Holi"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Celebration of colors",
+    "localizationKey": "PHAPromptContextualCelebrationOfColors",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Holi"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Portraits from Holi",
+    "localizationKey": "PHAPromptContextualPortraitsFromHoli",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Holi"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "A vibrant life",
+    "localizationKey": "PHAPromptContextualAVibrantLife",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Holi"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Lunar New Year with friends",
+    "localizationKey": "PHAPromptContextualLunarNewYearWithFriends",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My favorite Lunar New Year memories",
+    "localizationKey": "PHAPromptContextualMyFavoriteLunarNewYearMemories",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Lunar New Year highlights",
+    "localizationKey": "PHAPromptContextualLunarNewYearHighlights",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Lunar New Year parades",
+    "localizationKey": "PHAPromptContextualLunarNewYearParades",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Family visits on New Years",
+    "localizationKey": "PHAPromptContextualFamilyVisitsOnNewYears",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Out and About on New Years",
+    "localizationKey": "PHAPromptContextualOutAndAboutOnNewYears",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Celebrating the Lunar New Year",
+    "localizationKey": "PHAPromptContextualCelebratingTheLunarNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "First photos of the New Year",
+    "localizationKey": "PHAPromptContextualFirstPhotosOfTheNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Travels on Lunar New Year",
+    "localizationKey": "PHAPromptContextualTravelsOnLunarNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Ringing in the lunar new year",
+    "localizationKey": "PHAPromptContextualRingingInTheLunarNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "To a lucky new year",
+    "localizationKey": "PHAPromptContextualToALuckyNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "To a New Year",
+    "localizationKey": "PHAPromptContextualToANewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Nearly New Years",
+    "localizationKey": "PHAPromptContextualNearlyNewYears",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Together for the Lunar New Year",
+    "localizationKey": "PHAPromptContextualTogetherForTheLunarNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Lunar New Years Eve Dinners",
+    "localizationKey": "PHAPromptContextualLunarNewYearsEveDinners",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Lunar New Years decorations",
+    "localizationKey": "PHAPromptContextualLunarNewYearsDecorations",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Lunar New Years Eve Lightshows",
+    "localizationKey": "PHAPromptContextualLunarNewYearsEveLightshows",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Together for Lunar New Years Eve",
+    "localizationKey": "PHAPromptContextualTogetherForLunarNewYearsEve",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Lunar New Years Eve my favorite night",
+    "localizationKey": "PHAPromptContextualLunarNewYearsEveMyFavoriteNight",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Another Year gone by",
+    "localizationKey": "PHAPromptContextualAnotherYearGoneBy",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Counting down to the new year",
+    "localizationKey": "PHAPromptContextualCountingDownToTheNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Lunar New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Days out with mom",
+    "localizationKey": "PHAPromptContextualDaysOutWithMom",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Mother’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Laughing with mom",
+    "localizationKey": "PHAPromptContextualLaughingWithMom",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Mother’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Mom, back in the day",
+    "localizationKey": "PHAPromptContextualMomBackInTheDay",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Mother’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Celebrating Mom on Mothers Day",
+    "localizationKey": "PHAPromptContextualCelebratingMomOnMothersDay",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Mother’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Saying thanks to Mom on Mothers Day",
+    "localizationKey": "PHAPromptContextualSayingThanksToMomOnMothersDay",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Mother’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Happy New Years Day",
+    "localizationKey": "PHAPromptContextualHappyNewYearsDay",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "New Years Day parade",
+    "localizationKey": "PHAPromptContextualNewYearsDayParade",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "New years’ past for the new year",
+    "localizationKey": "PHAPromptContextualNewYearsPastForTheNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Making resolutions on New Years Day",
+    "localizationKey": "PHAPromptContextualMakingResolutionsOnNewYearsDay",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Cheers to New Years",
+    "localizationKey": "PHAPromptContextualCheersToNewYears",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Welcoming the new year",
+    "localizationKey": "PHAPromptContextualWelcomingTheNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "New Years Resolutions",
+    "localizationKey": "PHAPromptContextualNewYearsResolutions",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "A new day, new year",
+    "localizationKey": "PHAPromptContextualANewDayNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Starting the year off right",
+    "localizationKey": "PHAPromptContextualStartingTheYearOffRight",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The First of the Year",
+    "localizationKey": "PHAPromptContextualTheFirstOfTheYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "New Years Eve party",
+    "localizationKey": "PHAPromptContextualNewYearsEveParty",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Staying up til midnight on New Years Eve",
+    "localizationKey": "PHAPromptContextualStayingUpTilMidnightOnNewYearsEve",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Celebrating new years with loved ones",
+    "localizationKey": "PHAPromptContextualCelebratingNewYearsWithLovedOnes",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Together on New Years Eve",
+    "localizationKey": "PHAPromptContextualTogetherOnNewYearsEve",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Ringing in the new year",
+    "localizationKey": "PHAPromptContextualRingingInTheNewYear",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "What a year its been",
+    "localizationKey": "PHAPromptContextualWhatAYearItsBeen",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Decked out for New Years",
+    "localizationKey": "PHAPromptContextualDeckedOutForNewYears",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "New Year’s Eve"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "A Thanksgiving feast",
+    "localizationKey": "PHAPromptContextualAThanksgivingFeast",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Thanksgiving_CA"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My favorite Thanksgiving pies",
+    "localizationKey": "PHAPromptContextualMyFavoriteThanksgivingPies",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Thanksgiving_CA"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Thankful for my loved ones on Thanksgiving",
+    "localizationKey": "PHAPromptContextualThankfulForMyLovedOnesOnThanksgiving",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Thanksgiving_CA"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Grateful Gatherings",
+    "localizationKey": "PHAPromptContextualGratefulGatherings",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Thanksgiving_CA"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Overeating on Thanksgiving",
+    "localizationKey": "PHAPromptContextualOvereatingOnThanksgiving",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Thanksgiving_CA"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "A Thanksgiving feast",
+    "localizationKey": "PHAPromptContextualAThanksgivingFeast",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Thanksgiving_US"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My favorite Thanksgiving pies",
+    "localizationKey": "PHAPromptContextualMyFavoriteThanksgivingPies",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Thanksgiving_US"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Thankful for my loved ones on Thanksgiving",
+    "localizationKey": "PHAPromptContextualThankfulForMyLovedOnesOnThanksgiving",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Thanksgiving_US"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Grateful Gatherings",
+    "localizationKey": "PHAPromptContextualGratefulGatherings",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Thanksgiving_US"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Overeating on Thanksgiving",
+    "localizationKey": "PHAPromptContextualOvereatingOnThanksgiving",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Thanksgiving_US"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Valentines Day surprises",
+    "localizationKey": "PHAPromptContextualValentinesDaySurprises",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Valentine’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "My Valentine",
+    "localizationKey": "PHAPromptContextualMyValentine",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Valentine’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "A little romance on Valentines Day",
+    "localizationKey": "PHAPromptContextualALittleRomanceOnValentinesDay",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Valentine’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "A relaxing Valentines day",
+    "localizationKey": "PHAPromptContextualARelaxingValentinesDay",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Valentine’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Exploring the world together",
+    "localizationKey": "PHAPromptContextualExploringTheWorldTogether",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Valentine’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Sweets and my sweetie for Valentines",
+    "localizationKey": "PHAPromptContextualSweetsAndMySweetieForValentines",
+    "contextualTrigger": {
+      "type": "Holiday",
+      "features": [
+        {
+          "type": "Holiday",
+          "remark": "PGCelebratedHolidayFeatureExtractor.lables",
+          "name": "Valentine’s Day"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Taylor, a national treasure",
+    "localizationKey": "PHAPromptContextualPersonANationalTreasure %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Taylor: a gift to the world",
+    "localizationKey": "PHAPromptContextualPersonAGiftToTheWorld %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Taylor: the story",
+    "localizationKey": "PHAPromptContextualPersonTheStory %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Taylor's birthday",
+    "localizationKey": "PHAPromptContextualPersonsBirthday %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Taylor's Birthday Bash",
+    "localizationKey": "PHAPromptContextualPersonsBirthdayBash %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Taylor's birthday gathering",
+    "localizationKey": "PHAPromptContextualPersonsBirthdayGathering %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Taylor's birthdays throughout the years",
+    "localizationKey": "PHAPromptContextualPersonsBirthdaysThroughoutTheYears %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Taylor's Celebration",
+    "localizationKey": "PHAPromptContextualPersonsCelebration %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Taylor's special day",
+    "localizationKey": "PHAPromptContextualPersonsSpecialDay %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "A Magical Birthday!",
+    "localizationKey": "PHAPromptContextualAMagicalBirthday",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Adventures with Taylor",
+    "localizationKey": "PHAPromptContextualAdventuresWithPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "All the Birthday Cakes",
+    "localizationKey": "PHAPromptContextualAllTheBirthdayCakes",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Best moments with Taylor",
+    "localizationKey": "PHAPromptContextualBestMomentsWithPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Birthday adventures with Taylor",
+    "localizationKey": "PHAPromptContextualBirthdayAdventuresWithPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Birthday memories with Taylor",
+    "localizationKey": "PHAPromptContextualBirthdayMemoriesWithPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Blowing out candles with Taylor",
+    "localizationKey": "PHAPromptContextualBlowingOutCandlesWithPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Celebrating Taylor's birthday",
+    "localizationKey": "PHAPromptContextualCelebratingPersonsBirthday %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Celebrating Taylor",
+    "localizationKey": "PHAPromptContextualCelebratingPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Cheers to Taylor's Birthday!",
+    "localizationKey": "PHAPromptContextualCheersToPersonsBirthday %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Cutting the birthday cake",
+    "localizationKey": "PHAPromptContextualCuttingTheBirthdayCake",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Fun Moments with Taylor",
+    "localizationKey": "PHAPromptContextualFunMomentsWithPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Good times with Taylor",
+    "localizationKey": "PHAPromptContextualGoodTimesWithPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Happy birthday to Taylor",
+    "localizationKey": "PHAPromptContextualHappyBirthdayToPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "It's Taylor's Big Day",
+    "localizationKey": "PHAPromptContextualItsPersonsBigDay %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Memories of Taylor's Birthdays",
+    "localizationKey": "PHAPromptContextualMemoriesOfPersonsBirthdays %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Ode to Taylor",
+    "localizationKey": "PHAPromptContextualOdeToPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Streamers, balloons, and party favors",
+    "localizationKey": "PHAPromptContextualStreamersBalloonsAndPartyFavors",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "The Legend of Taylor",
+    "localizationKey": "PHAPromptContextualTheLegendOfPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Three Cheers for Taylor",
+    "localizationKey": "PHAPromptContextualThreeCheersForPerson %@",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "Any"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "All the best birthday memories",
+    "localizationKey": "PHAPromptContextualAllTheBestBirthdayMemories",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "ME"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Best birthday memories",
+    "localizationKey": "PHAPromptContextualBestBirthdayMemories",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "ME"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Birthday memories with friends",
+    "localizationKey": "PHAPromptContextualBirthdayMemoriesWithFriends",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "ME"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Here's to Me!",
+    "localizationKey": "PHAPromptContextualHeresToMe",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "ME"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Highlight my best birthday moments",
+    "localizationKey": "PHAPromptContextualHighlightMyBestBirthdayMoments",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "ME"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Singing happy birthday over the years",
+    "localizationKey": "PHAPromptContextualSingingHappyBirthdayOverTheYears",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "ME"
+        }
+      ]
+    }
+  },
+  {
+    "prompt": "Unforgettable birthday memories",
+    "localizationKey": "PHAPromptContextualUnforgettableBirthdayMemories",
+    "contextualTrigger": {
+      "type": "PersonBirthday",
+      "features": [
+        {
+          "type": "Person",
+          "remark": "PGFeatureTypePerson",
+          "name": "ME"
+        }
+      ]
+    }
+  }
+]

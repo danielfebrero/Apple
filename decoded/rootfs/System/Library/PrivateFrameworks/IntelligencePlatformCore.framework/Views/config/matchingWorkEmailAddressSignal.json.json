@@ -1,0 +1,33 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "matchingWorkEmailAddress": {}
+    }
+  },
+  "featureFlag": "LivableSources",
+  "name": "matchingWorkEmailAddressSignal",
+  "type": "signal",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entity": "SB104",
+            "predicates": [
+              "nm_isCurrentUser",
+              "PS406"
+            ]
+          }
+        ],
+        "schedule": "none",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ]
+  }
+}

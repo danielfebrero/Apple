@@ -1,0 +1,49 @@
+{
+  "Label": "com.apple.safetyalertsd",
+  "LaunchEvents": {
+    "com.apple.bluetooth.discovery": {
+      "SafetyAlertsBLERelay": {
+        "xpcReportCompleteDevice": true,
+        "discoveryFlags": [
+          "ScreenOff"
+        ],
+        "discoveryTypes": [
+          "SafetyAlerts"
+        ],
+        "bleScanRate": "Low",
+        "bleScanRateScreenOff": "Background",
+        "label": "SafetyAlertsBLERelay"
+      }
+    },
+    "com.apple.CTTelephonyCenter": {
+      "kCTSMSCellBroadcastTelemetryNotification": {
+        "Name": "kCTSMSCellBroadcastTelemetryNotification"
+      },
+      "kCTEventSMSMessageCellBroadcastStringGeofencingStarted": {
+        "Name": "kCTEventSMSMessageCellBroadcastStringGeofencingStarted"
+      },
+      "kCTSMSCellBroadcastStringReceivedNotification": {
+        "Name": "kCTSMSCellBroadcastStringReceivedNotification"
+      }
+    },
+    "com.apple.notifyd.matching": {
+      "kCTSMSCellBroadcastConfigChangedNotification": {
+        "Notification": "kCTSMSCellBroadcastConfigChangedNotification"
+      }
+    }
+  },
+  "MachServices": {
+    "com.apple.private.alloy.safetyalerts-idswake": true,
+    "com.apple.aps.safetyalerts": true,
+    "com.apple.safetyalerts": true,
+    "com.apple.usernotifications.delegate.com.apple.safetyalerts": true,
+    "com.apple.usernotifications.delegate.com.apple.safetyalerts.aw": true,
+    "com.apple.usernotifications.delegate.com.apple.safetyalerts.gen": true
+  },
+  "POSIXSpawnType": "Adaptive",
+  "ProgramArguments": [
+    "/usr/libexec/safetyalertsd"
+  ],
+  "RunAtLoad": true,
+  "UserName": "mobile"
+}

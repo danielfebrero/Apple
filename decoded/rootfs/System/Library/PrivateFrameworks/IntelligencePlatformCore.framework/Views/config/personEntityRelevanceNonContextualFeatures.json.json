@@ -1,0 +1,24 @@
+{
+  "artifact": {
+    "path": "feature/features.db",
+    "type": "feature"
+  },
+  "featureConfig": {
+    "signalConfig": {
+      "entityRelevanceFeatures": {
+        "entityInteractionHistogramView": "personEntityHistograms"
+      }
+    }
+  },
+  "name": "personEntityRelevanceNonContextualFeatures",
+  "type": "signal",
+  "update": {
+    "group": "personEntityRelevance",
+    "viewListeners": [
+      {
+        "name": "personEntityHistograms",
+        "schedule": "live"
+      }
+    ]
+  }
+}

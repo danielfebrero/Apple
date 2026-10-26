@@ -1,0 +1,60 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "MD_ID",
+          "INTEGER"
+        ],
+        [
+          "QID",
+          "TEXT"
+        ],
+        [
+          "score",
+          "REAL"
+        ]
+      ],
+      "primaryKeyColumns": [],
+      "subjectIdentifierColumn": "MD_ID",
+      "tableName": "person_topics"
+    },
+    "path": "internal/views.db",
+    "type": "customRow"
+  },
+  "featureFlag": "ExperimentalECRViews",
+  "name": "personTopics",
+  "sql": {
+    "delete": "nerd/delete",
+    "update": "customSQL/person_topics_update"
+  },
+  "type": "customSQL",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB104"
+          },
+          {
+            "entityType": "nm_topic"
+          }
+        ],
+        "schedule": "none",
+        "stores": [
+          "stableGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "peopleSubgraph",
+        "schedule": "none"
+      },
+      {
+        "name": "topicSubgraph",
+        "schedule": "none"
+      }
+    ]
+  }
+}

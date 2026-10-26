@@ -1,0 +1,17 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.searchquery.system.language",
+  "UsageAliasValues": {
+    "da-DK": {
+      "com.apple.search.queryparser": {
+        "sqp.language": "da",
+        "sqp.parser": "da",
+        "sqp.safety": "da"
+      },
+      "com.apple.search.queryparser.overrides": {
+        "sqp.language": "da"
+      }
+    }
+  }
+}

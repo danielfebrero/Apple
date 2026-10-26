@@ -1,0 +1,15 @@
+{
+  "FileType": "UsageAliasConfiguration",
+  "FileVersion": "1.0.0",
+  "UsageAliasName": "com.apple.Settings.AppleIntelligence.Diffusion",
+  "UsageAliasValues": {
+    "default": {
+      "com.apple.MobileAsset.UAF.FM.Visual": {
+        "com.apple.gm.image_generation_services.debiasing.metadata.generic": "ENABLED"
+      },
+      "com.apple.modelcatalog": {
+        "com.apple.safety.output.configuration.generic": "ENABLED"
+      }
+    }
+  }
+}

@@ -1,0 +1,270 @@
+{
+    "cases": [
+        {
+            "bundleType":"timeContext",
+            "templates" :[
+                {
+                    "_comment_": "/* single workout type with 3 places, and the first place is with low confidence */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count>=3", "confidence=low","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action}, {place} and nearby places"],
+                },
+                {
+                    "_comment_": "/* single workout type with 3 places, and the first place is with medium confidence */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count>=3", "confidence=medium","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action} near {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout type with 3 places, and the first place is with high confidence */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count>=3", "confidence=high","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action}, {place} and nearby places"],
+                },
+
+                {
+                    "_comment_": "/* single workout type with 2 places, first one is medium and the second one is medium */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2=medium","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action} near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "_comment_": "/* single workout type with 2 places, first one is medium and the second one is high */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2=high","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action} near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "_comment_": "/* single workout type with 2 places, first one is high and the second one is medium */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=high", "confidence_2=medium","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action} near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "_comment_": "/* single workout type with 2 places, first one is high and the second one is high */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=high", "confidence_2=high","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action}, {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "_comment_": "/* single workout type with 2 places, first one is low and the second one is low */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=low", "confidence_2=low","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action}, {unique_place_1} and a nearby place|TitleCap"],
+                },
+                
+                {
+                    "_comment_": "/* single workout type with 1 places of low confiden */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=1", "confidence=low","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action}, {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout type with 1 places of medium confiden */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=1", "confidence=medium","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action} near {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout type with 1 places of high confiden */",
+                    "conditions":["workout_app_name", "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=1", "confidence=high","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action}, {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout type with 0 place and activity is unknown*/",
+                    "conditions":["workout_app_name",  "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=0", "action_type=unknown","!summary_type"],
+                    "labels":["{workout_app_name} Workout"],
+                },
+                {
+                    "_comment_": "/* single workout type with 0 place */",
+                    "conditions":["workout_app_name",  "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=0","!summary_type"],
+                    "capitalizations":["time"],
+                    "labels":["{workout_app_name} Workout — {time} {action}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout type with 0 place */",
+                    "conditions":["workout_app_name",  "unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=0","!summary_type"],
+                    "capitalizations":["action"],
+                    "labels":["{workout_app_name} Workout — {action}|TitleCap"],
+                },
+
+
+                {
+                    "_comment_": "/* single workout type with no place while listening to media */",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=0", "media_type=0","!summary_type"],
+                    "extends":["media_name:media_title,media_album,media_artist,media_genre,media_app"],
+                    "labels":["{time} {action} while listening to {media_name}"],
+                },
+                {
+                    "_comment_": "/* single workout type no place while listening to media */",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=0", "media_type=0","!summary_type"],
+                    "extends":["media_name:media_title,media_album,media_artist,media_genre,media_app"],
+                    "labels":["{action} while listening to {media_name}"],
+                },
+
+                {
+                    "_comment_": "/* single workout type with no place while watching media */",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=0","media_type=0","!summary_type"],
+                    "extends":["media_name:media_title,media_album,media_artist,media_genre,media_app"],
+                    "labels":["{time} {action} while watching {media_name}"],
+                },
+                {
+                    "_comment_": "/* single workout type no place while watching media */",
+                    "extends":["media_name:media_title,media_album,media_artist,media_genre,media_app"],
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=0","media_type=0","!summary_type"],
+                    "labels":["{action} while watching {media_name}"],
+                },
+                
+                {
+                    "_comment_": "/* single workout action at single place of low confidence with/without media*/",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=1", "confidence=low","!summary_type"],
+                    "labels":["{time} {action}, {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout action at single place of low with/without media*/",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=1", "confidence=low","!summary_type"],
+                    "labels":["{action}, {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout action at single place of medium confidence with/without media*/",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=1", "confidence=medium","!summary_type"],
+                    "labels":["{time} {action} near {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout action at single place of medium with/without media*/",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=1", "confidence=medium","!summary_type"],
+                    "labels":["{action} near {place}|TitleCap"],
+                },
+
+                {
+                    "_comment_": "/* single workout action at single place with/without media*/",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=1", "confidence=high","!summary_type"],
+                    "labels":["{time} {action}, {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout at and single place with/without media*/",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=1", "confidence=high","!summary_type"],
+                    "labels":["{action}, {place}|TitleCap"],
+                },
+
+                {
+                    "_comment_": "/* single workout action with no place with no media*/",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=0","!summary_type"],
+                    "labels":["{time} {action}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout action with no place with no media*/",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=0","!summary_type"],
+                    "labels":["{action}|TitleCap"],
+                },
+
+                {
+                    "_comment_": "/* single workout action and 2 places of medium confidence */",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2=medium","!summary_type"],
+                    "labels":["{time} {action} near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2!=medium","!summary_type", "include_low_confidence_place_name"],
+                    "labels":["{time} {action} near {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* single workout action and 2 places: place 1 is medium confidence and place 2 is high/low confidence */",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2!=medium","!summary_type"],
+                    "labels":["{time} {action} near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2=medium","!summary_type", "include_low_confidence_place_name"],
+                    "labels":["{time} {action}, {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* single workout action and 2 places: place 1 is high/low confidence and place 2 is medium confidence */",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2=medium","!summary_type"],
+                    "labels":["{time} {action} near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2!=medium","!summary_type", "include_low_confidence_place_name"],
+                    "labels":["{time} {action}, {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* single workout action and 2 places: place 1 is high/low confidence and place 2 is high/low confidence */",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2!=medium","!summary_type"],
+                    "labels":["{time} {action}, {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "_comment_": "/* single workout action and 2 places of medium confidence*/",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2=medium","!summary_type"],
+                    "labels":["{action} near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2!=medium","!summary_type", "include_low_confidence_place_name"],
+                    "labels":["{action} near {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* single workout action and 2 places: place 1 is medium confidence and place 2 is high/low confidence*/",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1=medium", "confidence_2!=medium","!summary_type"],
+                    "labels":["{action} near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2=medium","!summary_type", "include_low_confidence_place_name"],
+                    "labels":["{action}, {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* single workout action and 2 places: place 1 is high/low confidence and place 2 is medium confidence */",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2=medium","!summary_type"],
+                    "labels":["{action} near {unique_place_1} and {unique_place_2}"],
+                },
+                {
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2!=medium","!summary_type", "include_low_confidence_place_name"],
+                    "labels":["{action}, {unique_place_1} and a nearby place"],
+                },
+                {
+                    "_comment_": "/* single workout action and 2 places of high/ow confidence */",
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count=2", "confidence_1!=medium", "confidence_2!=medium","!summary_type"],
+                    "labels":["{action}, {unique_place_1} and {unique_place_2}"],
+                },
+
+                {
+                    "_comment_": "/* single workout action and 3+ places: place 1 is either high or low confidence */",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count>=3", "confidence_1!=medium","!summary_type"],
+                    "labels":["{time} {action}, {place} and nearby places"],
+                },
+                {
+                    "_comment_": "/* single workout action and 3+ places: place 1 is either high or low confidence */",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count>=3", "confidence_1!=medium","!summary_type"],
+                    "labels":["{action}, {place} and nearby places"],
+                },
+                {
+                    "_comment_": "/* single workout action and 3+ places: place 1 is medium confidence */",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count>=3", "confidence_1=medium","!summary_type"],
+                    "labels":["{time} {action} near {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* single workout action and 3+ places: place 1 is medium confidence  */",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1", "unique_place_count>=3", "confidence_1=medium","!summary_type"],
+                    "labels":["{action}, near {place}|TitleCap"],
+                },
+                {
+                    "_comment_": "/* fallback for single workout */",
+
+                    "conditions":["unique_activity_count=1", "unique_action_type_count=1","!summary_type"],
+                    "labels":["{action}|TitleCap"],
+                }
+            ]
+        }
+    ]
+}
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cat xmlns="urn:apple:names:siri:cat:1.0" id="CommonErrors#GenericError">
+  <meta name="description" value="A generic error dialog telling the user an unexpected error happened"/>
+  <meta name="category" value="Fatal"/>
+  <meta name="subcategory" value="Generic Error"/>
+  <meta name="readyForLoc" value="true"/>
+  <parameters>
+    <parameter name="device" type="sirikit.DeviceState"/>
+  </parameters>
+</cat>

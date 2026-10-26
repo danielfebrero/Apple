@@ -1,0 +1,38 @@
+{
+  "CFBundleName": "IntelligenceFlowDiagnostics",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTXcode": "2700",
+  "DELocalizedConsentFilename": "legal.txt",
+  "DTSDKBuild": "24B111",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "3605.22.501.11",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "XPC!",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "DELocalizedDataCollectedSummaryText": "Information regarding the use of IntelligenceFlow use cases.",
+  "DELocalizedDataCollectedExplanationFilename": "description.txt",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "IntelligenceFlowDiagnostics",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.intelligenceflow.IntelligenceFlowRuntime.IntelligenceFlowDiagnostics",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "24B111",
+  "NSExtension": {
+    "NSExtensionAttributes": {
+      "DEAttachmentsName": "IntelligenceFlow logs and transcripts",
+      "DEAttachmentsLoggingEnabled": true
+    },
+    "NSExtensionPointIdentifier": "com.apple.diagnosticextensions-service",
+    "NSExtensionPrincipalClass": "IntelligenceFlowDiagnostics.Diagnostics"
+  }
+}

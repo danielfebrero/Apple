@@ -1,0 +1,51 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Ajoute abricots à ma liste de courses",
+            "Ne pas oublier de sortir le gâteau dans 20 minutes",
+            "Rappelle-moi de prendre un parapluie",
+            "Rappelle-moi de prendre mes médicaments demain matin à 8 h",
+            "Rappelle-moi d’envoyer le rapport avant 6 h"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Lis-moi ma liste de choses à faire",
+            "Marque le troisième comme terminé",
+            "Créer une nouvelle liste intitulée Courses",
+            "Rappelle-moi de répondre à cet e-mail demain matin",
+            "Fais-moi penser à appeler Thomas quand je pars d’ici",
+            "Souviens-toi de ce site web"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false,
+            "locationReminders": true
+          },
+          "Entries": [
+            "Rappelle-moi d’arroser les plantes quand j’arrive chez moi",
+            "Rappelle-moi d’appeler mon père quand je monte dans la voiture",
+            "Rappelle-moi d’appeler ma sœur sur FaceTime en arrivant à la maison"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "locationReminders": true
+          },
+          "Entries": [
+            "Rappelle-moi d’aller chercher des fleurs en partant"
+          ]
+        }
+      ],
+      "SectionName": ""
+    }
+  ]
+}

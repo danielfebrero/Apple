@@ -1,0 +1,58 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Send e-post til Sturla om turen",
+            "Send e-post til Lena om endringer i planen",
+            "Ny e-post til Ådne Jensen",
+            "Mail til pappa om betaling av husleie",
+            "Skriv e-post til Annlaug og si at jeg har fått skjemaene",
+            "Send e-post til Olav og Eirik og si at jeg hadde det kjempemorsomt på festen deres"
+          ]
+        }
+      ],
+      "SectionName": "Sende e-post"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Sjekk e-post",
+            "Har jeg fått e-post fra Vemund i dag?",
+            "Vis nye e-poster om leieavtalen",
+            "Vis gårsdagens e-post fra Brynjar"
+          ]
+        }
+      ],
+      "SectionName": "Sjekke e-post"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Svar Hei Sturla, beklager sen betaling"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ring henne på arbeid"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "Ring ham på arbeid med FaceTime"
+          ]
+        }
+      ],
+      "SectionName": "Svare på e-post"
+    }
+  ]
+}

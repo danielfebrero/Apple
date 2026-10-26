@@ -1,0 +1,24 @@
+{
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "AssetSetName": "com.apple.parsec.sba",
+  "UsageTypes": [
+    "sba.systemlocale",
+    "sba.countrycode"
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.SafariBrowsingAssistant",
+  "Assets": [
+    {
+      "AssetName": "com.apple.parsec.sba.prefetch",
+      "Expansions": [
+        {
+          "RequiredUsageTypes": [
+            "sba.systemlocale",
+            "sba.countrycode"
+          ],
+          "AutoAssetSpecifierTemplate": "com.apple.parsec.sba.prefetch.{sba.countrycode}.{sba.systemlocale}"
+        }
+      ]
+    }
+  ]
+}

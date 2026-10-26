@@ -1,0 +1,56 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "ما هو عنوان سعيد؟",
+            "ما رقم هاتف طارق شاهين؟",
+            "متي يأتي عيد ميلاد زوجتي؟",
+            "اعرض عنوان منزل سارة",
+            "ما هو عنوان عمل أخي؟"
+          ]
+        }
+      ],
+      "SectionName": "السؤال عن جهات الاتصال"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "اعرض شريف السعدي",
+            "اعثر على أشخاص تتضمن أسماؤهم 'فارس'"
+          ]
+        }
+      ],
+      "SectionName": "العثور على جهات اتصال"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "أمي هي سامية شاكر",
+            "أحمد صادق هو أخي"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "اتصل بأخي في العمل"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "اتصل على أخي في العمل عبر FaceTime"
+          ]
+        }
+      ],
+      "SectionName": "العلاقات"
+    }
+  ]
+}

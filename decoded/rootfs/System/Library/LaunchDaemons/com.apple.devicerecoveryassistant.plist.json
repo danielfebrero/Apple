@@ -1,0 +1,32 @@
+{
+  "CFBundleIdentifier": "com.apple.Device-Recovery-Assistant",
+  "KeepAlive": true,
+  "UserName": "mobile",
+  "EnableTransactions": false,
+  "Label": "com.apple.devicerecoveryassistant",
+  "EnablePressuredExit": false,
+  "EmbeddedHomeScreen": true,
+  "LimitLoadToHardware": {
+    "osenvironment": [
+      "device-recovery"
+    ]
+  },
+  "ProgramArguments": [
+    "/Applications/Device Recovery Assistant.app/Device Recovery Assistant"
+  ],
+  "RunAtLoad": true,
+  "POSIXSpawnType": "App",
+  "MachServices": {
+    "com.apple.frontboard.systemappservices": true,
+    "PurpleSystemAppPort": {
+      "ResetAtClose": true
+    },
+    "com.apple.UIKit.KeyboardManagement.hosted": {
+      "#Then": false,
+      "#IfFeatureFlagEnabled": "UIKit/kbarbiter_in_inputui",
+      "#Else": true
+    },
+    "com.apple.frontboard.workspace": true,
+    "com.apple.private.corewifi.mobilewifi-xpc": true
+  }
+}

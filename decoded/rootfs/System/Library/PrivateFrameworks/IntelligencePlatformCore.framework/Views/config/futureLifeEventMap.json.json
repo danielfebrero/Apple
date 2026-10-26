@@ -1,0 +1,57 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "subject",
+          "INTEGER"
+        ],
+        [
+          "starttime",
+          "DOUBLE"
+        ],
+        [
+          "endtime",
+          "DOUBLE"
+        ]
+      ],
+      "primaryKeyColumns": [
+        "subject"
+      ],
+      "subjectIdentifierColumn": "subject",
+      "tableName": "futureLifeEvent_map"
+    },
+    "path": "futureLifeEvent/futureLifeEventView.db",
+    "type": "customRow"
+  },
+  "customViewClass": "LifeEventView",
+  "featureFlag": "LifeEventSource",
+  "name": "futureLifeEventMap",
+  "type": "custom",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [
+          {
+            "entityType": "SB513",
+            "entityTypeIncludeDescendants": true,
+            "sources": [
+              "futureLifeEvent"
+            ]
+          }
+        ],
+        "schedule": "live",
+        "stores": [
+          "eventGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "futureLifeEventSubgraph",
+        "schedule": "none"
+      }
+    ]
+  },
+  "writeToStream": true
+}

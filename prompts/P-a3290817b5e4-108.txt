@@ -1,0 +1,11 @@
+"
+
+Extract structured intent from this query. Return an Intent object with:
+- queryType: Query type classification (find/show/list/when/who/where/what/howMany)
+- keywords: Array of main search terms
+- entities: Array of Entity objects with type and value
+- contentTypeHints: Array of content type strings
+- temporalConstraint: Optional TemporalConstraint object
+- fieldConstraints: Array of FieldConstraint objects
+- sortingHint: Optional SortingHint object
+- limitHint: Optional result limit (Int)

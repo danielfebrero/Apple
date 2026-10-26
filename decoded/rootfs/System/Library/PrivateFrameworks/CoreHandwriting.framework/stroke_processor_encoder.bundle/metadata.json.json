@@ -1,0 +1,89 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "bolt-taskid: vfuki5rnci iteration: 726600",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16 1 × 8 × 24)",
+        "shortDescription": "",
+        "shape": "[1, 8, 24]",
+        "name": "stroke_embedding",
+        "type": "MultiArray"
+      }
+    ],
+    "storagePrecision": "Mixed (Float16, Int8)",
+    "modelParameters": [],
+    "author": "corerecognition",
+    "specificationVersion": 9,
+    "mlProgramOperationTypeHistogram": {
+      "Ios18.expandDims": 5,
+      "Ios18.softmax": 6,
+      "Ios18.mul": 38,
+      "Ios18.realDiv": 1,
+      "Ios18.equal": 1,
+      "Split": 24,
+      "Ios16.reduceSum": 2,
+      "Ios18.add": 19,
+      "Ios18.layerNorm": 12,
+      "Ios18.reshape": 3,
+      "Ios18.linear": 1,
+      "Ios18.conv": 38,
+      "Ios18.relu": 8,
+      "Ios18.clip": 1,
+      "Ios18.concat": 12,
+      "Ios16.einsum": 72,
+      "Ios18.cast": 1,
+      "Ios18.transpose": 10,
+      "Ios18.maxPool": 3,
+      "Ios18.squeeze": 2,
+      "Ios18.constexprBlockwiseShiftScale": 12
+    },
+    "computePrecision": "Mixed (Float16, Int32)",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "15.0",
+      "tvOS": "18.0",
+      "visionOS": "2.0",
+      "watchOS": "11.0",
+      "iOS": "18.0",
+      "macCatalyst": "18.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16 1 × 8 × 80 × 2)",
+        "shortDescription": "",
+        "shape": "[1, 8, 80, 2]",
+        "name": "canvas_features_signal",
+        "type": "MultiArray"
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16 1 × 8 × 80 × 1)",
+        "shortDescription": "",
+        "shape": "[1, 8, 80, 1]",
+        "name": "canvas_features_signal_mask",
+        "type": "MultiArray"
+      }
+    ],
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "8.3.2",
+      "com.github.apple.coremltools.source": "torch==2.5.1",
+      "mldb_token": "mldb-8loabbqank",
+      "com.github.apple.coremltools.source_dialect": "TorchScript"
+    },
+    "generatedClassName": "model",
+    "method": "predict"
+  }
+]

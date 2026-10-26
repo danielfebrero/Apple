@@ -1,0 +1,73 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Int8",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "637",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 4,
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "10.15",
+      "tvOS": "13.0",
+      "visionOS": "1.0",
+      "watchOS": "6.0",
+      "iOS": "13.0",
+      "macCatalyst": "13.0"
+    },
+    "customModels": [
+      {
+        "className": "_SNLogMelSpectrogramCustomModel",
+        "description": ""
+      }
+    ],
+    "modelType": {
+      "name": "MLModelType_pipeline",
+      "structure": [
+        {
+          "name": "MLModelType_customModel"
+        },
+        {
+          "name": "MLModelType_neuralNetwork"
+        }
+      ]
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1... × 1 × 8000...240000",
+        "shapeRange": "[[1, -1], [1, 1], [8000, 240000]]",
+        "formattedType": "MultiArray (Float32 1 × 1 × 48000)",
+        "type": "MultiArray",
+        "shape": "[1, 1, 48000]",
+        "name": "audioSamples",
+        "shortDescription": ""
+      }
+    ],
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-br4yno3am9"
+    },
+    "generatedClassName": "SNSoundPrintAEmbeddingModel",
+    "neuralNetworkLayerTypeHistogram": {
+      "Clip": 35,
+      "Convolution": 52,
+      "ReduceMean": 1,
+      "AddBroadcastable": 10
+    },
+    "method": "predict"
+  }
+]

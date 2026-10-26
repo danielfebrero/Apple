@@ -1,0 +1,147 @@
+{
+  "AllDomains": [
+    {
+      "DomainDisplayName": "Puhelin",
+      "IconDisplayIdentifier": "com.apple.mobilephone",
+      "RequiredCapabilities": [
+        "telephony"
+      ],
+      "TagPhrase": "Soita Pekalle",
+      "DomainName": "Phone"
+    },
+    {
+      "DomainDisplayName": "FaceTime",
+      "IconDisplayIdentifier": "com.apple.facetime",
+      "TagPhrase": "Soita FaceTimella Liisalle",
+      "DomainName": "FaceTime"
+    },
+    {
+      "DomainDisplayName": "Ohjelmat",
+      "IconDisplayIdentifier": "com.apple.AppStore",
+      "TagPhrase": "Käynnistä Kuvat",
+      "DomainName": "AppLaunching"
+    },
+    {
+      "DomainDisplayName": "Viestit",
+      "IconDisplayIdentifier": "com.apple.MobileSMS",
+      "TagPhrase": "Kerro Katille 'olen pian perillä'",
+      "DomainName": "Messages"
+    },
+    {
+      "DomainDisplayName": "Kalenteri",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "Calendar",
+      "TagPhrase": "Aseta kokous 9:ksi",
+      "DomainName": "Calendar"
+    },
+    {
+      "IconDisplayIdentifier": "com.apple.Maps",
+      "DomainDisplayName": "Kartat",
+      "DomainAlternateDisplayName": "Kartat",
+      "TagPhrase": "Anna reittiohjeet kotiin",
+      "DomainName": "MapsAndLocal"
+    },
+    {
+      "DomainDisplayName": "Twitter",
+      "IconResourceName": "Twitter",
+      "TagPhrase": "Twiittaa sijaintini…",
+      "DomainName": "Twitter"
+    },
+    {
+      "DomainDisplayName": "Weibo",
+      "IconResourceName": "Weibo",
+      "TagPhrase": "Julkaise Weibossa…",
+      "DomainName": "Weibo"
+    },
+    {
+      "DomainDisplayName": "Facebook",
+      "IconResourceName": "facebook",
+      "TagPhrase": "Julkaise Facebookissa…",
+      "DomainName": "Facebook"
+    },
+    {
+      "DomainDisplayName": "Musiikki",
+      "IconDisplayIdentifier": "com.apple.Music",
+      "TagPhrase": "Soita Norah Jonesia",
+      "DomainName": "Music"
+    },
+    {
+      "DomainDisplayName": "Muistutukset",
+      "IconDisplayIdentifier": "com.apple.reminders",
+      "TagPhrase": "Muistuta soittaa äidille",
+      "DomainName": "Reminders"
+    },
+    {
+      "DomainDisplayName": "Sähköposti",
+      "IconDisplayIdentifier": "com.apple.mobilemail",
+      "TagPhrase": "Lähetä Emmalle sähköposti",
+      "DomainName": "Email"
+    },
+    {
+      "DomainDisplayName": "Sää",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.weather.assistantui",
+      "TagPhrase": "Millainen sää on tänään?",
+      "DomainName": "Weather"
+    },
+    {
+      "DomainDisplayName": "Pörssi",
+      "IconNeedsProcessing": true,
+      "IconBundleIdentifier": "com.apple.stocks.siriui",
+      "TagPhrase": "Mikä on Applen osakekurssi?",
+      "DomainName": "Stocks"
+    },
+    {
+      "DomainDisplayName": "Kello",
+      "IconDisplayIdentifier": "com.apple.mobiletimer",
+      "TagPhrase": "Herätä huomenaamulla 7:ltä",
+      "DomainName": "ClockAlarmTimer"
+    },
+    {
+      "DomainDisplayName": "Yhteystiedot",
+      "IconDisplayIdentifier": "com.apple.MobileAddressBook",
+      "TagPhrase": "Mikä on Emman osoite?",
+      "DomainName": "AddressBook"
+    },
+    {
+      "DomainDisplayName": "Etsi ystäväni",
+      "IconDisplayIdentifier": "com.apple.mobileme.fmf1",
+      "RequiredApplications": [
+        "com.apple.mobileme.fmf1"
+      ],
+      "TagPhrase": "Missä Pekka on?",
+      "DomainName": "FindMyFriends"
+    },
+    {
+      "DomainDisplayName": "Muistiinpanot",
+      "IconDisplayIdentifier": "com.apple.mobilenotes",
+      "TagPhrase": "Merkitse muistiin '10 e lounaalla'",
+      "DomainName": "Notes"
+    },
+    {
+      "DomainDisplayName": "Asetukset",
+      "IconDisplayIdentifier": "com.apple.Preferences",
+      "TagPhrase": "Laita lentokonetila päälle",
+      "DomainName": "Settings"
+    },
+    {
+      "DomainDisplayName": "Verkkohaku",
+      "IconDisplayIdentifier": "com.apple.mobilesafari",
+      "TagPhrase": "Etsi verkosta tietoa jääkarhuista",
+      "DomainName": "WebSearch"
+    },
+    {
+      "DomainDisplayName": "Usein esitetyt kysymykset",
+      "IconNeedsProcessing": true,
+      "IconResourceName": "QandA",
+      "TagPhrase": "Montako kaloria on munkissa?",
+      "DomainName": "WolframAlpha"
+    },
+    {
+      "DomainDisplayName": "Podcastit",
+      "IconDisplayIdentifier": "com.apple.podcasts",
+      "TagPhrase": "Toista podcasteja",
+      "DomainName": "Podcasts"
+    }
+  ]
+}

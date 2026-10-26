@@ -1,0 +1,2984 @@
+{
+  "converted_patterns" : [
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} (alarm|alarmklokke|vekkeklokke|vekkerklokke) {til|for} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:alarm|alarmklokke|vekkeklokke|vekkerklokke)(?:\\s+(?:til|for))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2a86c219-6112-56d3-9aea-334e174b2353"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (deaktiver|slå av) alle alarmer",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:deaktiver|slå\\s+av)\\s+alle\\s+alarmer$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d435804f-2437-5f98-8424-3270a5e0853e"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} (kan du|jeg vil|jeg har lyst til å|jeg ønsker å) (stille|sette) {en} (alarm|alarmklokke|vekkeklokke|vekkerklokke) {til|for} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan\\s+du|jeg\\s+vil|jeg\\s+har\\s+lyst\\s+til\\s+å|jeg\\s+ønsker\\s+å)\\s+(?:stille|sette)\\s+(?:en\\s+)?(?:alarm|alarmklokke|vekkeklokke|vekkerklokke)(?:\\s+(?:til|for))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "ea5b4bd7-038d-5ad0-b509-aedd7705c992"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} (klokken|klokka) (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:klokken|klokka)(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "93d4eece-cd47-54c7-9b70-ef7a90041463"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} (lag|sett|start) {en} alarm til {klokken|klokka} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:lag|sett|start)\\s+(?:en\\s+)?alarm\\s+til(?:\\s+(?:klokken|klokka))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "e791ae24-b1dd-5275-b14a-43769094626f"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (skru av|stopp) alle alarmene",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:skru\\s+av|stopp)\\s+alle\\s+alarmene$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "f53e9536-c717-58e5-816c-e69a5776a6c0"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} (stiller du|still|setter du|sett) {en} (alarm|alarmklokke|vekkeklokke|vekkerklokke) {til|for} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:stiller\\s+du|still|setter\\s+du|sett)\\s+(?:en\\s+)?(?:alarm|alarmklokke|vekkeklokke|vekkerklokke)(?:\\s+(?:til|for))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "ee54e87a-05bd-5425-8d22-8afcb80e3d92"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} (time:time) (alarm|alarmklokke|vekkeklokke|vekkerklokke)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<time>(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)\\s+(?:alarm|alarmklokke|vekkeklokke|vekkerklokke)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "7c9fbae4-9968-5568-b7f2-9af708361806"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} alarm (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?alarm(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2139c67c-b377-5db2-bda4-22e6c90febf9"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} skru av alarm{en|en min}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?skru\\s+av\\s+alarm(?:(?:en|en\\s+min))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "01843f8f-362d-50ed-9075-3ee0e16f9829"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} slå av (alarmen|alarm) {min}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?slå\\s+av\\s+(?:alarmen|alarm)(?:\\s+min)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "53c12b66-6acc-5ef2-8c63-3cb7d32977be"
+    },
+    {
+      "action" : "stop_alarms(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} slå av alle (alarmene|alarmer) {mine}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?slå\\s+av\\s+alle\\s+(?:alarmene|alarmer)(?:\\s+mine)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "7a759f4d-3580-5aa6-a102-ccf9ec87c03a"
+    },
+    {
+      "action" : "stop_alarms(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} stopp alarm{en}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?stopp\\s+alarm(?:en)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6d2ab664-18f9-599d-89fc-46e6389af933"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} vekk meg om (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?vekk\\s+meg\\s+om(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "8a18a3e8-90c3-5a08-b046-c2c09f63db94"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} vekk meg {klokken|klokka} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?vekk\\s+meg(?:\\s+(?:klokken|klokka))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "f3085681-b042-525a-9749-b462484bbf23"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} vekk{er du} meg {til} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?vekk(?:er\\s+du)?\\s+meg(?:\\s+til)?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "3ac8ede5-8536-5c5e-8c40-dd8f7fbd5517"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "create" : "create",
+        "create__create" : "create",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} {jeg (vil|ønsker å)|kan (jeg|du)} (create:create) {en|ei} (alarmklokke|alarm|vekkerklokke|vekkeklokke) {til|for|på} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:(?:jeg\\s+(?:vil|ønsker\\s+å)|kan\\s+(?:jeg|du))\\s+)?(?P<create>(?P<create__create>aktiver|aktivere|få|få på|ha|ha på|innstill|innstille|konfigurer|konfigurere|lag|lage|legg|legg til|legge|legge til|opprett|opprette|planlegg|planlegge|putt|putt på|putte|putte på|sett|sett opp|sett på|sette|sette opp|sette på|skap|skape|skru på|slå på|start|starte|still|stille|ta|ta på))\\s+(?:(?:en|ei)\\s+)?(?:alarmklokke|alarm|vekkerklokke|vekkeklokke)(?:\\s+(?:til|for|på))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "8da3ff63-5f7d-5308-9df7-ef1e9eb9e548"
+    },
+    {
+      "action" : "set_alarm",
+      "context_free" : false,
+      "metadata" : {
+        "am_pm" : "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am" : "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm" : "time_of_day_parser__pm",
+        "create" : "create",
+        "create__create" : "create",
+        "ct" : "clock_time|int|basic_number",
+        "ct__basic_number" : "basic_number",
+        "ct__clock_time" : "clock_time",
+        "ct__int" : "int",
+        "o_clock" : "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock" : "time_of_day_parser__o_clock",
+        "time" : "time"
+      },
+      "pattern" : "{hei} {siri} {kan du|vil du|jeg (vil|ønsker å)} (create:create) {en|ei} (alarm|alarmklokke|vekkeklokke|vekkerklokke) {til|for} (time:time)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:(?:kan\\s+du|vil\\s+du|jeg\\s+(?:vil|ønsker\\s+å))\\s+)?(?P<create>(?P<create__create>aktiver|aktivere|få|få på|ha|ha på|innstill|innstille|konfigurer|konfigurere|lag|lage|legg|legg til|legge|legge til|opprett|opprette|planlegg|planlegge|putt|putt på|putte|putte på|sett|sett opp|sett på|sette|sette opp|sette på|skap|skape|skru på|slå på|start|starte|still|stille|ta|ta på))\\s+(?:(?:en|ei)\\s+)?(?:alarm|alarmklokke|vekkeklokke|vekkerklokke)(?:\\s+(?:til|for))?(?P<time>\\s+(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))(?:\\s+(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>klokka)))?(?:\\s+(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>om formiddagen|om morgenen)|(?P<am_pm__time_of_day_parser__pm>om ettermiddagen|om kvelden|om natten))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "fd358837-eb8a-5adc-b157-4ed3afafd94a"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hei} {siri} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<contact>(?P<contact__emergencyServices>(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|110|112|113|116 006|116 111|116 117|116 123|120|1412|224 00 040|800 33 321|ambulanse|ambulansen|ambulansepersonell|ambulansetjenesten|brannmann|brannmenn|brannstasjonen|brannvesen|brannvesenet|forgiftningsinformasjon|forgiftningsinformasjonen|forgiftningssentral|forgiftningssentralen|giftinformasjon|giftinformasjonen|giftkontrollhjelpelinje|giftkontrolllinje|giftkontrollnødlinje|giftkontrollsenter|giftkontrolltjenester|giftsentral|giftsentralen|helsevesen|helsevesenet|hjelp|hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|legevakt|legevakta|legevakten|myndighetene|nasjonal forgiftningsinformasjon|nasjonal forgiftningssentral|nasjonal giftinformasjon|nasjonal giftkontrollhjelpelinje|nasjonal giftkontrolllinje|nasjonal giftkontrollnødlinje|nasjonal giftkontrollsenter|nasjonal giftsentral|nasjonale giftkontrolltjenester|nødetatene|nødhjelp|nødhjelpen|nødhjelpsnummeret|nødhjelpstjenestene|nødhjelpstjenester|nødtelefonen|nødtelefonnummeret|organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|politi|politiet|purken|redningstjeneste|redningstjenesten|selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|sjukehuset|støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|sykebil|sykebilen|sykehus|sykehuset))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "2e900500-9344-5674-9457-e9c39058106d"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hei} {siri} (jeg trenger|få) (contact:emergencyServices) på (tråden|telefonen)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:jeg\\s+trenger|få)(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))\\s+på\\s+(?:tråden|telefonen)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "1b69e8c4-b264-55c7-8b5c-d46221865238"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{hei} {siri} (situation:situation) ring {til} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<situation>(?P<situation__situation>hjelp jeg er så redd|hjelp meg|jeg er deprimert og har lyst til å ta livet mitt|jeg er så lei av livet|jeg er så lei og trist|jeg føler meg svak|jeg har et anfall|jeg har problemer med å puste|jeg hater livet|jeg kommer til å dø|kommer jeg til å dø))\\s+ring(?:\\s+til)?(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a268e289-41d4-5257-b980-54e22a09a0d5"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation_1" : "situation_1",
+        "situation_1__situation_1" : "situation_1"
+      },
+      "pattern" : "{hei} {siri} (situation_1:situation_1) ring {til} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<situation_1>(?P<situation_1__situation_1>bilen min tok fyr|det er en barslåsskamp på gang|faren min har pustevansker|herregud, han har kjørt over noen|hjelp hjelp hjelp|hjelp meg hjelpe meg|hunden min ble angrepet|huset mitt står i brann|jeg ble akkurat ranet|jeg ble skutt|jeg blør|jeg dør|jeg er i en ulykke|jeg føler meg svak|jeg hadde en bilkrasj|jeg hadde en bilulykke|jeg hadde nettopp en ulykke|jeg har brukket armen|jeg har en overdose|jeg har et anfall|jeg har hjerteinfarkt|jeg har problemer med å puste|jeg har sterke smerter|jeg kan ikke vekke datteren min|jeg tror jeg er forgiftet|jeg tror jeg trenger legehjelp|jeg var i en bilulykke|kona mi ble skutt|moren min besvimte|noen er bevisstløs på gaten|noen jager meg|noen trakk en pistol mot meg|to karer slåss|øyeblikkelig medisinsk hjelp er nødvendig))\\s+ring(?:\\s+til)?(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a1e53ff0-4b04-5ade-a337-6c91d95f6582"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation_1" : "situation_1",
+        "situation_1__situation_1" : "situation_1"
+      },
+      "pattern" : "{hei} {siri} (situation_1:situation_1) {kan du|jeg trenger at du} (kontakter|ringer {til}) (contact:emergencyServices) {{jeg trenger} hjelp}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<situation_1>(?P<situation_1__situation_1>bilen min tok fyr|det er en barslåsskamp på gang|faren min har pustevansker|herregud, han har kjørt over noen|hjelp hjelp hjelp|hjelp meg hjelpe meg|hunden min ble angrepet|huset mitt står i brann|jeg ble akkurat ranet|jeg ble skutt|jeg blør|jeg dør|jeg er i en ulykke|jeg føler meg svak|jeg hadde en bilkrasj|jeg hadde en bilulykke|jeg hadde nettopp en ulykke|jeg har brukket armen|jeg har en overdose|jeg har et anfall|jeg har hjerteinfarkt|jeg har problemer med å puste|jeg har sterke smerter|jeg kan ikke vekke datteren min|jeg tror jeg er forgiftet|jeg tror jeg trenger legehjelp|jeg var i en bilulykke|kona mi ble skutt|moren min besvimte|noen er bevisstløs på gaten|noen jager meg|noen trakk en pistol mot meg|to karer slåss|øyeblikkelig medisinsk hjelp er nødvendig))(?:\\s+(?:kan\\s+du|jeg\\s+trenger\\s+at\\s+du))?(?:\\s+kontakter|\\s+ringer(?:\\s+til)?)(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))(?:\\s+(?:jeg\\s+trenger\\s+)?hjelp)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "03405f24-6f12-5976-934c-cc54533e2d91"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} ja {svar}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ja(?:\\s+svar)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7e2c8c5a-44b7-5550-a68d-87cb52c27493"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hei} {siri} jeg (trenger|behøver) (contact:emergencyServices) {kan du ringe (de|dem)|ring (de|dem)}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?jeg\\s+(?:trenger|behøver)(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))(?:\\s+(?:kan\\s+du\\s+ringe\\s+(?:de|dem)|ring\\s+(?:de|dem)))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "19ac033f-07b6-5a64-9ec4-f8a5f7346a07"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hei} {siri} jeg trenger (contact:emergencyServices) {{kan du} ringe dem}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?jeg\\s+trenger(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))(?:\\s+(?:kan\\s+du\\s+)?ringe\\s+dem)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ae1dbe30-d463-5e10-9fca-9162f98f8c55"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hei} {siri} kan du ringe {til} (contact:emergencyServices) {{jeg trenger} hjelp}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?kan\\s+du\\s+ringe(?:\\s+til)?(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))(?:\\s+(?:jeg\\s+trenger\\s+)?hjelp)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9f99b2e7-7974-5627-9d6d-432b787067cf"
+    },
+    {
+      "action" : "end_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} nei",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?nei$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7c37b2c0-783f-5b41-894f-abd044ae24df"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hei} {siri} ring {til} (contact:*{1,5})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ring\\s+(?:til\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "cfdd473e-c2e3-5795-8434-2248c026a8e4"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hei} {siri} ring {til} (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ring(?:\\s+til)?(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f79e7ce2-5c9f-56c7-be71-c3b31461726a"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hei} {siri} ringer (contact:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ringer\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "063c245d-e6d7-5545-b175-350003c6dab4"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hei} {siri} ring{e} (contact:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ring(?:e)?\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "dc7e7c40-e463-544c-986e-3c5a4e71555f"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hei} {siri} skaff meg (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?skaff\\s+meg(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "692a7a28-8609-5529-93a0-9098df422c69"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} svar på (den|det|samtalen)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?svar\\s+på\\s+(?:den|det|samtalen)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b2c22a5d-76b9-5133-96b5-32082aeabdb4"
+    },
+    {
+      "action" : "answer_call",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} ta samtalen",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ta\\s+samtalen$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "59e990d1-d28f-5a44-b441-6d02eaa42efa"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{hei} {siri} {(situation:situation)} (jeg trenger|jeg må ha|skaff meg) (contact:emergencyServices)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:(?P<situation>(?P<situation__situation>hjelp jeg er så redd|hjelp meg|jeg er deprimert og har lyst til å ta livet mitt|jeg er så lei av livet|jeg er så lei og trist|jeg føler meg svak|jeg har et anfall|jeg har problemer med å puste|jeg hater livet|jeg kommer til å dø|kommer jeg til å dø))\\s+)?(?:jeg\\s+trenger|jeg\\s+må\\s+ha|skaff\\s+meg)(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8c05dbe6-f963-55e8-b12d-03fc28f366ef"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices"
+      },
+      "pattern" : "{hei} {siri} {jeg trenger at du} {ringer {til}|kontakter} (contact:emergencyServices) {{jeg trenger} hjelp}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:jeg\\s+trenger\\s+at\\s+du\\s+)?(?:(?:ringer\\s+(?:til\\s+)?|kontakter\\s+))?(?P<contact>(?P<contact__emergencyServices>(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|110|112|113|116 006|116 111|116 117|116 123|120|1412|224 00 040|800 33 321|ambulanse|ambulansen|ambulansepersonell|ambulansetjenesten|brannmann|brannmenn|brannstasjonen|brannvesen|brannvesenet|forgiftningsinformasjon|forgiftningsinformasjonen|forgiftningssentral|forgiftningssentralen|giftinformasjon|giftinformasjonen|giftkontrollhjelpelinje|giftkontrolllinje|giftkontrollnødlinje|giftkontrollsenter|giftkontrolltjenester|giftsentral|giftsentralen|helsevesen|helsevesenet|hjelp|hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|legevakt|legevakta|legevakten|myndighetene|nasjonal forgiftningsinformasjon|nasjonal forgiftningssentral|nasjonal giftinformasjon|nasjonal giftkontrollhjelpelinje|nasjonal giftkontrolllinje|nasjonal giftkontrollnødlinje|nasjonal giftkontrollsenter|nasjonal giftsentral|nasjonale giftkontrolltjenester|nødetatene|nødhjelp|nødhjelpen|nødhjelpsnummeret|nødhjelpstjenestene|nødhjelpstjenester|nødtelefonen|nødtelefonnummeret|organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|politi|politiet|purken|redningstjeneste|redningstjenesten|selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|sjukehuset|støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|sykebil|sykebilen|sykehus|sykehuset))(?:\\s+(?:jeg\\s+trenger\\s+)?hjelp)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "0ffce8a7-9c34-5217-8719-008bae1a11d0"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation_1" : "situation_1",
+        "situation_1__situation_1" : "situation_1"
+      },
+      "pattern" : "{hei} {siri} {kan du|jeg trenger at du} (kontakter|ringer {til}) (contact:emergencyServices) (situation_1:situation_1)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:(?:kan\\s+du|jeg\\s+trenger\\s+at\\s+du)\\s+)?(?:kontakter|ringer(?:\\s+til)?)(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))\\s+(?P<situation_1>(?P<situation_1__situation_1>bilen min tok fyr|det er en barslåsskamp på gang|faren min har pustevansker|herregud, han har kjørt over noen|hjelp hjelp hjelp|hjelp meg hjelpe meg|hunden min ble angrepet|huset mitt står i brann|jeg ble akkurat ranet|jeg ble skutt|jeg blør|jeg dør|jeg er i en ulykke|jeg føler meg svak|jeg hadde en bilkrasj|jeg hadde en bilulykke|jeg hadde nettopp en ulykke|jeg har brukket armen|jeg har en overdose|jeg har et anfall|jeg har hjerteinfarkt|jeg har problemer med å puste|jeg har sterke smerter|jeg kan ikke vekke datteren min|jeg tror jeg er forgiftet|jeg tror jeg trenger legehjelp|jeg var i en bilulykke|kona mi ble skutt|moren min besvimte|noen er bevisstløs på gaten|noen jager meg|noen trakk en pistol mot meg|to karer slåss|øyeblikkelig medisinsk hjelp er nødvendig))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e6465ced-dfe5-5d62-bb95-ab1e7012c48b"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hei} {siri} {kan du} ringe {til} {han|hun|ho} (contact:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan\\s+du\\s+)?ringe\\s+(?:til\\s+)?(?:(?:han|hun|ho)\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "da158db2-4970-5b14-8e40-7f282cdca646"
+    },
+    {
+      "action" : "make_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser"
+      },
+      "pattern" : "{hei} {siri} ring {til} (min|mi|mitt|vår|vårt) (contact:emergency_contact_parser)",
+      "priority" : 35,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ring\\s+(?:til\\s+)?(?:min|mi|mitt|vår|vårt)\\s+(?P<contact>(?P<contact__emergency_contact_parser>nødkontakt))$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ac327231-7125-5e9e-8733-1d8104a1548d"
+    },
+    {
+      "action" : "make_call_on_speaker",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergency_contact_parser",
+        "contact__emergency_contact_parser" : "emergency_contact_parser"
+      },
+      "pattern" : "{hei} {siri} ring {til} (min|vår{t}|mi{tt}) (contact:emergency_contact_parser) på høyttaler {vær så snill}",
+      "priority" : 35,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ring(?:\\s+til)?(?:\\s+min|\\s+vår(?:t)?|\\s+mi(?:tt)?)\\s+(?P<contact>(?P<contact__emergency_contact_parser>nødkontakt))\\s+på\\s+høyttaler(?:\\s+vær\\s+så\\s+snill)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4bf33161-9bfe-55bc-b97c-c6595188dda2"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} hva er (klokka|klokken)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?hva\\s+er\\s+(?:klokka|klokken)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "df54c2ec-0e4e-5bdb-b712-e833970063c1"
+    },
+    {
+      "action" : "get_current_time",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} hva er (klokken|klokka) {her} nå",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?hva\\s+er\\s+(?:klokken|klokka)\\s+(?:her\\s+)?nå$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "151fea2b-59b7-571b-950c-9c8a4c443d70"
+    },
+    {
+      "action" : "call_911",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "emergencyServices",
+        "contact__emergencyServices" : "emergencyServices",
+        "situation" : "situation",
+        "situation__situation" : "situation"
+      },
+      "pattern" : "{hei} {siri} (situation:situation) (kan du|jeg trenger at du) (kontakter|ringer {til}) (contact:emergencyServices) {{jeg trenger} hjelp}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<situation>(?P<situation__situation>hjelp jeg er så redd|hjelp meg|jeg er deprimert og har lyst til å ta livet mitt|jeg er så lei av livet|jeg er så lei og trist|jeg føler meg svak|jeg har et anfall|jeg har problemer med å puste|jeg hater livet|jeg kommer til å dø|kommer jeg til å dø))\\s+(?:kan\\s+du|jeg\\s+trenger\\s+at\\s+du)(?:\\s+kontakter|\\s+ringer(?:\\s+til)?)(?P<contact>(?P<contact__emergencyServices>\\s+(?:Mental\\s+helse|Kirkens\\s+SOS|Alarmtelefonen\\s+for\\s+barn\\s+og\\s+unge|Kors\\s+på\\s+halsen|Hjelpetelefonen)|\\s+110|\\s+112|\\s+113|\\s+116 006|\\s+116 111|\\s+116 117|\\s+116 123|\\s+120|\\s+1412|\\s+224 00 040|\\s+800 33 321|\\s+ambulanse|\\s+ambulansen|\\s+ambulansepersonell|\\s+ambulansetjenesten|\\s+brannmann|\\s+brannmenn|\\s+brannstasjonen|\\s+brannvesen|\\s+brannvesenet|\\s+forgiftningsinformasjon|\\s+forgiftningsinformasjonen|\\s+forgiftningssentral|\\s+forgiftningssentralen|\\s+giftinformasjon|\\s+giftinformasjonen|\\s+giftkontrollhjelpelinje|\\s+giftkontrolllinje|\\s+giftkontrollnødlinje|\\s+giftkontrollsenter|\\s+giftkontrolltjenester|\\s+giftsentral|\\s+giftsentralen|\\s+helsevesen|\\s+helsevesenet|\\s+hjelp|\\s+hjelpelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+hotline(?:n)?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+legevakt|\\s+legevakta|\\s+legevakten|\\s+myndighetene|\\s+nasjonal forgiftningsinformasjon|\\s+nasjonal forgiftningssentral|\\s+nasjonal giftinformasjon|\\s+nasjonal giftkontrollhjelpelinje|\\s+nasjonal giftkontrolllinje|\\s+nasjonal giftkontrollnødlinje|\\s+nasjonal giftkontrollsenter|\\s+nasjonal giftsentral|\\s+nasjonale giftkontrolltjenester|\\s+nødetatene|\\s+nødhjelp|\\s+nødhjelpen|\\s+nødhjelpsnummeret|\\s+nødhjelpstjenestene|\\s+nødhjelpstjenester|\\s+nødtelefonen|\\s+nødtelefonnummeret|\\s+organisasjon(?:(?:en|er))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+politi|\\s+politiet|\\s+purken|\\s+redningstjeneste|\\s+redningstjenesten|\\s+selvmords(?:\\s+)?(?:hotline(?:n)?|støttelinje(?:(?:n|r))?|organisasjon(?:(?:en|er))?|hjelpelinje(?:(?:n|r))?)|\\s+sjukehuset|\\s+støttelinje(?:(?:n|r))?\\s+for(?:\\s+selvmord|\\s+selvmordsforsøk|\\s+selvmordstanker|\\s+selvdrap|\\s+(?:selvdraps|selvmords)(?:\\s+)?forebygging)|\\s+sykebil|\\s+sykebilen|\\s+sykehus|\\s+sykehuset))(?:\\s+(?:jeg\\s+trenger\\s+)?hjelp)?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid" : "6c7195c4-ade8-5e5c-ac2f-4bfcc0726662"
+    },
+    {
+      "action" : "call_911",
+      "context_free" : false,
+      "metadata" : {
+        "emergency_number" : "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser" : "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser" : "locale_emergency_number_parser",
+        "number" : "emergency_number_parser"
+      },
+      "pattern" : "{hei} {siri} (kan du|vær så snill {å}|vil du) (ringe|slå på tråden) {til|opp} (number:emergency_number_parser)",
+      "priority" : 10,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan\\s+du|vær\\s+så\\s+snill(?:\\s+å)?|vil\\s+du)\\s+(?:ringe|slå\\s+på\\s+tråden)\\s+(?:(?:til|opp)\\s+)?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>110|112|113))))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid" : "e117b0c7-c0d6-5b47-b100-85e8df3dd28b"
+    },
+    {
+      "action" : "call_911",
+      "context_free" : true,
+      "metadata" : {
+        "emergency_number" : "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser" : "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser" : "locale_emergency_number_parser",
+        "number" : "emergency_number_parser"
+      },
+      "pattern" : "{hei} {siri} {ring{e}} {til|opp} (number:emergency_number_parser)",
+      "priority" : 10,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:ring(?:e)?\\s+)?(?:(?:til|opp)\\s+)?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>110|112|113))))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid" : "7d6f6422-c3e5-58d8-ae26-fc1a4880b51d"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hei} {siri} facetime (contact:*{1,5})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?facetime\\s+(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8b2531d8-b91d-5422-ac43-0b8d9b8abbc3"
+    },
+    {
+      "action" : "facetime_audio_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hei} {siri} facetime {med} (contact:*{1,5}) på (høyttaler|lyd)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?facetime\\s+(?:med\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+på\\s+(?:høyttaler|lyd)$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "73212fc6-1649-5cf1-912f-62fb1716e97b"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hei} {siri} start facetime {med} (contact:*{1,5})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?start\\s+facetime\\s+(?:med\\s+)?(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ff75bd26-cd50-5177-8c68-5c1c6b4073e7"
+    },
+    {
+      "action" : "facetime_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hei} {siri} ring {til} {contact:*{1,3}} (på|med|i) facetime",
+      "priority" : 40,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ring\\s+(?:til\\s+)?(?:(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+)?(?:på|med|i)\\s+facetime$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9d471bfa-de7a-50e2-8bc3-b14b033f3906"
+    },
+    {
+      "action" : "facetime_audio_call",
+      "context_free" : false,
+      "metadata" : {
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hei} {siri} ring {til} {contact:*{1,3}} (på|med|i) facetime audio",
+      "priority" : 40,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ring\\s+(?:til\\s+)?(?:(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+)?(?:på|med|i)\\s+facetime\\s+audio$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "1f9fe1e2-dfad-5dfd-bc23-ec0dda871c4b"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='home_device_control')",
+      "context_free" : false,
+      "metadata" : {
+        "homeAutomation" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hei} {siri} (homeAutomation:*{1,5})",
+      "priority" : 55,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<homeAutomation>[^\\s]+(?:\\s+[^\\s]+){0,4})$",
+      "required_labels" : {
+        "homeAutomation" : [
+          "homeAutomationScene"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "35dcca86-3bfa-59c4-b35d-59bbfe690a66"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "team" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hei} {siri} hva er stillingen til (team:*{1,5}) i dag",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?hva\\s+er\\s+stillingen\\s+til\\s+(?P<team>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+i\\s+dag$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7f3bcc75-50f5-5154-aa97-d880b0105d37"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} hva er været {for} {i dag|i natt|i morgen|nå|ute|her}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?hva\\s+er\\s+været(?:\\s+for)?(?:\\s+(?:i\\s+dag|i\\s+natt|i\\s+morgen|nå|ute|her))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "545f8e5d-eae9-5c79-acae-2a355724b741"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "unit" : "wildcard{1..*3}",
+        "unit2" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hei} {siri} hvor mange (unit:*{1,3}) er (unit2:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?hvor\\s+mange\\s+(?P<unit>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+er\\s+(?P<unit2>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3e99c634-6906-5171-a50d-8a023d0ffe30"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "word" : "wildcard{1..*1}"
+      },
+      "pattern" : "{hei} {siri} hvordan staves (word:*{1,1})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?hvordan\\s+staves\\s+(?P<word>[^\\s]+)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "030b287a-055c-528b-a6d5-8fcf396aa220"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "thing" : "wildcard{1..*10}"
+      },
+      "pattern" : "{hei} {siri} kan hunder spise (thing:*{1,10})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?kan\\s+hunder\\s+spise\\s+(?P<thing>[^\\s]+(?:\\s+[^\\s]+){0,9})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "5d996d02-9154-5cc3-bf8e-6d7061fcb13f"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} kommer det til å regne {i dag|i natt|i morgen|nå|ute|her}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?kommer\\s+det\\s+til\\s+å\\s+regne(?:\\s+(?:i\\s+dag|i\\s+natt|i\\s+morgen|nå|ute|her))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "087decb8-9da4-5ae1-980e-c880421d7b9a"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "place" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hei} {siri} når (stenger|åpner) (place:*{1,3})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?når\\s+(?:stenger|åpner)\\s+(?P<place>[^\\s]+(?:\\s+[^\\s]+){0,2})$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6cd92d16-99f7-5ce7-9460-f30bd1df5d95"
+    },
+    {
+      "action" : "infodomain",
+      "context_free" : false,
+      "metadata" : {
+        "team" : "wildcard{1..*5}"
+      },
+      "pattern" : "{hei} {siri} når er (team:*{1,5}) kampen i dag",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?når\\s+er\\s+(?P<team>[^\\s]+(?:\\s+[^\\s]+){0,4})\\s+kampen\\s+i\\s+dag$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e5277184-4508-50c9-ba29-ed716119040e"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (bytte|bytt|skifte|skift|ny|neste|sette på|sett på) (sang|låt|melodi)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:bytte|bytt|skifte|skift|ny|neste|sette\\s+på|sett\\s+på)\\s+(?:sang|låt|melodi)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a37c9f5d-3e62-5510-aafd-7f919eed2dd7"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (gjenopptar du|gjenoppta|fortsetter du med|fortsetter du|fortsett med|fortsett|fortsetter du med|fortsetter du|fortsette med|fortsette|spiller du av|spiller du|spill av|spill) {den|denne} {film}musikken {som er paus(et|a) {nå}|som er stopp(et|a) {nå}}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:gjenopptar\\s+du|gjenoppta|fortsetter\\s+du\\s+med|fortsetter\\s+du|fortsett\\s+med|fortsett|fortsetter\\s+du\\s+med|fortsetter\\s+du|fortsette\\s+med|fortsette|spiller\\s+du\\s+av|spiller\\s+du|spill\\s+av|spill)\\s+(?:(?:den|denne)\\s+)?(?:film)?musikken(?:(?:\\s+som\\s+er\\s+paus(?:et|a)(?:\\s+nå)?|\\s+som\\s+er\\s+stopp(?:et|a)(?:\\s+nå)?))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "94f4acb3-da18-5d80-8d9b-1ce71481013d"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (går du|gå|spoler du|spol) tilbake (til den forrige låt(en|a)|en sang|en låt)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:går\\s+du|gå|spoler\\s+du|spol)\\s+tilbake\\s+(?:til\\s+den\\s+forrige\\s+låt(?:en|a)|en\\s+sang|en\\s+låt)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7806de2f-bd1c-556c-8192-9d0048f34214"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (spiller du av|spiller du|spill av|spill|(slår du|slå|skrur du|skru) på|kjører du på med|kjøre på med|setter du på|sett på) neste (sang|låt|melodi)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:spiller\\s+du\\s+av|spiller\\s+du|spill\\s+av|spill|(?:slår\\s+du|slå|skrur\\s+du|skru)\\s+på|kjører\\s+du\\s+på\\s+med|kjøre\\s+på\\s+med|setter\\s+du\\s+på|sett\\s+på)\\s+neste\\s+(?:sang|låt|melodi)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "b34d8eb6-7393-5897-b2ad-7cf4e721bba5"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (spiller du av|spiller du|spill av|spill|(slår du|slå|skrur du|skru) på|kjører du på med|kjøre på med|setter du på|sett på) {den} {neste} (sangen|låt(en|a)|melodien) {etter denne}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:spiller\\s+du\\s+av|spiller\\s+du|spill\\s+av|spill|(?:slår\\s+du|slå|skrur\\s+du|skru)\\s+på|kjører\\s+du\\s+på\\s+med|kjøre\\s+på\\s+med|setter\\s+du\\s+på|sett\\s+på)\\s+(?:den\\s+)?(?:neste\\s+)?(?:sangen|låt(?:en|a)|melodien)(?:\\s+etter\\s+denne)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "02424a21-82dd-55f7-aeb7-92c26a07bace"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (spiller du av|spiller du|spill av|spill|avspiller du|avspill|player du|play)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:spiller\\s+du\\s+av|spiller\\s+du|spill\\s+av|spill|avspiller\\s+du|avspill|player\\s+du|play)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "9d2c86e6-2ba7-5067-acf1-275cfda20fa0"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (spiller du av|spiller du|spill av|spill|skrur du på|skru på|setter du på|sett på) (forrige (sang|låt)|den forrige låt(en|a))",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:spiller\\s+du\\s+av|spiller\\s+du|spill\\s+av|spill|skrur\\s+du\\s+på|skru\\s+på|setter\\s+du\\s+på|sett\\s+på)\\s+(?:forrige\\s+(?:sang|låt)|den\\s+forrige\\s+låt(?:en|a))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "90da7ff7-4d4e-5f65-acbc-f750d98fa81b"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} fortsett",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?fortsett$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "02ae171c-000d-597d-83e4-7dd91ea57175"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} hopp over",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?hopp\\s+over$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6c1818d4-105b-591d-9d35-e90d6ced9081"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} neste sang",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?neste\\s+sang$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ed70b5ce-6d30-5152-a0cb-2cbc94afd161"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} pause",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?pause$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "fe7acc5d-f052-58fd-9bf7-9eaac1a9ff98"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} pause musikken",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?pause\\s+musikken$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "83d78f58-713e-5286-8084-7fb0b6ea166e"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} pause musikk{en}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?pause\\s+musikk(?:en)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7a6aedf5-d64b-50e0-b0e4-070bebb999fd"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} spill",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?spill$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "34067205-6bbf-598b-8119-242eea4ee312"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} spill musikk",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?spill\\s+musikk$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d4a8249c-ae54-51fa-beb4-b41d02f79d2d"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} stopp",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?stopp$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c9e686f9-30d4-532f-80f4-1ce97029a9eb"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} stopp avspilling",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?stopp\\s+avspilling$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "919f029e-16d4-5a8a-ae94-3d35fd91873a"
+    },
+    {
+      "action" : "play_media",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} {kan du} (avspille|spille {av}|playe {av})",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan\\s+du\\s+)?(?:avspille|spille(?:\\s+av)?|playe(?:\\s+av)?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7d93a402-7153-5d17-896c-96a49e17d041"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} {kan du} (gå|spole) tilbake (til forrige (sang|låt)|en sang|en låt)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan\\s+du\\s+)?(?:gå|spole)\\s+tilbake\\s+(?:til\\s+forrige\\s+(?:sang|låt)|en\\s+sang|en\\s+låt)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "6e0b96cf-8cef-50b3-aae1-04c9c83c0da2"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} {kan du} (gå|spole|hoppe|bytte|skippe|skipe) {frem|fram} (til neste|en) (sang|låt|melodi)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan\\s+du\\s+)?(?:gå|spole|hoppe|bytte|skippe|skipe)\\s+(?:(?:frem|fram)\\s+)?(?:til\\s+neste|en)\\s+(?:sang|låt|melodi)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "27666cff-c179-5cae-9628-b0bdada5f4eb"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+        "play_verb" : "play_verb",
+        "play_verb__play_verb" : "play_verb"
+      },
+      "pattern" : "{hei} {siri} {kan du} (play_verb:play_verb) (et ny|en ny|ny|neste) (sang|låt)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan\\s+du\\s+)?(?P<play_verb>(?P<play_verb__play_verb>sett(?:e)?\\s+på|spill(?:e)?|ta|ta på))\\s+(?:et\\s+ny|en\\s+ny|ny|neste)\\s+(?:sang|låt)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "7cd3066b-7cfb-530f-8f26-bf26255abf39"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} {kan du} (spille av|spille|(slå|skru) på|kjøre på med|sette på) (neste (sang|låt|melodi)|den neste (sangen|låt(en|a)|melodien))",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan\\s+du\\s+)?(?:spille\\s+av|spille|(?:slå|skru)\\s+på|kjøre\\s+på\\s+med|sette\\s+på)\\s+(?:neste\\s+(?:sang|låt|melodi)|den\\s+neste\\s+(?:sangen|låt(?:en|a)|melodien))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "92b361b7-a08b-59b4-8fa4-d46c0db4b2b4"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} {sett|skru|slå|ha|ta|putt} musikk{en} på pause",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:(?:sett|skru|slå|ha|ta|putt)\\s+)?musikk(?:en)?\\s+på\\s+pause$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "71f92352-56aa-583f-90b6-3507ec2a4bd9"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='playback_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} {skru på|spill av|sett på} forrige sang",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:(?:skru\\s+på|spill\\s+av|sett\\s+på)\\s+)?forrige\\s+sang$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "8b4b777d-53e8-50d9-ab6d-455f9f2ca935"
+    },
+    {
+      "action" : "search_and_read(query='messages', entity_types='MessageEntity', structured_query='{\"messages\":[{}]}')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} meldinger",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?meldinger$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4ef1a487-56ac-594f-99eb-888a6a4642bc"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hei} {siri} (aktiverer du|aktiver|(skrur du|skru|slår du|slå|setter du|sett|tar du|ta|har du|ha|får du|få) på){ innstillingen {som heter|med navn{et}}} (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:aktiverer\\s+du|aktiver|(?:skrur\\s+du|skru|slår\\s+du|slå|setter\\s+du|sett|tar\\s+du|ta|har\\s+du|ha|får\\s+du|få)\\s+på)(?:\\s+innstillingen(?:(?:\\s+som\\s+heter|\\s+med\\s+navn(?:et)?))?)?\\s+(?P<s>(?P<s__connection_settings>bluetooth|delt internett|internett|mobildata|wi-fi))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "15d1b6a2-0ca4-52cc-a34c-82040d97583a"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hei} {siri} (aktiverer du|aktiver|(skrur du|skru|slår du|slå|setter du|sett|tar du|ta|har du|ha|får du|få) på){ innstillingen {som heter|med navn{et}}} (s:flashlight_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:aktiverer\\s+du|aktiver|(?:skrur\\s+du|skru|slår\\s+du|slå|setter\\s+du|sett|tar\\s+du|ta|har\\s+du|ha|får\\s+du|få)\\s+på)(?:\\s+innstillingen(?:(?:\\s+som\\s+heter|\\s+med\\s+navn(?:et)?))?)?\\s+(?P<s>(?P<s__flashlight_settings>flash light|lampe|lommelykt|lommelykten|lykt))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f80b4706-fbdc-5282-b92d-3bb7e95ea3ac"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hei} {siri} (aktiverer du|aktiver|(skrur du|skru|slår du|slå|setter du|sett|tar du|ta|har du|ha|får du|få) på){ innstillingen {som heter|med navn{et}}} (s:mode_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:aktiverer\\s+du|aktiver|(?:skrur\\s+du|skru|slår\\s+du|slå|setter\\s+du|sett|tar\\s+du|ta|har\\s+du|ha|får\\s+du|få)\\s+på)(?:\\s+innstillingen(?:(?:\\s+som\\s+heter|\\s+med\\s+navn(?:et)?))?)?\\s+(?P<s>(?P<s__mode_settings>flymodus|ikke forstyrr|mørkt utseende|nattmodus|sparebluss))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a980baed-71a7-5d5e-85a2-07bc44f9d877"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hei} {siri} (deaktiverer du|(skrur|slår) du av|deaktiver|(skru|slå|ta) av) (s:connection_settings) {innstilling{en}}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:deaktiverer\\s+du|(?:skrur|slår)\\s+du\\s+av|deaktiver|(?:skru|slå|ta)\\s+av)\\s+(?P<s>(?P<s__connection_settings>bluetooth|delt internett|internett|mobildata|wi-fi))(?:\\s+innstilling(?:en)?)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "4c579525-d4ec-5e7b-a85d-80aad31d2a7e"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hei} {siri} (deaktiverer du|(skrur|slår) du av|deaktiver|(skru|slå|ta) av) (s:mode_settings) {innstilling{en}}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:deaktiverer\\s+du|(?:skrur|slår)\\s+du\\s+av|deaktiver|(?:skru|slå|ta)\\s+av)\\s+(?P<s>(?P<s__mode_settings>flymodus|ikke forstyrr|mørkt utseende|nattmodus|sparebluss))(?:\\s+innstilling(?:en)?)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "5cdac3e8-918f-57cf-8f8f-e26e176e2667"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hei} {siri} (deaktiver|(skru|slå) av|avslutt|slutt med) (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:deaktiver|(?:skru|slå)\\s+av|avslutt|slutt\\s+med)\\s+(?P<s>(?P<s__connection_settings>bluetooth|delt internett|internett|mobildata|wi-fi))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "bb047658-8d42-55cb-8b97-43ed774ac251"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hei} {siri} (deaktiver|(skru|slå) av|avslutt|slutt med) (s:flashlight_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:deaktiver|(?:skru|slå)\\s+av|avslutt|slutt\\s+med)\\s+(?P<s>(?P<s__flashlight_settings>flash light|lampe|lommelykt|lommelykten|lykt))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "24ba7bc9-b991-546a-9a97-33e24c6b00e8"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hei} {siri} (deaktiver|(skru|slå) av|avslutt|slutt med) (s:mode_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:deaktiver|(?:skru|slå)\\s+av|avslutt|slutt\\s+med)\\s+(?P<s>(?P<s__mode_settings>flymodus|ikke forstyrr|mørkt utseende|nattmodus|sparebluss))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "ce14f702-570d-52e4-9598-62441af132bd"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hei} {siri} (demp|sett ned|senk|skru ned|reduser) (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:demp|sett\\s+ned|senk|skru\\s+ned|reduser)\\s+(?P<s>(?P<s__volume_settings>lyd|ringelyd|støykontroll|talekontroll|volum))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "f6a82998-640f-5070-9d43-d476358062d4"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hei} {siri} (kan|vil|kunne|ville) du (aktivere|(skru|slå|sette|ta|ha|få) på) (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan|vil|kunne|ville)\\s+du\\s+(?:aktivere|(?:skru|slå|sette|ta|ha|få)\\s+på)\\s+(?P<s>(?P<s__connection_settings>bluetooth|delt internett|internett|mobildata|wi-fi))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "3aaabbac-7986-5e11-85ec-30440960bd7e"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hei} {siri} (kan|vil|kunne|ville) du (aktivere|(skru|slå|sette|ta|ha|få) på) (s:flashlight_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan|vil|kunne|ville)\\s+du\\s+(?:aktivere|(?:skru|slå|sette|ta|ha|få)\\s+på)\\s+(?P<s>(?P<s__flashlight_settings>flash light|lampe|lommelykt|lommelykten|lykt))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e1978954-7010-529c-b7e7-5ef50fd6bce2"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hei} {siri} (ned|mindre|lavere) (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:ned|mindre|lavere)\\s+(?P<s>(?P<s__volume_settings>lyd|ringelyd|støykontroll|talekontroll|volum))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "f84f268f-ff55-59f1-95dc-5591ad581e3a"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hei} {siri} (s:flashlight_settings) {innstilling{en}} på",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<s>(?P<s__flashlight_settings>flash light|lampe|lommelykt|lommelykten|lykt))\\s+(?:innstilling(?:en)?\\s+)?på$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "83296fcb-e7db-5c03-95a9-8d3d8553740c"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hei} {siri} (s:mode_settings) {innstilling{en}} på",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<s>(?P<s__mode_settings>flymodus|ikke forstyrr|mørkt utseende|nattmodus|sparebluss))\\s+(?:innstilling(?:en)?\\s+)?på$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "327f893f-f781-5fc5-8c79-add3f21cab0b"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "of" : "on_off",
+        "of__on_off" : "on_off",
+        "s" : "settings",
+        "s__settings" : "settings"
+      },
+      "pattern" : "{hei} {siri} (s:settings) (of:on_off)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<s>(?P<s__settings>bluetooth|data|flymodus|ikke forstyrr|lommelykt|mobildata|strømsparingsmodus|trådløst nett|wifi))\\s+(?P<of>(?P<of__on_off>av|på))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "f88970a6-91ee-5e50-ab91-ea1ec62f551f"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hei} {siri} (skrur du opp|skru opp|øker du|øk|setter du opp|sett opp|forsterker du|forsterk) (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:skrur\\s+du\\s+opp|skru\\s+opp|øker\\s+du|øk|setter\\s+du\\s+opp|sett\\s+opp|forsterker\\s+du|forsterk)\\s+(?P<s>(?P<s__volume_settings>lyd|ringelyd|støykontroll|talekontroll|volum))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2d66b5f5-7c6d-559f-8bbf-4c8d704b09e1"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "quieter" : "quieter_1",
+        "quieter__quieter_1" : "quieter_1",
+        "volume" : "volume_1",
+        "volume__volume_1" : "volume_1"
+      },
+      "pattern" : "{hei} {siri} ennå (quieter:quieter_1) (volume:volume_1)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ennå\\s+(?P<quieter>(?P<quieter__quieter_1>mere rolig|mere stille|roligere|stillere))\\s+(?P<volume>(?P<volume__volume_1>lyden|lydnivå|lydnivået|volumet|volumnivå|volumnivået))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "420b8499-e543-5a1c-b31c-689995dc8116"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} lumos",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?lumos$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "2dc98421-ad3d-5a70-8aaf-5ec6dd618208"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} nox",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?nox$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "c082b349-16f7-54e0-83db-6428be019400"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} skru (opp|ned) (volumet|lyden|lydstyrken)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?skru\\s+(?:opp|ned)\\s+(?:volumet|lyden|lydstyrken)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "6521152a-e62f-58fe-8848-efd5efb0e5c1"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} skru (opp|ned) for (lyden|lydstyrken|volumet)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?skru\\s+(?:opp|ned)\\s+for\\s+(?:lyden|lydstyrken|volumet)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "5eb38f35-9092-5786-8169-99d22f88da76"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} slå (av|på) (wifi|strømsparingsmodus|bluetooth|flymodus|mobildata)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?slå\\s+(?:av|på)\\s+(?:wifi|strømsparingsmodus|bluetooth|flymodus|mobildata)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "e392695d-e713-5fc9-967b-d5f3127853c9"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} slå (av|på) lommelykt",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?slå\\s+(?:av|på)\\s+lommelykt$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "a7ad0520-13d5-5664-9fa3-d8fcfdca1472"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "connection_settings",
+        "s__connection_settings" : "connection_settings"
+      },
+      "pattern" : "{hei} {siri} {av} (s:connection_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:av\\s+)?(?P<s>(?P<s__connection_settings>bluetooth|delt internett|internett|mobildata|wi-fi))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "dc82e6f8-f749-5678-9336-4a255515f2c3"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "flashlight_settings",
+        "s__flashlight_settings" : "flashlight_settings"
+      },
+      "pattern" : "{hei} {siri} {av} (s:flashlight_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:av\\s+)?(?P<s>(?P<s__flashlight_settings>flash light|lampe|lommelykt|lommelykten|lykt))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "884fc60c-2c95-5397-9440-ea868d68a2aa"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "mode_settings",
+        "s__mode_settings" : "mode_settings"
+      },
+      "pattern" : "{hei} {siri} {av} (s:mode_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:av\\s+)?(?P<s>(?P<s__mode_settings>flymodus|ikke forstyrr|mørkt utseende|nattmodus|sparebluss))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "151dc7ba-8e65-5a0e-bf0e-14ce38d74b52"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hei} {siri} {(jeg vil|(kan|vil) du)} (ta|sette) {på} {enda|ennå} (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:(?:jeg\\s+vil|(?:kan|vil)\\s+du)\\s+)?(?:ta|sette)\\s+(?:på\\s+)?(?:(?:enda|ennå)\\s+)?(?P<s>(?P<s__volume_settings>lyd|ringelyd|støykontroll|talekontroll|volum))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2c4aeaba-b65d-54b5-aadd-aa9f478d27bd"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hei} {siri} {(ta|sett) på} høyere (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:(?:ta|sett)\\s+på\\s+)?høyere\\s+(?P<s>(?P<s__volume_settings>lyd|ringelyd|støykontroll|talekontroll|volum))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "a0661cde-3175-553d-a2f0-fe73e6335a2d"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hei} {siri} {gjør {du}} {mer|mere} (s:volume_settings)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:gjør\\s+(?:du\\s+)?)?(?:(?:mer|mere)\\s+)?(?P<s>(?P<s__volume_settings>lyd|ringelyd|støykontroll|talekontroll|volum))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "0fd8b6f7-7d0e-56d9-9f0d-43abe1e6d62a"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hei} {siri} {kan du|kunne du|jeg vil} (s:volume_settings) ned",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:(?:kan\\s+du|kunne\\s+du|jeg\\s+vil)\\s+)?(?P<s>(?P<s__volume_settings>lyd|ringelyd|støykontroll|talekontroll|volum))\\s+ned$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "e5227c58-1fae-5d7d-bfbe-200e503328cd"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free" : false,
+      "metadata" : {
+        "s" : "volume_settings",
+        "s__volume_settings" : "volume_settings"
+      },
+      "pattern" : "{hei} {siri} {kan du|vil du} (skru opp|øke|øk|hev{e}) (s:volume_settings) {mer|noe mer|høyere}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:(?:kan\\s+du|vil\\s+du)\\s+)?(?:skru\\s+opp|øke|øk|hev(?:e)?)\\s+(?P<s>(?P<s__volume_settings>lyd|ringelyd|støykontroll|talekontroll|volum))(?:\\s+(?:mer|noe\\s+mer|høyere))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d42fb8b9-dca3-5cb4-beeb-380c001439e8"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (skjerm bilde|skjermbilde|skjerm dump|skjermdump|screen shot|screenshot)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:skjerm\\s+bilde|skjermbilde|skjerm\\s+dump|skjermdump|screen\\s+shot|screenshot)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "16420da5-ef17-5160-b7a7-beb661204c1d"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} start på nytt",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?start\\s+på\\s+nytt$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "99176176-4a84-5157-902c-85935bb7a7e8"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} ta {skjerm}bilde",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ta\\s+(?:skjerm)?bilde$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "90516f0e-3a6e-51c4-ac1c-9aed9ce227ad"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} ta{r du} (et skjerm bilde|et skjermbilde|skjerm bilde|skjermbilde|en skjerm dump|en skjermdump|skjerm dump|skjermdump)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ta(?:r\\s+du)?\\s+(?:et\\s+skjerm\\s+bilde|et\\s+skjermbilde|skjerm\\s+bilde|skjermbilde|en\\s+skjerm\\s+dump|en\\s+skjermdump|skjerm\\s+dump|skjermdump)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "2d8e1774-b01a-507a-9b2b-b675c853a608"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} ta{r du} (skjerm bilde|skjermbilde|skjerm dump|skjermdump|screen shot|screenshot)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ta(?:r\\s+du)?\\s+(?:skjerm\\s+bilde|skjermbilde|skjerm\\s+dump|skjermdump|screen\\s+shot|screenshot)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "7c08abfd-341e-5173-bc51-010bfbc85c92"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} {vær så snill} ta{r du} (et skjerm bilde|et skjermbilde|en skjerm dump|en skjermdump|en screen shot|en screenshot)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:vær\\s+så\\s+snill\\s+)?ta(?:r\\s+du)?\\s+(?:et\\s+skjerm\\s+bilde|et\\s+skjermbilde|en\\s+skjerm\\s+dump|en\\s+skjermdump|en\\s+screen\\s+shot|en\\s+screenshot)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "5f2d42e3-05c4-5d28-9a6c-1f258528e3b7"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} {vær så snill} {(kan|kunne|vil|ville) du} (reboote|gjøre omstart|starte på nytt) {takk}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:vær\\s+så\\s+snill\\s+)?(?:(?:kan|kunne|vil|ville)\\s+du\\s+)?(?:reboote|gjøre\\s+omstart|starte\\s+på\\s+nytt)(?:\\s+takk)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "450be47d-fc33-5e54-a89c-262e5eb4ca4f"
+    },
+    {
+      "action" : "siri_x_mini_tool(tool='system_power_control')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} {slå} av",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:slå\\s+)?av$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "a5b7476b-63f5-5179-b59c-529d1f4023b7"
+    },
+    {
+      "action" : "do_not_skim",
+      "context_free" : false,
+      "metadata" : {
+        "app" : "wildcard{1..*3}",
+        "contact" : "wildcard{1..*3}"
+      },
+      "pattern" : "{hei} {siri} ring {til} {contact:*{1,3}} (på|med|i) {app:*{1,3}}",
+      "priority" : 45,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?ring\\s+(?:til\\s+)?(?:(?P<contact>[^\\s]+(?:\\s+[^\\s]+){0,2})\\s+)?(?:på|med|i)(?:\\s+(?P<app>[^\\s]+(?:\\s+[^\\s]+){0,2}))?$",
+      "required_labels" : {
+        "contact" : [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "d94a1c87-c7f2-5158-bded-9afccaabfe0e"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} (duration:duration) vær så snill",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer))\\s+)?(?:og\\s+)?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter))\\s+)?(?:og\\s+)?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder))\\s+)?)vær\\s+så\\s+snill$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "5c0edf0f-4c0b-53d7-ae22-9c7ecf7ffb01"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration_non_empty" : "duration_non_empty",
+        "n" : "int|basic_number",
+        "n__basic_number" : "basic_number",
+        "n__int" : "int",
+        "n_1" : "int|basic_number",
+        "n_1__basic_number" : "basic_number",
+        "n_1__int" : "int",
+        "n_2" : "int|basic_number",
+        "n_2__basic_number" : "basic_number",
+        "n_2__int" : "int",
+        "unit" : "hour_parser|minute_parser|second_parser",
+        "unit__hour_parser" : "hour_parser",
+        "unit__minute_parser" : "minute_parser",
+        "unit__second_parser" : "second_parser",
+        "unit_1" : "hour_parser|minute_parser|second_parser",
+        "unit_1__hour_parser" : "hour_parser",
+        "unit_1__minute_parser" : "minute_parser",
+        "unit_1__second_parser" : "second_parser",
+        "unit_2" : "hour_parser|minute_parser|second_parser",
+        "unit_2__hour_parser" : "hour_parser",
+        "unit_2__minute_parser" : "minute_parser",
+        "unit_2__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} (duration_non_empty:duration_non_empty)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<duration_non_empty>(?P<n>(?:(?P<n__int>\\d+)|(?P<n__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit>(?:(?P<unit__hour_parser>t|time|timer)|(?P<unit__minute_parser>m|min|minutt|minutter)|(?P<unit__second_parser>s|sek|sekund|sekunder)))(?:\\s+og)?(?:\\s+(?P<n_1>(?:(?P<n_1__int>\\d+)|(?P<n_1__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_1>(?:(?P<unit_1__hour_parser>t|time|timer)|(?P<unit_1__minute_parser>m|min|minutt|minutter)|(?P<unit_1__second_parser>s|sek|sekund|sekunder))))?(?:\\s+og)?(?:\\s+(?P<n_2>(?:(?P<n_2__int>\\d+)|(?P<n_2__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_2>(?:(?P<unit_2__hour_parser>t|time|timer)|(?P<unit_2__minute_parser>m|min|minutt|minutter)|(?P<unit_2__second_parser>s|sek|sekund|sekunder))))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "5af2c04c-80a9-5c74-842e-d680391232f2"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} (jeg vil|kan du) (sette på|sette|slå på|slå|stille) (en timer|timer|timeren|en nedtelling|nedtelling|nedtellingen|klokken|klokka) (på|til|for) (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:jeg\\s+vil|kan\\s+du)\\s+(?:sette\\s+på|sette|slå\\s+på|slå|stille)\\s+(?:en\\s+timer|timer|timeren|en\\s+nedtelling|nedtelling|nedtellingen|klokken|klokka)\\s+(?:på|til|for)(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "d50c02c4-5349-5872-b3f4-51330650dfa5"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} (jeg vil|kan du) telle ned (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:jeg\\s+vil|kan\\s+du)\\s+telle\\s+ned(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "11f95ca3-acb1-5fef-b326-99248cc8c9d6"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} (lag|sett|start) {en} timer på (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:lag|sett|start)\\s+(?:en\\s+)?timer\\s+på(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "1950daf7-52f1-5603-a7a9-1333e5a2c276"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "n" : "int|basic_number",
+        "n__basic_number" : "basic_number",
+        "n__int" : "int",
+        "timer" : "timer",
+        "timer__timer" : "timer"
+      },
+      "pattern" : "{hei} {siri} (n:int|basic_number) (minutters|times) (timer:timer)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?P<n>(?:(?P<n__int>\\d+)|(?P<n__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?:minutters|times)\\s+(?P<timer>(?P<timer__timer>nedtelling|tidtaker|timer))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "b3b5bdbc-e0ea-53f2-958b-9fa43e2ede97"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} (setter du|sett|slår du|slå|stiller du|still) {på} (en timer|timer|timeren|en nedtelling|nedtelling|nedtellingen|klokken|klokka) (på|til|for) (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:setter\\s+du|sett|slår\\s+du|slå|stiller\\s+du|still)\\s+(?:på\\s+)?(?:en\\s+timer|timer|timeren|en\\s+nedtelling|nedtelling|nedtellingen|klokken|klokka)\\s+(?:på|til|for)(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "3d4b3779-5be2-5d87-bb6b-78fd03fdb1a2"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} (stopp|kanseller|avbryt|stans|slå av|skru av) alle (timerne|nedtellingene) {mine|jeg har på}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:stopp|kanseller|avbryt|stans|slå\\s+av|skru\\s+av)\\s+alle\\s+(?:timerne|nedtellingene)(?:\\s+(?:mine|jeg\\s+har\\s+på))?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "a86e6516-d82d-5d93-b67d-7dc2924a8a4c"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} sett timer (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?sett\\s+timer(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "531132f8-2877-52bd-87f2-607594818007"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} start nedtelling{stid} (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?start\\s+nedtelling(?:stid)?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "bcc9654e-7dad-5cfa-a506-07f06bc29bf7"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "timer" : "timer",
+        "timer__timer" : "timer",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} start {en} (timer:timer) {på} (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?start\\s+(?:en\\s+)?(?P<timer>(?P<timer__timer>nedtelling|tidtaker|timer))(?:\\s+på)?(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "e8395650-334d-51c2-883a-ac20ab246307"
+    },
+    {
+      "action" : "stop_timers(plurality='plural')",
+      "context_free" : false,
+      "metadata" : {
+        "timere" : "timers",
+        "timere__timers" : "timers"
+      },
+      "pattern" : "{hei} {siri} stopp alle {mine} (timere:timers)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?stopp\\s+alle\\s+(?:mine\\s+)?(?P<timere>(?P<timere__timers>nedtellinger|tidtakere|timere))$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "6bc223fe-bf71-5a6c-95fe-0c685f2afb86"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} tell ned (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?tell\\s+ned(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "1ba0bac2-783b-5856-967f-13bae853fa3d"
+    },
+    {
+      "action" : "set_timer",
+      "context_free" : false,
+      "metadata" : {
+        "duration" : "duration",
+        "n_h" : "int|basic_number",
+        "n_h__basic_number" : "basic_number",
+        "n_h__int" : "int",
+        "n_m" : "int|basic_number",
+        "n_m__basic_number" : "basic_number",
+        "n_m__int" : "int",
+        "n_s" : "int|basic_number",
+        "n_s__basic_number" : "basic_number",
+        "n_s__int" : "int",
+        "unit_h" : "hour_parser",
+        "unit_h__hour_parser" : "hour_parser",
+        "unit_m" : "minute_parser",
+        "unit_m__minute_parser" : "minute_parser",
+        "unit_s" : "second_parser",
+        "unit_s__second_parser" : "second_parser"
+      },
+      "pattern" : "{hei} {siri} timer (duration:duration)",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?timer(?P<duration>(?:\\s+(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_h>(?P<unit_h__hour_parser>t|time|timer)))?(?:\\s+og)?(?:\\s+(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_m>(?P<unit_m__minute_parser>m|min|minutt|minutter)))?(?:\\s+og)?(?:\\s+(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>en|fem|fire|ni|null|seks|sju|syv|ti|to|tre|åtte)))\\s+(?P<unit_s>(?P<unit_s__second_parser>s|sek|sekund|sekunder)))?)$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri",
+        "contextFree"
+      ],
+      "uuid" : "bb3f3a64-67e6-56a3-ae36-7020824a5336"
+    },
+    {
+      "action" : "stop_timers(plurality='single')",
+      "context_free" : false,
+      "metadata" : {
+
+      },
+      "pattern" : "{hei} {siri} {kan du} (skru av|slå av|stopp{e}|kanseller{e}|avbryt{e}|stans{e}) (timeren|timer|nedtellingen|nedtelling) {min}",
+      "priority" : 50,
+      "regex" : "^(?:hei\\s+)?(?:siri\\s+)?(?:kan\\s+du\\s+)?(?:skru\\s+av|slå\\s+av|stopp(?:e)?|kanseller(?:e)?|avbryt(?:e)?|stans(?:e)?)\\s+(?:timeren|timer|nedtellingen|nedtelling)(?:\\s+min)?$",
+      "required_labels" : {
+
+      },
+      "scope" : [
+        "siri"
+      ],
+      "uuid" : "2372b18b-7a2f-5821-9971-08d8f97ab82d"
+    }
+  ],
+  "version" : "5500000.22501.0"
+}

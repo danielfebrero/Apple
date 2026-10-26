@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>TextAssistantSmartReplyGenerationIFP</string>
+	<key>maximum_duration</key>
+	<integer>100</integer>
+	<key>signposts</key>
+	<array>
+		<dict>
+			<key>start</key>
+			<true/>
+			<key>end</key>
+			<true/>
+			<key>subsystem</key>
+			<string>com.apple.InputAnalytics</string>
+			<key>category</key>
+			<string>TextAssistant</string>
+			<key>name</key>
+			<string>SmartReplyGenerate</string>
+			<key>environment_field_names</key>
+			<array>
+				<string>Result</string>
+			</array>
+		</dict>
+		<dict>
+			<key>subsystem</key>
+			<string>com.apple.modelmanager</string>
+			<key>category</key>
+			<string>OSSignPoster</string>
+			<key>name</key>
+			<string>Asset Transition Request</string>
+			<key>early_allowance</key>
+			<integer>5</integer>
+			<key>environment</key>
+			<array>
+				<dict>
+					<key>field_name</key>
+					<string>assetIdentifier</string>
+					<key>merge_strategy</key>
+					<string>last</string>
+					<key>sharing_strategy</key>
+					<string>all</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

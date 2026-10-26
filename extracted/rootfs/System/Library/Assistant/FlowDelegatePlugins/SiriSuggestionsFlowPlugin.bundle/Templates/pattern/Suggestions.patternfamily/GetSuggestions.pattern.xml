@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pattern xmlns="urn:apple:names:siri:pattern:1.0" type="pattern.ResultSet" id="Suggestions#GetSuggestions">
+
+    <meta name="description" value="Executed when the user asks What can i do"/>
+    
+  <group name="Item">
+    <dialog id="Suggestions#GetSuggestions_Dialog#suggestions"/>
+    <visual id="Suggestions#GetSuggestions_Visual#Response*"/>
+  </group>
+
+</pattern>

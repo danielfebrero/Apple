@@ -1,0 +1,85 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "storagePrecision": "Mixed (Int8, Float32)",
+    "outputSchema": [
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float32",
+        "formattedType": "MultiArray (Float32)",
+        "shortDescription": "",
+        "shape": "[]",
+        "name": "softmax_Softmax",
+        "type": "MultiArray"
+      }
+    ],
+    "modelParameters": [],
+    "specificationVersion": 5,
+    "computePrecision": "Float16",
+    "isUpdatable": "0",
+    "availability": {
+      "macOS": "11.0",
+      "tvOS": "14.0",
+      "watchOS": "7.0",
+      "iOS": "14.0",
+      "macCatalyst": "14.0"
+    },
+    "neuralNetworkLayerTypeHistogram": {
+      "ConcatND": 6,
+      "Convolution": 28,
+      "Multiply": 77,
+      "InnerProduct": 2,
+      "AddBroadcastable": 18,
+      "PoolingMax": 5,
+      "ReduceMean": 18,
+      "SliceDynamic": 1,
+      "ActivationELU": 5,
+      "Squeeze": 4,
+      "SubtractBroadcastable": 8,
+      "Transpose": 54,
+      "RandomUniformDynamic": 16,
+      "Concat": 4,
+      "Add": 9,
+      "GreaterEqual": 16,
+      "GetShape": 17,
+      "GreaterThan": 5,
+      "SliceStatic": 1,
+      "SplitND": 16,
+      "UnaryPower": 8,
+      "BatchedMatmul": 64,
+      "LoadConstantND": 22,
+      "ExpandDims": 3,
+      "UnaryRsqrt": 8,
+      "WhereBroadcastable": 5,
+      "ReshapeStatic": 3,
+      "SoftmaxND": 5,
+      "MultiplyBroadcastable": 17,
+      "ActivationLinear": 17,
+      "Gelu": 4
+    },
+    "modelType": {
+      "name": "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata": {
+      "com.github.apple.coremltools.version": "5.2.0",
+      "com.github.apple.coremltools.source": "tensorflow==1.15.0"
+    },
+    "generatedClassName": "AcousticLID_8bit",
+    "inputSchema": [
+      {
+        "dataType": "Float32",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1... × 1... × 1 × 1 × 40",
+        "shapeRange": "[[1, -1], [1, -1], [1, 1], [1, 1], [40, 40]]",
+        "formattedType": "MultiArray (Float32 1 × 1 × 1 × 1 × 40)",
+        "type": "MultiArray",
+        "shape": "[1, 1, 1, 1, 40]",
+        "name": "features",
+        "shortDescription": ""
+      }
+    ],
+    "method": "predict"
+  }
+]

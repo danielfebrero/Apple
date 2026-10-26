@@ -1,0 +1,66 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "陳裕嘉他家住哪裡？",
+            "張薏婷的公司電話多少？",
+            "我老婆的生日是幾號？",
+            "顯示陳裕嘉的住家電子郵件地址",
+            "我哥哥的公司地址在哪？"
+          ]
+        }
+      ],
+      "SectionName": "查詢聯絡資訊"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "梁健行的聯絡資訊",
+            "有哪些聯絡人在蘋果公司上班？"
+          ]
+        }
+      ],
+      "SectionName": "尋找聯絡人"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "我的外婆是張薏婷",
+            "我叔叔家住哪裡？"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "打到我堂姊的公司"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": []
+        }
+      ],
+      "SectionName": "親友關係"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "學習我的名字發音",
+            "我爸爸的名字唸錯了",
+            "學習梁健行的名字唸法"
+          ]
+        }
+      ],
+      "SectionName": "名字唸法"
+    }
+  ]
+}

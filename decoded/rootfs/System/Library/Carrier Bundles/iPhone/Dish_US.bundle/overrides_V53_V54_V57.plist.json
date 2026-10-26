@@ -1,0 +1,90 @@
+{
+  "DerPriFileVersion": "5.1.161",
+  "AllowSAOnWiFiAssociation": true,
+  "ShowVoNRSwitch": false,
+  "Show5GSwitch": false,
+  "Enable5GStandaloneByDefault": true,
+  "Location": {
+    "EnableEarlyReturnDuringEmergencyMode": true
+  },
+  "IMSConfig": {
+    "SMS": {
+      "SupportedDomains": {
+        "NR": true
+      }
+    },
+    "Voice": {
+      "EnableVoNRByDefault": true
+    },
+    "XCAP": {
+      "Support5GSaHandOver": true
+    }
+  },
+  "ShowHighDataModeSwitch": true,
+  "DerPriFileName": "overrides_V53_V54_V57.der.pri",
+  "IPv6SupportedDataModeMask": 57372,
+  "SupportsVoNR": true,
+  "apns": [
+    {
+      "configuration": [
+        {
+          "password": "",
+          "tech-type-mask": 2,
+          "username": "",
+          "apn": "internet",
+          "type-mask": 32771,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 1048580,
+          "Support5GSaHandOver": true,
+          "password": "",
+          "tech-type-mask": 1048580,
+          "username": "",
+          "apn": "xcap",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 131072,
+          "Support5GSaHandOver": true,
+          "password": "",
+          "tech-type-mask": 131072,
+          "SupportSwitchOver": true,
+          "username": "",
+          "apn": "ims",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "type-mask": 262144,
+          "password": "",
+          "tech-type-mask": 262144,
+          "AllowedProtocolMaskInRoaming": 3,
+          "username": "",
+          "apn": "sos",
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "tech-type-mask": 512,
+          "username": "",
+          "apn": "ota",
+          "type-mask": 512,
+          "AllowedProtocolMask": 3
+        },
+        {
+          "password": "",
+          "username": "",
+          "apn": "hotspot",
+          "type-mask": 48,
+          "AllowedProtocolMask": 3
+        }
+      ],
+      "technology-mask": 24
+    }
+  ],
+  "Show5GStandaloneSwitch": false,
+  "Show5GWarningUnsupportedCarrier": false,
+  "Enable5GAutoByDefault": true,
+  "DisallowCarrierMenuAtHome": true,
+  "SupportsNRNSAInboundRoaming": true
+}

@@ -1,0 +1,52 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Give me directions home",
+            "Get me directions to Queenstown",
+            "Directions to my dad’s work",
+            "Get me directions from Auckland to Wellington",
+            "Give me walking directions to Emily’s"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "navigation": true
+          },
+          "Entries": [
+            "What’s my next turn?",
+            "Are we there yet?",
+            "What’s my ETA?",
+            "Find a petrol station"
+          ]
+        }
+      ],
+      "SectionName": "Navigation"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Show me Alexandra Park Wellington",
+            "Show me a map of 35 Graham Street Auckland"
+          ]
+        }
+      ],
+      "SectionName": "Maps"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Find coffee near me",
+            "Find a good dry cleaners",
+            "Where is the closest shopping centre?"
+          ]
+        }
+      ],
+      "SectionName": "Local businesses"
+    }
+  ]
+}

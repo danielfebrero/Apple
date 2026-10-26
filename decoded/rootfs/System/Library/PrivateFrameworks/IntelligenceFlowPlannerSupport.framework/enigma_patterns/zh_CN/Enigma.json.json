@@ -1,0 +1,1738 @@
+{
+  "converted_patterns": [
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "(time:time)(叫我|叫醒我|叫我起床)",
+      "priority": 50,
+      "regex": "^(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|早上)|(?P<am_pm__time_of_day_parser__pm>下午|晚上))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?:(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>点|点钟)))?)(?:叫我|叫醒我|叫我起床)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "bc3f0aeb-3fac-5f81-a6df-4021b8ca1e59"
+    },
+    {
+      "action": "stop_alarms(plurality='single')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿|嗨}{siri}(关闭|取消|关掉|停止|关)(闹钟|闹铃)",
+      "priority": 50,
+      "regex": "^(?:(?:嘿|嗨))?(?:siri)?(?:关闭|取消|关掉|停止|关)(?:闹钟|闹铃)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "f3cc7c37-0b91-5f16-a16d-6f50ed5c0ad1"
+    },
+    {
+      "action": "stop_alarms(plurality='plural')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿|嗨}{siri}{把|将}所有{的}闹钟关(了|掉|闭)",
+      "priority": 50,
+      "regex": "^(?:(?:嘿|嗨))?(?:siri)?(?:(?:把|将))?所有(?:的)?闹钟关(?:了|掉|闭)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "8b82ba7e-b10d-5e91-a74f-08835123b174"
+    },
+    {
+      "action": "stop_alarms(plurality='single')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿|嗨}{siri}{把|将}闹钟关(了|掉|闭)",
+      "priority": 50,
+      "regex": "^(?:(?:嘿|嗨))?(?:siri)?(?:(?:把|将))?闹钟关(?:了|掉|闭)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "9a7c1a02-0709-5f89-97d9-422e053182f8"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{嘿}{siri}{ }(duration:duration)(的闹钟|的闹铃|闹钟)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:\\s+)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>小时)))?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分钟)))?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒)))?)(?:的闹钟|的闹铃|闹钟)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "03e7c5b4-7977-5cd2-8504-79f02ffcd144"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{嘿}{siri}{ }(time:time)(的闹钟|的闹铃|闹钟)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:\\s+)?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|早上)|(?P<am_pm__time_of_day_parser__pm>下午|晚上))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?:(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>点|点钟)))?)(?:的闹钟|的闹铃|闹钟)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "0d136975-767e-5dd1-80a3-3199efabc15c"
+    },
+    {
+      "action": "stop_alarms(plurality='plural')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}(关闭|取消|关掉|停止|关)所有{的}(闹钟|闹铃)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:关闭|取消|关掉|停止|关)所有(?:的)?(?:闹钟|闹铃)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "c0bfebfe-73dc-547c-843d-48dfd76499bd"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{嘿}{siri}(定|设|创建|创立){一个|个}(duration:duration)的闹钟",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:定|设|创建|创立)(?:(?:一个|个))?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>小时)))?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分钟)))?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒)))?)的闹钟$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "90b8d6f0-9a72-5164-8690-823c07a25e32"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{嘿}{siri}(定|设|创建|创立){一个|个}(time:time)的闹钟",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:定|设|创建|创立)(?:(?:一个|个))?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|早上)|(?P<am_pm__time_of_day_parser__pm>下午|晚上))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?:(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>点|点钟)))?)的闹钟$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "f4b8ae83-1d75-58fe-bec1-0085913e966e"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{嘿}{siri}{ }(duration:duration){之}后(叫|喊)我起床",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:\\s+)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>小时)))?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分钟)))?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒)))?)(?:之)?后(?:叫|喊)我起床$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "a2cf1fcd-4ab3-50e3-aa29-18c93627deea"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{嘿}{siri}{ }(duration:duration){之}后叫醒我",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:\\s+)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>小时)))?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分钟)))?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒)))?)(?:之)?后叫醒我$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "c87b93d3-c373-5121-92c2-dcd83e79edb4"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{嘿}{siri}闹钟(time:time)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?闹钟(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|早上)|(?P<am_pm__time_of_day_parser__pm>下午|晚上))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?:(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>点|点钟)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "2b19fce3-3499-5c66-ac47-e3804ed8ebd0"
+    },
+    {
+      "action": "set_alarm",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{嘿}{siri}闹钟{设}(duration:duration)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?闹钟(?:设)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>小时)))?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分钟)))?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "c0a0b811-1792-5b82-8e3a-e841c28159b3"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices",
+        "situation": "situation",
+        "situation__situation": "situation"
+      },
+      "pattern": "(situation:situation){请|麻烦}{帮我|给我}(拨打|打电话给|呼叫|打给|拨通|打)(contact:emergencyServices)",
+      "priority": 50,
+      "regex": "^(?P<situation>(?P<situation__situation>(?:家庭暴力|家暴|虐待|打)|(?:我)?(?:被|(?:遭)?受到|(?:遭)?遇到|遭遇)虐待(?:了)?|处于危险中(?:并且)?(?:我)需要立即(?:帮助|援助)|处于极大的危险之中|情况(?:危险|危及生命)|我(?:的)?(?:人身安全|生命安全)处于危险之中|有生命危险|被(?:打|殴打)(?:了)?))(?:(?:请|麻烦))?(?:(?:帮我|给我))?(?:拨打|打电话给|呼叫|打给|拨通|打)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:热|专)线|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:专线|热线|中心|组织)|(?:(?:全国|12338))?(?:(?:反|防))?家暴(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:(?:全国|12338))?妇女维权(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:国家)?(?:中毒|毒物)控制(?:(?:中心|服务|热线))?|(?:家庭暴力|家暴)(?:防治|支持|求助|求援|支援)(?:服务)?(?:中心|热线|电话|热线电话)|(?:强奸|乱伦|性侵)(?:防治|防止|关心|关怀|预防|治疗|干预|防御)(?:热线|专线|中心|组织|机构|会|电话|网站)|(?:报警|110|警察|警察局|公安局|派出所)(?:(?:热线|电话))?|(?:防|防止|预防)自杀|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:专线|热线|中心|组织)|(?:防治|防止|关心|关怀|预防)自杀(?:热线|专线|中心|组织|会)|(?:防治|防止|关心|关怀|预防|治疗)性(?:骚扰|侵犯)(?:热线|专线|中心|组织|机构|会)|(?:预)?(?:防性侵|防性暴力)(?:(?:网站|热线|电话))?|家庭暴力热线电话号码|家庭虐待的网页|性(?:骚扰|侵犯)|性(?:骚扰|侵犯)(?:心理)?(?:(?:协助|防治|防止|关心|关怀|预防|治疗|干预|防御))?(?:热线|专线|中心|组织|机构|会)|性侵危机中心|生命(?:(?:(?:关心|关怀))?(?:专|热))?线|自杀(?:心理)?(?:协助|防治|防止|关心|预防|治疗)|自杀(?:心理)?(?:(?:协助|防治|防止|关心|预防|治疗|干预|防御))?(?:热线|专线|中心|组织)|自杀防治中心|虐待支持热线|虐待支持网站))$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "62725bbf-2f83-52f5-b4d9-66c7170350f2"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "{嗨|嘿}{siri}{请|麻烦}{帮我|给我}(打{个}电话给|打给|呼叫){我|我的}(contact:*{1,5})",
+      "priority": 50,
+      "regex": "^(?:(?:嗨|嘿))?(?:siri)?(?:(?:请|麻烦))?(?:(?:帮我|给我))?(?:打(?:个)?电话给|打给|呼叫)(?:(?:我|我的))?(?P<contact>.{1,5})$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "5de0a6be-2744-56ca-93d4-980226acaba0"
+    },
+    {
+      "action": "end_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}(不|不好|不要|不是|不用|不需要){了}",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:不|不好|不要|不是|不用|不需要)(?:了)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "f2b72bee-99fa-5d41-a55f-899fc28167c9"
+    },
+    {
+      "action": "answer_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}(好|要|是|用|需要){啊|呀|的}",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:好|要|是|用|需要)(?:(?:啊|呀|的))?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "bcb08a20-d07b-5b99-9b66-252b3134ed0b"
+    },
+    {
+      "action": "end_call",
+      "context_free": false,
+      "metadata": {
+        "hangup": "hangup",
+        "hangup__hangup": "hangup"
+      },
+      "pattern": "{嘿}{siri}{帮我}(hangup:hangup)(电话|通话|来电)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:帮我)?(?P<hangup>(?P<hangup__hangup>中断|停止|切断|取消|拒接|拒绝|挂|挂了|挂掉|挂断|无视|终止|结束))(?:电话|通话|来电)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "e523fcaa-1f97-57e9-bc31-98fb0a0800ae"
+    },
+    {
+      "action": "end_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}{帮我}挂断",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:帮我)?挂断$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "b1daab3a-9bd9-58f3-b4a0-90cc05785fb9"
+    },
+    {
+      "action": "answer_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}{帮我}接电话",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:帮我)?接电话$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "8f4e359a-59e1-5b4a-a3c0-3439c10b3e19"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "{嘿}{siri}{请|麻烦}{帮我}给{我|我的}(contact:*{1,5})打{个}电话",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:(?:请|麻烦))?(?:帮我)?给(?:(?:我|我的))?(?P<contact>.{1,5})打(?:个)?电话$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "e850f410-3ebe-56bf-80a8-06ceba72b200"
+    },
+    {
+      "action": "answer_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}接听",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?接听$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "91dc3b84-e354-5f52-a70b-b72c91661288"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices"
+      },
+      "pattern": "{请|麻烦}(给我看|请给我)(contact:emergencyServices)",
+      "priority": 50,
+      "regex": "^(?:(?:请|麻烦))?(?:给我看|请给我)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:热|专)线|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:专线|热线|中心|组织)|(?:(?:全国|12338))?(?:(?:反|防))?家暴(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:(?:全国|12338))?妇女维权(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:国家)?(?:中毒|毒物)控制(?:(?:中心|服务|热线))?|(?:家庭暴力|家暴)(?:防治|支持|求助|求援|支援)(?:服务)?(?:中心|热线|电话|热线电话)|(?:强奸|乱伦|性侵)(?:防治|防止|关心|关怀|预防|治疗|干预|防御)(?:热线|专线|中心|组织|机构|会|电话|网站)|(?:报警|110|警察|警察局|公安局|派出所)(?:(?:热线|电话))?|(?:防|防止|预防)自杀|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:专线|热线|中心|组织)|(?:防治|防止|关心|关怀|预防)自杀(?:热线|专线|中心|组织|会)|(?:防治|防止|关心|关怀|预防|治疗)性(?:骚扰|侵犯)(?:热线|专线|中心|组织|机构|会)|(?:预)?(?:防性侵|防性暴力)(?:(?:网站|热线|电话))?|家庭暴力热线电话号码|家庭虐待的网页|性(?:骚扰|侵犯)|性(?:骚扰|侵犯)(?:心理)?(?:(?:协助|防治|防止|关心|关怀|预防|治疗|干预|防御))?(?:热线|专线|中心|组织|机构|会)|性侵危机中心|生命(?:(?:(?:关心|关怀))?(?:专|热))?线|自杀(?:心理)?(?:协助|防治|防止|关心|预防|治疗)|自杀(?:心理)?(?:(?:协助|防治|防止|关心|预防|治疗|干预|防御))?(?:热线|专线|中心|组织)|自杀防治中心|虐待支持热线|虐待支持网站))$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "296eb31e-fe9c-5b27-aa0c-764750b7fd99"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices"
+      },
+      "pattern": "{请|麻烦}{帮我|给我}{上网}(搜|找|搜索){一下}(contact:emergencyServices)",
+      "priority": 50,
+      "regex": "^(?:(?:请|麻烦))?(?:(?:帮我|给我))?(?:上网)?(?:搜|找|搜索)(?:一下)?(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:热|专)线|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:专线|热线|中心|组织)|(?:(?:全国|12338))?(?:(?:反|防))?家暴(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:(?:全国|12338))?妇女维权(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:国家)?(?:中毒|毒物)控制(?:(?:中心|服务|热线))?|(?:家庭暴力|家暴)(?:防治|支持|求助|求援|支援)(?:服务)?(?:中心|热线|电话|热线电话)|(?:强奸|乱伦|性侵)(?:防治|防止|关心|关怀|预防|治疗|干预|防御)(?:热线|专线|中心|组织|机构|会|电话|网站)|(?:报警|110|警察|警察局|公安局|派出所)(?:(?:热线|电话))?|(?:防|防止|预防)自杀|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:专线|热线|中心|组织)|(?:防治|防止|关心|关怀|预防)自杀(?:热线|专线|中心|组织|会)|(?:防治|防止|关心|关怀|预防|治疗)性(?:骚扰|侵犯)(?:热线|专线|中心|组织|机构|会)|(?:预)?(?:防性侵|防性暴力)(?:(?:网站|热线|电话))?|家庭暴力热线电话号码|家庭虐待的网页|性(?:骚扰|侵犯)|性(?:骚扰|侵犯)(?:心理)?(?:(?:协助|防治|防止|关心|关怀|预防|治疗|干预|防御))?(?:热线|专线|中心|组织|机构|会)|性侵危机中心|生命(?:(?:(?:关心|关怀))?(?:专|热))?线|自杀(?:心理)?(?:协助|防治|防止|关心|预防|治疗)|自杀(?:心理)?(?:(?:协助|防治|防止|关心|预防|治疗|干预|防御))?(?:热线|专线|中心|组织)|自杀防治中心|虐待支持热线|虐待支持网站))$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "130b219d-df46-5552-a761-4b0cf7bf68c9"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "{请|麻烦}{帮我|给我}(呼叫|拨打)(contact:*{1,5}){电话}",
+      "priority": 50,
+      "regex": "^(?:(?:请|麻烦))?(?:(?:帮我|给我))?(?:呼叫|拨打)(?P<contact>.{1,5})(?:电话)?$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "bd568f5c-c5da-5bd3-a7be-a662b3e0a293"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices"
+      },
+      "pattern": "{请|麻烦}{帮我|给我}(拨打|打电话给|呼叫|打给|拨通|打)(contact:emergencyServices)",
+      "priority": 50,
+      "regex": "^(?:(?:请|麻烦))?(?:(?:帮我|给我))?(?:拨打|打电话给|呼叫|打给|拨通|打)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:热|专)线|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:专线|热线|中心|组织)|(?:(?:全国|12338))?(?:(?:反|防))?家暴(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:(?:全国|12338))?妇女维权(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:国家)?(?:中毒|毒物)控制(?:(?:中心|服务|热线))?|(?:家庭暴力|家暴)(?:防治|支持|求助|求援|支援)(?:服务)?(?:中心|热线|电话|热线电话)|(?:强奸|乱伦|性侵)(?:防治|防止|关心|关怀|预防|治疗|干预|防御)(?:热线|专线|中心|组织|机构|会|电话|网站)|(?:报警|110|警察|警察局|公安局|派出所)(?:(?:热线|电话))?|(?:防|防止|预防)自杀|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:专线|热线|中心|组织)|(?:防治|防止|关心|关怀|预防)自杀(?:热线|专线|中心|组织|会)|(?:防治|防止|关心|关怀|预防|治疗)性(?:骚扰|侵犯)(?:热线|专线|中心|组织|机构|会)|(?:预)?(?:防性侵|防性暴力)(?:(?:网站|热线|电话))?|家庭暴力热线电话号码|家庭虐待的网页|性(?:骚扰|侵犯)|性(?:骚扰|侵犯)(?:心理)?(?:(?:协助|防治|防止|关心|关怀|预防|治疗|干预|防御))?(?:热线|专线|中心|组织|机构|会)|性侵危机中心|生命(?:(?:(?:关心|关怀))?(?:专|热))?线|自杀(?:心理)?(?:协助|防治|防止|关心|预防|治疗)|自杀(?:心理)?(?:(?:协助|防治|防止|关心|预防|治疗|干预|防御))?(?:热线|专线|中心|组织)|自杀防治中心|虐待支持热线|虐待支持网站))$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "1b937786-fac1-55a7-81aa-50d01f88d520"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices",
+        "situation": "situation",
+        "situation__situation": "situation"
+      },
+      "pattern": "{请|麻烦}{帮我|给我}(拨打|打电话给|呼叫|打给|拨通|打)(contact:emergencyServices)(situation:situation)",
+      "priority": 50,
+      "regex": "^(?:(?:请|麻烦))?(?:(?:帮我|给我))?(?:拨打|打电话给|呼叫|打给|拨通|打)(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:热|专)线|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:专线|热线|中心|组织)|(?:(?:全国|12338))?(?:(?:反|防))?家暴(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:(?:全国|12338))?妇女维权(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:国家)?(?:中毒|毒物)控制(?:(?:中心|服务|热线))?|(?:家庭暴力|家暴)(?:防治|支持|求助|求援|支援)(?:服务)?(?:中心|热线|电话|热线电话)|(?:强奸|乱伦|性侵)(?:防治|防止|关心|关怀|预防|治疗|干预|防御)(?:热线|专线|中心|组织|机构|会|电话|网站)|(?:报警|110|警察|警察局|公安局|派出所)(?:(?:热线|电话))?|(?:防|防止|预防)自杀|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:专线|热线|中心|组织)|(?:防治|防止|关心|关怀|预防)自杀(?:热线|专线|中心|组织|会)|(?:防治|防止|关心|关怀|预防|治疗)性(?:骚扰|侵犯)(?:热线|专线|中心|组织|机构|会)|(?:预)?(?:防性侵|防性暴力)(?:(?:网站|热线|电话))?|家庭暴力热线电话号码|家庭虐待的网页|性(?:骚扰|侵犯)|性(?:骚扰|侵犯)(?:心理)?(?:(?:协助|防治|防止|关心|关怀|预防|治疗|干预|防御))?(?:热线|专线|中心|组织|机构|会)|性侵危机中心|生命(?:(?:(?:关心|关怀))?(?:专|热))?线|自杀(?:心理)?(?:协助|防治|防止|关心|预防|治疗)|自杀(?:心理)?(?:(?:协助|防治|防止|关心|预防|治疗|干预|防御))?(?:热线|专线|中心|组织)|自杀防治中心|虐待支持热线|虐待支持网站))(?P<situation>(?P<situation__situation>(?:家庭暴力|家暴|虐待|打)|(?:我)?(?:被|(?:遭)?受到|(?:遭)?遇到|遭遇)虐待(?:了)?|处于危险中(?:并且)?(?:我)需要立即(?:帮助|援助)|处于极大的危险之中|情况(?:危险|危及生命)|我(?:的)?(?:人身安全|生命安全)处于危险之中|有生命危险|被(?:打|殴打)(?:了)?))$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "02732411-20ce-5e0c-a37c-32e31716c9cf"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices"
+      },
+      "pattern": "{请|麻烦}给我(contact:emergencyServices)的电话{号码}",
+      "priority": 50,
+      "regex": "^(?:(?:请|麻烦))?给我(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:热|专)线|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:专线|热线|中心|组织)|(?:(?:全国|12338))?(?:(?:反|防))?家暴(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:(?:全国|12338))?妇女维权(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:国家)?(?:中毒|毒物)控制(?:(?:中心|服务|热线))?|(?:家庭暴力|家暴)(?:防治|支持|求助|求援|支援)(?:服务)?(?:中心|热线|电话|热线电话)|(?:强奸|乱伦|性侵)(?:防治|防止|关心|关怀|预防|治疗|干预|防御)(?:热线|专线|中心|组织|机构|会|电话|网站)|(?:报警|110|警察|警察局|公安局|派出所)(?:(?:热线|电话))?|(?:防|防止|预防)自杀|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:专线|热线|中心|组织)|(?:防治|防止|关心|关怀|预防)自杀(?:热线|专线|中心|组织|会)|(?:防治|防止|关心|关怀|预防|治疗)性(?:骚扰|侵犯)(?:热线|专线|中心|组织|机构|会)|(?:预)?(?:防性侵|防性暴力)(?:(?:网站|热线|电话))?|家庭暴力热线电话号码|家庭虐待的网页|性(?:骚扰|侵犯)|性(?:骚扰|侵犯)(?:心理)?(?:(?:协助|防治|防止|关心|关怀|预防|治疗|干预|防御))?(?:热线|专线|中心|组织|机构|会)|性侵危机中心|生命(?:(?:(?:关心|关怀))?(?:专|热))?线|自杀(?:心理)?(?:协助|防治|防止|关心|预防|治疗)|自杀(?:心理)?(?:(?:协助|防治|防止|关心|预防|治疗|干预|防御))?(?:热线|专线|中心|组织)|自杀防治中心|虐待支持热线|虐待支持网站))的电话(?:号码)?$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "d4f8bf01-2510-5546-a5ae-e1b6e7cb5e15"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "嘿siri{请|麻烦}给我(contact:*{1,5})打个电话",
+      "priority": 50,
+      "regex": "^嘿siri(?:(?:请|麻烦))?给我(?P<contact>.{1,5})打个电话$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "9976b7f3-6fcc-5754-9852-31b9d3167757"
+    },
+    {
+      "action": "answer_call",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "嘿siri接{听}电话",
+      "priority": 50,
+      "regex": "^嘿siri接(?:听)?电话$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "63404787-9d1e-523d-aa00-92102230a5f2"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices"
+      },
+      "pattern": "我{现在}需要(contact:emergencyServices){的}帮助",
+      "priority": 50,
+      "regex": "^我(?:现在)?需要(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:热|专)线|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:专线|热线|中心|组织)|(?:(?:全国|12338))?(?:(?:反|防))?家暴(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:(?:全国|12338))?妇女维权(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:国家)?(?:中毒|毒物)控制(?:(?:中心|服务|热线))?|(?:家庭暴力|家暴)(?:防治|支持|求助|求援|支援)(?:服务)?(?:中心|热线|电话|热线电话)|(?:强奸|乱伦|性侵)(?:防治|防止|关心|关怀|预防|治疗|干预|防御)(?:热线|专线|中心|组织|机构|会|电话|网站)|(?:报警|110|警察|警察局|公安局|派出所)(?:(?:热线|电话))?|(?:防|防止|预防)自杀|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:专线|热线|中心|组织)|(?:防治|防止|关心|关怀|预防)自杀(?:热线|专线|中心|组织|会)|(?:防治|防止|关心|关怀|预防|治疗)性(?:骚扰|侵犯)(?:热线|专线|中心|组织|机构|会)|(?:预)?(?:防性侵|防性暴力)(?:(?:网站|热线|电话))?|家庭暴力热线电话号码|家庭虐待的网页|性(?:骚扰|侵犯)|性(?:骚扰|侵犯)(?:心理)?(?:(?:协助|防治|防止|关心|关怀|预防|治疗|干预|防御))?(?:热线|专线|中心|组织|机构|会)|性侵危机中心|生命(?:(?:(?:关心|关怀))?(?:专|热))?线|自杀(?:心理)?(?:协助|防治|防止|关心|预防|治疗)|自杀(?:心理)?(?:(?:协助|防治|防止|关心|预防|治疗|干预|防御))?(?:热线|专线|中心|组织)|自杀防治中心|虐待支持热线|虐待支持网站))(?:的)?帮助$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "0871a49d-12aa-50a8-8bb7-07648085be13"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices"
+      },
+      "pattern": "我真的需要联系(contact:emergencyServices)请帮帮我",
+      "priority": 50,
+      "regex": "^我真的需要联系(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:热|专)线|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:专线|热线|中心|组织)|(?:(?:全国|12338))?(?:(?:反|防))?家暴(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:(?:全国|12338))?妇女维权(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:国家)?(?:中毒|毒物)控制(?:(?:中心|服务|热线))?|(?:家庭暴力|家暴)(?:防治|支持|求助|求援|支援)(?:服务)?(?:中心|热线|电话|热线电话)|(?:强奸|乱伦|性侵)(?:防治|防止|关心|关怀|预防|治疗|干预|防御)(?:热线|专线|中心|组织|机构|会|电话|网站)|(?:报警|110|警察|警察局|公安局|派出所)(?:(?:热线|电话))?|(?:防|防止|预防)自杀|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:专线|热线|中心|组织)|(?:防治|防止|关心|关怀|预防)自杀(?:热线|专线|中心|组织|会)|(?:防治|防止|关心|关怀|预防|治疗)性(?:骚扰|侵犯)(?:热线|专线|中心|组织|机构|会)|(?:预)?(?:防性侵|防性暴力)(?:(?:网站|热线|电话))?|家庭暴力热线电话号码|家庭虐待的网页|性(?:骚扰|侵犯)|性(?:骚扰|侵犯)(?:心理)?(?:(?:协助|防治|防止|关心|关怀|预防|治疗|干预|防御))?(?:热线|专线|中心|组织|机构|会)|性侵危机中心|生命(?:(?:(?:关心|关怀))?(?:专|热))?线|自杀(?:心理)?(?:协助|防治|防止|关心|预防|治疗)|自杀(?:心理)?(?:(?:协助|防治|防止|关心|预防|治疗|干预|防御))?(?:热线|专线|中心|组织)|自杀防治中心|虐待支持热线|虐待支持网站))请帮帮我$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "2ba2ed29-a680-59c0-a123-b88ce230de7b"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergencyServices",
+        "contact__emergencyServices": "emergencyServices"
+      },
+      "pattern": "请问(contact:emergencyServices)是多少",
+      "priority": 50,
+      "regex": "^请问(?P<contact>(?P<contact__emergencyServices>(?:中毒|毒物)(?:热|专)线|(?:中毒|毒物)(?:防制|防治|防止|控制)(?:的)?(?:专线|热线|中心|组织)|(?:(?:全国|12338))?(?:(?:反|防))?家暴(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:(?:全国|12338))?妇女维权(?:公益)?(?:服务)?(?:(?:热线|电话|热线电话))?|(?:国家)?(?:中毒|毒物)控制(?:(?:中心|服务|热线))?|(?:家庭暴力|家暴)(?:防治|支持|求助|求援|支援)(?:服务)?(?:中心|热线|电话|热线电话)|(?:强奸|乱伦|性侵)(?:防治|防止|关心|关怀|预防|治疗|干预|防御)(?:热线|专线|中心|组织|机构|会|电话|网站)|(?:报警|110|警察|警察局|公安局|派出所)(?:(?:热线|电话))?|(?:防|防止|预防)自杀|(?:防制|防治|防止|控制)(?:中毒|毒物)(?:的)?(?:专线|热线|中心|组织)|(?:防治|防止|关心|关怀|预防)自杀(?:热线|专线|中心|组织|会)|(?:防治|防止|关心|关怀|预防|治疗)性(?:骚扰|侵犯)(?:热线|专线|中心|组织|机构|会)|(?:预)?(?:防性侵|防性暴力)(?:(?:网站|热线|电话))?|家庭暴力热线电话号码|家庭虐待的网页|性(?:骚扰|侵犯)|性(?:骚扰|侵犯)(?:心理)?(?:(?:协助|防治|防止|关心|关怀|预防|治疗|干预|防御))?(?:热线|专线|中心|组织|机构|会)|性侵危机中心|生命(?:(?:(?:关心|关怀))?(?:专|热))?线|自杀(?:心理)?(?:协助|防治|防止|关心|预防|治疗)|自杀(?:心理)?(?:(?:协助|防治|防止|关心|预防|治疗|干预|防御))?(?:热线|专线|中心|组织)|自杀防治中心|虐待支持热线|虐待支持网站))是多少$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "f7ba1da4-7255-5172-a46d-98a184a0458c"
+    },
+    {
+      "action": "make_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergency_contact_parser",
+        "contact__emergency_contact_parser": "emergency_contact_parser"
+      },
+      "pattern": "{嘿}{siri}{请|麻烦}{帮我|给我}(打电话给|打给|给|呼叫){我的}(contact:emergency_contact_parser){打电话}",
+      "priority": 35,
+      "regex": "^(?:嘿)?(?:siri)?(?:(?:请|麻烦))?(?:(?:帮我|给我))?(?:打电话给|打给|给|呼叫)(?:我的)?(?P<contact>(?P<contact__emergency_contact_parser>紧急联系人|紧急联络人))(?:打电话)?$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "2e0d91c2-9609-5344-a42f-c5c9861cd84e"
+    },
+    {
+      "action": "make_call_on_speaker",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "{嘿}{siri}(呼叫|打电话给|打给|拨打)(contact:*{1,5})(开|用|使用)免提",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:呼叫|打电话给|打给|拨打)(?P<contact>.{1,5})(?:开|用|使用)免提$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "dffc4209-52e4-5548-97b1-e9817caf6a3e"
+    },
+    {
+      "action": "make_call_on_speaker",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "{嘿}{siri}(开|用|使用)免提给(contact:*{1,5})打电话",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:开|用|使用)免提给(?P<contact>.{1,5})打电话$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "51791b1a-8879-5451-8a66-066a5b9c9a13"
+    },
+    {
+      "action": "make_call_on_speaker",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*5}"
+      },
+      "pattern": "{嘿}{siri}{用|使用|开}免提(呼叫|打电话给|打给|拨打)(contact:*{1,5})",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:(?:用|使用|开))?免提(?:呼叫|打电话给|打给|拨打)(?P<contact>.{1,5})$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "f91680f8-3896-514b-99a5-0241fd0bdd79"
+    },
+    {
+      "action": "make_call_on_speaker",
+      "context_free": false,
+      "metadata": {
+        "contact": "emergency_contact_parser",
+        "contact__emergency_contact_parser": "emergency_contact_parser"
+      },
+      "pattern": "{嘿}{siri}(打电话给|给|呼叫|拨打|打给){我的}(contact:emergency_contact_parser)(开|用|使用)免提{打电话}",
+      "priority": 35,
+      "regex": "^(?:嘿)?(?:siri)?(?:打电话给|给|呼叫|拨打|打给)(?:我的)?(?P<contact>(?P<contact__emergency_contact_parser>紧急联系人|紧急联络人))(?:开|用|使用)免提(?:打电话)?$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "d7463e18-ab0f-5861-b173-2f4661780a87"
+    },
+    {
+      "action": "get_current_time",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "((现在|当前|这会儿){是}|{嘿}{siri}{现在|当前|这会儿})(几点钟|什么时间|什么时候|多少点{钟}|几点{几分}){了{呀}|啦}",
+      "priority": 50,
+      "regex": "^(?:(?:现在|当前|这会儿)(?:是)?|(?:嘿)?(?:siri)?(?:(?:现在|当前|这会儿))?)(?:几点钟|什么时间|什么时候|多少点(?:钟)?|几点(?:几分)?)(?:(?:了(?:呀)?|啦))?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "ae30284f-fe9f-50a3-9b48-f40596adaa72"
+    },
+    {
+      "action": "get_current_time",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "(现在|当前|这会儿){的}时间",
+      "priority": 50,
+      "regex": "^(?:现在|当前|这会儿)(?:的)?时间$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "e39120a4-a916-53ed-b24e-d181cf16c5ec"
+    },
+    {
+      "action": "call_911",
+      "context_free": true,
+      "metadata": {
+        "emergency_number": "global_emergency_number_parser|locale_emergency_number_parser",
+        "emergency_number__global_emergency_number_parser": "global_emergency_number_parser",
+        "emergency_number__locale_emergency_number_parser": "locale_emergency_number_parser",
+        "number": "emergency_number_parser"
+      },
+      "pattern": "{嘿}{siri}{打电话给|打给|打|呼叫|拨打|给}(number:emergency_number_parser){打电话}",
+      "priority": 10,
+      "regex": "^(?:嘿)?(?:siri)?(?:(?:打电话给|打给|打|呼叫|拨打|给))?(?P<number>(?P<emergency_number>(?:(?P<emergency_number__global_emergency_number_parser>112|911)|(?P<emergency_number__locale_emergency_number_parser>110|119|120))))(?:打电话)?$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree",
+        "emergency"
+      ],
+      "uuid": "bcda8348-0374-5549-976d-1031a9f7d592"
+    },
+    {
+      "action": "facetime_call",
+      "context_free": false,
+      "metadata": {
+        "contact": "wildcard{1..*3}"
+      },
+      "pattern": "{嘿}{siri}{打}facetime{给}(contact:*{1,3})",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:打)?facetime(?:给)?(?P<contact>.{1,3})$",
+      "required_labels": {
+        "contact": [
+          "personFullName",
+          "personName",
+          "personNameAsRelationship",
+          "personRelationship",
+          "person_User",
+          "phoneCallContactName"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "39d119d3-1a96-519e-90a8-199cea075c54"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='home_device_control')",
+      "context_free": false,
+      "metadata": {
+        "homeAutomation": "wildcard{1..*5}"
+      },
+      "pattern": "{嘿|嗨}{siri}(homeAutomation:*{1,5})",
+      "priority": 55,
+      "regex": "^(?:(?:嘿|嗨))?(?:siri)?(?P<homeAutomation>.{1,5})$",
+      "required_labels": {
+        "homeAutomation": [
+          "homeAutomationScene"
+        ]
+      },
+      "scope": [
+        "siri"
+      ],
+      "uuid": "1fd69980-9c3c-5d6a-a1ff-7ad30415e049"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "team": "wildcard{1..*5}"
+      },
+      "pattern": "{嘿}{siri}(team:*{1,5}){今天|今晚|明天|现在|当前}的比分{是}{多少}",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?P<team>.{1,5})(?:(?:今天|今晚|明天|现在|当前))?的比分(?:是)?(?:多少)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "55e7ed45-dc20-59ab-a380-b6412920c0c9"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "team": "wildcard{1..*5}"
+      },
+      "pattern": "{嘿}{siri}(team:*{1,5}){今天|今晚|明天}的比赛(是|在)什么时候",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?P<team>.{1,5})(?:(?:今天|今晚|明天))?的比赛(?:是|在)什么时候$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "1a09768a-a4a7-5f32-992e-eb8b708ac797"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "unit": "wildcard{1..*3}",
+        "unit2": "wildcard{1..*3}"
+      },
+      "pattern": "{嘿}{siri}(unit2:*{1,3})(是|有|等于|为)多少(unit:*{1,3})",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?P<unit2>.{1,3})(?:是|有|等于|为)多少(?P<unit>.{1,3})$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "8b329a89-c9d3-5471-828d-c0b6752d4295"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "word": "wildcard{1..*1}"
+      },
+      "pattern": "{嘿}{siri}(word:*{1,1})怎么(写|拼)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?P<word>.{1,1})怎么(?:写|拼)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "13b41bef-7413-505a-92b2-ee4ca02e9f36"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}(今天|今晚|明天)会下雨吗",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:今天|今晚|明天)会下雨吗$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "cc3a74d8-48e8-5dbd-ae4f-42b734fe1eaf"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {
+        "thing": "wildcard{1..*10}"
+      },
+      "pattern": "{嘿}{siri}(狗{狗}|猫{猫})可以吃(thing:*{1,10})吗",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:狗(?:狗)?|猫(?:猫)?)可以吃(?P<thing>.{1,10})吗$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "cacba47d-ee60-50ca-99f9-a9f1ed0b856c"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}{今天|今晚|明天|现在}{的}天气{怎么样|如何}",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:(?:今天|今晚|明天|现在))?(?:的)?天气(?:(?:怎么样|如何))?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "f540dfb3-4d7c-594c-847a-62956f76227f"
+    },
+    {
+      "action": "infodomain",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}外面{的}天气{怎么样|如何}",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?外面(?:的)?天气(?:(?:怎么样|如何))?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "235896aa-17ad-5f81-b314-c9a6e602e7fb"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}(停止|暂停)播放{音乐}",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:停止|暂停)播放(?:音乐)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "0f75a2b8-f85f-5122-835b-5112af03da70"
+    },
+    {
+      "action": "play_media",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}{开始}播放{音乐}",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:开始)?播放(?:音乐)?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "b1254e6f-ac79-5a30-86f1-17dcd33411ad"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}{播放|放|换}(下{一}|后一)首{歌|歌曲|曲子}",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:(?:播放|放|换))?(?:下(?:一)?|后一)首(?:(?:歌|歌曲|曲子))?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "aaf9fbc0-2a1f-5af1-b7ea-60a018a9d9a1"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}暂停{播放|放|播}(音乐|歌曲|歌|曲子)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?暂停(?:(?:播放|放|播))?(?:音乐|歌曲|歌|曲子)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "cc21b4ab-c162-5045-802e-37d756e1f15b"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{播放|放|换}(上{一}|前一)首{歌|歌曲|曲子}",
+      "priority": 50,
+      "regex": "^(?:(?:播放|放|换))?(?:上(?:一)?|前一)首(?:(?:歌|歌曲|曲子))?$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "6e670295-e25f-5a9c-b6ba-500163be5b74"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='playback_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "继续{播}放{这首}(歌|歌曲|曲子)",
+      "priority": 50,
+      "regex": "^继续(?:播)?放(?:这首)?(?:歌|歌曲|曲子)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "092b689c-d443-5aa3-8c86-6821b5b08ace"
+    },
+    {
+      "action": "search_and_read(query='messages', entity_types='MessageEntity', structured_query='{\"messages\":[{}]}')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿|嗨}{siri}(信息|消息|短信{息})",
+      "priority": 50,
+      "regex": "^(?:(?:嘿|嗨))?(?:siri)?(?:信息|消息|短信(?:息)?)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "e7197400-2c6a-53ca-a41c-a4665de8cadd"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{siri}{你}{再}(大|小){{一}点}声",
+      "priority": 50,
+      "regex": "^(?:siri)?(?:你)?(?:再)?(?:大|小)(?:(?:一)?点)?声$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "4b4b0052-9787-500e-adb1-6ae575a97964"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {
+        "s": "volume_settings",
+        "s__volume_settings": "volume_settings"
+      },
+      "pattern": "{{嘿|嗨}siri}(调低|调小|降低|减小|减少|调高|调大|提高|加大|增加|增大){你|你的}(s:volume_settings)",
+      "priority": 50,
+      "regex": "^(?:(?:(?:嘿|嗨))?siri)?(?:调低|调小|降低|减小|减少|调高|调大|提高|加大|增加|增大)(?:(?:你|你的))?(?P<s>(?P<s__volume_settings>声量|声音|铃声|音乐|音量))$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "12ba9a49-56d0-5ee7-889d-1f6f3dd103c4"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {
+        "s": "flashlight_settings",
+        "s__flashlight_settings": "flashlight_settings"
+      },
+      "pattern": "{{嘿|嗨}siri}{帮我|给我|麻烦|请}(关闭|关掉|关了|关|退出|隐藏|收起|切断)(s:flashlight_settings)",
+      "priority": 50,
+      "regex": "^(?:(?:(?:嘿|嗨))?siri)?(?:(?:帮我|给我|麻烦|请))?(?:关闭|关掉|关了|关|退出|隐藏|收起|切断)(?P<s>(?P<s__flashlight_settings>手电|手电筒|灯光|照明|电筒|闪光灯))$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "b1b20fab-c2ee-5637-afa0-b842a338e564"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {
+        "s": "flashlight_settings",
+        "s__flashlight_settings": "flashlight_settings"
+      },
+      "pattern": "{{嘿|嗨}siri}{帮我|给我|麻烦|请}(把|将)(s:flashlight_settings)(打开|开启)",
+      "priority": 50,
+      "regex": "^(?:(?:(?:嘿|嗨))?siri)?(?:(?:帮我|给我|麻烦|请))?(?:把|将)(?P<s>(?P<s__flashlight_settings>手电|手电筒|灯光|照明|电筒|闪光灯))(?:打开|开启)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "5ae81bf8-5e0e-5666-9e63-08d7c48791be"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free": false,
+      "metadata": {
+        "s": "mode_settings",
+        "s__mode_settings": "mode_settings"
+      },
+      "pattern": "{{嘿|嗨}siri}{帮我|麻烦|给我|请}(关|关掉|关闭|关了|切断|退出|离开){我的}(s:mode_settings)",
+      "priority": 50,
+      "regex": "^(?:(?:(?:嘿|嗨))?siri)?(?:(?:帮我|麻烦|给我|请))?(?:关|关掉|关闭|关了|切断|退出|离开)(?:我的)?(?P<s>(?P<s__mode_settings>低电量模式|免打扰模式|勿扰模式|夜晚模式|夜览|夜间模式|夜间阅读模式|护眼模式|深夜模式|深色主题|深色外观|深色模式|省电模式|节电模式|飞行模式))$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "ebb2b491-01ea-5b3e-912b-f014f47fdb6a"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free": false,
+      "metadata": {
+        "s": "mode_settings",
+        "s__mode_settings": "mode_settings"
+      },
+      "pattern": "{{嘿|嗨}siri}{帮我|麻烦|给我|请}(开启|打开|启用|重启|重开|开|启动|切换到|进入|调为|调成){我的}(s:mode_settings)",
+      "priority": 50,
+      "regex": "^(?:(?:(?:嘿|嗨))?siri)?(?:(?:帮我|麻烦|给我|请))?(?:开启|打开|启用|重启|重开|开|启动|切换到|进入|调为|调成)(?:我的)?(?P<s>(?P<s__mode_settings>低电量模式|免打扰模式|勿扰模式|夜晚模式|夜览|夜间模式|夜间阅读模式|护眼模式|深夜模式|深色主题|深色外观|深色模式|省电模式|节电模式|飞行模式))$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "3cf095a4-5bb7-5de9-8075-32a84b38ff9c"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_mode')",
+      "context_free": false,
+      "metadata": {
+        "s": "mode_settings",
+        "s__mode_settings": "mode_settings"
+      },
+      "pattern": "{{嘿|嗨}siri}{帮我|麻烦|给我|请}{把|将}(s:mode_settings)(关闭|关掉|关了|打开|开启|开了)",
+      "priority": 50,
+      "regex": "^(?:(?:(?:嘿|嗨))?siri)?(?:(?:帮我|麻烦|给我|请))?(?:(?:把|将))?(?P<s>(?P<s__mode_settings>低电量模式|免打扰模式|勿扰模式|夜晚模式|夜览|夜间模式|夜间阅读模式|护眼模式|深夜模式|深色主题|深色外观|深色模式|省电模式|节电模式|飞行模式))(?:关闭|关掉|关了|打开|开启|开了)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "e5437f91-4915-568e-b108-7bd6bd32eb3d"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {
+        "s": "volume_settings",
+        "s__volume_settings": "volume_settings"
+      },
+      "pattern": "{{嘿|嗨}siri}{帮我|麻烦|给我|请}{把|将}{你|你的}(s:volume_settings)(调低|调小|降低|减小|减少|调高|调大|提高|加大|增加|增大)",
+      "priority": 50,
+      "regex": "^(?:(?:(?:嘿|嗨))?siri)?(?:(?:帮我|麻烦|给我|请))?(?:(?:把|将))?(?:(?:你|你的))?(?P<s>(?P<s__volume_settings>声量|声音|铃声|音乐|音量))(?:调低|调小|降低|减小|减少|调高|调大|提高|加大|增加|增大)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "a30d49ad-8507-5e1e-98e3-ef4c5edb9533"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {
+        "s": "flashlight_settings",
+        "s__flashlight_settings": "flashlight_settings"
+      },
+      "pattern": "{{嘿|嗨}siri}{帮我|麻烦|请|给我}(开启|打开|开|启用){我的}(s:flashlight_settings)",
+      "priority": 50,
+      "regex": "^(?:(?:(?:嘿|嗨))?siri)?(?:(?:帮我|麻烦|请|给我))?(?:开启|打开|开|启用)(?:我的)?(?P<s>(?P<s__flashlight_settings>手电|手电筒|灯光|照明|电筒|闪光灯))$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "cca8c1d3-c5f1-5ea1-a5f3-cf5552466348"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {
+        "s": "volume_settings",
+        "s__volume_settings": "volume_settings"
+      },
+      "pattern": "{你|你的}(s:volume_settings){再}(轻|小|小声|高|大|大声){一}(些|点)",
+      "priority": 50,
+      "regex": "^(?:(?:你|你的))?(?P<s>(?P<s__volume_settings>声量|声音|铃声|音乐|音量))(?:再)?(?:轻|小|小声|高|大|大声)(?:一)?(?:些|点)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "29c33087-b766-52de-a732-3f5b92dc55f7"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {
+        "s": "volume_settings",
+        "s__volume_settings": "volume_settings"
+      },
+      "pattern": "{你|你的}(s:volume_settings){有点|有一点|有些}{太}(大|大声|高|吵|小|小声|低){了}",
+      "priority": 50,
+      "regex": "^(?:(?:你|你的))?(?P<s>(?P<s__volume_settings>声量|声音|铃声|音乐|音量))(?:(?:有点|有一点|有些))?(?:太)?(?:大|大声|高|吵|小|小声|低)(?:了)?$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "e21add6d-21a6-583d-8b9c-5a82b46f740d"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_set_system_volume')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{你}{再}(大|小)声({一}点|{一}些)",
+      "priority": 50,
+      "regex": "^(?:你)?(?:再)?(?:大|小)声(?:(?:一)?点|(?:一)?些)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "d6b45c6a-ca93-53da-bc04-76ead52bba6b"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free": false,
+      "metadata": {
+        "s": "connection_settings",
+        "s__connection_settings": "connection_settings"
+      },
+      "pattern": "{嘿siri|嗨siri|siri}{帮我|麻烦|给我|请}(关闭|关掉|关|关了|切断|退出|断开|隐藏){我的}(s:connection_settings)",
+      "priority": 50,
+      "regex": "^(?:(?:嘿siri|嗨siri|siri))?(?:(?:帮我|麻烦|给我|请))?(?:关闭|关掉|关|关了|切断|退出|断开|隐藏)(?:我的)?(?P<s>(?P<s__connection_settings>Wi-Fi|wifi|个人热点|无线局域网|移动数据|网络|蓝牙|蜂窝网络))$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "66d82ad0-8276-5e8c-a8a8-80a1f3718265"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free": false,
+      "metadata": {
+        "s": "connection_settings",
+        "s__connection_settings": "connection_settings"
+      },
+      "pattern": "{嘿siri|嗨siri|siri}{帮我|麻烦|给我|请}{把|将}(s:connection_settings)(关闭|关掉|关了|断开|断了)",
+      "priority": 50,
+      "regex": "^(?:(?:嘿siri|嗨siri|siri))?(?:(?:帮我|麻烦|给我|请))?(?:(?:把|将))?(?P<s>(?P<s__connection_settings>Wi-Fi|wifi|个人热点|无线局域网|移动数据|网络|蓝牙|蜂窝网络))(?:关闭|关掉|关了|断开|断了)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "72f1e677-653b-5b13-9ba5-52f4515b9b3c"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_control_flashlight')",
+      "context_free": false,
+      "metadata": {
+        "s": "flashlight_settings",
+        "s__flashlight_settings": "flashlight_settings"
+      },
+      "pattern": "{嘿}{siri}{帮我|给我|麻烦|请}(把|将)(s:flashlight_settings)(关闭|关掉|关了|隐藏|收起)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:(?:帮我|给我|麻烦|请))?(?:把|将)(?P<s>(?P<s__flashlight_settings>手电|手电筒|灯光|照明|电筒|闪光灯))(?:关闭|关掉|关了|隐藏|收起)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "d388a1a2-79cf-5d54-b86c-6d9b639fd657"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free": false,
+      "metadata": {
+        "s": "connection_settings",
+        "s__connection_settings": "connection_settings"
+      },
+      "pattern": "{帮我|麻烦|请|给我}(开启|打开|启用|重启|重开|开|连接|连上){我的}(s:connection_settings)",
+      "priority": 50,
+      "regex": "^(?:(?:帮我|麻烦|请|给我))?(?:开启|打开|启用|重启|重开|开|连接|连上)(?:我的)?(?P<s>(?P<s__connection_settings>Wi-Fi|wifi|个人热点|无线局域网|移动数据|网络|蓝牙|蜂窝网络))$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "19905898-35ab-532b-8c1f-4e808b777f9e"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='settings_manage_connectivity')",
+      "context_free": false,
+      "metadata": {
+        "s": "connection_settings",
+        "s__connection_settings": "connection_settings"
+      },
+      "pattern": "{帮我|麻烦|请|给我}{把|将}(s:connection_settings)(打开|开启|连上)",
+      "priority": 50,
+      "regex": "^(?:(?:帮我|麻烦|请|给我))?(?:(?:把|将))?(?P<s>(?P<s__connection_settings>Wi-Fi|wifi|个人热点|无线局域网|移动数据|网络|蓝牙|蜂窝网络))(?:打开|开启|连上)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "45578b9c-1c1f-5b71-a53e-ceb4da87c714"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_power_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "(开机|关机)重启",
+      "priority": 50,
+      "regex": "^(?:开机|关机)重启$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "413e224d-54f5-5341-8f08-7d1f298706bb"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_capture_screen')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}(截屏|截图)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:截屏|截图)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "8dede48a-6f09-525b-b2fb-26c8d1df0cad"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_power_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}{想要|我想|我要|请|帮我|给我}(重启|重新启动|重启手机|重启设备|重{新}开机)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:(?:想要|我想|我要|请|帮我|给我))?(?:重启|重新启动|重启手机|重启设备|重(?:新)?开机)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "c0b6284c-7050-50ba-9899-4cfb26d56bb8"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_power_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}{想要|我想|我要|请|帮我|给我}关机{关机}{吧|呀}",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:(?:想要|我想|我要|请|帮我|给我))?关机(?:关机)?(?:(?:吧|呀))?$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "dbc587f2-d70e-5912-b525-9c6ec768d35d"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_power_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{我}(如何|怎么)(关机|把你关掉)",
+      "priority": 50,
+      "regex": "^(?:我)?(?:如何|怎么)(?:关机|把你关掉)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "5abbaade-20ff-5b3c-adf4-71820d316316"
+    },
+    {
+      "action": "siri_x_mini_tool(tool='system_power_control')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "强制关机",
+      "priority": 50,
+      "regex": "^强制关机$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "e25cc127-ee48-59ac-9e1e-f6ba8081f944"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "(设|设置|定|创建){{一}个}(time:time)的(计时器|定时器|倒计时)",
+      "priority": 50,
+      "regex": "^(?:设|设置|定|创建)(?:(?:一)?个)?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|早上)|(?P<am_pm__time_of_day_parser__pm>下午|晚上))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?:(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>点|点钟)))?)的(?:计时器|定时器|倒计时)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "c26396a3-8a92-5d42-b8db-1886b4b5c749"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "am_pm": "time_of_day_parser__am|time_of_day_parser__pm",
+        "am_pm__time_of_day_parser__am": "time_of_day_parser__am",
+        "am_pm__time_of_day_parser__pm": "time_of_day_parser__pm",
+        "ct": "clock_time|int|basic_number",
+        "ct__basic_number": "basic_number",
+        "ct__clock_time": "clock_time",
+        "ct__int": "int",
+        "o_clock": "time_of_day_parser__o_clock",
+        "o_clock__time_of_day_parser__o_clock": "time_of_day_parser__o_clock",
+        "time": "time"
+      },
+      "pattern": "{倒}计时{{设}到}(time:time)",
+      "priority": 50,
+      "regex": "^(?:倒)?计时(?:(?:设)?到)?(?P<time>(?:(?P<am_pm>(?:(?P<am_pm__time_of_day_parser__am>上午|早上)|(?P<am_pm__time_of_day_parser__pm>下午|晚上))))?(?P<ct>(?:(?P<ct__clock_time>(?:(?:[01]?\\d|2[0-3])(:|h|\\.)[0-5]\\d|(?:[01]\\d|2[0-3])[0-5]\\d|[1-9][0-5]\\d|(?:[01]?\\d|2[0-3])(?:時|时|点|點)[0-5]?\\d分?|(?:[01]?\\d|2[0-3])시\\s?[0-5]?\\d분?))|(?P<ct__int>\\d+)|(?P<ct__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?:(?P<o_clock>(?P<o_clock__time_of_day_parser__o_clock>点|点钟)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "315cdfd7-78b5-51b7-8943-b0d31aeb38f3"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{嘿}{siri}({倒}计时|计时器|倒数|定时{器}){设}(duration:duration)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:(?:倒)?计时|计时器|倒数|定时(?:器)?)(?:设)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>小时)))?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分钟)))?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "15488d16-1b97-5159-aabc-a13d7d5a279b"
+    },
+    {
+      "action": "stop_timers(plurality='single')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}(取消|关闭|关掉|停止)(计时{器}|倒计时)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:取消|关闭|关掉|停止)(?:计时(?:器)?|倒计时)$",
+      "required_labels": {},
+      "scope": [
+        "siri"
+      ],
+      "uuid": "e14a5f63-4ee1-5de9-8c85-86acc05f4220"
+    },
+    {
+      "action": "stop_timers(plurality='plural')",
+      "context_free": false,
+      "metadata": {},
+      "pattern": "{嘿}{siri}(取消|关闭|关掉|停止)所有{的}(计时{器}|倒计时)",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:取消|关闭|关掉|停止)所有(?:的)?(?:计时(?:器)?|倒计时)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "ace6550c-02cb-5890-bd2f-ff588c468d75"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{嘿}{siri}{ }(duration:duration){之}后(叫|喊)我",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:\\s+)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>小时)))?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分钟)))?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒)))?)(?:之)?后(?:叫|喊)我$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "d8ce99dc-3e21-51d2-bd6b-3d0f89b80a9e"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "{嘿}{siri}{ }(duration:duration){的}({倒}计时|计时器|倒数|定时{器})",
+      "priority": 50,
+      "regex": "^(?:嘿)?(?:siri)?(?:\\s+)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>小时)))?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分钟)))?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒)))?)(?:的)?(?:(?:倒)?计时|计时器|倒数|定时(?:器)?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "ef8bb81a-8517-55fe-b527-421c3fb14c43"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "嘿siri( |设置一个)倒计时(duration:duration)",
+      "priority": 50,
+      "regex": "^嘿siri(?:\\s+|设置一个)倒计时(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>小时)))?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分钟)))?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "ce65b3da-04af-5625-a39a-68cc003de4cf"
+    },
+    {
+      "action": "set_timer",
+      "context_free": false,
+      "metadata": {
+        "duration": "duration",
+        "n_h": "int|basic_number",
+        "n_h__basic_number": "basic_number",
+        "n_h__int": "int",
+        "n_m": "int|basic_number",
+        "n_m__basic_number": "basic_number",
+        "n_m__int": "int",
+        "n_s": "int|basic_number",
+        "n_s__basic_number": "basic_number",
+        "n_s__int": "int",
+        "unit_h": "hour_parser",
+        "unit_h__hour_parser": "hour_parser",
+        "unit_m": "minute_parser",
+        "unit_m__minute_parser": "minute_parser",
+        "unit_s": "second_parser",
+        "unit_s__second_parser": "second_parser"
+      },
+      "pattern": "嘿siri{ }(duration:duration)",
+      "priority": 50,
+      "regex": "^嘿siri(?:\\s+)?(?P<duration>(?:(?P<n_h>(?:(?P<n_h__int>\\d+)|(?P<n_h__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_h>(?P<unit_h__hour_parser>小时)))?(?:(?P<n_m>(?:(?P<n_m__int>\\d+)|(?P<n_m__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_m>(?P<unit_m__minute_parser>分|分钟)))?(?:(?P<n_s>(?:(?P<n_s__int>\\d+)|(?P<n_s__basic_number>一|七|三|两|九|二|五|八|六|十|四|零)))(?P<unit_s>(?P<unit_s__second_parser>秒)))?)$",
+      "required_labels": {},
+      "scope": [
+        "siri",
+        "contextFree"
+      ],
+      "uuid": "e1241d54-b844-5ef7-8808-d4070286e045"
+    }
+  ],
+  "version": "5500000.22501.0"
+}

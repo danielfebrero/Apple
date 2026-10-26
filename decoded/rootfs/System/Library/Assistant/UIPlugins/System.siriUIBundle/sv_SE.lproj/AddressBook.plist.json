@@ -1,0 +1,56 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Vad är Elins adress?",
+            "Vad har Susanna Karlsson för telefonnummer?",
+            "När fyller min fru år?",
+            "Visa Larssons e-postadress hem",
+            "Vad har min bror för jobbadress?"
+          ]
+        }
+      ],
+      "SectionName": "Fråga om kontakter"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Visa Björn Andersson",
+            "Hitta personer som heter Karlsson"
+          ]
+        }
+      ],
+      "SectionName": "Hitta kontakter"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Min mamma är Susanna Karlsson",
+            "Alexander Svensson är min bror"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Ring min bror på jobbet"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "FaceTime-samtal till min bror på arbetet"
+          ]
+        }
+      ],
+      "SectionName": "Relationer"
+    }
+  ]
+}

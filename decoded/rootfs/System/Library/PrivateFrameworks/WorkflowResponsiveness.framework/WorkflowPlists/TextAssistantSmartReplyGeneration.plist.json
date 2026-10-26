@@ -1,0 +1,17 @@
+{
+  "name": "TextAssistantSmartReplyGeneration",
+  "contextual_telemetry": "YES",
+  "maximum_duration": 100,
+  "signposts": [
+    {
+      "start": true,
+      "end": true,
+      "subsystem": "com.apple.InputAnalytics",
+      "category": "TextAssistant",
+      "name": "SmartReplyGenerate",
+      "environment_field_names": [
+        "Result"
+      ]
+    }
+  ]
+}

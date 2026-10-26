@@ -1,0 +1,42 @@
+{
+  "artifact": {
+    "customRow": {
+      "columns": [
+        [
+          "MD_ID",
+          "INTEGER"
+        ]
+      ],
+      "primaryKeyColumns": [],
+      "subjectIdentifierColumn": "MD_ID",
+      "tableName": "representation_ids"
+    },
+    "path": "internal/views.db",
+    "type": "customRow"
+  },
+  "featureFlag": "LivableSources",
+  "name": "representationIds",
+  "sql": {
+    "delete": "nerd/delete",
+    "update": "customSQL/representation_ids_update"
+  },
+  "type": "customSQL",
+  "update": {
+    "knowledgeGraphListeners": [
+      {
+        "filters": [],
+        "schedule": "daily",
+        "stores": [
+          "stableGraph",
+          "eventGraph"
+        ]
+      }
+    ],
+    "viewListeners": [
+      {
+        "name": "representationLearningSubset",
+        "schedule": "none"
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "CFBundleName": "NanoCompanionAssistantPreferencesSync",
+  "NPSDomains": [
+    {
+      "NPSDefaultsKeys": [
+        "Use device speaker for TTS"
+      ],
+      "NPSAction": "Backup",
+      "NPSDefaultsDomain": "com.apple.assistant.backedup"
+    },
+    {
+      "NPSDefaultsDomain": "com.apple.assistant.nano",
+      "NPSAction": "TwoWaySync",
+      "NPSDefaultsKeys": [
+        "Assistant Enabled",
+        "Dictation Enabled",
+        "PHS Enabled",
+        "JS Supported",
+        "VT Phrase Type",
+        "RTS Enabled",
+        "Use device speaker for TTS",
+        "TTS Speaker Volume",
+        "Output Voice",
+        "Session Language",
+        "Crown Activation Enabled",
+        "Message Without Confirmation",
+        "Offline Dictation Status",
+        "RTS Info Dismissed",
+        "Siri Response Should Always Print",
+        "Always Show Recognized Speech 2.0",
+        "Dictation Auto Punctuation Enabled",
+        "Dictation Auto Punctuation Supported Languages",
+        "Search Queries Data Sharing Status"
+      ],
+      "NPSPerGizmo": true,
+      "NPSChangeNotificationName": "com.apple.assistant.nano.preferences.did_change"
+    },
+    {
+      "NPSDefaultsDomain": "com.apple.assistant.nano",
+      "NPSAction": "OneWaySync",
+      "NPSDefaultsKeys": [
+        "Output Voice Tinker",
+        "Session Language Tinker"
+      ],
+      "NPSPerGizmo": true,
+      "NPSSyncGroups": [
+        "Tinker"
+      ]
+    }
+  ],
+  "DTXcode": "2700",
+  "DTSDKName": "iphoneos27.2.internal",
+  "DTSDKBuild": "24B107",
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleVersion": "1",
+  "BuildMachineOSBuild": "23A344017",
+  "DTPlatformName": "iphoneos",
+  "CFBundlePackageType": "BNDL",
+  "CFBundleShortVersionString": "1.0",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleExecutable": "NanoCompanionAssistantPreferencesSync",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "MinimumOSVersion": "27.2",
+  "CFBundleIdentifier": "com.apple.siri.NanoCompanionAssistantPreferencesSync",
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "DTPlatformVersion": "27.2",
+  "DTXcodeBuild": "27A225b",
+  "DTPlatformBuild": "24B107"
+}

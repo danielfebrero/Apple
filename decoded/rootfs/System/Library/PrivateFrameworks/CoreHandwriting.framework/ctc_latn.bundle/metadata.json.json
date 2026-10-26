@@ -1,0 +1,133 @@
+[
+  {
+    "metadataOutputVersion": "3.0",
+    "shortDescription": "bolt-taskid: x7wmz82ddr iteration: 73593",
+    "outputSchema": [
+      {
+        "dataType": "Float16",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 1...2500 × 236",
+        "shapeRange": "[[1, 1], [1, 2500], [236, 236]]",
+        "formattedType": "MultiArray (Float16 1 × 1 × 236)",
+        "type": "MultiArray",
+        "shape": "[1, 1, 236]",
+        "name": "output_log_softmax",
+        "shortDescription": ""
+      },
+      {
+        "dataType": "Float16",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 4...10000 × 5",
+        "shapeRange": "[[1, 1], [4, 10000], [5, 5]]",
+        "formattedType": "MultiArray (Float16 1 × 4 × 5)",
+        "type": "MultiArray",
+        "shape": "[1, 4, 5]",
+        "name": "output_principal_points",
+        "shortDescription": ""
+      }
+    ],
+    "storagePrecision": "Mixed (Float16, Int8)",
+    "modelParameters": [],
+    "author": "corerecognition",
+    "specificationVersion": 9,
+    "mlProgramOperationTypeHistogram": {
+      "Ios18.expandDims": 1,
+      "Ios18.mul": 14,
+      "Ios18.softmax": 2,
+      "Ios16.reduceMean": 7,
+      "Ios18.realDiv": 1,
+      "Ios18.sigmoid": 7,
+      "Tile": 1,
+      "Ios18.gather": 3,
+      "Ios18.add": 23,
+      "Ios18.layerNorm": 14,
+      "Ios18.reshape": 42,
+      "Shape": 3,
+      "Ios18.linear": 18,
+      "Ios18.conv": 37,
+      "Ios18.relu": 5,
+      "Ios18.concat": 5,
+      "Ios18.transpose": 22,
+      "Ios18.cast": 6,
+      "Ios18.clip": 7,
+      "Ios18.gelu": 7,
+      "Ios18.maxPool": 2,
+      "Ios18.log": 1,
+      "Ios18.sliceByIndex": 4,
+      "Ios18.convTranspose": 2,
+      "Ios18.constexprBlockwiseShiftScale": 53
+    },
+    "computePrecision": "Mixed (Float16, Float32, Int16, Int32, UInt16)",
+    "isUpdatable": "0",
+    "stateSchema": [],
+    "availability": {
+      "macOS": "15.0",
+      "tvOS": "18.0",
+      "visionOS": "2.0",
+      "watchOS": "11.0",
+      "iOS": "18.0",
+      "macCatalyst": "18.0"
+    },
+    "modelType": {
+      "name": "MLModelType_mlProgram"
+    },
+    "inputSchema": [
+      {
+        "dataType": "Float16",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 4...10000 × 4",
+        "shapeRange": "[[1, 1], [4, 10000], [4, 4]]",
+        "formattedType": "MultiArray (Float16 1 × 4 × 4)",
+        "type": "MultiArray",
+        "shape": "[1, 4, 4]",
+        "name": "input_stroke",
+        "shortDescription": ""
+      },
+      {
+        "dataType": "Float16",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 1...2500 × 1 × 300",
+        "shapeRange": "[[1, 1], [1, 2500], [1, 1], [300, 300]]",
+        "formattedType": "MultiArray (Float16 1 × 1 × 1 × 300)",
+        "type": "MultiArray",
+        "shape": "[1, 1, 1, 300]",
+        "name": "input_ctc_positional_encodings",
+        "shortDescription": ""
+      },
+      {
+        "hasShapeFlexibility": "0",
+        "isOptional": "0",
+        "dataType": "Float16",
+        "formattedType": "MultiArray (Float16 1 × 18)",
+        "shortDescription": "",
+        "shape": "[1, 18]",
+        "name": "input_locales",
+        "type": "MultiArray"
+      },
+      {
+        "dataType": "Float16",
+        "hasShapeFlexibility": "1",
+        "isOptional": "0",
+        "shapeFlexibility": "1 × 4...10000 × 1 × 68",
+        "shapeRange": "[[1, 1], [4, 10000], [1, 1], [68, 68]]",
+        "formattedType": "MultiArray (Float16 1 × 4 × 1 × 68)",
+        "type": "MultiArray",
+        "shape": "[1, 4, 1, 68]",
+        "name": "input_pp_positional_encodings",
+        "shortDescription": ""
+      }
+    ],
+    "userDefinedMetadata": {
+      "mldb_token": "mldb-6lvy37wado",
+      "com.github.apple.coremltools.source": "torch==2.5.1",
+      "com.github.apple.coremltools.version": "8.3.2",
+      "com.github.apple.coremltools.source_dialect": "TorchScript"
+    },
+    "generatedClassName": "model",
+    "method": "predict"
+  }
+]

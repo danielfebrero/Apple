@@ -1,0 +1,32 @@
+{
+  "AssetSetName": "com.apple.MobileAsset.UAF.Photos.MagicCleanup",
+  "Assets": [
+    {
+      "AssetName": "com.apple.fm.photos.genedit.magiccleanup.generic",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.fm.photos.genedit.magiccleanup",
+          "RequiredUsageTypes": [
+            "com.apple.fm.photos.genedit.magiccleanup.generic"
+          ]
+        }
+      ]
+    },
+    {
+      "AssetName": "com.apple.photos.magiccleanup.uaf.metadata",
+      "Expansions": [
+        {
+          "AutoAssetSpecifierTemplate": "com.apple.photos.magiccleanup.uaf.metadata"
+        }
+      ],
+      "IgnoreOSCompatibility": true
+    }
+  ],
+  "AutoAssetType": "com.apple.MobileAsset.UAF.Photos.MagicCleanup",
+  "FileType": "AssetSetConfiguration",
+  "FileVersion": "1.0.0",
+  "MetadataAsset": "com.apple.photos.magiccleanup.uaf.metadata",
+  "UsageTypes": [
+    "com.apple.fm.photos.genedit.magiccleanup.generic"
+  ]
+}

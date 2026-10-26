@@ -1,0 +1,68 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "佐藤さんの住所は?",
+            "鈴木さんの電話番号を教えて",
+            "妻の誕生日はいつ?",
+            "愛ちゃんの自宅メールアドレスを表示して",
+            "弟の勤務先の住所は?"
+          ]
+        }
+      ],
+      "SectionName": "連絡先の情報を調べる"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "田中一郎を表示",
+            "高橋さんを探して"
+          ]
+        }
+      ],
+      "SectionName": "連絡先を検索する"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "鈴木太郎が私の父です",
+            "私の妹は真由美です"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "弟の職場に電話をかける"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": false
+          },
+          "Entries": [
+            "弟の職場にFaceTime"
+          ]
+        }
+      ],
+      "SectionName": "関係者"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "私の名前の読み方を覚えて",
+            "私のお母さんの名前の読み方を覚えて",
+            "佐藤さんの名前の読み方を覚えて"
+          ]
+        }
+      ],
+      "SectionName": "名前の読み方"
+    }
+  ]
+}

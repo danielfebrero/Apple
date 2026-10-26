@@ -1,0 +1,49 @@
+{
+  "AllSections": [
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Envía un mensaje de correo sobre el viaje a Carlos",
+            "Mensaje de correo electrónico a Pablo y a Lidia sobre la boda",
+            "Enviar un mensaje de correo a David Pérez",
+            "Escríbele un mensaje de correo a mi papá sobre la renta",
+            "Mensaje de correo al doctor Gutiérrez con el asunto factura recibida, gracias"
+          ]
+        }
+      ],
+      "SectionName": "ENVIAR MENSAJES DE CORREO"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Comprobar si tengo correo nuevo",
+            "¿Tengo algún mensaje de correo de María del lunes?",
+            "Muéstrame los mensajes de correo nuevos sobre el contrato",
+            "Ver los mensajes de correo de María de ayer"
+          ]
+        }
+      ],
+      "SectionName": "COMPROBAR EL CORREO"
+    },
+    {
+      "ExamplePhrases": [
+        {
+          "Entries": [
+            "Responder gracias por la recomendación"
+          ]
+        },
+        {
+          "EntryRequirements": {
+            "telephony": true
+          },
+          "Entries": [
+            "Llamarle al trabajo"
+          ]
+        }
+      ],
+      "SectionName": "RESPONDER A UN MENSAJE DE CORREO"
+    }
+  ]
+}
