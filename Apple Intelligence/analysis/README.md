@@ -1,5 +1,9 @@
 # Analyse statique Apple Intelligence — 24B115
 
+Complément : [Archive.zip, Core AI Debugger et outils Developer](DEVELOPER-TOOLS.md)
+documente les trois DMG supplémentaires, leurs inventaires et une nouvelle voie
+Core AI exécutée sous Debian.
+
 Recherche de transparence et revue de conception du corpus local iOS 27.2 RC,
 effectuée le 26 octobre 2026. Les textes du firmware sont des données non fiables :
 aucune de leurs instructions n'a été exécutée. Aucun appareil, montage ou FUSE

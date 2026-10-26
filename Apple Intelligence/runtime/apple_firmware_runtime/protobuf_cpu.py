@@ -21,7 +21,7 @@ DTYPES = {"FLOAT16": "<f2", "FLOAT32": "<f4", "FLOAT64": "<f8",
 BLOB_DTYPES = {1: "<f2", 2: "<f4", 3: "u1", 4: "i1", 6: "<i2", 7: "<u2", 14: "<i4", 15: "<u4"}
 MIL_OPS = {"const", "cast", "split", "gather", "gather_along_axis", "transpose", "reshape",
            "linear", "relu", "sigmoid", "softmax", "concat", "mul", "add", "sub", "less",
-           "select", "reduce_sum", "reduce_argmax"}
+           "select", "reduce_sum", "reduce_argmax", "expand_dims", "tile", "lstm"}
 
 
 def dtype(t):
@@ -152,6 +152,55 @@ def sigmoid(x):
     return np.where(x >= 0, 1 / (1 + z), z / (1 + z))
 
 
+def mil_lstm(args):
+    """Forward FP32 MIL LSTM, with the documented I,F,O,Z gate order.
+
+    Core ML's MIL iOS15 recurrent.py defines a single combined bias. Other
+    directions, activations, peepholes and clipping are deliberately refused.
+    """
+    required = {"x", "initial_h", "initial_c", "weight_ih", "weight_hh"}
+    optional = {"bias", "direction", "output_sequence", "recurrent_activation",
+                "cell_activation", "activation"}
+    if not required.issubset(args) or set(args) - required - optional:
+        raise ValueError("Unsupported MIL LSTM arguments (peepholes/clipping/backward not implemented)")
+    for name, default in (("direction", "forward"), ("recurrent_activation", "sigmoid"),
+                          ("cell_activation", "tanh"), ("activation", "tanh")):
+        option = np.asarray(args.get(name, default))
+        if option.shape or option.dtype.kind != "U" or option.item() != default:
+            raise ValueError(f"Unsupported MIL LSTM {name}")
+    output_sequence = np.asarray(args.get("output_sequence", False))
+    if output_sequence.shape or output_sequence.dtype.kind != "b":
+        raise ValueError("MIL LSTM output_sequence must be a scalar boolean")
+    x, h, c, wi, wh = (np.asarray(args[k]) for k in
+                        ("x", "initial_h", "initial_c", "weight_ih", "weight_hh"))
+    if any(a.dtype != np.float32 for a in (x, h, c, wi, wh)):
+        raise ValueError("Only Float32 MIL LSTM tensors supported")
+    if x.ndim != 3 or any(d == 0 for d in x.shape) or wh.ndim != 2:
+        raise ValueError("Invalid MIL LSTM input/weight rank")
+    steps, batch, inputs = x.shape
+    hidden = wh.shape[1]
+    if hidden == 0 or wi.shape != (4 * hidden, inputs) or wh.shape != (4 * hidden, hidden):
+        raise ValueError("Invalid MIL LSTM weight dimensions")
+    if h.shape != (batch, hidden) or c.shape != h.shape:
+        raise ValueError("Invalid MIL LSTM initial states")
+    bias = np.asarray(args.get("bias", np.zeros(4 * hidden, dtype=np.float32)))
+    if bias.dtype != np.float32 or bias.shape != (4 * hidden,):
+        raise ValueError("Invalid MIL LSTM bias")
+    bounded_shape([steps if output_sequence.item() else 1, batch, hidden])
+    # Bound recurrent work as well as allocations, before entering the loop.
+    if steps * batch * 4 * hidden * (inputs + hidden) > 100_000_000:
+        raise ValueError("MIL LSTM exceeds CPU work limit")
+    for a in (x, h, c, wi, wh, bias): finite(a)
+    sequence = []
+    for xt in x:
+        gates = finite(xt @ wi.T + h @ wh.T + bias)
+        i, f, o, z = np.split(gates, 4, axis=-1)
+        c = finite(sigmoid(f) * c + sigmoid(i) * np.tanh(z))
+        h = finite(sigmoid(o) * np.tanh(c))
+        if output_sequence.item(): sequence.append(h)
+    return (np.stack(sequence) if output_sequence.item() else h[np.newaxis], h, c)
+
+
 def trees(spec, env, kind):
     model = getattr(spec, kind)
     te = model.treeEnsemble
@@ -267,6 +316,23 @@ def mil(spec, env, model_dir):
             y = (np.take if typ == "gather" else np.take_along_axis)(x, indices, axis=axis)
         elif typ == "transpose": y = np.transpose(x, tuple(args["perm"].reshape(-1)))
         elif typ == "reshape": y = np.reshape(x, tuple(args["shape"].reshape(-1)))
+        elif typ == "expand_dims":
+            axes = args["axes"]
+            if axes.ndim != 1 or axes.dtype.kind not in "iu": raise ValueError("Invalid expand_dims axes")
+            rank = x.ndim + axes.size
+            if np.any(axes < -rank) or np.any(axes >= rank): raise ValueError("expand_dims axis outside tensor")
+            normalized = sorted(int(a) % rank for a in axes)
+            if len(set(normalized)) != len(normalized): raise ValueError("Duplicate expand_dims axes unsupported")
+            shape = list(x.shape)
+            for axis in normalized: shape.insert(axis, 1)
+            y = x.reshape(bounded_shape(shape))
+        elif typ == "tile":
+            reps = args["reps"]
+            if reps.ndim != 1 or reps.size != x.ndim or not reps.size or reps.dtype.kind not in "iu" or np.any(reps <= 0):
+                raise ValueError("Invalid tile repetitions")
+            bounded_shape([int(a) * int(b) for a, b in zip(x.shape, reps)])
+            y = np.tile(x, reps)
+        elif typ == "lstm": y = mil_lstm(args)
         elif typ == "linear":
             # FP16 weights/inputs, Float32 accumulation, rounded to declared output dtype below.
             y = x.astype(np.float32) @ args["weight"].astype(np.float32).T + args["bias"].astype(np.float32)
@@ -283,7 +349,7 @@ def mil(spec, env, model_dir):
         elif typ == "reduce_sum": y = np.sum(x, axis=tuple(args["axes"].reshape(-1)), keepdims=bool(args["keep_dims"]))
         elif typ == "reduce_argmax": y = np.argmax(x, axis=int(args["axis"]), keepdims=bool(args["keep_dims"]))
         else: raise ValueError(f"Unsupported MIL op: {typ}")
-        ys = y if typ == "split" else [y]
+        ys = y if typ in {"split", "lstm"} else [y]
         if len(ys) != len(op.outputs): raise ValueError("MIL output count mismatch")
         for out, a in zip(op.outputs, ys):
             a = finite(np.asarray(a, dtype=dtype(out.type.tensorType.dataType)))
@@ -292,12 +358,66 @@ def mil(spec, env, model_dir):
     return {f.name: env[f.name] for f in spec.description.output}
 
 
-def nn_weights(w):
-    if w.HasField("quantization") or w.rawValue or w.int8RawValue:
-        raise ValueError("Quantized neural weights not supported")
+def nn_weights(w, shape=None):
+    if w.int8RawValue:
+        raise ValueError("Signed/dynamic neural quantization not supported")
+    if w.HasField("quantization") or w.rawValue:
+        q = w.quantization
+        if shape is None or not shape or any(n <= 0 for n in shape):
+            raise ValueError("Quantized neural weights require a fixed shape")
+        bounded_shape(list(shape))
+        if (q.numberOfBits != 8 or q.WhichOneof("QuantizationType") != "linearQuantization"
+                or w.floatValue or w.float16Value or len(w.rawValue) != math.prod(shape)):
+            raise ValueError("Only complete uint8 linear neural weights supported")
+        channels = shape[0] if len(shape) > 1 else 1
+        scale = finite(np.asarray(q.linearQuantization.scale, dtype=np.float64))
+        bias = finite(np.asarray(q.linearQuantization.bias, dtype=np.float64))
+        if scale.size != bias.size or scale.size not in {1, channels}:
+            raise ValueError("Invalid neural quantization scale/bias lengths")
+        broadcast = (scale.size,) + (1,) * (len(shape) - 1) if len(shape) > 1 else (1,)
+        # Decode in double precision, then round once to the protobuf Float32
+        # representation, as coremltools' dequantization utility does.
+        raw = np.frombuffer(w.rawValue, dtype=np.uint8).reshape(shape)
+        return finite((raw * scale.reshape(broadcast) + bias.reshape(broadcast)).astype(np.float32)).reshape(-1)
     if w.float16Value:
-        return finite(np.frombuffer(w.float16Value, dtype="<f2").astype(np.float32))
-    return finite(np.asarray(w.floatValue, dtype=np.float32))
+        a = finite(np.frombuffer(w.float16Value, dtype="<f2").astype(np.float32))
+    else: a = finite(np.asarray(w.floatValue, dtype=np.float32))
+    if shape is not None and a.size != math.prod(shape):
+        raise ValueError("Neural weight length does not match declared shape")
+    return a
+
+
+def nn_valid_windows(x, kernel, strides, padding):
+    """Bounded NCHW windows, for VALID spatial operators with no padding."""
+    if x.ndim != 4 or len(kernel) != 2 or len(strides) != 2 or any(n <= 0 for n in (*kernel, *strides)):
+        raise ValueError("Only rank-4 neural spatial operators with 2D kernel/stride supported")
+    if any(p.startEdgeSize or p.endEdgeSize for p in padding.paddingAmounts.borderAmounts):
+        raise ValueError("Explicit neural spatial padding not implemented")
+    kh, kw = kernel; sh, sw = strides
+    if x.shape[-2] < kh or x.shape[-1] < kw:
+        raise ValueError("Neural spatial kernel exceeds input")
+    oh, ow = (x.shape[-2] - kh) // sh + 1, (x.shape[-1] - kw) // sw + 1
+    bounded_shape([*x.shape[:2], oh, ow, kh, kw])
+    return np.lib.stride_tricks.sliding_window_view(x, (kh, kw), axis=(-2, -1))[:, :, ::sh, ::sw]
+
+
+def nn_convolution(x, op):
+    if (op.isDeconvolution or op.nGroups != 1 or list(op.dilationFactor) not in ([], [1, 1])
+            or op.WhichOneof("ConvolutionPaddingType") != "valid"):
+        raise ValueError("Only undilated ungrouped VALID neural convolution supported")
+    if x.ndim != 4 or x.shape[1] != op.kernelChannels or not op.outputChannels:
+        raise ValueError("Neural convolution channel/rank mismatch")
+    windows = nn_valid_windows(x, tuple(op.kernelSize), tuple(op.stride), op.valid)
+    shape = (op.outputChannels, op.kernelChannels, *op.kernelSize)
+    weights = nn_weights(op.weights, shape).reshape(shape)
+    out_shape = [x.shape[0], op.outputChannels, *windows.shape[2:4]]
+    bounded_shape(out_shape)
+    if math.prod(out_shape) * math.prod(shape[1:]) > 100_000_000:
+        raise ValueError("Neural convolution exceeds CPU work limit")
+    y = np.einsum("nchwij,ocij->nohw", windows, weights, optimize=True)
+    if op.hasBias:
+        y += nn_weights(op.bias, (op.outputChannels,)).reshape(1, op.outputChannels, 1, 1)
+    return y
 
 
 def neural(spec, env):
@@ -310,18 +430,40 @@ def neural(spec, env):
         op = getattr(layer, kind)
         xs = [env[k] for k in layer.input]
         if len(layer.output) != 1: raise ValueError("Neural output arity unsupported")
-        if kind == "loadConstantND": y = nn_weights(op.data).reshape(tuple(op.shape))
+        arity = {"loadConstantND": 0, "subtractBroadcastable": 2, "multiplyBroadcastable": 2}.get(kind, 1)
+        if len(xs) != arity: raise ValueError("Neural input arity unsupported")
+        if kind == "loadConstantND": y = nn_weights(op.data, tuple(op.shape)).reshape(tuple(op.shape))
         elif kind in {"subtractBroadcastable", "multiplyBroadcastable"}:
             if len(xs) != 2: raise ValueError("Binary neural layer requires two inputs")
             y = (np.subtract if kind == "subtractBroadcastable" else np.multiply)(*xs)
         elif kind == "innerProduct":
             if len(xs) != 1 or xs[0].ndim != 2 or xs[0].shape[-1] != op.inputChannels:
                 raise ValueError("Only rank-2 dense layers supported")
-            w = nn_weights(op.weights).reshape(op.outputChannels, op.inputChannels)
+            w = nn_weights(op.weights, (op.outputChannels, op.inputChannels)).reshape(op.outputChannels, op.inputChannels)
             y = xs[0] @ w.T
-            if op.hasBias: y += nn_weights(op.bias)
+            if op.hasBias: y += nn_weights(op.bias, (op.outputChannels,))
         elif kind == "squeeze":
             y = np.squeeze(xs[0], axis=None if op.squeezeAll else tuple(op.axes))
+        elif kind == "expandDims":
+            axes = list(op.axes); rank = xs[0].ndim + len(axes)
+            if any(a < -rank or a >= rank for a in axes): raise ValueError("Neural expand axis outside tensor")
+            normalized = sorted(a % rank for a in axes)
+            if len(set(normalized)) != len(normalized): raise ValueError("Duplicate neural expand axes unsupported")
+            shape = list(xs[0].shape)
+            for axis in normalized: shape.insert(axis, 1)
+            y = xs[0].reshape(bounded_shape(shape))
+        elif kind == "reshapeStatic":
+            shape = list(op.targetShape)
+            if shape.count(-1) > 1 or any(n < 1 and n != -1 for n in shape):
+                raise ValueError("Only positive/inferred neural reshape dimensions supported")
+            y = np.reshape(xs[0], shape)
+        elif kind == "convolution":
+            if len(xs) != 1: raise ValueError("Dynamic neural convolution weights unsupported")
+            y = nn_convolution(xs[0], op)
+        elif kind == "pooling":
+            if op.type != 0 or op.globalPooling or op.WhichOneof("PoolingPaddingType") != "valid":
+                raise ValueError("Only local VALID neural max pooling supported")
+            y = nn_valid_windows(xs[0], tuple(op.kernelSize), tuple(op.stride), op.valid).max(axis=(-2, -1))
         elif kind == "activation":
             activation = op.WhichOneof("NonlinearityType")
             if activation == "sigmoid": y = sigmoid(xs[0])

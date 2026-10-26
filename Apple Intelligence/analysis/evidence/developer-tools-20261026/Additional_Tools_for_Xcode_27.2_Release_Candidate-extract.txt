@@ -1,0 +1,64 @@
+
+7-Zip (z) 25.01 (x64) : Copyright (c) 1999-2025 Igor Pavlov : 2025-08-03
+ 64-bit locale=C.UTF-8 Threads:32 OPEN_MAX:1024, ASM
+
+Scanning the drive for archives:
+1 file, 64717312 bytes (62 MiB)
+
+Extracting archive: /workspace/recherche/apple-sec/apple-developer-tools-20261026/Additional_Tools_for_Xcode_27.2_Release_Candidate.dmg
+
+3.hfs
+WARNINGS:
+There are data after the end of archive
+
+--
+Path = /workspace/recherche/apple-sec/apple-developer-tools-20261026/Additional_Tools_for_Xcode_27.2_Release_Candidate.dmg
+Type = Dmg
+Physical Size = 64717312
+Method = Zero2 ZLIB CRC
+Blocks = 75
+Cluster Size = 1048576
+Comment =
+{
+unpack-size: 139542528
+ID: 00000000000000000000000000000000
+master-checksum: CRC: 166F07E2
+pack-checksum: CRC: ECABF64A
+pack-offset: 0
+pack-length: 64705819
+xml-offset: 64705819
+xml-length: 10595
+}
+----
+Path = 3.hfs
+Size = 139508224
+Packed Size = 64700591
+Comment = Apple_HFS
+Method = Zero2 ZLIB CRC
+Blocks = 70
+Cluster Size = 1048576
+Checksum = 9C6B62F7
+ID = 3
+--
+Path = 3.hfs
+Type = HFS
+WARNINGS:
+There are data after the end of archive
+Physical Size = 139505664
+Tail Size = 2560
+Method = HFS+
+Characteristics = ZLIB-rsrc COPY-attr
+Cluster Size = 4096
+Free Space = 69406720
+Created = 2026-10-15 06:25:06
+Modified = 2026-10-15 06:25:08
+
+Everything is Ok
+
+Archives with Warnings: 1
+
+Warnings: 1
+Folders: 197
+Files: 957
+Size:       119967685
+Compressed: 64717312

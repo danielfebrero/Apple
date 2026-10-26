@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 from . import __version__
-from .backends import coreml, portable, protobuf_cpu, read_json, static_inspection
+from .backends import coreai_cpu, coreml, portable, protobuf_cpu, read_json, static_inspection
 from .catalog import Catalog, RuntimeFailure
 from .store import Store, verify_bundle
 
@@ -40,10 +40,11 @@ def parser() -> argparse.ArgumentParser:
         if name in ("verify", "inspect"):
             op.add_argument("--source", action="store_true", help="Verify/use original extracted source instead of imported bundle")
         if name == "inspect":
-            op.add_argument("--load", action="store_true", help="Load in Core ML/macOS and return public modelDescription schema")
+            op.add_argument("--load", action="store_true", help="Load selected backend and return its actual model schema")
+            op.add_argument("--backend", choices=("coreml", "coreai-cpu"), default="coreml")
         if name == "predict":
             op.add_argument("--input", required=True, type=Path, help="JSON object, feature names from inspect")
-            op.add_argument("--backend", choices=("coreml", "espresso-linear-cpu-experimental", "coreml-protobuf-cpu-experimental"), default="coreml")
+            op.add_argument("--backend", choices=("coreml", "espresso-linear-cpu-experimental", "coreml-protobuf-cpu-experimental", "coreai-cpu"), default="coreml")
             op.add_argument("--output", type=Path, help="Write JSON result to this local file")
         if name in ("inspect", "predict"):
             op.add_argument("--compute", choices=("cpu", "all", "cpu-and-gpu", "cpu-and-ne"), default="cpu")
@@ -63,6 +64,11 @@ def doctor(catalog_path: Path, store: Store) -> dict:
                        "dependencies_present": all(importlib.util.find_spec(x) is not None for x in ("numpy", "coremltools")),
                        "required": "pip install '.[cpu]'",
                        "limitation": "Trees/pipelines and bounded MIL/dense operators; unsupported graphs fail explicitly; no Apple parity measurement"},
+            "coreai_cpu": {
+                       "dependencies_present": all(importlib.util.find_spec(x) is not None for x in ("numpy", "coreai")),
+                       "host_supported": platform.system() == "Linux" and platform.machine().lower() in ("x86_64", "amd64"),
+                       "required": "Python >=3.11, glibc >=2.34; pip install '.[coreai]'",
+                       "limitation": "Apple .aimodel assets only; stateless static numeric tensors; no AFM weights included"},
             "apple_intelligence_generation": {"available_from_this_firmware_corpus": False,
                        "reason": "Prompts and asset references do not supply AFM generation weights/runtime"},
             "network_requests": False}
@@ -90,7 +96,11 @@ def run(args: argparse.Namespace) -> dict | list:
     if args.command == "verify":
         return verified
     if args.command == "inspect":
-        result = coreml(model, bundle, store.root, compute=args.compute) if args.load else static_inspection(model, bundle)
+        if args.load:
+            result = (coreai_cpu(model, bundle, compute=args.compute) if args.backend == "coreai-cpu"
+                      else coreml(model, bundle, store.root, compute=args.compute))
+        else:
+            result = static_inspection(model, bundle)
         return result | {"integrity": verified}
     inputs = read_json(args.input)
     if not isinstance(inputs, dict):
@@ -99,6 +109,8 @@ def run(args: argparse.Namespace) -> dict | list:
         result = coreml(model, bundle, store.root, inputs=inputs, compute=args.compute)
     elif args.backend == "coreml-protobuf-cpu-experimental":
         result = protobuf_cpu(model, bundle, inputs)
+    elif args.backend == "coreai-cpu":
+        result = coreai_cpu(model, bundle, inputs, compute=args.compute)
     else:
         result = portable(model, bundle, inputs)
     result["integrity"] = verified

@@ -1,0 +1,190 @@
+{
+  "checked_utc": "2026-10-26T17:26:48.234351+00:00",
+  "runs": [
+    {
+      "command": [
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/bin/apple-firmware",
+        "--catalog",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/manifest.json",
+        "--source-root",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo",
+        "--store",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/store",
+        "doctor"
+      ],
+      "exit_code": 0,
+      "stdout_json": {
+        "version": "0.1.0",
+        "platform": "Linux-6.1.0-53-amd64-x86_64-with-glibc2.36",
+        "machine": "x86_64",
+        "catalog": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/manifest.json",
+        "catalog_present": true,
+        "store": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/store",
+        "coreml": {
+          "available_to_attempt": false,
+          "required": "macOS + CoreML framework + Xcode Command Line Tools",
+          "limitation": "An iOS compiled model may not load on macOS; runtime errors are preserved"
+        },
+        "espresso_linear_cpu_experimental": {
+          "available": true,
+          "limitation": "Strict attested InnerProduct(62\u21921)+sigmoid subset; no Apple parity measurement"
+        },
+        "coreml_protobuf_cpu_experimental": {
+          "dependencies_present": false,
+          "required": "pip install '.[cpu]'",
+          "limitation": "Trees/pipelines and bounded MIL/dense operators; unsupported graphs fail explicitly; no Apple parity measurement"
+        },
+        "coreai_cpu": {
+          "dependencies_present": true,
+          "host_supported": true,
+          "required": "Python >=3.11, glibc >=2.34; pip install '.[coreai]'",
+          "limitation": "Apple .aimodel assets only; stateless static numeric tensors; no AFM weights included"
+        },
+        "apple_intelligence_generation": {
+          "available_from_this_firmware_corpus": false,
+          "reason": "Prompts and asset references do not supply AFM generation weights/runtime"
+        },
+        "network_requests": false
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/bin/apple-firmware",
+        "--catalog",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/manifest.json",
+        "--source-root",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo",
+        "--store",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/store",
+        "inspect",
+        "apple-coreai-tutorial-add",
+        "--load",
+        "--backend",
+        "coreai-cpu"
+      ],
+      "exit_code": 0,
+      "stdout_json": {
+        "backend": "coreai-cpu",
+        "runtime_version": "1.0.0b3",
+        "function": "main",
+        "functions": [
+          "main"
+        ],
+        "prediction_performed": false,
+        "input_schema": {
+          "x": {
+            "dtype": "float32",
+            "shape": [
+              2,
+              3
+            ]
+          }
+        },
+        "output_schema": {
+          "y": {
+            "dtype": "float32",
+            "shape": [
+              2,
+              3
+            ]
+          }
+        },
+        "compatibility": "Apple Core AI local Linux runtime; no claim of AFM or Core ML compatibility",
+        "model_id": "apple-coreai-tutorial-add",
+        "manifest_fingerprint": "c5376e516e8d2bbb64f1a133ed4430f753ecce1862fbd1e0dfb72b1e937c336b",
+        "artifact_identity": "selected catalogue asset",
+        "scope": "demonstration",
+        "integrity": {
+          "verified": true,
+          "model_id": "apple-coreai-tutorial-add",
+          "files": 3,
+          "size_bytes": 665,
+          "manifest_fingerprint": "c5376e516e8d2bbb64f1a133ed4430f753ecce1862fbd1e0dfb72b1e937c336b",
+          "root": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/store/bundles/apple-coreai-tutorial-add/model.aimodel"
+        }
+      },
+      "stderr": "ODIE [default]: Loading function 'main'\n"
+    },
+    {
+      "command": [
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/bin/apple-firmware",
+        "--catalog",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/manifest.json",
+        "--source-root",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo",
+        "--store",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/store",
+        "predict",
+        "apple-coreai-tutorial-add",
+        "--backend",
+        "coreai-cpu",
+        "--input",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/input.json"
+      ],
+      "exit_code": 0,
+      "stdout_json": {
+        "backend": "coreai-cpu",
+        "runtime_version": "1.0.0b3",
+        "function": "main",
+        "functions": [
+          "main"
+        ],
+        "prediction_performed": true,
+        "input_schema": {
+          "x": {
+            "dtype": "float32",
+            "shape": [
+              2,
+              3
+            ]
+          }
+        },
+        "output_schema": {
+          "y": {
+            "dtype": "float32",
+            "shape": [
+              2,
+              3
+            ]
+          }
+        },
+        "compatibility": "Apple Core AI local Linux runtime; no claim of AFM or Core ML compatibility",
+        "outputs": {
+          "y": {
+            "dtype": "float32",
+            "shape": [
+              2,
+              3
+            ],
+            "data": [
+              [
+                3.0,
+                -4.0,
+                0.0
+              ],
+              [
+                0.5,
+                200.0,
+                -0.25
+              ]
+            ]
+          }
+        },
+        "model_id": "apple-coreai-tutorial-add",
+        "manifest_fingerprint": "c5376e516e8d2bbb64f1a133ed4430f753ecce1862fbd1e0dfb72b1e937c336b",
+        "artifact_identity": "selected catalogue asset",
+        "scope": "demonstration",
+        "integrity": {
+          "verified": true,
+          "model_id": "apple-coreai-tutorial-add",
+          "files": 3,
+          "size_bytes": 665,
+          "manifest_fingerprint": "c5376e516e8d2bbb64f1a133ed4430f753ecce1862fbd1e0dfb72b1e937c336b",
+          "root": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/catalog-demo/store/bundles/apple-coreai-tutorial-add/model.aimodel"
+        }
+      },
+      "stderr": "ODIE [default]: Loading function 'main'\n"
+    }
+  ]
+}

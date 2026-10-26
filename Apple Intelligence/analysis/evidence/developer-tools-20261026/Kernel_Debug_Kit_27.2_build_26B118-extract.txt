@@ -1,0 +1,63 @@
+
+7-Zip (z) 25.01 (x64) : Copyright (c) 1999-2025 Igor Pavlov : 2025-08-03
+ 64-bit locale=C.UTF-8 Threads:32 OPEN_MAX:1024, ASM
+
+Scanning the drive for archives:
+1 file, 1251295890 bytes (1194 MiB)
+
+Extracting archive: /workspace/recherche/apple-sec/apple-developer-tools-20261026/Kernel_Debug_Kit_27.2_build_26B118.dmg
+
+4.hfsx
+WARNINGS:
+There are data after the end of archive
+
+--
+Path = /workspace/recherche/apple-sec/apple-developer-tools-20261026/Kernel_Debug_Kit_27.2_build_26B118.dmg
+Type = Dmg
+Physical Size = 1251295890
+Method = Zero2 LZFSE CRC
+Blocks = 1208
+Cluster Size = 1048576
+Comment =
+{
+unpack-size: 1430346752
+ID: 6dc92ed9bfa343f2b687d2e56b9e0086
+master-checksum: CRC: 2A023441
+pack-checksum: CRC: BF180ED3
+pack-offset: 0
+pack-length: 1251216192
+xml-offset: 1251216192
+xml-length: 79186
+}
+----
+Path = 4.hfsx
+Size = 1296094720
+Packed Size = 1251215509
+Comment = Untitled 1 (Apple_HFSX : 4)
+Method = Zero2 LZFSE CRC
+Blocks = 1201
+Cluster Size = 1048576
+Checksum = EE134F2D
+ID = 4
+--
+Path = 4.hfsx
+Type = HFS
+WARNINGS:
+There are data after the end of archive
+Physical Size = 1296093184
+Tail Size = 1536
+Method = HFSX
+Cluster Size = 4096
+Free Space = 41316352
+Created = 2026-10-16 04:16:53
+Modified = 2026-10-16 16:41:33
+
+Everything is Ok
+
+Archives with Warnings: 1
+
+Warnings: 1
+Folders: 3
+Files: 1
+Size:       1242140014
+Compressed: 1251295890

@@ -1,0 +1,257 @@
+{
+  "checked_utc": "2026-10-26T17:31:01.997916+00:00",
+  "runs": [
+    {
+      "command": [
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/bin/apple-firmware",
+        "--catalog",
+        "/workspace/Apple/Apple Intelligence/models/manifest.json",
+        "--store",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/tte-final/store",
+        "predict",
+        "m-42c503b700dcb5d958aa",
+        "--backend",
+        "coreml-protobuf-cpu-experimental",
+        "--input",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/tte-final/tte-zero.json"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "stdout_json": {
+        "backend": "coreml-protobuf-cpu-experimental",
+        "model_type": "mlProgram",
+        "outputs": {
+          "var_80": {
+            "shape": [
+              1,
+              19,
+              1
+            ],
+            "dtype": "float32",
+            "data": [
+              -1.5703125,
+              -1.9677734375,
+              -2.009765625,
+              -1.751953125,
+              -1.5234375,
+              -1.4208984375,
+              -1.40234375,
+              -1.3955078125,
+              -1.390625,
+              -1.4189453125,
+              -1.4423828125,
+              -1.4443359375,
+              -1.43359375,
+              -1.4326171875,
+              -1.439453125,
+              -1.4384765625,
+              -1.431640625,
+              -1.431640625,
+              -1.4365234375
+            ]
+          }
+        },
+        "apple_runtime_parity_verified": false,
+        "limitation": "Independent CPU mathematics; Apple runtime parity and application preprocessing not established",
+        "model_id": "m-42c503b700dcb5d958aa",
+        "manifest_fingerprint": "fb4b92e0a2d9d1ee799378544c18cb8e26b88c97e5b0084d5ddbec9e661f76e3",
+        "artifact_identity": "selected firmware asset",
+        "integrity": {
+          "verified": true,
+          "model_id": "m-42c503b700dcb5d958aa",
+          "files": 3,
+          "size_bytes": 324858,
+          "manifest_fingerprint": "fb4b92e0a2d9d1ee799378544c18cb8e26b88c97e5b0084d5ddbec9e661f76e3",
+          "root": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/tte-final/store/bundles/m-42c503b700dcb5d958aa/model.mlpackage"
+        }
+      },
+      "stderr": "Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLCPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLGPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLNeuralEngineComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLComputePlanProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelAssetProxy: No module named 'coremltools.libcoremlpython'\n"
+    },
+    {
+      "command": [
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/bin/apple-firmware",
+        "--catalog",
+        "/workspace/Apple/Apple Intelligence/models/manifest.json",
+        "--store",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-final/store",
+        "predict",
+        "m-6c123b9c8ab2f00ccad0",
+        "--backend",
+        "coreml-protobuf-cpu-experimental",
+        "--input",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-final/m-6c123b9c8ab2f00ccad0-zero.json"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "stdout_json": {
+        "backend": "coreml-protobuf-cpu-experimental",
+        "model_type": "neuralNetwork",
+        "outputs": {
+          "linear_0": {
+            "shape": [
+              1,
+              3
+            ],
+            "dtype": "float32",
+            "data": [
+              -0.06349118798971176,
+              -0.1297999620437622,
+              0.19893214106559753
+            ]
+          }
+        },
+        "apple_runtime_parity_verified": false,
+        "limitation": "Independent CPU mathematics; Apple runtime parity and application preprocessing not established",
+        "model_id": "m-6c123b9c8ab2f00ccad0",
+        "manifest_fingerprint": "c3a8e5e6b31fdf2d0b3bc1c614b4c7e1022e00ca17e27cde95af15630a3b1258",
+        "artifact_identity": "selected firmware asset",
+        "integrity": {
+          "verified": true,
+          "model_id": "m-6c123b9c8ab2f00ccad0",
+          "files": 1,
+          "size_bytes": 343274,
+          "manifest_fingerprint": "c3a8e5e6b31fdf2d0b3bc1c614b4c7e1022e00ca17e27cde95af15630a3b1258",
+          "root": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-final/store/bundles/m-6c123b9c8ab2f00ccad0/model"
+        }
+      },
+      "stderr": "Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLCPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLGPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLNeuralEngineComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLComputePlanProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelAssetProxy: No module named 'coremltools.libcoremlpython'\n"
+    },
+    {
+      "command": [
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/bin/apple-firmware",
+        "--catalog",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/coreai-final/manifest.json",
+        "--source-root",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/coreai-final",
+        "--store",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/coreai-final/store",
+        "predict",
+        "apple-coreai-tutorial-add",
+        "--backend",
+        "coreai-cpu",
+        "--input",
+        "/workspace/recherche/apple-sec/apple-developer-tools-20261026/coreai-final/input.json"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "stdout_json": {
+        "backend": "coreai-cpu",
+        "runtime_version": "1.0.0b3",
+        "function": "main",
+        "functions": [
+          "main"
+        ],
+        "prediction_performed": true,
+        "input_schema": {
+          "x": {
+            "dtype": "float32",
+            "shape": [
+              2,
+              3
+            ]
+          }
+        },
+        "output_schema": {
+          "y": {
+            "dtype": "float32",
+            "shape": [
+              2,
+              3
+            ]
+          }
+        },
+        "compatibility": "Apple Core AI local Linux runtime; no claim of AFM or Core ML compatibility",
+        "outputs": {
+          "y": {
+            "dtype": "float32",
+            "shape": [
+              2,
+              3
+            ],
+            "data": [
+              [
+                3.0,
+                -4.0,
+                0.0
+              ],
+              [
+                0.5,
+                200.0,
+                -0.25
+              ]
+            ]
+          }
+        },
+        "model_id": "apple-coreai-tutorial-add",
+        "manifest_fingerprint": "d025b67ff0f481246850e7551a339df3472c8ad269b769cba350b9d6d70a9781",
+        "artifact_identity": "selected catalogue asset",
+        "scope": "demonstration",
+        "integrity": {
+          "verified": true,
+          "model_id": "apple-coreai-tutorial-add",
+          "files": 3,
+          "size_bytes": 665,
+          "manifest_fingerprint": "d025b67ff0f481246850e7551a339df3472c8ad269b769cba350b9d6d70a9781",
+          "root": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/coreai-final/store/bundles/apple-coreai-tutorial-add/model.aimodel"
+        }
+      },
+      "stderr": "ODIE [default]: Loading function 'main'\n"
+    }
+  ],
+  "code": [
+    {
+      "path": "apple_firmware_runtime/__init__.py",
+      "source_sha256": "5048225b6fe9fe32fa414d499c5d796a0943f2460e4d23fe3ac207f2d53c21c0",
+      "installed_sha256": "5048225b6fe9fe32fa414d499c5d796a0943f2460e4d23fe3ac207f2d53c21c0",
+      "matches": true
+    },
+    {
+      "path": "apple_firmware_runtime/__main__.py",
+      "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "installed_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "matches": true
+    },
+    {
+      "path": "apple_firmware_runtime/backends.py",
+      "source_sha256": "9998c924bf229547439235ba38a325e12c2e61a4f1f878095000dcdf85d98cc7",
+      "installed_sha256": "9998c924bf229547439235ba38a325e12c2e61a4f1f878095000dcdf85d98cc7",
+      "matches": true
+    },
+    {
+      "path": "apple_firmware_runtime/catalog.py",
+      "source_sha256": "5b2b4ce31c4c433dffd73dc940b7c974e233591932054a949ab1b9a181632ffe",
+      "installed_sha256": "5b2b4ce31c4c433dffd73dc940b7c974e233591932054a949ab1b9a181632ffe",
+      "matches": true
+    },
+    {
+      "path": "apple_firmware_runtime/cli.py",
+      "source_sha256": "515a337e3b41fbc857ec4fdbd2ae1be7e37e68d2c529e5daff53584aaa8b118c",
+      "installed_sha256": "515a337e3b41fbc857ec4fdbd2ae1be7e37e68d2c529e5daff53584aaa8b118c",
+      "matches": true
+    },
+    {
+      "path": "apple_firmware_runtime/coreai_backend.py",
+      "source_sha256": "74f56c42e6736a6e7f49a871655a8d3e4909bc45c8ec88a7610c7f1bb08b4f10",
+      "installed_sha256": "74f56c42e6736a6e7f49a871655a8d3e4909bc45c8ec88a7610c7f1bb08b4f10",
+      "matches": true
+    },
+    {
+      "path": "apple_firmware_runtime/espresso.py",
+      "source_sha256": "49e9eb070bbe8678976f58ce347ac593c21991b546d37131e8a046fb86880f58",
+      "installed_sha256": "49e9eb070bbe8678976f58ce347ac593c21991b546d37131e8a046fb86880f58",
+      "matches": true
+    },
+    {
+      "path": "apple_firmware_runtime/protobuf_cpu.py",
+      "source_sha256": "b6dc1ac23d45d5e866b614ae1ea78644a89676d35dc02c81897efc174b3928c3",
+      "installed_sha256": "b6dc1ac23d45d5e866b614ae1ea78644a89676d35dc02c81897efc174b3928c3",
+      "matches": true
+    },
+    {
+      "path": "apple_firmware_runtime/store.py",
+      "source_sha256": "7b876e23cbbd8947475a4695a2366c2de5846ad2421a69cb98ed1a3009181bef",
+      "installed_sha256": "7b876e23cbbd8947475a4695a2366c2de5846ad2421a69cb98ed1a3009181bef",
+      "matches": true
+    }
+  ]
+}

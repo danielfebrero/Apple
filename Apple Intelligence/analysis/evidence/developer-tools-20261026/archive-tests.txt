@@ -1,0 +1,11 @@
+test_corrupt_xar_payload_rejected (__main__.ArchiveTests.test_corrupt_xar_payload_rejected) ... ok
+test_parent_path_rejected (__main__.ArchiveTests.test_parent_path_rejected) ... ok
+test_pbzx_compressed_and_raw_chunks (__main__.ArchiveTests.test_pbzx_compressed_and_raw_chunks) ... ok
+test_truncated_pbzx_rejected (__main__.ArchiveTests.test_truncated_pbzx_rejected) ... ok
+test_unaligned_odc_inventory (__main__.ArchiveTests.test_unaligned_odc_inventory) ... ok
+test_unrelated_inode_zero_files_remain_distinct (__main__.ArchiveTests.test_unrelated_inode_zero_files_remain_distinct) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.004s
+
+OK

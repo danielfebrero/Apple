@@ -1,5 +1,29 @@
 # Acquisition des poids téléchargés séparément
 
+## Nouveau fait : Archive.zip et Core AI Linux
+
+Les [trois DMG fournis par Daniel](../analysis/DEVELOPER-TOOLS.md) ont été
+extraits et inventoriés, paquets imbriqués compris. Aucun bundle AFM ni toolkit
+Foundation Models Adapter n'y a été identifié. Les archives sources sont
+conservées et leurs SHA-256 ont été contrôlés avant/après l'analyse.
+
+Le Core AI Debugger contient une référence à la documentation officielle
+Core AI Torch. Cette piste a fourni **un runtime Apple réellement téléchargeable
+et exécutable sous Linux** : `coreai-core==1.0.0b3`, wheel
+`manylinux_2_34_x86_64` de **63 322 135 octets**, SHA-256
+`e0c8decb3c9b06e501a2bc1bba1014aabbe93c1774877c1d9b412b914fed76a3`,
+contrôlé contre PyPI. Les [sources et preuves](evidence/coreai-linux-research.json)
+relient ce paquet à la dépendance déclarée par le dépôt officiel Apple.
+
+Le [backend livré](../runtime/COREAI.md) importe un bundle `.aimodel` complet
+via un catalogue séparé et vérifie tous ses fichiers avant l'exécution. Le
+tutoriel numérique Apple est démontré sous Debian. Cette acquisition ne
+fournit **aucun poids AFM**, ni conversion des bundles Core ML compilés iOS,
+ni exécution du modèle système. Le toolkit Adapter reste à acquérir depuis
+une session Developer ; sa version 26.0.0 demeure distincte des assets OS 27.
+
+## État précédent, conservé avec ses preuves
+
 État du 26 octobre 2026 : les 3 923 fichiers du cache local proviennent des
 volumes firmware. Aucun nouveau poids principal AFM ni modèle de diffusion
 n'a été téléchargé pendant ce complément. Le [runtime Debian](../runtime/DEBIAN.md)

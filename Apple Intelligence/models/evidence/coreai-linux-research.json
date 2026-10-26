@@ -1,0 +1,108 @@
+{
+  "checked_utc": "2026-10-26T17:28:31.621200+00:00",
+  "conclusion": "Official Apple Core AI Linux runtime acquired and actually executed; optional backend integrated. No AFM weights acquired.",
+  "primary_sources": [
+    "https://github.com/apple/coreai-torch",
+    "https://apple.github.io/coreai-torch/main/api/debugging.html",
+    "https://github.com/apple/coreai-torch/blob/main/docs/coreai-core/tutorials/run-an-aimodel.ipynb",
+    "https://github.com/apple/coreai-models",
+    "https://pypi.org/project/coreai-core/1.0.0b3/"
+  ],
+  "package_identity_chain": "Apple official coreai-torch source requires coreai-core==1.0.0b3; matching PyPI wheel acquired with PyPI SHA256 verified",
+  "wheel": {
+    "url": "https://files.pythonhosted.org/packages/fa/9d/e88e777d396162d892475138736321ae81ee61706bf1c4a99141adcd47e3/coreai_core-1.0.0b3-cp311-cp311-manylinux_2_34_x86_64.whl",
+    "filename": "coreai_core-1.0.0b3-cp311-cp311-manylinux_2_34_x86_64.whl",
+    "bytes": 63322135,
+    "sha256": "e0c8decb3c9b06e501a2bc1bba1014aabbe93c1774877c1d9b412b914fed76a3",
+    "pypi_sha256_verified": true
+  },
+  "platform": "Linux-6.1.0-53-amd64-x86_64-with-glibc2.36",
+  "python": "3.11.2",
+  "coreai_torch_pypi_version": "0.4.3",
+  "coreai_torch_required_for_native_sample": false,
+  "linux_wheels_observed": [
+    "coreai_core-1.0.0b3-cp311-cp311-manylinux_2_34_x86_64.whl",
+    "coreai_core-1.0.0b3-cp312-cp312-manylinux_2_34_x86_64.whl",
+    "coreai_core-1.0.0b3-cp313-cp313-manylinux_2_34_x86_64.whl",
+    "coreai_core-1.0.0b3-cp314-cp314-manylinux_2_34_x86_64.whl"
+  ],
+  "local_runtime_observations": {
+    "_use_os_coreai": false,
+    "HAS_IMAGE_SUPPORT": false,
+    "inference_executed": true,
+    "raw_ndarray_input_output": true,
+    "gpu_or_ane_tested": false,
+    "pretrained_weights_tested": false,
+    "AFM_weights_tested": false
+  },
+  "format_observations": {
+    "source_asset_extension": ".aimodel",
+    "source_asset_files": [
+      "metadata.json",
+      "main.mlirb",
+      "main.hash"
+    ],
+    "metadata_assetVersion": "2.0",
+    "main_hash_contents": "raw 32-byte SHA256 digest of main.mlirb",
+    "bytecode_prefix_hex": "4d4cef520d4d4c495232322e302e306769740001190303070305090109070b0f",
+    "compatibility_version": "27.0",
+    "linux_derived_artifact": ".aimodelx with main-universal.odix (observed magic odix)",
+    "constant_test": "2048 float32 values persisted in bytecode resources and executed correctly; no separate external weight asset validated"
+  },
+  "validation": {
+    "coreai_integration_tests": {
+      "run": 7,
+      "passed": 7,
+      "skipped": 0
+    },
+    "catalog_store_tests": {
+      "run": 14,
+      "passed": 13,
+      "skipped": 1,
+      "skip_reason": "macOS Swift/CoreML SDK unavailable"
+    },
+    "installed_cli": {
+      "commands_passed": 3,
+      "commands": [
+        "doctor",
+        "inspect --load --backend coreai-cpu",
+        "predict --backend coreai-cpu"
+      ],
+      "strict_json_stdout": true,
+      "native_logs_on_stderr": true
+    },
+    "git_diff_check": "passed"
+  },
+  "backend": {
+    "format": "coreai_asset",
+    "name": "coreai-cpu",
+    "optional_dependency_extra": "coreai",
+    "stateless_static_numeric_tensors_only": true,
+    "store_preserves_aimodel_suffix": true,
+    "global_firmware_manifest_modified": false
+  },
+  "evidence_files": [
+    "sources.json",
+    "linux-wheel-acquisition.json",
+    "apple-tutorial-execution.json",
+    "catalog-demo-execution.json",
+    "installed-cli-execution.json",
+    "constant-odix-inventory.json",
+    "coreai-core-pypi.json",
+    "coreai-torch-pypi.json"
+  ],
+  "extraction_review": {
+    "script": "/workspace/Apple/Apple Intelligence/analysis/evidence/developer_tools_archive.py",
+    "actual_tocs_checked": 3,
+    "actual_data_entries_checked": 172,
+    "all_actual_toc_and_archived_and_extracted_checksums_present": true,
+    "result": "No concrete defect found affecting current XAR/PBZX/ODC/newc inventory evidence; no code changed"
+  },
+  "limits": [
+    "No macOS interface or device replay run",
+    "No AFM generation nor firmware Core ML→Core AI conversion",
+    "No performance comparison against Apple device",
+    "SpecializationOptions remains macOS-only",
+    "State/image/flexible tensor backend calls rejected or unsupported"
+  ]
+}

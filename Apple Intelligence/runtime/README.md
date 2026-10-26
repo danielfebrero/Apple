@@ -1,8 +1,11 @@
 # Exécuter les modèles réellement disponibles
 
-**Complément Debian :** [12 modèles supplémentaires exécutés sur CPU](DEBIAN.md)
-(arbres, pipelines, réseau dense et deux programmes MIL), avec 24 démonstrations
-et leurs sorties. Le backend Espresso décrit ci-dessous reste disponible.
+**Complément Debian :** [16 modèles auxiliaires du firmware exécutés](DEBIAN.md),
+dont trois nouveaux modèles LSTM/CNN à poids quantifiés après analyse
+d'Archive.zip. Six nouvelles entrées/sorties complètent les 24 démonstrations
+du premier lot protobuf. Le [backend officiel Core AI Linux](COREAI.md)
+exécute aussi les `.aimodel`, avec démonstration distincte sans poids AFM.
+Le backend Espresso décrit ci-dessous reste disponible.
 Les [chemins d'acquisition AFM](../models/DOWNLOADS.md) distinguent le toolkit
 Developer des assets iOS 27 absents.
 
@@ -28,8 +31,9 @@ chargement est une erreur explicite, jamais une sortie artificielle.
 
 ## Installation locale
 
-Python 3.10 ou ultérieur suffit au catalogue, aux empreintes et au backend CPU.
-Aucune dépendance Python tierce n'est nécessaire à l'exécution depuis le dépôt.
+Python 3.10 ou ultérieur suffit au catalogue, aux empreintes et au backend
+Espresso initial, sans dépendance tierce. Le backend protobuf requiert
+`pip install '.[cpu]'` ; Core AI nécessite Python 3.11+ et `.[coreai]`.
 
 ```sh
 cd '/workspace/Apple/Apple Intelligence/runtime'

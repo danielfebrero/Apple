@@ -1,0 +1,108 @@
+{
+  "scope": "Daniel Archive.zip supplied developer tools, static inspection only; no installer executed",
+  "source_archives_unchanged": true,
+  "authenticity": "SHA256 matches Depot declaration; XAR entry checksums checked; Apple signatures not validated",
+  "regular_dmg_files": 1193,
+  "dmg_symlinks": 65,
+  "cpio_entries": {
+    "KDK": 7685,
+    "KDK_SDK": 56,
+    "XcodeSystemResources": 3306,
+    "MobileDevice": 183
+  },
+  "nested_iOS_DDI_regular_files": 235,
+  "AFM_weights_acquired": false,
+  "AFM_bundle_identified": false,
+  "name_based_model_matches": [],
+  "limits": [
+    "No claim of exhaustive identification of weights embedded inside opaque executables/resources",
+    "Other platforms watchOS/tvOS/xrOS CandidateDDIs inventoried as outer payloads, not recursively extracted",
+    "macOS GUI/device replay not executed on this Linux host"
+  ],
+  "evidence": [
+    {
+      "path": "archive-inventory.json",
+      "sha256": "7b77124ecb20aacbae0dd8ab85d99762a3a7939bc970733f086bf9477e299c93"
+    },
+    {
+      "path": "dmg-files.json",
+      "sha256": "689315a8ad6c7ae4e38637b2a2ff7dc385ef5fd7eb8eaabaddde70e5423c26d2"
+    },
+    {
+      "path": "debugger-metadata.json",
+      "sha256": "4c5a49e32de75b825b8e64c5cca57203476b4cbebce0f2b9dc5ad3d056ff3e23"
+    },
+    {
+      "path": "debugger-blacksmith-index.json",
+      "sha256": "80f1f2ca60dcd48c1d13f703ece0d497d8c2b42593a75b74285c0d9c7c18a378"
+    },
+    {
+      "path": "debugger-find-aimodel.json",
+      "sha256": "2745622cd1c1d03a43e73034efbf135d5b130a02ea70a779f713f863306f055d"
+    },
+    {
+      "path": "debugger-main-literals.json",
+      "sha256": "2403013ff92e5ebcf870ac08ba26e4b42e22b08a4b27accdcb895f7e285f3a76"
+    },
+    {
+      "path": "debugger-programbytecode.json",
+      "sha256": "5e572e25902b1efeb0324fad49f2f1956d5cb45cf730f7ff9e979fd883930da8"
+    },
+    {
+      "path": "debugger-programbytecode-caller-decompile.json",
+      "sha256": "f62bb31b5b91f32d44d6f22e5a0594f168c323ebfe5bfc0c1e41930b33b02cdc"
+    },
+    {
+      "path": "debugger-replay.json",
+      "sha256": "2276103648192eaeaf7a2c9c0dff30f66b3b54d0619ffe3d2655dbda526e3371"
+    },
+    {
+      "path": "kdk-xar-report.json",
+      "sha256": "19a12b6a003882090532535eac70589937c0c3ee28183a895ab6ec411c85f663"
+    },
+    {
+      "path": "kdk-pbzx-report.json",
+      "sha256": "8b95c5ecfbe455c6a29b1ec2c0612aebc1351f73a55c49e45096dac35944a6e0"
+    },
+    {
+      "path": "kdk-cpio-inventory.json",
+      "sha256": "c526770f12b2da6b0c39dd93ac08091046ecc7ee6c2dcbb7fc7eab4e0bdfa3c7"
+    },
+    {
+      "path": "kdk-sdk-cpio-inventory.json",
+      "sha256": "fb631583b30f1625a93fa8253b013a7a36f3dc0c0bc703837625dcbe56a1b892"
+    },
+    {
+      "path": "kdk-sdk-pbzx-report.json",
+      "sha256": "483f383094f68d22acd07b3f3ce93af0280ed5d719bb55065fb1d7bb78efd910"
+    },
+    {
+      "path": "MobileDevice-xar-report.json",
+      "sha256": "5e296716fd1342d876ebeabd1e4d902e900b28e0d3fbdf875638a8659ddeb277"
+    },
+    {
+      "path": "XcodeSystemResources-xar-report.json",
+      "sha256": "ddd8a39ed5a283b2d27a26cb1f71d734587b4245073ccc6aa078312759ad2efb"
+    },
+    {
+      "path": "xcode-resources-pbzx-report.json",
+      "sha256": "27405931681d5cb8ecf1ed89922221f4b31b6d55e73cfeb64ae5d5f8a2587c60"
+    },
+    {
+      "path": "xcode-system-resources-cpio-inventory.json",
+      "sha256": "2fd76574755024898759670d20b8515ac599a5364bdb3c641eeeb15f889cffa8"
+    },
+    {
+      "path": "mobiledevice-cpio-inventory.json",
+      "sha256": "701f448e959983a20ec7f052ebc6bf75ed9fe5364c14831093c8c51d38917bc6"
+    },
+    {
+      "path": "ios-ddi-files.json",
+      "sha256": "42f672a24d3919b01564d97d8daa3f2dc8fef4b6a2c774eab5be46526f6c2e1a"
+    },
+    {
+      "path": "7zip-xar-extraction-rejected.json",
+      "sha256": "12866658ef66a1e1059be2fee23fbba3f1d075a204523cc52f3ea7dc8494400c"
+    }
+  ]
+}

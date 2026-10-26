@@ -1,0 +1,200 @@
+{
+  "created_at": "2026-10-26T17:29:19.866189+00:00",
+  "platform": "Linux-6.1.0-53-amd64-x86_64-with-glibc2.36",
+  "manifest_sha256": "36796cbac7124884cac6427e1c5747a919a3582e72ef82c728798129b6530840",
+  "input_semantics": "Synthetic constant embedding tensors; no text/image preprocessing or class labels inferred",
+  "independent_reference_method": "Python uint8 decoding and scalar Float64/math.fsum on each real coefficient; Float32 rounding between layers",
+  "independent_reference_tolerance": {
+    "atol": 2e-05,
+    "rtol": 2e-05
+  },
+  "apple_runtime_parity_verified": false,
+  "models": [
+    {
+      "model": {
+        "id": "m-6c123b9c8ab2f00ccad0",
+        "label": "mainModel_USEN.mlmodel",
+        "format": "coreml_protobuf",
+        "scope": "firmware_ml",
+        "availability": "local_extracted",
+        "firmware_path": "/System/Library/SmsFilter/assets_SMS_FILTER_FELIS/mainModel_USEN.mlmodel",
+        "file_count": 1,
+        "size_bytes": 343274,
+        "manifest_fingerprint": "c3a8e5e6b31fdf2d0b3bc1c614b4c7e1022e00ca17e27cde95af15630a3b1258"
+      },
+      "integrity": {
+        "verified": true,
+        "model_id": "m-6c123b9c8ab2f00ccad0",
+        "files": 1,
+        "size_bytes": 343274,
+        "manifest_fingerprint": "c3a8e5e6b31fdf2d0b3bc1c614b4c7e1022e00ca17e27cde95af15630a3b1258",
+        "root": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-final/store/bundles/m-6c123b9c8ab2f00ccad0/model"
+      },
+      "demos": [
+        {
+          "fill": 0,
+          "input_file": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-final/m-6c123b9c8ab2f00ccad0-zero.json",
+          "input_sha256": "b926be941841aae46641c465e3f7feea71e97ae5549a5b4fdc375e5fd141240e",
+          "result": {
+            "backend": "coreml-protobuf-cpu-experimental",
+            "model_type": "neuralNetwork",
+            "outputs": {
+              "linear_0": {
+                "shape": [
+                  1,
+                  3
+                ],
+                "dtype": "float32",
+                "data": [
+                  -0.06349118798971176,
+                  -0.1297999620437622,
+                  0.19893214106559753
+                ]
+              }
+            },
+            "apple_runtime_parity_verified": false,
+            "limitation": "Independent CPU mathematics; Apple runtime parity and application preprocessing not established",
+            "model_id": "m-6c123b9c8ab2f00ccad0",
+            "manifest_fingerprint": "c3a8e5e6b31fdf2d0b3bc1c614b4c7e1022e00ca17e27cde95af15630a3b1258",
+            "artifact_identity": "selected firmware asset"
+          },
+          "independent_reference": [
+            -0.06349118053913116,
+            -0.1297999620437622,
+            0.19893214106559753
+          ],
+          "max_absolute_error": 7.450580596923828e-09
+        },
+        {
+          "fill": 1,
+          "input_file": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-final/m-6c123b9c8ab2f00ccad0-one.json",
+          "input_sha256": "5b5b29007fa9df55523f4929b846add64a21c5a295fdc7f9774c9c9a0fc65bca",
+          "result": {
+            "backend": "coreml-protobuf-cpu-experimental",
+            "model_type": "neuralNetwork",
+            "outputs": {
+              "linear_0": {
+                "shape": [
+                  1,
+                  3
+                ],
+                "dtype": "float32",
+                "data": [
+                  36.36194610595703,
+                  -42.44094467163086,
+                  -11.203907012939453
+                ]
+              }
+            },
+            "apple_runtime_parity_verified": false,
+            "limitation": "Independent CPU mathematics; Apple runtime parity and application preprocessing not established",
+            "model_id": "m-6c123b9c8ab2f00ccad0",
+            "manifest_fingerprint": "c3a8e5e6b31fdf2d0b3bc1c614b4c7e1022e00ca17e27cde95af15630a3b1258",
+            "artifact_identity": "selected firmware asset"
+          },
+          "independent_reference": [
+            36.3619270324707,
+            -42.44089126586914,
+            -11.204007148742676
+          ],
+          "max_absolute_error": 0.00010013580322265625
+        }
+      ]
+    },
+    {
+      "model": {
+        "id": "m-ddd4e3cc19480fcb7ac3",
+        "label": "subClassModel_USEN.mlmodel",
+        "format": "coreml_protobuf",
+        "scope": "firmware_ml",
+        "availability": "local_extracted",
+        "firmware_path": "/System/Library/SmsFilter/assets_SMS_FILTER_FELIS/subClassModel_USEN.mlmodel",
+        "file_count": 1,
+        "size_bytes": 343852,
+        "manifest_fingerprint": "53f77f5385d4edd53b781e2b077b2d70fcc0a44e42a025a69b81ebec79ad5f3c"
+      },
+      "integrity": {
+        "verified": true,
+        "model_id": "m-ddd4e3cc19480fcb7ac3",
+        "files": 1,
+        "size_bytes": 343852,
+        "manifest_fingerprint": "53f77f5385d4edd53b781e2b077b2d70fcc0a44e42a025a69b81ebec79ad5f3c",
+        "root": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-final/store/bundles/m-ddd4e3cc19480fcb7ac3/model"
+      },
+      "demos": [
+        {
+          "fill": 0,
+          "input_file": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-final/m-ddd4e3cc19480fcb7ac3-zero.json",
+          "input_sha256": "b926be941841aae46641c465e3f7feea71e97ae5549a5b4fdc375e5fd141240e",
+          "result": {
+            "backend": "coreml-protobuf-cpu-experimental",
+            "model_type": "neuralNetwork",
+            "outputs": {
+              "linear_0": {
+                "shape": [
+                  1,
+                  4
+                ],
+                "dtype": "float32",
+                "data": [
+                  0.09083940088748932,
+                  -0.2461158037185669,
+                  -0.03678146004676819,
+                  0.09946630150079727
+                ]
+              }
+            },
+            "apple_runtime_parity_verified": false,
+            "limitation": "Independent CPU mathematics; Apple runtime parity and application preprocessing not established",
+            "model_id": "m-ddd4e3cc19480fcb7ac3",
+            "manifest_fingerprint": "53f77f5385d4edd53b781e2b077b2d70fcc0a44e42a025a69b81ebec79ad5f3c",
+            "artifact_identity": "selected firmware asset"
+          },
+          "independent_reference": [
+            0.09083939343690872,
+            -0.2461157888174057,
+            -0.036781445145606995,
+            0.09946629405021667
+          ],
+          "max_absolute_error": 1.4901161193847656e-08
+        },
+        {
+          "fill": 1,
+          "input_file": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-final/m-ddd4e3cc19480fcb7ac3-one.json",
+          "input_sha256": "5b5b29007fa9df55523f4929b846add64a21c5a295fdc7f9774c9c9a0fc65bca",
+          "result": {
+            "backend": "coreml-protobuf-cpu-experimental",
+            "model_type": "neuralNetwork",
+            "outputs": {
+              "linear_0": {
+                "shape": [
+                  1,
+                  4
+                ],
+                "dtype": "float32",
+                "data": [
+                  -69.36685943603516,
+                  -66.92754364013672,
+                  -55.843746185302734,
+                  58.08216857910156
+                ]
+              }
+            },
+            "apple_runtime_parity_verified": false,
+            "limitation": "Independent CPU mathematics; Apple runtime parity and application preprocessing not established",
+            "model_id": "m-ddd4e3cc19480fcb7ac3",
+            "manifest_fingerprint": "53f77f5385d4edd53b781e2b077b2d70fcc0a44e42a025a69b81ebec79ad5f3c",
+            "artifact_identity": "selected firmware asset"
+          },
+          "independent_reference": [
+            -69.36685180664062,
+            -66.92755889892578,
+            -55.84374237060547,
+            58.08218002319336
+          ],
+          "max_absolute_error": 1.52587890625e-05
+        }
+      ]
+    }
+  ]
+}

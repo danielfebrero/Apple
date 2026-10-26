@@ -1,0 +1,24 @@
+{
+  "tool": "7-Zip 25.01 XAR extraction",
+  "problem": "Unrelated XAR file entries have inode=0; extraction incorrectly creates a shared hardlink for all 164 files. Discarded; replaced by offset/checksum extraction.",
+  "observed": [
+    {
+      "path": "KDK.pkg/Payload",
+      "inode": 16779081,
+      "nlink": 164,
+      "incorrect_size": 1238254784
+    },
+    {
+      "path": "KDK.pkg/PackageInfo",
+      "inode": 16779081,
+      "nlink": 164,
+      "incorrect_size": 1238254784
+    },
+    {
+      "path": "KDK_SDK.pkg/Payload",
+      "inode": 16779081,
+      "nlink": 164,
+      "incorrect_size": 1238254784
+    }
+  ]
+}

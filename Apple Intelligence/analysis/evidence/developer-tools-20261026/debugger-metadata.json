@@ -1,0 +1,122 @@
+{
+  "executable": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/extracted/Core_AI_Debugger/Core AI Debugger/Core AI Debugger.app/Contents/MacOS/Core AI Debugger",
+  "sha256": "dd3e2e84c81bea47ed1a12f63c698bf6bcf12c960a4894a2841e508b4fc5b99c",
+  "cpu_type": "0x100000c",
+  "dependencies": [
+    "/System/Library/Frameworks/CoreAI.framework/Versions/A/CoreAI",
+    "/System/Library/Frameworks/Metal.framework/Versions/A/Metal",
+    "@rpath/GanacheTensorViewer.framework/Versions/A/GanacheTensorViewer",
+    "/System/Library/PrivateFrameworks/MLModelAsset.framework/Versions/A/MLModelAsset",
+    "@rpath/GanacheBufferViewer.framework/Versions/A/GanacheBufferViewer",
+    "/System/Library/Frameworks/Combine.framework/Versions/A/Combine",
+    "@rpath/SharedFrameworks/SourceEditor.framework/Versions/A/SourceEditor",
+    "@rpath/SharedFrameworks/SourceModel.framework/Versions/A/SourceModel",
+    "/System/Library/Frameworks/Quartz.framework/Versions/A/Quartz",
+    "/System/Library/Frameworks/CryptoKit.framework/Versions/A/CryptoKit",
+    "@rpath/GanacheImageViewer.framework/Versions/A/GanacheImageViewer",
+    "/System/Library/Frameworks/SwiftUI.framework/Versions/A/SwiftUI",
+    "@rpath/SharedFrameworks/SourceModelSupport.framework/Versions/A/SourceModelSupport",
+    "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit",
+    "@rpath/SharedFrameworks/_CodeCompletionFoundation.framework/Versions/A/_CodeCompletionFoundation",
+    "@rpath/GTStandaloneKit.framework/Versions/A/GTStandaloneKit",
+    "@rpath/GanacheImageProcessor.framework/Versions/A/GanacheImageProcessor",
+    "@rpath/MLToolsMPS.framework/Versions/A/MLToolsMPS",
+    "@rpath/MLOpGraph.framework/Versions/A/MLOpGraph",
+    "/System/Library/PrivateFrameworks/IconServices.framework/Versions/A/IconServices",
+    "@rpath/Ganache.framework/Versions/A/Ganache",
+    "/System/Library/PrivateFrameworks/MLIR_ML.framework/Versions/A/MLIR_ML",
+    "@rpath/GTGraph.framework/Versions/A/GTGraph",
+    "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics",
+    "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libSystem.B.dylib",
+    "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore",
+    "/usr/lib/swift/libswiftAccelerate.dylib",
+    "/usr/lib/swift/libswiftCore.dylib",
+    "/usr/lib/swift/libswiftCoreAudio.dylib",
+    "/usr/lib/swift/libswiftCoreFoundation.dylib",
+    "/usr/lib/swift/libswiftCoreImage.dylib",
+    "/usr/lib/swift/libswiftDispatch.dylib",
+    "/usr/lib/swift/libswiftIOKit.dylib",
+    "/usr/lib/swift/libswiftMetal.dylib",
+    "/usr/lib/swift/libswiftOSLog.dylib",
+    "/usr/lib/swift/libswiftObjectiveC.dylib",
+    "/usr/lib/swift/libswiftObservation.dylib",
+    "/usr/lib/swift/libswiftQuartzCore.dylib",
+    "/usr/lib/swift/libswiftSpatial.dylib",
+    "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+    "/usr/lib/swift/libswiftXPC.dylib",
+    "/usr/lib/swift/libswift_Builtin_float.dylib",
+    "/usr/lib/swift/libswift_Concurrency.dylib",
+    "/usr/lib/swift/libswiftos.dylib",
+    "/usr/lib/swift/libswiftsimd.dylib"
+  ],
+  "plist": {
+    "CFBundleIdentifier": "com.apple.gputools.CoreAIDebugger",
+    "CFBundleShortVersionString": "1.0",
+    "CFBundleVersion": "27.0.4",
+    "CFBundleSupportedPlatforms": [
+      "MacOSX"
+    ],
+    "LSMinimumSystemVersion": "26.0",
+    "DTSDKName": "macosx27.0.internal",
+    "DTSDKBuild": "26A384",
+    "DTXcodeBuild": "27A264",
+    "UTImportedTypeDeclarations": [
+      {
+        "UTTypeIcons": {
+          "UTTypeIconText": "mpsgraph",
+          "UTTypeIconBadgeName": "mpsgraph-badge"
+        },
+        "UTTypeIdentifier": "com.apple.mps.graph.package",
+        "UTTypeDescription": "MPS Graph Package",
+        "UTTypeConformsTo": [
+          "com.apple.package"
+        ],
+        "UTTypeTagSpecification": {
+          "public.filename-extension": [
+            "mpsgraphpackage"
+          ]
+        }
+      },
+      {
+        "UTTypeIcons": {
+          "UTTypeIconBackgroundName": "Core AI Model",
+          "UTTypeIconText": "",
+          "UTTypeIconBadgeName": ""
+        },
+        "UTTypeIdentifier": "com.apple.coreai.aimodel",
+        "UTTypeDescription": "Core AI Model",
+        "UTTypeConformsTo": [
+          "com.apple.package"
+        ],
+        "UTTypeTagSpecification": {
+          "public.filename-extension": [
+            "aimodel"
+          ]
+        }
+      },
+      {
+        "UTTypeIcons": {
+          "UTTypeIconBackgroundName": "Core AI Model Intermediates",
+          "UTTypeIconText": "",
+          "UTTypeIconBadgeName": ""
+        },
+        "UTTypeIdentifier": "com.apple.coreai.aimodelintermediates",
+        "UTTypeDescription": "Core AI Model Intermediates",
+        "UTTypeConformsTo": [
+          "com.apple.package"
+        ],
+        "UTTypeTagSpecification": {
+          "public.filename-extension": [
+            "aimodelintermediates"
+          ]
+        }
+      }
+    ]
+  },
+  "signature_authenticity_verified": false,
+  "zip_hash_matches_depot": true
+}

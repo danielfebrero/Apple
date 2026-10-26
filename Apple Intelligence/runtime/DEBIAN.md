@@ -1,5 +1,78 @@
 # Runtime CPU indépendant sur Debian
 
+## Complément après analyse d'Archive.zip
+
+**16 modèles auxiliaires du firmware ont désormais été exécutés** : les 13
+déjà démontrés, plus un LSTM et deux CNN à coefficients uint8. Les trois
+nouveaux modèles produisent **six inférences** avec leurs vrais poids ; les
+entrées restent des tenseurs synthétiques à zéro/un, sans reconstitution du
+prétraitement applicatif. Les preuves historiques ci-dessous sont conservées.
+
+| Modèle et ID | Entrée exacte à zéro | Sortie mesurée |
+| --- | --- | --- |
+| TTE_Model, `m-42c503b700dcb5d958aa` | `temporal_features` Float32 `[1,19,5]`, `static_features` Float32 `[1,10]` | `var_80` Float32 `[1,19,1]`, débute par `[-1.5703125,-1.9677734375,-2.009765625]` |
+| mainModel_USEN, `m-6c123b9c8ab2f00ccad0` | `inp` Float32 `[1,512,1,256]` | `linear_0 = [-0.06349118798971176,-0.1297999620437622,0.19893214106559753]` |
+| subClassModel_USEN, `m-ddd4e3cc19480fcb7ac3` | `inp` Float32 `[1,512,1,256]` | `linear_0 = [0.09083940088748932,-0.2461158037185669,-0.03678146004676819,0.09946630150079727]` |
+
+Les types du tableau sont ceux des interfaces déclarées, vérifiés par le
+backend. Les deux CNN calculent des **scores bruts à partir d'embeddings** :
+ni pixels, ni chaîne de texte, ni noms de classes ou probabilités supposés.
+TTE_Model fournit un tenseur numérique ; ces entrées artificielles ne
+constituent pas une prédiction de batterie calibrée sur un appareil.
+
+```sh
+# Depuis runtime/, avec le cache firmware déjà acquis
+python3 -m venv .venv-cpu
+.venv-cpu/bin/pip install -e '.[cpu]'
+.venv-cpu/bin/python examples/demo_tte_runtime.py \
+  --output .state/tte-runtime-demo.json
+OPENBLAS_NUM_THREADS=1 .venv-cpu/bin/python examples/demo_cnn_runtime.py \
+  --output .state/cnn-runtime-demo.json
+```
+
+Le LSTM accepté est **forward Float32**, ordre de gates I/F/O/Z, sigmoid/tanh,
+sans peepholes, clipping ou direction inverse. Le vrai graphe convertit ses
+entrées et sorties intermédiaires selon ses types. `expand_dims` et `tile`
+sont désormais pris en charge. Les CNN ajoutent déquantification affine uint8
+par canal, convolution NCHW/OIHW **VALID sans padding**, sans groupes ni
+dilatation, maxpool VALID, `expandDims` et `reshapeStatic`. Les variantes
+absentes de ce sous-ensemble sont refusées. Les allocations et le travail
+numérique sont bornés, les arités et axes invalides contrôlés.
+
+La [preuve LSTM](../models/evidence/tte-runtime-demo.json) compare **5 376
+valeurs** de la séquence et des états du vrai graphe à une lecture séparée des
+blobs et un calcul scalaire Float64 avec `math.fsum` : erreur maximale
+**4,925 × 10⁻⁷**. La [preuve CNN](../models/evidence/cnn-runtime-demo.json)
+compare toutes les sorties finales à une référence scalaire indépendante :
+erreur absolue maximale **0,00010014**, dans les tolérances publiées
+`atol=2e-5, rtol=2e-5`. Les tests complémentaires utilisent des entrées non
+uniformes pour vérifier ordre spatial, canaux, lots et strides. Cela valide
+ces calculs CPU ; **la parité Core ML/ANE n'a pas été mesurée**.
+
+Un **nouveau backend officiel Apple sous Linux**, [`coreai-cpu`](COREAI.md),
+exécute aussi le format `.aimodel`, découvert par les liens/imports du
+[Core AI Debugger](../analysis/DEVELOPER-TOOLS.md). Son tutoriel `x+x` et une
+constante embarquée sont réellement exécutés, séparément des modèles firmware
+entraînés. Le runtime `coreai-core 1.0.0b3` a été acquis publiquement ; il ne
+fournit pas les poids AFM ou diffusion et ne transforme pas les `.mlmodelc`
+du firmware en `.aimodel`.
+
+Validation finale avec les deux dépendances optionnelles : **60 tests runtime,
+59 réussis et un saut macOS**, plus **six tests d'archives réussis**. Les trois
+nouveaux modèles et le tutoriel ont également été exécutés depuis des exemples
+et la CLI installée, appelée hors du dépôt. Voir
+[`developer-tools-runtime-validation.json`](../models/evidence/developer-tools-runtime-validation.json)
+et [`developer-tools-installed-cli.json`](../models/evidence/developer-tools-installed-cli.json).
+
+**L'objectif complet reste ouvert** : aucune génération AFM de texte, d'image,
+de son ou de vidéo n'est démontrée. Les principaux poids et assets de Data
+manquent ; les formats opaques/compilés et opérateurs non portés restent hors
+du sous-ensemble CPU. Les archives supplémentaires ne contiennent aucun bundle
+AFM identifié. La [note d'acquisition](../models/DOWNLOADS.md) décrit les
+artefacts encore nécessaires, sans demander d'identifiants en clair.
+
+## Premier lot protobuf : état historique
+
 Le 26 octobre 2026, **12 modèles supplémentaires** du firmware `24B115` ont
 produit des sorties sur Debian x86_64, avec deux entrées numériques chacun.
 Avec EntitySimilarity déjà pris en charge par le backend Espresso, cela porte

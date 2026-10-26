@@ -1,0 +1,63 @@
+
+7-Zip (z) 25.01 (x64) : Copyright (c) 1999-2025 Igor Pavlov : 2025-08-03
+ 64-bit locale=C.UTF-8 Threads:32 OPEN_MAX:1024, ASM
+
+Scanning the drive for archives:
+1 file, 182450505 bytes (174 MiB)
+
+Extracting archive: /workspace/recherche/apple-sec/apple-developer-tools-20261026/Core_AI_Debugger.dmg
+
+3.hfs
+WARNINGS:
+There are data after the end of archive
+
+--
+Path = /workspace/recherche/apple-sec/apple-developer-tools-20261026/Core_AI_Debugger.dmg
+Type = Dmg
+Physical Size = 182450505
+Method = Copy Zero2 ZLIB CRC
+Blocks = 236
+Cluster Size = 1048576
+Comment =
+{
+unpack-size: 255373312
+ID: 714e339af0e24c6c9c3c708854d9ea65
+master-checksum: CRC: A91A7679
+pack-checksum: CRC: 1B7CF366
+pack-offset: 0
+pack-length: 182429829
+xml-offset: 182429829
+xml-length: 20164
+}
+----
+Path = 3.hfs
+Size = 255339008
+Packed Size = 182429455
+Comment = Untitled 1 (Apple_HFS : 3)
+Method = Copy Zero2 ZLIB CRC
+Blocks = 231
+Cluster Size = 1048576
+Checksum = D6DF7471
+ID = 3
+--
+Path = 3.hfs
+Type = HFS
+WARNINGS:
+There are data after the end of archive
+Physical Size = 255336448
+Tail Size = 2560
+Method = HFS+
+Cluster Size = 4096
+Free Space = 21143552
+Created = 2026-09-03 10:19:13
+Modified = 2026-09-04 06:26:48
+
+Everything is Ok
+
+Archives with Warnings: 1
+
+Warnings: 1
+Folders: 114
+Files: 300
+Size:       227370305
+Compressed: 182450505

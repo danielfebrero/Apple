@@ -25,10 +25,14 @@ CPU livré, les vérifications statiques et les procédures Apple non exécutée
 La portée « analyse statique » ci-dessus décrit le corpus d'origine ; ce
 complément documente séparément toute inférence effectivement réalisée.
 
-Le [complément Debian](runtime/DEBIAN.md) exécute désormais 12 modèles
-supplémentaires (arbres, pipelines, dense, MIL) avec leurs vrais poids,
-soit 13 avec le scoreur Espresso initial. Les [voies d'acquisition](models/DOWNLOADS.md)
-documentent aussi le toolkit Developer et les assets génératifs encore absents.
+Le [complément Debian](runtime/DEBIAN.md) démontre **16 modèles auxiliaires** avec
+leurs vrais poids : Espresso, arbres, pipelines, dense, MIL/LSTM et CNN
+quantifiés. L'[analyse des outils fournis dans Archive.zip](analysis/DEVELOPER-TOOLS.md)
+a aussi permis d'acquérir le runtime officiel [Core AI Linux](runtime/COREAI.md)
+et d'exécuter un `.aimodel` de démonstration. Les
+[voies d'acquisition](models/DOWNLOADS.md) documentent le toolkit Developer et
+les principaux poids génératifs encore absents. Aucune génération AFM de texte
+ou d'image n'est revendiquée.
 
 Un [client public Foundation Models](runtime/foundationmodels/README.md) est
 aussi fourni pour un Mac éligible. Il utilise le modèle installé par l'OS ;

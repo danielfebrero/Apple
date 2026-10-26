@@ -1,0 +1,117 @@
+[
+  {
+    "id": "coreai-torch-tree",
+    "url": "https://api.github.com/repos/apple/coreai-torch/git/trees/main?recursive=1",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/apple/coreai-torch/git/trees/main?recursive=1",
+    "bytes": 54857,
+    "sha256": "5c5ea384f7865d33dd448bfac6120bc1f3d43eb5ffaaa2868c5be3ffcfdaa0ee",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/coreai-torch-tree.json",
+    "checked_utc": "2026-10-26T17:20:32.956914+00:00"
+  },
+  {
+    "id": "coreai-torch-pyproject",
+    "url": "https://raw.githubusercontent.com/apple/coreai-torch/main/pyproject.toml",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/apple/coreai-torch/main/pyproject.toml",
+    "bytes": 4286,
+    "sha256": "87aa05d434f9cc52c848460d1efbfcb55d56388c3d137df52ef9aae777fa4361",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/coreai-torch-pyproject.txt",
+    "checked_utc": "2026-10-26T17:20:32.844314+00:00"
+  },
+  {
+    "id": "coreai-torch-readme",
+    "url": "https://raw.githubusercontent.com/apple/coreai-torch/main/README.md",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/apple/coreai-torch/main/README.md",
+    "bytes": 4766,
+    "sha256": "9d3fd4de44f4ac2df69743155e99d466a4a9f8116bceeabd354b90206c40c27d",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/coreai-torch-readme.txt",
+    "checked_utc": "2026-10-26T17:20:32.822616+00:00"
+  },
+  {
+    "id": "coreai-torch-debugging",
+    "url": "https://apple.github.io/coreai-torch/main/api/debugging.html",
+    "status": 200,
+    "final_url": "https://apple.github.io/coreai-torch/main/api/debugging.html",
+    "bytes": 72341,
+    "sha256": "acc17a694d2a121dca9ebdea56b205016cbe82fe788ab666ecd777792bd43ed5",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/coreai-torch-debugging.txt",
+    "checked_utc": "2026-10-26T17:20:32.815663+00:00"
+  },
+  {
+    "id": "coreai-pypi",
+    "url": "https://pypi.org/pypi/coreai/json",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "coreai-torch-pypi",
+    "url": "https://pypi.org/pypi/coreai-torch/json",
+    "status": 200,
+    "final_url": "https://pypi.org/pypi/coreai-torch/json",
+    "bytes": 16478,
+    "sha256": "d53d7ddcea2bc198208632c2e57b0c42b93a2fbe2329cc86d8562d61ae671936",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/coreai-torch-pypi.json",
+    "checked_utc": "2026-10-26T17:20:32.734085+00:00"
+  },
+  {
+    "id": "coreai-core-pypi",
+    "url": "https://pypi.org/pypi/coreai-core/json",
+    "status": 200,
+    "final_url": "https://pypi.org/pypi/coreai-core/json",
+    "bytes": 24644,
+    "sha256": "e022444c2094e109b4e2868485be55efa889e7e817c24d28251140e5a215d6a0",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/coreai-core-pypi.json",
+    "checked_utc": "2026-10-26T17:20:41.884916+00:00"
+  },
+  {
+    "id": "installation",
+    "url": "https://raw.githubusercontent.com/apple/coreai-torch/main/docs/getting-started/installation.md",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/apple/coreai-torch/main/docs/getting-started/installation.md",
+    "bytes": 1399,
+    "sha256": "ee8853ed9e5d30e18bdd87d200152a3aa720896fc744843af1c927e6f8e94528",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/installation.txt",
+    "checked_utc": "2026-10-26T17:20:42.050991+00:00"
+  },
+  {
+    "id": "run-aimodel",
+    "url": "https://raw.githubusercontent.com/apple/coreai-torch/main/docs/coreai-core/tutorials/run-an-aimodel.ipynb",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/apple/coreai-torch/main/docs/coreai-core/tutorials/run-an-aimodel.ipynb",
+    "bytes": 8893,
+    "sha256": "27ee0a49543c135f35e7a91115be6a28674f129c5c3507888f4e779d748e02e7",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/run-aimodel.txt",
+    "checked_utc": "2026-10-26T17:20:42.057088+00:00"
+  },
+  {
+    "id": "debugging-md",
+    "url": "https://raw.githubusercontent.com/apple/coreai-torch/main/docs/api/debugging.md",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/apple/coreai-torch/main/docs/api/debugging.md",
+    "bytes": 13773,
+    "sha256": "ce98d72f9c0e83d8c2c92ee1765e3a20e685829c335c21034397ea17a5dbcc0a",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/debugging-md.txt",
+    "checked_utc": "2026-10-26T17:20:42.085312+00:00"
+  },
+  {
+    "id": "quickstart",
+    "url": "https://raw.githubusercontent.com/apple/coreai-torch/main/docs/getting-started/quickstart.ipynb",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/apple/coreai-torch/main/docs/getting-started/quickstart.ipynb",
+    "bytes": 9848,
+    "sha256": "720f4aa2d5a180747903a8dd2a388db15864eac33be133645124824ca3c03f14",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/quickstart.txt",
+    "checked_utc": "2026-10-26T17:20:41.990435+00:00"
+  },
+  {
+    "id": "converter",
+    "url": "https://raw.githubusercontent.com/apple/coreai-torch/main/coreai_torch/converter.py",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/apple/coreai-torch/main/coreai_torch/converter.py",
+    "bytes": 53828,
+    "sha256": "e6a1f54ff5b819728dafabc5d24fc8d6496a3dbebfd7dd41c06471c4709ec42e",
+    "snapshot": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/converter.txt",
+    "checked_utc": "2026-10-26T17:20:42.088713+00:00"
+  }
+]

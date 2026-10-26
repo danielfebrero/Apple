@@ -1,0 +1,149 @@
+{
+  "artifact": {
+    "kind": "macho",
+    "path": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/extracted/Core_AI_Debugger/Core AI Debugger/Core AI Debugger.app/Contents/MacOS/Core AI Debugger"
+  },
+  "confidence": 1.0,
+  "diagnostics": [],
+  "evidence": [
+    "shared semantic index"
+  ],
+  "index_generation": 2,
+  "profile": "deep",
+  "project": "re-standalone",
+  "results": [
+    {
+      "addr": 4296031616,
+      "confidence": 0.8500000238418579,
+      "detail": "Standalone Mach-O symbol",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "function",
+      "name": "_$s15GTStandaloneKit15MLReplaySessionC27enqueueFetchViewerGraphTask12functionNameScTy10Foundation4DataVs5Error_pGSS_tFTj"
+    },
+    {
+      "addr": 4296045312,
+      "confidence": 0.8500000238418579,
+      "detail": "Standalone Mach-O symbol",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "function",
+      "name": "_$s15GTStandaloneKit15MLReplaySessionC27enqueueFetchViewerGraphTask12functionNameScTy10Foundation4DataVs5Error_pGSS_tFTj"
+    },
+    {
+      "addr": 4296031628,
+      "confidence": 0.8500000238418579,
+      "detail": "Standalone Mach-O symbol",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "function",
+      "name": "_$s15GTStandaloneKit15MLReplaySessionC29enqueueFetchIntermediatesTask12functionName6inputs18compileIdentifiers20intermediatesHandlerScTyyts5Error_pGSS_SDySSAA0C6TensorVGSay9MLOpGraph0r11NodeCompileM0CGyAA0C12IntermediateVctFTj"
+    },
+    {
+      "addr": 4296045328,
+      "confidence": 0.8500000238418579,
+      "detail": "Standalone Mach-O symbol",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "function",
+      "name": "_$s15GTStandaloneKit15MLReplaySessionC29enqueueFetchIntermediatesTask12functionName6inputs18compileIdentifiers20intermediatesHandlerScTyyts5Error_pGSS_SDySSAA0C6TensorVGSay9MLOpGraph0r11NodeCompileM0CGyAA0C12IntermediateVctFTj"
+    },
+    {
+      "addr": 4296031640,
+      "confidence": 0.8500000238418579,
+      "detail": "Standalone Mach-O symbol",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "function",
+      "name": "_$s15GTStandaloneKit15MLReplaySessionC4udid8modelURL25computeUnitsConfiguration22expectFrequentReshapesACSS_10Foundation0G0VAA0c7ComputeiJ0OSbtcfc"
+    },
+    {
+      "addr": 4296045344,
+      "confidence": 0.8500000238418579,
+      "detail": "Standalone Mach-O symbol",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "function",
+      "name": "_$s15GTStandaloneKit15MLReplaySessionC4udid8modelURL25computeUnitsConfiguration22expectFrequentReshapesACSS_10Foundation0G0VAA0c7ComputeiJ0OSbtcfc"
+    },
+    {
+      "addr": 4296031652,
+      "confidence": 0.8500000238418579,
+      "detail": "Standalone Mach-O symbol",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "function",
+      "name": "_$s15GTStandaloneKit15MLReplaySessionC6device07captureD2Id09inferenceG0AcA6DeviceC_s6UInt64VAJtcfc"
+    },
+    {
+      "addr": 4296045360,
+      "confidence": 0.8500000238418579,
+      "detail": "Standalone Mach-O symbol",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "function",
+      "name": "_$s15GTStandaloneKit15MLReplaySessionC6device07captureD2Id09inferenceG0AcA6DeviceC_s6UInt64VAJtcfc"
+    },
+    {
+      "addr": 4296031664,
+      "confidence": 0.8500000238418579,
+      "detail": "Standalone Mach-O symbol",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "function",
+      "name": "_$s15GTStandaloneKit15MLReplaySessionCMa"
+    },
+    {
+      "addr": 4296045376,
+      "confidence": 0.8500000238418579,
+      "detail": "Standalone Mach-O symbol",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "function",
+      "name": "_$s15GTStandaloneKit15MLReplaySessionCMa"
+    },
+    {
+      "addr": 4296228808,
+      "confidence": 0.8500000238418579,
+      "detail": "ObjC selector",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "objc_selector",
+      "name": "mlReplaySession"
+    },
+    {
+      "addr": 4296242368,
+      "confidence": 0.8500000238418579,
+      "detail": "ObjC selector",
+      "evidence": [
+        "shared semantic index"
+      ],
+      "image": null,
+      "kind": "objc_selector",
+      "name": "mlReplaySessions"
+    }
+  ],
+  "schema_version": "blacksmith-re/v3"
+}

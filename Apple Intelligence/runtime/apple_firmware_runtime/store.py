@@ -69,6 +69,8 @@ class Store:
     @staticmethod
     def bundle_name(model: Model) -> str:
         path = model.declaration.get("firmware_path", "")
+        if model.declaration.get("format") == "coreai_asset":
+            return "model.aimodel"
         if path.endswith(".mlmodelc") or model.declaration.get("format") == "coreml_compiled":
             return "model.mlmodelc"
         if path.endswith(".mlpackage") or model.declaration.get("format") == "coreml_package":

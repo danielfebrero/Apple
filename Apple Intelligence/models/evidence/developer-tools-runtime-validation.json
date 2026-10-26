@@ -1,0 +1,132 @@
+{
+  "checked_utc": "2026-10-26T17:31:16.472110+00:00",
+  "environment": {
+    "python": "3.11.2",
+    "platform": "Linux-6.1.0-53-amd64-x86_64-with-glibc2.36",
+    "numpy": "2.4.6",
+    "coremltools": "9.0",
+    "coreai-core": "1.0.0b3"
+  },
+  "runtime_tests": {
+    "command": [
+      "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/workspace/Apple/Apple Intelligence/runtime",
+    "exit_code": 0,
+    "run": 60,
+    "passed": 59,
+    "skipped": 1,
+    "reason": "macOS Swift/CoreML SDK unavailable",
+    "stdout": "",
+    "stderr": "Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLCPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLGPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLNeuralEngineComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLComputePlanProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelAssetProxy: No module named 'coremltools.libcoremlpython'\ntest_dry_run_neither_extracts_nor_claims_verification (test_acquire.AcquirePreflightTests.test_dry_run_neither_extracts_nor_claims_verification) ... ok\ntest_manifest_asset_hash_disagreement_rejected (test_acquire.AcquirePreflightTests.test_manifest_asset_hash_disagreement_rejected) ... ok\ntest_manifest_destination_must_match_asset_firmware_path (test_acquire.AcquirePreflightTests.test_manifest_destination_must_match_asset_firmware_path) ... ok\ntest_path_traversal_in_manifest_rejected_before_writes (test_acquire.AcquirePreflightTests.test_path_traversal_in_manifest_rejected_before_writes) ... ok\ntest_symlink_cache_ancestor_rejected (test_acquire.AcquirePreflightTests.test_symlink_cache_ancestor_rejected) ... ok\ntest_zero_byte_stub_image_rejected_before_reader_and_cache_write (test_acquire.AcquirePreflightTests.test_zero_byte_stub_image_rejected_before_reader_and_cache_write) ... Hashing rootfs image before extraction: /tmp/tmpzclfota8/not-present-firmware/rootfs-dec/141-08876-212.dmg\nok\ntest_boolean_file_size_is_not_accepted_as_integer (test_catalog_store.CatalogStoreTests.test_boolean_file_size_is_not_accepted_as_integer) ... ok\ntest_changed_catalogue_requires_reimport (test_catalog_store.CatalogStoreTests.test_changed_catalogue_requires_reimport) ... ok\ntest_coreml_cannot_report_success_on_linux (test_catalog_store.CatalogStoreTests.test_coreml_cannot_report_success_on_linux) ... ok\ntest_duplicate_file_paths_and_ids_are_rejected (test_catalog_store.CatalogStoreTests.test_duplicate_file_paths_and_ids_are_rejected) ... ok\ntest_extra_imported_file_is_rejected (test_catalog_store.CatalogStoreTests.test_extra_imported_file_is_rejected) ... ok\ntest_import_and_verify_all_bytes_and_separate_cas_inode (test_catalog_store.CatalogStoreTests.test_import_and_verify_all_bytes_and_separate_cas_inode) ... ok\ntest_invalid_paths_and_hashes_rejected_before_access (test_catalog_store.CatalogStoreTests.test_invalid_paths_and_hashes_rejected_before_access) ... ok\ntest_mac_backend_compiles_against_actual_public_sdk (test_catalog_store.CatalogStoreTests.test_mac_backend_compiles_against_actual_public_sdk) ... skipped 'Requires macOS Swift/CoreML SDK'\ntest_package_without_filename_suffix_keeps_complete_package_entrypoint (test_catalog_store.CatalogStoreTests.test_package_without_filename_suffix_keeps_complete_package_entrypoint) ... ok\ntest_resource_cannot_be_misrepresented_as_coreml_entrypoint (test_catalog_store.CatalogStoreTests.test_resource_cannot_be_misrepresented_as_coreml_entrypoint) ... ok\ntest_same_size_corruption_is_rejected_and_reimport_repairs_working_copy (test_catalog_store.CatalogStoreTests.test_same_size_corruption_is_rejected_and_reimport_repairs_working_copy) ... ok\ntest_static_inspection_is_explicitly_not_prediction (test_catalog_store.CatalogStoreTests.test_static_inspection_is_explicitly_not_prediction) ... ok\ntest_symlink_source_rejected_even_if_content_hash_matches (test_catalog_store.CatalogStoreTests.test_symlink_source_rejected_even_if_content_hash_matches) ... ok\ntest_truncated_source_is_rejected_before_bundle_is_exposed (test_catalog_store.CatalogStoreTests.test_truncated_source_is_rejected_before_bundle_is_exposed) ... ok\ntest_constant_resource_survives_save_import_and_runtime_compilation (test_coreai_backend.CoreAIIntegrationTests.test_constant_resource_survives_save_import_and_runtime_compilation) ... ODIE [default]: Loading function 'main'\nok\ntest_corrupted_or_extra_imported_bytes_stop_prediction (test_coreai_backend.CoreAIIntegrationTests.test_corrupted_or_extra_imported_bytes_stop_prediction) ... ok\ntest_flat_typed_tensor_is_checked_and_executed (test_coreai_backend.CoreAIIntegrationTests.test_flat_typed_tensor_is_checked_and_executed) ... ODIE [default]: Loading function 'main'\nok\ntest_integer_signature_does_not_silently_truncate_or_overflow (test_coreai_backend.CoreAIIntegrationTests.test_integer_signature_does_not_silently_truncate_or_overflow) ... ODIE [default]: Loading function 'main'\nODIE [default]: Loading function 'main'\nODIE [default]: Loading function 'main'\nok\ntest_invalid_names_shapes_and_types_are_rejected (test_coreai_backend.CoreAIIntegrationTests.test_invalid_names_shapes_and_types_are_rejected) ... ODIE [default]: Loading function 'main'\nODIE [default]: Loading function 'main'\nODIE [default]: Loading function 'main'\nODIE [default]: Loading function 'main'\nODIE [default]: Loading function 'main'\nODIE [default]: Loading function 'main'\nODIE [default]: Loading function 'main'\nok\ntest_non_cpu_compute_is_not_ignored (test_coreai_backend.CoreAIIntegrationTests.test_non_cpu_compute_is_not_ignored) ... ok\ntest_tutorial_executes_through_cli_store_and_actual_descriptors (test_coreai_backend.CoreAIIntegrationTests.test_tutorial_executes_through_cli_store_and_actual_descriptors) ... ODIE [default]: Loading function 'main'\nODIE [default]: Loading function 'main'\nok\ntest_existing_artifact_not_overwritten (test_download_asset.DownloadTests.test_existing_artifact_not_overwritten) ... ok\ntest_https_apple_domain_and_redacted_query (test_download_asset.DownloadTests.test_https_apple_domain_and_redacted_query) ... ok\ntest_verified_bytes_published_only_after_complete_digest (test_download_asset.DownloadTests.test_verified_bytes_published_only_after_complete_digest) ... ok\ntest_wrong_hash_or_size_leaves_no_destination_or_partial (test_download_asset.DownloadTests.test_wrong_hash_or_size_leaves_no_destination_or_partial) ... ok\ntest_extreme_finite_input_uses_stable_sigmoid (test_espresso.EspressoFirmwareTests.test_extreme_finite_input_uses_stable_sigmoid) ... ok\ntest_graph_mutations_rejected (test_espresso.EspressoFirmwareTests.test_graph_mutations_rejected) ... ok\ntest_input_contract_rejects_bad_tensors (test_espresso.EspressoFirmwareTests.test_input_contract_rejects_bad_tensors) ... ok\ntest_real_model_numerical_vectors (test_espresso.EspressoFirmwareTests.test_real_model_numerical_vectors) ... ok\ntest_real_weight_identity_and_declared_sigmoid (test_espresso.EspressoFirmwareTests.test_real_weight_identity_and_declared_sigmoid) ... ok\ntest_weight_corruption_rejected (test_espresso.EspressoFirmwareTests.test_weight_corruption_rejected) ... ok\ntest_default_bias_and_last_step_output (test_mil_lstm.MilLstmTests.test_default_bias_and_last_step_output) ... ok\ntest_expand_and_tile_invalid_or_oversized_shapes_refused (test_mil_lstm.MilLstmTests.test_expand_and_tile_invalid_or_oversized_shapes_refused) ... ok\ntest_expand_negative_axes_and_tile_preserve_element_order (test_mil_lstm.MilLstmTests.test_expand_negative_axes_and_tile_preserve_element_order) ... ok\ntest_lstm_work_budget_checked_before_recurrence (test_mil_lstm.MilLstmTests.test_lstm_work_budget_checked_before_recurrence) ... ok\ntest_multibatch_multistep_gate_order_against_scalar_reference (test_mil_lstm.MilLstmTests.test_multibatch_multistep_gate_order_against_scalar_reference) ... ok\ntest_overflowing_gates_refused_before_saturating_activations (test_mil_lstm.MilLstmTests.test_overflowing_gates_refused_before_saturating_activations) ... ok\ntest_real_tte_lstm_all_states_against_independent_raw_blob_reference (test_mil_lstm.MilLstmTests.test_real_tte_lstm_all_states_against_independent_raw_blob_reference) ... ok\ntest_unsupported_lstm_variants_and_invalid_shapes_refused (test_mil_lstm.MilLstmTests.test_unsupported_lstm_variants_and_invalid_shapes_refused) ... ok\ntest_duplicate_normalized_neural_expand_axes_refused (test_nn_spatial.NeuralSpatialTests.test_duplicate_normalized_neural_expand_axes_refused) ... ok\ntest_maxpool_nonuniform_windows_and_strides (test_nn_spatial.NeuralSpatialTests.test_maxpool_nonuniform_windows_and_strides) ... ok\ntest_nonuniform_multichannel_convolution_against_scalar_spatial_sums (test_nn_spatial.NeuralSpatialTests.test_nonuniform_multichannel_convolution_against_scalar_spatial_sums) ... ok\ntest_quantization_matches_explicit_affine_values_and_official_decoder (test_nn_spatial.NeuralSpatialTests.test_quantization_matches_explicit_affine_values_and_official_decoder) ... ok\ntest_real_quantized_cnn_scores_against_scalar_constant_channel_reference (test_nn_spatial.NeuralSpatialTests.test_real_quantized_cnn_scores_against_scalar_constant_channel_reference) ... ok\ntest_unsupported_convolution_variants_and_oversized_windows_refused (test_nn_spatial.NeuralSpatialTests.test_unsupported_convolution_variants_and_oversized_windows_refused) ... ok\ntest_unsupported_quantization_and_invalid_weight_lengths_refused (test_nn_spatial.NeuralSpatialTests.test_unsupported_quantization_and_invalid_weight_lengths_refused) ... ok\ntest_real_ranker_against_double_precision_normalized_dot (test_protobuf_cpu.FirmwareMathTests.test_real_ranker_against_double_precision_normalized_dot) ... ok\ntest_real_three_tree_regressor_against_manual_leaf_sum (test_protobuf_cpu.FirmwareMathTests.test_real_three_tree_regressor_against_manual_leaf_sum) ... ok\ntest_bad_tree_input_and_cycle (test_protobuf_cpu.ProtobufMathTests.test_bad_tree_input_and_cycle) ... ok\ntest_binary_logistic (test_protobuf_cpu.ProtobufMathTests.test_binary_logistic) ... ok\ntest_blob_header_and_payload (test_protobuf_cpu.ProtobufMathTests.test_blob_header_and_payload) ... ok\ntest_mil_dense_and_sigmoid_against_scalar_formula (test_protobuf_cpu.ProtobufMathTests.test_mil_dense_and_sigmoid_against_scalar_formula) ... ok\ntest_mixed_boolean_tensor_rejected (test_protobuf_cpu.ProtobufMathTests.test_mixed_boolean_tensor_rejected) ... ok\ntest_tree_boundary_and_base (test_protobuf_cpu.ProtobufMathTests.test_tree_boundary_and_base) ... ok\n\n----------------------------------------------------------------------\nRan 60 tests in 0.908s\n\nOK (skipped=1)\n"
+  },
+  "archive_tests": {
+    "command": [
+      "python3",
+      "analysis/evidence/test_developer_tools_archive.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "run": 6,
+    "passed": 6,
+    "stderr": "test_corrupt_xar_payload_rejected (__main__.ArchiveTests.test_corrupt_xar_payload_rejected) ... ok\ntest_parent_path_rejected (__main__.ArchiveTests.test_parent_path_rejected) ... ok\ntest_pbzx_compressed_and_raw_chunks (__main__.ArchiveTests.test_pbzx_compressed_and_raw_chunks) ... ok\ntest_truncated_pbzx_rejected (__main__.ArchiveTests.test_truncated_pbzx_rejected) ... ok\ntest_unaligned_odc_inventory (__main__.ArchiveTests.test_unaligned_odc_inventory) ... ok\ntest_unrelated_inode_zero_files_remain_distinct (__main__.ArchiveTests.test_unrelated_inode_zero_files_remain_distinct) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.004s\n\nOK\n"
+  },
+  "firmware_models_new": 3,
+  "firmware_inferences_new": 6,
+  "firmware_models_total_demonstrated": 16,
+  "coreai_sample_scope": "demonstration graph x+x, not trained firmware or AFM",
+  "AFM_weights_acquired": false,
+  "generation_text_image_proven": false,
+  "code": [
+    {
+      "path": "apple_firmware_runtime/__init__.py",
+      "sha256": "5048225b6fe9fe32fa414d499c5d796a0943f2460e4d23fe3ac207f2d53c21c0"
+    },
+    {
+      "path": "apple_firmware_runtime/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "apple_firmware_runtime/backends.py",
+      "sha256": "9998c924bf229547439235ba38a325e12c2e61a4f1f878095000dcdf85d98cc7"
+    },
+    {
+      "path": "apple_firmware_runtime/catalog.py",
+      "sha256": "5b2b4ce31c4c433dffd73dc940b7c974e233591932054a949ab1b9a181632ffe"
+    },
+    {
+      "path": "apple_firmware_runtime/cli.py",
+      "sha256": "515a337e3b41fbc857ec4fdbd2ae1be7e37e68d2c529e5daff53584aaa8b118c"
+    },
+    {
+      "path": "apple_firmware_runtime/coreai_backend.py",
+      "sha256": "74f56c42e6736a6e7f49a871655a8d3e4909bc45c8ec88a7610c7f1bb08b4f10"
+    },
+    {
+      "path": "apple_firmware_runtime/espresso.py",
+      "sha256": "49e9eb070bbe8678976f58ce347ac593c21991b546d37131e8a046fb86880f58"
+    },
+    {
+      "path": "apple_firmware_runtime/protobuf_cpu.py",
+      "sha256": "b6dc1ac23d45d5e866b614ae1ea78644a89676d35dc02c81897efc174b3928c3"
+    },
+    {
+      "path": "apple_firmware_runtime/store.py",
+      "sha256": "7b876e23cbbd8947475a4695a2366c2de5846ad2421a69cb98ed1a3009181bef"
+    },
+    {
+      "path": "tests/test_acquire.py",
+      "sha256": "b62368b5ed4dafad0df2b01894de149fd3dfb37945fe6d8beeec992bb6b3d087"
+    },
+    {
+      "path": "tests/test_catalog_store.py",
+      "sha256": "9bef856b5306fa665c17e421eda541d80b25af6211a77d3e9dfd96863635f1dd"
+    },
+    {
+      "path": "tests/test_coreai_backend.py",
+      "sha256": "ae6fa2f4aca811ffa15daa5581f01a68027ae50fdaedd6f7e86a1c34d6439ba3"
+    },
+    {
+      "path": "tests/test_download_asset.py",
+      "sha256": "1993203d360d649d5f2599f3a04f6d5c80cf13882ef4fb8228f31a0c3365f27d"
+    },
+    {
+      "path": "tests/test_espresso.py",
+      "sha256": "c4767129f3e17c0adbe5509a22b8ff4ceed174da5dcc08e60379e9fd1d82c00b"
+    },
+    {
+      "path": "tests/test_mil_lstm.py",
+      "sha256": "5d130a62720665469716c6363c44690be0279848d5b0906e73a2307fb56cb2c2"
+    },
+    {
+      "path": "tests/test_nn_spatial.py",
+      "sha256": "1f72920001a9477a26bd850906c2a5d0790c6209fc03252ff50da3bb5e261065"
+    },
+    {
+      "path": "tests/test_protobuf_cpu.py",
+      "sha256": "0a46f0f037a8c16e207253012977965550252d8d436d1ee08231b051970a0f69"
+    },
+    {
+      "path": "examples/demo_cnn_runtime.py",
+      "sha256": "d0ca1b6bca4a9b9ee8bb0c208b09fd1932b8e5a700f82835e9cf7d7c8c648e73"
+    },
+    {
+      "path": "examples/demo_coreai.py",
+      "sha256": "555cd2f9b7eaf313ec2a056be4d25879c5a44f599f449237945c7fc9b6fddc20"
+    },
+    {
+      "path": "examples/demo_cpu_catalog.py",
+      "sha256": "ac5545eaa6d7be58b406d2ecb238240ffb778cf8e81f10bb68bfc7960f0a3a65"
+    },
+    {
+      "path": "examples/demo_tte_runtime.py",
+      "sha256": "fe21d40a1342e7dbd3301e55680ad02266d3ff751ceae3a74da1cb809ec971e8"
+    }
+  ]
+}

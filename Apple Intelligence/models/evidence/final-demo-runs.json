@@ -1,0 +1,41 @@
+[
+  {
+    "command": [
+      "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/bin/python",
+      "/workspace/Apple/Apple Intelligence/runtime/examples/demo_tte_runtime.py",
+      "--state",
+      "/workspace/recherche/apple-sec/apple-developer-tools-20261026/tte-final",
+      "--output",
+      "/workspace/recherche/apple-sec/apple-developer-tools-20261026/tte-runtime-demo.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"model_id\": \"m-42c503b700dcb5d958aa\", \"executed\": 2, \"independent_lstm_values_compared\": 5376, \"output\": \"/workspace/recherche/apple-sec/apple-developer-tools-20261026/tte-runtime-demo.json\"}\n",
+    "stderr": "Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLCPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLGPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLNeuralEngineComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLComputePlanProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelAssetProxy: No module named 'coremltools.libcoremlpython'\n"
+  },
+  {
+    "command": [
+      "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/bin/python",
+      "/workspace/Apple/Apple Intelligence/runtime/examples/demo_cnn_runtime.py",
+      "--state",
+      "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-final",
+      "--output",
+      "/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-runtime-demo.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"models_executed\": 2, \"demos\": 4, \"output\": \"/workspace/recherche/apple-sec/apple-developer-tools-20261026/cnn-runtime-demo.json\"}\n",
+    "stderr": "Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLCPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLGPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLNeuralEngineComputeDeviceProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLComputePlanProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'\nFailed to load _MLModelAssetProxy: No module named 'coremltools.libcoremlpython'\n"
+  },
+  {
+    "command": [
+      "/workspace/recherche/apple-sec/apple-developer-tools-20261026/research/coreai/linux-env/bin/python",
+      "/workspace/Apple/Apple Intelligence/runtime/examples/demo_coreai.py",
+      "--state",
+      "/workspace/recherche/apple-sec/apple-developer-tools-20261026/coreai-final",
+      "--output",
+      "/workspace/recherche/apple-sec/apple-developer-tools-20261026/coreai-demo.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"executed\": true,\n  \"backend\": \"coreai-cpu\",\n  \"scope\": \"demonstration\",\n  \"output\": {\n    \"y\": {\n      \"dtype\": \"float32\",\n      \"shape\": [\n        2,\n        3\n      ],\n      \"data\": [\n        [\n          3.0,\n          -4.0,\n          0.0\n        ],\n        [\n          0.5,\n          200.0,\n          -0.25\n        ]\n      ]\n    }\n  },\n  \"evidence\": \"/workspace/recherche/apple-sec/apple-developer-tools-20261026/coreai-demo.json\"\n}\n",
+    "stderr": "ODIE [default]: Loading function 'main'\nODIE [default]: Loading function 'main'\n"
+  }
+]

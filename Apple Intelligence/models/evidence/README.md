@@ -1,5 +1,17 @@
 # Preuves de la livraison du 26 octobre 2026
 
+Complément Archive.zip : [`tte-runtime-demo.json`](tte-runtime-demo.json) et
+[`cnn-runtime-demo.json`](cnn-runtime-demo.json) ajoutent six inférences de
+trois modèles firmware avec références numériques indépendantes.
+[`coreai-demo.json`](coreai-demo.json) contient une exécution distincte du
+tutoriel `.aimodel` via le runtime officiel Linux, sans poids entraînés AFM.
+[`developer-tools-runtime-validation.json`](developer-tools-runtime-validation.json)
+enregistre 59 tests runtime réussis, un saut macOS et six tests d'archives
+réussis. La [CLI installée](developer-tools-installed-cli.json) est aussi
+appelée depuis `/tmp` avec les backends protobuf et Core AI. Voir les
+[inventaires d'archives](../../analysis/evidence/developer-tools-20261026/summary.json)
+et la [nouvelle acquisition](coreai-linux-research.json).
+
 Complément : [`cpu-protobuf-demos.json`](cpu-protobuf-demos.json) publie
 24 inférences de 12 modèles supplémentaires, les recettes d'entrée zéro/un,
 les empreintes et les 13 refus parmi les 25 candidats non compilés.

@@ -1,0 +1,27 @@
+{
+  "artifact": {
+    "kind": "macho",
+    "path": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/extracted/Core_AI_Debugger/Core AI Debugger/Core AI Debugger.app/Contents/MacOS/Core AI Debugger"
+  },
+  "confidence": 1.0,
+  "diagnostics": [],
+  "evidence": [
+    "shared semantic index"
+  ],
+  "index_generation": 1,
+  "profile": "quick",
+  "project": "re-standalone",
+  "results": {
+    "artifact_id": 1,
+    "artifact_kind": "macho",
+    "artifact_path": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/extracted/Core_AI_Debugger/Core AI Debugger/Core AI Debugger.app/Contents/MacOS/Core AI Debugger",
+    "functions": 8546,
+    "generation": 1,
+    "profile": "quick",
+    "project": "re-standalone",
+    "state": "complete",
+    "updated_at": 1793035203,
+    "xrefs": 105096
+  },
+  "schema_version": "blacksmith-re/v3"
+}

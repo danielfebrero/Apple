@@ -1,0 +1,63 @@
+{
+  "checked_utc": "2026-10-26T17:22:24.461461+00:00",
+  "source_url": "https://github.com/apple/coreai-torch/blob/main/docs/coreai-core/tutorials/run-an-aimodel.ipynb",
+  "scope": "Apple tutorial graph x+x; altered input values to expose arithmetic; no pretrained weights or AFM",
+  "platform": "Linux-6.1.0-53-amd64-x86_64-with-glibc2.36",
+  "python": "3.11.2",
+  "packages": {
+    "coreai-core": "1.0.0b3",
+    "numpy": "2.4.6"
+  },
+  "functions": [
+    "main"
+  ],
+  "input": [
+    [
+      1.5,
+      -2.0,
+      0.0
+    ],
+    [
+      0.25,
+      100.0,
+      -0.125
+    ]
+  ],
+  "output": [
+    [
+      3.0,
+      -4.0,
+      0.0
+    ],
+    [
+      0.5,
+      200.0,
+      -0.25
+    ]
+  ],
+  "exact_equal_numpy": true,
+  "input_dtype": "float32",
+  "output_dtype": "float32",
+  "asset_files": [
+    {
+      "path": "apple-tutorial-add.aimodel/main.hash",
+      "bytes": 32,
+      "sha256": "597b41cd3b0bd9399957f3fe917fa037cf8e0fdf18e011fabf17c4ca608efb07",
+      "prefix_hex": "38d4cd0dba7a4674c5a76b3f3820201d90895209c83c10600ac227e29e058051"
+    },
+    {
+      "path": "apple-tutorial-add.aimodel/main.mlirb",
+      "bytes": 533,
+      "sha256": "38d4cd0dba7a4674c5a76b3f3820201d90895209c83c10600ac227e29e058051",
+      "prefix_hex": "4d4cef520d4d4c495232322e302e306769740001190303070305090109070b0f"
+    },
+    {
+      "path": "apple-tutorial-add.aimodel/metadata.json",
+      "bytes": 105,
+      "sha256": "a14ee3fece5ca7733d36a0d43f0a819c8e9bbec5ab9a3c1c4ffa64204a008d83",
+      "prefix_hex": "7b0a2020226372656174696f6e4461746522203a202232303236313032365431"
+    }
+  ],
+  "input_sha256": "487021c0fdb66841992eac55624dcfd107f859e9dfa62923d7af075335dbeca5",
+  "output_sha256": "da24dd0fca72db7aba4d74d38ac67f1a467b28867dc6b23daaf16e7ca0626228"
+}

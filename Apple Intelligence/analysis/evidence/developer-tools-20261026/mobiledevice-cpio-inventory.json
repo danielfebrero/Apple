@@ -1,0 +1,1286 @@
+{
+  "source": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/mobiledevice.cpio",
+  "entries": [
+    {
+      "path": "./System",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/Extensions",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/Extensions/AppleMobileDevice.kext",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/Extensions/AppleMobileDevice.kext/Contents",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/Extensions/AppleMobileDevice.kext/Contents/Info.plist",
+      "size": 2550,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "2cfd4915c4290e014ca4aecdd210b2bfd28fcbfde4e2f751d211c56ff93f86dc"
+    },
+    {
+      "path": "./System/Library/Extensions/AppleMobileDevice.kext/Contents/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/Extensions/AppleMobileDevice.kext/Contents/_CodeSignature/CodeDirectory",
+      "size": 163,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "97fcac9cdf35c5ff3d7578705013f8d02d4dc1c43d2ea83e957805b33a41ab15"
+    },
+    {
+      "path": "./System/Library/Extensions/AppleMobileDevice.kext/Contents/_CodeSignature/CodeRequirements",
+      "size": 84,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "a7b0ab4a0c4a28b693ab15f8f965296c12a6f74f3c105c10198c1416f71cf39b"
+    },
+    {
+      "path": "./System/Library/Extensions/AppleMobileDevice.kext/Contents/_CodeSignature/CodeRequirements-1",
+      "size": 211,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "4f62828721b030bc74a052ee6704d88dd12323fb51d4ea3c35ab476f8c271a73"
+    },
+    {
+      "path": "./System/Library/Extensions/AppleMobileDevice.kext/Contents/_CodeSignature/CodeResources",
+      "size": 2500,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "b0439615c7a128b574a2e8a55b32a021d5c78b0ad3c59d9348993497a85f2e75"
+    },
+    {
+      "path": "./System/Library/Extensions/AppleMobileDevice.kext/Contents/_CodeSignature/CodeSignature",
+      "size": 4523,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "977140014349e2c752157db254b0b64121dfb4e3e0d5f48a8a260a8f3ecb0b27"
+    },
+    {
+      "path": "./System/Library/Extensions/AppleMobileDevice.kext/Contents/version.plist",
+      "size": 518,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "2432a6063433a158e312906952485373848536745bcb6e7ca0b20690c231b93d"
+    },
+    {
+      "path": "./System/Library/LaunchAgents",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/LaunchAgents/com.apple.mobiledeviceupdater.plist",
+      "size": 143,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "4957154f12d260a0b686612c7ace564e6cb363509c916c4076e1d0e43291db8f"
+    },
+    {
+      "path": "./System/Library/LaunchDaemons",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/LaunchDaemons/com.apple.dt.RemotePairingDataVaultHelper.plist",
+      "size": 720,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "93c368c1f758f405092b355ae3473797c47e142119af0b4202a89d0ec9185963"
+    },
+    {
+      "path": "./System/Library/LaunchDaemons/com.apple.usbmuxd.plist",
+      "size": 973,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "985dc7ecf683f803e4451882af959ea049111fa3d4c6a3bab061bdced824e8f6"
+    },
+    {
+      "path": "./System/Library/Preferences",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/Preferences/Logging",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/Preferences/Logging/Subsystems",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/Preferences/Logging/Subsystems/com.apple.mobiledevice.plist",
+      "size": 277,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "075dad02a317bd36cccd69b27e73b7e0264ee7d54d010e9b22f1577244eea937"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/AirTrafficHost",
+      "size": 31,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "63ff121bbbeebb59ba2d0d0750f96340fb05f0d9ab1b6e40afa3829c1fc7f1d9"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/Resources",
+      "size": 26,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "59991b51b8ee15b59f07ec45942957a4ce90494257766964f5df60b7c7998e42"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/Versions",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/Versions/A",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/Versions/A/AirTrafficHost",
+      "size": 2217808,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "bb56ade7a3900b3e30092a695e93d10189476c1782de52a04ce10fb936ce1f5f"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/Versions/A/Resources",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/Versions/A/Resources/Info.plist",
+      "size": 738,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "719d6ed4567daad2072f8679014f3ec22fe54c939dacee1136f54c87b28c4d4e"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/Versions/A/Resources/version.plist",
+      "size": 474,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "bf9fc75f2532a439962535b2b65356e5cb3735ade2fcf0eb9456ad858b7d92c8"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/Versions/A/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/Versions/A/_CodeSignature/CodeResources",
+      "size": 2818,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "f46e993c142507f64a2956ec4c778c72594190e938878ee6d04ccb0af1d06e59"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/AirTrafficHost.framework/Versions/Current",
+      "size": 1,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/CryptexKitHost",
+      "size": 31,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "da5cd53998e075c1594e85e79394980b842a49e266fbfbda23b749fb218dab1c"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Modules",
+      "size": 24,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "5654ed24a88b2873ef353738bc450794670107f7d13295c2e63f6affd4eb2fd8"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Resources",
+      "size": 26,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "59991b51b8ee15b59f07ec45942957a4ce90494257766964f5df60b7c7998e42"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Versions",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Versions/A",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Versions/A/CryptexKitHost",
+      "size": 4403344,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "d52742371a72f064c02a4c9b93c741f811eb5da6a4e4cb20a1ebfa844619b015"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Versions/A/Resources",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Versions/A/Resources/Info.plist",
+      "size": 669,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "90eefdf117c03699fb18932b46b717fc905e22d22b29b54b7ec536252dd79632"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Versions/A/Resources/version.plist",
+      "size": 470,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "d73da8a0cf709ad2ccc49c6c52400eec93d3684c51e7cefc94c48c6cd1b448f1"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Versions/A/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Versions/A/_CodeSignature/CodeResources",
+      "size": 2674,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "78426da9fee095646b9c911f33d7fb14a0567698322ebeb2d2863497d1714e96"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/CryptexKitHost.framework/Versions/Current",
+      "size": 1,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/DeviceLink",
+      "size": 27,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "64a6e81a5b3c09056b611b5a3430739117eae77455e862e18e28fff40f4998b6"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/Resources",
+      "size": 26,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "59991b51b8ee15b59f07ec45942957a4ce90494257766964f5df60b7c7998e42"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/Versions",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/Versions/A",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/Versions/A/DeviceLink",
+      "size": 560272,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "66afcad24cd593037ce9348fc02a633d87e2d6f3d6198191ed8c7b7e826e8c52"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/Versions/A/Resources",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/Versions/A/Resources/Info.plist",
+      "size": 1359,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "774ade084908ec6297517e0c4104288f4952e902d8af2dd5f97347a7aab72809"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/Versions/A/Resources/version.plist",
+      "size": 460,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "5ef17694f03bfbc18a06e802742452edf43d3ec1f417fbea458af983d9dd46c0"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/Versions/A/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/Versions/A/_CodeSignature/CodeResources",
+      "size": 2818,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "f428127900b14ae103956dbaa29f59c0d585a722c3cbb2ddaf5d0065022158b5"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/DeviceLink.framework/Versions/Current",
+      "size": 1,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Mercury",
+      "size": 24,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "7e3a902a1673b111623f782dcc097bee876c88b166a87def15a1882ebf92f394"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Modules",
+      "size": 24,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "5654ed24a88b2873ef353738bc450794670107f7d13295c2e63f6affd4eb2fd8"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Resources",
+      "size": 26,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "59991b51b8ee15b59f07ec45942957a4ce90494257766964f5df60b7c7998e42"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Versions",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Versions/A",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Versions/A/Mercury",
+      "size": 2583424,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "8f9bc3c7a2d261f765a220fe1544cfe0c035f560f48331749d29b72a1de569ff"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Versions/A/Resources",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Versions/A/Resources/Info.plist",
+      "size": 1289,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "1b69893ac1dd6ab4832f7207bcd52d6589e1ec27a9829e7be4e276952177fff8"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Versions/A/Resources/version.plist",
+      "size": 515,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "c35fdf627818ae0d73ccdd20dfc22ba57d981d6714d03ce312023dc865710d59"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Versions/A/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Versions/A/_CodeSignature/CodeResources",
+      "size": 2674,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "e56b32492150e4466f4148853b3933dfcdcdab969230598ecb4a7c34e8ad7cd8"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/Mercury.framework/Versions/Current",
+      "size": 1,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/MobileDevice",
+      "size": 29,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "8e17cd2f78db6b7ec8b6766085b37288b936ddccfedbb5a125657aebae8b893e"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Resources",
+      "size": 26,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "59991b51b8ee15b59f07ec45942957a4ce90494257766964f5df60b7c7998e42"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Info.plist",
+      "size": 1460,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "0df323687f15fc0cdbb345e580baa950f46c3f35131fd57479f71812a4a926a9"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/MacOS",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/MacOS/AppleMobileDeviceHelper",
+      "size": 460192,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "11aa981ee714e0cab5e638eb055fb44e899cc33af5a871e7a4ab79e0d64d349a"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/PkgInfo",
+      "size": 8,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/AppleMobileBackup",
+      "size": 507104,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "1cf8e78a99cb8baeefc8f0fe1963764b9ad0e24acca44adb3c1446b34a9e3775"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/ClientDescription.plist",
+      "size": 2253,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "2d612d76b9e3eae1da135331cfdb0c5a17dfc8508663a975cc408da3a2df516e"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/ClientDescription20.plist",
+      "size": 2400,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "9ba03e0009b505a01ab6f78735d9382492211db645350bab73c97f52b5038e0a"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/ClientDescription30.plist",
+      "size": 2570,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "43783e98a10bc9dafc3734b7f563fd2ea526fe0e42ef5c991e4f38d69db14613"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/ClientDescription33.plist",
+      "size": 2573,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "b74d390df1fe87c7246c7f374c62c5f9153cbbe1c8542aa355f79ec8b0076dfc"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/ClientDescription33Tiger.plist",
+      "size": 2464,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "beed066eeb1970311261434f6d00980cf02e0fdf21e7c63c96f036a18262f4e1"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/ClientDescription40.plist",
+      "size": 2632,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "6dfda830fdf53416e579bb472d0ad35d38e2b4908ca8facb32c1107115ec30f5"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/ClientDescription40Tiger.plist",
+      "size": 2523,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "a409f64fed63229a64cc329757967cf689294ca51a3453f6ef56349e65b7abb2"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/ClientDescription50.plist",
+      "size": 2659,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "3bbe66dbd355c087faaa30c735e964b5ceff0b6016246238e14ec9d222ccf543"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/ClientDescription50SnowLeopard.plist",
+      "size": 2632,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "6dfda830fdf53416e579bb472d0ad35d38e2b4908ca8facb32c1107115ec30f5"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/ClientDescription50Tiger.plist",
+      "size": 2523,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "a409f64fed63229a64cc329757967cf689294ca51a3453f6ef56349e65b7abb2"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/MDCrashReportTool",
+      "size": 263856,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "cb9b6695fd63f38e570bf5c70f0c8c9b172cce7903f4ba6abc10f17f060e5890"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/Resources/iPodSyncClientImages.icns",
+      "size": 34990,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "4714c26d6dd9e1966ec61b4cc5c9354c881a975a64a96a123c981f72094bcd21"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/_CodeSignature/CodeResources",
+      "size": 6780,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "adf6a375c0abe1ca48435e381319abd5be2757222d20918c35b66edb340aa782"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app/Contents/version.plist",
+      "size": 455,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "a0ffd0dbfceb7730bc7b4f7aa03522186c0d47335fcd615a76063c93b6952f34"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app/Contents",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app/Contents/Info.plist",
+      "size": 1621,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "eb8065b3c372d21102bac0169f51f49004e9cda88777016e4cd304274e9e2371"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app/Contents/MacOS",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app/Contents/MacOS/AppleMobileSync",
+      "size": 707920,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "5124b0c334d867fe032a617b4dceab0932e0600d3d37b37d57abd69e9e4fae98"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app/Contents/PkgInfo",
+      "size": 8,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app/Contents/Resources",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app/Contents/Resources/iPodSyncClientImages.icns",
+      "size": 34990,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "4714c26d6dd9e1966ec61b4cc5c9354c881a975a64a96a123c981f72094bcd21"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app/Contents/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app/Contents/_CodeSignature/CodeResources",
+      "size": 2828,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "1b02746235cbe5cdec0f20df469a9d03acd6f58851691bd69aab09f3b08878dc"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app/Contents/version.plist",
+      "size": 455,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "a0ffd0dbfceb7730bc7b4f7aa03522186c0d47335fcd615a76063c93b6952f34"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice",
+      "size": 15764512,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "2646b028427857d9f2e0d34cae0fa8f00b8c730e3c2f5f8b4473344f9b3bcd6b"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/Info.plist",
+      "size": 1404,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "76200a7d1d89427b3e8c95739985eb697ed9ee9e25585c49c1bfa7ec1839d158"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/Info.plist",
+      "size": 838,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "b034885d965f2a94ef789070ef2d105b479ea036d2701738e8dec8ecebbbf698"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/MacOS",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/MacOS/MobileDeviceUpdater",
+      "size": 226368,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "9170c462045222020274188f295c4f0a375d58df96bc1e8a6f74153613c79e8c"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/PkgInfo",
+      "size": 8,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/Resources",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/Resources/Base.lproj",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/Resources/Base.lproj/MainMenu.nib",
+      "size": 39530,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "a77e1953f9b6c1b31472afe365fe5fc5ccb54bc0eb2e3a885f02b80029984c8a"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/Resources/Base.lproj/MobileDeviceUpdateController.nib",
+      "size": 30963,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "75b979afe1c447afabb3b3de92db2cb096fd4f66e27fc14be84c0b681c8cc608"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/Resources/com.apple.iphone-x-1.icns",
+      "size": 692946,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "3cb26449b595cf17591594212f7bbeeeddbf8b55f18357341b12a8e371d9c2b6"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/Resources/com.apple.mobiledeviceupdater.plist",
+      "size": 2038,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "598039887bf7f421394947921f395059bfacb2e35571d560d50a97bdc73b4d20"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/Resources/en.lproj",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/Resources/en.lproj/Localizable.strings",
+      "size": 522,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "b95d9375bdffbe552bf304490c96548c8bd35cd87cce8a498347fe3b91a65399"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/_CodeSignature/CodeResources",
+      "size": 4307,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "01adb8d817ac5271401ef76382ad40fcba817144c9ead732388d1968ea2d4c7f"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app/Contents/version.plist",
+      "size": 580,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "b8f6dc86df763638b3efbd4111af6352d500d28954a8e7108c8a97478ec9addf"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/en.lproj",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/en.lproj/InfoPlist.strings",
+      "size": 72,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "2211dcefd6cab7102268b0a7765965e24cadaca59906a0daba94948f4c591528"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/en.lproj/Localizable.strings",
+      "size": 19230,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "ac3b4642f7b4661e1375b443452045f477dff9e1be4944bd50d0cccc6b77646d"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/usbmuxd",
+      "size": 661632,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "0455ecaa4e96c2399a4c9ddc92392759212c11f7d6861736a14657ce299e7060"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/version.plist",
+      "size": 542,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "40a78623aa84487f1402b6972fc95367ca37b5275046c1a99aee342c857e48aa"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDPrivilegedUSBSupport.xpc",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDPrivilegedUSBSupport.xpc/Contents",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDPrivilegedUSBSupport.xpc/Contents/Info.plist",
+      "size": 1617,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "34eaa183ccbb17ccc8757e1da1be1983c7e27fca6be3259a2db168481ffe5bbc"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDPrivilegedUSBSupport.xpc/Contents/MacOS",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDPrivilegedUSBSupport.xpc/Contents/MacOS/MDPrivilegedUSBSupport",
+      "size": 175232,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "37f48f5214998af6ef22a8180c936b18062e0e3bb0a240f8f3a450064b206e11"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDPrivilegedUSBSupport.xpc/Contents/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDPrivilegedUSBSupport.xpc/Contents/_CodeSignature/CodeResources",
+      "size": 2500,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "844453f378b7564748414b1d20b918c2aee4d961241a3c91d4d2f2f2693f5fa2"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDPrivilegedUSBSupport.xpc/Contents/version.plist",
+      "size": 542,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "40a78623aa84487f1402b6972fc95367ca37b5275046c1a99aee342c857e48aa"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDRemoteServiceSupport.xpc",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDRemoteServiceSupport.xpc/Contents",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDRemoteServiceSupport.xpc/Contents/Info.plist",
+      "size": 1503,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "18a9616a545a5c37aa916d2cc83173705851be57625c6b9e31a7fac980ed457c"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDRemoteServiceSupport.xpc/Contents/MacOS",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDRemoteServiceSupport.xpc/Contents/MacOS/MDRemoteServiceSupport",
+      "size": 177456,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "370ba6f1cfe930590aaffc0d7dc991311a3dd4e5d0e3a13a9fca4684b5e4a4fd"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDRemoteServiceSupport.xpc/Contents/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDRemoteServiceSupport.xpc/Contents/_CodeSignature/CodeResources",
+      "size": 2500,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "afed9924093241767cfba7acdc8897ed36ecbf762da4bfbe35d15cacfdd11e14"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDRemoteServiceSupport.xpc/Contents/version.plist",
+      "size": 518,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "0d829f899eef65868e1e95879442d0c2f99b1b1f4f475af852735254b555e1df"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/_CodeSignature/CodeResources",
+      "size": 9352,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "7344dcc3902e8ddec18aae3b5e7b841a378cd7c5f1083ec432876eaaefe59040"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/Versions/Current",
+      "size": 1,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/MobileDevice.framework/XPCServices",
+      "size": 28,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "486a8ee7b82336e5d9c1e50b175bd14bf8f41246ad5dab1a5d6744bdf13bfede"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Modules",
+      "size": 24,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "5654ed24a88b2873ef353738bc450794670107f7d13295c2e63f6affd4eb2fd8"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/RemotePairing",
+      "size": 30,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "de78aa8f62cee378c34857cfbaf451aec1b7c0b8a6cef82a539be1b5689699f6"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Resources",
+      "size": 26,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "59991b51b8ee15b59f07ec45942957a4ce90494257766964f5df60b7c7998e42"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/RemotePairing",
+      "size": 7132208,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "ab66f3ccd45c54d7ae81d715fe712b5b97ddc0835cb8b18e74a91775f74796dd"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/Resources",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/Resources/Info.plist",
+      "size": 1414,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "0f968ac18e68bed908b8c147059b60b6a44639c02ce4ace68e1353ee702a761c"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/Resources/bin",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/Resources/bin/RemotePairingDataVaultHelper",
+      "size": 419504,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "662b68e8698721cb22bfe5367d5a4fb0a553df8d391e2e1dcbd97e9ff53c8360"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/Resources/version.plist",
+      "size": 526,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "1d0e0ad3d39bde5469d822bb71746e765c24180a07259925d50e7908156248cf"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/XPCServices",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/XPCServices/remotepairingd.xpc",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/XPCServices/remotepairingd.xpc/Contents",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/XPCServices/remotepairingd.xpc/Contents/Info.plist",
+      "size": 1693,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "0b5c166325410420ccce49a36175d01d4bad456d3e03c27158926fa69a1bef4e"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/XPCServices/remotepairingd.xpc/Contents/MacOS",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/XPCServices/remotepairingd.xpc/Contents/MacOS/remotepairingd",
+      "size": 3140928,
+      "mode": "0o100755",
+      "nlink": 0,
+      "sha256": "34db68f7fbea1c26ba2867b4065170606cf7399c41b796473228226696a8d054"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/XPCServices/remotepairingd.xpc/Contents/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/XPCServices/remotepairingd.xpc/Contents/_CodeSignature/CodeResources",
+      "size": 2428,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "c021afbd18a8172d5e6ba38a35bcf8173676f7e7f0cdd7de3415655f222fa68e"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/XPCServices/remotepairingd.xpc/Contents/version.plist",
+      "size": 526,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "1d0e0ad3d39bde5469d822bb71746e765c24180a07259925d50e7908156248cf"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/_CodeSignature",
+      "size": 0,
+      "mode": "0o40755",
+      "nlink": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/A/_CodeSignature/CodeResources",
+      "size": 3193,
+      "mode": "0o100644",
+      "nlink": 0,
+      "sha256": "54a41ea0d18c5875f3ab97ebc94d73472d440ea9e733b2362fadca4654028398"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/Versions/Current",
+      "size": 1,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+    },
+    {
+      "path": "./System/Library/PrivateFrameworks/RemotePairing.framework/XPCServices",
+      "size": 28,
+      "mode": "0o120755",
+      "nlink": 0,
+      "sha256": "486a8ee7b82336e5d9c1e50b175bd14bf8f41246ad5dab1a5d6744bdf13bfede"
+    }
+  ]
+}

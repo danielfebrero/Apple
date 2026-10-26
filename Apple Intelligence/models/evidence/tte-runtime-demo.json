@@ -1,0 +1,225 @@
+{
+  "created_at": "2026-10-26T17:29:19.467285+00:00",
+  "platform": "Linux-6.1.0-53-amd64-x86_64-with-glibc2.36",
+  "model": {
+    "id": "m-42c503b700dcb5d958aa",
+    "label": "TTE_Model",
+    "format": "coreml_package",
+    "scope": "firmware_ml",
+    "availability": "local_extracted",
+    "firmware_path": "/System/Library/PrivateFrameworks/OSIntelligence.framework/assets_COREOS_PREDICTION_TTE/TTE_Model",
+    "file_count": 3,
+    "size_bytes": 324858,
+    "manifest_fingerprint": "fb4b92e0a2d9d1ee799378544c18cb8e26b88c97e5b0084d5ddbec9e661f76e3"
+  },
+  "integrity": {
+    "verified": true,
+    "model_id": "m-42c503b700dcb5d958aa",
+    "files": 3,
+    "size_bytes": 324858,
+    "manifest_fingerprint": "fb4b92e0a2d9d1ee799378544c18cb8e26b88c97e5b0084d5ddbec9e661f76e3",
+    "root": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/tte-final/store/bundles/m-42c503b700dcb5d958aa/model.mlpackage"
+  },
+  "manifest_sha256": "36796cbac7124884cac6427e1c5747a919a3582e72ef82c728798129b6530840",
+  "input_semantics": "Synthetic zero/one features, without battery/app preprocessing",
+  "independent_lstm_method": "Original graph prefix versus struct-decoded coefficients and Python Float64/math.fsum recurrence",
+  "independent_lstm_tolerance": {
+    "atol": 2e-06,
+    "rtol": 2e-05
+  },
+  "apple_runtime_parity_verified": false,
+  "demos": [
+    {
+      "fill": 0,
+      "input_file": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/tte-final/tte-zero.json",
+      "input_sha256": "e571ff620141042d9eec3e302ed263c4251f6b6ab4ff805cb8660b5de028cc91",
+      "result": {
+        "backend": "coreml-protobuf-cpu-experimental",
+        "model_type": "mlProgram",
+        "outputs": {
+          "var_80": {
+            "shape": [
+              1,
+              19,
+              1
+            ],
+            "dtype": "float32",
+            "data": [
+              -1.5703125,
+              -1.9677734375,
+              -2.009765625,
+              -1.751953125,
+              -1.5234375,
+              -1.4208984375,
+              -1.40234375,
+              -1.3955078125,
+              -1.390625,
+              -1.4189453125,
+              -1.4423828125,
+              -1.4443359375,
+              -1.43359375,
+              -1.4326171875,
+              -1.439453125,
+              -1.4384765625,
+              -1.431640625,
+              -1.431640625,
+              -1.4365234375
+            ]
+          }
+        },
+        "apple_runtime_parity_verified": false,
+        "limitation": "Independent CPU mathematics; Apple runtime parity and application preprocessing not established",
+        "model_id": "m-42c503b700dcb5d958aa",
+        "manifest_fingerprint": "fb4b92e0a2d9d1ee799378544c18cb8e26b88c97e5b0084d5ddbec9e661f76e3",
+        "artifact_identity": "selected firmware asset"
+      },
+      "independent_lstm_check": [
+        {
+          "name": "sequence",
+          "shape": [
+            19,
+            1,
+            128
+          ],
+          "values_compared": 2432,
+          "max_absolute_error": 7.227942637466622e-08,
+          "scalar_reference_sum": 18.112966491533445,
+          "scalar_reference_first4": [
+            0.006017826096662992,
+            -0.00270826566694491,
+            -0.004196475210311143,
+            6.756457469828949e-05
+          ]
+        },
+        {
+          "name": "hidden",
+          "shape": [
+            1,
+            128
+          ],
+          "values_compared": 128,
+          "max_absolute_error": 5.821215567566873e-08,
+          "scalar_reference_sum": 1.0151841754247024,
+          "scalar_reference_first4": [
+            0.022911545332382103,
+            -0.003237693152280183,
+            0.008428344131112183,
+            -0.008450596660794736
+          ]
+        },
+        {
+          "name": "cell",
+          "shape": [
+            1,
+            128
+          ],
+          "values_compared": 128,
+          "max_absolute_error": 8.173333411812256e-08,
+          "scalar_reference_sum": 2.1450352653454243,
+          "scalar_reference_first4": [
+            0.04682458918213506,
+            -0.011321717578982687,
+            0.022180668316588485,
+            -0.025581288088559896
+          ]
+        }
+      ]
+    },
+    {
+      "fill": 1,
+      "input_file": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/tte-final/tte-one.json",
+      "input_sha256": "ef5db40b4f92a5024e6ddbec3a83760220115e49b503d49b795dbf9230f0d6b2",
+      "result": {
+        "backend": "coreml-protobuf-cpu-experimental",
+        "model_type": "mlProgram",
+        "outputs": {
+          "var_80": {
+            "shape": [
+              1,
+              19,
+              1
+            ],
+            "dtype": "float32",
+            "data": [
+              1.4267578125,
+              0.442138671875,
+              0.61767578125,
+              0.346923828125,
+              -0.489990234375,
+              -1.15234375,
+              -1.5908203125,
+              -1.8955078125,
+              -2.103515625,
+              -2.255859375,
+              -2.361328125,
+              -2.435546875,
+              -2.4921875,
+              -2.53515625,
+              -2.568359375,
+              -2.59375,
+              -2.619140625,
+              -2.63671875,
+              -2.654296875
+            ]
+          }
+        },
+        "apple_runtime_parity_verified": false,
+        "limitation": "Independent CPU mathematics; Apple runtime parity and application preprocessing not established",
+        "model_id": "m-42c503b700dcb5d958aa",
+        "manifest_fingerprint": "fb4b92e0a2d9d1ee799378544c18cb8e26b88c97e5b0084d5ddbec9e661f76e3",
+        "artifact_identity": "selected firmware asset"
+      },
+      "independent_lstm_check": [
+        {
+          "name": "sequence",
+          "shape": [
+            19,
+            1,
+            128
+          ],
+          "values_compared": 2432,
+          "max_absolute_error": 2.032136255103456e-07,
+          "scalar_reference_sum": -24.692281091012838,
+          "scalar_reference_first4": [
+            -0.054907390482604075,
+            0.0020039992973292795,
+            -0.0368660279555739,
+            -0.00736165952475763
+          ]
+        },
+        {
+          "name": "hidden",
+          "shape": [
+            1,
+            128
+          ],
+          "values_compared": 128,
+          "max_absolute_error": 1.577528225271685e-07,
+          "scalar_reference_sum": -1.3932950432430231,
+          "scalar_reference_first4": [
+            -0.03850528137519189,
+            0.006339315544944462,
+            -0.027603312742598217,
+            -0.011096946459065614
+          ]
+        },
+        {
+          "name": "cell",
+          "shape": [
+            1,
+            128
+          ],
+          "values_compared": 128,
+          "max_absolute_error": 4.924855230292735e-07,
+          "scalar_reference_sum": -1.5231937951066965,
+          "scalar_reference_first4": [
+            -0.2473817990718044,
+            0.03658165598125025,
+            -0.11666440166253325,
+            -0.05495924448792692
+          ]
+        }
+      ]
+    }
+  ]
+}

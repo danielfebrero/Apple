@@ -1,0 +1,2006 @@
+[
+  {
+    "offset": 3880,
+    "text": "/System/Library/Frameworks/CoreAI.framework/Versions/A/CoreAI"
+  },
+  {
+    "offset": 5208,
+    "text": "@rpath/SharedFrameworks/_CodeCompletionFoundation.framework/Versions/A/_CodeCompletionFoundation"
+  },
+  {
+    "offset": 6128,
+    "text": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+  },
+  {
+    "offset": 6432,
+    "text": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+  },
+  {
+    "offset": 6824,
+    "text": "/usr/lib/swift/libswiftCoreFoundation.dylib"
+  },
+  {
+    "offset": 1094344,
+    "text": "Foundation"
+  },
+  {
+    "offset": 1097984,
+    "text": "IntermediateProvider"
+  },
+  {
+    "offset": 1098784,
+    "text": "FetchedIntermediate"
+  },
+  {
+    "offset": 1105712,
+    "text": "AIModelIntermediatesMetadata"
+  },
+  {
+    "offset": 1119760,
+    "text": "InlineIntermediatePort"
+  },
+  {
+    "offset": 1169494,
+    "text": "$s16Core_AI_Debugger20IntermediateProviderP"
+  },
+  {
+    "offset": 1218928,
+    "text": "graphToIntermediates"
+  },
+  {
+    "offset": 1220191,
+    "text": "intermediates"
+  },
+  {
+    "offset": 1220844,
+    "text": "intermediate"
+  },
+  {
+    "offset": 1227632,
+    "text": "primaryFetchIntermediatesTask"
+  },
+  {
+    "offset": 1227664,
+    "text": "secondaryFetchIntermediatesTask"
+  },
+  {
+    "offset": 1227856,
+    "text": "fetchIntermediatesTask"
+  },
+  {
+    "offset": 1256736,
+    "text": "_TtC16Core_AI_Debugger22InlineIntermediatePort"
+  },
+  {
+    "offset": 1262096,
+    "text": "secondaryFetchIntermediatesTask"
+  },
+  {
+    "offset": 1269234,
+    "text": "configurationWithPointSize:weight:"
+  },
+  {
+    "offset": 1271744,
+    "text": "fetchIntermediatesTask"
+  },
+  {
+    "offset": 1273534,
+    "text": "intermediates"
+  },
+  {
+    "offset": 1275192,
+    "text": "monospacedDigitSystemFontOfSize:weight:"
+  },
+  {
+    "offset": 1282160,
+    "text": "primaryFetchIntermediatesTask"
+  },
+  {
+    "offset": 1289499,
+    "text": "systemFontOfSize:weight:"
+  },
+  {
+    "offset": 1301168,
+    "text": "com.apple.coreai.aimodel"
+  },
+  {
+    "offset": 1301232,
+    "text": "com.apple.coreai.aimodelintermediates"
+  },
+  {
+    "offset": 1301632,
+    "text": "Failed to fetch intermediate"
+  },
+  {
+    "offset": 1301856,
+    "text": "com.apple.gputools.CoreAIDebugger"
+  },
+  {
+    "offset": 1302160,
+    "text": "Intermediates File"
+  },
+  {
+    "offset": 1303024,
+    "text": "IntermediateFetch"
+  },
+  {
+    "offset": 1303056,
+    "text": "This value can't be fetched on the current OS: its memory is already exposed as a tensor, and requesting it again would hit an MPSGraph limitation (rdar://177559251)."
+  },
+  {
+    "offset": 1303296,
+    "text": "Replay service returned no tensor data for this intermediate."
+  },
+  {
+    "offset": 1303888,
+    "text": "https://apple.github.io/coreai-torch/main/api/debugging.html"
+  },
+  {
+    "offset": 1304512,
+    "text": "Core_AI_Debugger.MLOpGraphContainerViewController"
+  },
+  {
+    "offset": 1304816,
+    "text": "CoreAIDebugger.SourceView"
+  },
+  {
+    "offset": 1304848,
+    "text": "CoreAIDebugger.StructureView"
+  },
+  {
+    "offset": 1305376,
+    "text": "aimodelintermediates"
+  },
+  {
+    "offset": 1306272,
+    "text": "CoreAIDebugger.MainSplitView"
+  },
+  {
+    "offset": 1309840,
+    "text": "streamIntermediates fetchNamedGraph failed: %@"
+  },
+  {
+    "offset": 1309888,
+    "text": "streamIntermediates getProvider failed: %@"
+  },
+  {
+    "offset": 1309936,
+    "text": "streamIntermediates fetch failed: %@"
+  },
+  {
+    "offset": 1309984,
+    "text": "intermediate chunk %ld/%ld: %ld elements"
+  },
+  {
+    "offset": 1310416,
+    "text": "Auto-split intermediate fetch into %{public}ld passes to avoid duplicate memref_to_tensor (rdar://177559251)."
+  },
+  {
+    "offset": 1310528,
+    "text": "Skipping intermediate %{public}llu: backing memref view already feeds a memref_to_tensor; fetching would duplicate it (MPSGraph limitation, rdar://177559251)."
+  },
+  {
+    "offset": 1532947,
+    "text": "_$s10Foundation14LocalizedErrorMp"
+  },
+  {
+    "offset": 1532981,
+    "text": "_$s10Foundation14LocalizedErrorPs0C0Tb"
+  },
+  {
+    "offset": 1533020,
+    "text": "_$s10Foundation14LocalizedErrorP16errorDescriptionSSSgvgTq"
+  },
+  {
+    "offset": 1533079,
+    "text": "_$s10Foundation14LocalizedErrorP13failureReasonSSSgvgTq"
+  },
+  {
+    "offset": 1533135,
+    "text": "_$s10Foundation14LocalizedErrorP18recoverySuggestionSSSgvgTq"
+  },
+  {
+    "offset": 1533196,
+    "text": "_$s10Foundation14LocalizedErrorP10helpAnchorSSSgvgTq"
+  },
+  {
+    "offset": 1536447,
+    "text": "_$s9MLOpGraph0aB8ProviderP4data03forB08valueRef8bitRangeScTy10Foundation4DataVs5Error_pGSgAA0aB6ObjectC_s6UInt64VSnys5Int64VGtFTq"
+  },
+  {
+    "offset": 1543179,
+    "text": "_$s11CoreAIAsset12AIModelAssetV10contentsOfAC10Foundation3URLV_tKcfC"
+  },
+  {
+    "offset": 1543248,
+    "text": "_$s11CoreAIAsset12AIModelAssetV15ValueDescriptorV4nameSSvg"
+  },
+  {
+    "offset": 1543307,
+    "text": "_$s11CoreAIAsset12AIModelAssetV15ValueDescriptorV8typeNameSSvg"
+  },
+  {
+    "offset": 1543370,
+    "text": "_$s11CoreAIAsset12AIModelAssetV15ValueDescriptorVMa"
+  },
+  {
+    "offset": 1543422,
+    "text": "_$s11CoreAIAsset12AIModelAssetV15ValueDescriptorVMn"
+  },
+  {
+    "offset": 1543474,
+    "text": "_$s11CoreAIAsset12AIModelAssetV18FunctionDescriptorV4nameSSvg"
+  },
+  {
+    "offset": 1543536,
+    "text": "_$s11CoreAIAsset12AIModelAssetV18FunctionDescriptorV6inputsSayAC05ValueF0VGvg"
+  },
+  {
+    "offset": 1543614,
+    "text": "_$s11CoreAIAsset12AIModelAssetV18FunctionDescriptorVMa"
+  },
+  {
+    "offset": 1543669,
+    "text": "_$s11CoreAIAsset12AIModelAssetV18programBytecodeURL10Foundation0G0Vvg"
+  },
+  {
+    "offset": 1543739,
+    "text": "_$s11CoreAIAsset12AIModelAssetV7SummaryV9functionsSayAC18FunctionDescriptorVGvg"
+  },
+  {
+    "offset": 1543819,
+    "text": "_$s11CoreAIAsset12AIModelAssetV7SummaryVMa"
+  },
+  {
+    "offset": 1543862,
+    "text": "_$s11CoreAIAsset12AIModelAssetV7SummaryVMn"
+  },
+  {
+    "offset": 1543905,
+    "text": "_$s11CoreAIAsset12AIModelAssetV7summary19includingStatisticsAC7SummaryVSgSb_tKF"
+  },
+  {
+    "offset": 1543985,
+    "text": "_$s11CoreAIAsset12AIModelAssetVMa"
+  },
+  {
+    "offset": 1544019,
+    "text": "_$s11CoreAIAsset12AIModelAssetVMn"
+  },
+  {
+    "offset": 1560854,
+    "text": "_$s7SwiftUI4FontV6WeightV6mediumAEvgZ"
+  },
+  {
+    "offset": 1560892,
+    "text": "_$s7SwiftUI4FontV6WeightV8semiboldAEvgZ"
+  },
+  {
+    "offset": 1560932,
+    "text": "_$s7SwiftUI4FontV6system4size6weight6designAC12CoreGraphics7CGFloatV_AC6WeightVSgAC6DesignOSgtFZ"
+  },
+  {
+    "offset": 1562511,
+    "text": "_$s7SwiftUI4ViewPAAE10fontWeightyQrAA4FontV0E0VSgF"
+  },
+  {
+    "offset": 1562562,
+    "text": "_$s7SwiftUI4ViewPAAE10fontWeightyQrAA4FontV0E0VSgFQOMQ"
+  },
+  {
+    "offset": 1563125,
+    "text": "_$s7SwiftUI4ViewPAAE12fileImporter11isPresented19allowedContentTypes23allowsMultipleSelection12onCompletionQrAA7BindingVySbG_Say22UniformTypeIdentifiers6UTTypeVGSbys6ResultOySay10Foundation3URLVGs5Error_pGctF"
+  },
+  {
+    "offset": 1563334,
+    "text": "_$s7SwiftUI4ViewPAAE12fileImporter11isPresented19allowedContentTypes23allowsMultipleSelection12onCompletionQrAA7BindingVySbG_Say22UniformTypeIdentifiers6UTTypeVGSbys6ResultOySay10Foundation3URLVGs5Error_pGctFQOMQ"
+  },
+  {
+    "offset": 1572432,
+    "text": "_$s10Foundation15AttributeScopesO6AppKitE0dE10AttributesV015ForegroundColorB0OAA19AttributedStringKeyADMc"
+  },
+  {
+    "offset": 1572538,
+    "text": "_$s10Foundation15AttributeScopesO6AppKitE0dE10AttributesV015ForegroundColorB0ON"
+  },
+  {
+    "offset": 1572618,
+    "text": "_$s10Foundation15AttributeScopesO6AppKitE0dE10AttributesV04FontB0OAA19AttributedStringKeyADMc"
+  },
+  {
+    "offset": 1572712,
+    "text": "_$s10Foundation15AttributeScopesO6AppKitE0dE10AttributesV04FontB0ON"
+  },
+  {
+    "offset": 1573007,
+    "text": "_NSFontWeightMedium"
+  },
+  {
+    "offset": 1573027,
+    "text": "_NSFontWeightRegular"
+  },
+  {
+    "offset": 1574866,
+    "text": "_$s15GTStandaloneKit14MLReplayTensorV18tensorDataAndShape4rank10Foundation0F0V4data_Says5Int64VGSg5shapetSgSi_tF"
+  },
+  {
+    "offset": 1575085,
+    "text": "_$s15GTStandaloneKit14MLReplayTensorV6format4dataA2C6FormatO_10Foundation4DataVtcfC"
+  },
+  {
+    "offset": 1575169,
+    "text": "_$s15GTStandaloneKit14MLReplayTensorV9numpyFrom6format5shapeACSg10Foundation4DataV_9MLOpGraph0kJ10FormatTypeOSays5Int64VGtcfC"
+  },
+  {
+    "offset": 1576152,
+    "text": "_$s15GTStandaloneKit15MLReplaySessionC27enqueueFetchViewerGraphTask12functionNameScTy10Foundation4DataVs5Error_pGSS_tFTj"
+  },
+  {
+    "offset": 1576273,
+    "text": "_$s15GTStandaloneKit15MLReplaySessionC29enqueueFetchIntermediatesTask12functionName6inputs18compileIdentifiers20intermediatesHandlerScTyyts5Error_pGSS_SDySSAA0C6TensorVGSay9MLOpGraph0r11NodeCompileM0CGyAA0C12IntermediateVctFTj"
+  },
+  {
+    "offset": 1576500,
+    "text": "_$s15GTStandaloneKit15MLReplaySessionC4udid8modelURL25computeUnitsConfiguration22expectFrequentReshapesACSS_10Foundation0G0VAA0c7ComputeiJ0OSbtcfc"
+  },
+  {
+    "offset": 1577446,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV11OperandTypeO2eeoiySbAE_AEtFZ"
+  },
+  {
+    "offset": 1577520,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV11OperandTypeO6outputyA2EmFWC"
+  },
+  {
+    "offset": 1577593,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV11OperandTypeOMa"
+  },
+  {
+    "offset": 1577653,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV12delegateOpIds6UInt64VSgvg"
+  },
+  {
+    "offset": 1577724,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV5errors5Error_pSgvg"
+  },
+  {
+    "offset": 1577787,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV6tensorAA0C6TensorVSgvg"
+  },
+  {
+    "offset": 1577854,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV7operandAC11OperandTypeO_Sitvg"
+  },
+  {
+    "offset": 1577928,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV8odixOpIds6UInt64Vvg"
+  },
+  {
+    "offset": 1584247,
+    "text": "_$s10MLToolsMPS16MPSOpGraphSourceO7packageyAC10Foundation3URLVcACmFWC"
+  },
+  {
+    "offset": 1586942,
+    "text": "_$s9MLOpGraph0A10SourceFileC3url10Foundation3URLVvg"
+  },
+  {
+    "offset": 1587539,
+    "text": "_$s9MLOpGraph0A13NodeDebugInfoC22isIntermediateProviderSbvg"
+  },
+  {
+    "offset": 1591561,
+    "text": "_$s9MLOpGraph0A19NodeDebugIdentifierC0E4TypeO6coreaiyA2EmFWC"
+  },
+  {
+    "offset": 1592084,
+    "text": "_$s9MLOpGraph0A23NodeVirtualDataProviderC4data6formatAC10Foundation0E0V_AA0aE6FormatCtcfc"
+  },
+  {
+    "offset": 1593317,
+    "text": "_$s9MLOpGraph0A8NodeDataV5bytes10Foundation0D0Vvg"
+  },
+  {
+    "offset": 1594249,
+    "text": "_$s9MLOpGraph0aB11FetchWeightC13propertyIndexSivg"
+  },
+  {
+    "offset": 1594299,
+    "text": "_$s9MLOpGraph0aB11FetchWeightC4nodeAA0A4NodeCvg"
+  },
+  {
+    "offset": 1594347,
+    "text": "_$s9MLOpGraph0aB11FetchWeightCMa"
+  },
+  {
+    "offset": 1594380,
+    "text": "_$s9MLOpGraph0aB14WeightResponseV12dataProviderAA0a16NodePropertyDataF0_pvg"
+  },
+  {
+    "offset": 1594456,
+    "text": "_$s9MLOpGraph0aB14WeightResponseVMa"
+  },
+  {
+    "offset": 1595024,
+    "text": "_$s9MLOpGraph0aB18FetchIntermediatesC5nodesACSgSayAA0A4NodeCG_tcfc"
+  },
+  {
+    "offset": 1595091,
+    "text": "_$s9MLOpGraph0aB18FetchIntermediatesC5nodesSayAA0A4NodeCGvg"
+  },
+  {
+    "offset": 1595151,
+    "text": "_$s9MLOpGraph0aB18FetchIntermediatesCMa"
+  },
+  {
+    "offset": 1596927,
+    "text": "_$s9MLOpGraph0aB21IntermediatesResponseV13dataProvidersSayAA0A24NodePropertyDataProvider_pGvg"
+  },
+  {
+    "offset": 1597021,
+    "text": "_$s9MLOpGraph0aB21IntermediatesResponseV9requestID13dataProvidersACs6UInt64V_SayAA0A24NodePropertyDataProvider_pGtcfC"
+  },
+  {
+    "offset": 1597139,
+    "text": "_$s9MLOpGraph0aB21IntermediatesResponseVAA0abD0AAWP"
+  },
+  {
+    "offset": 1597191,
+    "text": "_$s9MLOpGraph0aB21IntermediatesResponseVMa"
+  },
+  {
+    "offset": 1598055,
+    "text": "_$s9MLOpGraph0aB5InputV4data10Foundation4DataVvg"
+  },
+  {
+    "offset": 1598148,
+    "text": "_$s9MLOpGraph0aB5InputV6format5shape4dataAcA0A14DataFormatTypeO_Says5Int64VG10Foundation0G0VtcfC"
+  },
+  {
+    "offset": 1598614,
+    "text": "_$s9MLOpGraph0aB6ObjectC23intermediateFetchSafetySDys6UInt64VAA012IntermediateeF0VGvgTj"
+  },
+  {
+    "offset": 1600807,
+    "text": "_$s9MLOpGraph0aB8ProviderPAAE4data03forB08valueRef8bitRangeScTy10Foundation4DataVs5Error_pGSgAA0aB6ObjectC_s6UInt64VSnys5Int64VGtF"
+  },
+  {
+    "offset": 1601268,
+    "text": "_$s9MLOpGraph13NumPyImporterV10importData4fromAA0aB5InputV10Foundation3URLV_tKFZ"
+  },
+  {
+    "offset": 1601349,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV10SafeSourceO14existingTensoryAEs6UInt64V_AHSgtcAEmFWC"
+  },
+  {
+    "offset": 1601443,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV10SafeSourceO6unsafeyA2EmFWC"
+  },
+  {
+    "offset": 1601511,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV10SafeSourceO9directM2TyA2EmFWC"
+  },
+  {
+    "offset": 1601582,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV10SafeSourceOMa"
+  },
+  {
+    "offset": 1601637,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV10safeSourceAC04SafeG0Ovg"
+  },
+  {
+    "offset": 1601702,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV12CollisionKeyVMa"
+  },
+  {
+    "offset": 1601759,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV12CollisionKeyVMn"
+  },
+  {
+    "offset": 1601816,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV12CollisionKeyVSHAAMc"
+  },
+  {
+    "offset": 1601877,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV12CollisionKeyVSQAAMc"
+  },
+  {
+    "offset": 1601938,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV9collisionAC12CollisionKeyVSgvg"
+  },
+  {
+    "offset": 1602009,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyVMa"
+  },
+  {
+    "offset": 1602051,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyVMn"
+  },
+  {
+    "offset": 1603995,
+    "text": "_$s10Foundation11JSONDecoderC6decode_4fromxxm_AA4DataVtKSeRzlFTj"
+  },
+  {
+    "offset": 1604060,
+    "text": "_$s10Foundation11JSONDecoderCACycfc"
+  },
+  {
+    "offset": 1604096,
+    "text": "_$s10Foundation11JSONDecoderCMa"
+  },
+  {
+    "offset": 1604128,
+    "text": "_$s10Foundation12CharacterSetV11whitespacesACvgZ"
+  },
+  {
+    "offset": 1604177,
+    "text": "_$s10Foundation12CharacterSetV8newlinesACvgZ"
+  },
+  {
+    "offset": 1604222,
+    "text": "_$s10Foundation12CharacterSetVMa"
+  },
+  {
+    "offset": 1604255,
+    "text": "_$s10Foundation12NotificationV36_unconditionallyBridgeFromObjectiveCyACSo14NSNotificationCSgFZ"
+  },
+  {
+    "offset": 1604350,
+    "text": "_$s10Foundation12NotificationV6objectypSgvg"
+  },
+  {
+    "offset": 1604394,
+    "text": "_$s10Foundation12NotificationVMa"
+  },
+  {
+    "offset": 1604427,
+    "text": "_$s10Foundation12URLQueryItemV4nameSSvg"
+  },
+  {
+    "offset": 1604467,
+    "text": "_$s10Foundation12URLQueryItemV5valueSSSgvg"
+  },
+  {
+    "offset": 1604510,
+    "text": "_$s10Foundation12URLQueryItemVMa"
+  },
+  {
+    "offset": 1604543,
+    "text": "_$s10Foundation13URLComponentsV10queryItemsSayAA12URLQueryItemVGSgvg"
+  },
+  {
+    "offset": 1604612,
+    "text": "_$s10Foundation13URLComponentsV3url23resolvingAgainstBaseURLACSgAA0G0Vh_SbtcfC"
+  },
+  {
+    "offset": 1604691,
+    "text": "_$s10Foundation13URLComponentsVMa"
+  },
+  {
+    "offset": 1604725,
+    "text": "_$s10Foundation13URLComponentsVMn"
+  },
+  {
+    "offset": 1604759,
+    "text": "_$s10Foundation13__DataStorageC5bytes6length4copy11deallocator6offsetACSvSg_SiSbySv_SitcSgSitcfc"
+  },
+  {
+    "offset": 1604856,
+    "text": "_$s10Foundation13__DataStorageC6_bytesSvSgvg"
+  },
+  {
+    "offset": 1604901,
+    "text": "_$s10Foundation13__DataStorageC6lengthACSi_tcfc"
+  },
+  {
+    "offset": 1604949,
+    "text": "_$s10Foundation13__DataStorageC7_lengthSivg"
+  },
+  {
+    "offset": 1604993,
+    "text": "_$s10Foundation13__DataStorageC7_offsetSivg"
+  },
+  {
+    "offset": 1605037,
+    "text": "_$s10Foundation13__DataStorageCMa"
+  },
+  {
+    "offset": 1605071,
+    "text": "_$s10Foundation14LocalizedErrorP16errorDescriptionSSSgvgTj"
+  },
+  {
+    "offset": 1605130,
+    "text": "_$s10Foundation14LocalizedErrorP18recoverySuggestionSSSgvgTj"
+  },
+  {
+    "offset": 1605191,
+    "text": "_$s10Foundation14LocalizedErrorPAAE10helpAnchorSSSgvg"
+  },
+  {
+    "offset": 1605245,
+    "text": "_$s10Foundation14LocalizedErrorPAAE13failureReasonSSSgvg"
+  },
+  {
+    "offset": 1605302,
+    "text": "_$s10Foundation14LocalizedErrorPAAE16errorDescriptionSSSgvg"
+  },
+  {
+    "offset": 1605362,
+    "text": "_$s10Foundation14LocalizedErrorPAAE18recoverySuggestionSSSgvg"
+  },
+  {
+    "offset": 1605424,
+    "text": "_$s10Foundation14SortComparatorPAASSAAE0C0VRszrlE17localizedStandardAEvgZ"
+  },
+  {
+    "offset": 1605498,
+    "text": "_$s10Foundation16AttributedStringV10charactersAC13CharacterViewVvg"
+  },
+  {
+    "offset": 1605565,
+    "text": "_$s10Foundation16AttributedStringV13CharacterViewVMa"
+  },
+  {
+    "offset": 1605618,
+    "text": "_$s10Foundation16AttributedStringV13CharacterViewVMn"
+  },
+  {
+    "offset": 1605671,
+    "text": "_$s10Foundation16AttributedStringV13CharacterViewVSlAAMc"
+  },
+  {
+    "offset": 1605728,
+    "text": "_$s10Foundation16AttributedStringV13stringLiteralACSS_tcfC"
+  },
+  {
+    "offset": 1605787,
+    "text": "_$s10Foundation16AttributedStringV2peoiyyACz_ACtFZ"
+  },
+  {
+    "offset": 1605838,
+    "text": "_$s10Foundation16AttributedStringV4RunsV3RunVMa"
+  },
+  {
+    "offset": 1605886,
+    "text": "_$s10Foundation16AttributedStringV4RunsV3RunVy5ValueQzSgxmcAA0bC3KeyRzluig"
+  },
+  {
+    "offset": 1605961,
+    "text": "_$s10Foundation16AttributedStringV4RunsV5IndexVMa"
+  },
+  {
+    "offset": 1606011,
+    "text": "_$s10Foundation16AttributedStringV4RunsV5IndexVSQAAMc"
+  },
+  {
+    "offset": 1606065,
+    "text": "_$s10Foundation16AttributedStringV4RunsVMa"
+  },
+  {
+    "offset": 1606108,
+    "text": "_$s10Foundation16AttributedStringV4RunsVMn"
+  },
+  {
+    "offset": 1606151,
+    "text": "_$s10Foundation16AttributedStringV4RunsVSTAAMc"
+  },
+  {
+    "offset": 1606198,
+    "text": "_$s10Foundation16AttributedStringV4RunsVSlAAMc"
+  },
+  {
+    "offset": 1606245,
+    "text": "_$s10Foundation16AttributedStringV4runsAC4RunsVvg"
+  },
+  {
+    "offset": 1606295,
+    "text": "_$s10Foundation16AttributedStringV5IndexVMa"
+  },
+  {
+    "offset": 1606339,
+    "text": "_$s10Foundation16AttributedStringV5IndexVMn"
+  },
+  {
+    "offset": 1606383,
+    "text": "_$s10Foundation16AttributedStringV5IndexVSLAAMc"
+  },
+  {
+    "offset": 1606431,
+    "text": "_$s10Foundation16AttributedStringV5IndexVSQAAMc"
+  },
+  {
+    "offset": 1606479,
+    "text": "_$s10Foundation16AttributedStringV5IndexV_6withinAESgSSADV_xtcAA0bC8ProtocolRzlufC"
+  },
+  {
+    "offset": 1606562,
+    "text": "_$s10Foundation16AttributedStringVAA0bC8ProtocolAAMc"
+  },
+  {
+    "offset": 1606615,
+    "text": "_$s10Foundation16AttributedStringVACycfC"
+  },
+  {
+    "offset": 1606656,
+    "text": "_$s10Foundation16AttributedStringVMa"
+  },
+  {
+    "offset": 1606693,
+    "text": "_$s10Foundation16AttributedStringVMn"
+  },
+  {
+    "offset": 1606730,
+    "text": "_$s10Foundation16AttributedStringV_10attributesACSS_AA18AttributeContainerVtcfC"
+  },
+  {
+    "offset": 1606810,
+    "text": "_$s10Foundation16AttributedStringVy5ValueQzSgxmcAA0bC3KeyRzluis"
+  },
+  {
+    "offset": 1606874,
+    "text": "_$s10Foundation16AttributedStringVyAA0B9SubstringVxcSXRzAC5IndexV5BoundRtzluiM"
+  },
+  {
+    "offset": 1606953,
+    "text": "_$s10Foundation17KeyPathComparatorVMn"
+  },
+  {
+    "offset": 1606991,
+    "text": "_$s10Foundation17KeyPathComparatorV_10comparatorACyxGs0bC0Cyxqd__G_qd_0_tc8ComparedQyd_0_Rsd__AA04SortD0Rd_0_r0_lufC"
+  },
+  {
+    "offset": 1607108,
+    "text": "_$s10Foundation17KeyPathComparatorVyxGAA04SortD0AAMc"
+  },
+  {
+    "offset": 1607161,
+    "text": "_$s10Foundation17URLResourceValuesV11isDirectorySbSgvg"
+  },
+  {
+    "offset": 1607216,
+    "text": "_$s10Foundation17URLResourceValuesVMa"
+  },
+  {
+    "offset": 1607254,
+    "text": "_$s10Foundation18AttributeContainerVACycfC"
+  },
+  {
+    "offset": 1607297,
+    "text": "_$s10Foundation18AttributeContainerVMa"
+  },
+  {
+    "offset": 1607336,
+    "text": "_$s10Foundation19AttributedSubstringVy5ValueQzSgxmcAA0B9StringKeyRzluis"
+  },
+  {
+    "offset": 1607408,
+    "text": "_$s10Foundation22_convertNSErrorToErrorys0E0_pSo0C0CSgF"
+  },
+  {
+    "offset": 1607464,
+    "text": "_$s10Foundation24FloatingPointFormatStyleV7PercentV6localeAEyx_GAA6LocaleV_tcfC"
+  },
+  {
+    "offset": 1607544,
+    "text": "_$s10Foundation24FloatingPointFormatStyleV7PercentV9precisionyAEyx_GAA06NumberdE13ConfigurationO9PrecisionVF"
+  },
+  {
+    "offset": 1607653,
+    "text": "_$s10Foundation24FloatingPointFormatStyleV7PercentVMn"
+  },
+  {
+    "offset": 1607707,
+    "text": "_$s10Foundation24FloatingPointFormatStyleV7PercentVyx_GAA0dE0AAMc"
+  },
+  {
+    "offset": 1607773,
+    "text": "_$s10Foundation30NumberFormatStyleConfigurationO9PrecisionV14fractionLengthyAESiFZ"
+  },
+  {
+    "offset": 1607856,
+    "text": "_$s10Foundation30NumberFormatStyleConfigurationO9PrecisionVMa"
+  },
+  {
+    "offset": 1607918,
+    "text": "_$s10Foundation3URLV13pathExtensionSSvg"
+  },
+  {
+    "offset": 1607958,
+    "text": "_$s10Foundation3URLV14resourceValues7forKeysAA011URLResourceD0VShySo16NSURLResourceKeyaG_tKF"
+  },
+  {
+    "offset": 1608051,
+    "text": "_$s10Foundation3URLV17lastPathComponentSSvg"
+  },
+  {
+    "offset": 1608095,
+    "text": "_$s10Foundation3URLV19_bridgeToObjectiveCSo5NSURLCyF"
+  },
+  {
+    "offset": 1608148,
+    "text": "_$s10Foundation3URLV22appendingPathComponentyACSSF"
+  },
+  {
+    "offset": 1608199,
+    "text": "_$s10Foundation3URLV25deletingLastPathComponentACyF"
+  },
+  {
+    "offset": 1608251,
+    "text": "_$s10Foundation3URLV2eeoiySbAC_ACtFZ"
+  },
+  {
+    "offset": 1608288,
+    "text": "_$s10Foundation3URLV36_unconditionallyBridgeFromObjectiveCyACSo5NSURLCSgFZ"
+  },
+  {
+    "offset": 1608363,
+    "text": "_$s10Foundation3URLV4hostSSSgvg"
+  },
+  {
+    "offset": 1608395,
+    "text": "_$s10Foundation3URLV4path14percentEncodedSSSb_tF"
+  },
+  {
+    "offset": 1608444,
+    "text": "_$s10Foundation3URLV4pathSSvg"
+  },
+  {
+    "offset": 1608474,
+    "text": "_$s10Foundation3URLV6schemeSSSgvg"
+  },
+  {
+    "offset": 1608508,
+    "text": "_$s10Foundation3URLV6stringACSgSSh_tcfC"
+  },
+  {
+    "offset": 1608548,
+    "text": "_$s10Foundation3URLVMa"
+  },
+  {
+    "offset": 1608571,
+    "text": "_$s10Foundation3URLVMn"
+  },
+  {
+    "offset": 1608594,
+    "text": "_$s10Foundation3URLVSHAAMc"
+  },
+  {
+    "offset": 1608621,
+    "text": "_$s10Foundation3URLVSQAAMc"
+  },
+  {
+    "offset": 1608648,
+    "text": "_$s10Foundation3URLVs21_ObjectiveCBridgeableAAMc"
+  },
+  {
+    "offset": 1608697,
+    "text": "_$s10Foundation4DataV10LargeSliceV21ensureUniqueReferenceyyF"
+  },
+  {
+    "offset": 1608758,
+    "text": "_$s10Foundation4DataV10contentsOf7optionsAcA3URLVh_So20NSDataReadingOptionsVtKcfC"
+  },
+  {
+    "offset": 1608840,
+    "text": "_$s10Foundation4DataV14RangeReferenceCMa"
+  },
+  {
+    "offset": 1608881,
+    "text": "_$s10Foundation4DataV19_bridgeToObjectiveCSo6NSDataCyF"
+  },
+  {
+    "offset": 1608936,
+    "text": "_$s10Foundation4DataVMn"
+  },
+  {
+    "offset": 1608960,
+    "text": "_$s10Foundation4DateV3nowACvgZ"
+  },
+  {
+    "offset": 1608991,
+    "text": "_$s10Foundation4DateVMa"
+  },
+  {
+    "offset": 1609015,
+    "text": "_$s10Foundation4DateVMn"
+  },
+  {
+    "offset": 1609039,
+    "text": "_$s10Foundation4UUIDV2eeoiySbAC_ACtFZ"
+  },
+  {
+    "offset": 1609077,
+    "text": "_$s10Foundation4UUIDVACycfC"
+  },
+  {
+    "offset": 1609105,
+    "text": "_$s10Foundation4UUIDVMa"
+  },
+  {
+    "offset": 1609129,
+    "text": "_$s10Foundation4UUIDVMn"
+  },
+  {
+    "offset": 1609153,
+    "text": "_$s10Foundation4UUIDVSHAAMc"
+  },
+  {
+    "offset": 1609181,
+    "text": "_$s10Foundation6LocaleV19autoupdatingCurrentACvgZ"
+  },
+  {
+    "offset": 1609231,
+    "text": "_$s10Foundation6LocaleVMa"
+  },
+  {
+    "offset": 1609257,
+    "text": "_$s10Foundation6LocaleVMn"
+  },
+  {
+    "offset": 1609283,
+    "text": "_$s10Foundation8IndexSetV19_bridgeToObjectiveCSo07NSIndexC0CyF"
+  },
+  {
+    "offset": 1609346,
+    "text": "_$s10Foundation8IndexSetV7integerACSi_tcfC"
+  },
+  {
+    "offset": 1609389,
+    "text": "_$s10Foundation8IndexSetVMa"
+  },
+  {
+    "offset": 1609417,
+    "text": "_$sSB10FoundationE9formattedy12FormatOutputQyd__qd__0C5InputQyd__RszAA0C5StyleRd__lF"
+  },
+  {
+    "offset": 1609502,
+    "text": "_$sSD10FoundationE19_bridgeToObjectiveCSo12NSDictionaryCyF"
+  },
+  {
+    "offset": 1609561,
+    "text": "_$sSD10FoundationE36_unconditionallyBridgeFromObjectiveCySDyxq_GSo12NSDictionaryCSgFZ"
+  },
+  {
+    "offset": 1609647,
+    "text": "_$sSS10FoundationE10ComparatorVAA04SortB0AAMc"
+  },
+  {
+    "offset": 1609693,
+    "text": "_$sSS10FoundationE10ComparatorVMa"
+  },
+  {
+    "offset": 1609727,
+    "text": "_$sSS10FoundationE10contentsOf8encodingSSAA3URLVh_SSAAE8EncodingVtKcfC"
+  },
+  {
+    "offset": 1609798,
+    "text": "_$sSS10FoundationE11_charactersSSAA16AttributedStringV13CharacterViewV_tcfC"
+  },
+  {
+    "offset": 1609874,
+    "text": "_$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF"
+  },
+  {
+    "offset": 1609928,
+    "text": "_$sSS10FoundationE26_forceBridgeFromObjectiveC_6resultySo8NSStringC_SSSgztFZ"
+  },
+  {
+    "offset": 1610005,
+    "text": "_$sSS10FoundationE34_conditionallyBridgeFromObjectiveC_6resultSbSo8NSStringC_SSSgztFZ"
+  },
+  {
+    "offset": 1610091,
+    "text": "_$sSS10FoundationE36_unconditionallyBridgeFromObjectiveCySSSo8NSStringCSgFZ"
+  },
+  {
+    "offset": 1610167,
+    "text": "_$sSS10FoundationE6format_S2Sh_s7CVarArg_pdtcfC"
+  },
+  {
+    "offset": 1610215,
+    "text": "_$sSS10FoundationE8EncodingV4utf8ACvgZ"
+  },
+  {
+    "offset": 1610254,
+    "text": "_$sSS10FoundationE8EncodingVMa"
+  },
+  {
+    "offset": 1610285,
+    "text": "_$sSS10FoundationEySSs5SliceVyAA16AttributedStringV13CharacterViewVGcfC"
+  },
+  {
+    "offset": 1610357,
+    "text": "_$sSSs7CVarArg10FoundationMc"
+  },
+  {
+    "offset": 1610386,
+    "text": "_$sST10FoundationE6sorted5usingSay7ElementQzGqd___tAA14SortComparatorRd__8ComparedQyd__AERSlF"
+  },
+  {
+    "offset": 1610480,
+    "text": "_$sSa10FoundationE19_bridgeToObjectiveCSo7NSArrayCyF"
+  },
+  {
+    "offset": 1610533,
+    "text": "_$sSa10FoundationE36_unconditionallyBridgeFromObjectiveCySayxGSo7NSArrayCSgFZ"
+  },
+  {
+    "offset": 1610611,
+    "text": "_$sSh10FoundationE19_bridgeToObjectiveCSo5NSSetCyF"
+  },
+  {
+    "offset": 1610662,
+    "text": "_$sSo12NSFileHandleC10FoundationE4read9upToCountAC4DataVSgSi_tKF"
+  },
+  {
+    "offset": 1610727,
+    "text": "_$sSo14NSItemProviderC10FoundationE10loadObject7ofClass17completionHandlerSo10NSProgressCxm_yxSg_s5Error_pSgtcts21_ObjectiveCBridgeableRzSo0aB7Reading01_L5CTypeRpzlF"
+  },
+  {
+    "offset": 1610893,
+    "text": "_$sSo17NSKeyedUnarchiverC10FoundationE16unarchivedObject7ofClass4fromxSgxm_AC4DataVtKSo8NSObjectCRbzSo8NSCodingRzlFZ"
+  },
+  {
+    "offset": 1611010,
+    "text": "_$sSo18NSAttributedStringC10FoundationEyAbC010AttributedB0VcfC"
+  },
+  {
+    "offset": 1611073,
+    "text": "_$sSy10FoundationE10components11separatedBySaySSGAA12CharacterSetV_tF"
+  },
+  {
+    "offset": 1611143,
+    "text": "_$sSy10FoundationE10components11separatedBySaySSGqd___tSyRd__lF"
+  },
+  {
+    "offset": 1611207,
+    "text": "_$sSy10FoundationE18trimmingCharacters2inSSAA12CharacterSetV_tF"
+  },
+  {
+    "offset": 1611271,
+    "text": "_$sSy10FoundationE20replacingOccurrences2of4with7options5rangeSSqd___qd_0_So22NSStringCompareOptionsVSnySS5IndexVGSgtSyRd__SyRd_0_r0_lF"
+  },
+  {
+    "offset": 1611407,
+    "text": "_$sSy10FoundationE22localizedStandardRange2ofSnySS5IndexVGSgqd___tSyRd__lF"
+  },
+  {
+    "offset": 1611482,
+    "text": "_$sSy10FoundationE32localizedCaseInsensitiveContainsySbqd__SyRd__lF"
+  },
+  {
+    "offset": 1611550,
+    "text": "_$sSy10FoundationE5range2of7optionsAB6localeSnySS5IndexVGSgqd___So22NSStringCompareOptionsVAiA6LocaleVSgtSyRd__lF"
+  },
+  {
+    "offset": 1611664,
+    "text": "_$ss5ErrorP10FoundationE20localizedDescriptionSSvg"
+  },
+  {
+    "offset": 1628538,
+    "text": "0Foundation09LocalizedC016Core_AI_DebuggerMc"
+  },
+  {
+    "offset": 1679176,
+    "text": "_$s10Foundation11JSONDecoderC6decode_4fromxxm_AA4DataVtKSeRzlFTj"
+  },
+  {
+    "offset": 1679241,
+    "text": "_$s10Foundation11JSONDecoderCACycfc"
+  },
+  {
+    "offset": 1679277,
+    "text": "_$s10Foundation11JSONDecoderCMa"
+  },
+  {
+    "offset": 1679309,
+    "text": "_$s10Foundation12CharacterSetV11whitespacesACvgZ"
+  },
+  {
+    "offset": 1679358,
+    "text": "_$s10Foundation12CharacterSetV8newlinesACvgZ"
+  },
+  {
+    "offset": 1679403,
+    "text": "_$s10Foundation12CharacterSetVMa"
+  },
+  {
+    "offset": 1679436,
+    "text": "_$s10Foundation12NotificationV36_unconditionallyBridgeFromObjectiveCyACSo14NSNotificationCSgFZ"
+  },
+  {
+    "offset": 1679531,
+    "text": "_$s10Foundation12NotificationV6objectypSgvg"
+  },
+  {
+    "offset": 1679575,
+    "text": "_$s10Foundation12NotificationVMa"
+  },
+  {
+    "offset": 1679608,
+    "text": "_$s10Foundation12URLQueryItemV4nameSSvg"
+  },
+  {
+    "offset": 1679648,
+    "text": "_$s10Foundation12URLQueryItemV5valueSSSgvg"
+  },
+  {
+    "offset": 1679691,
+    "text": "_$s10Foundation12URLQueryItemVMa"
+  },
+  {
+    "offset": 1679724,
+    "text": "_$s10Foundation13URLComponentsV10queryItemsSayAA12URLQueryItemVGSgvg"
+  },
+  {
+    "offset": 1679793,
+    "text": "_$s10Foundation13URLComponentsV3url23resolvingAgainstBaseURLACSgAA0G0Vh_SbtcfC"
+  },
+  {
+    "offset": 1679872,
+    "text": "_$s10Foundation13URLComponentsVMa"
+  },
+  {
+    "offset": 1679906,
+    "text": "_$s10Foundation13URLComponentsVMn"
+  },
+  {
+    "offset": 1679940,
+    "text": "_$s10Foundation13__DataStorageC5bytes6length4copy11deallocator6offsetACSvSg_SiSbySv_SitcSgSitcfc"
+  },
+  {
+    "offset": 1680037,
+    "text": "_$s10Foundation13__DataStorageC6_bytesSvSgvg"
+  },
+  {
+    "offset": 1680082,
+    "text": "_$s10Foundation13__DataStorageC6lengthACSi_tcfc"
+  },
+  {
+    "offset": 1680130,
+    "text": "_$s10Foundation13__DataStorageC7_lengthSivg"
+  },
+  {
+    "offset": 1680174,
+    "text": "_$s10Foundation13__DataStorageC7_offsetSivg"
+  },
+  {
+    "offset": 1680218,
+    "text": "_$s10Foundation13__DataStorageCMa"
+  },
+  {
+    "offset": 1680252,
+    "text": "_$s10Foundation14LocalizedErrorMp"
+  },
+  {
+    "offset": 1680286,
+    "text": "_$s10Foundation14LocalizedErrorP10helpAnchorSSSgvgTq"
+  },
+  {
+    "offset": 1680339,
+    "text": "_$s10Foundation14LocalizedErrorP13failureReasonSSSgvgTq"
+  },
+  {
+    "offset": 1680395,
+    "text": "_$s10Foundation14LocalizedErrorP16errorDescriptionSSSgvgTj"
+  },
+  {
+    "offset": 1680454,
+    "text": "_$s10Foundation14LocalizedErrorP16errorDescriptionSSSgvgTq"
+  },
+  {
+    "offset": 1680513,
+    "text": "_$s10Foundation14LocalizedErrorP18recoverySuggestionSSSgvgTj"
+  },
+  {
+    "offset": 1680574,
+    "text": "_$s10Foundation14LocalizedErrorP18recoverySuggestionSSSgvgTq"
+  },
+  {
+    "offset": 1680635,
+    "text": "_$s10Foundation14LocalizedErrorPAAE10helpAnchorSSSgvg"
+  },
+  {
+    "offset": 1680689,
+    "text": "_$s10Foundation14LocalizedErrorPAAE13failureReasonSSSgvg"
+  },
+  {
+    "offset": 1680746,
+    "text": "_$s10Foundation14LocalizedErrorPAAE16errorDescriptionSSSgvg"
+  },
+  {
+    "offset": 1680806,
+    "text": "_$s10Foundation14LocalizedErrorPAAE18recoverySuggestionSSSgvg"
+  },
+  {
+    "offset": 1680868,
+    "text": "_$s10Foundation14LocalizedErrorPs0C0Tb"
+  },
+  {
+    "offset": 1680907,
+    "text": "_$s10Foundation14SortComparatorPAASSAAE0C0VRszrlE17localizedStandardAEvgZ"
+  },
+  {
+    "offset": 1680981,
+    "text": "_$s10Foundation15AttributeScopesO6AppKitE0dE10AttributesV015ForegroundColorB0OAA19AttributedStringKeyADMc"
+  },
+  {
+    "offset": 1681087,
+    "text": "_$s10Foundation15AttributeScopesO6AppKitE0dE10AttributesV015ForegroundColorB0ON"
+  },
+  {
+    "offset": 1681167,
+    "text": "_$s10Foundation15AttributeScopesO6AppKitE0dE10AttributesV04FontB0OAA19AttributedStringKeyADMc"
+  },
+  {
+    "offset": 1681261,
+    "text": "_$s10Foundation15AttributeScopesO6AppKitE0dE10AttributesV04FontB0ON"
+  },
+  {
+    "offset": 1681329,
+    "text": "_$s10Foundation16AttributedStringV10charactersAC13CharacterViewVvg"
+  },
+  {
+    "offset": 1681396,
+    "text": "_$s10Foundation16AttributedStringV13CharacterViewVMa"
+  },
+  {
+    "offset": 1681449,
+    "text": "_$s10Foundation16AttributedStringV13CharacterViewVMn"
+  },
+  {
+    "offset": 1681502,
+    "text": "_$s10Foundation16AttributedStringV13CharacterViewVSlAAMc"
+  },
+  {
+    "offset": 1681559,
+    "text": "_$s10Foundation16AttributedStringV13stringLiteralACSS_tcfC"
+  },
+  {
+    "offset": 1681618,
+    "text": "_$s10Foundation16AttributedStringV2peoiyyACz_ACtFZ"
+  },
+  {
+    "offset": 1681669,
+    "text": "_$s10Foundation16AttributedStringV4RunsV3RunVMa"
+  },
+  {
+    "offset": 1681717,
+    "text": "_$s10Foundation16AttributedStringV4RunsV3RunVy5ValueQzSgxmcAA0bC3KeyRzluig"
+  },
+  {
+    "offset": 1681792,
+    "text": "_$s10Foundation16AttributedStringV4RunsV5IndexVMa"
+  },
+  {
+    "offset": 1681842,
+    "text": "_$s10Foundation16AttributedStringV4RunsV5IndexVSQAAMc"
+  },
+  {
+    "offset": 1681896,
+    "text": "_$s10Foundation16AttributedStringV4RunsVMa"
+  },
+  {
+    "offset": 1681939,
+    "text": "_$s10Foundation16AttributedStringV4RunsVMn"
+  },
+  {
+    "offset": 1681982,
+    "text": "_$s10Foundation16AttributedStringV4RunsVSTAAMc"
+  },
+  {
+    "offset": 1682029,
+    "text": "_$s10Foundation16AttributedStringV4RunsVSlAAMc"
+  },
+  {
+    "offset": 1682076,
+    "text": "_$s10Foundation16AttributedStringV4runsAC4RunsVvg"
+  },
+  {
+    "offset": 1682126,
+    "text": "_$s10Foundation16AttributedStringV5IndexVMa"
+  },
+  {
+    "offset": 1682170,
+    "text": "_$s10Foundation16AttributedStringV5IndexVMn"
+  },
+  {
+    "offset": 1682214,
+    "text": "_$s10Foundation16AttributedStringV5IndexVSLAAMc"
+  },
+  {
+    "offset": 1682262,
+    "text": "_$s10Foundation16AttributedStringV5IndexVSQAAMc"
+  },
+  {
+    "offset": 1682310,
+    "text": "_$s10Foundation16AttributedStringV5IndexV_6withinAESgSSADV_xtcAA0bC8ProtocolRzlufC"
+  },
+  {
+    "offset": 1682393,
+    "text": "_$s10Foundation16AttributedStringVAA0bC8ProtocolAAMc"
+  },
+  {
+    "offset": 1682446,
+    "text": "_$s10Foundation16AttributedStringVACycfC"
+  },
+  {
+    "offset": 1682487,
+    "text": "_$s10Foundation16AttributedStringVMa"
+  },
+  {
+    "offset": 1682524,
+    "text": "_$s10Foundation16AttributedStringVMn"
+  },
+  {
+    "offset": 1682561,
+    "text": "_$s10Foundation16AttributedStringV_10attributesACSS_AA18AttributeContainerVtcfC"
+  },
+  {
+    "offset": 1682641,
+    "text": "_$s10Foundation16AttributedStringVy5ValueQzSgxmcAA0bC3KeyRzluis"
+  },
+  {
+    "offset": 1682705,
+    "text": "_$s10Foundation16AttributedStringVyAA0B9SubstringVxcSXRzAC5IndexV5BoundRtzluiM"
+  },
+  {
+    "offset": 1682784,
+    "text": "_$s10Foundation17KeyPathComparatorVMn"
+  },
+  {
+    "offset": 1682822,
+    "text": "_$s10Foundation17KeyPathComparatorV_10comparatorACyxGs0bC0Cyxqd__G_qd_0_tc8ComparedQyd_0_Rsd__AA04SortD0Rd_0_r0_lufC"
+  },
+  {
+    "offset": 1682939,
+    "text": "_$s10Foundation17KeyPathComparatorVyxGAA04SortD0AAMc"
+  },
+  {
+    "offset": 1682992,
+    "text": "_$s10Foundation17URLResourceValuesV11isDirectorySbSgvg"
+  },
+  {
+    "offset": 1683047,
+    "text": "_$s10Foundation17URLResourceValuesVMa"
+  },
+  {
+    "offset": 1683085,
+    "text": "_$s10Foundation18AttributeContainerVACycfC"
+  },
+  {
+    "offset": 1683128,
+    "text": "_$s10Foundation18AttributeContainerVMa"
+  },
+  {
+    "offset": 1683167,
+    "text": "_$s10Foundation19AttributedSubstringVy5ValueQzSgxmcAA0B9StringKeyRzluis"
+  },
+  {
+    "offset": 1683239,
+    "text": "_$s10Foundation22_convertNSErrorToErrorys0E0_pSo0C0CSgF"
+  },
+  {
+    "offset": 1683295,
+    "text": "_$s10Foundation24FloatingPointFormatStyleV7PercentV6localeAEyx_GAA6LocaleV_tcfC"
+  },
+  {
+    "offset": 1683375,
+    "text": "_$s10Foundation24FloatingPointFormatStyleV7PercentV9precisionyAEyx_GAA06NumberdE13ConfigurationO9PrecisionVF"
+  },
+  {
+    "offset": 1683484,
+    "text": "_$s10Foundation24FloatingPointFormatStyleV7PercentVMn"
+  },
+  {
+    "offset": 1683538,
+    "text": "_$s10Foundation24FloatingPointFormatStyleV7PercentVyx_GAA0dE0AAMc"
+  },
+  {
+    "offset": 1683604,
+    "text": "_$s10Foundation30NumberFormatStyleConfigurationO9PrecisionV14fractionLengthyAESiFZ"
+  },
+  {
+    "offset": 1683687,
+    "text": "_$s10Foundation30NumberFormatStyleConfigurationO9PrecisionVMa"
+  },
+  {
+    "offset": 1683749,
+    "text": "_$s10Foundation3URLV13pathExtensionSSvg"
+  },
+  {
+    "offset": 1683789,
+    "text": "_$s10Foundation3URLV14resourceValues7forKeysAA011URLResourceD0VShySo16NSURLResourceKeyaG_tKF"
+  },
+  {
+    "offset": 1683882,
+    "text": "_$s10Foundation3URLV17lastPathComponentSSvg"
+  },
+  {
+    "offset": 1683926,
+    "text": "_$s10Foundation3URLV19_bridgeToObjectiveCSo5NSURLCyF"
+  },
+  {
+    "offset": 1683979,
+    "text": "_$s10Foundation3URLV22appendingPathComponentyACSSF"
+  },
+  {
+    "offset": 1684030,
+    "text": "_$s10Foundation3URLV25deletingLastPathComponentACyF"
+  },
+  {
+    "offset": 1684082,
+    "text": "_$s10Foundation3URLV2eeoiySbAC_ACtFZ"
+  },
+  {
+    "offset": 1684119,
+    "text": "_$s10Foundation3URLV36_unconditionallyBridgeFromObjectiveCyACSo5NSURLCSgFZ"
+  },
+  {
+    "offset": 1684194,
+    "text": "_$s10Foundation3URLV4hostSSSgvg"
+  },
+  {
+    "offset": 1684226,
+    "text": "_$s10Foundation3URLV4path14percentEncodedSSSb_tF"
+  },
+  {
+    "offset": 1684275,
+    "text": "_$s10Foundation3URLV4pathSSvg"
+  },
+  {
+    "offset": 1684305,
+    "text": "_$s10Foundation3URLV6schemeSSSgvg"
+  },
+  {
+    "offset": 1684339,
+    "text": "_$s10Foundation3URLV6stringACSgSSh_tcfC"
+  },
+  {
+    "offset": 1684379,
+    "text": "_$s10Foundation3URLVMa"
+  },
+  {
+    "offset": 1684402,
+    "text": "_$s10Foundation3URLVMn"
+  },
+  {
+    "offset": 1684425,
+    "text": "_$s10Foundation3URLVSHAAMc"
+  },
+  {
+    "offset": 1684452,
+    "text": "_$s10Foundation3URLVSQAAMc"
+  },
+  {
+    "offset": 1684479,
+    "text": "_$s10Foundation3URLVs21_ObjectiveCBridgeableAAMc"
+  },
+  {
+    "offset": 1684528,
+    "text": "_$s10Foundation4DataV10LargeSliceV21ensureUniqueReferenceyyF"
+  },
+  {
+    "offset": 1684589,
+    "text": "_$s10Foundation4DataV10contentsOf7optionsAcA3URLVh_So20NSDataReadingOptionsVtKcfC"
+  },
+  {
+    "offset": 1684671,
+    "text": "_$s10Foundation4DataV14RangeReferenceCMa"
+  },
+  {
+    "offset": 1684712,
+    "text": "_$s10Foundation4DataV19_bridgeToObjectiveCSo6NSDataCyF"
+  },
+  {
+    "offset": 1684767,
+    "text": "_$s10Foundation4DataVMn"
+  },
+  {
+    "offset": 1684791,
+    "text": "_$s10Foundation4DateV3nowACvgZ"
+  },
+  {
+    "offset": 1684822,
+    "text": "_$s10Foundation4DateVMa"
+  },
+  {
+    "offset": 1684846,
+    "text": "_$s10Foundation4DateVMn"
+  },
+  {
+    "offset": 1684870,
+    "text": "_$s10Foundation4UUIDV2eeoiySbAC_ACtFZ"
+  },
+  {
+    "offset": 1684908,
+    "text": "_$s10Foundation4UUIDVACycfC"
+  },
+  {
+    "offset": 1684936,
+    "text": "_$s10Foundation4UUIDVMa"
+  },
+  {
+    "offset": 1684960,
+    "text": "_$s10Foundation4UUIDVMn"
+  },
+  {
+    "offset": 1684984,
+    "text": "_$s10Foundation4UUIDVSHAAMc"
+  },
+  {
+    "offset": 1685012,
+    "text": "_$s10Foundation6LocaleV19autoupdatingCurrentACvgZ"
+  },
+  {
+    "offset": 1685062,
+    "text": "_$s10Foundation6LocaleVMa"
+  },
+  {
+    "offset": 1685088,
+    "text": "_$s10Foundation6LocaleVMn"
+  },
+  {
+    "offset": 1685114,
+    "text": "_$s10Foundation8IndexSetV19_bridgeToObjectiveCSo07NSIndexC0CyF"
+  },
+  {
+    "offset": 1685177,
+    "text": "_$s10Foundation8IndexSetV7integerACSi_tcfC"
+  },
+  {
+    "offset": 1685220,
+    "text": "_$s10Foundation8IndexSetVMa"
+  },
+  {
+    "offset": 1685248,
+    "text": "_$s10MLToolsMPS16MPSOpGraphSourceO7packageyAC10Foundation3URLVcACmFWC"
+  },
+  {
+    "offset": 1687885,
+    "text": "_$s11CoreAIAsset12AIModelAssetV10contentsOfAC10Foundation3URLV_tKcfC"
+  },
+  {
+    "offset": 1687954,
+    "text": "_$s11CoreAIAsset12AIModelAssetV15ValueDescriptorV4nameSSvg"
+  },
+  {
+    "offset": 1688013,
+    "text": "_$s11CoreAIAsset12AIModelAssetV15ValueDescriptorV8typeNameSSvg"
+  },
+  {
+    "offset": 1688076,
+    "text": "_$s11CoreAIAsset12AIModelAssetV15ValueDescriptorVMa"
+  },
+  {
+    "offset": 1688128,
+    "text": "_$s11CoreAIAsset12AIModelAssetV15ValueDescriptorVMn"
+  },
+  {
+    "offset": 1688180,
+    "text": "_$s11CoreAIAsset12AIModelAssetV18FunctionDescriptorV4nameSSvg"
+  },
+  {
+    "offset": 1688242,
+    "text": "_$s11CoreAIAsset12AIModelAssetV18FunctionDescriptorV6inputsSayAC05ValueF0VGvg"
+  },
+  {
+    "offset": 1688320,
+    "text": "_$s11CoreAIAsset12AIModelAssetV18FunctionDescriptorVMa"
+  },
+  {
+    "offset": 1688375,
+    "text": "_$s11CoreAIAsset12AIModelAssetV18programBytecodeURL10Foundation0G0Vvg"
+  },
+  {
+    "offset": 1688445,
+    "text": "_$s11CoreAIAsset12AIModelAssetV7SummaryV9functionsSayAC18FunctionDescriptorVGvg"
+  },
+  {
+    "offset": 1688525,
+    "text": "_$s11CoreAIAsset12AIModelAssetV7SummaryVMa"
+  },
+  {
+    "offset": 1688568,
+    "text": "_$s11CoreAIAsset12AIModelAssetV7SummaryVMn"
+  },
+  {
+    "offset": 1688611,
+    "text": "_$s11CoreAIAsset12AIModelAssetV7summary19includingStatisticsAC7SummaryVSgSb_tKF"
+  },
+  {
+    "offset": 1688691,
+    "text": "_$s11CoreAIAsset12AIModelAssetVMa"
+  },
+  {
+    "offset": 1688725,
+    "text": "_$s11CoreAIAsset12AIModelAssetVMn"
+  },
+  {
+    "offset": 1690711,
+    "text": "_$s15GTStandaloneKit14MLReplayTensorV18tensorDataAndShape4rank10Foundation0F0V4data_Says5Int64VGSg5shapetSgSi_tF"
+  },
+  {
+    "offset": 1690930,
+    "text": "_$s15GTStandaloneKit14MLReplayTensorV6format4dataA2C6FormatO_10Foundation4DataVtcfC"
+  },
+  {
+    "offset": 1691014,
+    "text": "_$s15GTStandaloneKit14MLReplayTensorV9numpyFrom6format5shapeACSg10Foundation4DataV_9MLOpGraph0kJ10FormatTypeOSays5Int64VGtcfC"
+  },
+  {
+    "offset": 1691997,
+    "text": "_$s15GTStandaloneKit15MLReplaySessionC27enqueueFetchViewerGraphTask12functionNameScTy10Foundation4DataVs5Error_pGSS_tFTj"
+  },
+  {
+    "offset": 1692118,
+    "text": "_$s15GTStandaloneKit15MLReplaySessionC29enqueueFetchIntermediatesTask12functionName6inputs18compileIdentifiers20intermediatesHandlerScTyyts5Error_pGSS_SDySSAA0C6TensorVGSay9MLOpGraph0r11NodeCompileM0CGyAA0C12IntermediateVctFTj"
+  },
+  {
+    "offset": 1692345,
+    "text": "_$s15GTStandaloneKit15MLReplaySessionC4udid8modelURL25computeUnitsConfiguration22expectFrequentReshapesACSS_10Foundation0G0VAA0c7ComputeiJ0OSbtcfc"
+  },
+  {
+    "offset": 1693450,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV11OperandTypeO2eeoiySbAE_AEtFZ"
+  },
+  {
+    "offset": 1693524,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV11OperandTypeO6outputyA2EmFWC"
+  },
+  {
+    "offset": 1693597,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV11OperandTypeOMa"
+  },
+  {
+    "offset": 1693657,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV12delegateOpIds6UInt64VSgvg"
+  },
+  {
+    "offset": 1693728,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV5errors5Error_pSgvg"
+  },
+  {
+    "offset": 1693791,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV6tensorAA0C6TensorVSgvg"
+  },
+  {
+    "offset": 1693858,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV7operandAC11OperandTypeO_Sitvg"
+  },
+  {
+    "offset": 1693932,
+    "text": "_$s15GTStandaloneKit20MLReplayIntermediateV8odixOpIds6UInt64Vvg"
+  },
+  {
+    "offset": 1723181,
+    "text": "_$s7SwiftUI4FontV6WeightV6mediumAEvgZ"
+  },
+  {
+    "offset": 1723219,
+    "text": "_$s7SwiftUI4FontV6WeightV8semiboldAEvgZ"
+  },
+  {
+    "offset": 1723259,
+    "text": "_$s7SwiftUI4FontV6system4size6weight6designAC12CoreGraphics7CGFloatV_AC6WeightVSgAC6DesignOSgtFZ"
+  },
+  {
+    "offset": 1725181,
+    "text": "_$s7SwiftUI4ViewPAAE10fontWeightyQrAA4FontV0E0VSgF"
+  },
+  {
+    "offset": 1725232,
+    "text": "_$s7SwiftUI4ViewPAAE10fontWeightyQrAA4FontV0E0VSgFQOMQ"
+  },
+  {
+    "offset": 1725795,
+    "text": "_$s7SwiftUI4ViewPAAE12fileImporter11isPresented19allowedContentTypes23allowsMultipleSelection12onCompletionQrAA7BindingVySbG_Say22UniformTypeIdentifiers6UTTypeVGSbys6ResultOySay10Foundation3URLVGs5Error_pGctF"
+  },
+  {
+    "offset": 1726004,
+    "text": "_$s7SwiftUI4ViewPAAE12fileImporter11isPresented19allowedContentTypes23allowsMultipleSelection12onCompletionQrAA7BindingVySbG_Say22UniformTypeIdentifiers6UTTypeVGSbys6ResultOySay10Foundation3URLVGs5Error_pGctFQOMQ"
+  },
+  {
+    "offset": 1736446,
+    "text": "_$s9MLOpGraph0A10SourceFileC3url10Foundation3URLVvg"
+  },
+  {
+    "offset": 1737043,
+    "text": "_$s9MLOpGraph0A13NodeDebugInfoC22isIntermediateProviderSbvg"
+  },
+  {
+    "offset": 1741864,
+    "text": "_$s9MLOpGraph0A19NodeDebugIdentifierC0E4TypeO6coreaiyA2EmFWC"
+  },
+  {
+    "offset": 1742387,
+    "text": "_$s9MLOpGraph0A23NodeVirtualDataProviderC4data6formatAC10Foundation0E0V_AA0aE6FormatCtcfc"
+  },
+  {
+    "offset": 1743773,
+    "text": "_$s9MLOpGraph0A8NodeDataV5bytes10Foundation0D0Vvg"
+  },
+  {
+    "offset": 1744705,
+    "text": "_$s9MLOpGraph0aB11FetchWeightC13propertyIndexSivg"
+  },
+  {
+    "offset": 1744755,
+    "text": "_$s9MLOpGraph0aB11FetchWeightC4nodeAA0A4NodeCvg"
+  },
+  {
+    "offset": 1744803,
+    "text": "_$s9MLOpGraph0aB11FetchWeightCMa"
+  },
+  {
+    "offset": 1744836,
+    "text": "_$s9MLOpGraph0aB14WeightResponseV12dataProviderAA0a16NodePropertyDataF0_pvg"
+  },
+  {
+    "offset": 1744912,
+    "text": "_$s9MLOpGraph0aB14WeightResponseVMa"
+  },
+  {
+    "offset": 1745480,
+    "text": "_$s9MLOpGraph0aB18FetchIntermediatesC5nodesACSgSayAA0A4NodeCG_tcfc"
+  },
+  {
+    "offset": 1745547,
+    "text": "_$s9MLOpGraph0aB18FetchIntermediatesC5nodesSayAA0A4NodeCGvg"
+  },
+  {
+    "offset": 1745607,
+    "text": "_$s9MLOpGraph0aB18FetchIntermediatesCMa"
+  },
+  {
+    "offset": 1747383,
+    "text": "_$s9MLOpGraph0aB21IntermediatesResponseV13dataProvidersSayAA0A24NodePropertyDataProvider_pGvg"
+  },
+  {
+    "offset": 1747477,
+    "text": "_$s9MLOpGraph0aB21IntermediatesResponseV9requestID13dataProvidersACs6UInt64V_SayAA0A24NodePropertyDataProvider_pGtcfC"
+  },
+  {
+    "offset": 1747595,
+    "text": "_$s9MLOpGraph0aB21IntermediatesResponseVAA0abD0AAWP"
+  },
+  {
+    "offset": 1747647,
+    "text": "_$s9MLOpGraph0aB21IntermediatesResponseVMa"
+  },
+  {
+    "offset": 1748511,
+    "text": "_$s9MLOpGraph0aB5InputV4data10Foundation4DataVvg"
+  },
+  {
+    "offset": 1748604,
+    "text": "_$s9MLOpGraph0aB5InputV6format5shape4dataAcA0A14DataFormatTypeO_Says5Int64VG10Foundation0G0VtcfC"
+  },
+  {
+    "offset": 1749070,
+    "text": "_$s9MLOpGraph0aB6ObjectC23intermediateFetchSafetySDys6UInt64VAA012IntermediateeF0VGvgTj"
+  },
+  {
+    "offset": 1751039,
+    "text": "_$s9MLOpGraph0aB8ProviderP4data03forB08valueRef8bitRangeScTy10Foundation4DataVs5Error_pGSgAA0aB6ObjectC_s6UInt64VSnys5Int64VGtFTq"
+  },
+  {
+    "offset": 1752598,
+    "text": "_$s9MLOpGraph0aB8ProviderPAAE4data03forB08valueRef8bitRangeScTy10Foundation4DataVs5Error_pGSgAA0aB6ObjectC_s6UInt64VSnys5Int64VGtF"
+  },
+  {
+    "offset": 1753059,
+    "text": "_$s9MLOpGraph13NumPyImporterV10importData4fromAA0aB5InputV10Foundation3URLV_tKFZ"
+  },
+  {
+    "offset": 1753140,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV10SafeSourceO14existingTensoryAEs6UInt64V_AHSgtcAEmFWC"
+  },
+  {
+    "offset": 1753234,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV10SafeSourceO6unsafeyA2EmFWC"
+  },
+  {
+    "offset": 1753302,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV10SafeSourceO9directM2TyA2EmFWC"
+  },
+  {
+    "offset": 1753373,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV10SafeSourceOMa"
+  },
+  {
+    "offset": 1753428,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV10safeSourceAC04SafeG0Ovg"
+  },
+  {
+    "offset": 1753493,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV12CollisionKeyVMa"
+  },
+  {
+    "offset": 1753550,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV12CollisionKeyVMn"
+  },
+  {
+    "offset": 1753607,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV12CollisionKeyVSHAAMc"
+  },
+  {
+    "offset": 1753668,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV12CollisionKeyVSQAAMc"
+  },
+  {
+    "offset": 1753729,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyV9collisionAC12CollisionKeyVSgvg"
+  },
+  {
+    "offset": 1753800,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyVMa"
+  },
+  {
+    "offset": 1753842,
+    "text": "_$s9MLOpGraph23IntermediateFetchSafetyVMn"
+  },
+  {
+    "offset": 1753919,
+    "text": "_$sSB10FoundationE9formattedy12FormatOutputQyd__qd__0C5InputQyd__RszAA0C5StyleRd__lF"
+  },
+  {
+    "offset": 1754004,
+    "text": "_$sSD10FoundationE19_bridgeToObjectiveCSo12NSDictionaryCyF"
+  },
+  {
+    "offset": 1754063,
+    "text": "_$sSD10FoundationE36_unconditionallyBridgeFromObjectiveCySDyxq_GSo12NSDictionaryCSgFZ"
+  },
+  {
+    "offset": 1754504,
+    "text": "_$sSS10FoundationE10ComparatorVAA04SortB0AAMc"
+  },
+  {
+    "offset": 1754550,
+    "text": "_$sSS10FoundationE10ComparatorVMa"
+  },
+  {
+    "offset": 1754584,
+    "text": "_$sSS10FoundationE10contentsOf8encodingSSAA3URLVh_SSAAE8EncodingVtKcfC"
+  },
+  {
+    "offset": 1754655,
+    "text": "_$sSS10FoundationE11_charactersSSAA16AttributedStringV13CharacterViewV_tcfC"
+  },
+  {
+    "offset": 1754731,
+    "text": "_$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF"
+  },
+  {
+    "offset": 1754785,
+    "text": "_$sSS10FoundationE26_forceBridgeFromObjectiveC_6resultySo8NSStringC_SSSgztFZ"
+  },
+  {
+    "offset": 1754862,
+    "text": "_$sSS10FoundationE34_conditionallyBridgeFromObjectiveC_6resultSbSo8NSStringC_SSSgztFZ"
+  },
+  {
+    "offset": 1754948,
+    "text": "_$sSS10FoundationE36_unconditionallyBridgeFromObjectiveCySSSo8NSStringCSgFZ"
+  },
+  {
+    "offset": 1755024,
+    "text": "_$sSS10FoundationE6format_S2Sh_s7CVarArg_pdtcfC"
+  },
+  {
+    "offset": 1755072,
+    "text": "_$sSS10FoundationE8EncodingV4utf8ACvgZ"
+  },
+  {
+    "offset": 1755111,
+    "text": "_$sSS10FoundationE8EncodingVMa"
+  },
+  {
+    "offset": 1755142,
+    "text": "_$sSS10FoundationEySSs5SliceVyAA16AttributedStringV13CharacterViewVGcfC"
+  },
+  {
+    "offset": 1756153,
+    "text": "_$sSSs7CVarArg10FoundationMc"
+  },
+  {
+    "offset": 1756292,
+    "text": "_$sST10FoundationE6sorted5usingSay7ElementQzGqd___tAA14SortComparatorRd__8ComparedQyd__AERSlF"
+  },
+  {
+    "offset": 1756632,
+    "text": "_$sSa10FoundationE19_bridgeToObjectiveCSo7NSArrayCyF"
+  },
+  {
+    "offset": 1756685,
+    "text": "_$sSa10FoundationE36_unconditionallyBridgeFromObjectiveCySayxGSo7NSArrayCSgFZ"
+  },
+  {
+    "offset": 1758220,
+    "text": "_$sSh10FoundationE19_bridgeToObjectiveCSo5NSSetCyF"
+  },
+  {
+    "offset": 1758728,
+    "text": "_$sSo12NSFileHandleC10FoundationE4read9upToCountAC4DataVSgSi_tKF"
+  },
+  {
+    "offset": 1758979,
+    "text": "_$sSo14NSItemProviderC10FoundationE10loadObject7ofClass17completionHandlerSo10NSProgressCxm_yxSg_s5Error_pSgtcts21_ObjectiveCBridgeableRzSo0aB7Reading01_L5CTypeRpzlF"
+  },
+  {
+    "offset": 1759241,
+    "text": "_$sSo17NSKeyedUnarchiverC10FoundationE16unarchivedObject7ofClass4fromxSgxm_AC4DataVtKSo8NSObjectCRbzSo8NSCodingRzlFZ"
+  },
+  {
+    "offset": 1759883,
+    "text": "_$sSo18NSAttributedStringC10FoundationEyAbC010AttributedB0VcfC"
+  },
+  {
+    "offset": 1760447,
+    "text": "_$sSy10FoundationE10components11separatedBySaySSGAA12CharacterSetV_tF"
+  },
+  {
+    "offset": 1760517,
+    "text": "_$sSy10FoundationE10components11separatedBySaySSGqd___tSyRd__lF"
+  },
+  {
+    "offset": 1760581,
+    "text": "_$sSy10FoundationE18trimmingCharacters2inSSAA12CharacterSetV_tF"
+  },
+  {
+    "offset": 1760645,
+    "text": "_$sSy10FoundationE20replacingOccurrences2of4with7options5rangeSSqd___qd_0_So22NSStringCompareOptionsVSnySS5IndexVGSgtSyRd__SyRd_0_r0_lF"
+  },
+  {
+    "offset": 1760781,
+    "text": "_$sSy10FoundationE22localizedStandardRange2ofSnySS5IndexVGSgqd___tSyRd__lF"
+  },
+  {
+    "offset": 1760856,
+    "text": "_$sSy10FoundationE32localizedCaseInsensitiveContainsySbqd__SyRd__lF"
+  },
+  {
+    "offset": 1760924,
+    "text": "_$sSy10FoundationE5range2of7optionsAB6localeSnySS5IndexVGSgqd___So22NSStringCompareOptionsVAiA6LocaleVSgtSyRd__lF"
+  },
+  {
+    "offset": 1766536,
+    "text": "_$ss5ErrorP10FoundationE20localizedDescriptionSSvg"
+  },
+  {
+    "offset": 1768775,
+    "text": "_NSFontWeightMedium"
+  },
+  {
+    "offset": 1768795,
+    "text": "_NSFontWeightRegular"
+  },
+  {
+    "offset": 1771960,
+    "text": "__swift_FORCE_LOAD_$_swiftCoreFoundation"
+  },
+  {
+    "offset": 1772072,
+    "text": "__swift_FORCE_LOAD_$_swiftFoundation"
+  },
+  {
+    "offset": 1790509,
+    "text": "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">"
+  },
+  {
+    "offset": 1791779,
+    "text": "%http://www.apple.com/appleca/root.crl0"
+  },
+  {
+    "offset": 1792924,
+    "text": "$http://crl.apple.com/codesigning.crl0"
+  },
+  {
+    "offset": 1794012,
+    "text": "https://www.apple.com/appleca/0"
+  },
+  {
+    "offset": 1794917,
+    "text": "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">"
+  }
+]

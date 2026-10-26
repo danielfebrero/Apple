@@ -1,0 +1,52 @@
+{
+  "artifact": {
+    "kind": "macho",
+    "path": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/extracted/Core_AI_Debugger/Core AI Debugger/Core AI Debugger.app/Contents/MacOS/Core AI Debugger"
+  },
+  "confidence": 0.9900000095367432,
+  "diagnostics": [],
+  "evidence": [
+    "persistent RE index /workspace/recherche/apple-sec/apple-developer-tools-20261026/.blacksmith/index/index.sqlite3",
+    "caller depth 1"
+  ],
+  "index_generation": 2,
+  "profile": "deep",
+  "project": "re-standalone",
+  "results": {
+    "artifact": {
+      "kind": "macho",
+      "path": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/extracted/Core_AI_Debugger/Core AI Debugger/Core AI Debugger.app/Contents/MacOS/Core AI Debugger"
+    },
+    "confidence": 0.9900000095367432,
+    "evidence": [
+      "persistent RE index /workspace/recherche/apple-sec/apple-developer-tools-20261026/.blacksmith/index/index.sqlite3",
+      "caller depth 1"
+    ],
+    "root": {
+      "addr": "0x100103ba0",
+      "callers": [
+        {
+          "addr": "0x1000675c0",
+          "callers": [],
+          "confidence": null,
+          "evidence": [],
+          "function": null
+        },
+        {
+          "addr": "0x1000675c0",
+          "callers": [],
+          "confidence": null,
+          "evidence": [],
+          "function": null
+        }
+      ],
+      "confidence": 0.9900000095367432,
+      "evidence": [
+        "direct bl target",
+        "direct bl target"
+      ],
+      "function": null
+    }
+  },
+  "schema_version": "blacksmith-re/v3"
+}

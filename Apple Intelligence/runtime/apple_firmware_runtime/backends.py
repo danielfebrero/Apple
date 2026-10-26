@@ -150,3 +150,14 @@ def protobuf_cpu(model: Model, bundle: Path, inputs: dict) -> dict:
         raise RuntimeFailure("portable_backend_rejected", str(exc)) from exc
     return response | {"model_id": model.id, "manifest_fingerprint": model.fingerprint,
                        "artifact_identity": "selected firmware asset"}
+
+
+def coreai_cpu(model: Model, bundle: Path, inputs: dict | None = None, *, compute: str = "cpu") -> dict:
+    from .coreai_backend import run_bundle
+    if model.declaration.get("format") != "coreai_asset":
+        raise RuntimeFailure("unsupported_format", "Core AI backend requires format coreai_asset (.aimodel)")
+    if compute != "cpu":
+        raise RuntimeFailure("unsupported_compute", "Core AI Linux backend supports CPU execution only")
+    response = run_bundle(bundle, inputs, function_name=model.declaration.get("entrypoint", "main"))
+    return response | {"model_id": model.id, "manifest_fingerprint": model.fingerprint,
+                       "artifact_identity": "selected catalogue asset", "scope": model.declaration.get("scope")}

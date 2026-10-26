@@ -1,0 +1,2723 @@
+{
+  "artifact": {
+    "kind": "macho",
+    "path": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/extracted/Core_AI_Debugger/Core AI Debugger/Core AI Debugger.app/Contents/MacOS/Core AI Debugger"
+  },
+  "confidence": 0.9399999976158142,
+  "diagnostics": [],
+  "evidence": [
+    "resolved directly from 0x1000675c0",
+    "bounded by next Mach-O symbol at 0x100103678",
+    "style=c selected for sub_1000675c0",
+    "C-like fallback emission from CFG + IR + propagation",
+    "SSA summary: 243 values, 0 phi nodes, 45 memory versions"
+  ],
+  "index_generation": 2,
+  "profile": "deep",
+  "project": "re-standalone",
+  "results": {
+    "artifact": {
+      "kind": "macho",
+      "path": "/workspace/recherche/apple-sec/apple-developer-tools-20261026/extracted/Core_AI_Debugger/Core AI Debugger/Core AI Debugger.app/Contents/MacOS/Core AI Debugger"
+    },
+    "completeness": "partial",
+    "confidence": 0.9399999976158142,
+    "diagnostics": [],
+    "evidence": [
+      "resolved directly from 0x1000675c0",
+      "bounded by next Mach-O symbol at 0x100103678",
+      "style=c selected for sub_1000675c0",
+      "C-like fallback emission from CFG + IR + propagation",
+      "SSA summary: 243 values, 0 phi nodes, 45 memory versions"
+    ],
+    "fact_ids": [
+      3648,
+      49351,
+      49350
+    ],
+    "function": "sub_1000675c0",
+    "pseudocode": "// sub_1000675c0 @ 0x1000675c0\n// 47 blocks, 35 call sites\nvoid sub_1000675c0() {\n    uint64_t var_8;\n    uint64_t var_10;\n    uint64_t var_18;\n    uint64_t var_20;\n    uint64_t var_28;\n    uint64_t var_30;\n    uint64_t spill_38;\n    uint64_t saved_fp;\n    uint64_t saved_lr;\n    uint64_t var_58;\n    uint64_t var_60;\n    uint64_t var_68;\n    uint64_t var_70;\n    uint64_t var_78;\n    uint64_t var_80;\n    uint64_t var_90;\n    uint64_t var_98;\n    uint64_t var_a8;\n    uint64_t var_b0;\n    uint64_t var_b8;\n    uint64_t var_c0;\n    uint64_t var_c8;\n    uint64_t var_d0;\n    uint64_t var_e0;\n    uint64_t var_e8;\n\n    *(uint64_t *)(saved_fp) = fp;\n    *(uint64_t *)(((sp + 64) + 8)) = lr;\n    *(uint64_t *)(spill_38) = saved_22;\n    fp = (sp + 64);\n    saved_23 = *(uint64_t *)(saved_22 + 0x58);\n    saved_19 = *(uint64_t *)(((saved_22 + 88) + 8));\n    saved_21 = *(uint64_t *)(saved_22 + 0x50);\n    saved_20 = *(uint64_t *)(saved_22 + 0x10);\n    x8 = saved_19;\n    x0 = _$s9MLOpGraph0aB20SessionConfigurationC13compileDeviceAC0F4TypeOvgTj(x0, x1, x2, x3);\n    x8 = *(uint64_t *)(saved_23 + 0x58);\n    x0 = saved_19;\n    x1 = saved_21;\n    x0 = x0(x0, x1, x2, x3);\n    x8 = \"?\u0004\";\n    x8 = *(uint64_t *)(x8 + 0x2b0);\n    x8 = *(uint32_t *)(x8);\n    /* cmp x0, x8 */\n    if (/* flags */ != 0) {\n        x8 = \"?\u0004\";\n        x8 = *(uint64_t *)(x8 + 0x2a8);\n        x8 = *(uint32_t *)(x8);\n        /* cmp x0, x8 */\n        if (/* flags */ != 0) {\n            saved_24 = *(uint64_t *)(saved_22 + 0x58);\n            saved_20 = *(uint64_t *)(((saved_22 + 88) + 8));\n            saved_19 = *(uint64_t *)(saved_22 + 0x50);\n            x0 = sub_100030d88(x0, x1, x2, x3);\n            x1 = x0;\n            x0 = 0x10014f000;\n            x0 = (x0 + 3824);\n            x2 = 0;\n            x3 = 0;\n            x0 = _swift_allocError(x0, x1, x2, x3);\n            saved_23 = x0;\n            x8 = 3;\n            *(uint8_t *)(x1) = x8;\n            saved_21 = x0;\n            x0 = _swift_willThrow(x0, x1, x2, x3);\n            x8 = *(uint64_t *)(saved_24 + 0x8);\n            x0 = saved_20;\n            x1 = saved_19;\n            x0 = x0(x0, x1, x2, x3);\n            x0 = *(uint64_t *)(saved_22 + 0x60);\n            saved_20 = *(uint64_t *)(saved_22 + 0x48);\n            saved_19 = *(uint64_t *)(saved_22 + 0x30);\n            x0 = _swift_task_dealloc(x0, x1, x2, x3);\n            x0 = saved_20;\n            x0 = _swift_task_dealloc(x0, x1, x2, x3);\n            x0 = saved_19;\n            x0 = _swift_task_dealloc(x0, x1, x2, x3);\n            x0 = *(uint64_t *)(saved_22 + 0x8);\n            saved_20 = saved_23;\n            fp = *(uint64_t *)(saved_fp);\n            lr = *(uint64_t *)(((sp + 64) + 8));\n            saved_21 = *(uint64_t *)(var_28);\n            saved_19 = *(uint64_t *)(((sp + 40) + 8));\n            saved_24 = *(uint64_t *)(var_18);\n            saved_23 = *(uint64_t *)(((sp + 24) + 8));\n            saved_26 = *(uint64_t *)(var_8);\n            saved_25 = *(uint64_t *)(((sp + 8) + 8));\n            fp = (fp & 0xefffffffffffffff);\n            sp = (sp + 80);\n            goto *x0; /* indirect */\n        } else {\n            saved_20 = *(uint64_t *)(saved_22 + 0x18);\n            x8 = 0x10016a000;\n            saved_21 = *(uint64_t *)(x8 + 0xe78);\n            x0 = 0;\n            x0 = _$s11CoreAIAsset12AIModelAssetVMa(x0, x1, x2, x3);\n            x2 = x0;\n            x8 = *(uint64_t *)(x0 + 0xfffffffffffffff8);\n            x8 = *(uint64_t *)(x8 + 0x30);\n            x0 = (saved_20 + saved_21);\n            x1 = 1;\n            x0 = x0(x0, x1, x2, x3);\n            /* cmp x0, 1 */\n            if (/* flags */ != 0) {\n                saved_19 = *(uint64_t *)(saved_22 + 0x48);\n                saved_20 = (saved_20 + saved_21);\n                x8 = saved_19;\n                x0 = _$s11CoreAIAsset12AIModelAssetV18programBytecodeURL10Foundation0G0Vvg(x0, x1, x2, x3);\n                x0 = saved_19;\n                x1 = 0;\n                saved_21 = 0;\n                x0 = _$s10Foundation4DataV10contentsOf7optionsAcA3URLVh_So20NSDataReadingOptionsVtKcfC(x0, x1, x2, x3);\n                if (x0 == 0) {\n                    saved_19 = x0;\n                    saved_20 = x1;\n                    x8 = \"?\u0004\";\n                    x0 = *(uint64_t *)(x8 + 0x690);\n                    x0 = _objc_opt_self(x0, x1, x2, x3);\n                    saved_21 = x0;\n                    x0 = saved_19;\n                    x1 = saved_20;\n                    x0 = _$s10Foundation4DataV19_bridgeToObjectiveCSo6NSDataCyF(x0, x1, x2, x3);\n                    saved_23 = x0;\n                    x0 = 17487;\n                    x0 = 0;\n                    x1 = 0xe400000000000000;\n                    x0 = _$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF(x0, x1, x2, x3);\n                    saved_24 = x0;\n                    x0 = saved_21;\n                    x2 = saved_23;\n                    x3 = saved_24;\n                    x0 = _$s7SwiftUI10FocusStateV12wrappedValuexvg(x0, x1, x2, x3);\n                    saved_21 = x0;\n                    x0 = saved_24;\n                    x0 = _objc_release(x0, x1, x2, x3);\n                    x0 = saved_23;\n                    x0 = _objc_release(x0, x1, x2, x3);\n                    saved_26 = *(uint64_t *)(saved_22 + 0x40);\n                    saved_24 = *(uint64_t *)(((saved_22 + 64) + 8));\n                    saved_25 = *(uint64_t *)(saved_22 + 0x38);\n                    if (x0 == 0) {\n                        x0 = sub_100030d88(x0, x1, x2, x3);\n                        x1 = x0;\n                        x0 = 0x10014f000;\n                        x0 = (x0 + 3824);\n                        x2 = 0;\n                        x3 = 0;\n                        x0 = _swift_allocError(x0, x1, x2, x3);\n                        saved_23 = x0;\n                        x8 = 1;\n                        *(uint8_t *)(x1) = x8;\n                        saved_21 = x0;\n                        x0 = _swift_willThrow(x0, x1, x2, x3);\n                        x0 = saved_19;\n                        x1 = saved_20;\n                        x0 = sub_100004b04(x0, x1, x2, x3);\n                        x8 = *(uint64_t *)(saved_26 + 0x8);\n                        x0 = saved_24;\n                    } else {\n                        x8 = *(uint64_t *)(saved_26 + 0x8);\n                        x0 = saved_24;\n                        x1 = saved_25;\n                        x0 = x0(x0, x1, x2, x3);\n                        x0 = saved_19;\n                        x1 = saved_20;\n                        x0 = sub_100004b04(x0, x1, x2, x3);\n                        x0 = *(uint64_t *)(saved_22 + 0x60);\n                        saved_20 = *(uint64_t *)(saved_22 + 0x48);\n                        saved_19 = *(uint64_t *)(saved_22 + 0x30);\n                        x0 = _swift_task_dealloc(x0, x1, x2, x3);\n                        x0 = saved_20;\n                        x0 = _swift_task_dealloc(x0, x1, x2, x3);\n                        x0 = saved_19;\n                        x0 = _swift_task_dealloc(x0, x1, x2, x3);\n                        x1 = *(uint64_t *)(saved_22 + 0x8);\n                        x0 = saved_21;\n                        saved_20 = 0;\n                        fp = *(uint64_t *)(saved_fp);\n                        lr = *(uint64_t *)(((sp + 64) + 8));\n                        saved_21 = *(uint64_t *)(var_28);\n                        saved_19 = *(uint64_t *)(((sp + 40) + 8));\n                        saved_24 = *(uint64_t *)(var_18);\n                        saved_23 = *(uint64_t *)(((sp + 24) + 8));\n                        saved_26 = *(uint64_t *)(var_8);\n                        saved_25 = *(uint64_t *)(((sp + 8) + 8));\n                        fp = (fp & 0xefffffffffffffff);\n                        sp = (sp + 80);\n                        goto *x0; /* indirect */\n                    }\n                } else {\n                    saved_23 = saved_21;\n                    x8 = *(uint64_t *)(saved_22 + 0x40);\n                    x0 = *(uint64_t *)(((saved_22 + 64) + 8));\n                    x1 = *(uint64_t *)(saved_22 + 0x38);\n                    x8 = *(uint64_t *)(x8 + 0x8);\n                }\n            } else {\n                x0 = sub_100030d88(x0, x1, x2, x3);\n                x1 = x0;\n                x0 = 0x10014f000;\n                x0 = (x0 + 3824);\n                x2 = 0;\n                x3 = 0;\n                x0 = _swift_allocError(x0, x1, x2, x3);\n                saved_23 = x0;\n                *(uint8_t *)(x1) = sp;\n                saved_21 = x0;\n                x0 = _swift_willThrow(x0, x1, x2, x3);\n                goto label_100067788;\n            }\n        }\n    } else {\n        x8 = *(uint64_t *)(saved_22 + 0x58);\n        saved_20 = *(uint64_t *)(((saved_22 + 88) + 8));\n        x1 = *(uint64_t *)(saved_22 + 0x50);\n        saved_23 = *(uint64_t *)(saved_22 + 0x28);\n        saved_19 = *(uint64_t *)(((saved_22 + 40) + 8));\n        saved_21 = *(uint64_t *)(saved_22 + 0x20);\n        x8 = *(uint64_t *)(x8 + 0x60);\n        x0 = saved_20;\n        x0 = x0(x0, x1, x2, x3);\n        x8 = *(uint64_t *)(saved_23 + 0x20);\n        x0 = saved_19;\n        x1 = saved_20;\n        x2 = saved_21;\n        x0 = x0(x0, x1, x2, x3);\n        saved_20 = saved_19;\n        x0 = _$s9MLOpGraph0aB6DeviceV4udidSSvg(x0, x1, x2, x3);\n        saved_21 = x0;\n        saved_19 = x1;\n        *(uint64_t *)(saved_22 + 0x68) = x1;\n        x8 = 0x100110000;\n        x0 = *(uint32_t *)(x8 + 0xe1c);\n        x0 = _swift_task_alloc(x0, x1, x2, x3);\n        *(uint64_t *)(saved_22 + 0x70) = x0;\n        x8 = 0x100067000;\n        x8 = (x8 + 2280);\n        *(uint64_t *)(x0) = saved_22;\n        *(uint64_t *)(x0 + 0x8) = x8;\n        x2 = *(uint64_t *)(saved_22 + 0x10);\n        saved_20 = *(uint64_t *)(((saved_22 + 16) + 8));\n        saved_22 = x0;\n        x0 = saved_21;\n        x1 = saved_19;\n        fp = *(uint64_t *)(saved_fp);\n        lr = *(uint64_t *)(((sp + 64) + 8));\n        saved_21 = *(uint64_t *)(var_28);\n        saved_19 = *(uint64_t *)(((sp + 40) + 8));\n        saved_24 = *(uint64_t *)(var_18);\n        saved_23 = *(uint64_t *)(((sp + 24) + 8));\n        saved_26 = *(uint64_t *)(var_8);\n        saved_25 = *(uint64_t *)(((sp + 8) + 8));\n        fp = (fp & 0xefffffffffffffff);\n        sp = (sp + 80);\n    }\n}",
+    "signature": "void sub_1000675c0()",
+    "signature_candidates": [
+      {
+        "confidence": 0.9599999785423279,
+        "fact_id": null,
+        "selected": true,
+        "signature": "uint64_t sub_1000675c0()",
+        "source": "aapcs64-live-ins"
+      },
+      {
+        "confidence": 0.9399999976158142,
+        "fact_id": 49350,
+        "selected": true,
+        "signature": "void sub_1000675c0()",
+        "source": "static:interprocedural-solver"
+      }
+    ],
+    "ssa": {
+      "blocks": {
+        "4295390656": {
+          "addr": 4295390656,
+          "definitions": [
+            {
+              "expression": "(sp + 0x40)",
+              "output": {
+                "register": 29,
+                "version": 4
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x58)):8",
+              "output": {
+                "register": 23,
+                "version": 5
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((x22 + 0x58) + 0x8)):8",
+              "output": {
+                "register": 19,
+                "version": 6
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x50)):8",
+              "output": {
+                "register": 21,
+                "version": 7
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x10)):8",
+              "output": {
+                "register": 20,
+                "version": 8
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x19",
+              "output": {
+                "register": 8,
+                "version": 9
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 6
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x1001054f0))",
+              "output": {
+                "register": 0,
+                "version": 11
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 10,
+          "phis": []
+        },
+        "4295390688": {
+          "addr": 4295390688,
+          "definitions": [
+            {
+              "expression": "*((x23 + 0x58)):8",
+              "output": {
+                "register": 8,
+                "version": 12
+              },
+              "uses": [
+                {
+                  "register": 23,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x19",
+              "output": {
+                "register": 0,
+                "version": 13
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x21",
+              "output": {
+                "register": 1,
+                "version": 14
+              },
+              "uses": [
+                {
+                  "register": 21,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(x0))",
+              "output": {
+                "register": 0,
+                "version": 16
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 15,
+          "phis": []
+        },
+        "4295390704": {
+          "addr": 4295390704,
+          "definitions": [
+            {
+              "expression": "0x100156000",
+              "output": {
+                "register": 8,
+                "version": 17
+              },
+              "uses": []
+            },
+            {
+              "expression": "*((x8 + 0x2b0)):8",
+              "output": {
+                "register": 8,
+                "version": 18
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 17
+                }
+              ]
+            },
+            {
+              "expression": "*(x8):4",
+              "output": {
+                "register": 8,
+                "version": 19
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 18
+                }
+              ]
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        },
+        "4295390724": {
+          "addr": 4295390724,
+          "definitions": [
+            {
+              "expression": "*((x22 + 0x58)):8",
+              "output": {
+                "register": 8,
+                "version": 20
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((x22 + 0x58) + 0x8)):8",
+              "output": {
+                "register": 20,
+                "version": 21
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x50)):8",
+              "output": {
+                "register": 1,
+                "version": 22
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x28)):8",
+              "output": {
+                "register": 23,
+                "version": 23
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((x22 + 0x28) + 0x8)):8",
+              "output": {
+                "register": 19,
+                "version": 24
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x20)):8",
+              "output": {
+                "register": 21,
+                "version": 25
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x8 + 0x60)):8",
+              "output": {
+                "register": 8,
+                "version": 26
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 20
+                }
+              ]
+            },
+            {
+              "expression": "x20",
+              "output": {
+                "register": 0,
+                "version": 27
+              },
+              "uses": [
+                {
+                  "register": 20,
+                  "version": 21
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(x0))",
+              "output": {
+                "register": 0,
+                "version": 29
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 28,
+          "phis": []
+        },
+        "4295390752": {
+          "addr": 4295390752,
+          "definitions": [
+            {
+              "expression": "*((x23 + 0x20)):8",
+              "output": {
+                "register": 8,
+                "version": 30
+              },
+              "uses": [
+                {
+                  "register": 23,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x19",
+              "output": {
+                "register": 0,
+                "version": 31
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x20",
+              "output": {
+                "register": 1,
+                "version": 32
+              },
+              "uses": [
+                {
+                  "register": 20,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x21",
+              "output": {
+                "register": 2,
+                "version": 33
+              },
+              "uses": [
+                {
+                  "register": 21,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(x0))",
+              "output": {
+                "register": 0,
+                "version": 35
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 34,
+          "phis": []
+        },
+        "4295390772": {
+          "addr": 4295390772,
+          "definitions": [
+            {
+              "expression": "x19",
+              "output": {
+                "register": 20,
+                "version": 36
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100105670))",
+              "output": {
+                "register": 0,
+                "version": 38
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 37,
+          "phis": []
+        },
+        "4295390780": {
+          "addr": 4295390780,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 21,
+                "version": 39
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x1",
+              "output": {
+                "register": 19,
+                "version": 40
+              },
+              "uses": [
+                {
+                  "register": 1,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x100110000",
+              "output": {
+                "register": 8,
+                "version": 42
+              },
+              "uses": []
+            },
+            {
+              "expression": "*((x8 + 0xe1c)):4",
+              "output": {
+                "register": 0,
+                "version": 43
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 42
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x10010684c))",
+              "output": {
+                "register": 0,
+                "version": 45
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 44,
+          "phis": []
+        },
+        "4295390804": {
+          "addr": 4295390804,
+          "definitions": [
+            {
+              "expression": "0x100067000",
+              "output": {
+                "register": 8,
+                "version": 47
+              },
+              "uses": []
+            },
+            {
+              "expression": "(x8 + 0x8e8)",
+              "output": {
+                "register": 8,
+                "version": 48
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 47
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x10)):8",
+              "output": {
+                "register": 2,
+                "version": 51
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((x22 + 0x10) + 0x8)):8",
+              "output": {
+                "register": 20,
+                "version": 52
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x0",
+              "output": {
+                "register": 22,
+                "version": 53
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x21",
+              "output": {
+                "register": 0,
+                "version": 54
+              },
+              "uses": [
+                {
+                  "register": 21,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x19",
+              "output": {
+                "register": 1,
+                "version": 55
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x40)):8",
+              "output": {
+                "register": 29,
+                "version": 56
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x40) + 0x8)):8",
+              "output": {
+                "register": 30,
+                "version": 57
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x28)):8",
+              "output": {
+                "register": 21,
+                "version": 58
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x28) + 0x8)):8",
+              "output": {
+                "register": 19,
+                "version": 59
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x18)):8",
+              "output": {
+                "register": 24,
+                "version": 60
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x18) + 0x8)):8",
+              "output": {
+                "register": 23,
+                "version": 61
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x8)):8",
+              "output": {
+                "register": 26,
+                "version": 62
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x8) + 0x8)):8",
+              "output": {
+                "register": 25,
+                "version": 63
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "(x29 & 0xefffffffffffffff)",
+              "output": {
+                "register": 29,
+                "version": 64
+              },
+              "uses": [
+                {
+                  "register": 29,
+                  "version": 56
+                }
+              ]
+            },
+            {
+              "expression": "(sp + 0x50)",
+              "output": {
+                "register": 31,
+                "version": 65
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 50,
+          "phis": []
+        },
+        "4295390864": {
+          "addr": 4295390864,
+          "definitions": [
+            {
+              "expression": "0x100156000",
+              "output": {
+                "register": 8,
+                "version": 66
+              },
+              "uses": []
+            },
+            {
+              "expression": "*((x8 + 0x2a8)):8",
+              "output": {
+                "register": 8,
+                "version": 67
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 66
+                }
+              ]
+            },
+            {
+              "expression": "*(x8):4",
+              "output": {
+                "register": 8,
+                "version": 68
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 67
+                }
+              ]
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        },
+        "4295390884": {
+          "addr": 4295390884,
+          "definitions": [
+            {
+              "expression": "*((x22 + 0x18)):8",
+              "output": {
+                "register": 20,
+                "version": 69
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x10016a000",
+              "output": {
+                "register": 8,
+                "version": 70
+              },
+              "uses": []
+            },
+            {
+              "expression": "*((x8 + 0xe78)):8",
+              "output": {
+                "register": 21,
+                "version": 71
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 70
+                }
+              ]
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 0,
+                "version": 72
+              },
+              "uses": []
+            },
+            {
+              "expression": "?(call_result(0x100103bd0))",
+              "output": {
+                "register": 0,
+                "version": 74
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 73,
+          "phis": []
+        },
+        "4295390904": {
+          "addr": 4295390904,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 2,
+                "version": 75
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x0 + 0xfffffffffffffff8)):8",
+              "output": {
+                "register": 8,
+                "version": 76
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x8 + 0x30)):8",
+              "output": {
+                "register": 8,
+                "version": 77
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 76
+                }
+              ]
+            },
+            {
+              "expression": "(x20 + x21)",
+              "output": {
+                "register": 0,
+                "version": 78
+              },
+              "uses": [
+                {
+                  "register": 20,
+                  "version": 0
+                },
+                {
+                  "register": 21,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x1",
+              "output": {
+                "register": 1,
+                "version": 79
+              },
+              "uses": []
+            },
+            {
+              "expression": "?(call_result(x0))",
+              "output": {
+                "register": 0,
+                "version": 81
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 80,
+          "phis": []
+        },
+        "4295390928": {
+          "addr": 4295390928,
+          "definitions": [],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        },
+        "4295390936": {
+          "addr": 4295390936,
+          "definitions": [
+            {
+              "expression": "?(call_result(0x100030d88))",
+              "output": {
+                "register": 0,
+                "version": 83
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 82,
+          "phis": []
+        },
+        "4295390940": {
+          "addr": 4295390940,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 1,
+                "version": 84
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x10014f000",
+              "output": {
+                "register": 0,
+                "version": 85
+              },
+              "uses": []
+            },
+            {
+              "expression": "(x0 + 0xef0)",
+              "output": {
+                "register": 0,
+                "version": 86
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 85
+                }
+              ]
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 2,
+                "version": 87
+              },
+              "uses": []
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 3,
+                "version": 88
+              },
+              "uses": []
+            },
+            {
+              "expression": "?(call_result(0x10010648c))",
+              "output": {
+                "register": 0,
+                "version": 90
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 89,
+          "phis": []
+        },
+        "4295390964": {
+          "addr": 4295390964,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 23,
+                "version": 91
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x0",
+              "output": {
+                "register": 21,
+                "version": 93
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100106918))",
+              "output": {
+                "register": 0,
+                "version": 95
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 94,
+          "phis": []
+        },
+        "4295390980": {
+          "addr": 4295390980,
+          "definitions": [],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        },
+        "4295390984": {
+          "addr": 4295390984,
+          "definitions": [
+            {
+              "expression": "*((x22 + 0x58)):8",
+              "output": {
+                "register": 24,
+                "version": 96
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((x22 + 0x58) + 0x8)):8",
+              "output": {
+                "register": 20,
+                "version": 97
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x50)):8",
+              "output": {
+                "register": 19,
+                "version": 98
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100030d88))",
+              "output": {
+                "register": 0,
+                "version": 100
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 99,
+          "phis": []
+        },
+        "4295390996": {
+          "addr": 4295390996,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 1,
+                "version": 101
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x10014f000",
+              "output": {
+                "register": 0,
+                "version": 102
+              },
+              "uses": []
+            },
+            {
+              "expression": "(x0 + 0xef0)",
+              "output": {
+                "register": 0,
+                "version": 103
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 102
+                }
+              ]
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 2,
+                "version": 104
+              },
+              "uses": []
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 3,
+                "version": 105
+              },
+              "uses": []
+            },
+            {
+              "expression": "?(call_result(0x10010648c))",
+              "output": {
+                "register": 0,
+                "version": 107
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 106,
+          "phis": []
+        },
+        "4295391020": {
+          "addr": 4295391020,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 23,
+                "version": 108
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x3",
+              "output": {
+                "register": 8,
+                "version": 109
+              },
+              "uses": []
+            },
+            {
+              "expression": "x0",
+              "output": {
+                "register": 21,
+                "version": 111
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100106918))",
+              "output": {
+                "register": 0,
+                "version": 113
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 112,
+          "phis": []
+        },
+        "4295391040": {
+          "addr": 4295391040,
+          "definitions": [
+            {
+              "expression": "*((x24 + 0x8)):8",
+              "output": {
+                "register": 8,
+                "version": 114
+              },
+              "uses": [
+                {
+                  "register": 24,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x20",
+              "output": {
+                "register": 0,
+                "version": 115
+              },
+              "uses": [
+                {
+                  "register": 20,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x19",
+              "output": {
+                "register": 1,
+                "version": 116
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        },
+        "4295391056": {
+          "addr": 4295391056,
+          "definitions": [
+            {
+              "expression": "*((x22 + 0x48)):8",
+              "output": {
+                "register": 19,
+                "version": 117
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "(x20 + x21)",
+              "output": {
+                "register": 20,
+                "version": 118
+              },
+              "uses": [
+                {
+                  "register": 20,
+                  "version": 0
+                },
+                {
+                  "register": 21,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x19",
+              "output": {
+                "register": 8,
+                "version": 119
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 117
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100103ba0))",
+              "output": {
+                "register": 0,
+                "version": 121
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 120,
+          "phis": []
+        },
+        "4295391072": {
+          "addr": 4295391072,
+          "definitions": [
+            {
+              "expression": "x19",
+              "output": {
+                "register": 0,
+                "version": 122
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 1,
+                "version": 123
+              },
+              "uses": []
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 21,
+                "version": 124
+              },
+              "uses": []
+            },
+            {
+              "expression": "?(call_result(0x1001039c0))",
+              "output": {
+                "register": 0,
+                "version": 126
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 125,
+          "phis": []
+        },
+        "4295391088": {
+          "addr": 4295391088,
+          "definitions": [],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        },
+        "4295391092": {
+          "addr": 4295391092,
+          "definitions": [
+            {
+              "expression": "x21",
+              "output": {
+                "register": 23,
+                "version": 127
+              },
+              "uses": [
+                {
+                  "register": 21,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x40)):8",
+              "output": {
+                "register": 8,
+                "version": 128
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((x22 + 0x40) + 0x8)):8",
+              "output": {
+                "register": 0,
+                "version": 129
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x38)):8",
+              "output": {
+                "register": 1,
+                "version": 130
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x8 + 0x8)):8",
+              "output": {
+                "register": 8,
+                "version": 131
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 128
+                }
+              ]
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        },
+        "4295391108": {
+          "addr": 4295391108,
+          "definitions": [
+            {
+              "expression": "?(call_result(x0))",
+              "output": {
+                "register": 0,
+                "version": 133
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 132,
+          "phis": []
+        },
+        "4295391112": {
+          "addr": 4295391112,
+          "definitions": [
+            {
+              "expression": "*((x22 + 0x60)):8",
+              "output": {
+                "register": 0,
+                "version": 134
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x48)):8",
+              "output": {
+                "register": 20,
+                "version": 135
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x30)):8",
+              "output": {
+                "register": 19,
+                "version": 136
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100106864))",
+              "output": {
+                "register": 0,
+                "version": 138
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 137,
+          "phis": []
+        },
+        "4295391128": {
+          "addr": 4295391128,
+          "definitions": [
+            {
+              "expression": "x20",
+              "output": {
+                "register": 0,
+                "version": 139
+              },
+              "uses": [
+                {
+                  "register": 20,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100106864))",
+              "output": {
+                "register": 0,
+                "version": 141
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 140,
+          "phis": []
+        },
+        "4295391136": {
+          "addr": 4295391136,
+          "definitions": [
+            {
+              "expression": "x19",
+              "output": {
+                "register": 0,
+                "version": 142
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100106864))",
+              "output": {
+                "register": 0,
+                "version": 144
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 143,
+          "phis": []
+        },
+        "4295391144": {
+          "addr": 4295391144,
+          "definitions": [
+            {
+              "expression": "*((x22 + 0x8)):8",
+              "output": {
+                "register": 0,
+                "version": 145
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x23",
+              "output": {
+                "register": 20,
+                "version": 146
+              },
+              "uses": [
+                {
+                  "register": 23,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x40)):8",
+              "output": {
+                "register": 29,
+                "version": 147
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x40) + 0x8)):8",
+              "output": {
+                "register": 30,
+                "version": 148
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x28)):8",
+              "output": {
+                "register": 21,
+                "version": 149
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x28) + 0x8)):8",
+              "output": {
+                "register": 19,
+                "version": 150
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x18)):8",
+              "output": {
+                "register": 24,
+                "version": 151
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x18) + 0x8)):8",
+              "output": {
+                "register": 23,
+                "version": 152
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x8)):8",
+              "output": {
+                "register": 26,
+                "version": 153
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x8) + 0x8)):8",
+              "output": {
+                "register": 25,
+                "version": 154
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "(x29 & 0xefffffffffffffff)",
+              "output": {
+                "register": 29,
+                "version": 155
+              },
+              "uses": [
+                {
+                  "register": 29,
+                  "version": 147
+                }
+              ]
+            },
+            {
+              "expression": "(sp + 0x50)",
+              "output": {
+                "register": 31,
+                "version": 156
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        },
+        "4295391180": {
+          "addr": 4295391180,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 19,
+                "version": 157
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x1",
+              "output": {
+                "register": 20,
+                "version": 158
+              },
+              "uses": [
+                {
+                  "register": 1,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x100156000",
+              "output": {
+                "register": 8,
+                "version": 159
+              },
+              "uses": []
+            },
+            {
+              "expression": "*((x8 + 0x690)):8",
+              "output": {
+                "register": 0,
+                "version": 160
+              },
+              "uses": [
+                {
+                  "register": 8,
+                  "version": 159
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100106420))",
+              "output": {
+                "register": 0,
+                "version": 162
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 161,
+          "phis": []
+        },
+        "4295391200": {
+          "addr": 4295391200,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 21,
+                "version": 163
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x19",
+              "output": {
+                "register": 0,
+                "version": 164
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x20",
+              "output": {
+                "register": 1,
+                "version": 165
+              },
+              "uses": [
+                {
+                  "register": 20,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x1001039d8))",
+              "output": {
+                "register": 0,
+                "version": 167
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 166,
+          "phis": []
+        },
+        "4295391216": {
+          "addr": 4295391216,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 23,
+                "version": 168
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x444f",
+              "output": {
+                "register": 0,
+                "version": 169
+              },
+              "uses": []
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 0,
+                "version": 170
+              },
+              "uses": []
+            },
+            {
+              "expression": "0xe400000000000000",
+              "output": {
+                "register": 1,
+                "version": 171
+              },
+              "uses": []
+            },
+            {
+              "expression": "?(call_result(0x1001058c8))",
+              "output": {
+                "register": 0,
+                "version": 173
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 172,
+          "phis": []
+        },
+        "4295391236": {
+          "addr": 4295391236,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 24,
+                "version": 174
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x21",
+              "output": {
+                "register": 0,
+                "version": 175
+              },
+              "uses": [
+                {
+                  "register": 21,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x23",
+              "output": {
+                "register": 2,
+                "version": 176
+              },
+              "uses": [
+                {
+                  "register": 23,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x24",
+              "output": {
+                "register": 3,
+                "version": 177
+              },
+              "uses": [
+                {
+                  "register": 24,
+                  "version": 174
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100107b40))",
+              "output": {
+                "register": 0,
+                "version": 179
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 178,
+          "phis": []
+        },
+        "4295391256": {
+          "addr": 4295391256,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 21,
+                "version": 180
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x24",
+              "output": {
+                "register": 0,
+                "version": 181
+              },
+              "uses": [
+                {
+                  "register": 24,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x10010642c))",
+              "output": {
+                "register": 0,
+                "version": 183
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 182,
+          "phis": []
+        },
+        "4295391268": {
+          "addr": 4295391268,
+          "definitions": [
+            {
+              "expression": "x23",
+              "output": {
+                "register": 0,
+                "version": 184
+              },
+              "uses": [
+                {
+                  "register": 23,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x10010642c))",
+              "output": {
+                "register": 0,
+                "version": 186
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 185,
+          "phis": []
+        },
+        "4295391276": {
+          "addr": 4295391276,
+          "definitions": [
+            {
+              "expression": "*((x22 + 0x40)):8",
+              "output": {
+                "register": 26,
+                "version": 187
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((x22 + 0x40) + 0x8)):8",
+              "output": {
+                "register": 24,
+                "version": 188
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x38)):8",
+              "output": {
+                "register": 25,
+                "version": 189
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        },
+        "4295391288": {
+          "addr": 4295391288,
+          "definitions": [
+            {
+              "expression": "*((x26 + 0x8)):8",
+              "output": {
+                "register": 8,
+                "version": 190
+              },
+              "uses": [
+                {
+                  "register": 26,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x24",
+              "output": {
+                "register": 0,
+                "version": 191
+              },
+              "uses": [
+                {
+                  "register": 24,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x25",
+              "output": {
+                "register": 1,
+                "version": 192
+              },
+              "uses": [
+                {
+                  "register": 25,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(x0))",
+              "output": {
+                "register": 0,
+                "version": 194
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 193,
+          "phis": []
+        },
+        "4295391304": {
+          "addr": 4295391304,
+          "definitions": [
+            {
+              "expression": "x19",
+              "output": {
+                "register": 0,
+                "version": 195
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x20",
+              "output": {
+                "register": 1,
+                "version": 196
+              },
+              "uses": [
+                {
+                  "register": 20,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100004b04))",
+              "output": {
+                "register": 0,
+                "version": 198
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 197,
+          "phis": []
+        },
+        "4295391316": {
+          "addr": 4295391316,
+          "definitions": [
+            {
+              "expression": "*((x22 + 0x60)):8",
+              "output": {
+                "register": 0,
+                "version": 199
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x48)):8",
+              "output": {
+                "register": 20,
+                "version": 200
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((x22 + 0x30)):8",
+              "output": {
+                "register": 19,
+                "version": 201
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100106864))",
+              "output": {
+                "register": 0,
+                "version": 203
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 202,
+          "phis": []
+        },
+        "4295391332": {
+          "addr": 4295391332,
+          "definitions": [
+            {
+              "expression": "x20",
+              "output": {
+                "register": 0,
+                "version": 204
+              },
+              "uses": [
+                {
+                  "register": 20,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100106864))",
+              "output": {
+                "register": 0,
+                "version": 206
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 205,
+          "phis": []
+        },
+        "4295391340": {
+          "addr": 4295391340,
+          "definitions": [
+            {
+              "expression": "x19",
+              "output": {
+                "register": 0,
+                "version": 207
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100106864))",
+              "output": {
+                "register": 0,
+                "version": 209
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 208,
+          "phis": []
+        },
+        "4295391348": {
+          "addr": 4295391348,
+          "definitions": [
+            {
+              "expression": "*((x22 + 0x8)):8",
+              "output": {
+                "register": 1,
+                "version": 210
+              },
+              "uses": [
+                {
+                  "register": 22,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x21",
+              "output": {
+                "register": 0,
+                "version": 211
+              },
+              "uses": [
+                {
+                  "register": 21,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 20,
+                "version": 212
+              },
+              "uses": []
+            },
+            {
+              "expression": "*((sp + 0x40)):8",
+              "output": {
+                "register": 29,
+                "version": 213
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x40) + 0x8)):8",
+              "output": {
+                "register": 30,
+                "version": 214
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x28)):8",
+              "output": {
+                "register": 21,
+                "version": 215
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x28) + 0x8)):8",
+              "output": {
+                "register": 19,
+                "version": 216
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x18)):8",
+              "output": {
+                "register": 24,
+                "version": 217
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x18) + 0x8)):8",
+              "output": {
+                "register": 23,
+                "version": 218
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*((sp + 0x8)):8",
+              "output": {
+                "register": 26,
+                "version": 219
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "*(((sp + 0x8) + 0x8)):8",
+              "output": {
+                "register": 25,
+                "version": 220
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "(x29 & 0xefffffffffffffff)",
+              "output": {
+                "register": 29,
+                "version": 221
+              },
+              "uses": [
+                {
+                  "register": 29,
+                  "version": 213
+                }
+              ]
+            },
+            {
+              "expression": "(sp + 0x50)",
+              "output": {
+                "register": 31,
+                "version": 222
+              },
+              "uses": [
+                {
+                  "register": 31,
+                  "version": 0
+                }
+              ]
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        },
+        "4295391388": {
+          "addr": 4295391388,
+          "definitions": [
+            {
+              "expression": "?(call_result(0x100030d88))",
+              "output": {
+                "register": 0,
+                "version": 224
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 223,
+          "phis": []
+        },
+        "4295391392": {
+          "addr": 4295391392,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 1,
+                "version": 225
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x10014f000",
+              "output": {
+                "register": 0,
+                "version": 226
+              },
+              "uses": []
+            },
+            {
+              "expression": "(x0 + 0xef0)",
+              "output": {
+                "register": 0,
+                "version": 227
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 226
+                }
+              ]
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 2,
+                "version": 228
+              },
+              "uses": []
+            },
+            {
+              "expression": "0x0",
+              "output": {
+                "register": 3,
+                "version": 229
+              },
+              "uses": []
+            },
+            {
+              "expression": "?(call_result(0x10010648c))",
+              "output": {
+                "register": 0,
+                "version": 231
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 230,
+          "phis": []
+        },
+        "4295391416": {
+          "addr": 4295391416,
+          "definitions": [
+            {
+              "expression": "x0",
+              "output": {
+                "register": 23,
+                "version": 232
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "0x1",
+              "output": {
+                "register": 8,
+                "version": 233
+              },
+              "uses": []
+            },
+            {
+              "expression": "x0",
+              "output": {
+                "register": 21,
+                "version": 235
+              },
+              "uses": [
+                {
+                  "register": 0,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100106918))",
+              "output": {
+                "register": 0,
+                "version": 237
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 236,
+          "phis": []
+        },
+        "4295391436": {
+          "addr": 4295391436,
+          "definitions": [
+            {
+              "expression": "x19",
+              "output": {
+                "register": 0,
+                "version": 238
+              },
+              "uses": [
+                {
+                  "register": 19,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x20",
+              "output": {
+                "register": 1,
+                "version": 239
+              },
+              "uses": [
+                {
+                  "register": 20,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "?(call_result(0x100004b04))",
+              "output": {
+                "register": 0,
+                "version": 241
+              },
+              "uses": []
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 240,
+          "phis": []
+        },
+        "4295391448": {
+          "addr": 4295391448,
+          "definitions": [
+            {
+              "expression": "*((x26 + 0x8)):8",
+              "output": {
+                "register": 8,
+                "version": 242
+              },
+              "uses": [
+                {
+                  "register": 26,
+                  "version": 0
+                }
+              ]
+            },
+            {
+              "expression": "x24",
+              "output": {
+                "register": 0,
+                "version": 243
+              },
+              "uses": [
+                {
+                  "register": 24,
+                  "version": 0
+                }
+              ]
+            }
+          ],
+          "memory_in": 0,
+          "memory_out": 0,
+          "phis": []
+        }
+      },
+      "entry": 4295390656,
+      "memory_versions": 45,
+      "phi_count": 0,
+      "value_count": 243
+    },
+    "style": "c"
+  },
+  "schema_version": "blacksmith-re/v3"
+}

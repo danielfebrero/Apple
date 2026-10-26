@@ -1,0 +1,80 @@
+{
+  "checked_utc": "2026-10-26T17:21:58.742258+00:00",
+  "scope": "Public official Apple sources only; no secrets/authentication, no repeated hypothetical MobileAsset probes",
+  "afm": {
+    "source_url": "https://developer.apple.com/apple-intelligence/foundation-models-adapter/",
+    "documented_version": "26.0.0",
+    "last_release": true,
+    "os_compatibility": [
+      "macOS 26",
+      "iOS 26",
+      "iPadOS 26",
+      "visionOS 26"
+    ],
+    "incompatible_os_major_at_least": 27,
+    "requirements": [
+      "Apple Developer Program membership",
+      "accept toolkit terms",
+      "Python >=3.11",
+      "Apple silicon Mac >=32GB or Linux GPU"
+    ],
+    "contains_documented": [
+      "system model weights optimized for adapter training",
+      "system draft model assets",
+      "Python inference example examples/generate.py",
+      "Python training workflow"
+    ],
+    "usage_limit_documented": "model assets only for training adapters",
+    "direct_archive_public_html": null,
+    "local_new_afm_weights_acquired": false
+  },
+  "core_ai_debugger": {
+    "source_url": "https://developer.apple.com/core-ai-debugger/",
+    "download_landing_url": "https://developer.apple.com/download/all/?q=core%20ai%20debugger",
+    "documented_requirements": [
+      "macOS >=27 for model viewing",
+      "paired iOS/iPadOS/macOS >=27 for specialization/execution",
+      "Apple Account sign-in; free developer registration if prompted"
+    ],
+    "linux_runtime_documented_by_this_page": false
+  },
+  "xcode": {
+    "source_url": "https://developer.apple.com/news/releases/",
+    "version": "27.2 RC",
+    "build": "27B48",
+    "release_date": "2026-10-19",
+    "system_requirements_url": "https://developer.apple.com/xcode/system-requirements/",
+    "requires_macos": ">=26.6",
+    "release_notes_url": "https://developer.apple.com/documentation/xcode-release-notes/xcode-27_2-release-notes",
+    "docc_json_url": "https://developer.apple.com/tutorials/data/documentation/xcode-release-notes/xcode-27_2-release-notes.json",
+    "direct_xip_public_url_observed": null
+  },
+  "alternatives_not_afm": [
+    {
+      "name": "OpenELM-270M-Instruct",
+      "url": "https://huggingface.co/apple/OpenELM-270M-Instruct",
+      "role": "public research language model",
+      "debian_status": "PyTorch/Hugging Face route documented, not executed here; example tokenizer requires separate Llama access"
+    },
+    {
+      "name": "FastVLM-0.5B stage3",
+      "url": "https://github.com/apple-aiml-research/ml-fastvlm",
+      "payload_url_documented": "https://ml-site.cdn-apple.com/datasets/fastvlm/llava-fastvithd_0.5b_stage3.zip",
+      "role": "public research vision-language model PyTorch",
+      "debian_status": "PyTorch inference documented; local execution not tested"
+    },
+    {
+      "name": "Matryoshka Diffusion Models",
+      "url": "https://github.com/apple-aiml-research/ml-mdm",
+      "payload_url_documented": "https://docs-assets.developer.apple.com/ml-research/models/mdm/flickr64/vis_model.pth",
+      "role": "public research image generation model PyTorch",
+      "debian_status": "CPU installation documented; generation resource/performance not tested"
+    }
+  ],
+  "network_observation": "download all pages redirect unauthenticated requests to Apple sign-in; this does not prove all possible CDN payloads gated",
+  "next_concrete_track": "coreai-core Linux manylinux wheel acquired; separate report under coreai",
+  "evidence_files": [
+    "public-source-snapshots.json",
+    "public-alternatives-snapshots.json"
+  ]
+}
