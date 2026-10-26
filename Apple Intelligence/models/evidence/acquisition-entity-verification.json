@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "dry_run": false,
+  "network_requests": false,
+  "private_inventory_used": false,
+  "model_ids": [
+    "m-39ce2e705a2d140eee12"
+  ],
+  "file_count": 8,
+  "size_bytes": 3749,
+  "cache_root": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-proof/models/cache",
+  "runtime_source_root": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-proof",
+  "images": [
+    {
+      "volume_id": "rootfs",
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/rootfs-dec/141-08876-212.dmg",
+      "size_bytes": 10565451776,
+      "sha256": "3aece1d45bba734e8dfa90c5e1d320b8fa2348a3b023075e7c48df5142839e1d",
+      "integrity_verified": true
+    }
+  ],
+  "files": [
+    {
+      "asset_id": "a-f2eeaefc5600f75d2aae",
+      "path": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-proof/models/cache/rootfs/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/EntitySimilarityLinearModel.mlmodelc/analytics/coremldata.bin",
+      "status": "extracted_verified",
+      "size_bytes": 457,
+      "sha256": "aaf5e40c4a48bde7321c0c845cad48f8a3f20b06007c1c2dcf80a2fae2a5b0a4"
+    },
+    {
+      "asset_id": "a-f53af88bbc030ed8713a",
+      "path": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-proof/models/cache/rootfs/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/EntitySimilarityLinearModel.mlmodelc/coremldata.bin",
+      "status": "extracted_verified",
+      "size_bytes": 251,
+      "sha256": "67e8cd863b9fcbcaede99e450a34e6d7797b2b8f489ad25262a723957a3cb80b"
+    },
+    {
+      "asset_id": "a-72106751ecc4697c8f80",
+      "path": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-proof/models/cache/rootfs/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/EntitySimilarityLinearModel.mlmodelc/metadata.json",
+      "status": "extracted_verified",
+      "size_bytes": 1397,
+      "sha256": "66bcf63f6250c74e0ad35712e81383a7851b3c174b5c1926555d048f57601639"
+    },
+    {
+      "asset_id": "a-ab7dfc329f6d41ab174a",
+      "path": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-proof/models/cache/rootfs/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/EntitySimilarityLinearModel.mlmodelc/model.espresso.net",
+      "status": "extracted_verified",
+      "size_bytes": 777,
+      "sha256": "6befe22efa4f6139c9cc45debe41db8fb53b6f61b1a89e73a3ab0ea36258ef02"
+    },
+    {
+      "asset_id": "a-9f741b5bd9ead45e585a",
+      "path": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-proof/models/cache/rootfs/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/EntitySimilarityLinearModel.mlmodelc/model.espresso.shape",
+      "status": "extracted_verified",
+      "size_bytes": 323,
+      "sha256": "b3af0c00f15b60e9b416d4d387f424da289ada6987439c8e99ee9bdc802bccf9"
+    },
+    {
+      "asset_id": "a-a993f265ad1476bdceb9",
+      "path": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-proof/models/cache/rootfs/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/EntitySimilarityLinearModel.mlmodelc/model.espresso.weights",
+      "status": "extracted_verified",
+      "size_bytes": 440,
+      "sha256": "a2cde4443ca52b95feb4895c7352d390d59abdd0d55b58081d16c25c0266a0c7"
+    },
+    {
+      "asset_id": "a-e0d030e686edc70f3193",
+      "path": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-proof/models/cache/rootfs/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/EntitySimilarityLinearModel.mlmodelc/model/coremldata.bin",
+      "status": "extracted_verified",
+      "size_bytes": 64,
+      "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+    },
+    {
+      "asset_id": "a-68db01eda6b1b60a5539",
+      "path": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-proof/models/cache/rootfs/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/EntitySimilarityLinearModel.mlmodelc/neural_network_optionals/coremldata.bin",
+      "status": "extracted_verified",
+      "size_bytes": 40,
+      "sha256": "5931bd536c4550294a212c6fc8d3c1bee75da817980ba0b671c8603dafb36238"
+    }
+  ],
+  "extraction_performed": true,
+  "integrity_verified": true,
+  "elapsed_seconds": 4.764490948989987
+}

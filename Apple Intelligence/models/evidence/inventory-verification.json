@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "asset_files_verified": 3923,
+  "inventory_groups_verified": 1267,
+  "reference_resources_verified": 1850,
+  "reference_locators_verified": 118611,
+  "metadata_evidence_links_verified": 757,
+  "bytes_hashed_including_uaf": 2754345007,
+  "cache_tracked_files": 0,
+  "source_checks": [
+    {
+      "volume_id": "rootfs",
+      "inventory_sha256_verified": true,
+      "image_sha256_verified": false
+    },
+    {
+      "volume_id": "cryptex",
+      "inventory_sha256_verified": true,
+      "image_sha256_verified": false
+    }
+  ]
+}

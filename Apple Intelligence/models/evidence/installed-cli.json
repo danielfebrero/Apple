@@ -1,0 +1,453 @@
+{
+  "checked_utc": "2026-10-26T15:37:47.922008+00:00",
+  "installed_wheel_command": true,
+  "results": [
+    {
+      "argv": [
+        "/workspace/Apple/Apple Intelligence/runtime/.venv/bin/apple-firmware",
+        "--catalog",
+        "/workspace/Apple/Apple Intelligence/models/manifest.json",
+        "--store",
+        "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli",
+        "doctor"
+      ],
+      "cwd": "/tmp",
+      "returncode": 0,
+      "stdout": {
+        "version": "0.1.0",
+        "platform": "Linux-6.1.0-53-amd64-x86_64-with-glibc2.36",
+        "machine": "x86_64",
+        "catalog": "/workspace/Apple/Apple Intelligence/models/manifest.json",
+        "catalog_present": true,
+        "store": "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli",
+        "coreml": {
+          "available_to_attempt": false,
+          "required": "macOS + CoreML framework + Xcode Command Line Tools",
+          "limitation": "An iOS compiled model may not load on macOS; runtime errors are preserved"
+        },
+        "espresso_linear_cpu_experimental": {
+          "available": true,
+          "limitation": "Strict attested InnerProduct(62→1)+sigmoid subset; no Apple parity measurement"
+        },
+        "apple_intelligence_generation": {
+          "available_from_this_firmware_corpus": false,
+          "reason": "Prompts and asset references do not supply AFM generation weights/runtime"
+        },
+        "network_requests": false
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/Apple/Apple Intelligence/runtime/.venv/bin/apple-firmware",
+        "--catalog",
+        "/workspace/Apple/Apple Intelligence/models/manifest.json",
+        "--store",
+        "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli",
+        "list",
+        "--search",
+        "EntitySimilarityLinearModel"
+      ],
+      "cwd": "/tmp",
+      "returncode": 0,
+      "stdout": [
+        {
+          "id": "m-39ce2e705a2d140eee12",
+          "label": "EntitySimilarityLinearModel.mlmodelc",
+          "format": "coreml_compiled",
+          "scope": "intelligence_adjacent",
+          "availability": "local_extracted",
+          "firmware_path": "/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/EntitySimilarityLinearModel.mlmodelc",
+          "file_count": 8,
+          "size_bytes": 3749,
+          "manifest_fingerprint": "16afc82cbe109229cc60bc0d975ee839b0eed93ff9c75b53c2e0fe3aa584919c"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/Apple/Apple Intelligence/runtime/.venv/bin/apple-firmware",
+        "--catalog",
+        "/workspace/Apple/Apple Intelligence/models/manifest.json",
+        "--store",
+        "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli",
+        "import",
+        "m-39ce2e705a2d140eee12"
+      ],
+      "cwd": "/tmp",
+      "returncode": 0,
+      "stdout": {
+        "verified": true,
+        "model_id": "m-39ce2e705a2d140eee12",
+        "files": 8,
+        "size_bytes": 3749,
+        "manifest_fingerprint": "16afc82cbe109229cc60bc0d975ee839b0eed93ff9c75b53c2e0fe3aa584919c",
+        "root": "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli/bundles/m-39ce2e705a2d140eee12/model.mlmodelc"
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/Apple/Apple Intelligence/runtime/.venv/bin/apple-firmware",
+        "--catalog",
+        "/workspace/Apple/Apple Intelligence/models/manifest.json",
+        "--store",
+        "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli",
+        "verify",
+        "m-39ce2e705a2d140eee12"
+      ],
+      "cwd": "/tmp",
+      "returncode": 0,
+      "stdout": {
+        "verified": true,
+        "model_id": "m-39ce2e705a2d140eee12",
+        "files": 8,
+        "size_bytes": 3749,
+        "manifest_fingerprint": "16afc82cbe109229cc60bc0d975ee839b0eed93ff9c75b53c2e0fe3aa584919c",
+        "root": "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli/bundles/m-39ce2e705a2d140eee12/model.mlmodelc"
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/Apple/Apple Intelligence/runtime/.venv/bin/apple-firmware",
+        "--catalog",
+        "/workspace/Apple/Apple Intelligence/models/manifest.json",
+        "--store",
+        "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli",
+        "inspect",
+        "m-39ce2e705a2d140eee12"
+      ],
+      "cwd": "/tmp",
+      "returncode": 0,
+      "stdout": {
+        "id": "m-39ce2e705a2d140eee12",
+        "label": "EntitySimilarityLinearModel.mlmodelc",
+        "format": "coreml_compiled",
+        "scope": "intelligence_adjacent",
+        "availability": "local_extracted",
+        "firmware_path": "/System/Library/PrivateFrameworks/IntelligencePlatformCore.framework/EntitySimilarityLinearModel.mlmodelc",
+        "file_count": 8,
+        "size_bytes": 3749,
+        "manifest_fingerprint": "16afc82cbe109229cc60bc0d975ee839b0eed93ff9c75b53c2e0fe3aa584919c",
+        "backend": "static",
+        "prediction_performed": false,
+        "resources": [
+          {
+            "path": "metadata.json",
+            "sha256": "66bcf63f6250c74e0ad35712e81383a7851b3c174b5c1926555d048f57601639",
+            "content": [
+              {
+                "metadataOutputVersion": "3.0",
+                "storagePrecision": "Float32",
+                "outputSchema": [
+                  {
+                    "hasShapeFlexibility": "0",
+                    "isOptional": "0",
+                    "dataType": "Float32",
+                    "formattedType": "MultiArray (Float32)",
+                    "shortDescription": "",
+                    "shape": "[]",
+                    "name": "var_9",
+                    "type": "MultiArray"
+                  }
+                ],
+                "modelParameters": [],
+                "specificationVersion": 4,
+                "computePrecision": "Float16",
+                "isUpdatable": "0",
+                "availability": {
+                  "macOS": "10.15",
+                  "tvOS": "13.0",
+                  "watchOS": "6.0",
+                  "iOS": "13.0",
+                  "macCatalyst": "13.0"
+                },
+                "neuralNetworkLayerTypeHistogram": {
+                  "ActivationSigmoid": 1,
+                  "InnerProduct": 1
+                },
+                "modelType": {
+                  "name": "MLModelType_neuralNetwork"
+                },
+                "userDefinedMetadata": {
+                  "com.github.apple.coremltools.version": "7.0b2",
+                  "com.github.apple.coremltools.source": "torch==2.0.0"
+                },
+                "generatedClassName": "EntitySimilarityLinearModel",
+                "inputSchema": [
+                  {
+                    "hasShapeFlexibility": "0",
+                    "isOptional": "0",
+                    "dataType": "Float32",
+                    "formattedType": "MultiArray (Float32 1 × 62)",
+                    "shortDescription": "",
+                    "shape": "[1, 62]",
+                    "name": "x",
+                    "type": "MultiArray"
+                  }
+                ],
+                "method": "predict"
+              }
+            ]
+          },
+          {
+            "path": "model.espresso.net",
+            "sha256": "6befe22efa4f6139c9cc45debe41db8fb53b6f61b1a89e73a3ab0ea36258ef02",
+            "content": {
+              "storage": "model.espresso.weights",
+              "analyses": {},
+              "properties": {
+                "mldb_token": "mldb-8vajz8kgz6"
+              },
+              "format_version": 200,
+              "metadata_in_weights": [],
+              "layers": [
+                {
+                  "nB": 62,
+                  "top": "8",
+                  "has_biases": 1,
+                  "weights": {},
+                  "nC": 1,
+                  "blob_weights": 3,
+                  "type": "inner_product",
+                  "has_relu": 0,
+                  "bottom": "x",
+                  "blob_biases": 1,
+                  "has_tanh": 0,
+                  "debug_info": "8",
+                  "name": "8",
+                  "has_prelu": 0
+                },
+                {
+                  "bottom": "8",
+                  "weights": {},
+                  "mode": 3,
+                  "debug_info": "9",
+                  "top": "var_9",
+                  "type": "activation",
+                  "name": "9",
+                  "attributes": {
+                    "is_output": 1
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "path": "model.espresso.shape",
+            "sha256": "b3af0c00f15b60e9b416d4d387f424da289ada6987439c8e99ee9bdc802bccf9",
+            "content": {
+              "layer_shapes": {
+                "8": {
+                  "k": 1,
+                  "w": 1,
+                  "n": 1,
+                  "_rank": 2,
+                  "h": 1
+                },
+                "x": {
+                  "k": 1,
+                  "w": 62,
+                  "n": 1,
+                  "_rank": 2,
+                  "h": 1
+                },
+                "var_9": {
+                  "k": 1,
+                  "w": 1,
+                  "n": 1,
+                  "_rank": 2,
+                  "h": 1
+                }
+              }
+            }
+          }
+        ],
+        "function": {
+          "activation": "unverified",
+          "basis": "path_name_only",
+          "label": "EntitySimilarityLinearModel.mlmodelc"
+        },
+        "architecture": {
+          "entries": [
+            {
+              "computePrecision": "Float16",
+              "generatedClassName": "EntitySimilarityLinearModel",
+              "modelType": {
+                "name": "MLModelType_neuralNetwork"
+              },
+              "neuralNetworkLayerTypeHistogram": {
+                "ActivationSigmoid": 1,
+                "InnerProduct": 1
+              },
+              "specificationVersion": 4,
+              "storagePrecision": "Float32"
+            }
+          ],
+          "evidence_asset_id": "a-72106751ecc4697c8f80",
+          "status": "firmware_metadata_declared"
+        },
+        "interface": {
+          "entries": [
+            {
+              "availability": {
+                "iOS": "13.0",
+                "macCatalyst": "13.0",
+                "macOS": "10.15",
+                "tvOS": "13.0",
+                "watchOS": "6.0"
+              },
+              "inputSchema": [
+                {
+                  "dataType": "Float32",
+                  "formattedType": "MultiArray (Float32 1 × 62)",
+                  "hasShapeFlexibility": "0",
+                  "isOptional": "0",
+                  "name": "x",
+                  "shape": "[1, 62]",
+                  "shortDescription": "",
+                  "type": "MultiArray"
+                }
+              ],
+              "method": "predict",
+              "outputSchema": [
+                {
+                  "dataType": "Float32",
+                  "formattedType": "MultiArray (Float32)",
+                  "hasShapeFlexibility": "0",
+                  "isOptional": "0",
+                  "name": "var_9",
+                  "shape": "[]",
+                  "shortDescription": "",
+                  "type": "MultiArray"
+                }
+              ]
+            }
+          ],
+          "evidence_asset_id": "a-72106751ecc4697c8f80",
+          "status": "firmware_metadata_declared"
+        },
+        "blockers": [
+          "Apple runtime and compatible OS/hardware required for general execution; iOS compiled bundles are not assumed portable to macOS.",
+          "Activation and end-to-end application behavior are unobserved by this static inventory."
+        ],
+        "portable_backend": {
+          "backend": "espresso-linear-cpu-experimental",
+          "supported": true,
+          "model": "EntitySimilarityLinearModel",
+          "inputs": {
+            "x": {
+              "shape": [
+                1,
+                62
+              ],
+              "dtype": "float32"
+            }
+          },
+          "outputs": {
+            "var_9": {
+              "shape": [],
+              "dtype": "float32"
+            }
+          },
+          "operators": [
+            "inner_product",
+            "sigmoid"
+          ],
+          "weight_sha256": "a2cde4443ca52b95feb4895c7352d390d59abdd0d55b58081d16c25c0266a0c7",
+          "precision": "Float32 inputs and weights; Float64 product/accumulation/sigmoid; Float32 output",
+          "semantics": "62 numeric features; firmware feature extraction and task semantics are not implemented",
+          "apple_compute_precision": "Float16",
+          "apple_runtime_parity_verified": false
+        },
+        "integrity": {
+          "verified": true,
+          "model_id": "m-39ce2e705a2d140eee12",
+          "files": 8,
+          "size_bytes": 3749,
+          "manifest_fingerprint": "16afc82cbe109229cc60bc0d975ee839b0eed93ff9c75b53c2e0fe3aa584919c",
+          "root": "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli/bundles/m-39ce2e705a2d140eee12/model.mlmodelc"
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/Apple/Apple Intelligence/runtime/.venv/bin/apple-firmware",
+        "--catalog",
+        "/workspace/Apple/Apple Intelligence/models/manifest.json",
+        "--store",
+        "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli",
+        "predict",
+        "m-39ce2e705a2d140eee12",
+        "--backend",
+        "espresso-linear-cpu-experimental",
+        "--input",
+        "/workspace/Apple/Apple Intelligence/runtime/examples/entity-zero.json"
+      ],
+      "cwd": "/tmp",
+      "returncode": 0,
+      "stdout": {
+        "backend": "espresso-linear-cpu-experimental",
+        "model": "EntitySimilarityLinearModel",
+        "outputs": {
+          "var_9": 0.49867087602615356
+        },
+        "prediction_performed": true,
+        "precision": "Float32 inputs and weights; Float64 product/accumulation/sigmoid; Float32 output",
+        "semantics": "62 numeric features; firmware feature extraction and task semantics are not implemented",
+        "weight_sha256": "a2cde4443ca52b95feb4895c7352d390d59abdd0d55b58081d16c25c0266a0c7",
+        "apple_runtime_parity_verified": false,
+        "model_id": "m-39ce2e705a2d140eee12",
+        "manifest_fingerprint": "16afc82cbe109229cc60bc0d975ee839b0eed93ff9c75b53c2e0fe3aa584919c",
+        "artifact_identity": "selected firmware asset",
+        "integrity": {
+          "verified": true,
+          "model_id": "m-39ce2e705a2d140eee12",
+          "files": 8,
+          "size_bytes": 3749,
+          "manifest_fingerprint": "16afc82cbe109229cc60bc0d975ee839b0eed93ff9c75b53c2e0fe3aa584919c",
+          "root": "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli/bundles/m-39ce2e705a2d140eee12/model.mlmodelc"
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/workspace/Apple/Apple Intelligence/runtime/.venv/bin/apple-firmware",
+        "--catalog",
+        "/workspace/Apple/Apple Intelligence/models/manifest.json",
+        "--store",
+        "/workspace/Apple/Apple Intelligence/runtime/.state/final-cli",
+        "predict",
+        "m-39ce2e705a2d140eee12",
+        "--backend",
+        "coreml",
+        "--input",
+        "/workspace/Apple/Apple Intelligence/runtime/examples/entity-zero.json"
+      ],
+      "cwd": "/tmp",
+      "returncode": 2,
+      "stdout": "",
+      "stderr": {
+        "error": "backend_unavailable",
+        "message": "Core ML inference requires macOS; this host is Linux x86_64",
+        "required": "macOS with CoreML and Xcode Command Line Tools",
+        "note": "iOS-compiled bundles may still be incompatible on macOS; no result is substituted"
+      }
+    }
+  ],
+  "passed": true,
+  "expected_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2
+  ],
+  "macos_coreml_attempt": "rejected before inference on Linux; no Apple runtime inference performed"
+}

@@ -1,0 +1,23 @@
+{
+  "backend": "espresso-linear-cpu-experimental",
+  "model": "EntitySimilarityLinearModel",
+  "outputs": {
+    "var_9": 0.49867087602615356
+  },
+  "prediction_performed": true,
+  "precision": "Float32 inputs and weights; Float64 product/accumulation/sigmoid; Float32 output",
+  "semantics": "62 numeric features; firmware feature extraction and task semantics are not implemented",
+  "weight_sha256": "a2cde4443ca52b95feb4895c7352d390d59abdd0d55b58081d16c25c0266a0c7",
+  "apple_runtime_parity_verified": false,
+  "model_id": "m-39ce2e705a2d140eee12",
+  "manifest_fingerprint": "16afc82cbe109229cc60bc0d975ee839b0eed93ff9c75b53c2e0fe3aa584919c",
+  "artifact_identity": "selected firmware asset",
+  "integrity": {
+    "verified": true,
+    "model_id": "m-39ce2e705a2d140eee12",
+    "files": 8,
+    "size_bytes": 3749,
+    "manifest_fingerprint": "16afc82cbe109229cc60bc0d975ee839b0eed93ff9c75b53c2e0fe3aa584919c",
+    "root": "/workspace/Apple/Apple Intelligence/runtime/.state/acquisition-import/bundles/m-39ce2e705a2d140eee12/model.mlmodelc"
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "IOS27-SLA",
+    "url": "https://www.apple.com/legal/sla/docs/iOS27_iPadOS27.pdf",
+    "checked_utc": "2026-10-26T15:25:18.773926+00:00",
+    "scope_note": "Licence iOS/iPadOS 27 publique; §§1(a), 2(a)-(d), 3; pas de licence ouverte des poids constatée.",
+    "http_status": 200,
+    "final_url": "https://www.apple.com/legal/sla/docs/iOS27_iPadOS27.pdf",
+    "http_content_type": "application/pdf",
+    "http_body_bytes": 7720589,
+    "http_body_sha256": "22dda5b160b743324b5aabce110d386d66f1ca81b23e967b279cec570d43d81b"
+  },
+  {
+    "id": "SLA-INDEX",
+    "url": "https://www.apple.com/legal/sla/",
+    "checked_utc": "2026-10-26T15:25:19.753243+00:00",
+    "scope_note": "L’accord applicable au produit peut différer de cette version publiée.",
+    "http_status": 200,
+    "final_url": "https://www.apple.com/legal/sla/",
+    "http_content_type": "text/html; charset=utf-8",
+    "http_body_bytes": 107058,
+    "http_body_sha256": "b879628eb74337fe2f3882e2598379bb561838ea133d4f20780f9fad634a4308"
+  },
+  {
+    "id": "COREML-PREDICT",
+    "url": "https://apple.github.io/coremltools/docs-guides/source/model-prediction.html",
+    "checked_utc": "2026-10-26T15:25:20.252092+00:00",
+    "scope_note": "API predict macOS uniquement; CoreML non disponible Linux.",
+    "http_status": 200,
+    "final_url": "https://apple.github.io/coremltools/docs-guides/source/model-prediction.html",
+    "http_content_type": "text/html; charset=utf-8",
+    "http_body_bytes": 67798,
+    "http_body_sha256": "1cc108a6fb402b0392212e5bfd9aa440c474acbe4e9d2c762f53e70c1ba5d1a1"
+  },
+  {
+    "id": "COREML-COMPILED",
+    "url": "https://apple.github.io/coremltools/source/coremltools.models.html",
+    "checked_utc": "2026-10-26T15:25:20.443130+00:00",
+    "scope_note": "CompiledMLModel charge .mlmodelc; ce n’est pas une garantie de compatibilité inter-OS.",
+    "http_status": 200,
+    "final_url": "https://apple.github.io/coremltools/source/coremltools.models.html",
+    "http_content_type": "text/html; charset=utf-8",
+    "http_body_bytes": 620252,
+    "http_body_sha256": "2c0f6d86103b6bac7ee9778ebe2ada0877a175cec4dd2de51b5c3c23f698903b"
+  },
+  {
+    "id": "FM-GENERATE",
+    "url": "https://developer.apple.com/documentation/foundationmodels/generating-content-and-performing-tasks-with-foundation-models",
+    "checked_utc": "2026-10-26T15:25:20.608683+00:00",
+    "scope_note": "API publique système, disponibilité et téléchargement gérés par OS; ne prouve pas identité du modèle RC.",
+    "http_status": 200,
+    "final_url": "https://developer.apple.com/documentation/foundationmodels/generating-content-and-performing-tasks-with-foundation-models",
+    "http_content_type": "text/html",
+    "http_body_bytes": 19397,
+    "http_body_sha256": "d24eb0c441666e82b385813f7eac1e670d796ccd78f38b9f59ecd9b593daab8f"
+  },
+  {
+    "id": "FM-OVERVIEW",
+    "url": "https://developer.apple.com/foundation-models-framework/",
+    "checked_utc": "2026-10-26T15:25:21.075533+00:00",
+    "scope_note": "Accès public au modèle local via API Swift.",
+    "http_status": 200,
+    "final_url": "https://developer.apple.com/foundation-models-framework/",
+    "http_content_type": "text/html; charset=UTF-8",
+    "http_body_bytes": 125579,
+    "http_body_sha256": "3c952c28e68a62d0eb9ba6962a625082387dfc43c81c350df2e3c1d5ffebe606"
+  }
+]

@@ -9,6 +9,26 @@ publié le 19 octobre 2026). Extraction locale réalisée le 26 octobre 2026.
 > trouvée n'a été exécutée. Analyse statique sur images IPSW uniquement — aucun
 > montage, aucun FUSE, aucune observation on-device.
 
+## Poids et exécution des modèles
+
+Le complément [`models/inventory.md`](models/inventory.md) inventorie les
+bundles de modèles et leurs ressources au-delà du corpus de textes initial,
+avec provenance, tailles et SHA-256. Il distingue les poids extraits, les
+ressources seules et les références aux assets téléchargés absents de l'IPSW.
+Le cache de poids reste local et exclu de Git :
+[`conditions de redistribution vérifiées`](models/REDISTRIBUTION.md).
+
+Le programme [`runtime/`](runtime/README.md) fournit la sélection du modèle,
+la vérification des bundles, leurs interfaces constatées et les moteurs
+disponibles. Les preuves distinguent l'inférence des poids Apple par le moteur
+CPU livré, les vérifications statiques et les procédures Apple non exécutées.
+La portée « analyse statique » ci-dessus décrit le corpus d'origine ; ce
+complément documente séparément toute inférence effectivement réalisée.
+
+Un [client public Foundation Models](runtime/foundationmodels/README.md) est
+aussi fourni pour un Mac éligible. Il utilise le modèle installé par l'OS ;
+son identité ne doit pas être assimilée aux poids d'une référence iOS 24B115.
+
 ## Par où commencer
 
 1. **[`PROMPTS.md`](PROMPTS.md)** — le rapport : périmètre, images parcourues,

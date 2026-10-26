@@ -1,0 +1,43 @@
+{
+  "method": "Unauthenticated read-only GET, no Apple account or signed URL; public-catalog probe only. A 404 at a candidate URL does not prove the absence of any Apple delivery endpoint.",
+  "probes": [
+    {
+      "url": "https://mesu.apple.com/assets/com_apple_MobileAsset_UAF_FM_GenerativeModels/com_apple_MobileAsset_UAF_FM_GenerativeModels.xml",
+      "checked_utc": "2026-10-26T15:33:23.544125+00:00",
+      "url_basis": "Candidate conventional MobileAsset catalogue URL from firmware AutoAssetType; not a payload URL observed in this firmware.",
+      "http_status": 403,
+      "reason": "Forbidden"
+    },
+    {
+      "url": "https://mesu.apple.com/assets/com_apple_MobileAsset_UAF_FM_Visual/com_apple_MobileAsset_UAF_FM_Visual.xml",
+      "checked_utc": "2026-10-26T15:33:23.544960+00:00",
+      "url_basis": "Candidate conventional MobileAsset catalogue URL from firmware AutoAssetType; not a payload URL observed in this firmware.",
+      "http_status": 403,
+      "reason": "Forbidden"
+    },
+    {
+      "url": "https://mesu.apple.com/assets/com_apple_MobileAsset_UAF_FM_GenerativeModels.xml",
+      "checked_utc": "2026-10-26T15:33:23.545145+00:00",
+      "url_basis": "Candidate conventional MobileAsset catalogue URL from firmware AutoAssetType; not a payload URL observed in this firmware.",
+      "http_status": 403,
+      "reason": "Forbidden"
+    },
+    {
+      "url": "https://mesu.apple.com/assets/com_apple_MobileAsset_UAF_FM_Visual.xml",
+      "checked_utc": "2026-10-26T15:33:23.545319+00:00",
+      "url_basis": "Candidate conventional MobileAsset catalogue URL from firmware AutoAssetType; not a payload URL observed in this firmware.",
+      "http_status": 403,
+      "reason": "Forbidden"
+    }
+  ],
+  "diagnostic": {
+    "status": 403,
+    "response_headers": {
+      "Via": "https/1.1 nlhfd1-xdc-mx-023.ts.apple.com (acdn/25.17695), https/1.1 nlams2-edge-fx-014.ts.apple.com (acdn/25.17695), https/1.1 atman-plwaw2a-fe-002.ec.edge.apple (acdn/302.16436)",
+      "X-Cache": "miss, miss, miss",
+      "Content-Type": "text/html"
+    },
+    "body_sha256": "df6a0af1ba14d6755f7a82be0c39beba76a7a98ec2e6d4afab6437db6a41c6af",
+    "body_prefix": "<h1>not found</h1>\n"
+  }
+}

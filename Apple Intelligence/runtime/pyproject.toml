@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apple-firmware-runtime"
+version = "0.1.0"
+description = "Verified local firmware asset loader and explicit inference backends"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+apple-firmware = "apple_firmware_runtime.cli:main"
+
+[tool.setuptools]
+packages = ["apple_firmware_runtime"]
+
+[tool.setuptools.package-data]
+apple_firmware_runtime = ["*.swift"]

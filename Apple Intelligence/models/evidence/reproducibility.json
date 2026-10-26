@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "command": "python3 'Apple Intelligence/models/scan_models.py' --reextract --hash-images",
+  "compared_outputs": [
+    "manifest.json",
+    "assets.jsonl",
+    "resources.jsonl",
+    "references.jsonl",
+    "summary.json"
+  ],
+  "output_sha256": {
+    "manifest.json": "36796cbac7124884cac6427e1c5747a919a3582e72ef82c728798129b6530840",
+    "assets.jsonl": "c146fe3e79276ec869e4dd5aea1f4e2fef5b24f9cbe9373e872e89c2c8df0f64",
+    "resources.jsonl": "c56b2e1d1980c74869a6b62c0a0ebdffddf2c92886234ac0e6ea3e26e0990b1c",
+    "references.jsonl": "3264f47693111c3fd4fce9ab2cb361f1cbc8f551ac83757b4415f95c3707b667",
+    "summary.json": "b5c29b0f671ff6b8c530ea09e2fb650f729c5799635e060534c1d29ca47a3ce1"
+  },
+  "byte_identical_rerun": true,
+  "fresh_apfs_extraction_of_all_selected_files": true
+}
