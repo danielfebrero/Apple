@@ -1,0 +1,29 @@
+{
+  "backend": "coreml-protobuf-cpu-experimental",
+  "model_type": "mlProgram",
+  "outputs": {
+    "Identity": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "data": [
+        0.9870795607566833
+      ]
+    }
+  },
+  "apple_runtime_parity_verified": false,
+  "limitation": "Independent CPU mathematics; Apple runtime parity and application preprocessing not established",
+  "model_id": "m-c0787c3ed9e447b6892c",
+  "manifest_fingerprint": "6f4edc4283776a03680b82d95100d9f31199f541205656005e556faca81ce677",
+  "artifact_identity": "selected firmware asset",
+  "integrity": {
+    "verified": true,
+    "model_id": "m-c0787c3ed9e447b6892c",
+    "files": 3,
+    "size_bytes": 766932,
+    "manifest_fingerprint": "6f4edc4283776a03680b82d95100d9f31199f541205656005e556faca81ce677",
+    "root": "/workspace/Apple/Apple Intelligence/runtime/.state/cpu-demos/store/bundles/m-c0787c3ed9e447b6892c/model.mlpackage"
+  }
+}

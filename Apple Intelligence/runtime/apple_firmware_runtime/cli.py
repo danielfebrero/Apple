@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import os
 import platform
@@ -11,7 +12,7 @@ import sys
 from pathlib import Path
 
 from . import __version__
-from .backends import coreml, portable, read_json, static_inspection
+from .backends import coreml, portable, protobuf_cpu, read_json, static_inspection
 from .catalog import Catalog, RuntimeFailure
 from .store import Store, verify_bundle
 
@@ -42,7 +43,7 @@ def parser() -> argparse.ArgumentParser:
             op.add_argument("--load", action="store_true", help="Load in Core ML/macOS and return public modelDescription schema")
         if name == "predict":
             op.add_argument("--input", required=True, type=Path, help="JSON object, feature names from inspect")
-            op.add_argument("--backend", choices=("coreml", "espresso-linear-cpu-experimental"), default="coreml")
+            op.add_argument("--backend", choices=("coreml", "espresso-linear-cpu-experimental", "coreml-protobuf-cpu-experimental"), default="coreml")
             op.add_argument("--output", type=Path, help="Write JSON result to this local file")
         if name in ("inspect", "predict"):
             op.add_argument("--compute", choices=("cpu", "all", "cpu-and-gpu", "cpu-and-ne"), default="cpu")
@@ -58,6 +59,10 @@ def doctor(catalog_path: Path, store: Store) -> dict:
                        "limitation": "An iOS compiled model may not load on macOS; runtime errors are preserved"},
             "espresso_linear_cpu_experimental": {"available": True,
                        "limitation": "Strict attested InnerProduct(62→1)+sigmoid subset; no Apple parity measurement"},
+            "coreml_protobuf_cpu_experimental": {
+                       "dependencies_present": all(importlib.util.find_spec(x) is not None for x in ("numpy", "coremltools")),
+                       "required": "pip install '.[cpu]'",
+                       "limitation": "Trees/pipelines and bounded MIL/dense operators; unsupported graphs fail explicitly; no Apple parity measurement"},
             "apple_intelligence_generation": {"available_from_this_firmware_corpus": False,
                        "reason": "Prompts and asset references do not supply AFM generation weights/runtime"},
             "network_requests": False}
@@ -90,8 +95,12 @@ def run(args: argparse.Namespace) -> dict | list:
     inputs = read_json(args.input)
     if not isinstance(inputs, dict):
         raise RuntimeFailure("invalid_inputs", "Input JSON must be an object mapping actual feature names to values")
-    result = (coreml(model, bundle, store.root, inputs=inputs, compute=args.compute) if args.backend == "coreml"
-              else portable(model, bundle, inputs))
+    if args.backend == "coreml":
+        result = coreml(model, bundle, store.root, inputs=inputs, compute=args.compute)
+    elif args.backend == "coreml-protobuf-cpu-experimental":
+        result = protobuf_cpu(model, bundle, inputs)
+    else:
+        result = portable(model, bundle, inputs)
     result["integrity"] = verified
     if args.output:
         args.output.write_text(json.dumps(result, ensure_ascii=False, allow_nan=False, indent=2) + "\n")

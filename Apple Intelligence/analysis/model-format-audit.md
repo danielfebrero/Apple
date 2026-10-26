@@ -1,5 +1,9 @@
 # Audit indépendant des formats et de l'exécution des modèles
 
+> Revue de la livraison initiale. Le [complément Debian ultérieur](../runtime/DEBIAN.md)
+> ajoute des interpréteurs protobuf/MIL et 12 modèles exécutés ; les limites
+> d'exécution ci-dessous décrivent l'état avant ce complément.
+
 Audit local du 26 octobre 2026, build `24B115`, sans appareil et sans exécution
 d'instructions extraites. Sources : inventaire APFS complet de l'OS, inventaire
 SystemOS Cryptex, octets extraits par le lecteur APFS existant, puis catalogue

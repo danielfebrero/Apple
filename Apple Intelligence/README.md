@@ -25,6 +25,11 @@ CPU livré, les vérifications statiques et les procédures Apple non exécutée
 La portée « analyse statique » ci-dessus décrit le corpus d'origine ; ce
 complément documente séparément toute inférence effectivement réalisée.
 
+Le [complément Debian](runtime/DEBIAN.md) exécute désormais 12 modèles
+supplémentaires (arbres, pipelines, dense, MIL) avec leurs vrais poids,
+soit 13 avec le scoreur Espresso initial. Les [voies d'acquisition](models/DOWNLOADS.md)
+documentent aussi le toolkit Developer et les assets génératifs encore absents.
+
 Un [client public Foundation Models](runtime/foundationmodels/README.md) est
 aussi fourni pour un Mac éligible. Il utilise le modèle installé par l'OS ;
 son identité ne doit pas être assimilée aux poids d'une référence iOS 24B115.

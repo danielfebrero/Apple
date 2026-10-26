@@ -132,3 +132,21 @@ def portable(model: Model, bundle: Path, inputs: dict) -> dict:
         raise RuntimeFailure("portable_backend_rejected", str(exc)) from exc
     return response | {"model_id": model.id, "manifest_fingerprint": model.fingerprint,
                        "artifact_identity": "selected firmware asset"}
+
+
+def protobuf_cpu(model: Model, bundle: Path, inputs: dict) -> dict:
+    try:
+        from .protobuf_cpu import predict_file
+    except ImportError as exc:
+        raise RuntimeFailure("backend_unavailable", "Install optional CPU dependencies: pip install '.[cpu]'", diagnostic=str(exc)) from exc
+    if model.declaration.get("format") not in ("coreml_protobuf", "coreml_package"):
+        raise RuntimeFailure("unsupported_format", "CPU protobuf backend needs an uncompiled .mlmodel or .mlpackage")
+    files = [bundle / f["path"] for f in model.files if f["path"].endswith(".mlmodel")]
+    if len(files) != 1:
+        raise RuntimeFailure("unsupported_format", "Expected exactly one protobuf entrypoint")
+    try:
+        response = predict_file(files[0], inputs)
+    except (ValueError, OSError, KeyError, IndexError, TypeError, ArithmeticError) as exc:
+        raise RuntimeFailure("portable_backend_rejected", str(exc)) from exc
+    return response | {"model_id": model.id, "manifest_fingerprint": model.fingerprint,
+                       "artifact_identity": "selected firmware asset"}

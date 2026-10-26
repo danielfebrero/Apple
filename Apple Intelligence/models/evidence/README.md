@@ -1,5 +1,15 @@
 # Preuves de la livraison du 26 octobre 2026
 
+Complément : [`cpu-protobuf-demos.json`](cpu-protobuf-demos.json) publie
+24 inférences de 12 modèles supplémentaires, les recettes d'entrée zéro/un,
+les empreintes et les 13 refus parmi les 25 candidats non compilés.
+[`mobileasset-probes.json`](mobileasset-probes.json) relève cinq échecs HTTP
+sur des URL candidates, sans acquisition de poids AFM. Détails :
+[`DEBIAN.md`](../../runtime/DEBIAN.md) et [`DOWNLOADS.md`](../DOWNLOADS.md).
+[`cpu-validation.json`](cpu-validation.json) conserve les empreintes de code,
+les 38 résultats de tests (37 réussites, 1 saut macOS) et le contrôle de la
+[`CLI installée`](cpu-installed-cli.json) depuis `/tmp`.
+
 Ces fichiers distinguent les contrôles d'octets, les calculs utilisant de vrais
 poids et les étapes Apple non réalisées. Aucun résultat d'inférence Apple n'est
 déduit d'une inspection statique ou d'un test utilisant des données artificielles.

@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-26T16:31:07.041695+00:00",
+  "platform": "Linux-6.1.0-53-amd64-x86_64-with-glibc2.36",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "coremltools": "9.0",
+    "protobuf": "7.36.2"
+  },
+  "tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "observed_tests": 38,
+    "observed_passes": 37,
+    "observed_skips": 1,
+    "observed_failures": 0,
+    "skip_reason": "Requires macOS Swift/CoreML SDK"
+  },
+  "demo_counts": {
+    "executed": 12,
+    "partial": 0,
+    "unsupported": 13
+  },
+  "successful_numeric_predictions": 24,
+  "model_manifest_sha256": "36796cbac7124884cac6427e1c5747a919a3582e72ef82c728798129b6530840",
+  "source_sha256": {
+    "apple_firmware_runtime/protobuf_cpu.py": "23c3e27c9d11c50446fe95094faa86c6f586a74941d8182be36a3f2038546961",
+    "apple_firmware_runtime/backends.py": "6a17591962ba0efc6f4066b0f7c7b58be12d3d867652f415f4412a6e63e57342",
+    "apple_firmware_runtime/cli.py": "476fbc36c40a2f376daa93410b9e86321198a678de77f0c914699c8cd6f47f56",
+    "examples/demo_cpu_catalog.py": "ac5545eaa6d7be58b406d2ecb238240ffb778cf8e81f10bb68bfc7960f0a3a65",
+    "tests/test_protobuf_cpu.py": "0a46f0f037a8c16e207253012977965550252d8d436d1ee08231b051970a0f69",
+    "tests/test_download_asset.py": "1993203d360d649d5f2599f3a04f6d5c80cf13882ef4fb8228f31a0c3365f27d",
+    "pyproject.toml": "ce50a9090e7f2ffb04a56ed73f9b5acaa34e94419bf6c3e185216befa9094283"
+  },
+  "download_source_sha256": "1dcd189a2529a5c4aa7439d94884faeaab9ddb5769e2144a89c699b542a27f98",
+  "installed_cli": {
+    "exit_code": 0,
+    "cwd": "/tmp",
+    "backend": "coreml-protobuf-cpu-experimental",
+    "outputs": {
+      "Identity": {
+        "shape": [
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "data": [
+          0.9870795607566833
+        ]
+      }
+    },
+    "evidence": "cpu-installed-cli.json"
+  },
+  "apple_runtime_parity_verified": false,
+  "new_afm_weights_acquired": false
+}

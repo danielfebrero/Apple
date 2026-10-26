@@ -1,0 +1,64 @@
+{
+  "probes": [
+    {
+      "url": "https://mesu.apple.com/assets/com_apple_MobileAsset_UAF_FM_GenerativeModels/com_apple_MobileAsset_UAF_FM_GenerativeModels.xml",
+      "url_status": "operator_supplied_or_candidate_not_firmware_attested",
+      "at": "2026-10-26T16:27:14.600226+00:00",
+      "payload_acquired": false,
+      "status": "http_error",
+      "http_status": 403,
+      "response_prefix_sha256": "df6a0af1ba14d6755f7a82be0c39beba76a7a98ec2e6d4afab6437db6a41c6af",
+      "response_prefix_bytes": 19,
+      "content_type": "text/html",
+      "note": "Failure of this URL from this host only; not proof of authentication or model availability"
+    },
+    {
+      "url": "https://mesu.apple.com/assets/com_apple_MobileAsset_UAF_FM_Visual/com_apple_MobileAsset_UAF_FM_Visual.xml",
+      "url_status": "operator_supplied_or_candidate_not_firmware_attested",
+      "at": "2026-10-26T16:27:14.892142+00:00",
+      "payload_acquired": false,
+      "status": "http_error",
+      "http_status": 403,
+      "response_prefix_sha256": "df6a0af1ba14d6755f7a82be0c39beba76a7a98ec2e6d4afab6437db6a41c6af",
+      "response_prefix_bytes": 19,
+      "content_type": "text/html",
+      "note": "Failure of this URL from this host only; not proof of authentication or model availability"
+    },
+    {
+      "url": "https://mesu.apple.com/assets/com_apple_MobileAsset_UAF_FM_Overrides/com_apple_MobileAsset_UAF_FM_Overrides.xml",
+      "url_status": "operator_supplied_or_candidate_not_firmware_attested",
+      "at": "2026-10-26T16:27:15.414426+00:00",
+      "payload_acquired": false,
+      "status": "http_error",
+      "http_status": 403,
+      "response_prefix_sha256": "df6a0af1ba14d6755f7a82be0c39beba76a7a98ec2e6d4afab6437db6a41c6af",
+      "response_prefix_bytes": 19,
+      "content_type": "text/html",
+      "note": "Failure of this URL from this host only; not proof of authentication or model availability"
+    },
+    {
+      "url": "https://mesu.apple.com/assets/macos/com_apple_MobileAsset_UAF_FM_GenerativeModels/com_apple_MobileAsset_UAF_FM_GenerativeModels.xml",
+      "url_status": "operator_supplied_or_candidate_not_firmware_attested",
+      "at": "2026-10-26T16:27:15.974729+00:00",
+      "payload_acquired": false,
+      "status": "http_error",
+      "http_status": 403,
+      "response_prefix_sha256": "df6a0af1ba14d6755f7a82be0c39beba76a7a98ec2e6d4afab6437db6a41c6af",
+      "response_prefix_bytes": 19,
+      "content_type": "text/html",
+      "note": "Failure of this URL from this host only; not proof of authentication or model availability"
+    },
+    {
+      "url": "https://mesu.apple.com/assets/macos/com_apple_MobileAsset_UAF_FM_Visual/com_apple_MobileAsset_UAF_FM_Visual.xml",
+      "url_status": "operator_supplied_or_candidate_not_firmware_attested",
+      "at": "2026-10-26T16:27:16.530092+00:00",
+      "payload_acquired": false,
+      "status": "http_error",
+      "http_status": 403,
+      "response_prefix_sha256": "df6a0af1ba14d6755f7a82be0c39beba76a7a98ec2e6d4afab6437db6a41c6af",
+      "response_prefix_bytes": 19,
+      "content_type": "text/html",
+      "note": "Failure of this URL from this host only; not proof of authentication or model availability"
+    }
+  ]
+}

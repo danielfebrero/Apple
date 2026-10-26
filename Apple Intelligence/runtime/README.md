@@ -1,10 +1,16 @@
 # Exécuter les modèles réellement disponibles
 
+**Complément Debian :** [12 modèles supplémentaires exécutés sur CPU](DEBIAN.md)
+(arbres, pipelines, réseau dense et deux programmes MIL), avec 24 démonstrations
+et leurs sorties. Le backend Espresso décrit ci-dessous reste disponible.
+Les [chemins d'acquisition AFM](../models/DOWNLOADS.md) distinguent le toolkit
+Developer des assets iOS 27 absents.
+
 Ce programme sélectionne les **octets du firmware inventorié**, vérifie leur
 SHA-256, les importe dans un stockage local, inspecte leurs descriptions et
 appelle un backend explicite. Il ne télécharge aucun modèle de remplacement.
 
-Une inférence CPU réelle fonctionne ici sur **EntitySimilarityLinearModel**,
+Le premier backend CPU fonctionne sur **EntitySimilarityLinearModel**,
 un petit réseau de similarité d'entités adjacent à Apple Intelligence :
 62 nombres → couche linéaire → sigmoid. Ses poids proviennent du firmware.
 Ce réseau n'est pas le modèle génératif Apple Foundation Models. Les poids

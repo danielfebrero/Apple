@@ -9,6 +9,9 @@ description = "Verified local firmware asset loader and explicit inference backe
 requires-python = ">=3.10"
 dependencies = []
 
+[project.optional-dependencies]
+cpu = ["numpy>=2.0,<3", "coremltools>=9.0,<10"]
+
 [project.scripts]
 apple-firmware = "apple_firmware_runtime.cli:main"
 
