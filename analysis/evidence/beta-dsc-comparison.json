@@ -1,0 +1,381 @@
+{
+  "method": "read-only dyld mapping and Mach-O section parsing; NUL-delimited UTF-8 printable literals of length >=4; exact text set comparison limited to __cstring and __oslogstring of four identical framework paths",
+  "section_comparison": [
+    {
+      "firmware_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+      "distinct_literals_beta": 4847,
+      "distinct_literals_rc": 4859,
+      "common": 4846,
+      "added": [
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1b6adfa",
+          "virtual_address": "0x1b9f6adfa",
+          "length_bytes": 12,
+          "text": "Axon.Planner",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1b72410",
+          "virtual_address": "0x1b9f72410",
+          "length_bytes": 62,
+          "text": "com.apple.fm.language.instruct_3b.homekit_documentation_search",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1b74cd0",
+          "virtual_address": "0x1b9f74cd0",
+          "length_bytes": 53,
+          "text": "com.apple.fm.language.instruct_server_v2.axon_planner",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1b7b270",
+          "virtual_address": "0x1b9f7b270",
+          "length_bytes": 88,
+          "text": "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1b7ccb4",
+          "virtual_address": "0x1b9f7ccb4",
+          "length_bytes": 15,
+          "text": "afm_cider_mt_v1",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1b7ccd0",
+          "virtual_address": "0x1b9f7ccd0",
+          "length_bytes": 22,
+          "text": "afm_cider_speech_mt_v1",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1b84e40",
+          "virtual_address": "0x1b9f84e40",
+          "length_bytes": 116,
+          "text": "Invalid configuration for com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override: ",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1b8b830",
+          "virtual_address": "0x1b9f8b830",
+          "length_bytes": 81,
+          "text": "Invalid configuration for com.apple.fm.language.instruct_server_v2.axon_planner: ",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1b91a80",
+          "virtual_address": "0x1b9f91a80",
+          "length_bytes": 26,
+          "text": "HomeKitDocumentationSearch",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1b92d10",
+          "virtual_address": "0x1b9f92d10",
+          "length_bytes": 19,
+          "text": "ServerV2AxonPlanner",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1bacae0",
+          "virtual_address": "0x1b9facae0",
+          "length_bytes": 96,
+          "text": "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1bacb50",
+          "virtual_address": "0x1b9facb50",
+          "length_bytes": 103,
+          "text": "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override.generic_sparse",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        },
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x1bb18c0",
+          "virtual_address": "0x1b9fb18c0",
+          "length_bytes": 111,
+          "text": "com.apple.fm.language.instruct_3b.homekit_documentation_search.adapter_metadata_override?variant=generic_sparse",
+          "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+        }
+      ],
+      "removed": [
+        {
+          "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+          "section": "__TEXT,__cstring",
+          "source_cache_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.15",
+          "source_cache_offset": "0x28aa834",
+          "virtual_address": "0x1bacaa834",
+          "length_bytes": 9,
+          "text": "s2s_mt_v1",
+          "sha256": "f7099c1d6559d81846283ef065fda97f4997ce4a1b92f8800147e67d2ffe19ec"
+        }
+      ],
+      "sections": {
+        "beta": [
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+            "section": "__TEXT,__cstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.15",
+            "source_cache_offset": "0x28974f0",
+            "virtual_address": "0x1bac974f0",
+            "size": 306654,
+            "sha256_section_bytes": "a80faf1f1e145835a77bc32f96a1fd1935b8a190d4973858a508f8262df58d60",
+            "sha256": "f7099c1d6559d81846283ef065fda97f4997ce4a1b92f8800147e67d2ffe19ec"
+          },
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+            "section": "__TEXT,__oslogstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.15",
+            "source_cache_offset": "0x28e22d0",
+            "virtual_address": "0x1bace22d0",
+            "size": 7945,
+            "sha256_section_bytes": "0202849a778d19b11db00a143e871d163ce74e5b55693c3cb510ba41fda64d24",
+            "sha256": "f7099c1d6559d81846283ef065fda97f4997ce4a1b92f8800147e67d2ffe19ec"
+          }
+        ],
+        "rc": [
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+            "section": "__TEXT,__cstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+            "source_cache_offset": "0x1b69880",
+            "virtual_address": "0x1b9f69880",
+            "size": 307566,
+            "sha256_section_bytes": "a4b623f7831c98db9b61b9bc4ba78d0d2ff23cbaa2cd1747dbdde4e264a80e93",
+            "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+          },
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog",
+            "section": "__TEXT,__oslogstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+            "source_cache_offset": "0x1bb49f0",
+            "virtual_address": "0x1b9fb49f0",
+            "size": 7945,
+            "sha256_section_bytes": "0202849a778d19b11db00a143e871d163ce74e5b55693c3cb510ba41fda64d24",
+            "sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d"
+          }
+        ]
+      }
+    },
+    {
+      "firmware_path": "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/ModelCatalogRuntime",
+      "distinct_literals_beta": 398,
+      "distinct_literals_rc": 398,
+      "common": 398,
+      "added": [],
+      "removed": [],
+      "sections": {
+        "beta": [
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/ModelCatalogRuntime",
+            "section": "__TEXT,__cstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.42",
+            "source_cache_offset": "0x6500420",
+            "virtual_address": "0x23e900420",
+            "size": 6718,
+            "sha256_section_bytes": "3717d1ee2568b4f697e1c26d131ebd0e1dffe88c99d03b07a34f6669a102facc",
+            "sha256": "0f75eb60c7a4d4f6dfb8b8228d880a503899da1160cb1b4b60025ff5c396e0e7"
+          },
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/ModelCatalogRuntime",
+            "section": "__TEXT,__oslogstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.42",
+            "source_cache_offset": "0x6505030",
+            "virtual_address": "0x23e905030",
+            "size": 19114,
+            "sha256_section_bytes": "1c22ffc0dabe87bfd00b8527c942c326082537747c28113cff591980d000038d",
+            "sha256": "0f75eb60c7a4d4f6dfb8b8228d880a503899da1160cb1b4b60025ff5c396e0e7"
+          }
+        ],
+        "rc": [
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/ModelCatalogRuntime",
+            "section": "__TEXT,__cstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+            "source_cache_offset": "0x65a1430",
+            "virtual_address": "0x23e9a1430",
+            "size": 6718,
+            "sha256_section_bytes": "3717d1ee2568b4f697e1c26d131ebd0e1dffe88c99d03b07a34f6669a102facc",
+            "sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2"
+          },
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/ModelCatalogRuntime",
+            "section": "__TEXT,__oslogstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+            "source_cache_offset": "0x65a6040",
+            "virtual_address": "0x23e9a6040",
+            "size": 19114,
+            "sha256_section_bytes": "1c22ffc0dabe87bfd00b8527c942c326082537747c28113cff591980d000038d",
+            "sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2"
+          }
+        ]
+      }
+    },
+    {
+      "firmware_path": "/System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices",
+      "distinct_literals_beta": 419,
+      "distinct_literals_rc": 419,
+      "common": 419,
+      "added": [],
+      "removed": [],
+      "sections": {
+        "beta": [
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices",
+            "section": "__TEXT,__oslogstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.07",
+            "source_cache_offset": "0x7a5a330",
+            "virtual_address": "0x19fe5a330",
+            "size": 7515,
+            "sha256_section_bytes": "23e85954d96e29a5c054df8acf320776bdf6db982e1ef19753dc2a152ba1b936",
+            "sha256": "06209ff4ace3b8cd1e76027eba8c7ade8e7170b613106e3bbab20ff2ca5eda8b"
+          },
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices",
+            "section": "__TEXT,__cstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.07",
+            "source_cache_offset": "0x7a5c090",
+            "virtual_address": "0x19fe5c090",
+            "size": 10538,
+            "sha256_section_bytes": "4640de0bb7116058364018f928b50511d9a9ffebabb1b34406509738e486e378",
+            "sha256": "06209ff4ace3b8cd1e76027eba8c7ade8e7170b613106e3bbab20ff2ca5eda8b"
+          }
+        ],
+        "rc": [
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices",
+            "section": "__TEXT,__oslogstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.07",
+            "source_cache_offset": "0x7110330",
+            "virtual_address": "0x19f510330",
+            "size": 7515,
+            "sha256_section_bytes": "23e85954d96e29a5c054df8acf320776bdf6db982e1ef19753dc2a152ba1b936",
+            "sha256": "e04a82e00d64131e6c69f48e064db1425726f46d50af5c51d067a181b46d3050"
+          },
+          {
+            "image_path": "/System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices",
+            "section": "__TEXT,__cstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.07",
+            "source_cache_offset": "0x7112090",
+            "virtual_address": "0x19f512090",
+            "size": 10538,
+            "sha256_section_bytes": "4640de0bb7116058364018f928b50511d9a9ffebabb1b34406509738e486e378",
+            "sha256": "e04a82e00d64131e6c69f48e064db1425726f46d50af5c51d067a181b46d3050"
+          }
+        ]
+      }
+    },
+    {
+      "firmware_path": "/System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework",
+      "distinct_literals_beta": 2114,
+      "distinct_literals_rc": 2114,
+      "common": 2114,
+      "added": [],
+      "removed": [],
+      "sections": {
+        "beta": [
+          {
+            "image_path": "/System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework",
+            "section": "__TEXT,__cstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.28",
+            "source_cache_offset": "0x5e362c0",
+            "virtual_address": "0x2062362c0",
+            "size": 47046,
+            "sha256_section_bytes": "dca9f3ea2f2740a616143735a6b4a57578b555e495ceb3d10c0e1508ee2d359e",
+            "sha256": "e93f50926d4f697c427f8939b0a74e496663051d4af58bc7f9d65bdbdd5baa4c"
+          },
+          {
+            "image_path": "/System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework",
+            "section": "__TEXT,__oslogstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.28",
+            "source_cache_offset": "0x5e41a90",
+            "virtual_address": "0x206241a90",
+            "size": 61639,
+            "sha256_section_bytes": "ba0c1b10d6c6aca59b0d83193c669a4dc70976f3c43e49f34994f2eaeff55c13",
+            "sha256": "e93f50926d4f697c427f8939b0a74e496663051d4af58bc7f9d65bdbdd5baa4c"
+          }
+        ],
+        "rc": [
+          {
+            "image_path": "/System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework",
+            "section": "__TEXT,__cstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.28",
+            "source_cache_offset": "0x548e2c0",
+            "virtual_address": "0x20588e2c0",
+            "size": 47046,
+            "sha256_section_bytes": "dca9f3ea2f2740a616143735a6b4a57578b555e495ceb3d10c0e1508ee2d359e",
+            "sha256": "c8b612e814a4c26ede6b3edf16a337191c94dff64b0a342332f667b815c09a3b"
+          },
+          {
+            "image_path": "/System/Library/PrivateFrameworks/UnifiedAssetFramework.framework/UnifiedAssetFramework",
+            "section": "__TEXT,__oslogstring",
+            "source_cache_path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.28",
+            "source_cache_offset": "0x5499a90",
+            "virtual_address": "0x205899a90",
+            "size": 61639,
+            "sha256_section_bytes": "ba0c1b10d6c6aca59b0d83193c669a4dc70976f3c43e49f34994f2eaeff55c13",
+            "sha256": "c8b612e814a4c26ede6b3edf16a337191c94dff64b0a342332f667b815c09a3b"
+          }
+        ]
+      }
+    }
+  ],
+  "source_hashes": {
+    "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.07": "06209ff4ace3b8cd1e76027eba8c7ade8e7170b613106e3bbab20ff2ca5eda8b",
+    "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.15": "f7099c1d6559d81846283ef065fda97f4997ce4a1b92f8800147e67d2ffe19ec",
+    "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.28": "e93f50926d4f697c427f8939b0a74e496663051d4af58bc7f9d65bdbdd5baa4c",
+    "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.42": "0f75eb60c7a4d4f6dfb8b8228d880a503899da1160cb1b4b60025ff5c396e0e7",
+    "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.07": "e04a82e00d64131e6c69f48e064db1425726f46d50af5c51d067a181b46d3050",
+    "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d",
+    "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.28": "c8b612e814a4c26ede6b3edf16a337191c94dff64b0a342332f667b815c09a3b",
+    "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2"
+  },
+  "image_counts": {
+    "beta": 4767,
+    "rc": 4770
+  },
+  "parse_errors": {
+    "beta": [],
+    "rc": []
+  }
+}

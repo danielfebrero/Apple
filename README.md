@@ -18,6 +18,9 @@ publié le 19 octobre 2026). Extraction locale réalisée le 26 octobre 2026.
 3. **[`prompts.jsonl`](prompts.jsonl)** — les 231 textes avec toutes leurs
    localisations sources ; **[`prompts/`](prompts/)** garde chaque texte en
    `.txt` (octets UTF-8 exacts).
+4. **[`analysis/`](analysis/README.md)** — revue statique de transparence et de
+   conception : 24 constats, observations comparatives et limites, avec SHA-256,
+   faits séparés des inférences et comparaison bornée avec la build `24B5089g`.
 
 ## Chiffres clés
 

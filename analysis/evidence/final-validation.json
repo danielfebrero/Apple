@@ -1,0 +1,519 @@
+{
+  "checked_utc": "2026-10-26T15:04:22.235333+00:00",
+  "method": "Independent read-only file SHA256, literal byte and terminal-NUL checks, JSON pointers, complete beta/RC section reread and set difference recomputation. No firmware execution.",
+  "findings": 24,
+  "evidence_occurrences": 141,
+  "unique_files_hashed": 72,
+  "cited_literals_checked": 47,
+  "routing_index_literals_checked": 48,
+  "json_pointers_checked": 13,
+  "beta_sections_checked": 16,
+  "beta_delta_literals_checked": 14,
+  "files": [
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/.blacksmith/fs-inventory.json",
+      "bytes": 309012,
+      "expected_sha256": "e7f6a765363acede4f11559e72455fd67fe508ba9ee8b365567fc6fe1a4db95a",
+      "actual_sha256": "e7f6a765363acede4f11559e72455fd67fe508ba9ee8b365567fc6fe1a4db95a",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.07",
+      "bytes": 130957312,
+      "expected_sha256": "06209ff4ace3b8cd1e76027eba8c7ade8e7170b613106e3bbab20ff2ca5eda8b",
+      "actual_sha256": "06209ff4ace3b8cd1e76027eba8c7ade8e7170b613106e3bbab20ff2ca5eda8b",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.15",
+      "bytes": 131170304,
+      "expected_sha256": "f7099c1d6559d81846283ef065fda97f4997ce4a1b92f8800147e67d2ffe19ec",
+      "actual_sha256": "f7099c1d6559d81846283ef065fda97f4997ce4a1b92f8800147e67d2ffe19ec",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.28",
+      "bytes": 130957312,
+      "expected_sha256": "e93f50926d4f697c427f8939b0a74e496663051d4af58bc7f9d65bdbdd5baa4c",
+      "actual_sha256": "e93f50926d4f697c427f8939b0a74e496663051d4af58bc7f9d65bdbdd5baa4c",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/dsc/dyld_shared_cache_arm64e.42",
+      "bytes": 131170304,
+      "expected_sha256": "0f75eb60c7a4d4f6dfb8b8228d880a503899da1160cb1b4b60025ff5c396e0e7",
+      "actual_sha256": "0f75eb60c7a4d4f6dfb8b8228d880a503899da1160cb1b4b60025ff5c396e0e7",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.intelligenceflowd.plist",
+      "bytes": 0,
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.modelcatalogd.plist",
+      "bytes": 0,
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.modelmanagerd.plist",
+      "bytes": 0,
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.01",
+      "bytes": 131547136,
+      "expected_sha256": "6633388923338f070d075cdbcd8d79fa5bbc156853d03244f114956428d8c86d",
+      "actual_sha256": "6633388923338f070d075cdbcd8d79fa5bbc156853d03244f114956428d8c86d",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.07",
+      "bytes": 131268608,
+      "expected_sha256": "e04a82e00d64131e6c69f48e064db1425726f46d50af5c51d067a181b46d3050",
+      "actual_sha256": "e04a82e00d64131e6c69f48e064db1425726f46d50af5c51d067a181b46d3050",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.11",
+      "bytes": 131481600,
+      "expected_sha256": "1abfa9f6ad6fe9f9ed53dacf846ebcb6c512814508cb47c5b0cd66c1c53abac0",
+      "actual_sha256": "1abfa9f6ad6fe9f9ed53dacf846ebcb6c512814508cb47c5b0cd66c1c53abac0",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.15",
+      "bytes": 131383296,
+      "expected_sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d",
+      "actual_sha256": "0c53b067311a0656ac14d9031c3fafbff4c0c889aa2df761d134d500c7b1280d",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.21",
+      "bytes": 130957312,
+      "expected_sha256": "979d3287ffc4b427c2ad20a07682b2573ca395eea75a9d23debb2206c28c10f8",
+      "actual_sha256": "979d3287ffc4b427c2ad20a07682b2573ca395eea75a9d23debb2206c28c10f8",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.28",
+      "bytes": 131055616,
+      "expected_sha256": "c8b612e814a4c26ede6b3edf16a337191c94dff64b0a342332f667b815c09a3b",
+      "actual_sha256": "c8b612e814a4c26ede6b3edf16a337191c94dff64b0a342332f667b815c09a3b",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.40",
+      "bytes": 131153920,
+      "expected_sha256": "bf39e35c9f86485d1ba75435aa052469de804fce09649f7443751b9d451ab361",
+      "actual_sha256": "bf39e35c9f86485d1ba75435aa052469de804fce09649f7443751b9d451ab361",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.42",
+      "bytes": 131170304,
+      "expected_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "actual_sha256": "48b5ec2984c8b649ea145c8fcef0bfa3b4d48596759fd7928c4189a9baae37e2",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.48",
+      "bytes": 130793472,
+      "expected_sha256": "d48cd7db2f123e6010c50f98d1479fdd54b50118a7b997b3bf99abd84081426f",
+      "actual_sha256": "d48cd7db2f123e6010c50f98d1479fdd54b50118a7b997b3bf99abd84081426f",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.50",
+      "bytes": 131252224,
+      "expected_sha256": "078662e6dd6134d9d6fdf21ded3bba964e5bdaf1c1cfc3e86d8b935cac95cbce",
+      "actual_sha256": "078662e6dd6134d9d6fdf21ded3bba964e5bdaf1c1cfc3e86d8b935cac95cbce",
+      "ok": true
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272rc/_ipsw/dsc-24B115/dyld_shared_cache_arm64e.69",
+      "bytes": 131088384,
+      "expected_sha256": "bb6028880684ec5952353b4f4f9988fb5a80f3c74959c7235b33bde08345e142",
+      "actual_sha256": "bb6028880684ec5952353b4f4f9988fb5a80f3c74959c7235b33bde08345e142",
+      "ok": true
+    },
+    {
+      "path": "analysis/evidence/beta-dsc-comparison.json",
+      "bytes": 21285,
+      "expected_sha256": "d216782e99c3d448598c706633516542cf47ab53431475818bbff1559f3bb464",
+      "actual_sha256": "d216782e99c3d448598c706633516542cf47ab53431475818bbff1559f3bb464",
+      "ok": true
+    },
+    {
+      "path": "analysis/evidence/beta-fs-comparison.json",
+      "bytes": 49296,
+      "expected_sha256": "a3e22efd5a15bee8c026d0409d6302913d9e34ba6c4fcbc93d4a68a5d2b6f2cf",
+      "actual_sha256": "a3e22efd5a15bee8c026d0409d6302913d9e34ba6c4fcbc93d4a68a5d2b6f2cf",
+      "ok": true
+    },
+    {
+      "path": "analysis/evidence/beta2-BuildManifest.plist",
+      "bytes": 1461933,
+      "expected_sha256": "3f8dae55cdf0a6b3d3b3092b01775f5eae6028a4e6ab534dbaccec548f97064a",
+      "actual_sha256": "3f8dae55cdf0a6b3d3b3092b01775f5eae6028a4e6ab534dbaccec548f97064a",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/DifferentialPrivacy/Configuration/Budgets/fedstats.com.apple.insights.pcc-safety-metrics.plist",
+      "bytes": 127,
+      "expected_sha256": "1762bef19f631973bf58970e0479bd5e8d2740239fc954db494f8543b91eb42d",
+      "actual_sha256": "1762bef19f631973bf58970e0479bd5e8d2740239fc954db494f8543b91eb42d",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/DifferentialPrivacy/Configuration/Budgets/pfl.com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.SiriSafety.results.plist",
+      "bytes": 144,
+      "expected_sha256": "48c7c6d758c18239c3b939fdc4352da0d6f65eabe45c4aae4fffbcedaf380e54",
+      "actual_sha256": "48c7c6d758c18239c3b939fdc4352da0d6f65eabe45c4aae4fffbcedaf380e54",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/DifferentialPrivacy/Configuration/Collections/com.apple.insights.pcc-safety-metrics.plist",
+      "bytes": 246,
+      "expected_sha256": "eae1274c98777ff1db7f0bcad0028e8cdf436d5dd8e225ce8bca51dd88a5028e",
+      "actual_sha256": "eae1274c98777ff1db7f0bcad0028e8cdf436d5dd8e225ce8bca51dd88a5028e",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/DifferentialPrivacy/Configuration/Collections/com.apple.priml.PFLMLHostPlugins.FedAutoEvalPlugin.SiriSafety.plist",
+      "bytes": 695,
+      "expected_sha256": "842852965ef7d71e3dc8d815a41e32315c7ee397ec37719ec95e1fc7e0f534b2",
+      "actual_sha256": "842852965ef7d71e3dc8d815a41e32315c7ee397ec37719ec95e1fc7e0f534b2",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/ExtensionKit/ExtensionPoints/com.apple.modelmanager.inferenceprovider.safety.appexpt",
+      "bytes": 1018,
+      "expected_sha256": "f8a9113f0ce65f287266607750763be503536a28380fd53b8e4ef9c88163ce3d",
+      "actual_sha256": "f8a9113f0ce65f287266607750763be503536a28380fd53b8e4ef9c88163ce3d",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/ExtensionKit/Extensions/GenerativeExperiencesSafetyInferenceProvider.appex/GenerativeExperiencesSafetyInferenceProvider",
+      "bytes": 75216,
+      "expected_sha256": "68e8549527390ea0755ced08942f547b79d5ec258b522e1e7baa7af55d9a8c6b",
+      "actual_sha256": "68e8549527390ea0755ced08942f547b79d5ec258b522e1e7baa7af55d9a8c6b",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/FeatureFlags/Domain/GenerativeModels.plist",
+      "bytes": 1398,
+      "expected_sha256": "1a49259ecacc6ba983eb909b89b6ecf6919fea538a8e55a769a9e88a4603858a",
+      "actual_sha256": "1a49259ecacc6ba983eb909b89b6ecf6919fea538a8e55a769a9e88a4603858a",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/FeatureFlags/Domain/IntelligenceFlow.plist",
+      "bytes": 6141,
+      "expected_sha256": "685555bfc3ac41a4ff8dee8ca996318bd3e1746bc48f75bcb03eeeca1d61e6a2",
+      "actual_sha256": "685555bfc3ac41a4ff8dee8ca996318bd3e1746bc48f75bcb03eeeca1d61e6a2",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/FeatureFlags/Domain/ModelManager.plist",
+      "bytes": 552,
+      "expected_sha256": "23ffc65ccaba1ffd547fa8a51cd956f66c8fcf1b5a7270613e860cbde125f962",
+      "actual_sha256": "23ffc65ccaba1ffd547fa8a51cd956f66c8fcf1b5a7270613e860cbde125f962",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.intelligenceflowd.plist",
+      "bytes": 2836,
+      "expected_sha256": "f06a7d5386a9ebd5a267803b120ed6477092ecef0d03dec81a09c681b11b9a43",
+      "actual_sha256": "f06a7d5386a9ebd5a267803b120ed6477092ecef0d03dec81a09c681b11b9a43",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.modelcatalogd.plist",
+      "bytes": 2473,
+      "expected_sha256": "1f5c8f34fa3acd90b83e4d975b3e5a621b071d0bb3bd898c5edc74e7f03d09a5",
+      "actual_sha256": "1f5c8f34fa3acd90b83e4d975b3e5a621b071d0bb3bd898c5edc74e7f03d09a5",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.modelmanagerd.plist",
+      "bytes": 686,
+      "expected_sha256": "c974ff4a344ff496721ee97b3c1f35afecc0d7f8e56ef3176eece340249809ab",
+      "actual_sha256": "c974ff4a344ff496721ee97b3c1f35afecc0d7f8e56ef3176eece340249809ab",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/ModelManager/Policy.plist",
+      "bytes": 1504,
+      "expected_sha256": "0be5d7ebbb0ff35f9f1e863d98bb4ae9e7d7a2d8751212a5d1ab4d0d05bed3f0",
+      "actual_sha256": "0be5d7ebbb0ff35f9f1e863d98bb4ae9e7d7a2d8751212a5d1ab4d0d05bed3f0",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/Preferences/Logging/Subsystems/com.apple.intelligenceflow.plist",
+      "bytes": 200,
+      "expected_sha256": "db7ac36bfac4fd11c008c1db224fd2018c67c807311c92a616d5acb0ee38d4d1",
+      "actual_sha256": "db7ac36bfac4fd11c008c1db224fd2018c67c807311c92a616d5acb0ee38d4d1",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/Preferences/Logging/Subsystems/com.apple.intelligenceplatform.plist",
+      "bytes": 266,
+      "expected_sha256": "f3a686cc5b4a65789d735bfadf164d7eddf7c80b3e69bd2e6fb359c6ad4017aa",
+      "actual_sha256": "f3a686cc5b4a65789d735bfadf164d7eddf7c80b3e69bd2e6fb359c6ad4017aa",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/Preferences/Logging/Subsystems/com.apple.modelmanager.plist",
+      "bytes": 462,
+      "expected_sha256": "9538622c30171dc8f68b7d9b89b57155fbf13ca7611036e3168ae7dca09308fa",
+      "actual_sha256": "9538622c30171dc8f68b7d9b89b57155fbf13ca7611036e3168ae7dca09308fa",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/PrivateFrameworks/IntelligenceFlow.framework/PlannerModelFacingErrors.loctable",
+      "bytes": 1430798,
+      "expected_sha256": "55706ab96c230f90740b31c5738b4b9fb2b3b8e110c9e492d9066570616c34af",
+      "actual_sha256": "55706ab96c230f90740b31c5738b4b9fb2b3b8e110c9e492d9066570616c34af",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/PrivateFrameworks/IntelligenceFlowPlannerSupport.framework/asset_root/en_US/CATALOG/system_prompt_metadata/system_prompt.json",
+      "bytes": 395058,
+      "expected_sha256": "23c86c7d04aaac5981a478287e968bc512107fc8b233e7eae8be001e6b00e117",
+      "actual_sha256": "23c86c7d04aaac5981a478287e968bc512107fc8b233e7eae8be001e6b00e117",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/PrivateFrameworks/IntelligenceFlowPlannerSupport.framework/asset_root/en_US/PCC/agent_instructions_metadata/agent_instructions.json",
+      "bytes": 38200,
+      "expected_sha256": "f1e9109eb2d75e30f5512cb20916fe32ec0e393644f5ec4664709796d3b91157",
+      "actual_sha256": "f1e9109eb2d75e30f5512cb20916fe32ec0e393644f5ec4664709796d3b91157",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/PrivateFrameworks/IntelligenceFlowPlannerSupport.framework/asset_root/en_US/PCC/system_prompt_metadata/system_prompt.json",
+      "bytes": 7111,
+      "expected_sha256": "5ce0bf8f35fd347276fb183f2fad59926b6c5a5309ce42b99d5042bc124ed95a",
+      "actual_sha256": "5ce0bf8f35fd347276fb183f2fad59926b6c5a5309ce42b99d5042bc124ed95a",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/Trial/NamespaceDescriptors/NamespaceDescriptor.UAF_AB_MODELCATALOG.plist",
+      "bytes": 123,
+      "expected_sha256": "4b21c9a5005016092224deaf088cd45734e636c16597159610072459a97e8368",
+      "actual_sha256": "4b21c9a5005016092224deaf088cd45734e636c16597159610072459a97e8368",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/AssetSets/com.apple.MobileAsset.UAF.FM.Overrides.plist",
+      "bytes": 94818,
+      "expected_sha256": "3f1df8800b01a484aebaeb03f3b1744e4867da22620fd63a7f3793274ff811c2",
+      "actual_sha256": "3f1df8800b01a484aebaeb03f3b1744e4867da22620fd63a7f3793274ff811c2",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/AssetSets/com.apple.modelcatalog.plist",
+      "bytes": 212784,
+      "expected_sha256": "fbd703cfc378263a215199c0491868fc6859cddab74b10b93e70f25486b8ef92",
+      "actual_sha256": "fbd703cfc378263a215199c0491868fc6859cddab74b10b93e70f25486b8ef92",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/UsageAliases/Siri.AgenticPlanner/language_en.plist",
+      "bytes": 617,
+      "expected_sha256": "5ffa412577b8f197714336e9ea8317ed32cb8b31efd523f89355bf0ccc24da6a",
+      "actual_sha256": "5ffa412577b8f197714336e9ea8317ed32cb8b31efd523f89355bf0ccc24da6a",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/UsageAliases/memoryCreation.GlobalTraits/isIFPEnabled_false_language_en.plist",
+      "bytes": 2310,
+      "expected_sha256": "fc0c2c545c341a1deb27b25f09afd4e58ce9b99b2d47a7e029af8e37d0305ea4",
+      "actual_sha256": "fc0c2c545c341a1deb27b25f09afd4e58ce9b99b2d47a7e029af8e37d0305ea4",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/UsageAliases/memoryCreation.GlobalTraits/isIFPEnabled_true_language_en.plist",
+      "bytes": 2323,
+      "expected_sha256": "cc0d8cbfa87429343d0cc25fb1bc32e96b9a4179e2198549d9773673e1c905fd",
+      "actual_sha256": "cc0d8cbfa87429343d0cc25fb1bc32e96b9a4179e2198549d9773673e1c905fd",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/UsageAliases/memoryCreation.QueryUnderstanding/isIFPEnabled_false_language_en.plist",
+      "bytes": 2318,
+      "expected_sha256": "26597dc2c9a9437c2b0dab8e2d98b7e579baca0de4fb932cbe30c1a62324bb26",
+      "actual_sha256": "26597dc2c9a9437c2b0dab8e2d98b7e579baca0de4fb932cbe30c1a62324bb26",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/UsageAliases/memoryCreation.QueryUnderstanding/isIFPEnabled_true_language_en.plist",
+      "bytes": 2331,
+      "expected_sha256": "8318067e35ff26b9d291dae11df8110893709165610c11b513ce83a3276d1879",
+      "actual_sha256": "8318067e35ff26b9d291dae11df8110893709165610c11b513ce83a3276d1879",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/UsageAliases/memoryCreation.Storyteller/isIFPEnabled_false_language_en.plist",
+      "bytes": 2413,
+      "expected_sha256": "e16711a0f1517c6a028029a689afe0eed601be382b6ebcbd7c2b86a626d5cfe3",
+      "actual_sha256": "e16711a0f1517c6a028029a689afe0eed601be382b6ebcbd7c2b86a626d5cfe3",
+      "ok": true
+    },
+    {
+      "path": "extracted/rootfs/System/Library/UnifiedAssetFramework/UsageAliases/memoryCreation.Storyteller/isIFPEnabled_true_language_en.plist",
+      "bytes": 2426,
+      "expected_sha256": "b7b6db953af48fc2f2e78a70abefddb806a01f573a4d1e0708aa179aff7f7db8",
+      "actual_sha256": "b7b6db953af48fc2f2e78a70abefddb806a01f573a4d1e0708aa179aff7f7db8",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-03f7f9419323-119.txt",
+      "bytes": 784,
+      "expected_sha256": "03f7f941932363cdc3a353a1c3778c521cdf2a5f253744dc5b0efb3367c07a0e",
+      "actual_sha256": "03f7f941932363cdc3a353a1c3778c521cdf2a5f253744dc5b0efb3367c07a0e",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-07379219e29e-89.txt",
+      "bytes": 3202,
+      "expected_sha256": "07379219e29e4391c9653544d94a24611952b7d79f28236a4389f8fb49019dec",
+      "actual_sha256": "07379219e29e4391c9653544d94a24611952b7d79f28236a4389f8fb49019dec",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-0d4fd7936173-4.txt",
+      "bytes": 3571,
+      "expected_sha256": "0d4fd793617352548f59e8964f4967138b8a117045691ccb1b1aa8e48c7fbfbd",
+      "actual_sha256": "0d4fd793617352548f59e8964f4967138b8a117045691ccb1b1aa8e48c7fbfbd",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-26bd49486b71-222.txt",
+      "bytes": 56026,
+      "expected_sha256": "26bd49486b71c83e17608b521cc35e91d4bca4f23e5a3444be5b8e0fe6e5ed6f",
+      "actual_sha256": "26bd49486b71c83e17608b521cc35e91d4bca4f23e5a3444be5b8e0fe6e5ed6f",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-2b6b5a9ed6be-118.txt",
+      "bytes": 994,
+      "expected_sha256": "2b6b5a9ed6be1f217b9a8fde4f40ba8dc89f1859693aede32b2ada5acc345c3b",
+      "actual_sha256": "2b6b5a9ed6be1f217b9a8fde4f40ba8dc89f1859693aede32b2ada5acc345c3b",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-32dbf92b4981-16.txt",
+      "bytes": 9834,
+      "expected_sha256": "32dbf92b49816aa970b7c900856b672455d50a90463c00dcf6a1ae26c551382e",
+      "actual_sha256": "32dbf92b49816aa970b7c900856b672455d50a90463c00dcf6a1ae26c551382e",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-3ff04450c90e-6.txt",
+      "bytes": 94709,
+      "expected_sha256": "3ff04450c90e72437f6eda513a963075c371220a84fb0845805f49fbc8c27e74",
+      "actual_sha256": "3ff04450c90e72437f6eda513a963075c371220a84fb0845805f49fbc8c27e74",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-5878f554bae3-120.txt",
+      "bytes": 318,
+      "expected_sha256": "5878f554bae31fcb9429a51038f81ba0d34e4c35e1c8a7ef7f881fead3386373",
+      "actual_sha256": "5878f554bae31fcb9429a51038f81ba0d34e4c35e1c8a7ef7f881fead3386373",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-68b67f53f0b0-117.txt",
+      "bytes": 702,
+      "expected_sha256": "68b67f53f0b0b505cd39f583d17ceffcd0847735c40eb859a1442170088df518",
+      "actual_sha256": "68b67f53f0b0b505cd39f583d17ceffcd0847735c40eb859a1442170088df518",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-70e62fcd05f5-11.txt",
+      "bytes": 1841,
+      "expected_sha256": "70e62fcd05f5fc8c682f7865e13a32930528302af8e7b7283f42c1eb598750f2",
+      "actual_sha256": "70e62fcd05f5fc8c682f7865e13a32930528302af8e7b7283f42c1eb598750f2",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-ab2bf348a804-14.txt",
+      "bytes": 3799,
+      "expected_sha256": "ab2bf348a804ac6f813927bf0a841ab19b650d3938c2137f2e000c87c0d6ccb9",
+      "actual_sha256": "ab2bf348a804ac6f813927bf0a841ab19b650d3938c2137f2e000c87c0d6ccb9",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-be9c3746e1da-188.txt",
+      "bytes": 1077,
+      "expected_sha256": "be9c3746e1daba1754369bfcbdd984013839c84f1834dcefa58ddccc12354792",
+      "actual_sha256": "be9c3746e1daba1754369bfcbdd984013839c84f1834dcefa58ddccc12354792",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-c14480ec1bcd-1.txt",
+      "bytes": 254,
+      "expected_sha256": "c14480ec1bcd31389c30e776b2008a50c857f90800d24c2d8b4b40f36205c08a",
+      "actual_sha256": "c14480ec1bcd31389c30e776b2008a50c857f90800d24c2d8b4b40f36205c08a",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-db0ad3ad1195-15.txt",
+      "bytes": 2391,
+      "expected_sha256": "db0ad3ad1195d04aeec569131d7a30af185d3609f5ed42513cad9d9358626cbe",
+      "actual_sha256": "db0ad3ad1195d04aeec569131d7a30af185d3609f5ed42513cad9d9358626cbe",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-e0f2ff98df76-12.txt",
+      "bytes": 3672,
+      "expected_sha256": "e0f2ff98df7684347c100b5d211e120e0cd7cd7d3dcf54547a2054e56380e0fe",
+      "actual_sha256": "e0f2ff98df7684347c100b5d211e120e0cd7cd7d3dcf54547a2054e56380e0fe",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-e6c0881b76fa-9.txt",
+      "bytes": 3893,
+      "expected_sha256": "e6c0881b76fa2b82b0eae1fd7dc2572eef65d46bda21f1264837703d0b66010b",
+      "actual_sha256": "e6c0881b76fa2b82b0eae1fd7dc2572eef65d46bda21f1264837703d0b66010b",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-e8288f737ec7-13.txt",
+      "bytes": 3816,
+      "expected_sha256": "e8288f737ec77bdf055df80ea6d05e08c72246e9a229282d5cb9e0bcf5292cca",
+      "actual_sha256": "e8288f737ec77bdf055df80ea6d05e08c72246e9a229282d5cb9e0bcf5292cca",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-f100c1d99f7f-88.txt",
+      "bytes": 1448,
+      "expected_sha256": "f100c1d99f7fd57c3ccf88077bf084e2bac847f95c69508a131f4741f53557ec",
+      "actual_sha256": "f100c1d99f7fd57c3ccf88077bf084e2bac847f95c69508a131f4741f53557ec",
+      "ok": true
+    },
+    {
+      "path": "prompts/P-fd5e34c27c6d-10.txt",
+      "bytes": 1456,
+      "expected_sha256": "fd5e34c27c6dbd94914087f97b4651973b4870f79483bf94ba6f2c86d9395b45",
+      "actual_sha256": "fd5e34c27c6dbd94914087f97b4651973b4870f79483bf94ba6f2c86d9395b45",
+      "ok": true
+    },
+    {
+      "path": "review/BuildManifest.plist",
+      "bytes": 1461641,
+      "expected_sha256": "abba3b0916614585b2213b723cd4e1a34c9939ed3ba839f3fd3fe155179ddc96",
+      "actual_sha256": "abba3b0916614585b2213b723cd4e1a34c9939ed3ba839f3fd3fe155179ddc96",
+      "ok": true
+    }
+  ],
+  "errors": []
+}

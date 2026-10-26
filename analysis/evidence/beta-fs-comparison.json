@@ -1,0 +1,782 @@
+{
+  "counts": {
+    "beta_files": 1339,
+    "beta_empty": 1334,
+    "beta_nonempty": 5,
+    "rc_extracted_rootfs_files": 9100,
+    "intersection_paths": 75,
+    "intersection_beta_nonempty": 0
+  },
+  "builds": {
+    "beta": [
+      {
+        "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/metadata/BuildManifest.plist",
+        "sha256": "3f8dae55cdf0a6b3d3b3092b01775f5eae6028a4e6ab534dbaccec548f97064a",
+        "identity": {
+          "ProductVersion": "27.2",
+          "ProductBuildVersion": "24B5089g",
+          "SupportedProductTypes": [
+            "iPhone18,3"
+          ]
+        }
+      },
+      {
+        "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/metadata/Restore.plist",
+        "sha256": "f2f07df50a01736ad613b70dc30c51373485db145f01b05f934aa8dc7f1e75a1",
+        "identity": {
+          "ProductVersion": "27.2",
+          "ProductBuildVersion": "24B5089g",
+          "SupportedProductTypes": [
+            "iPhone18,3"
+          ]
+        }
+      },
+      {
+        "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/metadata/SystemVersion.plist",
+        "sha256": "645a8f619695f954cf73d577dfcee51cc8f9eaa924a6fb4a3ef6083e2addd92b",
+        "identity": {
+          "ProductVersion": "27.2",
+          "ProductBuildVersion": "24B5089g",
+          "ProductName": "iPhone OS"
+        }
+      }
+    ],
+    "rc": [
+      {
+        "path": "/workspace/Apple/review/BuildManifest.plist",
+        "sha256": "abba3b0916614585b2213b723cd4e1a34c9939ed3ba839f3fd3fe155179ddc96",
+        "identity": {
+          "ProductVersion": "27.2",
+          "ProductBuildVersion": "24B115",
+          "SupportedProductTypes": [
+            "iPhone18,3"
+          ]
+        }
+      },
+      {
+        "path": "/workspace/Apple/review/Restore.plist",
+        "sha256": "c8d6df8572742f7f0c0b3d01a3b15cd6ce23391d0021d3b8bd96ac1fe8297c59",
+        "identity": {
+          "ProductVersion": "27.2",
+          "ProductBuildVersion": "24B115",
+          "SupportedProductTypes": [
+            "iPhone18,3"
+          ]
+        }
+      },
+      {
+        "path": "/workspace/Apple/review/SystemVersion.plist",
+        "sha256": "cd78ab13d55592ab9151f6690da2b8639659a40cbb4e3906cc85c8e33ded9b9b",
+        "identity": {
+          "ProductVersion": "27.2",
+          "ProductBuildVersion": "24B115",
+          "ProductName": "iPhone OS"
+        }
+      }
+    ]
+  },
+  "common_paths": [
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.GenerativeFunctions.agentstored.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.GenerativeFunctions.agentstored.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.GenerativeFunctions.agentstored.plist",
+      "beta_size": 0,
+      "rc_size": 1026,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "50863fbdcf46ab47c7ace819b5384b516d22d96a29bcb2072a1002664a40367b"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.SiriTTSTrainingAgent.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.SiriTTSTrainingAgent.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.SiriTTSTrainingAgent.plist",
+      "beta_size": 0,
+      "rc_size": 354,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "55432988ecbb1a2ed923ca7cdd500e77e27a9d225c4913dec7e5a510dcc19b21"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.assistant_cdmd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.assistant_cdmd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.assistant_cdmd.plist",
+      "beta_size": 0,
+      "rc_size": 1238,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "48488d49bcd3e2d94b1a9f05832a8adeb2215d4e73d9a8445db4418b7d46b45e"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.assistant_service.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.assistant_service.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.assistant_service.plist",
+      "beta_size": 0,
+      "rc_size": 898,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "15c75b545095e10ba336c35352327632847546fec41627d08ec6a36589bafba2"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.assistantd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.assistantd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.assistantd.plist",
+      "beta_size": 0,
+      "rc_size": 6560,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "f2ff90f96ac7c12eca92f7900d9fa246b90a129a2b0984506a9a6dd8380a2794"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.devicerecoveryassistant.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.devicerecoveryassistant.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.devicerecoveryassistant.plist",
+      "beta_size": 0,
+      "rc_size": 838,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "84fcc6ef22977fc51c9d5c53b05a105f012449e1d67034b7a7acb2d4227db30b"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.imageplaygroundd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.imageplaygroundd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.imageplaygroundd.plist",
+      "beta_size": 0,
+      "rc_size": 1162,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "f04134f9d2569d744a97ef136de9cca67212f2476f7d3ae9960525e6555f5e36"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.intelligenceflowd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.intelligenceflowd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.intelligenceflowd.plist",
+      "beta_size": 0,
+      "rc_size": 2836,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "f06a7d5386a9ebd5a267803b120ed6477092ecef0d03dec81a09c681b11b9a43"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.intelligenceplatformd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.intelligenceplatformd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.intelligenceplatformd.plist",
+      "beta_size": 0,
+      "rc_size": 3383,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "bf88214e4775821fa4cbc0c4dce3e3cc85a9c448c20759203f742c96f3b58bf4"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.modelcatalogd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.modelcatalogd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.modelcatalogd.plist",
+      "beta_size": 0,
+      "rc_size": 2473,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "1f5c8f34fa3acd90b83e4d975b3e5a621b071d0bb3bd898c5edc74e7f03d09a5"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.modelmanagerd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.modelmanagerd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.modelmanagerd.plist",
+      "beta_size": 0,
+      "rc_size": 686,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "c974ff4a344ff496721ee97b3c1f35afecc0d7f8e56ef3176eece340249809ab"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.safetyalertsd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.safetyalertsd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.safetyalertsd.plist",
+      "beta_size": 0,
+      "rc_size": 2311,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "a784fdc8e24f23e34cb0f831e7e98f6b78c3b2871674e75131515961e7fd8770"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.safetycheckd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.safetycheckd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.safetycheckd.plist",
+      "beta_size": 0,
+      "rc_size": 2491,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "b3d6031213c1baa38755579052c4610d642f4c3198f24d8abafede93058378cd"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.siri.sirireaderd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.siri.sirireaderd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.siri.sirireaderd.plist",
+      "beta_size": 0,
+      "rc_size": 685,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "614ce86a43a9e371610df50578463439784de19d817e69329cf69fbb35e26097"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.siriactionsd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.siriactionsd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.siriactionsd.plist",
+      "beta_size": 0,
+      "rc_size": 5180,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "805eb5655092cb5b9466ab422d685372c9e8995bedcd768fcf1251be8c68a693"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.siriappintentsd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.siriappintentsd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.siriappintentsd.plist",
+      "beta_size": 0,
+      "rc_size": 851,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "bbf9380ef221d79c8e2028477239b5c198f8dee92f3c36c546e43feedcfeea1c"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.siriinferenced.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.siriinferenced.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.siriinferenced.plist",
+      "beta_size": 0,
+      "rc_size": 971,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "44f92f4994def868d48dfd9ad46a0639840c4f2f440336734d6e2ef4424d47b1"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.siriknowledged.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.siriknowledged.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.siriknowledged.plist",
+      "beta_size": 0,
+      "rc_size": 5945,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "f0385a1f967054ef041010f326f70b48e1946d250f55e4e5afc74887403eb9ab"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.sirittsd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.sirittsd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.sirittsd.plist",
+      "beta_size": 0,
+      "rc_size": 814,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "e560d18a4ed362a3b356db0cfaa2d8ebffd57715db0d9195abf1b460f53e33fb"
+    },
+    {
+      "firmware_path": "/System/Library/LaunchDaemons/com.apple.textcomposerd.plist",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/System/Library/LaunchDaemons/com.apple.textcomposerd.plist",
+      "rc_path": "extracted/rootfs/System/Library/LaunchDaemons/com.apple.textcomposerd.plist",
+      "beta_size": 0,
+      "rc_size": 553,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "394b88b1e91a6ad47f5e3578fe72d9001008b55b7d89bbe45a1135ad77f8acf1"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/activity.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/activity.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/activity.json",
+      "beta_size": 0,
+      "rc_size": 3983,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "9fbf53e8b67d1786c15e8837bcd96165c20310c06bddcac0a93bf149abe83e4e"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/outing.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/outing.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/outing.json",
+      "beta_size": 0,
+      "rc_size": 58651,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "a68628a796931206ec9242002dc860951147610cb10fb451adde81fd4792461b"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/prompts.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/prompts.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/prompts.json",
+      "beta_size": 0,
+      "rc_size": 276070,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "c446fde211e23310704f65e9f1eec2aa94399a35d7d264bf05be314852140f5e"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/thematic.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/thematic.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/thematic.json",
+      "beta_size": 0,
+      "rc_size": 150810,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "d6c40c9c1c30d9d7f1a8ed5a605389e4130db36dc532bfbe22bd1f44aecf583e"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/timeContext_activity_mulitple.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/timeContext_activity_mulitple.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/timeContext_activity_mulitple.json",
+      "beta_size": 0,
+      "rc_size": 7146,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "d03d1c0e272c6b96d5afb5596ffc2a546c26fb9412a1793434e393d05623923c"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/timeContext_activity_onlyOne.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/timeContext_activity_onlyOne.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/timeContext_activity_onlyOne.json",
+      "beta_size": 0,
+      "rc_size": 18641,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "64d6629cc33f5b2a211f3d37762b81aac32755706bffc479e3641ab8aa0fee17"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/timeContext_activity_visit.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/timeContext_activity_visit.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/timeContext_activity_visit.json",
+      "beta_size": 0,
+      "rc_size": 19565,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "1d1a4528e84553eb597cc36a0acd8546c317c988fa1a26a685d25a071ca3083f"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/timeContext_shopping_dining.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/timeContext_shopping_dining.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/timeContext_shopping_dining.json",
+      "beta_size": 0,
+      "rc_size": 8591,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "7a45f3f6b156eda9c82d451e825cba37f2fecd1d3642fe8b74e8bf0955303410"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/timeContext_transit.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/timeContext_transit.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/timeContext_transit.json",
+      "beta_size": 0,
+      "rc_size": 862,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "5f0945fef1dcdba90eac292ab1f37c3cbfad1c447afaf4cd9f7b8ba3e0d169ae"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/timeContext_visit_activity_shopping_dining.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/timeContext_visit_activity_shopping_dining.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/timeContext_visit_activity_shopping_dining.json",
+      "beta_size": 0,
+      "rc_size": 2623,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "7017e9a59e933768928c11f89d20cd2aa37afbb407e60de5bf4ffede7994c794"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/timeContext_visit_only.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/timeContext_visit_only.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/timeContext_visit_only.json",
+      "beta_size": 0,
+      "rc_size": 8299,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "6637cb6a78a84bc070581d66591f10f698982c964dd44c3d6287cb90a5dabab2"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/timeContext_visit_shopping_dining.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/timeContext_visit_shopping_dining.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/timeContext_visit_shopping_dining.json",
+      "beta_size": 0,
+      "rc_size": 15208,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "9d56d95a816f5798995c261f7dcb46020fb8b4fcad48a975ed0501edb2e0aa6d"
+    },
+    {
+      "firmware_path": "/usr/libexec/Moments.framework/LabelTemplates/trend.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Moments.framework/LabelTemplates/trend.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Moments.framework/LabelTemplates/trend.json",
+      "beta_size": 0,
+      "rc_size": 671,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "ffe49ea2a9a98f4ffc92eee9e033891f35f260bc822daafe1e27611c0fc759a0"
+    },
+    {
+      "firmware_path": "/usr/libexec/Prev12Next12Drain.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Prev12Next12Drain.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Prev12Next12Drain.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 4802,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "108448578342bc9f80efef70231f22efa0540ae533aa994f632fa95c0707ea79"
+    },
+    {
+      "firmware_path": "/usr/libexec/Recipe.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Recipe.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Recipe.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 1362,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "90deeadbc437c8c4f0a6b6ae414d30423d81d2974e96e985e66acb4ecc6290db"
+    },
+    {
+      "firmware_path": "/usr/libexec/Recipe_CJK.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Recipe_CJK.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/Recipe_CJK.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 1368,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "e2abc35089b3872c8a588cb470e9340fc06726cf3272954a3bc223aa4a645eb6"
+    },
+    {
+      "firmware_path": "/usr/libexec/TrustKitResources/OrderExtraction/order_extraction_decisioning_logicgraph_fallback/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/TrustKitResources/OrderExtraction/order_extraction_decisioning_logicgraph_fallback/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/TrustKitResources/OrderExtraction/order_extraction_decisioning_logicgraph_fallback/metadata.json",
+      "beta_size": 0,
+      "rc_size": 245,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "477a8ce00735504deb65519112f887172377e090e97758eee46403d57afb29a2"
+    },
+    {
+      "firmware_path": "/usr/libexec/TrustKitResources/spam_decisioning_logicgraph/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/TrustKitResources/spam_decisioning_logicgraph/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/TrustKitResources/spam_decisioning_logicgraph/metadata.json",
+      "beta_size": 0,
+      "rc_size": 234,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "94cbe58b3c222799a71d6ddb474307c450e6a14c005f3904a196dd4f163ee56c"
+    },
+    {
+      "firmware_path": "/usr/libexec/TrustKitResources/spam_filtering_logicgraph/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/TrustKitResources/spam_filtering_logicgraph/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/TrustKitResources/spam_filtering_logicgraph/metadata.json",
+      "beta_size": 0,
+      "rc_size": 647,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "1889914f9a05f60d8d9772e180ffa068bfdd585da5d730c0d5e37b51c63017d9"
+    },
+    {
+      "firmware_path": "/usr/libexec/TrustKitResourcesV2/phone_decisioning_logicgraph_fallback/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/TrustKitResourcesV2/phone_decisioning_logicgraph_fallback/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/TrustKitResourcesV2/phone_decisioning_logicgraph_fallback/metadata.json",
+      "beta_size": 0,
+      "rc_size": 234,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "a37b8b332913d62e8fb05e667b5df216277ef17300c9661bcf8cebbd4f3c7b1c"
+    },
+    {
+      "firmware_path": "/usr/libexec/TrustKitResourcesV2/phone_filtering_logicgraph_fallback/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/TrustKitResourcesV2/phone_filtering_logicgraph_fallback/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/TrustKitResourcesV2/phone_filtering_logicgraph_fallback/metadata.json",
+      "beta_size": 0,
+      "rc_size": 241,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "4cd09e693908cbae3113d8ff20a5ae38c3765a774f060af802a44198051e6bed"
+    },
+    {
+      "firmware_path": "/usr/libexec/WiFiStallDetect.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/WiFiStallDetect.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/WiFiStallDetect.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 7847,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "34b5fa61eed0b87ad5f5ee106bdc29f8ed4c5ade23e473105a43090fac968989"
+    },
+    {
+      "firmware_path": "/usr/libexec/_OSDischargeETA.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/_OSDischargeETA.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/_OSDischargeETA.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 2375,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "4788f0e7183e9cfb58307165a738bb8c1fc95f27c3b1922c6124acd35dd27ce8"
+    },
+    {
+      "firmware_path": "/usr/libexec/_OSHighBatteryDrainHighChargeDurationModel.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/_OSHighBatteryDrainHighChargeDurationModel.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/_OSHighBatteryDrainHighChargeDurationModel.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 4060,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "e659269771aaa0c707e7d4174305816da23bb7746a02ede6ca688e944bb1b33c"
+    },
+    {
+      "firmware_path": "/usr/libexec/_OSHighBatteryDrainLowChargeDurationModel.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/_OSHighBatteryDrainLowChargeDurationModel.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/_OSHighBatteryDrainLowChargeDurationModel.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 4059,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "e9d10002188103e199c63d6c17dcd264c633973f1837b25837c0ec335f25bfa7"
+    },
+    {
+      "firmware_path": "/usr/libexec/availabilityPredict061725.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/availabilityPredict061725.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/availabilityPredict061725.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 7611,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "2eaaf8870d0affc2090bf2c3eb1102b0d506d50d5e83f0963b616557fd5b5eb2"
+    },
+    {
+      "firmware_path": "/usr/libexec/base_duration.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/base_duration.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/base_duration.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 4516,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "6f42c326d5fe33ef4229b98467cfe2ffce60e7914561fc46be82dd307802f6bb"
+    },
+    {
+      "firmware_path": "/usr/libexec/base_engage.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/base_engage.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/base_engage.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 4783,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "0e3a152c7a5a468ab33d89ee2c9e62685e03dcd613e9125fbcfb5f768102daf7"
+    },
+    {
+      "firmware_path": "/usr/libexec/battery_analysis_tt80_model_7gzamb2979.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/battery_analysis_tt80_model_7gzamb2979.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/battery_analysis_tt80_model_7gzamb2979.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 1772,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "456c06f9e698414991a04ed381904e3f077c7af429e5002f8a78ac5dc3b86524"
+    },
+    {
+      "firmware_path": "/usr/libexec/battery_analysis_tt80_model_bwatrvswhe.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/battery_analysis_tt80_model_bwatrvswhe.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/battery_analysis_tt80_model_bwatrvswhe.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 1839,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "5c753075716885751fd55a8ba554c12b6af387afe07a783b71df3978b16d03a1"
+    },
+    {
+      "firmware_path": "/usr/libexec/battery_analysis_ttl_model_6w2j9kistm.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/battery_analysis_ttl_model_6w2j9kistm.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/battery_analysis_ttl_model_6w2j9kistm.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 1770,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "a0d0a79e9a54992a105305165e7fb5b817c203f3b27da6db3ebc907eca8e281c"
+    },
+    {
+      "firmware_path": "/usr/libexec/battery_analysis_ttl_model_7ssi6t5tb5.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/battery_analysis_ttl_model_7ssi6t5tb5.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/battery_analysis_ttl_model_7ssi6t5tb5.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 1770,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "e801c3ba32dd63ee2c48954357c9b152b7764da84f324665f2bcd14b6fd77e60"
+    },
+    {
+      "firmware_path": "/usr/libexec/battery_analysis_ttl_model_k5wmzvi5mm.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/battery_analysis_ttl_model_k5wmzvi5mm.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/battery_analysis_ttl_model_k5wmzvi5mm.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 1770,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "234d770678416226a7edfc4fdcededac99845df7692524ed281434b95edc5bbd"
+    },
+    {
+      "firmware_path": "/usr/libexec/battery_thermals_tlc.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/battery_thermals_tlc.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/battery_thermals_tlc.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 2318,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "510145851d5c3eefd064eb10808ae79ce0f1a6251be11089b71c6338ac76b4d9"
+    },
+    {
+      "firmware_path": "/usr/libexec/durationModel.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/durationModel.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/durationModel.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 5622,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "eae1479f4650bda5dad0520b85bf40bd466e11201b5ae8e5710d12dc4377c288"
+    },
+    {
+      "firmware_path": "/usr/libexec/dynamic_scheduling.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/dynamic_scheduling.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/dynamic_scheduling.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 5652,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "92c19f88706788f2d52079e48b4b7ab41a54909607e87369124f2dac169cc35a"
+    },
+    {
+      "firmware_path": "/usr/libexec/easy_engage.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/easy_engage.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/easy_engage.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 4783,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "c2863f29185242172fd6d3da56b36dffa6d96cf3442837b8b24ece9be848d69b"
+    },
+    {
+      "firmware_path": "/usr/libexec/engageModel.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/engageModel.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/engageModel.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 5889,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "eb564483b5f83d66c707f20068e17fbdaa1167adcf961445275fed7724ef0446"
+    },
+    {
+      "firmware_path": "/usr/libexec/engageOnPlugin.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/engageOnPlugin.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/engageOnPlugin.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 5780,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "2c104f4d3afada50e1eeca50399797c07e033fafe3cdce611ead2c19ff89f359"
+    },
+    {
+      "firmware_path": "/usr/libexec/freezer_app_ranking_model.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/freezer_app_ranking_model.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/freezer_app_ranking_model.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 3371,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "7df2e242b9698c03cf54b0584e09f62f6b861b94c02a8409fc505507ff3a5879"
+    },
+    {
+      "firmware_path": "/usr/libexec/hybrid_model.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/hybrid_model.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/hybrid_model.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 2516,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "b14194a19e886beae97ac25165717c2a6b5b8db5e0c1f46ca142a0c0246e85a5"
+    },
+    {
+      "firmware_path": "/usr/libexec/longDurationModel.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/longDurationModel.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/longDurationModel.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 5514,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "d59e3cc400735154f3f751ee4c7d5b0ef42e4157ce1825a2bea409cf74ba2896"
+    },
+    {
+      "firmware_path": "/usr/libexec/long_duration.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/long_duration.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/long_duration.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 4516,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "68c49acd73cbde435f9fecce4f6201731735547e119fa1e2384d34f5d03eece7"
+    },
+    {
+      "firmware_path": "/usr/libexec/nccp_wra_qmaxp_seq_model.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/nccp_wra_qmaxp_seq_model.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/nccp_wra_qmaxp_seq_model.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 4029,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "51cbdff021cacdd1ec0a73296864bffe1ea2be0f5454923deb49488537d1a291"
+    },
+    {
+      "firmware_path": "/usr/libexec/ocv_drift_model.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/ocv_drift_model.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/ocv_drift_model.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 1830,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "81b1e01cb36283e945bafe1c85f336821b5ed8344d609bc21c9dd36cf744b778"
+    },
+    {
+      "firmware_path": "/usr/libexec/ocv_drift_model_myxd7pqa68.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/ocv_drift_model_myxd7pqa68.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/ocv_drift_model_myxd7pqa68.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 1841,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "750f6ba283f4ab546ab08c087d3c182d9ff0146e38c84d9dad9d64770fe34523"
+    },
+    {
+      "firmware_path": "/usr/libexec/shortDurationModel.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/shortDurationModel.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/shortDurationModel.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 5516,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "700d816ee918705984cc0e410019802ccbb94400e68a68ebc693a9a39f9a951c"
+    },
+    {
+      "firmware_path": "/usr/libexec/state_estimation_model.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/state_estimation_model.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/state_estimation_model.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 2662,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "777ad0fd4b1e5dccc19f9674e1fdb1ac6791020b09fcbdfe45e1bcb3705f4150"
+    },
+    {
+      "firmware_path": "/usr/libexec/tt80_lstm_regression.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/tt80_lstm_regression.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/tt80_lstm_regression.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 2103,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "3c6c96f8cf0fc18504ed6f64637087b9bbfdd35ac9c4b2006fe18d175b91bef3"
+    },
+    {
+      "firmware_path": "/usr/libexec/tte_v1.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/tte_v1.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/tte_v1.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 2104,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "b3da6f25dd2bea95e38775282ab108a9dcae303f465001ae3d39d8eb80779fe3"
+    },
+    {
+      "firmware_path": "/usr/libexec/watch_duration.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/watch_duration.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/watch_duration.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 4808,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "db216fc33f3361d0d7737a87ab132e041e5932f8cbd9f22bf7d324cf0d93ac1f"
+    },
+    {
+      "firmware_path": "/usr/libexec/watch_engage.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/watch_engage.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/watch_engage.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 5075,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "fa5c24df7a2405686dc6c6c09b1f4b53aa86ee5aa7ff9d3dea97039ccb1de70d"
+    },
+    {
+      "firmware_path": "/usr/libexec/xgb_last_lock_model.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/xgb_last_lock_model.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/libexec/xgb_last_lock_model.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 36383,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "3b21aee855e22d230c9568adf238e4049ec98c5857696ed88164916071560ea9"
+    },
+    {
+      "firmware_path": "/usr/sbin/coreml_coex_cell_model.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/sbin/coreml_coex_cell_model.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/sbin/coreml_coex_cell_model.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 4077,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "cdcf250538a59cc15f30d1305165f4ecb9c7e32de8b21ab66c4cc8232daf838d"
+    },
+    {
+      "firmware_path": "/usr/sbin/coreml_coex_wifi_model.mlmodelc/metadata.json",
+      "beta_path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/sbin/coreml_coex_wifi_model.mlmodelc/metadata.json",
+      "rc_path": "extracted/rootfs/usr/sbin/coreml_coex_wifi_model.mlmodelc/metadata.json",
+      "beta_size": 0,
+      "rc_size": 3236,
+      "beta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rc_sha256": "cfcab32d741a12d28da864a1d3d4db4c4d4f59c993ffda959d7e9faaf4996cc7"
+    }
+  ],
+  "beta_nonempty_files": [
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Recipe.mlmodelc/coremldata.bin",
+      "size": 1356752,
+      "sha256": "56f2eea1a468ed38162d0a6fcdde9ffc529ece6e699fc94915704d5c8daa1e5f"
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/Recipe_CJK.mlmodelc/coremldata.bin",
+      "size": 1356754,
+      "sha256": "d4e45492ec91bb62893ba58e077111f88f11315d4b6eb9b8dd5e4d502ff84aba"
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/hybrid_model.mlmodelc/weights/weight.bin",
+      "size": 314496,
+      "sha256": "9a26c52e3d631a8cece093753e882867bf06bd6d13213cc42ff6a47d82371b2d"
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/longDurationModel.mlmodelc/_B0000.DAT",
+      "size": 2564,
+      "sha256": "28cadf5fa82a3d88d48d1303ab04b0837653836a622264216fe63d28aa5e04fc"
+    },
+    {
+      "path": "/workspace/recherche/apple-sec/ios272beta2/artifacts/ios-firmware/iPhone18,3/27.2/24B5089g/fs_root/usr/libexec/nccp_wra_qmaxp_seq_model.mlmodelc/weights/weight.bin",
+      "size": 319518,
+      "sha256": "b22b231dc513404ca93dc9efce6e6f9da96f52926a63d46d4a93a0048690e2a2"
+    }
+  ]
+}

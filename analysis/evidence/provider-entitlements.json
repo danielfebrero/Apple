@@ -1,0 +1,55 @@
+{
+  "source": "extracted/rootfs/System/Library/ExtensionKit/Extensions/GenerativeExperiencesSafetyInferenceProvider.appex/GenerativeExperiencesSafetyInferenceProvider",
+  "sha256": "68e8549527390ea0755ced08942f547b79d5ec258b522e1e7baa7af55d9a8c6b",
+  "lc_code_signature_offset": "0xe18",
+  "signature_offset": "0xc840",
+  "entitlement_blob_offset": "0xcba3",
+  "xml_offset": "0xcbab",
+  "blob_magic": "0xfade7171",
+  "slot": 5,
+  "entitlements": {
+    "application-identifier": "com.apple.generativemodelsexperiences.safetyinferenceprovider",
+    "com.apple.modelcatalog.full-access": true,
+    "com.apple.private.assets.accessible-asset-types": [
+      "com.apple.MobileAsset.UAF.FM.GenerativeModels",
+      "com.apple.MobileAsset.UAF.FM.Overrides"
+    ],
+    "com.apple.private.biome.read-write": [
+      "AppleIntelligence.Reporting.SafetyOverrides"
+    ],
+    "com.apple.private.intelligenceplatform.client-identifier": "com.apple.generativemodelsexperiences.safetyinferenceprovider",
+    "com.apple.private.security.storage.MobileAssetGenerativeModels": true,
+    "com.apple.security.exception.files.absolute-path.read-only": [
+      "/private/var/MobileAsset/AssetsV2/locks/com.apple.UnifiedAssetFramework/",
+      "/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_GenerativeModels/purpose_auto/",
+      "/private/var/MobileAsset/AssetsV2/com_apple_MobileAsset_UAF_FM_Overrides/purpose_auto/",
+      "/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/",
+      "/private/var/MobileAsset/PreinstalledAssetsV2/InstallWithOs/com_apple_MobileAsset_UAF_FM_Overrides/",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_GenerativeModels/",
+      "/System/Library/PreinstalledAssetsV2/RequiredByOs/com_apple_MobileAsset_UAF_FM_Overrides/",
+      "/private/var/mobile/Library/com.apple.modelcatalog/sideload/",
+      "/private/var/db/assetsubscriptiond/",
+      "/private/var/db/com.apple.countryd/",
+      "/private/var/db/os_eligibility/eligibility.plist"
+    ],
+    "com.apple.security.exception.mach-lookup.global-name": [
+      "com.apple.modelcatalog.catalog",
+      "com.apple.siri.uaf.service",
+      "com.apple.siri.uaf.subscription.service",
+      "com.apple.mobileasset.autoasset",
+      "com.apple.mobileassetd.v2",
+      "com.apple.biome.access.user",
+      "com.apple.biome.access.system",
+      "com.apple.biome.compute.source",
+      "com.apple.biome.compute.source.user",
+      "com.apple.mediaanalysisd.service.public"
+    ],
+    "com.apple.security.exception.shared-preference.read-only": [
+      "com.apple.UnifiedAssetFramework",
+      "com.apple.modelcatalog.ajax",
+      "com.apple.GenerativeFunctions.GenerativeFunctionsInstrumentation",
+      "kCFPreferencesAnyApplication"
+    ]
+  },
+  "cryptographic_verification_performed": false
+}
